@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:56:00.352374+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Who should a patient be referred to if a bloodwork shows high protein levels in the blood?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "A patient with elevated blood protein (hyperproteinemia), especially elevated total protein or globulins, should usually be referred to a **hematologist**\u2014particularly if testing suggests a monoclonal protein (\u201cM-spike\u201d) or possible plasma-cell disorder such as **MGUS, multiple myeloma, or Waldenstr\u00f6m macroglobulinemia**.\n\nTypical pathway:\n\n- **Primary care clinician / internist**: confirms the result, reviews hydration status and medications, and orders initial evaluation.\n- **Hematologist (or hematologist-oncologist)**: appropriate if protein remains elevated, globulin gap is high, serum protein electrophoresis/immunofixation is abnormal, or there are concerning symptoms.\n- **Nephrologist**: if there is kidney dysfunction, protein in the urine, or concern for kidney involvement.\n- **Hepatologist/gastroenterologist**: if chronic liver disease is suspected.\n- **Rheumatologist**: if autoimmune or chronic inflammatory disease appears to be driving elevated immunoglobulins.\n\nInitial tests commonly include repeat CMP/total protein and albumin, serum protein electrophoresis (SPEP), immunofixation, serum free light chains, CBC, calcium, kidney function, and urine protein studies.",
+    "latency_ms": 3501.5,
+    "input_tokens": 97,
+    "output_tokens": 262
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Who should a patient be referred to if a bloodwork shows high protein levels in the blood?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "A patient with elevated blood protein (hyperproteinemia), especially elevated total protein or globulins, should usually be referred to a **hematologist**\u2014particularly if testing suggests a monoclonal protein (\u201cM-spike\u201d) or possible plasma-cell disorder such as **MGUS, multiple myeloma, or Waldenstr\u00f6m macroglobulinemia**.\n\nTypical pathway:\n\n- **Primary care clinician / internist**: confirms the result, reviews hydration status and medications, and orders initial evaluation.\n- **Hematologist (or hematologist-oncologist)**: appropriate if protein remains elevated, globulin gap is high, serum protein electrophoresis/immunofixation is abnormal, or there are concerning symptoms.\n- **Nephrologist**: if there is kidney dysfunction, protein in the urine, or concern for kidney involvement.\n- **Hepatologist/gastroenterologist**: if chronic liver disease is suspected.\n- **Rheumatologist**: if autoimmune or chronic inflammatory disease appears to be driving elevated immunoglobulins.\n\nInitial tests commonly include repeat CMP/total protein and albumin, serum protein electrophoresis (SPEP), immunofixation, serum free light chains, CBC, calcium, kidney function, and urine protein studies.",
+    "latency_ms": 3501.5,
+    "token_count": 359
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "ded58d998782",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233360.3516378,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3501.5,
+        "token_count": 359,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.28; flagged=False"
+}

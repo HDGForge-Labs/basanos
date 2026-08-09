@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:54:23.830222+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What are ZIPPOs in the context of naval warfare, and what are the NATO standard ones?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Naval Warfare & Navigation",
+    "question_type": "Directed question that has a single unambiguous answer| Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "I want to be upfront that I don't have reliable, verified information about \"ZIPPOs\" as an official NATO-standardized naval warfare term or classification system. I don't want to invent specific designations, hull numbers, or technical specifications for something I'm not confident actually exists in that form.\n\nWhat I do know with more confidence:\n\n**\"Zippo\" as military slang** \u2014 historically, \"Zippo\" (after the cigarette lighter brand) became slang in the Vietnam War era for flame-weapon systems. Examples include:\n\n- **\"Zippo boats\"** \u2014 river patrol craft (often modified LCM-6 or similar landing craft) fitted with flamethrower equipment, used by riverine forces in the Mekong Delta roughly between 1966 and 1970.\n- **",
+    "latency_ms": 12359.7,
+    "input_tokens": 141,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are ZIPPOs in the context of naval warfare, and what are the NATO standard ones?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "I want to be upfront that I don't have reliable, verified information about \"ZIPPOs\" as an official NATO-standardized naval warfare term or classification system. I don't want to invent specific designations, hull numbers, or technical specifications for something I'm not confident actually exists in that form.\n\nWhat I do know with more confidence:\n\n**\"Zippo\" as military slang** \u2014 historically, \"Zippo\" (after the cigarette lighter brand) became slang in the Vietnam War era for flame-weapon systems. Examples include:\n\n- **\"Zippo boats\"** \u2014 river patrol craft (often modified LCM-6 or similar landing craft) fitted with flamethrower equipment, used by riverine forces in the Mekong Delta roughly between 1966 and 1970.\n- **",
+    "latency_ms": 12359.7,
+    "token_count": 1165,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "fc07c1a190c7",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240463.8294394,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 3 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4354,
+          "evidence": [
+            "Latency 12360ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12359.7,
+        "token_count": 1165,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.139; flagged=True"
+}

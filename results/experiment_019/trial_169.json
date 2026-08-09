@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T00:17:03.578289+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What are the cardinal symptoms of laryngotracheitis?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General Medicine ",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "The classic cardinal symptoms of **laryngotracheitis (viral croup)** are:\n\n1. **Barking cough**  \n   - A harsh, \u201cseal-like\u201d or barking cough, often worse at night.\n\n2. **Inspiratory stridor**  \n   - A high-pitched, harsh sound when breathing in, caused by upper-airway narrowing.  \n   - It may occur only with crying or activity in mild cases, but can be present at rest in more severe cases.\n\n3. **Hoarseness**  \n   - A raspy or weak voice due to inflammation of the larynx/vocal cords.\n\nCommon accompanying features include:\n\n- **Low-grade fever**, often around **38\u201339\u00b0C (100.4\u2013102.2\u00b0F)**\n- Runny nose, nasal congestion, and mild sore throat preceding the cough by about **1\u20133 days**\n- Increased work of breathing, such as chest retractions or nasal flaring in more severe illness\n- Symptoms often peak at night and commonly last about **3\u20135 days**\n\nDrooling, inability to swallow, a muffled \u201chot-potato\u201d voice, severe toxicity, or sudden onset without cold symptoms are *not* typical of uncomplicated croup and suggest alternative diagnoses such as epiglottitis, bacterial tracheitis, or an inhaled foreign body.",
+    "latency_ms": 3594.1,
+    "input_tokens": 84,
+    "output_tokens": 276
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the cardinal symptoms of laryngotracheitis?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "The classic cardinal symptoms of **laryngotracheitis (viral croup)** are:\n\n1. **Barking cough**  \n   - A harsh, \u201cseal-like\u201d or barking cough, often worse at night.\n\n2. **Inspiratory stridor**  \n   - A high-pitched, harsh sound when breathing in, caused by upper-airway narrowing.  \n   - It may occur only with crying or activity in mild cases, but can be present at rest in more severe cases.\n\n3. **Hoarseness**  \n   - A raspy or weak voice due to inflammation of the larynx/vocal cords.\n\nCommon accompanying features include:\n\n- **Low-grade fever**, often around **38\u201339\u00b0C (100.4\u2013102.2\u00b0F)**\n- Runny nose, nasal congestion, and mild sore throat preceding the cough by about **1\u20133 days**\n- Increased work of breathing, such as chest retractions or nasal flaring in more severe illness\n- Symptoms often peak at night and commonly last about **3\u20135 days**\n\nDrooling, inability to swallow, a muffled \u201chot-potato\u201d voice, severe toxicity, or sudden onset without cold symptoms are *not* typical of uncomplicated croup and suggest alternative diagnoses such as epiglottitis, bacterial tracheitis, or an inhaled foreign body.",
+    "latency_ms": 3594.1,
+    "token_count": 360,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "58cde8fff27f",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234623.5775266,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 5 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 3594.1,
+        "token_count": 360,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.169; flagged=True"
+}

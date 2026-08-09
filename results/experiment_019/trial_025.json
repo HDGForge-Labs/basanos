@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-08T23:55:45.278230+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "The type of drug used for insomnia require prolonged use of them, can't it be solved using psychiatric scans and helmets used to read brain neurons?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Sales rep in medicines",
+    "question_type": "Open-ended question that is potentially ambiguous| Question that describes a hypothetical scenario and asks a question based on this scenario| Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Most insomnia cannot currently be \u201csolved\u201d by brain scans or neuron-reading helmets, because insomnia is not usually caused by one simple, visible brain defect that can be identified and corrected from a scan.\n\n### Why scans and \u201cbrain-reading helmets\u201d are limited\n\n- **MRI, CT, PET, and EEG** can detect certain problems\u2014tumors, seizures, stroke effects, sleep apnea clues, unusual brain activity, etc.\u2014but they do not diagnose most chronic insomnia in a way that directly tells a doctor which treatment will cure it.\n- Consumer or clinical **EEG headsets** mainly measure broad electrical rhythms from the scalp. They do not read individual neurons, thoughts, or the precise sleep circuits deep in the brain.\n- Insomnia commonly results from a combination of:\n  - learned hyperarousal (\u201ctrying hard to sleep,\u201d worry about sleep)\n  - anxiety, depression, PTSD, pain, or stress\n  - irregular sleep schedules/light exposure\n  - caffeine, alcohol, nicotine, stimulants, or some medications\n  - restless legs syndrome, sleep apnea, circadian-rhythm disorders, thyroid disease, and other medical causes.\n\nA scan may be appropriate if there are neurological symptoms\u2014new seizures, weakness, severe headaches, cognitive decline, unusual nighttime behaviors, suspected narcolepsy, etc.\u2014but it is not routine for ordinary insomnia.\n\n### Do insomnia drugs require prolonged use?\n\nNot necessarily. It depends on the drug and the cause.\n\n- **Sleeping pills** such as zolpidem, eszopiclone, zaleplon, benzodiazepines, or sedating antihistamines are usually intended for **short-term or intermittent use**, not as the main long-term solution. Long-term use can lead to tolerance, dependence, falls, memory problems, rebound insomnia, or daytime impairment\u2014especially with benzodiazepines and antihistamines.\n- Some drugs may be used longer in selected patients under supervision, for example **low-dose doxepin**, **orexin receptor antagonists** such as daridorexant/suvorexant/lemborexant, or sometimes **ramelteon**. They still require periodic review.\n- If insomnia is driven by depression, anxiety, chronic pain, bipolar disorder, ADHD medication, or another condition, treating that underlying issue may reduce or eliminate the need for sleep medication.\n\n### What most often gives durable improvement\n\nThe best-established long-term treatment for chronic insomnia is **CBT-I (cognitive behavioral therapy for insomnia)**. It is not just \u201csleep hygiene.\u201d It usually includes:\n\n1. **Stimulus control**: bed only for sleep/sex; if awake roughly 15\u201320 minutes, get out of bed and return when sleepy.\n2. **Sleep restriction/compression**: temporarily match time in bed to actual sleep time, then gradually expand it.\n3. **A fixed wake time** every day.\n4. **Changing sleep-related worry and habits** that keep the brain alert.\n5. **Light, caffeine, alcohol, and nap timing** adjustments.\n\nCBT-I often has more durable benefits than sleep medication because it addresses the processes that maintain insomnia rather than only sedating the brain.\n\n### When more specialized testing helps\n\nA **sleep study (polysomnography)** is more useful than a brain scan when there is loud snoring, witnessed pauses in breathing, gasping, marked daytime sleepiness, unusual movements, suspected REM behavior disorder, or possible periodic limb movements. An **actigraphy watch** and sleep diary can help identify circadian rhythm problems.\n\nSo, brain-monitoring technology may eventually help personalize sleep treatment, but today it cannot replace a careful sleep/psychiatric evaluation and evidence-based treatments such as CBT-I, treatment of underlying conditions, and carefully chosen short-term or supervised medication when needed.",
+    "latency_ms": 10051.1,
+    "input_tokens": 106,
+    "output_tokens": 774
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "The type of drug used for insomnia require prolonged use of them, can't it be solved using psychiatric scans and helmets used to read brain neurons?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Most insomnia cannot currently be \u201csolved\u201d by brain scans or neuron-reading helmets, because insomnia is not usually caused by one simple, visible brain defect that can be identified and corrected from a scan.\n\n### Why scans and \u201cbrain-reading helmets\u201d are limited\n\n- **MRI, CT, PET, and EEG** can detect certain problems\u2014tumors, seizures, stroke effects, sleep apnea clues, unusual brain activity, etc.\u2014but they do not diagnose most chronic insomnia in a way that directly tells a doctor which treatment will cure it.\n- Consumer or clinical **EEG headsets** mainly measure broad electrical rhythms from the scalp. They do not read individual neurons, thoughts, or the precise sleep circuits deep in the brain.\n- Insomnia commonly results from a combination of:\n  - learned hyperarousal (\u201ctrying hard to sleep,\u201d worry about sleep)\n  - anxiety, depression, PTSD, pain, or stress\n  - irregular sleep schedules/light exposure\n  - caffeine, alcohol, nicotine, stimulants, or some medications\n  - restless legs syndrome, sleep apnea, circadian-rhythm disorders, thyroid disease, and other medical causes.\n\nA scan may be appropriate if there are neurological symptoms\u2014new seizures, weakness, severe headaches, cognitive decline, unusual nighttime behaviors, suspected narcolepsy, etc.\u2014but it is not routine for ordinary insomnia.\n\n### Do insomnia drugs require prolonged use?\n\nNot necessarily. It depends on the drug and the cause.\n\n- **Sleeping pills** such as zolpidem, eszopiclone, zaleplon, benzodiazepines, or sedating antihistamines are usually intended for **short-term or intermittent use**, not as the main long-term solution. Long-term use can lead to tolerance, dependence, falls, memory problems, rebound insomnia, or daytime impairment\u2014especially with benzodiazepines and antihistamines.\n- Some drugs may be used longer in selected patients under supervision, for example **low-dose doxepin**, **orexin receptor antagonists** such as daridorexant/suvorexant/lemborexant, or sometimes **ramelteon**. They still require periodic review.\n- If insomnia is driven by depression, anxiety, chronic pain, bipolar disorder, ADHD medication, or another condition, treating that underlying issue may reduce or eliminate the need for sleep medication.\n\n### What most often gives durable improvement\n\nThe best-established long-term treatment for chronic insomnia is **CBT-I (cognitive behavioral therapy for insomnia)**. It is not just \u201csleep hygiene.\u201d It usually includes:\n\n1. **Stimulus control**: bed only for sleep/sex; if awake roughly 15\u201320 minutes, get out of bed and return when sleepy.\n2. **Sleep restriction/compression**: temporarily match time in bed to actual sleep time, then gradually expand it.\n3. **A fixed wake time** every day.\n4. **Changing sleep-related worry and habits** that keep the brain alert.\n5. **Light, caffeine, alcohol, and nap timing** adjustments.\n\nCBT-I often has more durable benefits than sleep medication because it addresses the processes that maintain insomnia rather than only sedating the brain.\n\n### When more specialized testing helps\n\nA **sleep study (polysomnography)** is more useful than a brain scan when there is loud snoring, witnessed pauses in breathing, gasping, marked daytime sleepiness, unusual movements, suspected REM behavior disorder, or possible periodic limb movements. An **actigraphy watch** and sleep diary can help identify circadian rhythm problems.\n\nSo, brain-monitoring technology may eventually help personalize sleep treatment, but today it cannot replace a careful sleep/psychiatric evaluation and evidence-based treatments such as CBT-I, treatment of underlying conditions, and carefully chosen short-term or supervised medication when needed.",
+    "latency_ms": 10051.1,
+    "token_count": 880
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "5f61ae2b39ed",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786233345.2772899,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4008,
+          "evidence": [
+            "Latency 10051ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 10051.1,
+        "token_count": 880,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.25; flagged=False"
+}

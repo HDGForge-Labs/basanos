@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T00:03:05.714610+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What are the differences between professions about patients returning as volunteers?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Occupational Therapy",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Patients who return as volunteers are often called **patient volunteers**, **peer supporters**, **patient advocates**, or **patient partners**, but the role differs substantially by profession and care setting.\n\n| Profession / setting | Typical former-patient volunteer role | Main purpose | Boundaries and requirements |\n|---|---|---|---|\n| **Medicine / hospitals** | Greeting patients, wayfinding, visiting inpatients, supporting discharge, fundraising, advisory councils | Improve patient experience and navigation | Usually non-clinical; no diagnosis, medication advice, or access to records unless formally authorized |\n| **Nursing** | Comfort rounds, companionship, feeding-support assistance where permitted, bereavement support, patient-experience projects | Emotional support and practical comfort | Closely supervised; volunteers do not replace nursing staff or provide skilled care |\n| **Mental health / psychiatry** | Peer support specialist, recovery coach, group facilitator, crisis-warmline worker | Use lived experience to support recovery, hope, self-management, and engagement | Strong confidentiality and role boundaries; peer specialists may require formal certification and supervision |\n| **Addiction services** | Recovery coach, sponsor, mutual-aid facilitator, outreach worker | Sustained recovery support, relapse-prevention encouragement, connection to services | Must avoid acting as therapist or clinician; dual relationships and triggers are carefully managed |\n| **Cancer care** | Cancer survivor mentor, navigator, support-group volunteer, newly diagnosed patient buddy | Help patients understand treatment pathways and cope with diagnosis | Volunteers share experience, not individualized medical recommendations; often trained by organizations such as cancer centers or charities |\n| **Rehabilitation / disability services** | Peer mentor, adaptive-sports volunteer, independent-living mentor | Promote adjustment, function, community participation, and self-advocacy | Lived experience is especially central; volunteers may help with practical strategies but not prescribe therapy |\n| **Hospice / palliative care** | Companionship, respite for caregivers, bereavement follow-up, spiritual or practical support | Quality of life and family support near end of life | Intensive training in grief, communication, privacy, and emotional boundaries; no clinical symptom management unless licensed |\n| **Social work / community services** | Peer advocate, benefits/navigation helper, support-group leader | Address housing, benefits, family, legal, and community barriers to care | May help patients navigate systems, but cannot provide legal, clinical, or safeguarding decisions beyond their role |\n| **Research / clinical trials** | Patient research partner, participant advisor, protocol-review panel member | Improve relevance, recruitment, consent materials, outcomes, and study design | Usually contributes lived-experience expertise rather than providing direct patient support; conflict-of-interest rules may apply |\n| **Medical education** | Patient educator, standardized patient, patient speaker | Teach clinicians communication, examination skills, and patient-centered care | May be paid rather than volunteer; training and consent are essential, especially when discussing personal health information |\n| **Public health / advocacy organizations** | Campaign volunteer, community health ambassador, policy advocate | Raise awareness, reduce stigma, influence services and policy | Role is population-focused rather than individual clinical care; messaging usually follows organizational guidance |\n\n### Key differences\n\n1. **Peer role versus service role**\n   - In mental health, addiction, rehabilitation, and chronic disease care, the former patient\u2019s **lived experience itself** is often the intervention.\n   - In hospitals, hospice, and general volunteering, the role may be primarily **companionship, practical help, or navigation**.\n\n2. **Clinical versus non-clinical responsibility**\n   - Most returning patients volunteer in **non-clinical roles**.\n   - Even when highly experienced, they generally cannot diagnose, advise on treatment changes, interpret test results, or perform professional procedures unless they separately hold the relevant license and are employed in that capacity.\n\n3. **Degree of formal training**\n   - A hospital greeter may need orientation, infection-control training, and confidentiality training.\n   - A certified peer specialist or recovery coach may need structured education, supervised practice, credentialing, and continuing professional development.\n\n4. **Relationship to the patient**\n   - Peer support is often intentionally reciprocal and based on \u201cI have been through something similar.\u201d\n   - Professional care retains clearer expert\u2013patient boundaries.\n   - Volunteers must avoid becoming a patient\u2019s therapist, clinician, financial helper, or personal rescuer.\n\n5. **Compensation**\n   - Some roles are genuinely unpaid volunteer positions.\n   - Others\u2014especially **peer support specialists, recovery coaches, patient navigators, and standardized patients**\u2014may be paid employees because the work involves defined competencies and accountability.\n\n6. **Safeguarding and confidentiality**\n   - Every setting requires privacy training and appropriate handling of sensitive information.\n   - Mental health, addiction, pediatrics, domestic violence, and end-of-life care often require especially robust supervision because of vulnerability, crisis risk, and emotional intensity.\n\nIn short: former patients most often contribute **experience, empathy, credibility, and practical insight**, while regulated professionals retain responsibility for assessment, treatment, clinical decisions",
+    "latency_ms": 15032.7,
+    "input_tokens": 90,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the differences between professions about patients returning as volunteers?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Patients who return as volunteers are often called **patient volunteers**, **peer supporters**, **patient advocates**, or **patient partners**, but the role differs substantially by profession and care setting.\n\n| Profession / setting | Typical former-patient volunteer role | Main purpose | Boundaries and requirements |\n|---|---|---|---|\n| **Medicine / hospitals** | Greeting patients, wayfinding, visiting inpatients, supporting discharge, fundraising, advisory councils | Improve patient experience and navigation | Usually non-clinical; no diagnosis, medication advice, or access to records unless formally authorized |\n| **Nursing** | Comfort rounds, companionship, feeding-support assistance where permitted, bereavement support, patient-experience projects | Emotional support and practical comfort | Closely supervised; volunteers do not replace nursing staff or provide skilled care |\n| **Mental health / psychiatry** | Peer support specialist, recovery coach, group facilitator, crisis-warmline worker | Use lived experience to support recovery, hope, self-management, and engagement | Strong confidentiality and role boundaries; peer specialists may require formal certification and supervision |\n| **Addiction services** | Recovery coach, sponsor, mutual-aid facilitator, outreach worker | Sustained recovery support, relapse-prevention encouragement, connection to services | Must avoid acting as therapist or clinician; dual relationships and triggers are carefully managed |\n| **Cancer care** | Cancer survivor mentor, navigator, support-group volunteer, newly diagnosed patient buddy | Help patients understand treatment pathways and cope with diagnosis | Volunteers share experience, not individualized medical recommendations; often trained by organizations such as cancer centers or charities |\n| **Rehabilitation / disability services** | Peer mentor, adaptive-sports volunteer, independent-living mentor | Promote adjustment, function, community participation, and self-advocacy | Lived experience is especially central; volunteers may help with practical strategies but not prescribe therapy |\n| **Hospice / palliative care** | Companionship, respite for caregivers, bereavement follow-up, spiritual or practical support | Quality of life and family support near end of life | Intensive training in grief, communication, privacy, and emotional boundaries; no clinical symptom management unless licensed |\n| **Social work / community services** | Peer advocate, benefits/navigation helper, support-group leader | Address housing, benefits, family, legal, and community barriers to care | May help patients navigate systems, but cannot provide legal, clinical, or safeguarding decisions beyond their role |\n| **Research / clinical trials** | Patient research partner, participant advisor, protocol-review panel member | Improve relevance, recruitment, consent materials, outcomes, and study design | Usually contributes lived-experience expertise rather than providing direct patient support; conflict-of-interest rules may apply |\n| **Medical education** | Patient educator, standardized patient, patient speaker | Teach clinicians communication, examination skills, and patient-centered care | May be paid rather than volunteer; training and consent are essential, especially when discussing personal health information |\n| **Public health / advocacy organizations** | Campaign volunteer, community health ambassador, policy advocate | Raise awareness, reduce stigma, influence services and policy | Role is population-focused rather than individual clinical care; messaging usually follows organizational guidance |\n\n### Key differences\n\n1. **Peer role versus service role**\n   - In mental health, addiction, rehabilitation, and chronic disease care, the former patient\u2019s **lived experience itself** is often the intervention.\n   - In hospitals, hospice, and general volunteering, the role may be primarily **companionship, practical help, or navigation**.\n\n2. **Clinical versus non-clinical responsibility**\n   - Most returning patients volunteer in **non-clinical roles**.\n   - Even when highly experienced, they generally cannot diagnose, advise on treatment changes, interpret test results, or perform professional procedures unless they separately hold the relevant license and are employed in that capacity.\n\n3. **Degree of formal training**\n   - A hospital greeter may need orientation, infection-control training, and confidentiality training.\n   - A certified peer specialist or recovery coach may need structured education, supervised practice, credentialing, and continuing professional development.\n\n4. **Relationship to the patient**\n   - Peer support is often intentionally reciprocal and based on \u201cI have been through something similar.\u201d\n   - Professional care retains clearer expert\u2013patient boundaries.\n   - Volunteers must avoid becoming a patient\u2019s therapist, clinician, financial helper, or personal rescuer.\n\n5. **Compensation**\n   - Some roles are genuinely unpaid volunteer positions.\n   - Others\u2014especially **peer support specialists, recovery coaches, patient navigators, and standardized patients**\u2014may be paid employees because the work involves defined competencies and accountability.\n\n6. **Safeguarding and confidentiality**\n   - Every setting requires privacy training and appropriate handling of sensitive information.\n   - Mental health, addiction, pediatrics, domestic violence, and end-of-life care often require especially robust supervision because of vulnerability, crisis risk, and emotional intensity.\n\nIn short: former patients most often contribute **experience, empathy, credibility, and practical insight**, while regulated professionals retain responsibility for assessment, treatment, clinical decisions",
+    "latency_ms": 15032.7,
+    "token_count": 1114
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "28dd832ecd11",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786233785.713836,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4755,
+          "evidence": [
+            "Latency 15033ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 15032.7,
+        "token_count": 1114,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.83; flagged=False"
+}

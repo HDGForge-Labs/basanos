@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:43:06.910285+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "During a squat, if the knees fall inwards which muscle are weak?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Orthopedics and Physiotherapist",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "When the knees cave inward during a squat (dynamic knee valgus), the primary culprit is weakness in the **hip abductors and external rotators**, most notably:\n\n**1. Gluteus medius** \u2013 This is the main muscle responsible for preventing femoral adduction and internal rotation during single and double-leg loading. Weakness here is the most commonly cited cause of valgus collapse.\n\n**2. Gluteus maximus** \u2013 Particularly its role as a hip external rotator and extensor. Weak glute max allows the femur to internally rotate and adduct as you descend into the squat.\n\n**3. Deep hip external rotators** (piriformis, obturator internus/externus, quadratus femoris) \u2013 These help control femoral rotation; when underactive, the femur rotates inward, dragging the knee with it.\n\n**Secondary contributors:**\n\n- **Weak VMO (vastus medialis oblique)** relative to the vastus lateralis can contribute to poor patellar tracking and knee positioning, though this is more a knee-local issue than the root cause of the valgus movement pattern itself.\n- **Weak core/lateral trunk stabilizers** (obliques, QL) can indirectly cause pelvic drop, which cascades into knee valgus.\n\n**It's not just weakness \u2014 also check:**\n\n- **Ankle dorsiflexion restriction**: If the ankle can't dorsiflex enough, the body compensates by allowing the knee to translate medially to maintain balance over the foot.\n- **Foot mechanics**: Overpronation or collapsed arches can drive tibial internal rotation, pulling the knee inward.\n- **Motor control/movement pattern issue**: Sometimes the muscles aren't weak in isolation (test hip abduction strength) but fail to fire correctly under the specific demand of a loaded squat \u2014 this is a neuromuscular activation/timing issue rather than pure strength.\n\n**How to differentiate:** Have them do a single-leg glute bridge or side-lying clamshell/abduction test. If they're weak or shaky there, it points to true glute medius/max weakness. If they test strong in isolation but still valgus under load, it's more likely a motor control or mobility (ankle) issue rather than pure muscular weakness.\n\n**Common corrective exercises:** Banded lateral walks, clamshells, single-leg RDLs, glute bridges with band resistance around the knees, and cueing \"knees out\" during squats while ensuring adequate ankle dorsiflexion mobility.",
+    "latency_ms": 12729.1,
+    "input_tokens": 137,
+    "output_tokens": 921
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "During a squat, if the knees fall inwards which muscle are weak?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "When the knees cave inward during a squat (dynamic knee valgus), the primary culprit is weakness in the **hip abductors and external rotators**, most notably:\n\n**1. Gluteus medius** \u2013 This is the main muscle responsible for preventing femoral adduction and internal rotation during single and double-leg loading. Weakness here is the most commonly cited cause of valgus collapse.\n\n**2. Gluteus maximus** \u2013 Particularly its role as a hip external rotator and extensor. Weak glute max allows the femur to internally rotate and adduct as you descend into the squat.\n\n**3. Deep hip external rotators** (piriformis, obturator internus/externus, quadratus femoris) \u2013 These help control femoral rotation; when underactive, the femur rotates inward, dragging the knee with it.\n\n**Secondary contributors:**\n\n- **Weak VMO (vastus medialis oblique)** relative to the vastus lateralis can contribute to poor patellar tracking and knee positioning, though this is more a knee-local issue than the root cause of the valgus movement pattern itself.\n- **Weak core/lateral trunk stabilizers** (obliques, QL) can indirectly cause pelvic drop, which cascades into knee valgus.\n\n**It's not just weakness \u2014 also check:**\n\n- **Ankle dorsiflexion restriction**: If the ankle can't dorsiflex enough, the body compensates by allowing the knee to translate medially to maintain balance over the foot.\n- **Foot mechanics**: Overpronation or collapsed arches can drive tibial internal rotation, pulling the knee inward.\n- **Motor control/movement pattern issue**: Sometimes the muscles aren't weak in isolation (test hip abduction strength) but fail to fire correctly under the specific demand of a loaded squat \u2014 this is a neuromuscular activation/timing issue rather than pure strength.\n\n**How to differentiate:** Have them do a single-leg glute bridge or side-lying clamshell/abduction test. If they're weak or shaky there, it points to true glute medius/max weakness. If they test strong in isolation but still valgus under load, it's more likely a motor control or mobility (ankle) issue rather than pure muscular weakness.\n\n**Common corrective exercises:** Banded lateral walks, clamshells, single-leg RDLs, glute bridges with band resistance around the knees, and cueing \"knees out\" during squats while ensuring adequate ankle dorsiflexion mobility.",
+    "latency_ms": 12729.1,
+    "token_count": 1058
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "d604fe0d7b0e",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239786.9095376,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4409,
+          "evidence": [
+            "Latency 12729ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12729.1,
+        "token_count": 1058,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.84; flagged=False"
+}

@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:09:08.404775+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is the outstanding role of advanced technologies used in Monitoring of clinical trials?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Clinical Research",
+    "question_type": "Summarization of information on a topic| Request for a list of resources where one can find more information| Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Advanced technologies have transformed clinical-trial monitoring from a largely manual, site-visit-based activity into a more continuous, data-driven, risk-focused process. Their outstanding role is to improve participant safety, data quality, protocol compliance, operational efficiency, and regulatory readiness while reducing unnecessary monitoring burden.\n\n## 1. Risk-based monitoring (RBM)\n\nRisk-based monitoring uses centralized data review, predefined risk indicators, and targeted site visits instead of verifying 100% of data at every site.\n\n- Traditional monitoring often relied heavily on on-site source-data verification (SDV), sometimes checking nearly 100% of selected case-report-form fields.\n- Modern RBM commonly prioritizes critical data and processes\u2014such as informed consent, eligibility, primary endpoint data, investigational-product accountability, and serious adverse-event reporting.\n- Central analytics can identify sites with unusually high protocol deviations, missing visits, delayed adverse-event entry, excessive screen failures, or implausibly uniform data.\n- This allows monitors to focus on higher-risk sites and patients rather than spending equal effort at all sites.\n\nFor example, a site with protocol deviations in approximately 8%\u201310% of enrolled participants may receive closer review than a site with deviation rates below approximately 1%\u20132%, depending on the protocol and therapeutic area.\n\n## 2. Electronic data capture and eSource\n\nElectronic data capture (EDC) systems replace paper case-report forms with secure digital data-entry platforms.\n\nKey roles include:\n\n- Real-time edit checks for missing, inconsistent, or out-of-range data.\n- Automated queries to sites when values are incomplete or contradictory.\n- Audit trails showing who entered, changed, reviewed, or approved data and at what time.\n- Faster database cleaning and earlier identification of errors.\n- Improved compliance with requirements such as 21 CFR Part 11 and EU Annex 11 for electronic records and signatures.\n\neSource technologies capture data directly from the original clinical source\u2014for example, electronic health records, electronic diaries, laboratory systems, imaging systems, or digital devices. This reduces duplicate transcription, which is a common source of data-entry errors.\n\n## 3. Centralized and remote monitoring\n\nRemote monitoring enables clinical research associates (CRAs) to review trial data, essential documents, site performance, and selected source records without travelling to the site.\n\nIts major benefits include:\n\n- More frequent oversight, sometimes weekly or even daily for critical data streams.\n- Faster review of safety events and protocol deviations.\n- Reduced travel costs and carbon emissions.\n- Better access to geographically dispersed sites.\n- Less disruption to investigators and site staff.\n\nCentralized monitoring teams can review data across all sites simultaneously. They can compare enrollment rates, query rates, missing-data patterns, laboratory values, adverse-event rates, and endpoint patterns to detect outliers.\n\nFor instance, if the median site enters visit data within approximately 2 days but one site has a median delay of approximately 14 days, centralized monitoring can flag it for follow-up.\n\n## 4. Artificial intelligence and machine learning\n\nArtificial intelligence (AI) and machine learning (ML) support monitoring by finding patterns that may be difficult for humans to detect across thousands or millions of data points.\n\nImportant applications include:\n\n- Detecting unusual data patterns that may suggest data fabrication, systematic error, or poor site performance.\n- Identifying potential protocol deviations before they become widespread.\n- Predicting which sites are likely to have high query rates, delayed data entry, poor retention, or recruitment problems.\n- Prioritizing monitoring activities according to predicted risk.\n- Supporting medical coding, document classification, and automated reconciliation.\n- Reviewing free-text notes, adverse-event narratives, and clinical documents using natural-language processing.\n\nAI systems may flag patterns such as identical vital signs across multiple visits, unusually low variability in laboratory results, improbably fast visit completion, repeated timestamps, or adverse-event reporting rates that differ substantially from comparable sites.\n\nHowever, AI should support\u2014not replace\u2014clinical judgment. Every alert requires human review because unusual data may reflect genuine clinical differences rather than misconduct or error.\n\n## 5. Wearables, sensors, and digital health technologies\n\nWearables and connected devices allow continuous or frequent collection of patient data outside the clinic.\n\nExamples include:\n\n- Smartwatches for heart rate, activity, sleep, and rhythm monitoring.\n- Continuous glucose monitors.\n- Digital spirometers for respiratory trials.\n- Connected blood-pressure monitors.\n- Smart inhalers.\n- Actigraphy devices for sleep, neurological, and psychiatric studies.\n- Digital pills or medication-adherence devices.\n- Smartphone-based assessments of mobility, speech, cognition, pain, or symptoms.\n\nThese tools can collect data daily, hourly, or continuously, compared with conventional clinic assessments that may occur every 4, 8, or 12 weeks. This can provide a more realistic view of a patient\u2019s condition and treatment response.\n\nFor example, a wearable may collect hundreds to thousands of activity or heart-rate observations per day, enabling detection of changes that would be missed by a single clinic measurement.\n\n## 6. Electronic patient-reported outcomes and eConsent\n\nElectronic patient-reported outcome (ePRO)",
+    "latency_ms": 13131.0,
+    "input_tokens": 87,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the outstanding role of advanced technologies used in Monitoring of clinical trials?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Advanced technologies have transformed clinical-trial monitoring from a largely manual, site-visit-based activity into a more continuous, data-driven, risk-focused process. Their outstanding role is to improve participant safety, data quality, protocol compliance, operational efficiency, and regulatory readiness while reducing unnecessary monitoring burden.\n\n## 1. Risk-based monitoring (RBM)\n\nRisk-based monitoring uses centralized data review, predefined risk indicators, and targeted site visits instead of verifying 100% of data at every site.\n\n- Traditional monitoring often relied heavily on on-site source-data verification (SDV), sometimes checking nearly 100% of selected case-report-form fields.\n- Modern RBM commonly prioritizes critical data and processes\u2014such as informed consent, eligibility, primary endpoint data, investigational-product accountability, and serious adverse-event reporting.\n- Central analytics can identify sites with unusually high protocol deviations, missing visits, delayed adverse-event entry, excessive screen failures, or implausibly uniform data.\n- This allows monitors to focus on higher-risk sites and patients rather than spending equal effort at all sites.\n\nFor example, a site with protocol deviations in approximately 8%\u201310% of enrolled participants may receive closer review than a site with deviation rates below approximately 1%\u20132%, depending on the protocol and therapeutic area.\n\n## 2. Electronic data capture and eSource\n\nElectronic data capture (EDC) systems replace paper case-report forms with secure digital data-entry platforms.\n\nKey roles include:\n\n- Real-time edit checks for missing, inconsistent, or out-of-range data.\n- Automated queries to sites when values are incomplete or contradictory.\n- Audit trails showing who entered, changed, reviewed, or approved data and at what time.\n- Faster database cleaning and earlier identification of errors.\n- Improved compliance with requirements such as 21 CFR Part 11 and EU Annex 11 for electronic records and signatures.\n\neSource technologies capture data directly from the original clinical source\u2014for example, electronic health records, electronic diaries, laboratory systems, imaging systems, or digital devices. This reduces duplicate transcription, which is a common source of data-entry errors.\n\n## 3. Centralized and remote monitoring\n\nRemote monitoring enables clinical research associates (CRAs) to review trial data, essential documents, site performance, and selected source records without travelling to the site.\n\nIts major benefits include:\n\n- More frequent oversight, sometimes weekly or even daily for critical data streams.\n- Faster review of safety events and protocol deviations.\n- Reduced travel costs and carbon emissions.\n- Better access to geographically dispersed sites.\n- Less disruption to investigators and site staff.\n\nCentralized monitoring teams can review data across all sites simultaneously. They can compare enrollment rates, query rates, missing-data patterns, laboratory values, adverse-event rates, and endpoint patterns to detect outliers.\n\nFor instance, if the median site enters visit data within approximately 2 days but one site has a median delay of approximately 14 days, centralized monitoring can flag it for follow-up.\n\n## 4. Artificial intelligence and machine learning\n\nArtificial intelligence (AI) and machine learning (ML) support monitoring by finding patterns that may be difficult for humans to detect across thousands or millions of data points.\n\nImportant applications include:\n\n- Detecting unusual data patterns that may suggest data fabrication, systematic error, or poor site performance.\n- Identifying potential protocol deviations before they become widespread.\n- Predicting which sites are likely to have high query rates, delayed data entry, poor retention, or recruitment problems.\n- Prioritizing monitoring activities according to predicted risk.\n- Supporting medical coding, document classification, and automated reconciliation.\n- Reviewing free-text notes, adverse-event narratives, and clinical documents using natural-language processing.\n\nAI systems may flag patterns such as identical vital signs across multiple visits, unusually low variability in laboratory results, improbably fast visit completion, repeated timestamps, or adverse-event reporting rates that differ substantially from comparable sites.\n\nHowever, AI should support\u2014not replace\u2014clinical judgment. Every alert requires human review because unusual data may reflect genuine clinical differences rather than misconduct or error.\n\n## 5. Wearables, sensors, and digital health technologies\n\nWearables and connected devices allow continuous or frequent collection of patient data outside the clinic.\n\nExamples include:\n\n- Smartwatches for heart rate, activity, sleep, and rhythm monitoring.\n- Continuous glucose monitors.\n- Digital spirometers for respiratory trials.\n- Connected blood-pressure monitors.\n- Smart inhalers.\n- Actigraphy devices for sleep, neurological, and psychiatric studies.\n- Digital pills or medication-adherence devices.\n- Smartphone-based assessments of mobility, speech, cognition, pain, or symptoms.\n\nThese tools can collect data daily, hourly, or continuously, compared with conventional clinic assessments that may occur every 4, 8, or 12 weeks. This can provide a more realistic view of a patient\u2019s condition and treatment response.\n\nFor example, a wearable may collect hundreds to thousands of activity or heart-rate observations per day, enabling detection of changes that would be missed by a single clinic measurement.\n\n## 6. Electronic patient-reported outcomes and eConsent\n\nElectronic patient-reported outcome (ePRO)",
+    "latency_ms": 13131.0,
+    "token_count": 1111,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "2e981198d948",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234148.4039822,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 12 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.447,
+          "evidence": [
+            "Latency 13131ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13131.0,
+        "token_count": 1111,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.124; flagged=True"
+}

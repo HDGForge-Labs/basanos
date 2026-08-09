@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:54:22.430131+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "In the field relying on brain psychology, how do they know when the hypothesis is going to give a good result?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Sales rep in medicines",
+    "question_type": "Open-ended question that is potentially ambiguous| Summarization of information on a topic| Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "In psychology and neuroscience, researchers do **not know in advance with certainty** that a hypothesis will produce a good result. They estimate its credibility from evidence and from how well it makes **specific, testable predictions**.\n\nThey usually judge it through:\n\n1. **Existing evidence**  \n   The hypothesis should fit established findings, such as theories of memory, attention, learning, or brain systems.\n\n2. **Clear, falsifiable predictions**  \n   A strong hypothesis predicts what should happen and under what conditions. For example:  \n   *\u201cParticipants who sleep after learning will recall more words 24 hours later than participants who stay awake.\u201d*\n\n3. **Plausible mechanism**  \n   In brain research, the proposed effect should have a reasonable biological explanation\u2014for example, changes in hippocampal activity or synaptic consolidation.\n\n4. **Well-designed experiments**  \n   Researchers control alternative explanations using random assignment, control groups, blinding where possible, adequate sample sizes, and validated psychological or neural measures.\n\n5. **Statistical evidence**  \n   They examine whether the observed result is unlikely to be due to chance, using confidence intervals, effect sizes, and statistical tests. A \u201cstatistically significant\u201d result alone is not enough; the effect should also be large enough to matter.\n\n6. **Replication**  \n   A result is much more convincing when independent researchers obtain it again, ideally using preregistered studies and different samples or methods.\n\n7. **Converging evidence**  \n   Confidence increases when behavior, brain imaging, physiological measures, and computational models point to the same conclusion.\n\n8. **Out-of-sample prediction**  \n   Particularly strong hypotheses predict results in new people or new situations, rather than merely explaining data already collected.\n\nSo, a hypothesis is considered promising when it is **theoretically grounded, precise, biologically plausible, supported by prior evidence, and successfully tested in rigorous, repeatable studies**. \u201cGood result\u201d usually means not merely a positive finding, but a **reliable, meaningful, and reproducible effect**.",
+    "latency_ms": 3512.9,
+    "input_tokens": 101,
+    "output_tokens": 419
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "In the field relying on brain psychology, how do they know when the hypothesis is going to give a good result?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "In psychology and neuroscience, researchers do **not know in advance with certainty** that a hypothesis will produce a good result. They estimate its credibility from evidence and from how well it makes **specific, testable predictions**.\n\nThey usually judge it through:\n\n1. **Existing evidence**  \n   The hypothesis should fit established findings, such as theories of memory, attention, learning, or brain systems.\n\n2. **Clear, falsifiable predictions**  \n   A strong hypothesis predicts what should happen and under what conditions. For example:  \n   *\u201cParticipants who sleep after learning will recall more words 24 hours later than participants who stay awake.\u201d*\n\n3. **Plausible mechanism**  \n   In brain research, the proposed effect should have a reasonable biological explanation\u2014for example, changes in hippocampal activity or synaptic consolidation.\n\n4. **Well-designed experiments**  \n   Researchers control alternative explanations using random assignment, control groups, blinding where possible, adequate sample sizes, and validated psychological or neural measures.\n\n5. **Statistical evidence**  \n   They examine whether the observed result is unlikely to be due to chance, using confidence intervals, effect sizes, and statistical tests. A \u201cstatistically significant\u201d result alone is not enough; the effect should also be large enough to matter.\n\n6. **Replication**  \n   A result is much more convincing when independent researchers obtain it again, ideally using preregistered studies and different samples or methods.\n\n7. **Converging evidence**  \n   Confidence increases when behavior, brain imaging, physiological measures, and computational models point to the same conclusion.\n\n8. **Out-of-sample prediction**  \n   Particularly strong hypotheses predict results in new people or new situations, rather than merely explaining data already collected.\n\nSo, a hypothesis is considered promising when it is **theoretically grounded, precise, biologically plausible, supported by prior evidence, and successfully tested in rigorous, repeatable studies**. \u201cGood result\u201d usually means not merely a positive finding, but a **reliable, meaningful, and reproducible effect**.",
+    "latency_ms": 3512.9,
+    "token_count": 520
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "1acaabc22f18",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229662.4293227,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3512.9,
+        "token_count": 520,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.40; flagged=False"
+}

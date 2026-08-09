@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:07:40.710030+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Should expectorant or antitussive syrup be recommended for a wet cough?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pharmacist",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "For a **wet (productive) cough**, an **expectorant** is generally more appropriate than an **antitussive**.\n\n- **Expectorant:** Guaifenesin may help thin mucus and make it easier to cough up. Drink adequate fluids unless you\u2019ve been told to restrict them. Evidence for benefit is modest.\n- **Antitussive:** Dextromethorphan, codeine, or similar cough suppressants are usually **not preferred when mucus needs to be cleared**, because suppressing the cough can retain secretions. They may be considered briefly if the cough is severe, painful, or preventing sleep\u2014but preferably after advice from a clinician or pharmacist.\n\nAvoid routine combination cough syrups, especially in children. **Do not give over-the-counter cough/cold medicines to children under 6 years without medical advice**, and avoid codeine-containing products in children under 12 years and during breastfeeding unless specifically prescribed.\n\nSeek medical care for difficulty breathing, chest pain, blue lips, coughing blood, dehydration, a fever of approximately **39\u00b0C (102.2\u00b0F)** or higher, symptoms lasting more than about **3 weeks**, or a cough in an infant under **3 months**.",
+    "latency_ms": 2415.8,
+    "input_tokens": 89,
+    "output_tokens": 248
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Should expectorant or antitussive syrup be recommended for a wet cough?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "For a **wet (productive) cough**, an **expectorant** is generally more appropriate than an **antitussive**.\n\n- **Expectorant:** Guaifenesin may help thin mucus and make it easier to cough up. Drink adequate fluids unless you\u2019ve been told to restrict them. Evidence for benefit is modest.\n- **Antitussive:** Dextromethorphan, codeine, or similar cough suppressants are usually **not preferred when mucus needs to be cleared**, because suppressing the cough can retain secretions. They may be considered briefly if the cough is severe, painful, or preventing sleep\u2014but preferably after advice from a clinician or pharmacist.\n\nAvoid routine combination cough syrups, especially in children. **Do not give over-the-counter cough/cold medicines to children under 6 years without medical advice**, and avoid codeine-containing products in children under 12 years and during breastfeeding unless specifically prescribed.\n\nSeek medical care for difficulty breathing, chest pain, blue lips, coughing blood, dehydration, a fever of approximately **39\u00b0C (102.2\u00b0F)** or higher, symptoms lasting more than about **3 weeks**, or a cough in an infant under **3 months**.",
+    "latency_ms": 2415.8,
+    "token_count": 337,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "20735f38378b",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230460.7093,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 5 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 2415.8,
+        "token_count": 337,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.195; flagged=True"
+}

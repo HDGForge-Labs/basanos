@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:51:03.091117+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is the best kind of suspension for an amputee?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Prosthetists",
+    "question_type": "Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Choosing a Suspension System for a Prosthetic Limb\n\nThere isn't a single \"best\" suspension system\u2014it depends heavily on amputation level, residual limb shape, activity level, skin condition, and personal preference. Here's a breakdown of the main options:\n\n## Common Suspension Types\n\n**1. Pin/Lock Suspension**\n- Uses a locking pin embedded in a gel/silicone liner that clicks into a mechanism in the socket\n- Provides roughly 90-95% suspension reliability for many users\n- Good for moderate to high activity levels\n- Typically requires about 1-2 cm of distal clearance for the pin mechanism\n\n**2. Suction Suspension (Elevated Vacuum or Passive)**\n- Elevated vacuum systems can achieve negative pressures of around -15 to -20 inHg\n- Often preferred by higher-activity amputees (K3-K4 mobility levels)\n- May reduce volume fluctuation by approximately 30-50% compared to non-vacuum systems\n- Requires good limb volume stability and intact skin\n\n**3. Locking Liner with Lanyard**\n- More adjustable than pin systems\n- Good middle-ground option, often used when pin sites cause irritation\n\n**4. Sleeve Suspension**\n- Neoprene or urethane sleeves rolled over the socket\n- Lower cost (~$50-150 typically vs. $200-500+ for pin liners)\n- Good for lower-activity individuals or as backup suspension\n\n**5. Belt/Harness Systems (e.g., for transfemoral)**\n- Silesian belt or hip joint with pelvic band\n- Often used for higher transfemoral amputations or rotational control\n\n## Key Factors in Selection\n\n- **Amputation level**: Transtibial vs. transfemoral vs. partial foot each favor different systems\n- **Residual limb volume stability**: Fluctuates by up to 10-15% throughout the day in some patients\n- **Activity level (K-levels 0-4)**: Higher K-levels often benefit from vacuum/pin systems\n- **Skin integrity**: History of skin breakdown may favor suction over pin (avoiding pressure points)\n- **Cost/insurance coverage**: Vacuum systems can run $3,000-8,000+, significantly more than basic sleeve suspension\n\n## Bottom Line\n\nMost prosthetists recommend **starting with pin-lock or elevated vacuum systems** for active adult amputees with stable limb volume, as they offer the most secure, rotation-resistant fit (often rated highest in patient satisfaction surveys, sometimes 80-90% satisfaction in clinical studies). However, this should be determined through **in-person evaluation with a certified prosthetist**, since limb-specific anatomy plays a huge role.\n\n**I'd recommend discussing your specific situation with your prosthetist or physiatrist**, since factors like your residual limb length, skin sensitivity, and daily activity level will significantly influence what works best for you specifically.",
+    "latency_ms": 13293.6,
+    "input_tokens": 126,
+    "output_tokens": 994
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the best kind of suspension for an amputee?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Choosing a Suspension System for a Prosthetic Limb\n\nThere isn't a single \"best\" suspension system\u2014it depends heavily on amputation level, residual limb shape, activity level, skin condition, and personal preference. Here's a breakdown of the main options:\n\n## Common Suspension Types\n\n**1. Pin/Lock Suspension**\n- Uses a locking pin embedded in a gel/silicone liner that clicks into a mechanism in the socket\n- Provides roughly 90-95% suspension reliability for many users\n- Good for moderate to high activity levels\n- Typically requires about 1-2 cm of distal clearance for the pin mechanism\n\n**2. Suction Suspension (Elevated Vacuum or Passive)**\n- Elevated vacuum systems can achieve negative pressures of around -15 to -20 inHg\n- Often preferred by higher-activity amputees (K3-K4 mobility levels)\n- May reduce volume fluctuation by approximately 30-50% compared to non-vacuum systems\n- Requires good limb volume stability and intact skin\n\n**3. Locking Liner with Lanyard**\n- More adjustable than pin systems\n- Good middle-ground option, often used when pin sites cause irritation\n\n**4. Sleeve Suspension**\n- Neoprene or urethane sleeves rolled over the socket\n- Lower cost (~$50-150 typically vs. $200-500+ for pin liners)\n- Good for lower-activity individuals or as backup suspension\n\n**5. Belt/Harness Systems (e.g., for transfemoral)**\n- Silesian belt or hip joint with pelvic band\n- Often used for higher transfemoral amputations or rotational control\n\n## Key Factors in Selection\n\n- **Amputation level**: Transtibial vs. transfemoral vs. partial foot each favor different systems\n- **Residual limb volume stability**: Fluctuates by up to 10-15% throughout the day in some patients\n- **Activity level (K-levels 0-4)**: Higher K-levels often benefit from vacuum/pin systems\n- **Skin integrity**: History of skin breakdown may favor suction over pin (avoiding pressure points)\n- **Cost/insurance coverage**: Vacuum systems can run $3,000-8,000+, significantly more than basic sleeve suspension\n\n## Bottom Line\n\nMost prosthetists recommend **starting with pin-lock or elevated vacuum systems** for active adult amputees with stable limb volume, as they offer the most secure, rotation-resistant fit (often rated highest in patient satisfaction surveys, sometimes 80-90% satisfaction in clinical studies). However, this should be determined through **in-person evaluation with a certified prosthetist**, since limb-specific anatomy plays a huge role.\n\n**I'd recommend discussing your specific situation with your prosthetist or physiatrist**, since factors like your residual limb length, skin sensitivity, and daily activity level will significantly influence what works best for you specifically.",
+    "latency_ms": 13293.6,
+    "token_count": 1120,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "0ac8b3e6bb76",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240263.090307,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 19 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4494,
+          "evidence": [
+            "Latency 13294ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13293.6,
+        "token_count": 1120,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.123; flagged=True"
+}

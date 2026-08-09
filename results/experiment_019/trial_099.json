@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T00:05:15.080994+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What is the best diet for general longevity?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biochemistry",
+    "question_type": "Directed question that has a single unambiguous answer| Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "For general longevity, the strongest evidence supports a **Mediterranean-style, predominantly plant-based diet**\u2014similar to the traditional diets seen in \u201cBlue Zone\u201d populations and reflected in research on cardiovascular disease, diabetes, cancer risk, and overall mortality.\n\n### Core pattern\n\n- **Vegetables and fruit:** Aim for at least 5 servings daily, with an emphasis on leafy greens, cruciferous vegetables (broccoli, cabbage), tomatoes, peppers, berries, and citrus.\n- **Legumes:** Beans, lentils, chickpeas, and peas most days. They provide fiber, protein, potassium, and beneficial phytonutrients.\n- **Whole grains:** Oats, barley, brown rice, whole wheat, rye, quinoa, and similar foods instead of refined bread, pastries, and white rice.\n- **Nuts and seeds:** A small handful daily\u2014about 25\u201330 g (1 oz). Walnuts, almonds, pistachios, flax, chia, and pumpkin seeds are particularly useful.\n- **Healthy fats:** Use extra-virgin olive oil as the main added fat. Avocado and nuts also fit well.\n- **Fish and seafood:** About 2 servings weekly, especially oily fish such as salmon, sardines, trout, herring, or mackerel.\n- **Protein:** Favor legumes, soy foods, nuts, seeds, fish, and modest amounts of poultry, eggs, and fermented dairy if tolerated.\n- **Fermented foods:** Yogurt, kefir, kimchi, sauerkraut, tempeh, and similar foods can support dietary diversity and gut health.\n\n### Foods to minimize\n\n- **Processed meat:** Bacon, sausage, hot dogs, deli meat, and cured meats. These have one of the clearest diet-related links with colorectal cancer and cardiovascular risk.\n- **Red meat:** Keep it occasional rather than daily\u2014roughly no more than 1\u20132 modest servings per week if you eat it.\n- **Ultra-processed foods:** Sugary drinks, packaged snacks, fast food, refined desserts, many frozen ready meals, and foods built around refined starches, added sugar, and industrial fats.\n- **Refined carbohydrates:** White bread, white rice, many breakfast cereals, pastries, and sweets.\n- **Trans fats and excessive saturated fat:** Avoid partially hydrogenated oils; keep butter, cream, and high-fat processed foods limited.\n- **Excess alcohol:** For longevity, less is better. \u201cModerate\u201d drinking is not required for health, and avoiding alcohol is a reasonable default.\n\n### Practical longevity plate\n\nAt most meals:\n\n- **\u00bd plate:** non-starchy vegetables  \n- **\u00bc plate:** legumes, tofu/tempeh, fish, or another minimally processed protein  \n- **\u00bc plate:** whole grain or starchy vegetable  \n- Add olive oil, nuts, seeds, fruit, herbs, and spices  \n\n### Other features that matter as much as the food list\n\n- Maintain a healthy waist circumference and avoid chronic overeating.\n- Eat enough protein\u2014especially after age 60\u2014to preserve muscle, generally around **1.0\u20131.2 g/kg body weight/day** unless kidney disease or another condition requires a different target.\n- Get **25\u201340 g of fiber daily** from real foods.\n- Pair the diet with regular movement, resistance training, sleep, not smoking, and strong social connections. These substantially affect lifespan and healthspan.\n\nIn short: **eat mostly minimally processed plants, use olive oil and nuts, make beans and whole grains staples, eat fish regularly, and keep processed meat, refined foods, and alcohol low or absent.**",
+    "latency_ms": 8992.0,
+    "input_tokens": 87,
+    "output_tokens": 739
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the best diet for general longevity?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "For general longevity, the strongest evidence supports a **Mediterranean-style, predominantly plant-based diet**\u2014similar to the traditional diets seen in \u201cBlue Zone\u201d populations and reflected in research on cardiovascular disease, diabetes, cancer risk, and overall mortality.\n\n### Core pattern\n\n- **Vegetables and fruit:** Aim for at least 5 servings daily, with an emphasis on leafy greens, cruciferous vegetables (broccoli, cabbage), tomatoes, peppers, berries, and citrus.\n- **Legumes:** Beans, lentils, chickpeas, and peas most days. They provide fiber, protein, potassium, and beneficial phytonutrients.\n- **Whole grains:** Oats, barley, brown rice, whole wheat, rye, quinoa, and similar foods instead of refined bread, pastries, and white rice.\n- **Nuts and seeds:** A small handful daily\u2014about 25\u201330 g (1 oz). Walnuts, almonds, pistachios, flax, chia, and pumpkin seeds are particularly useful.\n- **Healthy fats:** Use extra-virgin olive oil as the main added fat. Avocado and nuts also fit well.\n- **Fish and seafood:** About 2 servings weekly, especially oily fish such as salmon, sardines, trout, herring, or mackerel.\n- **Protein:** Favor legumes, soy foods, nuts, seeds, fish, and modest amounts of poultry, eggs, and fermented dairy if tolerated.\n- **Fermented foods:** Yogurt, kefir, kimchi, sauerkraut, tempeh, and similar foods can support dietary diversity and gut health.\n\n### Foods to minimize\n\n- **Processed meat:** Bacon, sausage, hot dogs, deli meat, and cured meats. These have one of the clearest diet-related links with colorectal cancer and cardiovascular risk.\n- **Red meat:** Keep it occasional rather than daily\u2014roughly no more than 1\u20132 modest servings per week if you eat it.\n- **Ultra-processed foods:** Sugary drinks, packaged snacks, fast food, refined desserts, many frozen ready meals, and foods built around refined starches, added sugar, and industrial fats.\n- **Refined carbohydrates:** White bread, white rice, many breakfast cereals, pastries, and sweets.\n- **Trans fats and excessive saturated fat:** Avoid partially hydrogenated oils; keep butter, cream, and high-fat processed foods limited.\n- **Excess alcohol:** For longevity, less is better. \u201cModerate\u201d drinking is not required for health, and avoiding alcohol is a reasonable default.\n\n### Practical longevity plate\n\nAt most meals:\n\n- **\u00bd plate:** non-starchy vegetables  \n- **\u00bc plate:** legumes, tofu/tempeh, fish, or another minimally processed protein  \n- **\u00bc plate:** whole grain or starchy vegetable  \n- Add olive oil, nuts, seeds, fruit, herbs, and spices  \n\n### Other features that matter as much as the food list\n\n- Maintain a healthy waist circumference and avoid chronic overeating.\n- Eat enough protein\u2014especially after age 60\u2014to preserve muscle, generally around **1.0\u20131.2 g/kg body weight/day** unless kidney disease or another condition requires a different target.\n- Get **25\u201340 g of fiber daily** from real foods.\n- Pair the diet with regular movement, resistance training, sleep, not smoking, and strong social connections. These substantially affect lifespan and healthspan.\n\nIn short: **eat mostly minimally processed plants, use olive oil and nuts, make beans and whole grains staples, eat fish regularly, and keep processed meat, refined foods, and alcohol low or absent.**",
+    "latency_ms": 8992.0,
+    "token_count": 826
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "f2ca19cefe7f",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233915.078247,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 8992.0,
+        "token_count": 826,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.99; flagged=False"
+}

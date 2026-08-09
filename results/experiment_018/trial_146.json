@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:02:47.210844+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "A 68 year-old male with resistant hypertension is already medicated with perindopril, indapamide, amlodipine, bisoprolol and rilmenidine at full dose, yet his blood pressure continues to be too high in the ABMP exam. He is asymptomatic. What should the approach be towards this patient's hypertension?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Family Medicine",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "This is **apparent resistant hypertension**\u2014blood pressure above target despite approximately **5 antihypertensive agents**, including a renin\u2013angiotensin system blocker, a thiazide-like diuretic, and a calcium-channel blocker. It should be managed systematically rather than by simply adding more drugs.\n\n## 1. Confirm that hypertension is truly resistant\n\nBefore intensifying treatment:\n\n- **Repeat ambulatory blood-pressure monitoring (ABPM)** to confirm persistent elevation and exclude:\n  - inadequate recording or cuff size,\n  - isolated daytime or nocturnal hypertension,\n  - white-coat effect,\n  - poor adherence.\n- Review the ABPM details:\n  - 24-hour mean BP,\n  - daytime and nighttime BP,\n  - nocturnal dipping pattern,\n  - pulse pressure.\n- Confirm correct office technique: seated for **5 minutes**, back supported, feet on the floor, arm at heart level, and use of a validated cuff.\n- Check adherence nonjudgmentally. Pharmacy refill records, pill counts, or\u2014where available\u2014drug/metabolite assays may be useful. Complex regimens and adverse effects commonly reduce adherence.\n\nA typical target for a 68-year-old, if tolerated, is approximately **<130\u2013135/80\u201385 mmHg**, but the precise target should be individualized according to frailty, orthostatic symptoms, renal function, and comorbidity. Avoid excessive lowering, particularly if standing systolic BP falls below roughly **110\u2013120 mmHg** or symptoms develop.\n\n## 2. Look for reversible contributors\n\nAssess for:\n\n- Excess dietary sodium, usually aiming for approximately **<2 g sodium/day**, equivalent to about **5 g salt/day**.\n- Obesity, inactivity, heavy alcohol intake, and high caffeine intake.\n- NSAIDs, corticosteroids, sympathomimetics/decongestants, stimulants, erythropoietin, testosterone, licorice, calcineurin inhibitors, and some antidepressants.\n- Obstructive sleep apnea, especially with snoring, witnessed apneas, obesity, or daytime sleepiness.\n- Excessive alcohol: ideally no more than about **2 standard drinks/day**, and preferably less.\n- Orthostatic hypotension and falls risk.\n\n## 3. Screen for secondary hypertension\n\nAt this degree of treatment resistance, secondary causes should be actively investigated.\n\n### Primary aldosteronism\nThis is particularly important even without hypokalemia.\n\n- Measure plasma aldosterone and renin and calculate the aldosterone\u2013renin ratio.\n- Correct potassium first if low.\n- Interpretation is affected by beta-blockers, ACE inhibitors, diuretics, and other drugs, so testing should be coordinated with a hypertension/endocrine specialist.\n- If positive, confirmatory testing and adrenal imaging or adrenal-vein sampling may be required.\n\n### Kidney disease and renovascular disease\n\nCheck:\n\n- Serum creatinine and estimated GFR.\n- Urinalysis and urine albumin-to-creatinine ratio.\n- Renal ultrasound if indicated.\n- Renal artery imaging if there is abrupt worsening, asymmetric kidneys, recurrent flash pulmonary edema, unexplained renal dysfunction, or a significant creatinine rise after ACE-inhibitor therapy.\n\n### Other causes\n\nDepending on clinical features, evaluate for:\n\n- Obstructive sleep apnea.\n- Thyroid disease: TSH.\n- Pheochromocytoma: plasma free or urinary fractionated metanephrines only when clinically suspected.\n- Cushing syndrome.\n- Coarctation, usually unlikely to present for the first time at 68 years.\n\n## 4. Optimize the drug regimen\n\nThe regimen should be reviewed by a hypertension specialist. Important points are:\n\n### Ensure adequate diuresis\n\nIndapamide is an appropriate thiazide-like diuretic, but if renal function is reduced\u2014particularly if eGFR is below approximately **30 mL/min/1.73 m\u00b2**\u2014a loop diuretic may be more effective.\n\nIf volume overload or reduced renal function is present, consider a long-acting loop diuretic such as torsemide, with dosing individualized to renal function and volume status.\n\n### Add a mineralocorticoid-receptor antagonist\n\nIf potassium and renal function permit, the usual preferred fourth-line agent is:\n\n- **Spironolactone, approximately 12.5\u201325 mg once daily initially**, titrating after roughly **2\u20134 weeks** to **25\u201350 mg/day** if necessary and tolerated.\n\nMonitor:\n\n- Potassium and creatinine at baseline,\n- again after approximately **3\u20137 days** in high-risk patients,\n- at approximately **1 month**,\n- then every **1\u20133 months** during titration and periodically thereafter.\n\nAvoid or use extreme caution if:\n\n- potassium is already high, roughly **\u22654.5\u20135.0 mmol/L** depending on local protocol,\n- eGFR is below approximately **30 mL/min/1.73 m\u00b2**,\n- there is substantial renal instability,\n- or the patient",
+    "latency_ms": 7605.4,
+    "input_tokens": 142,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A 68 year-old male with resistant hypertension is already medicated with perindopril, indapamide, amlodipine, bisoprolol and rilmenidine at full dose, yet his blood pressure continues to be too high in the ABMP exam. He is asymptomatic. What should the approach be towards this patient's hypertension?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "This is **apparent resistant hypertension**\u2014blood pressure above target despite approximately **5 antihypertensive agents**, including a renin\u2013angiotensin system blocker, a thiazide-like diuretic, and a calcium-channel blocker. It should be managed systematically rather than by simply adding more drugs.\n\n## 1. Confirm that hypertension is truly resistant\n\nBefore intensifying treatment:\n\n- **Repeat ambulatory blood-pressure monitoring (ABPM)** to confirm persistent elevation and exclude:\n  - inadequate recording or cuff size,\n  - isolated daytime or nocturnal hypertension,\n  - white-coat effect,\n  - poor adherence.\n- Review the ABPM details:\n  - 24-hour mean BP,\n  - daytime and nighttime BP,\n  - nocturnal dipping pattern,\n  - pulse pressure.\n- Confirm correct office technique: seated for **5 minutes**, back supported, feet on the floor, arm at heart level, and use of a validated cuff.\n- Check adherence nonjudgmentally. Pharmacy refill records, pill counts, or\u2014where available\u2014drug/metabolite assays may be useful. Complex regimens and adverse effects commonly reduce adherence.\n\nA typical target for a 68-year-old, if tolerated, is approximately **<130\u2013135/80\u201385 mmHg**, but the precise target should be individualized according to frailty, orthostatic symptoms, renal function, and comorbidity. Avoid excessive lowering, particularly if standing systolic BP falls below roughly **110\u2013120 mmHg** or symptoms develop.\n\n## 2. Look for reversible contributors\n\nAssess for:\n\n- Excess dietary sodium, usually aiming for approximately **<2 g sodium/day**, equivalent to about **5 g salt/day**.\n- Obesity, inactivity, heavy alcohol intake, and high caffeine intake.\n- NSAIDs, corticosteroids, sympathomimetics/decongestants, stimulants, erythropoietin, testosterone, licorice, calcineurin inhibitors, and some antidepressants.\n- Obstructive sleep apnea, especially with snoring, witnessed apneas, obesity, or daytime sleepiness.\n- Excessive alcohol: ideally no more than about **2 standard drinks/day**, and preferably less.\n- Orthostatic hypotension and falls risk.\n\n## 3. Screen for secondary hypertension\n\nAt this degree of treatment resistance, secondary causes should be actively investigated.\n\n### Primary aldosteronism\nThis is particularly important even without hypokalemia.\n\n- Measure plasma aldosterone and renin and calculate the aldosterone\u2013renin ratio.\n- Correct potassium first if low.\n- Interpretation is affected by beta-blockers, ACE inhibitors, diuretics, and other drugs, so testing should be coordinated with a hypertension/endocrine specialist.\n- If positive, confirmatory testing and adrenal imaging or adrenal-vein sampling may be required.\n\n### Kidney disease and renovascular disease\n\nCheck:\n\n- Serum creatinine and estimated GFR.\n- Urinalysis and urine albumin-to-creatinine ratio.\n- Renal ultrasound if indicated.\n- Renal artery imaging if there is abrupt worsening, asymmetric kidneys, recurrent flash pulmonary edema, unexplained renal dysfunction, or a significant creatinine rise after ACE-inhibitor therapy.\n\n### Other causes\n\nDepending on clinical features, evaluate for:\n\n- Obstructive sleep apnea.\n- Thyroid disease: TSH.\n- Pheochromocytoma: plasma free or urinary fractionated metanephrines only when clinically suspected.\n- Cushing syndrome.\n- Coarctation, usually unlikely to present for the first time at 68 years.\n\n## 4. Optimize the drug regimen\n\nThe regimen should be reviewed by a hypertension specialist. Important points are:\n\n### Ensure adequate diuresis\n\nIndapamide is an appropriate thiazide-like diuretic, but if renal function is reduced\u2014particularly if eGFR is below approximately **30 mL/min/1.73 m\u00b2**\u2014a loop diuretic may be more effective.\n\nIf volume overload or reduced renal function is present, consider a long-acting loop diuretic such as torsemide, with dosing individualized to renal function and volume status.\n\n### Add a mineralocorticoid-receptor antagonist\n\nIf potassium and renal function permit, the usual preferred fourth-line agent is:\n\n- **Spironolactone, approximately 12.5\u201325 mg once daily initially**, titrating after roughly **2\u20134 weeks** to **25\u201350 mg/day** if necessary and tolerated.\n\nMonitor:\n\n- Potassium and creatinine at baseline,\n- again after approximately **3\u20137 days** in high-risk patients,\n- at approximately **1 month**,\n- then every **1\u20133 months** during titration and periodically thereafter.\n\nAvoid or use extreme caution if:\n\n- potassium is already high, roughly **\u22654.5\u20135.0 mmol/L** depending on local protocol,\n- eGFR is below approximately **30 mL/min/1.73 m\u00b2**,\n- there is substantial renal instability,\n- or the patient",
+    "latency_ms": 7605.4,
+    "token_count": 1166,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "1f130619d255",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230167.2100813,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 14 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 7605.4,
+        "token_count": 1166,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.146; flagged=True"
+}

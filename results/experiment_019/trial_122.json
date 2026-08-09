@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-09T00:08:42.135607+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What cardiac condition affects neonates born to diabetic mothers?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Paediatrics",
+    "question_type": "Directed question that has a single unambiguous answer| Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Neonates born to mothers with diabetes\u2014especially poorly controlled pregestational diabetes\u2014are at increased risk of **hypertrophic cardiomyopathy (HCM)**, most commonly **asymmetric septal hypertrophy**.\n\n- The **interventricular septum** and sometimes the ventricular free walls become thickened due to fetal hyperinsulinemia.\n- This can cause **left-ventricular outflow tract obstruction**, resembling hypertrophic obstructive cardiomyopathy, leading to a systolic murmur, tachypnea, poor feeding, or heart failure in more severe cases.\n- It is usually **transient** and often improves over the first **weeks to months** of life as insulin levels normalize; many cases resolve by about **6\u201312 months**.\n- Infants of diabetic mothers also have an increased risk of congenital heart defects, particularly **transposition of the great arteries**, ventricular septal defects, and other outflow-tract anomalies.",
+    "latency_ms": 3336.5,
+    "input_tokens": 83,
+    "output_tokens": 199
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What cardiac condition affects neonates born to diabetic mothers?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Neonates born to mothers with diabetes\u2014especially poorly controlled pregestational diabetes\u2014are at increased risk of **hypertrophic cardiomyopathy (HCM)**, most commonly **asymmetric septal hypertrophy**.\n\n- The **interventricular septum** and sometimes the ventricular free walls become thickened due to fetal hyperinsulinemia.\n- This can cause **left-ventricular outflow tract obstruction**, resembling hypertrophic obstructive cardiomyopathy, leading to a systolic murmur, tachypnea, poor feeding, or heart failure in more severe cases.\n- It is usually **transient** and often improves over the first **weeks to months** of life as insulin levels normalize; many cases resolve by about **6\u201312 months**.\n- Infants of diabetic mothers also have an increased risk of congenital heart defects, particularly **transposition of the great arteries**, ventricular septal defects, and other outflow-tract anomalies.",
+    "latency_ms": 3336.5,
+    "token_count": 282,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "d73335ecb9b0",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234122.1348057,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3336.5,
+        "token_count": 282,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.122; flagged=False"
+}

@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:08:12.116249+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "A married couple have two minor children aged 8 and 10. Upon divorce the wife files for maintenance from the husband. How will the maintenance amount be determined?",
+    "field": "Law",
+    "specific_field": "Family Law",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "The exact amount depends heavily on the country/state and the parties\u2019 financial circumstances, but courts generally determine maintenance for a spouse and minor children by assessing **need, ability to pay, and the children\u2019s best interests**.\n\nFor an 8-year-old and a 10-year-old, the court will usually consider both:\n\n1. **Child maintenance/support** for the two children; and  \n2. **Spousal maintenance/alimony** for the wife, if she cannot reasonably meet her own needs.\n\n## 1. Information the court will examine\n\nThe court will typically require financial disclosure from both spouses, including:\n\n- Monthly gross and net income, salary, bonuses, commissions, overtime, business income, rental income, pensions, investments, and other benefits.\n- Tax returns, payslips, bank statements, employer records, company accounts, and asset disclosures.\n- Each parent\u2019s regular monthly expenses.\n- The children\u2019s actual and anticipated expenses.\n- Existing debts and legally required payments.\n- Health insurance, housing, school fees, childcare, transport, medical costs, and special needs.\n- The standard of living the family enjoyed before separation.\n- How much time the children spend with each parent.\n- Each spouse\u2019s earning capacity\u2014not merely current earnings. A court may attribute (\u201cimpute\u201d) income to a parent who is deliberately unemployed or underemployed.\n\n## 2. Child maintenance for the two children\n\nChild support is normally calculated separately from the wife\u2019s own maintenance claim. It is intended to cover the children\u2019s reasonable costs, such as:\n\n- Food and clothing;\n- Housing and utilities;\n- School fees, books, uniforms, tutoring, and extracurricular activities;\n- Medical insurance, doctors, dental care, medication, and therapy;\n- Childcare or after-school care;\n- Transport;\n- Recreation and age-appropriate personal expenses.\n\nBecause the children are only **8 and 10**, their needs remain significant for many years. In most legal systems, support continues at least until age **18**, and may continue beyond 18 if the child is still in secondary school, dependent, disabled, or pursuing approved education.\n\n### Common percentage-based approaches\n\nSome jurisdictions use statutory guidelines based on the paying parent\u2019s income. Although the figures vary by location, guideline systems often produce a combined amount in the range of approximately:\n\n- **20% to 25% of net income for one child**;\n- **25% to 35% of net income for two children**;\n- **35% to 45% of net income for three children**.\n\nFor example, if the husband\u2019s net monthly income is approximately **$5,000**, a two-child guideline calculation in a jurisdiction using a **30%** rate might produce approximately **$1,500 per month** in child support, subject to adjustments for custody time, insurance, childcare, and other factors.\n\nHowever, this is only an illustration. Some places use detailed income-share tables rather than a fixed percentage. In an income-share system, the court estimates what the parents would have spent on the children if they remained together, then divides that amount between the parents in proportion to their incomes.\n\n### Shared-care adjustment\n\nIf the husband has substantial overnight care\u2014for example, roughly **35% to 50%** of overnight time\u2014the child-support amount may be reduced because he directly meets part of the children\u2019s expenses while they are with him. A parent with only alternate-weekend contact, often around **10% to 20%** of overnights, usually receives a much smaller adjustment, if any.\n\nThe court may also order separate payments for major expenses, such as:\n\n- **50%/50%** of uncovered medical expenses;\n- A proportionate share of school fees, often based on income;\n- Childcare costs;\n- Extraordinary educational, medical, or disability-related expenses.\n\nFor instance, if the husband earns approximately **70%** of the parents\u2019 combined income and the wife earns approximately **30%**, the court may order him to pay roughly **70%** of uninsured medical, school, or childcare expenses, in addition to ordinary monthly support.\n\n## 3. Maintenance for the wife\n\nSpousal maintenance is not automatic in every divorce. It usually depends on whether the wife has a genuine financial need and whether the husband has the ability to contribute after meeting reasonable expenses and child-support obligations.\n\nRelevant factors commonly include:\n\n- Length of the marriage;\n- Wife\u2019s age, health, education, work history, and earning capacity;\n- Whether she gave up or reduced employment to care for the children;\n- Time reasonably needed for her to obtain training, education, or employment;\n- Husband\u2019s income, assets, and realistic ability to pay;\n- The marital standard of living;\n- Each spouse\u2019s contributions to the marriage, including unpaid childcare and homemaking;\n- Any exceptional circumstances, such as illness, disability, or a child with special needs;\n- In some jurisdictions, marital misconduct may be relevant, but in many it is not.\n\n### Typical forms of spousal maintenance\n\nA court may award:\n\n-",
+    "latency_ms": 11781.4,
+    "input_tokens": 105,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A married couple have two minor children aged 8 and 10. Upon divorce the wife files for maintenance from the husband. How will the maintenance amount be determined?",
+      "field": "Law"
+    },
+    "response": "The exact amount depends heavily on the country/state and the parties\u2019 financial circumstances, but courts generally determine maintenance for a spouse and minor children by assessing **need, ability to pay, and the children\u2019s best interests**.\n\nFor an 8-year-old and a 10-year-old, the court will usually consider both:\n\n1. **Child maintenance/support** for the two children; and  \n2. **Spousal maintenance/alimony** for the wife, if she cannot reasonably meet her own needs.\n\n## 1. Information the court will examine\n\nThe court will typically require financial disclosure from both spouses, including:\n\n- Monthly gross and net income, salary, bonuses, commissions, overtime, business income, rental income, pensions, investments, and other benefits.\n- Tax returns, payslips, bank statements, employer records, company accounts, and asset disclosures.\n- Each parent\u2019s regular monthly expenses.\n- The children\u2019s actual and anticipated expenses.\n- Existing debts and legally required payments.\n- Health insurance, housing, school fees, childcare, transport, medical costs, and special needs.\n- The standard of living the family enjoyed before separation.\n- How much time the children spend with each parent.\n- Each spouse\u2019s earning capacity\u2014not merely current earnings. A court may attribute (\u201cimpute\u201d) income to a parent who is deliberately unemployed or underemployed.\n\n## 2. Child maintenance for the two children\n\nChild support is normally calculated separately from the wife\u2019s own maintenance claim. It is intended to cover the children\u2019s reasonable costs, such as:\n\n- Food and clothing;\n- Housing and utilities;\n- School fees, books, uniforms, tutoring, and extracurricular activities;\n- Medical insurance, doctors, dental care, medication, and therapy;\n- Childcare or after-school care;\n- Transport;\n- Recreation and age-appropriate personal expenses.\n\nBecause the children are only **8 and 10**, their needs remain significant for many years. In most legal systems, support continues at least until age **18**, and may continue beyond 18 if the child is still in secondary school, dependent, disabled, or pursuing approved education.\n\n### Common percentage-based approaches\n\nSome jurisdictions use statutory guidelines based on the paying parent\u2019s income. Although the figures vary by location, guideline systems often produce a combined amount in the range of approximately:\n\n- **20% to 25% of net income for one child**;\n- **25% to 35% of net income for two children**;\n- **35% to 45% of net income for three children**.\n\nFor example, if the husband\u2019s net monthly income is approximately **$5,000**, a two-child guideline calculation in a jurisdiction using a **30%** rate might produce approximately **$1,500 per month** in child support, subject to adjustments for custody time, insurance, childcare, and other factors.\n\nHowever, this is only an illustration. Some places use detailed income-share tables rather than a fixed percentage. In an income-share system, the court estimates what the parents would have spent on the children if they remained together, then divides that amount between the parents in proportion to their incomes.\n\n### Shared-care adjustment\n\nIf the husband has substantial overnight care\u2014for example, roughly **35% to 50%** of overnight time\u2014the child-support amount may be reduced because he directly meets part of the children\u2019s expenses while they are with him. A parent with only alternate-weekend contact, often around **10% to 20%** of overnights, usually receives a much smaller adjustment, if any.\n\nThe court may also order separate payments for major expenses, such as:\n\n- **50%/50%** of uncovered medical expenses;\n- A proportionate share of school fees, often based on income;\n- Childcare costs;\n- Extraordinary educational, medical, or disability-related expenses.\n\nFor instance, if the husband earns approximately **70%** of the parents\u2019 combined income and the wife earns approximately **30%**, the court may order him to pay roughly **70%** of uninsured medical, school, or childcare expenses, in addition to ordinary monthly support.\n\n## 3. Maintenance for the wife\n\nSpousal maintenance is not automatic in every divorce. It usually depends on whether the wife has a genuine financial need and whether the husband has the ability to contribute after meeting reasonable expenses and child-support obligations.\n\nRelevant factors commonly include:\n\n- Length of the marriage;\n- Wife\u2019s age, health, education, work history, and earning capacity;\n- Whether she gave up or reduced employment to care for the children;\n- Time reasonably needed for her to obtain training, education, or employment;\n- Husband\u2019s income, assets, and realistic ability to pay;\n- The marital standard of living;\n- Each spouse\u2019s contributions to the marriage, including unpaid childcare and homemaking;\n- Any exceptional circumstances, such as illness, disability, or a child with special needs;\n- In some jurisdictions, marital misconduct may be relevant, but in many it is not.\n\n### Typical forms of spousal maintenance\n\nA court may award:\n\n-",
+    "latency_ms": 11781.4,
+    "token_count": 1129,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "90530b258a6f",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234092.1153815,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 14 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4267,
+          "evidence": [
+            "Latency 11781ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11781.4,
+        "token_count": 1129,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.119; flagged=True"
+}

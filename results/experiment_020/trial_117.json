@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:49:51.954398+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "A 20 year old male is suffering severe headaches with visual disturbances. Is it likely to be a brain tumour?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "oncology",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Headaches with Visual Disturbances in a 20-Year-Old Male\n\n**Short answer: It's possible but statistically unlikely.** In young adults, this symptom combination is far more commonly caused by benign conditions\u2014particularly migraine with aura\u2014than by a brain tumor.\n\n## Statistical Context\n\n- Primary brain tumors have an annual incidence of only about **6-7 per 100,000 people**, and they're even less common in the 20-24 age bracket than in older adults\n- Migraine with aura, by contrast, affects roughly **4-6% of the general population**, with visual auras being the most common type\n- In emergency department studies of patients presenting with headache, brain tumors are found in only approximately **0.1-1%** of cases overall\n\n## More Likely Causes\n\n1. **Migraine with aura** (most likely) - visual disturbances (scintillating scotomas, zigzag lines, blind spots) typically last **20-60 minutes**, often followed by throbbing, usually unilateral headache\n2. **Tension-type headache** - rarely causes true visual disturbance but very common (up to **70-80%** lifetime prevalence)\n3. **Cluster headache** - less common but occurs mostly in men aged 20-40\n4. **Ocular issues** - uncorrected refractive errors, eye strain\n5. **Idiopathic intracranial hypertension (pseudotumor cerebri)** - more common in obese females but can occur in males; causes headache + visual changes + papilledema\n\n## Red Flags That WOULD Increase Concern for Tumor\n\nSeek urgent medical evaluation if there is:\n- Headache that is **progressively worsening** over days/weeks\n- Headache waking him from sleep or worst in early morning\n- Vomiting, especially without nausea\n- New onset seizures\n- Personality/cognitive changes\n- Progressive, persistent visual field loss (not transient)\n- Focal neurological signs (weakness, numbness, ataxia, cranial nerve palsies)\n- Headache significantly worse with coughing/straining/lying down\n- No history of similar headaches previously\n- Age-inappropriate \"first or worst\" headache\n\n## Recommended Approach\n\n1. **Clinical history** - detailed characterization of headache (onset, duration, triggers, associated symptoms) and visual symptoms (transient vs. persistent, monocular vs. binocular, specific visual field involved)\n2. **Fundoscopic exam** - check for papilledema\n3. **Neurological examination** - full cranial nerve and motor/sensory exam\n4. **Visual field testing**\n5. **MRI brain with contrast** - the gold standard imaging if any red flags present; more sensitive than CT for tumors (sensitivity **~90-95%** vs CT's **~70-80%** for smaller lesions)\n6. **Blood pressure check** - malignant hypertension can cause similar symptoms\n\n## Bottom Line\n\nWithout red flag features, this presentation is most consistent with migraine with aura. However, given that visual disturbance is one of the more concerning \"alarm\" symptoms in headache presentations, **in-person cl",
+    "latency_ms": 12350.3,
+    "input_tokens": 148,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A 20 year old male is suffering severe headaches with visual disturbances. Is it likely to be a brain tumour?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Headaches with Visual Disturbances in a 20-Year-Old Male\n\n**Short answer: It's possible but statistically unlikely.** In young adults, this symptom combination is far more commonly caused by benign conditions\u2014particularly migraine with aura\u2014than by a brain tumor.\n\n## Statistical Context\n\n- Primary brain tumors have an annual incidence of only about **6-7 per 100,000 people**, and they're even less common in the 20-24 age bracket than in older adults\n- Migraine with aura, by contrast, affects roughly **4-6% of the general population**, with visual auras being the most common type\n- In emergency department studies of patients presenting with headache, brain tumors are found in only approximately **0.1-1%** of cases overall\n\n## More Likely Causes\n\n1. **Migraine with aura** (most likely) - visual disturbances (scintillating scotomas, zigzag lines, blind spots) typically last **20-60 minutes**, often followed by throbbing, usually unilateral headache\n2. **Tension-type headache** - rarely causes true visual disturbance but very common (up to **70-80%** lifetime prevalence)\n3. **Cluster headache** - less common but occurs mostly in men aged 20-40\n4. **Ocular issues** - uncorrected refractive errors, eye strain\n5. **Idiopathic intracranial hypertension (pseudotumor cerebri)** - more common in obese females but can occur in males; causes headache + visual changes + papilledema\n\n## Red Flags That WOULD Increase Concern for Tumor\n\nSeek urgent medical evaluation if there is:\n- Headache that is **progressively worsening** over days/weeks\n- Headache waking him from sleep or worst in early morning\n- Vomiting, especially without nausea\n- New onset seizures\n- Personality/cognitive changes\n- Progressive, persistent visual field loss (not transient)\n- Focal neurological signs (weakness, numbness, ataxia, cranial nerve palsies)\n- Headache significantly worse with coughing/straining/lying down\n- No history of similar headaches previously\n- Age-inappropriate \"first or worst\" headache\n\n## Recommended Approach\n\n1. **Clinical history** - detailed characterization of headache (onset, duration, triggers, associated symptoms) and visual symptoms (transient vs. persistent, monocular vs. binocular, specific visual field involved)\n2. **Fundoscopic exam** - check for papilledema\n3. **Neurological examination** - full cranial nerve and motor/sensory exam\n4. **Visual field testing**\n5. **MRI brain with contrast** - the gold standard imaging if any red flags present; more sensitive than CT for tumors (sensitivity **~90-95%** vs CT's **~70-80%** for smaller lesions)\n6. **Blood pressure check** - malignant hypertension can cause similar symptoms\n\n## Bottom Line\n\nWithout red flag features, this presentation is most consistent with migraine with aura. However, given that visual disturbance is one of the more concerning \"alarm\" symptoms in headache presentations, **in-person cl",
+    "latency_ms": 12350.3,
+    "token_count": 1172,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "40b1f93ba28d",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240191.953627,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 14 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4353,
+          "evidence": [
+            "Latency 12350ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12350.3,
+        "token_count": 1172,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.117; flagged=True"
+}

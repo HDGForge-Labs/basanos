@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T00:02:47.282692+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What the exact differences are between the male and the female brain?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "psychiatrist",
+    "question_type": "Summarization of information on a topic| Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Male and female brains are more similar than different. There is no single \u201cmale brain\u201d or \u201cfemale brain\u201d: most brain traits overlap heavily between sexes, and an individual brain is a mosaic of features rather than fitting one category.\n\nThat said, average sex differences do exist, driven by chromosomes, prenatal hormones, puberty hormones, body size, and life experience.\n\n### Anatomical averages\n\n- **Total brain volume:** Male brains are, on average, about **10\u201312% larger in volume** and heavier, largely tracking average differences in body size. This does **not** mean higher intelligence.\n- **Cortical thickness:** Females tend, on average, to have a **slightly thicker cerebral cortex** in many regions; males tend to have greater cortical surface area. These are different ways of achieving similar overall cognitive capacity.\n- **Gray and white matter:** Males average somewhat more total white-matter volume; females often show relatively higher gray-matter proportion in certain cortical and subcortical areas. Exact findings vary substantially with age and how brain size is adjusted.\n- **Amygdala and hippocampus:** On average, males have larger absolute amygdala volume, while findings for the hippocampus are mixed after adjusting for total brain size. Neither measure predicts a simple trait such as \u201cemotionality\u201d or \u201cmemory ability.\u201d\n- **Hypothalamus:** Some hypothalamic nuclei involved in reproductive behavior and hormone regulation show reliable sex differences in average size, cell number, receptor expression, and connectivity. These are among the clearest biological sex differences in the brain.\n- **Connectivity:** Some studies find that females, on average, show relatively more cross-hemisphere connectivity and males relatively more within-hemisphere connectivity, but the effects are small, methods-sensitive, and not useful for classifying an individual person.\n\n### Functional and cognitive averages\n\nThe average differences are generally modest compared with person-to-person variation.\n\n- **Verbal fluency and some verbal-memory tasks:** Females average slightly higher.\n- **Mental rotation and some spatial-navigation tasks:** Males average slightly higher.\n- **Processing speed, fine motor speed, and recognition of facial emotion:** Females often average slightly higher.\n- **Physical aggression, risk taking, and sensation seeking:** Males average higher, influenced by both testosterone and social/environmental factors.\n- **General intelligence:** Average IQ is essentially the same. Some datasets find greater male variability at the extremes in certain measures, but this is not a difference in average intelligence.\n\n### Hormones and development\n\n- **Prenatal testosterone** affects the development of sexually differentiated brain circuits, particularly in the hypothalamus, amygdala-related systems, and networks relevant to social behavior and sexual behavior.\n- **Estrogen, progesterone, and testosterone** continue to influence brain function through puberty and adulthood.\n- In females, hormonal changes across the menstrual cycle, pregnancy, postpartum period, and menopause can alter brain activity, mood regulation, sleep, pain sensitivity, and cognition modestly and variably.\n- In males, testosterone levels also influence mood, motivation, libido, muscle-related motor systems, and some aspects of spatial and reward processing.\n\n### Mental-health patterns\n\nThere are strong sex differences in rates of some conditions, but they are not caused by one isolated \u201cbrain difference.\u201d\n\n- **More common in females:** depression, anxiety disorders, PTSD, eating disorders, migraine, and autoimmune-associated neurological conditions.\n- **More common in males:** autism diagnoses, ADHD diagnoses, substance-use disorders, antisocial behavior, Parkinson\u2019s disease, and earlier-onset schizophrenia in many samples.\n- These differences reflect biology, development, exposure, diagnosis practices, and social factors together.\n\n### What cannot be concluded\n\nBrain scans cannot reliably tell whether an individual is male or female in any meaningful psychological sense, nor can anatomy determine personality, talent, sexual orientation, gender identity, empathy, mathematical ability, or parenting ability. The largest differences between two people are usually individual differences\u2014not their sex.\n\nIn short: male and female brains differ most clearly in hormone-sensitive reproductive and neuroendocrine circuits, and they show small average differences in size, structure, connectivity, cognition, and disease risk. But the overlap is extensive, and neither sex has a globally \u201cbetter,\u201d more logical, more emotional, or more intelligent brain.",
+    "latency_ms": 12806.7,
+    "input_tokens": 91,
+    "output_tokens": 874
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What the exact differences are between the male and the female brain?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Male and female brains are more similar than different. There is no single \u201cmale brain\u201d or \u201cfemale brain\u201d: most brain traits overlap heavily between sexes, and an individual brain is a mosaic of features rather than fitting one category.\n\nThat said, average sex differences do exist, driven by chromosomes, prenatal hormones, puberty hormones, body size, and life experience.\n\n### Anatomical averages\n\n- **Total brain volume:** Male brains are, on average, about **10\u201312% larger in volume** and heavier, largely tracking average differences in body size. This does **not** mean higher intelligence.\n- **Cortical thickness:** Females tend, on average, to have a **slightly thicker cerebral cortex** in many regions; males tend to have greater cortical surface area. These are different ways of achieving similar overall cognitive capacity.\n- **Gray and white matter:** Males average somewhat more total white-matter volume; females often show relatively higher gray-matter proportion in certain cortical and subcortical areas. Exact findings vary substantially with age and how brain size is adjusted.\n- **Amygdala and hippocampus:** On average, males have larger absolute amygdala volume, while findings for the hippocampus are mixed after adjusting for total brain size. Neither measure predicts a simple trait such as \u201cemotionality\u201d or \u201cmemory ability.\u201d\n- **Hypothalamus:** Some hypothalamic nuclei involved in reproductive behavior and hormone regulation show reliable sex differences in average size, cell number, receptor expression, and connectivity. These are among the clearest biological sex differences in the brain.\n- **Connectivity:** Some studies find that females, on average, show relatively more cross-hemisphere connectivity and males relatively more within-hemisphere connectivity, but the effects are small, methods-sensitive, and not useful for classifying an individual person.\n\n### Functional and cognitive averages\n\nThe average differences are generally modest compared with person-to-person variation.\n\n- **Verbal fluency and some verbal-memory tasks:** Females average slightly higher.\n- **Mental rotation and some spatial-navigation tasks:** Males average slightly higher.\n- **Processing speed, fine motor speed, and recognition of facial emotion:** Females often average slightly higher.\n- **Physical aggression, risk taking, and sensation seeking:** Males average higher, influenced by both testosterone and social/environmental factors.\n- **General intelligence:** Average IQ is essentially the same. Some datasets find greater male variability at the extremes in certain measures, but this is not a difference in average intelligence.\n\n### Hormones and development\n\n- **Prenatal testosterone** affects the development of sexually differentiated brain circuits, particularly in the hypothalamus, amygdala-related systems, and networks relevant to social behavior and sexual behavior.\n- **Estrogen, progesterone, and testosterone** continue to influence brain function through puberty and adulthood.\n- In females, hormonal changes across the menstrual cycle, pregnancy, postpartum period, and menopause can alter brain activity, mood regulation, sleep, pain sensitivity, and cognition modestly and variably.\n- In males, testosterone levels also influence mood, motivation, libido, muscle-related motor systems, and some aspects of spatial and reward processing.\n\n### Mental-health patterns\n\nThere are strong sex differences in rates of some conditions, but they are not caused by one isolated \u201cbrain difference.\u201d\n\n- **More common in females:** depression, anxiety disorders, PTSD, eating disorders, migraine, and autoimmune-associated neurological conditions.\n- **More common in males:** autism diagnoses, ADHD diagnoses, substance-use disorders, antisocial behavior, Parkinson\u2019s disease, and earlier-onset schizophrenia in many samples.\n- These differences reflect biology, development, exposure, diagnosis practices, and social factors together.\n\n### What cannot be concluded\n\nBrain scans cannot reliably tell whether an individual is male or female in any meaningful psychological sense, nor can anatomy determine personality, talent, sexual orientation, gender identity, empathy, mathematical ability, or parenting ability. The largest differences between two people are usually individual differences\u2014not their sex.\n\nIn short: male and female brains differ most clearly in hormone-sensitive reproductive and neuroendocrine circuits, and they show small average differences in size, structure, connectivity, cognition, and disease risk. But the overlap is extensive, and neither sex has a globally \u201cbetter,\u201d more logical, more emotional, or more intelligent brain.",
+    "latency_ms": 12806.7,
+    "token_count": 965
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "19a7f4ec72da",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786233767.2818425,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4421,
+          "evidence": [
+            "Latency 12807ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12806.7,
+        "token_count": 965,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.81; flagged=False"
+}

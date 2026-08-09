@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:07:35.517616+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Imagine a patient presents with high grade fever. All the investigations done are negative and we are unable to find the cause of the fever. What could it be?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "acute medicine",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "A high-grade fever with initially negative investigations can be **fever of unknown origin (FUO)**, but it is a **clinical description rather than a diagnosis**. Classically, FUO means a temperature of **\u226538.3\u00b0C (101\u00b0F) on several occasions**, lasting **more than 3 weeks**, with no diagnosis after appropriate evaluation\u2014though shorter-duration fever can still require urgent assessment.\n\n## Important possibilities\n\n### 1. Infection not detected by initial tests\n- **Viral infections:** influenza, COVID-19, EBV, CMV, acute HIV, viral hepatitis, dengue, chikungunya, and others.\n- **Occult bacterial infection:**  \n  - Endocarditis, sometimes with repeatedly negative blood cultures  \n  - Deep abscesses in the liver, abdomen, pelvis, or spine  \n  - Tuberculosis, including extrapulmonary TB  \n  - Urinary, dental, sinus, bone, or joint infection  \n  - Malaria or other travel-related infections\n- A negative test does not always exclude infection. For example, blood cultures can be negative after antibiotics, with low bacterial counts, or with organisms that are difficult to grow.\n\n### 2. Autoimmune or inflammatory disease\nExamples include:\n- Adult-onset Still\u2019s disease\n- Systemic lupus erythematosus\n- Vasculitis, including temporal arteritis or polyarteritis nodosa\n- Rheumatoid or other inflammatory arthritis\n- Sarcoidosis\n- Inflammatory bowel disease\n\nFeatures such as an evanescent rash, joint pain, swollen lymph nodes, oral ulcers, abdominal symptoms, or very high ferritin\u2014sometimes **above approximately 1,000\u201310,000 ng/mL**\u2014may provide clues, although ferritin is not diagnostic by itself.\n\n### 3. Cancer or blood disorders\n- Lymphoma\n- Leukemia\n- Kidney, liver, or other solid tumors\n- Occasionally, fever is the first sign of malignancy, particularly when accompanied by weight loss, night sweats, enlarged lymph nodes, anemia, or abnormal blood counts.\n\n### 4. Drug-related fever\nAlmost any medication can cause fever, including:\n- Antibiotics such as beta-lactams or sulfonamides\n- Anticonvulsants\n- Allopurinol\n- Heparin\n- Some anti-inflammatory, immunologic, or cancer therapies\n\nDrug fever often occurs **about 7\u201310 days** after starting a medication, but it can occur sooner or after several weeks. A complete review should include over-the-counter drugs, supplements, injections, and recreational substances.\n\n### 5. Thromboembolic or other noninfectious causes\n- Pulmonary embolism or deep-vein thrombosis\n- Thyroid storm\n- Heat illness\n- Neurogenic fever\n- Pancreatitis\n- Tissue infarction or hematoma\n\n### 6. False or inaccurately measured fever\nThe measurement should be confirmed using a reliable thermometer. Fever can be misread because of faulty devices, improper technique, or differences between oral, axillary, tympanic, and rectal temperatures. Deliberate fever fabrication is uncommon but is considered only after medical causes are carefully excluded.\n\n## Red flags requiring urgent or emergency care\n\nImmediate assessment is needed for:\n- Temperature around **40\u00b0C (104\u00b0F) or higher**\n- Confusion, drowsiness, seizure, severe headache, stiff neck, or rash that does not blanch\n- Breathing difficulty, chest pain, low blood pressure, fainting, or a very rapid heart rate\n- Severe abdominal pain, persistent vomiting, dehydration, or reduced urine\n- Immunosuppression, recent chemotherapy, absent spleen, pregnancy, or significant heart disease\n- Any fever in an infant younger than **3 months**, especially **\u226538\u00b0C (100.4\u00b0F)**\n\nIn adults, fever lasting more than **3\u20135 days**, recurrent fever, or a temperature above approximately **39\u201340\u00b0C** warrants reassessment even if initial tests were normal.\n\n## Typical next steps\n\nA clinician may repeat or broaden the evaluation depending on the history and examination:\n\n- Serial temperature measurements and repeat physical examinations\n- Complete blood count with differential, blood film, liver and kidney tests, inflammatory markers such as CRP/ESR, ferritin, LDH, and urinalysis\n- **Two to three sets of blood cultures**, ideally before antibiotics if the patient is stable\n- Targeted testing for malaria, dengue, HIV, TB, EBV/CMV, COVID-19, influenza, or other infections based on exposure and geography\n- Chest radiograph and, when indicated, ultrasound or CT of the chest, abdomen, or pelvis\n- Echocardiography if endocarditis is suspected\n- Autoimmune testing guided by symptoms\u2014not indiscriminate broad panels\n- Review of all medications and recent procedures, travel, animal exposure, food, sexual exposure, dental problems, and occupational risks\n\nAntibiotics should not be started",
+    "latency_ms": 7361.2,
+    "input_tokens": 104,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Imagine a patient presents with high grade fever. All the investigations done are negative and we are unable to find the cause of the fever. What could it be?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "A high-grade fever with initially negative investigations can be **fever of unknown origin (FUO)**, but it is a **clinical description rather than a diagnosis**. Classically, FUO means a temperature of **\u226538.3\u00b0C (101\u00b0F) on several occasions**, lasting **more than 3 weeks**, with no diagnosis after appropriate evaluation\u2014though shorter-duration fever can still require urgent assessment.\n\n## Important possibilities\n\n### 1. Infection not detected by initial tests\n- **Viral infections:** influenza, COVID-19, EBV, CMV, acute HIV, viral hepatitis, dengue, chikungunya, and others.\n- **Occult bacterial infection:**  \n  - Endocarditis, sometimes with repeatedly negative blood cultures  \n  - Deep abscesses in the liver, abdomen, pelvis, or spine  \n  - Tuberculosis, including extrapulmonary TB  \n  - Urinary, dental, sinus, bone, or joint infection  \n  - Malaria or other travel-related infections\n- A negative test does not always exclude infection. For example, blood cultures can be negative after antibiotics, with low bacterial counts, or with organisms that are difficult to grow.\n\n### 2. Autoimmune or inflammatory disease\nExamples include:\n- Adult-onset Still\u2019s disease\n- Systemic lupus erythematosus\n- Vasculitis, including temporal arteritis or polyarteritis nodosa\n- Rheumatoid or other inflammatory arthritis\n- Sarcoidosis\n- Inflammatory bowel disease\n\nFeatures such as an evanescent rash, joint pain, swollen lymph nodes, oral ulcers, abdominal symptoms, or very high ferritin\u2014sometimes **above approximately 1,000\u201310,000 ng/mL**\u2014may provide clues, although ferritin is not diagnostic by itself.\n\n### 3. Cancer or blood disorders\n- Lymphoma\n- Leukemia\n- Kidney, liver, or other solid tumors\n- Occasionally, fever is the first sign of malignancy, particularly when accompanied by weight loss, night sweats, enlarged lymph nodes, anemia, or abnormal blood counts.\n\n### 4. Drug-related fever\nAlmost any medication can cause fever, including:\n- Antibiotics such as beta-lactams or sulfonamides\n- Anticonvulsants\n- Allopurinol\n- Heparin\n- Some anti-inflammatory, immunologic, or cancer therapies\n\nDrug fever often occurs **about 7\u201310 days** after starting a medication, but it can occur sooner or after several weeks. A complete review should include over-the-counter drugs, supplements, injections, and recreational substances.\n\n### 5. Thromboembolic or other noninfectious causes\n- Pulmonary embolism or deep-vein thrombosis\n- Thyroid storm\n- Heat illness\n- Neurogenic fever\n- Pancreatitis\n- Tissue infarction or hematoma\n\n### 6. False or inaccurately measured fever\nThe measurement should be confirmed using a reliable thermometer. Fever can be misread because of faulty devices, improper technique, or differences between oral, axillary, tympanic, and rectal temperatures. Deliberate fever fabrication is uncommon but is considered only after medical causes are carefully excluded.\n\n## Red flags requiring urgent or emergency care\n\nImmediate assessment is needed for:\n- Temperature around **40\u00b0C (104\u00b0F) or higher**\n- Confusion, drowsiness, seizure, severe headache, stiff neck, or rash that does not blanch\n- Breathing difficulty, chest pain, low blood pressure, fainting, or a very rapid heart rate\n- Severe abdominal pain, persistent vomiting, dehydration, or reduced urine\n- Immunosuppression, recent chemotherapy, absent spleen, pregnancy, or significant heart disease\n- Any fever in an infant younger than **3 months**, especially **\u226538\u00b0C (100.4\u00b0F)**\n\nIn adults, fever lasting more than **3\u20135 days**, recurrent fever, or a temperature above approximately **39\u201340\u00b0C** warrants reassessment even if initial tests were normal.\n\n## Typical next steps\n\nA clinician may repeat or broaden the evaluation depending on the history and examination:\n\n- Serial temperature measurements and repeat physical examinations\n- Complete blood count with differential, blood film, liver and kidney tests, inflammatory markers such as CRP/ESR, ferritin, LDH, and urinalysis\n- **Two to three sets of blood cultures**, ideally before antibiotics if the patient is stable\n- Targeted testing for malaria, dengue, HIV, TB, EBV/CMV, COVID-19, influenza, or other infections based on exposure and geography\n- Chest radiograph and, when indicated, ultrasound or CT of the chest, abdomen, or pelvis\n- Echocardiography if endocarditis is suspected\n- Autoimmune testing guided by symptoms\u2014not indiscriminate broad panels\n- Review of all medications and recent procedures, travel, animal exposure, food, sexual exposure, dental problems, and occupational risks\n\nAntibiotics should not be started",
+    "latency_ms": 7361.2,
+    "token_count": 1128,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "12082c8e24c9",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230455.516832,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 14 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 7361.2,
+        "token_count": 1128,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.193; flagged=True"
+}

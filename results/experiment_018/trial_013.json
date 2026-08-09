@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:52:41.563360+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "You are stood down from a bit breathing job due to a caller stating a DNAR is in place but around 30 minutes later it comes out that the patient choked, with the DNAR excluding reversible causes. With the patient not breathing for over 30 minutes, the family not wanting resuscitation, what is the best action course? ",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Ambulance ",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "This is a **medical emergency and a clinical governance issue**. The correct course is:\n\n1. **Immediately reassess the patient and obtain senior clinical support.**  \n   Contact your control room/clinical desk and request an ambulance/advanced clinician if not already present. The original \u201cDNAR\u201d information is not enough\u2014establish whether there is a valid, applicable DNACPR/ReSPECT decision and what exclusions or treatment recommendations it contains.\n\n2. **If choking caused the arrest, treat it as a reversible cause.**  \n   A DNACPR that excludes reversible causes generally does **not** mean \u201cdo not treat choking.\u201d Clear the airway if appropriate, using suction, laryngoscopy/airway equipment and removal of an obstructing object by a suitably trained clinician. Do not perform blind finger sweeps.\n\n3. **If the patient is unresponsive and not breathing normally, assess for cardiac arrest.**  \n   Follow local resuscitation protocol. In UK practice, a DNACPR decision may be overridden where:\n   - the arrest is due to a reversible cause specifically excluded by the decision;\n   - the decision is invalid, unavailable, or clearly does not apply;\n   - there is genuine uncertainty and immediate action is needed.\n\n   If the DNACPR is valid and clearly applies to the current event, do not commence CPR; provide airway management, oxygen/ventilation and other appropriate treatment in line with the documented plan. If choking is explicitly excluded as a reason to withhold CPR, commence CPR while seeking senior direction.\n\n4. **The elapsed 30 minutes does not by itself determine the decision.**  \n   It makes a successful outcome extremely unlikely, but it does not replace the need to apply the valid treatment decision and local protocol. If there is no pulse and no signs of life, the senior clinician should make and document the decision regarding resuscitation and termination.\n\n5. **The family cannot independently create or cancel a DNACPR.**  \n   Their wishes are important, but the legally and clinically operative decision is the patient\u2019s valid DNACPR/ReSPECT plan and the treating clinician\u2019s assessment. Explain calmly that the choking may be a reversible cause and that the team must follow the patient\u2019s documented plan and clinical protocol.\n\n6. **Document and report the incident.**  \n   Record the caller\u2019s information, timings, the DNACPR/ReSPECT wording and source, airway findings, interventions, family discussions, clinical advice sought, and the reason CPR was or was not undertaken. Submit an incident/clinical governance report, particularly because the crew was stood down on potentially incomplete or misleading information.\n\nIn practical terms: **do not simply accept the family\u2019s request to withhold treatment, and do not automatically withhold CPR because someone said \u201cDNAR.\u201d Verify the decision, recognise choking as a potentially excluded reversible cause, escalate immediately, and act according to the documented plan and your service\u2019s resuscitation policy.**",
+    "latency_ms": 5263.7,
+    "input_tokens": 148,
+    "output_tokens": 600
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "You are stood down from a bit breathing job due to a caller stating a DNAR is in place but around 30 minutes later it comes out that the patient choked, with the DNAR excluding reversible causes. With the patient not breathing for over 30 minutes, the family not wanting resuscitation, what is the best action course? ",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "This is a **medical emergency and a clinical governance issue**. The correct course is:\n\n1. **Immediately reassess the patient and obtain senior clinical support.**  \n   Contact your control room/clinical desk and request an ambulance/advanced clinician if not already present. The original \u201cDNAR\u201d information is not enough\u2014establish whether there is a valid, applicable DNACPR/ReSPECT decision and what exclusions or treatment recommendations it contains.\n\n2. **If choking caused the arrest, treat it as a reversible cause.**  \n   A DNACPR that excludes reversible causes generally does **not** mean \u201cdo not treat choking.\u201d Clear the airway if appropriate, using suction, laryngoscopy/airway equipment and removal of an obstructing object by a suitably trained clinician. Do not perform blind finger sweeps.\n\n3. **If the patient is unresponsive and not breathing normally, assess for cardiac arrest.**  \n   Follow local resuscitation protocol. In UK practice, a DNACPR decision may be overridden where:\n   - the arrest is due to a reversible cause specifically excluded by the decision;\n   - the decision is invalid, unavailable, or clearly does not apply;\n   - there is genuine uncertainty and immediate action is needed.\n\n   If the DNACPR is valid and clearly applies to the current event, do not commence CPR; provide airway management, oxygen/ventilation and other appropriate treatment in line with the documented plan. If choking is explicitly excluded as a reason to withhold CPR, commence CPR while seeking senior direction.\n\n4. **The elapsed 30 minutes does not by itself determine the decision.**  \n   It makes a successful outcome extremely unlikely, but it does not replace the need to apply the valid treatment decision and local protocol. If there is no pulse and no signs of life, the senior clinician should make and document the decision regarding resuscitation and termination.\n\n5. **The family cannot independently create or cancel a DNACPR.**  \n   Their wishes are important, but the legally and clinically operative decision is the patient\u2019s valid DNACPR/ReSPECT plan and the treating clinician\u2019s assessment. Explain calmly that the choking may be a reversible cause and that the team must follow the patient\u2019s documented plan and clinical protocol.\n\n6. **Document and report the incident.**  \n   Record the caller\u2019s information, timings, the DNACPR/ReSPECT wording and source, airway findings, interventions, family discussions, clinical advice sought, and the reason CPR was or was not undertaken. Submit an incident/clinical governance report, particularly because the crew was stood down on potentially incomplete or misleading information.\n\nIn practical terms: **do not simply accept the family\u2019s request to withhold treatment, and do not automatically withhold CPR because someone said \u201cDNAR.\u201d Verify the decision, recognise choking as a potentially excluded reversible cause, escalate immediately, and act according to the documented plan and your service\u2019s resuscitation policy.**",
+    "latency_ms": 5263.7,
+    "token_count": 748
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "6ea2ac7e7a43",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229561.5626175,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 5263.7,
+        "token_count": 748,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.13; flagged=False"
+}

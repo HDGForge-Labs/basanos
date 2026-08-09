@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:54:47.488043+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "If an obese patient who wants to lose weight goes to the doctor's office, what would be the first steps to follow?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General medicine",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Initial Steps for Obesity Management in a Doctor's Office\n\n## 1. Comprehensive Assessment (First Visit)\n\n**Anthropometric Measurements**\n- **BMI calculation**: Obesity is typically defined as BMI \u226530 kg/m\u00b2, with further classification:\n  - Class I: BMI 30-34.9\n  - Class II: BMI 35-39.9\n  - Class III: BMI \u226540 (sometimes called \"severe obesity\")\n- **Waist circumference**: Increased cardiometabolic risk if >40 inches (102 cm) in men or >35 inches (88 cm) in women\n- **Waist-to-hip ratio**: Risk increases above approximately 0.90 in men and 0.85 in women\n\n**Vital Signs & Basic Screening**\n- Blood pressure (hypertension defined as \u2265130/80 mmHg per many current guidelines)\n- Heart rate\n- Weight trend over time (has patient gained roughly 5-10% in the past year?)\n\n## 2. Laboratory Workup\n\nTypically ordered at baseline:\n- **Fasting glucose and HbA1c**: Prediabetes = HbA1c 5.7-6.4%; diabetes \u22656.5%\n- **Lipid panel**: LDL, HDL, triglycerides (triglycerides \u2265150 mg/dL suggests metabolic syndrome)\n- **Liver function tests**: Screen for fatty liver disease (present in roughly 60-90% of obese patients)\n- **TSH**: Rule out hypothyroidism as contributing factor (found in only about 2-5% of obesity cases, but easy to screen)\n- **Basic metabolic panel**: Kidney function, electrolytes\n\n## 3. History Taking\n\n- **Weight history**: Age of onset, previous weight loss attempts, lowest/highest adult weight\n- **Dietary patterns**: Typical caloric intake (often patients underestimate by 20-50%)\n- **Physical activity level**: Current minutes/week of exercise\n- **Medication review**: Many drugs cause weight gain (e.g., certain antidepressants, corticosteroids, insulin, beta-blockers) \u2014 potentially contributing 5-10 lbs or more\n- **Sleep patterns**: Screen for sleep apnea (affects an estimated 40-70% of obese individuals)\n- **Psychosocial factors**: Depression, anxiety, binge eating disorder (present in roughly 5-10% of obese patients seeking treatment)\n- **Family history**: Genetic predisposition to obesity, diabetes, cardiovascular disease\n\n## 4. Setting Realistic Goals\n\n- Initial target: **5-10% body weight loss**, shown to significantly improve blood pressure, glucose control, and lipids\n- Timeline: Gradual loss of **1-2 lbs (0.5-1 kg) per week** is the standard safe recommendation\n- Avoid unrealistic expectations\u2014rapid loss (>3 lbs/week) is generally discouraged outside medical supervision\n\n## 5.",
+    "latency_ms": 10954.6,
+    "input_tokens": 145,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "If an obese patient who wants to lose weight goes to the doctor's office, what would be the first steps to follow?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Initial Steps for Obesity Management in a Doctor's Office\n\n## 1. Comprehensive Assessment (First Visit)\n\n**Anthropometric Measurements**\n- **BMI calculation**: Obesity is typically defined as BMI \u226530 kg/m\u00b2, with further classification:\n  - Class I: BMI 30-34.9\n  - Class II: BMI 35-39.9\n  - Class III: BMI \u226540 (sometimes called \"severe obesity\")\n- **Waist circumference**: Increased cardiometabolic risk if >40 inches (102 cm) in men or >35 inches (88 cm) in women\n- **Waist-to-hip ratio**: Risk increases above approximately 0.90 in men and 0.85 in women\n\n**Vital Signs & Basic Screening**\n- Blood pressure (hypertension defined as \u2265130/80 mmHg per many current guidelines)\n- Heart rate\n- Weight trend over time (has patient gained roughly 5-10% in the past year?)\n\n## 2. Laboratory Workup\n\nTypically ordered at baseline:\n- **Fasting glucose and HbA1c**: Prediabetes = HbA1c 5.7-6.4%; diabetes \u22656.5%\n- **Lipid panel**: LDL, HDL, triglycerides (triglycerides \u2265150 mg/dL suggests metabolic syndrome)\n- **Liver function tests**: Screen for fatty liver disease (present in roughly 60-90% of obese patients)\n- **TSH**: Rule out hypothyroidism as contributing factor (found in only about 2-5% of obesity cases, but easy to screen)\n- **Basic metabolic panel**: Kidney function, electrolytes\n\n## 3. History Taking\n\n- **Weight history**: Age of onset, previous weight loss attempts, lowest/highest adult weight\n- **Dietary patterns**: Typical caloric intake (often patients underestimate by 20-50%)\n- **Physical activity level**: Current minutes/week of exercise\n- **Medication review**: Many drugs cause weight gain (e.g., certain antidepressants, corticosteroids, insulin, beta-blockers) \u2014 potentially contributing 5-10 lbs or more\n- **Sleep patterns**: Screen for sleep apnea (affects an estimated 40-70% of obese individuals)\n- **Psychosocial factors**: Depression, anxiety, binge eating disorder (present in roughly 5-10% of obese patients seeking treatment)\n- **Family history**: Genetic predisposition to obesity, diabetes, cardiovascular disease\n\n## 4. Setting Realistic Goals\n\n- Initial target: **5-10% body weight loss**, shown to significantly improve blood pressure, glucose control, and lipids\n- Timeline: Gradual loss of **1-2 lbs (0.5-1 kg) per week** is the standard safe recommendation\n- Avoid unrealistic expectations\u2014rapid loss (>3 lbs/week) is generally discouraged outside medical supervision\n\n## 5.",
+    "latency_ms": 10954.6,
+    "token_count": 1169,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "5c74b5f7889e",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240487.4872408,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 24 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4143,
+          "evidence": [
+            "Latency 10955ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 10954.6,
+        "token_count": 1169,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.141; flagged=True"
+}

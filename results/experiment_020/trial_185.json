@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T02:03:36.432312+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "If we apply GnRH to cultured neurons and observe neuritic growth, what would be the possible mechanism of action of this hormone on neurons?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Neuroscience researcher",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# GnRH-Induced Neuritic Growth: Possible Mechanisms of Action\n\nWhen cultured neurons show increased neurite outgrowth following GnRH (Gonadotropin-Releasing Hormone) application, several interconnected mechanisms are likely involved, based on known GnRH receptor signaling pathways:\n\n## 1. **GnRH Receptor Activation (GnRH-R)**\nGnRH binds to its cognate **GnRH receptor**, a Gq/G11-coupled GPCR (approximately 60 kDa), which lacks the typical intracellular C-terminal tail found in most GPCRs, leading to relatively slow desensitization kinetics (over tens of minutes rather than seconds).\n\n## 2. **Phospholipase C (PLC)-Mediated Signaling**\n- Receptor activation stimulates **PLC-\u03b2**, hydrolyzing PIP2 into **IP3** and **diacylglycerol (DAG)**\n- IP3 triggers Ca\u00b2\u207a release from the endoplasmic reticulum, potentially raising intracellular Ca\u00b2\u207a concentrations by roughly 2-5 fold above baseline (from ~50-100 nM to 200-500 nM)\n- DAG activates **Protein Kinase C (PKC)** isoforms, particularly PKC-\u03b1 and PKC-\u03b5\n\n## 3. **MAPK/ERK Pathway Activation**\n- PKC activation leads to **Raf-MEK-ERK1/2** cascade stimulation\n- Phosphorylated ERK1/2 can increase by approximately 2-4 fold within 5-15 minutes of GnRH exposure\n- ERK activation promotes **growth cone dynamics** and cytoskeletal reorganization\n\n## 4. **Calcium-Dependent Mechanisms**\n- Elevated intracellular Ca\u00b2\u207a activates **CaMKII (Calcium/calmodulin-dependent protein kinase II)**\n- Ca\u00b2\u207a influx may also occur through **voltage-gated calcium channels (VGCCs)**, particularly L-type channels, contributing an additional 20-40% increase in cytosolic Ca\u00b2\u207a\n- Calcium signaling regulates growth cone motility and filopodial extension\n\n## 5. **Cytoskeletal Remodeling**\n- Downstream signaling promotes:\n  - **Actin polymerization** at the growth cone leading edge\n  - **Microtubule stabilization** via reduced GSK-3\u03b2 activity (through PI3K/Akt crosstalk)\n  - Rho-family GTPase modulation (Rac1, Cdc42) favoring lamellipodial/filopodial formation over growth cone collapse\n\n## 6. **Transcriptional Effects (Delayed Response)**\n- CREB (cAMP response element-binding protein) phosphorylation, occurring roughly 30-60 minutes post-stimulation\n- Potential upregulation of growth-associated genes such as **GAP-43**, **Tubulin**, and **BDNF**, contributing to sustained neurite elongation",
+    "latency_ms": 11600.5,
+    "input_tokens": 157,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "If we apply GnRH to cultured neurons and observe neuritic growth, what would be the possible mechanism of action of this hormone on neurons?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# GnRH-Induced Neuritic Growth: Possible Mechanisms of Action\n\nWhen cultured neurons show increased neurite outgrowth following GnRH (Gonadotropin-Releasing Hormone) application, several interconnected mechanisms are likely involved, based on known GnRH receptor signaling pathways:\n\n## 1. **GnRH Receptor Activation (GnRH-R)**\nGnRH binds to its cognate **GnRH receptor**, a Gq/G11-coupled GPCR (approximately 60 kDa), which lacks the typical intracellular C-terminal tail found in most GPCRs, leading to relatively slow desensitization kinetics (over tens of minutes rather than seconds).\n\n## 2. **Phospholipase C (PLC)-Mediated Signaling**\n- Receptor activation stimulates **PLC-\u03b2**, hydrolyzing PIP2 into **IP3** and **diacylglycerol (DAG)**\n- IP3 triggers Ca\u00b2\u207a release from the endoplasmic reticulum, potentially raising intracellular Ca\u00b2\u207a concentrations by roughly 2-5 fold above baseline (from ~50-100 nM to 200-500 nM)\n- DAG activates **Protein Kinase C (PKC)** isoforms, particularly PKC-\u03b1 and PKC-\u03b5\n\n## 3. **MAPK/ERK Pathway Activation**\n- PKC activation leads to **Raf-MEK-ERK1/2** cascade stimulation\n- Phosphorylated ERK1/2 can increase by approximately 2-4 fold within 5-15 minutes of GnRH exposure\n- ERK activation promotes **growth cone dynamics** and cytoskeletal reorganization\n\n## 4. **Calcium-Dependent Mechanisms**\n- Elevated intracellular Ca\u00b2\u207a activates **CaMKII (Calcium/calmodulin-dependent protein kinase II)**\n- Ca\u00b2\u207a influx may also occur through **voltage-gated calcium channels (VGCCs)**, particularly L-type channels, contributing an additional 20-40% increase in cytosolic Ca\u00b2\u207a\n- Calcium signaling regulates growth cone motility and filopodial extension\n\n## 5. **Cytoskeletal Remodeling**\n- Downstream signaling promotes:\n  - **Actin polymerization** at the growth cone leading edge\n  - **Microtubule stabilization** via reduced GSK-3\u03b2 activity (through PI3K/Akt crosstalk)\n  - Rho-family GTPase modulation (Rac1, Cdc42) favoring lamellipodial/filopodial formation over growth cone collapse\n\n## 6. **Transcriptional Effects (Delayed Response)**\n- CREB (cAMP response element-binding protein) phosphorylation, occurring roughly 30-60 minutes post-stimulation\n- Potential upregulation of growth-associated genes such as **GAP-43**, **Tubulin**, and **BDNF**, contributing to sustained neurite elongation",
+    "latency_ms": 11600.5,
+    "token_count": 1181,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "bda5af089250",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786241016.431533,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 16 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.424,
+          "evidence": [
+            "Latency 11600ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11600.5,
+        "token_count": 1181,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.185; flagged=True"
+}

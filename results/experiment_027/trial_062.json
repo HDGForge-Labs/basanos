@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T17:17:01.263289+00:00",
+  "detector": "context_degradation",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "what side does us army go on acu",
+    "gold_index": 0
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "The U.S. Army insignia goes on the **right side** of the ACU, centered **1/8 inch above the right name tape**. Skill tabs are worn on the **left sleeve pocket flap**.",
+    "latency_ms": 964.0,
+    "input_tokens": 1505,
+    "output_tokens": 48
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "what side does us army go on acu",
+      "gold_index": 0,
+      "n_docs": 10
+    },
+    "response": "The U.S. Army insignia goes on the **right side** of the ACU, centered **1/8 inch above the right name tape**. Skill tabs are worn on the **left sleeve pocket flap**.",
+    "latency_ms": 964.0,
+    "token_count": 1553,
+    "context_window_used": 0.25
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "ee71683f445d",
+      "tool_name": "context_qa",
+      "status": "pass",
+      "timestamp": 1786295821.262463,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 964.0,
+        "token_count": 1553,
+        "context_window_used": 0.25,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.62; flagged=False; gold_index=0"
+}

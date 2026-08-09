@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:54:28.231679+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "A 55 year old male patient describes the sudden appearance of a slight tremor and having noticed his handwriting getting smaller, what are the possible ways you'd find a diagnosis? ",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biomedical Research, Nursing",
+    "question_type": "Open-ended question that is potentially ambiguous| Advice or suggestions on how to approach a problem| Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "A sudden-onset slight tremor with progressively smaller handwriting (**micrographia**) warrants a prompt medical assessment, particularly because micrographia can be an early sign of **parkinsonism**, although other causes are possible.\n\n## How the diagnosis is approached\n\n### 1. Characterize the tremor and other symptoms\nA clinician will determine:\n\n- **Rest tremor:** occurs when the hand is relaxed and improves with purposeful movement\u2014more suggestive of Parkinson\u2019s disease.\n- **Action or postural tremor:** occurs while holding or using the hands\u2014more typical of essential tremor, medication effects, thyroid disease, or anxiety.\n- Whether it is **one-sided or bilateral**\n- Speed of onset and progression\n- Whether handwriting becomes smaller throughout a sentence\n- Other Parkinson-type features:\n  - Slowness of movement (**bradykinesia**)\n  - Muscle stiffness or rigidity\n  - Reduced arm swing\n  - Shuffling or freezing while walking\n  - Reduced facial expression or softer voice\n  - Loss of smell\n  - Constipation, REM sleep behavior disorder, depression, or abnormal daytime sleepiness\n\nA neurological examination is central: there is no single blood test that confirms Parkinson\u2019s disease.\n\n### 2. Review medications and exposures\nThe clinician should check for drugs that can cause tremor or parkinsonism, including:\n\n- Antipsychotics such as risperidone or haloperidol\n- Antiemetics such as metoclopramide or prochlorperazine\n- Some antidepressants, lithium, valproate, stimulants, and bronchodilators\n- Excess caffeine, alcohol withdrawal, or toxin exposure\n\n### 3. Perform targeted medical tests\nCommon tests may include:\n\n- **Thyroid function tests**\n- Complete blood count and metabolic panel\n- Glucose and calcium levels\n- Vitamin B12, if clinically indicated\n- Liver and kidney tests where relevant\n\nThese identify treatable mimics rather than diagnose Parkinson\u2019s directly.\n\n### 4. Consider brain imaging\n- **MRI of the brain** may be ordered when symptoms are sudden, atypical, rapidly progressive, associated with weakness, imbalance, cognitive changes, headache, or other neurological signs.\n- Imaging can help exclude stroke, tumor, hydrocephalus, multiple sclerosis, or other structural causes.\n- A routine CT or MRI is often normal in typical Parkinson\u2019s disease.\n\n### 5. Use specialized testing when the diagnosis is uncertain\nA **DaTscan**\u2014dopamine transporter SPECT imaging\u2014can help distinguish:\n\n- Parkinsonian disorders, where dopamine-transporter activity is reduced\n- Essential tremor or medication-related tremor, where it is usually preserved\n\nIt does **not reliably distinguish Parkinson\u2019s disease from atypical parkinsonian syndromes**, so it is not a definitive standalone test.\n\n### 6. Observe response over time\nA neurologist may follow symptoms over several months and, when appropriate, assess response to carefully prescribed **levodopa**. A clear improvement in slowness and rigidity supports Parkinson\u2019s disease, but response to medication alone is not definitive.\n\n## Important distinction: \u201csudden\u201d onset\nTypical Parkinson\u2019s disease usually develops gradually over months or years. A truly sudden onset\u2014minutes, hours, or a few days\u2014raises concern for other causes, such as:\n\n- Stroke\n- Medication or toxin effect\n- Metabolic abnormality\n- Functional neurological symptoms\n- Less commonly, other structural or inflammatory conditions\n\nIf the tremor began suddenly with facial drooping, weakness, numbness, speech difficulty, severe imbalance, confusion, or severe headache, call emergency services immediately.\n\nOtherwise, he should arrange a prompt appointment with a primary-care clinician or neurologist. Bring a complete medication and supplement list, and ideally a short video showing the tremor at rest, with arms outstretched, and during writing or other tasks.",
+    "latency_ms": 5795.0,
+    "input_tokens": 113,
+    "output_tokens": 794
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A 55 year old male patient describes the sudden appearance of a slight tremor and having noticed his handwriting getting smaller, what are the possible ways you'd find a diagnosis? ",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "A sudden-onset slight tremor with progressively smaller handwriting (**micrographia**) warrants a prompt medical assessment, particularly because micrographia can be an early sign of **parkinsonism**, although other causes are possible.\n\n## How the diagnosis is approached\n\n### 1. Characterize the tremor and other symptoms\nA clinician will determine:\n\n- **Rest tremor:** occurs when the hand is relaxed and improves with purposeful movement\u2014more suggestive of Parkinson\u2019s disease.\n- **Action or postural tremor:** occurs while holding or using the hands\u2014more typical of essential tremor, medication effects, thyroid disease, or anxiety.\n- Whether it is **one-sided or bilateral**\n- Speed of onset and progression\n- Whether handwriting becomes smaller throughout a sentence\n- Other Parkinson-type features:\n  - Slowness of movement (**bradykinesia**)\n  - Muscle stiffness or rigidity\n  - Reduced arm swing\n  - Shuffling or freezing while walking\n  - Reduced facial expression or softer voice\n  - Loss of smell\n  - Constipation, REM sleep behavior disorder, depression, or abnormal daytime sleepiness\n\nA neurological examination is central: there is no single blood test that confirms Parkinson\u2019s disease.\n\n### 2. Review medications and exposures\nThe clinician should check for drugs that can cause tremor or parkinsonism, including:\n\n- Antipsychotics such as risperidone or haloperidol\n- Antiemetics such as metoclopramide or prochlorperazine\n- Some antidepressants, lithium, valproate, stimulants, and bronchodilators\n- Excess caffeine, alcohol withdrawal, or toxin exposure\n\n### 3. Perform targeted medical tests\nCommon tests may include:\n\n- **Thyroid function tests**\n- Complete blood count and metabolic panel\n- Glucose and calcium levels\n- Vitamin B12, if clinically indicated\n- Liver and kidney tests where relevant\n\nThese identify treatable mimics rather than diagnose Parkinson\u2019s directly.\n\n### 4. Consider brain imaging\n- **MRI of the brain** may be ordered when symptoms are sudden, atypical, rapidly progressive, associated with weakness, imbalance, cognitive changes, headache, or other neurological signs.\n- Imaging can help exclude stroke, tumor, hydrocephalus, multiple sclerosis, or other structural causes.\n- A routine CT or MRI is often normal in typical Parkinson\u2019s disease.\n\n### 5. Use specialized testing when the diagnosis is uncertain\nA **DaTscan**\u2014dopamine transporter SPECT imaging\u2014can help distinguish:\n\n- Parkinsonian disorders, where dopamine-transporter activity is reduced\n- Essential tremor or medication-related tremor, where it is usually preserved\n\nIt does **not reliably distinguish Parkinson\u2019s disease from atypical parkinsonian syndromes**, so it is not a definitive standalone test.\n\n### 6. Observe response over time\nA neurologist may follow symptoms over several months and, when appropriate, assess response to carefully prescribed **levodopa**. A clear improvement in slowness and rigidity supports Parkinson\u2019s disease, but response to medication alone is not definitive.\n\n## Important distinction: \u201csudden\u201d onset\nTypical Parkinson\u2019s disease usually develops gradually over months or years. A truly sudden onset\u2014minutes, hours, or a few days\u2014raises concern for other causes, such as:\n\n- Stroke\n- Medication or toxin effect\n- Metabolic abnormality\n- Functional neurological symptoms\n- Less commonly, other structural or inflammatory conditions\n\nIf the tremor began suddenly with facial drooping, weakness, numbness, speech difficulty, severe imbalance, confusion, or severe headache, call emergency services immediately.\n\nOtherwise, he should arrange a prompt appointment with a primary-care clinician or neurologist. Bring a complete medication and supplement list, and ideally a short video showing the tremor at rest, with arms outstretched, and during writing or other tasks.",
+    "latency_ms": 5795.0,
+    "token_count": 907
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "293758af21ac",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229668.23091,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 5795.0,
+        "token_count": 907,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.41; flagged=False"
+}

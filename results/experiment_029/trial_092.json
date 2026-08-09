@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T22:32:23.903677+00:00",
+  "detector": "context_degradation",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "what was the original purpose of the kremlin",
+    "gold_index": 0
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "The Moscow Kremlin was originally built as a fortified citadel\u2014a defensive fortress complex at the heart of Moscow. The original Kremlin was constructed during the 14th century as a fortification for the city, and it was later reconstructed and enlarged under Ivan III in the 1480s-1490s, when Italian architects such as Petrus Antonius Solarius were invited to design the new K",
+    "latency_ms": 4330.2,
+    "input_tokens": 2430,
+    "output_tokens": 128
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "what was the original purpose of the kremlin",
+      "gold_index": 0,
+      "n_docs": 10
+    },
+    "response": "The Moscow Kremlin was originally built as a fortified citadel-a defensive fortress complex at the heart of Moscow. The original Kremlin was constructed during the 14th century as a fortification for the city, and it was later reconstructed and enlarged under Ivan III in the 1480s-1490s, when Italian architects such as Petrus Antonius Solarius were invited to design the new K",
+    "latency_ms": 4330.2,
+    "token_count": 2558,
+    "context_window_used": 0.25
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "03d6fcc76a8d",
+      "tool_name": "context_qa",
+      "status": "pass",
+      "timestamp": 1786314743.902908,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 4330.2,
+        "token_count": 2558,
+        "context_window_used": 0.25,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.92; flagged=False; gold_index=0"
+}

@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:00:06.131606+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is known about the switch that occurs between patients with latent HIV and active infection?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Virologist",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "The \u201cswitch\u201d from latent HIV infection to active disease is not a single, fully understood event. It is better described as a gradual loss of immune control\u2014especially against HIV reservoirs\u2014followed by increasing viral replication. Several overlapping processes are involved.\n\n## What \u201clatent\u201d and \u201cactive\u201d mean\n\n- **Latent HIV infection:** HIV DNA remains inside long-lived cells, mainly resting CD4 T cells, but those cells produce little or no virus. Antiretroviral therapy (ART) suppresses circulating virus but does not eliminate these reservoirs.\n- **Active or productive infection:** Infected cells begin producing new virus, which infects additional cells. Without effective ART, plasma HIV RNA typically becomes detectable and CD4 T-cell counts progressively decline.\n- HIV is therefore never truly \u201clatent\u201d throughout the entire body in untreated infection. There may be low-level ongoing replication in some tissues, while many infected cells are in a transcriptionally silent state.\n\n## The main biological \u201cswitches\u201d\n\n### 1. HIV transcription becomes activated\n\nFor a latently infected cell to produce virus, the integrated HIV DNA\u2014called the **provirus**\u2014must be transcribed. This depends on cellular transcription factors and signals such as:\n\n- **NF-\u03baB and NFAT**, activated by inflammation, T-cell receptor signaling, and cytokines\n- **AP-1** and other stress-response pathways\n- **Tat**, an HIV protein that greatly amplifies viral transcription once a small amount of HIV RNA is produced\n- Chromatin remodeling around the HIV integration site\n- Reduced activity of cellular repressors and epigenetic silencing mechanisms\n\nA key feature is that HIV transcription can behave like a **positive-feedback circuit**: a small amount of viral transcription produces Tat, Tat enhances transcriptional elongation, and the virus can shift from a low-expression state to a high-expression state.\n\n### 2. The infected CD4 cell becomes activated\n\nResting CD4 T cells are relatively resistant to efficient HIV production. When they encounter antigen or inflammatory signals, they undergo metabolic and transcriptional changes that can permit viral replication.\n\nTriggers can include:\n\n- Other infections, particularly sexually transmitted infections\n- Tuberculosis, malaria, hepatitis viruses, and recurrent bacterial infections\n- Vaccination or immune stimulation\n- Cytokines such as tumor necrosis factor, interleukins, and interferons\n- Tissue inflammation\n- Activation of T cells during immune recovery after ART begins\n- Immunosuppressive states or cancers, which can alter immune control in other ways\n\nImportantly, immune activation can both **increase HIV transcription** and **expand the number of infected cells**, even when the newly infected cells do not immediately produce much virus.\n\n### 3. Immune surveillance weakens\n\nIn untreated infection, HIV-specific CD8 T-cell responses initially help control replication. Over time, however:\n\n- CD8 T cells may become functionally exhausted.\n- HIV mutates and escapes recognition.\n- CD4 T-cell help declines.\n- Lymphoid tissues and gut-associated immune tissues become damaged.\n- Chronic inflammation becomes persistent but less effective at controlling HIV.\n\nThe result is a progressive imbalance: HIV can replicate faster than the immune system can contain it.\n\n### 4. The reservoir is maintained and expanded\n\nThe latent reservoir is not just a collection of randomly infected cells. Some infected CD4 cells undergo normal antigen-driven proliferation and copy the provirus into daughter cells. This **clonal expansion** can maintain or enlarge the reservoir without new rounds of viral replication.\n\nMost proviruses are defective, but a small fraction\u2014often estimated at roughly **1 in 10\u00b3 to 1 in 10\u2076 resting CD4 T cells**, depending on the study, tissue, treatment history, and assay\u2014may be capable of producing infectious virus. The exact frequency varies substantially because available tests measure different things:\n\n- **Total HIV DNA** detects many defective proviruses.\n- **Cell-associated HIV RNA** measures transcription, not necessarily infectious virus.\n- **Quantitative viral outgrowth assays** detect a subset of inducible, replication-competent virus and may underestimate the true reservoir.\n\n## Why some people remain controlled for years\n\nWithout ART, most people experience progressive infection, but the rate varies widely.\n\n- After initial infection, plasma HIV RNA often rises to roughly **10\u2075\u201310\u2077 copies/mL**, followed by a partial decline to a \u201cset point.\u201d\n- The untreated set point may range from below **10\u00b3** to above **10\u2076 copies/mL**.\n- CD4 counts may remain above **500 cells/\u00b5L** for years in some people, while others decline much faster.\n- Typical untreated progression to AIDS historically occurred over approximately **8\u201310 years**, but the range was very broad.\n- A small minority\u2014roughly **1\u20135%** in many cohorts\u2014are long-term nonprogressors or elite controllers. Elite controllers generally maintain HIV RNA below standard detection limits without ART, although they can still have inflammation, reservoir persistence, and occasional disease",
+    "latency_ms": 8680.4,
+    "input_tokens": 89,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is known about the switch that occurs between patients with latent HIV and active infection?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "The \u201cswitch\u201d from latent HIV infection to active disease is not a single, fully understood event. It is better described as a gradual loss of immune control\u2014especially against HIV reservoirs\u2014followed by increasing viral replication. Several overlapping processes are involved.\n\n## What \u201clatent\u201d and \u201cactive\u201d mean\n\n- **Latent HIV infection:** HIV DNA remains inside long-lived cells, mainly resting CD4 T cells, but those cells produce little or no virus. Antiretroviral therapy (ART) suppresses circulating virus but does not eliminate these reservoirs.\n- **Active or productive infection:** Infected cells begin producing new virus, which infects additional cells. Without effective ART, plasma HIV RNA typically becomes detectable and CD4 T-cell counts progressively decline.\n- HIV is therefore never truly \u201clatent\u201d throughout the entire body in untreated infection. There may be low-level ongoing replication in some tissues, while many infected cells are in a transcriptionally silent state.\n\n## The main biological \u201cswitches\u201d\n\n### 1. HIV transcription becomes activated\n\nFor a latently infected cell to produce virus, the integrated HIV DNA\u2014called the **provirus**\u2014must be transcribed. This depends on cellular transcription factors and signals such as:\n\n- **NF-\u03baB and NFAT**, activated by inflammation, T-cell receptor signaling, and cytokines\n- **AP-1** and other stress-response pathways\n- **Tat**, an HIV protein that greatly amplifies viral transcription once a small amount of HIV RNA is produced\n- Chromatin remodeling around the HIV integration site\n- Reduced activity of cellular repressors and epigenetic silencing mechanisms\n\nA key feature is that HIV transcription can behave like a **positive-feedback circuit**: a small amount of viral transcription produces Tat, Tat enhances transcriptional elongation, and the virus can shift from a low-expression state to a high-expression state.\n\n### 2. The infected CD4 cell becomes activated\n\nResting CD4 T cells are relatively resistant to efficient HIV production. When they encounter antigen or inflammatory signals, they undergo metabolic and transcriptional changes that can permit viral replication.\n\nTriggers can include:\n\n- Other infections, particularly sexually transmitted infections\n- Tuberculosis, malaria, hepatitis viruses, and recurrent bacterial infections\n- Vaccination or immune stimulation\n- Cytokines such as tumor necrosis factor, interleukins, and interferons\n- Tissue inflammation\n- Activation of T cells during immune recovery after ART begins\n- Immunosuppressive states or cancers, which can alter immune control in other ways\n\nImportantly, immune activation can both **increase HIV transcription** and **expand the number of infected cells**, even when the newly infected cells do not immediately produce much virus.\n\n### 3. Immune surveillance weakens\n\nIn untreated infection, HIV-specific CD8 T-cell responses initially help control replication. Over time, however:\n\n- CD8 T cells may become functionally exhausted.\n- HIV mutates and escapes recognition.\n- CD4 T-cell help declines.\n- Lymphoid tissues and gut-associated immune tissues become damaged.\n- Chronic inflammation becomes persistent but less effective at controlling HIV.\n\nThe result is a progressive imbalance: HIV can replicate faster than the immune system can contain it.\n\n### 4. The reservoir is maintained and expanded\n\nThe latent reservoir is not just a collection of randomly infected cells. Some infected CD4 cells undergo normal antigen-driven proliferation and copy the provirus into daughter cells. This **clonal expansion** can maintain or enlarge the reservoir without new rounds of viral replication.\n\nMost proviruses are defective, but a small fraction\u2014often estimated at roughly **1 in 10\u00b3 to 1 in 10\u2076 resting CD4 T cells**, depending on the study, tissue, treatment history, and assay\u2014may be capable of producing infectious virus. The exact frequency varies substantially because available tests measure different things:\n\n- **Total HIV DNA** detects many defective proviruses.\n- **Cell-associated HIV RNA** measures transcription, not necessarily infectious virus.\n- **Quantitative viral outgrowth assays** detect a subset of inducible, replication-competent virus and may underestimate the true reservoir.\n\n## Why some people remain controlled for years\n\nWithout ART, most people experience progressive infection, but the rate varies widely.\n\n- After initial infection, plasma HIV RNA often rises to roughly **10\u2075\u201310\u2077 copies/mL**, followed by a partial decline to a \u201cset point.\u201d\n- The untreated set point may range from below **10\u00b3** to above **10\u2076 copies/mL**.\n- CD4 counts may remain above **500 cells/\u00b5L** for years in some people, while others decline much faster.\n- Typical untreated progression to AIDS historically occurred over approximately **8\u201310 years**, but the range was very broad.\n- A small minority\u2014roughly **1\u20135%** in many cohorts\u2014are long-term nonprogressors or elite controllers. Elite controllers generally maintain HIV RNA below standard detection limits without ART, although they can still have inflammation, reservoir persistence, and occasional disease",
+    "latency_ms": 8680.4,
+    "token_count": 1113,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "2c33cdf2b356",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230006.1308308,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 7 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 8680.4,
+        "token_count": 1113,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.120; flagged=True"
+}

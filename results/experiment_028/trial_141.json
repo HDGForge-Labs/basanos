@@ -1,0 +1,75 @@
+{
+  "timestamp_utc": "2026-08-09T22:09:33.169944+00:00",
+  "detector": "context_degradation",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "who were the judges on dancing on ice 2014",
+    "gold_index": 9
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "The 2014 judges were Robin Cousins, Jason Gardiner, Karen Barber and Ashley Roberts. Nicky Slater temporarily replaced Cousins in weeks 6 and 7 while Cousins covered the Winter Olympics.",
+    "latency_ms": 1220.5,
+    "input_tokens": 1570,
+    "output_tokens": 46
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "who were the judges on dancing on ice 2014",
+      "gold_index": 9,
+      "n_docs": 10
+    },
+    "response": "The 2014 judges were Robin Cousins, Jason Gardiner, Karen Barber and Ashley Roberts. Nicky Slater temporarily replaced Cousins in weeks 6 and 7 while Cousins covered the Winter Olympics.",
+    "latency_ms": 1220.5,
+    "token_count": 1616,
+    "context_window_used": 0.92
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "54cdbe20101f",
+      "tool_name": "context_qa",
+      "status": "warn",
+      "timestamp": 1786313373.169181,
+      "failures": [
+        {
+          "failure_mode": "context_degradation",
+          "confidence": 0.4,
+          "evidence": [
+            "Context window at 92.0% capacity"
+          ],
+          "remediation": [
+            "Implement context summarization before next tool call",
+            "Inject critical context markers at regular intervals",
+            "Use sliding window context management",
+            "Consider splitting task into smaller context-bounded subtasks"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 1220.5,
+        "token_count": 1616,
+        "context_window_used": 0.92,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Implement context summarization before next tool call",
+        "Inject critical context markers at regular intervals",
+        "Use sliding window context management",
+        "Consider splitting task into smaller context-bounded subtasks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.141; flagged=True; gold_index=9"
+}

@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T00:18:14.986987+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Name 3 types of therapies for a patient.",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Clinical Psychologist",
+    "question_type": "Directed question that has a single unambiguous answer| Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "1. **Cognitive behavioral therapy (CBT)**  \n   A structured, usually short-term psychotherapy that helps patients identify and change unhelpful thoughts and behaviors. It is commonly delivered over about **6\u201320 weekly sessions**, often lasting **45\u201360 minutes** each. CBT is used for depression, anxiety disorders, insomnia, PTSD, chronic pain, and some substance-use problems.\n\n2. **Physical therapy (PT)**  \n   A rehabilitation treatment focused on improving movement, strength, balance, mobility, and pain control after injury, surgery, stroke, or chronic conditions such as arthritis. Programs may include supervised sessions about **1\u20133 times per week** plus a home exercise plan performed on most days.\n\n3. **Occupational therapy (OT)**  \n   Therapy that helps patients regain or adapt skills needed for everyday activities, such as bathing, dressing, cooking, working, writing, or using adaptive equipment. It is often used after stroke, traumatic injury, surgery, developmental conditions, or loss of independence.",
+    "latency_ms": 3826.3,
+    "input_tokens": 82,
+    "output_tokens": 207
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Name 3 types of therapies for a patient.",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "1. **Cognitive behavioral therapy (CBT)**  \n   A structured, usually short-term psychotherapy that helps patients identify and change unhelpful thoughts and behaviors. It is commonly delivered over about **6\u201320 weekly sessions**, often lasting **45\u201360 minutes** each. CBT is used for depression, anxiety disorders, insomnia, PTSD, chronic pain, and some substance-use problems.\n\n2. **Physical therapy (PT)**  \n   A rehabilitation treatment focused on improving movement, strength, balance, mobility, and pain control after injury, surgery, stroke, or chronic conditions such as arthritis. Programs may include supervised sessions about **1\u20133 times per week** plus a home exercise plan performed on most days.\n\n3. **Occupational therapy (OT)**  \n   Therapy that helps patients regain or adapt skills needed for everyday activities, such as bathing, dressing, cooking, working, writing, or using adaptive equipment. It is often used after stroke, traumatic injury, surgery, developmental conditions, or loss of independence.",
+    "latency_ms": 3826.3,
+    "token_count": 289,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "2d4a4937d6b4",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234694.986207,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 3 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 3826.3,
+        "token_count": 289,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.177; flagged=True"
+}

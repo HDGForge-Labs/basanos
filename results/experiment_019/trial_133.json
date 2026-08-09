@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:10:50.087756+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What at the benefits and consequences of the rise of at-home, or direct-to-patient testing kits in patient care?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biochemistry",
+    "question_type": "Open-ended question that is potentially ambiguous| Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "At-home or direct-to-patient testing kits\u2014such as pregnancy tests, COVID-19 antigen tests, STI kits, genetic tests, colorectal cancer screening kits, HbA1c/diabetes tests, fertility tests, and mail-in blood or saliva panels\u2014can improve access and convenience, but they also shift important clinical responsibilities from health systems to patients and commercial companies.\n\n## Potential benefits\n\n### 1. Greater access and convenience\n- Patients can test without traveling to a clinic, taking time off work, arranging childcare, or facing transportation barriers.\n- This can be especially valuable for people in rural areas, people with disabilities, people with limited mobility, and patients who avoid care because of stigma.\n- Home testing can reduce delays: a rapid COVID-19 antigen test may provide a result in roughly 15\u201330 minutes, while a mail-in kit may avoid a clinic visit even if laboratory turnaround takes about 2\u20137 days.\n\n### 2. Earlier detection and more frequent screening\n- Easier testing may lead people to screen more often, potentially identifying disease earlier.\n- Examples:\n  - Home colorectal cancer screening with fecal immunochemical testing (FIT) can increase participation compared with clinic-based screening. FIT is generally repeated every year when negative.\n  - At-home STI testing can reach people who otherwise would not seek testing because of privacy concerns.\n  - Home blood-pressure, glucose, or INR testing can support closer monitoring of chronic disease.\n- Earlier diagnosis can allow earlier treatment, reduce complications, and sometimes reduce transmission of infectious diseases.\n\n### 3. Privacy and reduced stigma\n- Direct-to-patient testing can be particularly helpful for sensitive conditions such as HIV, chlamydia, gonorrhea, syphilis, pregnancy, fertility concerns, and substance-use monitoring.\n- A person may be more willing to complete an STI test at home than in a public clinic or primary-care office.\n- Privacy can improve uptake, though it can also create risks if patients lack support after receiving a concerning result.\n\n### 4. Patient empowerment and engagement\n- Home testing gives patients more direct involvement in monitoring their health.\n- For conditions such as diabetes, home glucose monitoring can help patients connect diet, activity, medication adherence, and symptoms with measured results.\n- Direct access to certain tests may prompt people to seek care who otherwise would not have done so.\n\n### 5. Reduced pressure on clinics and laboratories\n- Appropriate home testing can reduce unnecessary office visits, waiting-room exposure, and demand on overburdened services.\n- During infectious-disease outbreaks, at-home tests can help identify contagious individuals without bringing them into healthcare settings.\n- For some routine monitoring, remote testing paired with telehealth can make care more efficient.\n\n### 6. Potential cost savings\n- Patients may save on travel, lost wages, childcare, and visit-related expenses.\n- Health systems may avoid some low-value in-person visits when home testing is clinically appropriate.\n- However, the kit price alone does not always reflect total cost; follow-up testing, confirmatory testing, and treatment can add substantial expense.\n\n---\n\n## Potential consequences and risks\n\n### 1. False positives and false negatives\nNo test is perfect. A test\u2019s usefulness depends on its sensitivity, specificity, specimen quality, timing, and the likelihood that the patient has the condition before testing.\n\n- **False negative:** the test says \u201cnegative\u201d when disease is present. This can delay diagnosis, treatment, isolation, or prevention.\n- **False positive:** the test says \u201cpositive\u201d when disease is absent. This can cause anxiety, unnecessary treatment, repeat testing, imaging, procedures, or referrals.\n\nFor example:\n- A rapid antigen test may miss infection early in illness or when viral levels are low.\n- STI tests can be falsely negative if a sample is collected too soon after exposure or from the wrong anatomical site.\n- Consumer genetic tests may identify risk-associated variants but usually do not diagnose disease; a positive result often needs confirmation in a certified clinical laboratory.\n\nEven a highly specific test can generate many false positives when used in a low-risk population. If 10,000 low-risk people are tested for a rare condition with a prevalence of 0.1%\u2014about 10 true cases\u2014even a specificity of 99% could produce roughly 100 false-positive results.\n\n### 2. Improper specimen collection and handling\nClinic-based tests benefit from trained collection, labeling, transport, and quality controls. At home, errors can occur:\n- insufficient blood, saliva, urine, or stool sample;\n- contamination;\n- incorrect swab technique;\n- testing too early or too late;\n- improper storage or mailing;\n- failure to register the kit correctly.\n\nThese issues can lead to invalid, delayed, or inaccurate results. Some kits include clear instructions and telehealth support, but user error remains a real limitation.\n\n### 3. Lack of clinical context\nA laboratory number is not the same as a diagnosis.\n\nResults need interpretation based on:\n- symptoms;\n- age;\n- sex assigned at birth and pregnancy status;\n- medications and supplements;\n-",
+    "latency_ms": 12749.7,
+    "input_tokens": 96,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What at the benefits and consequences of the rise of at-home, or direct-to-patient testing kits in patient care?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "At-home or direct-to-patient testing kits\u2014such as pregnancy tests, COVID-19 antigen tests, STI kits, genetic tests, colorectal cancer screening kits, HbA1c/diabetes tests, fertility tests, and mail-in blood or saliva panels\u2014can improve access and convenience, but they also shift important clinical responsibilities from health systems to patients and commercial companies.\n\n## Potential benefits\n\n### 1. Greater access and convenience\n- Patients can test without traveling to a clinic, taking time off work, arranging childcare, or facing transportation barriers.\n- This can be especially valuable for people in rural areas, people with disabilities, people with limited mobility, and patients who avoid care because of stigma.\n- Home testing can reduce delays: a rapid COVID-19 antigen test may provide a result in roughly 15\u201330 minutes, while a mail-in kit may avoid a clinic visit even if laboratory turnaround takes about 2\u20137 days.\n\n### 2. Earlier detection and more frequent screening\n- Easier testing may lead people to screen more often, potentially identifying disease earlier.\n- Examples:\n  - Home colorectal cancer screening with fecal immunochemical testing (FIT) can increase participation compared with clinic-based screening. FIT is generally repeated every year when negative.\n  - At-home STI testing can reach people who otherwise would not seek testing because of privacy concerns.\n  - Home blood-pressure, glucose, or INR testing can support closer monitoring of chronic disease.\n- Earlier diagnosis can allow earlier treatment, reduce complications, and sometimes reduce transmission of infectious diseases.\n\n### 3. Privacy and reduced stigma\n- Direct-to-patient testing can be particularly helpful for sensitive conditions such as HIV, chlamydia, gonorrhea, syphilis, pregnancy, fertility concerns, and substance-use monitoring.\n- A person may be more willing to complete an STI test at home than in a public clinic or primary-care office.\n- Privacy can improve uptake, though it can also create risks if patients lack support after receiving a concerning result.\n\n### 4. Patient empowerment and engagement\n- Home testing gives patients more direct involvement in monitoring their health.\n- For conditions such as diabetes, home glucose monitoring can help patients connect diet, activity, medication adherence, and symptoms with measured results.\n- Direct access to certain tests may prompt people to seek care who otherwise would not have done so.\n\n### 5. Reduced pressure on clinics and laboratories\n- Appropriate home testing can reduce unnecessary office visits, waiting-room exposure, and demand on overburdened services.\n- During infectious-disease outbreaks, at-home tests can help identify contagious individuals without bringing them into healthcare settings.\n- For some routine monitoring, remote testing paired with telehealth can make care more efficient.\n\n### 6. Potential cost savings\n- Patients may save on travel, lost wages, childcare, and visit-related expenses.\n- Health systems may avoid some low-value in-person visits when home testing is clinically appropriate.\n- However, the kit price alone does not always reflect total cost; follow-up testing, confirmatory testing, and treatment can add substantial expense.\n\n---\n\n## Potential consequences and risks\n\n### 1. False positives and false negatives\nNo test is perfect. A test\u2019s usefulness depends on its sensitivity, specificity, specimen quality, timing, and the likelihood that the patient has the condition before testing.\n\n- **False negative:** the test says \u201cnegative\u201d when disease is present. This can delay diagnosis, treatment, isolation, or prevention.\n- **False positive:** the test says \u201cpositive\u201d when disease is absent. This can cause anxiety, unnecessary treatment, repeat testing, imaging, procedures, or referrals.\n\nFor example:\n- A rapid antigen test may miss infection early in illness or when viral levels are low.\n- STI tests can be falsely negative if a sample is collected too soon after exposure or from the wrong anatomical site.\n- Consumer genetic tests may identify risk-associated variants but usually do not diagnose disease; a positive result often needs confirmation in a certified clinical laboratory.\n\nEven a highly specific test can generate many false positives when used in a low-risk population. If 10,000 low-risk people are tested for a rare condition with a prevalence of 0.1%\u2014about 10 true cases\u2014even a specificity of 99% could produce roughly 100 false-positive results.\n\n### 2. Improper specimen collection and handling\nClinic-based tests benefit from trained collection, labeling, transport, and quality controls. At home, errors can occur:\n- insufficient blood, saliva, urine, or stool sample;\n- contamination;\n- incorrect swab technique;\n- testing too early or too late;\n- improper storage or mailing;\n- failure to register the kit correctly.\n\nThese issues can lead to invalid, delayed, or inaccurate results. Some kits include clear instructions and telehealth support, but user error remains a real limitation.\n\n### 3. Lack of clinical context\nA laboratory number is not the same as a diagnosis.\n\nResults need interpretation based on:\n- symptoms;\n- age;\n- sex assigned at birth and pregnancy status;\n- medications and supplements;\n-",
+    "latency_ms": 12749.7,
+    "token_count": 1120,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "a6963562c91e",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234250.0869625,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 13 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4412,
+          "evidence": [
+            "Latency 12750ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12749.7,
+        "token_count": 1120,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.133; flagged=True"
+}

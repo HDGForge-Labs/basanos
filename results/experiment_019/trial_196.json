@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:21:49.473332+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Do the medicines used for diabetes foot ulcer work?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Sales rep in medicines",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Yes\u2014medicines can help diabetic foot ulcers, but they usually do **not** heal the ulcer by themselves. The treatments that most strongly determine healing are:\n\n1. **Pressure relief (\u201coff-loading\u201d)** \u2014 often a total-contact cast, removable walker boot, or special shoe  \n2. **Regular wound cleaning/debridement** \u2014 removal of dead tissue and callus  \n3. **Good blood flow** \u2014 treating narrowed leg arteries when present  \n4. **Infection treatment when infection is actually present**  \n5. **Blood-glucose control, nutrition, and smoking cessation**\n\nWith appropriate multidisciplinary care, many uncomplicated diabetic foot ulcers can heal in roughly **6\u201312 weeks**, although deeper, infected, or poorly perfused ulcers may take **months** and can require surgery or vascular procedures.\n\n## Medicines that do work\u2014when used for the right problem\n\n### Antibiotics\nAntibiotics are effective for a **clinically infected** ulcer\u2014signs include spreading redness, warmth, swelling, pain/tenderness, pus, bad odor, fever, or systemic illness.\n\n- For a mild skin/soft-tissue infection, treatment is often about **1\u20132 weeks**.\n- Moderate or severe infections may need about **2\u20134 weeks**, sometimes initially through a vein in hospital.\n- Bone infection (osteomyelitis) may need about **6 weeks** of antibiotics, although duration varies depending on surgery and the amount of infected bone removed.\n\nImportant: antibiotics **do not speed healing of an uninfected ulcer** and should not routinely be used \u201cjust in case.\u201d Unnecessary antibiotics can cause diarrhea, kidney problems, allergic reactions, *C. difficile* infection, and antibiotic resistance.\n\n### Diabetes medicines / insulin\nLowering persistently high glucose supports immune function and wound healing. During serious infection or hospitalization, insulin is commonly used because it can be adjusted quickly.\n\nFor many nonpregnant adults, a common long-term HbA1c target is **below 7%**, but the safest goal is individualized. Very high glucose\u2014often repeatedly above roughly **180\u2013200 mg/dL** (**10\u201311.1 mmol/L**)\u2014can make infection control and healing more difficult. However, rapidly intensifying treatment must be done carefully to avoid hypoglycemia.\n\nDiabetes drugs help the overall situation, but they are **not ulcer-healing drugs** by themselves.\n\n### Pain medicines\nPain relief may be needed, particularly for infection, ischemia (poor circulation), dressing changes, or neuropathic pain.\n\n- Acetaminophen/paracetamol may be appropriate for some people.\n- Anti-inflammatory medicines such as ibuprofen are not suitable for everyone, especially people with kidney disease, ulcers/bleeding risk, heart failure, or certain blood-pressure medicines.\n- Neuropathic pain drugs\u2014such as duloxetine, pregabalin, gabapentin, or amitriptyline\u2014can reduce burning/electric nerve pain, but they do **not** directly heal the ulcer.\n\n### Medicines for blood flow and cardiovascular risk\nIf there is peripheral artery disease, doctors may use medicines such as antiplatelet therapy (for example aspirin or clopidogrel) and statins to reduce cardiovascular risk. These may lower risks of heart attack and stroke, but they generally cannot replace a procedure to restore blood flow when an ulcer is not healing because of a severely blocked artery.\n\nA nonhealing ulcer, black tissue, a cold/pale foot, absent pulses, or pain at rest should trigger urgent vascular assessment. Some people need angioplasty, stenting, or bypass surgery.\n\n## \u201cWound-healing\u201d products: helpful in selected cases, not magic cures\n\nCertain advanced treatments can improve healing in carefully selected ulcers after standard care has not worked, but benefits vary and access/cost can be major issues.\n\nExamples include:\n\n- **Negative-pressure wound therapy** (\u201cwound VAC\u201d): often useful after surgical cleaning or for larger/deeper wounds.\n- **Special dressings**: selected based on drainage, depth, and tissue type. There is no single dressing proven best for all ulcers.\n- **Cellular/tissue-based skin substitutes**: may help some chronic neuropathic ulcers that have not improved after about **4 weeks** of high-quality standard care.\n- **Growth-factor products**: available in some settings but used selectively because benefit is modest, cost may be high, and suitability varies.\n- **Hyperbaric oxygen therapy**: may help a limited group with severe, ischemic, nonhealing ulcers, usually after vascular and wound-care evaluation. It is not routine treatment for every diabetic foot ulcer.\n\nProducts marketed as \u201cantiseptic,\u201d \u201cherbal,\u201d \u201csilver,\u201d honey, or topical antibiotics may be useful in specific situations, but none should substitute for off-loading, debridement, circulation assessment, and infection treatment. Topical antibiotics are generally not recommended for a clean, uninfected ulcer.\n\n## The biggest practical point\nFor a pressure-related ulcer on the bottom of the foot, **",
+    "latency_ms": 14456.8,
+    "input_tokens": 82,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Do the medicines used for diabetes foot ulcer work?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Yes\u2014medicines can help diabetic foot ulcers, but they usually do **not** heal the ulcer by themselves. The treatments that most strongly determine healing are:\n\n1. **Pressure relief (\u201coff-loading\u201d)** \u2014 often a total-contact cast, removable walker boot, or special shoe  \n2. **Regular wound cleaning/debridement** \u2014 removal of dead tissue and callus  \n3. **Good blood flow** \u2014 treating narrowed leg arteries when present  \n4. **Infection treatment when infection is actually present**  \n5. **Blood-glucose control, nutrition, and smoking cessation**\n\nWith appropriate multidisciplinary care, many uncomplicated diabetic foot ulcers can heal in roughly **6\u201312 weeks**, although deeper, infected, or poorly perfused ulcers may take **months** and can require surgery or vascular procedures.\n\n## Medicines that do work\u2014when used for the right problem\n\n### Antibiotics\nAntibiotics are effective for a **clinically infected** ulcer\u2014signs include spreading redness, warmth, swelling, pain/tenderness, pus, bad odor, fever, or systemic illness.\n\n- For a mild skin/soft-tissue infection, treatment is often about **1\u20132 weeks**.\n- Moderate or severe infections may need about **2\u20134 weeks**, sometimes initially through a vein in hospital.\n- Bone infection (osteomyelitis) may need about **6 weeks** of antibiotics, although duration varies depending on surgery and the amount of infected bone removed.\n\nImportant: antibiotics **do not speed healing of an uninfected ulcer** and should not routinely be used \u201cjust in case.\u201d Unnecessary antibiotics can cause diarrhea, kidney problems, allergic reactions, *C. difficile* infection, and antibiotic resistance.\n\n### Diabetes medicines / insulin\nLowering persistently high glucose supports immune function and wound healing. During serious infection or hospitalization, insulin is commonly used because it can be adjusted quickly.\n\nFor many nonpregnant adults, a common long-term HbA1c target is **below 7%**, but the safest goal is individualized. Very high glucose\u2014often repeatedly above roughly **180\u2013200 mg/dL** (**10\u201311.1 mmol/L**)\u2014can make infection control and healing more difficult. However, rapidly intensifying treatment must be done carefully to avoid hypoglycemia.\n\nDiabetes drugs help the overall situation, but they are **not ulcer-healing drugs** by themselves.\n\n### Pain medicines\nPain relief may be needed, particularly for infection, ischemia (poor circulation), dressing changes, or neuropathic pain.\n\n- Acetaminophen/paracetamol may be appropriate for some people.\n- Anti-inflammatory medicines such as ibuprofen are not suitable for everyone, especially people with kidney disease, ulcers/bleeding risk, heart failure, or certain blood-pressure medicines.\n- Neuropathic pain drugs\u2014such as duloxetine, pregabalin, gabapentin, or amitriptyline\u2014can reduce burning/electric nerve pain, but they do **not** directly heal the ulcer.\n\n### Medicines for blood flow and cardiovascular risk\nIf there is peripheral artery disease, doctors may use medicines such as antiplatelet therapy (for example aspirin or clopidogrel) and statins to reduce cardiovascular risk. These may lower risks of heart attack and stroke, but they generally cannot replace a procedure to restore blood flow when an ulcer is not healing because of a severely blocked artery.\n\nA nonhealing ulcer, black tissue, a cold/pale foot, absent pulses, or pain at rest should trigger urgent vascular assessment. Some people need angioplasty, stenting, or bypass surgery.\n\n## \u201cWound-healing\u201d products: helpful in selected cases, not magic cures\n\nCertain advanced treatments can improve healing in carefully selected ulcers after standard care has not worked, but benefits vary and access/cost can be major issues.\n\nExamples include:\n\n- **Negative-pressure wound therapy** (\u201cwound VAC\u201d): often useful after surgical cleaning or for larger/deeper wounds.\n- **Special dressings**: selected based on drainage, depth, and tissue type. There is no single dressing proven best for all ulcers.\n- **Cellular/tissue-based skin substitutes**: may help some chronic neuropathic ulcers that have not improved after about **4 weeks** of high-quality standard care.\n- **Growth-factor products**: available in some settings but used selectively because benefit is modest, cost may be high, and suitability varies.\n- **Hyperbaric oxygen therapy**: may help a limited group with severe, ischemic, nonhealing ulcers, usually after vascular and wound-care evaluation. It is not routine treatment for every diabetic foot ulcer.\n\nProducts marketed as \u201cantiseptic,\u201d \u201cherbal,\u201d \u201csilver,\u201d honey, or topical antibiotics may be useful in specific situations, but none should substitute for off-loading, debridement, circulation assessment, and infection treatment. Topical antibiotics are generally not recommended for a clean, uninfected ulcer.\n\n## The biggest practical point\nFor a pressure-related ulcer on the bottom of the foot, **",
+    "latency_ms": 14456.8,
+    "token_count": 1106,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "98dfa459c947",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234909.4725332,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 7 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4669,
+          "evidence": [
+            "Latency 14457ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 14456.8,
+        "token_count": 1106,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.196; flagged=True"
+}

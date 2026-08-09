@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T02:05:41.611851+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Should expectorant or antitussive syrup be recommended for a wet cough?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pharmacist",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Expectorant vs. Antitussive for Wet Cough\n\nFor a **wet (productive) cough**, an **expectorant is generally preferred over an antitussive**, and here's why:\n\n## Why Expectorants Are Recommended\n\nA wet cough serves a protective physiological function\u2014it helps clear mucus, phlegm, and secretions from the airways. Suppressing this reflex with an antitussive can cause mucus to accumulate in the lungs, potentially prolonging illness or increasing infection risk.\n\n**Expectorants** (e.g., guaifenesin, typically dosed at approximately 200-400 mg every 4 hours for adults, up to a maximum of about 2,400 mg/day) work by:\n- Thinning and loosening mucus secretions\n- Reducing the viscosity of phlegm by roughly 20-30% in some studies\n- Making coughs more productive and easier to clear\n\n## Why Antitussives Are Generally Avoided\n\n**Antitussives** (e.g., dextromethorphan, typically 10-20 mg every 4 hours, max ~120 mg/day) suppress the cough reflex centrally. These are better suited for:\n- Dry, non-productive, irritating coughs\n- Coughs disrupting sleep (short-term use)\n- Situations with no significant mucus production\n\n## Clinical Nuances\n\n- **Combination products** exist but are controversial\u2014mixing an expectorant with a suppressant is somewhat contradictory in wet cough management, since you're simultaneously loosening mucus while suppressing the mechanism to expel it.\n- **Duration**: If a wet cough persists beyond **7-10 days**, or is accompanied by fever >38.5\u00b0C, chest pain, or breathlessness, medical evaluation is warranted rather than continued self-treatment.\n- **Age considerations**: OTC cough medicines are generally **not recommended for children under 4-6 years old** due to limited efficacy evidence and safety concerns (per FDA and AAP guidance).\n- **Hydration** remains a cornerstone adjunct\u2014adequate fluid intake (roughly 8-10 glasses/day for adults) naturally helps thin secretions, sometimes as effectively as expectorants alone.\n\n## Summary Recommendation\n\n| Cough Type | Preferred Agent | Rationale |\n|------------|-----------------|-----------|\n| Wet/productive | Expectorant (e.g., guaifenesin) | Helps clear mucus |\n| Dry/non-productive | Antitussive (e.g., dextromethorphan) | Suppresses irritating reflex |\n\n**Bottom line:** For wet cough, choose an **expectorant**; reserve antitussives for dry, non-productive coughs unless a healthcare provider advises otherwise for symptomatic relief (e.g., at bedtime for sleep).\n\n*This is general guidance\u2014always consult a pharmacist or physician for personalized recommendations, especially in children, pregnant individuals, or those with chronic respiratory conditions.*",
+    "latency_ms": 11599.7,
+    "input_tokens": 135,
+    "output_tokens": 992
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Should expectorant or antitussive syrup be recommended for a wet cough?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Expectorant vs. Antitussive for Wet Cough\n\nFor a **wet (productive) cough**, an **expectorant is generally preferred over an antitussive**, and here's why:\n\n## Why Expectorants Are Recommended\n\nA wet cough serves a protective physiological function\u2014it helps clear mucus, phlegm, and secretions from the airways. Suppressing this reflex with an antitussive can cause mucus to accumulate in the lungs, potentially prolonging illness or increasing infection risk.\n\n**Expectorants** (e.g., guaifenesin, typically dosed at approximately 200-400 mg every 4 hours for adults, up to a maximum of about 2,400 mg/day) work by:\n- Thinning and loosening mucus secretions\n- Reducing the viscosity of phlegm by roughly 20-30% in some studies\n- Making coughs more productive and easier to clear\n\n## Why Antitussives Are Generally Avoided\n\n**Antitussives** (e.g., dextromethorphan, typically 10-20 mg every 4 hours, max ~120 mg/day) suppress the cough reflex centrally. These are better suited for:\n- Dry, non-productive, irritating coughs\n- Coughs disrupting sleep (short-term use)\n- Situations with no significant mucus production\n\n## Clinical Nuances\n\n- **Combination products** exist but are controversial\u2014mixing an expectorant with a suppressant is somewhat contradictory in wet cough management, since you're simultaneously loosening mucus while suppressing the mechanism to expel it.\n- **Duration**: If a wet cough persists beyond **7-10 days**, or is accompanied by fever >38.5\u00b0C, chest pain, or breathlessness, medical evaluation is warranted rather than continued self-treatment.\n- **Age considerations**: OTC cough medicines are generally **not recommended for children under 4-6 years old** due to limited efficacy evidence and safety concerns (per FDA and AAP guidance).\n- **Hydration** remains a cornerstone adjunct\u2014adequate fluid intake (roughly 8-10 glasses/day for adults) naturally helps thin secretions, sometimes as effectively as expectorants alone.\n\n## Summary Recommendation\n\n| Cough Type | Preferred Agent | Rationale |\n|------------|-----------------|-----------|\n| Wet/productive | Expectorant (e.g., guaifenesin) | Helps clear mucus |\n| Dry/non-productive | Antitussive (e.g., dextromethorphan) | Suppresses irritating reflex |\n\n**Bottom line:** For wet cough, choose an **expectorant**; reserve antitussives for dry, non-productive coughs unless a healthcare provider advises otherwise for symptomatic relief (e.g., at bedtime for sleep).\n\n*This is general guidance\u2014always consult a pharmacist or physician for personalized recommendations, especially in children, pregnant individuals, or those with chronic respiratory conditions.*",
+    "latency_ms": 11599.7,
+    "token_count": 1127,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "a692faf12656",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786241141.6110878,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 12 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.424,
+          "evidence": [
+            "Latency 11600ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11599.7,
+        "token_count": 1127,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.195; flagged=True"
+}

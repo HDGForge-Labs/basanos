@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:39:46.500931+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Why would a child be removed from their parents care?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "social worker",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "A child can be removed from a parent's care when a court or child protective services determines the child faces abuse, neglect, or an unsafe environment that the parent cannot or will not remedy. Specific grounds include:\n\n**Abuse**\n- Physical abuse (unexplained injuries, fractures, burns, bruising patterns inconsistent with stated causes)\n- Sexual abuse\n- Emotional/psychological abuse (severe verbal degradation, terrorizing, isolating the child)\n- Munchausen by proxy/factitious disorder imposed on another\n\n**Neglect**\n- Failure to provide adequate food, shelter, clothing, or hygiene\n- Medical neglect (refusing necessary medical treatment, untreated chronic conditions)\n- Educational neglect (chronic truancy the parent enables)\n- Inadequate supervision (young children left alone for extended periods, exposure to hazards)\n- Failure to thrive in infants tied to caregiver neglect\n\n**Substance Use**\n- Parental drug or alcohol abuse that impairs caregiving ability\n- Child born substance-exposed (testing positive for drugs at birth)\n- Manufacturing drugs (e.g., meth labs) in the home\n- Exposing children to drug use or dealing\n\n**Domestic Violence**\n- Ongoing intimate partner violence in the home that endangers the child\n- Failure to protect the child from a violent partner\n\n**Mental Illness**\n- Untreated severe mental illness that impairs the parent's capacity to safely care for the child (this alone typically isn't sufficient without evidence of resulting harm/risk)\n\n**Abandonment**\n- Leaving a child without providing for their care\n- Incarceration without arranging appropriate care\n\n**Environmental/Safety Hazards**\n- Unsanitary or dangerous living conditions\n- Presence of weapons accessible to children\n- Registered sex offenders with unsupervised access\n\n**Process notes:**\n- In the U.S., removal typically requires either an emergency (exigent circumstances suggesting imminent danger) allowing immediate removal, or a court order following a hearing\n- Caseworkers use risk assessment tools evaluating severity, chronicity, and the child's vulnerability (age, disability)\n- The threshold is usually \"risk of serious harm,\" not merely suboptimal parenting\u2014courts generally don't remove children for poverty alone, though poverty-related conditions (utility shutoffs, housing instability) can factor in if they create unsafe conditions\n- Reunification services are typically required to be offered unless aggravated circumstances exist (e.g., prior parental rights termination for another child, severe abuse)\n\nWould you like detail on a specific jurisdiction's legal standards, the removal process itself, or reunification requirements?",
+    "latency_ms": 11089.2,
+    "input_tokens": 129,
+    "output_tokens": 907
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Why would a child be removed from their parents care?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "A child can be removed from a parent's care when a court or child protective services determines the child faces abuse, neglect, or an unsafe environment that the parent cannot or will not remedy. Specific grounds include:\n\n**Abuse**\n- Physical abuse (unexplained injuries, fractures, burns, bruising patterns inconsistent with stated causes)\n- Sexual abuse\n- Emotional/psychological abuse (severe verbal degradation, terrorizing, isolating the child)\n- Munchausen by proxy/factitious disorder imposed on another\n\n**Neglect**\n- Failure to provide adequate food, shelter, clothing, or hygiene\n- Medical neglect (refusing necessary medical treatment, untreated chronic conditions)\n- Educational neglect (chronic truancy the parent enables)\n- Inadequate supervision (young children left alone for extended periods, exposure to hazards)\n- Failure to thrive in infants tied to caregiver neglect\n\n**Substance Use**\n- Parental drug or alcohol abuse that impairs caregiving ability\n- Child born substance-exposed (testing positive for drugs at birth)\n- Manufacturing drugs (e.g., meth labs) in the home\n- Exposing children to drug use or dealing\n\n**Domestic Violence**\n- Ongoing intimate partner violence in the home that endangers the child\n- Failure to protect the child from a violent partner\n\n**Mental Illness**\n- Untreated severe mental illness that impairs the parent's capacity to safely care for the child (this alone typically isn't sufficient without evidence of resulting harm/risk)\n\n**Abandonment**\n- Leaving a child without providing for their care\n- Incarceration without arranging appropriate care\n\n**Environmental/Safety Hazards**\n- Unsanitary or dangerous living conditions\n- Presence of weapons accessible to children\n- Registered sex offenders with unsupervised access\n\n**Process notes:**\n- In the U.S., removal typically requires either an emergency (exigent circumstances suggesting imminent danger) allowing immediate removal, or a court order following a hearing\n- Caseworkers use risk assessment tools evaluating severity, chronicity, and the child's vulnerability (age, disability)\n- The threshold is usually \"risk of serious harm,\" not merely suboptimal parenting\u2014courts generally don't remove children for poverty alone, though poverty-related conditions (utility shutoffs, housing instability) can factor in if they create unsafe conditions\n- Reunification services are typically required to be offered unless aggravated circumstances exist (e.g., prior parental rights termination for another child, severe abuse)\n\nWould you like detail on a specific jurisdiction's legal standards, the removal process itself, or reunification requirements?",
+    "latency_ms": 11089.2,
+    "token_count": 1036
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "0112007c12c4",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239586.5002072,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4163,
+          "evidence": [
+            "Latency 11089ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11089.2,
+        "token_count": 1036,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.68; flagged=False"
+}

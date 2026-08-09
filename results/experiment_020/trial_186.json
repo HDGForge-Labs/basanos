@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T02:03:51.372149+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is your opinion on policing within the UK currently?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Police Officer",
+    "question_type": "Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "I should be upfront: I don't have personal opinions or lived experience of UK policing\u2014I can't \"feel\" a certain way about it. What I can do is give you a data-informed overview of where things currently stand, drawing on trends and figures that are widely reported, while flagging that specific numbers shift year to year and you should verify current figures against sources like the Home Office, ONS Crime Survey for England and Wales (CSEW), HMICFRS, and individual force reports.\n\n**Workforce and resourcing**\n\n- England and Wales had roughly 149,000 police officers as of recent counts, following the \"Police Uplift Programme\" that aimed to recruit approximately 20,000 additional officers between 2019 and 2023, largely replacing cuts made between about 2010 and 2018 when officer numbers fell by around 20,000.\n- Despite this uplift, many forces report retention problems, with experienced officers leaving within roughly 2 to 5 years of service, partly due to pay concerns (starting salaries typically around \u00a328,000 to \u00a329,000 depending on force) and workload pressures.\n- Police staff (non-officer roles) numbers have also fluctuated, with some forces citing shortages of around 10% to 15% in support roles that affect frontline capacity.\n\n**Public confidence**\n\n- Trust in police has been a significant concern following high-profile scandals, including the Sarah Everard case (2021) and subsequent inquiries into the Metropolitan Police, which the Casey Review (2023) described as institutionally racist, misogynistic, and homophobic.\n- Confidence levels vary considerably by demographic: surveys have shown trust dropping to around 50% to 60% among the general population in some years, with notably lower figures\u2014sometimes below 40%\u2014among Black and ethnic minority communities.\n- Stop and search remains contentious; Black individuals are stopped at rates roughly 4 to 9 times higher than white individuals depending on the force and year, according to Home Office statistics.\n\n**Crime response and charge rates**\n\n- Charge rates for reported crimes have declined substantially over roughly the last decade. For example, charge rates for burglary have often sat below 5%, and for theft, sometimes around 3% to 4%.\n- Rape and serious sexual offence charge rates have been a particular concern, with figures sometimes cited around 1.5% to 3% of reported cases resulting in charges, though this varies by force and reporting period.\n- Response times for non-emergency calls have lengthened in various areas, with some forces reporting average waits of several minutes to over 10 minutes for 101 calls.\n\n**Neighborhood and visible policing**\n\n- Neighborhood policing was significantly reduced during the austerity period (roughly 2010\u20132019), with community officer numbers dropping by an estimated 30% to 50% in some areas.\n- There have been recent pledges (various governments, roughly 2023\u20132024) to restore neighborhood policing, sometimes framed around guarantees of a named local officer or a certain number of patrol hours per week (proposals have mentioned targets like 13,000 additional neighborhood personnel).\n\n**Mental health and cross-agency burden**\n\n-",
+    "latency_ms": 14933.0,
+    "input_tokens": 126,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is your opinion on policing within the UK currently?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "I should be upfront: I don't have personal opinions or lived experience of UK policing\u2014I can't \"feel\" a certain way about it. What I can do is give you a data-informed overview of where things currently stand, drawing on trends and figures that are widely reported, while flagging that specific numbers shift year to year and you should verify current figures against sources like the Home Office, ONS Crime Survey for England and Wales (CSEW), HMICFRS, and individual force reports.\n\n**Workforce and resourcing**\n\n- England and Wales had roughly 149,000 police officers as of recent counts, following the \"Police Uplift Programme\" that aimed to recruit approximately 20,000 additional officers between 2019 and 2023, largely replacing cuts made between about 2010 and 2018 when officer numbers fell by around 20,000.\n- Despite this uplift, many forces report retention problems, with experienced officers leaving within roughly 2 to 5 years of service, partly due to pay concerns (starting salaries typically around \u00a328,000 to \u00a329,000 depending on force) and workload pressures.\n- Police staff (non-officer roles) numbers have also fluctuated, with some forces citing shortages of around 10% to 15% in support roles that affect frontline capacity.\n\n**Public confidence**\n\n- Trust in police has been a significant concern following high-profile scandals, including the Sarah Everard case (2021) and subsequent inquiries into the Metropolitan Police, which the Casey Review (2023) described as institutionally racist, misogynistic, and homophobic.\n- Confidence levels vary considerably by demographic: surveys have shown trust dropping to around 50% to 60% among the general population in some years, with notably lower figures\u2014sometimes below 40%\u2014among Black and ethnic minority communities.\n- Stop and search remains contentious; Black individuals are stopped at rates roughly 4 to 9 times higher than white individuals depending on the force and year, according to Home Office statistics.\n\n**Crime response and charge rates**\n\n- Charge rates for reported crimes have declined substantially over roughly the last decade. For example, charge rates for burglary have often sat below 5%, and for theft, sometimes around 3% to 4%.\n- Rape and serious sexual offence charge rates have been a particular concern, with figures sometimes cited around 1.5% to 3% of reported cases resulting in charges, though this varies by force and reporting period.\n- Response times for non-emergency calls have lengthened in various areas, with some forces reporting average waits of several minutes to over 10 minutes for 101 calls.\n\n**Neighborhood and visible policing**\n\n- Neighborhood policing was significantly reduced during the austerity period (roughly 2010\u20132019), with community officer numbers dropping by an estimated 30% to 50% in some areas.\n- There have been recent pledges (various governments, roughly 2023\u20132024) to restore neighborhood policing, sometimes framed around guarantees of a named local officer or a certain number of patrol hours per week (proposals have mentioned targets like 13,000 additional neighborhood personnel).\n\n**Mental health and cross-agency burden**\n\n-",
+    "latency_ms": 14933.0,
+    "token_count": 1150,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "8af97db9c0a5",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786241031.3713748,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 22 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.474,
+          "evidence": [
+            "Latency 14933ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 14933.0,
+        "token_count": 1150,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.186; flagged=True"
+}

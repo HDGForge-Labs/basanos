@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:29:12.227441+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Can direct evidence in a case that has been obtained illegally be considered by the court in some cases if it directly points to the defendant's guilt?",
+    "field": "Law",
+    "specific_field": "civil law",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "The answer depends heavily on which legal system you're operating under, since approaches to illegally obtained evidence vary substantially.\n\n**United States**\n\nGenerally no, under the exclusionary rule established in *Weeks v. United States* (1914) for federal cases and extended to states via *Mapp v. Ohio* (1961). Evidence obtained through unconstitutional searches or seizures is excluded regardless of its probative value or how directly it points to guilt. The rule exists to deter police misconduct, not to assess reliability of evidence.\n\nThat said, there are significant exceptions:\n\n- **Good faith exception** (*United States v. Leon*, 1984): evidence obtained by officers reasonably relying on a defective warrant may be admitted.\n- **Inevitable discovery** (*Nix v. Williams*, 1984): if evidence would have been discovered anyway through lawful means, it's admissible.\n- **Independent source doctrine**: if evidence was also obtained through a separate, lawful line of investigation.\n- **Attenuation doctrine**: if enough time/intervening circumstances separate the illegal act from the discovery of evidence.\n- **Impeachment use**: illegally obtained evidence generally cannot be used in the prosecution's case-in-chief, but can sometimes be used to impeach a defendant's credibility if they testify inconsistently (*United States v. Havens*, 1980).\n\n**England and Wales**\n\nMore flexible. Under Section 78 of the Police and Criminal Evidence Act 1984 (PACE), courts have discretion to exclude evidence if admitting it \"would have such an adverse effect on the fairness of the proceedings that the court ought not to admit it.\" This is discretionary, not automatic exclusion\u2014judges weigh the probative value against how the evidence was obtained. Illegally obtained evidence is not automatically inadmissible as it often is in the US.\n\n**Civil law jurisdictions (e.g., Germany, France)**\n\nMany use a proportionality/balancing test. German courts, for instance, weigh the severity of the rights violation against the importance of the evidence and the seriousness of the offense. Minor procedural violations may not lead to exclusion, especially for serious crimes, while grave violations (e.g., coerced confessions, illegal wiretaps without judicial authorization) typically do.\n\n**Canada**\n\nSection 24(2) of the Charter of Rights and Freedoms allows exclusion only if admission \"would bring the administration of justice into disrepute.\" The *Grant* test (2009) considers: seriousness of the Charter breach, impact on the accused's protected interests, and society's interest in adjudication on the merits. This means highly reliable, probative evidence\u2014even if illegally obtained\u2014may still be admitted if the breach was minor or inadvertent.\n\n**Bottom line**\n\nIn the US, illegality typically trumps probative value except through specific doctrinal exceptions. In England, Canada, and much of continental Europe, courts more openly balance the probative value and directness of evidence against the nature of the violation, meaning highly incriminating evidence obtained through less serious illegality often *is* admitted.",
+    "latency_ms": 12607.1,
+    "input_tokens": 159,
+    "output_tokens": 1020
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Can direct evidence in a case that has been obtained illegally be considered by the court in some cases if it directly points to the defendant's guilt?",
+      "field": "Law"
+    },
+    "response": "The answer depends heavily on which legal system you're operating under, since approaches to illegally obtained evidence vary substantially.\n\n**United States**\n\nGenerally no, under the exclusionary rule established in *Weeks v. United States* (1914) for federal cases and extended to states via *Mapp v. Ohio* (1961). Evidence obtained through unconstitutional searches or seizures is excluded regardless of its probative value or how directly it points to guilt. The rule exists to deter police misconduct, not to assess reliability of evidence.\n\nThat said, there are significant exceptions:\n\n- **Good faith exception** (*United States v. Leon*, 1984): evidence obtained by officers reasonably relying on a defective warrant may be admitted.\n- **Inevitable discovery** (*Nix v. Williams*, 1984): if evidence would have been discovered anyway through lawful means, it's admissible.\n- **Independent source doctrine**: if evidence was also obtained through a separate, lawful line of investigation.\n- **Attenuation doctrine**: if enough time/intervening circumstances separate the illegal act from the discovery of evidence.\n- **Impeachment use**: illegally obtained evidence generally cannot be used in the prosecution's case-in-chief, but can sometimes be used to impeach a defendant's credibility if they testify inconsistently (*United States v. Havens*, 1980).\n\n**England and Wales**\n\nMore flexible. Under Section 78 of the Police and Criminal Evidence Act 1984 (PACE), courts have discretion to exclude evidence if admitting it \"would have such an adverse effect on the fairness of the proceedings that the court ought not to admit it.\" This is discretionary, not automatic exclusion\u2014judges weigh the probative value against how the evidence was obtained. Illegally obtained evidence is not automatically inadmissible as it often is in the US.\n\n**Civil law jurisdictions (e.g., Germany, France)**\n\nMany use a proportionality/balancing test. German courts, for instance, weigh the severity of the rights violation against the importance of the evidence and the seriousness of the offense. Minor procedural violations may not lead to exclusion, especially for serious crimes, while grave violations (e.g., coerced confessions, illegal wiretaps without judicial authorization) typically do.\n\n**Canada**\n\nSection 24(2) of the Charter of Rights and Freedoms allows exclusion only if admission \"would bring the administration of justice into disrepute.\" The *Grant* test (2009) considers: seriousness of the Charter breach, impact on the accused's protected interests, and society's interest in adjudication on the merits. This means highly reliable, probative evidence\u2014even if illegally obtained\u2014may still be admitted if the breach was minor or inadvertent.\n\n**Bottom line**\n\nIn the US, illegality typically trumps probative value except through specific doctrinal exceptions. In England, Canada, and much of continental Europe, courts more openly balance the probative value and directness of evidence against the nature of the violation, meaning highly incriminating evidence obtained through less serious illegality often *is* admitted.",
+    "latency_ms": 12607.1,
+    "token_count": 1179
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "36024f9b11bd",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786238952.226685,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4391,
+          "evidence": [
+            "Latency 12607ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12607.1,
+        "token_count": 1179,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.14; flagged=False"
+}

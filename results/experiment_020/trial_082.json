@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:42:43.218246+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What is the initial treatment for anal fissures?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "medical profesional based in family medicine",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Initial Treatment for Anal Fissures\n\nMost acute anal fissures (present <6 weeks) are managed conservatively first, since up to 50% heal with these measures alone.\n\n## First-Line Conservative Measures\n\n**Dietary/lifestyle modifications:**\n- High-fiber diet (25-35g/day)\n- Adequate fluid intake\n- Fiber supplements (psyllium, methylcellulose) if dietary intake insufficient\n\n**Stool softeners:**\n- Docusate sodium or similar agents to prevent straining and further trauma\n\n**Sitz baths:**\n- Warm water soaks for 10-20 minutes, several times daily, especially after bowel movements\n- Helps relax the internal anal sphincter and provides symptomatic relief\n\n**Topical analgesics:**\n- Lidocaine 2-5% ointment applied before defecation to reduce pain\n\n## Pharmacologic Therapy (for fissures not responding to conservative measures, or chronic fissures)\n\n**Topical smooth muscle relaxants** - first-line pharmacologic therapy to reduce internal sphincter spasm and improve blood flow:\n\n- **Nitroglycerin ointment (0.2-0.4%)**: Applied 2-3 times daily; healing rates ~50-60%. Main side effect is headache (occurs in up to 20-30% of patients) due to systemic vasodilation\n\n- **Topical calcium channel blockers**: \n  - Diltiazem 2% ointment/gel, or\n  - Nifedipine 0.2-0.5% ointment\n  - Applied twice daily; comparable efficacy to nitroglycerin with fewer side effects (less headache), often preferred as first-line\n\n## Treatment Timeline\n\n- Trial conservative + topical medical therapy for **6-8 weeks**\n- If fissure fails to heal after this period, it's considered **chronic** and warrants further evaluation\n- Chronic fissures unresponsive to topical therapy may require:\n  - **Botulinum toxin injection** into the internal sphincter\n  - **Lateral internal sphincterotomy** (surgical, gold standard for refractory cases)\n\n## Important Caveat\n\nBefore starting treatment, rule out **secondary causes** of fissure (Crohn's disease, malignancy, HIV, syphilis, tuberculosis) \u2014 especially if the fissure is:\n- Located off the midline (anterior/lateral rather than posterior)\n- Multiple\n- Associated with systemic symptoms\n- Not responding to standard therapy\n\nPosterior midline location (most common, ~90%) with typical presentation (pain with defecation, bright red rectal bleeding, visible sentinel pile or hypertrophied papilla) generally doesn't require extensive workup before starting conservative treatment.",
+    "latency_ms": 11048.1,
+    "input_tokens": 130,
+    "output_tokens": 923
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the initial treatment for anal fissures?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Initial Treatment for Anal Fissures\n\nMost acute anal fissures (present <6 weeks) are managed conservatively first, since up to 50% heal with these measures alone.\n\n## First-Line Conservative Measures\n\n**Dietary/lifestyle modifications:**\n- High-fiber diet (25-35g/day)\n- Adequate fluid intake\n- Fiber supplements (psyllium, methylcellulose) if dietary intake insufficient\n\n**Stool softeners:**\n- Docusate sodium or similar agents to prevent straining and further trauma\n\n**Sitz baths:**\n- Warm water soaks for 10-20 minutes, several times daily, especially after bowel movements\n- Helps relax the internal anal sphincter and provides symptomatic relief\n\n**Topical analgesics:**\n- Lidocaine 2-5% ointment applied before defecation to reduce pain\n\n## Pharmacologic Therapy (for fissures not responding to conservative measures, or chronic fissures)\n\n**Topical smooth muscle relaxants** - first-line pharmacologic therapy to reduce internal sphincter spasm and improve blood flow:\n\n- **Nitroglycerin ointment (0.2-0.4%)**: Applied 2-3 times daily; healing rates ~50-60%. Main side effect is headache (occurs in up to 20-30% of patients) due to systemic vasodilation\n\n- **Topical calcium channel blockers**: \n  - Diltiazem 2% ointment/gel, or\n  - Nifedipine 0.2-0.5% ointment\n  - Applied twice daily; comparable efficacy to nitroglycerin with fewer side effects (less headache), often preferred as first-line\n\n## Treatment Timeline\n\n- Trial conservative + topical medical therapy for **6-8 weeks**\n- If fissure fails to heal after this period, it's considered **chronic** and warrants further evaluation\n- Chronic fissures unresponsive to topical therapy may require:\n  - **Botulinum toxin injection** into the internal sphincter\n  - **Lateral internal sphincterotomy** (surgical, gold standard for refractory cases)\n\n## Important Caveat\n\nBefore starting treatment, rule out **secondary causes** of fissure (Crohn's disease, malignancy, HIV, syphilis, tuberculosis) \u2014 especially if the fissure is:\n- Located off the midline (anterior/lateral rather than posterior)\n- Multiple\n- Associated with systemic symptoms\n- Not responding to standard therapy\n\nPosterior midline location (most common, ~90%) with typical presentation (pain with defecation, bright red rectal bleeding, visible sentinel pile or hypertrophied papilla) generally doesn't require extensive workup before starting conservative treatment.",
+    "latency_ms": 11048.1,
+    "token_count": 1053
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "23a95d736cf7",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239763.2174664,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4157,
+          "evidence": [
+            "Latency 11048ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11048.1,
+        "token_count": 1053,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.82; flagged=False"
+}

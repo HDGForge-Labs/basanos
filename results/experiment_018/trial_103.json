@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T22:58:43.570377+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "You have a patient admitted for upper gastrointestinal bleeding, the endoscopy reveals a gastric ulcer in incisura angularis with a point of hematin and minimal traces of dark blood in the stomach. Biopsies of the ulcer margin and an antral biopsy are performed for the rapid urease test with a positive result. What is the next step?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General medicine",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "The next step is to **start eradication therapy for *Helicobacter pylori***, in addition to standard management of the bleeding gastric ulcer.\n\nBecause this is an **actively bleeding ulcer**\u2014albeit with only a **flat pigmented spot/point of hematin (Forrest IIc)** and minimal residual blood\u2014management generally includes:\n\n1. **High-dose proton-pump inhibitor (PPI) therapy**\n   - For example, pantoprazole **80 mg IV bolus followed by 8 mg/hour infusion for approximately 72 hours**, or an accepted intermittent high-dose IV/oral regimen.\n   - A Forrest IIc lesion usually does **not require endoscopic hemostatic therapy** if there is no active bleeding or adherent clot.\n\n2. ***H. pylori* eradication therapy**\n   - In regions with clarithromycin resistance above approximately **15%**, or when prior macrolide exposure is possible, use **14 days of optimized bismuth quadruple therapy**:\n     - PPI twice daily  \n     - Bismuth subcitrate **120\u2013300 mg four times daily** or bismuth subsalicylate **524 mg four times daily**\n     - Tetracycline **500 mg four times daily**\n     - Metronidazole **500 mg three or four times daily**\n   - An alternative, where appropriate, is concomitant therapy or another guideline-recommended regimen based on local resistance patterns and allergies.\n\n3. **Confirm eradication**\n   - Perform a urea breath test or stool antigen test **at least 4 weeks after completing antibiotics** and after withholding PPIs for approximately **2 weeks**.\n   - Do not use serology to confirm cure.\n   - Since this is a **gastric ulcer**, repeat endoscopy is commonly recommended after approximately **6\u20138 weeks**\u2014or according to local protocol\u2014to document healing and exclude malignancy, even though margin biopsies were obtained.\n\nThus, the immediate disease-specific action is **initiation of *H. pylori* eradication therapy**, with continued PPI treatment and subsequent confirmation of eradication and gastric-ulcer healing.",
+    "latency_ms": 3515.2,
+    "input_tokens": 141,
+    "output_tokens": 439
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "You have a patient admitted for upper gastrointestinal bleeding, the endoscopy reveals a gastric ulcer in incisura angularis with a point of hematin and minimal traces of dark blood in the stomach. Biopsies of the ulcer margin and an antral biopsy are performed for the rapid urease test with a positive result. What is the next step?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "The next step is to **start eradication therapy for *Helicobacter pylori***, in addition to standard management of the bleeding gastric ulcer.\n\nBecause this is an **actively bleeding ulcer**\u2014albeit with only a **flat pigmented spot/point of hematin (Forrest IIc)** and minimal residual blood\u2014management generally includes:\n\n1. **High-dose proton-pump inhibitor (PPI) therapy**\n   - For example, pantoprazole **80 mg IV bolus followed by 8 mg/hour infusion for approximately 72 hours**, or an accepted intermittent high-dose IV/oral regimen.\n   - A Forrest IIc lesion usually does **not require endoscopic hemostatic therapy** if there is no active bleeding or adherent clot.\n\n2. ***H. pylori* eradication therapy**\n   - In regions with clarithromycin resistance above approximately **15%**, or when prior macrolide exposure is possible, use **14 days of optimized bismuth quadruple therapy**:\n     - PPI twice daily  \n     - Bismuth subcitrate **120\u2013300 mg four times daily** or bismuth subsalicylate **524 mg four times daily**\n     - Tetracycline **500 mg four times daily**\n     - Metronidazole **500 mg three or four times daily**\n   - An alternative, where appropriate, is concomitant therapy or another guideline-recommended regimen based on local resistance patterns and allergies.\n\n3. **Confirm eradication**\n   - Perform a urea breath test or stool antigen test **at least 4 weeks after completing antibiotics** and after withholding PPIs for approximately **2 weeks**.\n   - Do not use serology to confirm cure.\n   - Since this is a **gastric ulcer**, repeat endoscopy is commonly recommended after approximately **6\u20138 weeks**\u2014or according to local protocol\u2014to document healing and exclude malignancy, even though margin biopsies were obtained.\n\nThus, the immediate disease-specific action is **initiation of *H. pylori* eradication therapy**, with continued PPI treatment and subsequent confirmation of eradication and gastric-ulcer healing.",
+    "latency_ms": 3515.2,
+    "token_count": 580,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "afcac890ef93",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229923.569623,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 11 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 3515.2,
+        "token_count": 580,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.103; flagged=True"
+}

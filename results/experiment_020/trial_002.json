@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T01:26:51.568016+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What diseases are caused by pathogenic bacteria?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biomedical technologist",
+    "question_type": "Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Diseases Caused by Pathogenic Bacteria\n\n## Respiratory System\n- **Tuberculosis** \u2014 *Mycobacterium tuberculosis*\n- **Bacterial pneumonia** \u2014 *Streptococcus pneumoniae*, *Haemophilus influenzae*, *Klebsiella pneumoniae*, *Legionella pneumophila* (Legionnaires' disease)\n- **Whooping cough (pertussis)** \u2014 *Bordetella pertussis*\n- **Diphtheria** \u2014 *Corynebacterium diphtheriae*\n- **Strep throat** \u2014 *Streptococcus pyogenes* (Group A strep)\n\n## Gastrointestinal System\n- **Cholera** \u2014 *Vibrio cholerae*\n- **Typhoid fever** \u2014 *Salmonella enterica* serovar Typhi\n- **Bacterial dysentery (shigellosis)** \u2014 *Shigella* species\n- **Traveler's diarrhea/E. coli infections** \u2014 *Escherichia coli* (enterotoxigenic, enterohemorrhagic O157:H7)\n- **Peptic ulcers/gastritis** \u2014 *Helicobacter pylori*\n- **Campylobacteriosis** \u2014 *Campylobacter jejuni*\n- **Botulism** \u2014 *Clostridium botulinum* (toxin-mediated)\n- **C. diff colitis** \u2014 *Clostridioides difficile*\n\n## Skin and Soft Tissue\n- **Impetigo, cellulitis, necrotizing fasciitis** \u2014 *Staphylococcus aureus*, *Streptococcus pyogenes*\n- **MRSA infections** \u2014 Methicillin-resistant *Staphylococcus aureus*\n- **Leprosy (Hansen's disease)** \u2014 *Mycobacterium leprae*\n- **Anthrax (cutaneous)** \u2014 *Bacillus anthracis*\n\n## Nervous System\n- **Bacterial meningitis** \u2014 *Neisseria meningitidis*, *Streptococcus pneumoniae*, *Haemophilus influenzae* type b\n- **Tetanus** \u2014 *Clostridium tetani*\n- **Botulism** (neurotoxic) \u2014 *Clostridium botulinum*\n\n## Sexually Transmitted\n- **Syphilis** \u2014 *Treponema pallidum*\n- **Gonorrhea** \u2014 *Neisseria gonorrhoeae*\n- **Chlamydia** \u2014 *Chlamydia trachomatis*\n\n## Zoonotic/Vector-Borne\n- **Lyme disease** \u2014 *Borrelia burgdorferi* (tick-borne)\n- **Plague** \u2014 *Yersinia pestis* (flea-borne)\n- **Rocky Mountain spotted fever** \u2014 *Rickettsia rickettsii*\n- **Leptospirosis** \u2014 *Leptospira* species\n- **Brucellosis** \u2014 *Brucella* species\n\n## Genitourinary\n- **UTIs** \u2014 Primarily *E. coli*, also *Klebsiella*, *Proteus*, *Enterococcus*\n\n## Other Systemic Inf",
+    "latency_ms": 8069.4,
+    "input_tokens": 133,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What diseases are caused by pathogenic bacteria?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Diseases Caused by Pathogenic Bacteria\n\n## Respiratory System\n- **Tuberculosis** \u2014 *Mycobacterium tuberculosis*\n- **Bacterial pneumonia** \u2014 *Streptococcus pneumoniae*, *Haemophilus influenzae*, *Klebsiella pneumoniae*, *Legionella pneumophila* (Legionnaires' disease)\n- **Whooping cough (pertussis)** \u2014 *Bordetella pertussis*\n- **Diphtheria** \u2014 *Corynebacterium diphtheriae*\n- **Strep throat** \u2014 *Streptococcus pyogenes* (Group A strep)\n\n## Gastrointestinal System\n- **Cholera** \u2014 *Vibrio cholerae*\n- **Typhoid fever** \u2014 *Salmonella enterica* serovar Typhi\n- **Bacterial dysentery (shigellosis)** \u2014 *Shigella* species\n- **Traveler's diarrhea/E. coli infections** \u2014 *Escherichia coli* (enterotoxigenic, enterohemorrhagic O157:H7)\n- **Peptic ulcers/gastritis** \u2014 *Helicobacter pylori*\n- **Campylobacteriosis** \u2014 *Campylobacter jejuni*\n- **Botulism** \u2014 *Clostridium botulinum* (toxin-mediated)\n- **C. diff colitis** \u2014 *Clostridioides difficile*\n\n## Skin and Soft Tissue\n- **Impetigo, cellulitis, necrotizing fasciitis** \u2014 *Staphylococcus aureus*, *Streptococcus pyogenes*\n- **MRSA infections** \u2014 Methicillin-resistant *Staphylococcus aureus*\n- **Leprosy (Hansen's disease)** \u2014 *Mycobacterium leprae*\n- **Anthrax (cutaneous)** \u2014 *Bacillus anthracis*\n\n## Nervous System\n- **Bacterial meningitis** \u2014 *Neisseria meningitidis*, *Streptococcus pneumoniae*, *Haemophilus influenzae* type b\n- **Tetanus** \u2014 *Clostridium tetani*\n- **Botulism** (neurotoxic) \u2014 *Clostridium botulinum*\n\n## Sexually Transmitted\n- **Syphilis** \u2014 *Treponema pallidum*\n- **Gonorrhea** \u2014 *Neisseria gonorrhoeae*\n- **Chlamydia** \u2014 *Chlamydia trachomatis*\n\n## Zoonotic/Vector-Borne\n- **Lyme disease** \u2014 *Borrelia burgdorferi* (tick-borne)\n- **Plague** \u2014 *Yersinia pestis* (flea-borne)\n- **Rocky Mountain spotted fever** \u2014 *Rickettsia rickettsii*\n- **Leptospirosis** \u2014 *Leptospira* species\n- **Brucellosis** \u2014 *Brucella* species\n\n## Genitourinary\n- **UTIs** \u2014 Primarily *E. coli*, also *Klebsiella*, *Proteus*, *Enterococcus*\n\n## Other Systemic Inf",
+    "latency_ms": 8069.4,
+    "token_count": 1157
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "f6e27fab2ab8",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786238811.5672214,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 8069.4,
+        "token_count": 1157,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.2; flagged=False"
+}

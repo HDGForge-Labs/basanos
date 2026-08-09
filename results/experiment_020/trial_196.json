@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T02:05:53.593890+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Do the medicines used for diabetes foot ulcer work?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Sales rep in medicines",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Diabetic Foot Ulcer Treatments: Do They Work?\n\nDiabetic foot ulcers (DFUs) affect approximately 15-25% of people with diabetes during their lifetime, and treatment efficacy varies considerably depending on the specific therapy. Here's a breakdown of what the evidence shows:\n\n## Standard Care Foundation\n\nBefore discussing specific medicines, it's important to note that **offloading pressure** (via total contact casts) and **debridement** remain the most evidence-backed interventions, with healing rates of roughly 70-90% for appropriate candidates when combined with good wound care\u2014often outperforming many adjunctive drugs alone.\n\n## Topical Treatments\n\n**Becaplermin (Regranex) - PDGF gel**\n- Shows modest benefit, increasing complete healing rates by approximately 10-15% compared to placebo in some trials\n- Typical healing rates: around 50% vs 35% with standard care alone over 20 weeks\n- Carries an FDA black box warning for increased cancer mortality risk with repeated use (3+ tubes)\n\n**Silver-based dressings**\n- Evidence is mixed; some studies show roughly 10-20% improvement in healing time, but Cochrane reviews suggest insufficient high-quality evidence for routine use\n\n**Enzymatic debriding agents (collagenase)**\n- Modest evidence, generally less effective than surgical/sharp debridement\n\n## Systemic Antibiotics\n- Only indicated for **infected** ulcers (not all DFUs are infected)\n- Typical courses: 7-14 days for soft tissue infection, up to 6 weeks for osteomyelitis\n- Cure rates for mild-moderate infections: approximately 80-90% with appropriate antibiotic selection\n\n## Advanced Therapies\n\n**Hyperbaric oxygen therapy (HBOT)**\n- Evidence suggests roughly a 20-30% reduction in major amputation risk in certain trials (particularly for ischemic ulcers)\n- Cochrane reviews indicate short-term benefit but uncertain long-term impact\n- Typically requires 20-40 sessions, making cost-effectiveness a concern\n\n**Bioengineered skin substitutes** (Apligraf, Dermagraft)\n- Complete healing rates of approximately 50-60% vs 30-40% with standard care in 12-week trials\n- Expensive (~$1,000-3,000+ per application)\n\n**Negative pressure wound therapy (NPWT)**\n- Studies suggest roughly 15-20% higher healing rates and faster healing time (by about 3-4 weeks) compared to standard dressings, particularly post-amputation\n\n## Emerging/Investigational\n- **Growth factors, stem cell therapies, and exosome treatments** show promise in smaller trials but lack large-scale RCT confirmation\n\n## Bottom Line\n\n- **No single medicine is dramatically superior**\u2014most adjunctive therapies provide incremental benefits (typically 10-25% improvement over standard care alone)\n- **Multidisciplinary approach** (podi",
+    "latency_ms": 11975.2,
+    "input_tokens": 130,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Do the medicines used for diabetes foot ulcer work?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Diabetic Foot Ulcer Treatments: Do They Work?\n\nDiabetic foot ulcers (DFUs) affect approximately 15-25% of people with diabetes during their lifetime, and treatment efficacy varies considerably depending on the specific therapy. Here's a breakdown of what the evidence shows:\n\n## Standard Care Foundation\n\nBefore discussing specific medicines, it's important to note that **offloading pressure** (via total contact casts) and **debridement** remain the most evidence-backed interventions, with healing rates of roughly 70-90% for appropriate candidates when combined with good wound care\u2014often outperforming many adjunctive drugs alone.\n\n## Topical Treatments\n\n**Becaplermin (Regranex) - PDGF gel**\n- Shows modest benefit, increasing complete healing rates by approximately 10-15% compared to placebo in some trials\n- Typical healing rates: around 50% vs 35% with standard care alone over 20 weeks\n- Carries an FDA black box warning for increased cancer mortality risk with repeated use (3+ tubes)\n\n**Silver-based dressings**\n- Evidence is mixed; some studies show roughly 10-20% improvement in healing time, but Cochrane reviews suggest insufficient high-quality evidence for routine use\n\n**Enzymatic debriding agents (collagenase)**\n- Modest evidence, generally less effective than surgical/sharp debridement\n\n## Systemic Antibiotics\n- Only indicated for **infected** ulcers (not all DFUs are infected)\n- Typical courses: 7-14 days for soft tissue infection, up to 6 weeks for osteomyelitis\n- Cure rates for mild-moderate infections: approximately 80-90% with appropriate antibiotic selection\n\n## Advanced Therapies\n\n**Hyperbaric oxygen therapy (HBOT)**\n- Evidence suggests roughly a 20-30% reduction in major amputation risk in certain trials (particularly for ischemic ulcers)\n- Cochrane reviews indicate short-term benefit but uncertain long-term impact\n- Typically requires 20-40 sessions, making cost-effectiveness a concern\n\n**Bioengineered skin substitutes** (Apligraf, Dermagraft)\n- Complete healing rates of approximately 50-60% vs 30-40% with standard care in 12-week trials\n- Expensive (~$1,000-3,000+ per application)\n\n**Negative pressure wound therapy (NPWT)**\n- Studies suggest roughly 15-20% higher healing rates and faster healing time (by about 3-4 weeks) compared to standard dressings, particularly post-amputation\n\n## Emerging/Investigational\n- **Growth factors, stem cell therapies, and exosome treatments** show promise in smaller trials but lack large-scale RCT confirmation\n\n## Bottom Line\n\n- **No single medicine is dramatically superior**\u2014most adjunctive therapies provide incremental benefits (typically 10-25% improvement over standard care alone)\n- **Multidisciplinary approach** (podi",
+    "latency_ms": 11975.2,
+    "token_count": 1154,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "976c515a7cde",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786241153.5931172,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 20 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4296,
+          "evidence": [
+            "Latency 11975ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11975.2,
+        "token_count": 1154,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.196; flagged=True"
+}

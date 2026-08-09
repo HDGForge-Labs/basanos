@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T00:21:05.493219+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Why are infant formula brands not necessarily promoted to pregnant and lactating women?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Dietician/ Nutritionist ",
+    "question_type": "Directed question that has a single unambiguous answer| Open-ended question that is potentially ambiguous| Question that describes a hypothetical scenario and asks a question based on this scenario| Request for a list of resources where one can find more information| Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Infant formula brands are often **not broadly promoted directly to pregnant and lactating women** because of public-health policy, medical guidance, and marketing regulations designed to protect breastfeeding.\n\nKey reasons include:\n\n- **Breastfeeding is generally recommended as the default when possible.**  \n  The World Health Organization (WHO) and UNICEF recommend **exclusive breastfeeding for the first 6 months**, followed by continued breastfeeding alongside complementary foods up to **2 years or beyond**. Promotion of formula during pregnancy or early postpartum can influence feeding decisions before breastfeeding is established.\n\n- **Early marketing can reduce breastfeeding initiation or duration.**  \n  Feeding decisions are often made during pregnancy or within the first few days after birth. Free samples, coupons, branded maternity materials, or direct advertising may make formula seem necessary or equivalent even when it is not medically needed. Breastfeeding establishment is particularly sensitive in roughly the first **3\u201314 days** after delivery.\n\n- **The WHO International Code restricts promotion of breast-milk substitutes.**  \n  The 1981 WHO International Code of Marketing of Breast-milk Substitutes calls for limits on advertising and promotional practices for products used as breast-milk substitutes, especially **infant formula intended for babies under 6 months**. It discourages:\n  - Advertising formula directly to the public\n  - Free samples to mothers\n  - Gifts or incentives to health workers\n  - Promotion in health facilities\n  - Marketing that idealizes formula feeding\n\n  Many countries have adopted some or all of these provisions into national law, though enforcement differs widely.\n\n- **Pregnant and breastfeeding women are considered a vulnerable marketing audience.**  \n  During pregnancy and shortly after birth, parents may be anxious about milk supply, infant weight, sleep, or feeding. Formula advertising can exploit concerns such as \u201clow milk supply\u201d or \u201cbaby not satisfied,\u201d even though perceived low supply is more common than true physiological inability to produce enough milk.\n\n- **Health facilities aim to avoid conflicts of interest.**  \n  Hospitals and maternity services may avoid formula-company sponsorship, branded educational materials, and free formula packs. Programs such as the Baby-Friendly Hospital Initiative encourage practices such as skin-to-skin contact, rooming-in, breastfeeding support, and avoiding non-medically indicated formula supplementation.\n\n- **Formula is still important when medically or practically needed.**  \n  Limiting promotion does **not** mean formula is unsafe or inappropriate. Infant formula can be essential when breastfeeding is not possible, not desired, medically contraindicated, insufficient despite skilled support, or when parents need to supplement or exclusively formula-feed. In those circumstances, families should receive clear, nonjudgmental information on safe preparation, responsive feeding, and appropriate product use.\n\n- **\u201cToddler milks\u201d and maternal nutrition products may be marketed differently.**  \n  Products labeled for children older than **6 months** or **12 months**, such as follow-on formula or toddler drinks, may be marketed more aggressively in some places. However, regulators and public-health groups often worry that similar branding can indirectly promote infant formula through \u201ccross-promotion.\u201d Products marketed to pregnant or lactating women\u2014such as prenatal vitamins or maternal nutrition drinks\u2014are usually regulated under different rules, but they still should not imply that breastfeeding requires branded supplements unless medically indicated.\n\nIn short, formula brands are not necessarily promoted to pregnant and lactating women because promotion at that stage can undermine informed breastfeeding decisions, and many laws and international standards restrict marketing of breast-milk substitutes to protect infant and maternal health.",
+    "latency_ms": 9994.4,
+    "input_tokens": 87,
+    "output_tokens": 711
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Why are infant formula brands not necessarily promoted to pregnant and lactating women?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Infant formula brands are often **not broadly promoted directly to pregnant and lactating women** because of public-health policy, medical guidance, and marketing regulations designed to protect breastfeeding.\n\nKey reasons include:\n\n- **Breastfeeding is generally recommended as the default when possible.**  \n  The World Health Organization (WHO) and UNICEF recommend **exclusive breastfeeding for the first 6 months**, followed by continued breastfeeding alongside complementary foods up to **2 years or beyond**. Promotion of formula during pregnancy or early postpartum can influence feeding decisions before breastfeeding is established.\n\n- **Early marketing can reduce breastfeeding initiation or duration.**  \n  Feeding decisions are often made during pregnancy or within the first few days after birth. Free samples, coupons, branded maternity materials, or direct advertising may make formula seem necessary or equivalent even when it is not medically needed. Breastfeeding establishment is particularly sensitive in roughly the first **3\u201314 days** after delivery.\n\n- **The WHO International Code restricts promotion of breast-milk substitutes.**  \n  The 1981 WHO International Code of Marketing of Breast-milk Substitutes calls for limits on advertising and promotional practices for products used as breast-milk substitutes, especially **infant formula intended for babies under 6 months**. It discourages:\n  - Advertising formula directly to the public\n  - Free samples to mothers\n  - Gifts or incentives to health workers\n  - Promotion in health facilities\n  - Marketing that idealizes formula feeding\n\n  Many countries have adopted some or all of these provisions into national law, though enforcement differs widely.\n\n- **Pregnant and breastfeeding women are considered a vulnerable marketing audience.**  \n  During pregnancy and shortly after birth, parents may be anxious about milk supply, infant weight, sleep, or feeding. Formula advertising can exploit concerns such as \u201clow milk supply\u201d or \u201cbaby not satisfied,\u201d even though perceived low supply is more common than true physiological inability to produce enough milk.\n\n- **Health facilities aim to avoid conflicts of interest.**  \n  Hospitals and maternity services may avoid formula-company sponsorship, branded educational materials, and free formula packs. Programs such as the Baby-Friendly Hospital Initiative encourage practices such as skin-to-skin contact, rooming-in, breastfeeding support, and avoiding non-medically indicated formula supplementation.\n\n- **Formula is still important when medically or practically needed.**  \n  Limiting promotion does **not** mean formula is unsafe or inappropriate. Infant formula can be essential when breastfeeding is not possible, not desired, medically contraindicated, insufficient despite skilled support, or when parents need to supplement or exclusively formula-feed. In those circumstances, families should receive clear, nonjudgmental information on safe preparation, responsive feeding, and appropriate product use.\n\n- **\u201cToddler milks\u201d and maternal nutrition products may be marketed differently.**  \n  Products labeled for children older than **6 months** or **12 months**, such as follow-on formula or toddler drinks, may be marketed more aggressively in some places. However, regulators and public-health groups often worry that similar branding can indirectly promote infant formula through \u201ccross-promotion.\u201d Products marketed to pregnant or lactating women\u2014such as prenatal vitamins or maternal nutrition drinks\u2014are usually regulated under different rules, but they still should not imply that breastfeeding requires branded supplements unless medically indicated.\n\nIn short, formula brands are not necessarily promoted to pregnant and lactating women because promotion at that stage can undermine informed breastfeeding decisions, and many laws and international standards restrict marketing of breast-milk substitutes to protect infant and maternal health.",
+    "latency_ms": 9994.4,
+    "token_count": 798,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "5d85c7db3d53",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234865.4924185,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 5 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 9994.4,
+        "token_count": 798,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.191; flagged=True"
+}

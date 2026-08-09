@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:49:26.004303+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is known about DNA methylation profiles in patients with latent HIV-1 or with an active infection?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Virologist",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# DNA Methylation Profiles in HIV-1 Infection: Latent vs. Active States\n\n## Overview of Epigenetic Regulation in HIV-1\n\nDNA methylation plays a critical role in HIV-1 latency establishment and maintenance, primarily through methylation of CpG islands within the 5' long terminal repeat (LTR) region, which serves as the viral promoter.\n\n## Key Findings in Latent HIV-1 Infection\n\n### LTR Methylation Patterns\n- The HIV-1 5' LTR contains approximately 2 CpG islands, with roughly 4-6 CpG dinucleotides per island that are critical for transcriptional silencing\n- Studies have shown that in latently infected cell lines (such as J-Lat clones), CpG methylation at the LTR can range from approximately 20% to over 80%, depending on the specific latency model\n- In resting CD4+ T cells harboring latent provirus, hypermethylation of the LTR (often exceeding 60-70% methylation density at key CpG sites) correlates with transcriptional silencing\n- DNMT3A and DNMT3B (de novo methyltransferases) are recruited to the LTR, while DNMT1 maintains methylation patterns during cell division\n\n### Temporal Dynamics\n- Methylation appears to increase over time during prolonged latency\u2014early latency (weeks) shows lower methylation (roughly 10-30%) compared to established latency (months to years), which can show methylation levels exceeding 50-60%\n- This suggests methylation is a secondary, reinforcing mechanism rather than the primary establishment signal (which involves other factors like NF-\u03baB/Sp1 binding and histone modifications)\n\n## Active/Productive Infection Patterns\n\n### Hypomethylation Association\n- Active viral transcription correlates with hypomethylated LTR states, often below 10-15% CpG methylation\n- Reactivation from latency (e.g., via latency-reversing agents like vorinostat, panobinostat, or PMA/ionomycin) is associated with active demethylation, sometimes reducing methylation by 30-50% from baseline\n- TET2 (ten-eleven translocase) enzymes may contribute to active demethylation during reactivation, though this pathway is less well characterized than the methylation machinery\n\n### Clinical Cohort Studies\n- In patients on suppressive antiretroviral therapy (ART) with undetectable viral loads (typically <20-50 copies/mL), peripheral blood mononuclear cells (PBMCs) show variable LTR methylation, with some studies reporting methylation frequencies of approximately 30-45% in the proviral reservoir\n- Elite controllers (a rare population, roughly 0.1-2% of HIV-infected individuals) may show distinct methylation signatures compared to ART-suppressed patients, though data remains limited and somewhat inconsistent across studies\n\n## Host Genome-Wide Methylation Changes\n\n### Immune Cell Alterations\n- HIV-1 infection induces broader epigenetic dysregulation beyond the viral genome\n- Studies using genome",
+    "latency_ms": 11864.1,
+    "input_tokens": 142,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is known about DNA methylation profiles in patients with latent HIV-1 or with an active infection?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# DNA Methylation Profiles in HIV-1 Infection: Latent vs. Active States\n\n## Overview of Epigenetic Regulation in HIV-1\n\nDNA methylation plays a critical role in HIV-1 latency establishment and maintenance, primarily through methylation of CpG islands within the 5' long terminal repeat (LTR) region, which serves as the viral promoter.\n\n## Key Findings in Latent HIV-1 Infection\n\n### LTR Methylation Patterns\n- The HIV-1 5' LTR contains approximately 2 CpG islands, with roughly 4-6 CpG dinucleotides per island that are critical for transcriptional silencing\n- Studies have shown that in latently infected cell lines (such as J-Lat clones), CpG methylation at the LTR can range from approximately 20% to over 80%, depending on the specific latency model\n- In resting CD4+ T cells harboring latent provirus, hypermethylation of the LTR (often exceeding 60-70% methylation density at key CpG sites) correlates with transcriptional silencing\n- DNMT3A and DNMT3B (de novo methyltransferases) are recruited to the LTR, while DNMT1 maintains methylation patterns during cell division\n\n### Temporal Dynamics\n- Methylation appears to increase over time during prolonged latency\u2014early latency (weeks) shows lower methylation (roughly 10-30%) compared to established latency (months to years), which can show methylation levels exceeding 50-60%\n- This suggests methylation is a secondary, reinforcing mechanism rather than the primary establishment signal (which involves other factors like NF-\u03baB/Sp1 binding and histone modifications)\n\n## Active/Productive Infection Patterns\n\n### Hypomethylation Association\n- Active viral transcription correlates with hypomethylated LTR states, often below 10-15% CpG methylation\n- Reactivation from latency (e.g., via latency-reversing agents like vorinostat, panobinostat, or PMA/ionomycin) is associated with active demethylation, sometimes reducing methylation by 30-50% from baseline\n- TET2 (ten-eleven translocase) enzymes may contribute to active demethylation during reactivation, though this pathway is less well characterized than the methylation machinery\n\n### Clinical Cohort Studies\n- In patients on suppressive antiretroviral therapy (ART) with undetectable viral loads (typically <20-50 copies/mL), peripheral blood mononuclear cells (PBMCs) show variable LTR methylation, with some studies reporting methylation frequencies of approximately 30-45% in the proviral reservoir\n- Elite controllers (a rare population, roughly 0.1-2% of HIV-infected individuals) may show distinct methylation signatures compared to ART-suppressed patients, though data remains limited and somewhat inconsistent across studies\n\n## Host Genome-Wide Methylation Changes\n\n### Immune Cell Alterations\n- HIV-1 infection induces broader epigenetic dysregulation beyond the viral genome\n- Studies using genome",
+    "latency_ms": 11864.1,
+    "token_count": 1166,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "88bac6e05818",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240166.0032918,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 14 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.428,
+          "evidence": [
+            "Latency 11864ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11864.1,
+        "token_count": 1166,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.115; flagged=True"
+}

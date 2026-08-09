@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:44:41.578611+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Suppose a patient has recently undergone orthodontic treatment to straighten their teeth, but they are still experiencing bite problems and jaw pain. The patient is interested in exploring options for addressing these issues, but they are hesitant about undergoing further treatment. What are the potential causes of these symptoms, and what non-surgical options are available for addressing them?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Dentistry",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Potential Causes of Persistent Bite Problems and Jaw Pain Post-Orthodontics\n\n## Possible Underlying Causes\n\n**Occlusal factors:**\n- Incomplete correction of malocclusion (orthodontics moved teeth but didn't fully resolve underlying skeletal discrepancy)\n- Relapse \u2014 teeth shifting back toward original positions due to inadequate retention\n- Premature contacts or interferences in the bite that weren't addressed before appliance removal\n- Undetected crossbite or open bite in posterior segments\n\n**TMJ/muscular factors:**\n- Temporomandibular joint dysfunction (TMD) \u2014 may have preexisted orthodontic treatment or developed during it\n- Muscle imbalance/hyperactivity (masseter, temporalis) from adapting to a new bite position\n- Disc displacement (with or without reduction) in the TMJ\n- Parafunctional habits (bruxism, clenching) \u2014 often exacerbated by stress or an unstable occlusion\n\n**Other contributors:**\n- Condylar resorption (more common in adolescent females, can cause bite changes after orthodontics)\n- Retainer issues \u2014 poorly fitting retainers can create new interferences\n- Airway issues (untreated sleep-disordered breathing can cause compensatory jaw postures and clenching)\n\n## Non-Surgical Treatment Options\n\n**1. Occlusal splint/night guard therapy**\n- Custom-fitted acrylic appliance (stabilization splint) worn at night\n- Reduces muscle hyperactivity, protects teeth from bruxism, allows joint to settle into a more physiologic position\n- Often the first-line, most conservative intervention\n\n**2. Occlusal equilibration (selective grinding)**\n- Minimally invasive reshaping of tooth contacts to eliminate interferences\n- Should only be done after symptoms stabilize with splint therapy, not as an initial step\n\n**3. Physical therapy**\n- Jaw exercises to improve range of motion and muscle coordination\n- Manual therapy, myofascial release\n- Modalities like ultrasound or low-level laser therapy for pain reduction\n\n**4. Behavioral/lifestyle modifications**\n- Stress management and habit awareness training (for clenching/grinding)\n- Soft diet and avoiding excessive jaw movements (wide yawning, gum chewing) during flare-ups\n- Applying heat/cold packs\n\n**5. Medications**\n- NSAIDs for pain and inflammation\n- Muscle relaxants (short-term) for acute muscle spasm\n- Low-dose tricyclic antidepressants (e.g., amitriptyline) sometimes used off-label for chronic TMD pain\n\n**6. Trigger point injections or Botox**\n- Botulinum toxin injections into masseter/temporalis can reduce clenching-related pain (used judiciously, not first-line)\n\n**7. Retainer adjustment or replacement**\n- If relapse or ill-fitting retainer is contributing, a new retainer or minor orthodontic \"touch-up\" with clear aligners may res",
+    "latency_ms": 12457.8,
+    "input_tokens": 230,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Suppose a patient has recently undergone orthodontic treatment to straighten their teeth, but they are still experiencing bite problems and jaw pain. The patient is interested in exploring options for addressing these issues, but they are hesitant about undergoing further treatment. What are the potential causes of these symptoms, and what non-surgical options are available for addressing them?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Potential Causes of Persistent Bite Problems and Jaw Pain Post-Orthodontics\n\n## Possible Underlying Causes\n\n**Occlusal factors:**\n- Incomplete correction of malocclusion (orthodontics moved teeth but didn't fully resolve underlying skeletal discrepancy)\n- Relapse \u2014 teeth shifting back toward original positions due to inadequate retention\n- Premature contacts or interferences in the bite that weren't addressed before appliance removal\n- Undetected crossbite or open bite in posterior segments\n\n**TMJ/muscular factors:**\n- Temporomandibular joint dysfunction (TMD) \u2014 may have preexisted orthodontic treatment or developed during it\n- Muscle imbalance/hyperactivity (masseter, temporalis) from adapting to a new bite position\n- Disc displacement (with or without reduction) in the TMJ\n- Parafunctional habits (bruxism, clenching) \u2014 often exacerbated by stress or an unstable occlusion\n\n**Other contributors:**\n- Condylar resorption (more common in adolescent females, can cause bite changes after orthodontics)\n- Retainer issues \u2014 poorly fitting retainers can create new interferences\n- Airway issues (untreated sleep-disordered breathing can cause compensatory jaw postures and clenching)\n\n## Non-Surgical Treatment Options\n\n**1. Occlusal splint/night guard therapy**\n- Custom-fitted acrylic appliance (stabilization splint) worn at night\n- Reduces muscle hyperactivity, protects teeth from bruxism, allows joint to settle into a more physiologic position\n- Often the first-line, most conservative intervention\n\n**2. Occlusal equilibration (selective grinding)**\n- Minimally invasive reshaping of tooth contacts to eliminate interferences\n- Should only be done after symptoms stabilize with splint therapy, not as an initial step\n\n**3. Physical therapy**\n- Jaw exercises to improve range of motion and muscle coordination\n- Manual therapy, myofascial release\n- Modalities like ultrasound or low-level laser therapy for pain reduction\n\n**4. Behavioral/lifestyle modifications**\n- Stress management and habit awareness training (for clenching/grinding)\n- Soft diet and avoiding excessive jaw movements (wide yawning, gum chewing) during flare-ups\n- Applying heat/cold packs\n\n**5. Medications**\n- NSAIDs for pain and inflammation\n- Muscle relaxants (short-term) for acute muscle spasm\n- Low-dose tricyclic antidepressants (e.g., amitriptyline) sometimes used off-label for chronic TMD pain\n\n**6. Trigger point injections or Botox**\n- Botulinum toxin injections into masseter/temporalis can reduce clenching-related pain (used judiciously, not first-line)\n\n**7. Retainer adjustment or replacement**\n- If relapse or ill-fitting retainer is contributing, a new retainer or minor orthodontic \"touch-up\" with clear aligners may res",
+    "latency_ms": 12457.8,
+    "token_count": 1254
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "9fdc767770a8",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239881.57784,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4369,
+          "evidence": [
+            "Latency 12458ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12457.8,
+        "token_count": 1254,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.92; flagged=False"
+}

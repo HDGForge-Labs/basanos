@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:31:50.159348+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Does pulsed fluoroscopy has more radiation than continuous fluoroscopy?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Radiology",
+    "question_type": "Directed question that has a single unambiguous answer| Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "No\u2014pulsed fluoroscopy generally delivers **less** radiation dose than continuous fluoroscopy, not more.\n\n**Why pulsed fluoroscopy reduces dose:**\n\n- Continuous fluoroscopy produces x-rays constantly, at typically 30 frames/second, even though the human eye/brain cannot resolve motion faster than about 15-20 frames/second.\n- Pulsed fluoroscopy delivers x-ray beams in discrete pulses (commonly adjustable at 15, 10, 7.5, or even down to 1-3 pulses/second) synchronized with detector readout, with no x-ray output between pulses.\n- By reducing the pulse rate, you proportionally reduce dose. For example, dropping from 30 fps continuous to 15 pulses/second pulsed fluoroscopy can cut dose roughly in half, and dropping further to 7.5 pulses/second reduces it further, assuming mA per pulse stays constant.\n\n**Important caveat - mA compensation:**\n\n- Many modern pulsed systems increase mA per pulse (higher instantaneous tube current) to maintain image brightness/quality when pulse rate is lowered, since fewer pulses means less total exposure time contributing to signal.\n- This is called \"dose compensation\" - some systems partially or fully compensate for the lower frame rate by boosting mA per pulse, which can blunt or even negate the dose savings if not carefully managed.\n- If mA is increased proportionally to fully compensate for reduced pulse rate, net patient dose could approach that of continuous fluoroscopy, though image quality (motion blur reduction) still improves due to shorter individual pulse widths.\n\n**Practical clinical impact:**\n\n- In interventional radiology and cardiology, switching from continuous (30 fps) to pulsed fluoroscopy at 15 fps or lower is a standard, well-documented dose-reduction strategy, often cutting fluoroscopic dose by 50-75%.\n- This is one of the key ALARA (As Low As Reasonably Achievable) techniques recommended by radiation safety guidelines (e.g., NCRP, ACR) for procedures like cardiac catheterization, GI fluoroscopy, and orthopedic C-arm use.\n- Pulsed fluoroscopy also reduces motion blur (since each pulse is a short burst), which can allow lower mA settings while maintaining diagnostic image quality\u2014a double benefit.\n\n**Bottom line:** Pulsed fluoroscopy is a dose-reduction technique compared to continuous fluoroscopy, provided the pulse rate is reduced without fully compensating with proportionally higher mA. It's a standard tool operators use intentionally to lower patient and staff radiation exposure during long procedures.",
+    "latency_ms": 11172.9,
+    "input_tokens": 145,
+    "output_tokens": 919
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Does pulsed fluoroscopy has more radiation than continuous fluoroscopy?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "No\u2014pulsed fluoroscopy generally delivers **less** radiation dose than continuous fluoroscopy, not more.\n\n**Why pulsed fluoroscopy reduces dose:**\n\n- Continuous fluoroscopy produces x-rays constantly, at typically 30 frames/second, even though the human eye/brain cannot resolve motion faster than about 15-20 frames/second.\n- Pulsed fluoroscopy delivers x-ray beams in discrete pulses (commonly adjustable at 15, 10, 7.5, or even down to 1-3 pulses/second) synchronized with detector readout, with no x-ray output between pulses.\n- By reducing the pulse rate, you proportionally reduce dose. For example, dropping from 30 fps continuous to 15 pulses/second pulsed fluoroscopy can cut dose roughly in half, and dropping further to 7.5 pulses/second reduces it further, assuming mA per pulse stays constant.\n\n**Important caveat - mA compensation:**\n\n- Many modern pulsed systems increase mA per pulse (higher instantaneous tube current) to maintain image brightness/quality when pulse rate is lowered, since fewer pulses means less total exposure time contributing to signal.\n- This is called \"dose compensation\" - some systems partially or fully compensate for the lower frame rate by boosting mA per pulse, which can blunt or even negate the dose savings if not carefully managed.\n- If mA is increased proportionally to fully compensate for reduced pulse rate, net patient dose could approach that of continuous fluoroscopy, though image quality (motion blur reduction) still improves due to shorter individual pulse widths.\n\n**Practical clinical impact:**\n\n- In interventional radiology and cardiology, switching from continuous (30 fps) to pulsed fluoroscopy at 15 fps or lower is a standard, well-documented dose-reduction strategy, often cutting fluoroscopic dose by 50-75%.\n- This is one of the key ALARA (As Low As Reasonably Achievable) techniques recommended by radiation safety guidelines (e.g., NCRP, ACR) for procedures like cardiac catheterization, GI fluoroscopy, and orthopedic C-arm use.\n- Pulsed fluoroscopy also reduces motion blur (since each pulse is a short burst), which can allow lower mA settings while maintaining diagnostic image quality\u2014a double benefit.\n\n**Bottom line:** Pulsed fluoroscopy is a dose-reduction technique compared to continuous fluoroscopy, provided the pulse rate is reduced without fully compensating with proportionally higher mA. It's a standard tool operators use intentionally to lower patient and staff radiation exposure during long procedures.",
+    "latency_ms": 11172.9,
+    "token_count": 1064
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "13d07c1a94fb",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239110.1585915,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4176,
+          "evidence": [
+            "Latency 11173ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11172.9,
+        "token_count": 1064,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.27; flagged=False"
+}

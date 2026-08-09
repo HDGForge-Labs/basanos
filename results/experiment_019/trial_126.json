@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-09T00:09:28.434671+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "I am in patrol and my partner and I cross up into a gang fight. Should we act immediately or wait for back up?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Forensic department ",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "In general, **do not rush into an active gang fight with only two officers unless there is an immediate, articulable threat to life that cannot wait**. Follow your agency policy, training, radio procedures, and supervisor direction.\n\nA practical framework:\n\n- **Assess immediate lethal threat:** If you see or reliably hear gunfire, a stabbing, someone being beaten to unconsciousness, a person being dragged into danger, or another imminent threat of death/serious bodily injury, intervene as safely and lawfully as circumstances allow. Even then, avoid entering blindly; use cover, distance, commands, and coordinated movement.\n- **If it is a large or volatile fight without an immediate life-threatening assault:** Create distance, take cover, request urgent backup, advise dispatch of the exact location, number of participants, visible weapons, vehicles, direction of travel, and whether injuries are present. Contain rather than charge into the crowd.\n- **Call resources early:** Request additional units, a supervisor, EMS/fire staging, and specialized resources as appropriate under your policy. A gang-related disturbance can rapidly involve concealed weapons, secondary participants, vehicles, and ambush risks.\n- **Use cover and control the scene:** Position for observation and egress; avoid being boxed in. Keep your partner coordinated\u2014one officer communicating/monitoring radio while the other maintains visual coverage, if feasible. Do not separate unless there is a compelling reason and policy supports it.\n- **Communicate clearly:** Broadcast concise updates: \u201cTwo officers on scene, approximately 15\u201320 involved, possible weapons/shots fired, need priority backup, EMS stage two blocks out,\u201d etc. Update changes immediately.\n- **Give commands from a tactically sound position:** Identify yourselves, direct people to separate or move away, and focus on the most dangerous actors. Avoid escalating a crowd confrontation when you lack adequate personnel.\n- **Plan for casualties and evidence:** Once the threat is controlled, render aid when safe, preserve the scene, identify witnesses, and document observations\u2014including why immediate action was or was not feasible.\n\nThe key distinction is **immediate necessity versus avoidable exposure**. Waiting briefly for sufficient resources is often the safer and more effective choice when no one faces imminent serious harm. But if delay would reasonably result in death or grave injury, you may need to act\u2014within law, policy, training, and your available tactical options.",
+    "latency_ms": 8302.6,
+    "input_tokens": 98,
+    "output_tokens": 482
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "I am in patrol and my partner and I cross up into a gang fight. Should we act immediately or wait for back up?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "In general, **do not rush into an active gang fight with only two officers unless there is an immediate, articulable threat to life that cannot wait**. Follow your agency policy, training, radio procedures, and supervisor direction.\n\nA practical framework:\n\n- **Assess immediate lethal threat:** If you see or reliably hear gunfire, a stabbing, someone being beaten to unconsciousness, a person being dragged into danger, or another imminent threat of death/serious bodily injury, intervene as safely and lawfully as circumstances allow. Even then, avoid entering blindly; use cover, distance, commands, and coordinated movement.\n- **If it is a large or volatile fight without an immediate life-threatening assault:** Create distance, take cover, request urgent backup, advise dispatch of the exact location, number of participants, visible weapons, vehicles, direction of travel, and whether injuries are present. Contain rather than charge into the crowd.\n- **Call resources early:** Request additional units, a supervisor, EMS/fire staging, and specialized resources as appropriate under your policy. A gang-related disturbance can rapidly involve concealed weapons, secondary participants, vehicles, and ambush risks.\n- **Use cover and control the scene:** Position for observation and egress; avoid being boxed in. Keep your partner coordinated\u2014one officer communicating/monitoring radio while the other maintains visual coverage, if feasible. Do not separate unless there is a compelling reason and policy supports it.\n- **Communicate clearly:** Broadcast concise updates: \u201cTwo officers on scene, approximately 15\u201320 involved, possible weapons/shots fired, need priority backup, EMS stage two blocks out,\u201d etc. Update changes immediately.\n- **Give commands from a tactically sound position:** Identify yourselves, direct people to separate or move away, and focus on the most dangerous actors. Avoid escalating a crowd confrontation when you lack adequate personnel.\n- **Plan for casualties and evidence:** Once the threat is controlled, render aid when safe, preserve the scene, identify witnesses, and document observations\u2014including why immediate action was or was not feasible.\n\nThe key distinction is **immediate necessity versus avoidable exposure**. Waiting briefly for sufficient resources is often the safer and more effective choice when no one faces imminent serious harm. But if delay would reasonably result in death or grave injury, you may need to act\u2014within law, policy, training, and your available tactical options.",
+    "latency_ms": 8302.6,
+    "token_count": 580,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "a1764b0585fd",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234168.4339082,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 8302.6,
+        "token_count": 580,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.126; flagged=False"
+}

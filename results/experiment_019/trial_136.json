@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T00:11:12.569570+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "At which gestation is the Nuchal screening offered routinely?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Midwifery",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Routine nuchal translucency (NT) screening is typically offered in the **first trimester between 11 weeks + 0 days and 13 weeks + 6 days** of pregnancy.\n\nIt is usually performed when the baby\u2019s crown\u2013rump length (CRL) is approximately **45\u201384 mm**. The scan is commonly combined with maternal blood tests (such as PAPP-A and free \u03b2-hCG) to provide first-trimester screening for conditions including trisomy 21 (Down syndrome), trisomy 18, and trisomy 13.",
+    "latency_ms": 2361.1,
+    "input_tokens": 85,
+    "output_tokens": 116
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "At which gestation is the Nuchal screening offered routinely?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Routine nuchal translucency (NT) screening is typically offered in the **first trimester between 11 weeks + 0 days and 13 weeks + 6 days** of pregnancy.\n\nIt is usually performed when the baby\u2019s crown\u2013rump length (CRL) is approximately **45\u201384 mm**. The scan is commonly combined with maternal blood tests (such as PAPP-A and free \u03b2-hCG) to provide first-trimester screening for conditions including trisomy 21 (Down syndrome), trisomy 18, and trisomy 13.",
+    "latency_ms": 2361.1,
+    "token_count": 201,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "28ddb88199cb",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234272.5688143,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 7 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 2361.1,
+        "token_count": 201,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.136; flagged=True"
+}

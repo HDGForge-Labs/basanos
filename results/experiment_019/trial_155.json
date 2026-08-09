@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T00:14:47.600365+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Describes Hodge's blueprints.",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General medicine",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "\u201cHodge\u2019s blueprints\u201d most commonly refers to **Hodge\u2019s planes of the pelvis**\u2014an obstetric framework used to describe how far the fetal head has descended through the maternal pelvis during labor.\n\nThere are **4 imaginary parallel planes**, each extending from the pubic symphysis posteriorly toward the sacrum:\n\n1. **First Hodge plane**\n   - Runs from the **upper border of the pubic symphysis** to the **sacral promontory**.\n   - Corresponds approximately to the **pelvic inlet**.\n   - If the presenting fetal part is above this plane, it has generally **not yet engaged** in the pelvis.\n\n2. **Second Hodge plane**\n   - Runs from the **lower border of the pubic symphysis** to approximately the level of the **second sacral vertebra (S2)**.\n   - A fetal head reaching this plane is descending into the pelvic cavity but may still be relatively mobile.\n\n3. **Third Hodge plane**\n   - Passes through the **ischial spines** and is parallel to the first two planes.\n   - This is the most clinically important plane because the ischial spines define **station 0** in the fetal-station system.\n   - Reaching this level generally indicates **engagement** of the biparietal diameter of the fetal head, which is approximately **9.5 cm** in a term fetus.\n\n4. **Fourth Hodge plane**\n   - Runs from the **tip/lower border of the pubic symphysis** toward the **tip of the coccyx**.\n   - It corresponds to the pelvic outlet region.\n   - When the fetal head reaches this plane, birth is usually approaching; the head may be visible at the introitus during contractions or with maternal pushing.\n\n### Relationship to fetal station\n\nHodge planes are broadly related to the standard fetal station scale:\n\n- **Above the ischial spines:** negative stations, approximately **\u22121 to \u22125**\n- **At the third Hodge plane / ischial spines:** **0 station**\n- **Below the ischial spines:** positive stations, approximately **+1 to +5**\n- **Crowining:** usually around **+4 to +5 station**\n\nIn modern obstetric documentation, clinicians often use fetal station rather than Hodge planes because station provides a more standardized numerical description. However, Hodge\u2019s planes remain useful in teaching and in describing labor progress, particularly in some European and Latin American obstetric traditions.",
+    "latency_ms": 6448.5,
+    "input_tokens": 80,
+    "output_tokens": 524
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Describes Hodge's blueprints.",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "\u201cHodge\u2019s blueprints\u201d most commonly refers to **Hodge\u2019s planes of the pelvis**\u2014an obstetric framework used to describe how far the fetal head has descended through the maternal pelvis during labor.\n\nThere are **4 imaginary parallel planes**, each extending from the pubic symphysis posteriorly toward the sacrum:\n\n1. **First Hodge plane**\n   - Runs from the **upper border of the pubic symphysis** to the **sacral promontory**.\n   - Corresponds approximately to the **pelvic inlet**.\n   - If the presenting fetal part is above this plane, it has generally **not yet engaged** in the pelvis.\n\n2. **Second Hodge plane**\n   - Runs from the **lower border of the pubic symphysis** to approximately the level of the **second sacral vertebra (S2)**.\n   - A fetal head reaching this plane is descending into the pelvic cavity but may still be relatively mobile.\n\n3. **Third Hodge plane**\n   - Passes through the **ischial spines** and is parallel to the first two planes.\n   - This is the most clinically important plane because the ischial spines define **station 0** in the fetal-station system.\n   - Reaching this level generally indicates **engagement** of the biparietal diameter of the fetal head, which is approximately **9.5 cm** in a term fetus.\n\n4. **Fourth Hodge plane**\n   - Runs from the **tip/lower border of the pubic symphysis** toward the **tip of the coccyx**.\n   - It corresponds to the pelvic outlet region.\n   - When the fetal head reaches this plane, birth is usually approaching; the head may be visible at the introitus during contractions or with maternal pushing.\n\n### Relationship to fetal station\n\nHodge planes are broadly related to the standard fetal station scale:\n\n- **Above the ischial spines:** negative stations, approximately **\u22121 to \u22125**\n- **At the third Hodge plane / ischial spines:** **0 station**\n- **Below the ischial spines:** positive stations, approximately **+1 to +5**\n- **Crowining:** usually around **+4 to +5 station**\n\nIn modern obstetric documentation, clinicians often use fetal station rather than Hodge planes because station provides a more standardized numerical description. However, Hodge\u2019s planes remain useful in teaching and in describing labor progress, particularly in some European and Latin American obstetric traditions.",
+    "latency_ms": 6448.5,
+    "token_count": 604,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "702f1d4fce9d",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234487.5995984,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 5 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 6448.5,
+        "token_count": 604,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.155; flagged=True"
+}

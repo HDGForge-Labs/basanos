@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T02:05:05.253966+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "In the United Kingdom, what is the average age of onset for alcohol related dementia?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Dementia ",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Alcohol-Related Dementia: Age of Onset in the UK\n\nAlcohol-related dementia (also called alcohol-related brain damage, or ARBD, which includes Wernicke-Korsakoff syndrome) typically presents at a notably younger age than other forms of dementia.\n\n## Average Age of Onset\n\nIn the UK, alcohol-related dementia typically presents in individuals aged approximately **50 to 60 years old**, with many studies citing an average onset around **age 52-53**. This is considerably younger than typical presentations of Alzheimer's disease, which usually manifests after age 65.\n\n## Key Statistics and Context\n\n- Approximately **10-24%** of all dementia cases may have an alcohol-related component, though ARBD as a standalone diagnosis is thought to account for roughly **10%** of early-onset dementia cases (those diagnosed under age 65) in the UK.\n- Around **1 in 8** people referred to early-onset dementia services in the UK may have alcohol-related brain damage as a contributing factor.\n- Men are affected roughly **2 to 3 times** more often than women, though this ratio has been narrowing in recent decades.\n\n## Risk Threshold for Development\n\n- Sustained consumption of more than approximately **35 units per week for men** and **28 units per week for women** over a period of **10 years or more** is generally considered to substantially increase risk.\n- Some studies suggest risk increases significantly after **15-20 years** of heavy drinking, which aligns with onset commonly appearing in the **40s to 60s**.\n\n## Important Caveat\n\nUnlike progressive dementias, approximately **25-50%** of individuals with alcohol-related dementia can experience **stabilization or partial improvement** in cognitive function if they achieve sustained abstinence, particularly if treatment/intervention occurs within the first **2 years** of diagnosis. This distinguishes it from irreversible dementia types like Alzheimer's.\n\n**Note:** These figures are approximate, as ARBD is often underdiagnosed or misclassified, and exact prevalence/onset data specific to the UK population can vary between studies (e.g., Alzheimer's Society estimates versus NHS clinical audits).",
+    "latency_ms": 8989.2,
+    "input_tokens": 137,
+    "output_tokens": 728
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "In the United Kingdom, what is the average age of onset for alcohol related dementia?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Alcohol-Related Dementia: Age of Onset in the UK\n\nAlcohol-related dementia (also called alcohol-related brain damage, or ARBD, which includes Wernicke-Korsakoff syndrome) typically presents at a notably younger age than other forms of dementia.\n\n## Average Age of Onset\n\nIn the UK, alcohol-related dementia typically presents in individuals aged approximately **50 to 60 years old**, with many studies citing an average onset around **age 52-53**. This is considerably younger than typical presentations of Alzheimer's disease, which usually manifests after age 65.\n\n## Key Statistics and Context\n\n- Approximately **10-24%** of all dementia cases may have an alcohol-related component, though ARBD as a standalone diagnosis is thought to account for roughly **10%** of early-onset dementia cases (those diagnosed under age 65) in the UK.\n- Around **1 in 8** people referred to early-onset dementia services in the UK may have alcohol-related brain damage as a contributing factor.\n- Men are affected roughly **2 to 3 times** more often than women, though this ratio has been narrowing in recent decades.\n\n## Risk Threshold for Development\n\n- Sustained consumption of more than approximately **35 units per week for men** and **28 units per week for women** over a period of **10 years or more** is generally considered to substantially increase risk.\n- Some studies suggest risk increases significantly after **15-20 years** of heavy drinking, which aligns with onset commonly appearing in the **40s to 60s**.\n\n## Important Caveat\n\nUnlike progressive dementias, approximately **25-50%** of individuals with alcohol-related dementia can experience **stabilization or partial improvement** in cognitive function if they achieve sustained abstinence, particularly if treatment/intervention occurs within the first **2 years** of diagnosis. This distinguishes it from irreversible dementia types like Alzheimer's.\n\n**Note:** These figures are approximate, as ARBD is often underdiagnosed or misclassified, and exact prevalence/onset data specific to the UK population can vary between studies (e.g., Alzheimer's Society estimates versus NHS clinical audits).",
+    "latency_ms": 8989.2,
+    "token_count": 865,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "59dc63706851",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786241105.2531438,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 16 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 8989.2,
+        "token_count": 865,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.192; flagged=True"
+}

@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:57:20.964953+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What are the differences between professions about patients returning as volunteers?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Occupational Therapy",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "The main differences are usually between **healthcare professions\u2019 policies, roles, and ethical boundaries** when former patients return as volunteers:\n\n| Profession | Typical position on former patients volunteering |\n|---|---|\n| **Medicine** | May support volunteering if the person is stable and the role is unrelated to their own clinical care. Doctors must avoid conflicts of interest, favoritism, and dual relationships. A former patient should not be recruited to influence current treatment decisions or represent medical expertise they do not possess. |\n| **Nursing** | Often emphasizes boundaries, confidentiality, emotional readiness, and supervision. Nurses may be especially concerned if the former patient is volunteering in the same unit where they were treated, because staff\u2013patient relationships may still feel unequal or personal. |\n| **Psychology and psychiatry** | Usually apply the strictest caution. Former patients may have ongoing emotional attachment, dependency, trauma, or transference involving clinicians or the institution. Volunteering directly with the former therapist, psychiatrist, or vulnerable patients may be inappropriate even after treatment ends. |\n| **Social work** | Generally supports lived-experience participation but stresses informed consent, power differences, confidentiality, and avoiding exploitation. Former clients may be valuable peer advocates, provided the role is voluntary, paid appropriately when substantial work is performed, and clearly defined. |\n| **Occupational and physical therapy** | Former patients may become peer supporters or volunteers, particularly in rehabilitation settings. Their experience can improve motivation and accessibility, but they should not give treatment advice or perform clinical tasks without appropriate qualifications. |\n| **Public health** | Often actively encourages former patients as peer educators, patient advisers, outreach workers, or community volunteers. The focus is on empowerment and lived experience, while managing privacy, stigma, role clarity, and representativeness. |\n| **Hospice and palliative care** | Commonly welcomes former patients or family caregivers as volunteers, provided grief, physical capacity, and emotional readiness are assessed. Volunteers must not be placed in roles that intensify unresolved grief or blur family-like relationships with current patients. |\n| **Healthcare administration and patient advocacy** | Frequently uses former patients on advisory boards, quality-improvement committees, and review panels. Their experience is treated as valuable evidence, but organizations should avoid tokenism and should compensate substantial contributions when appropriate. |\n\nAcross professions, the key distinctions are:\n\n1. **Clinical versus nonclinical role** \u2013 former patients can often serve as peer supporters, advisers, educators, or reception volunteers, but not as clinicians without relevant credentials.\n2. **Direct versus indirect contact** \u2013 volunteering in the same ward or with similar patients creates more boundary and confidentiality concerns than serving on an advisory committee.\n3. **Time since treatment** \u2013 a longer interval may reduce\u2014but does not automatically eliminate\u2014power and dependency concerns.\n4. **Mental and physical readiness** \u2013 the person should be able to volunteer without compromising recovery.\n5. **Confidentiality** \u2013 both the former patient\u2019s history and current patients\u2019 information must be protected.\n6. **Voluntariness and exploitation** \u2013 participation should not be pressured or used as unpaid labor for a role requiring professional skill.\n7. **Supervision and role clarity** \u2013 organizations should define responsibilities, limits, reporting lines, and procedures for managing unexpected personal contact.\n\nIn short, **medicine and mental-health professions tend to emphasize professional boundaries most strongly**, while **social work, public health, rehabilitation, hospice, and patient advocacy more often emphasize the value of lived experience**\u2014but all require consent, confidentiality, supervision, and a clear separation between volunteering and clinical practice.",
+    "latency_ms": 5840.4,
+    "input_tokens": 90,
+    "output_tokens": 725
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the differences between professions about patients returning as volunteers?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "The main differences are usually between **healthcare professions\u2019 policies, roles, and ethical boundaries** when former patients return as volunteers:\n\n| Profession | Typical position on former patients volunteering |\n|---|---|\n| **Medicine** | May support volunteering if the person is stable and the role is unrelated to their own clinical care. Doctors must avoid conflicts of interest, favoritism, and dual relationships. A former patient should not be recruited to influence current treatment decisions or represent medical expertise they do not possess. |\n| **Nursing** | Often emphasizes boundaries, confidentiality, emotional readiness, and supervision. Nurses may be especially concerned if the former patient is volunteering in the same unit where they were treated, because staff\u2013patient relationships may still feel unequal or personal. |\n| **Psychology and psychiatry** | Usually apply the strictest caution. Former patients may have ongoing emotional attachment, dependency, trauma, or transference involving clinicians or the institution. Volunteering directly with the former therapist, psychiatrist, or vulnerable patients may be inappropriate even after treatment ends. |\n| **Social work** | Generally supports lived-experience participation but stresses informed consent, power differences, confidentiality, and avoiding exploitation. Former clients may be valuable peer advocates, provided the role is voluntary, paid appropriately when substantial work is performed, and clearly defined. |\n| **Occupational and physical therapy** | Former patients may become peer supporters or volunteers, particularly in rehabilitation settings. Their experience can improve motivation and accessibility, but they should not give treatment advice or perform clinical tasks without appropriate qualifications. |\n| **Public health** | Often actively encourages former patients as peer educators, patient advisers, outreach workers, or community volunteers. The focus is on empowerment and lived experience, while managing privacy, stigma, role clarity, and representativeness. |\n| **Hospice and palliative care** | Commonly welcomes former patients or family caregivers as volunteers, provided grief, physical capacity, and emotional readiness are assessed. Volunteers must not be placed in roles that intensify unresolved grief or blur family-like relationships with current patients. |\n| **Healthcare administration and patient advocacy** | Frequently uses former patients on advisory boards, quality-improvement committees, and review panels. Their experience is treated as valuable evidence, but organizations should avoid tokenism and should compensate substantial contributions when appropriate. |\n\nAcross professions, the key distinctions are:\n\n1. **Clinical versus nonclinical role** \u2013 former patients can often serve as peer supporters, advisers, educators, or reception volunteers, but not as clinicians without relevant credentials.\n2. **Direct versus indirect contact** \u2013 volunteering in the same ward or with similar patients creates more boundary and confidentiality concerns than serving on an advisory committee.\n3. **Time since treatment** \u2013 a longer interval may reduce\u2014but does not automatically eliminate\u2014power and dependency concerns.\n4. **Mental and physical readiness** \u2013 the person should be able to volunteer without compromising recovery.\n5. **Confidentiality** \u2013 both the former patient\u2019s history and current patients\u2019 information must be protected.\n6. **Voluntariness and exploitation** \u2013 participation should not be pressured or used as unpaid labor for a role requiring professional skill.\n7. **Supervision and role clarity** \u2013 organizations should define responsibilities, limits, reporting lines, and procedures for managing unexpected personal contact.\n\nIn short, **medicine and mental-health professions tend to emphasize professional boundaries most strongly**, while **social work, public health, rehabilitation, hospice, and patient advocacy more often emphasize the value of lived experience**\u2014but all require consent, confidentiality, supervision, and a clear separation between volunteering and clinical practice.",
+    "latency_ms": 5840.4,
+    "token_count": 815
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "38d8d03c2858",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229840.9642334,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 5840.4,
+        "token_count": 815,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.83; flagged=False"
+}

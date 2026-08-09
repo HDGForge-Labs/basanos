@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:08:25.535352+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is known about the switch that occurs between patients with latent HIV and active infection?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Virologist",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "The \u201cswitch\u201d from latent HIV infection to active viral production is usually called **HIV latency reversal** or **reactivation**. It is not a single on/off molecular event; it is a multistep transition in which a resting infected cell begins transcribing HIV RNA, producing viral proteins, and sometimes releasing new infectious virions.\n\n## 1. What \u201clatent\u201d HIV means\n\nAfter HIV infects a CD4 T cell, its RNA genome is reverse-transcribed into DNA and integrated into the host cell\u2019s chromosome as a **provirus**.\n\nThere are two broad outcomes:\n\n- **Productive/active infection:** the provirus is transcribed, viral RNA and proteins are made, and new virions are released.\n- **Latent infection:** the provirus remains integrated but is transcriptionally silent or nearly silent. The infected cell may survive for years without making detectable virus.\n\nMost clinically important latent HIV resides in long-lived **memory CD4+ T cells**, especially central-memory, transitional-memory, and effector-memory subsets. Latent virus can also be found in tissue-resident immune cells in lymph nodes, gut-associated lymphoid tissue, genital tissues, and possibly the central nervous system.\n\nA key distinction: many proviruses detected in patients are defective. In people on long-term suppressive antiretroviral therapy (ART), roughly **90% to 95% or more** of integrated proviruses are thought to be defective, unable to generate replication-competent virus. The clinically relevant reservoir is the smaller fraction\u2014often estimated at roughly **1% to 10%** of detectable proviruses\u2014that remains intact enough to restart systemic infection.\n\n## 2. When latency becomes established\n\nLatency is often established very early in untreated infection\u2014within **days to weeks** of exposure and before the immune system fully controls viremia. A common model is:\n\n1. HIV infects an activated CD4 T cell.\n2. The cell begins to return to a resting memory state.\n3. Viral transcription is shut down before the cell dies.\n4. The integrated provirus persists as the memory cell survives and occasionally divides.\n\nART started during acute infection substantially reduces reservoir size, but even ART begun very early\u2014sometimes within the first **days or weeks**\u2014usually does not eliminate all latent virus.\n\n## 3. The main biological switch: cellular activation\n\nThe strongest and best-established trigger for HIV reactivation is **activation of the host CD4 T cell**.\n\nWhen a resting T cell encounters its specific antigen, or receives inflammatory stimulation, signaling pathways that normally activate immune genes also activate the HIV long terminal repeat (LTR), the viral promoter.\n\nMajor pathways include:\n\n- **T-cell receptor/CD3 and CD28 signaling**\n- **NF-\u03baB**\n- **NFAT**\n- **AP-1**\n- **P-TEFb**, a host transcription-elongation factor\n- Cytokine and inflammatory signaling, including pathways influenced by **TNF-\u03b1**, **IL-7**, **IL-15**, and sometimes other cytokines\n\nThis is why intercurrent infections, immune activation, vaccination, inflammation, and antigen exposure can sometimes cause transient increases in HIV transcription or low-level viremia in treated patients. However, in a person taking fully suppressive ART, such activation generally does **not** cause sustained systemic viral rebound because ART blocks infection of new cells.\n\n## 4. Why the provirus is silent in latent cells\n\nLatency is maintained by several overlapping \u201cbrakes.\u201d Different latent proviruses may rely on different combinations of them.\n\n### A. Integration site and chromatin environment\n\nHIV does not integrate randomly. It tends to insert into actively transcribed host genes, but whether a particular provirus is expressed depends heavily on its local chromatin environment.\n\nSilencing can occur when the provirus is in or near:\n\n- tightly packed chromatin (\u201cheterochromatin\u201d),\n- regions with repressive histone marks,\n- genomic areas with weak access to transcription factors,\n- sites where host transcription interferes with HIV transcription.\n\n### B. Epigenetic repression\n\nThe HIV promoter can be repressed by chromatin modifications, including:\n\n- Histone deacetylation\n- Histone methylation associated with gene silencing, such as **H3K9 methylation** and **H3K27 methylation**\n- Recruitment of transcriptional repressors and chromatin-remodeling complexes\n\nThese mechanisms are why drugs such as histone deacetylase inhibitors have been tested as \u201clatency-reversing agents,\u201d although they have generally produced only modest increases in HIV RNA and have not, by themselves, meaningfully reduced the reservoir.\n\n### C. Lack of transcription factors in resting T cells\n\nResting memory CD4 cells have low activity of factors HIV needs, particularly:\n\n- NF-\u03baB\n- NFAT\n- P-TEFb\n\nWithout these factors, transcription initiation is weak and RNA polymerase often pauses shortly after starting.\n\n### D. The HIV Tat feedback loop\n\n",
+    "latency_ms": 13411.5,
+    "input_tokens": 89,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is known about the switch that occurs between patients with latent HIV and active infection?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "The \u201cswitch\u201d from latent HIV infection to active viral production is usually called **HIV latency reversal** or **reactivation**. It is not a single on/off molecular event; it is a multistep transition in which a resting infected cell begins transcribing HIV RNA, producing viral proteins, and sometimes releasing new infectious virions.\n\n## 1. What \u201clatent\u201d HIV means\n\nAfter HIV infects a CD4 T cell, its RNA genome is reverse-transcribed into DNA and integrated into the host cell\u2019s chromosome as a **provirus**.\n\nThere are two broad outcomes:\n\n- **Productive/active infection:** the provirus is transcribed, viral RNA and proteins are made, and new virions are released.\n- **Latent infection:** the provirus remains integrated but is transcriptionally silent or nearly silent. The infected cell may survive for years without making detectable virus.\n\nMost clinically important latent HIV resides in long-lived **memory CD4+ T cells**, especially central-memory, transitional-memory, and effector-memory subsets. Latent virus can also be found in tissue-resident immune cells in lymph nodes, gut-associated lymphoid tissue, genital tissues, and possibly the central nervous system.\n\nA key distinction: many proviruses detected in patients are defective. In people on long-term suppressive antiretroviral therapy (ART), roughly **90% to 95% or more** of integrated proviruses are thought to be defective, unable to generate replication-competent virus. The clinically relevant reservoir is the smaller fraction\u2014often estimated at roughly **1% to 10%** of detectable proviruses\u2014that remains intact enough to restart systemic infection.\n\n## 2. When latency becomes established\n\nLatency is often established very early in untreated infection\u2014within **days to weeks** of exposure and before the immune system fully controls viremia. A common model is:\n\n1. HIV infects an activated CD4 T cell.\n2. The cell begins to return to a resting memory state.\n3. Viral transcription is shut down before the cell dies.\n4. The integrated provirus persists as the memory cell survives and occasionally divides.\n\nART started during acute infection substantially reduces reservoir size, but even ART begun very early\u2014sometimes within the first **days or weeks**\u2014usually does not eliminate all latent virus.\n\n## 3. The main biological switch: cellular activation\n\nThe strongest and best-established trigger for HIV reactivation is **activation of the host CD4 T cell**.\n\nWhen a resting T cell encounters its specific antigen, or receives inflammatory stimulation, signaling pathways that normally activate immune genes also activate the HIV long terminal repeat (LTR), the viral promoter.\n\nMajor pathways include:\n\n- **T-cell receptor/CD3 and CD28 signaling**\n- **NF-\u03baB**\n- **NFAT**\n- **AP-1**\n- **P-TEFb**, a host transcription-elongation factor\n- Cytokine and inflammatory signaling, including pathways influenced by **TNF-\u03b1**, **IL-7**, **IL-15**, and sometimes other cytokines\n\nThis is why intercurrent infections, immune activation, vaccination, inflammation, and antigen exposure can sometimes cause transient increases in HIV transcription or low-level viremia in treated patients. However, in a person taking fully suppressive ART, such activation generally does **not** cause sustained systemic viral rebound because ART blocks infection of new cells.\n\n## 4. Why the provirus is silent in latent cells\n\nLatency is maintained by several overlapping \u201cbrakes.\u201d Different latent proviruses may rely on different combinations of them.\n\n### A. Integration site and chromatin environment\n\nHIV does not integrate randomly. It tends to insert into actively transcribed host genes, but whether a particular provirus is expressed depends heavily on its local chromatin environment.\n\nSilencing can occur when the provirus is in or near:\n\n- tightly packed chromatin (\u201cheterochromatin\u201d),\n- regions with repressive histone marks,\n- genomic areas with weak access to transcription factors,\n- sites where host transcription interferes with HIV transcription.\n\n### B. Epigenetic repression\n\nThe HIV promoter can be repressed by chromatin modifications, including:\n\n- Histone deacetylation\n- Histone methylation associated with gene silencing, such as **H3K9 methylation** and **H3K27 methylation**\n- Recruitment of transcriptional repressors and chromatin-remodeling complexes\n\nThese mechanisms are why drugs such as histone deacetylase inhibitors have been tested as \u201clatency-reversing agents,\u201d although they have generally produced only modest increases in HIV RNA and have not, by themselves, meaningfully reduced the reservoir.\n\n### C. Lack of transcription factors in resting T cells\n\nResting memory CD4 cells have low activity of factors HIV needs, particularly:\n\n- NF-\u03baB\n- NFAT\n- P-TEFb\n\nWithout these factors, transcription initiation is weak and RNA polymerase often pauses shortly after starting.\n\n### D. The HIV Tat feedback loop\n\n",
+    "latency_ms": 13411.5,
+    "token_count": 1113,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "9cfe21a970ca",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234105.534575,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 9 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4512,
+          "evidence": [
+            "Latency 13412ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13411.5,
+        "token_count": 1113,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.120; flagged=True"
+}

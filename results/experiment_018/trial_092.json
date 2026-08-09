@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:57:57.679716+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Suppose a patient has recently undergone orthodontic treatment to straighten their teeth, but they are still experiencing bite problems and jaw pain. The patient is interested in exploring options for addressing these issues, but they are hesitant about undergoing further treatment. What are the potential causes of these symptoms, and what non-surgical options are available for addressing them?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Dentistry",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Persistent bite problems and jaw pain after orthodontic treatment can have several causes:\n\n### Potential causes\n\n- **Residual malocclusion:** The teeth may look straighter but still have premature contacts, an uneven bite, or a mismatch between the upper and lower dental arches.\n- **Relapse or tooth movement:** Teeth can shift if retainers were not worn consistently, no longer fit properly, or do not adequately control the bite.\n- **Temporomandibular disorder (TMD):** Pain may arise from overworked jaw muscles, irritated jaw joints, clenching, or grinding rather than from tooth position alone.\n- **Occlusal interference:** A filling, crown, bonded retainer, or tooth may contact too early and force the jaw into an uncomfortable position.\n- **Bruxism or stress-related muscle tension:** Nighttime grinding, daytime clenching, and stress can cause jaw pain, headaches, tooth sensitivity, and muscle fatigue.\n- **Inflammation or joint pathology:** Arthritis, disc displacement, or injury can produce clicking, locking, restricted opening, or persistent joint pain.\n- **Non-dental causes:** Ear disease, sinus problems, nerve pain, and some headaches can mimic jaw or tooth pain.\n\nA comprehensive evaluation by an orthodontist and/or dentist experienced in TMD is important. It may include examination of tooth contacts, jaw opening and movement, muscles and joints, retainers, and signs of grinding. Imaging is generally reserved for cases with locking, trauma, marked asymmetry, neurological signs, or persistent symptoms.\n\n### Non-surgical options\n\n1. **Observation and reassurance**\n   - Mild muscle or joint irritation often improves over several weeks.\n   - Avoid repeatedly testing the bite or forcing the jaw to \u201csit\u201d in a particular position.\n\n2. **Conservative jaw care**\n   - Eat softer foods temporarily and avoid gum, chewy foods, and very wide opening.\n   - Apply moist heat to tight muscles or cold packs during an acute flare.\n   - Use gentle jaw stretching and posture exercises prescribed by a clinician or physical therapist.\n   - Address stress, sleep, and daytime clenching; keep the teeth slightly apart with the tongue relaxed.\n\n3. **Medication**\n   - Short courses of acetaminophen or anti-inflammatory medication such as ibuprofen may help when medically appropriate.\n   - Topical anti-inflammatory medication or clinician-prescribed muscle-relaxing medication may occasionally be used.\n   - Medication should account for kidney disease, ulcers, anticoagulants, pregnancy, and other contraindications.\n\n4. **Physical therapy**\n   - A therapist trained in orofacial pain can use manual therapy, controlled exercises, posture work, and muscle-retraining techniques.\n\n5. **Retainer or orthodontic refinement**\n   - A retainer may need adjustment or replacement.\n   - If the issue is a small tooth-position discrepancy, limited aligner or brace refinement may correct it.\n   - Any adjustment should be based on a careful bite analysis rather than indiscriminate grinding.\n\n6. **Occlusal splint**\n   - A professionally designed night guard or stabilization splint can protect teeth and reduce muscle loading in selected patients with grinding or TMD.\n   - It should be monitored; poorly fitted or unsupervised appliances can worsen symptoms or move teeth.\n\n7. **Behavioral treatment**\n   - Habit reversal, biofeedback, relaxation training, and cognitive behavioral therapy can reduce clenching and pain amplification.\n\n8. **Management of associated dental problems**\n   - Repairing a high filling, treating sensitivity or decay, or correcting a problematic bonded retainer may resolve symptoms.\n\nPermanent bite reshaping, extensive restorative work, or additional orthodontics should not be undertaken solely to treat nonspecific jaw pain without a clear diagnosis. Surgery is usually reserved for uncommon cases involving severe structural joint disease, persistent locking, major skeletal discrepancy, or failure of well-supervised conservative care. Urgent assessment is appropriate for inability to open or close the mouth, rapidly worsening swelling, fever, significant trauma, new numbness or weakness, or severe persistent pain.",
+    "latency_ms": 6436.5,
+    "input_tokens": 146,
+    "output_tokens": 817
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Suppose a patient has recently undergone orthodontic treatment to straighten their teeth, but they are still experiencing bite problems and jaw pain. The patient is interested in exploring options for addressing these issues, but they are hesitant about undergoing further treatment. What are the potential causes of these symptoms, and what non-surgical options are available for addressing them?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Persistent bite problems and jaw pain after orthodontic treatment can have several causes:\n\n### Potential causes\n\n- **Residual malocclusion:** The teeth may look straighter but still have premature contacts, an uneven bite, or a mismatch between the upper and lower dental arches.\n- **Relapse or tooth movement:** Teeth can shift if retainers were not worn consistently, no longer fit properly, or do not adequately control the bite.\n- **Temporomandibular disorder (TMD):** Pain may arise from overworked jaw muscles, irritated jaw joints, clenching, or grinding rather than from tooth position alone.\n- **Occlusal interference:** A filling, crown, bonded retainer, or tooth may contact too early and force the jaw into an uncomfortable position.\n- **Bruxism or stress-related muscle tension:** Nighttime grinding, daytime clenching, and stress can cause jaw pain, headaches, tooth sensitivity, and muscle fatigue.\n- **Inflammation or joint pathology:** Arthritis, disc displacement, or injury can produce clicking, locking, restricted opening, or persistent joint pain.\n- **Non-dental causes:** Ear disease, sinus problems, nerve pain, and some headaches can mimic jaw or tooth pain.\n\nA comprehensive evaluation by an orthodontist and/or dentist experienced in TMD is important. It may include examination of tooth contacts, jaw opening and movement, muscles and joints, retainers, and signs of grinding. Imaging is generally reserved for cases with locking, trauma, marked asymmetry, neurological signs, or persistent symptoms.\n\n### Non-surgical options\n\n1. **Observation and reassurance**\n   - Mild muscle or joint irritation often improves over several weeks.\n   - Avoid repeatedly testing the bite or forcing the jaw to \u201csit\u201d in a particular position.\n\n2. **Conservative jaw care**\n   - Eat softer foods temporarily and avoid gum, chewy foods, and very wide opening.\n   - Apply moist heat to tight muscles or cold packs during an acute flare.\n   - Use gentle jaw stretching and posture exercises prescribed by a clinician or physical therapist.\n   - Address stress, sleep, and daytime clenching; keep the teeth slightly apart with the tongue relaxed.\n\n3. **Medication**\n   - Short courses of acetaminophen or anti-inflammatory medication such as ibuprofen may help when medically appropriate.\n   - Topical anti-inflammatory medication or clinician-prescribed muscle-relaxing medication may occasionally be used.\n   - Medication should account for kidney disease, ulcers, anticoagulants, pregnancy, and other contraindications.\n\n4. **Physical therapy**\n   - A therapist trained in orofacial pain can use manual therapy, controlled exercises, posture work, and muscle-retraining techniques.\n\n5. **Retainer or orthodontic refinement**\n   - A retainer may need adjustment or replacement.\n   - If the issue is a small tooth-position discrepancy, limited aligner or brace refinement may correct it.\n   - Any adjustment should be based on a careful bite analysis rather than indiscriminate grinding.\n\n6. **Occlusal splint**\n   - A professionally designed night guard or stabilization splint can protect teeth and reduce muscle loading in selected patients with grinding or TMD.\n   - It should be monitored; poorly fitted or unsupervised appliances can worsen symptoms or move teeth.\n\n7. **Behavioral treatment**\n   - Habit reversal, biofeedback, relaxation training, and cognitive behavioral therapy can reduce clenching and pain amplification.\n\n8. **Management of associated dental problems**\n   - Repairing a high filling, treating sensitivity or decay, or correcting a problematic bonded retainer may resolve symptoms.\n\nPermanent bite reshaping, extensive restorative work, or additional orthodontics should not be undertaken solely to treat nonspecific jaw pain without a clear diagnosis. Surgery is usually reserved for uncommon cases involving severe structural joint disease, persistent locking, major skeletal discrepancy, or failure of well-supervised conservative care. Urgent assessment is appropriate for inability to open or close the mouth, rapidly worsening swelling, fever, significant trauma, new numbness or weakness, or severe persistent pain.",
+    "latency_ms": 6436.5,
+    "token_count": 963
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "b70837f67028",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229877.6789703,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 6436.5,
+        "token_count": 963,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.92; flagged=False"
+}

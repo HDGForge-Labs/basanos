@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:53:30.514492+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "The type of drug used for insomnia require prolonged use of them, can't it be solved using psychiatric scans and helmets used to read brain neurons?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Sales rep in medicines",
+    "question_type": "Open-ended question that is potentially ambiguous| Question that describes a hypothetical scenario and asks a question based on this scenario| Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Insomnia medications generally **should not be continued indefinitely without reassessment**. The appropriate duration depends on the drug and cause:\n\n- **Cognitive behavioral therapy for insomnia (CBT\u2011I)** is the preferred long-term treatment and often produces more durable benefits than medication.\n- **Benzodiazepines and \u201cZ-drugs\u201d** such as zolpidem are usually intended for short-term or intermittent use because of tolerance, dependence, falls, memory effects, and next-day impairment.\n- **Sedating antidepressants, antihistamines, and antipsychotics** are not automatically safer for chronic insomnia and may cause substantial side effects.\n- **Orexin antagonists** such as suvorexant, lemborexant, or daridorexant can be used longer in selected patients, but still require periodic review.\n- **Melatonin** may help particular problems, especially circadian-rhythm disorders, but is not universally effective for chronic insomnia.\n\nBrain scans and neuron-reading helmets currently **cannot determine which insomnia drug an individual needs or replace clinical evaluation**. MRI, PET, EEG, and wearable EEG can show research-level patterns related to sleep and arousal, but they do not provide a reliable clinical \u201cscan\u201d that identifies the exact cause or predicts the best medication. Consumer or experimental EEG helmets mainly estimate sleep stages; they do not read thoughts or map the brain well enough to guide routine prescribing.\n\nInsomnia is usually assessed through sleep history, medication and substance review, mental-health screening, sleep diary, and sometimes **polysomnography** or a sleep-apnea test. Newer approaches may eventually use EEG and other biomarkers to personalize treatment, but they are not yet established clinical tools.\n\nIf someone has needed sleeping pills for weeks or months, they should **not stop benzodiazepines or Z-drugs abruptly**; a clinician can create a gradual taper while addressing causes such as sleep apnea, restless legs, depression/anxiety, pain, circadian disruption, or medication effects.",
+    "latency_ms": 3640.8,
+    "input_tokens": 106,
+    "output_tokens": 407
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "The type of drug used for insomnia require prolonged use of them, can't it be solved using psychiatric scans and helmets used to read brain neurons?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Insomnia medications generally **should not be continued indefinitely without reassessment**. The appropriate duration depends on the drug and cause:\n\n- **Cognitive behavioral therapy for insomnia (CBT\u2011I)** is the preferred long-term treatment and often produces more durable benefits than medication.\n- **Benzodiazepines and \u201cZ-drugs\u201d** such as zolpidem are usually intended for short-term or intermittent use because of tolerance, dependence, falls, memory effects, and next-day impairment.\n- **Sedating antidepressants, antihistamines, and antipsychotics** are not automatically safer for chronic insomnia and may cause substantial side effects.\n- **Orexin antagonists** such as suvorexant, lemborexant, or daridorexant can be used longer in selected patients, but still require periodic review.\n- **Melatonin** may help particular problems, especially circadian-rhythm disorders, but is not universally effective for chronic insomnia.\n\nBrain scans and neuron-reading helmets currently **cannot determine which insomnia drug an individual needs or replace clinical evaluation**. MRI, PET, EEG, and wearable EEG can show research-level patterns related to sleep and arousal, but they do not provide a reliable clinical \u201cscan\u201d that identifies the exact cause or predicts the best medication. Consumer or experimental EEG helmets mainly estimate sleep stages; they do not read thoughts or map the brain well enough to guide routine prescribing.\n\nInsomnia is usually assessed through sleep history, medication and substance review, mental-health screening, sleep diary, and sometimes **polysomnography** or a sleep-apnea test. Newer approaches may eventually use EEG and other biomarkers to personalize treatment, but they are not yet established clinical tools.\n\nIf someone has needed sleeping pills for weeks or months, they should **not stop benzodiazepines or Z-drugs abruptly**; a clinician can create a gradual taper while addressing causes such as sleep apnea, restless legs, depression/anxiety, pain, circadian disruption, or medication effects.",
+    "latency_ms": 3640.8,
+    "token_count": 513
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "a37628a13f6c",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229610.513635,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3640.8,
+        "token_count": 513,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.25; flagged=False"
+}

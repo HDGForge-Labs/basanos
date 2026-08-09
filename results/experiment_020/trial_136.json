@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T01:53:44.813669+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "At which gestation is the Nuchal screening offered routinely?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Midwifery",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Nuchal Translucency Screening - Timing\n\nNuchal translucency (NT) screening is routinely offered between **11 weeks 0 days and 13 weeks 6 days** of gestation, with the optimal window typically cited as **11+2 to 14+1 weeks**.\n\n## Key Details:\n\n**Crown-Rump Length (CRL) requirements:**\n- The fetus should measure between approximately **45mm and 84mm** in CRL for accurate NT measurement\n- This CRL range corresponds roughly to the 11-14 week gestational window\n\n**Why this specific window?**\n- Before **11 weeks**: The NT measurement becomes technically difficult and less reliable, and there's a higher chance of missing significant fetal anomalies that haven't yet developed enough to be visible\n- After **14 weeks**: The nuchal fluid that creates the translucency often begins to be reabsorbed into the developing lymphatic system, making measurements less accurate and reducing screening sensitivity\n\n**Combined screening context:**\n- NT measurement is typically combined with maternal serum biochemistry (**PAPP-A** and **free beta-hCG**) as part of the **combined first-trimester screening test**\n- This combined approach, along with maternal age, gives a detection rate of approximately **85-90%** for Down syndrome (trisomy 21), with a false-positive rate of around **5%**\n\n**Normal vs. increased NT:**\n- Normal NT is generally considered to be **less than 3.5mm**, though risk calculations use gestation-specific percentiles rather than a single cutoff\n- NT increases with gestational age even in normal pregnancies, so measurements are plotted against CRL-specific reference ranges\n\nIf a woman presents after **14 weeks**, she would typically be offered the **quadruple test** instead, performed between **14-20 weeks** (ideally 14-16 weeks), which screens using different biochemical markers (AFP, hCG, estriol, and inhibin-A) without requiring the NT ultrasound measurement.",
+    "latency_ms": 8613.9,
+    "input_tokens": 130,
+    "output_tokens": 671
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "At which gestation is the Nuchal screening offered routinely?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Nuchal Translucency Screening - Timing\n\nNuchal translucency (NT) screening is routinely offered between **11 weeks 0 days and 13 weeks 6 days** of gestation, with the optimal window typically cited as **11+2 to 14+1 weeks**.\n\n## Key Details:\n\n**Crown-Rump Length (CRL) requirements:**\n- The fetus should measure between approximately **45mm and 84mm** in CRL for accurate NT measurement\n- This CRL range corresponds roughly to the 11-14 week gestational window\n\n**Why this specific window?**\n- Before **11 weeks**: The NT measurement becomes technically difficult and less reliable, and there's a higher chance of missing significant fetal anomalies that haven't yet developed enough to be visible\n- After **14 weeks**: The nuchal fluid that creates the translucency often begins to be reabsorbed into the developing lymphatic system, making measurements less accurate and reducing screening sensitivity\n\n**Combined screening context:**\n- NT measurement is typically combined with maternal serum biochemistry (**PAPP-A** and **free beta-hCG**) as part of the **combined first-trimester screening test**\n- This combined approach, along with maternal age, gives a detection rate of approximately **85-90%** for Down syndrome (trisomy 21), with a false-positive rate of around **5%**\n\n**Normal vs. increased NT:**\n- Normal NT is generally considered to be **less than 3.5mm**, though risk calculations use gestation-specific percentiles rather than a single cutoff\n- NT increases with gestational age even in normal pregnancies, so measurements are plotted against CRL-specific reference ranges\n\nIf a woman presents after **14 weeks**, she would typically be offered the **quadruple test** instead, performed between **14-20 weeks** (ideally 14-16 weeks), which screens using different biochemical markers (AFP, hCG, estriol, and inhibin-A) without requiring the NT ultrasound measurement.",
+    "latency_ms": 8613.9,
+    "token_count": 801,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "0ded103e8874",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786240424.8128483,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 14 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 8613.9,
+        "token_count": 801,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.136; flagged=True"
+}

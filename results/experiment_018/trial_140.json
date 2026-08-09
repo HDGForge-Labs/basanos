@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:02:09.009696+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Suppose there is a 3 years old patient with asthma crisis management, history of severe asthma crisis. Is it recomended for them to be hospitalized?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pediatrician",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Yes\u2014**a 3-year-old with an acute asthma attack and a history of severe exacerbations should be assessed urgently by a clinician**, and hospitalization may be recommended depending on the child\u2019s response and risk factors. A past severe attack **lowers the threshold for emergency evaluation**, but it does not automatically mean every episode requires admission.\n\n### Seek emergency care immediately if the child has any of these signs\n\nCall emergency services or go to the emergency department if there is:\n\n- Severe difficulty breathing, chest/neck pulling in, grunting, or inability to speak, cry, drink, or eat normally  \n- Blue/gray lips or face, unusual sleepiness, confusion, exhaustion, or poor responsiveness  \n- Breathing pauses or markedly reduced/\u201csilent\u201d wheezing  \n- Oxygen saturation persistently **below about 92%** if measured reliably; **below about 90%** is especially concerning  \n- Little or no improvement after the prescribed rescue bronchodilator, or worsening within **about 1\u20132 hours**  \n- Need for albuterol/salbutamol more often than prescribed\u2014particularly repeated doses every **1\u20132 hours**  \n- A prior ICU admission, intubation, or severe attack with the current symptoms worsening quickly\n\nDo **not** delay emergency care to obtain a home oxygen reading; symptoms and work of breathing are more important.\n\n### Hospital admission is more likely when\n\nClinicians commonly consider admission when, after initial treatment and observation\u2014often **about 1\u20133 hours**\u2014the child still has:\n\n- Moderate or severe work of breathing  \n- Persistent wheezing or poor air movement  \n- Oxygen saturation generally **below about 92\u201394% on room air**, depending on local protocol and the child\u2019s baseline  \n- Ongoing need for frequent bronchodilator treatments, such as every **2\u20133 hours** or more often  \n- Inability to drink adequately, vomiting, dehydration, or inability of caregivers to administer treatment safely  \n- A history of severe attacks, ICU admission, intubation, or rapid deterioration  \n- Uncertain follow-up, medication access, or an unsafe home situation\n\nA child may be discharged only when breathing is clearly improved, oxygenation is acceptable on room air, rescue treatment is needed less frequently\u2014often no more than every **3\u20134 hours**\u2014and caregivers have a clear written plan and reliable follow-up within approximately **24\u201348 hours**.\n\n### Important\n\nUse the child\u2019s prescribed asthma action plan and rescue medication exactly as directed. **Do not give adult medications, cough medicines, or leftover steroids unless specifically instructed by a clinician.** In a 3-year-old with a severe-attack history, worsening symptoms should generally be evaluated in an emergency department rather than managed solely at home.",
+    "latency_ms": 4456.2,
+    "input_tokens": 103,
+    "output_tokens": 563
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Suppose there is a 3 years old patient with asthma crisis management, history of severe asthma crisis. Is it recomended for them to be hospitalized?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Yes\u2014**a 3-year-old with an acute asthma attack and a history of severe exacerbations should be assessed urgently by a clinician**, and hospitalization may be recommended depending on the child\u2019s response and risk factors. A past severe attack **lowers the threshold for emergency evaluation**, but it does not automatically mean every episode requires admission.\n\n### Seek emergency care immediately if the child has any of these signs\n\nCall emergency services or go to the emergency department if there is:\n\n- Severe difficulty breathing, chest/neck pulling in, grunting, or inability to speak, cry, drink, or eat normally  \n- Blue/gray lips or face, unusual sleepiness, confusion, exhaustion, or poor responsiveness  \n- Breathing pauses or markedly reduced/\u201csilent\u201d wheezing  \n- Oxygen saturation persistently **below about 92%** if measured reliably; **below about 90%** is especially concerning  \n- Little or no improvement after the prescribed rescue bronchodilator, or worsening within **about 1\u20132 hours**  \n- Need for albuterol/salbutamol more often than prescribed\u2014particularly repeated doses every **1\u20132 hours**  \n- A prior ICU admission, intubation, or severe attack with the current symptoms worsening quickly\n\nDo **not** delay emergency care to obtain a home oxygen reading; symptoms and work of breathing are more important.\n\n### Hospital admission is more likely when\n\nClinicians commonly consider admission when, after initial treatment and observation\u2014often **about 1\u20133 hours**\u2014the child still has:\n\n- Moderate or severe work of breathing  \n- Persistent wheezing or poor air movement  \n- Oxygen saturation generally **below about 92\u201394% on room air**, depending on local protocol and the child\u2019s baseline  \n- Ongoing need for frequent bronchodilator treatments, such as every **2\u20133 hours** or more often  \n- Inability to drink adequately, vomiting, dehydration, or inability of caregivers to administer treatment safely  \n- A history of severe attacks, ICU admission, intubation, or rapid deterioration  \n- Uncertain follow-up, medication access, or an unsafe home situation\n\nA child may be discharged only when breathing is clearly improved, oxygenation is acceptable on room air, rescue treatment is needed less frequently\u2014often no more than every **3\u20134 hours**\u2014and caregivers have a clear written plan and reliable follow-up within approximately **24\u201348 hours**.\n\n### Important\n\nUse the child\u2019s prescribed asthma action plan and rescue medication exactly as directed. **Do not give adult medications, cough medicines, or leftover steroids unless specifically instructed by a clinician.** In a 3-year-old with a severe-attack history, worsening symptoms should generally be evaluated in an emergency department rather than managed solely at home.",
+    "latency_ms": 4456.2,
+    "token_count": 666,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "fb3a301253d8",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230129.008865,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 5 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 4456.2,
+        "token_count": 666,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.140; flagged=True"
+}

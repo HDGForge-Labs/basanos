@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:45:21.718727+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What first-line tests would you request for the management of sarcoidosis?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Generalist physician",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# First-Line Tests for Sarcoidosis Management\n\n## To Confirm Diagnosis / Assess Extent\n\n**Imaging**\n- **Chest X-ray** \u2013 staging (I\u2013IV) based on hilar adenopathy and parenchymal infiltration\n- **High-resolution CT chest** \u2013 if CXR equivocal or to assess fibrosis\n\n**Tissue Diagnosis**\n- **Biopsy** of most accessible affected site (skin lesion, peripheral lymph node, conjunctival nodule) or via **bronchoscopy with transbronchial lung biopsy/EBUS-TBNA** of mediastinal nodes \u2013 looking for non-caseating granulomas\n- Always exclude alternative causes of granuloma (TB, fungal, berylliosis, malignancy)\n\n## Baseline Bloods\n\n- **FBC** \u2013 anemia, lymphopenia, thrombocytopenia (marrow involvement)\n- **U&E, creatinine** \u2013 renal involvement, nephrocalcinosis\n- **Liver function tests** \u2013 hepatic involvement\n- **Serum calcium** \u2013 hypercalcemia (from macrophage 1-alpha-hydroxylase activity \u2192 increased calcitriol)\n- **24-hour urinary calcium** \u2013 hypercalciuria\n- **Serum ACE** \u2013 supportive marker (not diagnostic; sensitivity ~60%, useful for monitoring disease activity/response to treatment in individual patients)\n- **Vitamin D levels** (1,25-dihydroxyvitamin D may be elevated)\n\n## Organ-Specific Screening (essential first-line, even if asymptomatic)\n\n- **ECG** \u2013 to screen for cardiac involvement (conduction defects, arrhythmias); if abnormal or symptoms present \u2192 cardiac MRI/PET\n- **Pulmonary function tests (spirometry + gas transfer/DLCO)** \u2013 baseline lung function, monitor progression\n- **Ophthalmological examination (slit-lamp)** \u2013 uveitis, even if asymptomatic, as ocular sarcoid can be silent\n\n## Tuberculin Skin Test / IGRA\n- To exclude TB as differential, particularly before starting immunosuppression (also baseline before biologics if considered later)\n\n## Additional Considerations\n- **Serum immunoglobulins** \u2013 polyclonal hypergammaglobulinemia is common\n- **Urinalysis** \u2013 for renal involvement\n\n---\n\n### Summary Table\n\n| Category | Test |\n|---|---|\n| Imaging | CXR \u00b1 HRCT |\n| Tissue | Biopsy (non-caseating granulomas) |\n| Bloods | FBC, U&E, LFTs, calcium, ACE |\n| Urine | 24h calcium, urinalysis |\n| Cardiac | ECG |\n| Respiratory | Spirometry + DLCO |\n| Ocular | Slit-lamp exam |\n| Infection screen | TB test (IGRA/Mantoux) |\n\nThis panel identifies disease extent, screens for silent but serious organ involvement (cardiac, ocular, ren",
+    "latency_ms": 11137.8,
+    "input_tokens": 136,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What first-line tests would you request for the management of sarcoidosis?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# First-Line Tests for Sarcoidosis Management\n\n## To Confirm Diagnosis / Assess Extent\n\n**Imaging**\n- **Chest X-ray** \u2013 staging (I\u2013IV) based on hilar adenopathy and parenchymal infiltration\n- **High-resolution CT chest** \u2013 if CXR equivocal or to assess fibrosis\n\n**Tissue Diagnosis**\n- **Biopsy** of most accessible affected site (skin lesion, peripheral lymph node, conjunctival nodule) or via **bronchoscopy with transbronchial lung biopsy/EBUS-TBNA** of mediastinal nodes \u2013 looking for non-caseating granulomas\n- Always exclude alternative causes of granuloma (TB, fungal, berylliosis, malignancy)\n\n## Baseline Bloods\n\n- **FBC** \u2013 anemia, lymphopenia, thrombocytopenia (marrow involvement)\n- **U&E, creatinine** \u2013 renal involvement, nephrocalcinosis\n- **Liver function tests** \u2013 hepatic involvement\n- **Serum calcium** \u2013 hypercalcemia (from macrophage 1-alpha-hydroxylase activity \u2192 increased calcitriol)\n- **24-hour urinary calcium** \u2013 hypercalciuria\n- **Serum ACE** \u2013 supportive marker (not diagnostic; sensitivity ~60%, useful for monitoring disease activity/response to treatment in individual patients)\n- **Vitamin D levels** (1,25-dihydroxyvitamin D may be elevated)\n\n## Organ-Specific Screening (essential first-line, even if asymptomatic)\n\n- **ECG** \u2013 to screen for cardiac involvement (conduction defects, arrhythmias); if abnormal or symptoms present \u2192 cardiac MRI/PET\n- **Pulmonary function tests (spirometry + gas transfer/DLCO)** \u2013 baseline lung function, monitor progression\n- **Ophthalmological examination (slit-lamp)** \u2013 uveitis, even if asymptomatic, as ocular sarcoid can be silent\n\n## Tuberculin Skin Test / IGRA\n- To exclude TB as differential, particularly before starting immunosuppression (also baseline before biologics if considered later)\n\n## Additional Considerations\n- **Serum immunoglobulins** \u2013 polyclonal hypergammaglobulinemia is common\n- **Urinalysis** \u2013 for renal involvement\n\n---\n\n### Summary Table\n\n| Category | Test |\n|---|---|\n| Imaging | CXR \u00b1 HRCT |\n| Tissue | Biopsy (non-caseating granulomas) |\n| Bloods | FBC, U&E, LFTs, calcium, ACE |\n| Urine | 24h calcium, urinalysis |\n| Cardiac | ECG |\n| Respiratory | Spirometry + DLCO |\n| Ocular | Slit-lamp exam |\n| Infection screen | TB test (IGRA/Mantoux) |\n\nThis panel identifies disease extent, screens for silent but serious organ involvement (cardiac, ocular, ren",
+    "latency_ms": 11137.8,
+    "token_count": 1160
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "763fadb610f3",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239921.7178838,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4171,
+          "evidence": [
+            "Latency 11138ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11137.8,
+        "token_count": 1160,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.95; flagged=False"
+}

@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:16:59.978365+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Why some bacteria could cause deadly infections in some people while others can recover quickly?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Molecular Microbiology",
+    "question_type": "Directed question that has a single unambiguous answer| Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Whether a bacterial infection becomes mild, severe, or life-threatening depends on a combination of the **bacterium**, the **person infected**, and how quickly effective treatment starts.\n\n## 1. The bacteria are not all equally dangerous\n\nDifferent species\u2014and even different strains of the same species\u2014have different \u201cvirulence factors,\u201d meaning tools that help them cause disease.\n\nExamples include:\n\n- **Toxins:** Some bacteria release poisons that damage cells, blood vessels, nerves, or organs.  \n  - *Clostridium botulinum* toxin can cause paralysis at extremely tiny doses.  \n  - Certain *Staphylococcus aureus* and *Streptococcus pyogenes* strains can produce toxins linked to toxic shock syndrome or rapidly spreading tissue infection.\n- **Capsules:** A slippery outer coating can help bacteria evade immune cells. Encapsulated bacteria such as *Streptococcus pneumoniae*, *Neisseria meningitidis*, and *Haemophilus influenzae* can cause severe bloodstream infection or meningitis.\n- **Ability to spread rapidly:** \u201cFlesh-eating\u201d infections, medically called necrotizing soft-tissue infections, can sometimes advance over hours rather than days.\n- **Antibiotic resistance:** Resistant bacteria may not respond to usual first-line medicines, delaying effective treatment. Examples include MRSA, drug-resistant tuberculosis, and some resistant gram-negative bacteria.\n\nA person exposed to a small bacterial dose may develop little or no illness, while a high dose\u2014such as from contaminated food, a deep wound, or a heavily infected medical device\u2014can overwhelm defenses.\n\n## 2. The infection site matters greatly\n\nThe same organism can be relatively harmless in one location and dangerous in another.\n\nFor example:\n\n- *E. coli* normally lives in the gut, but if it reaches the urinary tract it can cause a UTI; if it reaches the bloodstream, it can cause sepsis.\n- Skin bacteria can be harmless on intact skin but dangerous if introduced through surgery, an IV line, a burn, or a deep wound.\n- Infection in the **brain, blood, heart valves, lungs, kidneys, or deep tissues** has a higher risk of serious complications.\n\nBloodstream infection can trigger **sepsis**, a life-threatening dysregulated immune response that may lead to low blood pressure, clotting problems, kidney failure, respiratory failure, or shock. Sepsis can worsen quickly\u2014sometimes within several hours.\n\n## 3. Immune systems differ from person to person\n\nA healthy immune system can often contain bacteria before they spread. People with weakened or altered immune defenses are at higher risk of severe infection.\n\nHigher-risk groups include:\n\n- Adults aged roughly **65 years and older**\n- Infants, especially those younger than about **3 months**\n- Pregnant people and people who recently gave birth\n- People with cancer, especially during chemotherapy\n- People taking high-dose corticosteroids, biologic immune-suppressing drugs, transplant medications, or certain arthritis/inflammatory bowel disease medications\n- People with HIV/AIDS or inherited immune disorders\n- People without a functioning spleen, including those whose spleen was removed\n- People with poorly controlled diabetes\n- People with chronic kidney disease, liver cirrhosis, severe lung disease, or heart failure\n- People with extensive burns, major trauma, recent surgery, or indwelling devices such as catheters, feeding tubes, or central lines\n\nFor example, people without a spleen are at particularly high risk from encapsulated bacteria such as *S. pneumoniae*, *N. meningitidis*, and *H. influenzae*. An infection that might be manageable in another person can become overwhelming within roughly **12\u201324 hours** in some high-risk patients.\n\n## 4. Genetics and immune-response differences matter\n\nTwo otherwise healthy people can have very different responses to the same germ.\n\nGenetic differences can affect:\n\n- How strongly inflammation is activated\n- How well immune cells recognize bacteria\n- Antibody production\n- Complement-system function, a part of immunity that helps kill certain bacteria\n- Tendency toward excessive clotting or dangerous inflammation during sepsis\n\nSometimes the immune response is too weak to control the infection. In other cases, it is excessively intense: widespread inflammation can injure the body\u2019s own organs even while fighting the bacteria.\n\n## 5. Vaccination and prior exposure can change the outcome\n\nVaccines do not prevent every infection, but they can dramatically reduce the risk of severe disease from specific bacteria.\n\nExamples include vaccines against:\n\n- *Streptococcus pneumoniae* (pneumococcal disease)\n- *Neisseria meningitidis* (meningococcal disease)\n- *Haemophilus influenzae* type b (Hib)\n- *Bordetella pertussis* (whooping cough)\n- Tetanus-causing bacteria\n\nPrior exposure and existing antibodies may also help some people clear an infection faster.\n\n## 6. Time to treatment is often decisive\n\nEarly treatment can be the",
+    "latency_ms": 13511.8,
+    "input_tokens": 88,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Why some bacteria could cause deadly infections in some people while others can recover quickly?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Whether a bacterial infection becomes mild, severe, or life-threatening depends on a combination of the **bacterium**, the **person infected**, and how quickly effective treatment starts.\n\n## 1. The bacteria are not all equally dangerous\n\nDifferent species\u2014and even different strains of the same species\u2014have different \u201cvirulence factors,\u201d meaning tools that help them cause disease.\n\nExamples include:\n\n- **Toxins:** Some bacteria release poisons that damage cells, blood vessels, nerves, or organs.  \n  - *Clostridium botulinum* toxin can cause paralysis at extremely tiny doses.  \n  - Certain *Staphylococcus aureus* and *Streptococcus pyogenes* strains can produce toxins linked to toxic shock syndrome or rapidly spreading tissue infection.\n- **Capsules:** A slippery outer coating can help bacteria evade immune cells. Encapsulated bacteria such as *Streptococcus pneumoniae*, *Neisseria meningitidis*, and *Haemophilus influenzae* can cause severe bloodstream infection or meningitis.\n- **Ability to spread rapidly:** \u201cFlesh-eating\u201d infections, medically called necrotizing soft-tissue infections, can sometimes advance over hours rather than days.\n- **Antibiotic resistance:** Resistant bacteria may not respond to usual first-line medicines, delaying effective treatment. Examples include MRSA, drug-resistant tuberculosis, and some resistant gram-negative bacteria.\n\nA person exposed to a small bacterial dose may develop little or no illness, while a high dose\u2014such as from contaminated food, a deep wound, or a heavily infected medical device\u2014can overwhelm defenses.\n\n## 2. The infection site matters greatly\n\nThe same organism can be relatively harmless in one location and dangerous in another.\n\nFor example:\n\n- *E. coli* normally lives in the gut, but if it reaches the urinary tract it can cause a UTI; if it reaches the bloodstream, it can cause sepsis.\n- Skin bacteria can be harmless on intact skin but dangerous if introduced through surgery, an IV line, a burn, or a deep wound.\n- Infection in the **brain, blood, heart valves, lungs, kidneys, or deep tissues** has a higher risk of serious complications.\n\nBloodstream infection can trigger **sepsis**, a life-threatening dysregulated immune response that may lead to low blood pressure, clotting problems, kidney failure, respiratory failure, or shock. Sepsis can worsen quickly\u2014sometimes within several hours.\n\n## 3. Immune systems differ from person to person\n\nA healthy immune system can often contain bacteria before they spread. People with weakened or altered immune defenses are at higher risk of severe infection.\n\nHigher-risk groups include:\n\n- Adults aged roughly **65 years and older**\n- Infants, especially those younger than about **3 months**\n- Pregnant people and people who recently gave birth\n- People with cancer, especially during chemotherapy\n- People taking high-dose corticosteroids, biologic immune-suppressing drugs, transplant medications, or certain arthritis/inflammatory bowel disease medications\n- People with HIV/AIDS or inherited immune disorders\n- People without a functioning spleen, including those whose spleen was removed\n- People with poorly controlled diabetes\n- People with chronic kidney disease, liver cirrhosis, severe lung disease, or heart failure\n- People with extensive burns, major trauma, recent surgery, or indwelling devices such as catheters, feeding tubes, or central lines\n\nFor example, people without a spleen are at particularly high risk from encapsulated bacteria such as *S. pneumoniae*, *N. meningitidis*, and *H. influenzae*. An infection that might be manageable in another person can become overwhelming within roughly **12\u201324 hours** in some high-risk patients.\n\n## 4. Genetics and immune-response differences matter\n\nTwo otherwise healthy people can have very different responses to the same germ.\n\nGenetic differences can affect:\n\n- How strongly inflammation is activated\n- How well immune cells recognize bacteria\n- Antibody production\n- Complement-system function, a part of immunity that helps kill certain bacteria\n- Tendency toward excessive clotting or dangerous inflammation during sepsis\n\nSometimes the immune response is too weak to control the infection. In other cases, it is excessively intense: widespread inflammation can injure the body\u2019s own organs even while fighting the bacteria.\n\n## 5. Vaccination and prior exposure can change the outcome\n\nVaccines do not prevent every infection, but they can dramatically reduce the risk of severe disease from specific bacteria.\n\nExamples include vaccines against:\n\n- *Streptococcus pneumoniae* (pneumococcal disease)\n- *Neisseria meningitidis* (meningococcal disease)\n- *Haemophilus influenzae* type b (Hib)\n- *Bordetella pertussis* (whooping cough)\n- Tetanus-causing bacteria\n\nPrior exposure and existing antibodies may also help some people clear an infection faster.\n\n## 6. Time to treatment is often decisive\n\nEarly treatment can be the",
+    "latency_ms": 13511.8,
+    "token_count": 1112,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "5ea20b83370b",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234619.9775698,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 8 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4527,
+          "evidence": [
+            "Latency 13512ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13511.8,
+        "token_count": 1112,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.168; flagged=True"
+}

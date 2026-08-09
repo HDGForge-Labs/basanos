@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:35:22.286835+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Do toxic chemicals become more or less toxic when they expire?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Dispensery",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "The concept of \"expiration\" doesn't work the same way for toxic chemicals as it does for medications or food, so the answer depends heavily on what specifically is degrading and how.\n\n**Chemicals that become MORE dangerous with age:**\n\n- **Ethers (diethyl ether, THF, dioxane)**: Form explosive peroxides on exposure to air/light over time. An old bottle of ether isn't necessarily more \"toxic\" in a chemical poisoning sense, but it becomes a serious explosion hazard\u2014shock-sensitive peroxide crystals can detonate from friction alone (e.g., unscrewing a cap).\n- **Picric acid**: When it dries out (loses water content), it becomes shock-sensitive and can detonate from friction or impact. Old bottles found in labs are genuine hazards.\n- **White phosphorus**: Doesn't really \"expire\" but degrades physically, increasing handling risk.\n- **Old pesticides (organophosphates)**: Some can hydrolyze into breakdown products that are still toxic, though generally less potent than the parent compound.\n\n**Chemicals that become LESS toxic/dangerous:**\n\n- Most **organic poisons** degrade via oxidation, hydrolysis, or photolysis into less toxic fragments. Cyanide salts, for instance, can slowly react with moisture and CO2 to release HCN gas (a hazard during degradation) but the remaining solid becomes less potent over time.\n- **Chlorine-based disinfectants** (bleach) lose potency\u2014sodium hypochlorite decomposes to salt and oxygen, becoming a weaker oxidizer/disinfectant, not more toxic.\n- **Many pharmaceuticals with toxic overdose potential** simply lose potency through hydrolysis or oxidation of the active molecule.\n\n**Heavy metals (lead, mercury, arsenic, cadmium):**\n\nThese don't expire at all\u2014elements don't degrade. Lead paint chips are just as toxic today as decades ago because lead is lead.\n\n**The general pattern:**\n\nMost toxic chemicals become less toxic over time as they degrade into simpler, often less reactive compounds\u2014but a subset become *more hazardous* not through increased toxicity per se, but through instability (peroxide formation, desiccation-induced shock sensitivity, gas release). The danger profile changes rather than simply increasing or decreasing uniformly.\n\nIf you're asking about a specific chemical or product, I can give a more precise answer.",
+    "latency_ms": 10861.3,
+    "input_tokens": 136,
+    "output_tokens": 820
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Do toxic chemicals become more or less toxic when they expire?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "The concept of \"expiration\" doesn't work the same way for toxic chemicals as it does for medications or food, so the answer depends heavily on what specifically is degrading and how.\n\n**Chemicals that become MORE dangerous with age:**\n\n- **Ethers (diethyl ether, THF, dioxane)**: Form explosive peroxides on exposure to air/light over time. An old bottle of ether isn't necessarily more \"toxic\" in a chemical poisoning sense, but it becomes a serious explosion hazard\u2014shock-sensitive peroxide crystals can detonate from friction alone (e.g., unscrewing a cap).\n- **Picric acid**: When it dries out (loses water content), it becomes shock-sensitive and can detonate from friction or impact. Old bottles found in labs are genuine hazards.\n- **White phosphorus**: Doesn't really \"expire\" but degrades physically, increasing handling risk.\n- **Old pesticides (organophosphates)**: Some can hydrolyze into breakdown products that are still toxic, though generally less potent than the parent compound.\n\n**Chemicals that become LESS toxic/dangerous:**\n\n- Most **organic poisons** degrade via oxidation, hydrolysis, or photolysis into less toxic fragments. Cyanide salts, for instance, can slowly react with moisture and CO2 to release HCN gas (a hazard during degradation) but the remaining solid becomes less potent over time.\n- **Chlorine-based disinfectants** (bleach) lose potency\u2014sodium hypochlorite decomposes to salt and oxygen, becoming a weaker oxidizer/disinfectant, not more toxic.\n- **Many pharmaceuticals with toxic overdose potential** simply lose potency through hydrolysis or oxidation of the active molecule.\n\n**Heavy metals (lead, mercury, arsenic, cadmium):**\n\nThese don't expire at all\u2014elements don't degrade. Lead paint chips are just as toxic today as decades ago because lead is lead.\n\n**The general pattern:**\n\nMost toxic chemicals become less toxic over time as they degrade into simpler, often less reactive compounds\u2014but a subset become *more hazardous* not through increased toxicity per se, but through instability (peroxide formation, desiccation-induced shock sensitivity, gas release). The danger profile changes rather than simply increasing or decreasing uniformly.\n\nIf you're asking about a specific chemical or product, I can give a more precise answer.",
+    "latency_ms": 10861.3,
+    "token_count": 956
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "5585600f365f",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239322.2860634,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4129,
+          "evidence": [
+            "Latency 10861ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 10861.3,
+        "token_count": 956,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.45; flagged=False"
+}

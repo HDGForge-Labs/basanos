@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:00:51.464454+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Does the medical field require one to be consumed by drugs rather than holistic medicines?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Sales rep in medicines",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "No. The medical field does **not** require you to be \u201cconsumed by drugs,\u201d and conventional medicine is not inherently opposed to holistic care. The safest approach is usually **integrative care**: combining evidence-based medical treatment with appropriate lifestyle, behavioral, and complementary approaches.\n\n### What \u201cholistic\u201d care can include\nMany holistic practices can be useful\u2014especially for prevention, symptom relief, and overall well-being:\n\n- Nutrition and dietary counseling  \n- Exercise and physical therapy  \n- Sleep improvement  \n- Stress reduction, mindfulness, or meditation  \n- Psychotherapy and social support  \n- Yoga or tai chi  \n- Acupuncture for some pain conditions  \n- Massage therapy  \n- Selected supplements, when their quality and safety are known  \n\nFor example, regular physical activity\u2014often around **150 minutes per week of moderate-intensity exercise**, when medically appropriate\u2014can help reduce cardiovascular risk, improve mood, and support diabetes management. Cognitive behavioral therapy, mindfulness, and sleep interventions can also be important treatments, sometimes alongside medication and sometimes without it.\n\n### Why doctors sometimes recommend medication\nMedication is not automatically a failure of holistic care. Some conditions can cause serious or permanent harm if untreated. Examples include:\n\n- Bacterial meningitis or sepsis, where delays of even **hours** can matter  \n- Type 1 diabetes, which requires insulin  \n- Severe asthma attacks, where bronchodilators and steroids may be lifesaving  \n- High blood pressure, especially when persistently around **140/90 mmHg or higher**, depending on individual risk and guidelines  \n- Depression with suicidal thoughts, psychosis, seizures, or severe infections  \n\nIn these situations, medication may be the most reliable or fastest way to reduce danger. Doctors should still explain the purpose, expected benefit, risks, alternatives, and likely duration.\n\n### \u201cNatural\u201d does not always mean safer\nHerbal products and supplements can have pharmacologic effects, vary in strength, be contaminated, or interact with medications. Examples include:\n\n- **St. John\u2019s wort** can reduce the effectiveness of birth-control pills, transplant medicines, anticoagulants, and many other drugs.  \n- **Ginkgo, garlic supplements, and high-dose fish oil** may increase bleeding risk in some people.  \n- **Kava** has been associated with liver injury.  \n- **Licorice root** can raise blood pressure and lower potassium.  \n- Some supplements contain undeclared prescription drugs or heavy metals.\n\nIn the United States, supplements generally do not undergo the same premarket approval process as prescription medicines. Discuss supplements with a qualified clinician or pharmacist, particularly if you are pregnant, have kidney or liver disease, are having surgery, or take several medications.\n\n### A reasonable way to approach treatment\nYou can ask your clinician:\n\n1. **What diagnosis are we treating?**  \n2. **What happens if we do not treat it now?**  \n3. **What are the benefits, risks, and alternatives?**  \n4. **Can lifestyle or complementary treatment be tried first, and for how long?**  \n5. **What specific signs mean I should seek urgent care?**  \n6. **Can we use the lowest effective dose and reassess in approximately 2\u20136 weeks?**  \n\nYou also have the right to seek a second opinion or a clinician who respects your preferences. However, avoid stopping prescribed medication abruptly\u2014particularly antidepressants, benzodiazepines, steroids, seizure medicines, insulin, or blood-pressure medicines\u2014without medical guidance.\n\nThe goal should not be \u201cdrugs versus holistic medicine.\u201d It should be **the least invasive, safest, and most effective combination of treatments for your particular condition**, based on good evidence and your informed preferences.",
+    "latency_ms": 6282.4,
+    "input_tokens": 88,
+    "output_tokens": 749
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Does the medical field require one to be consumed by drugs rather than holistic medicines?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "No. The medical field does **not** require you to be \u201cconsumed by drugs,\u201d and conventional medicine is not inherently opposed to holistic care. The safest approach is usually **integrative care**: combining evidence-based medical treatment with appropriate lifestyle, behavioral, and complementary approaches.\n\n### What \u201cholistic\u201d care can include\nMany holistic practices can be useful\u2014especially for prevention, symptom relief, and overall well-being:\n\n- Nutrition and dietary counseling  \n- Exercise and physical therapy  \n- Sleep improvement  \n- Stress reduction, mindfulness, or meditation  \n- Psychotherapy and social support  \n- Yoga or tai chi  \n- Acupuncture for some pain conditions  \n- Massage therapy  \n- Selected supplements, when their quality and safety are known  \n\nFor example, regular physical activity\u2014often around **150 minutes per week of moderate-intensity exercise**, when medically appropriate\u2014can help reduce cardiovascular risk, improve mood, and support diabetes management. Cognitive behavioral therapy, mindfulness, and sleep interventions can also be important treatments, sometimes alongside medication and sometimes without it.\n\n### Why doctors sometimes recommend medication\nMedication is not automatically a failure of holistic care. Some conditions can cause serious or permanent harm if untreated. Examples include:\n\n- Bacterial meningitis or sepsis, where delays of even **hours** can matter  \n- Type 1 diabetes, which requires insulin  \n- Severe asthma attacks, where bronchodilators and steroids may be lifesaving  \n- High blood pressure, especially when persistently around **140/90 mmHg or higher**, depending on individual risk and guidelines  \n- Depression with suicidal thoughts, psychosis, seizures, or severe infections  \n\nIn these situations, medication may be the most reliable or fastest way to reduce danger. Doctors should still explain the purpose, expected benefit, risks, alternatives, and likely duration.\n\n### \u201cNatural\u201d does not always mean safer\nHerbal products and supplements can have pharmacologic effects, vary in strength, be contaminated, or interact with medications. Examples include:\n\n- **St. John\u2019s wort** can reduce the effectiveness of birth-control pills, transplant medicines, anticoagulants, and many other drugs.  \n- **Ginkgo, garlic supplements, and high-dose fish oil** may increase bleeding risk in some people.  \n- **Kava** has been associated with liver injury.  \n- **Licorice root** can raise blood pressure and lower potassium.  \n- Some supplements contain undeclared prescription drugs or heavy metals.\n\nIn the United States, supplements generally do not undergo the same premarket approval process as prescription medicines. Discuss supplements with a qualified clinician or pharmacist, particularly if you are pregnant, have kidney or liver disease, are having surgery, or take several medications.\n\n### A reasonable way to approach treatment\nYou can ask your clinician:\n\n1. **What diagnosis are we treating?**  \n2. **What happens if we do not treat it now?**  \n3. **What are the benefits, risks, and alternatives?**  \n4. **Can lifestyle or complementary treatment be tried first, and for how long?**  \n5. **What specific signs mean I should seek urgent care?**  \n6. **Can we use the lowest effective dose and reassess in approximately 2\u20136 weeks?**  \n\nYou also have the right to seek a second opinion or a clinician who respects your preferences. However, avoid stopping prescribed medication abruptly\u2014particularly antidepressants, benzodiazepines, steroids, seizure medicines, insulin, or blood-pressure medicines\u2014without medical guidance.\n\nThe goal should not be \u201cdrugs versus holistic medicine.\u201d It should be **the least invasive, safest, and most effective combination of treatments for your particular condition**, based on good evidence and your informed preferences.",
+    "latency_ms": 6282.4,
+    "token_count": 837,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "4b1a44327bf8",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230051.4636955,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 5 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 6282.4,
+        "token_count": 837,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.127; flagged=True"
+}

@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:57:41.371738+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Describes Hodge's blueprints.",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General medicine",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "I want to make sure I give you accurate, useful details rather than guessing \u2014 could you clarify which \"Hodge\" and \"blueprints\" you're referring to? For example:\n\n1. **A video game item/quest** \u2014 e.g., \"Hodge's Blueprints\" as a collectible, crafting recipe, or quest object in a specific game (please name the game/title).\n2. **A historical or fictional character** named Hodge who created architectural, engineering, or mechanical blueprints (a book, movie, TV show?).\n3. **W.V.D. Hodge**, the mathematician \u2014 if you mean something like diagrams/frameworks related to **Hodge theory** or the **Hodge Conjecture** (used loosely as \"blueprints\" for a mathematical structure).\n4. **A real building, invention, or patent** attributed to someone named Hodge.\n5. Something else entirely \u2014 a company, brand, or product line called \"Hodge\" with actual blueprint documents.\n\nOnce you tell me the specific source, I can give you a detailed breakdown \u2014 including things like dimensions, material specifications (e.g., wall thickness of roughly 0.25\u20130.5 inches, load capacities in the range of about 500\u20132,000 lbs, specific dates, version numbers, in-game stats/percentages, or historical timeframes spanning decades) depending on what's relevant to that particular \"Hodge's blueprints.\"",
+    "latency_ms": 11800.2,
+    "input_tokens": 123,
+    "output_tokens": 1013
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Describes Hodge's blueprints.",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "I want to make sure I give you accurate, useful details rather than guessing \u2014 could you clarify which \"Hodge\" and \"blueprints\" you're referring to? For example:\n\n1. **A video game item/quest** \u2014 e.g., \"Hodge's Blueprints\" as a collectible, crafting recipe, or quest object in a specific game (please name the game/title).\n2. **A historical or fictional character** named Hodge who created architectural, engineering, or mechanical blueprints (a book, movie, TV show?).\n3. **W.V.D. Hodge**, the mathematician \u2014 if you mean something like diagrams/frameworks related to **Hodge theory** or the **Hodge Conjecture** (used loosely as \"blueprints\" for a mathematical structure).\n4. **A real building, invention, or patent** attributed to someone named Hodge.\n5. Something else entirely \u2014 a company, brand, or product line called \"Hodge\" with actual blueprint documents.\n\nOnce you tell me the specific source, I can give you a detailed breakdown \u2014 including things like dimensions, material specifications (e.g., wall thickness of roughly 0.25\u20130.5 inches, load capacities in the range of about 500\u20132,000 lbs, specific dates, version numbers, in-game stats/percentages, or historical timeframes spanning decades) depending on what's relevant to that particular \"Hodge's blueprints.\"",
+    "latency_ms": 11800.2,
+    "token_count": 1136,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "1c37149aaded",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240661.3708835,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 4 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.427,
+          "evidence": [
+            "Latency 11800ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11800.2,
+        "token_count": 1136,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.155; flagged=True"
+}

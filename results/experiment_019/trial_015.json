@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:54:12.096746+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What services are provided by the Royal Fleet Auxiliary?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Maritime Operations",
+    "question_type": "Summarization of information on a topic| Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "The Royal Fleet Auxiliary (RFA) provides the Royal Navy with the logistical and specialist support needed to sustain operations worldwide. Its main services include:\n\n- **Replenishment at sea:** Supplying warships with fuel, aviation fuel, ammunition, food, spare parts, stores, and fresh water without requiring them to return to port.\n- **Fuel and bulk cargo transport:** Operating fleet tankers and solid-support ships to carry marine diesel, aviation fuel, lubricants, munitions, and other naval stores.\n- **Amphibious and littoral support:** Moving Royal Marines, vehicles, landing craft, equipment, and supplies for amphibious operations and humanitarian missions.\n- **Aviation support:** Operating ships with flight decks and aviation facilities to support helicopters, including anti-submarine warfare, transport, surveillance, and disaster-relief tasks.\n- **Casualty reception and medical support:** Providing afloat medical facilities, including treatment spaces and the ability to receive casualties during operations.\n- **Humanitarian assistance and disaster relief:** Delivering emergency supplies, engineering support, helicopters, landing craft, medical assistance, and evacuation capability after natural disasters or crises.\n- **Strategic sealift:** Transporting military equipment, vehicles, personnel, and stores to overseas theatres of operation.\n- **Training and specialist support:** Supporting naval training, salvage and rescue-related activity, and other specialist maritime tasks where required.\n- **Support to deployed task groups:** Enabling carrier strike groups, frigates, destroyers, submarines, and amphibious forces to remain deployed for long periods far from UK bases.\n\nThe RFA is civilian-manned but forms an integral part of UK naval operations, operating alongside the Royal Navy in peace, crisis, and war.",
+    "latency_ms": 5229.2,
+    "input_tokens": 88,
+    "output_tokens": 350
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What services are provided by the Royal Fleet Auxiliary?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "The Royal Fleet Auxiliary (RFA) provides the Royal Navy with the logistical and specialist support needed to sustain operations worldwide. Its main services include:\n\n- **Replenishment at sea:** Supplying warships with fuel, aviation fuel, ammunition, food, spare parts, stores, and fresh water without requiring them to return to port.\n- **Fuel and bulk cargo transport:** Operating fleet tankers and solid-support ships to carry marine diesel, aviation fuel, lubricants, munitions, and other naval stores.\n- **Amphibious and littoral support:** Moving Royal Marines, vehicles, landing craft, equipment, and supplies for amphibious operations and humanitarian missions.\n- **Aviation support:** Operating ships with flight decks and aviation facilities to support helicopters, including anti-submarine warfare, transport, surveillance, and disaster-relief tasks.\n- **Casualty reception and medical support:** Providing afloat medical facilities, including treatment spaces and the ability to receive casualties during operations.\n- **Humanitarian assistance and disaster relief:** Delivering emergency supplies, engineering support, helicopters, landing craft, medical assistance, and evacuation capability after natural disasters or crises.\n- **Strategic sealift:** Transporting military equipment, vehicles, personnel, and stores to overseas theatres of operation.\n- **Training and specialist support:** Supporting naval training, salvage and rescue-related activity, and other specialist maritime tasks where required.\n- **Support to deployed task groups:** Enabling carrier strike groups, frigates, destroyers, submarines, and amphibious forces to remain deployed for long periods far from UK bases.\n\nThe RFA is civilian-manned but forms an integral part of UK naval operations, operating alongside the Royal Navy in peace, crisis, and war.",
+    "latency_ms": 5229.2,
+    "token_count": 438
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "3ca8d8a927ce",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233252.095888,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 5229.2,
+        "token_count": 438,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.15; flagged=False"
+}

@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:07:21.894841+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What type of health supplies require approbation?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Medical devices",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "\u201cApprobation\u201d usually means a formal regulatory approval, authorization, or registration before a health-related product can be imported, sold, advertised, prescribed, or used. The exact list depends heavily on the country and regulator, but the following categories commonly require it:\n\n1. **Medicines / pharmaceutical products**\n   - Prescription medicines and most over-the-counter medicines.\n   - Vaccines, biologics, blood-derived products, insulin, antibiotics, hormones, and controlled substances.\n   - New dosage forms, new strengths, new indications, and many generic medicines generally need separate approval.\n   - Typical approvals cover safety, quality, manufacturing standards, labeling, and evidence of effectiveness.\n\n2. **Medical devices**\n   - Examples: syringes, surgical gloves, infusion pumps, ventilators, wheelchairs, X-ray equipment, pregnancy tests, glucose meters, pacemakers, implants, and diagnostic software.\n   - Lower-risk devices may require registration or a conformity declaration, while higher-risk devices\u2014such as implantable devices, ventilators, or cardiac monitors\u2014usually require more extensive pre-market review.\n   - Many systems classify devices into roughly 3\u20134 risk groups, from low risk (for example, bandages) to high risk (for example, heart valves or implanted neurostimulators).\n\n3. **In-vitro diagnostic products**\n   - Laboratory tests, rapid antigen tests, HIV tests, PCR kits, blood-grouping reagents, and home-use diagnostic tests.\n   - Tests for serious infectious diseases, cancer, genetic conditions, or blood safety often face stricter requirements than low-risk screening products.\n\n4. **Personal protective equipment used for medical purposes**\n   - Medical masks, respirators, sterile surgical gowns, examination gloves, surgical gloves, face shields, and protective coveralls.\n   - Whether approval is required often depends on the claim. A mask sold for general consumer use may be regulated differently from a mask marketed for infection prevention in hospitals or as a surgical device.\n\n5. **Sterile and invasive consumables**\n   - Products such as catheters, IV cannulas, dialysis tubing, surgical sutures, wound dressings, IV sets, blood collection bags, and sterile surgical kits.\n   - Sterility claims and direct contact with blood, tissue, or internal organs generally trigger more stringent oversight.\n\n6. **Dental and ophthalmic supplies**\n   - Dental implants, braces, fillings, dental anesthetics, contact lenses, intraocular lenses, ophthalmic solutions, and laser equipment.\n   - Products placed in the eye or implanted in the body usually require formal authorization.\n\n7. **Disinfectants, antiseptics, and sterilization products**\n   - Hospital-grade surface disinfectants, hand antiseptics, instrument sterilants, and products claiming to kill bacteria, viruses, fungi, or spores.\n   - A product marketed only as a cleaner may have fewer requirements than one claiming, for example, to \u201ckill 99.9% of viruses\u201d or to disinfect medical instruments.\n\n8. **Blood, tissue, organ, and human-cell products**\n   - Blood components, plasma, stem-cell preparations, tissue grafts, donor human milk, and some reproductive materials.\n   - These are typically subject to strict licensing, traceability, donor-screening, storage, and transport rules.\n\n9. **Radiopharmaceuticals and radiation-emitting health products**\n   - Radioactive diagnostic agents, radiotherapy products, X-ray systems, CT scanners, radiation therapy machines, and some laser devices.\n   - These may require approval from both a health-products regulator and a radiation-safety authority.\n\n10. **Health-related products making therapeutic claims**\n   - Supplements, herbal medicines, cosmetics, food products, or wellness devices may require approval\u2014or a different type of registration\u2014if they claim to diagnose, prevent, treat, cure, or alleviate disease.\n   - For example, a plain moisturizer may be a cosmetic, but a cream claiming to treat eczema or fungal infection may be regulated as a medicine or medical device.\n\n11. **Controlled drugs and precursor chemicals**\n   - Opioids, benzodiazepines, stimulants, anesthetics, certain psychotropics, and narcotic-containing products usually need special permits beyond ordinary medicine approval.\n   - Import/export permits, secure storage, recordkeeping, and prescription controls are common.\n\nIn contrast, ordinary non-medical supplies\u2014such as basic paper products, non-medicated soap, standard cleaning cloths, or general office items\u2014normally do **not** need health-product approbation unless they are marketed with medical, disinfecting, diagnostic, or therapeutic claims.\n\nThe key question is usually not just what the product is, but **what it is intended and advertised to do**. A product claiming to \u201cdiagnose,\u201d \u201cprevent,\u201d \u201ctreat,\u201d \u201csterilize,\u201d \u201cprotect against infection,\u201d or \u201cmonitor a disease\u201d is much more likely to require regulatory approbation.",
+    "latency_ms": 13846.1,
+    "input_tokens": 82,
+    "output_tokens": 997
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What type of health supplies require approbation?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "\u201cApprobation\u201d usually means a formal regulatory approval, authorization, or registration before a health-related product can be imported, sold, advertised, prescribed, or used. The exact list depends heavily on the country and regulator, but the following categories commonly require it:\n\n1. **Medicines / pharmaceutical products**\n   - Prescription medicines and most over-the-counter medicines.\n   - Vaccines, biologics, blood-derived products, insulin, antibiotics, hormones, and controlled substances.\n   - New dosage forms, new strengths, new indications, and many generic medicines generally need separate approval.\n   - Typical approvals cover safety, quality, manufacturing standards, labeling, and evidence of effectiveness.\n\n2. **Medical devices**\n   - Examples: syringes, surgical gloves, infusion pumps, ventilators, wheelchairs, X-ray equipment, pregnancy tests, glucose meters, pacemakers, implants, and diagnostic software.\n   - Lower-risk devices may require registration or a conformity declaration, while higher-risk devices\u2014such as implantable devices, ventilators, or cardiac monitors\u2014usually require more extensive pre-market review.\n   - Many systems classify devices into roughly 3\u20134 risk groups, from low risk (for example, bandages) to high risk (for example, heart valves or implanted neurostimulators).\n\n3. **In-vitro diagnostic products**\n   - Laboratory tests, rapid antigen tests, HIV tests, PCR kits, blood-grouping reagents, and home-use diagnostic tests.\n   - Tests for serious infectious diseases, cancer, genetic conditions, or blood safety often face stricter requirements than low-risk screening products.\n\n4. **Personal protective equipment used for medical purposes**\n   - Medical masks, respirators, sterile surgical gowns, examination gloves, surgical gloves, face shields, and protective coveralls.\n   - Whether approval is required often depends on the claim. A mask sold for general consumer use may be regulated differently from a mask marketed for infection prevention in hospitals or as a surgical device.\n\n5. **Sterile and invasive consumables**\n   - Products such as catheters, IV cannulas, dialysis tubing, surgical sutures, wound dressings, IV sets, blood collection bags, and sterile surgical kits.\n   - Sterility claims and direct contact with blood, tissue, or internal organs generally trigger more stringent oversight.\n\n6. **Dental and ophthalmic supplies**\n   - Dental implants, braces, fillings, dental anesthetics, contact lenses, intraocular lenses, ophthalmic solutions, and laser equipment.\n   - Products placed in the eye or implanted in the body usually require formal authorization.\n\n7. **Disinfectants, antiseptics, and sterilization products**\n   - Hospital-grade surface disinfectants, hand antiseptics, instrument sterilants, and products claiming to kill bacteria, viruses, fungi, or spores.\n   - A product marketed only as a cleaner may have fewer requirements than one claiming, for example, to \u201ckill 99.9% of viruses\u201d or to disinfect medical instruments.\n\n8. **Blood, tissue, organ, and human-cell products**\n   - Blood components, plasma, stem-cell preparations, tissue grafts, donor human milk, and some reproductive materials.\n   - These are typically subject to strict licensing, traceability, donor-screening, storage, and transport rules.\n\n9. **Radiopharmaceuticals and radiation-emitting health products**\n   - Radioactive diagnostic agents, radiotherapy products, X-ray systems, CT scanners, radiation therapy machines, and some laser devices.\n   - These may require approval from both a health-products regulator and a radiation-safety authority.\n\n10. **Health-related products making therapeutic claims**\n   - Supplements, herbal medicines, cosmetics, food products, or wellness devices may require approval\u2014or a different type of registration\u2014if they claim to diagnose, prevent, treat, cure, or alleviate disease.\n   - For example, a plain moisturizer may be a cosmetic, but a cream claiming to treat eczema or fungal infection may be regulated as a medicine or medical device.\n\n11. **Controlled drugs and precursor chemicals**\n   - Opioids, benzodiazepines, stimulants, anesthetics, certain psychotropics, and narcotic-containing products usually need special permits beyond ordinary medicine approval.\n   - Import/export permits, secure storage, recordkeeping, and prescription controls are common.\n\nIn contrast, ordinary non-medical supplies\u2014such as basic paper products, non-medicated soap, standard cleaning cloths, or general office items\u2014normally do **not** need health-product approbation unless they are marketed with medical, disinfecting, diagnostic, or therapeutic claims.\n\nThe key question is usually not just what the product is, but **what it is intended and advertised to do**. A product claiming to \u201cdiagnose,\u201d \u201cprevent,\u201d \u201ctreat,\u201d \u201csterilize,\u201d \u201cprotect against infection,\u201d or \u201cmonitor a disease\u201d is much more likely to require regulatory approbation.",
+    "latency_ms": 13846.1,
+    "token_count": 1079,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "466a7c96fd31",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234041.8940475,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 2 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4577,
+          "evidence": [
+            "Latency 13846ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13846.1,
+        "token_count": 1079,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.113; flagged=True"
+}

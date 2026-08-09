@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:51:49.537944+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "If I leave work without informing anyone to become an influencer, what recourse does my employer have?",
+    "field": "Law",
+    "specific_field": "Labour Law",
+    "question_type": "Open-ended question that is potentially ambiguous| Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "If you simply stop showing up without notifying your employer, it will usually be treated as **job abandonment or repeated unauthorized absence**, not as a protected resignation. Your employer may have several forms of recourse, depending on your contract, workplace policies, and jurisdiction:\n\n- **Terminate your employment**, often for cause or misconduct, and record it as an unapproved absence/job abandonment.\n- **Withhold unpaid wages** for time not worked and potentially deny discretionary bonuses or commissions, subject to wage laws.\n- **Require return of company property**, such as equipment, keys, credentials, confidential files, or expense cards.\n- **Enforce contractual obligations**, including notice requirements, repayment of signing bonuses or training costs, or valid post-employment restrictions.\n- **Pursue damages** if your disappearance causes provable losses\u2014especially if you are under a fixed-term contract, are in a critical role, or breach confidentiality or fiduciary duties. In ordinary at-will employment, damages claims are less common.\n- **Challenge misuse of company information or branding** if you use confidential materials, client lists, proprietary content, or imply that your influencer work is affiliated with the employer.\n- **Deny unemployment benefits** in some jurisdictions if the departure is classified as voluntarily quitting without good cause.\n- **Take legal action** for theft, data misuse, fraud, solicitation in violation of an agreement, or disclosure of trade secrets.\n\nYour employer generally **cannot force you to keep working**, but disappearing can create avoidable legal and financial problems. The safest approach is to resign in writing, give the required notice if applicable, return company property, preserve confidentiality, and review your employment agreement and social-media/conflict-of-interest policies before launching the influencer business.",
+    "latency_ms": 4433.9,
+    "input_tokens": 98,
+    "output_tokens": 350
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "If I leave work without informing anyone to become an influencer, what recourse does my employer have?",
+      "field": "Law"
+    },
+    "response": "If you simply stop showing up without notifying your employer, it will usually be treated as **job abandonment or repeated unauthorized absence**, not as a protected resignation. Your employer may have several forms of recourse, depending on your contract, workplace policies, and jurisdiction:\n\n- **Terminate your employment**, often for cause or misconduct, and record it as an unapproved absence/job abandonment.\n- **Withhold unpaid wages** for time not worked and potentially deny discretionary bonuses or commissions, subject to wage laws.\n- **Require return of company property**, such as equipment, keys, credentials, confidential files, or expense cards.\n- **Enforce contractual obligations**, including notice requirements, repayment of signing bonuses or training costs, or valid post-employment restrictions.\n- **Pursue damages** if your disappearance causes provable losses\u2014especially if you are under a fixed-term contract, are in a critical role, or breach confidentiality or fiduciary duties. In ordinary at-will employment, damages claims are less common.\n- **Challenge misuse of company information or branding** if you use confidential materials, client lists, proprietary content, or imply that your influencer work is affiliated with the employer.\n- **Deny unemployment benefits** in some jurisdictions if the departure is classified as voluntarily quitting without good cause.\n- **Take legal action** for theft, data misuse, fraud, solicitation in violation of an agreement, or disclosure of trade secrets.\n\nYour employer generally **cannot force you to keep working**, but disappearing can create avoidable legal and financial problems. The safest approach is to resign in writing, give the required notice if applicable, return company property, preserve confidentiality, and review your employment agreement and social-media/conflict-of-interest policies before launching the influencer business.",
+    "latency_ms": 4433.9,
+    "token_count": 448
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "9e1434c0a74d",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229509.5370197,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 4433.9,
+        "token_count": 448,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.1; flagged=False"
+}

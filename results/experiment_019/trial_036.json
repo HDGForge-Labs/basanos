@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-08T23:56:59.546708+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "A party doesn't honour their contract in a commercial dispute. What remedies are available to the injured party?",
+    "field": "Law",
+    "specific_field": "Commercial Law",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "In a commercial contract dispute, the injured party\u2019s remedies usually fall into five main categories. The exact remedy depends on the contract terms, the nature of the breach, and the governing law.\n\n### 1. Damages\nThe most common remedy is monetary compensation intended to put the injured party in the position they would have been in if the contract had been performed.\n\nCommon forms include:\n\n- **Expectation damages:** Lost profit or the financial benefit expected from performance of the contract.\n- **Direct damages:** The immediate loss caused by the breach, such as the extra cost of buying substitute goods or services.\n- **Consequential damages:** Foreseeable secondary losses caused by the breach, such as lost production, lost sales, or penalties owed to a customer. These are often excluded or capped by limitation-of-liability clauses.\n- **Reliance damages:** Costs reasonably incurred in relying on the contract, such as mobilisation, setup, design, or procurement costs.\n- **Liquidated damages:** A pre-agreed contractual sum payable on breach, commonly for delay. It is generally enforceable if it is a genuine, proportionate estimate or allocation of loss rather than an unlawful penalty.\n- **Nominal damages:** A small sum where breach is proved but no meaningful financial loss is established.\n\nThe claimant generally must prove loss, show that it was caused by the breach, establish that it was not too remote or unforeseeable, and take reasonable steps to mitigate it.\n\n### 2. Termination and damages\nIf the breach is sufficiently serious\u2014often called a repudiatory, material, or fundamental breach\u2014the innocent party may be entitled to terminate the contract for future performance and claim damages.\n\nExamples can include:\n\n- refusal to perform;\n- persistent non-payment;\n- serious delay where timing is essential;\n- delivery of substantially defective goods or services; or\n- breach of a condition expressly designated as termination-worthy.\n\nTermination does not usually erase rights that have already accrued. The innocent party may still claim unpaid sums, damages, interest, and contractual remedies.\n\nA party should be careful before treating a contract as terminated: wrongful termination can itself be a repudiatory breach.\n\n### 3. Specific performance\nA court may order the defaulting party to perform its contractual obligation rather than merely pay damages.\n\nThis is more likely where damages are inadequate, for example:\n\n- sale of unique land or property;\n- rare or irreplaceable goods;\n- transfer of shares in a private company;\n- obligations involving a unique asset or right.\n\nCourts are less likely to order specific performance of personal services or arrangements requiring ongoing supervision.\n\n### 4. Injunctions\nAn injunction may restrain a party from doing something in breach of contract, or occasionally require steps to be taken.\n\nExamples include orders preventing:\n\n- misuse of confidential information;\n- breach of non-compete, non-solicitation, or exclusivity obligations;\n- disposal of disputed assets;\n- infringement of intellectual-property rights; or\n- a threatened breach pending trial.\n\nAn urgent interim injunction may be available before the full dispute is decided where immediate harm is likely and damages would not be an adequate remedy.\n\n### 5. Debt claim, restitution, and recovery of property\nWhere a party simply owes a fixed, due and payable sum\u2014such as an unpaid invoice\u2014the innocent party can bring a **debt claim**. This is often simpler than a damages claim because it generally does not require proof of loss.\n\nOther possible remedies include:\n\n- **Interest on late payment**, under the contract, statute, or general court powers;\n- **Recovery of goods**, where title has been retained under a retention-of-title clause;\n- **Restitution / unjust enrichment**, such as recovery of money paid for performance that was never provided;\n- **Set-off**, withholding or deducting sums otherwise payable where the contract or law permits it;\n- **Price reduction or rejection of goods**, particularly where sale-of-goods legislation or the contract permits it.\n\n### Contractual dispute-resolution remedies\nThe contract may also prescribe procedures or remedies, such as:\n\n- notice and cure periods;\n- escalation to senior management;\n- expert determination;\n- mediation;\n- adjudication;\n- arbitration; or\n- exclusive court jurisdiction.\n\nIt may contain clauses affecting available recovery, including liability caps, exclusions of indirect or consequential loss, exclusive-remedy clauses, force-majeure provisions, and time limits for bringing claims.\n\n### Practical steps for the injured party\nA commercial claimant will usually:\n\n1. Review the contract, including breach, termination, notice, limitation-of-liability, governing-law, and dispute-resolution clauses.\n2. Give a compliant written notice of breach and, if required, an opportunity to cure.\n3. Preserve evidence of the breach and resulting losses.\n4. Mitigate losses\u2014for example, obtain substitute supply where reasonable.\n5. Calculate the claim, including principal sums, losses, interest, and costs.\n6. Send a formal letter of claim and pursue negotiation, mediation, arbitration, adjudication, or litigation as required.\n\nThe appropriate remedy turns heavily on the governing law and the contract",
+    "latency_ms": 13211.9,
+    "input_tokens": 98,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A party doesn't honour their contract in a commercial dispute. What remedies are available to the injured party?",
+      "field": "Law"
+    },
+    "response": "In a commercial contract dispute, the injured party\u2019s remedies usually fall into five main categories. The exact remedy depends on the contract terms, the nature of the breach, and the governing law.\n\n### 1. Damages\nThe most common remedy is monetary compensation intended to put the injured party in the position they would have been in if the contract had been performed.\n\nCommon forms include:\n\n- **Expectation damages:** Lost profit or the financial benefit expected from performance of the contract.\n- **Direct damages:** The immediate loss caused by the breach, such as the extra cost of buying substitute goods or services.\n- **Consequential damages:** Foreseeable secondary losses caused by the breach, such as lost production, lost sales, or penalties owed to a customer. These are often excluded or capped by limitation-of-liability clauses.\n- **Reliance damages:** Costs reasonably incurred in relying on the contract, such as mobilisation, setup, design, or procurement costs.\n- **Liquidated damages:** A pre-agreed contractual sum payable on breach, commonly for delay. It is generally enforceable if it is a genuine, proportionate estimate or allocation of loss rather than an unlawful penalty.\n- **Nominal damages:** A small sum where breach is proved but no meaningful financial loss is established.\n\nThe claimant generally must prove loss, show that it was caused by the breach, establish that it was not too remote or unforeseeable, and take reasonable steps to mitigate it.\n\n### 2. Termination and damages\nIf the breach is sufficiently serious\u2014often called a repudiatory, material, or fundamental breach\u2014the innocent party may be entitled to terminate the contract for future performance and claim damages.\n\nExamples can include:\n\n- refusal to perform;\n- persistent non-payment;\n- serious delay where timing is essential;\n- delivery of substantially defective goods or services; or\n- breach of a condition expressly designated as termination-worthy.\n\nTermination does not usually erase rights that have already accrued. The innocent party may still claim unpaid sums, damages, interest, and contractual remedies.\n\nA party should be careful before treating a contract as terminated: wrongful termination can itself be a repudiatory breach.\n\n### 3. Specific performance\nA court may order the defaulting party to perform its contractual obligation rather than merely pay damages.\n\nThis is more likely where damages are inadequate, for example:\n\n- sale of unique land or property;\n- rare or irreplaceable goods;\n- transfer of shares in a private company;\n- obligations involving a unique asset or right.\n\nCourts are less likely to order specific performance of personal services or arrangements requiring ongoing supervision.\n\n### 4. Injunctions\nAn injunction may restrain a party from doing something in breach of contract, or occasionally require steps to be taken.\n\nExamples include orders preventing:\n\n- misuse of confidential information;\n- breach of non-compete, non-solicitation, or exclusivity obligations;\n- disposal of disputed assets;\n- infringement of intellectual-property rights; or\n- a threatened breach pending trial.\n\nAn urgent interim injunction may be available before the full dispute is decided where immediate harm is likely and damages would not be an adequate remedy.\n\n### 5. Debt claim, restitution, and recovery of property\nWhere a party simply owes a fixed, due and payable sum\u2014such as an unpaid invoice\u2014the innocent party can bring a **debt claim**. This is often simpler than a damages claim because it generally does not require proof of loss.\n\nOther possible remedies include:\n\n- **Interest on late payment**, under the contract, statute, or general court powers;\n- **Recovery of goods**, where title has been retained under a retention-of-title clause;\n- **Restitution / unjust enrichment**, such as recovery of money paid for performance that was never provided;\n- **Set-off**, withholding or deducting sums otherwise payable where the contract or law permits it;\n- **Price reduction or rejection of goods**, particularly where sale-of-goods legislation or the contract permits it.\n\n### Contractual dispute-resolution remedies\nThe contract may also prescribe procedures or remedies, such as:\n\n- notice and cure periods;\n- escalation to senior management;\n- expert determination;\n- mediation;\n- adjudication;\n- arbitration; or\n- exclusive court jurisdiction.\n\nIt may contain clauses affecting available recovery, including liability caps, exclusions of indirect or consequential loss, exclusive-remedy clauses, force-majeure provisions, and time limits for bringing claims.\n\n### Practical steps for the injured party\nA commercial claimant will usually:\n\n1. Review the contract, including breach, termination, notice, limitation-of-liability, governing-law, and dispute-resolution clauses.\n2. Give a compliant written notice of breach and, if required, an opportunity to cure.\n3. Preserve evidence of the breach and resulting losses.\n4. Mitigate losses\u2014for example, obtain substitute supply where reasonable.\n5. Calculate the claim, including principal sums, losses, interest, and costs.\n6. Send a formal letter of claim and pursue negotiation, mediation, arbitration, adjudication, or litigation as required.\n\nThe appropriate remedy turns heavily on the governing law and the contract",
+    "latency_ms": 13211.9,
+    "token_count": 1122
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "e6525bba6eff",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786233419.545932,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4482,
+          "evidence": [
+            "Latency 13212ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13211.9,
+        "token_count": 1122,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.36; flagged=False"
+}

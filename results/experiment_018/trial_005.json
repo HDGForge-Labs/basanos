@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:52:06.308223+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Can a small company sucessfully use the same trade mark as a major competitor?",
+    "field": "Law",
+    "specific_field": "Intellecutal property law",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Generally, no. A small company cannot safely use the same or a confusingly similar trademark as a major competitor for related goods or services, regardless of its size.\n\nTrademark infringement usually turns on **likelihood of consumer confusion**, including:\n\n- Similarity of the names, logos, or overall branding\n- Relatedness of the goods or services\n- Overlap in customers, sales channels, and geographic markets\n- Strength and distinctiveness of the competitor\u2019s mark\n- Evidence of actual confusion\n- Whether the smaller company appears to be affiliated with or endorsed by the larger one\n\nA famous or highly distinctive mark receives broader protection, sometimes even against unrelated products if the use causes **dilution** or suggests association. A small company may also face claims for passing off, unfair competition, or cybersquatting.\n\nIt may be lawful if, for example:\n\n- The marks are sufficiently different\n- The businesses operate in genuinely unrelated fields\n- The use is descriptive or otherwise legally protected\n- The owner has consented or granted a licence\n- The company uses the mark only in a legitimate comparative, commentary, or other non-brand context\n\nBeing first to use the mark in a small local market does not automatically make continued use safe, especially if the competitor has earlier rights or a registered mark. The company should conduct a trademark clearance search and obtain jurisdiction-specific legal advice before investing in branding. If it is already using the mark, it should not ignore a cease-and-desist letter; it should assess priority, registration status, territorial scope, and the risk of rebranding costs.",
+    "latency_ms": 2896.9,
+    "input_tokens": 94,
+    "output_tokens": 320
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Can a small company sucessfully use the same trade mark as a major competitor?",
+      "field": "Law"
+    },
+    "response": "Generally, no. A small company cannot safely use the same or a confusingly similar trademark as a major competitor for related goods or services, regardless of its size.\n\nTrademark infringement usually turns on **likelihood of consumer confusion**, including:\n\n- Similarity of the names, logos, or overall branding\n- Relatedness of the goods or services\n- Overlap in customers, sales channels, and geographic markets\n- Strength and distinctiveness of the competitor\u2019s mark\n- Evidence of actual confusion\n- Whether the smaller company appears to be affiliated with or endorsed by the larger one\n\nA famous or highly distinctive mark receives broader protection, sometimes even against unrelated products if the use causes **dilution** or suggests association. A small company may also face claims for passing off, unfair competition, or cybersquatting.\n\nIt may be lawful if, for example:\n\n- The marks are sufficiently different\n- The businesses operate in genuinely unrelated fields\n- The use is descriptive or otherwise legally protected\n- The owner has consented or granted a licence\n- The company uses the mark only in a legitimate comparative, commentary, or other non-brand context\n\nBeing first to use the mark in a small local market does not automatically make continued use safe, especially if the competitor has earlier rights or a registered mark. The company should conduct a trademark clearance search and obtain jurisdiction-specific legal advice before investing in branding. If it is already using the mark, it should not ignore a cease-and-desist letter; it should assess priority, registration status, territorial scope, and the risk of rebranding costs.",
+    "latency_ms": 2896.9,
+    "token_count": 414
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "8abf75047b14",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229526.3074286,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2896.9,
+        "token_count": 414,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.5; flagged=False"
+}

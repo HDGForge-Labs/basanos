@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:52:44.962162+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Can direct evidence in a case that has been obtained illegally be considered by the court in some cases if it directly points to the defendant's guilt?",
+    "field": "Law",
+    "specific_field": "civil law",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Yes\u2014**in some jurisdictions and circumstances**, illegally obtained direct evidence may still be admitted, even if it strongly indicates guilt. But **the fact that it is highly incriminating is not, by itself, enough**.\n\nIn the United States, courts generally apply the **exclusionary rule**, which can bar evidence obtained in violation of constitutional protections such as the Fourth Amendment. However, important exceptions include:\n\n- **Good-faith exception:** Officers reasonably relied on a warrant later found defective.\n- **Inevitable discovery:** The prosecution proves the evidence would have been found lawfully anyway.\n- **Independent-source doctrine:** The same evidence was obtained through a separate, lawful source.\n- **Attenuation:** The connection between the illegal conduct and the evidence became sufficiently remote.\n- **Impeachment use:** Certain unlawfully obtained evidence may be used to challenge the defendant\u2019s credibility if the defendant testifies inconsistently.\n- **No standing:** The defendant cannot suppress evidence if their own rights were not violated\u2014for example, evidence unlawfully seized from someone else\u2019s property.\n- **Nonconstitutional or statutory violations:** A breach of a procedural statute or rule may not automatically require exclusion.\n\nThere are also limits: courts commonly exclude not only illegally obtained evidence itself but sometimes its **\u201cfruit,\u201d** meaning later evidence derived from the illegality. Conversely, in some legal systems\u2014including parts of the common-law tradition\u2014courts may admit improperly obtained evidence after balancing its probative value against the seriousness of the misconduct and its effect on trial fairness.\n\nSo the answer is **yes, potentially\u2014but admissibility depends on the jurisdiction, the type of illegality, whose rights were violated, and whether an exception to exclusion applies.**",
+    "latency_ms": 3392.9,
+    "input_tokens": 107,
+    "output_tokens": 347
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Can direct evidence in a case that has been obtained illegally be considered by the court in some cases if it directly points to the defendant's guilt?",
+      "field": "Law"
+    },
+    "response": "Yes\u2014**in some jurisdictions and circumstances**, illegally obtained direct evidence may still be admitted, even if it strongly indicates guilt. But **the fact that it is highly incriminating is not, by itself, enough**.\n\nIn the United States, courts generally apply the **exclusionary rule**, which can bar evidence obtained in violation of constitutional protections such as the Fourth Amendment. However, important exceptions include:\n\n- **Good-faith exception:** Officers reasonably relied on a warrant later found defective.\n- **Inevitable discovery:** The prosecution proves the evidence would have been found lawfully anyway.\n- **Independent-source doctrine:** The same evidence was obtained through a separate, lawful source.\n- **Attenuation:** The connection between the illegal conduct and the evidence became sufficiently remote.\n- **Impeachment use:** Certain unlawfully obtained evidence may be used to challenge the defendant\u2019s credibility if the defendant testifies inconsistently.\n- **No standing:** The defendant cannot suppress evidence if their own rights were not violated\u2014for example, evidence unlawfully seized from someone else\u2019s property.\n- **Nonconstitutional or statutory violations:** A breach of a procedural statute or rule may not automatically require exclusion.\n\nThere are also limits: courts commonly exclude not only illegally obtained evidence itself but sometimes its **\u201cfruit,\u201d** meaning later evidence derived from the illegality. Conversely, in some legal systems\u2014including parts of the common-law tradition\u2014courts may admit improperly obtained evidence after balancing its probative value against the seriousness of the misconduct and its effect on trial fairness.\n\nSo the answer is **yes, potentially\u2014but admissibility depends on the jurisdiction, the type of illegality, whose rights were violated, and whether an exception to exclusion applies.**",
+    "latency_ms": 3392.9,
+    "token_count": 454
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "1da8a19be3e7",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229564.9613826,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3392.9,
+        "token_count": 454,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.14; flagged=False"
+}

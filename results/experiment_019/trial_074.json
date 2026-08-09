@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T00:01:36.717042+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "To whom should I send the request for mileage reimbursement instead of using public transportation?",
+    "field": "Law",
+    "specific_field": "Law professional in office",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Send the request to your supervisor or the organization\u2019s travel/expense reimbursement office\u2014typically through the same expense system used for travel claims. Include the trip date, destination, business purpose, mileage, and reason public transportation was not used.",
+    "latency_ms": 1442.5,
+    "input_tokens": 94,
+    "output_tokens": 50
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "To whom should I send the request for mileage reimbursement instead of using public transportation?",
+      "field": "Law"
+    },
+    "response": "Send the request to your supervisor or the organization\u2019s travel/expense reimbursement office\u2014typically through the same expense system used for travel claims. Include the trip date, destination, business purpose, mileage, and reason public transportation was not used.",
+    "latency_ms": 1442.5,
+    "token_count": 144
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "29b137b1ad7e",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233696.7162783,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 1442.5,
+        "token_count": 144,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.74; flagged=False"
+}

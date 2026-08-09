@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:04:21.571913+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Describe the pharmacokynetic differences of lansoprazole and omeprazole and make an argument for which one would be better for an elderly female patient with liver issues.",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pharmacy field",
+    "question_type": "Open-ended question that is potentially ambiguous| Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "## Pharmacokinetic differences\n\nBoth **lansoprazole** and **omeprazole** are proton-pump inhibitors (PPIs) with broadly similar pharmacology:\n\n- They are **acid-labile prodrugs** given as delayed-release formulations.\n- They are absorbed in the **small intestine**, reach peak concentrations in roughly **1.5\u20133.5 hours**, and are converted to active sulfenamide compounds in acidic parietal-cell canaliculi.\n- Their plasma half-lives are short\u2014generally about **0.5\u20131.5 hours**\u2014but acid suppression lasts approximately **24 hours or longer** because they irreversibly inhibit the proton pump.\n- Both undergo extensive **hepatic metabolism**, mainly through **CYP2C19 and CYP3A4**, with substantial interindividual variability from genetics, age, liver function, and interacting drugs.\n\n### Key differences\n\n| Feature | Lansoprazole | Omeprazole |\n|---|---|---|\n| Usual adult dose | Approximately **15\u201330 mg once daily** | Approximately **20\u201340 mg once daily** |\n| Oral bioavailability | Roughly **80\u201390%** in many studies | Approximately **30\u201340%**, increasing with repeated dosing |\n| Time to peak concentration | About **1.5\u20132 hours** | About **0.5\u20133.5 hours**, depending on formulation |\n| Plasma half-life | Roughly **1\u20132 hours** | Roughly **0.5\u20131 hour** |\n| Main metabolism | CYP2C19 and CYP3A4 | CYP2C19 and CYP3A4 |\n| CYP2C19 effect | Substrate; generally a somewhat less prominent inhibitor than omeprazole | Substrate and a clinically important CYP2C19 inhibitor |\n| Clearance in liver disease | Exposure may increase substantially; half-life can lengthen | Exposure may increase substantially; half-life can lengthen |\n| Drug-interaction profile | Interaction potential exists, but often somewhat less than omeprazole | More interaction potential, especially with CYP2C19-dependent drugs |\n| Genetic variability | Affected by CYP2C19 phenotype | Often strongly affected by CYP2C19 phenotype |\n\n### Omeprazole\n\nOmeprazole is substantially metabolized by **CYP2C19**, with additional metabolism by **CYP3A4**. CYP2C19 poor metabolizers may have approximately **2\u20135 times higher exposure** than extensive metabolizers, although the exact increase depends on dose, formulation, and study population.\n\nOmeprazole also inhibits CYP2C19 and can reduce activation of **clopidogrel**, an antiplatelet drug. For patients taking clopidogrel, many clinicians prefer to avoid omeprazole and often choose an alternative PPI, although the clinical significance varies by patient and guideline.\n\nRepeated dosing can increase omeprazole exposure because it inhibits its own metabolism and because gastric pH changes may influence absorption. Omeprazole is commonly associated with a relatively large amount of pharmacokinetic variability.\n\n### Lansoprazole\n\nLansoprazole has relatively high oral bioavailability\u2014often around **80\u201390%**\u2014and is also metabolized by CYP2C19 and CYP3A4. CYP2C19 poor metabolizers may have roughly **2\u20134 times higher exposure** than extensive metabolizers.\n\nLansoprazole generally causes less CYP2C19 inhibition than omeprazole, though it is not free of interaction concerns. It can still interact with drugs metabolized by CYP3A4 or CYP2C19, and it should not automatically be considered interaction-free.\n\nSome formulations of lansoprazole are available as orally disintegrating tablets or granules, which may be useful when swallowing is difficult.\n\n## Effect of age and liver dysfunction\n\n### Elderly patients\n\nIn older adults, PPI exposure may increase because of:\n\n- Reduced hepatic blood flow\n- Reduced hepatic metabolic capacity\n- Lower albumin concentrations in some patients\n- Polypharmacy and drug interactions\n- Greater likelihood of chronic kidney or liver disease\n\nAge alone does not always require a dose reduction, but an elderly patient should generally receive the **lowest effective dose for the shortest necessary duration**.\n\n### Liver impairment\n\nBoth medications are affected by hepatic dysfunction, but the degree is important.\n\nFor **mild liver disease**, such as Child-Pugh class A, changes may be modest, although caution is still appropriate.\n\nFor **moderate to severe hepatic impairment**, approximately Child-Pugh class B or C:\n\n- Drug exposure may increase by several-fold.\n- Elimination may be delayed.\n- Standard repeated dosing may lead to accumulation.\n- Lower doses or less frequent administration may be appropriate.\n\nProduct information commonly recommends limiting **lansoprazole to approximately 30 mg daily** in significant hepatic impairment. For omeprazole, labeling and clinical references commonly recommend reducing the dose\u2014often to approximately **10",
+    "latency_ms": 7068.6,
+    "input_tokens": 108,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Describe the pharmacokynetic differences of lansoprazole and omeprazole and make an argument for which one would be better for an elderly female patient with liver issues.",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "## Pharmacokinetic differences\n\nBoth **lansoprazole** and **omeprazole** are proton-pump inhibitors (PPIs) with broadly similar pharmacology:\n\n- They are **acid-labile prodrugs** given as delayed-release formulations.\n- They are absorbed in the **small intestine**, reach peak concentrations in roughly **1.5\u20133.5 hours**, and are converted to active sulfenamide compounds in acidic parietal-cell canaliculi.\n- Their plasma half-lives are short\u2014generally about **0.5\u20131.5 hours**\u2014but acid suppression lasts approximately **24 hours or longer** because they irreversibly inhibit the proton pump.\n- Both undergo extensive **hepatic metabolism**, mainly through **CYP2C19 and CYP3A4**, with substantial interindividual variability from genetics, age, liver function, and interacting drugs.\n\n### Key differences\n\n| Feature | Lansoprazole | Omeprazole |\n|---|---|---|\n| Usual adult dose | Approximately **15\u201330 mg once daily** | Approximately **20\u201340 mg once daily** |\n| Oral bioavailability | Roughly **80\u201390%** in many studies | Approximately **30\u201340%**, increasing with repeated dosing |\n| Time to peak concentration | About **1.5\u20132 hours** | About **0.5\u20133.5 hours**, depending on formulation |\n| Plasma half-life | Roughly **1\u20132 hours** | Roughly **0.5\u20131 hour** |\n| Main metabolism | CYP2C19 and CYP3A4 | CYP2C19 and CYP3A4 |\n| CYP2C19 effect | Substrate; generally a somewhat less prominent inhibitor than omeprazole | Substrate and a clinically important CYP2C19 inhibitor |\n| Clearance in liver disease | Exposure may increase substantially; half-life can lengthen | Exposure may increase substantially; half-life can lengthen |\n| Drug-interaction profile | Interaction potential exists, but often somewhat less than omeprazole | More interaction potential, especially with CYP2C19-dependent drugs |\n| Genetic variability | Affected by CYP2C19 phenotype | Often strongly affected by CYP2C19 phenotype |\n\n### Omeprazole\n\nOmeprazole is substantially metabolized by **CYP2C19**, with additional metabolism by **CYP3A4**. CYP2C19 poor metabolizers may have approximately **2\u20135 times higher exposure** than extensive metabolizers, although the exact increase depends on dose, formulation, and study population.\n\nOmeprazole also inhibits CYP2C19 and can reduce activation of **clopidogrel**, an antiplatelet drug. For patients taking clopidogrel, many clinicians prefer to avoid omeprazole and often choose an alternative PPI, although the clinical significance varies by patient and guideline.\n\nRepeated dosing can increase omeprazole exposure because it inhibits its own metabolism and because gastric pH changes may influence absorption. Omeprazole is commonly associated with a relatively large amount of pharmacokinetic variability.\n\n### Lansoprazole\n\nLansoprazole has relatively high oral bioavailability\u2014often around **80\u201390%**\u2014and is also metabolized by CYP2C19 and CYP3A4. CYP2C19 poor metabolizers may have roughly **2\u20134 times higher exposure** than extensive metabolizers.\n\nLansoprazole generally causes less CYP2C19 inhibition than omeprazole, though it is not free of interaction concerns. It can still interact with drugs metabolized by CYP3A4 or CYP2C19, and it should not automatically be considered interaction-free.\n\nSome formulations of lansoprazole are available as orally disintegrating tablets or granules, which may be useful when swallowing is difficult.\n\n## Effect of age and liver dysfunction\n\n### Elderly patients\n\nIn older adults, PPI exposure may increase because of:\n\n- Reduced hepatic blood flow\n- Reduced hepatic metabolic capacity\n- Lower albumin concentrations in some patients\n- Polypharmacy and drug interactions\n- Greater likelihood of chronic kidney or liver disease\n\nAge alone does not always require a dose reduction, but an elderly patient should generally receive the **lowest effective dose for the shortest necessary duration**.\n\n### Liver impairment\n\nBoth medications are affected by hepatic dysfunction, but the degree is important.\n\nFor **mild liver disease**, such as Child-Pugh class A, changes may be modest, although caution is still appropriate.\n\nFor **moderate to severe hepatic impairment**, approximately Child-Pugh class B or C:\n\n- Drug exposure may increase by several-fold.\n- Elimination may be delayed.\n- Standard repeated dosing may lead to accumulation.\n- Lower doses or less frequent administration may be appropriate.\n\nProduct information commonly recommends limiting **lansoprazole to approximately 30 mg daily** in significant hepatic impairment. For omeprazole, labeling and clinical references commonly recommend reducing the dose\u2014often to approximately **10",
+    "latency_ms": 7068.6,
+    "token_count": 1132,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "7c44d8c3e967",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230261.5711548,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 11 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 7068.6,
+        "token_count": 1132,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.161; flagged=True"
+}

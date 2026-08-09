@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:53:39.409136+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Who should a patient be referred to if a bloodwork shows high protein levels in the blood?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "A patient with **high total protein in the blood** should generally be referred first to their **primary-care clinician or the clinician who ordered the test** for confirmation and interpretation.\n\nDepending on the cause, referral may be made to:\n\n- **Hematologist:** if serum protein electrophoresis shows a monoclonal protein (\u201cM-spike\u201d), or there is concern for MGUS, multiple myeloma, Waldenstr\u00f6m macroglobulinemia, or another blood disorder.\n- **Hepatologist/gastroenterologist:** if liver disease is suspected.\n- **Nephrologist:** if kidney disease or significant protein loss/abnormal kidney function is present.\n- **Rheumatologist or infectious-disease specialist:** if chronic inflammation, autoimmune disease, or persistent infection is suspected.\n\nHigh total protein can result from **dehydration**, chronic inflammation/infection, liver disease, or abnormal immunoglobulin production. The usual follow-up includes repeating the test if appropriate, checking albumin and globulin levels, and often ordering **serum protein electrophoresis with immunofixation and free light chains**. Urgent evaluation is warranted for severe bone pain, unexplained anemia, recurrent infections, weight loss, confusion, marked weakness, or reduced urine output.",
+    "latency_ms": 2349.0,
+    "input_tokens": 97,
+    "output_tokens": 259
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Who should a patient be referred to if a bloodwork shows high protein levels in the blood?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "A patient with **high total protein in the blood** should generally be referred first to their **primary-care clinician or the clinician who ordered the test** for confirmation and interpretation.\n\nDepending on the cause, referral may be made to:\n\n- **Hematologist:** if serum protein electrophoresis shows a monoclonal protein (\u201cM-spike\u201d), or there is concern for MGUS, multiple myeloma, Waldenstr\u00f6m macroglobulinemia, or another blood disorder.\n- **Hepatologist/gastroenterologist:** if liver disease is suspected.\n- **Nephrologist:** if kidney disease or significant protein loss/abnormal kidney function is present.\n- **Rheumatologist or infectious-disease specialist:** if chronic inflammation, autoimmune disease, or persistent infection is suspected.\n\nHigh total protein can result from **dehydration**, chronic inflammation/infection, liver disease, or abnormal immunoglobulin production. The usual follow-up includes repeating the test if appropriate, checking albumin and globulin levels, and often ordering **serum protein electrophoresis with immunofixation and free light chains**. Urgent evaluation is warranted for severe bone pain, unexplained anemia, recurrent infections, weight loss, confusion, marked weakness, or reduced urine output.",
+    "latency_ms": 2349.0,
+    "token_count": 356
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "cc324c15818a",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229619.4083607,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2349.0,
+        "token_count": 356,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.28; flagged=False"
+}

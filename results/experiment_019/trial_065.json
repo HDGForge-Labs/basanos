@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T00:00:31.905740+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What's the treatment suggested for a four year old with head trauma?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pediatrician",
+    "question_type": "Directed question that has a single unambiguous answer| Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "A 4-year-old with head trauma should be assessed urgently based on the injury details and symptoms. Treatment depends on severity:\n\n### Call emergency services / go to the ER now if the child has any of these\n- Loss of consciousness, especially >1 minute or recurrent\n- Repeated vomiting (more than once), severe or worsening headache\n- Seizure, confusion, unusual behavior, extreme sleepiness, or difficulty waking\n- Weakness, poor balance, slurred speech, unequal pupils, vision changes\n- Clear fluid or blood from the nose/ears; bruising behind the ears or around both eyes\n- Persistent neck pain\n- A large scalp swelling, depressed \u201cdent,\u201d open wound, or suspected skull fracture\n- High-speed mechanism: vehicle collision, struck by vehicle, fall >1.5 m/5 ft, significant bicycle/scooter crash, or suspected abuse\n- Bleeding that does not stop after 10 minutes of steady direct pressure\n- The child takes anticoagulants or has a bleeding disorder\n\n### If there are no red flags and the child is acting normally\nThis is often managed as a minor head injury/concussion:\n\n1. **Observe closely for 24\u201348 hours.**  \n   An adult should stay with the child and watch for worsening headache, vomiting, confusion, abnormal walking, unusual irritability, or excessive drowsiness.\n\n2. **Rest, but do not force strict bed rest.**  \n   Quiet activity is fine. Avoid rough play, climbing, bikes/scooters, sports, trampolines, and activities with risk of another head hit until fully recovered and cleared if concussion is suspected.\n\n3. **Pain control.**  \n   Use **acetaminophen/paracetamol** at the age/weight-appropriate dose. Avoid aspirin. Many clinicians avoid ibuprofen during the first several hours if there is concern for bleeding, though it may be used later if the child is well and a clinician advises it.\n\n4. **For a scalp bump:**  \n   Apply a wrapped cold pack for 15\u201320 minutes at a time, several times on the first day. Do not place ice directly on skin.\n\n5. **Sleep is allowed.**  \n   You do not need to keep a well-appearing child awake. Check them periodically the first night to ensure they can be roused normally and are behaving appropriately. Seek care if they are difficult to wake.\n\n6. **Concussion follow-up.**  \n   If there was confusion, headache, dizziness, vomiting, behavior change, or balance problems, arrange pediatric/medical review within 24\u201348 hours. Return gradually to preschool/daycare and normal activity only as symptoms improve; no contact or high-risk play until symptom-free and medically cleared when indicated.\n\nA clinician may use pediatric head-injury criteria (such as PECARN) to decide whether observation or a CT scan is needed. CT is not routinely done for a normal-appearing child with a low-risk minor injury because of radiation exposure, but is important when signs suggest brain injury.\n\nIf this happened recently, the safest next step depends on what caused the injury, whether there was loss of consciousness or vomiting, and how the child is acting now.",
+    "latency_ms": 8488.2,
+    "input_tokens": 91,
+    "output_tokens": 657
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What's the treatment suggested for a four year old with head trauma?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "A 4-year-old with head trauma should be assessed urgently based on the injury details and symptoms. Treatment depends on severity:\n\n### Call emergency services / go to the ER now if the child has any of these\n- Loss of consciousness, especially >1 minute or recurrent\n- Repeated vomiting (more than once), severe or worsening headache\n- Seizure, confusion, unusual behavior, extreme sleepiness, or difficulty waking\n- Weakness, poor balance, slurred speech, unequal pupils, vision changes\n- Clear fluid or blood from the nose/ears; bruising behind the ears or around both eyes\n- Persistent neck pain\n- A large scalp swelling, depressed \u201cdent,\u201d open wound, or suspected skull fracture\n- High-speed mechanism: vehicle collision, struck by vehicle, fall >1.5 m/5 ft, significant bicycle/scooter crash, or suspected abuse\n- Bleeding that does not stop after 10 minutes of steady direct pressure\n- The child takes anticoagulants or has a bleeding disorder\n\n### If there are no red flags and the child is acting normally\nThis is often managed as a minor head injury/concussion:\n\n1. **Observe closely for 24\u201348 hours.**  \n   An adult should stay with the child and watch for worsening headache, vomiting, confusion, abnormal walking, unusual irritability, or excessive drowsiness.\n\n2. **Rest, but do not force strict bed rest.**  \n   Quiet activity is fine. Avoid rough play, climbing, bikes/scooters, sports, trampolines, and activities with risk of another head hit until fully recovered and cleared if concussion is suspected.\n\n3. **Pain control.**  \n   Use **acetaminophen/paracetamol** at the age/weight-appropriate dose. Avoid aspirin. Many clinicians avoid ibuprofen during the first several hours if there is concern for bleeding, though it may be used later if the child is well and a clinician advises it.\n\n4. **For a scalp bump:**  \n   Apply a wrapped cold pack for 15\u201320 minutes at a time, several times on the first day. Do not place ice directly on skin.\n\n5. **Sleep is allowed.**  \n   You do not need to keep a well-appearing child awake. Check them periodically the first night to ensure they can be roused normally and are behaving appropriately. Seek care if they are difficult to wake.\n\n6. **Concussion follow-up.**  \n   If there was confusion, headache, dizziness, vomiting, behavior change, or balance problems, arrange pediatric/medical review within 24\u201348 hours. Return gradually to preschool/daycare and normal activity only as symptoms improve; no contact or high-risk play until symptom-free and medically cleared when indicated.\n\nA clinician may use pediatric head-injury criteria (such as PECARN) to decide whether observation or a CT scan is needed. CT is not routinely done for a normal-appearing child with a low-risk minor injury because of radiation exposure, but is important when signs suggest brain injury.\n\nIf this happened recently, the safest next step depends on what caused the injury, whether there was loss of consciousness or vomiting, and how the child is acting now.",
+    "latency_ms": 8488.2,
+    "token_count": 748
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "8dda9d2335d3",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233631.9049566,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 8488.2,
+        "token_count": 748,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.65; flagged=False"
+}

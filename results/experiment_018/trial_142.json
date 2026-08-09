@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-08T23:02:18.534368+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What does the APGAR scale assess?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General medical",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "The **Apgar scale** is a rapid assessment of a newborn\u2019s condition at **1 minute and 5 minutes after birth**. It assesses five features, each scored **0, 1, or 2**, for a maximum total of **10**:\n\n| Component | 0 | 1 | 2 |\n|---|---|---|---|\n| **A \u2014 Appearance** (skin color) | Blue/pale all over | Pink body, blue hands/feet | Completely pink |\n| **P \u2014 Pulse** (heart rate) | Absent | Below **100 beats/min** | At least **100 beats/min** |\n| **G \u2014 Grimace** (reflex irritability) | No response | Grimace or weak response | Cry, cough, or active withdrawal |\n| **A \u2014 Activity** (muscle tone) | Limp | Some flexion | Active movement |\n| **R \u2014 Respiration** | Absent | Slow, irregular, or weak cry | Good breathing or strong cry |\n\nInterpretation is approximate:\n\n- **7\u201310:** generally reassuring  \n- **4\u20136:** moderately abnormal; may require support and reassessment  \n- **0\u20133:** severely abnormal; urgent resuscitation is typically needed  \n\nThe Apgar score describes the newborn\u2019s status and response to initial adaptation or resuscitation. It **does not diagnose birth asphyxia**, predict long-term neurologic outcome by itself, or determine whether resuscitation should begin\u2014resuscitation is based primarily on breathing and heart rate.",
+    "latency_ms": 2560.0,
+    "input_tokens": 80,
+    "output_tokens": 318
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What does the APGAR scale assess?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "The **Apgar scale** is a rapid assessment of a newborn\u2019s condition at **1 minute and 5 minutes after birth**. It assesses five features, each scored **0, 1, or 2**, for a maximum total of **10**:\n\n| Component | 0 | 1 | 2 |\n|---|---|---|---|\n| **A \u2014 Appearance** (skin color) | Blue/pale all over | Pink body, blue hands/feet | Completely pink |\n| **P \u2014 Pulse** (heart rate) | Absent | Below **100 beats/min** | At least **100 beats/min** |\n| **G \u2014 Grimace** (reflex irritability) | No response | Grimace or weak response | Cry, cough, or active withdrawal |\n| **A \u2014 Activity** (muscle tone) | Limp | Some flexion | Active movement |\n| **R \u2014 Respiration** | Absent | Slow, irregular, or weak cry | Good breathing or strong cry |\n\nInterpretation is approximate:\n\n- **7\u201310:** generally reassuring  \n- **4\u20136:** moderately abnormal; may require support and reassessment  \n- **0\u20133:** severely abnormal; urgent resuscitation is typically needed  \n\nThe Apgar score describes the newborn\u2019s status and response to initial adaptation or resuscitation. It **does not diagnose birth asphyxia**, predict long-term neurologic outcome by itself, or determine whether resuscitation should begin\u2014resuscitation is based primarily on breathing and heart rate.",
+    "latency_ms": 2560.0,
+    "token_count": 398,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "655a290c6986",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230138.5336301,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2560.0,
+        "token_count": 398,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.142; flagged=False"
+}

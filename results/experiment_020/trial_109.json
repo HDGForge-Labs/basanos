@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:48:12.572026+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "A male presents with jaw pain, central chest pain and a fear of doom. What is the likely diagnosis?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Critical care",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Likely Diagnosis: Acute Myocardial Infarction (Heart Attack)\n\nThe combination of **jaw pain, central chest pain, and a sense of impending doom** is a classic presentation of **acute coronary syndrome**, most likely an **ST-elevation myocardial infarction (STEMI)** or **non-ST-elevation myocardial infarction (NSTEMI)**.\n\n## Why This Presentation Points to Cardiac Cause\n\n- **Central chest pain** \u2014 typically described as crushing, pressure-like, or heavy, often retrosternal, sometimes radiating to the left arm, neck, or back\n- **Jaw pain** \u2014 a well-recognized **referred pain pattern** from cardiac ischemia, occurring in approximately **10\u201320%** of MI cases, due to shared neural pathways (C3\u2013T4 spinal segments) between cardiac afferents and structures in the jaw/neck\n- **\"Fear of doom\" (angor animi)** \u2014 a classic and highly specific symptom of MI, reported in roughly **20\u201330%** of patients, thought to relate to surges in catecholamines and sympathetic activation\n\n## Associated Symptoms to Ask About\n- Diaphoresis (sweating) \u2014 present in around **60\u201370%** of MIs\n- Shortness of breath\n- Nausea/vomiting (more common in inferior MI, ~**40\u201350%**)\n- Radiation to left arm, back, or epigastrium\n- Palpitations or dizziness\n\n## Immediate Next Steps\n1. **12-lead ECG within 10 minutes** of presentation \u2014 looking for ST elevation, ST depression, or T-wave inversion\n2. **Troponin levels** (high-sensitivity troponin) \u2014 typically rises within **2\u20134 hours**, peaks at **12\u201348 hours**\n3. **Aspirin 300 mg** chewed immediately (unless contraindicated)\n4. **Oxygen** if sats <90\u201394%\n5. **IV access, continuous cardiac monitoring**\n6. Consider **nitrates** and **morphine** for pain relief if BP allows\n7. Activate **cath lab** if STEMI confirmed \u2014 door-to-balloon time target **<90 minutes**\n\n## Key Differentials to Exclude\n- **Aortic dissection** \u2014 especially if pain is tearing/radiates to back, with BP discrepancy between arms\n- **Pulmonary embolism** \u2014 if pleuritic pain, tachycardia, hypoxia\n- **Pericarditis** \u2014 pain often positional, worse lying flat\n- **Panic attack** \u2014 though \"doom\" feeling overlaps, lacks typical cardiac risk factors/ECG changes\n- **Musculoskeletal or dental pain** \u2014 less likely given systemic symptom cluster\n\n## Risk Stratification Considerations\nAsk about cardiac risk factors: age >45 (men) / >55 (women), smoking, diabetes, hypertension, hyperlipidemia, family history, and prior cardiac events \u2014 these increase pre-test probability significantly.\n\n**This presentation warrants emergency evaluation \u2014 treat as a STEM",
+    "latency_ms": 11814.2,
+    "input_tokens": 145,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A male presents with jaw pain, central chest pain and a fear of doom. What is the likely diagnosis?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Likely Diagnosis: Acute Myocardial Infarction (Heart Attack)\n\nThe combination of **jaw pain, central chest pain, and a sense of impending doom** is a classic presentation of **acute coronary syndrome**, most likely an **ST-elevation myocardial infarction (STEMI)** or **non-ST-elevation myocardial infarction (NSTEMI)**.\n\n## Why This Presentation Points to Cardiac Cause\n\n- **Central chest pain** \u2014 typically described as crushing, pressure-like, or heavy, often retrosternal, sometimes radiating to the left arm, neck, or back\n- **Jaw pain** \u2014 a well-recognized **referred pain pattern** from cardiac ischemia, occurring in approximately **10\u201320%** of MI cases, due to shared neural pathways (C3\u2013T4 spinal segments) between cardiac afferents and structures in the jaw/neck\n- **\"Fear of doom\" (angor animi)** \u2014 a classic and highly specific symptom of MI, reported in roughly **20\u201330%** of patients, thought to relate to surges in catecholamines and sympathetic activation\n\n## Associated Symptoms to Ask About\n- Diaphoresis (sweating) \u2014 present in around **60\u201370%** of MIs\n- Shortness of breath\n- Nausea/vomiting (more common in inferior MI, ~**40\u201350%**)\n- Radiation to left arm, back, or epigastrium\n- Palpitations or dizziness\n\n## Immediate Next Steps\n1. **12-lead ECG within 10 minutes** of presentation \u2014 looking for ST elevation, ST depression, or T-wave inversion\n2. **Troponin levels** (high-sensitivity troponin) \u2014 typically rises within **2\u20134 hours**, peaks at **12\u201348 hours**\n3. **Aspirin 300 mg** chewed immediately (unless contraindicated)\n4. **Oxygen** if sats <90\u201394%\n5. **IV access, continuous cardiac monitoring**\n6. Consider **nitrates** and **morphine** for pain relief if BP allows\n7. Activate **cath lab** if STEMI confirmed \u2014 door-to-balloon time target **<90 minutes**\n\n## Key Differentials to Exclude\n- **Aortic dissection** \u2014 especially if pain is tearing/radiates to back, with BP discrepancy between arms\n- **Pulmonary embolism** \u2014 if pleuritic pain, tachycardia, hypoxia\n- **Pericarditis** \u2014 pain often positional, worse lying flat\n- **Panic attack** \u2014 though \"doom\" feeling overlaps, lacks typical cardiac risk factors/ECG changes\n- **Musculoskeletal or dental pain** \u2014 less likely given systemic symptom cluster\n\n## Risk Stratification Considerations\nAsk about cardiac risk factors: age >45 (men) / >55 (women), smoking, diabetes, hypertension, hyperlipidemia, family history, and prior cardiac events \u2014 these increase pre-test probability significantly.\n\n**This presentation warrants emergency evaluation \u2014 treat as a STEM",
+    "latency_ms": 11814.2,
+    "token_count": 1169,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "2a061d656b22",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240092.571247,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 10 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4272,
+          "evidence": [
+            "Latency 11814ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11814.2,
+        "token_count": 1169,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.109; flagged=True"
+}

@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:22:02.259474+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "How can AI better support image guided therapy procedures? What could be the approach or use of AI of heart treatment?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Image guided therapy ",
+    "question_type": "Advice or suggestions on how to approach a problem| Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "AI can support image-guided therapy by making procedures faster, safer, more reproducible, and more personalized. In cardiovascular care, the strongest opportunities are in planning, navigation, real-time guidance, risk prediction, and follow-up.\n\n## 1. AI support for image-guided procedures\n\nImage-guided therapy uses modalities such as fluoroscopy/X-ray, CT, MRI, ultrasound, echocardiography, intracardiac echo (ICE), and angiography. AI can help at nearly every stage.\n\n### A. Before the procedure: planning and patient selection\n\nAI can analyze pre-procedure CT, MRI, echo, and angiographic images to:\n\n- Automatically segment anatomy: chambers, valves, coronary arteries, aorta, vessels, tumors, calcification, and scar.\n- Measure clinically important dimensions in seconds rather than requiring approximately 10\u201330 minutes of manual contouring.\n- Identify anatomical risks, such as:\n  - Small vascular access vessels\n  - Severe calcium near an access route\n  - Coronary obstruction risk during transcatheter valve treatment\n  - Left atrial appendage shape and size for closure devices\n  - Ventricular scar likely to cause ventricular tachycardia\n- Recommend device sizes or catheter approaches based on anatomy.\n\nFor example, in transcatheter aortic valve replacement (TAVR), AI can quantify:\n\n- Aortic annulus area, perimeter, and diameter\n- Coronary ostial height\n- Sinus of Valsalva dimensions\n- Calcification burden\n- Femoral/iliac access diameter and tortuosity\n\nThese measurements influence valve sizing, often within a few millimeters. Even a roughly 1\u20132 mm sizing error can be clinically important in some structural heart cases.\n\n### B. During the procedure: real-time navigation\n\nIntra-procedural AI can combine multiple imaging sources and display anatomy in a more usable way.\n\nExamples include:\n\n- **Automatic anatomy recognition:** identifying the aortic valve, mitral valve, left atrium, pulmonary veins, coronary arteries, or septum on fluoroscopy or echo.\n- **Image fusion:** overlaying a pre-procedure CT or MRI model onto live fluoroscopy, ultrasound, or angiography.\n- **Catheter and device tracking:** recognizing guidewires, catheters, stents, valve frames, ablation catheters, and closure devices in real time.\n- **Motion compensation:** correcting for breathing and heart motion. The heart can move several millimeters to more than approximately 10 mm during respiration and cardiac contraction, so dynamic compensation can make overlays more accurate.\n- **Automatic landmark detection:** locating coronary ostia, valve annulus, pulmonary vein ostia, left atrial appendage, or vascular bifurcations.\n- **Radiation and contrast reduction:** optimizing fluoroscopy views and limiting unnecessary cine runs. In some workflows, improved image processing and protocol optimization may reduce radiation or contrast exposure by approximately 10\u201330%, although the actual impact depends heavily on equipment, patient anatomy, and operator behavior.\n\n### C. Safety monitoring\n\nAI could serve as a \u201csecond observer\u201d by detecting patterns that may be missed during a complex procedure:\n\n- Potential device malposition\n- Pericardial effusion/tamponade on echo\n- Coronary compromise after valve implantation\n- Stent underexpansion or edge dissection on intravascular imaging\n- Embolization risk\n- Vascular perforation or access-site complications\n- Excess contrast administration in patients with kidney disease\n- Excess cumulative radiation dose\n\nA useful system should not simply alert frequently. It should estimate confidence and explain why it is alerting, such as: \u201cPossible pericardial effusion increased from approximately 3 mm to 12 mm over 5 minutes.\u201d\n\n### D. Documentation and workflow automation\n\nAI can reduce administrative burden by:\n\n- Automatically documenting device type, size, implant depth, fluoroscopy time, radiation dose, contrast volume, and key measurements.\n- Generating structured procedure reports.\n- Creating annotated images for the medical record.\n- Comparing the final result with the original plan.\n- Identifying missing safety checks.\n\nThis may save roughly 5\u201320 minutes per case in some settings, while improving standardization.\n\n---\n\n## 2. AI applications in heart treatment\n\nThere is no single \u201cAI for heart treatment.\u201d The best approach depends on the disease and procedure.\n\n## A. Coronary artery disease: angioplasty and stenting\n\nFor coronary interventions, AI can analyze coronary angiography, CT coronary angiography, intravascular ultrasound (IVUS), and optical coherence tomography (OCT).\n\nPotential uses:\n\n- Automatic detection of coronary stenosis.\n- Quantification of lesion length, vessel diameter, plaque burden, calcification, and bifurcation anatomy.\n- Estimation of physiologic significance, potentially helping identify lesions that are likely to reduce blood flow.\n- Stent sizing recommendations.\n- Detection of stent underexpansion, malapposition, edge dissection, or residual narrowing on IVUS/OCT.\n",
+    "latency_ms": 12777.7,
+    "input_tokens": 95,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How can AI better support image guided therapy procedures? What could be the approach or use of AI of heart treatment?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "AI can support image-guided therapy by making procedures faster, safer, more reproducible, and more personalized. In cardiovascular care, the strongest opportunities are in planning, navigation, real-time guidance, risk prediction, and follow-up.\n\n## 1. AI support for image-guided procedures\n\nImage-guided therapy uses modalities such as fluoroscopy/X-ray, CT, MRI, ultrasound, echocardiography, intracardiac echo (ICE), and angiography. AI can help at nearly every stage.\n\n### A. Before the procedure: planning and patient selection\n\nAI can analyze pre-procedure CT, MRI, echo, and angiographic images to:\n\n- Automatically segment anatomy: chambers, valves, coronary arteries, aorta, vessels, tumors, calcification, and scar.\n- Measure clinically important dimensions in seconds rather than requiring approximately 10\u201330 minutes of manual contouring.\n- Identify anatomical risks, such as:\n  - Small vascular access vessels\n  - Severe calcium near an access route\n  - Coronary obstruction risk during transcatheter valve treatment\n  - Left atrial appendage shape and size for closure devices\n  - Ventricular scar likely to cause ventricular tachycardia\n- Recommend device sizes or catheter approaches based on anatomy.\n\nFor example, in transcatheter aortic valve replacement (TAVR), AI can quantify:\n\n- Aortic annulus area, perimeter, and diameter\n- Coronary ostial height\n- Sinus of Valsalva dimensions\n- Calcification burden\n- Femoral/iliac access diameter and tortuosity\n\nThese measurements influence valve sizing, often within a few millimeters. Even a roughly 1\u20132 mm sizing error can be clinically important in some structural heart cases.\n\n### B. During the procedure: real-time navigation\n\nIntra-procedural AI can combine multiple imaging sources and display anatomy in a more usable way.\n\nExamples include:\n\n- **Automatic anatomy recognition:** identifying the aortic valve, mitral valve, left atrium, pulmonary veins, coronary arteries, or septum on fluoroscopy or echo.\n- **Image fusion:** overlaying a pre-procedure CT or MRI model onto live fluoroscopy, ultrasound, or angiography.\n- **Catheter and device tracking:** recognizing guidewires, catheters, stents, valve frames, ablation catheters, and closure devices in real time.\n- **Motion compensation:** correcting for breathing and heart motion. The heart can move several millimeters to more than approximately 10 mm during respiration and cardiac contraction, so dynamic compensation can make overlays more accurate.\n- **Automatic landmark detection:** locating coronary ostia, valve annulus, pulmonary vein ostia, left atrial appendage, or vascular bifurcations.\n- **Radiation and contrast reduction:** optimizing fluoroscopy views and limiting unnecessary cine runs. In some workflows, improved image processing and protocol optimization may reduce radiation or contrast exposure by approximately 10\u201330%, although the actual impact depends heavily on equipment, patient anatomy, and operator behavior.\n\n### C. Safety monitoring\n\nAI could serve as a \u201csecond observer\u201d by detecting patterns that may be missed during a complex procedure:\n\n- Potential device malposition\n- Pericardial effusion/tamponade on echo\n- Coronary compromise after valve implantation\n- Stent underexpansion or edge dissection on intravascular imaging\n- Embolization risk\n- Vascular perforation or access-site complications\n- Excess contrast administration in patients with kidney disease\n- Excess cumulative radiation dose\n\nA useful system should not simply alert frequently. It should estimate confidence and explain why it is alerting, such as: \u201cPossible pericardial effusion increased from approximately 3 mm to 12 mm over 5 minutes.\u201d\n\n### D. Documentation and workflow automation\n\nAI can reduce administrative burden by:\n\n- Automatically documenting device type, size, implant depth, fluoroscopy time, radiation dose, contrast volume, and key measurements.\n- Generating structured procedure reports.\n- Creating annotated images for the medical record.\n- Comparing the final result with the original plan.\n- Identifying missing safety checks.\n\nThis may save roughly 5\u201320 minutes per case in some settings, while improving standardization.\n\n---\n\n## 2. AI applications in heart treatment\n\nThere is no single \u201cAI for heart treatment.\u201d The best approach depends on the disease and procedure.\n\n## A. Coronary artery disease: angioplasty and stenting\n\nFor coronary interventions, AI can analyze coronary angiography, CT coronary angiography, intravascular ultrasound (IVUS), and optical coherence tomography (OCT).\n\nPotential uses:\n\n- Automatic detection of coronary stenosis.\n- Quantification of lesion length, vessel diameter, plaque burden, calcification, and bifurcation anatomy.\n- Estimation of physiologic significance, potentially helping identify lesions that are likely to reduce blood flow.\n- Stent sizing recommendations.\n- Detection of stent underexpansion, malapposition, edge dissection, or residual narrowing on IVUS/OCT.\n",
+    "latency_ms": 12777.7,
+    "token_count": 1119,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "4fd1314149a3",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234922.258705,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 6 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4417,
+          "evidence": [
+            "Latency 12778ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12777.7,
+        "token_count": 1119,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.197; flagged=True"
+}

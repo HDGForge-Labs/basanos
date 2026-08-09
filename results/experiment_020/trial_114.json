@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:49:14.134107+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What are commercial disputes in law?",
+    "field": "Law",
+    "specific_field": "Commercial Law",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Commercial Disputes in Law\n\nCommercial disputes are conflicts arising from business transactions, relationships, or activities between two or more parties\u2014typically companies, business owners, or professionals acting in a commercial capacity. These disputes are generally distinguished from consumer, family, or purely personal legal matters.\n\n## Common Categories of Commercial Disputes\n\n**1. Contract Disputes** (approximately 60-70% of commercial litigation)\n- Breach of contract claims\n- Disputes over contract terms, interpretation, or performance\n- Non-payment or late payment issues\n- Disputes involving supply agreements, service contracts, or licensing deals\n\n**2. Partnership and Shareholder Disputes**\n- Breach of fiduciary duty claims\n- Disputes over profit distribution\n- Minority shareholder oppression claims\n- Disagreements about company direction or management\n\n**3. Debt Recovery and Insolvency**\n- Unpaid invoices (often disputes arise when amounts exceed roughly $5,000-$10,000, though this varies by jurisdiction)\n- Bankruptcy-related disputes\n- Guarantee enforcement\n\n**4. Intellectual Property Disputes**\n- Trademark infringement\n- Patent violations\n- Trade secret misappropriation\n- Copyright disputes in commercial contexts\n\n**5. Employment-Related Commercial Disputes**\n- Non-compete agreement enforcement\n- Wrongful termination in executive contracts\n- Breach of employment agreements\n\n**6. Real Estate and Property Disputes**\n- Commercial lease disagreements\n- Property development disputes\n- Zoning-related commercial issues\n\n## Key Characteristics\n\n- **Monetary thresholds**: Many jurisdictions have specific commercial courts handling disputes above certain values (e.g., in England, the Commercial Court typically handles claims exceeding approximately \u00a350,000-\u00a3500,000 depending on complexity)\n- **Time sensitivity**: Statute of limitations for contract claims typically ranges from about 2-6 years depending on jurisdiction (commonly 3 years in many US states, 6 years in England for simple contracts)\n\n## Resolution Methods\n\n**1. Negotiation** - Often the first step, resolving an estimated 50-70% of disputes before formal proceedings\n\n**2. Mediation**\n- Typically resolves approximately 70-85% of cases that reach this stage\n- Usually completed within 1-3 sessions over roughly 1-2 months\n- Costs generally range from about $2,000-$10,000 depending on complexity\n\n**3. Arbitration**\n- Often mandated by contract clauses\n- Typically faster than litigation, resolving in approximately 6-18 months versus 1-3+ years for court cases\n- Costs can range widely, from approximately $10,000 to several hundred thousand dollars for complex international arbitration\n\n**4. Litigation**\n- Formal court proceedings\n- Can take anywhere from approximately 12 months to 3-5 years for complex cases\n- Higher costs, often ranging from tens of thousands to millions of dollars for major commercial lit",
+    "latency_ms": 12081.5,
+    "input_tokens": 121,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are commercial disputes in law?",
+      "field": "Law"
+    },
+    "response": "# Commercial Disputes in Law\n\nCommercial disputes are conflicts arising from business transactions, relationships, or activities between two or more parties\u2014typically companies, business owners, or professionals acting in a commercial capacity. These disputes are generally distinguished from consumer, family, or purely personal legal matters.\n\n## Common Categories of Commercial Disputes\n\n**1. Contract Disputes** (approximately 60-70% of commercial litigation)\n- Breach of contract claims\n- Disputes over contract terms, interpretation, or performance\n- Non-payment or late payment issues\n- Disputes involving supply agreements, service contracts, or licensing deals\n\n**2. Partnership and Shareholder Disputes**\n- Breach of fiduciary duty claims\n- Disputes over profit distribution\n- Minority shareholder oppression claims\n- Disagreements about company direction or management\n\n**3. Debt Recovery and Insolvency**\n- Unpaid invoices (often disputes arise when amounts exceed roughly $5,000-$10,000, though this varies by jurisdiction)\n- Bankruptcy-related disputes\n- Guarantee enforcement\n\n**4. Intellectual Property Disputes**\n- Trademark infringement\n- Patent violations\n- Trade secret misappropriation\n- Copyright disputes in commercial contexts\n\n**5. Employment-Related Commercial Disputes**\n- Non-compete agreement enforcement\n- Wrongful termination in executive contracts\n- Breach of employment agreements\n\n**6. Real Estate and Property Disputes**\n- Commercial lease disagreements\n- Property development disputes\n- Zoning-related commercial issues\n\n## Key Characteristics\n\n- **Monetary thresholds**: Many jurisdictions have specific commercial courts handling disputes above certain values (e.g., in England, the Commercial Court typically handles claims exceeding approximately \u00a350,000-\u00a3500,000 depending on complexity)\n- **Time sensitivity**: Statute of limitations for contract claims typically ranges from about 2-6 years depending on jurisdiction (commonly 3 years in many US states, 6 years in England for simple contracts)\n\n## Resolution Methods\n\n**1. Negotiation** - Often the first step, resolving an estimated 50-70% of disputes before formal proceedings\n\n**2. Mediation**\n- Typically resolves approximately 70-85% of cases that reach this stage\n- Usually completed within 1-3 sessions over roughly 1-2 months\n- Costs generally range from about $2,000-$10,000 depending on complexity\n\n**3. Arbitration**\n- Often mandated by contract clauses\n- Typically faster than litigation, resolving in approximately 6-18 months versus 1-3+ years for court cases\n- Costs can range widely, from approximately $10,000 to several hundred thousand dollars for complex international arbitration\n\n**4. Litigation**\n- Formal court proceedings\n- Can take anywhere from approximately 12 months to 3-5 years for complex cases\n- Higher costs, often ranging from tens of thousands to millions of dollars for major commercial lit",
+    "latency_ms": 12081.5,
+    "token_count": 1145,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "64dedb4c9734",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240154.1333258,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 14 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4312,
+          "evidence": [
+            "Latency 12082ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12081.5,
+        "token_count": 1145,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.114; flagged=True"
+}

@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:55:49.116547+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Is rorshach test a good IQ measurement?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "psychology",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "No. The **Rorschach inkblot test is not a good measure of IQ**.\n\n- **What it is designed for:** It is a projective psychological assessment historically used to explore personality characteristics, emotional functioning, and thought processes.\n- **What it does not reliably measure:** General intelligence, reasoning ability, memory, processing speed, or other components of IQ.\n- **Why:** Responses are influenced by language, culture, personality, mood, examiner interpretation, and familiarity with testing. Even with standardized systems such as the **Exner Comprehensive System** or **R-PAS**, it is not an IQ test.\n- **Proper IQ measurement:** Use a standardized cognitive test administered and interpreted by a qualified psychologist, such as the **WAIS** for adults, **WISC** for children, or **Stanford\u2013Binet**.\n\nA Rorschach assessment may sometimes be used alongside cognitive testing, but it cannot substitute for an IQ test.",
+    "latency_ms": 1908.6,
+    "input_tokens": 88,
+    "output_tokens": 195
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Is rorshach test a good IQ measurement?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "No. The **Rorschach inkblot test is not a good measure of IQ**.\n\n- **What it is designed for:** It is a projective psychological assessment historically used to explore personality characteristics, emotional functioning, and thought processes.\n- **What it does not reliably measure:** General intelligence, reasoning ability, memory, processing speed, or other components of IQ.\n- **Why:** Responses are influenced by language, culture, personality, mood, examiner interpretation, and familiarity with testing. Even with standardized systems such as the **Exner Comprehensive System** or **R-PAS**, it is not an IQ test.\n- **Proper IQ measurement:** Use a standardized cognitive test administered and interpreted by a qualified psychologist, such as the **WAIS** for adults, **WISC** for children, or **Stanford\u2013Binet**.\n\nA Rorschach assessment may sometimes be used alongside cognitive testing, but it cannot substitute for an IQ test.",
+    "latency_ms": 1908.6,
+    "token_count": 283
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "6e9d799779db",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229749.115807,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 1908.6,
+        "token_count": 283,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.62; flagged=False"
+}

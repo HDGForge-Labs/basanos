@@ -1,0 +1,94 @@
+{
+  "timestamp_utc": "2026-08-09T01:40:10.726511+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What is the best way to support a person living with dementia to remain in their own home when they have problems with night time waking, increased falls risk and no family support?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Dementia ",
+    "question_type": "Advice or suggestions on how to approach a problem"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Supporting a Person with Dementia at Home: Night Waking, Falls Risk, No Family Support\n\nThis is a common and challenging scenario. Here's a practical, prioritized approach:\n\n## 1. Address the Night Waking First (it drives the falls risk)\n\n**Investigate causes before assuming it's \"just dementia\":**\n- Undiagnosed pain (UTI, arthritis, constipation) \u2014 a swift medication/continence review\n- Sleep-wake cycle disruption (common in dementia due to suprachiasmatic nucleus degeneration)\n- Depression or anxiety\n- Sleep apnoea\n- Environmental triggers \u2014 too hot/cold, noise, unfamiliar shadows\n\n**Non-pharmacological first-line strategies:**\n- Increase daylight exposure/activity in the morning and afternoon to strengthen circadian rhythm\n- Reduce daytime napping if excessive\n- Avoid caffeine after midday\n- Establish a consistent bedtime routine\n- Avoid antipsychotics/benzodiazepines for sleep unless absolutely necessary \u2014 evidence for efficacy is weak and falls risk increases significantly\n\n## 2. Falls Prevention \u2014 Environmental and Practical\n\n- **Sensor technology**: bed/chair sensors, floor mats, or PIR (passive infrared) sensors linked to a pendant alarm or telecare system that alerts a response service (not necessarily family) when the person gets up at night\n- **Lighting**: motion-activated low-level nightlights along the path to bathroom \u2014 reduces disorientation without fully waking the person\n- **Remove trip hazards**: rugs, trailing cables, clutter\n- **Grab rails** in bathroom/hallway, raised toilet seat\n- **Bed height** adjusted appropriately; consider a low bed or floor-level bed with crash mat if risk is high\n- **Commode by bed** if bathroom is far, reducing night-time walking distance\n- **Occupational therapy home assessment** \u2014 this is essential and often free via local council/NHS referral\n\n## 3. Formal Care and Technology (Given No Family Support)\n\n- **Telecare/telehealth alarm systems** \u2014 24/7 monitored pendant alarms, GPS trackers for those who wander, automatic fall detectors\n- **Night sitting service or waking night carer** \u2014 even 2-3 nights a week can significantly reduce risk and carer (paid) burnout\n- **Domiciliary care package** \u2014 morning/evening visits to establish routine, ensure medication compliance, check environment\n- **Assistive technology**: smart plugs to detect kettle/cooker use, door sensors if wandering is a risk, video doorbells\n\n## 4. Multidisciplinary Involvement\n\n- **Memory clinic/Community Mental Health Team for Older People** \u2014 review of cognitive status, medication (cholinesterase inhibitors sometimes help with sleep architecture)\n- **Falls clinic referral** \u2014 gait, balance, vision, medication review (polypharmacy is a major contributor)\n- **GP medication review** \u2014 deprescribe sedatives, anticholinerg",
+    "latency_ms": 13830.6,
+    "input_tokens": 158,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the best way to support a person living with dementia to remain in their own home when they have problems with night time waking, increased falls risk and no family support?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Supporting a Person with Dementia at Home: Night Waking, Falls Risk, No Family Support\n\nThis is a common and challenging scenario. Here's a practical, prioritized approach:\n\n## 1. Address the Night Waking First (it drives the falls risk)\n\n**Investigate causes before assuming it's \"just dementia\":**\n- Undiagnosed pain (UTI, arthritis, constipation) \u2014 a swift medication/continence review\n- Sleep-wake cycle disruption (common in dementia due to suprachiasmatic nucleus degeneration)\n- Depression or anxiety\n- Sleep apnoea\n- Environmental triggers \u2014 too hot/cold, noise, unfamiliar shadows\n\n**Non-pharmacological first-line strategies:**\n- Increase daylight exposure/activity in the morning and afternoon to strengthen circadian rhythm\n- Reduce daytime napping if excessive\n- Avoid caffeine after midday\n- Establish a consistent bedtime routine\n- Avoid antipsychotics/benzodiazepines for sleep unless absolutely necessary \u2014 evidence for efficacy is weak and falls risk increases significantly\n\n## 2. Falls Prevention \u2014 Environmental and Practical\n\n- **Sensor technology**: bed/chair sensors, floor mats, or PIR (passive infrared) sensors linked to a pendant alarm or telecare system that alerts a response service (not necessarily family) when the person gets up at night\n- **Lighting**: motion-activated low-level nightlights along the path to bathroom \u2014 reduces disorientation without fully waking the person\n- **Remove trip hazards**: rugs, trailing cables, clutter\n- **Grab rails** in bathroom/hallway, raised toilet seat\n- **Bed height** adjusted appropriately; consider a low bed or floor-level bed with crash mat if risk is high\n- **Commode by bed** if bathroom is far, reducing night-time walking distance\n- **Occupational therapy home assessment** \u2014 this is essential and often free via local council/NHS referral\n\n## 3. Formal Care and Technology (Given No Family Support)\n\n- **Telecare/telehealth alarm systems** \u2014 24/7 monitored pendant alarms, GPS trackers for those who wander, automatic fall detectors\n- **Night sitting service or waking night carer** \u2014 even 2-3 nights a week can significantly reduce risk and carer (paid) burnout\n- **Domiciliary care package** \u2014 morning/evening visits to establish routine, ensure medication compliance, check environment\n- **Assistive technology**: smart plugs to detect kettle/cooker use, door sensors if wandering is a risk, video doorbells\n\n## 4. Multidisciplinary Involvement\n\n- **Memory clinic/Community Mental Health Team for Older People** \u2014 review of cognitive status, medication (cholinesterase inhibitors sometimes help with sleep architecture)\n- **Falls clinic referral** \u2014 gait, balance, vision, medication review (polypharmacy is a major contributor)\n- **GP medication review** \u2014 deprescribe sedatives, anticholinerg",
+    "latency_ms": 13830.6,
+    "token_count": 1182
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "0f676fdb178b",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239610.7256896,
+      "failures": [
+        {
+          "failure_mode": "sycophantic_gap_fill",
+          "confidence": 0.55,
+          "evidence": [
+            "Weak agreement/filler language detected (1 match(es))",
+            "Response contains 6 unexplained numeric values",
+            "Response changed from the previous call to this tool with identical parameters, co-occurring with agreement-flavored language - possible ungrounded answer shift"
+          ],
+          "remediation": [
+            "Request explicit source citations for all factual claims",
+            "Enable strict mode: require parameter-grounded responses only",
+            "Add validation step: cross-reference response values against input parameters",
+            "Set confidence_threshold=0.8 for this tool call type",
+            "Investigate why output changed for this tool call with unchanged input parameters"
+          ]
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4575,
+          "evidence": [
+            "Latency 13831ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13830.6,
+        "token_count": 1182,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Request explicit source citations for all factual claims",
+        "Enable strict mode: require parameter-grounded responses only",
+        "Add validation step: cross-reference response values against input parameters",
+        "Set confidence_threshold=0.8 for this tool call type",
+        "Investigate why output changed for this tool call with unchanged input parameters",
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.70; flagged=False"
+}

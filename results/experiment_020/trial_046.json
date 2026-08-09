@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:35:33.600031+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What is the diagnosis of a 10-year-old patient, with fever and intense pain, started periumbilical but is now located in the right iliac fossa?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General Medicine ",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "## Acute Appendicitis\n\nThis is the classic clinical presentation of **acute appendicitis**.\n\n### Why this diagnosis fits\n\nThe pathognomonic feature here is the **migratory pattern of pain**:\n\n- **Initial periumbilical/epigastric pain**: Visceral pain from appendiceal luminal obstruction (often by a fecalith, lymphoid hyperplasia\u2014common in children\u2014or less commonly a foreign body or parasite). This pain is poorly localized because the appendix, like other midgut structures, refers visceral pain to the periumbilical region via T10 spinal afferents.\n\n- **Migration to the right iliac fossa (McBurney's point)**: Occurs as the inflammation progresses transmurally and irritates the parietal peritoneum overlying the appendix, converting the pain from visceral to somatic (sharp, well-localized).\n\n- **Fever**: Reflects the inflammatory/infectious process, often low-grade initially, increasing if perforation or abscess develops.\n\n### Supporting clinical exam findings to look for\n- **McBurney's point tenderness** (1/3 distance from ASIS to umbilicus)\n- **Rebound tenderness** and **guarding**\n- **Rovsing's sign** (RLQ pain on palpation of LLQ)\n- **Psoas sign** (pain on hip extension\u2014suggests retrocecal appendix)\n- **Obturator sign** (pain on internal rotation of flexed hip\u2014suggests pelvic appendix)\n- Anorexia, nausea, vomiting (typically *after* pain onset\u2014important for differentiating from gastroenteritis)\n\n### Pediatric considerations\n- Children have a **thinner omentum**, so perforation and generalized peritonitis occur faster and more often than in adults (rates up to 30-40% at presentation, especially in younger children).\n- Diagnosis can be trickier because kids may not localize pain reliably.\n\n### Workup\n- **CBC**: leukocytosis with neutrophilia\n- **CRP**: elevated\n- **Ultrasound** (preferred first-line in children to avoid radiation): non-compressible appendix >6mm, appendicolith, periappendiceal fluid\n- **CT abdomen/pelvis with contrast**: if ultrasound equivocal\n- Consider **Alvarado score** or **Pediatric Appendicitis Score (PAS)** to stratify risk\n\n### Management\n- **Surgical consult** for appendectomy (laparoscopic preferred)\n- **NPO, IV fluids, IV antibiotics** (covering gram-negative and anaerobic organisms, e.g., ceftriaxone + metronidazole) pending surgery\n- If perforated with abscess: may need interval appendectomy after percutaneous drainage and antibiotics\n\n### Key differentials to exclude\n- Mesenteric adenitis (often preceded by viral URI, more diffuse tenderness)\n- Meckel's diverticulitis (can mimic exactly, diagnosed intraoperatively if imaging inconclusive)\n- Ovarian pathology in females (tor",
+    "latency_ms": 11306.6,
+    "input_tokens": 163,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the diagnosis of a 10-year-old patient, with fever and intense pain, started periumbilical but is now located in the right iliac fossa?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "## Acute Appendicitis\n\nThis is the classic clinical presentation of **acute appendicitis**.\n\n### Why this diagnosis fits\n\nThe pathognomonic feature here is the **migratory pattern of pain**:\n\n- **Initial periumbilical/epigastric pain**: Visceral pain from appendiceal luminal obstruction (often by a fecalith, lymphoid hyperplasia\u2014common in children\u2014or less commonly a foreign body or parasite). This pain is poorly localized because the appendix, like other midgut structures, refers visceral pain to the periumbilical region via T10 spinal afferents.\n\n- **Migration to the right iliac fossa (McBurney's point)**: Occurs as the inflammation progresses transmurally and irritates the parietal peritoneum overlying the appendix, converting the pain from visceral to somatic (sharp, well-localized).\n\n- **Fever**: Reflects the inflammatory/infectious process, often low-grade initially, increasing if perforation or abscess develops.\n\n### Supporting clinical exam findings to look for\n- **McBurney's point tenderness** (1/3 distance from ASIS to umbilicus)\n- **Rebound tenderness** and **guarding**\n- **Rovsing's sign** (RLQ pain on palpation of LLQ)\n- **Psoas sign** (pain on hip extension\u2014suggests retrocecal appendix)\n- **Obturator sign** (pain on internal rotation of flexed hip\u2014suggests pelvic appendix)\n- Anorexia, nausea, vomiting (typically *after* pain onset\u2014important for differentiating from gastroenteritis)\n\n### Pediatric considerations\n- Children have a **thinner omentum**, so perforation and generalized peritonitis occur faster and more often than in adults (rates up to 30-40% at presentation, especially in younger children).\n- Diagnosis can be trickier because kids may not localize pain reliably.\n\n### Workup\n- **CBC**: leukocytosis with neutrophilia\n- **CRP**: elevated\n- **Ultrasound** (preferred first-line in children to avoid radiation): non-compressible appendix >6mm, appendicolith, periappendiceal fluid\n- **CT abdomen/pelvis with contrast**: if ultrasound equivocal\n- Consider **Alvarado score** or **Pediatric Appendicitis Score (PAS)** to stratify risk\n\n### Management\n- **Surgical consult** for appendectomy (laparoscopic preferred)\n- **NPO, IV fluids, IV antibiotics** (covering gram-negative and anaerobic organisms, e.g., ceftriaxone + metronidazole) pending surgery\n- If perforated with abscess: may need interval appendectomy after percutaneous drainage and antibiotics\n\n### Key differentials to exclude\n- Mesenteric adenitis (often preceded by viral URI, more diffuse tenderness)\n- Meckel's diverticulitis (can mimic exactly, diagnosed intraoperatively if imaging inconclusive)\n- Ovarian pathology in females (tor",
+    "latency_ms": 11306.6,
+    "token_count": 1187
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "4eba5bc389f7",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239333.599191,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4196,
+          "evidence": [
+            "Latency 11307ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11306.6,
+        "token_count": 1187,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.46; flagged=False"
+}

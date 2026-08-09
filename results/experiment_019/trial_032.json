@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:56:21.943254+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What legislation underpins assessment of children with disabilities for social care support?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "social worker",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "In England, the main legislation underpinning assessment of children with disabilities for social care support is:\n\n- **Children Act 1989**\n  - **Section 17**: places a duty on local authorities to safeguard and promote the welfare of \u201cchildren in need.\u201d A disabled child is automatically treated as a child in need under **s.17(10)(c)**.\n  - This is the principal basis for a **Child in Need assessment** and provision of services, including practical assistance, respite/short breaks, equipment, home adaptations, and support for carers.\n  - **Section 20** may apply where accommodation is needed for a child in need.\n\n- **Children and Families Act 2014**\n  - Governs **Education, Health and Care (EHC) needs assessments** and Education, Health and Care Plans for children and young people aged 0\u201325 with special educational needs and disabilities.\n  - While primarily education-focused, it requires integrated education, health and social care assessment and planning where an EHC plan is required.\n  - **Section 25** requires joint commissioning between local authorities and NHS bodies for education, health and care provision for children and young people with SEND.\n  - **Section 19** sets out the general principles: participation, wishes and feelings of the child and parent, and support to achieve the best possible outcomes.\n\n- **Chronically Sick and Disabled Persons Act 1970, section 2**\n  - Requires local authorities, where necessary, to provide certain practical services to disabled people, including disabled children, following assessment. These can include assistance in the home, access to recreation, travel assistance, adaptations, equipment and holiday support.\n  - The scope now operates alongside the Children Act 1989 framework.\n\n- **Carers and Disabled Children Act 2000**\n  - Gives parents and other carers of disabled children rights to assessment of their own needs, and supports the use of direct payments.\n\n- **Children and Families Act 2014, sections 96\u201397**\n  - Strengthens rights for **parent carers\u2019 needs assessments** and requires local authorities to assess where it appears the parent carer has needs for support, or where they request an assessment.\n\n- **Equality Act 2010**\n  - Defines disability and prohibits disability discrimination. Public bodies, including local authorities, must comply with the **Public Sector Equality Duty** under s.149, having due regard to eliminating discrimination, advancing equality of opportunity and fostering good relations.\n\nThe statutory assessment framework is also guided by:\n\n- **Working Together to Safeguard Children** \u2014 the national safeguarding guidance for assessing children in need and coordinating support.\n- **SEND Code of Practice: 0 to 25 years** \u2014 statutory guidance on EHC needs assessments, EHC plans and joint working.\n- **Breaks for Carers of Disabled Children Regulations 2011** \u2014 require local authorities to provide a range of short-break services and publish a short-breaks services statement.\n\nThe equivalent legislation differs in Wales, Scotland and Northern Ireland.",
+    "latency_ms": 8487.8,
+    "input_tokens": 92,
+    "output_tokens": 615
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What legislation underpins assessment of children with disabilities for social care support?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "In England, the main legislation underpinning assessment of children with disabilities for social care support is:\n\n- **Children Act 1989**\n  - **Section 17**: places a duty on local authorities to safeguard and promote the welfare of \u201cchildren in need.\u201d A disabled child is automatically treated as a child in need under **s.17(10)(c)**.\n  - This is the principal basis for a **Child in Need assessment** and provision of services, including practical assistance, respite/short breaks, equipment, home adaptations, and support for carers.\n  - **Section 20** may apply where accommodation is needed for a child in need.\n\n- **Children and Families Act 2014**\n  - Governs **Education, Health and Care (EHC) needs assessments** and Education, Health and Care Plans for children and young people aged 0\u201325 with special educational needs and disabilities.\n  - While primarily education-focused, it requires integrated education, health and social care assessment and planning where an EHC plan is required.\n  - **Section 25** requires joint commissioning between local authorities and NHS bodies for education, health and care provision for children and young people with SEND.\n  - **Section 19** sets out the general principles: participation, wishes and feelings of the child and parent, and support to achieve the best possible outcomes.\n\n- **Chronically Sick and Disabled Persons Act 1970, section 2**\n  - Requires local authorities, where necessary, to provide certain practical services to disabled people, including disabled children, following assessment. These can include assistance in the home, access to recreation, travel assistance, adaptations, equipment and holiday support.\n  - The scope now operates alongside the Children Act 1989 framework.\n\n- **Carers and Disabled Children Act 2000**\n  - Gives parents and other carers of disabled children rights to assessment of their own needs, and supports the use of direct payments.\n\n- **Children and Families Act 2014, sections 96\u201397**\n  - Strengthens rights for **parent carers\u2019 needs assessments** and requires local authorities to assess where it appears the parent carer has needs for support, or where they request an assessment.\n\n- **Equality Act 2010**\n  - Defines disability and prohibits disability discrimination. Public bodies, including local authorities, must comply with the **Public Sector Equality Duty** under s.149, having due regard to eliminating discrimination, advancing equality of opportunity and fostering good relations.\n\nThe statutory assessment framework is also guided by:\n\n- **Working Together to Safeguard Children** \u2014 the national safeguarding guidance for assessing children in need and coordinating support.\n- **SEND Code of Practice: 0 to 25 years** \u2014 statutory guidance on EHC needs assessments, EHC plans and joint working.\n- **Breaks for Carers of Disabled Children Regulations 2011** \u2014 require local authorities to provide a range of short-break services and publish a short-breaks services statement.\n\nThe equivalent legislation differs in Wales, Scotland and Northern Ireland.",
+    "latency_ms": 8487.8,
+    "token_count": 707
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "714ce59f26a2",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233381.9425075,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 8487.8,
+        "token_count": 707,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.32; flagged=False"
+}

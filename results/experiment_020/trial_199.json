@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T02:06:24.918424+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Why do some patients respond to one CGRP antagonist well but not another from the same medication class?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Neurology ",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Why CGRP Antagonist Response Varies Between Patients\n\nThis is a well-recognized clinical phenomenon in migraine treatment, and several mechanisms likely explain it, though research is still evolving.\n\n## Key Molecular/Pharmacological Explanations\n\n**1. Target specificity differences**\n- **Monoclonal antibodies** targeting the CGRP *ligand* (galcanezumab, fremanezumab, eptinezumab) work differently than the one targeting the *receptor* (erenumab)\n- Erenumab blocks the CGRP receptor itself, while the others neutralize circulating CGRP peptide\n- A patient whose migraine mechanism relies more heavily on receptor-level dysfunction vs. peptide overproduction may respond differently to each approach\n\n**2. Binding affinity and epitope variation**\n- Each antibody binds to slightly different regions (epitopes) of CGRP or its receptor\n- Approximate binding affinities vary\u2014some antibodies have higher affinity for specific CGRP isoforms (\u03b1-CGRP vs. \u03b2-CGRP)\n- Erenumab, for instance, doesn't block amylin receptors, while its mechanism differs from ligand-binding antibodies\n\n**3. Receptor occupancy and pharmacokinetics**\n- Half-lives differ significantly: eptinezumab (~27-32 days via IV), galcanezumab (~28 days), fremanezumab (~31-46 days), erenumab (~21-23 days)\n- Different dosing intervals (monthly vs. quarterly) may better match an individual's symptom fluctuation pattern\n\n## Genetic and Biological Factors\n\n**4. Genetic polymorphisms**\n- Variations in the *CALCA* gene (encoding CGRP) or *CALCRL*/*RAMP1* genes (receptor components) may alter drug-target interactions\n- Roughly 30-40% of migraine heritability involves genes affecting neuropeptide signaling, though specific pharmacogenomic predictors for CGRP therapies remain under investigation\n\n**5. Baseline CGRP levels and disease phenotype**\n- Patients with chronic migraine (\u226515 headache days/month) versus episodic migraine (<15 days/month) show different response rates\n- Clinical trials show roughly 50-60% of chronic migraine patients achieve \u226550% reduction in monthly migraine days with one agent, while response to a second agent after failing the first still occurs in approximately 40-60% of \"non-responders\" in real-world switching studies\n\n## Clinical Evidence for Switching\n\n**6. Real-world switching data**\n- Studies suggest that after failing one anti-CGRP monoclonal antibody, switching to another class (ligand vs. receptor) yields response rates of roughly 40-65%\n- This supports the idea that mechanism-specific resistance exists rather than universal \"CGRP pathway failure\"\n\n**7. Small-molecule gepants vs. antibodies**\n- Gepants (rimegepant, ubrogepant, atogepant) are receptor antagonists with different structural binding characteristics than",
+    "latency_ms": 12111.1,
+    "input_tokens": 139,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Why do some patients respond to one CGRP antagonist well but not another from the same medication class?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Why CGRP Antagonist Response Varies Between Patients\n\nThis is a well-recognized clinical phenomenon in migraine treatment, and several mechanisms likely explain it, though research is still evolving.\n\n## Key Molecular/Pharmacological Explanations\n\n**1. Target specificity differences**\n- **Monoclonal antibodies** targeting the CGRP *ligand* (galcanezumab, fremanezumab, eptinezumab) work differently than the one targeting the *receptor* (erenumab)\n- Erenumab blocks the CGRP receptor itself, while the others neutralize circulating CGRP peptide\n- A patient whose migraine mechanism relies more heavily on receptor-level dysfunction vs. peptide overproduction may respond differently to each approach\n\n**2. Binding affinity and epitope variation**\n- Each antibody binds to slightly different regions (epitopes) of CGRP or its receptor\n- Approximate binding affinities vary\u2014some antibodies have higher affinity for specific CGRP isoforms (\u03b1-CGRP vs. \u03b2-CGRP)\n- Erenumab, for instance, doesn't block amylin receptors, while its mechanism differs from ligand-binding antibodies\n\n**3. Receptor occupancy and pharmacokinetics**\n- Half-lives differ significantly: eptinezumab (~27-32 days via IV), galcanezumab (~28 days), fremanezumab (~31-46 days), erenumab (~21-23 days)\n- Different dosing intervals (monthly vs. quarterly) may better match an individual's symptom fluctuation pattern\n\n## Genetic and Biological Factors\n\n**4. Genetic polymorphisms**\n- Variations in the *CALCA* gene (encoding CGRP) or *CALCRL*/*RAMP1* genes (receptor components) may alter drug-target interactions\n- Roughly 30-40% of migraine heritability involves genes affecting neuropeptide signaling, though specific pharmacogenomic predictors for CGRP therapies remain under investigation\n\n**5. Baseline CGRP levels and disease phenotype**\n- Patients with chronic migraine (\u226515 headache days/month) versus episodic migraine (<15 days/month) show different response rates\n- Clinical trials show roughly 50-60% of chronic migraine patients achieve \u226550% reduction in monthly migraine days with one agent, while response to a second agent after failing the first still occurs in approximately 40-60% of \"non-responders\" in real-world switching studies\n\n## Clinical Evidence for Switching\n\n**6. Real-world switching data**\n- Studies suggest that after failing one anti-CGRP monoclonal antibody, switching to another class (ligand vs. receptor) yields response rates of roughly 40-65%\n- This supports the idea that mechanism-specific resistance exists rather than universal \"CGRP pathway failure\"\n\n**7. Small-molecule gepants vs. antibodies**\n- Gepants (rimegepant, ubrogepant, atogepant) are receptor antagonists with different structural binding characteristics than",
+    "latency_ms": 12111.1,
+    "token_count": 1163,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "6b799cf4a379",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786241184.9176433,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 20 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4317,
+          "evidence": [
+            "Latency 12111ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12111.1,
+        "token_count": 1163,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.199; flagged=True"
+}

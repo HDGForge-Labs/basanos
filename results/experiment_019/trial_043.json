@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-08T23:57:53.679668+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "When a patient is started on biologic medications, it is important to rule out latent infections like tuberculosis, and complete certain vaccination schemes. Can you compile which of these attitudes are recommended for each different biologic treatment used in rheumatology?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Family Medicine",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Below is a practical rheumatology-focused summary of **pre-biologic infection screening and vaccination measures**, organized by biologic/targeted therapy class.\n\n## Core measures for almost all biologic/targeted therapies\n\nBefore starting any biologic DMARD (bDMARD) or targeted synthetic DMARD (tsDMARD):\n\n### Screen for\n- **Tuberculosis (TB)**\n  - IGRA (preferred where BCG vaccination is common) or tuberculin skin test.\n  - Chest radiograph and clinical assessment if positive test, symptoms, prior TB, or high epidemiologic risk.\n  - Treat latent TB before or alongside treatment according to local TB protocols; for high-TB-risk agents, usually begin preventive therapy before immunosuppression.\n\n- **Hepatitis B**\n  - Test: **HBsAg, anti-HBc total, anti-HBs**.\n  - HBsAg-positive patients require HBV DNA testing and antiviral planning.\n  - Anti-HBc-positive/HBsAg-negative patients have variable reactivation risk depending on drug class.\n\n- **Hepatitis C**\n  - Anti-HCV; if positive, confirm HCV RNA and refer/treat with direct-acting antivirals where appropriate.\n\n- **HIV**\n  - Usually recommended, especially if risk factors, unexplained lymphopenia, recurrent infections, or before major immunosuppression.\n\n- **Baseline vaccination review**\n  - Ideally complete indicated vaccines **before** immunosuppression.\n  - Inactivated/recombinant vaccines can generally be given during biologic therapy, though responses may be reduced.\n  - **Live attenuated vaccines are generally avoided during biologic or targeted therapy.**\n\n### Vaccines generally recommended\nDepending on age, country, history, and comorbidities:\n\n- Annual **inactivated influenza** vaccine.\n- **COVID-19** primary and booster vaccination.\n- **Pneumococcal vaccination**: e.g., PCV20 once, or PCV15 followed by PPSV23 according to local schedules.\n- **Recombinant zoster vaccine (RZV; Shingrix)**: especially age \u226550, or \u226518 with immunosuppression/risk.\n- **Hepatitis B** vaccine if nonimmune and at risk or likely to receive significant immunosuppression.\n- **HPV** vaccination according to age/risk schedule.\n- **Tdap/Td** boosters.\n- Travel vaccines as indicated; avoid live travel vaccines once treatment begins.\n\n---\n\n# 1. TNF inhibitors\n\n**Agents**\n- Adalimumab\n- Certolizumab pegol\n- Etanercept\n- Golimumab\n- Infliximab\n- Biosimilars of these products\n\n## Infection screening priorities\n\n### Tuberculosis: mandatory and especially important\nTNF is crucial for granuloma maintenance. TNF inhibition carries one of the clearest biologic-associated risks of TB reactivation, particularly with monoclonal antibodies.\n\n- Screen all patients for latent/active TB before therapy.\n- Risk is generally greater with **infliximab and adalimumab** than with **etanercept**.\n- Treat latent TB before starting whenever feasible. A common approach is to start TNF inhibition after at least **1 month of preventive TB therapy**, assuming active TB has been excluded and adherence is reliable.\n- Re-screen during therapy if new exposure, travel/residence in high-incidence settings, occupational risk, or clinical concern.\n\n### Hepatitis B\n- Screen all patients.\n- **HBsAg-positive**: antiviral prophylaxis is generally recommended, typically with **entecavir or tenofovir**, begun before or at treatment initiation and continued for at least 6\u201312 months after stopping immunosuppression.\n- **Anti-HBc-positive/HBsAg-negative**: monitor ALT and HBV DNA periodically; prophylaxis may be considered in higher-risk circumstances.\n\n### Other\n- Evaluate for chronic/recurrent bacterial infection, untreated dental sepsis, chronic wounds, and indwelling devices.\n- Avoid starting during active serious infection.\n\n## Vaccination\n- Complete age-appropriate inactivated vaccines before therapy.\n- Give recombinant zoster vaccine when indicated.\n- Avoid live vaccines during therapy. If a live vaccine is needed, administer before treatment\u2014commonly at least **4 weeks before** starting a TNF inhibitor.\n\n---\n\n# 2. IL-6 pathway inhibitors\n\n**Agents**\n- Tocilizumab\n- Sarilumab\n\n## Infection screening priorities\n\n### Tuberculosis\n- Screen before treatment, as for all biologics.\n- TB reactivation risk appears lower than with TNF inhibitors but is still clinically relevant and screening remains standard.\n\n### Hepatitis B\n- Screen HBsAg, anti-HBc, anti-HBs.\n- HBV reactivation can occur; use the same antiviral/prophylaxis framework as above, with closer monitoring in HBsAg-positive patients.\n\n### Important additional baseline measures\nIL-6 inhibitors can suppress CRP and blunt fever",
+    "latency_ms": 12536.2,
+    "input_tokens": 126,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "When a patient is started on biologic medications, it is important to rule out latent infections like tuberculosis, and complete certain vaccination schemes. Can you compile which of these attitudes are recommended for each different biologic treatment used in rheumatology?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Below is a practical rheumatology-focused summary of **pre-biologic infection screening and vaccination measures**, organized by biologic/targeted therapy class.\n\n## Core measures for almost all biologic/targeted therapies\n\nBefore starting any biologic DMARD (bDMARD) or targeted synthetic DMARD (tsDMARD):\n\n### Screen for\n- **Tuberculosis (TB)**\n  - IGRA (preferred where BCG vaccination is common) or tuberculin skin test.\n  - Chest radiograph and clinical assessment if positive test, symptoms, prior TB, or high epidemiologic risk.\n  - Treat latent TB before or alongside treatment according to local TB protocols; for high-TB-risk agents, usually begin preventive therapy before immunosuppression.\n\n- **Hepatitis B**\n  - Test: **HBsAg, anti-HBc total, anti-HBs**.\n  - HBsAg-positive patients require HBV DNA testing and antiviral planning.\n  - Anti-HBc-positive/HBsAg-negative patients have variable reactivation risk depending on drug class.\n\n- **Hepatitis C**\n  - Anti-HCV; if positive, confirm HCV RNA and refer/treat with direct-acting antivirals where appropriate.\n\n- **HIV**\n  - Usually recommended, especially if risk factors, unexplained lymphopenia, recurrent infections, or before major immunosuppression.\n\n- **Baseline vaccination review**\n  - Ideally complete indicated vaccines **before** immunosuppression.\n  - Inactivated/recombinant vaccines can generally be given during biologic therapy, though responses may be reduced.\n  - **Live attenuated vaccines are generally avoided during biologic or targeted therapy.**\n\n### Vaccines generally recommended\nDepending on age, country, history, and comorbidities:\n\n- Annual **inactivated influenza** vaccine.\n- **COVID-19** primary and booster vaccination.\n- **Pneumococcal vaccination**: e.g., PCV20 once, or PCV15 followed by PPSV23 according to local schedules.\n- **Recombinant zoster vaccine (RZV; Shingrix)**: especially age \u226550, or \u226518 with immunosuppression/risk.\n- **Hepatitis B** vaccine if nonimmune and at risk or likely to receive significant immunosuppression.\n- **HPV** vaccination according to age/risk schedule.\n- **Tdap/Td** boosters.\n- Travel vaccines as indicated; avoid live travel vaccines once treatment begins.\n\n---\n\n# 1. TNF inhibitors\n\n**Agents**\n- Adalimumab\n- Certolizumab pegol\n- Etanercept\n- Golimumab\n- Infliximab\n- Biosimilars of these products\n\n## Infection screening priorities\n\n### Tuberculosis: mandatory and especially important\nTNF is crucial for granuloma maintenance. TNF inhibition carries one of the clearest biologic-associated risks of TB reactivation, particularly with monoclonal antibodies.\n\n- Screen all patients for latent/active TB before therapy.\n- Risk is generally greater with **infliximab and adalimumab** than with **etanercept**.\n- Treat latent TB before starting whenever feasible. A common approach is to start TNF inhibition after at least **1 month of preventive TB therapy**, assuming active TB has been excluded and adherence is reliable.\n- Re-screen during therapy if new exposure, travel/residence in high-incidence settings, occupational risk, or clinical concern.\n\n### Hepatitis B\n- Screen all patients.\n- **HBsAg-positive**: antiviral prophylaxis is generally recommended, typically with **entecavir or tenofovir**, begun before or at treatment initiation and continued for at least 6\u201312 months after stopping immunosuppression.\n- **Anti-HBc-positive/HBsAg-negative**: monitor ALT and HBV DNA periodically; prophylaxis may be considered in higher-risk circumstances.\n\n### Other\n- Evaluate for chronic/recurrent bacterial infection, untreated dental sepsis, chronic wounds, and indwelling devices.\n- Avoid starting during active serious infection.\n\n## Vaccination\n- Complete age-appropriate inactivated vaccines before therapy.\n- Give recombinant zoster vaccine when indicated.\n- Avoid live vaccines during therapy. If a live vaccine is needed, administer before treatment\u2014commonly at least **4 weeks before** starting a TNF inhibitor.\n\n---\n\n# 2. IL-6 pathway inhibitors\n\n**Agents**\n- Tocilizumab\n- Sarilumab\n\n## Infection screening priorities\n\n### Tuberculosis\n- Screen before treatment, as for all biologics.\n- TB reactivation risk appears lower than with TNF inhibitors but is still clinically relevant and screening remains standard.\n\n### Hepatitis B\n- Screen HBsAg, anti-HBc, anti-HBs.\n- HBV reactivation can occur; use the same antiviral/prophylaxis framework as above, with closer monitoring in HBsAg-positive patients.\n\n### Important additional baseline measures\nIL-6 inhibitors can suppress CRP and blunt fever",
+    "latency_ms": 12536.2,
+    "token_count": 1150
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "98493fb8938d",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786233473.6788921,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.438,
+          "evidence": [
+            "Latency 12536ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12536.2,
+        "token_count": 1150,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.43; flagged=False"
+}

@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-09T00:13:10.102273+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What's the part of the brain related with short term memory?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Clinical Psychologist",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "The brain structure most closely associated with forming and managing short-term memories is the **hippocampus**, located deep in the **medial temporal lobe** of each hemisphere.\n\nMore specifically:\n\n- **Hippocampus:** Helps convert short-term, recent experiences into longer-term declarative memories\u2014such as facts, events, and what happened earlier in the day. Damage can cause severe difficulty forming new memories, even when older memories and intelligence remain relatively intact.\n- **Prefrontal cortex:** Especially the **dorsolateral prefrontal cortex** in the front part of the brain, is crucial for **working memory**\u2014holding and manipulating information for a few seconds to roughly **20\u201330 seconds**. For example, mentally keeping a phone number in mind while dialing it.\n- **Parietal cortex:** Works with the prefrontal cortex to maintain attention and temporarily store visual and spatial information.\n- **Amygdala:** Influences memory strength for emotionally significant events, particularly fear- or stress-related memories.\n\nIn everyday language, people often call the hippocampus the \u201cshort-term memory center,\u201d but the more precise answer is:\n\n- **Working short-term memory:** mainly a network involving the **prefrontal cortex** and **parietal cortex**.\n- **Turning recent memory into long-term memory:** strongly depends on the **hippocampus**.",
+    "latency_ms": 3642.8,
+    "input_tokens": 84,
+    "output_tokens": 281
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What's the part of the brain related with short term memory?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "The brain structure most closely associated with forming and managing short-term memories is the **hippocampus**, located deep in the **medial temporal lobe** of each hemisphere.\n\nMore specifically:\n\n- **Hippocampus:** Helps convert short-term, recent experiences into longer-term declarative memories\u2014such as facts, events, and what happened earlier in the day. Damage can cause severe difficulty forming new memories, even when older memories and intelligence remain relatively intact.\n- **Prefrontal cortex:** Especially the **dorsolateral prefrontal cortex** in the front part of the brain, is crucial for **working memory**\u2014holding and manipulating information for a few seconds to roughly **20\u201330 seconds**. For example, mentally keeping a phone number in mind while dialing it.\n- **Parietal cortex:** Works with the prefrontal cortex to maintain attention and temporarily store visual and spatial information.\n- **Amygdala:** Influences memory strength for emotionally significant events, particularly fear- or stress-related memories.\n\nIn everyday language, people often call the hippocampus the \u201cshort-term memory center,\u201d but the more precise answer is:\n\n- **Working short-term memory:** mainly a network involving the **prefrontal cortex** and **parietal cortex**.\n- **Turning recent memory into long-term memory:** strongly depends on the **hippocampus**.",
+    "latency_ms": 3642.8,
+    "token_count": 365,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "90215c91a2f7",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234390.10145,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3642.8,
+        "token_count": 365,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.147; flagged=False"
+}

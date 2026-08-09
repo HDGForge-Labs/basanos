@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:12:53.524517+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "36 year old starting medications for mental health issues - which are most like to cause Long QT on an ECG recording?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Cardiology",
+    "question_type": "Summarization of information on a topic| Question that describes a hypothetical scenario and asks a question based on this scenario| Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Several mental-health medications can prolong the **QT interval** on an ECG, increasing the risk of a rare but serious rhythm problem called **torsades de pointes**. Risk is usually low in a healthy 36-year-old at standard doses, but rises with higher doses, combinations, low potassium/magnesium, heart disease, slow heart rate, liver/kidney impairment, or family/personal history of long-QT syndrome or unexplained fainting.\n\n## Antidepressants\n\n### Higher QT-risk / more caution\n- **Citalopram (Celexa)** \u2013 one of the more notable SSRI QT-prolongers; effect is dose-related.  \n  - FDA maximum: **40 mg/day** for most adults; **20 mg/day** if age \u226560, liver impairment, CYP2C19 poor metabolizer, or taking CYP2C19 inhibitors.\n- **Escitalopram (Lexapro)** \u2013 similar but usually somewhat less QT effect than citalopram; risk rises with dose, especially **20 mg/day**.\n- **Tricyclic antidepressants (TCAs)**: especially **amitriptyline, imipramine, clomipramine, doxepin, nortriptyline**. These can also widen the QRS complex and are particularly concerning in overdose.\n- **Venlafaxine (Effexor)** \u2013 usually low risk at routine doses, but QT issues have been reported, more often with high doses, overdose, or additional risk factors.\n- **Trazodone** \u2013 can prolong QT, especially at higher doses or with other QT-prolonging drugs.\n- **Mirtazapine** \u2013 generally lower risk, but QT prolongation has been reported; caution is reasonable in people with substantial risk factors.\n\n### Lower QT-risk antidepressant choices in many cases\n- **Sertraline (Zoloft)** \u2013 generally among the preferred SSRIs when QT risk matters.\n- **Fluoxetine (Prozac)** \u2013 generally low QT risk at therapeutic doses.\n- **Paroxetine (Paxil)** \u2013 generally low QT risk, though it has other potential drawbacks such as withdrawal effects, weight gain, sexual side effects, and drug interactions.\n- **Bupropion (Wellbutrin)** \u2013 generally little QT effect at usual doses; overdose can cause significant cardiac and seizure toxicity.\n- **Duloxetine (Cymbalta)** \u2013 generally low QT risk.\n- **Vortioxetine (Trintellix)** \u2013 generally low QT risk.\n\n## Antipsychotics\n\n### Higher QT-risk antipsychotics\n- **Ziprasidone (Geodon)** \u2013 among the more QT-prolonging commonly used antipsychotics.\n- **Thioridazine** \u2013 high risk; now rarely used in many settings.\n- **Chlorpromazine (Thorazine)** \u2013 meaningful QT risk.\n- **Haloperidol (Haldol)** \u2013 risk is greater with high dose, intravenous use, or other risk factors; IV haloperidol is a particular concern.\n- **Pimozide** \u2013 substantial QT risk and requires careful monitoring.\n- **Iloperidone (Fanapt)** \u2013 can prolong QT.\n- **Quetiapine (Seroquel)** \u2013 usually modest risk at standard doses but can matter with higher doses, overdose, interacting medications, or electrolyte abnormalities.\n- **Risperidone / paliperidone** \u2013 generally modest QT effect, but risk increases in susceptible individuals.\n\n### Lower QT-risk antipsychotics in many cases\n- **Aripiprazole (Abilify)** \u2013 among the lowest QT-risk options.\n- **Lurasidone (Latuda)** \u2013 generally low risk.\n- **Brexpiprazole (Rexulti)** and **cariprazine (Vraylar)** \u2013 generally low risk.\n- **Olanzapine (Zyprexa)** \u2013 usually relatively low QT effect, though it has important metabolic/weight-related risks.\n\n## Other psychiatric medications\n\n- **Lithium** can affect ECGs, especially at higher blood levels or toxicity; it may cause T-wave changes, slow heart rate, and occasionally QT changes. Risk rises with dehydration, kidney problems, NSAIDs, ACE inhibitors, ARBs, and some diuretics.\n- **Methadone** (sometimes used in substance-use treatment or pain care) is a significant QT-prolonging medication, particularly at doses above roughly **100 mg/day**, though risk can occur at lower doses.\n- **Stimulants** such as methylphenidate or amphetamines usually do **not** primarily cause long QT, but can raise heart rate and blood pressure and may be unsuitable for some cardiac conditions.\n- **Benzodiazepines**\u2014for example lorazepam, diazepam, clonazepam\u2014do not generally prolong QT.\n- **Mood stabilizers** such as **lamotrigine**, **valproate**, and **carb",
+    "latency_ms": 12474.7,
+    "input_tokens": 95,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "36 year old starting medications for mental health issues - which are most like to cause Long QT on an ECG recording?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Several mental-health medications can prolong the **QT interval** on an ECG, increasing the risk of a rare but serious rhythm problem called **torsades de pointes**. Risk is usually low in a healthy 36-year-old at standard doses, but rises with higher doses, combinations, low potassium/magnesium, heart disease, slow heart rate, liver/kidney impairment, or family/personal history of long-QT syndrome or unexplained fainting.\n\n## Antidepressants\n\n### Higher QT-risk / more caution\n- **Citalopram (Celexa)** \u2013 one of the more notable SSRI QT-prolongers; effect is dose-related.  \n  - FDA maximum: **40 mg/day** for most adults; **20 mg/day** if age \u226560, liver impairment, CYP2C19 poor metabolizer, or taking CYP2C19 inhibitors.\n- **Escitalopram (Lexapro)** \u2013 similar but usually somewhat less QT effect than citalopram; risk rises with dose, especially **20 mg/day**.\n- **Tricyclic antidepressants (TCAs)**: especially **amitriptyline, imipramine, clomipramine, doxepin, nortriptyline**. These can also widen the QRS complex and are particularly concerning in overdose.\n- **Venlafaxine (Effexor)** \u2013 usually low risk at routine doses, but QT issues have been reported, more often with high doses, overdose, or additional risk factors.\n- **Trazodone** \u2013 can prolong QT, especially at higher doses or with other QT-prolonging drugs.\n- **Mirtazapine** \u2013 generally lower risk, but QT prolongation has been reported; caution is reasonable in people with substantial risk factors.\n\n### Lower QT-risk antidepressant choices in many cases\n- **Sertraline (Zoloft)** \u2013 generally among the preferred SSRIs when QT risk matters.\n- **Fluoxetine (Prozac)** \u2013 generally low QT risk at therapeutic doses.\n- **Paroxetine (Paxil)** \u2013 generally low QT risk, though it has other potential drawbacks such as withdrawal effects, weight gain, sexual side effects, and drug interactions.\n- **Bupropion (Wellbutrin)** \u2013 generally little QT effect at usual doses; overdose can cause significant cardiac and seizure toxicity.\n- **Duloxetine (Cymbalta)** \u2013 generally low QT risk.\n- **Vortioxetine (Trintellix)** \u2013 generally low QT risk.\n\n## Antipsychotics\n\n### Higher QT-risk antipsychotics\n- **Ziprasidone (Geodon)** \u2013 among the more QT-prolonging commonly used antipsychotics.\n- **Thioridazine** \u2013 high risk; now rarely used in many settings.\n- **Chlorpromazine (Thorazine)** \u2013 meaningful QT risk.\n- **Haloperidol (Haldol)** \u2013 risk is greater with high dose, intravenous use, or other risk factors; IV haloperidol is a particular concern.\n- **Pimozide** \u2013 substantial QT risk and requires careful monitoring.\n- **Iloperidone (Fanapt)** \u2013 can prolong QT.\n- **Quetiapine (Seroquel)** \u2013 usually modest risk at standard doses but can matter with higher doses, overdose, interacting medications, or electrolyte abnormalities.\n- **Risperidone / paliperidone** \u2013 generally modest QT effect, but risk increases in susceptible individuals.\n\n### Lower QT-risk antipsychotics in many cases\n- **Aripiprazole (Abilify)** \u2013 among the lowest QT-risk options.\n- **Lurasidone (Latuda)** \u2013 generally low risk.\n- **Brexpiprazole (Rexulti)** and **cariprazine (Vraylar)** \u2013 generally low risk.\n- **Olanzapine (Zyprexa)** \u2013 usually relatively low QT effect, though it has important metabolic/weight-related risks.\n\n## Other psychiatric medications\n\n- **Lithium** can affect ECGs, especially at higher blood levels or toxicity; it may cause T-wave changes, slow heart rate, and occasionally QT changes. Risk rises with dehydration, kidney problems, NSAIDs, ACE inhibitors, ARBs, and some diuretics.\n- **Methadone** (sometimes used in substance-use treatment or pain care) is a significant QT-prolonging medication, particularly at doses above roughly **100 mg/day**, though risk can occur at lower doses.\n- **Stimulants** such as methylphenidate or amphetamines usually do **not** primarily cause long QT, but can raise heart rate and blood pressure and may be unsuitable for some cardiac conditions.\n- **Benzodiazepines**\u2014for example lorazepam, diazepam, clonazepam\u2014do not generally prolong QT.\n- **Mood stabilizers** such as **lamotrigine**, **valproate**, and **carb",
+    "latency_ms": 12474.7,
+    "token_count": 1119,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "9b44220f7259",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234373.5236492,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 3 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4371,
+          "evidence": [
+            "Latency 12475ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12474.7,
+        "token_count": 1119,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.145; flagged=True"
+}

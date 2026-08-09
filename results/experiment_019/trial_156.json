@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:14:59.946036+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "A patient comes for consultation with burns over 25% of his body surface, of varying degrees all over his body, what is the indicated treatment for this patient?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Surgeon",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "A patient with burns involving **25% total body surface area (TBSA)**, especially with **mixed-depth burns over multiple body regions**, requires **urgent transfer/admission to a specialized burn center** and **inpatient resuscitation and multidisciplinary burn care**. This is a major burn injury.\n\n## Immediate management: ABCDE and burn-center referral\nTreat as a trauma emergency:\n\n- **A \u2013 Airway:** Assess for inhalation injury, especially if burns occurred in an enclosed space or there are facial burns, soot, singed nasal hairs, hoarseness, carbonaceous sputum, or stridor.  \n  - If airway edema is likely, perform **early endotracheal intubation** rather than waiting for obstruction.\n  - Give **100% oxygen** initially if smoke exposure is possible; check carboxyhemoglobin level.\n- **B \u2013 Breathing:** Evaluate chest excursion; circumferential full-thickness chest burns may require **escharotomy** if ventilation is restricted.\n- **C \u2013 Circulation:** Obtain 2 large-bore IV lines through unburned skin if possible; otherwise use burned skin or intraosseous access.\n- **D/E:** Assess neurologic status, fully examine the patient, prevent hypothermia, and remove burned clothing/jewelry.\n\nBurn-center referral is indicated because the injury exceeds **10% TBSA partial-thickness burn in an adult**, involves varying depths, and is distributed widely. A **25% TBSA** burn has substantial risk of burn shock, infection, hypothermia, compartment syndrome, and need for grafting.\n\n## Fluid resuscitation\nFor adults with burns of roughly **20% TBSA or more**, begin formal IV fluid resuscitation, usually with warmed **lactated Ringer\u2019s solution**.\n\n### Parkland formula\nA common starting formula is:\n\n\\[\n4\\ \\text{mL} \\times \\text{body weight (kg)} \\times \\%TBSA\n\\]\n\nGive this volume during the **first 24 hours from the time of injury**, not from hospital arrival:\n\n- **50% in the first 8 hours after the burn**\n- **50% over the following 16 hours**\n\nExample: for a **70-kg** adult with **25% TBSA** burns:\n\n\\[\n4 \\times 70 \\times 25 = 7,000\\ \\text{mL in 24 hours}\n\\]\n\n- About **3,500 mL** should be given in the first 8 hours after injury.\n- The remaining **3,500 mL** is given over the next 16 hours.\n\nSome centers start with **2\u20134 mL/kg/%TBSA** and titrate carefully to avoid \u201cfluid creep.\u201d\n\n### Urine-output target\nInsert a Foley catheter for accurate monitoring. Titrate fluids to:\n\n- Adults: **0.5 mL/kg/hour** urine output, usually about **30\u201350 mL/hour**\n- Children: **1 mL/kg/hour**\n- Electrical injury or rhabdomyolysis: often **1\u20131.5 mL/kg/hour** (with monitoring for myoglobinuria)\n\nMonitor blood pressure, heart rate, mental status, peripheral perfusion, lactate, electrolytes, hematocrit, and acid-base status. Do not rely on the calculated formula alone\u2014adjust according to physiologic response.\n\n## Wound care\nAfter stabilization:\n\n- Cool the burn only if very recent; avoid prolonged ice exposure, which can worsen tissue injury and hypothermia.\n- Gently cleanse wounds and remove loose nonviable skin/debris.\n- Cover with clean, dry, nonadherent dressings initially.\n- Use topical antimicrobial dressings according to burn-center protocol, such as silver-containing dressings or other appropriate agents.\n- Avoid routine prophylactic systemic antibiotics unless there is documented infection, perioperative indication, or another clear reason.\n- Assess burn depth:\n  - **Superficial partial-thickness** burns may heal with dressings.\n  - **Deep partial-thickness and full-thickness** areas often need early excision and skin grafting, commonly within approximately **24\u201372 hours** or as clinically appropriate after stabilization.\n\n## Analgesia and supportive care\n- Give IV opioid analgesia, commonly titrated IV fentanyl or morphine; avoid intramuscular injections because absorption is unreliable in shock.\n- Provide tetanus prophylaxis:\n  - Give tetanus booster if immunization is not current, typically if more than **5 years** since the last dose for a major contaminated wound.\n  - Give tetanus immune globulin if immunization history is unknown/incomplete according to local protocol.\n- Maintain normothermia with warmed room, blankets, and warmed IV fluids.\n- Begin early enteral nutrition, ideally within approximately **6\u201312 hours** in major burns when feasible. Burns above roughly **20% TBSA** create a marked hypermetabolic state and often require high-calorie, high",
+    "latency_ms": 12330.4,
+    "input_tokens": 105,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A patient comes for consultation with burns over 25% of his body surface, of varying degrees all over his body, what is the indicated treatment for this patient?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "A patient with burns involving **25% total body surface area (TBSA)**, especially with **mixed-depth burns over multiple body regions**, requires **urgent transfer/admission to a specialized burn center** and **inpatient resuscitation and multidisciplinary burn care**. This is a major burn injury.\n\n## Immediate management: ABCDE and burn-center referral\nTreat as a trauma emergency:\n\n- **A \u2013 Airway:** Assess for inhalation injury, especially if burns occurred in an enclosed space or there are facial burns, soot, singed nasal hairs, hoarseness, carbonaceous sputum, or stridor.  \n  - If airway edema is likely, perform **early endotracheal intubation** rather than waiting for obstruction.\n  - Give **100% oxygen** initially if smoke exposure is possible; check carboxyhemoglobin level.\n- **B \u2013 Breathing:** Evaluate chest excursion; circumferential full-thickness chest burns may require **escharotomy** if ventilation is restricted.\n- **C \u2013 Circulation:** Obtain 2 large-bore IV lines through unburned skin if possible; otherwise use burned skin or intraosseous access.\n- **D/E:** Assess neurologic status, fully examine the patient, prevent hypothermia, and remove burned clothing/jewelry.\n\nBurn-center referral is indicated because the injury exceeds **10% TBSA partial-thickness burn in an adult**, involves varying depths, and is distributed widely. A **25% TBSA** burn has substantial risk of burn shock, infection, hypothermia, compartment syndrome, and need for grafting.\n\n## Fluid resuscitation\nFor adults with burns of roughly **20% TBSA or more**, begin formal IV fluid resuscitation, usually with warmed **lactated Ringer\u2019s solution**.\n\n### Parkland formula\nA common starting formula is:\n\n\\[\n4\\ \\text{mL} \\times \\text{body weight (kg)} \\times \\%TBSA\n\\]\n\nGive this volume during the **first 24 hours from the time of injury**, not from hospital arrival:\n\n- **50% in the first 8 hours after the burn**\n- **50% over the following 16 hours**\n\nExample: for a **70-kg** adult with **25% TBSA** burns:\n\n\\[\n4 \\times 70 \\times 25 = 7,000\\ \\text{mL in 24 hours}\n\\]\n\n- About **3,500 mL** should be given in the first 8 hours after injury.\n- The remaining **3,500 mL** is given over the next 16 hours.\n\nSome centers start with **2\u20134 mL/kg/%TBSA** and titrate carefully to avoid \u201cfluid creep.\u201d\n\n### Urine-output target\nInsert a Foley catheter for accurate monitoring. Titrate fluids to:\n\n- Adults: **0.5 mL/kg/hour** urine output, usually about **30\u201350 mL/hour**\n- Children: **1 mL/kg/hour**\n- Electrical injury or rhabdomyolysis: often **1\u20131.5 mL/kg/hour** (with monitoring for myoglobinuria)\n\nMonitor blood pressure, heart rate, mental status, peripheral perfusion, lactate, electrolytes, hematocrit, and acid-base status. Do not rely on the calculated formula alone\u2014adjust according to physiologic response.\n\n## Wound care\nAfter stabilization:\n\n- Cool the burn only if very recent; avoid prolonged ice exposure, which can worsen tissue injury and hypothermia.\n- Gently cleanse wounds and remove loose nonviable skin/debris.\n- Cover with clean, dry, nonadherent dressings initially.\n- Use topical antimicrobial dressings according to burn-center protocol, such as silver-containing dressings or other appropriate agents.\n- Avoid routine prophylactic systemic antibiotics unless there is documented infection, perioperative indication, or another clear reason.\n- Assess burn depth:\n  - **Superficial partial-thickness** burns may heal with dressings.\n  - **Deep partial-thickness and full-thickness** areas often need early excision and skin grafting, commonly within approximately **24\u201372 hours** or as clinically appropriate after stabilization.\n\n## Analgesia and supportive care\n- Give IV opioid analgesia, commonly titrated IV fentanyl or morphine; avoid intramuscular injections because absorption is unreliable in shock.\n- Provide tetanus prophylaxis:\n  - Give tetanus booster if immunization is not current, typically if more than **5 years** since the last dose for a major contaminated wound.\n  - Give tetanus immune globulin if immunization history is unknown/incomplete according to local protocol.\n- Maintain normothermia with warmed room, blankets, and warmed IV fluids.\n- Begin early enteral nutrition, ideally within approximately **6\u201312 hours** in major burns when feasible. Burns above roughly **20% TBSA** create a marked hypermetabolic state and often require high-calorie, high",
+    "latency_ms": 12330.4,
+    "token_count": 1129,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "a8a89149b7de",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234499.9451895,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 18 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.435,
+          "evidence": [
+            "Latency 12330ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12330.4,
+        "token_count": 1129,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.156; flagged=True"
+}

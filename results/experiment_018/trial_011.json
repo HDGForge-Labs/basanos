@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:52:32.618482+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What are the steps in a cranial nerve exam?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pharmacist",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "A cranial nerve exam is usually performed systematically from CN I through CN XII:\n\n1. **CN I \u2013 Olfactory**\n   - Test each nostril separately with a familiar, nonirritating odor such as coffee or soap.\n   - Avoid ammonia or other irritants, which stimulate the trigeminal nerve instead.\n\n2. **CN II \u2013 Optic**\n   - **Visual acuity:** Snellen chart or near card, with corrective lenses if normally used.\n   - **Visual fields:** Compare confrontation testing in all four quadrants.\n   - **Pupils:** Assess size and symmetry; test direct and consensual light responses and the afferent pupillary response.\n   - **Fundoscopy:** Inspect the optic disc, vessels, macula, and retina.\n\n3. **CN II and III \u2013 Pupillary function**\n   - Test the **swinging flashlight test** for a relative afferent pupillary defect.\n   - Test accommodation by having the patient shift focus from a distant object to a near target.\n\n4. **CN III, IV, and VI \u2013 Oculomotor, Trochlear, Abducens**\n   - Inspect for ptosis, ocular alignment, and pupil abnormalities.\n   - Test extraocular movements in an \u201cH\u201d pattern.\n   - Ask about diplopia and note nystagmus.\n   - Test convergence by bringing a target toward the nose.\n\n5. **CN V \u2013 Trigeminal**\n   - **Sensation:** Test light touch and pinprick over the ophthalmic (V1), maxillary (V2), and mandibular (V3) divisions, comparing both sides.\n   - **Corneal reflex:** Lightly touch the cornea with cotton; the normal response is bilateral blinking. This is generally performed only when clinically indicated.\n   - **Motor:** Palpate the masseter and temporalis while the patient clenches the teeth; ask the patient to open the mouth against resistance and move the jaw side to side.\n\n6. **CN VII \u2013 Facial**\n   - Inspect facial symmetry at rest.\n   - Ask the patient to:\n     - Raise the eyebrows\n     - Close the eyes tightly against resistance\n     - Smile or show the teeth\n     - Puff out the cheeks\n     - Frown or whistle\n   - Assess taste on the anterior two-thirds of the tongue only when indicated.\n\n7. **CN VIII \u2013 Vestibulocochlear**\n   - **Hearing:** Finger rub or whispered numbers; compare sides.\n   - If abnormal, perform **Rinne** and **Weber** tuning-fork tests.\n   - Assess vertigo, nystagmus, and balance when vestibular disease is suspected.\n\n8. **CN IX and X \u2013 Glossopharyngeal and Vagus**\n   - Listen to the voice for hoarseness or nasal quality.\n   - Ask the patient to say \u201cah\u201d and observe palate elevation and uvular movement.\n   - Assess the gag reflex only when clinically indicated.\n   - Test swallowing and cough strength if relevant.\n   - CN IX sensation and taste on the posterior third of the tongue are rarely tested routinely.\n\n9. **CN XI \u2013 Spinal Accessory**\n   - Ask the patient to shrug the shoulders against resistance, testing trapezius strength.\n   - Ask the patient to turn the head against resistance, testing sternocleidomastoid strength.\n\n10. **CN XII \u2013 Hypoglossal**\n    - Inspect the tongue for atrophy or fasciculations.\n    - Ask the patient to protrude the tongue; note deviation.\n    - Test side-to-side movement and strength by having the patient press the tongue against the inside of each cheek while you apply external resistance.\n\nA focused bedside exam often emphasizes **CN II\u2013XII**, with CN I tested when there is a relevant symptom, such as anosmia, head trauma, or concern for frontal lobe disease.",
+    "latency_ms": 5580.2,
+    "input_tokens": 89,
+    "output_tokens": 798
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the steps in a cranial nerve exam?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "A cranial nerve exam is usually performed systematically from CN I through CN XII:\n\n1. **CN I \u2013 Olfactory**\n   - Test each nostril separately with a familiar, nonirritating odor such as coffee or soap.\n   - Avoid ammonia or other irritants, which stimulate the trigeminal nerve instead.\n\n2. **CN II \u2013 Optic**\n   - **Visual acuity:** Snellen chart or near card, with corrective lenses if normally used.\n   - **Visual fields:** Compare confrontation testing in all four quadrants.\n   - **Pupils:** Assess size and symmetry; test direct and consensual light responses and the afferent pupillary response.\n   - **Fundoscopy:** Inspect the optic disc, vessels, macula, and retina.\n\n3. **CN II and III \u2013 Pupillary function**\n   - Test the **swinging flashlight test** for a relative afferent pupillary defect.\n   - Test accommodation by having the patient shift focus from a distant object to a near target.\n\n4. **CN III, IV, and VI \u2013 Oculomotor, Trochlear, Abducens**\n   - Inspect for ptosis, ocular alignment, and pupil abnormalities.\n   - Test extraocular movements in an \u201cH\u201d pattern.\n   - Ask about diplopia and note nystagmus.\n   - Test convergence by bringing a target toward the nose.\n\n5. **CN V \u2013 Trigeminal**\n   - **Sensation:** Test light touch and pinprick over the ophthalmic (V1), maxillary (V2), and mandibular (V3) divisions, comparing both sides.\n   - **Corneal reflex:** Lightly touch the cornea with cotton; the normal response is bilateral blinking. This is generally performed only when clinically indicated.\n   - **Motor:** Palpate the masseter and temporalis while the patient clenches the teeth; ask the patient to open the mouth against resistance and move the jaw side to side.\n\n6. **CN VII \u2013 Facial**\n   - Inspect facial symmetry at rest.\n   - Ask the patient to:\n     - Raise the eyebrows\n     - Close the eyes tightly against resistance\n     - Smile or show the teeth\n     - Puff out the cheeks\n     - Frown or whistle\n   - Assess taste on the anterior two-thirds of the tongue only when indicated.\n\n7. **CN VIII \u2013 Vestibulocochlear**\n   - **Hearing:** Finger rub or whispered numbers; compare sides.\n   - If abnormal, perform **Rinne** and **Weber** tuning-fork tests.\n   - Assess vertigo, nystagmus, and balance when vestibular disease is suspected.\n\n8. **CN IX and X \u2013 Glossopharyngeal and Vagus**\n   - Listen to the voice for hoarseness or nasal quality.\n   - Ask the patient to say \u201cah\u201d and observe palate elevation and uvular movement.\n   - Assess the gag reflex only when clinically indicated.\n   - Test swallowing and cough strength if relevant.\n   - CN IX sensation and taste on the posterior third of the tongue are rarely tested routinely.\n\n9. **CN XI \u2013 Spinal Accessory**\n   - Ask the patient to shrug the shoulders against resistance, testing trapezius strength.\n   - Ask the patient to turn the head against resistance, testing sternocleidomastoid strength.\n\n10. **CN XII \u2013 Hypoglossal**\n    - Inspect the tongue for atrophy or fasciculations.\n    - Ask the patient to protrude the tongue; note deviation.\n    - Test side-to-side movement and strength by having the patient press the tongue against the inside of each cheek while you apply external resistance.\n\nA focused bedside exam often emphasizes **CN II\u2013XII**, with CN I tested when there is a relevant symptom, such as anosmia, head trauma, or concern for frontal lobe disease.",
+    "latency_ms": 5580.2,
+    "token_count": 887
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "b0f911f5e44d",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229552.617665,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 5580.2,
+        "token_count": 887,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.11; flagged=False"
+}

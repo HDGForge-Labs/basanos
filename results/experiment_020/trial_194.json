@@ -1,0 +1,74 @@
+{
+  "timestamp_utc": "2026-08-09T02:05:30.005627+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "In an emergency room, 3 people are wheeled in, in different states or conditions, one being hit on the head with a glass bottle, one with a bone sticking out of their leg and the other with a abnormally high temperature. According to the emergency scale, who will be first priority?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Nursing",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Triage Priority: Head Trauma Patient First\n\nBased on standard emergency triage protocols (such as the **Emergency Severity Index (ESI)**, a 5-level scale used in most U.S. ERs, or the **Glasgow Coma Scale** combined with ATLS trauma principles), **the patient hit on",
+    "latency_ms": 12493.2,
+    "input_tokens": 194,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "In an emergency room, 3 people are wheeled in, in different states or conditions, one being hit on the head with a glass bottle, one with a bone sticking out of their leg and the other with a abnormally high temperature. According to the emergency scale, who will be first priority?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Triage Priority: Head Trauma Patient First\n\nBased on standard emergency triage protocols (such as the **Emergency Severity Index (ESI)**, a 5-level scale used in most U.S. ERs, or the **Glasgow Coma Scale** combined with ATLS trauma principles), **the patient hit on",
+    "latency_ms": 12493.2,
+    "token_count": 1218,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "a1a935db51da",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786241130.0048716,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4374,
+          "evidence": [
+            "Latency 12493ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12493.2,
+        "token_count": 1218,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.194; flagged=False"
+}

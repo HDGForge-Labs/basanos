@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-08T23:00:45.175817+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "I am in patrol and my partner and I cross up into a gang fight. Should we act immediately or wait for back up?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Forensic department ",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "If you are **currently on scene**, follow your agency\u2019s use-of-force policy and dispatch protocol first. In general, **do not rush into a gang fight alone unless there is an immediate, clearly identifiable threat to life that you can reasonably stop**.\n\n### Immediate priorities\n\n1. **Broadcast an emergency update**\n   - Give your location, number of people involved, weapons observed, injuries, direction of movement, and whether officers are being targeted.\n   - Request sufficient backup, EMS, a supervisor, and specialized resources as needed.\n   - Keep updating dispatch; use your agency\u2019s emergency-traffic procedure.\n\n2. **Create distance and cover**\n   - Move to hard cover, protect your partner, and avoid becoming trapped or cross-fired.\n   - Establish a safe perimeter and identify escape routes.\n   - Do not position yourself where uninvolved civilians are likely to be caught in the line of fire.\n\n3. **Separate the immediate threat from the broader fight**\n   - If people are fighting but there is no imminent threat of death or serious bodily injury, containment, commands, and waiting for backup may be the safer and more appropriate option.\n   - If someone is actively using or about to use a firearm, knife, vehicle, or other force likely to cause death or serious injury, agency policy may require immediate intervention when feasible\u2014even if backup has not arrived. That decision depends on your training, cover, target identification, backdrop, and likelihood of stopping the threat.\n\n4. **Use clear, lawful commands**\n   - Identify yourself, give concise commands, and avoid entering a chaotic group where you cannot distinguish aggressors from victims.\n   - Do not rely solely on gang affiliation, clothing, or reputation; act on observed behavior and articulable facts.\n\n5. **Once the immediate threat is controlled**\n   - Secure weapons, separate and restrain involved persons as legally justified, summon EMS, provide or facilitate life-saving care, preserve evidence, and protect witnesses.\n   - Expect additional participants, weapons, fleeing suspects, and possible ambush risks.\n\n### Practical rule\n\n- **No immediate deadly threat:** contain, communicate, protect civilians, and wait for backup.\n- **Immediate deadly threat:** intervene only as necessary and consistent with policy, using cover, positive target identification, and the minimum force reasonably necessary to stop the threat.\n- **Uncertainty in a chaotic crowd:** prioritize cover, separation, and containment rather than charging into the middle.\n\nIf this is happening now, transmit an emergency broadcast and follow your department\u2019s active-threat and officer-safety procedures.",
+    "latency_ms": 4992.6,
+    "input_tokens": 98,
+    "output_tokens": 515
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "I am in patrol and my partner and I cross up into a gang fight. Should we act immediately or wait for back up?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "If you are **currently on scene**, follow your agency\u2019s use-of-force policy and dispatch protocol first. In general, **do not rush into a gang fight alone unless there is an immediate, clearly identifiable threat to life that you can reasonably stop**.\n\n### Immediate priorities\n\n1. **Broadcast an emergency update**\n   - Give your location, number of people involved, weapons observed, injuries, direction of movement, and whether officers are being targeted.\n   - Request sufficient backup, EMS, a supervisor, and specialized resources as needed.\n   - Keep updating dispatch; use your agency\u2019s emergency-traffic procedure.\n\n2. **Create distance and cover**\n   - Move to hard cover, protect your partner, and avoid becoming trapped or cross-fired.\n   - Establish a safe perimeter and identify escape routes.\n   - Do not position yourself where uninvolved civilians are likely to be caught in the line of fire.\n\n3. **Separate the immediate threat from the broader fight**\n   - If people are fighting but there is no imminent threat of death or serious bodily injury, containment, commands, and waiting for backup may be the safer and more appropriate option.\n   - If someone is actively using or about to use a firearm, knife, vehicle, or other force likely to cause death or serious injury, agency policy may require immediate intervention when feasible\u2014even if backup has not arrived. That decision depends on your training, cover, target identification, backdrop, and likelihood of stopping the threat.\n\n4. **Use clear, lawful commands**\n   - Identify yourself, give concise commands, and avoid entering a chaotic group where you cannot distinguish aggressors from victims.\n   - Do not rely solely on gang affiliation, clothing, or reputation; act on observed behavior and articulable facts.\n\n5. **Once the immediate threat is controlled**\n   - Secure weapons, separate and restrain involved persons as legally justified, summon EMS, provide or facilitate life-saving care, preserve evidence, and protect witnesses.\n   - Expect additional participants, weapons, fleeing suspects, and possible ambush risks.\n\n### Practical rule\n\n- **No immediate deadly threat:** contain, communicate, protect civilians, and wait for backup.\n- **Immediate deadly threat:** intervene only as necessary and consistent with policy, using cover, positive target identification, and the minimum force reasonably necessary to stop the threat.\n- **Uncertainty in a chaotic crowd:** prioritize cover, separation, and containment rather than charging into the middle.\n\nIf this is happening now, transmit an emergency broadcast and follow your department\u2019s active-threat and officer-safety procedures.",
+    "latency_ms": 4992.6,
+    "token_count": 613,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "d6442e0a367a",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230045.1750789,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 4992.6,
+        "token_count": 613,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.126; flagged=False"
+}

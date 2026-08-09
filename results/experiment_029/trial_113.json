@@ -1,0 +1,75 @@
+{
+  "timestamp_utc": "2026-08-09T22:33:30.526381+00:00",
+  "detector": "context_degradation",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "where does dividends go on cash flow statement",
+    "gold_index": 9
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "Dividends can appear in different sections of the cash flow statement depending on the type and the accounting standard used:\n\n- **Dividends paid to shareholders**: These are reported under **financing activities**, as they represent an outflow of cash to shareholders when the company distributes income (Document [10]).\n\n- **Dividends received** (e.g., from investments): Under **IAS 7** (International Financial Reporting",
+    "latency_ms": 3597.1,
+    "input_tokens": 1941,
+    "output_tokens": 128
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "where does dividends go on cash flow statement",
+      "gold_index": 9,
+      "n_docs": 10
+    },
+    "response": "Dividends can appear in different sections of the cash flow statement depending on the type and the accounting standard used:\n\n- **Dividends paid to shareholders**: These are reported under **financing activities**, as they represent an outflow of cash to shareholders when the company distributes income (Document [10]).\n\n- **Dividends received** (e.g., from investments): Under **IAS 7** (International Financial Reporting",
+    "latency_ms": 3597.1,
+    "token_count": 2069,
+    "context_window_used": 0.92
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "01fd06680933",
+      "tool_name": "context_qa",
+      "status": "warn",
+      "timestamp": 1786314810.5256052,
+      "failures": [
+        {
+          "failure_mode": "context_degradation",
+          "confidence": 0.4,
+          "evidence": [
+            "Context window at 92.0% capacity"
+          ],
+          "remediation": [
+            "Implement context summarization before next tool call",
+            "Inject critical context markers at regular intervals",
+            "Use sliding window context management",
+            "Consider splitting task into smaller context-bounded subtasks"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 3597.1,
+        "token_count": 2069,
+        "context_window_used": 0.92,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Implement context summarization before next tool call",
+        "Inject critical context markers at regular intervals",
+        "Use sliding window context management",
+        "Consider splitting task into smaller context-bounded subtasks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.113; flagged=True; gold_index=9"
+}

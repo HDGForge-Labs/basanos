@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:32:02.001456+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Who should a patient be referred to if a bloodwork shows high protein levels in the blood?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "When bloodwork shows an elevated total serum protein, the appropriate referral depends on the underlying pattern, but here's the practical approach:\n\n**First step (often done by PCP before any referral):**\nThe elevated total protein needs to be broken down\u2014specifically, checking whether albumin and globulin fractions are both elevated or whether it's primarily globulin. This is done via a **serum protein electrophoresis (SPEP)** with immunofixation, along with:\n- CBC, calcium, creatinine, albumin\n- Serum free light chain assay\n- Urine protein electrophoresis (UPEP) if myeloma is on the differential\n\n**Referral pathways based on findings:**\n\n1. **Hematology/Oncology** \u2014 This is the most common referral if SPEP shows a monoclonal spike (M-protein). This raises concern for:\n   - Monoclonal gammopathy of undetermined significance (MGUS)\n   - Multiple myeloma\n   - Waldenstr\u00f6m macroglobulinemia\n   - AL amyloidosis\n   \n   A hematologist will typically pursue bone marrow biopsy, skeletal survey or whole-body MRI/PET, and beta-2 microglobulin if myeloma is suspected.\n\n2. **Rheumatology** \u2014 If the elevation is polyclonal (broad-based increase in gamma globulins) and there are symptoms suggesting autoimmune disease (joint pain, rash, dry eyes/mouth), since conditions like lupus, Sj\u00f6gren's syndrome, or rheumatoid arthritis can cause polyclonal hypergammaglobulinemia.\n\n3. **Hepatology/Gastroenterology** \u2014 If liver disease is suspected as the cause of polyclonal gammopathy (cirrhosis commonly causes this), especially with abnormal liver enzymes or synthetic function.\n\n4. **Infectious Disease** \u2014",
+    "latency_ms": 11826.0,
+    "input_tokens": 144,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Who should a patient be referred to if a bloodwork shows high protein levels in the blood?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "When bloodwork shows an elevated total serum protein, the appropriate referral depends on the underlying pattern, but here's the practical approach:\n\n**First step (often done by PCP before any referral):**\nThe elevated total protein needs to be broken down\u2014specifically, checking whether albumin and globulin fractions are both elevated or whether it's primarily globulin. This is done via a **serum protein electrophoresis (SPEP)** with immunofixation, along with:\n- CBC, calcium, creatinine, albumin\n- Serum free light chain assay\n- Urine protein electrophoresis (UPEP) if myeloma is on the differential\n\n**Referral pathways based on findings:**\n\n1. **Hematology/Oncology** \u2014 This is the most common referral if SPEP shows a monoclonal spike (M-protein). This raises concern for:\n   - Monoclonal gammopathy of undetermined significance (MGUS)\n   - Multiple myeloma\n   - Waldenstr\u00f6m macroglobulinemia\n   - AL amyloidosis\n   \n   A hematologist will typically pursue bone marrow biopsy, skeletal survey or whole-body MRI/PET, and beta-2 microglobulin if myeloma is suspected.\n\n2. **Rheumatology** \u2014 If the elevation is polyclonal (broad-based increase in gamma globulins) and there are symptoms suggesting autoimmune disease (joint pain, rash, dry eyes/mouth), since conditions like lupus, Sj\u00f6gren's syndrome, or rheumatoid arthritis can cause polyclonal hypergammaglobulinemia.\n\n3. **Hepatology/Gastroenterology** \u2014 If liver disease is suspected as the cause of polyclonal gammopathy (cirrhosis commonly causes this), especially with abnormal liver enzymes or synthetic function.\n\n4. **Infectious Disease** \u2014",
+    "latency_ms": 11826.0,
+    "token_count": 1168
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "7fd015bd76de",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239121.9986157,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4274,
+          "evidence": [
+            "Latency 11826ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11826.0,
+        "token_count": 1168,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.28; flagged=False"
+}

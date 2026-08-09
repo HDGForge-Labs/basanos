@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:58:20.041084+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What is the contraception method of election when a woman can't take estrogen?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General medicine ",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "When estrogen is contraindicated, the preferred options are **progestin-only contraception** or a **non-hormonal method**, depending on the reason estrogen is avoided and the patient\u2019s preferences.\n\nMost effective \u201cmethods of choice\u201d are:\n\n- **Levonorgestrel-releasing intrauterine system (LNG-IUS/IUD)** \u2013 highly effective, long acting, often reduces menstrual bleeding.\n- **Copper IUD** \u2013 hormone-free, highly effective, long acting; may increase bleeding/cramps.\n- **Etonogestrel implant (Nexplanon)** \u2013 highly effective progestin-only option lasting 3 years.\n- **Progestin-only pill (\u201cmini-pill\u201d)** \u2013 suitable but more user-dependent; must be taken very consistently.\n- **Depot medroxyprogesterone acetate injection (DMPA)** \u2013 every 12\u201313 weeks; consider bone-density effects and possible weight gain.\n\nIf the question is asking for the classic single best answer in a woman who cannot use estrogen (e.g., migraine with aura, smoking age >35, venous thromboembolism risk), it is generally **a progestin-only method**, with an **IUD or implant** preferred for highest efficacy.",
+    "latency_ms": 3444.6,
+    "input_tokens": 92,
+    "output_tokens": 254
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the contraception method of election when a woman can't take estrogen?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "When estrogen is contraindicated, the preferred options are **progestin-only contraception** or a **non-hormonal method**, depending on the reason estrogen is avoided and the patient\u2019s preferences.\n\nMost effective \u201cmethods of choice\u201d are:\n\n- **Levonorgestrel-releasing intrauterine system (LNG-IUS/IUD)** \u2013 highly effective, long acting, often reduces menstrual bleeding.\n- **Copper IUD** \u2013 hormone-free, highly effective, long acting; may increase bleeding/cramps.\n- **Etonogestrel implant (Nexplanon)** \u2013 highly effective progestin-only option lasting 3 years.\n- **Progestin-only pill (\u201cmini-pill\u201d)** \u2013 suitable but more user-dependent; must be taken very consistently.\n- **Depot medroxyprogesterone acetate injection (DMPA)** \u2013 every 12\u201313 weeks; consider bone-density effects and possible weight gain.\n\nIf the question is asking for the classic single best answer in a woman who cannot use estrogen (e.g., migraine with aura, smoking age >35, venous thromboembolism risk), it is generally **a progestin-only method**, with an **IUD or implant** preferred for highest efficacy.",
+    "latency_ms": 3444.6,
+    "token_count": 346
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "458883f15b13",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233500.0403783,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3444.6,
+        "token_count": 346,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.48; flagged=False"
+}

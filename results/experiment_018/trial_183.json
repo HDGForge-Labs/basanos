@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:06:24.726236+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Why do pregnant women often suffer from iron deficiency?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Dietician/ Nutritionist ",
+    "question_type": "Summarization of information on a topic| Advice or suggestions on how to approach a problem| Question that describes a hypothetical scenario and asks a question based on this scenario| Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Pregnancy commonly causes iron deficiency because the body\u2019s iron requirements rise sharply while intake and absorption may not keep pace.\n\n- **Expanded maternal blood volume:** Blood volume increases by roughly **40\u201350%**\u2014often about **1\u20131.5 liters**\u2014to supply the placenta and fetus. Making additional red blood cells requires more hemoglobin and therefore more iron.\n- **Fetal and placental needs:** The fetus accumulates approximately **300 mg of iron** by term, while the placenta and other tissues require additional amounts.\n- **Total increased requirement:** A typical pregnancy requires about **1,000 mg of extra iron** overall\u2014roughly **500 mg** for maternal red-cell expansion, **300 mg** for the fetus, and **200 mg** to compensate for normal losses and unavoidable low absorption.\n- **Limited absorption:** Even though intestinal iron absorption rises during pregnancy, only around **10\u201330%** of dietary iron is usually absorbed, depending on the person\u2019s iron stores and the meal. Tea, coffee, calcium, and phytates can reduce absorption; vitamin C improves it.\n- **Insufficient starting stores:** Many women begin pregnancy with low iron reserves because of **menstrual blood loss**, inadequate dietary iron, prior pregnancies, vegetarian or vegan diets without careful planning, or previous iron deficiency.\n- **Increased demands with multiple pregnancies:** Twins or higher-order multiples, closely spaced pregnancies, and pregnancies involving significant bleeding increase requirements further.\n- **Symptoms can be missed:** Mild anemia may cause fatigue, weakness, headaches, dizziness, shortness of breath, or palpitations, but these symptoms can be mistaken for normal pregnancy changes.\n\nFor this reason, pregnancy guidelines commonly recommend about **27 mg of iron per day**, compared with approximately **18 mg per day** for nonpregnant women. Prenatal vitamins often contain around **27\u201330 mg**, although treatment of confirmed iron-deficiency anemia may require a higher prescribed dose. Blood tests\u2014typically hemoglobin, hematocrit, and sometimes ferritin\u2014are used to distinguish normal pregnancy-related blood dilution from true iron deficiency.",
+    "latency_ms": 3540.2,
+    "input_tokens": 82,
+    "output_tokens": 425
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Why do pregnant women often suffer from iron deficiency?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Pregnancy commonly causes iron deficiency because the body\u2019s iron requirements rise sharply while intake and absorption may not keep pace.\n\n- **Expanded maternal blood volume:** Blood volume increases by roughly **40\u201350%**\u2014often about **1\u20131.5 liters**\u2014to supply the placenta and fetus. Making additional red blood cells requires more hemoglobin and therefore more iron.\n- **Fetal and placental needs:** The fetus accumulates approximately **300 mg of iron** by term, while the placenta and other tissues require additional amounts.\n- **Total increased requirement:** A typical pregnancy requires about **1,000 mg of extra iron** overall\u2014roughly **500 mg** for maternal red-cell expansion, **300 mg** for the fetus, and **200 mg** to compensate for normal losses and unavoidable low absorption.\n- **Limited absorption:** Even though intestinal iron absorption rises during pregnancy, only around **10\u201330%** of dietary iron is usually absorbed, depending on the person\u2019s iron stores and the meal. Tea, coffee, calcium, and phytates can reduce absorption; vitamin C improves it.\n- **Insufficient starting stores:** Many women begin pregnancy with low iron reserves because of **menstrual blood loss**, inadequate dietary iron, prior pregnancies, vegetarian or vegan diets without careful planning, or previous iron deficiency.\n- **Increased demands with multiple pregnancies:** Twins or higher-order multiples, closely spaced pregnancies, and pregnancies involving significant bleeding increase requirements further.\n- **Symptoms can be missed:** Mild anemia may cause fatigue, weakness, headaches, dizziness, shortness of breath, or palpitations, but these symptoms can be mistaken for normal pregnancy changes.\n\nFor this reason, pregnancy guidelines commonly recommend about **27 mg of iron per day**, compared with approximately **18 mg per day** for nonpregnant women. Prenatal vitamins often contain around **27\u201330 mg**, although treatment of confirmed iron-deficiency anemia may require a higher prescribed dose. Blood tests\u2014typically hemoglobin, hematocrit, and sometimes ferritin\u2014are used to distinguish normal pregnancy-related blood dilution from true iron deficiency.",
+    "latency_ms": 3540.2,
+    "token_count": 507,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "0aa31cb9abbd",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230384.7253397,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 10 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 3540.2,
+        "token_count": 507,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.183; flagged=True"
+}

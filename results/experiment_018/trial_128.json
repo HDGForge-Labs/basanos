@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-08T23:00:57.654569+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is a command and Control Plan?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Emergency Planning",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "A **Command and Control (C2) Plan** is a structured plan that explains **who has authority, how decisions are made, how information flows, and how people or resources are coordinated during an operation, project, emergency, or mission**.\n\nIt is commonly used in:\n\n- Emergency management and disaster response  \n- Military and defense operations  \n- Law enforcement and public safety  \n- Cybersecurity incident response  \n- Business continuity and crisis management  \n- Large projects involving multiple teams or organizations  \n\n## Typical components\n\nA C2 plan usually defines:\n\n1. **Objectives**\n   - What the operation is intended to achieve\n   - Success criteria and priorities\n\n2. **Command structure**\n   - The overall leader or incident commander\n   - Deputy or alternate commanders\n   - Functional leads and subordinate teams\n   - Reporting relationships\n\n3. **Roles and responsibilities**\n   - Who is responsible for operations, logistics, intelligence, communications, safety, finance, and administration\n   - Decision rights for each role\n\n4. **Authority and escalation**\n   - Which decisions can be made at each level\n   - When issues must be escalated\n   - Succession arrangements if a leader becomes unavailable\n\n5. **Communication procedures**\n   - Primary, secondary, and emergency communication channels\n   - Reporting schedules\n   - Message formats and authentication procedures\n   - Rules for handling sensitive information\n\n6. **Coordination procedures**\n   - How internal teams, external agencies, contractors, and partners work together\n   - Meeting schedules and information-sharing arrangements\n   - Procedures for resolving conflicting instructions\n\n7. **Situational awareness and reporting**\n   - Required status reports\n   - Common operating picture or shared dashboard\n   - Incident logs, maps, timelines, and resource-tracking systems\n\n8. **Resource management**\n   - How personnel, vehicles, equipment, supplies, and funding are requested, assigned, tracked, and released\n\n9. **Contingencies**\n   - Backup command locations\n   - Alternative communication systems\n   - Loss-of-leadership procedures\n   - Responses to worsening conditions or new threats\n\n10. **Review and improvement**\n    - Decision logs\n    - After-action reviews\n    - Updates to procedures after exercises or real incidents\n\n## Simple example\n\nFor a major flood, a C2 plan might specify:\n\n- The **incident commander** has overall authority.\n- The **operations section** manages evacuations and rescue teams.\n- The **planning section** produces situation reports every **approximately 4 hours**.\n- The **logistics section** obtains boats, fuel, food, and medical supplies.\n- The **public-information officer** issues approved public messages.\n- If the commander is unavailable, authority transfers to the named deputy.\n- Radio is the primary communication method, cellular phones are secondary, and satellite phones are the emergency backup.\n- Urgent safety issues must be reported immediately rather than waiting for the next scheduled briefing.\n\n## In cybersecurity\n\nA C2 plan for a cyber incident would define:\n\n- Who declares a security incident\n- Who leads technical containment\n- Who approves shutting down systems\n- Who coordinates legal, communications, and regulatory notifications\n- How often incident updates are issued\n- Which systems are isolated first\n- Who has authority to restore services\n- How evidence is preserved\n\n## Difference between \u201ccommand and control\u201d and malicious cyber C2\n\nIn cybersecurity, **C2** can also mean **command-and-control infrastructure used by malware**, such as servers through which an attacker sends instructions to compromised devices. A **Command and Control Plan**, however, generally refers to the legitimate organizational plan for directing an operation\u2014not the attacker\u2019s malware infrastructure.\n\nIn short, a Command and Control Plan is the organization\u2019s **authority-and-coordination blueprint**: it establishes **who leads, who decides, who reports, how information moves, and what happens if normal procedures fail**.",
+    "latency_ms": 6183.5,
+    "input_tokens": 80,
+    "output_tokens": 788
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is a command and Control Plan?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "A **Command and Control (C2) Plan** is a structured plan that explains **who has authority, how decisions are made, how information flows, and how people or resources are coordinated during an operation, project, emergency, or mission**.\n\nIt is commonly used in:\n\n- Emergency management and disaster response  \n- Military and defense operations  \n- Law enforcement and public safety  \n- Cybersecurity incident response  \n- Business continuity and crisis management  \n- Large projects involving multiple teams or organizations  \n\n## Typical components\n\nA C2 plan usually defines:\n\n1. **Objectives**\n   - What the operation is intended to achieve\n   - Success criteria and priorities\n\n2. **Command structure**\n   - The overall leader or incident commander\n   - Deputy or alternate commanders\n   - Functional leads and subordinate teams\n   - Reporting relationships\n\n3. **Roles and responsibilities**\n   - Who is responsible for operations, logistics, intelligence, communications, safety, finance, and administration\n   - Decision rights for each role\n\n4. **Authority and escalation**\n   - Which decisions can be made at each level\n   - When issues must be escalated\n   - Succession arrangements if a leader becomes unavailable\n\n5. **Communication procedures**\n   - Primary, secondary, and emergency communication channels\n   - Reporting schedules\n   - Message formats and authentication procedures\n   - Rules for handling sensitive information\n\n6. **Coordination procedures**\n   - How internal teams, external agencies, contractors, and partners work together\n   - Meeting schedules and information-sharing arrangements\n   - Procedures for resolving conflicting instructions\n\n7. **Situational awareness and reporting**\n   - Required status reports\n   - Common operating picture or shared dashboard\n   - Incident logs, maps, timelines, and resource-tracking systems\n\n8. **Resource management**\n   - How personnel, vehicles, equipment, supplies, and funding are requested, assigned, tracked, and released\n\n9. **Contingencies**\n   - Backup command locations\n   - Alternative communication systems\n   - Loss-of-leadership procedures\n   - Responses to worsening conditions or new threats\n\n10. **Review and improvement**\n    - Decision logs\n    - After-action reviews\n    - Updates to procedures after exercises or real incidents\n\n## Simple example\n\nFor a major flood, a C2 plan might specify:\n\n- The **incident commander** has overall authority.\n- The **operations section** manages evacuations and rescue teams.\n- The **planning section** produces situation reports every **approximately 4 hours**.\n- The **logistics section** obtains boats, fuel, food, and medical supplies.\n- The **public-information officer** issues approved public messages.\n- If the commander is unavailable, authority transfers to the named deputy.\n- Radio is the primary communication method, cellular phones are secondary, and satellite phones are the emergency backup.\n- Urgent safety issues must be reported immediately rather than waiting for the next scheduled briefing.\n\n## In cybersecurity\n\nA C2 plan for a cyber incident would define:\n\n- Who declares a security incident\n- Who leads technical containment\n- Who approves shutting down systems\n- Who coordinates legal, communications, and regulatory notifications\n- How often incident updates are issued\n- Which systems are isolated first\n- Who has authority to restore services\n- How evidence is preserved\n\n## Difference between \u201ccommand and control\u201d and malicious cyber C2\n\nIn cybersecurity, **C2** can also mean **command-and-control infrastructure used by malware**, such as servers through which an attacker sends instructions to compromised devices. A **Command and Control Plan**, however, generally refers to the legitimate organizational plan for directing an operation\u2014not the attacker\u2019s malware infrastructure.\n\nIn short, a Command and Control Plan is the organization\u2019s **authority-and-coordination blueprint**: it establishes **who leads, who decides, who reports, how information moves, and what happens if normal procedures fail**.",
+    "latency_ms": 6183.5,
+    "token_count": 868,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "d0858484a3d5",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230057.6537974,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 6183.5,
+        "token_count": 868,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.128; flagged=False"
+}

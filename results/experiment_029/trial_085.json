@@ -1,0 +1,75 @@
+{
+  "timestamp_utc": "2026-08-09T22:32:00.974284+00:00",
+  "detector": "context_degradation",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "who wrote i'm in the mood for dancing",
+    "gold_index": 0
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "\"I'm in the Mood for Dancing\" was written by Ben Findon, Mike Myers, and Bob Puzey.",
+    "latency_ms": 1964.2,
+    "input_tokens": 2362,
+    "output_tokens": 43
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "who wrote i'm in the mood for dancing",
+      "gold_index": 0,
+      "n_docs": 10
+    },
+    "response": "\"I'm in the Mood for Dancing\" was written by Ben Findon, Mike Myers, and Bob Puzey.",
+    "latency_ms": 1964.2,
+    "token_count": 2405,
+    "context_window_used": 0.25
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "958e943cda86",
+      "tool_name": "context_qa",
+      "status": "warn",
+      "timestamp": 1786314720.9735312,
+      "failures": [
+        {
+          "failure_mode": "repetition_loop",
+          "confidence": 0.6,
+          "evidence": [
+            "Identical response seen 3 times in last 5 calls"
+          ],
+          "remediation": [
+            "Inject loop-break directive: 'Do not repeat previous tool calls'",
+            "Provide explicit success criteria to terminate loop",
+            "Switch to alternative tool or approach",
+            "Reset agent state and re-inject original task context"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 1964.2,
+        "token_count": 2405,
+        "context_window_used": 0.25,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Inject loop-break directive: 'Do not repeat previous tool calls'",
+        "Provide explicit success criteria to terminate loop",
+        "Switch to alternative tool or approach",
+        "Reset agent state and re-inject original task context"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.85; flagged=False; gold_index=0"
+}

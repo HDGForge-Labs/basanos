@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:35:58.444751+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What is the contraception method of election when a woman can't take estrogen?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General medicine ",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "**Progestin-only contraception is the method of choice** when estrogen is contraindicated (e.g., history of VTE/thrombophilia, migraine with aura, smoker >35 years old, uncontrolled hypertension, active liver disease, breastfeeding, or estrogen-dependent malignancy).\n\n**First-line options, in order of typical preference:**\n\n1. **Levonorgestrel-releasing IUD (LNG-IUD, e.g., Mirena, Kyleena)**\n   - Considered the gold standard in this setting\n   - Pearl Index <0.2 (comparable to sterilization)\n   - Long-acting (5\u20138 years depending on device), reversible, non-user-dependent\n   - Additional benefit: reduces menstrual bleeding/dysmenorrhea, useful in patients with fibroids, endometriosis, or menorrhagia\n   - Minimal systemic progestin absorption, so it's safe even in most women with VTE history (once acute event resolved) or migraine with aura\n\n2. **Etonogestrel subdermal implant (Nexplanon)**\n   - Also highly effective (Pearl Index <0.1), 3-year duration\n   - Good alternative when IUD is not feasible (e.g., nulliparous women uncomfortable with intrauterine device, uterine anomalies)\n\n3. **Progestin-only pill (POP)** or **DMPA injection (depot medroxyprogesterone)",
+    "latency_ms": 11503.6,
+    "input_tokens": 136,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the contraception method of election when a woman can't take estrogen?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "**Progestin-only contraception is the method of choice** when estrogen is contraindicated (e.g., history of VTE/thrombophilia, migraine with aura, smoker >35 years old, uncontrolled hypertension, active liver disease, breastfeeding, or estrogen-dependent malignancy).\n\n**First-line options, in order of typical preference:**\n\n1. **Levonorgestrel-releasing IUD (LNG-IUD, e.g., Mirena, Kyleena)**\n   - Considered the gold standard in this setting\n   - Pearl Index <0.2 (comparable to sterilization)\n   - Long-acting (5\u20138 years depending on device), reversible, non-user-dependent\n   - Additional benefit: reduces menstrual bleeding/dysmenorrhea, useful in patients with fibroids, endometriosis, or menorrhagia\n   - Minimal systemic progestin absorption, so it's safe even in most women with VTE history (once acute event resolved) or migraine with aura\n\n2. **Etonogestrel subdermal implant (Nexplanon)**\n   - Also highly effective (Pearl Index <0.1), 3-year duration\n   - Good alternative when IUD is not feasible (e.g., nulliparous women uncomfortable with intrauterine device, uterine anomalies)\n\n3. **Progestin-only pill (POP)** or **DMPA injection (depot medroxyprogesterone)",
+    "latency_ms": 11503.6,
+    "token_count": 1160
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "088e8bea699e",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239358.443987,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4226,
+          "evidence": [
+            "Latency 11504ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11503.6,
+        "token_count": 1160,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.48; flagged=False"
+}

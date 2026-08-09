@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:03:54.358496+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "A patient comes for consultation with burns over 25% of his body surface, of varying degrees all over his body, what is the indicated treatment for this patient?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Surgeon",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "A patient with burns over **25% total body surface area (TBSA)**\u2014especially with mixed-depth burns\u2014is a **major burn emergency** and should be managed in a **specialized burn center or intensive-care unit**, not as an outpatient.\n\n## Immediate treatment\n\n### 1. Stabilize using the ABCDE approach\n- **Airway:** Look for facial burns, soot, singed nasal hairs, hoarseness, stridor, or burns in an enclosed-space fire. Give **100% oxygen** if smoke inhalation is possible. Early **endotracheal intubation** is indicated if airway edema is suspected, because swelling may worsen over the first **6\u201324 hours**.\n- **Breathing:** Assess chest excursion and oxygenation. Circumferential full-thickness chest burns causing restricted ventilation may require **escharotomy**.\n- **Circulation:** Insert **2 large-bore IV lines**, preferably through unburned skin if possible. Monitor blood pressure, pulse, urine output, mental status, temperature, and lactate.\n- Remove jewelry, watches, belts, and restrictive clothing. Cover burns with clean, dry sheets and prevent hypothermia.\n\n### 2. Fluid resuscitation\nFor an adult with burns exceeding approximately **20% TBSA**, formal IV resuscitation is required.\n\nA commonly used starting formula is the **Parkland formula**:\n\n\\[\n4\\text{ mL} \\times \\text{body weight in kg} \\times \\%TBSA\n\\]\n\nFor a **25% TBSA burn**, this equals approximately:\n\n\\[\n100\\text{ mL/kg during the first 24 hours}\n\\]\n\n- Give **half during the first 8 hours from the time of injury**, not from hospital arrival.\n- Give the remaining half over the following **16 hours**.\n- Use **Ringer\u2019s lactate/Hartmann\u2019s solution**.\n- The formula is only a starting estimate; adjust fluids according to response.\n\nThe usual urine-output targets are:\n\n- Adults: approximately **0.5 mL/kg/hour**, commonly at least **30\u201350 mL/hour**\n- Children: approximately **1 mL/kg/hour**\n- Electrical injury or myoglobinuria: sometimes **1\u20131.5 mL/kg/hour** may be targeted\n\nAvoid both under-resuscitation and excessive fluid administration, which can cause pulmonary edema, extremity compartment syndromes, and abdominal compartment syndrome.\n\n### 3. Assess for associated life-threatening injuries\n- **Carbon monoxide poisoning:** Measure carboxyhemoglobin; pulse oximetry may appear falsely normal. Treat with **100% oxygen**, usually until symptoms resolve and carboxyhemoglobin falls.\n- **Cyanide toxicity:** Consider in an enclosed-space fire with severe lactic acidosis, cardiovascular collapse, or altered mental status; **hydroxocobalamin** may be indicated.\n- Perform trauma assessment if the patient fell, was trapped, or sustained blast injury.\n\n## Burn-specific care\n\n### Depth and extent assessment\n- Superficial burns are red and painful but are not counted in TBSA calculations.\n- Partial-thickness burns may blister and are painful.\n- Full-thickness burns are leathery, white, brown, or charred and may be painless.\n\nAt **25% TBSA**, particularly with deep partial-thickness or full-thickness areas, the patient requires burn-center evaluation and likely operative management.\n\n### Wound management\n- Cleanse the wounds gently and remove loose debris and devitalized tissue.\n- Apply appropriate topical antimicrobial or modern occlusive dressings according to burn-center protocol.\n- Large full-thickness or deep partial-thickness burns generally require **early excision and skin grafting**, often within approximately **several days to 2 weeks**, depending on stability and wound depth.\n- Circumferential burns threatening circulation may require **escharotomy**; limb compartment syndrome may require **fasciotomy**.\n\n### Analgesia and supportive care\n- Use IV opioids, titrated carefully; procedural sedation may be needed for dressing changes.\n- Give tetanus prophylaxis according to vaccination history.\n- Maintain normothermia with warmed fluids and an appropriately heated room.\n- Insert a urinary catheter for accurate hourly urine-output measurement.\n- Begin early enteral nutrition, ideally within approximately **6\u201324 hours** once hemodynamically stabilized, because major burns cause marked hypermetabolism.\n- Provide high-protein, high-calorie nutrition; nutritional requirements should be calculated by the burn team.\n- Pharmacologic venous-thromboembolism prophylaxis is commonly indicated unless contraindicated.\n- Antibiotics are **not routinely given prophylactically**; use systemic antibiotics only for documented or strongly suspected infection.\n\n## Disposition\n\nThis patient should be transferred urgently to a **regional or national burn center**, particularly if there are:\n\n- Burns involving approximately **\u226520% TBSA in adults**\n- Any full-thickness burns\n- Burns of the face, hands, feet, genital",
+    "latency_ms": 7235.4,
+    "input_tokens": 105,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A patient comes for consultation with burns over 25% of his body surface, of varying degrees all over his body, what is the indicated treatment for this patient?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "A patient with burns over **25% total body surface area (TBSA)**\u2014especially with mixed-depth burns\u2014is a **major burn emergency** and should be managed in a **specialized burn center or intensive-care unit**, not as an outpatient.\n\n## Immediate treatment\n\n### 1. Stabilize using the ABCDE approach\n- **Airway:** Look for facial burns, soot, singed nasal hairs, hoarseness, stridor, or burns in an enclosed-space fire. Give **100% oxygen** if smoke inhalation is possible. Early **endotracheal intubation** is indicated if airway edema is suspected, because swelling may worsen over the first **6\u201324 hours**.\n- **Breathing:** Assess chest excursion and oxygenation. Circumferential full-thickness chest burns causing restricted ventilation may require **escharotomy**.\n- **Circulation:** Insert **2 large-bore IV lines**, preferably through unburned skin if possible. Monitor blood pressure, pulse, urine output, mental status, temperature, and lactate.\n- Remove jewelry, watches, belts, and restrictive clothing. Cover burns with clean, dry sheets and prevent hypothermia.\n\n### 2. Fluid resuscitation\nFor an adult with burns exceeding approximately **20% TBSA**, formal IV resuscitation is required.\n\nA commonly used starting formula is the **Parkland formula**:\n\n\\[\n4\\text{ mL} \\times \\text{body weight in kg} \\times \\%TBSA\n\\]\n\nFor a **25% TBSA burn**, this equals approximately:\n\n\\[\n100\\text{ mL/kg during the first 24 hours}\n\\]\n\n- Give **half during the first 8 hours from the time of injury**, not from hospital arrival.\n- Give the remaining half over the following **16 hours**.\n- Use **Ringer\u2019s lactate/Hartmann\u2019s solution**.\n- The formula is only a starting estimate; adjust fluids according to response.\n\nThe usual urine-output targets are:\n\n- Adults: approximately **0.5 mL/kg/hour**, commonly at least **30\u201350 mL/hour**\n- Children: approximately **1 mL/kg/hour**\n- Electrical injury or myoglobinuria: sometimes **1\u20131.5 mL/kg/hour** may be targeted\n\nAvoid both under-resuscitation and excessive fluid administration, which can cause pulmonary edema, extremity compartment syndromes, and abdominal compartment syndrome.\n\n### 3. Assess for associated life-threatening injuries\n- **Carbon monoxide poisoning:** Measure carboxyhemoglobin; pulse oximetry may appear falsely normal. Treat with **100% oxygen**, usually until symptoms resolve and carboxyhemoglobin falls.\n- **Cyanide toxicity:** Consider in an enclosed-space fire with severe lactic acidosis, cardiovascular collapse, or altered mental status; **hydroxocobalamin** may be indicated.\n- Perform trauma assessment if the patient fell, was trapped, or sustained blast injury.\n\n## Burn-specific care\n\n### Depth and extent assessment\n- Superficial burns are red and painful but are not counted in TBSA calculations.\n- Partial-thickness burns may blister and are painful.\n- Full-thickness burns are leathery, white, brown, or charred and may be painless.\n\nAt **25% TBSA**, particularly with deep partial-thickness or full-thickness areas, the patient requires burn-center evaluation and likely operative management.\n\n### Wound management\n- Cleanse the wounds gently and remove loose debris and devitalized tissue.\n- Apply appropriate topical antimicrobial or modern occlusive dressings according to burn-center protocol.\n- Large full-thickness or deep partial-thickness burns generally require **early excision and skin grafting**, often within approximately **several days to 2 weeks**, depending on stability and wound depth.\n- Circumferential burns threatening circulation may require **escharotomy**; limb compartment syndrome may require **fasciotomy**.\n\n### Analgesia and supportive care\n- Use IV opioids, titrated carefully; procedural sedation may be needed for dressing changes.\n- Give tetanus prophylaxis according to vaccination history.\n- Maintain normothermia with warmed fluids and an appropriately heated room.\n- Insert a urinary catheter for accurate hourly urine-output measurement.\n- Begin early enteral nutrition, ideally within approximately **6\u201324 hours** once hemodynamically stabilized, because major burns cause marked hypermetabolism.\n- Provide high-protein, high-calorie nutrition; nutritional requirements should be calculated by the burn team.\n- Pharmacologic venous-thromboembolism prophylaxis is commonly indicated unless contraindicated.\n- Antibiotics are **not routinely given prophylactically**; use systemic antibiotics only for documented or strongly suspected infection.\n\n## Disposition\n\nThis patient should be transferred urgently to a **regional or national burn center**, particularly if there are:\n\n- Burns involving approximately **\u226520% TBSA in adults**\n- Any full-thickness burns\n- Burns of the face, hands, feet, genital",
+    "latency_ms": 7235.4,
+    "token_count": 1129,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "394cbb96bd31",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230234.357728,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 12 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 7235.4,
+        "token_count": 1129,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.156; flagged=True"
+}

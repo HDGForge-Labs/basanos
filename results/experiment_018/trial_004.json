@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:52:03.405133+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What are the intervention strategies to recommend for people with hypertension?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Dietician/ Nutritionist ",
+    "question_type": "Advice or suggestions on how to approach a problem| Question that describes a hypothetical scenario and asks a question based on this scenario| Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Recommended hypertension interventions combine lifestyle changes, regular monitoring, and medication when indicated:\n\n1. **Confirm and monitor blood pressure**\n   - Use a validated upper-arm cuff; measure after 5 minutes of rest, with the arm supported.\n   - Confirm persistent elevation with repeated office readings or home/ambulatory monitoring.\n   - Keep a blood-pressure log and review it with a clinician.\n\n2. **Reduce sodium intake**\n   - Aim for **less than 1,500\u20132,000 mg sodium/day** when feasible; at minimum, reduce intake substantially.\n   - Limit processed foods, canned soups, salty snacks, fast food, and cured meats.\n   - Read labels and choose \u201cno added salt\u201d products.\n\n3. **Follow a DASH-style eating pattern**\n   - Emphasize vegetables, fruits, beans, whole grains, nuts, low-fat dairy, and fish.\n   - Reduce red and processed meat, refined carbohydrates, sweets, and saturated fat.\n   - Ensure adequate dietary potassium through foods unless kidney disease or medications make potassium unsafe.\n\n4. **Lose excess weight**\n   - Target at least **5%\u201310% weight loss** if overweight; even modest loss lowers blood pressure.\n   - A roughly **1 mmHg reduction per kilogram** of weight loss is a useful estimate.\n\n5. **Exercise regularly**\n   - Aim for **150 minutes/week of moderate aerobic activity**\u2014such as brisk walking\u2014or 75 minutes of vigorous activity.\n   - Add resistance training **2\u20133 days/week** and reduce prolonged sitting.\n   - Start gradually if sedentary or medically high-risk.\n\n6. **Limit alcohol**\n   - Ideally avoid alcohol. If drinking, limit to **no more than two standard drinks/day for men and one for women**; less is better.\n   - Binge drinking can markedly raise blood pressure.\n\n7. **Stop smoking and avoid nicotine**\n   - Smoking cessation reduces cardiovascular risk even if the immediate blood-pressure effect is modest.\n   - Offer counseling, nicotine replacement, varenicline, or bupropion when appropriate.\n\n8. **Improve sleep and address sleep apnea**\n   - Maintain regular sleep and treat insomnia.\n   - Evaluate for obstructive sleep apnea when there is loud snoring, witnessed apneas, daytime sleepiness, or resistant hypertension; CPAP and weight loss may help.\n\n9. **Manage stress**\n   - Use regular physical activity, relaxation breathing, mindfulness, yoga, or cognitive behavioral therapy.\n   - Treat anxiety or depression when present.\n\n10. **Start antihypertensive medication when indicated**\n   - Medication is generally recommended for **persistent blood pressure \u2265140/90 mmHg**, or at lower levels\u2014often **\u2265130/80 mmHg**\u2014when cardiovascular disease, chronic kidney disease, diabetes, or sufficiently high cardiovascular risk is present.\n   - Common first-line classes are:\n     - Thiazide-type diuretics\n     - ACE inhibitors or ARBs\n     - Long-acting calcium-channel blockers\n   - Many patients with substantially elevated pressure need **two medications**, preferably as a single combination pill.\n   - Monitor kidney function, electrolytes, side effects, adherence, and interactions; do not stop medication abruptly without medical advice.\n\n11. **Manage associated risks**\n   - Assess and treat diabetes, high cholesterol, kidney disease, obesity, and cardiovascular disease.\n   - Review medications and substances that can raise blood pressure, including NSAIDs, decongestants, stimulants, corticosteroids, some contraceptives, and excess licorice.\n\n**Urgent care:** Seek emergency evaluation for blood pressure around **\u2265180/120 mmHg** with chest pain, shortness of breath, severe headache, confusion, weakness, vision loss, or other neurologic symptoms. Even without symptoms, repeat the measurement after several minutes and contact a clinician promptly.",
+    "latency_ms": 5687.2,
+    "input_tokens": 90,
+    "output_tokens": 777
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the intervention strategies to recommend for people with hypertension?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Recommended hypertension interventions combine lifestyle changes, regular monitoring, and medication when indicated:\n\n1. **Confirm and monitor blood pressure**\n   - Use a validated upper-arm cuff; measure after 5 minutes of rest, with the arm supported.\n   - Confirm persistent elevation with repeated office readings or home/ambulatory monitoring.\n   - Keep a blood-pressure log and review it with a clinician.\n\n2. **Reduce sodium intake**\n   - Aim for **less than 1,500\u20132,000 mg sodium/day** when feasible; at minimum, reduce intake substantially.\n   - Limit processed foods, canned soups, salty snacks, fast food, and cured meats.\n   - Read labels and choose \u201cno added salt\u201d products.\n\n3. **Follow a DASH-style eating pattern**\n   - Emphasize vegetables, fruits, beans, whole grains, nuts, low-fat dairy, and fish.\n   - Reduce red and processed meat, refined carbohydrates, sweets, and saturated fat.\n   - Ensure adequate dietary potassium through foods unless kidney disease or medications make potassium unsafe.\n\n4. **Lose excess weight**\n   - Target at least **5%\u201310% weight loss** if overweight; even modest loss lowers blood pressure.\n   - A roughly **1 mmHg reduction per kilogram** of weight loss is a useful estimate.\n\n5. **Exercise regularly**\n   - Aim for **150 minutes/week of moderate aerobic activity**\u2014such as brisk walking\u2014or 75 minutes of vigorous activity.\n   - Add resistance training **2\u20133 days/week** and reduce prolonged sitting.\n   - Start gradually if sedentary or medically high-risk.\n\n6. **Limit alcohol**\n   - Ideally avoid alcohol. If drinking, limit to **no more than two standard drinks/day for men and one for women**; less is better.\n   - Binge drinking can markedly raise blood pressure.\n\n7. **Stop smoking and avoid nicotine**\n   - Smoking cessation reduces cardiovascular risk even if the immediate blood-pressure effect is modest.\n   - Offer counseling, nicotine replacement, varenicline, or bupropion when appropriate.\n\n8. **Improve sleep and address sleep apnea**\n   - Maintain regular sleep and treat insomnia.\n   - Evaluate for obstructive sleep apnea when there is loud snoring, witnessed apneas, daytime sleepiness, or resistant hypertension; CPAP and weight loss may help.\n\n9. **Manage stress**\n   - Use regular physical activity, relaxation breathing, mindfulness, yoga, or cognitive behavioral therapy.\n   - Treat anxiety or depression when present.\n\n10. **Start antihypertensive medication when indicated**\n   - Medication is generally recommended for **persistent blood pressure \u2265140/90 mmHg**, or at lower levels\u2014often **\u2265130/80 mmHg**\u2014when cardiovascular disease, chronic kidney disease, diabetes, or sufficiently high cardiovascular risk is present.\n   - Common first-line classes are:\n     - Thiazide-type diuretics\n     - ACE inhibitors or ARBs\n     - Long-acting calcium-channel blockers\n   - Many patients with substantially elevated pressure need **two medications**, preferably as a single combination pill.\n   - Monitor kidney function, electrolytes, side effects, adherence, and interactions; do not stop medication abruptly without medical advice.\n\n11. **Manage associated risks**\n   - Assess and treat diabetes, high cholesterol, kidney disease, obesity, and cardiovascular disease.\n   - Review medications and substances that can raise blood pressure, including NSAIDs, decongestants, stimulants, corticosteroids, some contraceptives, and excess licorice.\n\n**Urgent care:** Seek emergency evaluation for blood pressure around **\u2265180/120 mmHg** with chest pain, shortness of breath, severe headache, confusion, weakness, vision loss, or other neurologic symptoms. Even without symptoms, repeat the measurement after several minutes and contact a clinician promptly.",
+    "latency_ms": 5687.2,
+    "token_count": 867
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "678a1f12b785",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229523.4043732,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 5687.2,
+        "token_count": 867,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.4; flagged=False"
+}

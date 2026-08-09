@@ -1,0 +1,94 @@
+{
+  "timestamp_utc": "2026-08-09T01:45:54.768055+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What is the best anesthesia for diabetic patients?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "dentist",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Anesthesia for Diabetic Patients\n\nThere's no single \"best\" anesthetic technique for diabetics \u2014 the choice depends on the surgery type, patient comorbidities, and glycemic status. However, here's what actually matters clinically:\n\n## General Principles\n\n**Regional/neuraxial anesthesia is often preferred when feasible** because it:\n- Avoids airway manipulation (diabetics have higher risk of difficult intubation due to stiff joint syndrome/limited atlanto-occipital extension from glycosylation of tissues)\n- Blunts surgical stress response less than GA in some contexts, reducing catecholamine-driven hyperglycemia\n- Reduces postoperative nausea/vomiting, allowing earlier resumption of oral intake and normal insulin/oral hypoglycemic dosing\n- Lower risk of postoperative cognitive dysfunction\n\n## Key Considerations Regardless of Technique\n\n**Airway assessment:** Screen for \"prayer sign\" (inability to appose palms) \u2014 indicative of limited mobility from diabetic stiff joint syndrome, predicting difficult laryngoscopy.\n\n**Autonomic neuropathy:** Present in up to 40% of long-standing diabetics. Causes:\n- Gastroparesis \u2192 aspiration risk (consider RSI, metoclopramide, H2 blockers preop)\n- Cardiovascular instability \u2192 exaggerated hypotension with induction agents/neuraxial blocks, blunted heart rate response to hypotension/hypoxia\n- Silent myocardial ischemia \u2014 lower threshold for perioperative ECG monitoring\n\n**Glucose management:**\n- Target intraoperative glucose 140\u2013180 mg/dL (avoid tight control <110, which increases hypoglycemia risk \u2014 per NICE-SUGAR data)\n- Hold metformin day of surgery (risk of lactic acidosis, especially with contrast/renal impairment)\n- SGLT2 inhibitors should be stopped 3-4 days preop (euglycemic DKA risk)\n- Basal insulin usually continued at reduced dose (50-80%); hold prandial insulin if NPO\n\n**Drug choices:**\n- Avoid hyperglycemic agents where possible (dexamethasone for PONV prophylaxis raises glucose \u2014 use cautiously, weigh against benefit)\n- Succinylcholine caution if renal impairment/neuropathy with baseline hyperkalemia risk\n- Local anesthetic with epinephrine: caution in advanced peripheral vascular disease (digital/extremity blocks)\n\n**Renal considerations:** Diabetic nephropathy common \u2014 adjust dosing of renally cleared drugs (e.g., morphine metabolites, some NMBs like pancuronium).\n\n## Practical Recommendation\n\nFor minor/peripheral procedures \u2014 **peripheral nerve blocks or spinal/epidural** are excellent choices, minimizing systemic effects and stress-induced hyperglycemia.\n\nFor major abdominal/cardiac surgery \u2014 **general anesthesia is often necessary**, but combine with",
+    "latency_ms": 12355.7,
+    "input_tokens": 132,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the best anesthesia for diabetic patients?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Anesthesia for Diabetic Patients\n\nThere's no single \"best\" anesthetic technique for diabetics \u2014 the choice depends on the surgery type, patient comorbidities, and glycemic status. However, here's what actually matters clinically:\n\n## General Principles\n\n**Regional/neuraxial anesthesia is often preferred when feasible** because it:\n- Avoids airway manipulation (diabetics have higher risk of difficult intubation due to stiff joint syndrome/limited atlanto-occipital extension from glycosylation of tissues)\n- Blunts surgical stress response less than GA in some contexts, reducing catecholamine-driven hyperglycemia\n- Reduces postoperative nausea/vomiting, allowing earlier resumption of oral intake and normal insulin/oral hypoglycemic dosing\n- Lower risk of postoperative cognitive dysfunction\n\n## Key Considerations Regardless of Technique\n\n**Airway assessment:** Screen for \"prayer sign\" (inability to appose palms) \u2014 indicative of limited mobility from diabetic stiff joint syndrome, predicting difficult laryngoscopy.\n\n**Autonomic neuropathy:** Present in up to 40% of long-standing diabetics. Causes:\n- Gastroparesis \u2192 aspiration risk (consider RSI, metoclopramide, H2 blockers preop)\n- Cardiovascular instability \u2192 exaggerated hypotension with induction agents/neuraxial blocks, blunted heart rate response to hypotension/hypoxia\n- Silent myocardial ischemia \u2014 lower threshold for perioperative ECG monitoring\n\n**Glucose management:**\n- Target intraoperative glucose 140\u2013180 mg/dL (avoid tight control <110, which increases hypoglycemia risk \u2014 per NICE-SUGAR data)\n- Hold metformin day of surgery (risk of lactic acidosis, especially with contrast/renal impairment)\n- SGLT2 inhibitors should be stopped 3-4 days preop (euglycemic DKA risk)\n- Basal insulin usually continued at reduced dose (50-80%); hold prandial insulin if NPO\n\n**Drug choices:**\n- Avoid hyperglycemic agents where possible (dexamethasone for PONV prophylaxis raises glucose \u2014 use cautiously, weigh against benefit)\n- Succinylcholine caution if renal impairment/neuropathy with baseline hyperkalemia risk\n- Local anesthetic with epinephrine: caution in advanced peripheral vascular disease (digital/extremity blocks)\n\n**Renal considerations:** Diabetic nephropathy common \u2014 adjust dosing of renally cleared drugs (e.g., morphine metabolites, some NMBs like pancuronium).\n\n## Practical Recommendation\n\nFor minor/peripheral procedures \u2014 **peripheral nerve blocks or spinal/epidural** are excellent choices, minimizing systemic effects and stress-induced hyperglycemia.\n\nFor major abdominal/cardiac surgery \u2014 **general anesthesia is often necessary**, but combine with",
+    "latency_ms": 12355.7,
+    "token_count": 1156
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "57d8dd4c6af8",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239954.7672646,
+      "failures": [
+        {
+          "failure_mode": "sycophantic_gap_fill",
+          "confidence": 0.55,
+          "evidence": [
+            "Weak agreement/filler language detected (1 match(es))",
+            "Response contains 7 unexplained numeric values",
+            "Response changed from the previous call to this tool with identical parameters, co-occurring with agreement-flavored language - possible ungrounded answer shift"
+          ],
+          "remediation": [
+            "Request explicit source citations for all factual claims",
+            "Enable strict mode: require parameter-grounded responses only",
+            "Add validation step: cross-reference response values against input parameters",
+            "Set confidence_threshold=0.8 for this tool call type",
+            "Investigate why output changed for this tool call with unchanged input parameters"
+          ]
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4353,
+          "evidence": [
+            "Latency 12356ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12355.7,
+        "token_count": 1156,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Request explicit source citations for all factual claims",
+        "Enable strict mode: require parameter-grounded responses only",
+        "Add validation step: cross-reference response values against input parameters",
+        "Set confidence_threshold=0.8 for this tool call type",
+        "Investigate why output changed for this tool call with unchanged input parameters",
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.98; flagged=False"
+}

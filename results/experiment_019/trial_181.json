@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-09T00:19:02.990820+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "A and B are the daughters of C. When C was alive she gave A a car and R250000 to start a business. B didn't receive those amenities. When C died she left an equal share of the estate to both daughters. What is the method of accounting for the gifts would be done during distribution? ",
+    "field": "Law",
+    "specific_field": "Law of succession",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "This is usually dealt with as **collation** (also called *bringing gifts into account*) during the distribution of the deceased estate.\n\nIn South African succession law, a child who received a substantial benefit from a parent during that parent\u2019s lifetime\u2014such as a car, money, or assets to establish a business\u2014may be required to **collate** that benefit when the parent dies, unless the parent clearly indicated that the gift was not to be brought into account.\n\n## How it works\n\nA received:\n\n- A car; and\n- **R250,000** to start a business.\n\nIf these were advances on A\u2019s inheritance rather than unconditional gifts exempt from collation, their value is notionally added back into the estate for purposes of calculating an equal division between A and B.\n\n### Example\n\nAssume:\n\n- Net estate available for distribution on death: **R1,000,000**\n- Value of car at the relevant collation value: **R200,000**\n- Cash/business advance received by A: **R250,000**\n\nTotal amount for collation calculation:\n\n| Item | Amount |\n|---|---:|\n| Actual net estate | R1,000,000 |\n| Car received by A | R200,000 |\n| Cash received by A | R250,000 |\n| Notional estate for equalisation | **R1,450,000** |\n\nBecause the will leaves the estate equally to A and B:\n\n- Each daughter\u2019s notional share is **R725,000** (R1,450,000 \u00f7 2).\n\nA has already received **R450,000** in lifetime benefits:\n\n- R200,000 car; plus\n- R250,000 cash.\n\nTherefore, from the estate A would receive:\n\n- R725,000 \u2212 R450,000 = **R275,000**\n\nB would receive:\n\n- **R725,000**\n\nThe actual estate is then distributed as follows:\n\n| Beneficiary | Amount from deceased estate | Prior benefits | Total benefit |\n|---|---:|---:|---:|\n| A | R275,000 | R450,000 | R725,000 |\n| B | R725,000 | R0 | R725,000 |\n| Total | R1,000,000 | R450,000 | R1,450,000 |\n\n## Important qualifications\n\n1. **C\u2019s intention is crucial.**  \n   If C stated in the will, a letter, deed of donation, or another clear record that the car and R250,000 were gifts **not subject to collation**, A generally keeps them without any reduction of her inheritance.\n\n2. **The will can exclude collation.**  \n   A clause such as \u201call prior donations to my children are exempt from collation\u201d would normally prevent B from insisting that A\u2019s inheritance be reduced.\n\n3. **The value to be collated can be disputed.**  \n   The executor may need to determine the relevant value of the car and the R250,000. The car\u2019s valuation may depend on the applicable legal rule and evidence of its value; it is not necessarily its present resale value. Interest, profits, business growth, depreciation, and improvements are not automatically added merely because the original R250,000 was used in a business.\n\n4. **Collation does not normally require A to repay money to the estate.**  \n   It is generally an accounting exercise: A\u2019s inheritance is reduced by the value of what she previously received. However, if A\u2019s lifetime benefit exceeds her calculated inheritance, the precise consequences depend on the will, the facts, and the applicable legal rules.\n\n5. **The executor must reflect this in the Liquidation and Distribution Account.**  \n   The estate\u2019s executor would normally disclose the prior benefits and show how A\u2019s entitlement was adjusted, allowing interested parties\u2014including B\u2014to inspect and object within the statutory process.\n\nIn short: if the car and **R250,000** were advances on A\u2019s inheritance and were not expressly exempted, they are **collated**. Their value is added notionally to the estate, the estate is divided equally in theory, and A\u2019s actual distribution is reduced by the value of the benefits already received.",
+    "latency_ms": 9769.5,
+    "input_tokens": 136,
+    "output_tokens": 866
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A and B are the daughters of C. When C was alive she gave A a car and R250000 to start a business. B didn't receive those amenities. When C died she left an equal share of the estate to both daughters. What is the method of accounting for the gifts would be done during distribution? ",
+      "field": "Law"
+    },
+    "response": "This is usually dealt with as **collation** (also called *bringing gifts into account*) during the distribution of the deceased estate.\n\nIn South African succession law, a child who received a substantial benefit from a parent during that parent\u2019s lifetime\u2014such as a car, money, or assets to establish a business\u2014may be required to **collate** that benefit when the parent dies, unless the parent clearly indicated that the gift was not to be brought into account.\n\n## How it works\n\nA received:\n\n- A car; and\n- **R250,000** to start a business.\n\nIf these were advances on A\u2019s inheritance rather than unconditional gifts exempt from collation, their value is notionally added back into the estate for purposes of calculating an equal division between A and B.\n\n### Example\n\nAssume:\n\n- Net estate available for distribution on death: **R1,000,000**\n- Value of car at the relevant collation value: **R200,000**\n- Cash/business advance received by A: **R250,000**\n\nTotal amount for collation calculation:\n\n| Item | Amount |\n|---|---:|\n| Actual net estate | R1,000,000 |\n| Car received by A | R200,000 |\n| Cash received by A | R250,000 |\n| Notional estate for equalisation | **R1,450,000** |\n\nBecause the will leaves the estate equally to A and B:\n\n- Each daughter\u2019s notional share is **R725,000** (R1,450,000 \u00f7 2).\n\nA has already received **R450,000** in lifetime benefits:\n\n- R200,000 car; plus\n- R250,000 cash.\n\nTherefore, from the estate A would receive:\n\n- R725,000 \u2212 R450,000 = **R275,000**\n\nB would receive:\n\n- **R725,000**\n\nThe actual estate is then distributed as follows:\n\n| Beneficiary | Amount from deceased estate | Prior benefits | Total benefit |\n|---|---:|---:|---:|\n| A | R275,000 | R450,000 | R725,000 |\n| B | R725,000 | R0 | R725,000 |\n| Total | R1,000,000 | R450,000 | R1,450,000 |\n\n## Important qualifications\n\n1. **C\u2019s intention is crucial.**  \n   If C stated in the will, a letter, deed of donation, or another clear record that the car and R250,000 were gifts **not subject to collation**, A generally keeps them without any reduction of her inheritance.\n\n2. **The will can exclude collation.**  \n   A clause such as \u201call prior donations to my children are exempt from collation\u201d would normally prevent B from insisting that A\u2019s inheritance be reduced.\n\n3. **The value to be collated can be disputed.**  \n   The executor may need to determine the relevant value of the car and the R250,000. The car\u2019s valuation may depend on the applicable legal rule and evidence of its value; it is not necessarily its present resale value. Interest, profits, business growth, depreciation, and improvements are not automatically added merely because the original R250,000 was used in a business.\n\n4. **Collation does not normally require A to repay money to the estate.**  \n   It is generally an accounting exercise: A\u2019s inheritance is reduced by the value of what she previously received. However, if A\u2019s lifetime benefit exceeds her calculated inheritance, the precise consequences depend on the will, the facts, and the applicable legal rules.\n\n5. **The executor must reflect this in the Liquidation and Distribution Account.**  \n   The estate\u2019s executor would normally disclose the prior benefits and show how A\u2019s entitlement was adjusted, allowing interested parties\u2014including B\u2014to inspect and object within the statutory process.\n\nIn short: if the car and **R250,000** were advances on A\u2019s inheritance and were not expressly exempted, they are **collated**. Their value is added notionally to the estate, the estate is divided equally in theory, and A\u2019s actual distribution is reduced by the value of the benefits already received.",
+    "latency_ms": 9769.5,
+    "token_count": 1002,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "f8d7d074894f",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234742.9900777,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 9769.5,
+        "token_count": 1002,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.181; flagged=False"
+}

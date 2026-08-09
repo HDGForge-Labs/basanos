@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:52:58.146133+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is your opinion on euthanasia?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biomedical Science ",
+    "question_type": "Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "I don't have personal opinions or beliefs in the way humans do\u2014I'm an AI without subjective experiences, values formed through lived experience, or a stake in moral questions. But I can give you a substantive, balanced overview of the debate, including the empirical and ethical landscape, since you likely want detail rather than a dodge.\n\n**Definitions and legal landscape**\n\nEuthanasia typically refers to a third party (usually a physician) actively ending a patient's life, while \"physician-assisted dying\" or \"assisted suicide\" refers to a doctor providing the means (usually medication) for patients to end their own lives. About 10-12 countries or jurisdictions worldwide have legalized some form of this, including the Netherlands (since 2002), Belgium (2002), Canada (2016, via its MAID program), Colombia, Spain, New Zealand, and roughly 10 U.S. states plus Washington D.C. (starting with Oregon in 1997).\n\n**Key arguments in favor**\n\n- **Autonomy**: Proponents argue competent adults have a right to control the timing and manner of their death, especially when facing terminal illness with unbearable suffering.\n- **Suffering reduction**: Even with modern palliative care, an estimated 5-10% of terminal patients experience pain or symptoms that remain difficult to fully control.\n- **Data from existing programs**: In Oregon, since 1997, roughly 0.4-0.6% of deaths annually have occurred via assisted dying, with no substantial evidence of the \"slippery slope\" abuse critics feared in that specific jurisdiction.\n\n**Key arguments against**\n\n- **Sanctity of life / religious objections**: Many traditions hold that deliberately ending life is impermissible regardless of suffering.\n- **Slippery slope concerns**: Critics point to Belgium and the Netherlands, where the criteria have expanded over roughly 20 years to include psychiatric suffering and, in some cases, minors\u2014raising concerns about scope creep. In the Netherlands, roughly 4-5% of all deaths now involve euthanasia or assisted dying, up from under 2% in the early 2000s.\n- **Palliative care gaps**: Some argue that inadequate access to palliative or mental health care (which may reach only 50-60% of those who need it in various regions) means patients may \"choose\" death partly due to systemic failures rather than free, informed preference.\n- **Vulnerable populations**: Concerns about coercion or subtle pressure on elderly, disabled, or economically disadvantaged patients, who may feel like a \"burden.\"\n\n**Where the disagreement really lies**\n\nMuch of the debate hinges on a few crunchy sub-questions: (1) how to define and verify \"unbearable and hopeless\" suffering, (2) whether psychiatric illness should qualify (a minority of jurisdictions, like Belgium, allow this), (3) how to prevent coercion without being so restrictive that people suffering genuinely are denied autonomy, and (4) whether legalization inevitably expands scope over time or can be kept narrowly tailored (Oregon's model has stayed relatively stable for roughly 25",
+    "latency_ms": 14330.5,
+    "input_tokens": 123,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is your opinion on euthanasia?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "I don't have personal opinions or beliefs in the way humans do\u2014I'm an AI without subjective experiences, values formed through lived experience, or a stake in moral questions. But I can give you a substantive, balanced overview of the debate, including the empirical and ethical landscape, since you likely want detail rather than a dodge.\n\n**Definitions and legal landscape**\n\nEuthanasia typically refers to a third party (usually a physician) actively ending a patient's life, while \"physician-assisted dying\" or \"assisted suicide\" refers to a doctor providing the means (usually medication) for patients to end their own lives. About 10-12 countries or jurisdictions worldwide have legalized some form of this, including the Netherlands (since 2002), Belgium (2002), Canada (2016, via its MAID program), Colombia, Spain, New Zealand, and roughly 10 U.S. states plus Washington D.C. (starting with Oregon in 1997).\n\n**Key arguments in favor**\n\n- **Autonomy**: Proponents argue competent adults have a right to control the timing and manner of their death, especially when facing terminal illness with unbearable suffering.\n- **Suffering reduction**: Even with modern palliative care, an estimated 5-10% of terminal patients experience pain or symptoms that remain difficult to fully control.\n- **Data from existing programs**: In Oregon, since 1997, roughly 0.4-0.6% of deaths annually have occurred via assisted dying, with no substantial evidence of the \"slippery slope\" abuse critics feared in that specific jurisdiction.\n\n**Key arguments against**\n\n- **Sanctity of life / religious objections**: Many traditions hold that deliberately ending life is impermissible regardless of suffering.\n- **Slippery slope concerns**: Critics point to Belgium and the Netherlands, where the criteria have expanded over roughly 20 years to include psychiatric suffering and, in some cases, minors\u2014raising concerns about scope creep. In the Netherlands, roughly 4-5% of all deaths now involve euthanasia or assisted dying, up from under 2% in the early 2000s.\n- **Palliative care gaps**: Some argue that inadequate access to palliative or mental health care (which may reach only 50-60% of those who need it in various regions) means patients may \"choose\" death partly due to systemic failures rather than free, informed preference.\n- **Vulnerable populations**: Concerns about coercion or subtle pressure on elderly, disabled, or economically disadvantaged patients, who may feel like a \"burden.\"\n\n**Where the disagreement really lies**\n\nMuch of the debate hinges on a few crunchy sub-questions: (1) how to define and verify \"unbearable and hopeless\" suffering, (2) whether psychiatric illness should qualify (a minority of jurisdictions, like Belgium, allow this), (3) how to prevent coercion without being so restrictive that people suffering genuinely are denied autonomy, and (4) whether legalization inevitably expands scope over time or can be kept narrowly tailored (Oregon's model has stayed relatively stable for roughly 25",
+    "latency_ms": 14330.5,
+    "token_count": 1147,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "d3065666aeab",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240378.1453526,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 16 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.465,
+          "evidence": [
+            "Latency 14330ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 14330.5,
+        "token_count": 1147,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.132; flagged=True"
+}

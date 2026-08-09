@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T22:59:09.910141+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "A male presents with jaw pain, central chest pain and a fear of doom. What is the likely diagnosis?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Critical care",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "The most likely diagnosis is **acute coronary syndrome (ACS), especially an acute myocardial infarction (heart attack)**.\n\n**Jaw pain and central chest pressure/pain with a sense of impending doom** are classic warning symptoms, particularly if the pain lasts **more than about 5 minutes**, is triggered by exertion, or is accompanied by sweating, nausea, shortness of breath, dizziness, or pain radiating to the arm, shoulder, or back.\n\nThis is a **medical emergency**:\n\n- Call emergency services immediately\u2014**911/999/112**, depending on location.\n- Do **not** drive yourself.\n- Sit and rest; avoid exertion.\n- If not allergic, not bleeding, and not advised otherwise, chew approximately **160\u2013325 mg of aspirin** while awaiting help.\n- Emergency evaluation should include an ECG ideally within **10 minutes** and serial cardiac troponin testing.\n\nPanic attack can cause similar symptoms, but **cardiac ischemia must be assumed and ruled out first**.",
+    "latency_ms": 2333.2,
+    "input_tokens": 94,
+    "output_tokens": 207
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A male presents with jaw pain, central chest pain and a fear of doom. What is the likely diagnosis?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "The most likely diagnosis is **acute coronary syndrome (ACS), especially an acute myocardial infarction (heart attack)**.\n\n**Jaw pain and central chest pressure/pain with a sense of impending doom** are classic warning symptoms, particularly if the pain lasts **more than about 5 minutes**, is triggered by exertion, or is accompanied by sweating, nausea, shortness of breath, dizziness, or pain radiating to the arm, shoulder, or back.\n\nThis is a **medical emergency**:\n\n- Call emergency services immediately\u2014**911/999/112**, depending on location.\n- Do **not** drive yourself.\n- Sit and rest; avoid exertion.\n- If not allergic, not bleeding, and not advised otherwise, chew approximately **160\u2013325 mg of aspirin** while awaiting help.\n- Emergency evaluation should include an ECG ideally within **10 minutes** and serial cardiac troponin testing.\n\nPanic attack can cause similar symptoms, but **cardiac ischemia must be assumed and ruled out first**.",
+    "latency_ms": 2333.2,
+    "token_count": 301,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "d9e7b0c5ee5c",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229949.9093914,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 6 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 2333.2,
+        "token_count": 301,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.109; flagged=True"
+}

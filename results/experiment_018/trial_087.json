@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:57:35.369814+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What are the risks of inserting a nasogastric tube during a night shift?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Patient Safety",
+    "question_type": "Open-ended question that is potentially ambiguous| Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Inserting a nasogastric (NG) tube at night is not inherently more dangerous, but night-shift conditions can increase the risk of errors because of fatigue, reduced staffing, poor lighting, and limited access to senior or specialist support.\n\nKey risks include:\n\n- **Misplacement into the airway**: The tube can enter the trachea or bronchus, potentially causing coughing, hypoxia, bronchospasm, pneumothorax, or rarely death\u2014especially in patients with reduced consciousness, impaired gag reflex, or neurologic disease.\n- **Feeding or medication into the lungs**: If placement is not confirmed correctly, aspiration can cause severe pneumonitis or pneumonia.\n- **Esophageal or gastric trauma**: Nosebleed, nasal or sinus injury, sore throat, mucosal laceration, and\u2014rarely\u2014esophageal or gastric perforation.\n- **Bleeding**: Risk is higher with anticoagulation, thrombocytopenia, varices, recent nasal or esophageal surgery, or facial trauma.\n- **Worsening respiratory compromise**: Agitation, coughing, laryngospasm, or tube misplacement may destabilize a critically ill patient.\n- **Delayed recognition of complications**: Reduced overnight observation, handover gaps, and fewer radiology or senior staff can delay confirmation or treatment.\n- **Patient distress or inadvertent removal**: Confusion or delirium may lead to forceful pulling, causing injury.\n\nNight-specific practical risks include inadequate lighting, interruptions, rushed insertion, fatigue-related failure to follow the checking protocol, and delays in obtaining or interpreting confirmatory imaging.\n\nSafety measures are to assess contraindications and aspiration risk, use appropriate staff and lighting, stop if there is respiratory distress or persistent resistance, and **never use the tube until placement is confirmed according to local policy**\u2014usually by gastric aspirate pH testing and/or X-ray when indicated. Air insufflation (\u201cwhoosh\u201d testing) is not a reliable confirmation method. High-risk insertions should involve experienced or senior clinicians and, when necessary, radiologic or endoscopic guidance.",
+    "latency_ms": 3868.8,
+    "input_tokens": 95,
+    "output_tokens": 426
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the risks of inserting a nasogastric tube during a night shift?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Inserting a nasogastric (NG) tube at night is not inherently more dangerous, but night-shift conditions can increase the risk of errors because of fatigue, reduced staffing, poor lighting, and limited access to senior or specialist support.\n\nKey risks include:\n\n- **Misplacement into the airway**: The tube can enter the trachea or bronchus, potentially causing coughing, hypoxia, bronchospasm, pneumothorax, or rarely death\u2014especially in patients with reduced consciousness, impaired gag reflex, or neurologic disease.\n- **Feeding or medication into the lungs**: If placement is not confirmed correctly, aspiration can cause severe pneumonitis or pneumonia.\n- **Esophageal or gastric trauma**: Nosebleed, nasal or sinus injury, sore throat, mucosal laceration, and\u2014rarely\u2014esophageal or gastric perforation.\n- **Bleeding**: Risk is higher with anticoagulation, thrombocytopenia, varices, recent nasal or esophageal surgery, or facial trauma.\n- **Worsening respiratory compromise**: Agitation, coughing, laryngospasm, or tube misplacement may destabilize a critically ill patient.\n- **Delayed recognition of complications**: Reduced overnight observation, handover gaps, and fewer radiology or senior staff can delay confirmation or treatment.\n- **Patient distress or inadvertent removal**: Confusion or delirium may lead to forceful pulling, causing injury.\n\nNight-specific practical risks include inadequate lighting, interruptions, rushed insertion, fatigue-related failure to follow the checking protocol, and delays in obtaining or interpreting confirmatory imaging.\n\nSafety measures are to assess contraindications and aspiration risk, use appropriate staff and lighting, stop if there is respiratory distress or persistent resistance, and **never use the tube until placement is confirmed according to local policy**\u2014usually by gastric aspirate pH testing and/or X-ray when indicated. Air insufflation (\u201cwhoosh\u201d testing) is not a reliable confirmation method. High-risk insertions should involve experienced or senior clinicians and, when necessary, radiologic or endoscopic guidance.",
+    "latency_ms": 3868.8,
+    "token_count": 521
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "b31e9478dcf8",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229855.3690724,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3868.8,
+        "token_count": 521,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.87; flagged=False"
+}

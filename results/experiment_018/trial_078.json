@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:56:57.433542+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What is the best way to protect a testator's wishes? ",
+    "field": "Law",
+    "specific_field": "Law of succession",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "The best protection is a **properly executed, carefully drafted estate plan that is regularly reviewed and securely documented**.\n\nKey steps:\n\n1. **Use an experienced estate-planning lawyer.** A lawyer can ensure the will complies with local formalities and avoid ambiguity, defective clauses, or unintended beneficiaries.\n2. **State wishes clearly and specifically.** Identify beneficiaries, assets, substitute beneficiaries, guardians, trustees, and the executor. Include a residuary clause covering property not individually listed.\n3. **Follow signing and witnessing rules exactly.** Typically this means signing while mentally competent and in the presence of the required number of independent witnesses. Beneficiaries should not serve as witnesses where possible, because their gifts may be challenged or invalidated.\n4. **Demonstrate testamentary capacity and free choice.** For an elderly, ill, or vulnerable testator, document capacity\u2014often through contemporaneous medical confirmation\u2014and ensure the signing occurs without pressure from interested parties.\n5. **Choose a trustworthy, capable executor.** Consider a professional or independent executor where family conflict, substantial assets, or a complex estate is involved.\n6. **Use trusts or other structures when appropriate.** A trust can protect assets, manage inheritances for minors or vulnerable beneficiaries, and reduce opportunities for disputes.\n7. **Coordinate all beneficiary designations.** Life insurance, retirement accounts, pensions, and jointly owned property often pass outside the will; keep their designations consistent with the overall plan.\n8. **Store the original safely and make it locatable.** Tell the executor where it is held, such as with the lawyer or in an approved secure facility. Avoid multiple conflicting originals.\n9. **Review after major life or legal changes.** Revisit the plan after marriage, divorce, births, deaths, major asset changes, relocation, or changes in tax and succession law.\n10. **Keep evidence of intent.** Maintain a written explanation of unusual choices, but avoid attaching informal notes that could contradict the will. Do not make handwritten alterations unless legally valid.\n\nIn short: **professional drafting, strict execution formalities, clear evidence of capacity and independence, coordinated beneficiary designations, and regular review** provide the strongest protection against challenges and unintended outcomes.",
+    "latency_ms": 4154.6,
+    "input_tokens": 92,
+    "output_tokens": 451
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the best way to protect a testator's wishes? ",
+      "field": "Law"
+    },
+    "response": "The best protection is a **properly executed, carefully drafted estate plan that is regularly reviewed and securely documented**.\n\nKey steps:\n\n1. **Use an experienced estate-planning lawyer.** A lawyer can ensure the will complies with local formalities and avoid ambiguity, defective clauses, or unintended beneficiaries.\n2. **State wishes clearly and specifically.** Identify beneficiaries, assets, substitute beneficiaries, guardians, trustees, and the executor. Include a residuary clause covering property not individually listed.\n3. **Follow signing and witnessing rules exactly.** Typically this means signing while mentally competent and in the presence of the required number of independent witnesses. Beneficiaries should not serve as witnesses where possible, because their gifts may be challenged or invalidated.\n4. **Demonstrate testamentary capacity and free choice.** For an elderly, ill, or vulnerable testator, document capacity\u2014often through contemporaneous medical confirmation\u2014and ensure the signing occurs without pressure from interested parties.\n5. **Choose a trustworthy, capable executor.** Consider a professional or independent executor where family conflict, substantial assets, or a complex estate is involved.\n6. **Use trusts or other structures when appropriate.** A trust can protect assets, manage inheritances for minors or vulnerable beneficiaries, and reduce opportunities for disputes.\n7. **Coordinate all beneficiary designations.** Life insurance, retirement accounts, pensions, and jointly owned property often pass outside the will; keep their designations consistent with the overall plan.\n8. **Store the original safely and make it locatable.** Tell the executor where it is held, such as with the lawyer or in an approved secure facility. Avoid multiple conflicting originals.\n9. **Review after major life or legal changes.** Revisit the plan after marriage, divorce, births, deaths, major asset changes, relocation, or changes in tax and succession law.\n10. **Keep evidence of intent.** Maintain a written explanation of unusual choices, but avoid attaching informal notes that could contradict the will. Do not make handwritten alterations unless legally valid.\n\nIn short: **professional drafting, strict execution formalities, clear evidence of capacity and independence, coordinated beneficiary designations, and regular review** provide the strongest protection against challenges and unintended outcomes.",
+    "latency_ms": 4154.6,
+    "token_count": 543
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "e1eeb3395bcb",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229817.432796,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 4154.6,
+        "token_count": 543,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.78; flagged=False"
+}

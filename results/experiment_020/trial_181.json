@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T02:02:45.517304+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "A and B are the daughters of C. When C was alive she gave A a car and R250000 to start a business. B didn't receive those amenities. When C died she left an equal share of the estate to both daughters. What is the method of accounting for the gifts would be done during distribution? ",
+    "field": "Law",
+    "specific_field": "Law of succession",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Collation (Bringing Gifts into Account) in Estate Distribution\n\nThe scenario you're describing invokes the legal doctrine of **collation** (sometimes called \"hotchpot\" in common law jurisdictions, or \"inbring\" under South African law given the Rand currency reference). Here's how this typically works:\n\n## The Basic Principle\n\nWhen a parent (C) makes substantial lifetime gifts (advancements) to one child during their lifetime, and then dies leaving an estate to be divided **equally** among children, fairness principles generally require that the earlier gifts be accounted for \u2014 otherwise A would receive significantly more than B in total.\n\n## Method of Calculation (Typical Approach)\n\n### Step 1: Determine the Value of the Advancement\n- Car value: assume, for example, approximately R150,000 (fair market value at time of gift, or sometimes at date of death \u2014 this varies by jurisdiction)\n- Cash gift: R250,000\n- **Total advancement to A**: approximately R400,000\n\n### Step 2: Add the Advancement Back to the Estate (Notional Estate)\nIf C's estate at death is worth, say, R2,000,000, you would:\n- Add back A's advancement: R2,000,000 + R400,000 = **R2,400,000** (notional/hotchpot estate)\n\n### Step 3: Divide the Notional Estate Equally\n- Each daughter's equal share: R2,400,000 \u00f7 2 = **R1,200,000**\n\n### Step 4: Deduct A's Prior Advancement from Her Share\n- A receives: R1,200,000 \u2212 R400,000 = **R800,000** from the estate\n- B receives: **R1,200,000** from the estate (full share, no deduction)\n\n### Final Distribution Check\n- A's total benefit (lifetime + inheritance): R400,000 + R800,000 = R1,200,000\n- B's total benefit: R0 + R1,200,000 = R1,200,000\n- **Equal outcome achieved** \u2713\n\n## Important Caveats\n\n1. **Testator's Intent Controls**: This doctrine typically only applies if:\n   - The will is silent on the matter, **or**\n   - The will explicitly states that lifetime gifts must be brought into account\n   \n   If C's will states something like \"I leave my estate to be divided equally, notwithstanding any prior gifts,\" then collation may **not** apply, and A keeps the R250,000 + car **on top of** an equal share.\n\n2. **Valuation Date Disputes**: Jurisdictions differ on whether to value the car:\n   - At the date of the original gift, or\n   - At the date of death (accounting for depreciation/appreciation)\n   \n   This can create disputes \u2014 for example, if the car has depreciated by roughly 40-60% since the gift, the \"value\" for collation purposes may be contested.\n\n3. **Presumption of Advancement vs. Gift**: In some jurisdictions, there's a rebuttable presumption that gifts from parent to child are \"advancements\" against inheritance (especially larger/cash gifts), but this presumption can be overturned by evidence that C intended the gift as an outright, additional benefit.\n\n4.",
+    "latency_ms": 11703.8,
+    "input_tokens": 194,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A and B are the daughters of C. When C was alive she gave A a car and R250000 to start a business. B didn't receive those amenities. When C died she left an equal share of the estate to both daughters. What is the method of accounting for the gifts would be done during distribution? ",
+      "field": "Law"
+    },
+    "response": "# Collation (Bringing Gifts into Account) in Estate Distribution\n\nThe scenario you're describing invokes the legal doctrine of **collation** (sometimes called \"hotchpot\" in common law jurisdictions, or \"inbring\" under South African law given the Rand currency reference). Here's how this typically works:\n\n## The Basic Principle\n\nWhen a parent (C) makes substantial lifetime gifts (advancements) to one child during their lifetime, and then dies leaving an estate to be divided **equally** among children, fairness principles generally require that the earlier gifts be accounted for \u2014 otherwise A would receive significantly more than B in total.\n\n## Method of Calculation (Typical Approach)\n\n### Step 1: Determine the Value of the Advancement\n- Car value: assume, for example, approximately R150,000 (fair market value at time of gift, or sometimes at date of death \u2014 this varies by jurisdiction)\n- Cash gift: R250,000\n- **Total advancement to A**: approximately R400,000\n\n### Step 2: Add the Advancement Back to the Estate (Notional Estate)\nIf C's estate at death is worth, say, R2,000,000, you would:\n- Add back A's advancement: R2,000,000 + R400,000 = **R2,400,000** (notional/hotchpot estate)\n\n### Step 3: Divide the Notional Estate Equally\n- Each daughter's equal share: R2,400,000 \u00f7 2 = **R1,200,000**\n\n### Step 4: Deduct A's Prior Advancement from Her Share\n- A receives: R1,200,000 \u2212 R400,000 = **R800,000** from the estate\n- B receives: **R1,200,000** from the estate (full share, no deduction)\n\n### Final Distribution Check\n- A's total benefit (lifetime + inheritance): R400,000 + R800,000 = R1,200,000\n- B's total benefit: R0 + R1,200,000 = R1,200,000\n- **Equal outcome achieved** \u2713\n\n## Important Caveats\n\n1. **Testator's Intent Controls**: This doctrine typically only applies if:\n   - The will is silent on the matter, **or**\n   - The will explicitly states that lifetime gifts must be brought into account\n   \n   If C's will states something like \"I leave my estate to be divided equally, notwithstanding any prior gifts,\" then collation may **not** apply, and A keeps the R250,000 + car **on top of** an equal share.\n\n2. **Valuation Date Disputes**: Jurisdictions differ on whether to value the car:\n   - At the date of the original gift, or\n   - At the date of death (accounting for depreciation/appreciation)\n   \n   This can create disputes \u2014 for example, if the car has depreciated by roughly 40-60% since the gift, the \"value\" for collation purposes may be contested.\n\n3. **Presumption of Advancement vs. Gift**: In some jurisdictions, there's a rebuttable presumption that gifts from parent to child are \"advancements\" against inheritance (especially larger/cash gifts), but this presumption can be overturned by evidence that C intended the gift as an outright, additional benefit.\n\n4.",
+    "latency_ms": 11703.8,
+    "token_count": 1218,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "c10b51045ed7",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240965.5165396,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 9 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4256,
+          "evidence": [
+            "Latency 11704ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11703.8,
+        "token_count": 1218,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.181; flagged=True"
+}

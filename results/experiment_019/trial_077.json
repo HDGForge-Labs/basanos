@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T00:01:59.287934+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Why is it that when an accused is caught on act, they can't be guilty immediately?",
+    "field": "Law",
+    "specific_field": "Paralegal",
+    "question_type": "Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Being caught \u201cin the act\u201d is powerful evidence, but it does not itself make someone legally guilty. Guilt is a legal conclusion that generally requires a fair process.\n\nKey reasons:\n\n- **People can be mistaken.** Witnesses, police, cameras, and even apparent circumstances can be wrong. Someone may look like they committed an offense but be misidentified or misunderstood.\n- **The law requires proof of every element.** Prosecutors usually must prove not only that the act happened, but also things such as identity, intent, knowledge, lack of consent, value or ownership, and jurisdiction.\n- **There may be a lawful explanation or defense.** For example, a person seen taking property may be its owner, may have permission, may be acting under duress, may be defending themselves, or may lack the mental capacity required for the offense.\n- **Evidence must be tested.** The accused has a right to challenge witnesses, video, police conduct, forensic claims, and the reliability of the alleged proof.\n- **Police and courts have different roles.** Police may arrest someone caught committing an offense because there is probable cause. A judge or jury determines guilt, usually only after proof beyond a reasonable doubt.\n- **Due process protects everyone.** If authorities could declare guilt immediately based on an accusation or appearance, innocent people would be far more vulnerable to wrongful punishment.\n\nSo, being caught in the act can justify arrest and may make conviction very likely, but it does not eliminate the presumption of innocence or the requirement for a lawful trial or equivalent adjudication.",
+    "latency_ms": 4884.1,
+    "input_tokens": 96,
+    "output_tokens": 319
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Why is it that when an accused is caught on act, they can't be guilty immediately?",
+      "field": "Law"
+    },
+    "response": "Being caught \u201cin the act\u201d is powerful evidence, but it does not itself make someone legally guilty. Guilt is a legal conclusion that generally requires a fair process.\n\nKey reasons:\n\n- **People can be mistaken.** Witnesses, police, cameras, and even apparent circumstances can be wrong. Someone may look like they committed an offense but be misidentified or misunderstood.\n- **The law requires proof of every element.** Prosecutors usually must prove not only that the act happened, but also things such as identity, intent, knowledge, lack of consent, value or ownership, and jurisdiction.\n- **There may be a lawful explanation or defense.** For example, a person seen taking property may be its owner, may have permission, may be acting under duress, may be defending themselves, or may lack the mental capacity required for the offense.\n- **Evidence must be tested.** The accused has a right to challenge witnesses, video, police conduct, forensic claims, and the reliability of the alleged proof.\n- **Police and courts have different roles.** Police may arrest someone caught committing an offense because there is probable cause. A judge or jury determines guilt, usually only after proof beyond a reasonable doubt.\n- **Due process protects everyone.** If authorities could declare guilt immediately based on an accusation or appearance, innocent people would be far more vulnerable to wrongful punishment.\n\nSo, being caught in the act can justify arrest and may make conviction very likely, but it does not eliminate the presumption of innocence or the requirement for a lawful trial or equivalent adjudication.",
+    "latency_ms": 4884.1,
+    "token_count": 415
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "cb77b0ae845b",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233719.287162,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 4884.1,
+        "token_count": 415,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.77; flagged=False"
+}

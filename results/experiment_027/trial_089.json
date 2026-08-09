@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T17:17:24.236684+00:00",
+  "detector": "context_degradation",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "who is the ceo of crate and barrel",
+    "gold_index": 0
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Neela Montgomery is the CEO of Crate & Barrel, having assumed the role in April 2017 after Doug Diemoz departed.",
+    "latency_ms": 784.7,
+    "input_tokens": 1430,
+    "output_tokens": 31
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "who is the ceo of crate and barrel",
+      "gold_index": 0,
+      "n_docs": 10
+    },
+    "response": "Neela Montgomery is the CEO of Crate & Barrel, having assumed the role in April 2017 after Doug Diemoz departed.",
+    "latency_ms": 784.7,
+    "token_count": 1461,
+    "context_window_used": 0.25
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "4b5b36c8e982",
+      "tool_name": "context_qa",
+      "status": "pass",
+      "timestamp": 1786295844.2359514,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 784.7,
+        "token_count": 1461,
+        "context_window_used": 0.25,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.89; flagged=False; gold_index=0"
+}

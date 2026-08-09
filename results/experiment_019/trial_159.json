@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:15:29.239047+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What are the outcomes of using hyaluronidase?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Aesthetic",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Hyaluronidase is an enzyme that breaks down hyaluronic acid (HA). Its outcomes depend heavily on why and how it is used\u2014most commonly to dissolve HA dermal filler, but also to improve spread of injected medications or treat certain injection complications.\n\n## 1. Dissolving hyaluronic-acid dermal filler\n\n### Intended outcomes\n- **Partial or complete reduction of HA filler volume.** Improvement can begin within **minutes to a few hours**, but the final visible result is often judged after **about 48 hours to 2 weeks**.\n- **Correction of cosmetic issues**, such as:\n  - Overfilled lips, cheeks, tear troughs, jawline, or chin\n  - Lumps, nodules, unevenness, or migration\n  - Bluish discoloration under thin skin (\u201cTyndall effect\u201d)\n  - Persistent puffiness, especially under the eyes\n- **Improvement of filler-related swelling.** If swelling is due to filler attracting water, improvement may occur over **several days**, sometimes requiring repeat treatment.\n\n### How much filler is dissolved?\nThere is no perfectly predictable dose-response relationship. Outcomes vary with:\n- The specific filler product and how cross-linked it is\n- Amount and depth of filler\n- Age of the filler\n- Injection technique\n- Local tissue characteristics\n- Whether there is scar tissue, inflammation, or biofilm-like changes\n\nClinicians may use anything from **about 5\u201330 international units (IU)** for a small, localized adjustment to **about 100\u2013300 IU or more** for larger areas or more resistant filler. Higher or repeated doses may be used in urgent situations, but dosing is individualized.\n\nA person may need **1 session**, but difficult cases\u2014especially old, highly cross-linked, deeply placed, or migrated filler\u2014can require **2\u20134 or more sessions**, often spaced **about 1\u20132 weeks apart**.\n\n### Does it dissolve your natural hyaluronic acid?\nHyaluronidase can temporarily affect naturally occurring HA in the treated tissue as well as injected filler. Your body replenishes its own HA over time. The commonly cited practical recovery window is roughly **1\u20132 weeks**, although the visible tissue recovery\u2014especially after significant filler removal\u2014may take longer because swelling resolves and skin/tissue readjusts.\n\nSome people feel temporarily \u201cdeflated,\u201d hollow, loose, or asymmetrical after dissolving filler. This may reflect:\n- Removal of the filler\u2019s volume\n- Temporary swelling or bruising\n- Previously hidden volume loss\n- Changes from aging rather than permanent loss caused by hyaluronidase\n\nIf re-filling is planned, many injectors wait at least **about 1\u20132 weeks**, while others prefer **about 2\u20134 weeks** after larger-volume dissolving or after a complication.\n\n## 2. Treatment of vascular compromise from filler\n\nThis is the most urgent use in aesthetics. If filler blocks or significantly impairs blood flow, hyaluronidase may help dissolve the HA filler causing the obstruction.\n\n### Desired outcomes\n- Return of normal skin color and capillary refill\n- Reduced severe pain, blanching, mottling, dusky discoloration, or coolness\n- Prevention or reduction of skin injury, necrosis, scarring, and tissue loss\n\n### Time matters\nVascular occlusion is a medical emergency. Hyaluronidase should be administered **immediately** by an experienced clinician; delays of even **hours** can increase the risk of tissue damage. Management may require repeated high-dose treatment, close reassessment, warming/massage in selected situations, and urgent referral. Visual symptoms after facial filler\u2014blurred vision, vision loss, eye pain, ptosis, or neurologic symptoms\u2014require emergency ophthalmology/emergency care immediately; hyaluronidase cannot be relied upon to reverse filler-related blindness.\n\n## 3. Improving spread or absorption of injected fluids/medications\n\nHyaluronidase may be used medically to increase dispersion and absorption of subcutaneous fluids or medications.\n\nPotential outcomes include:\n- Faster absorption of injected fluid\n- Easier subcutaneous fluid administration (hypodermoclysis)\n- Improved distribution of local anesthetic in some settings\n- Reduced localized fluid buildup in selected situations\n\nThe effect is generally local and temporary.\n\n## 4. Treating extravasation of certain medications\n\nIf certain non-chemotherapy medications accidentally leak from a vein into nearby tissue, hyaluronidase can sometimes be used to help disperse the leaked substance and reduce pressure-related tissue injury.\n\nOutcome depends on:\n- Which medication leaked\n- How much leaked\n- How quickly treatment is given\n- Location and severity of tissue injury\n\nIt is not appropriate for every extravasated drug, so treatment must be guided by the specific medication and institutional protocol.\n\n## Common short-term effects\n\nAfter cosmetic filler dissolution, common effects include:\n- Redness, tenderness, burning, or stinging for **several hours to about 1\u20133 days**\n",
+    "latency_ms": 13328.8,
+    "input_tokens": 84,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the outcomes of using hyaluronidase?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Hyaluronidase is an enzyme that breaks down hyaluronic acid (HA). Its outcomes depend heavily on why and how it is used\u2014most commonly to dissolve HA dermal filler, but also to improve spread of injected medications or treat certain injection complications.\n\n## 1. Dissolving hyaluronic-acid dermal filler\n\n### Intended outcomes\n- **Partial or complete reduction of HA filler volume.** Improvement can begin within **minutes to a few hours**, but the final visible result is often judged after **about 48 hours to 2 weeks**.\n- **Correction of cosmetic issues**, such as:\n  - Overfilled lips, cheeks, tear troughs, jawline, or chin\n  - Lumps, nodules, unevenness, or migration\n  - Bluish discoloration under thin skin (\u201cTyndall effect\u201d)\n  - Persistent puffiness, especially under the eyes\n- **Improvement of filler-related swelling.** If swelling is due to filler attracting water, improvement may occur over **several days**, sometimes requiring repeat treatment.\n\n### How much filler is dissolved?\nThere is no perfectly predictable dose-response relationship. Outcomes vary with:\n- The specific filler product and how cross-linked it is\n- Amount and depth of filler\n- Age of the filler\n- Injection technique\n- Local tissue characteristics\n- Whether there is scar tissue, inflammation, or biofilm-like changes\n\nClinicians may use anything from **about 5\u201330 international units (IU)** for a small, localized adjustment to **about 100\u2013300 IU or more** for larger areas or more resistant filler. Higher or repeated doses may be used in urgent situations, but dosing is individualized.\n\nA person may need **1 session**, but difficult cases\u2014especially old, highly cross-linked, deeply placed, or migrated filler\u2014can require **2\u20134 or more sessions**, often spaced **about 1\u20132 weeks apart**.\n\n### Does it dissolve your natural hyaluronic acid?\nHyaluronidase can temporarily affect naturally occurring HA in the treated tissue as well as injected filler. Your body replenishes its own HA over time. The commonly cited practical recovery window is roughly **1\u20132 weeks**, although the visible tissue recovery\u2014especially after significant filler removal\u2014may take longer because swelling resolves and skin/tissue readjusts.\n\nSome people feel temporarily \u201cdeflated,\u201d hollow, loose, or asymmetrical after dissolving filler. This may reflect:\n- Removal of the filler\u2019s volume\n- Temporary swelling or bruising\n- Previously hidden volume loss\n- Changes from aging rather than permanent loss caused by hyaluronidase\n\nIf re-filling is planned, many injectors wait at least **about 1\u20132 weeks**, while others prefer **about 2\u20134 weeks** after larger-volume dissolving or after a complication.\n\n## 2. Treatment of vascular compromise from filler\n\nThis is the most urgent use in aesthetics. If filler blocks or significantly impairs blood flow, hyaluronidase may help dissolve the HA filler causing the obstruction.\n\n### Desired outcomes\n- Return of normal skin color and capillary refill\n- Reduced severe pain, blanching, mottling, dusky discoloration, or coolness\n- Prevention or reduction of skin injury, necrosis, scarring, and tissue loss\n\n### Time matters\nVascular occlusion is a medical emergency. Hyaluronidase should be administered **immediately** by an experienced clinician; delays of even **hours** can increase the risk of tissue damage. Management may require repeated high-dose treatment, close reassessment, warming/massage in selected situations, and urgent referral. Visual symptoms after facial filler\u2014blurred vision, vision loss, eye pain, ptosis, or neurologic symptoms\u2014require emergency ophthalmology/emergency care immediately; hyaluronidase cannot be relied upon to reverse filler-related blindness.\n\n## 3. Improving spread or absorption of injected fluids/medications\n\nHyaluronidase may be used medically to increase dispersion and absorption of subcutaneous fluids or medications.\n\nPotential outcomes include:\n- Faster absorption of injected fluid\n- Easier subcutaneous fluid administration (hypodermoclysis)\n- Improved distribution of local anesthetic in some settings\n- Reduced localized fluid buildup in selected situations\n\nThe effect is generally local and temporary.\n\n## 4. Treating extravasation of certain medications\n\nIf certain non-chemotherapy medications accidentally leak from a vein into nearby tissue, hyaluronidase can sometimes be used to help disperse the leaked substance and reduce pressure-related tissue injury.\n\nOutcome depends on:\n- Which medication leaked\n- How much leaked\n- How quickly treatment is given\n- Location and severity of tissue injury\n\nIt is not appropriate for every extravasated drug, so treatment must be guided by the specific medication and institutional protocol.\n\n## Common short-term effects\n\nAfter cosmetic filler dissolution, common effects include:\n- Redness, tenderness, burning, or stinging for **several hours to about 1\u20133 days**\n",
+    "latency_ms": 13328.8,
+    "token_count": 1108,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "bf5955981169",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234529.238268,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 7 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4499,
+          "evidence": [
+            "Latency 13329ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13328.8,
+        "token_count": 1108,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.159; flagged=True"
+}

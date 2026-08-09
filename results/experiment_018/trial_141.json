@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:02:15.968798+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "If an obese patient who wants to lose weight goes to the doctor's office, what would be the first steps to follow?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General medicine",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "The first visit should be a **structured, nonjudgmental assessment**, followed by a safe, individualized plan\u2014not simply a recommendation to \u201ceat less.\u201d\n\n### 1. Confirm the clinical picture\nThe clinician will usually:\n\n- Measure **height, weight, BMI, and waist circumference**.  \n  - BMI **25\u201329.9** is generally classified as overweight.  \n  - BMI **30 or higher** is generally classified as obesity.  \n  - BMI does not directly measure body fat, so waist circumference and overall health also matter.\n- Review weight history: when weight gain began, prior attempts, typical rate of change, and medications that may promote weight gain.\n- Check blood pressure, pulse, and sometimes signs of sleep apnea, joint disease, heart disease, or endocrine disorders.\n- Ask about eating patterns, physical activity, sleep, stress, alcohol, smoking, and access to healthy food.\n- Screen for binge-eating disorder, depression, anxiety, trauma, and other factors that affect eating or adherence.\n\n### 2. Look for obesity-related health conditions\nDepending on age, symptoms, and risk factors, the clinician may order:\n\n- **A1c or fasting glucose** for prediabetes or diabetes\n- **Lipid panel** for cholesterol and triglycerides\n- **Liver enzymes** for fatty liver disease\n- Kidney tests and other blood work when clinically indicated\n- Evaluation for **sleep apnea**, especially with loud snoring, witnessed pauses in breathing, morning headaches, or excessive daytime sleepiness\n- Assessment for hypertension, osteoarthritis, reflux, cardiovascular disease, and reproductive or hormonal problems\n\nRoutine thyroid testing is not necessary for everyone, but a **TSH** test may be appropriate if symptoms suggest hypothyroidism or the history is unclear.\n\n### 3. Set an initial, realistic goal\nA common initial target is losing **about 5%\u201310% of starting body weight over roughly 6 months**. Even **about 3%\u20135%** weight loss can improve blood glucose, blood pressure, and triglycerides.\n\nA safe typical rate is approximately **0.5\u20131 kg per week**, or about **1\u20132 lb per week**, although the rate varies. Rapid-loss diets should generally be avoided unless medically supervised.\n\nFor example, someone weighing **120 kg (265 lb)** might initially aim to lose about **6\u201312 kg (13\u201326 lb)** rather than focusing immediately on reaching an \u201cideal\u201d weight.\n\n### 4. Create a practical lifestyle plan\nThe clinician may refer the patient to a registered dietitian or structured weight-management program. The plan commonly includes:\n\n- A modest calorie reduction, often approximately **500\u2013750 calories per day**, individualized to the patient\n- Emphasis on vegetables, fruit, beans, whole grains, lean proteins, and minimally processed foods\n- Reducing sugary drinks, frequent alcohol, and highly calorie-dense foods\n- Regular meal structure and strategies for managing hunger and cravings\n- Gradually working toward approximately **150 minutes per week** of moderate-intensity aerobic activity, such as brisk walking, plus **2 days per week** of resistance training, if safe\n- Beginning with smaller amounts\u2014such as **5\u201310 minutes of walking once or twice daily**\u2014if the patient is currently inactive or has joint or cardiopulmonary limitations\n- Sleep goals of roughly **7\u20139 hours per night** for most adults\n- Follow-up visits, often every **2\u20134 weeks initially**, to monitor weight, symptoms, blood pressure, adherence, and barriers\n\nThe goal is not perfection; maintaining changes and preventing regain are important parts of treatment.\n\n### 5. Review medications and consider treatment escalation\nThe clinician should review all prescription drugs, over-the-counter products, and supplements. Some medications can contribute to weight gain, but they should not be stopped without medical advice.\n\nWeight-loss medication may be considered for adults with:\n\n- BMI **\u226530**, or\n- BMI **\u226527** with a weight-related condition such as diabetes, hypertension, sleep apnea, or dyslipidemia\n\nOptions may include medications such as **semaglutide, tirzepatide, liraglutide, naltrexone/bupropion, or orlistat**, depending on medical history, availability, cost, contraindications, and local guidelines. These require clinician supervision; some have important risks, interactions, and pregnancy restrictions.\n\nBariatric or metabolic surgery may be discussed for selected patients, commonly at:\n\n- BMI **\u226540**, or\n- BMI **\u226535** with significant obesity-related disease, and sometimes\n- BMI **30\u201334.9** with inadequately controlled metabolic disease under applicable guidelines\n\n### 6. Arrange follow-up and safety monitoring\nAt follow-up, the clinician should assess:\n\n- Weight trend and waist measurement\n- Blood pressure and relevant laboratory results\n- Medication side effects\n- Eating behavior, mood, sleep, and physical activity\n- Whether the plan is realistic and needs adjustment\n\nThe patient",
+    "latency_ms": 6953.3,
+    "input_tokens": 96,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "If an obese patient who wants to lose weight goes to the doctor's office, what would be the first steps to follow?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "The first visit should be a **structured, nonjudgmental assessment**, followed by a safe, individualized plan\u2014not simply a recommendation to \u201ceat less.\u201d\n\n### 1. Confirm the clinical picture\nThe clinician will usually:\n\n- Measure **height, weight, BMI, and waist circumference**.  \n  - BMI **25\u201329.9** is generally classified as overweight.  \n  - BMI **30 or higher** is generally classified as obesity.  \n  - BMI does not directly measure body fat, so waist circumference and overall health also matter.\n- Review weight history: when weight gain began, prior attempts, typical rate of change, and medications that may promote weight gain.\n- Check blood pressure, pulse, and sometimes signs of sleep apnea, joint disease, heart disease, or endocrine disorders.\n- Ask about eating patterns, physical activity, sleep, stress, alcohol, smoking, and access to healthy food.\n- Screen for binge-eating disorder, depression, anxiety, trauma, and other factors that affect eating or adherence.\n\n### 2. Look for obesity-related health conditions\nDepending on age, symptoms, and risk factors, the clinician may order:\n\n- **A1c or fasting glucose** for prediabetes or diabetes\n- **Lipid panel** for cholesterol and triglycerides\n- **Liver enzymes** for fatty liver disease\n- Kidney tests and other blood work when clinically indicated\n- Evaluation for **sleep apnea**, especially with loud snoring, witnessed pauses in breathing, morning headaches, or excessive daytime sleepiness\n- Assessment for hypertension, osteoarthritis, reflux, cardiovascular disease, and reproductive or hormonal problems\n\nRoutine thyroid testing is not necessary for everyone, but a **TSH** test may be appropriate if symptoms suggest hypothyroidism or the history is unclear.\n\n### 3. Set an initial, realistic goal\nA common initial target is losing **about 5%\u201310% of starting body weight over roughly 6 months**. Even **about 3%\u20135%** weight loss can improve blood glucose, blood pressure, and triglycerides.\n\nA safe typical rate is approximately **0.5\u20131 kg per week**, or about **1\u20132 lb per week**, although the rate varies. Rapid-loss diets should generally be avoided unless medically supervised.\n\nFor example, someone weighing **120 kg (265 lb)** might initially aim to lose about **6\u201312 kg (13\u201326 lb)** rather than focusing immediately on reaching an \u201cideal\u201d weight.\n\n### 4. Create a practical lifestyle plan\nThe clinician may refer the patient to a registered dietitian or structured weight-management program. The plan commonly includes:\n\n- A modest calorie reduction, often approximately **500\u2013750 calories per day**, individualized to the patient\n- Emphasis on vegetables, fruit, beans, whole grains, lean proteins, and minimally processed foods\n- Reducing sugary drinks, frequent alcohol, and highly calorie-dense foods\n- Regular meal structure and strategies for managing hunger and cravings\n- Gradually working toward approximately **150 minutes per week** of moderate-intensity aerobic activity, such as brisk walking, plus **2 days per week** of resistance training, if safe\n- Beginning with smaller amounts\u2014such as **5\u201310 minutes of walking once or twice daily**\u2014if the patient is currently inactive or has joint or cardiopulmonary limitations\n- Sleep goals of roughly **7\u20139 hours per night** for most adults\n- Follow-up visits, often every **2\u20134 weeks initially**, to monitor weight, symptoms, blood pressure, adherence, and barriers\n\nThe goal is not perfection; maintaining changes and preventing regain are important parts of treatment.\n\n### 5. Review medications and consider treatment escalation\nThe clinician should review all prescription drugs, over-the-counter products, and supplements. Some medications can contribute to weight gain, but they should not be stopped without medical advice.\n\nWeight-loss medication may be considered for adults with:\n\n- BMI **\u226530**, or\n- BMI **\u226527** with a weight-related condition such as diabetes, hypertension, sleep apnea, or dyslipidemia\n\nOptions may include medications such as **semaglutide, tirzepatide, liraglutide, naltrexone/bupropion, or orlistat**, depending on medical history, availability, cost, contraindications, and local guidelines. These require clinician supervision; some have important risks, interactions, and pregnancy restrictions.\n\nBariatric or metabolic surgery may be discussed for selected patients, commonly at:\n\n- BMI **\u226540**, or\n- BMI **\u226535** with significant obesity-related disease, and sometimes\n- BMI **30\u201334.9** with inadequately controlled metabolic disease under applicable guidelines\n\n### 6. Arrange follow-up and safety monitoring\nAt follow-up, the clinician should assess:\n\n- Weight trend and waist measurement\n- Blood pressure and relevant laboratory results\n- Medication side effects\n- Eating behavior, mood, sleep, and physical activity\n- Whether the plan is realistic and needs adjustment\n\nThe patient",
+    "latency_ms": 6953.3,
+    "token_count": 1120,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "2112be06d9f4",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230135.9680138,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 16 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 6953.3,
+        "token_count": 1120,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.141; flagged=True"
+}

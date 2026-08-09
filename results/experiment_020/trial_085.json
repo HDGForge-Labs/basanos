@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:43:17.749575+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What are the possible Security Classifications for messages and documents in the NATO realm?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Military communications",
+    "question_type": "Directed question that has a single unambiguous answer| Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# NATO Security Classifications\n\nNATO uses a standardized system of security classifications to protect information based on the potential damage its unauthorized disclosure could cause. The classifications, from lowest to highest, are:\n\n## 1. **NATO UNCLASSIFIED (NU)**\n- No damage from disclosure\n- Still subject to certain handling controls, though not a formal classification in the strictest sense\n- Not for public release without authorization\n\n## 2. **NATO RESTRICTED (NR)**\n- Unauthorized disclosure would be **disadvantageous** to NATO interests\n\n## 3. **NATO CONFIDENTIAL (NC)**\n- Unauthorized disclosure would cause **damage** to NATO interests\n\n## 4. **NATO SECRET (NS)**\n- Unauthorized disclosure would cause **serious damage** to NATO interests\n\n## 5. **COSMIC TOP SECRET (CTS)**\n- Unauthorized disclosure would cause **exceptionally grave damage** to NATO interests\n- \"COSMIC\" is the special caveat unique to NATO's top secret material, distinguishing it from national TOP SECRET designations\n\n---\n\n## Additional Markings and Caveats\n\nBeyond the core classifications, documents may carry additional handling instructions:\n\n- **ATOMAL** \u2013 Applied to US RESTRICTED DATA or FORMERLY RESTRICTED DATA and UK ATOMIC information released to NATO (combined with classification level, e.g., COSMIC TOP SECRET ATOMAL - CTSA)\n- **Releasable to (REL TO)** \u2013 Indicates the information may be shared with specific non-NATO nations or organizations\n- **Eyes Only** \u2013 Restricts distribution to specific personnel, no copying/further distribution\n- **NATO/[Nation] EYES ONLY**\n\n## Handling Requirements\n\nEach classification level has associated requirements for:\n- Personnel security clearance levels needed for access\n- Physical storage requirements (safes, vaults)\n- Transmission methods (encrypted channels, hand-carry procedures)\n- Reproduction and destruction procedures\n- Registry and accountability tracking (especially for SECRET and above)\n\nThis system is governed primarily by **C-M(2002)49** (NATO's security policy document) and enforced across all member nations, requiring national security authorities to implement equivalent protections for NATO-classified material within their own jurisdictions.",
+    "latency_ms": 10833.2,
+    "input_tokens": 140,
+    "output_tokens": 804
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the possible Security Classifications for messages and documents in the NATO realm?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "# NATO Security Classifications\n\nNATO uses a standardized system of security classifications to protect information based on the potential damage its unauthorized disclosure could cause. The classifications, from lowest to highest, are:\n\n## 1. **NATO UNCLASSIFIED (NU)**\n- No damage from disclosure\n- Still subject to certain handling controls, though not a formal classification in the strictest sense\n- Not for public release without authorization\n\n## 2. **NATO RESTRICTED (NR)**\n- Unauthorized disclosure would be **disadvantageous** to NATO interests\n\n## 3. **NATO CONFIDENTIAL (NC)**\n- Unauthorized disclosure would cause **damage** to NATO interests\n\n## 4. **NATO SECRET (NS)**\n- Unauthorized disclosure would cause **serious damage** to NATO interests\n\n## 5. **COSMIC TOP SECRET (CTS)**\n- Unauthorized disclosure would cause **exceptionally grave damage** to NATO interests\n- \"COSMIC\" is the special caveat unique to NATO's top secret material, distinguishing it from national TOP SECRET designations\n\n---\n\n## Additional Markings and Caveats\n\nBeyond the core classifications, documents may carry additional handling instructions:\n\n- **ATOMAL** \u2013 Applied to US RESTRICTED DATA or FORMERLY RESTRICTED DATA and UK ATOMIC information released to NATO (combined with classification level, e.g., COSMIC TOP SECRET ATOMAL - CTSA)\n- **Releasable to (REL TO)** \u2013 Indicates the information may be shared with specific non-NATO nations or organizations\n- **Eyes Only** \u2013 Restricts distribution to specific personnel, no copying/further distribution\n- **NATO/[Nation] EYES ONLY**\n\n## Handling Requirements\n\nEach classification level has associated requirements for:\n- Personnel security clearance levels needed for access\n- Physical storage requirements (safes, vaults)\n- Transmission methods (encrypted channels, hand-carry procedures)\n- Reproduction and destruction procedures\n- Registry and accountability tracking (especially for SECRET and above)\n\nThis system is governed primarily by **C-M(2002)49** (NATO's security policy document) and enforced across all member nations, requiring national security authorities to implement equivalent protections for NATO-classified material within their own jurisdictions.",
+    "latency_ms": 10833.2,
+    "token_count": 944
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "e294b96c25da",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239797.7488172,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4125,
+          "evidence": [
+            "Latency 10833ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 10833.2,
+        "token_count": 944,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.85; flagged=False"
+}

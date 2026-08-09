@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:53:59.062661+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is your opinion for Advanced Nurses Practitioner In ICU?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Intensive Care",
+    "question_type": "Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Advanced Nurse Practitioners in ICU: An Assessment\n\n## Overall Perspective\n\nAdvanced Nurse Practitioners (ANPs) in ICU settings represent a well-established and generally effective model of critical care delivery, with roughly 25-30 years of accumulated evidence supporting their integration into intensive care teams, particularly in the United States, UK, Australia, and increasingly other countries.\n\n## Evidence on Outcomes\n\n**Mortality and Safety**\n- Multiple studies suggest ICU mortality rates with NP-led or NP-inclusive care models are statistically comparable to physician-only models, typically showing differences of less than 1-2% in adjusted mortality\n- Some studies report ICU length of stay reductions of approximately 10-15% when ANPs are integrated into care teams\n- Ventilator days may decrease by roughly 1-2 days on average in some NP-inclusive models, though this varies significantly by study\n\n**Cost-Effectiveness**\n- Cost savings estimates range widely, from approximately 10% to 25% reduction in ICU costs per patient in some analyses\n- This stems partly from reduced junior physician staffing needs and potentially fewer unnecessary tests/interventions\n\n## Scope of Practice Considerations\n\n**Typical ANP responsibilities in ICU:**\n- Central line insertion (competency often achieved after approximately 20-30 supervised procedures)\n- Arterial line placement\n- Ventilator management adjustments\n- Basic bronchoscopy in some advanced practice models\n- Family communication and goals-of-care discussions\n- First-line response to clinical deterioration\n\n**Limitations typically requiring physician oversight:**\n- Complex procedural interventions (ECMO cannulation, complex airway management)\n- Major treatment plan changes in unstable patients\n- End-of-life decision finalization (varies by jurisdiction)\n\n## Training and Competency Concerns\n\n- Training pathways vary enormously\u2014from approximately 500 to 2,000+ clinical hours depending on program and country\n- Approximately 40-60% of ICU-specific NP programs lack standardized critical care curricula, creating variability in competency\n- Scope of practice regulations differ substantially by state/country, creating inconsistency\n\n## My Assessment\n\n**Strengths:**\n1. Improved continuity of care (ANPs often work stable long-term positions vs. rotating residents every 4-6 weeks)\n2. Cost-effective staffing solution amid physician shortages (ICU physician shortages projected at 20-35% in some regions by 2030s)\n3. Strong evidence base for safety in appropriate scope\n4. Enhanced patient/family satisfaction scores in several studies (improvements of roughly 15-20%)\n\n**Concerns:**\n1. Variability in training standardization remains a legitimate patient safety issue\n2. Scope creep without adequate outcome data in some settings\n3. Supervision models need clearer, evidence-based frameworks\n4. Approximately 15-20% of physicians in surveys express concerns about diagnostic reasoning depth compared to physician training\n\n##",
+    "latency_ms": 14241.7,
+    "input_tokens": 135,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is your opinion for Advanced Nurses Practitioner In ICU?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Advanced Nurse Practitioners in ICU: An Assessment\n\n## Overall Perspective\n\nAdvanced Nurse Practitioners (ANPs) in ICU settings represent a well-established and generally effective model of critical care delivery, with roughly 25-30 years of accumulated evidence supporting their integration into intensive care teams, particularly in the United States, UK, Australia, and increasingly other countries.\n\n## Evidence on Outcomes\n\n**Mortality and Safety**\n- Multiple studies suggest ICU mortality rates with NP-led or NP-inclusive care models are statistically comparable to physician-only models, typically showing differences of less than 1-2% in adjusted mortality\n- Some studies report ICU length of stay reductions of approximately 10-15% when ANPs are integrated into care teams\n- Ventilator days may decrease by roughly 1-2 days on average in some NP-inclusive models, though this varies significantly by study\n\n**Cost-Effectiveness**\n- Cost savings estimates range widely, from approximately 10% to 25% reduction in ICU costs per patient in some analyses\n- This stems partly from reduced junior physician staffing needs and potentially fewer unnecessary tests/interventions\n\n## Scope of Practice Considerations\n\n**Typical ANP responsibilities in ICU:**\n- Central line insertion (competency often achieved after approximately 20-30 supervised procedures)\n- Arterial line placement\n- Ventilator management adjustments\n- Basic bronchoscopy in some advanced practice models\n- Family communication and goals-of-care discussions\n- First-line response to clinical deterioration\n\n**Limitations typically requiring physician oversight:**\n- Complex procedural interventions (ECMO cannulation, complex airway management)\n- Major treatment plan changes in unstable patients\n- End-of-life decision finalization (varies by jurisdiction)\n\n## Training and Competency Concerns\n\n- Training pathways vary enormously\u2014from approximately 500 to 2,000+ clinical hours depending on program and country\n- Approximately 40-60% of ICU-specific NP programs lack standardized critical care curricula, creating variability in competency\n- Scope of practice regulations differ substantially by state/country, creating inconsistency\n\n## My Assessment\n\n**Strengths:**\n1. Improved continuity of care (ANPs often work stable long-term positions vs. rotating residents every 4-6 weeks)\n2. Cost-effective staffing solution amid physician shortages (ICU physician shortages projected at 20-35% in some regions by 2030s)\n3. Strong evidence base for safety in appropriate scope\n4. Enhanced patient/family satisfaction scores in several studies (improvements of roughly 15-20%)\n\n**Concerns:**\n1. Variability in training standardization remains a legitimate patient safety issue\n2. Scope creep without adequate outcome data in some settings\n3. Supervision models need clearer, evidence-based frameworks\n4. Approximately 15-20% of physicians in surveys express concerns about diagnostic reasoning depth compared to physician training\n\n##",
+    "latency_ms": 14241.7,
+    "token_count": 1159,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "ffd290cf8a8b",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240439.0618675,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 14 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4636,
+          "evidence": [
+            "Latency 14242ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 14241.7,
+        "token_count": 1159,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.137; flagged=True"
+}

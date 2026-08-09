@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T00:00:53.892855+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "A 45-year-old woman presents to her doctor with a one-month history of fatigue, shortness of breath, and easy bruising. She has no significant past medical history. A blood test reveals anemia, leukopenia, and thrombocytopenia. A bone marrow biopsy is performed and reveals chronic myeloid leukemia (CML). The patient is referred to a hematologist-oncologist for treatment. The hematologist-oncologist discusses the treatment options with the patient, which include tyrosine kinase inhibitors (TKIs), allogeneic stem cell transplantation, and supportive care. The patient decides to undergo treatment with TKIs. What are the advantages and disadvantages of treatment with TKIs for CML?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Haematology",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Tyrosine kinase inhibitors (TKIs) are the standard first-line treatment for most patients with chronic-phase CML. They target the abnormal **BCR-ABL1 tyrosine kinase** created by the Philadelphia chromosome translocation, t(9;22).\n\n### Advantages of TKIs\n\n- **Highly effective disease control**\n  - TKIs produce complete hematologic responses in most patients and major molecular responses in a large proportion.\n  - With modern TKIs, long-term survival for chronic-phase CML approaches that of the general population for many patients.\n\n- **Oral outpatient therapy**\n  - Drugs such as **imatinib, dasatinib, nilotinib, bosutinib, and asciminib** are taken orally, avoiding the immediate risks and hospitalization associated with allogeneic stem-cell transplantation.\n\n- **Avoids transplant-related mortality and morbidity**\n  - Unlike allogeneic transplant, TKIs do not carry major risks of graft-versus-host disease, graft failure, severe opportunistic infection, infertility from conditioning chemotherapy, or high early treatment-related mortality.\n\n- **Rapid improvement in blood counts and symptoms**\n  - Leukocytosis, splenomegaly, fatigue, and constitutional symptoms often improve within weeks to months as the leukemic clone is suppressed.\n\n- **Several drug options are available**\n  - If a patient has intolerance, resistance, or a BCR-ABL1 mutation affecting one TKI, another TKI may still be effective.\n  - For example, **ponatinib** can be active against the T315I mutation, although it has important vascular toxicity risks.\n\n- **Potential for treatment-free remission in selected patients**\n  - Patients who maintain a deep molecular response, typically MR4 or deeper, for years may be able to stop therapy under close molecular monitoring.\n  - Roughly 40\u201360% of appropriately selected patients can remain in remission after discontinuation; those who relapse usually respond again when the TKI is restarted.\n\n### Disadvantages of TKIs\n\n- **Usually require long-term, often lifelong therapy**\n  - TKIs suppress CML very effectively but do not reliably eradicate all leukemic stem cells.\n  - Most patients must continue daily treatment indefinitely unless they qualify for a carefully monitored treatment-free remission attempt.\n\n- **Adverse effects**\n  - Common effects include fatigue, nausea, diarrhea, edema, rash, muscle cramps, headache, and cytopenias.\n  - Important drug-specific toxicities include:\n    - **Imatinib:** periorbital edema, fluid retention, muscle cramps, gastrointestinal upset.\n    - **Dasatinib:** pleural effusions, pulmonary arterial hypertension, platelet dysfunction/bleeding risk.\n    - **Nilotinib:** QT prolongation, hyperglycemia, hyperlipidemia, arterial occlusive events.\n    - **Bosutinib:** diarrhea, liver enzyme elevation.\n    - **Ponatinib:** arterial thrombosis, hypertension, pancreatitis.\n    - **Asciminib:** cytopenias, pancreatitis, hypertension; generally has a different mechanism and toxicity profile.\n\n- **Resistance or inadequate response can occur**\n  - Resistance may result from poor adherence, BCR-ABL1 kinase-domain mutations, additional chromosomal abnormalities, or progression to accelerated/blast phase.\n  - Resistant disease may require switching TKIs, mutation testing, and sometimes stem-cell transplantation.\n\n- **Need for frequent monitoring**\n  - Patients need regular complete blood counts and serial quantitative **BCR-ABL1 PCR** testing, generally every 3 months initially, to confirm adequate molecular response.\n\n- **Adherence is essential**\n  - Missing doses can lead to inadequate molecular response and promote resistance. Daily medication, side effects, drug interactions, and cost can make adherence challenging.\n\n- **Drug interactions and comorbidity limitations**\n  - Many TKIs interact with CYP3A4 inhibitors/inducers and may be inappropriate or require caution in patients with cardiac disease, vascular disease, liver disease, lung disease, or prolonged QT interval.\n\n- **Pregnancy concerns**\n  - TKIs can be teratogenic and are generally avoided during pregnancy, requiring individualized planning for women of childbearing potential.\n\nIn summary, TKIs offer highly effective, relatively noninvasive long-term control of CML and have largely replaced transplant as initial therapy. Their main limitations are chronic treatment dependence, toxicity, cost/adherence issues, monitoring requirements, and the possibility of resistance or progression in a minority of patients.",
+    "latency_ms": 10967.2,
+    "input_tokens": 222,
+    "output_tokens": 906
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A 45-year-old woman presents to her doctor with a one-month history of fatigue, shortness of breath, and easy bruising. She has no significant past medical history. A blood test reveals anemia, leukopenia, and thrombocytopenia. A bone marrow biopsy is performed and reveals chronic myeloid leukemia (CML). The patient is referred to a hematologist-oncologist for treatment. The hematologist-oncologist discusses the treatment options with the patient, which include tyrosine kinase inhibitors (TKIs), allogeneic stem cell transplantation, and supportive care. The patient decides to undergo treatment with TKIs. What are the advantages and disadvantages of treatment with TKIs for CML?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Tyrosine kinase inhibitors (TKIs) are the standard first-line treatment for most patients with chronic-phase CML. They target the abnormal **BCR-ABL1 tyrosine kinase** created by the Philadelphia chromosome translocation, t(9;22).\n\n### Advantages of TKIs\n\n- **Highly effective disease control**\n  - TKIs produce complete hematologic responses in most patients and major molecular responses in a large proportion.\n  - With modern TKIs, long-term survival for chronic-phase CML approaches that of the general population for many patients.\n\n- **Oral outpatient therapy**\n  - Drugs such as **imatinib, dasatinib, nilotinib, bosutinib, and asciminib** are taken orally, avoiding the immediate risks and hospitalization associated with allogeneic stem-cell transplantation.\n\n- **Avoids transplant-related mortality and morbidity**\n  - Unlike allogeneic transplant, TKIs do not carry major risks of graft-versus-host disease, graft failure, severe opportunistic infection, infertility from conditioning chemotherapy, or high early treatment-related mortality.\n\n- **Rapid improvement in blood counts and symptoms**\n  - Leukocytosis, splenomegaly, fatigue, and constitutional symptoms often improve within weeks to months as the leukemic clone is suppressed.\n\n- **Several drug options are available**\n  - If a patient has intolerance, resistance, or a BCR-ABL1 mutation affecting one TKI, another TKI may still be effective.\n  - For example, **ponatinib** can be active against the T315I mutation, although it has important vascular toxicity risks.\n\n- **Potential for treatment-free remission in selected patients**\n  - Patients who maintain a deep molecular response, typically MR4 or deeper, for years may be able to stop therapy under close molecular monitoring.\n  - Roughly 40\u201360% of appropriately selected patients can remain in remission after discontinuation; those who relapse usually respond again when the TKI is restarted.\n\n### Disadvantages of TKIs\n\n- **Usually require long-term, often lifelong therapy**\n  - TKIs suppress CML very effectively but do not reliably eradicate all leukemic stem cells.\n  - Most patients must continue daily treatment indefinitely unless they qualify for a carefully monitored treatment-free remission attempt.\n\n- **Adverse effects**\n  - Common effects include fatigue, nausea, diarrhea, edema, rash, muscle cramps, headache, and cytopenias.\n  - Important drug-specific toxicities include:\n    - **Imatinib:** periorbital edema, fluid retention, muscle cramps, gastrointestinal upset.\n    - **Dasatinib:** pleural effusions, pulmonary arterial hypertension, platelet dysfunction/bleeding risk.\n    - **Nilotinib:** QT prolongation, hyperglycemia, hyperlipidemia, arterial occlusive events.\n    - **Bosutinib:** diarrhea, liver enzyme elevation.\n    - **Ponatinib:** arterial thrombosis, hypertension, pancreatitis.\n    - **Asciminib:** cytopenias, pancreatitis, hypertension; generally has a different mechanism and toxicity profile.\n\n- **Resistance or inadequate response can occur**\n  - Resistance may result from poor adherence, BCR-ABL1 kinase-domain mutations, additional chromosomal abnormalities, or progression to accelerated/blast phase.\n  - Resistant disease may require switching TKIs, mutation testing, and sometimes stem-cell transplantation.\n\n- **Need for frequent monitoring**\n  - Patients need regular complete blood counts and serial quantitative **BCR-ABL1 PCR** testing, generally every 3 months initially, to confirm adequate molecular response.\n\n- **Adherence is essential**\n  - Missing doses can lead to inadequate molecular response and promote resistance. Daily medication, side effects, drug interactions, and cost can make adherence challenging.\n\n- **Drug interactions and comorbidity limitations**\n  - Many TKIs interact with CYP3A4 inhibitors/inducers and may be inappropriate or require caution in patients with cardiac disease, vascular disease, liver disease, lung disease, or prolonged QT interval.\n\n- **Pregnancy concerns**\n  - TKIs can be teratogenic and are generally avoided during pregnancy, requiring individualized planning for women of childbearing potential.\n\nIn summary, TKIs offer highly effective, relatively noninvasive long-term control of CML and have largely replaced transplant as initial therapy. Their main limitations are chronic treatment dependence, toxicity, cost/adherence issues, monitoring requirements, and the possibility of resistance or progression in a minority of patients.",
+    "latency_ms": 10967.2,
+    "token_count": 1128
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "c7aba0fe05f3",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786233653.892069,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4145,
+          "evidence": [
+            "Latency 10967ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 10967.2,
+        "token_count": 1128,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.67; flagged=False"
+}

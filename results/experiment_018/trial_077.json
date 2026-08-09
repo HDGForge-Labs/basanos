@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:56:53.273022+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Why is it that when an accused is caught on act, they can't be guilty immediately?",
+    "field": "Law",
+    "specific_field": "Paralegal",
+    "question_type": "Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Because being caught **in the act** is evidence\u2014not a substitute for a legal judgment.\n\nIn a lawful justice system:\n\n- **Only a court can determine guilt.** Police may arrest someone based on probable cause, but they do not issue the final conviction.\n- The accused has the right to **due process**, including notice of the charge, a lawyer, and an opportunity to challenge the evidence.\n- \u201cCaught on act\u201d can still be misunderstood: identity, intent, self-defense, the legality of the search or arrest, or the exact circumstances may be disputed.\n- The prosecution generally must prove every required element of the offense **beyond a reasonable doubt**.\n- The presumption of innocence prevents punishment based merely on an accusation or arrest.\n\nThis does not mean the person must simply be released. If caught committing an offense, police can usually arrest them\u2014often under a \u201ccaught in the act\u201d or *in flagrante delicto* rule\u2014and a judge may decide issues such as detention, bail, and whether the evidence supports trial. But the person becomes legally guilty only after a valid conviction, unless they lawfully plead guilty in court.",
+    "latency_ms": 2194.8,
+    "input_tokens": 96,
+    "output_tokens": 234
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Why is it that when an accused is caught on act, they can't be guilty immediately?",
+      "field": "Law"
+    },
+    "response": "Because being caught **in the act** is evidence\u2014not a substitute for a legal judgment.\n\nIn a lawful justice system:\n\n- **Only a court can determine guilt.** Police may arrest someone based on probable cause, but they do not issue the final conviction.\n- The accused has the right to **due process**, including notice of the charge, a lawyer, and an opportunity to challenge the evidence.\n- \u201cCaught on act\u201d can still be misunderstood: identity, intent, self-defense, the legality of the search or arrest, or the exact circumstances may be disputed.\n- The prosecution generally must prove every required element of the offense **beyond a reasonable doubt**.\n- The presumption of innocence prevents punishment based merely on an accusation or arrest.\n\nThis does not mean the person must simply be released. If caught committing an offense, police can usually arrest them\u2014often under a \u201ccaught in the act\u201d or *in flagrante delicto* rule\u2014and a judge may decide issues such as detention, bail, and whether the evidence supports trial. But the person becomes legally guilty only after a valid conviction, unless they lawfully plead guilty in court.",
+    "latency_ms": 2194.8,
+    "token_count": 330
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "24d1c329696b",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229813.2722542,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2194.8,
+        "token_count": 330,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.77; flagged=False"
+}

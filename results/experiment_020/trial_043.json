@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:34:57.190898+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "When a patient is started on biologic medications, it is important to rule out latent infections like tuberculosis, and complete certain vaccination schemes. Can you compile which of these attitudes are recommended for each different biologic treatment used in rheumatology?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Family Medicine",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Pre-Biologic Screening and Vaccination Recommendations by Drug Class\n\n## Universal Requirements (All Biologics/JAK Inhibitors)\n\n**Baseline screening:**\n- TB screening: TST (\u22655mm induration = positive) or IGRA (QuantiFERON-Gold or T-SPOT.TB) \u2014 IGRA preferred if BCG-vaccinated\n- Chest X-ray\n- Hepatitis B (HBsAg, anti-HBc, anti-HBs) and Hepatitis C serology\n- HIV testing (risk-based or universal per local guidelines)\n- Complete blood count, liver function tests\n\n**Vaccination principles:**\n- Update vaccines **\u22652-4 weeks before** starting biologic (ideally)\n- Live vaccines contraindicated once biologic is started (MMR, varicella, zoster live vaccine, yellow fever, oral typhoid)\n- Recommended: influenza (annual), pneumococcal (PCV13 then PPSV23), recombinant zoster vaccine (Shingrix - non-live, can be given even on therapy), Tdap, HPV per age indication\n- COVID-19 vaccination per current guidelines\n\n---\n\n## Drug-Specific Considerations\n\n### Anti-TNF agents (infliximab, adalimumab, etanercept, certolizumab, golimumab)\n- **Highest TB reactivation risk** among biologics\n- Mandatory TB screening before initiation; if latent TB positive, treat for **minimum 1 month** before starting anti-TNF (some guidelines recommend full course completion is not required, just initiation)\n- HBV reactivation risk moderate-high \u2014 if HBsAg+, start antiviral prophylaxis before biologic\n- Etanercept has somewhat lower TB reactivation risk than monoclonal antibodies (infliximab > adalimumab > etanercept)\n\n### Rituximab (anti-CD20)\n- TB screening still recommended, though reactivation risk is lower than anti-TNF\n- **HBV screening critical** \u2014 rituximab carries highest HBV reactivation risk among biologics; if HBsAg+ or anti-HBc+ (even with HBsAg negative), antiviral prophylaxis (entecavir/tenofovir) required before and during treatment, continuing 12 months after\n- **Vaccinate before rituximab, not after** \u2014 B-cell depletion impairs vaccine response for 6-12 months; give pneumococcal, influenza, Tdap ideally 4 weeks prior\n- Check immunoglobulin levels (IgG) periodically \u2014 hypogammaglobulinemia risk with repeated cycles\n\n### Abatacept (CTLA4-Ig)\n- TB screening recommended (lower risk than anti-TNF, but still required)\n- Standard hepatitis screening\n- No major distinct vaccination restriction beyond universal recommendations\n\n### Tocilizumab / Sarilumab (IL-6 inhibitors)\n- TB screening required\n- Monitor for masked infection signs \u2014 IL-6 blockade suppres",
+    "latency_ms": 11581.7,
+    "input_tokens": 193,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "When a patient is started on biologic medications, it is important to rule out latent infections like tuberculosis, and complete certain vaccination schemes. Can you compile which of these attitudes are recommended for each different biologic treatment used in rheumatology?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Pre-Biologic Screening and Vaccination Recommendations by Drug Class\n\n## Universal Requirements (All Biologics/JAK Inhibitors)\n\n**Baseline screening:**\n- TB screening: TST (\u22655mm induration = positive) or IGRA (QuantiFERON-Gold or T-SPOT.TB) \u2014 IGRA preferred if BCG-vaccinated\n- Chest X-ray\n- Hepatitis B (HBsAg, anti-HBc, anti-HBs) and Hepatitis C serology\n- HIV testing (risk-based or universal per local guidelines)\n- Complete blood count, liver function tests\n\n**Vaccination principles:**\n- Update vaccines **\u22652-4 weeks before** starting biologic (ideally)\n- Live vaccines contraindicated once biologic is started (MMR, varicella, zoster live vaccine, yellow fever, oral typhoid)\n- Recommended: influenza (annual), pneumococcal (PCV13 then PPSV23), recombinant zoster vaccine (Shingrix - non-live, can be given even on therapy), Tdap, HPV per age indication\n- COVID-19 vaccination per current guidelines\n\n---\n\n## Drug-Specific Considerations\n\n### Anti-TNF agents (infliximab, adalimumab, etanercept, certolizumab, golimumab)\n- **Highest TB reactivation risk** among biologics\n- Mandatory TB screening before initiation; if latent TB positive, treat for **minimum 1 month** before starting anti-TNF (some guidelines recommend full course completion is not required, just initiation)\n- HBV reactivation risk moderate-high \u2014 if HBsAg+, start antiviral prophylaxis before biologic\n- Etanercept has somewhat lower TB reactivation risk than monoclonal antibodies (infliximab > adalimumab > etanercept)\n\n### Rituximab (anti-CD20)\n- TB screening still recommended, though reactivation risk is lower than anti-TNF\n- **HBV screening critical** \u2014 rituximab carries highest HBV reactivation risk among biologics; if HBsAg+ or anti-HBc+ (even with HBsAg negative), antiviral prophylaxis (entecavir/tenofovir) required before and during treatment, continuing 12 months after\n- **Vaccinate before rituximab, not after** \u2014 B-cell depletion impairs vaccine response for 6-12 months; give pneumococcal, influenza, Tdap ideally 4 weeks prior\n- Check immunoglobulin levels (IgG) periodically \u2014 hypogammaglobulinemia risk with repeated cycles\n\n### Abatacept (CTLA4-Ig)\n- TB screening recommended (lower risk than anti-TNF, but still required)\n- Standard hepatitis screening\n- No major distinct vaccination restriction beyond universal recommendations\n\n### Tocilizumab / Sarilumab (IL-6 inhibitors)\n- TB screening required\n- Monitor for masked infection signs \u2014 IL-6 blockade suppres",
+    "latency_ms": 11581.7,
+    "token_count": 1217
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "ea4f21c3fd4d",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239297.1901057,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4237,
+          "evidence": [
+            "Latency 11582ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11581.7,
+        "token_count": 1217,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.43; flagged=False"
+}

@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:03:45.857637+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "A patient with low IQ has trouble sleeping but does not understand the risks of long term benzodiazepine usage. How can I explain it to her in simple terms and also suggest something different?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Psychiatry ",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Use simple, concrete language, and involve her in the decision rather than assuming she cannot decide. Check her understanding and involve a legally authorized decision-maker only if she lacks decision-making capacity. Do not stop a benzodiazepine suddenly\u2014withdrawal can include severe anxiety, tremor, seizures, and delirium.\n\n### A simple explanation\n\nYou might say:\n\n> \u201cThis medicine can help you sleep tonight, but your body can get used to it. After a while, it may not work as well, so you may need more. If you stop suddenly, you can feel very sick and, rarely, have a seizure. It can also make you sleepy, dizzy, forgetful, and unsteady. That can cause falls or accidents. It can be especially dangerous with alcohol, opioids, or other medicines that make you sleepy. Let\u2019s look for a safer way to improve your sleep.\u201d\n\nUse short sentences, pictures, and repetition. Ask her to explain it back:\n\n> \u201cWhat could happen if you take too much?\u201d  \n> \u201cWhat should you do before stopping this medicine?\u201d\n\nAvoid saying \u201caddictive\u201d alone; explain \u201cyour body can get used to it.\u201d Emphasize that the prescriber will make any reduction gradually.\n\n### Main long-term concerns\n\nRisks vary by drug, dose, age, and other conditions, but long-term or regular use can cause:\n\n- **Tolerance:** the same dose may work less well after weeks or months.\n- **Dependence and withdrawal:** symptoms can occur after regular use, sometimes after only several weeks. Withdrawal may include insomnia, anxiety, sweating, agitation, perceptual changes, and\u2014in severe cases\u2014seizures.\n- **Memory and thinking problems:** slowed reactions, confusion, and reduced alertness.\n- **Falls and injuries:** especially in older adults or anyone with balance problems.\n- **Breathing problems:** risk is much higher when combined with opioids, alcohol, sleep apnea, or other sedatives.\n- **Accidental overdose:** never combine it with alcohol, opioids, sedating antihistamines, or recreational drugs unless the prescriber specifically approves.\n- **Rebound insomnia:** sleep may become worse for a period after the medicine is reduced.\n\n### Safer alternatives to discuss with the prescriber\n\nFirst, assess why she is not sleeping. Common contributors include pain, depression or anxiety, medication effects, caffeine, sleep apnea, restless legs, seizures, reflux, or an irregular schedule.\n\n#### 1. Behavioral treatment: usually first choice\n\n**Cognitive behavioral therapy for insomnia (CBT-I)** is generally more effective long term than sleeping pills. For someone with low intellectual functioning, ask for an adapted version using pictures, repetition, and caregiver support.\n\nA simple plan:\n\n- Keep the same wake-up time every day, with no more than approximately **1-hour** variation.\n- Use the bed only for sleep.\n- If awake for roughly **20\u201330 minutes**, get up for a quiet activity in dim light, then return when sleepy.\n- Avoid caffeine after about **noon**; caffeine can remain active for approximately **6\u20138 hours**.\n- Avoid nicotine, alcohol, and heavy meals near bedtime.\n- Get approximately **20\u201330 minutes** of daylight and activity during the day, if medically safe.\n- Avoid naps, or limit them to approximately **20\u201330 minutes** before mid-afternoon.\n- Keep the bedroom dark, quiet, and comfortably cool.\n- Use a visual bedtime routine, such as: toilet \u2192 wash \u2192 pajamas \u2192 quiet activity \u2192 bed.\n- Track bedtime, wake time, naps, medicines, and nighttime awakenings for approximately **2 weeks**.\n\nCaregivers should use the same routine and avoid repeatedly giving extra doses during the night unless specifically instructed.\n\n#### 2. Medication options\n\nMedication choice depends on age, pregnancy possibility, other illnesses, and current medicines. Ask a clinician or pharmacist before changing anything.\n\n- **Melatonin:** sometimes useful when the sleep schedule is delayed or irregular, particularly in people with developmental disabilities. A clinician may suggest starting around **0.5\u20131 mg** approximately **1\u20132 hours before bedtime**, rather than immediately using high doses. Products vary in quality, and possible effects include morning sleepiness, headache, or vivid dreams.\n- **Ramelteon:** a prescription option that does not cause benzodiazepine dependence and may help with falling asleep.\n- **Low-dose doxepin:** may help sleep maintenance, but can still cause adverse effects and is not appropriate for everyone.\n- **Sedating antidepressants or antipsychotics:** should not be used routinely just for insomnia unless there is a clear separate indication; they can cause weight gain, low blood pressure, movement problems, and other harms.\n- **Over-the-counter antihistamines** such as diphenhydramine: generally poor long-term choices because they can cause confusion, urinary retention, constipation, next-day sedation, and tolerance.\n\n### If she is already taking a benzodiazepine\n\nArrange a medication review with",
+    "latency_ms": 7783.3,
+    "input_tokens": 111,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A patient with low IQ has trouble sleeping but does not understand the risks of long term benzodiazepine usage. How can I explain it to her in simple terms and also suggest something different?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Use simple, concrete language, and involve her in the decision rather than assuming she cannot decide. Check her understanding and involve a legally authorized decision-maker only if she lacks decision-making capacity. Do not stop a benzodiazepine suddenly\u2014withdrawal can include severe anxiety, tremor, seizures, and delirium.\n\n### A simple explanation\n\nYou might say:\n\n> \u201cThis medicine can help you sleep tonight, but your body can get used to it. After a while, it may not work as well, so you may need more. If you stop suddenly, you can feel very sick and, rarely, have a seizure. It can also make you sleepy, dizzy, forgetful, and unsteady. That can cause falls or accidents. It can be especially dangerous with alcohol, opioids, or other medicines that make you sleepy. Let\u2019s look for a safer way to improve your sleep.\u201d\n\nUse short sentences, pictures, and repetition. Ask her to explain it back:\n\n> \u201cWhat could happen if you take too much?\u201d  \n> \u201cWhat should you do before stopping this medicine?\u201d\n\nAvoid saying \u201caddictive\u201d alone; explain \u201cyour body can get used to it.\u201d Emphasize that the prescriber will make any reduction gradually.\n\n### Main long-term concerns\n\nRisks vary by drug, dose, age, and other conditions, but long-term or regular use can cause:\n\n- **Tolerance:** the same dose may work less well after weeks or months.\n- **Dependence and withdrawal:** symptoms can occur after regular use, sometimes after only several weeks. Withdrawal may include insomnia, anxiety, sweating, agitation, perceptual changes, and\u2014in severe cases\u2014seizures.\n- **Memory and thinking problems:** slowed reactions, confusion, and reduced alertness.\n- **Falls and injuries:** especially in older adults or anyone with balance problems.\n- **Breathing problems:** risk is much higher when combined with opioids, alcohol, sleep apnea, or other sedatives.\n- **Accidental overdose:** never combine it with alcohol, opioids, sedating antihistamines, or recreational drugs unless the prescriber specifically approves.\n- **Rebound insomnia:** sleep may become worse for a period after the medicine is reduced.\n\n### Safer alternatives to discuss with the prescriber\n\nFirst, assess why she is not sleeping. Common contributors include pain, depression or anxiety, medication effects, caffeine, sleep apnea, restless legs, seizures, reflux, or an irregular schedule.\n\n#### 1. Behavioral treatment: usually first choice\n\n**Cognitive behavioral therapy for insomnia (CBT-I)** is generally more effective long term than sleeping pills. For someone with low intellectual functioning, ask for an adapted version using pictures, repetition, and caregiver support.\n\nA simple plan:\n\n- Keep the same wake-up time every day, with no more than approximately **1-hour** variation.\n- Use the bed only for sleep.\n- If awake for roughly **20\u201330 minutes**, get up for a quiet activity in dim light, then return when sleepy.\n- Avoid caffeine after about **noon**; caffeine can remain active for approximately **6\u20138 hours**.\n- Avoid nicotine, alcohol, and heavy meals near bedtime.\n- Get approximately **20\u201330 minutes** of daylight and activity during the day, if medically safe.\n- Avoid naps, or limit them to approximately **20\u201330 minutes** before mid-afternoon.\n- Keep the bedroom dark, quiet, and comfortably cool.\n- Use a visual bedtime routine, such as: toilet \u2192 wash \u2192 pajamas \u2192 quiet activity \u2192 bed.\n- Track bedtime, wake time, naps, medicines, and nighttime awakenings for approximately **2 weeks**.\n\nCaregivers should use the same routine and avoid repeatedly giving extra doses during the night unless specifically instructed.\n\n#### 2. Medication options\n\nMedication choice depends on age, pregnancy possibility, other illnesses, and current medicines. Ask a clinician or pharmacist before changing anything.\n\n- **Melatonin:** sometimes useful when the sleep schedule is delayed or irregular, particularly in people with developmental disabilities. A clinician may suggest starting around **0.5\u20131 mg** approximately **1\u20132 hours before bedtime**, rather than immediately using high doses. Products vary in quality, and possible effects include morning sleepiness, headache, or vivid dreams.\n- **Ramelteon:** a prescription option that does not cause benzodiazepine dependence and may help with falling asleep.\n- **Low-dose doxepin:** may help sleep maintenance, but can still cause adverse effects and is not appropriate for everyone.\n- **Sedating antidepressants or antipsychotics:** should not be used routinely just for insomnia unless there is a clear separate indication; they can cause weight gain, low blood pressure, movement problems, and other harms.\n- **Over-the-counter antihistamines** such as diphenhydramine: generally poor long-term choices because they can cause confusion, urinary retention, constipation, next-day sedation, and tolerance.\n\n### If she is already taking a benzodiazepine\n\nArrange a medication review with",
+    "latency_ms": 7783.3,
+    "token_count": 1135,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "c2bcf2369c47",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230225.8568907,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 5 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 7783.3,
+        "token_count": 1135,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.154; flagged=True"
+}

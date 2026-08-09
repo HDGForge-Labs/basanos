@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:48:39.141445+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Can I leave a job at the end of a trial period?",
+    "field": "Law",
+    "specific_field": "personnel administration",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Leaving a Job During a Trial Period\n\nYes, you can generally leave a job during a trial period (probation period), and it's typically easier than resigning from a permanent position. Here's what you should know:\n\n## Notice Requirements\n\n- **Trial periods** commonly range from about **30 to 90 days**, though some can extend to roughly **6 months** depending on the role and jurisdiction.\n- Notice requirements during probation are usually shorter than standard notice periods\u2014often around **1 to 2 weeks**, compared to the standard **2 to 4 weeks** (or more for senior roles).\n- Some contracts specify as little as **24 to 48 hours** notice during an initial trial window (especially common in the UK for very short probationary periods).\n- Always check your specific employment contract, as notice periods vary significantly by country, state, and company policy.\n\n## Legal Considerations by Region\n\n- **United States**: Most employment is \"at-will,\" meaning either party can typically end employment with little to no notice, though contracts or company policy may specify otherwise.\n- **United Kingdom**: Statutory minimum notice is usually **1 week** if employed over 1 month, but probationary contracts often specify similar short terms.\n- **Canada/EU/Australia**: Notice requirements during probation are often reduced (sometimes to about **1 week**) compared to post-probation periods, but this varies by province/country.\n\n## Practical Steps\n\n1. **Review your contract** for specific notice period clauses tied to the probationary period.\n2. **Provide written resignation**, even if notice is minimal\u2014aim for at least **3 to 5 business days** as a courtesy if not legally required.\n3. **Be professional**\u2014cite reasons diplomatically (e.g., \"not the right fit,\" \"accepted another opportunity\") to preserve your reference and reputation.\n4. **Check for repayment clauses**\u2014some employers include clauses requiring repayment of training costs (commonly **$500 to $5,000**) if you leave within a certain window (often **90 days to 1 year**).\n\n## Financial/Benefits Impact\n\n- You may not yet be **vested** in benefits like retirement matching (often requiring **6 months to 1 year** of tenure).\n- Health insurance coverage during trial periods sometimes has a waiting period of **30 to 90 days**, so check if leaving early affects your coverage.\n\n## Bottom Line\n\nLeaving during a trial period is common and generally low-risk professionally, but always **check your specific contract** and provide whatever notice is stipulated (commonly **1 to 2 weeks**) to maintain a positive professional relationship and avoid potential clawback clauses.",
+    "latency_ms": 10903.4,
+    "input_tokens": 126,
+    "output_tokens": 858
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Can I leave a job at the end of a trial period?",
+      "field": "Law"
+    },
+    "response": "# Leaving a Job During a Trial Period\n\nYes, you can generally leave a job during a trial period (probation period), and it's typically easier than resigning from a permanent position. Here's what you should know:\n\n## Notice Requirements\n\n- **Trial periods** commonly range from about **30 to 90 days**, though some can extend to roughly **6 months** depending on the role and jurisdiction.\n- Notice requirements during probation are usually shorter than standard notice periods\u2014often around **1 to 2 weeks**, compared to the standard **2 to 4 weeks** (or more for senior roles).\n- Some contracts specify as little as **24 to 48 hours** notice during an initial trial window (especially common in the UK for very short probationary periods).\n- Always check your specific employment contract, as notice periods vary significantly by country, state, and company policy.\n\n## Legal Considerations by Region\n\n- **United States**: Most employment is \"at-will,\" meaning either party can typically end employment with little to no notice, though contracts or company policy may specify otherwise.\n- **United Kingdom**: Statutory minimum notice is usually **1 week** if employed over 1 month, but probationary contracts often specify similar short terms.\n- **Canada/EU/Australia**: Notice requirements during probation are often reduced (sometimes to about **1 week**) compared to post-probation periods, but this varies by province/country.\n\n## Practical Steps\n\n1. **Review your contract** for specific notice period clauses tied to the probationary period.\n2. **Provide written resignation**, even if notice is minimal\u2014aim for at least **3 to 5 business days** as a courtesy if not legally required.\n3. **Be professional**\u2014cite reasons diplomatically (e.g., \"not the right fit,\" \"accepted another opportunity\") to preserve your reference and reputation.\n4. **Check for repayment clauses**\u2014some employers include clauses requiring repayment of training costs (commonly **$500 to $5,000**) if you leave within a certain window (often **90 days to 1 year**).\n\n## Financial/Benefits Impact\n\n- You may not yet be **vested** in benefits like retirement matching (often requiring **6 months to 1 year** of tenure).\n- Health insurance coverage during trial periods sometimes has a waiting period of **30 to 90 days**, so check if leaving early affects your coverage.\n\n## Bottom Line\n\nLeaving during a trial period is common and generally low-risk professionally, but always **check your specific contract** and provide whatever notice is stipulated (commonly **1 to 2 weeks**) to maintain a positive professional relationship and avoid potential clawback clauses.",
+    "latency_ms": 10903.4,
+    "token_count": 984,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "4bac270d09b8",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240119.1406624,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 12 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4136,
+          "evidence": [
+            "Latency 10903ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 10903.4,
+        "token_count": 984,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.111; flagged=True"
+}

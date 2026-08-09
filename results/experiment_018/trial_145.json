@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:02:39.598596+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "36 year old starting medications for mental health issues - which are most like to cause Long QT on an ECG recording?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Cardiology",
+    "question_type": "Summarization of information on a topic| Question that describes a hypothetical scenario and asks a question based on this scenario| Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "The **highest-risk mental-health medications for QT prolongation** are generally:\n\n### Antidepressants\n- **Citalopram (Celexa)** \u2014 dose-dependent risk; FDA maximum is usually **40 mg/day** in adults, and **20 mg/day** if age \u226560, liver disease, or certain interacting drugs. Doses above **40 mg/day** are discouraged because of QT risk.\n- **Escitalopram (Lexapro)** \u2014 generally less risk than citalopram but still dose-related, especially at **20 mg/day** or with other risk factors.\n- **Amitriptyline, nortriptyline, imipramine, clomipramine** \u2014 tricyclic antidepressants can prolong QT, particularly in overdose or at higher doses.\n- **Venlafaxine** \u2014 usually low risk at standard doses, but risk increases with overdose, high doses, or heart/electrolyte problems.\n- **Trazodone** \u2014 can prolong QT, particularly at higher doses or with interacting medicines.\n- **Mirtazapine** \u2014 generally low risk, though rare QT prolongation has been reported.\n\n### Antipsychotics\nHigher-risk examples include:\n- **Thioridazine** \u2014 among the highest-risk agents; rarely used.\n- **Pimozide** \u2014 high QT risk and substantial interaction restrictions.\n- **Ziprasidone (Geodon)** \u2014 higher QT-prolongation potential than many newer antipsychotics.\n- **Haloperidol** \u2014 especially **intravenous (IV)** use or high doses; oral doses are generally less risky but can still prolong QT.\n- **Chlorpromazine** \u2014 dose-related risk.\n- **Quetiapine** \u2014 usually moderate risk, particularly with overdose, high doses, or interacting drugs.\n- **Risperidone and paliperidone** \u2014 usually modest QT effects.\n- **Olanzapine, aripiprazole, and lurasidone** \u2014 generally among the lower-risk choices, though no medication is completely risk-free.\n\n### Other commonly used mental-health-related medicines\n- **Hydroxyzine** \u2014 can prolong QT and has been associated with torsades de pointes, especially with other risk factors.\n- **Promethazine** \u2014 possible QT effects.\n- **Methadone**, sometimes used in addiction treatment \u2014 substantial QT risk, especially around **100 mg/day or more**, although risk can occur at lower doses.\n- **Lithium** \u2014 usually not a typical QT-prolonging drug, but toxicity can cause significant ECG abnormalities, including QT changes.\n- **Stimulants such as methylphenidate or amphetamine** \u2014 do not usually directly prolong QT, but can increase heart rate and blood pressure; extra caution is needed in people with known cardiac disease or congenital long-QT syndrome.\n\n## How QT risk is interpreted\n\nThe corrected QT interval (**QTc**) is commonly considered:\n\n- **Normal:** roughly <**450 ms** in men and <**460 ms** in women  \n- **Borderline:** approximately **450\u2013470 ms**, depending on sex and the laboratory/reference standard  \n- **Clearly prolonged:** generally \u2265**500 ms**\n- A QTc increase of about **60 ms or more** from baseline is also considered concerning.\n\nThe risk of torsades de pointes rises substantially when QTc is around **500 ms or higher**, especially if several risk factors are present.\n\n## Important risk factors\n\nRisk is higher with:\n\n- Low potassium, especially <**3.5 mmol/L**\n- Low magnesium, often <**0.7 mmol/L** or approximately <**1.7 mg/dL**\n- Low calcium\n- Slow heart rate, often <**50 beats/minute**\n- Congenital long-QT syndrome\n- Prior fainting, ventricular arrhythmia, or unexplained seizure\n- Heart failure, recent heart attack, or significant structural heart disease\n- Kidney or liver disease\n- Taking **two or more QT-prolonging medications**\n- Drug interactions that raise medication levels\n\nA 36-year-old without heart disease, electrolyte abnormalities, or interacting medications usually has a lower baseline risk, but the medication and dose still matter.\n\n## Practical steps when starting treatment\n\nAsk the prescriber or pharmacist:\n\n1. **Does this medication prolong QT, and what is its CredibleMeds risk category?**\n2. **Do I need a baseline ECG?**\n3. **Should potassium, magnesium, calcium, kidney, or liver tests be checked?**\n4. **Are any of my other medicines interacting?**\n\nA baseline ECG is especially reasonable if starting **citalopram/escitalopram, ziprasidone, haloperidol, quetiapine, hydroxyzine, a tricyclic antidepressant**, or combinations of these. A repeat ECG may be useful after reaching the target dose\u2014often after roughly **1\u20132 weeks**, or after about **4\u20135 drug half-lives",
+    "latency_ms": 7088.7,
+    "input_tokens": 95,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "36 year old starting medications for mental health issues - which are most like to cause Long QT on an ECG recording?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "The **highest-risk mental-health medications for QT prolongation** are generally:\n\n### Antidepressants\n- **Citalopram (Celexa)** \u2014 dose-dependent risk; FDA maximum is usually **40 mg/day** in adults, and **20 mg/day** if age \u226560, liver disease, or certain interacting drugs. Doses above **40 mg/day** are discouraged because of QT risk.\n- **Escitalopram (Lexapro)** \u2014 generally less risk than citalopram but still dose-related, especially at **20 mg/day** or with other risk factors.\n- **Amitriptyline, nortriptyline, imipramine, clomipramine** \u2014 tricyclic antidepressants can prolong QT, particularly in overdose or at higher doses.\n- **Venlafaxine** \u2014 usually low risk at standard doses, but risk increases with overdose, high doses, or heart/electrolyte problems.\n- **Trazodone** \u2014 can prolong QT, particularly at higher doses or with interacting medicines.\n- **Mirtazapine** \u2014 generally low risk, though rare QT prolongation has been reported.\n\n### Antipsychotics\nHigher-risk examples include:\n- **Thioridazine** \u2014 among the highest-risk agents; rarely used.\n- **Pimozide** \u2014 high QT risk and substantial interaction restrictions.\n- **Ziprasidone (Geodon)** \u2014 higher QT-prolongation potential than many newer antipsychotics.\n- **Haloperidol** \u2014 especially **intravenous (IV)** use or high doses; oral doses are generally less risky but can still prolong QT.\n- **Chlorpromazine** \u2014 dose-related risk.\n- **Quetiapine** \u2014 usually moderate risk, particularly with overdose, high doses, or interacting drugs.\n- **Risperidone and paliperidone** \u2014 usually modest QT effects.\n- **Olanzapine, aripiprazole, and lurasidone** \u2014 generally among the lower-risk choices, though no medication is completely risk-free.\n\n### Other commonly used mental-health-related medicines\n- **Hydroxyzine** \u2014 can prolong QT and has been associated with torsades de pointes, especially with other risk factors.\n- **Promethazine** \u2014 possible QT effects.\n- **Methadone**, sometimes used in addiction treatment \u2014 substantial QT risk, especially around **100 mg/day or more**, although risk can occur at lower doses.\n- **Lithium** \u2014 usually not a typical QT-prolonging drug, but toxicity can cause significant ECG abnormalities, including QT changes.\n- **Stimulants such as methylphenidate or amphetamine** \u2014 do not usually directly prolong QT, but can increase heart rate and blood pressure; extra caution is needed in people with known cardiac disease or congenital long-QT syndrome.\n\n## How QT risk is interpreted\n\nThe corrected QT interval (**QTc**) is commonly considered:\n\n- **Normal:** roughly <**450 ms** in men and <**460 ms** in women  \n- **Borderline:** approximately **450\u2013470 ms**, depending on sex and the laboratory/reference standard  \n- **Clearly prolonged:** generally \u2265**500 ms**\n- A QTc increase of about **60 ms or more** from baseline is also considered concerning.\n\nThe risk of torsades de pointes rises substantially when QTc is around **500 ms or higher**, especially if several risk factors are present.\n\n## Important risk factors\n\nRisk is higher with:\n\n- Low potassium, especially <**3.5 mmol/L**\n- Low magnesium, often <**0.7 mmol/L** or approximately <**1.7 mg/dL**\n- Low calcium\n- Slow heart rate, often <**50 beats/minute**\n- Congenital long-QT syndrome\n- Prior fainting, ventricular arrhythmia, or unexplained seizure\n- Heart failure, recent heart attack, or significant structural heart disease\n- Kidney or liver disease\n- Taking **two or more QT-prolonging medications**\n- Drug interactions that raise medication levels\n\nA 36-year-old without heart disease, electrolyte abnormalities, or interacting medications usually has a lower baseline risk, but the medication and dose still matter.\n\n## Practical steps when starting treatment\n\nAsk the prescriber or pharmacist:\n\n1. **Does this medication prolong QT, and what is its CredibleMeds risk category?**\n2. **Do I need a baseline ECG?**\n3. **Should potassium, magnesium, calcium, kidney, or liver tests be checked?**\n4. **Are any of my other medicines interacting?**\n\nA baseline ECG is especially reasonable if starting **citalopram/escitalopram, ziprasidone, haloperidol, quetiapine, hydroxyzine, a tricyclic antidepressant**, or combinations of these. A repeat ECG may be useful after reaching the target dose\u2014often after roughly **1\u20132 weeks**, or after about **4\u20135 drug half-lives",
+    "latency_ms": 7088.7,
+    "token_count": 1119,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "ceb861a83c6b",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230159.5978448,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 13 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 7088.7,
+        "token_count": 1119,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.145; flagged=True"
+}

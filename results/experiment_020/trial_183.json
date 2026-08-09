@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T02:03:10.231443+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Why do pregnant women often suffer from iron deficiency?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Dietician/ Nutritionist ",
+    "question_type": "Summarization of information on a topic| Advice or suggestions on how to approach a problem| Question that describes a hypothetical scenario and asks a question based on this scenario| Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Iron Deficiency in Pregnancy\n\nIron deficiency affects approximately 40-50% of pregnant women worldwide, and roughly 15-25% of pregnancies in developed countries, due to several overlapping physiological demands:\n\n## 1. Increased Blood Volume\nDuring pregnancy, total blood volume expands by approximately 40-50%, requiring significantly more iron to produce adequate hemoglobin. This plasma volume expansion often outpaces red blood cell production, leading to a natural dilutional effect on hemoglobin concentration.\n\n## 2. Fetal and Placental Iron Requirements\nThe developing fetus and placenta require substantial iron:\n- The fetus accumulates roughly 250-300 mg of iron by term\n- The placenta requires approximately 50-100 mg\n- Total pregnancy iron requirements reach about 1,000 mg overall, compared to roughly 15-18 mg/day needed by non-pregnant women\n\n## 3. Increased Daily Iron Needs\nIron requirements rise dramatically across trimesters:\n- **First trimester:** approximately 0.8 mg/day\n- **Second trimester:** approximately 4-5 mg/day\n- **Third trimester:** approximately 6-7 mg/day\n\nThe recommended dietary allowance jumps from about 18 mg/day (non-pregnant) to approximately 27 mg/day during pregnancy\u2014a roughly 50% increase.\n\n## 4. Inadequate Dietary Intake\nMany women enter pregnancy with suboptimal iron stores. Studies suggest around 20-30% of women of reproductive age have low ferritin levels even before conception, often due to:\n- Insufficient intake of heme iron (from meat) or non-heme iron (plant sources)\n- Poor absorption (only about 15-35% of heme iron and roughly 2-20% of non-heme iron is absorbed)\n\n## 5. Pre-existing Deficiency from Menstruation\nRegular menstrual blood loss prior to pregnancy\u2014averaging about 30-40 mL per cycle\u2014can deplete iron reserves, leaving many women with limited stores (ferritin levels below approximately 30 ng/mL) before pregnancy even begins.\n\n## 6. Multiple Pregnancies or Short Intervals\nWomen with multiple gestations (twins/triplets) have iron needs increased by roughly 1.5 to 2 times singleton pregnancies. Additionally, pregnancies spaced less than 18 months apart don't allow adequate time (typically requiring about 4-6 months) to replenish maternal iron stores.\n\n## 7. Increased Absorption Doesn't Fully Compensate\nAlthough intestinal iron absorption increases up to approximately 3-fold by the third trimester (aided by decreased hepcidin levels), this physiological adaptation often isn't sufficient to meet the dramatically increased demand.\n\n## Clinical Consequences\nUntreated iron deficiency anemia (hemoglobin below approximately 11 g/dL) is associated with:\n- Increased risk of preterm birth (up to",
+    "latency_ms": 11746.8,
+    "input_tokens": 130,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Why do pregnant women often suffer from iron deficiency?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Iron Deficiency in Pregnancy\n\nIron deficiency affects approximately 40-50% of pregnant women worldwide, and roughly 15-25% of pregnancies in developed countries, due to several overlapping physiological demands:\n\n## 1. Increased Blood Volume\nDuring pregnancy, total blood volume expands by approximately 40-50%, requiring significantly more iron to produce adequate hemoglobin. This plasma volume expansion often outpaces red blood cell production, leading to a natural dilutional effect on hemoglobin concentration.\n\n## 2. Fetal and Placental Iron Requirements\nThe developing fetus and placenta require substantial iron:\n- The fetus accumulates roughly 250-300 mg of iron by term\n- The placenta requires approximately 50-100 mg\n- Total pregnancy iron requirements reach about 1,000 mg overall, compared to roughly 15-18 mg/day needed by non-pregnant women\n\n## 3. Increased Daily Iron Needs\nIron requirements rise dramatically across trimesters:\n- **First trimester:** approximately 0.8 mg/day\n- **Second trimester:** approximately 4-5 mg/day\n- **Third trimester:** approximately 6-7 mg/day\n\nThe recommended dietary allowance jumps from about 18 mg/day (non-pregnant) to approximately 27 mg/day during pregnancy\u2014a roughly 50% increase.\n\n## 4. Inadequate Dietary Intake\nMany women enter pregnancy with suboptimal iron stores. Studies suggest around 20-30% of women of reproductive age have low ferritin levels even before conception, often due to:\n- Insufficient intake of heme iron (from meat) or non-heme iron (plant sources)\n- Poor absorption (only about 15-35% of heme iron and roughly 2-20% of non-heme iron is absorbed)\n\n## 5. Pre-existing Deficiency from Menstruation\nRegular menstrual blood loss prior to pregnancy\u2014averaging about 30-40 mL per cycle\u2014can deplete iron reserves, leaving many women with limited stores (ferritin levels below approximately 30 ng/mL) before pregnancy even begins.\n\n## 6. Multiple Pregnancies or Short Intervals\nWomen with multiple gestations (twins/triplets) have iron needs increased by roughly 1.5 to 2 times singleton pregnancies. Additionally, pregnancies spaced less than 18 months apart don't allow adequate time (typically requiring about 4-6 months) to replenish maternal iron stores.\n\n## 7. Increased Absorption Doesn't Fully Compensate\nAlthough intestinal iron absorption increases up to approximately 3-fold by the third trimester (aided by decreased hepcidin levels), this physiological adaptation often isn't sufficient to meet the dramatically increased demand.\n\n## Clinical Consequences\nUntreated iron deficiency anemia (hemoglobin below approximately 11 g/dL) is associated with:\n- Increased risk of preterm birth (up to",
+    "latency_ms": 11746.8,
+    "token_count": 1154,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "795e3851f51c",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240990.2306468,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 23 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4262,
+          "evidence": [
+            "Latency 11747ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11746.8,
+        "token_count": 1154,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.183; flagged=True"
+}

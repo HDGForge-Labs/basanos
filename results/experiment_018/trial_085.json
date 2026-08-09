@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:57:25.068147+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What are the possible Security Classifications for messages and documents in the NATO realm?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Military communications",
+    "question_type": "Directed question that has a single unambiguous answer| Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "NATO security classifications, from highest to lowest, are:\n\n1. **COSMIC TOP SECRET (CTS)** \u2014 Information whose unauthorized disclosure would cause **exceptionally grave damage** to NATO.\n2. **NATO SECRET (NS)** \u2014 Unauthorized disclosure would cause **serious damage** to NATO.\n3. **NATO CONFIDENTIAL (NC)** \u2014 Unauthorized disclosure would be **damaging** to NATO.\n4. **NATO RESTRICTED (NR)** \u2014 Unauthorized disclosure would be **undesirable** or prejudicial to NATO interests.\n\nAdditionally:\n\n- **NATO UNCLASSIFIED (NU)** \u2014 Information that does not meet the criteria for classification but is intended for official NATO use or distribution. It is not classified, but may still be subject to handling or dissemination controls.\n\nThese markings are normally written as **COSMIC TOP SECRET**, **NATO SECRET**, **NATO CONFIDENTIAL**, **NATO RESTRICTED**, and **NATO UNCLASSIFIED**. Access requires the appropriate security clearance and a need to know; handling rules also depend on the applicable NATO security policy and national procedures.",
+    "latency_ms": 2147.9,
+    "input_tokens": 94,
+    "output_tokens": 227
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the possible Security Classifications for messages and documents in the NATO realm?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "NATO security classifications, from highest to lowest, are:\n\n1. **COSMIC TOP SECRET (CTS)** \u2014 Information whose unauthorized disclosure would cause **exceptionally grave damage** to NATO.\n2. **NATO SECRET (NS)** \u2014 Unauthorized disclosure would cause **serious damage** to NATO.\n3. **NATO CONFIDENTIAL (NC)** \u2014 Unauthorized disclosure would be **damaging** to NATO.\n4. **NATO RESTRICTED (NR)** \u2014 Unauthorized disclosure would be **undesirable** or prejudicial to NATO interests.\n\nAdditionally:\n\n- **NATO UNCLASSIFIED (NU)** \u2014 Information that does not meet the criteria for classification but is intended for official NATO use or distribution. It is not classified, but may still be subject to handling or dissemination controls.\n\nThese markings are normally written as **COSMIC TOP SECRET**, **NATO SECRET**, **NATO CONFIDENTIAL**, **NATO RESTRICTED**, and **NATO UNCLASSIFIED**. Access requires the appropriate security clearance and a need to know; handling rules also depend on the applicable NATO security policy and national procedures.",
+    "latency_ms": 2147.9,
+    "token_count": 321
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "8d41730e6b4e",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229845.0673852,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2147.9,
+        "token_count": 321,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.85; flagged=False"
+}

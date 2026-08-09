@@ -1,0 +1,75 @@
+{
+  "timestamp_utc": "2026-08-09T22:37:37.622953+00:00",
+  "detector": "context_degradation",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "who is the ceo of crate and barrel",
+    "gold_index": 9
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "Based on the documents, the CEO of Crate & Barrel has changed several times over the years:\n\n- **Gordon Segal** \u2013 Founder and original CEO, who retired in May 2008.\n- **Barbara Turf** \u2013 Succeeded Segal as CEO in May 2008 and served until her retirement in 2012.\n- **Sascha Bopp** \u2013 Replaced Turf in 2012 but was",
+    "latency_ms": 3622.0,
+    "input_tokens": 2265,
+    "output_tokens": 128
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "who is the ceo of crate and barrel",
+      "gold_index": 9,
+      "n_docs": 10
+    },
+    "response": "Based on the documents, the CEO of Crate & Barrel has changed several times over the years:\n\n- **Gordon Segal** - Founder and original CEO, who retired in May 2008.\n- **Barbara Turf** - Succeeded Segal as CEO in May 2008 and served until her retirement in 2012.\n- **Sascha Bopp** - Replaced Turf in 2012 but was",
+    "latency_ms": 3622.0,
+    "token_count": 2393,
+    "context_window_used": 0.92
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "f9198bb659a8",
+      "tool_name": "context_qa",
+      "status": "warn",
+      "timestamp": 1786315057.6220734,
+      "failures": [
+        {
+          "failure_mode": "context_degradation",
+          "confidence": 0.4,
+          "evidence": [
+            "Context window at 92.0% capacity"
+          ],
+          "remediation": [
+            "Implement context summarization before next tool call",
+            "Inject critical context markers at regular intervals",
+            "Use sliding window context management",
+            "Consider splitting task into smaller context-bounded subtasks"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 3622.0,
+        "token_count": 2393,
+        "context_window_used": 0.92,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Implement context summarization before next tool call",
+        "Inject critical context markers at regular intervals",
+        "Use sliding window context management",
+        "Consider splitting task into smaller context-bounded subtasks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.189; flagged=True; gold_index=9"
+}

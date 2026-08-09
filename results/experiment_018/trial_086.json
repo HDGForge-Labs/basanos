@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:57:31.495046+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "A company fails to deliver the products the promised. How can they defend themselves against a breach of contract claim?",
+    "field": "Law",
+    "specific_field": "Commercial Law",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "A company may defend a breach-of-contract claim for nondelivery by showing that it had a legally recognized excuse, that the customer breached first, or that the claimed loss is not recoverable. Common defenses include:\n\n1. **No enforceable contract**\n   - The parties never reached agreement on essential terms.\n   - The alleged agreement was not properly signed or authorized.\n   - The contract was void, illegal, fraudulent, or subject to a condition that never occurred.\n   - A statute of frauds requirement\u2014often applicable to sales of goods\u2014was not satisfied.\n\n2. **The company performed or substantially performed**\n   - It delivered the goods, made a valid tender, or delivered conforming goods that the buyer wrongfully rejected.\n   - The contract allowed partial deliveries, substitutions, or a reasonable delivery window.\n   - The buyer accepted the products or failed to make a timely rejection.\n\n3. **The buyer breached first**\n   - The buyer failed to pay, provide specifications, obtain required approvals, provide shipping instructions, or otherwise perform a condition precedent.\n   - The buyer repudiated the contract or made clear it would not perform.\n   - In some circumstances, the company properly suspended performance after reasonable grounds to believe the buyer would not pay.\n\n4. **Force majeure or impossibility**\n   - An event covered by the contract\u2019s force-majeure clause\u2014such as war, government restrictions, natural disaster, epidemic, labor disruption, or transportation failure\u2014prevented delivery.\n   - Even without such a clause, performance may be excused under doctrines such as impossibility, impracticability, or frustration of purpose, depending on the jurisdiction.\n   - The company must generally show that the event was beyond its control, directly caused the failure, and was not merely a foreseeable business risk. Notice and mitigation requirements must also be followed.\n\n5. **Commercial impracticability or supply-chain disruption**\n   - For sales of goods, extraordinary and unforeseeable events may excuse or limit performance under applicable commercial-law rules.\n   - A normal price increase, supplier difficulty, poor planning, or ordinary inventory shortage usually is not enough.\n   - The company should show it acted in good faith and made reasonable efforts to obtain substitute goods.\n\n6. **Contractual limitations**\n   - The agreement may contain an exclusive remedy, limitation of liability, delivery disclaimer, cancellation right, or cap on damages.\n   - An agreed delivery date may be approximate rather than strict, unless time was expressly made \u201cof the essence.\u201d\n   - Such clauses can be invalidated by unconscionability, public policy, inadequate notice, or conduct inconsistent with relying on them.\n\n7. **Buyer\u2019s failure to mitigate**\n   - The buyer could have obtained substitute products or otherwise reduced its losses but failed to do so.\n   - The company may argue that claimed consequential or lost-profit damages were not foreseeable, were speculative, or were excluded by the contract.\n\n8. **Notice, waiver, acceptance, or limitations period**\n   - The buyer did not give required notice of breach within the contractually or legally required period.\n   - The buyer waived strict delivery requirements, accepted late performance, or course of dealing modified the agreement.\n   - The claim was filed after the applicable limitations period.\n\n9. **Causation and damages**\n   - The nondelivery did not cause the claimed losses.\n   - The buyer\u2019s damages are speculative, unrelated, or not reasonably foreseeable.\n   - The buyer suffered no actual loss or received a substitute benefit.\n\nThe company should preserve the contract and amendments, purchase orders, invoices, shipping records, supplier communications, force-majeure notices, inventory evidence, and communications with the buyer. The strongest defense depends on the governing law, whether the transaction involved goods or services, the contract\u2019s precise wording, and the reason for nondelivery.",
+    "latency_ms": 6419.6,
+    "input_tokens": 100,
+    "output_tokens": 771
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A company fails to deliver the products the promised. How can they defend themselves against a breach of contract claim?",
+      "field": "Law"
+    },
+    "response": "A company may defend a breach-of-contract claim for nondelivery by showing that it had a legally recognized excuse, that the customer breached first, or that the claimed loss is not recoverable. Common defenses include:\n\n1. **No enforceable contract**\n   - The parties never reached agreement on essential terms.\n   - The alleged agreement was not properly signed or authorized.\n   - The contract was void, illegal, fraudulent, or subject to a condition that never occurred.\n   - A statute of frauds requirement\u2014often applicable to sales of goods\u2014was not satisfied.\n\n2. **The company performed or substantially performed**\n   - It delivered the goods, made a valid tender, or delivered conforming goods that the buyer wrongfully rejected.\n   - The contract allowed partial deliveries, substitutions, or a reasonable delivery window.\n   - The buyer accepted the products or failed to make a timely rejection.\n\n3. **The buyer breached first**\n   - The buyer failed to pay, provide specifications, obtain required approvals, provide shipping instructions, or otherwise perform a condition precedent.\n   - The buyer repudiated the contract or made clear it would not perform.\n   - In some circumstances, the company properly suspended performance after reasonable grounds to believe the buyer would not pay.\n\n4. **Force majeure or impossibility**\n   - An event covered by the contract\u2019s force-majeure clause\u2014such as war, government restrictions, natural disaster, epidemic, labor disruption, or transportation failure\u2014prevented delivery.\n   - Even without such a clause, performance may be excused under doctrines such as impossibility, impracticability, or frustration of purpose, depending on the jurisdiction.\n   - The company must generally show that the event was beyond its control, directly caused the failure, and was not merely a foreseeable business risk. Notice and mitigation requirements must also be followed.\n\n5. **Commercial impracticability or supply-chain disruption**\n   - For sales of goods, extraordinary and unforeseeable events may excuse or limit performance under applicable commercial-law rules.\n   - A normal price increase, supplier difficulty, poor planning, or ordinary inventory shortage usually is not enough.\n   - The company should show it acted in good faith and made reasonable efforts to obtain substitute goods.\n\n6. **Contractual limitations**\n   - The agreement may contain an exclusive remedy, limitation of liability, delivery disclaimer, cancellation right, or cap on damages.\n   - An agreed delivery date may be approximate rather than strict, unless time was expressly made \u201cof the essence.\u201d\n   - Such clauses can be invalidated by unconscionability, public policy, inadequate notice, or conduct inconsistent with relying on them.\n\n7. **Buyer\u2019s failure to mitigate**\n   - The buyer could have obtained substitute products or otherwise reduced its losses but failed to do so.\n   - The company may argue that claimed consequential or lost-profit damages were not foreseeable, were speculative, or were excluded by the contract.\n\n8. **Notice, waiver, acceptance, or limitations period**\n   - The buyer did not give required notice of breach within the contractually or legally required period.\n   - The buyer waived strict delivery requirements, accepted late performance, or course of dealing modified the agreement.\n   - The claim was filed after the applicable limitations period.\n\n9. **Causation and damages**\n   - The nondelivery did not cause the claimed losses.\n   - The buyer\u2019s damages are speculative, unrelated, or not reasonably foreseeable.\n   - The buyer suffered no actual loss or received a substitute benefit.\n\nThe company should preserve the contract and amendments, purchase orders, invoices, shipping records, supplier communications, force-majeure notices, inventory evidence, and communications with the buyer. The strongest defense depends on the governing law, whether the transaction involved goods or services, the contract\u2019s precise wording, and the reason for nondelivery.",
+    "latency_ms": 6419.6,
+    "token_count": 871
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "367a4fb066cc",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229851.4943125,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 6419.6,
+        "token_count": 871,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.86; flagged=False"
+}

@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:57:12.986864+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What the exact differences are between the male and the female brain?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "psychiatrist",
+    "question_type": "Summarization of information on a topic| Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "There is no single \u201cmale brain\u201d versus \u201cfemale brain.\u201d Human brains overlap extensively, and sex-related findings are **average statistical differences**, not reliable ways to identify an individual\u2019s sex or abilities.\n\nKey findings from large studies:\n\n- **Overall size:** Male brains are, on average, about **8\u201313% larger**, largely because males are, on average, larger-bodied. After adjusting for total brain volume, most regional differences become small.\n- **Regional volume:** Some studies find slightly greater average volume in areas such as the **amygdala and hypothalamus** in males, and relatively greater volume or cortical thickness in parts of the **frontal and temporal cortex** in females. Results vary by study and measurement method, and distributions overlap substantially.\n- **Cortical thickness and surface area:** Females tend to have slightly greater average cortical thickness; males tend to have greater total cortical surface area and white-matter volume. These are partly related to overall brain size.\n- **Connectivity:** On average, females show somewhat greater connectivity between the two hemispheres, while males show somewhat greater within-hemisphere connectivity in certain datasets. These patterns are modest, population-dependent, and not universal.\n- **White matter and gray matter:** Average proportions differ slightly, but there is no clean binary pattern. Hormones, development, aging, health, and experience all influence these measures.\n- **Functional activity:** Average differences in brain activation or networks have been reported, but they are often small, context-dependent, and affected by task, hormones, culture, and learning.\n- **Cognition and behavior:** Average differences are generally small:\n  - Males perform somewhat better on some **spatial-rotation** tasks.\n  - Females perform somewhat better on average in **verbal fluency, verbal memory, and emotion-recognition** tasks.\n  - Mathematical ability overall is highly similar; differences depend strongly on specific task and environment.\n  These are group averages with extensive overlap, not fixed capacities.\n\nThe most accurate modern description is that brains are **mosaics of traits**, not two distinct types. A person\u2019s brain cannot be reliably classified as \u201cmale\u201d or \u201cfemale\u201d from most scans, and sex does not determine intelligence, personality, learning potential, or emotional ability. Biological sex can matter for some neurological diseases, reproductive neuroendocrine systems, and responses to hormones or medications, but those differences are not equivalent to a wholesale difference in brain architecture.",
+    "latency_ms": 4964.9,
+    "input_tokens": 91,
+    "output_tokens": 500
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What the exact differences are between the male and the female brain?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "There is no single \u201cmale brain\u201d versus \u201cfemale brain.\u201d Human brains overlap extensively, and sex-related findings are **average statistical differences**, not reliable ways to identify an individual\u2019s sex or abilities.\n\nKey findings from large studies:\n\n- **Overall size:** Male brains are, on average, about **8\u201313% larger**, largely because males are, on average, larger-bodied. After adjusting for total brain volume, most regional differences become small.\n- **Regional volume:** Some studies find slightly greater average volume in areas such as the **amygdala and hypothalamus** in males, and relatively greater volume or cortical thickness in parts of the **frontal and temporal cortex** in females. Results vary by study and measurement method, and distributions overlap substantially.\n- **Cortical thickness and surface area:** Females tend to have slightly greater average cortical thickness; males tend to have greater total cortical surface area and white-matter volume. These are partly related to overall brain size.\n- **Connectivity:** On average, females show somewhat greater connectivity between the two hemispheres, while males show somewhat greater within-hemisphere connectivity in certain datasets. These patterns are modest, population-dependent, and not universal.\n- **White matter and gray matter:** Average proportions differ slightly, but there is no clean binary pattern. Hormones, development, aging, health, and experience all influence these measures.\n- **Functional activity:** Average differences in brain activation or networks have been reported, but they are often small, context-dependent, and affected by task, hormones, culture, and learning.\n- **Cognition and behavior:** Average differences are generally small:\n  - Males perform somewhat better on some **spatial-rotation** tasks.\n  - Females perform somewhat better on average in **verbal fluency, verbal memory, and emotion-recognition** tasks.\n  - Mathematical ability overall is highly similar; differences depend strongly on specific task and environment.\n  These are group averages with extensive overlap, not fixed capacities.\n\nThe most accurate modern description is that brains are **mosaics of traits**, not two distinct types. A person\u2019s brain cannot be reliably classified as \u201cmale\u201d or \u201cfemale\u201d from most scans, and sex does not determine intelligence, personality, learning potential, or emotional ability. Biological sex can matter for some neurological diseases, reproductive neuroendocrine systems, and responses to hormones or medications, but those differences are not equivalent to a wholesale difference in brain architecture.",
+    "latency_ms": 4964.9,
+    "token_count": 591
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "e9e58c369249",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229832.9860756,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 4964.9,
+        "token_count": 591,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.81; flagged=False"
+}

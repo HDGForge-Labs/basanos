@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:30:18.550822+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "A 45 year old female shows up at a clinic complaining of increased urination, increased taste and more than usual appetite, family history shows fatigue mother was a diabetic and died of complications of diabetes. Patient presented with edema and further examination reveals tremor of fingers following flexion, what is your provisional diagnosis given the clinical picture?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biochemistry",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Provisional Diagnosis: Type 2 Diabetes Mellitus with Diabetic Nephropathy (Uremic state)\n\n## Clinical Reasoning\n\n**Step 1 \u2013 Classic hyperglycemic triad**\n- Polyuria (increased urination)\n- Polydipsia (increased thirst \u2014 I'm assuming \"increased taste\" is a transcription of \"increased thirst,\" as taste changes aren't a recognized DM symptom)\n- Polyphagia (increased appetite)\n\nThese three findings together are pathognomonic for **hyperglycemia**, most commonly due to diabetes mellitus.\n\n**Step 2 \u2013 Family history**\nA first-degree relative (mother) with diabetes who died of \"complications\" strongly raises pretest probability for **Type 2 DM**, which has a well-established polygenic/familial inheritance pattern. At age 45, new-onset Type 2 DM is far more likely than Type 1.\n\n**Step 3 \u2013 Edema**\nIn a diabetic patient, new peripheral edema points toward **diabetic nephropathy** \u2014 the leading cause of CKD in diabetics \u2014 leading to hypoalbuminemia (nephrotic-range proteinuria) and/or fluid retention from declining GFR.\n\n**Step 4 \u2013 Flapping tremor (asterixis) on wrist",
+    "latency_ms": 10672.9,
+    "input_tokens": 225,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A 45 year old female shows up at a clinic complaining of increased urination, increased taste and more than usual appetite, family history shows fatigue mother was a diabetic and died of complications of diabetes. Patient presented with edema and further examination reveals tremor of fingers following flexion, what is your provisional diagnosis given the clinical picture?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Provisional Diagnosis: Type 2 Diabetes Mellitus with Diabetic Nephropathy (Uremic state)\n\n## Clinical Reasoning\n\n**Step 1 \u2013 Classic hyperglycemic triad**\n- Polyuria (increased urination)\n- Polydipsia (increased thirst \u2014 I'm assuming \"increased taste\" is a transcription of \"increased thirst,\" as taste changes aren't a recognized DM symptom)\n- Polyphagia (increased appetite)\n\nThese three findings together are pathognomonic for **hyperglycemia**, most commonly due to diabetes mellitus.\n\n**Step 2 \u2013 Family history**\nA first-degree relative (mother) with diabetes who died of \"complications\" strongly raises pretest probability for **Type 2 DM**, which has a well-established polygenic/familial inheritance pattern. At age 45, new-onset Type 2 DM is far more likely than Type 1.\n\n**Step 3 \u2013 Edema**\nIn a diabetic patient, new peripheral edema points toward **diabetic nephropathy** \u2014 the leading cause of CKD in diabetics \u2014 leading to hypoalbuminemia (nephrotic-range proteinuria) and/or fluid retention from declining GFR.\n\n**Step 4 \u2013 Flapping tremor (asterixis) on wrist",
+    "latency_ms": 10672.9,
+    "token_count": 1249
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "38332f129985",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239018.5479953,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4101,
+          "evidence": [
+            "Latency 10673ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 10672.9,
+        "token_count": 1249,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.20; flagged=False"
+}

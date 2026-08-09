@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:52:13.193697+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Design an algorithm of hypertension drugs to help the clinician make the best medication choice according to the patient and their health characteristics.",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pharmacy field",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "## Hypertension medication-selection algorithm\n\nUse this as a clinical framework, not a substitute for local guidelines, formulary rules, or specialist judgment. Confirm the diagnosis with repeated office measurements and, when feasible, home or ambulatory monitoring.\n\n### 1. Before prescribing\n\n1. **Assess urgency**\n   - **BP \u2265180/120 mmHg with acute target-organ injury**\u2014neurologic deficit, encephalopathy, myocardial ischemia, pulmonary edema, aortic dissection, acute kidney injury, or eclampsia: emergency evaluation and IV therapy.\n   - **BP \u2265180/120 without acute injury:** repeat measurement, evaluate promptly, and initiate or intensify oral therapy; avoid rapid excessive reduction.\n\n2. **Baseline assessment**\n   - Medication/substance review: NSAIDs, decongestants, stimulants, cocaine/amphetamines, oral contraceptives, corticosteroids, licorice, excess alcohol.\n   - Comorbidities and pregnancy status.\n   - Creatinine/eGFR, potassium, sodium, glucose or HbA1c, lipid profile, urinalysis and urine albumin\u2013creatinine ratio.\n   - ECG; assess cardiovascular disease, heart failure, kidney disease, diabetes, and possible secondary hypertension.\n\n3. **Set the target**\n   - For most adults, aim for approximately **<130/80 mmHg if tolerated**, individualized for age, frailty, orthostasis, comorbidity, and treatment burden.\n   - A practical initial goal is **<140/90**, then intensify toward <130/80 when appropriate.\n\n---\n\n## 2. Choose initial treatment\n\n### A. Most adults without a compelling indication\n\nPreferred first-line classes:\n\n1. **ACE inhibitor (ACEi)**  \n   Examples: lisinopril, enalapril, ramipril.\n2. **Angiotensin-receptor blocker (ARB)**  \n   Examples: losartan, valsartan, irbesartan.\n3. **Long-acting dihydropyridine calcium-channel blocker (CCB)**  \n   Examples: amlodipine, felodipine.\n4. **Thiazide-like diuretic**  \n   Preferred: chlorthalidone or indapamide; hydrochlorothiazide is an alternative.\n\n#### Initial regimen by blood pressure\n\n- **BP <20/10 mmHg above target:** start one first-line drug at a standard low dose.\n- **BP \u226520/10 mmHg above target or stage 2 hypertension:** start two complementary agents, preferably as a single-pill combination:\n  - ACEi or ARB + CCB, or\n  - ACEi or ARB + thiazide-like diuretic.\n\n**Never combine an ACE inhibitor with an ARB.**\n\n---\n\n## 3. Select according to patient characteristics\n\n| Patient characteristic | Preferred strategy | Avoid or use caution |\n|---|---|---|\n| **Albuminuric CKD** | ACEi or ARB, titrated to maximally tolerated dose | ACEi + ARB; monitor creatinine and potassium |\n| **CKD without albuminuria** | ACEi/ARB, CCB, or thiazide-like diuretic based on BP and labs | Thiazides become less effective as eGFR falls substantially; loop diuretic often needed when eGFR <30 with volume overload |\n| **Diabetes** | Any first-line class; ACEi/ARB preferred with albuminuria or CKD | Monitor kidney function and potassium |\n| **Coronary artery disease or prior MI** | ACEi/ARB plus beta-blocker when indicated; add CCB or thiazide-like diuretic | Short-acting nifedipine; beta-blocker is not mandatory for uncomplicated hypertension |\n| **HFrEF** | ARNI preferred when indicated, or ACEi/ARB; evidence-based beta-blocker; mineralocorticoid receptor antagonist; loop diuretic for congestion | Verapamil/diltiazem; routine thiazide monotherapy if congested |\n| **Heart failure with preserved EF** | Control BP with ACEi/ARB, CCB, or diuretic; use diuretic for congestion | Excessive volume depletion |\n| **Atrial fibrillation or angina** | Beta-blocker or rate-limiting CCB\u2014diltiazem/verapamil\u2014when clinically appropriate | Non-dihydropyridine CCBs in HFrEF |\n| **Tachyarrhythmia, migraine, essential tremor, hyperthyroidism** | Consider beta-blocker if otherwise appropriate | Asthma or severe reactive airway disease with nonselective beta-blockers |\n| **Benign prostatic hyperplasia** | Add an alpha-1 blocker if needed for urinary symptoms | Orthostatic hypotension, especially in older adults |\n| **Pregnancy or trying to conceive** | Labetalol, extended-release nifedipine, or methyld",
+    "latency_ms": 6877.4,
+    "input_tokens": 102,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Design an algorithm of hypertension drugs to help the clinician make the best medication choice according to the patient and their health characteristics.",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "## Hypertension medication-selection algorithm\n\nUse this as a clinical framework, not a substitute for local guidelines, formulary rules, or specialist judgment. Confirm the diagnosis with repeated office measurements and, when feasible, home or ambulatory monitoring.\n\n### 1. Before prescribing\n\n1. **Assess urgency**\n   - **BP \u2265180/120 mmHg with acute target-organ injury**\u2014neurologic deficit, encephalopathy, myocardial ischemia, pulmonary edema, aortic dissection, acute kidney injury, or eclampsia: emergency evaluation and IV therapy.\n   - **BP \u2265180/120 without acute injury:** repeat measurement, evaluate promptly, and initiate or intensify oral therapy; avoid rapid excessive reduction.\n\n2. **Baseline assessment**\n   - Medication/substance review: NSAIDs, decongestants, stimulants, cocaine/amphetamines, oral contraceptives, corticosteroids, licorice, excess alcohol.\n   - Comorbidities and pregnancy status.\n   - Creatinine/eGFR, potassium, sodium, glucose or HbA1c, lipid profile, urinalysis and urine albumin\u2013creatinine ratio.\n   - ECG; assess cardiovascular disease, heart failure, kidney disease, diabetes, and possible secondary hypertension.\n\n3. **Set the target**\n   - For most adults, aim for approximately **<130/80 mmHg if tolerated**, individualized for age, frailty, orthostasis, comorbidity, and treatment burden.\n   - A practical initial goal is **<140/90**, then intensify toward <130/80 when appropriate.\n\n---\n\n## 2. Choose initial treatment\n\n### A. Most adults without a compelling indication\n\nPreferred first-line classes:\n\n1. **ACE inhibitor (ACEi)**  \n   Examples: lisinopril, enalapril, ramipril.\n2. **Angiotensin-receptor blocker (ARB)**  \n   Examples: losartan, valsartan, irbesartan.\n3. **Long-acting dihydropyridine calcium-channel blocker (CCB)**  \n   Examples: amlodipine, felodipine.\n4. **Thiazide-like diuretic**  \n   Preferred: chlorthalidone or indapamide; hydrochlorothiazide is an alternative.\n\n#### Initial regimen by blood pressure\n\n- **BP <20/10 mmHg above target:** start one first-line drug at a standard low dose.\n- **BP \u226520/10 mmHg above target or stage 2 hypertension:** start two complementary agents, preferably as a single-pill combination:\n  - ACEi or ARB + CCB, or\n  - ACEi or ARB + thiazide-like diuretic.\n\n**Never combine an ACE inhibitor with an ARB.**\n\n---\n\n## 3. Select according to patient characteristics\n\n| Patient characteristic | Preferred strategy | Avoid or use caution |\n|---|---|---|\n| **Albuminuric CKD** | ACEi or ARB, titrated to maximally tolerated dose | ACEi + ARB; monitor creatinine and potassium |\n| **CKD without albuminuria** | ACEi/ARB, CCB, or thiazide-like diuretic based on BP and labs | Thiazides become less effective as eGFR falls substantially; loop diuretic often needed when eGFR <30 with volume overload |\n| **Diabetes** | Any first-line class; ACEi/ARB preferred with albuminuria or CKD | Monitor kidney function and potassium |\n| **Coronary artery disease or prior MI** | ACEi/ARB plus beta-blocker when indicated; add CCB or thiazide-like diuretic | Short-acting nifedipine; beta-blocker is not mandatory for uncomplicated hypertension |\n| **HFrEF** | ARNI preferred when indicated, or ACEi/ARB; evidence-based beta-blocker; mineralocorticoid receptor antagonist; loop diuretic for congestion | Verapamil/diltiazem; routine thiazide monotherapy if congested |\n| **Heart failure with preserved EF** | Control BP with ACEi/ARB, CCB, or diuretic; use diuretic for congestion | Excessive volume depletion |\n| **Atrial fibrillation or angina** | Beta-blocker or rate-limiting CCB\u2014diltiazem/verapamil\u2014when clinically appropriate | Non-dihydropyridine CCBs in HFrEF |\n| **Tachyarrhythmia, migraine, essential tremor, hyperthyroidism** | Consider beta-blocker if otherwise appropriate | Asthma or severe reactive airway disease with nonselective beta-blockers |\n| **Benign prostatic hyperplasia** | Add an alpha-1 blocker if needed for urinary symptoms | Orthostatic hypotension, especially in older adults |\n| **Pregnancy or trying to conceive** | Labetalol, extended-release nifedipine, or methyld",
+    "latency_ms": 6877.4,
+    "token_count": 1126
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "4d6e8b0c942a",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229533.1928155,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 6877.4,
+        "token_count": 1126,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.6; flagged=False"
+}

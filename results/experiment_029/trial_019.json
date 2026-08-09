@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T22:28:27.187751+00:00",
+  "detector": "context_degradation",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "when did all night long come out lionel richie",
+    "gold_index": 0
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "\"All Night Long (All Night)\" was released in 1983 as part of Lionel Richie's second solo album, *Can't Slow Down*.",
+    "latency_ms": 1250.8,
+    "input_tokens": 2261,
+    "output_tokens": 48
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "when did all night long come out lionel richie",
+      "gold_index": 0,
+      "n_docs": 10
+    },
+    "response": "\"All Night Long (All Night)\" was released in 1983 as part of Lionel Richie's second solo album, *Can't Slow Down*.",
+    "latency_ms": 1250.8,
+    "token_count": 2309,
+    "context_window_used": 0.25
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "45d2578e9c9e",
+      "tool_name": "context_qa",
+      "status": "pass",
+      "timestamp": 1786314507.1868331,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 1250.8,
+        "token_count": 2309,
+        "context_window_used": 0.25,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.19; flagged=False; gold_index=0"
+}

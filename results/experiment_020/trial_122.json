@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:50:49.790529+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What cardiac condition affects neonates born to diabetic mothers?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Paediatrics",
+    "question_type": "Directed question that has a single unambiguous answer| Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Cardiac Condition in Infants of Diabetic Mothers\n\n## Primary Condition: Hypertrophic Cardiomyopathy\n\nNeonates born to mothers with diabetes (both pre-existing and gestational) are particularly susceptible to developing **hypertrophic cardiomyopathy**, most notably affecting the **interventricular septum**. This condition is often referred to as **septal hypertrophy** or **asymmetric septal hypertrophy**.\n\n## Epidemiology and Risk\n\n- This condition affects approximately **30-50%** of infants born to diabetic mothers, though estimates vary depending on the population studied and glycemic control during pregnancy\n- The risk correlates directly with the degree of maternal glycemic control\u2014mothers with **poorly controlled diabetes** (HbA1c levels above roughly **7-8%**) have infants at substantially higher risk\n- Approximately **10%** of affected infants may develop symptomatic outflow tract obstruction\n\n## Pathophysiology\n\nThe proposed mechanism involves:\n- **Maternal hyperglycemia** crosses the placenta, causing **fetal hyperglycemia**\n- This triggers **fetal hyperinsulinemia** (since insulin doesn't cross the placenta, but glucose does)\n- Insulin acts as a growth factor, stimulating **myocardial hypertrophy**, particularly of the interventricular septum\n- This can result in **left ventricular outflow tract obstruction (LVOTO)** in more severe cases, mimicking hypertrophic obstructive cardiomyopathy seen in older patients\n\n## Clinical Presentation\n\nMost infants are **asymptomatic**, but some may present with:\n- **Tachypnea**\n- **Poor feeding**\n- **Signs of heart failure** (in severe cases)\n- A **systolic murmur** if outflow obstruction is present\n- Cyanosis (rare, in severe obstructive cases)\n\n## Diagnostic Findings\n\n- **Echocardiography** is the diagnostic modality of choice\n- Findings typically include:\n  - Increased **interventricular septal thickness** (often >5-6mm in term infants, compared to normal ~3-4mm)\n  - Possible **left ventricular outflow tract gradient**\n  - Generally **preserved or hyperdynamic systolic function**\n\n## Natural History and Prognosis\n\n- The condition is typically **transient**, resolving spontaneously within approximately **2-12 months** after birth as maternal insulin influence wears off and the infant's own metabolic status normalizes\n- Most cases require only **observation** with serial echocardiograms\n- Severe symptomatic cases may require **beta-blockers** (e.g., propranolol) to reduce outflow obstruction and improve diastolic filling\n- **Surgical intervention** is rarely needed, reserved for severe, medically refractory obstruction\n\n## Management Approach\n\n1. **Screening echocardiogram** for infants of diabetic mothers, especially if mother had poor glycemic control\n2. **Serial monitoring** if hypertrophy is detected\n3.",
+    "latency_ms": 10907.1,
+    "input_tokens": 132,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What cardiac condition affects neonates born to diabetic mothers?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Cardiac Condition in Infants of Diabetic Mothers\n\n## Primary Condition: Hypertrophic Cardiomyopathy\n\nNeonates born to mothers with diabetes (both pre-existing and gestational) are particularly susceptible to developing **hypertrophic cardiomyopathy**, most notably affecting the **interventricular septum**. This condition is often referred to as **septal hypertrophy** or **asymmetric septal hypertrophy**.\n\n## Epidemiology and Risk\n\n- This condition affects approximately **30-50%** of infants born to diabetic mothers, though estimates vary depending on the population studied and glycemic control during pregnancy\n- The risk correlates directly with the degree of maternal glycemic control\u2014mothers with **poorly controlled diabetes** (HbA1c levels above roughly **7-8%**) have infants at substantially higher risk\n- Approximately **10%** of affected infants may develop symptomatic outflow tract obstruction\n\n## Pathophysiology\n\nThe proposed mechanism involves:\n- **Maternal hyperglycemia** crosses the placenta, causing **fetal hyperglycemia**\n- This triggers **fetal hyperinsulinemia** (since insulin doesn't cross the placenta, but glucose does)\n- Insulin acts as a growth factor, stimulating **myocardial hypertrophy**, particularly of the interventricular septum\n- This can result in **left ventricular outflow tract obstruction (LVOTO)** in more severe cases, mimicking hypertrophic obstructive cardiomyopathy seen in older patients\n\n## Clinical Presentation\n\nMost infants are **asymptomatic**, but some may present with:\n- **Tachypnea**\n- **Poor feeding**\n- **Signs of heart failure** (in severe cases)\n- A **systolic murmur** if outflow obstruction is present\n- Cyanosis (rare, in severe obstructive cases)\n\n## Diagnostic Findings\n\n- **Echocardiography** is the diagnostic modality of choice\n- Findings typically include:\n  - Increased **interventricular septal thickness** (often >5-6mm in term infants, compared to normal ~3-4mm)\n  - Possible **left ventricular outflow tract gradient**\n  - Generally **preserved or hyperdynamic systolic function**\n\n## Natural History and Prognosis\n\n- The condition is typically **transient**, resolving spontaneously within approximately **2-12 months** after birth as maternal insulin influence wears off and the infant's own metabolic status normalizes\n- Most cases require only **observation** with serial echocardiograms\n- Severe symptomatic cases may require **beta-blockers** (e.g., propranolol) to reduce outflow obstruction and improve diastolic filling\n- **Surgical intervention** is rarely needed, reserved for severe, medically refractory obstruction\n\n## Management Approach\n\n1. **Screening echocardiogram** for infants of diabetic mothers, especially if mother had poor glycemic control\n2. **Serial monitoring** if hypertrophy is detected\n3.",
+    "latency_ms": 10907.1,
+    "token_count": 1156,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "40c56406e350",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240249.7897406,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 9 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4136,
+          "evidence": [
+            "Latency 10907ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 10907.1,
+        "token_count": 1156,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.122; flagged=True"
+}

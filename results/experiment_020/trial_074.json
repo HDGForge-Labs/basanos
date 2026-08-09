@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T01:40:55.233756+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "To whom should I send the request for mileage reimbursement instead of using public transportation?",
+    "field": "Law",
+    "specific_field": "Law professional in office",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "You should send that request to your manager or supervisor, or to your company's HR/Finance/Accounts department, depending on how your organization handles expense approvals.\n\nSince I don't have access to details about your specific workplace, here's how to figure out the right recipient:\n\n1. **Check your employee handbook or expense policy** \u2014 many companies specify exactly who approves mileage vs. transit reimbursements, and whether you need pre-approval to choose driving over public transit.\n\n2. **Look for an expense management system** \u2014 if your company uses tools like Concur, Expensify, or a similar platform, the routing is often automatic once you submit the correct expense type.\n\n3. **Ask your direct manager first** \u2014 they can either approve it themselves or point you to the correct department (often payroll, accounting, or HR).\n\n4. **Justify the mileage vs. transit choice** \u2014 some organizations require a brief explanation (e.g., no reasonable transit route, time savings, carrying equipment) since public transit is often the default/cheaper option.\n\nIf you let me know your company or the context (e.g., government employee, corporate job, contractor), I can give more tailored guidance on typical approval chains.",
+    "latency_ms": 6693.9,
+    "input_tokens": 141,
+    "output_tokens": 366
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "To whom should I send the request for mileage reimbursement instead of using public transportation?",
+      "field": "Law"
+    },
+    "response": "You should send that request to your manager or supervisor, or to your company's HR/Finance/Accounts department, depending on how your organization handles expense approvals.\n\nSince I don't have access to details about your specific workplace, here's how to figure out the right recipient:\n\n1. **Check your employee handbook or expense policy** \u2014 many companies specify exactly who approves mileage vs. transit reimbursements, and whether you need pre-approval to choose driving over public transit.\n\n2. **Look for an expense management system** \u2014 if your company uses tools like Concur, Expensify, or a similar platform, the routing is often automatic once you submit the correct expense type.\n\n3. **Ask your direct manager first** \u2014 they can either approve it themselves or point you to the correct department (often payroll, accounting, or HR).\n\n4. **Justify the mileage vs. transit choice** \u2014 some organizations require a brief explanation (e.g., no reasonable transit route, time savings, carrying equipment) since public transit is often the default/cheaper option.\n\nIf you let me know your company or the context (e.g., government employee, corporate job, contractor), I can give more tailored guidance on typical approval chains.",
+    "latency_ms": 6693.9,
+    "token_count": 507
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "2c1fb7f5219e",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786239655.233002,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 6693.9,
+        "token_count": 507,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.74; flagged=False"
+}

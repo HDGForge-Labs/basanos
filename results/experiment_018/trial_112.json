@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T22:59:25.174455+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "How can we classify studies conducted by transgender people? As the gender they define themselves as or as a separate category, transgender people?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "I am a nursing and dentistry teacher",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "It depends on **what the classification is intended to measure**. There is no single universally correct approach.\n\n### 1. For demographic or social analyses: classify by self-identified gender\n\nIf the study is examining outcomes related to gender identity\u2014such as discrimination, mental health, access to care, or social experiences\u2014participants should generally be classified according to their **self-identified gender**, using categories such as:\n\n- Woman\n- Man\n- Nonbinary or gender-diverse\n- Another identity, with an optional write-in field\n- Prefer not to answer\n\nA transgender woman would therefore usually be included with women, and a transgender man with men, when the research question concerns gender.\n\nThis approach respects participants\u2019 identities and avoids treating transgender status as though it were itself a gender.\n\n### 2. For research specifically about transgender populations: record transgender status separately\n\nIf the study concerns health, discrimination, or experiences that may differ because someone is transgender, then gender identity alone is insufficient. Researchers should collect at least two separate variables:\n\n1. **Current gender identity**\n2. **Transgender history or status**\n\nFor example:\n\n| Current gender identity | Transgender status |\n|---|---|\n| Woman | Transgender |\n| Man | Transgender |\n| Woman | Cisgender |\n| Man | Cisgender |\n| Nonbinary | Transgender or gender-diverse |\n\nThis allows researchers to compare, for example:\n\n- Transgender women with cisgender women\n- Transgender men with cisgender men\n- Transgender people overall\n- Nonbinary people separately, if the sample is large enough\n\n### 3. Do not automatically create \u201ctransgender\u201d as a third gender category\n\n\u201cTransgender\u201d generally describes a relationship between a person\u2019s gender identity and the sex assigned at birth; it is not necessarily a separate gender category. For example:\n\n- A transgender woman is a woman.\n- A transgender man is a man.\n- A nonbinary transgender person is nonbinary.\n- Some transgender people may not identify as men, women, or nonbinary.\n\nCreating only three categories\u2014\u201cmen,\u201d \u201cwomen,\u201d and \u201ctransgender\u201d\u2014can therefore be misleading, because it places transgender men and transgender women outside their genders.\n\n### 4. For medical or biological studies, collect sex-related variables separately\n\nSome studies need information about:\n\n- Sex assigned at birth\n- Current anatomy relevant to the study\n- Hormone therapy\n- Surgical history\n- Pregnancy potential\n- Relevant laboratory reference ranges\n- Gender identity\n- Transgender status\n\nThese should not be treated as interchangeable. For example, a study of cervical cancer screening may need to know whether a participant has a cervix, while a study of discrimination may primarily need gender identity and transgender status.\n\n### Recommended approach\n\nA robust survey might ask:\n\n**Current gender identity \u2014 select all that apply:**\n\n- Woman\n- Man\n- Nonbinary\n- Genderqueer or gender-fluid\n- Another identity: ___\n- Prefer not to answer\n\n**Sex assigned at birth:**\n\n- Female\n- Male\n- Intersex or another designation\n- Prefer not to answer\n\n**Do you consider yourself transgender or gender-diverse?**\n\n- Yes\n- No\n- Unsure\n- Prefer not to answer\n\nFor analysis, report the categories that are relevant to the research question and large enough to support reliable estimates. If a subgroup contains fewer than approximately **10\u201320 participants**, results may need to be suppressed or combined because of statistical instability and confidentiality risks.\n\n### Bottom line\n\nUse **self-identified gender** when classifying people by gender. Record **transgender status separately** when it is relevant to the research. Avoid treating \u201ctransgender\u201d as a universal third gender category unless the study explicitly defines and justifies that classification for a particular purpose.",
+    "latency_ms": 5596.5,
+    "input_tokens": 98,
+    "output_tokens": 773
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How can we classify studies conducted by transgender people? As the gender they define themselves as or as a separate category, transgender people?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "It depends on **what the classification is intended to measure**. There is no single universally correct approach.\n\n### 1. For demographic or social analyses: classify by self-identified gender\n\nIf the study is examining outcomes related to gender identity\u2014such as discrimination, mental health, access to care, or social experiences\u2014participants should generally be classified according to their **self-identified gender**, using categories such as:\n\n- Woman\n- Man\n- Nonbinary or gender-diverse\n- Another identity, with an optional write-in field\n- Prefer not to answer\n\nA transgender woman would therefore usually be included with women, and a transgender man with men, when the research question concerns gender.\n\nThis approach respects participants\u2019 identities and avoids treating transgender status as though it were itself a gender.\n\n### 2. For research specifically about transgender populations: record transgender status separately\n\nIf the study concerns health, discrimination, or experiences that may differ because someone is transgender, then gender identity alone is insufficient. Researchers should collect at least two separate variables:\n\n1. **Current gender identity**\n2. **Transgender history or status**\n\nFor example:\n\n| Current gender identity | Transgender status |\n|---|---|\n| Woman | Transgender |\n| Man | Transgender |\n| Woman | Cisgender |\n| Man | Cisgender |\n| Nonbinary | Transgender or gender-diverse |\n\nThis allows researchers to compare, for example:\n\n- Transgender women with cisgender women\n- Transgender men with cisgender men\n- Transgender people overall\n- Nonbinary people separately, if the sample is large enough\n\n### 3. Do not automatically create \u201ctransgender\u201d as a third gender category\n\n\u201cTransgender\u201d generally describes a relationship between a person\u2019s gender identity and the sex assigned at birth; it is not necessarily a separate gender category. For example:\n\n- A transgender woman is a woman.\n- A transgender man is a man.\n- A nonbinary transgender person is nonbinary.\n- Some transgender people may not identify as men, women, or nonbinary.\n\nCreating only three categories\u2014\u201cmen,\u201d \u201cwomen,\u201d and \u201ctransgender\u201d\u2014can therefore be misleading, because it places transgender men and transgender women outside their genders.\n\n### 4. For medical or biological studies, collect sex-related variables separately\n\nSome studies need information about:\n\n- Sex assigned at birth\n- Current anatomy relevant to the study\n- Hormone therapy\n- Surgical history\n- Pregnancy potential\n- Relevant laboratory reference ranges\n- Gender identity\n- Transgender status\n\nThese should not be treated as interchangeable. For example, a study of cervical cancer screening may need to know whether a participant has a cervix, while a study of discrimination may primarily need gender identity and transgender status.\n\n### Recommended approach\n\nA robust survey might ask:\n\n**Current gender identity \u2014 select all that apply:**\n\n- Woman\n- Man\n- Nonbinary\n- Genderqueer or gender-fluid\n- Another identity: ___\n- Prefer not to answer\n\n**Sex assigned at birth:**\n\n- Female\n- Male\n- Intersex or another designation\n- Prefer not to answer\n\n**Do you consider yourself transgender or gender-diverse?**\n\n- Yes\n- No\n- Unsure\n- Prefer not to answer\n\nFor analysis, report the categories that are relevant to the research question and large enough to support reliable estimates. If a subgroup contains fewer than approximately **10\u201320 participants**, results may need to be suppressed or combined because of statistical instability and confidentiality risks.\n\n### Bottom line\n\nUse **self-identified gender** when classifying people by gender. Record **transgender status separately** when it is relevant to the research. Avoid treating \u201ctransgender\u201d as a universal third gender category unless the study explicitly defines and justifies that classification for a particular purpose.",
+    "latency_ms": 5596.5,
+    "token_count": 871,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "a8e0eb45a0f0",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229965.1736927,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 5 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 5596.5,
+        "token_count": 871,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.112; flagged=True"
+}

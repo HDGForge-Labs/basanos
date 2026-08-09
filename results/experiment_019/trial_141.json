@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:12:07.946479+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "If an obese patient who wants to lose weight goes to the doctor's office, what would be the first steps to follow?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General medicine",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "For an adult with obesity who wants to lose weight, the first doctor visit usually focuses on **safety, causes, health risks, and a realistic treatment plan**\u2014not just \u201ceat less and exercise more.\u201d\n\n## 1. Measure weight-related health status\n\nThe clinician will usually record:\n\n- **Height, weight, and BMI**\n  - BMI **25.0\u201329.9 kg/m\u00b2** = overweight\n  - BMI **30.0\u201334.9 kg/m\u00b2** = class I obesity\n  - BMI **35.0\u201339.9 kg/m\u00b2** = class II obesity\n  - BMI **40 kg/m\u00b2 or higher** = class III obesity\n- **Waist circumference**, because abdominal fat raises cardiometabolic risk:\n  - Increased risk often begins above about **40 inches (102 cm)** in men\n  - Above about **35 inches (88 cm)** in non-pregnant women  \n  These cutoffs vary by ethnicity; some Asian populations use lower thresholds.\n- **Blood pressure**, heart rate, and sometimes oxygen level.\n- Review of weight history: highest/lower adult weights, when weight gain occurred, previous diets, medications, physical activity, sleep, stress, and eating patterns.\n\nA useful first target is usually **5%\u201310% of starting body weight over about 6 months**. For example, someone weighing **250 lb (113 kg)** might initially aim to lose about **12\u201325 lb (6\u201311 kg)**. Even a **3%\u20135%** loss can improve blood sugar, blood pressure, triglycerides, joint pain, and fatty liver disease.\n\n## 2. Screen for medical conditions and contributors to weight gain\n\nThe doctor should ask about and assess conditions commonly associated with obesity, including:\n\n- Type 2 diabetes or prediabetes\n- High blood pressure\n- High cholesterol or triglycerides\n- Sleep apnea\u2014especially snoring, witnessed pauses in breathing, morning headaches, or daytime sleepiness\n- Fatty liver disease\n- Osteoarthritis, back pain, reflux, asthma, infertility, or irregular periods\n- Depression, anxiety, binge-eating disorder, trauma, alcohol use, and stress-related eating\n- Polycystic ovary syndrome (PCOS), particularly with irregular periods, acne, or excess hair growth\n- Thyroid symptoms, although hypothyroidism is a relatively uncommon explanation for major weight gain\n\nThey will also review medications that can promote weight gain, such as some:\n\n- Antidepressants and antipsychotics\n- Steroids such as prednisone\n- Insulin and some diabetes medications\n- Certain seizure medications\n- Some beta blockers\n- Hormonal therapies\n\nThe clinician should not assume weight is due to lack of willpower; obesity is a chronic, biologically influenced medical condition involving appetite regulation, genetics, environment, sleep, medications, mental health, and social factors.\n\n## 3. Order basic laboratory tests when appropriate\n\nCommon initial tests may include:\n\n- **A1c** and/or fasting glucose for diabetes/prediabetes  \n  - Prediabetes: A1c **5.7%\u20136.4%**\n  - Diabetes: A1c **6.5% or higher** on confirmatory testing in most cases\n- **Lipid panel**: LDL cholesterol, HDL cholesterol, triglycerides\n- **Liver enzymes** (ALT/AST), which may suggest fatty liver disease\n- **Kidney function** and electrolytes, especially if diabetes, hypertension, or medication treatment is being considered\n- **TSH** for thyroid disease if symptoms or clinical suspicion are present\n- Sometimes tests for pregnancy, PCOS, Cushing syndrome, or other conditions\u2014but these are not routinely needed for everyone.\n\nIf sleep apnea is suspected, the next step may be a home sleep test or formal sleep study.\n\n## 4. Set patient-centered goals\n\nThe doctor should ask what matters most to the patient\u2014for example:\n\n- Better mobility or less knee pain\n- Lower blood sugar or blood pressure\n- More energy\n- Improved sleep\n- Fertility goals\n- Ability to participate in activities with family\n- Reducing need for medications\n\nRather than setting an extreme target immediately, the plan often starts with goals such as:\n\n- Losing about **0.5\u20132 lb (0.25\u20130.9 kg) per week**\n- Increasing activity gradually\n- Improving protein, fiber, fruit/vegetable, and water intake\n- Reducing sugary drinks, alcohol, ultra-processed snacks, and large portions\n- Getting roughly **7\u20139 hours of sleep** nightly when possible\n\n## 5. Begin a structured lifestyle plan\n\nA first-line plan commonly includes referral or follow-up with a:\n\n- Registered dietitian\n- Lifestyle/weight-management program\n- Behavioral health professional, especially if binge eating, depression, trauma, or emotional eating is present\n- Physical therapist or exercise specialist if pain, injury, or mobility limits activity\n\nTypical evidence-based starting recommendations",
+    "latency_ms": 12372.7,
+    "input_tokens": 96,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "If an obese patient who wants to lose weight goes to the doctor's office, what would be the first steps to follow?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "For an adult with obesity who wants to lose weight, the first doctor visit usually focuses on **safety, causes, health risks, and a realistic treatment plan**\u2014not just \u201ceat less and exercise more.\u201d\n\n## 1. Measure weight-related health status\n\nThe clinician will usually record:\n\n- **Height, weight, and BMI**\n  - BMI **25.0\u201329.9 kg/m\u00b2** = overweight\n  - BMI **30.0\u201334.9 kg/m\u00b2** = class I obesity\n  - BMI **35.0\u201339.9 kg/m\u00b2** = class II obesity\n  - BMI **40 kg/m\u00b2 or higher** = class III obesity\n- **Waist circumference**, because abdominal fat raises cardiometabolic risk:\n  - Increased risk often begins above about **40 inches (102 cm)** in men\n  - Above about **35 inches (88 cm)** in non-pregnant women  \n  These cutoffs vary by ethnicity; some Asian populations use lower thresholds.\n- **Blood pressure**, heart rate, and sometimes oxygen level.\n- Review of weight history: highest/lower adult weights, when weight gain occurred, previous diets, medications, physical activity, sleep, stress, and eating patterns.\n\nA useful first target is usually **5%\u201310% of starting body weight over about 6 months**. For example, someone weighing **250 lb (113 kg)** might initially aim to lose about **12\u201325 lb (6\u201311 kg)**. Even a **3%\u20135%** loss can improve blood sugar, blood pressure, triglycerides, joint pain, and fatty liver disease.\n\n## 2. Screen for medical conditions and contributors to weight gain\n\nThe doctor should ask about and assess conditions commonly associated with obesity, including:\n\n- Type 2 diabetes or prediabetes\n- High blood pressure\n- High cholesterol or triglycerides\n- Sleep apnea\u2014especially snoring, witnessed pauses in breathing, morning headaches, or daytime sleepiness\n- Fatty liver disease\n- Osteoarthritis, back pain, reflux, asthma, infertility, or irregular periods\n- Depression, anxiety, binge-eating disorder, trauma, alcohol use, and stress-related eating\n- Polycystic ovary syndrome (PCOS), particularly with irregular periods, acne, or excess hair growth\n- Thyroid symptoms, although hypothyroidism is a relatively uncommon explanation for major weight gain\n\nThey will also review medications that can promote weight gain, such as some:\n\n- Antidepressants and antipsychotics\n- Steroids such as prednisone\n- Insulin and some diabetes medications\n- Certain seizure medications\n- Some beta blockers\n- Hormonal therapies\n\nThe clinician should not assume weight is due to lack of willpower; obesity is a chronic, biologically influenced medical condition involving appetite regulation, genetics, environment, sleep, medications, mental health, and social factors.\n\n## 3. Order basic laboratory tests when appropriate\n\nCommon initial tests may include:\n\n- **A1c** and/or fasting glucose for diabetes/prediabetes  \n  - Prediabetes: A1c **5.7%\u20136.4%**\n  - Diabetes: A1c **6.5% or higher** on confirmatory testing in most cases\n- **Lipid panel**: LDL cholesterol, HDL cholesterol, triglycerides\n- **Liver enzymes** (ALT/AST), which may suggest fatty liver disease\n- **Kidney function** and electrolytes, especially if diabetes, hypertension, or medication treatment is being considered\n- **TSH** for thyroid disease if symptoms or clinical suspicion are present\n- Sometimes tests for pregnancy, PCOS, Cushing syndrome, or other conditions\u2014but these are not routinely needed for everyone.\n\nIf sleep apnea is suspected, the next step may be a home sleep test or formal sleep study.\n\n## 4. Set patient-centered goals\n\nThe doctor should ask what matters most to the patient\u2014for example:\n\n- Better mobility or less knee pain\n- Lower blood sugar or blood pressure\n- More energy\n- Improved sleep\n- Fertility goals\n- Ability to participate in activities with family\n- Reducing need for medications\n\nRather than setting an extreme target immediately, the plan often starts with goals such as:\n\n- Losing about **0.5\u20132 lb (0.25\u20130.9 kg) per week**\n- Increasing activity gradually\n- Improving protein, fiber, fruit/vegetable, and water intake\n- Reducing sugary drinks, alcohol, ultra-processed snacks, and large portions\n- Getting roughly **7\u20139 hours of sleep** nightly when possible\n\n## 5. Begin a structured lifestyle plan\n\nA first-line plan commonly includes referral or follow-up with a:\n\n- Registered dietitian\n- Lifestyle/weight-management program\n- Behavioral health professional, especially if binge eating, depression, trauma, or emotional eating is present\n- Physical therapist or exercise specialist if pain, injury, or mobility limits activity\n\nTypical evidence-based starting recommendations",
+    "latency_ms": 12372.7,
+    "token_count": 1120,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "aeb79ede652a",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234327.9456887,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 22 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4356,
+          "evidence": [
+            "Latency 12373ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12372.7,
+        "token_count": 1120,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.141; flagged=True"
+}

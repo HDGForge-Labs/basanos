@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:37:04.047828+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Supose there is female 30yo patient who is pregnant of 32 weeks, she presents with moderate transvaginal bleeding and no other symptoms, what would be the best initial course of action to address this patient? ",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Primary care",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Initial Management of Third-Trimester Bleeding at 32 Weeks\n\n## Critical First Step: DO NOT Perform Digital Vaginal Exam\n\nUntil placenta previa is excluded via ultrasound, digital vaginal or rectal examination is contraindicated\u2014it can provoke catastrophic hemorrhage if previa is present.\n\n## Immediate Actions\n\n**1. Maternal Stabilization**\n- Assess vital signs (BP, HR, RR, O2 sat)\n- Establish IV access with two large-bore catheters\n- Type and crossmatch blood (have 2 units available)\n- CBC, coagulation studies (PT/PTT/fibrinogen), and Kleihauer-Betke test if Rh-negative\n- Continuous maternal monitoring\n\n**2. Fetal Assessment**\n- Continuous electronic fetal monitoring (CTG) to assess fetal heart rate pattern and rule out fetal distress\n- This also helps detect uterine contractions suggesting abruption or preterm labor\n\n**3. Transabdominal Ultrasound (Before Any Vaginal Exam)**\n- Localize the placenta \u2014 **rule out placenta previa** (most important initial diagnostic step)\n- Assess for retroplacental clot suggesting **abruptio placentae**\n- Evaluate fetal presentation, growth, and amniotic fluid volume\n- Confirm fetal viability and biophysical parameters\n\n## Differential Diagnosis to Consider\n- **Placenta previa** (painless bleeding, often bright red)\n- **Placental abruption** (may have pain, uterine tenderness, contractions \u2014 even without contractions initially)\n- **Vasa previa** (less common, but catastrophic if membranes rupture)\n- Cervical/vaginal causes (cervicitis, polyps, \"bloody show\" from cervical changes)\n\n## Once Previa is Excluded\n- A gentle **speculum exam** can then be performed to visualize the cervix and quantify bleeding, and rule out local lesions\n\n## Additional Considerations at 32 Weeks\n\n**Corticosteroids**: If patient shows signs of possible preterm delivery (given the gestational age falls within 24-34 weeks), administer **betamethasone** (12mg IM x2 doses, 24 hours apart) for fetal lung maturation, since the clinical picture could evolve toward preterm delivery.\n\n**Rh Status**: If mother is Rh-negative, administer **Anti-D immunoglobulin** (unless she's already sensitized).\n\n## Disposition\n- **Admit for observation** \u2014 even \"moderate\" bleeding without other symptoms warrants inpatient monitoring given the risk of rapid progression (especially with abruption or previa)\n- Serial monitoring of bleeding, vitals, and fetal status\n- Avoid intercourse, vaginal exams, and strenuous activity if previa is confirmed\n\n## Summary Algorithm\n```\nModerate bleeding at 32 weeks\n        \u2193\nStabilize mother (IV, labs, type & cross)\n        \u2193\nContinu",
+    "latency_ms": 12146.4,
+    "input_tokens": 182,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Supose there is female 30yo patient who is pregnant of 32 weeks, she presents with moderate transvaginal bleeding and no other symptoms, what would be the best initial course of action to address this patient? ",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Initial Management of Third-Trimester Bleeding at 32 Weeks\n\n## Critical First Step: DO NOT Perform Digital Vaginal Exam\n\nUntil placenta previa is excluded via ultrasound, digital vaginal or rectal examination is contraindicated\u2014it can provoke catastrophic hemorrhage if previa is present.\n\n## Immediate Actions\n\n**1. Maternal Stabilization**\n- Assess vital signs (BP, HR, RR, O2 sat)\n- Establish IV access with two large-bore catheters\n- Type and crossmatch blood (have 2 units available)\n- CBC, coagulation studies (PT/PTT/fibrinogen), and Kleihauer-Betke test if Rh-negative\n- Continuous maternal monitoring\n\n**2. Fetal Assessment**\n- Continuous electronic fetal monitoring (CTG) to assess fetal heart rate pattern and rule out fetal distress\n- This also helps detect uterine contractions suggesting abruption or preterm labor\n\n**3. Transabdominal Ultrasound (Before Any Vaginal Exam)**\n- Localize the placenta \u2014 **rule out placenta previa** (most important initial diagnostic step)\n- Assess for retroplacental clot suggesting **abruptio placentae**\n- Evaluate fetal presentation, growth, and amniotic fluid volume\n- Confirm fetal viability and biophysical parameters\n\n## Differential Diagnosis to Consider\n- **Placenta previa** (painless bleeding, often bright red)\n- **Placental abruption** (may have pain, uterine tenderness, contractions \u2014 even without contractions initially)\n- **Vasa previa** (less common, but catastrophic if membranes rupture)\n- Cervical/vaginal causes (cervicitis, polyps, \"bloody show\" from cervical changes)\n\n## Once Previa is Excluded\n- A gentle **speculum exam** can then be performed to visualize the cervix and quantify bleeding, and rule out local lesions\n\n## Additional Considerations at 32 Weeks\n\n**Corticosteroids**: If patient shows signs of possible preterm delivery (given the gestational age falls within 24-34 weeks), administer **betamethasone** (12mg IM x2 doses, 24 hours apart) for fetal lung maturation, since the clinical picture could evolve toward preterm delivery.\n\n**Rh Status**: If mother is Rh-negative, administer **Anti-D immunoglobulin** (unless she's already sensitized).\n\n## Disposition\n- **Admit for observation** \u2014 even \"moderate\" bleeding without other symptoms warrants inpatient monitoring given the risk of rapid progression (especially with abruption or previa)\n- Serial monitoring of bleeding, vitals, and fetal status\n- Avoid intercourse, vaginal exams, and strenuous activity if previa is confirmed\n\n## Summary Algorithm\n```\nModerate bleeding at 32 weeks\n        \u2193\nStabilize mother (IV, labs, type & cross)\n        \u2193\nContinu",
+    "latency_ms": 12146.4,
+    "token_count": 1206
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "92e36fcb2113",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239424.0470607,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4322,
+          "evidence": [
+            "Latency 12146ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12146.4,
+        "token_count": 1206,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.54; flagged=False"
+}

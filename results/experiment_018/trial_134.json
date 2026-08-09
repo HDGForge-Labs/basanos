@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-08T23:01:38.679653+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "There is a lawyer in court and he has his client but the other party's lawyer is missing, what happens?",
+    "field": "Law",
+    "specific_field": "jr lawyer ",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Usually, the judge decides what happens. The outcome depends on **why the other lawyer is absent, whether the party is present, the type of case, and prior court orders**.\n\nCommon possibilities include:\n\n- **Short delay or recess:** The judge may wait roughly **10\u201330 minutes**, call the lawyer\u2019s office, or move the matter later on the day\u2019s calendar.\n- **Continuance or adjournment:** If there is a legitimate emergency\u2014such as illness, a family emergency, or a scheduling problem\u2014the judge may postpone the hearing, often by **days or weeks**. The absent lawyer may be required to provide proof or explain the absence.\n- **Proceed without the lawyer:** If the absence appears unjustified, the judge may allow the present lawyer to proceed. The other party might participate personally if permitted, or the court may treat the lawyer\u2019s failure to appear as a waiver of certain arguments.\n- **Default judgment or dismissal:** In some civil matters, if the opposing party and lawyer both fail to appear, the judge may enter a **default**, dismiss a claim, or rule based on the evidence presented. This is not automatic in every case.\n- **Sanctions:** The judge may impose a monetary penalty, award the other side\u2019s reasonable costs, issue a warning, or refer the lawyer for professional discipline. Sanctions commonly depend on whether the absence caused delay or prejudice.\n- **Contempt or a warrant in criminal cases:** A lawyer\u2019s absence normally does **not** mean the accused is automatically found guilty. Criminal defendants generally have rights to counsel, so the judge may appoint substitute counsel, delay the case, or take other steps. A warrant is more commonly an issue for a **missing defendant**, not merely a missing lawyer.\n\nIf the client is present but the lawyer is missing, the judge may ask whether the client wants to proceed without counsel. The client usually should **not agree to proceed without legal advice** unless the judge explains the consequences and the person knowingly chooses to do so. In a criminal case, the court generally must protect the defendant\u2019s right to counsel.\n\nIf this is happening now, the client should remain in the courtroom, tell the clerk or bailiff that counsel is absent, contact the lawyer\u2019s office, and avoid discussing the facts with the opposing side. The exact rules vary significantly by **country, state, court, and type of hearing**.",
+    "latency_ms": 4281.9,
+    "input_tokens": 95,
+    "output_tokens": 485
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "There is a lawyer in court and he has his client but the other party's lawyer is missing, what happens?",
+      "field": "Law"
+    },
+    "response": "Usually, the judge decides what happens. The outcome depends on **why the other lawyer is absent, whether the party is present, the type of case, and prior court orders**.\n\nCommon possibilities include:\n\n- **Short delay or recess:** The judge may wait roughly **10\u201330 minutes**, call the lawyer\u2019s office, or move the matter later on the day\u2019s calendar.\n- **Continuance or adjournment:** If there is a legitimate emergency\u2014such as illness, a family emergency, or a scheduling problem\u2014the judge may postpone the hearing, often by **days or weeks**. The absent lawyer may be required to provide proof or explain the absence.\n- **Proceed without the lawyer:** If the absence appears unjustified, the judge may allow the present lawyer to proceed. The other party might participate personally if permitted, or the court may treat the lawyer\u2019s failure to appear as a waiver of certain arguments.\n- **Default judgment or dismissal:** In some civil matters, if the opposing party and lawyer both fail to appear, the judge may enter a **default**, dismiss a claim, or rule based on the evidence presented. This is not automatic in every case.\n- **Sanctions:** The judge may impose a monetary penalty, award the other side\u2019s reasonable costs, issue a warning, or refer the lawyer for professional discipline. Sanctions commonly depend on whether the absence caused delay or prejudice.\n- **Contempt or a warrant in criminal cases:** A lawyer\u2019s absence normally does **not** mean the accused is automatically found guilty. Criminal defendants generally have rights to counsel, so the judge may appoint substitute counsel, delay the case, or take other steps. A warrant is more commonly an issue for a **missing defendant**, not merely a missing lawyer.\n\nIf the client is present but the lawyer is missing, the judge may ask whether the client wants to proceed without counsel. The client usually should **not agree to proceed without legal advice** unless the judge explains the consequences and the person knowingly chooses to do so. In a criminal case, the court generally must protect the defendant\u2019s right to counsel.\n\nIf this is happening now, the client should remain in the courtroom, tell the clerk or bailiff that counsel is absent, contact the lawyer\u2019s office, and avoid discussing the facts with the opposing side. The exact rules vary significantly by **country, state, court, and type of hearing**.",
+    "latency_ms": 4281.9,
+    "token_count": 580,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "771d0326b50f",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230098.6788285,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 4281.9,
+        "token_count": 580,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.134; flagged=False"
+}

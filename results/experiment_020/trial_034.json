@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:33:10.479311+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "How will the estate of an individual who dies without a will be distributed?",
+    "field": "Law",
+    "specific_field": "Property Law",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Intestate Succession: How Estates Are Distributed Without a Will\n\nWhen someone dies \"intestate\" (without a valid will), their estate is distributed according to their state's intestacy statutes rather than personal wishes. While specifics vary by state, general patterns apply.\n\n## Typical Distribution Order\n\n**1. Surviving Spouse and Children**\n- If there's a spouse but no children: spouse typically gets everything\n- If there's a spouse and children from that marriage only: spouse often gets everything, or in some states splits with children (e.g., spouse gets first $50,000-$150,000 plus half the remainder, children split the rest)\n- If there are children from a prior relationship: spouse's share is often reduced (e.g., spouse gets half, children get the other half)\n\n**2. No Spouse, But Children Survive**\n- Estate passes entirely to children in equal shares\n- If a child predeceased the decedent but left their own children, those grandchildren typically inherit their parent's share (called \"per stirpes\" distribution)\n\n**3. No Spouse or Children**\n- Estate passes to parents\n- If no parents, then to siblings (equally)\n- If no siblings, then to more distant relatives: grandparents, aunts/uncles, cousins, following a specific statutory hierarchy\n\n**4. No Living Relatives**\n- Property \"escheats\" to the state\n\n## Key Mechanisms\n\n**Per Stirpes vs. Per Capita**: Most states default to per stirpes, meaning descendants inherit by representation\u2014a deceased child's share passes down to their own children, divided among them.\n\n**Community Property States**: In states like California, Texas, Arizona, and Nevada, community property (assets acquired during marriage) typically goes automatically to the surviving spouse, while separate property follows intestacy rules.\n\n## Important Limitations\n\n- **Unmarried partners get nothing** under intestacy law, regardless of relationship length\n- **Stepchildren are typically excluded** unless legally adopted\n- **Friends, charities, and unrelated persons** cannot inherit under intestacy\n- **Half-relatives** (half-siblings, etc.) are often treated the same as full relatives in most states, though a few states give them only a half-share\n\n## What's NOT Subject to Intestacy Rules\n\nCertain assets bypass probate/intestacy entirely and go to named beneficiaries or joint owners regardless of a will's existence:\n- Life insurance proceeds\n- Retirement accounts (401(k)s, IRAs) with named beneficiaries\n- Assets held in joint tenancy with right of survivorship\n- Payable-on-death (POD) or transfer-on-death (TOD) accounts\n- Assets held in a living trust\n\n## Practical Reality\n\nBecause intestacy statutes apply a rigid formula, results often surprise people\u2014a spouse might unexpectedly share an estate with the decedent's parents (if no children exist in some states), or an estranged sibling might inherit when the decedent would have preferred a close friend or charity receive assets.\n\n**The specific fractions and hierarchy vary significantly by state**, so if you're dealing with an actual intestate estate, you",
+    "latency_ms": 12319.3,
+    "input_tokens": 135,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How will the estate of an individual who dies without a will be distributed?",
+      "field": "Law"
+    },
+    "response": "# Intestate Succession: How Estates Are Distributed Without a Will\n\nWhen someone dies \"intestate\" (without a valid will), their estate is distributed according to their state's intestacy statutes rather than personal wishes. While specifics vary by state, general patterns apply.\n\n## Typical Distribution Order\n\n**1. Surviving Spouse and Children**\n- If there's a spouse but no children: spouse typically gets everything\n- If there's a spouse and children from that marriage only: spouse often gets everything, or in some states splits with children (e.g., spouse gets first $50,000-$150,000 plus half the remainder, children split the rest)\n- If there are children from a prior relationship: spouse's share is often reduced (e.g., spouse gets half, children get the other half)\n\n**2. No Spouse, But Children Survive**\n- Estate passes entirely to children in equal shares\n- If a child predeceased the decedent but left their own children, those grandchildren typically inherit their parent's share (called \"per stirpes\" distribution)\n\n**3. No Spouse or Children**\n- Estate passes to parents\n- If no parents, then to siblings (equally)\n- If no siblings, then to more distant relatives: grandparents, aunts/uncles, cousins, following a specific statutory hierarchy\n\n**4. No Living Relatives**\n- Property \"escheats\" to the state\n\n## Key Mechanisms\n\n**Per Stirpes vs. Per Capita**: Most states default to per stirpes, meaning descendants inherit by representation\u2014a deceased child's share passes down to their own children, divided among them.\n\n**Community Property States**: In states like California, Texas, Arizona, and Nevada, community property (assets acquired during marriage) typically goes automatically to the surviving spouse, while separate property follows intestacy rules.\n\n## Important Limitations\n\n- **Unmarried partners get nothing** under intestacy law, regardless of relationship length\n- **Stepchildren are typically excluded** unless legally adopted\n- **Friends, charities, and unrelated persons** cannot inherit under intestacy\n- **Half-relatives** (half-siblings, etc.) are often treated the same as full relatives in most states, though a few states give them only a half-share\n\n## What's NOT Subject to Intestacy Rules\n\nCertain assets bypass probate/intestacy entirely and go to named beneficiaries or joint owners regardless of a will's existence:\n- Life insurance proceeds\n- Retirement accounts (401(k)s, IRAs) with named beneficiaries\n- Assets held in joint tenancy with right of survivorship\n- Payable-on-death (POD) or transfer-on-death (TOD) accounts\n- Assets held in a living trust\n\n## Practical Reality\n\nBecause intestacy statutes apply a rigid formula, results often surprise people\u2014a spouse might unexpectedly share an estate with the decedent's parents (if no children exist in some states), or an estranged sibling might inherit when the decedent would have preferred a close friend or charity receive assets.\n\n**The specific fractions and hierarchy vary significantly by state**, so if you're dealing with an actual intestate estate, you",
+    "latency_ms": 12319.3,
+    "token_count": 1159
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "cbdb339338b6",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239190.4785678,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4348,
+          "evidence": [
+            "Latency 12319ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12319.3,
+        "token_count": 1159,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.34; flagged=False"
+}

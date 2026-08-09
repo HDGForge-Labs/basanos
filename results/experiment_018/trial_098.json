@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:58:18.321226+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What is the best anesthesia for diabetic patients?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "dentist",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "There is **no single \u201cbest\u201d anesthetic solely because a patient has diabetes**. The safest choice depends on the surgery, diabetes control, kidney/heart status, medications, and risk of complications. In general:\n\n- **Local or regional anesthesia** (nerve block, spinal, or epidural) is often preferred when appropriate because it can reduce opioid use, nausea, stress responses, and airway risks. It does **not** eliminate the need for glucose monitoring.\n- **General anesthesia** is safe for many people with well-managed diabetes when carefully planned and monitored; diabetes alone is not a contraindication.\n\nKey diabetes-specific precautions include:\n\n1. **Check glucose before, during, and after surgery**\u2014often every 1\u20132 hours for major procedures or if insulin is being given. A common perioperative target is approximately **80\u2013180 mg/dL (4.4\u201310 mmol/L)**, individualized by the anesthesiologist.\n2. **Adjust insulin and diabetes drugs.** SGLT2 inhibitors\u2014such as empagliflozin, dapagliflozin, and canagliflozin\u2014are typically stopped **3 days before surgery** (ertugliflozin 4 days) because of the risk of euglycemic ketoacidosis. Other medications, including insulin and GLP-1 drugs, require individualized instructions.\n3. **Avoid prolonged fasting and hypoglycemia**, while also preventing marked hyperglycemia and ketoacidosis.\n4. Assess kidney function, cardiovascular disease, autonomic neuropathy, gastroparesis, infection risk, and wound-healing issues.\n5. In patients with gastroparesis or poorly controlled diabetes, aspiration precautions and sometimes general-anesthesia modifications may be needed.\n\nFor a specific operation, the anesthesiologist should review the diabetes regimen, most recent glucose/HbA1c, kidney function, and any complications before choosing the technique.",
+    "latency_ms": 3130.2,
+    "input_tokens": 87,
+    "output_tokens": 393
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the best anesthesia for diabetic patients?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "There is **no single \u201cbest\u201d anesthetic solely because a patient has diabetes**. The safest choice depends on the surgery, diabetes control, kidney/heart status, medications, and risk of complications. In general:\n\n- **Local or regional anesthesia** (nerve block, spinal, or epidural) is often preferred when appropriate because it can reduce opioid use, nausea, stress responses, and airway risks. It does **not** eliminate the need for glucose monitoring.\n- **General anesthesia** is safe for many people with well-managed diabetes when carefully planned and monitored; diabetes alone is not a contraindication.\n\nKey diabetes-specific precautions include:\n\n1. **Check glucose before, during, and after surgery**\u2014often every 1\u20132 hours for major procedures or if insulin is being given. A common perioperative target is approximately **80\u2013180 mg/dL (4.4\u201310 mmol/L)**, individualized by the anesthesiologist.\n2. **Adjust insulin and diabetes drugs.** SGLT2 inhibitors\u2014such as empagliflozin, dapagliflozin, and canagliflozin\u2014are typically stopped **3 days before surgery** (ertugliflozin 4 days) because of the risk of euglycemic ketoacidosis. Other medications, including insulin and GLP-1 drugs, require individualized instructions.\n3. **Avoid prolonged fasting and hypoglycemia**, while also preventing marked hyperglycemia and ketoacidosis.\n4. Assess kidney function, cardiovascular disease, autonomic neuropathy, gastroparesis, infection risk, and wound-healing issues.\n5. In patients with gastroparesis or poorly controlled diabetes, aspiration precautions and sometimes general-anesthesia modifications may be needed.\n\nFor a specific operation, the anesthesiologist should review the diabetes regimen, most recent glucose/HbA1c, kidney function, and any complications before choosing the technique.",
+    "latency_ms": 3130.2,
+    "token_count": 480
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "97635396f0e9",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229898.3204858,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3130.2,
+        "token_count": 480,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.98; flagged=False"
+}

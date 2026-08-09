@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T00:21:29.569561+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "In an emergency room, 3 people are wheeled in, in different states or conditions, one being hit on the head with a glass bottle, one with a bone sticking out of their leg and the other with a abnormally high temperature. According to the emergency scale, who will be first priority?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Nursing",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "In most emergency departments, priority is based on **triage severity**, not simply the type of injury. The usual standard is the **Emergency Severity Index (ESI)** in the U.S. or a similar 5-level system:\n\n- **Level 1 / immediate resuscitation:** needs life-saving intervention now.\n- **Level 2 / emergent:** high risk of rapid deterioration; should be seen within about **10\u201315 minutes**.\n- **Level 3\u20135:** stable enough to wait longer.\n\nFrom the limited information given, the likely order is:\n\n1. **Head injury from the glass bottle \u2014 first if there are signs of serious brain injury or uncontrolled bleeding.**  \n   This becomes top priority if the person is unconscious, confused, has repeated vomiting, seizures, unequal pupils, a penetrating wound, heavy bleeding, trouble breathing, or a Glasgow Coma Scale score below about **13\u201314**. Head trauma can involve brain bleeding that is not obvious externally.\n\n2. **Person with abnormally high temperature \u2014 may be first instead if the fever suggests heat stroke or sepsis.**  \n   A core temperature of about **40\u00b0C (104\u00b0F) or higher**, especially with confusion, collapse, low blood pressure, rapid breathing, rash, or organ-failure signs, is a medical emergency. Heat stroke requires immediate cooling\u2014often aiming to reduce core temperature below about **39\u00b0C (102.2\u00b0F)** within roughly **30 minutes**. Sepsis can also be immediately life-threatening.\n\n3. **Open fracture (\u201cbone sticking out\u201d) \u2014 urgent, but often after immediate threats to airway, breathing, circulation, brain function, or severe hyperthermia are addressed.**  \n   An open fracture needs rapid treatment because of bleeding, loss of blood supply, nerve damage, and infection risk. It is especially high priority if there is major bleeding, no pulse or sensation below the injury, a cold/pale foot, or signs of shock. Antibiotics are commonly given as soon as possible, ideally within about **1 hour**, and the wound is covered and stabilized.\n\nSo there is **no single automatic answer**. If all three are conscious, breathing normally, and have stable vital signs, the **open fracture** may be seen first because it is an obvious major injury requiring urgent stabilization. But if the head-injury patient has altered consciousness or heavy bleeding, or the fever patient has **\u226540\u00b0C/104\u00b0F with confusion or shock**, that patient would generally become the first priority.",
+    "latency_ms": 7304.0,
+    "input_tokens": 133,
+    "output_tokens": 511
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "In an emergency room, 3 people are wheeled in, in different states or conditions, one being hit on the head with a glass bottle, one with a bone sticking out of their leg and the other with a abnormally high temperature. According to the emergency scale, who will be first priority?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "In most emergency departments, priority is based on **triage severity**, not simply the type of injury. The usual standard is the **Emergency Severity Index (ESI)** in the U.S. or a similar 5-level system:\n\n- **Level 1 / immediate resuscitation:** needs life-saving intervention now.\n- **Level 2 / emergent:** high risk of rapid deterioration; should be seen within about **10\u201315 minutes**.\n- **Level 3\u20135:** stable enough to wait longer.\n\nFrom the limited information given, the likely order is:\n\n1. **Head injury from the glass bottle \u2014 first if there are signs of serious brain injury or uncontrolled bleeding.**  \n   This becomes top priority if the person is unconscious, confused, has repeated vomiting, seizures, unequal pupils, a penetrating wound, heavy bleeding, trouble breathing, or a Glasgow Coma Scale score below about **13\u201314**. Head trauma can involve brain bleeding that is not obvious externally.\n\n2. **Person with abnormally high temperature \u2014 may be first instead if the fever suggests heat stroke or sepsis.**  \n   A core temperature of about **40\u00b0C (104\u00b0F) or higher**, especially with confusion, collapse, low blood pressure, rapid breathing, rash, or organ-failure signs, is a medical emergency. Heat stroke requires immediate cooling\u2014often aiming to reduce core temperature below about **39\u00b0C (102.2\u00b0F)** within roughly **30 minutes**. Sepsis can also be immediately life-threatening.\n\n3. **Open fracture (\u201cbone sticking out\u201d) \u2014 urgent, but often after immediate threats to airway, breathing, circulation, brain function, or severe hyperthermia are addressed.**  \n   An open fracture needs rapid treatment because of bleeding, loss of blood supply, nerve damage, and infection risk. It is especially high priority if there is major bleeding, no pulse or sensation below the injury, a cold/pale foot, or signs of shock. Antibiotics are commonly given as soon as possible, ideally within about **1 hour**, and the wound is covered and stabilized.\n\nSo there is **no single automatic answer**. If all three are conscious, breathing normally, and have stable vital signs, the **open fracture** may be seen first because it is an obvious major injury requiring urgent stabilization. But if the head-injury patient has altered consciousness or heavy bleeding, or the fever patient has **\u226540\u00b0C/104\u00b0F with confusion or shock**, that patient would generally become the first priority.",
+    "latency_ms": 7304.0,
+    "token_count": 644,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "94d7e8d35817",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234889.5687926,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 10 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 7304.0,
+        "token_count": 644,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.194; flagged=True"
+}

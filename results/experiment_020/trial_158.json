@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:58:15.073872+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What are the different ways to protect oneself from getting infected with the Covid-19 vaccine?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "midwifery",
+    "question_type": "Summarization of information on a topic| Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "I think you may be asking about protecting yourself from COVID-19 infection (the vaccine itself doesn't cause infection\u2014it's designed to prevent it). Here's a comprehensive overview of protective strategies:\n\n## Vaccination\n\n- **mRNA vaccines** (Pfizer-BioNTech, Moderna): Studies showed approximately 90-95% efficacy against symptomatic infection with original strains, though effectiveness against newer variants (like Omicron subvariants) has dropped to roughly 30-50% for infection prevention, while remaining higher (around 70-90%) for preventing severe disease and hospitalization.\n- **Booster doses**: Recommended approximately every 6-12 months depending on age and risk factors, especially for those over 65 or immunocompromised.\n- **Timing**: Full immunity typically develops about 1-2 weeks after the final dose in a primary series.\n\n## Physical/Behavioral Measures\n\n- **Masking**: N95/KN95 respirators filter out approximately 95% of airborne particles when properly fitted; surgical masks offer roughly 60-80% filtration; cloth masks provide the least protection (around 30-50%).\n- **Physical distancing**: Maintaining at least 3-6 feet (about 1-2 meters) from others reduces transmission risk significantly, especially indoors.\n- **Ventilation**: Increasing fresh air exchange\u2014aiming for roughly 4-6 air changes per hour\u2014can reduce airborne viral concentration substantially.\n- **Hand hygiene**: Washing hands with soap for at least 20 seconds, or using hand sanitizer with at least 60% alcohol content.\n\n## Behavioral/Environmental Strategies\n\n- Avoiding crowded indoor spaces, especially those with poor ventilation.\n- Testing before/after gatherings (rapid antigen tests have roughly 70-90% sensitivity when symptomatic, lower\u2014around 50-70%\u2014when asymptomatic).\n- Isolating for about 5-10 days if infected, per updated CDC guidance.\n\n## High-Risk Populations\n\n- Older adults (65+), immunocompromised individuals, and those with comorbidities (diabetes, obesity, heart/lung disease) may benefit from additional precautions like extra booster doses or prophylactic treatments (e.g., Evusheld, though its use has been limited due to variant resistance).\n\nIf you meant something different by \"infected with the vaccine,\" feel free to clarify\u2014I'm happy to address specific concerns about vaccine safety, side effects (which occur in roughly 10-20% of recipients as mild reactions like soreness or fatigue), or rare adverse events.",
+    "latency_ms": 11030.1,
+    "input_tokens": 140,
+    "output_tokens": 1022
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the different ways to protect oneself from getting infected with the Covid-19 vaccine?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "I think you may be asking about protecting yourself from COVID-19 infection (the vaccine itself doesn't cause infection\u2014it's designed to prevent it). Here's a comprehensive overview of protective strategies:\n\n## Vaccination\n\n- **mRNA vaccines** (Pfizer-BioNTech, Moderna): Studies showed approximately 90-95% efficacy against symptomatic infection with original strains, though effectiveness against newer variants (like Omicron subvariants) has dropped to roughly 30-50% for infection prevention, while remaining higher (around 70-90%) for preventing severe disease and hospitalization.\n- **Booster doses**: Recommended approximately every 6-12 months depending on age and risk factors, especially for those over 65 or immunocompromised.\n- **Timing**: Full immunity typically develops about 1-2 weeks after the final dose in a primary series.\n\n## Physical/Behavioral Measures\n\n- **Masking**: N95/KN95 respirators filter out approximately 95% of airborne particles when properly fitted; surgical masks offer roughly 60-80% filtration; cloth masks provide the least protection (around 30-50%).\n- **Physical distancing**: Maintaining at least 3-6 feet (about 1-2 meters) from others reduces transmission risk significantly, especially indoors.\n- **Ventilation**: Increasing fresh air exchange\u2014aiming for roughly 4-6 air changes per hour\u2014can reduce airborne viral concentration substantially.\n- **Hand hygiene**: Washing hands with soap for at least 20 seconds, or using hand sanitizer with at least 60% alcohol content.\n\n## Behavioral/Environmental Strategies\n\n- Avoiding crowded indoor spaces, especially those with poor ventilation.\n- Testing before/after gatherings (rapid antigen tests have roughly 70-90% sensitivity when symptomatic, lower\u2014around 50-70%\u2014when asymptomatic).\n- Isolating for about 5-10 days if infected, per updated CDC guidance.\n\n## High-Risk Populations\n\n- Older adults (65+), immunocompromised individuals, and those with comorbidities (diabetes, obesity, heart/lung disease) may benefit from additional precautions like extra booster doses or prophylactic treatments (e.g., Evusheld, though its use has been limited due to variant resistance).\n\nIf you meant something different by \"infected with the vaccine,\" feel free to clarify\u2014I'm happy to address specific concerns about vaccine safety, side effects (which occur in roughly 10-20% of recipients as mild reactions like soreness or fatigue), or rare adverse events.",
+    "latency_ms": 11030.1,
+    "token_count": 1162,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "364bc024bf4e",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240695.0730877,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 17 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4155,
+          "evidence": [
+            "Latency 11030ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11030.1,
+        "token_count": 1162,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.158; flagged=True"
+}

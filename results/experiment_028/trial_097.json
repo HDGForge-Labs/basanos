@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T22:08:47.456147+00:00",
+  "detector": "context_degradation",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "where does cerebrospinal fluid flow to when it exits the cerebral aqueduct",
+    "gold_index": 0
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "After exiting the cerebral aqueduct, cerebrospinal fluid flows into the **fourth ventricle**.",
+    "latency_ms": 885.8,
+    "input_tokens": 1589,
+    "output_tokens": 25
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "where does cerebrospinal fluid flow to when it exits the cerebral aqueduct",
+      "gold_index": 0,
+      "n_docs": 10
+    },
+    "response": "After exiting the cerebral aqueduct, cerebrospinal fluid flows into the **fourth ventricle**.",
+    "latency_ms": 885.8,
+    "token_count": 1614,
+    "context_window_used": 0.25
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "27eb63ad12d3",
+      "tool_name": "context_qa",
+      "status": "pass",
+      "timestamp": 1786313327.4553907,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 885.8,
+        "token_count": 1614,
+        "context_window_used": 0.25,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.97; flagged=False; gold_index=0"
+}

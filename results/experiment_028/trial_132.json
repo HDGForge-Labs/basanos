@@ -1,0 +1,75 @@
+{
+  "timestamp_utc": "2026-08-09T22:09:24.492954+00:00",
+  "detector": "context_degradation",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "where was robin hood prince of thieves made",
+    "gold_index": 9
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "*Robin Hood: Prince of Thieves* was filmed mainly in the United Kingdom, with locations including Wiltshire, Northumberland, Buckinghamshire, Yorkshire, Sussex, and Surrey\u2019s Shepperton Studios. Nottingham and its castle were portrayed using the medieval walls and towers of Carcassonne, France.",
+    "latency_ms": 2241.1,
+    "input_tokens": 1530,
+    "output_tokens": 63
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "where was robin hood prince of thieves made",
+      "gold_index": 9,
+      "n_docs": 10
+    },
+    "response": "*Robin Hood: Prince of Thieves* was filmed mainly in the United Kingdom, with locations including Wiltshire, Northumberland, Buckinghamshire, Yorkshire, Sussex, and Surrey's Shepperton Studios. Nottingham and its castle were portrayed using the medieval walls and towers of Carcassonne, France.",
+    "latency_ms": 2241.1,
+    "token_count": 1593,
+    "context_window_used": 0.92
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "4af718bce561",
+      "tool_name": "context_qa",
+      "status": "warn",
+      "timestamp": 1786313364.4921508,
+      "failures": [
+        {
+          "failure_mode": "context_degradation",
+          "confidence": 0.4,
+          "evidence": [
+            "Context window at 92.0% capacity"
+          ],
+          "remediation": [
+            "Implement context summarization before next tool call",
+            "Inject critical context markers at regular intervals",
+            "Use sliding window context management",
+            "Consider splitting task into smaller context-bounded subtasks"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 2241.1,
+        "token_count": 1593,
+        "context_window_used": 0.92,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Implement context summarization before next tool call",
+        "Inject critical context markers at regular intervals",
+        "Use sliding window context management",
+        "Consider splitting task into smaller context-bounded subtasks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.132; flagged=True; gold_index=9"
+}

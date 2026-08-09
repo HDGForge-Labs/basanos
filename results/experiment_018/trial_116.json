@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-08T22:59:45.664045+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "While on operations, a gunner officer is ordered to engage a village with indirect fire since it is a concentration area for enemy troops forming to attack friendly forces.  The gunner realizes, however, that civilians are likely located in the village as well. Should he disobey orders in order to preserve civilian lives or carry out his mission regardless?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Army officer",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "He should **not automatically disobey, nor should he blindly fire**. He should apply the applicable **rules of engagement (ROE), law of armed conflict (LOAC), and command procedures** before engaging.\n\nUnder international humanitarian law, the village may be attacked only if the target is a **specific military objective** and the expected civilian harm is not **excessive in relation to the concrete and direct military advantage anticipated**. The gunner must also take **feasible precautions** to reduce civilian harm\u2014such as:\n\n- Immediately reporting the presence or likely presence of civilians and requesting clarification.\n- Requesting updated intelligence, target verification, and a collateral-damage assessment.\n- Asking for a different munition, time, angle, or fires method; delaying or cancelling the mission if necessary.\n- Confirming that the target is not merely a civilian village or area where enemy forces are present without adequate distinction.\n- Refusing an order that is **clearly unlawful**, such as an indiscriminate attack or an attack expected to cause disproportionate civilian casualties.\n\nIf the order remains lawful after proper review, civilian presence alone does not necessarily prohibit the attack. But uncertainty must not be ignored: if the gunner cannot reasonably distinguish the military objective, cannot assess likely civilian harm, or believes the attack would violate ROE or LOAC, he should **withhold fire and elevate the issue through the chain of command**. A lawful order must be obeyed; a manifestly unlawful order must be refused. He should document the concern and seek legal or operational advice immediately.",
+    "latency_ms": 2789.3,
+    "input_tokens": 142,
+    "output_tokens": 319
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "While on operations, a gunner officer is ordered to engage a village with indirect fire since it is a concentration area for enemy troops forming to attack friendly forces.  The gunner realizes, however, that civilians are likely located in the village as well. Should he disobey orders in order to preserve civilian lives or carry out his mission regardless?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "He should **not automatically disobey, nor should he blindly fire**. He should apply the applicable **rules of engagement (ROE), law of armed conflict (LOAC), and command procedures** before engaging.\n\nUnder international humanitarian law, the village may be attacked only if the target is a **specific military objective** and the expected civilian harm is not **excessive in relation to the concrete and direct military advantage anticipated**. The gunner must also take **feasible precautions** to reduce civilian harm\u2014such as:\n\n- Immediately reporting the presence or likely presence of civilians and requesting clarification.\n- Requesting updated intelligence, target verification, and a collateral-damage assessment.\n- Asking for a different munition, time, angle, or fires method; delaying or cancelling the mission if necessary.\n- Confirming that the target is not merely a civilian village or area where enemy forces are present without adequate distinction.\n- Refusing an order that is **clearly unlawful**, such as an indiscriminate attack or an attack expected to cause disproportionate civilian casualties.\n\nIf the order remains lawful after proper review, civilian presence alone does not necessarily prohibit the attack. But uncertainty must not be ignored: if the gunner cannot reasonably distinguish the military objective, cannot assess likely civilian harm, or believes the attack would violate ROE or LOAC, he should **withhold fire and elevate the issue through the chain of command**. A lawful order must be obeyed; a manifestly unlawful order must be refused. He should document the concern and seek legal or operational advice immediately.",
+    "latency_ms": 2789.3,
+    "token_count": 461,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "6a57f8b9e55f",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229985.6632936,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2789.3,
+        "token_count": 461,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.116; flagged=False"
+}

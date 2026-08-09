@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:56:51.072216+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "How can you find out if a person has childhood traumas?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Care home",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "You usually cannot determine someone\u2019s childhood trauma from behavior alone. The reliable way is to create enough safety for them to disclose it\u2014or have a qualified mental-health professional assess it.\n\n### Signs that may warrant gentle attention\nPossible effects include:\n\n- Strong or disproportionate reactions to criticism, conflict, rejection, or authority\n- Avoidance, emotional numbing, dissociation, or feeling \u201cunreal\u201d\n- Difficulty trusting people, setting boundaries, or maintaining relationships\n- Persistent shame, guilt, fear, or hypervigilance\n- Sleep problems, nightmares, panic, irritability, or startle responses\n- People-pleasing, perfectionism, compulsive control, or difficulty expressing needs\n- Substance misuse, self-harm, eating problems, or other coping behaviors\n\nThese signs are **not proof of childhood trauma**. They can result from current stress, anxiety, depression, neurodivergence, medical conditions, or other experiences.\n\n### How to approach the person\n- Choose a private, calm moment.\n- Ask permission: **\u201cWould it be okay if I asked about something that may be difficult?\u201d**\n- Use open, non-leading questions:  \n  **\u201cWhat was home like when you were growing up?\u201d**  \n  **\u201cAre there experiences from childhood that still affect you?\u201d**\n- Listen without pressing for details, judging, or trying to investigate.\n- Say: **\u201cYou don\u2019t have to tell me anything you don\u2019t want to. I believe you, and I\u2019m here with you.\u201d**\n- Don\u2019t confront them with a diagnosis or insist that a particular event happened.\n\nA therapist trained in trauma can explore this safely using a clinical interview and, when appropriate, tools such as the Childhood Trauma Questionnaire or ACE questionnaire. These questionnaires indicate exposure or risk; they do **not** diagnose trauma or prove causation.\n\nIf the person is currently being abused, suicidal, self-harming, or in immediate danger, prioritize immediate safety and contact local emergency services or a crisis service.",
+    "latency_ms": 3425.3,
+    "input_tokens": 91,
+    "output_tokens": 408
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How can you find out if a person has childhood traumas?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "You usually cannot determine someone\u2019s childhood trauma from behavior alone. The reliable way is to create enough safety for them to disclose it\u2014or have a qualified mental-health professional assess it.\n\n### Signs that may warrant gentle attention\nPossible effects include:\n\n- Strong or disproportionate reactions to criticism, conflict, rejection, or authority\n- Avoidance, emotional numbing, dissociation, or feeling \u201cunreal\u201d\n- Difficulty trusting people, setting boundaries, or maintaining relationships\n- Persistent shame, guilt, fear, or hypervigilance\n- Sleep problems, nightmares, panic, irritability, or startle responses\n- People-pleasing, perfectionism, compulsive control, or difficulty expressing needs\n- Substance misuse, self-harm, eating problems, or other coping behaviors\n\nThese signs are **not proof of childhood trauma**. They can result from current stress, anxiety, depression, neurodivergence, medical conditions, or other experiences.\n\n### How to approach the person\n- Choose a private, calm moment.\n- Ask permission: **\u201cWould it be okay if I asked about something that may be difficult?\u201d**\n- Use open, non-leading questions:  \n  **\u201cWhat was home like when you were growing up?\u201d**  \n  **\u201cAre there experiences from childhood that still affect you?\u201d**\n- Listen without pressing for details, judging, or trying to investigate.\n- Say: **\u201cYou don\u2019t have to tell me anything you don\u2019t want to. I believe you, and I\u2019m here with you.\u201d**\n- Don\u2019t confront them with a diagnosis or insist that a particular event happened.\n\nA therapist trained in trauma can explore this safely using a clinical interview and, when appropriate, tools such as the Childhood Trauma Questionnaire or ACE questionnaire. These questionnaires indicate exposure or risk; they do **not** diagnose trauma or prove causation.\n\nIf the person is currently being abused, suicidal, self-harming, or in immediate danger, prioritize immediate safety and contact local emergency services or a crisis service.",
+    "latency_ms": 3425.3,
+    "token_count": 499
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "7b6bf898f748",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229811.071483,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3425.3,
+        "token_count": 499,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.76; flagged=False"
+}

@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T22:28:58.219700+00:00",
+  "detector": "context_degradation",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "what material was used to build the roofs of houses in burzahom",
+    "gold_index": 0
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "Based on Document [1], the roofs of houses at the Burzahom archaeological site were built using **birch**, a tree species that grows at elevations of 3,000 to 4,200 metres in the Himalayas. In fact, \"Burzahom\" itself means \"birch\" in the Kashmiri language, and this material was found in the excavated housing area in the form of roofing material, confirming the presence of this tree",
+    "latency_ms": 3963.4,
+    "input_tokens": 2176,
+    "output_tokens": 128
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "what material was used to build the roofs of houses in burzahom",
+      "gold_index": 0,
+      "n_docs": 10
+    },
+    "response": "Based on Document [1], the roofs of houses at the Burzahom archaeological site were built using **birch**, a tree species that grows at elevations of 3,000 to 4,200 metres in the Himalayas. In fact, \"Burzahom\" itself means \"birch\" in the Kashmiri language, and this material was found in the excavated housing area in the form of roofing material, confirming the presence of this tree",
+    "latency_ms": 3963.4,
+    "token_count": 2304,
+    "context_window_used": 0.25
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "1991b33857e7",
+      "tool_name": "context_qa",
+      "status": "pass",
+      "timestamp": 1786314538.2188652,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3963.4,
+        "token_count": 2304,
+        "context_window_used": 0.25,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.28; flagged=False; gold_index=0"
+}

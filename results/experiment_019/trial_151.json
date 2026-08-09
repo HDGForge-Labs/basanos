@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:14:02.510645+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Consider a scenario where a patient presents with symptoms of both bipolar disorder and borderline personality disorder. How can clinicians accurately differentiate between the two conditions?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "psychiatrist",
+    "question_type": "Directed question that has a single unambiguous answer| Summarization of information on a topic| Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Clinicians differentiate bipolar disorder (BD) from borderline personality disorder (BPD) primarily by examining the **time course, triggers, quality of mood changes, associated symptoms, longitudinal history, and functional pattern**. The two conditions can also co-occur, so the goal is not always to choose one diagnosis exclusively.\n\n## 1. Duration and episodic pattern of mood changes\n\n### Bipolar disorder\nBipolar mood episodes are usually **sustained, syndromic episodes** that represent a clear change from the person\u2019s usual baseline.\n\n- **Mania:** at least **7 days** of persistently elevated, expansive, or irritable mood and increased energy/activity, or any duration if hospitalization is required.\n- **Hypomania:** at least **4 consecutive days**.\n- **Major depressive episode:** at least **2 weeks**.\n- Episodes often last **weeks to months** without treatment, although rapid cycling can occur.\n- Between episodes, many people return toward a relatively stable baseline level of mood and functioning.\n\nA patient might describe: \u201cFor about 2 weeks I needed only 3 hours of sleep, felt invincible, spent $8,000, talked nonstop, started several businesses, and my family said I was unlike myself.\u201d\n\n### Borderline personality disorder\nMood shifts in BPD are often **rapid, reactive, and relationship-linked**.\n\n- Emotional states may change within **minutes to hours**, sometimes over **1 day**, rather than persisting for at least 4 days to 1 week in a sustained manic pattern.\n- A common pattern is intense anger, panic, shame, emptiness, or despair following perceived rejection, criticism, abandonment, conflict, or disappointment.\n- Affect may remain chronically unstable over years, rather than appearing as clearly bounded episodes separated by euthymic intervals.\n\nFor example: \u201cWhen my partner did not reply for 2 hours, I felt abandoned, became furious, cut myself, and then felt numb by that evening.\u201d\n\n## 2. Whether mood changes are spontaneous or triggered\n\nThis distinction is useful but not absolute.\n\n### More suggestive of bipolar disorder\nMood elevation or depression can occur **without an immediate interpersonal trigger**. Clinicians ask whether changes began \u201cout of the blue\u201d and then continued even after circumstances changed.\n\nExamples:\n- A person becomes energized, euphoric, sleepless, grandiose, and impulsive for 10 days despite no major conflict or stressor.\n- Depression persists for 4 to 8 weeks even when relationships and circumstances are relatively stable.\n\n### More suggestive of BPD\nMood shifts are commonly linked to perceived abandonment, invalidation, intimacy, separation, jealousy, or conflict.\n\nTypical triggers include:\n- A delayed text message\n- A partner leaving after an argument\n- Feeling ignored by a clinician or employer\n- A minor criticism\n- Fear that someone is withdrawing emotionally\n\nHowever, stress can precipitate bipolar episodes too, so clinicians should not diagnose BPD solely because symptoms follow stress.\n\n## 3. Nature of \u201chigh\u201d moods: mania/hypomania versus emotional reactivity\n\nThe key question is whether the patient has had a **true manic or hypomanic syndrome**, not simply intense emotion or impulsivity.\n\n### Features that strongly support mania or hypomania\nClinicians assess for a distinct period of abnormal mood plus increased energy/activity and several associated symptoms:\n\n- **Decreased need for sleep**: sleeping approximately 2 to 4 hours nightly for several days yet feeling rested and energized\u2014not merely insomnia with fatigue.\n- Pressured speech or markedly increased talkativeness\n- Racing thoughts or flight of ideas\n- Increased goal-directed activity: work, exercise, sexual activity, social plans, projects, business schemes\n- Grandiosity: feeling unusually powerful, brilliant, gifted, chosen, or able to achieve unrealistic goals\n- Distractibility\n- Uncharacteristic risk-taking: major spending, gambling, reckless driving, substance use, sexual risk, or unrealistic investments\n- Observable behavioral change noted by others\n- Marked impairment, psychosis, emergency care, or hospitalization in manic episodes\n\nGrandiosity, reduced need for sleep, psychosis, and sustained increased goal-directed activity are generally more specific for bipolar-spectrum illness than for BPD.\n\n### Features more typical of BPD affective instability\nIn BPD, \u201chigh\u201d states may be better described as:\n- Brief surges of anger, anxiety, agitation, excitement, or relief\n- Emotional intensity that quickly shifts into despair, rage, shame, or emptiness\n- Impulsive actions undertaken to reduce unbearable feelings or prevent abandonment\n- A sense of being emotionally overwhelmed rather than persistently energized and driven\n\nFor example, someone with BPD may spend impulsively after an argument to soothe distress; someone in mania may spend excessively for days because they feel unusually powerful, optimistic, and compelled to pursue multiple grand plans.\n\n## 4. Identity disturbance and interpersonal pattern\n\n### BPD\nA persistent pattern of unstable identity and relationships is central to BPD. Clinicians",
+    "latency_ms": 13387.4,
+    "input_tokens": 100,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Consider a scenario where a patient presents with symptoms of both bipolar disorder and borderline personality disorder. How can clinicians accurately differentiate between the two conditions?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Clinicians differentiate bipolar disorder (BD) from borderline personality disorder (BPD) primarily by examining the **time course, triggers, quality of mood changes, associated symptoms, longitudinal history, and functional pattern**. The two conditions can also co-occur, so the goal is not always to choose one diagnosis exclusively.\n\n## 1. Duration and episodic pattern of mood changes\n\n### Bipolar disorder\nBipolar mood episodes are usually **sustained, syndromic episodes** that represent a clear change from the person\u2019s usual baseline.\n\n- **Mania:** at least **7 days** of persistently elevated, expansive, or irritable mood and increased energy/activity, or any duration if hospitalization is required.\n- **Hypomania:** at least **4 consecutive days**.\n- **Major depressive episode:** at least **2 weeks**.\n- Episodes often last **weeks to months** without treatment, although rapid cycling can occur.\n- Between episodes, many people return toward a relatively stable baseline level of mood and functioning.\n\nA patient might describe: \u201cFor about 2 weeks I needed only 3 hours of sleep, felt invincible, spent $8,000, talked nonstop, started several businesses, and my family said I was unlike myself.\u201d\n\n### Borderline personality disorder\nMood shifts in BPD are often **rapid, reactive, and relationship-linked**.\n\n- Emotional states may change within **minutes to hours**, sometimes over **1 day**, rather than persisting for at least 4 days to 1 week in a sustained manic pattern.\n- A common pattern is intense anger, panic, shame, emptiness, or despair following perceived rejection, criticism, abandonment, conflict, or disappointment.\n- Affect may remain chronically unstable over years, rather than appearing as clearly bounded episodes separated by euthymic intervals.\n\nFor example: \u201cWhen my partner did not reply for 2 hours, I felt abandoned, became furious, cut myself, and then felt numb by that evening.\u201d\n\n## 2. Whether mood changes are spontaneous or triggered\n\nThis distinction is useful but not absolute.\n\n### More suggestive of bipolar disorder\nMood elevation or depression can occur **without an immediate interpersonal trigger**. Clinicians ask whether changes began \u201cout of the blue\u201d and then continued even after circumstances changed.\n\nExamples:\n- A person becomes energized, euphoric, sleepless, grandiose, and impulsive for 10 days despite no major conflict or stressor.\n- Depression persists for 4 to 8 weeks even when relationships and circumstances are relatively stable.\n\n### More suggestive of BPD\nMood shifts are commonly linked to perceived abandonment, invalidation, intimacy, separation, jealousy, or conflict.\n\nTypical triggers include:\n- A delayed text message\n- A partner leaving after an argument\n- Feeling ignored by a clinician or employer\n- A minor criticism\n- Fear that someone is withdrawing emotionally\n\nHowever, stress can precipitate bipolar episodes too, so clinicians should not diagnose BPD solely because symptoms follow stress.\n\n## 3. Nature of \u201chigh\u201d moods: mania/hypomania versus emotional reactivity\n\nThe key question is whether the patient has had a **true manic or hypomanic syndrome**, not simply intense emotion or impulsivity.\n\n### Features that strongly support mania or hypomania\nClinicians assess for a distinct period of abnormal mood plus increased energy/activity and several associated symptoms:\n\n- **Decreased need for sleep**: sleeping approximately 2 to 4 hours nightly for several days yet feeling rested and energized\u2014not merely insomnia with fatigue.\n- Pressured speech or markedly increased talkativeness\n- Racing thoughts or flight of ideas\n- Increased goal-directed activity: work, exercise, sexual activity, social plans, projects, business schemes\n- Grandiosity: feeling unusually powerful, brilliant, gifted, chosen, or able to achieve unrealistic goals\n- Distractibility\n- Uncharacteristic risk-taking: major spending, gambling, reckless driving, substance use, sexual risk, or unrealistic investments\n- Observable behavioral change noted by others\n- Marked impairment, psychosis, emergency care, or hospitalization in manic episodes\n\nGrandiosity, reduced need for sleep, psychosis, and sustained increased goal-directed activity are generally more specific for bipolar-spectrum illness than for BPD.\n\n### Features more typical of BPD affective instability\nIn BPD, \u201chigh\u201d states may be better described as:\n- Brief surges of anger, anxiety, agitation, excitement, or relief\n- Emotional intensity that quickly shifts into despair, rage, shame, or emptiness\n- Impulsive actions undertaken to reduce unbearable feelings or prevent abandonment\n- A sense of being emotionally overwhelmed rather than persistently energized and driven\n\nFor example, someone with BPD may spend impulsively after an argument to soothe distress; someone in mania may spend excessively for days because they feel unusually powerful, optimistic, and compelled to pursue multiple grand plans.\n\n## 4. Identity disturbance and interpersonal pattern\n\n### BPD\nA persistent pattern of unstable identity and relationships is central to BPD. Clinicians",
+    "latency_ms": 13387.4,
+    "token_count": 1124,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "758cf650fcf8",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234442.5098462,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 8 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4508,
+          "evidence": [
+            "Latency 13387ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13387.4,
+        "token_count": 1124,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.151; flagged=True"
+}

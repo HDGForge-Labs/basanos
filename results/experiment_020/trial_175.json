@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T02:01:33.461951+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is the condition that is associated with Carhartt\u2019s Notch?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Audiology",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Carhart's Notch\n\nCarhart's notch is associated with **otosclerosis**, a condition affecting the bones of the middle ear (particularly the stapes).\n\n## What is Carhart's Notch?\n\nCarhart's notch is an artifactual dip in **bone conduction thresholds** seen on audiometry, typically occurring at **2000 Hz**, with the depth of the notch usually being around **5-15 dB**. This is a pseudo-conductive component that occurs due to the mechanical fixation of the stapes footplate, which affects the resonance characteristics of the ossicular chain.\n\n## Key Features:\n\n- **Frequency affected**: Most pronounced at approximately **2000 Hz** (sometimes described as centered around 2 kHz, with some spread affecting 1000-4000 Hz)\n- **Magnitude**: Typically causes an artificial elevation of bone conduction thresholds by roughly **5, 10, or 15 dB**, though this can vary\n- **Mechanism**: It is NOT a true sensorineural loss but rather an artifact caused by loss of the normal inertial bone conduction contribution from the ossicular chain, particularly the stapes-cochlea mechanical resonance\n\n## Clinical Significance in Otosclerosis:\n\n- Otosclerosis is characterized by abnormal bone remodeling in the otic capsule, most commonly affecting the **stapes footplate**, leading to progressive **conductive hearing loss**\n- The condition typically presents in patients aged **20-40 years**, with a higher prevalence in females (roughly a **2:1 female-to-male ratio**)\n- After **successful stapedectomy or stapedotomy surgery**, Carhart's notch often **partially or fully resolves**, since the mechanical cause (stapes fixation) is corrected\n- Recognizing Carhart's notch is clinically important because it can make bone conduction thresholds appear artificially worse than the true sensorineural reserve, potentially leading to overestimation of the sensorineural component of hearing loss if not properly accounted for\n\n## Summary Table:\n\n| Feature | Detail |\n|---|---|\n| Associated condition | Otosclerosis |\n| Peak frequency affected | ~2000 Hz |\n| Typical depth of notch | ~5-15 dB |\n| Reversibility | Often improves after stapes surgery |\n\nWould you like more detail on the pathophysiology of otosclerosis itself, or on audiometric interpretation more broadly?",
+    "latency_ms": 9202.4,
+    "input_tokens": 131,
+    "output_tokens": 823
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the condition that is associated with Carhartt\u2019s Notch?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Carhart's Notch\n\nCarhart's notch is associated with **otosclerosis**, a condition affecting the bones of the middle ear (particularly the stapes).\n\n## What is Carhart's Notch?\n\nCarhart's notch is an artifactual dip in **bone conduction thresholds** seen on audiometry, typically occurring at **2000 Hz**, with the depth of the notch usually being around **5-15 dB**. This is a pseudo-conductive component that occurs due to the mechanical fixation of the stapes footplate, which affects the resonance characteristics of the ossicular chain.\n\n## Key Features:\n\n- **Frequency affected**: Most pronounced at approximately **2000 Hz** (sometimes described as centered around 2 kHz, with some spread affecting 1000-4000 Hz)\n- **Magnitude**: Typically causes an artificial elevation of bone conduction thresholds by roughly **5, 10, or 15 dB**, though this can vary\n- **Mechanism**: It is NOT a true sensorineural loss but rather an artifact caused by loss of the normal inertial bone conduction contribution from the ossicular chain, particularly the stapes-cochlea mechanical resonance\n\n## Clinical Significance in Otosclerosis:\n\n- Otosclerosis is characterized by abnormal bone remodeling in the otic capsule, most commonly affecting the **stapes footplate**, leading to progressive **conductive hearing loss**\n- The condition typically presents in patients aged **20-40 years**, with a higher prevalence in females (roughly a **2:1 female-to-male ratio**)\n- After **successful stapedectomy or stapedotomy surgery**, Carhart's notch often **partially or fully resolves**, since the mechanical cause (stapes fixation) is corrected\n- Recognizing Carhart's notch is clinically important because it can make bone conduction thresholds appear artificially worse than the true sensorineural reserve, potentially leading to overestimation of the sensorineural component of hearing loss if not properly accounted for\n\n## Summary Table:\n\n| Feature | Detail |\n|---|---|\n| Associated condition | Otosclerosis |\n| Peak frequency affected | ~2000 Hz |\n| Typical depth of notch | ~5-15 dB |\n| Reversibility | Often improves after stapes surgery |\n\nWould you like more detail on the pathophysiology of otosclerosis itself, or on audiometric interpretation more broadly?",
+    "latency_ms": 9202.4,
+    "token_count": 954,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "5236dafd6042",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786240893.461149,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 10 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 9202.4,
+        "token_count": 954,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.175; flagged=True"
+}

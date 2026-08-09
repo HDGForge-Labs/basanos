@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-09T00:06:01.656816+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is intestate succession?",
+    "field": "Law",
+    "specific_field": "Law of succession",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "**Intestate succession** is the legal process for distributing a person\u2019s property when they die **without a valid will** (or when a will does not dispose of all assets).\n\nInstead of the deceased person choosing beneficiaries, the law of the relevant state, province, or country determines who inherits. These laws typically prioritize close relatives.\n\nA common order of inheritance is:\n\n1. **Surviving spouse or registered partner**\n2. **Children and descendants** (including grandchildren if a child has already died)\n3. **Parents**\n4. **Siblings and their descendants** (nieces and nephews)\n5. **More distant relatives**, such as grandparents, aunts, uncles, and cousins\n6. If no legal heirs can be found, the estate may eventually go to the government, often called **escheat**\n\nFor example, in many U.S. states:\n\n- If someone dies leaving a spouse and no children, the spouse often receives **100%** of the probate estate.\n- If they leave a spouse and children, the spouse may receive all or a specified share\u2014such as the first **$50,000 to $300,000** plus **one-half** of the remainder\u2014while children receive the balance. The exact formula varies substantially by state.\n- If there is no spouse, children often inherit in equal shares.\n- If a child died before the person but left children of their own, those grandchildren may inherit that child\u2019s share, often under a system called **per stirpes** distribution.\n\nNot all property passes through intestate succession. Assets with named beneficiaries or automatic survivorship rights usually transfer outside probate, including:\n\n- Life insurance with a beneficiary designation\n- Retirement accounts, such as a 401(k) or IRA, with beneficiaries\n- Joint bank accounts with rights of survivorship\n- Property held jointly with survivorship rights\n- Assets in a properly funded living trust\n- Payable-on-death or transfer-on-death accounts\n\nIntestate succession generally applies only to the person\u2019s **probate estate**\u2014property titled solely in their name without a beneficiary designation or other automatic transfer mechanism.\n\nThe rules are highly jurisdiction-specific, and they may treat unmarried partners, stepchildren, adopted children, posthumously born children, and relatives by marriage differently.",
+    "latency_ms": 6287.6,
+    "input_tokens": 78,
+    "output_tokens": 466
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is intestate succession?",
+      "field": "Law"
+    },
+    "response": "**Intestate succession** is the legal process for distributing a person\u2019s property when they die **without a valid will** (or when a will does not dispose of all assets).\n\nInstead of the deceased person choosing beneficiaries, the law of the relevant state, province, or country determines who inherits. These laws typically prioritize close relatives.\n\nA common order of inheritance is:\n\n1. **Surviving spouse or registered partner**\n2. **Children and descendants** (including grandchildren if a child has already died)\n3. **Parents**\n4. **Siblings and their descendants** (nieces and nephews)\n5. **More distant relatives**, such as grandparents, aunts, uncles, and cousins\n6. If no legal heirs can be found, the estate may eventually go to the government, often called **escheat**\n\nFor example, in many U.S. states:\n\n- If someone dies leaving a spouse and no children, the spouse often receives **100%** of the probate estate.\n- If they leave a spouse and children, the spouse may receive all or a specified share\u2014such as the first **$50,000 to $300,000** plus **one-half** of the remainder\u2014while children receive the balance. The exact formula varies substantially by state.\n- If there is no spouse, children often inherit in equal shares.\n- If a child died before the person but left children of their own, those grandchildren may inherit that child\u2019s share, often under a system called **per stirpes** distribution.\n\nNot all property passes through intestate succession. Assets with named beneficiaries or automatic survivorship rights usually transfer outside probate, including:\n\n- Life insurance with a beneficiary designation\n- Retirement accounts, such as a 401(k) or IRA, with beneficiaries\n- Joint bank accounts with rights of survivorship\n- Property held jointly with survivorship rights\n- Assets in a properly funded living trust\n- Payable-on-death or transfer-on-death accounts\n\nIntestate succession generally applies only to the person\u2019s **probate estate**\u2014property titled solely in their name without a beneficiary designation or other automatic transfer mechanism.\n\nThe rules are highly jurisdiction-specific, and they may treat unmarried partners, stepchildren, adopted children, posthumously born children, and relatives by marriage differently.",
+    "latency_ms": 6287.6,
+    "token_count": 544,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "1939f56dd5a5",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233961.6560588,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 6287.6,
+        "token_count": 544,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.104; flagged=False"
+}

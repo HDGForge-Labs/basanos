@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T00:04:50.119923+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "I am about to sell land that I have inherited from a deceased parent. My parents bought it in 1985 and I have now inherited that land, which I intend to sell right away. Should I compute capital gains?",
+    "field": "Law",
+    "specific_field": "Tax",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Yes\u2014if you sell inherited land, you generally need to determine whether there is a taxable capital gain, but the calculation usually starts from the land\u2019s value at the date of your parent\u2019s death, not what your parents paid in 1985.\n\nIn many tax systems, inherited assets receive a \u201cstep-up\u201d in tax basis to fair market value at the deceased owner\u2019s death. If you sell immediately for approximately that inherited-date market value, the capital gain may be very small or nil, apart from selling costs and any change in value between death and sale.\n\nThe basic calculation is:\n\n**Capital gain = Sale proceeds  \n\u2212 selling costs  \n\u2212 tax basis**\n\nYour tax basis will normally be one of the following, depending on jurisdiction:\n\n- **Fair market value on the date of death** (common in the United States and some other countries).\n- **A probate/estate valuation amount**, if one was formally established.\n- **The deceased parent\u2019s original cost plus improvements**, sometimes with indexation or other adjustments, in jurisdictions that do not provide a full step-up.\n\nKeep documentation such as:\n\n- Probate/estate records.\n- A professional appraisal or valuation as of the date of death.\n- The purchase and sale agreement.\n- Real-estate agent commissions, legal fees, transfer taxes, survey costs, and other sale expenses.\n- Evidence of significant capital improvements, if relevant.\n\nIf the property is in the **United States**, an inherited asset normally has a basis equal to its **fair market value at the date of death** under IRC \u00a71014. For example, if the land was worth $400,000 when inherited and you sell it soon afterward for $405,000, with $20,000 in deductible selling expenses, there is no taxable gain: your net proceeds are below your $400,000 basis.\n\nThe answer can differ substantially by country\u2014and, in some places, by state or province\u2014so the governing location matters. But do not use your parents\u2019 1985 purchase price automatically; first establish the tax basis at inheritance.",
+    "latency_ms": 6489.6,
+    "input_tokens": 123,
+    "output_tokens": 416
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "I am about to sell land that I have inherited from a deceased parent. My parents bought it in 1985 and I have now inherited that land, which I intend to sell right away. Should I compute capital gains?",
+      "field": "Law"
+    },
+    "response": "Yes\u2014if you sell inherited land, you generally need to determine whether there is a taxable capital gain, but the calculation usually starts from the land\u2019s value at the date of your parent\u2019s death, not what your parents paid in 1985.\n\nIn many tax systems, inherited assets receive a \u201cstep-up\u201d in tax basis to fair market value at the deceased owner\u2019s death. If you sell immediately for approximately that inherited-date market value, the capital gain may be very small or nil, apart from selling costs and any change in value between death and sale.\n\nThe basic calculation is:\n\n**Capital gain = Sale proceeds  \n\u2212 selling costs  \n\u2212 tax basis**\n\nYour tax basis will normally be one of the following, depending on jurisdiction:\n\n- **Fair market value on the date of death** (common in the United States and some other countries).\n- **A probate/estate valuation amount**, if one was formally established.\n- **The deceased parent\u2019s original cost plus improvements**, sometimes with indexation or other adjustments, in jurisdictions that do not provide a full step-up.\n\nKeep documentation such as:\n\n- Probate/estate records.\n- A professional appraisal or valuation as of the date of death.\n- The purchase and sale agreement.\n- Real-estate agent commissions, legal fees, transfer taxes, survey costs, and other sale expenses.\n- Evidence of significant capital improvements, if relevant.\n\nIf the property is in the **United States**, an inherited asset normally has a basis equal to its **fair market value at the date of death** under IRC \u00a71014. For example, if the land was worth $400,000 when inherited and you sell it soon afterward for $405,000, with $20,000 in deductible selling expenses, there is no taxable gain: your net proceeds are below your $400,000 basis.\n\nThe answer can differ substantially by country\u2014and, in some places, by state or province\u2014so the governing location matters. But do not use your parents\u2019 1985 purchase price automatically; first establish the tax basis at inheritance.",
+    "latency_ms": 6489.6,
+    "token_count": 539
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "3fe85c82ad92",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233890.1191695,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 6489.6,
+        "token_count": 539,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.96; flagged=False"
+}

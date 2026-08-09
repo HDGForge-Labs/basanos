@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:39:09.983773+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What's the treatment suggested for a four year old with head trauma?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pediatrician",
+    "question_type": "Directed question that has a single unambiguous answer| Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "Treatment for a 4-year-old with head trauma depends heavily on injury severity, mechanism, and clinical findings. Here's how it's typically approached:\n\n## Initial Assessment (determines everything else)\n\n**Glasgow Coma Scale (Pediatric)** \u2014 establishes severity:\n- Mild TBI: GCS 14-15\n- Moderate: GCS 9-13\n- Severe: GCS \u22648\n\n**PECARN criteria** (validated for kids 2-18) \u2014 used to decide if CT imaging is needed. Red flags include:\n- LOC >5 seconds\n- Severe mechanism (high-speed MVA, fall >5 feet, high-impact object)\n- Non-frontal scalp hematoma\n- Palpable skull fracture\n- Altered mental status (agitation, somnolence, repetitive questioning, slow response)\n- Severe/worsening headache\n- Vomiting (especially repeated/persistent \u2014 more concerning in young kids)\n- Not acting normally per parent\n\n## Management by Severity\n\n**Minor head trauma, low risk (GCS 15, no red flags):**\n- Observation at home vs. brief ER observation (4-6 hours)\n- No imaging needed in most cases\n- Return precautions: worsening headache, repeated vomiting, increased sleepiness, difficulty waking, seizure, unequal pupils, unsteady gait\n\n**Moderate risk (some concerning symptoms but not clearly high-risk):**\n- Clinical observation for 4-6 hours in ED\n- CT if symptoms persist/worsen, or shared decision-making with caregivers\n\n**Higher risk / abnormal CT findings:**\n- Neurosurgical consultation\n- Admission for observation\n- Serial neuro checks\n- Treat elevated ICP if present (head elevation 30\u00b0, avoid hypotension/hypoxia, hyperosmolar therapy like 3% saline or mannitol if severe)\n- Seizure prophylaxis considered in select cases (not routine for mild TBI)\n\n**Severe TBI:**\n- ABCs first \u2014 airway protection often needed (intubation if GCS \u22648)\n- Maintain cerebral perfusion pressure \u2014 avoid hypotension, hypoxia, hyperthermia, hyperglycemia\n- ICP monitoring in some cases\n- PICU admission\n- Neurosurgical involvement for any mass lesion, depressed fracture, or herniation signs\n\n## Practical At-Home Care (mild cases discharged home)\n- Acetaminophen for pain (avoid NSAIDs/aspirin initially due to bleeding risk concerns, especially in first 24-48h)\n- Light activity \u2014 no strict \"cocoon therapy,\" but avoid high-risk activities (sports, playground,",
+    "latency_ms": 12326.8,
+    "input_tokens": 135,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What's the treatment suggested for a four year old with head trauma?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Treatment for a 4-year-old with head trauma depends heavily on injury severity, mechanism, and clinical findings. Here's how it's typically approached:\n\n## Initial Assessment (determines everything else)\n\n**Glasgow Coma Scale (Pediatric)** \u2014 establishes severity:\n- Mild TBI: GCS 14-15\n- Moderate: GCS 9-13\n- Severe: GCS \u22648\n\n**PECARN criteria** (validated for kids 2-18) \u2014 used to decide if CT imaging is needed. Red flags include:\n- LOC >5 seconds\n- Severe mechanism (high-speed MVA, fall >5 feet, high-impact object)\n- Non-frontal scalp hematoma\n- Palpable skull fracture\n- Altered mental status (agitation, somnolence, repetitive questioning, slow response)\n- Severe/worsening headache\n- Vomiting (especially repeated/persistent \u2014 more concerning in young kids)\n- Not acting normally per parent\n\n## Management by Severity\n\n**Minor head trauma, low risk (GCS 15, no red flags):**\n- Observation at home vs. brief ER observation (4-6 hours)\n- No imaging needed in most cases\n- Return precautions: worsening headache, repeated vomiting, increased sleepiness, difficulty waking, seizure, unequal pupils, unsteady gait\n\n**Moderate risk (some concerning symptoms but not clearly high-risk):**\n- Clinical observation for 4-6 hours in ED\n- CT if symptoms persist/worsen, or shared decision-making with caregivers\n\n**Higher risk / abnormal CT findings:**\n- Neurosurgical consultation\n- Admission for observation\n- Serial neuro checks\n- Treat elevated ICP if present (head elevation 30\u00b0, avoid hypotension/hypoxia, hyperosmolar therapy like 3% saline or mannitol if severe)\n- Seizure prophylaxis considered in select cases (not routine for mild TBI)\n\n**Severe TBI:**\n- ABCs first \u2014 airway protection often needed (intubation if GCS \u22648)\n- Maintain cerebral perfusion pressure \u2014 avoid hypotension, hypoxia, hyperthermia, hyperglycemia\n- ICP monitoring in some cases\n- PICU admission\n- Neurosurgical involvement for any mass lesion, depressed fracture, or herniation signs\n\n## Practical At-Home Care (mild cases discharged home)\n- Acetaminophen for pain (avoid NSAIDs/aspirin initially due to bleeding risk concerns, especially in first 24-48h)\n- Light activity \u2014 no strict \"cocoon therapy,\" but avoid high-risk activities (sports, playground,",
+    "latency_ms": 12326.8,
+    "token_count": 1159
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "8a3296eb65bc",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239549.98299,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4349,
+          "evidence": [
+            "Latency 12327ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12326.8,
+        "token_count": 1159,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.65; flagged=False"
+}

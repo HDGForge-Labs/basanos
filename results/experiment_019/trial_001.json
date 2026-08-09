@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:52:25.248899+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "If I leave work without informing anyone to become an influencer, what recourse does my employer have?",
+    "field": "Law",
+    "specific_field": "Labour Law",
+    "question_type": "Open-ended question that is potentially ambiguous| Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "If you simply stop showing up without notice, your employer\u2019s main recourse depends on your contract, local employment law, and whether you hold company property or confidential information.\n\nTypical consequences and remedies:\n\n- **Termination for job abandonment / misconduct:** They can record that you resigned without notice or were terminated for abandoning your position. This can affect references and rehire eligibility.\n- **Withholding only lawful amounts from final pay:** They generally still must pay you for all wages already earned, plus accrued entitlements where required by law. They usually cannot impose arbitrary \u201cfines\u201d or withhold earned wages just because you left abruptly.\n- **Notice-period damages:** If your employment contract requires, for example, 2\u20134 weeks\u2019 notice, an employer may theoretically sue for losses caused by the lack of notice. In practice, this is uncommon for ordinary employees because they must prove real, measurable loss\u2014not merely inconvenience or the cost of hiring a replacement.\n- **Recovery of company property:** They can demand return of laptops, phones, keys, documents, samples, cards, equipment, and records. Keeping or damaging property can create civil or potentially criminal exposure.\n- **Confidentiality, trade-secret, and non-solicitation enforcement:** Becoming an influencer does not release you from NDAs, confidentiality obligations, IP-assignment clauses, or valid restrictions on soliciting clients or coworkers. Do not publish internal information, customer data, unreleased products, financials, or content you created that belongs to the employer.\n- **Restrictive covenants:** A non-compete may be enforceable in some jurisdictions and unenforceable or heavily limited in others. A non-solicit/confidentiality clause is more commonly enforceable.\n- **Benefit and expense issues:** Health insurance, company-paid subscriptions, advances, relocation reimbursement, tuition repayment, bonus clawbacks, and equity may be affected under the relevant plan or agreement. Check the exact terms before leaving.\n- **Unemployment benefits:** Voluntarily quitting without good cause often makes you ineligible for unemployment benefits for a period, though rules vary substantially.\n\nThe practical low-risk approach is to send a brief written resignation immediately, state your last day, return property, preserve copies of your pay records and contract, and avoid discussing the employer or using employer materials in your influencer content. Even if you do not intend to work a notice period, communicating that clearly is far safer than disappearing.",
+    "latency_ms": 7870.8,
+    "input_tokens": 98,
+    "output_tokens": 489
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "If I leave work without informing anyone to become an influencer, what recourse does my employer have?",
+      "field": "Law"
+    },
+    "response": "If you simply stop showing up without notice, your employer\u2019s main recourse depends on your contract, local employment law, and whether you hold company property or confidential information.\n\nTypical consequences and remedies:\n\n- **Termination for job abandonment / misconduct:** They can record that you resigned without notice or were terminated for abandoning your position. This can affect references and rehire eligibility.\n- **Withholding only lawful amounts from final pay:** They generally still must pay you for all wages already earned, plus accrued entitlements where required by law. They usually cannot impose arbitrary \u201cfines\u201d or withhold earned wages just because you left abruptly.\n- **Notice-period damages:** If your employment contract requires, for example, 2\u20134 weeks\u2019 notice, an employer may theoretically sue for losses caused by the lack of notice. In practice, this is uncommon for ordinary employees because they must prove real, measurable loss\u2014not merely inconvenience or the cost of hiring a replacement.\n- **Recovery of company property:** They can demand return of laptops, phones, keys, documents, samples, cards, equipment, and records. Keeping or damaging property can create civil or potentially criminal exposure.\n- **Confidentiality, trade-secret, and non-solicitation enforcement:** Becoming an influencer does not release you from NDAs, confidentiality obligations, IP-assignment clauses, or valid restrictions on soliciting clients or coworkers. Do not publish internal information, customer data, unreleased products, financials, or content you created that belongs to the employer.\n- **Restrictive covenants:** A non-compete may be enforceable in some jurisdictions and unenforceable or heavily limited in others. A non-solicit/confidentiality clause is more commonly enforceable.\n- **Benefit and expense issues:** Health insurance, company-paid subscriptions, advances, relocation reimbursement, tuition repayment, bonus clawbacks, and equity may be affected under the relevant plan or agreement. Check the exact terms before leaving.\n- **Unemployment benefits:** Voluntarily quitting without good cause often makes you ineligible for unemployment benefits for a period, though rules vary substantially.\n\nThe practical low-risk approach is to send a brief written resignation immediately, state your last day, return property, preserve copies of your pay records and contract, and avoid discussing the employer or using employer materials in your influencer content. Even if you do not intend to work a notice period, communicating that clearly is far safer than disappearing.",
+    "latency_ms": 7870.8,
+    "token_count": 587
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "b0b90a6a713a",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233145.2479246,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 7870.8,
+        "token_count": 587,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.1; flagged=False"
+}

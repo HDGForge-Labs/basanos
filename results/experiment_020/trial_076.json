@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:41:19.856725+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "How can you find out if a person has childhood traumas?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Care home",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "Determining whether someone has childhood trauma involves observing patterns, asking targeted questions, and understanding how trauma manifests behaviorally and physiologically. Here's how this is actually done in clinical and informal contexts:\n\n## Clinical Assessment Tools\n\n**ACE Questionnaire (Adverse Childhood Experiences)** \u2014 the most validated instrument, developed by Felitti and Anda (Kaiser Permanente/CDC study, 1998). It asks about 10 categories before age 18: physical/emotional/sexual abuse, physical/emotional neglect, and household dysfunction (parental divorce, domestic violence, substance abuse, mental illness, incarceration). Score of 4+ correlates strongly with adult health/mental health problems.\n\n**Other structured tools**: CTQ (Childhood Trauma Questionnaire), TSCC (Trauma Symptom Checklist for Children), or clinical interviews like the ADIS or SCID with trauma modules.\n\n## Behavioral and Psychological Signs (if you're not a clinician, just observing)\n\n**Emotional regulation issues**: Disproportionate reactions to minor conflict, difficulty naming emotions (alexithymia), or emotional numbness/dissociation under stress.\n\n**Attachment patterns**: Anxious, avoidant, or disorganized attachment in relationships \u2014 fear of abandonment, difficulty trusting, pushing people away preemptively, or clinging behavior.\n\n**Hypervigilance**: Scanning environments/people for threat, being easily startled, difficulty relaxing even in safe situations.\n\n**Self-concept**: Persistent shame, feeling \"fundamentally broken\" or unlovable, harsh inner critic.\n\n**Body-based signs**: Chronic tension, unexplained somatic complaints, sleep disturbances, dissociative episodes (zoning out, losing time).\n\n**Behavioral patterns**: People-pleasing, perfectionism, difficulty with authority figures, repetitive unhealthy relationship dynamics, substance use as coping.\n\n**Trauma responses**: Fight/flight/freeze/fawn reactions that seem out of proportion to current triggers \u2014 these are often echoes of childhood survival strategies.\n\n## Conversational Approach\n\nIf you're trying to understand someone in your life (not diagnosing clinically):\n\n- Ask open-ended questions about their childhood/family rather than direct trauma questions: \"What was it like growing up in your house?\" \"How did your parents handle conflict?\"\n- Notice what they avoid discussing, or topics that trigger sudden mood shifts\n- Listen for language patterns \u2014 minimizing (\"it wasn't that bad\"), or conversely, matter-of-fact descriptions of things that sound severe\n- Pay attention to how they talk about their parents now \u2014 idealization combined with inconsistent details can be a red flag\n\n## Important Caveats\n\nYou cannot diagnose trauma from the outside with certainty \u2014 many signs overlap with other conditions (ADHD, anxiety disorders, autism). Self-report is unreliable in both directions: some people minimize genuine trauma,",
+    "latency_ms": 12341.6,
+    "input_tokens": 131,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How can you find out if a person has childhood traumas?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Determining whether someone has childhood trauma involves observing patterns, asking targeted questions, and understanding how trauma manifests behaviorally and physiologically. Here's how this is actually done in clinical and informal contexts:\n\n## Clinical Assessment Tools\n\n**ACE Questionnaire (Adverse Childhood Experiences)** \u2014 the most validated instrument, developed by Felitti and Anda (Kaiser Permanente/CDC study, 1998). It asks about 10 categories before age 18: physical/emotional/sexual abuse, physical/emotional neglect, and household dysfunction (parental divorce, domestic violence, substance abuse, mental illness, incarceration). Score of 4+ correlates strongly with adult health/mental health problems.\n\n**Other structured tools**: CTQ (Childhood Trauma Questionnaire), TSCC (Trauma Symptom Checklist for Children), or clinical interviews like the ADIS or SCID with trauma modules.\n\n## Behavioral and Psychological Signs (if you're not a clinician, just observing)\n\n**Emotional regulation issues**: Disproportionate reactions to minor conflict, difficulty naming emotions (alexithymia), or emotional numbness/dissociation under stress.\n\n**Attachment patterns**: Anxious, avoidant, or disorganized attachment in relationships \u2014 fear of abandonment, difficulty trusting, pushing people away preemptively, or clinging behavior.\n\n**Hypervigilance**: Scanning environments/people for threat, being easily startled, difficulty relaxing even in safe situations.\n\n**Self-concept**: Persistent shame, feeling \"fundamentally broken\" or unlovable, harsh inner critic.\n\n**Body-based signs**: Chronic tension, unexplained somatic complaints, sleep disturbances, dissociative episodes (zoning out, losing time).\n\n**Behavioral patterns**: People-pleasing, perfectionism, difficulty with authority figures, repetitive unhealthy relationship dynamics, substance use as coping.\n\n**Trauma responses**: Fight/flight/freeze/fawn reactions that seem out of proportion to current triggers \u2014 these are often echoes of childhood survival strategies.\n\n## Conversational Approach\n\nIf you're trying to understand someone in your life (not diagnosing clinically):\n\n- Ask open-ended questions about their childhood/family rather than direct trauma questions: \"What was it like growing up in your house?\" \"How did your parents handle conflict?\"\n- Notice what they avoid discussing, or topics that trigger sudden mood shifts\n- Listen for language patterns \u2014 minimizing (\"it wasn't that bad\"), or conversely, matter-of-fact descriptions of things that sound severe\n- Pay attention to how they talk about their parents now \u2014 idealization combined with inconsistent details can be a red flag\n\n## Important Caveats\n\nYou cannot diagnose trauma from the outside with certainty \u2014 many signs overlap with other conditions (ADHD, anxiety disorders, autism). Self-report is unreliable in both directions: some people minimize genuine trauma,",
+    "latency_ms": 12341.6,
+    "token_count": 1155
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "50b5d187f8ca",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239679.855988,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4351,
+          "evidence": [
+            "Latency 12342ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12341.6,
+        "token_count": 1155,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.76; flagged=False"
+}

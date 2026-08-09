@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T01:55:59.788018+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What's the part of the brain related with short term memory?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Clinical Psychologist",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Short-Term Memory and the Brain\n\nThe brain region most closely associated with short-term memory is the **prefrontal cortex**, particularly the **dorsolateral prefrontal cortex (DLPFC)**. However, memory processing involves a network of structures working together:\n\n## Key Brain Regions\n\n**1. Prefrontal Cortex**\n- Considered the primary hub for **working memory** (an active, manipulable form of short-term memory)\n- Holds information \"online\" for roughly **15-30 seconds** without rehearsal\n- Involved in executive functions like decision-making and attention that support memory maintenance\n\n**2. Hippocampus**\n- Critical for the *transition* from short-term to long-term memory (a process called **consolidation**)\n- Located in the medial temporal lobe\n- Damage here (as in the famous patient H.M.) can preserve short-term memory but severely impair formation of new long-term memories\n\n**3. Parietal Cortex**\n- Contributes to attention and the temporary storage of sensory information\n- Works alongside the prefrontal cortex in maintaining working memory representations\n\n## Capacity and Duration\n\n- Classic research (Miller, 1956) suggested short-term memory holds about **7 \u00b1 2 items** (this \"magic number 7\" is now often revised to approximately **4 \u00b1 1 chunks** in more recent models)\n- Without active rehearsal, short-term memory traces typically decay within **18-30 seconds**\n- The **phonological loop** and **visuospatial sketchpad** (components of Baddeley's working memory model) are thought to rely on temporary activity in sensory and parietal areas\n\n## Important Distinction\n\n- **Short-term/working memory** \u2248 prefrontal cortex + parietal regions\n- **Long-term memory formation** \u2248 hippocampus (encoding/consolidation) \u2192 distributed cortical storage (for retrieval, potentially over **years to decades**)\n\nIt's worth noting that memory isn't localized to a single \"spot\"\u2014it emerges from **distributed neural networks**, with different regions contributing distinct functions (attention, storage, retrieval, emotional tagging via the amygdala, etc.).",
+    "latency_ms": 8316.2,
+    "input_tokens": 125,
+    "output_tokens": 707
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What's the part of the brain related with short term memory?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Short-Term Memory and the Brain\n\nThe brain region most closely associated with short-term memory is the **prefrontal cortex**, particularly the **dorsolateral prefrontal cortex (DLPFC)**. However, memory processing involves a network of structures working together:\n\n## Key Brain Regions\n\n**1. Prefrontal Cortex**\n- Considered the primary hub for **working memory** (an active, manipulable form of short-term memory)\n- Holds information \"online\" for roughly **15-30 seconds** without rehearsal\n- Involved in executive functions like decision-making and attention that support memory maintenance\n\n**2. Hippocampus**\n- Critical for the *transition* from short-term to long-term memory (a process called **consolidation**)\n- Located in the medial temporal lobe\n- Damage here (as in the famous patient H.M.) can preserve short-term memory but severely impair formation of new long-term memories\n\n**3. Parietal Cortex**\n- Contributes to attention and the temporary storage of sensory information\n- Works alongside the prefrontal cortex in maintaining working memory representations\n\n## Capacity and Duration\n\n- Classic research (Miller, 1956) suggested short-term memory holds about **7 \u00b1 2 items** (this \"magic number 7\" is now often revised to approximately **4 \u00b1 1 chunks** in more recent models)\n- Without active rehearsal, short-term memory traces typically decay within **18-30 seconds**\n- The **phonological loop** and **visuospatial sketchpad** (components of Baddeley's working memory model) are thought to rely on temporary activity in sensory and parietal areas\n\n## Important Distinction\n\n- **Short-term/working memory** \u2248 prefrontal cortex + parietal regions\n- **Long-term memory formation** \u2248 hippocampus (encoding/consolidation) \u2192 distributed cortical storage (for retrieval, potentially over **years to decades**)\n\nIt's worth noting that memory isn't localized to a single \"spot\"\u2014it emerges from **distributed neural networks**, with different regions contributing distinct functions (attention, storage, retrieval, emotional tagging via the amygdala, etc.).",
+    "latency_ms": 8316.2,
+    "token_count": 832,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "bde37959e07b",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786240559.7872508,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 9 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 8316.2,
+        "token_count": 832,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.147; flagged=True"
+}

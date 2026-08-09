@@ -1,0 +1,75 @@
+{
+  "timestamp_utc": "2026-08-09T22:33:04.289109+00:00",
+  "detector": "context_degradation",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "where do red ear slider turtles lay eggs",
+    "gold_index": 9
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "Red-eared slider turtles lay their eggs on land, near water. During the final weeks of gestation, the female spends less time in the water and searches for a suitable nesting site, indicated by her smelling and scratching at the ground. Once she finds an appropriate spot, she excavates a hole using her hind legs and lays her eggs inside it (Document [10]). This egg-laying typically occurs when females",
+    "latency_ms": 1723.3,
+    "input_tokens": 2135,
+    "output_tokens": 128
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "where do red ear slider turtles lay eggs",
+      "gold_index": 9,
+      "n_docs": 10
+    },
+    "response": "Red-eared slider turtles lay their eggs on land, near water. During the final weeks of gestation, the female spends less time in the water and searches for a suitable nesting site, indicated by her smelling and scratching at the ground. Once she finds an appropriate spot, she excavates a hole using her hind legs and lays her eggs inside it (Document [10]). This egg-laying typically occurs when females",
+    "latency_ms": 1723.3,
+    "token_count": 2263,
+    "context_window_used": 0.92
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "c2ccd629060f",
+      "tool_name": "context_qa",
+      "status": "warn",
+      "timestamp": 1786314784.2883348,
+      "failures": [
+        {
+          "failure_mode": "context_degradation",
+          "confidence": 0.4,
+          "evidence": [
+            "Context window at 92.0% capacity"
+          ],
+          "remediation": [
+            "Implement context summarization before next tool call",
+            "Inject critical context markers at regular intervals",
+            "Use sliding window context management",
+            "Consider splitting task into smaller context-bounded subtasks"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 1723.3,
+        "token_count": 2263,
+        "context_window_used": 0.92,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Implement context summarization before next tool call",
+        "Inject critical context markers at regular intervals",
+        "Use sliding window context management",
+        "Consider splitting task into smaller context-bounded subtasks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.104; flagged=True; gold_index=9"
+}

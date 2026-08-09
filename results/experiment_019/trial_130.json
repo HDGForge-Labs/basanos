@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:10:17.455172+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "How do you deal with hospital rules that can work against your patient if you let your yourself be emotional invested in them an their story?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "registered nurse in trauma",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "It\u2019s a real tension: you need enough emotional connection to advocate well, but not so much that you start bending rules impulsively, losing objectivity, or burning out.\n\nA useful goal is **compassionate detachment**\u2014being fully committed to the patient\u2019s welfare while keeping enough clinical and professional distance to make sound decisions.\n\n### 1. Separate the patient\u2019s story from the decision standard\nWhen a rule, policy, or restriction feels harmful, pause and ask:\n\n- What is the policy trying to prevent\u2014safety events, inequitable access, infection risk, legal exposure, medication error, etc.?\n- Does this patient actually meet the criteria for an exception?\n- Is the rule being applied correctly and consistently?\n- What specific harm is likely if we follow it exactly?\n- What specific harm is likely if we bypass it?\n\nTry to frame the issue in objective terms: vitals, labs, functional status, prognosis, risk scores, documented social barriers, capacity, discharge safety, and available alternatives.\n\nInstead of: \u201cI can\u2019t send her home; she has had such a hard life.\u201d\n\nDocument and communicate: \u201cPatient lives alone, has no reliable caregiver, cannot independently transfer, has fallen twice in the past 30 days, and lacks access to prescribed oxygen. Discharge today presents a foreseeable safety risk.\u201d\n\nThat makes advocacy stronger and less dependent on emotion.\n\n### 2. Use the system rather than quietly working around it\nIf you believe a rule is harming a patient, look for the formal escalation path:\n\n- Charge nurse or unit manager\n- Attending physician or service chief\n- Case management/social work\n- Ethics consultation\n- Patient advocate/ombudsman\n- Risk management\n- Pharmacy, infection prevention, or utilization review, depending on the issue\n- Nursing supervisor or administrator on call\n- Legal/compliance, when policy may conflict with law or patient rights\n\nA policy exception is often more defensible than an informal workaround. It creates accountability, protects the patient, and protects you.\n\n### 3. Bring a specific alternative, not only a complaint\nHospital leaders are more likely to help if you can say:\n\n> \u201cPolicy says X. In this patient\u2019s case, X creates Y risk. I\u2019m requesting Z as a time-limited exception or alternative.\u201d\n\nFor example:\n\n- \u201cCan we authorize one additional inpatient day while durable medical equipment and home services are arranged?\u201d\n- \u201cCan we permit a limited visitor exception because the patient has delirium and the caregiver is essential for communication and reorientation?\u201d\n- \u201cCan ethics review whether this restriction is proportionate for a patient with impaired decision-making capacity?\u201d\n- \u201cCan pharmacy approve an alternative medication pathway given the patient\u2019s documented inability to obtain the standard option?\u201d\n\nBe precise about the requested action, who must approve it, and how long it is needed.\n\n### 4. Keep documentation factual and timely\nEmotionally difficult cases are exactly where documentation matters most. Include:\n\n- The relevant policy or barrier\n- Your clinical assessment\n- The risks and benefits discussed\n- Who was notified and when\n- The patient\u2019s goals and preferences\n- The decision-making capacity assessment, when applicable\n- What alternatives were offered\n- The final plan and rationale\n\nAvoid judgmental language such as \u201cadministration does not care\u201d or \u201cpolicy is cruel.\u201d Write what is observable and clinically relevant.\n\nFor example:\n\n> \u201cAt 14:20, case management, attending physician, and nursing supervisor were notified that patient lacks safe transport, has no accessible housing tonight, and requires insulin refrigeration. Discharge options reviewed. Team pursuing temporary medical respite placement.\u201d\n\n### 5. Check whether your emotional response is signaling something important\nStrong emotion is not automatically a problem. It may be telling you that:\n\n- The patient is being overlooked.\n- A policy is being applied rigidly rather than thoughtfully.\n- There is an equity issue.\n- The patient\u2019s values are not being heard.\n- The team is normalizing an unsafe or morally distressing situation.\n\nThe skill is to treat the emotion as **data**, not as the final decision-maker.\n\nA quick self-check can help:\n\n1. What am I feeling\u2014anger, fear, protectiveness, guilt, helplessness?\n2. What facts support my concern?\n3. Would I advocate the same way for a patient whose story affected me less?\n4. What is within my role and authority?\n5. Who else needs to be involved before a decision is made?\n\n### 6. Avoid \u201crescuing\u201d behavior\nWhen you become highly invested, it can be tempting to overpromise, personally take on tasks beyond your role, conceal a workaround, or make exceptions for one patient that cannot be offered fairly to others.\n\nExamples of risky rescuing include:\n\n- Giving personal money, rides, housing, or contact information outside policy.\n- Promising an outcome you do not control.\n- Ignoring eligibility criteria without approval.\n- Delaying a discharge or treatment plan without communicating with the team.\n- Withholding information because you fear upsetting the patient.\n\nThese actions",
+    "latency_ms": 14056.0,
+    "input_tokens": 99,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How do you deal with hospital rules that can work against your patient if you let your yourself be emotional invested in them an their story?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "It\u2019s a real tension: you need enough emotional connection to advocate well, but not so much that you start bending rules impulsively, losing objectivity, or burning out.\n\nA useful goal is **compassionate detachment**\u2014being fully committed to the patient\u2019s welfare while keeping enough clinical and professional distance to make sound decisions.\n\n### 1. Separate the patient\u2019s story from the decision standard\nWhen a rule, policy, or restriction feels harmful, pause and ask:\n\n- What is the policy trying to prevent\u2014safety events, inequitable access, infection risk, legal exposure, medication error, etc.?\n- Does this patient actually meet the criteria for an exception?\n- Is the rule being applied correctly and consistently?\n- What specific harm is likely if we follow it exactly?\n- What specific harm is likely if we bypass it?\n\nTry to frame the issue in objective terms: vitals, labs, functional status, prognosis, risk scores, documented social barriers, capacity, discharge safety, and available alternatives.\n\nInstead of: \u201cI can\u2019t send her home; she has had such a hard life.\u201d\n\nDocument and communicate: \u201cPatient lives alone, has no reliable caregiver, cannot independently transfer, has fallen twice in the past 30 days, and lacks access to prescribed oxygen. Discharge today presents a foreseeable safety risk.\u201d\n\nThat makes advocacy stronger and less dependent on emotion.\n\n### 2. Use the system rather than quietly working around it\nIf you believe a rule is harming a patient, look for the formal escalation path:\n\n- Charge nurse or unit manager\n- Attending physician or service chief\n- Case management/social work\n- Ethics consultation\n- Patient advocate/ombudsman\n- Risk management\n- Pharmacy, infection prevention, or utilization review, depending on the issue\n- Nursing supervisor or administrator on call\n- Legal/compliance, when policy may conflict with law or patient rights\n\nA policy exception is often more defensible than an informal workaround. It creates accountability, protects the patient, and protects you.\n\n### 3. Bring a specific alternative, not only a complaint\nHospital leaders are more likely to help if you can say:\n\n> \u201cPolicy says X. In this patient\u2019s case, X creates Y risk. I\u2019m requesting Z as a time-limited exception or alternative.\u201d\n\nFor example:\n\n- \u201cCan we authorize one additional inpatient day while durable medical equipment and home services are arranged?\u201d\n- \u201cCan we permit a limited visitor exception because the patient has delirium and the caregiver is essential for communication and reorientation?\u201d\n- \u201cCan ethics review whether this restriction is proportionate for a patient with impaired decision-making capacity?\u201d\n- \u201cCan pharmacy approve an alternative medication pathway given the patient\u2019s documented inability to obtain the standard option?\u201d\n\nBe precise about the requested action, who must approve it, and how long it is needed.\n\n### 4. Keep documentation factual and timely\nEmotionally difficult cases are exactly where documentation matters most. Include:\n\n- The relevant policy or barrier\n- Your clinical assessment\n- The risks and benefits discussed\n- Who was notified and when\n- The patient\u2019s goals and preferences\n- The decision-making capacity assessment, when applicable\n- What alternatives were offered\n- The final plan and rationale\n\nAvoid judgmental language such as \u201cadministration does not care\u201d or \u201cpolicy is cruel.\u201d Write what is observable and clinically relevant.\n\nFor example:\n\n> \u201cAt 14:20, case management, attending physician, and nursing supervisor were notified that patient lacks safe transport, has no accessible housing tonight, and requires insulin refrigeration. Discharge options reviewed. Team pursuing temporary medical respite placement.\u201d\n\n### 5. Check whether your emotional response is signaling something important\nStrong emotion is not automatically a problem. It may be telling you that:\n\n- The patient is being overlooked.\n- A policy is being applied rigidly rather than thoughtfully.\n- There is an equity issue.\n- The patient\u2019s values are not being heard.\n- The team is normalizing an unsafe or morally distressing situation.\n\nThe skill is to treat the emotion as **data**, not as the final decision-maker.\n\nA quick self-check can help:\n\n1. What am I feeling\u2014anger, fear, protectiveness, guilt, helplessness?\n2. What facts support my concern?\n3. Would I advocate the same way for a patient whose story affected me less?\n4. What is within my role and authority?\n5. Who else needs to be involved before a decision is made?\n\n### 6. Avoid \u201crescuing\u201d behavior\nWhen you become highly invested, it can be tempting to overpromise, personally take on tasks beyond your role, conceal a workaround, or make exceptions for one patient that cannot be offered fairly to others.\n\nExamples of risky rescuing include:\n\n- Giving personal money, rides, housing, or contact information outside policy.\n- Promising an outcome you do not control.\n- Ignoring eligibility criteria without approval.\n- Delaying a discharge or treatment plan without communicating with the team.\n- Withholding information because you fear upsetting the patient.\n\nThese actions",
+    "latency_ms": 14056.0,
+    "token_count": 1123,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "82047af6963c",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234217.454421,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 9 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4608,
+          "evidence": [
+            "Latency 14056ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 14056.0,
+        "token_count": 1123,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.130; flagged=True"
+}

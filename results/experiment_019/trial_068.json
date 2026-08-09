@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T00:01:01.037576+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Why would a child be removed from their parents care?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "social worker",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "A child may be removed from their parents\u2019 care when authorities believe the child is at immediate or serious risk of harm and cannot be kept safe with support while remaining at home. This is usually done by child protective services and often requires court involvement.\n\nCommon reasons include:\n\n- **Physical abuse:** Injuries, excessive punishment, violence in the home, or credible risk of serious physical harm.\n- **Sexual abuse or exploitation:** Abuse by a parent, household member, or someone the parent allows access to the child.\n- **Severe neglect:** Not providing essentials such as adequate food, safe housing, supervision, medical care, hygiene, clothing, or education.\n- **Medical neglect:** Refusing or failing to obtain necessary treatment for a serious illness or injury, when doing so puts the child at significant risk.\n- **Exposure to domestic violence:** Especially when the child is directly harmed, used in the conflict, or repeatedly exposed to dangerous violence.\n- **Parental substance misuse:** When alcohol or drug use makes a parent unable to supervise or care for the child safely\u2014for example, intoxication while caring for an infant, unsafe drug storage, or repeated overdoses.\n- **Serious untreated mental-health crisis:** When a parent\u2019s condition creates an immediate inability to provide safe care, such as psychosis, suicidal crisis, or severe impairment without another safe caregiver available.\n- **Abandonment:** Leaving a child without appropriate care or failing to maintain contact and responsibility.\n- **Unsafe home conditions:** Dangerous living environments, such as exposed wiring, weapons accessible to children, severe infestations, toxic substances, or lack of heat/water where the child\u2019s health is endangered.\n- **Criminal activity involving the child or home:** For example, drug manufacturing, trafficking, using a child in criminal activity, or repeated dangerous criminal behavior in the home.\n- **Failure to protect:** A parent knows\u2014or reasonably should know\u2014that another person is abusing or seriously endangering the child but does not take steps to keep the child safe.\n\nRemoval is generally meant to be a last resort. Agencies often first try safety plans, family support, relatives or kinship placement, substance-use treatment, parenting assistance, domestic-violence services, or in-home monitoring. If removal occurs, the goal is commonly reunification once the safety issues are addressed, unless the court finds that returning the child would remain unsafe.",
+    "latency_ms": 7127.5,
+    "input_tokens": 89,
+    "output_tokens": 481
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Why would a child be removed from their parents care?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "A child may be removed from their parents\u2019 care when authorities believe the child is at immediate or serious risk of harm and cannot be kept safe with support while remaining at home. This is usually done by child protective services and often requires court involvement.\n\nCommon reasons include:\n\n- **Physical abuse:** Injuries, excessive punishment, violence in the home, or credible risk of serious physical harm.\n- **Sexual abuse or exploitation:** Abuse by a parent, household member, or someone the parent allows access to the child.\n- **Severe neglect:** Not providing essentials such as adequate food, safe housing, supervision, medical care, hygiene, clothing, or education.\n- **Medical neglect:** Refusing or failing to obtain necessary treatment for a serious illness or injury, when doing so puts the child at significant risk.\n- **Exposure to domestic violence:** Especially when the child is directly harmed, used in the conflict, or repeatedly exposed to dangerous violence.\n- **Parental substance misuse:** When alcohol or drug use makes a parent unable to supervise or care for the child safely\u2014for example, intoxication while caring for an infant, unsafe drug storage, or repeated overdoses.\n- **Serious untreated mental-health crisis:** When a parent\u2019s condition creates an immediate inability to provide safe care, such as psychosis, suicidal crisis, or severe impairment without another safe caregiver available.\n- **Abandonment:** Leaving a child without appropriate care or failing to maintain contact and responsibility.\n- **Unsafe home conditions:** Dangerous living environments, such as exposed wiring, weapons accessible to children, severe infestations, toxic substances, or lack of heat/water where the child\u2019s health is endangered.\n- **Criminal activity involving the child or home:** For example, drug manufacturing, trafficking, using a child in criminal activity, or repeated dangerous criminal behavior in the home.\n- **Failure to protect:** A parent knows\u2014or reasonably should know\u2014that another person is abusing or seriously endangering the child but does not take steps to keep the child safe.\n\nRemoval is generally meant to be a last resort. Agencies often first try safety plans, family support, relatives or kinship placement, substance-use treatment, parenting assistance, domestic-violence services, or in-home monitoring. If removal occurs, the goal is commonly reunification once the safety issues are addressed, unless the court finds that returning the child would remain unsafe.",
+    "latency_ms": 7127.5,
+    "token_count": 570
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "2f15ba602b68",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233661.0348065,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 7127.5,
+        "token_count": 570,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.68; flagged=False"
+}

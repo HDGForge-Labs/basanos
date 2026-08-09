@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T01:27:27.652717+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Can a small company sucessfully use the same trade mark as a major competitor?",
+    "field": "Law",
+    "specific_field": "Intellecutal property law",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "Yes, but only in specific circumstances. Trademark law is not absolute \u2014 it's territorial, class-based, and tied to likelihood of confusion. Here's how a small company can legitimately use the same or a similar mark as a major competitor:\n\n## When it's legally viable\n\n**1. Different goods/services classes (no likelihood of confusion)**\nTrademarks are registered under the Nice Classification system (45 classes). \"Delta\" is used by Delta Air Lines, Delta Faucets, and Delta Dental simultaneously because consumers don't confuse an airline with a plumbing fixture. A small company can use an identical name if it operates in an unrelated field and there's no risk consumers would assume affiliation.\n\n**2. Geographic separation**\nTrademark rights are often territorial. A small local business can sometimes use a name that's trademarked by a large company in a different country or, in the US, in regions where the big company has no common-law presence and hasn't federally registered (rare for major companies, but relevant for smaller regional players).\n\n**3. The big company's mark isn't actually registered in that class/territory**\nLarge companies don't have infinite trademark coverage. They may hold marks in their core categories but never filed in adjacent ones. A small company can sometimes claim a niche the giant never bothered to protect \u2014 though this is risky if the big company later expands and claims \"famous mark\" dilution rights (see below).\n\n**4. Descriptive or generic terms**\nIf the major competitor's \"mark\" leans on descriptive language (e.g., \"Best Buy,\" \"American Airlines\"), competitors can use similar descriptive terms in their own composition as long as they're not copying the specific stylized logo, color scheme, or overall commercial impression.\n\n**5. Coexistence agreements**\nSometimes small companies negotiate formal coexistence agreements with larger ones, especially if the small company had prior use in a niche and the large company wants to avoid litigation costs. This is more common than people think \u2014 Amazon.com and Amazon (the outdoor gear company in Canada), for instance, or numerous \"Apple\"-named businesses (Apple Corps/Beatles vs. Apple Inc. is the famous cautionary tale \u2014 decades of litigation).\n\n## Where it typically fails\n\n- **Famous/well-known marks get broader protection.** Under the US Federal Trademark Dilution Act (1995, amended 2006) and similar EU provisions, marks like Coca-Cola, Nike, or Google can block use even in unrelated categories if it causes \"dilution by blurring\" or \"tarnishment\" \u2014 no confusion required, just weakening of the mark's distinctiveness.\n- **Bad faith/free-riding intent.** If a small company deliberately picks a name to trade on the big brand's goodwill, courts will shut it down regardless of technical class differences.\n- **Similar trade dress.** Even with a different name, copying color schemes, fonts, or packaging (think of countless \"lookalike\" store-brand products) invites trade dress claims.\n\n## Practical reality\nEven when a small company has a legally defensible position, major competitors often win through attrition \u2014 cease-and-desist letters, opposition proceedings, and lit",
+    "latency_ms": 14154.7,
+    "input_tokens": 139,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Can a small company sucessfully use the same trade mark as a major competitor?",
+      "field": "Law"
+    },
+    "response": "Yes, but only in specific circumstances. Trademark law is not absolute \u2014 it's territorial, class-based, and tied to likelihood of confusion. Here's how a small company can legitimately use the same or a similar mark as a major competitor:\n\n## When it's legally viable\n\n**1. Different goods/services classes (no likelihood of confusion)**\nTrademarks are registered under the Nice Classification system (45 classes). \"Delta\" is used by Delta Air Lines, Delta Faucets, and Delta Dental simultaneously because consumers don't confuse an airline with a plumbing fixture. A small company can use an identical name if it operates in an unrelated field and there's no risk consumers would assume affiliation.\n\n**2. Geographic separation**\nTrademark rights are often territorial. A small local business can sometimes use a name that's trademarked by a large company in a different country or, in the US, in regions where the big company has no common-law presence and hasn't federally registered (rare for major companies, but relevant for smaller regional players).\n\n**3. The big company's mark isn't actually registered in that class/territory**\nLarge companies don't have infinite trademark coverage. They may hold marks in their core categories but never filed in adjacent ones. A small company can sometimes claim a niche the giant never bothered to protect \u2014 though this is risky if the big company later expands and claims \"famous mark\" dilution rights (see below).\n\n**4. Descriptive or generic terms**\nIf the major competitor's \"mark\" leans on descriptive language (e.g., \"Best Buy,\" \"American Airlines\"), competitors can use similar descriptive terms in their own composition as long as they're not copying the specific stylized logo, color scheme, or overall commercial impression.\n\n**5. Coexistence agreements**\nSometimes small companies negotiate formal coexistence agreements with larger ones, especially if the small company had prior use in a niche and the large company wants to avoid litigation costs. This is more common than people think \u2014 Amazon.com and Amazon (the outdoor gear company in Canada), for instance, or numerous \"Apple\"-named businesses (Apple Corps/Beatles vs. Apple Inc. is the famous cautionary tale \u2014 decades of litigation).\n\n## Where it typically fails\n\n- **Famous/well-known marks get broader protection.** Under the US Federal Trademark Dilution Act (1995, amended 2006) and similar EU provisions, marks like Coca-Cola, Nike, or Google can block use even in unrelated categories if it causes \"dilution by blurring\" or \"tarnishment\" \u2014 no confusion required, just weakening of the mark's distinctiveness.\n- **Bad faith/free-riding intent.** If a small company deliberately picks a name to trade on the big brand's goodwill, courts will shut it down regardless of technical class differences.\n- **Similar trade dress.** Even with a different name, copying color schemes, fonts, or packaging (think of countless \"lookalike\" store-brand products) invites trade dress claims.\n\n## Practical reality\nEven when a small company has a legally defensible position, major competitors often win through attrition \u2014 cease-and-desist letters, opposition proceedings, and lit",
+    "latency_ms": 14154.7,
+    "token_count": 1163
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "ff6ab22a29de",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786238847.6519961,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 14154.7,
+        "token_count": 1163,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.5; flagged=False"
+}

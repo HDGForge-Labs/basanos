@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:17:36.964371+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What's the best aproach on panic attack on pediatric patient?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pediatrician",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "For a child or adolescent having a suspected panic attack, the immediate priorities are **safety, ruling out medical emergencies, calming the body, and arranging follow-up care**. A first panic attack\u2014especially in a younger child\u2014should generally be medically assessed because some conditions can look similar.\n\n## 1. First assess for emergency \u201cred flags\u201d\nCall emergency services / send for urgent evaluation if there is:\n\n- Blue/gray lips, fainting, unresponsiveness, seizure, or severe confusion\n- Severe chest pain, persistent trouble breathing, wheezing/stridor, or low oxygen saturation if measured (typically **<94%** on room air)\n- Signs of an allergic reaction: hives plus facial/tongue swelling, vomiting, or breathing difficulty\n- Possible ingestion/intoxication, stimulant/drug exposure, or medication overdose\n- New neurologic symptoms: weakness, severe headache, inability to speak normally, abnormal gait\n- Suicidal thoughts, self-harm behavior, aggression that cannot be safely managed, or psychosis\n- Diabetes symptoms with vomiting, dehydration, or abnormal glucose\n- A first episode with significant physical symptoms, particularly in a child under roughly **10\u201312 years**, or symptoms lasting more than approximately **20\u201330 minutes** without improvement\n\nDo not assume \u201cpanic\u201d until urgent respiratory, cardiac, neurologic, metabolic, toxicologic, and allergic causes have been considered.\n\n## 2. During the episode: calm, brief, concrete support\nA panic attack often peaks within about **5\u201310 minutes** and may last roughly **20\u201330 minutes**, though the fear can persist longer.\n\nUse a quiet, low-stimulation setting and one calm adult. Speak slowly and use short sentences:\n\n- \u201cYou are safe. I\u2019m staying with you.\u201d\n- \u201cYour body is having a false alarm. This feeling will pass.\u201d\n- \u201cWe are going to slow your breathing together.\u201d\n\nAvoid arguing about whether the fear is \u201creal,\u201d asking many questions, crowding the child, or repeatedly checking pulse/oxygen if they are otherwise stable\u2014these can reinforce fear.\n\n### Positioning\n- Sit upright or semi-reclined with feet supported.\n- Loosen tight clothing, reduce noise/light, and remove onlookers.\n- Avoid having the child lie flat if they feel short of breath.\n\n### Breathing: slow, gentle, not deep\nHyperventilation can cause tingling, dizziness, chest tightness, and hand cramping. The goal is **slower breathing**, not huge breaths.\n\nFor many school-age children and adolescents:\n- Breathe in gently for about **3\u20134 seconds**\n- Breathe out slowly for about **5\u20136 seconds**\n- Continue for approximately **1\u20133 minutes**, then reassess\n\nHelpful cues:\n- \u201cSmell the flower\u2026 blow the candle slowly.\u201d\n- Breathe with the child, using a hand or visual timer.\n- Aim for about **6\u201310 breaths per minute** if the child can tolerate it, rather than rapid shallow breathing.\n\n**Do not use paper-bag breathing.** It can be dangerous if symptoms are due to asthma, low oxygen, heart disease, or another medical condition.\n\n### Grounding techniques\nFor a child who can engage:\n- Name **5** things they see, **4** things they can feel, **3** things they hear, **2** things they smell, and **1** thing they taste.\n- Hold a cold drink, splash cool water on the face, or use a textured object.\n- Ask simple orientation questions: \u201cWhat is your name? Where are we? Who is with you?\u201d\n\n## 3. Check basic medical contributors\nIn a clinical setting, assessment may include:\n\n- Vital signs: heart rate, respiratory rate, blood pressure, temperature, oxygen saturation\n- Focused exam for asthma/wheeze, infection, dehydration, arrhythmia, anaphylaxis, neurologic findings\n- Point-of-care glucose if altered mental status, diabetes, poor intake, vomiting, or concerning symptoms\n- Pregnancy testing in post-menarchal adolescents when clinically appropriate\n- ECG if chest pain, syncope, palpitations, concerning family cardiac history, stimulant use, or abnormal exam\n- Review of caffeine/energy drinks, nicotine/vaping, ADHD stimulants, decongestants, cannabis, other substances, and recent medication changes\n\nCaffeine and energy drinks are common contributors. A single energy drink may contain roughly **80\u2013300 mg** of caffeine; many pediatric experts recommend that children avoid energy drinks entirely, and adolescents keep caffeine low\u2014often under about **100 mg/day**, depending on local guidance and the individual patient.\n\n## 4. Medication: not usually the first step for a single acute episode\nFor most pediatric panic attacks, **reassurance, breathing/grounding, and treatment of any medical trigger** are first-line.\n\nMedication should generally be directed by a clinician, especially in children. Benzodiazepines can sometimes be used in monitored emergency or specialty settings",
+    "latency_ms": 12331.9,
+    "input_tokens": 84,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What's the best aproach on panic attack on pediatric patient?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "For a child or adolescent having a suspected panic attack, the immediate priorities are **safety, ruling out medical emergencies, calming the body, and arranging follow-up care**. A first panic attack\u2014especially in a younger child\u2014should generally be medically assessed because some conditions can look similar.\n\n## 1. First assess for emergency \u201cred flags\u201d\nCall emergency services / send for urgent evaluation if there is:\n\n- Blue/gray lips, fainting, unresponsiveness, seizure, or severe confusion\n- Severe chest pain, persistent trouble breathing, wheezing/stridor, or low oxygen saturation if measured (typically **<94%** on room air)\n- Signs of an allergic reaction: hives plus facial/tongue swelling, vomiting, or breathing difficulty\n- Possible ingestion/intoxication, stimulant/drug exposure, or medication overdose\n- New neurologic symptoms: weakness, severe headache, inability to speak normally, abnormal gait\n- Suicidal thoughts, self-harm behavior, aggression that cannot be safely managed, or psychosis\n- Diabetes symptoms with vomiting, dehydration, or abnormal glucose\n- A first episode with significant physical symptoms, particularly in a child under roughly **10\u201312 years**, or symptoms lasting more than approximately **20\u201330 minutes** without improvement\n\nDo not assume \u201cpanic\u201d until urgent respiratory, cardiac, neurologic, metabolic, toxicologic, and allergic causes have been considered.\n\n## 2. During the episode: calm, brief, concrete support\nA panic attack often peaks within about **5\u201310 minutes** and may last roughly **20\u201330 minutes**, though the fear can persist longer.\n\nUse a quiet, low-stimulation setting and one calm adult. Speak slowly and use short sentences:\n\n- \u201cYou are safe. I\u2019m staying with you.\u201d\n- \u201cYour body is having a false alarm. This feeling will pass.\u201d\n- \u201cWe are going to slow your breathing together.\u201d\n\nAvoid arguing about whether the fear is \u201creal,\u201d asking many questions, crowding the child, or repeatedly checking pulse/oxygen if they are otherwise stable\u2014these can reinforce fear.\n\n### Positioning\n- Sit upright or semi-reclined with feet supported.\n- Loosen tight clothing, reduce noise/light, and remove onlookers.\n- Avoid having the child lie flat if they feel short of breath.\n\n### Breathing: slow, gentle, not deep\nHyperventilation can cause tingling, dizziness, chest tightness, and hand cramping. The goal is **slower breathing**, not huge breaths.\n\nFor many school-age children and adolescents:\n- Breathe in gently for about **3\u20134 seconds**\n- Breathe out slowly for about **5\u20136 seconds**\n- Continue for approximately **1\u20133 minutes**, then reassess\n\nHelpful cues:\n- \u201cSmell the flower\u2026 blow the candle slowly.\u201d\n- Breathe with the child, using a hand or visual timer.\n- Aim for about **6\u201310 breaths per minute** if the child can tolerate it, rather than rapid shallow breathing.\n\n**Do not use paper-bag breathing.** It can be dangerous if symptoms are due to asthma, low oxygen, heart disease, or another medical condition.\n\n### Grounding techniques\nFor a child who can engage:\n- Name **5** things they see, **4** things they can feel, **3** things they hear, **2** things they smell, and **1** thing they taste.\n- Hold a cold drink, splash cool water on the face, or use a textured object.\n- Ask simple orientation questions: \u201cWhat is your name? Where are we? Who is with you?\u201d\n\n## 3. Check basic medical contributors\nIn a clinical setting, assessment may include:\n\n- Vital signs: heart rate, respiratory rate, blood pressure, temperature, oxygen saturation\n- Focused exam for asthma/wheeze, infection, dehydration, arrhythmia, anaphylaxis, neurologic findings\n- Point-of-care glucose if altered mental status, diabetes, poor intake, vomiting, or concerning symptoms\n- Pregnancy testing in post-menarchal adolescents when clinically appropriate\n- ECG if chest pain, syncope, palpitations, concerning family cardiac history, stimulant use, or abnormal exam\n- Review of caffeine/energy drinks, nicotine/vaping, ADHD stimulants, decongestants, cannabis, other substances, and recent medication changes\n\nCaffeine and energy drinks are common contributors. A single energy drink may contain roughly **80\u2013300 mg** of caffeine; many pediatric experts recommend that children avoid energy drinks entirely, and adolescents keep caffeine low\u2014often under about **100 mg/day**, depending on local guidance and the individual patient.\n\n## 4. Medication: not usually the first step for a single acute episode\nFor most pediatric panic attacks, **reassurance, breathing/grounding, and treatment of any medical trigger** are first-line.\n\nMedication should generally be directed by a clinician, especially in children. Benzodiazepines can sometimes be used in monitored emergency or specialty settings",
+    "latency_ms": 12331.9,
+    "token_count": 1108,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "99e96c444f73",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234656.9635985,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 11 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.435,
+          "evidence": [
+            "Latency 12332ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12331.9,
+        "token_count": 1108,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.172; flagged=True"
+}

@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T22:07:11.067641+00:00",
+  "detector": "context_degradation",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "who did michigan state play in the rose bowl",
+    "gold_index": 0
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Michigan State played the UCLA Bruins in the 1954 and 1956 Rose Bowls, Stanford in the 2014 Rose Bowl, and USC in the 1988 Rose Bowl.",
+    "latency_ms": 1522.5,
+    "input_tokens": 1515,
+    "output_tokens": 41
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "who did michigan state play in the rose bowl",
+      "gold_index": 0,
+      "n_docs": 10
+    },
+    "response": "Michigan State played the UCLA Bruins in the 1954 and 1956 Rose Bowls, Stanford in the 2014 Rose Bowl, and USC in the 1988 Rose Bowl.",
+    "latency_ms": 1522.5,
+    "token_count": 1556,
+    "context_window_used": 0.25
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "a15b5bbb99f2",
+      "tool_name": "context_qa",
+      "status": "pass",
+      "timestamp": 1786313231.0668755,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 1522.5,
+        "token_count": 1556,
+        "context_window_used": 0.25,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.8; flagged=False; gold_index=0"
+}

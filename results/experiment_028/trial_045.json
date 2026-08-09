@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T22:07:53.231356+00:00",
+  "detector": "context_degradation",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "what was the name of the first continent",
+    "gold_index": 0
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "The first supercontinent identified by geologists was **Pangaea** (also spelled Pangea).",
+    "latency_ms": 1020.9,
+    "input_tokens": 1538,
+    "output_tokens": 24
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "what was the name of the first continent",
+      "gold_index": 0,
+      "n_docs": 10
+    },
+    "response": "The first supercontinent identified by geologists was **Pangaea** (also spelled Pangea).",
+    "latency_ms": 1020.9,
+    "token_count": 1562,
+    "context_window_used": 0.25
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "9f131c10c439",
+      "tool_name": "context_qa",
+      "status": "pass",
+      "timestamp": 1786313273.2286296,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 1020.9,
+        "token_count": 1562,
+        "context_window_used": 0.25,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.45; flagged=False; gold_index=0"
+}

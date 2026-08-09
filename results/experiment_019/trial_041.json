@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-08T23:57:37.649029+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "A 55 year old male patient describes the sudden appearance of a slight tremor and having noticed his handwriting getting smaller, what are the possible ways you'd find a diagnosis? ",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biomedical Research, Nursing",
+    "question_type": "Open-ended question that is potentially ambiguous| Advice or suggestions on how to approach a problem| Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "The combination of a new tremor and progressively smaller handwriting (**micrographia**) is strongly suggestive of **parkinsonism**, especially **Parkinson\u2019s disease**, but several other causes should be assessed. Diagnosis is mainly clinical, supported by targeted tests to exclude mimics.\n\n## 1. Detailed clinical history\nKey questions include:\n\n- **Tremor pattern**\n  - Is it mainly present at rest (\u201cpill-rolling\u201d tremor), reduced with voluntary movement, and worse with stress?\n  - Or is it mainly during posture/action, suggesting essential tremor?\n- **Slowness of movement (bradykinesia)**\n  - Trouble with buttons, shaving, using cutlery, typing, getting out of a chair, turning in bed.\n- **Rigidity and gait**\n  - Stiffness, reduced arm swing on one side, shuffling steps, difficulty turning, freezing, stooped posture.\n- **Handwriting changes**\n  - Does writing progressively become smaller across a line or page? This is typical micrographia.\n- **Non-motor Parkinson features**\n  - Constipation, reduced sense of smell, REM sleep behaviour disorder (acting out dreams), depression/anxiety, urinary urgency, excessive daytime sleepiness, orthostatic dizziness.\n- **Medication and toxin history**\n  - Dopamine-blocking drugs can cause parkinsonism: antipsychotics (e.g., haloperidol, risperidone), metoclopramide, prochlorperazine, some anti-nausea agents.\n  - Exposure to manganese, carbon monoxide, solvents, or certain pesticides.\n- **Family history**\n  - Parkinson\u2019s disease, essential tremor, dystonia, Wilson disease, early cognitive decline.\n- **Time course**\n  - Parkinson\u2019s disease is usually gradual and asymmetric initially. Truly abrupt onset should prompt consideration of stroke, medication effects, functional tremor, metabolic illness, or structural brain disease.\n\n## 2. Focused neurological examination\nA clinician would look for the core diagnostic requirement for parkinsonism:\n\n### Bradykinesia\nSlowness with progressive decrement in amplitude/speed during repetitive movements, such as:\n- Rapid finger tapping\n- Hand opening/closing\n- Pronation\u2013supination of the forearm\n- Foot tapping\n\n### Plus at least one of:\n- **Rest tremor**, typically 4\u20136 Hz, often asymmetric\n- **Rigidity**, including cogwheel rigidity at the wrist/elbow\n- **Postural instability**, usually a later feature in idiopathic Parkinson\u2019s disease\n\nOther examination features:\n- Reduced facial expression (hypomimia), soft voice (hypophonia), reduced blink rate\n- Decreased arm swing, short shuffling gait, en-bloc turning\n- Handwriting sample, spiral drawing, and Archimedes spiral\n- Eye movements, especially vertical gaze, to look for progressive supranuclear palsy\n- Cerebellar signs, pyramidal signs, sensory loss, weakness, dystonia, or neuropathy\n- Blood pressure lying and standing, to assess autonomic dysfunction\n\n## 3. Consider the main differential diagnoses\n\n### Parkinson\u2019s disease\nMost likely if there is:\n- Asymmetric onset\n- Rest tremor\n- Bradykinesia and rigidity\n- Micrographia\n- Gradual progression\n- Good response to levodopa\n\n### Essential tremor\nMore likely if:\n- Tremor occurs with holding the arms out or using the hands\n- Both hands are similarly affected\n- Head or voice tremor is present\n- There is a family history\n- There is no bradykinesia, rigidity, or shuffling gait  \nMicrographia is less typical.\n\n### Drug-induced parkinsonism\nOften more symmetrical than Parkinson\u2019s disease and associated with dopamine-blocking drugs. It may improve after stopping the causative drug, though recovery can take months.\n\n### Vascular parkinsonism\nOften affects the lower body disproportionately, with gait difficulty, falls, urinary symptoms, and vascular risk factors. MRI may show extensive small-vessel disease or strategic infarcts.\n\n### Atypical parkinsonian syndromes\nThese include multiple system atrophy, progressive supranuclear palsy, corticobasal syndrome, and dementia with Lewy bodies. Clues include:\n- Early falls\n- Rapid progression\n- Early severe autonomic failure\n- Early cognitive impairment or hallucinations\n- Prominent eye movement abnormalities\n- Marked asymmetry with apraxia or \u201calien limb\u201d\n- Poor levodopa response\n\n### Other causes to exclude\n- Hyperthyroidism or other metabolic disorders\n- Wilson disease in younger patients, though much less likely at age 55\n- Structural lesions, including stroke, tumour, normal-pressure hydrocephalus\n- Functional tremor, often variable, distractible, and inconsistent on examination\n\n## 4. Investigations\nThere is no single blood test or scan that diagnoses Parkinson\u2019s disease. Tests are selected based on the presentation.\n\n### Basic laboratory tests\n",
+    "latency_ms": 12839.3,
+    "input_tokens": 113,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A 55 year old male patient describes the sudden appearance of a slight tremor and having noticed his handwriting getting smaller, what are the possible ways you'd find a diagnosis? ",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "The combination of a new tremor and progressively smaller handwriting (**micrographia**) is strongly suggestive of **parkinsonism**, especially **Parkinson\u2019s disease**, but several other causes should be assessed. Diagnosis is mainly clinical, supported by targeted tests to exclude mimics.\n\n## 1. Detailed clinical history\nKey questions include:\n\n- **Tremor pattern**\n  - Is it mainly present at rest (\u201cpill-rolling\u201d tremor), reduced with voluntary movement, and worse with stress?\n  - Or is it mainly during posture/action, suggesting essential tremor?\n- **Slowness of movement (bradykinesia)**\n  - Trouble with buttons, shaving, using cutlery, typing, getting out of a chair, turning in bed.\n- **Rigidity and gait**\n  - Stiffness, reduced arm swing on one side, shuffling steps, difficulty turning, freezing, stooped posture.\n- **Handwriting changes**\n  - Does writing progressively become smaller across a line or page? This is typical micrographia.\n- **Non-motor Parkinson features**\n  - Constipation, reduced sense of smell, REM sleep behaviour disorder (acting out dreams), depression/anxiety, urinary urgency, excessive daytime sleepiness, orthostatic dizziness.\n- **Medication and toxin history**\n  - Dopamine-blocking drugs can cause parkinsonism: antipsychotics (e.g., haloperidol, risperidone), metoclopramide, prochlorperazine, some anti-nausea agents.\n  - Exposure to manganese, carbon monoxide, solvents, or certain pesticides.\n- **Family history**\n  - Parkinson\u2019s disease, essential tremor, dystonia, Wilson disease, early cognitive decline.\n- **Time course**\n  - Parkinson\u2019s disease is usually gradual and asymmetric initially. Truly abrupt onset should prompt consideration of stroke, medication effects, functional tremor, metabolic illness, or structural brain disease.\n\n## 2. Focused neurological examination\nA clinician would look for the core diagnostic requirement for parkinsonism:\n\n### Bradykinesia\nSlowness with progressive decrement in amplitude/speed during repetitive movements, such as:\n- Rapid finger tapping\n- Hand opening/closing\n- Pronation\u2013supination of the forearm\n- Foot tapping\n\n### Plus at least one of:\n- **Rest tremor**, typically 4\u20136 Hz, often asymmetric\n- **Rigidity**, including cogwheel rigidity at the wrist/elbow\n- **Postural instability**, usually a later feature in idiopathic Parkinson\u2019s disease\n\nOther examination features:\n- Reduced facial expression (hypomimia), soft voice (hypophonia), reduced blink rate\n- Decreased arm swing, short shuffling gait, en-bloc turning\n- Handwriting sample, spiral drawing, and Archimedes spiral\n- Eye movements, especially vertical gaze, to look for progressive supranuclear palsy\n- Cerebellar signs, pyramidal signs, sensory loss, weakness, dystonia, or neuropathy\n- Blood pressure lying and standing, to assess autonomic dysfunction\n\n## 3. Consider the main differential diagnoses\n\n### Parkinson\u2019s disease\nMost likely if there is:\n- Asymmetric onset\n- Rest tremor\n- Bradykinesia and rigidity\n- Micrographia\n- Gradual progression\n- Good response to levodopa\n\n### Essential tremor\nMore likely if:\n- Tremor occurs with holding the arms out or using the hands\n- Both hands are similarly affected\n- Head or voice tremor is present\n- There is a family history\n- There is no bradykinesia, rigidity, or shuffling gait  \nMicrographia is less typical.\n\n### Drug-induced parkinsonism\nOften more symmetrical than Parkinson\u2019s disease and associated with dopamine-blocking drugs. It may improve after stopping the causative drug, though recovery can take months.\n\n### Vascular parkinsonism\nOften affects the lower body disproportionately, with gait difficulty, falls, urinary symptoms, and vascular risk factors. MRI may show extensive small-vessel disease or strategic infarcts.\n\n### Atypical parkinsonian syndromes\nThese include multiple system atrophy, progressive supranuclear palsy, corticobasal syndrome, and dementia with Lewy bodies. Clues include:\n- Early falls\n- Rapid progression\n- Early severe autonomic failure\n- Early cognitive impairment or hallucinations\n- Prominent eye movement abnormalities\n- Marked asymmetry with apraxia or \u201calien limb\u201d\n- Poor levodopa response\n\n### Other causes to exclude\n- Hyperthyroidism or other metabolic disorders\n- Wilson disease in younger patients, though much less likely at age 55\n- Structural lesions, including stroke, tumour, normal-pressure hydrocephalus\n- Functional tremor, often variable, distractible, and inconsistent on examination\n\n## 4. Investigations\nThere is no single blood test or scan that diagnoses Parkinson\u2019s disease. Tests are selected based on the presentation.\n\n### Basic laboratory tests\n",
+    "latency_ms": 12839.3,
+    "token_count": 1137
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "2a115765493b",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786233457.6481888,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4426,
+          "evidence": [
+            "Latency 12839ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12839.3,
+        "token_count": 1137,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.41; flagged=False"
+}

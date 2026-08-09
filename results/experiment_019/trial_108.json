@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T00:06:41.092029+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "If upper limbs suddenly become stronger than lower limbs, will people start walking on their hands?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Physiotherapy",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Usually not. Simply having arms become stronger than legs would not automatically make humans start walking on their hands.\n\nHuman bipedal walking is shaped by much more than muscle strength:\n\n- **Skeleton and joints:** Human legs are long, load-bearing, and aligned under the body. Our hands, wrists, elbows, shoulders, and neck are not built to repeatedly support roughly 50\u201360% of body weight through the arms during every step.\n- **Hands are specialized for manipulation:** Human hands have short palms, mobile fingers, opposable thumbs, and relatively delicate wrist structures. Walking on them would reduce their usefulness for carrying, tool use, eating, climbing, and protection.\n- **Center of mass:** In upright walking, the body\u2019s center of mass is naturally balanced over the hips and feet. In a handstand posture, blood shifts toward the head and the balance problem becomes much harder.\n- **Energy cost:** Normal walking is highly efficient because tendons, especially the Achilles tendon, store and release energy. Hand-walking generally uses much more energy and requires continuous shoulder and core stabilization.\n- **Circulation and breathing:** Being inverted for prolonged periods can raise pressure in the head and eyes, cause congestion and dizziness, and make long-duration movement uncomfortable or unsafe.\n\nPeople already can hand-walk if they have sufficient upper-body strength, balance, wrist mobility, and training\u2014gymnasts and acrobats may do so for seconds to minutes, occasionally longer. But that is a specialized skill, not a natural replacement for walking.\n\nIf arms became, say, **2\u20133 times stronger** while legs stayed normal, people would probably use their arms more for lifting, climbing, crawling, swinging, or assisted mobility\u2014but would still generally walk on their feet. If legs became severely weak or unusable, people might use **hands and feet together** (a quadrupedal gait) more readily than sustained upright hand-walking.\n\nFor a species to naturally use hands as its primary walking limbs over evolutionary time, it would likely need major anatomical changes: sturdier wrists, shorter fingers, reinforced shoulders, a different pelvis and spine, altered blood-pressure regulation, and perhaps more ape-like or knuckle-walking forelimbs rather than human hands.",
+    "latency_ms": 7620.4,
+    "input_tokens": 90,
+    "output_tokens": 454
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "If upper limbs suddenly become stronger than lower limbs, will people start walking on their hands?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Usually not. Simply having arms become stronger than legs would not automatically make humans start walking on their hands.\n\nHuman bipedal walking is shaped by much more than muscle strength:\n\n- **Skeleton and joints:** Human legs are long, load-bearing, and aligned under the body. Our hands, wrists, elbows, shoulders, and neck are not built to repeatedly support roughly 50\u201360% of body weight through the arms during every step.\n- **Hands are specialized for manipulation:** Human hands have short palms, mobile fingers, opposable thumbs, and relatively delicate wrist structures. Walking on them would reduce their usefulness for carrying, tool use, eating, climbing, and protection.\n- **Center of mass:** In upright walking, the body\u2019s center of mass is naturally balanced over the hips and feet. In a handstand posture, blood shifts toward the head and the balance problem becomes much harder.\n- **Energy cost:** Normal walking is highly efficient because tendons, especially the Achilles tendon, store and release energy. Hand-walking generally uses much more energy and requires continuous shoulder and core stabilization.\n- **Circulation and breathing:** Being inverted for prolonged periods can raise pressure in the head and eyes, cause congestion and dizziness, and make long-duration movement uncomfortable or unsafe.\n\nPeople already can hand-walk if they have sufficient upper-body strength, balance, wrist mobility, and training\u2014gymnasts and acrobats may do so for seconds to minutes, occasionally longer. But that is a specialized skill, not a natural replacement for walking.\n\nIf arms became, say, **2\u20133 times stronger** while legs stayed normal, people would probably use their arms more for lifting, climbing, crawling, swinging, or assisted mobility\u2014but would still generally walk on their feet. If legs became severely weak or unusable, people might use **hands and feet together** (a quadrupedal gait) more readily than sustained upright hand-walking.\n\nFor a species to naturally use hands as its primary walking limbs over evolutionary time, it would likely need major anatomical changes: sturdier wrists, shorter fingers, reinforced shoulders, a different pelvis and spine, altered blood-pressure regulation, and perhaps more ape-like or knuckle-walking forelimbs rather than human hands.",
+    "latency_ms": 7620.4,
+    "token_count": 544,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "18453871f1f3",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234001.0912724,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 2 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 7620.4,
+        "token_count": 544,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.108; flagged=True"
+}

@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:59:40.037397+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What would be the best way to address a case of eating behavior disorder in the medical consultation?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General medicine",
+    "question_type": "Advice or suggestions on how to approach a problem"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Addressing Eating Behavior Disorders in Medical Consultation\n\n## Initial Screening & Recognition\n\n**Screening tools:**\n- **SCOFF questionnaire** (5 questions, score \u22652 suggests possible eating disorder, roughly 85-90% sensitivity)\n- Consider screening in patients with BMI outside 18.5-24.9 range, unexplained weight fluctuations of more than 5-10% body weight in under 6 months, or GI complaints without organic cause\n\n**Red flags to watch for:**\n- BMI below 17.5 kg/m\u00b2 (anorexia threshold per DSM-5)\n- Amenorrhea (absence of \u22653 consecutive cycles)\n- Bradycardia (HR under 50 bpm)\n- Orthostatic hypotension (drop >20 mmHg systolic)\n- Dental erosion, Russell's sign (calluses on knuckles)\n- Lanugo hair, hypothermia (below 36\u00b0C)\n\n## Consultation Structure\n\n### 1. **Create a Safe, Non-Judgmental Environment** (first 5-10 minutes)\n- Use open-ended questions rather than direct accusations\n- Avoid focusing solely on weight/numbers initially\n- Build rapport before discussing specifics\n\n### 2. **Comprehensive History Taking**\n- **Eating patterns**: frequency, restriction, bingeing episodes (how often per week), purging behaviors\n- **Psychological factors**: body image distortion, fear of weight gain, control issues\n- **Menstrual history** in females\n- **Exercise patterns**: compulsive exercise (>1 hour daily, multiple times)\n- **Substance use**: laxatives, diuretics, diet pills\n- **Duration of symptoms** (typically need \u22653 months for diagnostic criteria)\n- **Family history** and psychosocial stressors\n\n### 3. **Physical Examination**\n- Vital signs: HR, BP (orthostatic), temperature\n- BMI calculation and growth chart review (adolescents)\n- Skin, hair, dental examination\n- Cardiovascular assessment\n- Signs of refeeding syndrome risk if severely malnourished\n\n### 4. **Laboratory Workup**\n- CBC, comprehensive metabolic panel (electrolytes especially K+, Na+, phosphate)\n- ECG (QTc prolongation risk\u2014concerning if >450ms)\n- Thyroid function tests\n- Consider bone density scan if amenorrhea >6 months\n\n## Diagnostic Classification (DSM-5 criteria)\n- Anorexia Nervosa\n- Bulimia Nervosa (binge-purge cycles \u22651x/week for 3 months)\n- Binge Eating Disorder (episodes \u22651x/week for 3 months without compensatory behavior)\n- ARFID, OSFED, etc.\n\n## Management Approach\n\n### Multidisciplinary Team\n- **Primary care physician**: medical monitoring\n- **Psychiatrist/psychologist**: CBT-E (evidence-based, typically 20-40",
+    "latency_ms": 11475.4,
+    "input_tokens": 137,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What would be the best way to address a case of eating behavior disorder in the medical consultation?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Addressing Eating Behavior Disorders in Medical Consultation\n\n## Initial Screening & Recognition\n\n**Screening tools:**\n- **SCOFF questionnaire** (5 questions, score \u22652 suggests possible eating disorder, roughly 85-90% sensitivity)\n- Consider screening in patients with BMI outside 18.5-24.9 range, unexplained weight fluctuations of more than 5-10% body weight in under 6 months, or GI complaints without organic cause\n\n**Red flags to watch for:**\n- BMI below 17.5 kg/m\u00b2 (anorexia threshold per DSM-5)\n- Amenorrhea (absence of \u22653 consecutive cycles)\n- Bradycardia (HR under 50 bpm)\n- Orthostatic hypotension (drop >20 mmHg systolic)\n- Dental erosion, Russell's sign (calluses on knuckles)\n- Lanugo hair, hypothermia (below 36\u00b0C)\n\n## Consultation Structure\n\n### 1. **Create a Safe, Non-Judgmental Environment** (first 5-10 minutes)\n- Use open-ended questions rather than direct accusations\n- Avoid focusing solely on weight/numbers initially\n- Build rapport before discussing specifics\n\n### 2. **Comprehensive History Taking**\n- **Eating patterns**: frequency, restriction, bingeing episodes (how often per week), purging behaviors\n- **Psychological factors**: body image distortion, fear of weight gain, control issues\n- **Menstrual history** in females\n- **Exercise patterns**: compulsive exercise (>1 hour daily, multiple times)\n- **Substance use**: laxatives, diuretics, diet pills\n- **Duration of symptoms** (typically need \u22653 months for diagnostic criteria)\n- **Family history** and psychosocial stressors\n\n### 3. **Physical Examination**\n- Vital signs: HR, BP (orthostatic), temperature\n- BMI calculation and growth chart review (adolescents)\n- Skin, hair, dental examination\n- Cardiovascular assessment\n- Signs of refeeding syndrome risk if severely malnourished\n\n### 4. **Laboratory Workup**\n- CBC, comprehensive metabolic panel (electrolytes especially K+, Na+, phosphate)\n- ECG (QTc prolongation risk\u2014concerning if >450ms)\n- Thyroid function tests\n- Consider bone density scan if amenorrhea >6 months\n\n## Diagnostic Classification (DSM-5 criteria)\n- Anorexia Nervosa\n- Bulimia Nervosa (binge-purge cycles \u22651x/week for 3 months)\n- Binge Eating Disorder (episodes \u22651x/week for 3 months without compensatory behavior)\n- ARFID, OSFED, etc.\n\n## Management Approach\n\n### Multidisciplinary Team\n- **Primary care physician**: medical monitoring\n- **Psychiatrist/psychologist**: CBT-E (evidence-based, typically 20-40",
+    "latency_ms": 11475.4,
+    "token_count": 1161,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "7fbe891edfab",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240780.0366187,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 16 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4221,
+          "evidence": [
+            "Latency 11475ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11475.4,
+        "token_count": 1161,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.165; flagged=True"
+}

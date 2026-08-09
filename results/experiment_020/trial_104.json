@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:47:11.792917+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is intestate succession?",
+    "field": "Law",
+    "specific_field": "Law of succession",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Intestate Succession\n\n**Intestate succession** refers to the legal process that determines how a deceased person's assets are distributed when they die without a valid will (or with a will that fails to dispose of all their property). The term comes from \"intestate,\" meaning \"without a testament.\"\n\n## How It Works\n\nWhen someone dies intestate, state law\u2014rather than the deceased's personal wishes\u2014dictates who inherits their property. Each state has its own intestacy statutes, though they share common principles rooted in prioritizing close family relationships.\n\n## Typical Distribution Patterns\n\nWhile laws vary significantly by state, general patterns include:\n\n- **Surviving spouse only, no children**: The spouse typically inherits 100% of the estate in many states\n- **Surviving spouse and children from that marriage**: The spouse often receives the first approximately $50,000\u2013$150,000 plus roughly 50% of the remaining balance, with children splitting the rest (exact figures vary widely by jurisdiction)\n- **Surviving spouse with children from another relationship**: Often results in a roughly 50/50 split between spouse and children, though this varies considerably\n- **Children only, no spouse**: Estate is typically divided equally among children (per stirpes or per capita distribution)\n- **No spouse or children**: Assets generally pass to parents, then siblings, then more distant relatives (grandparents, aunts/uncles, cousins) in a specific order of priority\n\n## Key Concepts\n\n- **Per stirpes**: If a child has predeceased the parent, that child's share passes to their own descendants (grandchildren of the deceased)\n- **Escheat**: If no relatives can be found after an exhaustive search (sometimes extending to third or fourth-degree relatives), the estate \"escheats\" to the state\n- **Community property states**: Approximately 9 states (including California, Texas, and Arizona) have different rules affecting how marital property is divided, often giving spouses automatic rights to roughly 50% of community property\n\n## Important Limitations\n\nIntestate succession laws typically **exclude**:\n- Unmarried partners (regardless of relationship length)\n- Stepchildren (unless legally adopted)\n- Close friends\n- Charitable organizations\n- Foster children (without formal adoption)\n\n## Practical Implications\n\n- The probate process for intestate estates often takes longer\u2014sometimes **6 months to 2 years or more**\u2014compared to estates with clear wills\n- Legal and administrative costs can consume approximately **3\u20138%** of the estate's value\n- Family disputes are statistically more common in intestate cases due to ambiguity or perceived unfairness\n\n## Bottom Line\n\nBecause intestate succession removes personal choice from asset distribution, estate planning attorneys generally recommend creating a valid will to ensure property passes according to individual wishes rather than default statutory formulas. Laws differ significantly by state, so consulting a local probate attorney is advisable for specific situations.",
+    "latency_ms": 12084.0,
+    "input_tokens": 118,
+    "output_tokens": 947
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is intestate succession?",
+      "field": "Law"
+    },
+    "response": "# Intestate Succession\n\n**Intestate succession** refers to the legal process that determines how a deceased person's assets are distributed when they die without a valid will (or with a will that fails to dispose of all their property). The term comes from \"intestate,\" meaning \"without a testament.\"\n\n## How It Works\n\nWhen someone dies intestate, state law\u2014rather than the deceased's personal wishes\u2014dictates who inherits their property. Each state has its own intestacy statutes, though they share common principles rooted in prioritizing close family relationships.\n\n## Typical Distribution Patterns\n\nWhile laws vary significantly by state, general patterns include:\n\n- **Surviving spouse only, no children**: The spouse typically inherits 100% of the estate in many states\n- **Surviving spouse and children from that marriage**: The spouse often receives the first approximately $50,000\u2013$150,000 plus roughly 50% of the remaining balance, with children splitting the rest (exact figures vary widely by jurisdiction)\n- **Surviving spouse with children from another relationship**: Often results in a roughly 50/50 split between spouse and children, though this varies considerably\n- **Children only, no spouse**: Estate is typically divided equally among children (per stirpes or per capita distribution)\n- **No spouse or children**: Assets generally pass to parents, then siblings, then more distant relatives (grandparents, aunts/uncles, cousins) in a specific order of priority\n\n## Key Concepts\n\n- **Per stirpes**: If a child has predeceased the parent, that child's share passes to their own descendants (grandchildren of the deceased)\n- **Escheat**: If no relatives can be found after an exhaustive search (sometimes extending to third or fourth-degree relatives), the estate \"escheats\" to the state\n- **Community property states**: Approximately 9 states (including California, Texas, and Arizona) have different rules affecting how marital property is divided, often giving spouses automatic rights to roughly 50% of community property\n\n## Important Limitations\n\nIntestate succession laws typically **exclude**:\n- Unmarried partners (regardless of relationship length)\n- Stepchildren (unless legally adopted)\n- Close friends\n- Charitable organizations\n- Foster children (without formal adoption)\n\n## Practical Implications\n\n- The probate process for intestate estates often takes longer\u2014sometimes **6 months to 2 years or more**\u2014compared to estates with clear wills\n- Legal and administrative costs can consume approximately **3\u20138%** of the estate's value\n- Family disputes are statistically more common in intestate cases due to ambiguity or perceived unfairness\n\n## Bottom Line\n\nBecause intestate succession removes personal choice from asset distribution, estate planning attorneys generally recommend creating a valid will to ensure property passes according to individual wishes rather than default statutory formulas. Laws differ significantly by state, so consulting a local probate attorney is advisable for specific situations.",
+    "latency_ms": 12084.0,
+    "token_count": 1065,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "a20fa0058f74",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240031.7921557,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 8 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4313,
+          "evidence": [
+            "Latency 12084ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12084.0,
+        "token_count": 1065,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.104; flagged=True"
+}

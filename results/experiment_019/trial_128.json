@@ -1,0 +1,74 @@
+{
+  "timestamp_utc": "2026-08-09T00:09:50.938941+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is a command and Control Plan?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Emergency Planning",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "A **Command and Control Plan**\u2014often abbreviated **C2 Plan**\u2014is a written framework that explains **who has authority, how decisions are made, how information flows, and how people coordinate actions** during an operation, project, emergency, military mission, security incident, or large organizational event.\n\nIts core purpose is to prevent confusion when fast, coordinated action is needed.\n\n## Two key concepts\n\n### Command\n**Command** is the authority to direct people and resources. It answers questions such as:\n\n- Who is in charge?\n- Who can approve major decisions?\n- Who can order an evacuation, shutdown, deployment, or escalation?\n- Who assumes authority if the primary leader is unavailable?\n\nFor example, a plan may state that the Incident Commander has overall authority, while section leaders control operations, logistics, planning, and communications within their assigned areas.\n\n### Control\n**Control** is the process of monitoring, coordinating, communicating, and adjusting actions to achieve the objective. It includes:\n\n- Tracking the situation in real time\n- Receiving reports from teams\n- Allocating personnel and equipment\n- Maintaining communications\n- Identifying risks\n- Changing the plan when conditions change\n\nIn simple terms: **command decides; control coordinates and monitors.**\n\n## What a Command and Control Plan usually contains\n\nA typical C2 Plan includes the following elements:\n\n1. **Mission or objective**\n   - What the organization is trying to accomplish.\n   - Example: protect personnel, restore systems, contain an incident, or complete an operation within a specified timeframe.\n\n2. **Command structure**\n   - Names, roles, ranks, or job titles of decision-makers.\n   - Often includes a hierarchy or organizational chart.\n   - May identify a primary commander, deputy, alternates, and section leaders.\n\n3. **Roles and responsibilities**\n   - Defines what each person or team is expected to do.\n   - For example:\n     - Operations lead: executes field actions\n     - Planning lead: develops forecasts and next steps\n     - Logistics lead: provides equipment, transport, food, fuel, or supplies\n     - Communications lead: manages radio, phone, data, and reporting systems\n\n4. **Authority and delegation**\n   - Specifies who can make which decisions.\n   - May include thresholds, such as requiring executive approval for expenses above a certain amount, public warnings, use of specialized resources, or operational escalation.\n\n5. **Communication plan**\n   - Lists communication methods, radio channels, call signs, phone trees, email groups, secure messaging systems, reporting intervals, and backup methods.\n   - A robust plan normally includes at least 2 or 3 redundant communication methods in case the primary method fails.\n\n6. **Reporting procedures**\n   - Explains who reports to whom, what information must be reported, and how often.\n   - For example, teams may provide status reports every 15, 30, or 60 minutes during a fast-moving incident.\n\n7. **Decision-making and escalation procedures**\n   - Defines when an issue must be elevated to higher authority.\n   - Example triggers may include injury or loss of life, major service outage, security compromise, regulatory notification requirements, or projected financial losses beyond a defined threshold.\n\n8. **Resource management**\n   - Identifies available people, vehicles, equipment, facilities, funding, and external support.\n   - Specifies how resources are requested, approved, assigned, tracked, and released.\n\n9. **Situation awareness**\n   - Establishes how the organization collects and shares current information.\n   - This may include maps, dashboards, intelligence updates, incident logs, weather reports, system-monitoring data, or field reports.\n\n10. **Contingencies and succession**\n    - Explains what happens if leadership, communications, facilities, or critical systems fail.\n    - Includes alternate command locations and successors for key leadership roles.\n\n11. **Safety, legal, and policy requirements**\n    - Covers safety procedures, use-of-force rules where relevant, privacy requirements, regulatory duties, and documentation standards.\n\n## Example: emergency response\n\nDuring a wildfire, a Command and Control Plan might identify:\n\n- **Incident Commander:** overall authority for the response\n- **Operations Section:** directs firefighters and evacuation teams\n- **Planning Section:** predicts fire spread and prepares the next operational period\n- **Logistics Section:** provides fuel, food, vehicles, radios, and shelter\n- **Public Information Officer:** provides approved updates to the public and media\n- **Communications Unit:** assigns radio frequencies and maintains backup communications\n\nThe plan may require situation updates every 30 minutes, formal operational briefings every 12 hours, and immediate escalation for events such as trapped personnel, rapid fire growth, or failure of evacuation routes.\n\n## Example: business or cybersecurity incident\n\nFor a ransomware attack, a C2 Plan could specify:\n\n- The Chief Information Security Officer or incident commander leads the response.\n- The IT team isolates affected systems.\n- Legal and compliance assess notification obligations.\n- Communications prepares employee, customer, regulator, and media statements.\n- Executives approve whether to shut",
+    "latency_ms": 12128.9,
+    "input_tokens": 80,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is a command and Control Plan?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "A **Command and Control Plan**\u2014often abbreviated **C2 Plan**\u2014is a written framework that explains **who has authority, how decisions are made, how information flows, and how people coordinate actions** during an operation, project, emergency, military mission, security incident, or large organizational event.\n\nIts core purpose is to prevent confusion when fast, coordinated action is needed.\n\n## Two key concepts\n\n### Command\n**Command** is the authority to direct people and resources. It answers questions such as:\n\n- Who is in charge?\n- Who can approve major decisions?\n- Who can order an evacuation, shutdown, deployment, or escalation?\n- Who assumes authority if the primary leader is unavailable?\n\nFor example, a plan may state that the Incident Commander has overall authority, while section leaders control operations, logistics, planning, and communications within their assigned areas.\n\n### Control\n**Control** is the process of monitoring, coordinating, communicating, and adjusting actions to achieve the objective. It includes:\n\n- Tracking the situation in real time\n- Receiving reports from teams\n- Allocating personnel and equipment\n- Maintaining communications\n- Identifying risks\n- Changing the plan when conditions change\n\nIn simple terms: **command decides; control coordinates and monitors.**\n\n## What a Command and Control Plan usually contains\n\nA typical C2 Plan includes the following elements:\n\n1. **Mission or objective**\n   - What the organization is trying to accomplish.\n   - Example: protect personnel, restore systems, contain an incident, or complete an operation within a specified timeframe.\n\n2. **Command structure**\n   - Names, roles, ranks, or job titles of decision-makers.\n   - Often includes a hierarchy or organizational chart.\n   - May identify a primary commander, deputy, alternates, and section leaders.\n\n3. **Roles and responsibilities**\n   - Defines what each person or team is expected to do.\n   - For example:\n     - Operations lead: executes field actions\n     - Planning lead: develops forecasts and next steps\n     - Logistics lead: provides equipment, transport, food, fuel, or supplies\n     - Communications lead: manages radio, phone, data, and reporting systems\n\n4. **Authority and delegation**\n   - Specifies who can make which decisions.\n   - May include thresholds, such as requiring executive approval for expenses above a certain amount, public warnings, use of specialized resources, or operational escalation.\n\n5. **Communication plan**\n   - Lists communication methods, radio channels, call signs, phone trees, email groups, secure messaging systems, reporting intervals, and backup methods.\n   - A robust plan normally includes at least 2 or 3 redundant communication methods in case the primary method fails.\n\n6. **Reporting procedures**\n   - Explains who reports to whom, what information must be reported, and how often.\n   - For example, teams may provide status reports every 15, 30, or 60 minutes during a fast-moving incident.\n\n7. **Decision-making and escalation procedures**\n   - Defines when an issue must be elevated to higher authority.\n   - Example triggers may include injury or loss of life, major service outage, security compromise, regulatory notification requirements, or projected financial losses beyond a defined threshold.\n\n8. **Resource management**\n   - Identifies available people, vehicles, equipment, facilities, funding, and external support.\n   - Specifies how resources are requested, approved, assigned, tracked, and released.\n\n9. **Situation awareness**\n   - Establishes how the organization collects and shares current information.\n   - This may include maps, dashboards, intelligence updates, incident logs, weather reports, system-monitoring data, or field reports.\n\n10. **Contingencies and succession**\n    - Explains what happens if leadership, communications, facilities, or critical systems fail.\n    - Includes alternate command locations and successors for key leadership roles.\n\n11. **Safety, legal, and policy requirements**\n    - Covers safety procedures, use-of-force rules where relevant, privacy requirements, regulatory duties, and documentation standards.\n\n## Example: emergency response\n\nDuring a wildfire, a Command and Control Plan might identify:\n\n- **Incident Commander:** overall authority for the response\n- **Operations Section:** directs firefighters and evacuation teams\n- **Planning Section:** predicts fire spread and prepares the next operational period\n- **Logistics Section:** provides fuel, food, vehicles, radios, and shelter\n- **Public Information Officer:** provides approved updates to the public and media\n- **Communications Unit:** assigns radio frequencies and maintains backup communications\n\nThe plan may require situation updates every 30 minutes, formal operational briefings every 12 hours, and immediate escalation for events such as trapped personnel, rapid fire growth, or failure of evacuation routes.\n\n## Example: business or cybersecurity incident\n\nFor a ransomware attack, a C2 Plan could specify:\n\n- The Chief Information Security Officer or incident commander leads the response.\n- The IT team isolates affected systems.\n- Legal and compliance assess notification obligations.\n- Communications prepares employee, customer, regulator, and media statements.\n- Executives approve whether to shut",
+    "latency_ms": 12128.9,
+    "token_count": 1104,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "2fa7d1905b73",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234190.9381564,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4319,
+          "evidence": [
+            "Latency 12129ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12128.9,
+        "token_count": 1104,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.128; flagged=False"
+}

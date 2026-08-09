@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:04:03.887487+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What are the different ways to protect oneself from getting infected with the Covid-19 vaccine?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "midwifery",
+    "question_type": "Summarization of information on a topic| Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "If you mean **protecting yourself from COVID-19 infection using COVID-19 vaccination**, vaccination is one layer of protection, but it does **not provide complete sterilizing immunity**. It mainly reduces the risk of severe illness, hospitalization, and death, while also lowering\u2014but not eliminating\u2014the chance of infection and transmission.\n\n### 1. Stay up to date with recommended vaccines\n- Follow the current schedule recommended by your country\u2019s health authority.\n- Updated vaccines are designed to better match recently circulating variants.\n- Protection against infection tends to decline over time, often noticeably after **about 3\u20136 months**, while protection against severe disease generally lasts longer.\n- Older adults, people with weakened immune systems, and those with certain chronic conditions may be advised to receive doses more frequently\u2014for example, **every 6 months** in some programs.\n\n### 2. Get vaccinated before high-risk periods\nProtection takes time to develop:\n- Some immune response develops within **about 1\u20132 weeks** after vaccination.\n- Stronger protection generally develops over approximately **2 weeks**.\n- If a booster is recommended, receiving it **at least 1\u20132 weeks before** a period of likely exposure\u2014such as travel, indoor gatherings, or winter respiratory-virus season\u2014may be useful.\n\n### 3. Use additional layers of protection\nBecause breakthrough infections can occur, combine vaccination with:\n\n- **Well-fitting masks:** A properly fitted N95, KN95, FFP2, or similar respirator provides more protection than a loose surgical or cloth mask, especially in crowded indoor places.\n- **Ventilation:** Open windows, use exhaust fans, or use a portable HEPA cleaner. A commonly cited target is roughly **5\u20136 air changes per hour** in indoor spaces, although the appropriate level depends on room size and occupancy.\n- **Avoid crowded indoor settings** when transmission is high.\n- **Limit prolonged close contact** with people who have symptoms or a recent positive test.\n- **Test when appropriate**, especially after a known exposure, before visiting someone medically vulnerable, or when symptoms develop.\n- **Stay home when sick** and avoid close contact until you are improving and have been fever-free for at least **24 hours without fever-reducing medicine**; follow local guidance for additional precautions afterward.\n\n### 4. Take precautions after exposure\nIf you have been exposed:\n- Monitor for symptoms for roughly **10 days**.\n- Consider testing around **day 5** after exposure, or sooner if symptoms appear.\n- A single negative rapid antigen test does not reliably exclude infection. If symptoms continue or exposure risk is substantial, repeat testing after approximately **48 hours**, often for **2\u20133 tests** total.\n- Wear a high-quality mask around others during the monitoring period.\n\n### 5. Protect people at higher risk\nExtra caution is important around:\n- Adults aged approximately **65 years or older**\n- People receiving chemotherapy or transplant medications\n- People with significant immune suppression\n- Individuals with serious heart, lung, kidney, or metabolic disease\n- Pregnant people, depending on local medical advice\n\n### 6. If you develop COVID-19\nContact a healthcare professional promptly if you are at higher risk. Antiviral treatment\u2014such as nirmatrelvir/ritonavir when appropriate\u2014usually needs to begin within approximately **5 days of symptom onset**, while some alternatives may be started within about **7 days**. Do not start these medicines without medical guidance because drug interactions and kidney or liver conditions can matter.\n\nIn short: **keep vaccination current, use a well-fitting respirator in high-risk indoor settings, improve ventilation, test after exposures or when symptomatic, and avoid contact with others when ill.**",
+    "latency_ms": 6156.4,
+    "input_tokens": 90,
+    "output_tokens": 753
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the different ways to protect oneself from getting infected with the Covid-19 vaccine?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "If you mean **protecting yourself from COVID-19 infection using COVID-19 vaccination**, vaccination is one layer of protection, but it does **not provide complete sterilizing immunity**. It mainly reduces the risk of severe illness, hospitalization, and death, while also lowering\u2014but not eliminating\u2014the chance of infection and transmission.\n\n### 1. Stay up to date with recommended vaccines\n- Follow the current schedule recommended by your country\u2019s health authority.\n- Updated vaccines are designed to better match recently circulating variants.\n- Protection against infection tends to decline over time, often noticeably after **about 3\u20136 months**, while protection against severe disease generally lasts longer.\n- Older adults, people with weakened immune systems, and those with certain chronic conditions may be advised to receive doses more frequently\u2014for example, **every 6 months** in some programs.\n\n### 2. Get vaccinated before high-risk periods\nProtection takes time to develop:\n- Some immune response develops within **about 1\u20132 weeks** after vaccination.\n- Stronger protection generally develops over approximately **2 weeks**.\n- If a booster is recommended, receiving it **at least 1\u20132 weeks before** a period of likely exposure\u2014such as travel, indoor gatherings, or winter respiratory-virus season\u2014may be useful.\n\n### 3. Use additional layers of protection\nBecause breakthrough infections can occur, combine vaccination with:\n\n- **Well-fitting masks:** A properly fitted N95, KN95, FFP2, or similar respirator provides more protection than a loose surgical or cloth mask, especially in crowded indoor places.\n- **Ventilation:** Open windows, use exhaust fans, or use a portable HEPA cleaner. A commonly cited target is roughly **5\u20136 air changes per hour** in indoor spaces, although the appropriate level depends on room size and occupancy.\n- **Avoid crowded indoor settings** when transmission is high.\n- **Limit prolonged close contact** with people who have symptoms or a recent positive test.\n- **Test when appropriate**, especially after a known exposure, before visiting someone medically vulnerable, or when symptoms develop.\n- **Stay home when sick** and avoid close contact until you are improving and have been fever-free for at least **24 hours without fever-reducing medicine**; follow local guidance for additional precautions afterward.\n\n### 4. Take precautions after exposure\nIf you have been exposed:\n- Monitor for symptoms for roughly **10 days**.\n- Consider testing around **day 5** after exposure, or sooner if symptoms appear.\n- A single negative rapid antigen test does not reliably exclude infection. If symptoms continue or exposure risk is substantial, repeat testing after approximately **48 hours**, often for **2\u20133 tests** total.\n- Wear a high-quality mask around others during the monitoring period.\n\n### 5. Protect people at higher risk\nExtra caution is important around:\n- Adults aged approximately **65 years or older**\n- People receiving chemotherapy or transplant medications\n- People with significant immune suppression\n- Individuals with serious heart, lung, kidney, or metabolic disease\n- Pregnant people, depending on local medical advice\n\n### 6. If you develop COVID-19\nContact a healthcare professional promptly if you are at higher risk. Antiviral treatment\u2014such as nirmatrelvir/ritonavir when appropriate\u2014usually needs to begin within approximately **5 days of symptom onset**, while some alternatives may be started within about **7 days**. Do not start these medicines without medical guidance because drug interactions and kidney or liver conditions can matter.\n\nIn short: **keep vaccination current, use a well-fitting respirator in high-risk indoor settings, improve ventilation, test after exposures or when symptomatic, and avoid contact with others when ill.**",
+    "latency_ms": 6156.4,
+    "token_count": 843,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "406afa555263",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230243.8866556,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 11 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 6156.4,
+        "token_count": 843,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.158; flagged=True"
+}

@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:55:51.465286+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "A 68 year-old male with resistant hypertension is already medicated with perindopril, indapamide, amlodipine, bisoprolol and rilmenidine at full dose, yet his blood pressure continues to be too high in the ABMP exam. He is asymptomatic. What should the approach be towards this patient's hypertension?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Family Medicine",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Approach to Resistant Hypertension in This Patient\n\n## Step 1: Confirm True Resistant Hypertension\n\nBefore escalating therapy, verify this is genuine resistance rather than pseudo-resistance:\n\n- **Confirm adherence**: Studies suggest approximately 30-50% of apparent treatment resistance is due to non-adherence. Consider pill counts, pharmacy refill records, or directly observed therapy if feasible.\n- **Verify correct technique**: Ensure proper cuff size, patient positioning, and ABPM device calibration.\n- **Reassess the ABPM data**: Confirm mean 24-hour BP is truly elevated (typically >130/80 mmHg by most guidelines), check daytime/nighttime patterns, and look for a \"non-dipping\" or \"riser\" pattern, which itself suggests secondary causes or worse cardiovascular risk.\n- **Review drug interactions**: NSAIDs, corticosteroids, oral contraceptives, decongestants (pseudoephedrine), liquorice, cocaine/stimulants, and excessive alcohol intake can all antagonize antihypertensive control.\n\n## Step 2: Reassess the Current Regimen\n\nHis current regimen is unusual and warrants scrutiny:\n\n- **Rilmenidine** is a centrally-acting agent (I1-imidazoline receptor agonist) \u2014 not first-line and rarely used in resistant HTN protocols; it's a weak agent with limited outcome data.\n- **The \"optimal\" resistant HTN triad** should be: **ACE-inhibitor/ARB + dihydropyridine CCB + thiazide-like diuretic** \u2014 which he already has (perindopril, amlodipine, indapamide).\n- **Missing step**: Before adding rilmenidine, the guideline-recommended **4th-line agent is spironolactone** (per PATHWAY-2 trial), which produced significantly greater BP reduction than either bisoprolol or doxazosin in resistant hypertension.\n\n### Recommended adjustment:\n- **Stop rilmenidine**, and **add spironolactone** starting at approximately **25 mg/day**, titrating to **50 mg/day** if tolerated and if potassium/renal function allow (monitor K+ closely \u2014 hold if K+ >5.5 mmol/L or eGFR <45 mL/min/1.73m\u00b2).\n- Bisoprolol can be continued if there is a compelling indication (e.g., prior MI, arrhythmia) but is otherwise a weaker 4th-line choice per PATHWAY-2 data.\n\n## Step 3: Screen for Secondary Hypertension\n\nGiven true resistance despite 5 drugs, secondary causes should be actively excluded, especially:\n\n1. **Primary aldosteronism** \u2014 most common cause, found in roughly **20% of resistant hypertension** cases. Check **plasma aldosterone/renin ratio** (ideally before starting spironolactone, or after washout).\n2. **Renal artery stenosis** \u2014 consider renal Doppler ultrasound or CT/MR angiography, particularly",
+    "latency_ms": 12827.9,
+    "input_tokens": 215,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A 68 year-old male with resistant hypertension is already medicated with perindopril, indapamide, amlodipine, bisoprolol and rilmenidine at full dose, yet his blood pressure continues to be too high in the ABMP exam. He is asymptomatic. What should the approach be towards this patient's hypertension?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Approach to Resistant Hypertension in This Patient\n\n## Step 1: Confirm True Resistant Hypertension\n\nBefore escalating therapy, verify this is genuine resistance rather than pseudo-resistance:\n\n- **Confirm adherence**: Studies suggest approximately 30-50% of apparent treatment resistance is due to non-adherence. Consider pill counts, pharmacy refill records, or directly observed therapy if feasible.\n- **Verify correct technique**: Ensure proper cuff size, patient positioning, and ABPM device calibration.\n- **Reassess the ABPM data**: Confirm mean 24-hour BP is truly elevated (typically >130/80 mmHg by most guidelines), check daytime/nighttime patterns, and look for a \"non-dipping\" or \"riser\" pattern, which itself suggests secondary causes or worse cardiovascular risk.\n- **Review drug interactions**: NSAIDs, corticosteroids, oral contraceptives, decongestants (pseudoephedrine), liquorice, cocaine/stimulants, and excessive alcohol intake can all antagonize antihypertensive control.\n\n## Step 2: Reassess the Current Regimen\n\nHis current regimen is unusual and warrants scrutiny:\n\n- **Rilmenidine** is a centrally-acting agent (I1-imidazoline receptor agonist) \u2014 not first-line and rarely used in resistant HTN protocols; it's a weak agent with limited outcome data.\n- **The \"optimal\" resistant HTN triad** should be: **ACE-inhibitor/ARB + dihydropyridine CCB + thiazide-like diuretic** \u2014 which he already has (perindopril, amlodipine, indapamide).\n- **Missing step**: Before adding rilmenidine, the guideline-recommended **4th-line agent is spironolactone** (per PATHWAY-2 trial), which produced significantly greater BP reduction than either bisoprolol or doxazosin in resistant hypertension.\n\n### Recommended adjustment:\n- **Stop rilmenidine**, and **add spironolactone** starting at approximately **25 mg/day**, titrating to **50 mg/day** if tolerated and if potassium/renal function allow (monitor K+ closely \u2014 hold if K+ >5.5 mmol/L or eGFR <45 mL/min/1.73m\u00b2).\n- Bisoprolol can be continued if there is a compelling indication (e.g., prior MI, arrhythmia) but is otherwise a weaker 4th-line choice per PATHWAY-2 data.\n\n## Step 3: Screen for Secondary Hypertension\n\nGiven true resistance despite 5 drugs, secondary causes should be actively excluded, especially:\n\n1. **Primary aldosteronism** \u2014 most common cause, found in roughly **20% of resistant hypertension** cases. Check **plasma aldosterone/renin ratio** (ideally before starting spironolactone, or after washout).\n2. **Renal artery stenosis** \u2014 consider renal Doppler ultrasound or CT/MR angiography, particularly",
+    "latency_ms": 12827.9,
+    "token_count": 1239,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "41e7dfa2bd34",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240551.464522,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 14 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4424,
+          "evidence": [
+            "Latency 12828ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12827.9,
+        "token_count": 1239,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.146; flagged=True"
+}

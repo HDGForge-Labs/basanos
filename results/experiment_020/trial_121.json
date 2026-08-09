@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:50:38.876613+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "I would like your opinion on acceptance and commitment therapy for personality disorders.",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Psychiatry ",
+    "question_type": "Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Acceptance and Commitment Therapy (ACT) for Personality Disorders\n\nHere's my perspective on the evidence and clinical considerations:\n\n## Overall Evidence Base\n\nACT for personality disorders (PDs) remains a relatively young area compared to established treatments like Dialectical Behavior Therapy (DBT) or Mentalization-Based Treatment (MBT). The evidence is promising but not yet robust enough to consider ACT a first-line, gold-standard treatment for most PDs, particularly Borderline Personality Disorder (BPD).\n\n- Roughly 10-15 controlled studies have examined ACT specifically for PD populations, compared to over 20 randomized controlled trials for DBT in BPD alone.\n- Most ACT-PD studies have small sample sizes, often ranging from approximately 20 to 80 participants, limiting statistical power and generalizability.\n\n## Borderline Personality Disorder Specifically\n\n- Some small trials suggest ACT may produce moderate reductions in BPD symptom severity, with effect sizes sometimes reported around 0.5 to 0.8 (Cohen's d), though this varies considerably by study.\n- A few studies have shown roughly 30-50% reductions in self-harm or suicidal ideation frequency over 12-16 week treatment periods, but these numbers come from small, often uncontrolled samples.\n- DBT still has substantially stronger evidence, with meta-analyses showing consistent reductions in self-harm behaviors of approximately 40-60% and hospitalization reductions of similar magnitude across multiple well-powered RCTs.\n\n## Theoretical Fit\n\nI think ACT's core processes align reasonably well with PD psychopathology:\n\n- **Experiential avoidance** is central to ACT's model and maps onto many PD presentations, particularly the emotional avoidance seen in BPD, Avoidant PD, and some presentations of Narcissistic PD.\n- **Cognitive fusion** with rigid self-narratives (e.g., \"I am fundamentally damaged\" or \"I am inherently unlovable\") resonates with the identity disturbances common across Cluster B and C disorders.\n- **Values-based action** may be particularly useful for Cluster C disorders (Avoidant, Dependent, Obsessive-Compulsive PD), where rigid avoidance of feared situations limits functioning.\n\n## Limitations I'd Flag\n\n1. **Lack of structured crisis protocols**: Unlike DBT, standard ACT doesn't include specific skills modules for acute crisis management (e.g., distress tolerance skills, chain analysis), which many clinicians consider essential for high-risk BPD presentations.\n\n2. **Limited dosage/format research**: Treatment lengths in studies vary widely, from brief 8-session protocols to longer-term treatments extending 6-12 months, making it hard to determine optimal \"dose.\"\n\n3. **Diagnostic heterogeneity**: Much PD research lumps diverse presentations together, and ACT studies are no exception\u2014it's unclear if ACT works equally well across Cluster A, B",
+    "latency_ms": 12232.6,
+    "input_tokens": 136,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "I would like your opinion on acceptance and commitment therapy for personality disorders.",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Acceptance and Commitment Therapy (ACT) for Personality Disorders\n\nHere's my perspective on the evidence and clinical considerations:\n\n## Overall Evidence Base\n\nACT for personality disorders (PDs) remains a relatively young area compared to established treatments like Dialectical Behavior Therapy (DBT) or Mentalization-Based Treatment (MBT). The evidence is promising but not yet robust enough to consider ACT a first-line, gold-standard treatment for most PDs, particularly Borderline Personality Disorder (BPD).\n\n- Roughly 10-15 controlled studies have examined ACT specifically for PD populations, compared to over 20 randomized controlled trials for DBT in BPD alone.\n- Most ACT-PD studies have small sample sizes, often ranging from approximately 20 to 80 participants, limiting statistical power and generalizability.\n\n## Borderline Personality Disorder Specifically\n\n- Some small trials suggest ACT may produce moderate reductions in BPD symptom severity, with effect sizes sometimes reported around 0.5 to 0.8 (Cohen's d), though this varies considerably by study.\n- A few studies have shown roughly 30-50% reductions in self-harm or suicidal ideation frequency over 12-16 week treatment periods, but these numbers come from small, often uncontrolled samples.\n- DBT still has substantially stronger evidence, with meta-analyses showing consistent reductions in self-harm behaviors of approximately 40-60% and hospitalization reductions of similar magnitude across multiple well-powered RCTs.\n\n## Theoretical Fit\n\nI think ACT's core processes align reasonably well with PD psychopathology:\n\n- **Experiential avoidance** is central to ACT's model and maps onto many PD presentations, particularly the emotional avoidance seen in BPD, Avoidant PD, and some presentations of Narcissistic PD.\n- **Cognitive fusion** with rigid self-narratives (e.g., \"I am fundamentally damaged\" or \"I am inherently unlovable\") resonates with the identity disturbances common across Cluster B and C disorders.\n- **Values-based action** may be particularly useful for Cluster C disorders (Avoidant, Dependent, Obsessive-Compulsive PD), where rigid avoidance of feared situations limits functioning.\n\n## Limitations I'd Flag\n\n1. **Lack of structured crisis protocols**: Unlike DBT, standard ACT doesn't include specific skills modules for acute crisis management (e.g., distress tolerance skills, chain analysis), which many clinicians consider essential for high-risk BPD presentations.\n\n2. **Limited dosage/format research**: Treatment lengths in studies vary widely, from brief 8-session protocols to longer-term treatments extending 6-12 months, making it hard to determine optimal \"dose.\"\n\n3. **Diagnostic heterogeneity**: Much PD research lumps diverse presentations together, and ACT studies are no exception\u2014it's unclear if ACT works equally well across Cluster A, B",
+    "latency_ms": 12232.6,
+    "token_count": 1160,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "fdbaac29106d",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240238.8758686,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 14 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4335,
+          "evidence": [
+            "Latency 12233ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12232.6,
+        "token_count": 1160,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.121; flagged=True"
+}

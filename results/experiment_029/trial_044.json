@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T22:29:52.359396+00:00",
+  "detector": "context_degradation",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "who pays medical bills in great britain where does the money come from to pay these bills",
+    "gold_index": 0
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "In Great Britain, most medical care is provided through the **National Health Service (NHS)**, which is funded primarily through **general taxation**, following the \"Beveridge Model\" of healthcare (Documents [1], [9], [10]).\n\nKey points about how this system works:\n\n1. **Funding source**: The NHS is paid for from general taxation rather than direct patient fees or dedicated payroll contributions (",
+    "latency_ms": 2448.8,
+    "input_tokens": 2108,
+    "output_tokens": 128
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "who pays medical bills in great britain where does the money come from to pay these bills",
+      "gold_index": 0,
+      "n_docs": 10
+    },
+    "response": "In Great Britain, most medical care is provided through the **National Health Service (NHS)**, which is funded primarily through **general taxation**, following the \"Beveridge Model\" of healthcare (Documents [1], [9], [10]).\n\nKey points about how this system works:\n\n1. **Funding source**: The NHS is paid for from general taxation rather than direct patient fees or dedicated payroll contributions (",
+    "latency_ms": 2448.8,
+    "token_count": 2236,
+    "context_window_used": 0.25
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "41044fcddc55",
+      "tool_name": "context_qa",
+      "status": "pass",
+      "timestamp": 1786314592.3586423,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2448.8,
+        "token_count": 2236,
+        "context_window_used": 0.25,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.44; flagged=False; gold_index=0"
+}

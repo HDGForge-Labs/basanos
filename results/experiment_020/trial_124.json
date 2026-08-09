@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:51:15.590179+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is the outstanding role of advanced technologies used in Monitoring of clinical trials?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Clinical Research",
+    "question_type": "Summarization of information on a topic| Request for a list of resources where one can find more information| Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Role of Advanced Technologies in Clinical Trial Monitoring\n\nAdvanced technologies have transformed clinical trial monitoring from traditional on-site, paper-based approaches to sophisticated, data-driven systems. Here's a comprehensive overview:\n\n## 1. **Risk-Based Monitoring (RBM)**\n\nRBM has largely replaced 100% source data verification (SDV), which historically consumed approximately **25-30% of total trial costs**.\n\n- Uses statistical algorithms to identify sites/data points needing attention\n- Reduces on-site monitoring visits by approximately **40-60%**\n- Can decrease overall monitoring costs by roughly **15-25%**\n- FDA and EMA guidance (since around 2013) actively encourage this approach\n\n## 2. **Remote/Centralized Monitoring & eSource**\n\n- **Electronic Data Capture (EDC)** systems now used in over **90%** of trials globally\n- Enables real-time data review versus traditional lag times of **2-4 weeks**\n- Reduces query resolution time from approximately **30 days to 7-10 days**\n- Central monitoring can detect data anomalies **3-5 times faster** than periodic site visits\n\n## 3. **Artificial Intelligence & Machine Learning**\n\n- **Predictive analytics** identify at-risk sites before issues escalate, potentially reducing protocol deviations by approximately **20-35%**\n- AI-driven algorithms can flag data inconsistencies with **85-95% accuracy** in pattern detection\n- Natural Language Processing (NLP) reduces manual query review time by roughly **50-70%**\n- Machine learning models predict patient dropout risk, potentially improving retention by **10-20%**\n\n## 4. **Wearable Devices & Remote Patient Monitoring**\n\n- Continuous data collection versus intermittent clinic visits (typically every **4-12 weeks**)\n- Can increase data points collected per patient by **100-1000 fold**\n- Improves protocol compliance monitoring, potentially reducing missing data by **15-30%**\n- Enables detection of adverse events within **hours** rather than **days to weeks**\n\n## 5. **Blockchain Technology**\n\n- Ensures data integrity with tamper-proof audit trails\n- Potential to reduce data fraud/manipulation risk by an estimated **60-80%**\n- Streamlines consent management and chain-of-custody documentation\n\n## 6. **Electronic Clinical Outcome Assessments (eCOA) and ePRO**\n\n- Improves data completeness rates to approximately **95-98%** (versus **70-85%** with paper diaries)\n- Reduces transcription errors by roughly **90%**\n- Real-time alerts for missed entries within **24 hours**\n\n## 7. **Cloud-Based Platforms & Interactive Dashboards**\n\n- Enable real-time Key Risk Indicator (KRI) tracking across **50-500+ sites** simultaneously\n- Reduce time to identify site performance issues from **weeks to days** (often **48-72 hours**)\n- Support decentralized",
+    "latency_ms": 12492.0,
+    "input_tokens": 139,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the outstanding role of advanced technologies used in Monitoring of clinical trials?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Role of Advanced Technologies in Clinical Trial Monitoring\n\nAdvanced technologies have transformed clinical trial monitoring from traditional on-site, paper-based approaches to sophisticated, data-driven systems. Here's a comprehensive overview:\n\n## 1. **Risk-Based Monitoring (RBM)**\n\nRBM has largely replaced 100% source data verification (SDV), which historically consumed approximately **25-30% of total trial costs**.\n\n- Uses statistical algorithms to identify sites/data points needing attention\n- Reduces on-site monitoring visits by approximately **40-60%**\n- Can decrease overall monitoring costs by roughly **15-25%**\n- FDA and EMA guidance (since around 2013) actively encourage this approach\n\n## 2. **Remote/Centralized Monitoring & eSource**\n\n- **Electronic Data Capture (EDC)** systems now used in over **90%** of trials globally\n- Enables real-time data review versus traditional lag times of **2-4 weeks**\n- Reduces query resolution time from approximately **30 days to 7-10 days**\n- Central monitoring can detect data anomalies **3-5 times faster** than periodic site visits\n\n## 3. **Artificial Intelligence & Machine Learning**\n\n- **Predictive analytics** identify at-risk sites before issues escalate, potentially reducing protocol deviations by approximately **20-35%**\n- AI-driven algorithms can flag data inconsistencies with **85-95% accuracy** in pattern detection\n- Natural Language Processing (NLP) reduces manual query review time by roughly **50-70%**\n- Machine learning models predict patient dropout risk, potentially improving retention by **10-20%**\n\n## 4. **Wearable Devices & Remote Patient Monitoring**\n\n- Continuous data collection versus intermittent clinic visits (typically every **4-12 weeks**)\n- Can increase data points collected per patient by **100-1000 fold**\n- Improves protocol compliance monitoring, potentially reducing missing data by **15-30%**\n- Enables detection of adverse events within **hours** rather than **days to weeks**\n\n## 5. **Blockchain Technology**\n\n- Ensures data integrity with tamper-proof audit trails\n- Potential to reduce data fraud/manipulation risk by an estimated **60-80%**\n- Streamlines consent management and chain-of-custody documentation\n\n## 6. **Electronic Clinical Outcome Assessments (eCOA) and ePRO**\n\n- Improves data completeness rates to approximately **95-98%** (versus **70-85%** with paper diaries)\n- Reduces transcription errors by roughly **90%**\n- Real-time alerts for missed entries within **24 hours**\n\n## 7. **Cloud-Based Platforms & Interactive Dashboards**\n\n- Enable real-time Key Risk Indicator (KRI) tracking across **50-500+ sites** simultaneously\n- Reduce time to identify site performance issues from **weeks to days** (often **48-72 hours**)\n- Support decentralized",
+    "latency_ms": 12492.0,
+    "token_count": 1163,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "f65508cd39b5",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240275.5893826,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 30 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4374,
+          "evidence": [
+            "Latency 12492ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12492.0,
+        "token_count": 1163,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.124; flagged=True"
+}

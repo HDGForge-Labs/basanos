@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:37:25.510070+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "A nine year old girl with severe ADHD has already tried all drugs that are allowed for children. None of them was sucessful. There was no benefit from the drugs, but many negative side effects from on just a little dose. What else can I try, if an ADHD patient isn't responding to any drug?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Psychotherapy",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# When First-Line ADHD Medications Fail\n\nThis is a real clinical situation, and there are several avenues left to explore. Let me break this down systematically.\n\n## First, clarify what's actually been tried\n\n\"All drugs allowed for children\" often means less than people assume. Confirm specifically which of these were tried, at what doses, and for how long:\n\n- **Stimulants**: methylphenidate (Ritalin, Concerta, Medikinet, Equasym) AND amphetamine-based ones (Elvanse/Vyvanse, Attentin) \u2014 these are chemically distinct classes, and non-response to one doesn't predict non-response to the other. Many kids who fail methylphenidate do fine on lisdexamfetamine.\n- **Non-stimulants**: atomoxetine (Strattera) and guanfacine (Intuniv) \u2014 these work through completely different mechanisms and take 2-6 weeks to show effect, often at low starting doses. A \"little dose\" causing side effects with no benefit sometimes means the dose was never titrated high enough to reach a therapeutic window \u2014 dose-response curves for stimulants especially are highly individual and non-linear.\n\nIf she hasn't tried lisdexamfetamine, atomoxetine, AND guanfacine (or clonidine) as distinct trials, there are still real options.\n\n## Reconsider the diagnosis\n\nSevere treatment resistance across multiple drug classes should trigger a diagnostic re-evaluation:\n\n- **Autism spectrum co-occurrence** \u2014 ADHD meds, especially stimulants, often work poorly or worsen irritability in autistic kids\n- **Anxiety disorder** mimicking or comorbid with ADHD \u2014 stimulants frequently worsen anxiety-driven inattention and can cause paradoxical side effects\n- **Bipolar spectrum/mood dysregulation** \u2014 stimulants can destabilize mood, causing what looks like \"no benefit, all side effects\"\n- **Trauma history/complex PTSD** \u2014 hypervigilance and dysregulation can look exactly like ADHD but responds poorly to stimulants\n- **Sensory processing issues, learning disabilities, sleep disorders** (especially undiagnosed sleep apnea or restless leg syndrome \u2014 very common cause of \"ADHD\" that doesn't respond to stimulants)\n- **Iron deficiency** \u2014 even without anemia, low ferritin is linked to poor stimulant response; worth checking ferritin levels\n- **Thyroid dysfunction**\n\nA pediatric psychiatrist or developmental pediatrician doing a fresh, thorough workup (not just a checklist) is worth pursuing if this hasn't happened recently.\n\n## Off-label / second-line pharmacological options\n\nThese require a specialist (pediatric psychiatrist) willing to prescribe off-label:\n\n- **Clonidine** (if guanfacine wasn't tried \u2014 they're related but not identical)\n- **Bupropion** \u2014 off-label but reasonably good evidence base in kids\n- **Modafinil/armodafinil** \u2014 off-label, some evidence for ADHD, different mechanism\n- **Viloxazine",
+    "latency_ms": 12001.2,
+    "input_tokens": 205,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A nine year old girl with severe ADHD has already tried all drugs that are allowed for children. None of them was sucessful. There was no benefit from the drugs, but many negative side effects from on just a little dose. What else can I try, if an ADHD patient isn't responding to any drug?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# When First-Line ADHD Medications Fail\n\nThis is a real clinical situation, and there are several avenues left to explore. Let me break this down systematically.\n\n## First, clarify what's actually been tried\n\n\"All drugs allowed for children\" often means less than people assume. Confirm specifically which of these were tried, at what doses, and for how long:\n\n- **Stimulants**: methylphenidate (Ritalin, Concerta, Medikinet, Equasym) AND amphetamine-based ones (Elvanse/Vyvanse, Attentin) \u2014 these are chemically distinct classes, and non-response to one doesn't predict non-response to the other. Many kids who fail methylphenidate do fine on lisdexamfetamine.\n- **Non-stimulants**: atomoxetine (Strattera) and guanfacine (Intuniv) \u2014 these work through completely different mechanisms and take 2-6 weeks to show effect, often at low starting doses. A \"little dose\" causing side effects with no benefit sometimes means the dose was never titrated high enough to reach a therapeutic window \u2014 dose-response curves for stimulants especially are highly individual and non-linear.\n\nIf she hasn't tried lisdexamfetamine, atomoxetine, AND guanfacine (or clonidine) as distinct trials, there are still real options.\n\n## Reconsider the diagnosis\n\nSevere treatment resistance across multiple drug classes should trigger a diagnostic re-evaluation:\n\n- **Autism spectrum co-occurrence** \u2014 ADHD meds, especially stimulants, often work poorly or worsen irritability in autistic kids\n- **Anxiety disorder** mimicking or comorbid with ADHD \u2014 stimulants frequently worsen anxiety-driven inattention and can cause paradoxical side effects\n- **Bipolar spectrum/mood dysregulation** \u2014 stimulants can destabilize mood, causing what looks like \"no benefit, all side effects\"\n- **Trauma history/complex PTSD** \u2014 hypervigilance and dysregulation can look exactly like ADHD but responds poorly to stimulants\n- **Sensory processing issues, learning disabilities, sleep disorders** (especially undiagnosed sleep apnea or restless leg syndrome \u2014 very common cause of \"ADHD\" that doesn't respond to stimulants)\n- **Iron deficiency** \u2014 even without anemia, low ferritin is linked to poor stimulant response; worth checking ferritin levels\n- **Thyroid dysfunction**\n\nA pediatric psychiatrist or developmental pediatrician doing a fresh, thorough workup (not just a checklist) is worth pursuing if this hasn't happened recently.\n\n## Off-label / second-line pharmacological options\n\nThese require a specialist (pediatric psychiatrist) willing to prescribe off-label:\n\n- **Clonidine** (if guanfacine wasn't tried \u2014 they're related but not identical)\n- **Bupropion** \u2014 off-label but reasonably good evidence base in kids\n- **Modafinil/armodafinil** \u2014 off-label, some evidence for ADHD, different mechanism\n- **Viloxazine",
+    "latency_ms": 12001.2,
+    "token_count": 1229
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "9db186dca2b3",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239445.5092375,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.43,
+          "evidence": [
+            "Latency 12001ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12001.2,
+        "token_count": 1229,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.56; flagged=False"
+}

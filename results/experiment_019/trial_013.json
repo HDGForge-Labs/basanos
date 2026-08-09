@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:54:01.756595+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "You are stood down from a bit breathing job due to a caller stating a DNAR is in place but around 30 minutes later it comes out that the patient choked, with the DNAR excluding reversible causes. With the patient not breathing for over 30 minutes, the family not wanting resuscitation, what is the best action course? ",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Ambulance ",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Treat this as a **new cardiac/respiratory arrest with a potentially reversible cause**, not simply as an expected death under the DNAR.\n\nBest course:\n\n1. **Immediately reassess the DNAR/advance decision**\n   - Confirm the document is valid and applicable.\n   - If it explicitly excludes reversible causes, a choking/airway-obstruction arrest is likely outside its scope.\n   - Establish whether there is any other documented ceiling-of-treatment plan or legally valid advance refusal that specifically covers ventilation/airway intervention in this circumstance.\n\n2. **Assess for signs of life and airway obstruction**\n   - Check responsiveness, breathing, pulse as per local policy.\n   - Manage suspected foreign-body airway obstruction and open/clear the airway as indicated.\n   - If there is any uncertainty about whether the DNAR applies, or whether the arrest is reversible, escalate to the appropriate clinician/ambulance control/medical advisor immediately.\n\n3. **Family wishes matter, but do not automatically override the patient\u2019s documented wishes or clinical duty**\n   - Family cannot generally make a DNAR decision on behalf of a competent adult simply because they do not want resuscitation.\n   - However, their information may clarify the patient\u2019s prior expressed wishes, the circumstances of the choking, and whether treatment would be consistent with the patient\u2019s values.\n   - If the patient\u2019s known wishes were not to undergo CPR even for reversible events, that should be respected where properly evidenced and documented.\n\n4. **Take account of prolonged downtime and clinical futility**\n   - \u201cNot breathing for over 30 minutes\u201d is highly significant, particularly if unwitnessed, no CPR has occurred, and there are no signs of life. In that setting, successful resuscitation with meaningful neurological recovery is extremely unlikely.\n   - If there is confirmed prolonged absence of circulation/respiration, no signs of life, and resuscitation would be futile or not in the patient\u2019s best interests, it may be appropriate to withhold or terminate resuscitation under local recognition-of-death/termination protocols\u2014even if choking was initially theoretically reversible.\n\n5. **Escalate and document**\n   - Contact the appropriate senior clinician, duty officer, ambulance clinical support desk, GP/out-of-hours service, or police/coroner pathway as required by your service policy.\n   - Record: timing, initial report, the DNAR wording, when choking became known, estimated downtime, assessment findings, family statements, advice received, and rationale for the decision.\n   - Provide compassionate support to the family and explain clearly that the decision is based on the patient\u2019s documented wishes, the prolonged downtime, and the absence of a realistic prospect of successful resuscitation.\n\nIn practical terms: **if the choking is discovered early and the DNAR genuinely excludes reversible causes, initiate/continue appropriate resuscitative airway management while seeking urgent clinical advice. If the patient has been apnoeic and pulseless for >30 minutes with no CPR, no signs of life, and the family confirms the patient would not want resuscitation, escalation for verification/recognition of death rather than commencing late CPR is usually the appropriate pathway.** Follow your organisation\u2019s specific DNAR, reversible-cause, and death-verification policies.",
+    "latency_ms": 9633.7,
+    "input_tokens": 148,
+    "output_tokens": 656
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "You are stood down from a bit breathing job due to a caller stating a DNAR is in place but around 30 minutes later it comes out that the patient choked, with the DNAR excluding reversible causes. With the patient not breathing for over 30 minutes, the family not wanting resuscitation, what is the best action course? ",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Treat this as a **new cardiac/respiratory arrest with a potentially reversible cause**, not simply as an expected death under the DNAR.\n\nBest course:\n\n1. **Immediately reassess the DNAR/advance decision**\n   - Confirm the document is valid and applicable.\n   - If it explicitly excludes reversible causes, a choking/airway-obstruction arrest is likely outside its scope.\n   - Establish whether there is any other documented ceiling-of-treatment plan or legally valid advance refusal that specifically covers ventilation/airway intervention in this circumstance.\n\n2. **Assess for signs of life and airway obstruction**\n   - Check responsiveness, breathing, pulse as per local policy.\n   - Manage suspected foreign-body airway obstruction and open/clear the airway as indicated.\n   - If there is any uncertainty about whether the DNAR applies, or whether the arrest is reversible, escalate to the appropriate clinician/ambulance control/medical advisor immediately.\n\n3. **Family wishes matter, but do not automatically override the patient\u2019s documented wishes or clinical duty**\n   - Family cannot generally make a DNAR decision on behalf of a competent adult simply because they do not want resuscitation.\n   - However, their information may clarify the patient\u2019s prior expressed wishes, the circumstances of the choking, and whether treatment would be consistent with the patient\u2019s values.\n   - If the patient\u2019s known wishes were not to undergo CPR even for reversible events, that should be respected where properly evidenced and documented.\n\n4. **Take account of prolonged downtime and clinical futility**\n   - \u201cNot breathing for over 30 minutes\u201d is highly significant, particularly if unwitnessed, no CPR has occurred, and there are no signs of life. In that setting, successful resuscitation with meaningful neurological recovery is extremely unlikely.\n   - If there is confirmed prolonged absence of circulation/respiration, no signs of life, and resuscitation would be futile or not in the patient\u2019s best interests, it may be appropriate to withhold or terminate resuscitation under local recognition-of-death/termination protocols\u2014even if choking was initially theoretically reversible.\n\n5. **Escalate and document**\n   - Contact the appropriate senior clinician, duty officer, ambulance clinical support desk, GP/out-of-hours service, or police/coroner pathway as required by your service policy.\n   - Record: timing, initial report, the DNAR wording, when choking became known, estimated downtime, assessment findings, family statements, advice received, and rationale for the decision.\n   - Provide compassionate support to the family and explain clearly that the decision is based on the patient\u2019s documented wishes, the prolonged downtime, and the absence of a realistic prospect of successful resuscitation.\n\nIn practical terms: **if the choking is discovered early and the DNAR genuinely excludes reversible causes, initiate/continue appropriate resuscitative airway management while seeking urgent clinical advice. If the patient has been apnoeic and pulseless for >30 minutes with no CPR, no signs of life, and the family confirms the patient would not want resuscitation, escalation for verification/recognition of death rather than commencing late CPR is usually the appropriate pathway.** Follow your organisation\u2019s specific DNAR, reversible-cause, and death-verification policies.",
+    "latency_ms": 9633.7,
+    "token_count": 804
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "47c35f661e13",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233241.7556698,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 9633.7,
+        "token_count": 804,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.13; flagged=False"
+}

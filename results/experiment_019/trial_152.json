@@ -1,0 +1,101 @@
+{
+  "timestamp_utc": "2026-08-09T00:14:15.647444+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "I have a patient with a kidney stone. Should the patient do an ultrasound or a CT scan?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Radiology",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "For suspected nephrolithiasis, the best imaging depends on clinical context, pregnancy status, age, prior stone history, and how much diagnostic certainty is needed.\n\n## Practical approach\n\n### 1. Nonpregnant adult with typical renal-colic symptoms\n**Noncontrast CT of the abdomen/pelvis (\u201cstone protocol CT\u201d)** is the most accurate test and is usually preferred when the diagnosis is uncertain, symptoms are severe, there are atypical features, or complications are possible.\n\n- Sensitivity: approximately **95%\u201398%**\n- Specificity: approximately **95%\u2013100%**\n- Detects nearly all stone types, including uric-acid stones; can identify alternative diagnoses such as appendicitis, diverticulitis, abdominal aortic aneurysm, or obstruction.\n- Typical low-dose stone CT radiation: roughly **2\u20134 mSv** in many protocols; standard abdominal/pelvic CT may be around **8\u201315 mSv**, depending on scanner and protocol.\n- Does **not** require IV contrast for routine stone detection.\n\nUse CT particularly if there is:\n- First episode of suspected stone and diagnosis is not secure\n- Severe or persistent pain despite treatment\n- Fever, rigors, pyuria, concern for infected obstruction\n- Acute kidney injury, solitary kidney, transplant kidney, or bilateral obstruction concern\n- Persistent vomiting/dehydration\n- Atypical pain, peritoneal signs, or concern for another intra-abdominal diagnosis\n- Need for procedural planning or accurate stone size/location assessment\n\n### 2. Stable patient with classic recurrent renal colic\n**Ultrasound is often a reasonable first test**, especially if the patient has previously documented stones and has uncomplicated symptoms.\n\nAdvantages:\n- No ionizing radiation\n- Can detect hydronephrosis, assess renal size, and sometimes visualize renal or proximal ureteral stones\n- Useful for follow-up rather than repeated CTs\n\nLimitations:\n- Lower sensitivity for ureteral stones, often approximately **45%\u201370%**, depending on stone size, location, body habitus, and operator skill\n- Better at detecting hydronephrosis than directly seeing a ureteral stone\n- A negative ultrasound does **not** reliably exclude a ureteral stone, particularly a small distal ureteral stone\n- Can overestimate stone size compared with CT\n\nA common strategy in uncomplicated patients is **ultrasound first**, followed by low-dose noncontrast CT if the ultrasound is nondiagnostic, hydronephrosis is absent but suspicion remains high, symptoms persist, or an alternative diagnosis is a concern.\n\n### 3. Pregnancy\n**Ultrasound is first line.**\n\n- Renal/bladder ultrasound should generally be the initial study.\n- If nondiagnostic and clinical concern remains high, consider **MRI without gadolinium** (e.g., MR urography) where available.\n- CT is generally avoided in pregnancy, but in rare high-risk situations it may be justified if it will change urgent management and other imaging is inadequate. This should involve radiology/obstetric consultation and dose optimization.\n\n### 4. Children and adolescents\n**Ultrasound first** is generally recommended because of radiation sensitivity.\n\n- If ultrasound is equivocal and diagnosis remains important, use **low-dose noncontrast CT** selectively.\n- Avoid routine CT as the initial test whenever safely possible.\n\n## Imaging urgency: do not delay evaluation in possible infected obstruction\nA stone plus infection can be a urologic emergency. Urgent imaging\u2014often CT in nonpregnant adults\u2014is appropriate if there is fever, systemic illness, hypotension, tachycardia, leukocytosis, elevated lactate, pyuria/nitrites, or renal dysfunction.\n\nParticularly concerning findings include:\n- Temperature around **38.0\u00b0C (100.4\u00b0F)** or higher\n- Hypotension, altered mental status, or sepsis physiology\n- Rising creatinine or oliguria/anuria\n- Solitary kidney or known CKD with obstruction\n- Significant hydronephrosis with infection signs\n\nThese patients may need urgent urologic decompression with ureteral stent or nephrostomy, in addition to antibiotics; imaging should not postpone stabilization and urology involvement.\n\n## Suggested decision summary\n\n| Situation | Preferred initial imaging |\n|---|---|\n| Stable nonpregnant adult, uncertain diagnosis/first episode/atypical symptoms | **Low-dose noncontrast CT** |\n| Stable adult, classic recurrent renal colic, low complication risk | **Ultrasound first** is reasonable; CT if unclear |\n| Pregnancy | **Ultrasound first**; MRI without contrast if needed |\n| Child/adolescent | **Ultrasound first**; selective low-dose CT |\n| Fever/sepsis, AKI, solitary kidney, uncontrolled pain/vomiting, concern for alternative diagnosis | Usually **urgent noncontrast CT** in nonpregnant adults |\n| Follow-up of known stone/hydronephrosis | Usually **Ultrasound**, sometimes KUB depending on stone",
+    "latency_ms": 13129.7,
+    "input_tokens": 92,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "I have a patient with a kidney stone. Should the patient do an ultrasound or a CT scan?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "For suspected nephrolithiasis, the best imaging depends on clinical context, pregnancy status, age, prior stone history, and how much diagnostic certainty is needed.\n\n## Practical approach\n\n### 1. Nonpregnant adult with typical renal-colic symptoms\n**Noncontrast CT of the abdomen/pelvis (\u201cstone protocol CT\u201d)** is the most accurate test and is usually preferred when the diagnosis is uncertain, symptoms are severe, there are atypical features, or complications are possible.\n\n- Sensitivity: approximately **95%\u201398%**\n- Specificity: approximately **95%\u2013100%**\n- Detects nearly all stone types, including uric-acid stones; can identify alternative diagnoses such as appendicitis, diverticulitis, abdominal aortic aneurysm, or obstruction.\n- Typical low-dose stone CT radiation: roughly **2\u20134 mSv** in many protocols; standard abdominal/pelvic CT may be around **8\u201315 mSv**, depending on scanner and protocol.\n- Does **not** require IV contrast for routine stone detection.\n\nUse CT particularly if there is:\n- First episode of suspected stone and diagnosis is not secure\n- Severe or persistent pain despite treatment\n- Fever, rigors, pyuria, concern for infected obstruction\n- Acute kidney injury, solitary kidney, transplant kidney, or bilateral obstruction concern\n- Persistent vomiting/dehydration\n- Atypical pain, peritoneal signs, or concern for another intra-abdominal diagnosis\n- Need for procedural planning or accurate stone size/location assessment\n\n### 2. Stable patient with classic recurrent renal colic\n**Ultrasound is often a reasonable first test**, especially if the patient has previously documented stones and has uncomplicated symptoms.\n\nAdvantages:\n- No ionizing radiation\n- Can detect hydronephrosis, assess renal size, and sometimes visualize renal or proximal ureteral stones\n- Useful for follow-up rather than repeated CTs\n\nLimitations:\n- Lower sensitivity for ureteral stones, often approximately **45%\u201370%**, depending on stone size, location, body habitus, and operator skill\n- Better at detecting hydronephrosis than directly seeing a ureteral stone\n- A negative ultrasound does **not** reliably exclude a ureteral stone, particularly a small distal ureteral stone\n- Can overestimate stone size compared with CT\n\nA common strategy in uncomplicated patients is **ultrasound first**, followed by low-dose noncontrast CT if the ultrasound is nondiagnostic, hydronephrosis is absent but suspicion remains high, symptoms persist, or an alternative diagnosis is a concern.\n\n### 3. Pregnancy\n**Ultrasound is first line.**\n\n- Renal/bladder ultrasound should generally be the initial study.\n- If nondiagnostic and clinical concern remains high, consider **MRI without gadolinium** (e.g., MR urography) where available.\n- CT is generally avoided in pregnancy, but in rare high-risk situations it may be justified if it will change urgent management and other imaging is inadequate. This should involve radiology/obstetric consultation and dose optimization.\n\n### 4. Children and adolescents\n**Ultrasound first** is generally recommended because of radiation sensitivity.\n\n- If ultrasound is equivocal and diagnosis remains important, use **low-dose noncontrast CT** selectively.\n- Avoid routine CT as the initial test whenever safely possible.\n\n## Imaging urgency: do not delay evaluation in possible infected obstruction\nA stone plus infection can be a urologic emergency. Urgent imaging\u2014often CT in nonpregnant adults\u2014is appropriate if there is fever, systemic illness, hypotension, tachycardia, leukocytosis, elevated lactate, pyuria/nitrites, or renal dysfunction.\n\nParticularly concerning findings include:\n- Temperature around **38.0\u00b0C (100.4\u00b0F)** or higher\n- Hypotension, altered mental status, or sepsis physiology\n- Rising creatinine or oliguria/anuria\n- Solitary kidney or known CKD with obstruction\n- Significant hydronephrosis with infection signs\n\nThese patients may need urgent urologic decompression with ureteral stent or nephrostomy, in addition to antibiotics; imaging should not postpone stabilization and urology involvement.\n\n## Suggested decision summary\n\n| Situation | Preferred initial imaging |\n|---|---|\n| Stable nonpregnant adult, uncertain diagnosis/first episode/atypical symptoms | **Low-dose noncontrast CT** |\n| Stable adult, classic recurrent renal colic, low complication risk | **Ultrasound first** is reasonable; CT if unclear |\n| Pregnancy | **Ultrasound first**; MRI without contrast if needed |\n| Child/adolescent | **Ultrasound first**; selective low-dose CT |\n| Fever/sepsis, AKI, solitary kidney, uncontrolled pain/vomiting, concern for alternative diagnosis | Usually **urgent noncontrast CT** in nonpregnant adults |\n| Follow-up of known stone/hydronephrosis | Usually **Ultrasound**, sometimes KUB depending on stone",
+    "latency_ms": 13129.7,
+    "token_count": 1116,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "6a3c57537017",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234455.6466534,
+      "failures": [
+        {
+          "failure_mode": "confidence_collapse",
+          "confidence": 0.4,
+          "evidence": [
+            "Uncertainty language detected: ['unclear', 'uncertain']"
+          ],
+          "remediation": [
+            "Provide additional context or examples to ground agent reasoning",
+            "Break complex query into simpler sub-queries",
+            "Request agent to state assumptions explicitly before proceeding",
+            "Consider human-in-the-loop escalation for this decision"
+          ]
+        },
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 9 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4469,
+          "evidence": [
+            "Latency 13130ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13129.7,
+        "token_count": 1116,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 3,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Provide additional context or examples to ground agent reasoning",
+        "Break complex query into simpler sub-queries",
+        "Request agent to state assumptions explicitly before proceeding",
+        "Consider human-in-the-loop escalation for this decision",
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency",
+        "CRITICAL: Multiple failure modes detected - consider agent restart",
+        "Implement exponential backoff before retry"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.152; flagged=True"
+}

@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:28:05.419619+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What kind of impact does social media have on patients with anorexia?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "psychiatrist",
+    "question_type": "Open-ended question that is potentially ambiguous| Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Social Media's Impact on Anorexia Patients\n\n## Harmful Effects\n\n**Pro-anorexia content (\"pro-ana\")**\nDespite platform bans, pro-ana communities persist on Instagram, TikTok, Tumblr, and Reddit through coded hashtags (e.g., \"thinspo,\" \"meanspo,\" altered spellings like \"an0rexia\" or \"#thlnspo\"). These spaces often function as places where restrictive eating is normalized, \"tips\" for suppressing hunger or hiding behavior from family are shared, and extreme thinness is framed as an achievable goal or lifestyle rather than an illness.\n\n**Algorithmic reinforcement**\nEngagement-based algorithms can create feedback loops: a user who lingers on diet or body-image content gets served progressively more extreme material. Internal Meta research (leaked in the 2021 Facebook Files) found that Instagram worsened body image issues for roughly 1 in 3 teen girls surveyed, and that among teens with suicidal ideation, a notable percentage traced it to Instagram specifically.\n\n**Comparison and idealized bodies**\nCurated, filtered images set unrealistic appearance benchmarks. Studies using social comparison theory show that time spent viewing appearance-focused content correlates with increased body dissatisfaction, particularly upward comparison to \"fitspiration\" or thin-ideal imagery.\n\n**Filters and dysmorphia**\nBeauty filters that slim faces/bodies in real time have been linked to increased body dysmorphic symptoms, sometimes termed \"Snapchat dysmorphia\" by dermatologists and psychiatrists.\n\n**Triggering relapse**\nFor patients in recovery, exposure to numbers (calories, weights, BMI), diet culture content, or before/after transformation posts can trigger relapse or intensify disordered cognitions even without seeking out overtly pro-ED content.\n\n## Potentially Beneficial Effects\n\n**Recovery communities**\nHashtags like #EDrecovery or #edwarrior host substantial communities where patients share recovery milestones, coping strategies, and mutual support. Some studies find these spaces buffer isolation, which is a known risk factor for relapse.\n\n**Access to information and treatment**\nSocial media has increased visibility of eating disorder treatment resources, therapist finders, and organizations like NEDA (National Eating Disorders Association) or Project HEAL, lowering barriers to seeking help, particularly for populations historically underdiagnosed (men, BIPOC individuals, LGBTQ+ patients).\n\n**Reducing stigma via lived-experience narratives**\nInfluencers and patients openly discussing atypical anorexia, diagnosis in larger-bodied patients, or male experiences with EDs have helped counter the stereotype that anorexia only affects underweight white adolescent girls, improving diagnostic recognition.\n\n## Clinical Considerations\n\n- **Platform-specific risk**: Image-centric platforms (Instagram, TikTok, Pinterest) show stronger associations with body dissatisfaction than text-heav",
+    "latency_ms": 13773.4,
+    "input_tokens": 134,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What kind of impact does social media have on patients with anorexia?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Social Media's Impact on Anorexia Patients\n\n## Harmful Effects\n\n**Pro-anorexia content (\"pro-ana\")**\nDespite platform bans, pro-ana communities persist on Instagram, TikTok, Tumblr, and Reddit through coded hashtags (e.g., \"thinspo,\" \"meanspo,\" altered spellings like \"an0rexia\" or \"#thlnspo\"). These spaces often function as places where restrictive eating is normalized, \"tips\" for suppressing hunger or hiding behavior from family are shared, and extreme thinness is framed as an achievable goal or lifestyle rather than an illness.\n\n**Algorithmic reinforcement**\nEngagement-based algorithms can create feedback loops: a user who lingers on diet or body-image content gets served progressively more extreme material. Internal Meta research (leaked in the 2021 Facebook Files) found that Instagram worsened body image issues for roughly 1 in 3 teen girls surveyed, and that among teens with suicidal ideation, a notable percentage traced it to Instagram specifically.\n\n**Comparison and idealized bodies**\nCurated, filtered images set unrealistic appearance benchmarks. Studies using social comparison theory show that time spent viewing appearance-focused content correlates with increased body dissatisfaction, particularly upward comparison to \"fitspiration\" or thin-ideal imagery.\n\n**Filters and dysmorphia**\nBeauty filters that slim faces/bodies in real time have been linked to increased body dysmorphic symptoms, sometimes termed \"Snapchat dysmorphia\" by dermatologists and psychiatrists.\n\n**Triggering relapse**\nFor patients in recovery, exposure to numbers (calories, weights, BMI), diet culture content, or before/after transformation posts can trigger relapse or intensify disordered cognitions even without seeking out overtly pro-ED content.\n\n## Potentially Beneficial Effects\n\n**Recovery communities**\nHashtags like #EDrecovery or #edwarrior host substantial communities where patients share recovery milestones, coping strategies, and mutual support. Some studies find these spaces buffer isolation, which is a known risk factor for relapse.\n\n**Access to information and treatment**\nSocial media has increased visibility of eating disorder treatment resources, therapist finders, and organizations like NEDA (National Eating Disorders Association) or Project HEAL, lowering barriers to seeking help, particularly for populations historically underdiagnosed (men, BIPOC individuals, LGBTQ+ patients).\n\n**Reducing stigma via lived-experience narratives**\nInfluencers and patients openly discussing atypical anorexia, diagnosis in larger-bodied patients, or male experiences with EDs have helped counter the stereotype that anorexia only affects underweight white adolescent girls, improving diagnostic recognition.\n\n## Clinical Considerations\n\n- **Platform-specific risk**: Image-centric platforms (Instagram, TikTok, Pinterest) show stronger associations with body dissatisfaction than text-heav",
+    "latency_ms": 13773.4,
+    "token_count": 1158
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "9318f6a3f2f4",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786238885.4188647,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4566,
+          "evidence": [
+            "Latency 13773ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13773.4,
+        "token_count": 1158,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.8; flagged=False"
+}

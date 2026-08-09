@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T02:02:21.885236+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "You are driving and the police stop you. They allege that you have murdered someone and you are now trying to flee. They arrest and detain you for 5 days and then realize they have the wrong person. You have suffered physically and emotionally, you wish to institute a legal claim. Who do you direct your claim to and is there any vicarious liability?",
+    "field": "Law",
+    "specific_field": "CIVIL LITIGATION, STATE ATTOREY",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Legal Claim Analysis: Wrongful Arrest and Detention\n\n## Who to Direct Your Claim Against\n\nYour claim would typically be directed at multiple potential defendants:\n\n1. **The individual arresting officer(s)** \u2013 for personal liability in false arrest/imprisonment\n2. **The police department/law enforcement agency** \u2013 as the employer, under vicarious liability\n3. **The municipal, county, or state government** \u2013 depending on jurisdiction, since police departments are typically government entities\n4. **Potentially the detaining facility** \u2013 if held in a jail separate from the arresting agency, especially if conditions caused additional harm during the approximately 5-day detention\n\n## Is There Vicarious Liability?\n\n**Yes, generally there is vicarious liability**, based on the doctrine of *respondeat superior* (Latin: \"let the master answer\"). This holds employers responsible for the wrongful acts of employees committed within the scope of their employment.\n\n### Key Elements to Establish Vicarious Liability:\n\n- The officer was acting within the **scope of their official duties** (roughly 90-95% of arrest-related conduct typically falls within this scope unless it involves clear personal frolics unrelated to police work)\n- The wrongful act occurred during **employment-related activity** (the arrest itself, even if mistaken, was part of official police function)\n\n### Important Limitations/Defenses\n\nMany jurisdictions provide **qualified immunity** or **sovereign immunity** protections to government entities and officers, which can significantly limit or bar claims:\n\n- **Qualified immunity** (in the U.S.) shields officers unless they violated a \"clearly established\" constitutional right \u2014 this defense succeeds in an estimated **50-60%** of excessive force/wrongful arrest cases at summary judgment\n- **Probable cause defense**: If officers had reasonable grounds (even if mistaken) to believe you committed the crime, liability may be reduced or eliminated\n- **Notice requirements**: Many jurisdictions require filing a formal notice of claim within **30 to 180 days** of the incident (varies significantly by jurisdiction) before a lawsuit can proceed against government entities\n\n## Potential Causes of Action\n\n1. **False arrest/False imprisonment** \u2013 lacking legal justification for the 5-day detention\n2. **Malicious prosecution** \u2013 if charges were filed without probable cause\n3. **Negligent investigation** \u2013 failure to properly verify identity before arrest\n4. **Civil rights violation** (e.g., 42 U.S.C. \u00a7 1983 in the U.S.) \u2013 for violation of constitutional rights (4th Amendment protection against unreasonable seizure)\n5. **Intentional infliction of emotional distress** \u2013 given the psychological harm suffered\n6. **Battery/negligence** \u2013 if physical harm occurred during arrest or detention\n\n## Damages You Might Recover\n\n- **Compensatory damages**: For lost wages (calculate approximately 5 days of missed work), medical/psychological treatment costs, pain and suffering\n- **Punitive damages**: If conduct was grossly negligent or malicious (available in perhaps 10-20% of success",
+    "latency_ms": 12150.2,
+    "input_tokens": 213,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "You are driving and the police stop you. They allege that you have murdered someone and you are now trying to flee. They arrest and detain you for 5 days and then realize they have the wrong person. You have suffered physically and emotionally, you wish to institute a legal claim. Who do you direct your claim to and is there any vicarious liability?",
+      "field": "Law"
+    },
+    "response": "# Legal Claim Analysis: Wrongful Arrest and Detention\n\n## Who to Direct Your Claim Against\n\nYour claim would typically be directed at multiple potential defendants:\n\n1. **The individual arresting officer(s)** \u2013 for personal liability in false arrest/imprisonment\n2. **The police department/law enforcement agency** \u2013 as the employer, under vicarious liability\n3. **The municipal, county, or state government** \u2013 depending on jurisdiction, since police departments are typically government entities\n4. **Potentially the detaining facility** \u2013 if held in a jail separate from the arresting agency, especially if conditions caused additional harm during the approximately 5-day detention\n\n## Is There Vicarious Liability?\n\n**Yes, generally there is vicarious liability**, based on the doctrine of *respondeat superior* (Latin: \"let the master answer\"). This holds employers responsible for the wrongful acts of employees committed within the scope of their employment.\n\n### Key Elements to Establish Vicarious Liability:\n\n- The officer was acting within the **scope of their official duties** (roughly 90-95% of arrest-related conduct typically falls within this scope unless it involves clear personal frolics unrelated to police work)\n- The wrongful act occurred during **employment-related activity** (the arrest itself, even if mistaken, was part of official police function)\n\n### Important Limitations/Defenses\n\nMany jurisdictions provide **qualified immunity** or **sovereign immunity** protections to government entities and officers, which can significantly limit or bar claims:\n\n- **Qualified immunity** (in the U.S.) shields officers unless they violated a \"clearly established\" constitutional right \u2014 this defense succeeds in an estimated **50-60%** of excessive force/wrongful arrest cases at summary judgment\n- **Probable cause defense**: If officers had reasonable grounds (even if mistaken) to believe you committed the crime, liability may be reduced or eliminated\n- **Notice requirements**: Many jurisdictions require filing a formal notice of claim within **30 to 180 days** of the incident (varies significantly by jurisdiction) before a lawsuit can proceed against government entities\n\n## Potential Causes of Action\n\n1. **False arrest/False imprisonment** \u2013 lacking legal justification for the 5-day detention\n2. **Malicious prosecution** \u2013 if charges were filed without probable cause\n3. **Negligent investigation** \u2013 failure to properly verify identity before arrest\n4. **Civil rights violation** (e.g., 42 U.S.C. \u00a7 1983 in the U.S.) \u2013 for violation of constitutional rights (4th Amendment protection against unreasonable seizure)\n5. **Intentional infliction of emotional distress** \u2013 given the psychological harm suffered\n6. **Battery/negligence** \u2013 if physical harm occurred during arrest or detention\n\n## Damages You Might Recover\n\n- **Compensatory damages**: For lost wages (calculate approximately 5 days of missed work), medical/psychological treatment costs, pain and suffering\n- **Punitive damages**: If conduct was grossly negligent or malicious (available in perhaps 10-20% of success",
+    "latency_ms": 12150.2,
+    "token_count": 1237,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "6154d205d720",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240941.8844686,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 10 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4323,
+          "evidence": [
+            "Latency 12150ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12150.2,
+        "token_count": 1237,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.179; flagged=True"
+}

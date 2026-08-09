@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:19:31.634789+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "You have two analysers. One breaks and you have to do some maintenance on the other one. How do you do it if you still have to test the urgent blood samples?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biomedical Science ",
+    "question_type": "Advice or suggestions on how to approach a problem"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "If one analyser is down and the remaining analyser needs maintenance, the safe approach is to **protect urgent testing first, minimise downtime, and use contingency pathways**. The exact process should follow your laboratory\u2019s SOPs, analyser manufacturer instructions, accreditation requirements, and local escalation policy.\n\n### 1. Assess the urgency and workload immediately\n- Identify which samples are genuinely urgent: e.g. ED/ER, ICU, theatre, neonatal, critical potassium, blood gas-related chemistry, troponin, coagulation, etc.\n- Check the remaining analyser\u2019s current status:\n  - Is maintenance mandatory because of an error, failed QC, reagent issue, or safety concern?\n  - Or is it routine scheduled maintenance that can safely be deferred for a short period?\n- Estimate the immediate backlog:\n  - Number of urgent samples waiting.\n  - Expected turnaround-time targets, often approximately **30\u201360 minutes** for emergency chemistry/haematology samples depending on the test and local agreement.\n  - Remaining reagent, consumable, water, waste, and QC capacity.\n\n### 2. Escalate early\nNotify the appropriate people immediately, typically:\n- Senior biomedical scientist / shift lead.\n- Duty clinical scientist, laboratory manager, or on-call manager.\n- Relevant clinical areas, especially ED, ICU, theatres, and phlebotomy/specimen reception.\n- Engineering/service support if the failed analyser requires urgent repair.\n\nGive a clear operational update, for example:\n- \u201cAnalyser A is down at 10:15.\u201d\n- \u201cAnalyser B requires maintenance estimated at approximately 15\u201330 minutes.\u201d\n- \u201cUrgent testing will be prioritised; non-urgent work may be delayed.\u201d\n- \u201cCurrent estimated delay is approximately 30\u201360 minutes.\u201d\n\n### 3. Do not run patient samples on an analyser that is unsafe or failing QC\nIf the maintenance is required because:\n- QC is out of range,\n- calibration has failed,\n- there is a carryover, contamination, clot-detection, aspiration, temperature, photometric, or pipetting concern,\n- an instrument alarm indicates possible erroneous results,\n\nthen the analyser should not be used for patient reporting until the issue is resolved and required QC/calibration criteria are met. Reporting potentially inaccurate urgent results is usually a greater clinical risk than a controlled delay.\n\n### 4. Prioritise urgent samples before planned routine maintenance, if safe\nIf the required maintenance is routine and the analyser is functioning correctly:\n- Temporarily defer non-essential routine maintenance only if permitted by the manufacturer\u2019s schedule and local SOP.\n- Run the immediate urgent workload first.\n- Consider batching only urgent samples, not the entire routine queue.\n- Stop or delay non-urgent profiles, add-on tests, screening work, and routine outpatient work.\n- Use STAT/urgent racks or priority loading if available.\n\nFor example, if routine maintenance takes approximately **20 minutes**, but there are **5\u201310 urgent samples** that can be completed in about **10\u201315 minutes**, it may be reasonable to complete those urgent samples first\u2014provided maintenance is not overdue or safety-critical.\n\n### 5. If maintenance cannot be deferred, create a short planned outage\nIf maintenance must occur immediately:\n1. Put the analyser into maintenance following the SOP.\n2. Inform specimen reception and clinical users that urgent turnaround times will be extended.\n3. Keep all urgent samples clearly identified and stored appropriately while waiting:\n   - Follow assay-specific stability requirements.\n   - Many routine serum/plasma chemistry analytes may remain stable for a limited period, but potassium, glucose, lactate, blood gases, ammonia, and some coagulation assays can be particularly time-sensitive.\n4. Complete maintenance as efficiently as possible.\n5. Perform required checks before resuming:\n   - System checks.\n   - Calibration if required.\n   - Internal QC at required levels.\n   - Review QC acceptability before releasing patient results.\n\nDo not shortcut QC simply to restore throughput.\n\n### 6. Use alternative testing pathways\nDepending on the laboratory setup, options include:\n\n#### A. Point-of-care testing\nFor genuinely time-critical tests, use validated POCT where available:\n- Blood gas analyser for pH, pCO\u2082, pO\u2082, lactate, glucose, sodium, potassium, ionised calcium, and haemoglobin where validated.\n- POCT glucose meters.\n- POCT INR/coagulation systems where clinically appropriate and locally authorised.\n- Bedside troponin or other emergency platforms, if available and validated.\n\nAny POCT result should be communicated and documented according to policy, especially if it is used to guide immediate treatment.\n\n#### B. Another department or network laboratory\n- Send samples to a nearby laboratory, satellite site, or linked hospital if transport and turnaround are clinically acceptable.\n- Clearly label as urgent and communicate directly with the receiving laboratory.\n- Consider transport time: a referral route adding approximately **30\u201390 minutes** may be acceptable for some tests but not for immediately life-threatening requests such as suspected severe hyperkalaemia or critical blood gases.\n\n#### C. Manual or semi-manual methods",
+    "latency_ms": 13827.6,
+    "input_tokens": 108,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "You have two analysers. One breaks and you have to do some maintenance on the other one. How do you do it if you still have to test the urgent blood samples?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "If one analyser is down and the remaining analyser needs maintenance, the safe approach is to **protect urgent testing first, minimise downtime, and use contingency pathways**. The exact process should follow your laboratory\u2019s SOPs, analyser manufacturer instructions, accreditation requirements, and local escalation policy.\n\n### 1. Assess the urgency and workload immediately\n- Identify which samples are genuinely urgent: e.g. ED/ER, ICU, theatre, neonatal, critical potassium, blood gas-related chemistry, troponin, coagulation, etc.\n- Check the remaining analyser\u2019s current status:\n  - Is maintenance mandatory because of an error, failed QC, reagent issue, or safety concern?\n  - Or is it routine scheduled maintenance that can safely be deferred for a short period?\n- Estimate the immediate backlog:\n  - Number of urgent samples waiting.\n  - Expected turnaround-time targets, often approximately **30\u201360 minutes** for emergency chemistry/haematology samples depending on the test and local agreement.\n  - Remaining reagent, consumable, water, waste, and QC capacity.\n\n### 2. Escalate early\nNotify the appropriate people immediately, typically:\n- Senior biomedical scientist / shift lead.\n- Duty clinical scientist, laboratory manager, or on-call manager.\n- Relevant clinical areas, especially ED, ICU, theatres, and phlebotomy/specimen reception.\n- Engineering/service support if the failed analyser requires urgent repair.\n\nGive a clear operational update, for example:\n- \u201cAnalyser A is down at 10:15.\u201d\n- \u201cAnalyser B requires maintenance estimated at approximately 15\u201330 minutes.\u201d\n- \u201cUrgent testing will be prioritised; non-urgent work may be delayed.\u201d\n- \u201cCurrent estimated delay is approximately 30\u201360 minutes.\u201d\n\n### 3. Do not run patient samples on an analyser that is unsafe or failing QC\nIf the maintenance is required because:\n- QC is out of range,\n- calibration has failed,\n- there is a carryover, contamination, clot-detection, aspiration, temperature, photometric, or pipetting concern,\n- an instrument alarm indicates possible erroneous results,\n\nthen the analyser should not be used for patient reporting until the issue is resolved and required QC/calibration criteria are met. Reporting potentially inaccurate urgent results is usually a greater clinical risk than a controlled delay.\n\n### 4. Prioritise urgent samples before planned routine maintenance, if safe\nIf the required maintenance is routine and the analyser is functioning correctly:\n- Temporarily defer non-essential routine maintenance only if permitted by the manufacturer\u2019s schedule and local SOP.\n- Run the immediate urgent workload first.\n- Consider batching only urgent samples, not the entire routine queue.\n- Stop or delay non-urgent profiles, add-on tests, screening work, and routine outpatient work.\n- Use STAT/urgent racks or priority loading if available.\n\nFor example, if routine maintenance takes approximately **20 minutes**, but there are **5\u201310 urgent samples** that can be completed in about **10\u201315 minutes**, it may be reasonable to complete those urgent samples first\u2014provided maintenance is not overdue or safety-critical.\n\n### 5. If maintenance cannot be deferred, create a short planned outage\nIf maintenance must occur immediately:\n1. Put the analyser into maintenance following the SOP.\n2. Inform specimen reception and clinical users that urgent turnaround times will be extended.\n3. Keep all urgent samples clearly identified and stored appropriately while waiting:\n   - Follow assay-specific stability requirements.\n   - Many routine serum/plasma chemistry analytes may remain stable for a limited period, but potassium, glucose, lactate, blood gases, ammonia, and some coagulation assays can be particularly time-sensitive.\n4. Complete maintenance as efficiently as possible.\n5. Perform required checks before resuming:\n   - System checks.\n   - Calibration if required.\n   - Internal QC at required levels.\n   - Review QC acceptability before releasing patient results.\n\nDo not shortcut QC simply to restore throughput.\n\n### 6. Use alternative testing pathways\nDepending on the laboratory setup, options include:\n\n#### A. Point-of-care testing\nFor genuinely time-critical tests, use validated POCT where available:\n- Blood gas analyser for pH, pCO\u2082, pO\u2082, lactate, glucose, sodium, potassium, ionised calcium, and haemoglobin where validated.\n- POCT glucose meters.\n- POCT INR/coagulation systems where clinically appropriate and locally authorised.\n- Bedside troponin or other emergency platforms, if available and validated.\n\nAny POCT result should be communicated and documented according to policy, especially if it is used to guide immediate treatment.\n\n#### B. Another department or network laboratory\n- Send samples to a nearby laboratory, satellite site, or linked hospital if transport and turnaround are clinically acceptable.\n- Clearly label as urgent and communicate directly with the receiving laboratory.\n- Consider transport time: a referral route adding approximately **30\u201390 minutes** may be acceptable for some tests but not for immediately life-threatening requests such as suspected severe hyperkalaemia or critical blood gases.\n\n#### C. Manual or semi-manual methods",
+    "latency_ms": 13827.6,
+    "token_count": 1132,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "a746b56c76c9",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234771.6339703,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 10 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4574,
+          "evidence": [
+            "Latency 13828ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13827.6,
+        "token_count": 1132,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.184; flagged=True"
+}

@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T00:17:11.472910+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is the most expensive chemo drug used in the UK?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Oncology Pharmacist ",
+    "question_type": "Directed question that has a single unambiguous answer| Summarization of information on a topic| Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "There is no single fixed \u201cmost expensive chemo drug\u201d in the UK because NHS prices are usually confidential commercial discounts, and costs depend on the dose, patient weight, treatment cycle, and indication.\n\nHowever, among the highest-cost cancer medicines used in the UK are often **CAR-T cell therapies**, which are technically cell-based immunotherapies rather than conventional chemotherapy:\n\n- **Kymriah\u00ae (tisagenlecleucel)**: NHS list prices have historically been around **\u00a3282,000 per one-off treatment**.\n- **Yescarta\u00ae (axicabtagene ciloleucel)**: historically around **\u00a3282,000 per one-off treatment**.\n- **Breyanzi\u00ae (lisocabtagene maraleucel)** and other newer CAR-T products may have similarly high confidential agreed prices, often in the **hundreds of thousands of pounds** per treatment.\n\nIf you mean a more conventional anticancer drug given repeatedly by infusion or injection, some of the most expensive include targeted drugs and antibody\u2013drug conjugates, for example:\n\n- **Enhertu\u00ae (trastuzumab deruxtecan)**: the published list cost has been roughly **\u00a31,455 per 100 mg vial**. A typical dose is **5.4 mg/kg every 3 weeks**; for a **70 kg** person that is about **378 mg per cycle**, usually requiring **4 \u00d7 100 mg vials**, or roughly **\u00a35,800 per 3-week cycle** at list price. Over a year, drug acquisition alone could exceed about **\u00a3100,000** before discounts and hospital costs.\n- **Keytruda\u00ae (pembrolizumab)**: a checkpoint immunotherapy rather than chemotherapy, historically listed at roughly **\u00a32,630 per 100 mg vial**. At **200 mg every 3 weeks**, that is about **\u00a35,260 per dose**, or around **\u00a391,000 annually** at list price.\n- **Opdivo\u00ae (nivolumab)**: likewise immunotherapy, with annual list-price treatment costs often in the region of **\u00a370,000\u2013\u00a3100,000**, depending on dose and schedule.\n- **Polivy\u00ae (polatuzumab vedotin)**, **Trodelvy\u00ae (sacituzumab govitecan)**, and some rare-cancer targeted medicines can also have list-price treatment costs of **tens of thousands to more than \u00a3100,000 per patient per year**.\n\nSo, the short answer is:\n\n- **Most expensive one-off cancer treatment:** usually a **CAR-T therapy**, at about **\u00a3280,000+ per patient** at historical list prices.\n- **Among repeatedly administered \u201cchemo-like\u201d drugs:** products such as **Enhertu** can cost roughly **\u00a3100,000+ per year** at published list prices.\n\nIn practice, the NHS rarely pays the public list price: NHS England, manufacturers, and NICE commonly use confidential patient-access schemes, so the actual amount paid may be substantially lower.",
+    "latency_ms": 7887.7,
+    "input_tokens": 84,
+    "output_tokens": 622
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the most expensive chemo drug used in the UK?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "There is no single fixed \u201cmost expensive chemo drug\u201d in the UK because NHS prices are usually confidential commercial discounts, and costs depend on the dose, patient weight, treatment cycle, and indication.\n\nHowever, among the highest-cost cancer medicines used in the UK are often **CAR-T cell therapies**, which are technically cell-based immunotherapies rather than conventional chemotherapy:\n\n- **Kymriah\u00ae (tisagenlecleucel)**: NHS list prices have historically been around **\u00a3282,000 per one-off treatment**.\n- **Yescarta\u00ae (axicabtagene ciloleucel)**: historically around **\u00a3282,000 per one-off treatment**.\n- **Breyanzi\u00ae (lisocabtagene maraleucel)** and other newer CAR-T products may have similarly high confidential agreed prices, often in the **hundreds of thousands of pounds** per treatment.\n\nIf you mean a more conventional anticancer drug given repeatedly by infusion or injection, some of the most expensive include targeted drugs and antibody\u2013drug conjugates, for example:\n\n- **Enhertu\u00ae (trastuzumab deruxtecan)**: the published list cost has been roughly **\u00a31,455 per 100 mg vial**. A typical dose is **5.4 mg/kg every 3 weeks**; for a **70 kg** person that is about **378 mg per cycle**, usually requiring **4 \u00d7 100 mg vials**, or roughly **\u00a35,800 per 3-week cycle** at list price. Over a year, drug acquisition alone could exceed about **\u00a3100,000** before discounts and hospital costs.\n- **Keytruda\u00ae (pembrolizumab)**: a checkpoint immunotherapy rather than chemotherapy, historically listed at roughly **\u00a32,630 per 100 mg vial**. At **200 mg every 3 weeks**, that is about **\u00a35,260 per dose**, or around **\u00a391,000 annually** at list price.\n- **Opdivo\u00ae (nivolumab)**: likewise immunotherapy, with annual list-price treatment costs often in the region of **\u00a370,000\u2013\u00a3100,000**, depending on dose and schedule.\n- **Polivy\u00ae (polatuzumab vedotin)**, **Trodelvy\u00ae (sacituzumab govitecan)**, and some rare-cancer targeted medicines can also have list-price treatment costs of **tens of thousands to more than \u00a3100,000 per patient per year**.\n\nSo, the short answer is:\n\n- **Most expensive one-off cancer treatment:** usually a **CAR-T therapy**, at about **\u00a3280,000+ per patient** at historical list prices.\n- **Among repeatedly administered \u201cchemo-like\u201d drugs:** products such as **Enhertu** can cost roughly **\u00a3100,000+ per year** at published list prices.\n\nIn practice, the NHS rarely pays the public list price: NHS England, manufacturers, and NICE commonly use confidential patient-access schemes, so the actual amount paid may be substantially lower.",
+    "latency_ms": 7887.7,
+    "token_count": 706,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "486f6087a3c2",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234631.472159,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 12 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 7887.7,
+        "token_count": 706,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.170; flagged=True"
+}

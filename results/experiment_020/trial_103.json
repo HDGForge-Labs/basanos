@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:46:59.701822+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "You have a patient admitted for upper gastrointestinal bleeding, the endoscopy reveals a gastric ulcer in incisura angularis with a point of hematin and minimal traces of dark blood in the stomach. Biopsies of the ulcer margin and an antral biopsy are performed for the rapid urease test with a positive result. What is the next step?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General medicine",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Clinical Assessment and Next Steps\n\n## Endoscopic Findings Summary\nYour patient has a gastric ulcer at the incisura angularis with a **Forrest classification IIc** lesion (flat pigmented spot/hematin), which carries a relatively low rebleeding risk of approximately **2-8%** without intervention (versus roughly **17-44%** for active bleeding Forrest Ia-Ib lesions). The positive rapid urease test confirms **H. pylori infection**, with these tests generally having a sensitivity of about **90-95%** and specificity of approximately **95-98%**.\n\n## Immediate Next Steps\n\n### 1. **Continue/Optimize Acid Suppression**\n- IV proton pump inhibitor (PPI) such as pantoprazole or esomeprazole, typically **80 mg bolus followed by continuous infusion at 8 mg/hour** for 72 hours if high-risk stigmata are present, OR\n- Transition to **high-dose oral PPI** (e.g., omeprazole 40 mg twice daily) given the low-risk Forrest IIc classification\n- Continue PPI therapy for a total of **6-8 weeks** to allow complete ulcer healing\n\n### 2. **Initiate H. pylori Eradication Therapy**\nGiven the positive rapid urease test, begin one of the following regimens:\n\n**Bismuth quadruple therapy** (preferred in many regions due to rising clarithromycin resistance, now approximately **15-30%** in various populations):\n- PPI (standard dose) twice daily\n- Bismuth subsalicylate **525 mg four times daily**\n- Metronidazole **250-500 mg four times daily**\n- Tetracycline **500 mg four times daily**\n- Duration: **10-14 days**\n\n**Clarithromycin-based triple therapy** (if local resistance <15%):\n- PPI twice daily\n- Clarithromycin **500 mg twice daily**\n- Amoxicillin **1000 mg twice daily**\n- Duration: **14 days** (extended from historical 7-10 days due to improved eradication rates, now achieving approximately **85-90%** success with 14-day courses versus **70-85%** with shorter courses)\n\n### 3. **Critical Step: Repeat Endoscopy for Biopsy**\n\n**This is essential** \u2014 because this is a **gastric ulcer** (unlike duodenal ulcers), you **must perform repeat endoscopy in 6-8 weeks** to:\n- Confirm complete ulcer healing\n- **Re-biopsy the ulcer margins** (typically 4-8 biopsies from the edges and base) to exclude **gastric malignancy**, since approximately **3-5%** of gastric ulcers initially thought benign harbor malignancy, and early gastric cancer can mimic benign peptic ulcers endoscopically in up to **10%** of cases\n\n### 4. **Confirm H. pylori Eradication**\n- Test for eradication **4-6 weeks after completing antibiotic therapy** and at least **2 weeks after stopping PPI** (to",
+    "latency_ms": 11759.2,
+    "input_tokens": 225,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "You have a patient admitted for upper gastrointestinal bleeding, the endoscopy reveals a gastric ulcer in incisura angularis with a point of hematin and minimal traces of dark blood in the stomach. Biopsies of the ulcer margin and an antral biopsy are performed for the rapid urease test with a positive result. What is the next step?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Clinical Assessment and Next Steps\n\n## Endoscopic Findings Summary\nYour patient has a gastric ulcer at the incisura angularis with a **Forrest classification IIc** lesion (flat pigmented spot/hematin), which carries a relatively low rebleeding risk of approximately **2-8%** without intervention (versus roughly **17-44%** for active bleeding Forrest Ia-Ib lesions). The positive rapid urease test confirms **H. pylori infection**, with these tests generally having a sensitivity of about **90-95%** and specificity of approximately **95-98%**.\n\n## Immediate Next Steps\n\n### 1. **Continue/Optimize Acid Suppression**\n- IV proton pump inhibitor (PPI) such as pantoprazole or esomeprazole, typically **80 mg bolus followed by continuous infusion at 8 mg/hour** for 72 hours if high-risk stigmata are present, OR\n- Transition to **high-dose oral PPI** (e.g., omeprazole 40 mg twice daily) given the low-risk Forrest IIc classification\n- Continue PPI therapy for a total of **6-8 weeks** to allow complete ulcer healing\n\n### 2. **Initiate H. pylori Eradication Therapy**\nGiven the positive rapid urease test, begin one of the following regimens:\n\n**Bismuth quadruple therapy** (preferred in many regions due to rising clarithromycin resistance, now approximately **15-30%** in various populations):\n- PPI (standard dose) twice daily\n- Bismuth subsalicylate **525 mg four times daily**\n- Metronidazole **250-500 mg four times daily**\n- Tetracycline **500 mg four times daily**\n- Duration: **10-14 days**\n\n**Clarithromycin-based triple therapy** (if local resistance <15%):\n- PPI twice daily\n- Clarithromycin **500 mg twice daily**\n- Amoxicillin **1000 mg twice daily**\n- Duration: **14 days** (extended from historical 7-10 days due to improved eradication rates, now achieving approximately **85-90%** success with 14-day courses versus **70-85%** with shorter courses)\n\n### 3. **Critical Step: Repeat Endoscopy for Biopsy**\n\n**This is essential** \u2014 because this is a **gastric ulcer** (unlike duodenal ulcers), you **must perform repeat endoscopy in 6-8 weeks** to:\n- Confirm complete ulcer healing\n- **Re-biopsy the ulcer margins** (typically 4-8 biopsies from the edges and base) to exclude **gastric malignancy**, since approximately **3-5%** of gastric ulcers initially thought benign harbor malignancy, and early gastric cancer can mimic benign peptic ulcers endoscopically in up to **10%** of cases\n\n### 4. **Confirm H. pylori Eradication**\n- Test for eradication **4-6 weeks after completing antibiotic therapy** and at least **2 weeks after stopping PPI** (to",
+    "latency_ms": 11759.2,
+    "token_count": 1249,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "885731b48615",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240019.7010396,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 26 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4264,
+          "evidence": [
+            "Latency 11759ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11759.2,
+        "token_count": 1249,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.103; flagged=True"
+}

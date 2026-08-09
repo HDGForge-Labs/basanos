@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:52:57.013187+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What is the prozone error and how does it affect the blood test?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biomedical Science ",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "The **prozone error** (or **prozone effect**) is a false-negative or falsely low result in an **immunologic blood test** caused by an **excess of antibody** in the patient\u2019s sample.\n\n### How it happens\nMany tests depend on antibodies and antigens forming visible complexes\u2014such as clumps or precipitates. If antibody levels are extremely high, the antibodies can saturate the available antigen sites without linking particles together. Because the large cross-linked complexes do not form, the test may appear negative even though the target is present.\n\n### Effect on blood tests\nIt can cause:\n\n- A **false-negative** result\n- A **falsely low antibody titer**\n- An unexpectedly weak reaction despite severe disease or a high analyte concentration\n\nIt is classically encountered in tests such as:\n\n- **RPR or VDRL** for syphilis\n- Some **latex agglutination tests**\n- Certain immunoassays, including antibody or protein measurements\n\n### How laboratories detect it\nIf the clinical picture strongly suggests a positive result, the laboratory may **dilute the sample and repeat the test**. Dilution reduces the antibody concentration and can allow the expected reaction to occur. For example, an initially negative RPR may become positive after dilution because of a prozone effect.",
+    "latency_ms": 2647.7,
+    "input_tokens": 93,
+    "output_tokens": 273
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the prozone error and how does it affect the blood test?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "The **prozone error** (or **prozone effect**) is a false-negative or falsely low result in an **immunologic blood test** caused by an **excess of antibody** in the patient\u2019s sample.\n\n### How it happens\nMany tests depend on antibodies and antigens forming visible complexes\u2014such as clumps or precipitates. If antibody levels are extremely high, the antibodies can saturate the available antigen sites without linking particles together. Because the large cross-linked complexes do not form, the test may appear negative even though the target is present.\n\n### Effect on blood tests\nIt can cause:\n\n- A **false-negative** result\n- A **falsely low antibody titer**\n- An unexpectedly weak reaction despite severe disease or a high analyte concentration\n\nIt is classically encountered in tests such as:\n\n- **RPR or VDRL** for syphilis\n- Some **latex agglutination tests**\n- Certain immunoassays, including antibody or protein measurements\n\n### How laboratories detect it\nIf the clinical picture strongly suggests a positive result, the laboratory may **dilute the sample and repeat the test**. Dilution reduces the antibody concentration and can allow the expected reaction to occur. For example, an initially negative RPR may become positive after dilution because of a prozone effect.",
+    "latency_ms": 2647.7,
+    "token_count": 366
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "31f48a9e03f0",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229577.0123134,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2647.7,
+        "token_count": 366,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.18; flagged=False"
+}

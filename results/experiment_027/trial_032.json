@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T17:16:28.559332+00:00",
+  "detector": "context_degradation",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "where was robin hood prince of thieves made",
+    "gold_index": 0
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "*Robin Hood: Prince of Thieves* was filmed primarily on location in the United Kingdom, with additional scenes shot at the Cit\u00e9 de Carcassonne in France. Interior scenes were completed at Shepperton Studios in Surrey, England.",
+    "latency_ms": 945.0,
+    "input_tokens": 1530,
+    "output_tokens": 51
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "where was robin hood prince of thieves made",
+      "gold_index": 0,
+      "n_docs": 10
+    },
+    "response": "*Robin Hood: Prince of Thieves* was filmed primarily on location in the United Kingdom, with additional scenes shot at the Cit\u00e9 de Carcassonne in France. Interior scenes were completed at Shepperton Studios in Surrey, England.",
+    "latency_ms": 945.0,
+    "token_count": 1581,
+    "context_window_used": 0.25
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "c376a181763e",
+      "tool_name": "context_qa",
+      "status": "pass",
+      "timestamp": 1786295788.558611,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 945.0,
+        "token_count": 1581,
+        "context_window_used": 0.25,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.32; flagged=False; gold_index=0"
+}

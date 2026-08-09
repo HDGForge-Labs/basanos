@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:53:20.349983+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "You are patrolling the local city centre when you are passed information by a member of the public that there is a young girl running in front of cars and acting unusual. What are your first considerations, and what would you then do?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Police Officer",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "### First considerations\n\n1. **Immediate danger**\n   - The girl may be at imminent risk of being struck by a vehicle, harming herself, or causing a collision.\n   - Identify her location, direction of travel, clothing, age, and whether traffic is moving toward her.\n   - Consider dangers to members of the public, yourself, and other responders.\n\n2. **Possible causes and vulnerability**\n   - Treat her as a **vulnerable child**, not simply as a nuisance or offender.\n   - Consider medical emergency, intoxication or drug use, mental-health crisis, neurodiversity, missing-person status, exploitation, abuse, or someone pursuing her.\n   - Do not assume that \u201cacting unusual\u201d means mental illness.\n\n3. **Information and corroboration**\n   - Establish exactly what the informant saw, when, where, and whether the girl was alone, distressed, injured, being followed, or communicating with anyone.\n   - Obtain a description and preserve the witness\u2019s contact details.\n   - Check whether the control room has reports of a missing child, vulnerable person, road danger, or suspect.\n\n### Immediate action\n\n1. **Notify control and request support**\n   - Give the precise location, direction of travel, description, and immediate risk.\n   - Request appropriate assistance, such as another unit, a supervisor, ambulance, traffic officers, or specialist mental-health support.\n   - Ask for relevant missing-person and intelligence checks.\n\n2. **Make the scene safe**\n   - Position yourself safely and, where possible, alert or slow traffic without creating additional danger.\n   - Do not chase her into traffic or use a vehicle in a way that increases risk.\n   - Use clear, calm communication: identify yourself, explain that you want to keep her safe, and ask her to move to a safe place.\n   - Avoid sudden movements, shouting, unnecessary physical contact, or surrounding her with officers.\n\n3. **Engage and assess**\n   - Speak at her level, use simple questions, and allow time for responses.\n   - Establish her name, age, where she lives, who she is with, what has happened, and whether she is hurt or afraid.\n   - Check for injuries, intoxication, illness, self-harm risk, suicidal thoughts, or threats from another person.\n   - Look for signs of exploitation, neglect, abuse, or coercion, and ask sensitively whether anyone is making her run or preventing her from going home.\n\n4. **Protect and safeguard**\n   - If she is in immediate danger, intervene proportionately and use only the minimum lawful force necessary to prevent harm.\n   - Arrange medical assessment for injury, suspected intoxication, altered consciousness, overdose, or acute mental-health concerns.\n   - Keep her in a safe, supervised environment and avoid leaving her with an unverified adult.\n   - Verify the identity and suitability of any parent or carer before handing her over. If there is doubt, or if a safeguarding concern exists, contact children\u2019s social care and follow missing-child and child-protection procedures.\n\n5. **Aftercare and recording**\n   - Obtain a proper account in a child-appropriate manner; avoid leading questions and do not promise secrecy.\n   - Preserve relevant CCTV, witness details, body-worn video, and other evidence.\n   - Record the risk assessment, decisions, force used, referrals, and notifications.\n   - Ensure a clear handover to the appropriate safeguarding, medical, or investigative service.\n\nThe central priority is **immediate preservation of life, followed by calm engagement, medical and safeguarding assessment, and appropriate protection of the child**.",
+    "latency_ms": 5641.4,
+    "input_tokens": 125,
+    "output_tokens": 731
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "You are patrolling the local city centre when you are passed information by a member of the public that there is a young girl running in front of cars and acting unusual. What are your first considerations, and what would you then do?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "### First considerations\n\n1. **Immediate danger**\n   - The girl may be at imminent risk of being struck by a vehicle, harming herself, or causing a collision.\n   - Identify her location, direction of travel, clothing, age, and whether traffic is moving toward her.\n   - Consider dangers to members of the public, yourself, and other responders.\n\n2. **Possible causes and vulnerability**\n   - Treat her as a **vulnerable child**, not simply as a nuisance or offender.\n   - Consider medical emergency, intoxication or drug use, mental-health crisis, neurodiversity, missing-person status, exploitation, abuse, or someone pursuing her.\n   - Do not assume that \u201cacting unusual\u201d means mental illness.\n\n3. **Information and corroboration**\n   - Establish exactly what the informant saw, when, where, and whether the girl was alone, distressed, injured, being followed, or communicating with anyone.\n   - Obtain a description and preserve the witness\u2019s contact details.\n   - Check whether the control room has reports of a missing child, vulnerable person, road danger, or suspect.\n\n### Immediate action\n\n1. **Notify control and request support**\n   - Give the precise location, direction of travel, description, and immediate risk.\n   - Request appropriate assistance, such as another unit, a supervisor, ambulance, traffic officers, or specialist mental-health support.\n   - Ask for relevant missing-person and intelligence checks.\n\n2. **Make the scene safe**\n   - Position yourself safely and, where possible, alert or slow traffic without creating additional danger.\n   - Do not chase her into traffic or use a vehicle in a way that increases risk.\n   - Use clear, calm communication: identify yourself, explain that you want to keep her safe, and ask her to move to a safe place.\n   - Avoid sudden movements, shouting, unnecessary physical contact, or surrounding her with officers.\n\n3. **Engage and assess**\n   - Speak at her level, use simple questions, and allow time for responses.\n   - Establish her name, age, where she lives, who she is with, what has happened, and whether she is hurt or afraid.\n   - Check for injuries, intoxication, illness, self-harm risk, suicidal thoughts, or threats from another person.\n   - Look for signs of exploitation, neglect, abuse, or coercion, and ask sensitively whether anyone is making her run or preventing her from going home.\n\n4. **Protect and safeguard**\n   - If she is in immediate danger, intervene proportionately and use only the minimum lawful force necessary to prevent harm.\n   - Arrange medical assessment for injury, suspected intoxication, altered consciousness, overdose, or acute mental-health concerns.\n   - Keep her in a safe, supervised environment and avoid leaving her with an unverified adult.\n   - Verify the identity and suitability of any parent or carer before handing her over. If there is doubt, or if a safeguarding concern exists, contact children\u2019s social care and follow missing-child and child-protection procedures.\n\n5. **Aftercare and recording**\n   - Obtain a proper account in a child-appropriate manner; avoid leading questions and do not promise secrecy.\n   - Preserve relevant CCTV, witness details, body-worn video, and other evidence.\n   - Record the risk assessment, decisions, force used, referrals, and notifications.\n   - Ensure a clear handover to the appropriate safeguarding, medical, or investigative service.\n\nThe central priority is **immediate preservation of life, followed by calm engagement, medical and safeguarding assessment, and appropriate protection of the child**.",
+    "latency_ms": 5641.4,
+    "token_count": 856
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "d86d17cec242",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229600.349194,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 5641.4,
+        "token_count": 856,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.23; flagged=False"
+}

@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T02:05:17.506637+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Imagine a patient presents with high grade fever. All the investigations done are negative and we are unable to find the cause of the fever. What could it be?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "acute medicine",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Fever of Unknown Origin (FUO) - Diagnostic Approach\n\nWhen a patient presents with high-grade fever and standard investigations are negative, this fits the classic definition of **Fever of Unknown Origin (FUO)**, classically defined as:\n- Temperature >38.3\u00b0C (101\u00b0F) on several occasions\n- Duration of at least **3 weeks**\n- No diagnosis after **1 week** of inpatient investigation (or approximately 3 outpatient visits/appropriate workup)\n\n## Categories to Consider\n\n### 1. **Infections (approximately 20-40% of cases)**\n- **Tuberculosis** (especially extrapulmonary/miliary) - often missed on routine chest X-ray\n- **Infective endocarditis** (culture-negative, seen in ~5-10% of endocarditis cases due to prior antibiotics or fastidious organisms like HACEK group, *Coxiella burnetii*, *Bartonella*)\n- **Occult abscesses** (subphrenic, hepatic, pelvic, dental, perinephric)\n- **Osteomyelitis**\n- **Brucellosis, typhoid (relapsing), malaria** (especially if travel history)\n- **EBV, CMV** reactivation\n- **HIV seroconversion**\n\n### 2. **Malignancies (approximately 20-30%)**\n- **Lymphoma** (especially Hodgkin's - can present with Pel-Ebstein fever pattern)\n- **Leukemia**\n- **Renal cell carcinoma** (classic \"fever of unknown origin\" tumor)\n- **Hepatocellular carcinoma**\n- **Atrial myxoma**\n\n### 3. **Connective Tissue/Autoimmune Disorders (approximately 10-20%)**\n- **Adult-onset Still's disease** - look for salmon-colored rash, arthralgia, sore throat, markedly elevated **ferritin (>3000-10,000 ng/mL)**\n- **Systemic Lupus Erythematosus**\n- **Polyarteritis nodosa**\n- **Giant cell arteritis/Temporal arteritis** - especially in patients >50 years, check **ESR** (often >100 mm/hr)\n- **Polymyalgia rheumatica**\n\n### 4. **Drug Fever**\n- Can occur with antibiotics (beta-lactams), anticonvulsants, allopurinol\n- Typically presents **7-10 days** after starting the drug\n- Relative bradycardia despite fever (Faget's sign) may be present\n- Resolves within **48-72 hours** of stopping offending drug\n\n### 5. **Miscellaneous Causes**\n- **Deep vein thrombosis/Pulmonary embolism**\n- **Sarcoidosis**\n- **Familial Mediterranean Fever** (periodic fever syndrome)\n- **Thyroiditis (subacute)**\n- **Factitious fever** (consider in young females, healthcare workers)\n- **Cyclic neutropenia**\n\n## Recommended Next Steps\n\n1. **Repeat detailed history**",
+    "latency_ms": 12246.2,
+    "input_tokens": 155,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Imagine a patient presents with high grade fever. All the investigations done are negative and we are unable to find the cause of the fever. What could it be?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Fever of Unknown Origin (FUO) - Diagnostic Approach\n\nWhen a patient presents with high-grade fever and standard investigations are negative, this fits the classic definition of **Fever of Unknown Origin (FUO)**, classically defined as:\n- Temperature >38.3\u00b0C (101\u00b0F) on several occasions\n- Duration of at least **3 weeks**\n- No diagnosis after **1 week** of inpatient investigation (or approximately 3 outpatient visits/appropriate workup)\n\n## Categories to Consider\n\n### 1. **Infections (approximately 20-40% of cases)**\n- **Tuberculosis** (especially extrapulmonary/miliary) - often missed on routine chest X-ray\n- **Infective endocarditis** (culture-negative, seen in ~5-10% of endocarditis cases due to prior antibiotics or fastidious organisms like HACEK group, *Coxiella burnetii*, *Bartonella*)\n- **Occult abscesses** (subphrenic, hepatic, pelvic, dental, perinephric)\n- **Osteomyelitis**\n- **Brucellosis, typhoid (relapsing), malaria** (especially if travel history)\n- **EBV, CMV** reactivation\n- **HIV seroconversion**\n\n### 2. **Malignancies (approximately 20-30%)**\n- **Lymphoma** (especially Hodgkin's - can present with Pel-Ebstein fever pattern)\n- **Leukemia**\n- **Renal cell carcinoma** (classic \"fever of unknown origin\" tumor)\n- **Hepatocellular carcinoma**\n- **Atrial myxoma**\n\n### 3. **Connective Tissue/Autoimmune Disorders (approximately 10-20%)**\n- **Adult-onset Still's disease** - look for salmon-colored rash, arthralgia, sore throat, markedly elevated **ferritin (>3000-10,000 ng/mL)**\n- **Systemic Lupus Erythematosus**\n- **Polyarteritis nodosa**\n- **Giant cell arteritis/Temporal arteritis** - especially in patients >50 years, check **ESR** (often >100 mm/hr)\n- **Polymyalgia rheumatica**\n\n### 4. **Drug Fever**\n- Can occur with antibiotics (beta-lactams), anticonvulsants, allopurinol\n- Typically presents **7-10 days** after starting the drug\n- Relative bradycardia despite fever (Faget's sign) may be present\n- Resolves within **48-72 hours** of stopping offending drug\n\n### 5. **Miscellaneous Causes**\n- **Deep vein thrombosis/Pulmonary embolism**\n- **Sarcoidosis**\n- **Familial Mediterranean Fever** (periodic fever syndrome)\n- **Thyroiditis (subacute)**\n- **Factitious fever** (consider in young females, healthcare workers)\n- **Cyclic neutropenia**\n\n## Recommended Next Steps\n\n1. **Repeat detailed history**",
+    "latency_ms": 12246.2,
+    "token_count": 1179,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "daa0920b05ce",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786241117.505854,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 18 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4337,
+          "evidence": [
+            "Latency 12246ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12246.2,
+        "token_count": 1179,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.193; flagged=True"
+}

@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:42:18.298946+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Should the Canadian Army train at divisional level or is brigade level operations adequate in today's operating environment?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Army officer",
+    "question_type": "Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Canadian Army: Divisional vs. Brigade-Level Training\n\nThis is a live and consequential debate in Canadian defence circles, and I'll lay out the actual argument rather than dodge it.\n\n## The Case for Divisional-Level Training\n\n**The Army should be training and exercising at the divisional level, and the current brigade-centric posture is a legacy of the post-Cold War \"small wars\" era that doesn't match the threat environment anymore.**\n\nKey reasons:\n\n1. **Peer conflict has returned as the pacing threat.** Russia's war in Ukraine has demonstrated that large-scale combat operations (LSCO) require corps and divisional-level command and control to synchronize fires, logistics, air defence, and manoeuvre across a battlespace far larger than a brigade can manage. Brigades fight battles; divisions fight campaigns. If Canada's actual commitment is to NATO's eastern flank (Latvia, as the framework nation for the multinational brigade), the Army needs to understand how a Canadian-led brigade integrates into a multinational division, and ideally how Canada could generate divisional enablers itself.\n\n2. **CJIRU, sustainment, and fires need practice at scale.** Things like counter-battery radar cueing, deep fires coordination, division-level logistics (Class III/V consumption rates in LSCO are staggering compared to what Canada practiced in Afghanistan), and multi-domain integration (space, cyber, EW) only get properly stressed at divisional exercises. Brigade exercises tend to under-represent the friction of corps/division-level combat support and combat service support.\n\n3. **Allied interoperability.** The US Army, British Army, and other NATO partners are re-emphasizing division as the primary unit of action for LSCO (see US Army's shift back to divisional warfighting exercises like Project Convergence, and the UK's push toward a warfighting division). If Canada only trains at brigade level, its officers and staff lack fluency in divisional battle rhythm, and Canada risks being a junior, poorly-integrated partner rather than a credible contributor when it plugs into a coalition division HQ.\n\n4. **Institutional atrophy risk.** Canada has not generated or exercised a full divisional headquarters in a warfighting context in decades. The muscle memory for G-staff functions at that level (particularly G2, G3/5 plans, and sustainment) degrades if it's never practiced. 1st Canadian Division HQ exists on paper and deploys for things like disaster response (e.g., domestic ops, Op LENTUS) but this is a very different skill set from fighting a division in LSCO.\n\n## The Counter-Argument: Brigade Is the Realistic Ceiling\n\n**The honest constraint is force size.** The Canadian Army's Regular Force is roughly 22,000\u201323,000 strong, organized around three understrength brigade groups (1, 2, and 5 CMBG) plus the Reserve-heavy 4th Division framework. Canada physically cannot generate, sustain, or reasonably expect to deploy a full division with organic enablers (division artillery group, division sustain",
+    "latency_ms": 16760.5,
+    "input_tokens": 149,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Should the Canadian Army train at divisional level or is brigade level operations adequate in today's operating environment?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "# Canadian Army: Divisional vs. Brigade-Level Training\n\nThis is a live and consequential debate in Canadian defence circles, and I'll lay out the actual argument rather than dodge it.\n\n## The Case for Divisional-Level Training\n\n**The Army should be training and exercising at the divisional level, and the current brigade-centric posture is a legacy of the post-Cold War \"small wars\" era that doesn't match the threat environment anymore.**\n\nKey reasons:\n\n1. **Peer conflict has returned as the pacing threat.** Russia's war in Ukraine has demonstrated that large-scale combat operations (LSCO) require corps and divisional-level command and control to synchronize fires, logistics, air defence, and manoeuvre across a battlespace far larger than a brigade can manage. Brigades fight battles; divisions fight campaigns. If Canada's actual commitment is to NATO's eastern flank (Latvia, as the framework nation for the multinational brigade), the Army needs to understand how a Canadian-led brigade integrates into a multinational division, and ideally how Canada could generate divisional enablers itself.\n\n2. **CJIRU, sustainment, and fires need practice at scale.** Things like counter-battery radar cueing, deep fires coordination, division-level logistics (Class III/V consumption rates in LSCO are staggering compared to what Canada practiced in Afghanistan), and multi-domain integration (space, cyber, EW) only get properly stressed at divisional exercises. Brigade exercises tend to under-represent the friction of corps/division-level combat support and combat service support.\n\n3. **Allied interoperability.** The US Army, British Army, and other NATO partners are re-emphasizing division as the primary unit of action for LSCO (see US Army's shift back to divisional warfighting exercises like Project Convergence, and the UK's push toward a warfighting division). If Canada only trains at brigade level, its officers and staff lack fluency in divisional battle rhythm, and Canada risks being a junior, poorly-integrated partner rather than a credible contributor when it plugs into a coalition division HQ.\n\n4. **Institutional atrophy risk.** Canada has not generated or exercised a full divisional headquarters in a warfighting context in decades. The muscle memory for G-staff functions at that level (particularly G2, G3/5 plans, and sustainment) degrades if it's never practiced. 1st Canadian Division HQ exists on paper and deploys for things like disaster response (e.g., domestic ops, Op LENTUS) but this is a very different skill set from fighting a division in LSCO.\n\n## The Counter-Argument: Brigade Is the Realistic Ceiling\n\n**The honest constraint is force size.** The Canadian Army's Regular Force is roughly 22,000\u201323,000 strong, organized around three understrength brigade groups (1, 2, and 5 CMBG) plus the Reserve-heavy 4th Division framework. Canada physically cannot generate, sustain, or reasonably expect to deploy a full division with organic enablers (division artillery group, division sustain",
+    "latency_ms": 16760.5,
+    "token_count": 1173
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "98fc38d633b5",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239738.2981796,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.5014,
+          "evidence": [
+            "Latency 16760ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 16760.5,
+        "token_count": 1173,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.80; flagged=False"
+}

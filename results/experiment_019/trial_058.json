@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:59:42.092870+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What does a strategic manager do in an emergency?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Emergency Planning",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "In an emergency, a strategic manager shifts from long-term planning to rapid coordination, decision-making, and organizational protection. Their job is to ensure the organization responds effectively now while preserving its ability to recover afterward.\n\nKey responsibilities include:\n\n- **Assess the situation quickly:** Gather reliable information about what happened, who and what is affected, the likely escalation risk, and the operational, financial, legal, and reputational consequences.\n\n- **Activate the crisis plan:** Trigger emergency-response, business-continuity, cybersecurity, evacuation, communications, or incident-command procedures as appropriate.\n\n- **Set priorities:** Put life safety first, then containment of the threat, continuity of critical operations, protection of assets and data, regulatory compliance, and recovery.\n\n- **Make high-stakes decisions with incomplete information:** For example, suspend operations, move staff to remote work, isolate IT systems after a cyberattack, recall a product, secure emergency funding, or redirect supply chains.\n\n- **Coordinate leaders and resources:** Assign clear roles, mobilize personnel, authorize spending, bring in emergency services or external specialists, and ensure teams are not duplicating or contradicting one another.\n\n- **Communicate clearly:** Provide timely, accurate updates to employees, customers, regulators, investors, suppliers, the media, and emergency authorities. Good crisis communication is factual, empathetic, consistent, and avoids speculation.\n\n- **Manage stakeholders and reputation:** Address stakeholder concerns, demonstrate accountability, and protect trust through visible leadership and transparent action.\n\n- **Monitor and adapt:** Track the situation through regular briefings, key indicators, and scenario updates. As facts change, the manager adjusts strategy, resources, and messaging.\n\n- **Plan recovery:** Once the immediate danger is controlled, restore operations, support affected employees or customers, estimate losses, manage insurance and legal obligations, and revise business priorities.\n\n- **Conduct an after-action review:** Identify what worked, what failed, and what must change in policies, training, risk controls, and contingency plans to prevent recurrence.\n\nIn short, a strategic manager provides direction under pressure: they turn a chaotic emergency into an organized response, protect people and the organization, and guide recovery.",
+    "latency_ms": 6066.7,
+    "input_tokens": 88,
+    "output_tokens": 434
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What does a strategic manager do in an emergency?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "In an emergency, a strategic manager shifts from long-term planning to rapid coordination, decision-making, and organizational protection. Their job is to ensure the organization responds effectively now while preserving its ability to recover afterward.\n\nKey responsibilities include:\n\n- **Assess the situation quickly:** Gather reliable information about what happened, who and what is affected, the likely escalation risk, and the operational, financial, legal, and reputational consequences.\n\n- **Activate the crisis plan:** Trigger emergency-response, business-continuity, cybersecurity, evacuation, communications, or incident-command procedures as appropriate.\n\n- **Set priorities:** Put life safety first, then containment of the threat, continuity of critical operations, protection of assets and data, regulatory compliance, and recovery.\n\n- **Make high-stakes decisions with incomplete information:** For example, suspend operations, move staff to remote work, isolate IT systems after a cyberattack, recall a product, secure emergency funding, or redirect supply chains.\n\n- **Coordinate leaders and resources:** Assign clear roles, mobilize personnel, authorize spending, bring in emergency services or external specialists, and ensure teams are not duplicating or contradicting one another.\n\n- **Communicate clearly:** Provide timely, accurate updates to employees, customers, regulators, investors, suppliers, the media, and emergency authorities. Good crisis communication is factual, empathetic, consistent, and avoids speculation.\n\n- **Manage stakeholders and reputation:** Address stakeholder concerns, demonstrate accountability, and protect trust through visible leadership and transparent action.\n\n- **Monitor and adapt:** Track the situation through regular briefings, key indicators, and scenario updates. As facts change, the manager adjusts strategy, resources, and messaging.\n\n- **Plan recovery:** Once the immediate danger is controlled, restore operations, support affected employees or customers, estimate losses, manage insurance and legal obligations, and revise business priorities.\n\n- **Conduct an after-action review:** Identify what worked, what failed, and what must change in policies, training, risk controls, and contingency plans to prevent recurrence.\n\nIn short, a strategic manager provides direction under pressure: they turn a chaotic emergency into an organized response, protect people and the organization, and guide recovery.",
+    "latency_ms": 6066.7,
+    "token_count": 522
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "9d6a0763b0d5",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233582.0921452,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 6066.7,
+        "token_count": 522,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.58; flagged=False"
+}

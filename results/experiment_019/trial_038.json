@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:57:09.633594+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "If a patient's X ray has dark spots on the chest what does it mean?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Orthopedics and Physiotherapist",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "On a chest X\u2011ray, \u201cdark\u201d areas usually mean **more air** or **less dense tissue** than normal, because air lets X\u2011rays pass through easily.\n\nCommon possibilities include:\n\n- **Normal lungs:** Much of a normal lung field appears dark because it is filled with air.\n- **Hyperinflation / emphysema (COPD):** Lungs can look unusually dark and large, often with flattened diaphragms, due to trapped air.\n- **Pneumothorax (collapsed lung):** A darker area at the edge of the chest with no visible lung markings can indicate air outside the lung. This can be urgent, especially with sudden chest pain or shortness of breath.\n- **Bullae or blebs:** Larger air-filled spaces within the lung, often related to emphysema or prior lung damage.\n- **Cavities:** A dark \u201chole\u201d within an area of abnormal lung tissue may occur with certain infections (such as tuberculosis or a lung abscess), some cancers, or inflammatory disease.\n- **Technical/artifact causes:** Clothing, skin folds, nipple shadows, image exposure, or other positioning issues can sometimes create apparent spots.\n\nBy contrast, **white** spots or patches more often suggest fluid, infection (such as pneumonia), scarring, edema, or a mass\u2014though interpretation depends on the pattern.\n\nA chest X\u2011ray has to be interpreted in context by a radiologist or clinician. If the person has **new or severe shortness of breath, chest pain, blue lips, fainting, coughing blood, or rapidly worsening symptoms**, seek urgent medical care.",
+    "latency_ms": 4653.1,
+    "input_tokens": 94,
+    "output_tokens": 333
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "If a patient's X ray has dark spots on the chest what does it mean?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "On a chest X\u2011ray, \u201cdark\u201d areas usually mean **more air** or **less dense tissue** than normal, because air lets X\u2011rays pass through easily.\n\nCommon possibilities include:\n\n- **Normal lungs:** Much of a normal lung field appears dark because it is filled with air.\n- **Hyperinflation / emphysema (COPD):** Lungs can look unusually dark and large, often with flattened diaphragms, due to trapped air.\n- **Pneumothorax (collapsed lung):** A darker area at the edge of the chest with no visible lung markings can indicate air outside the lung. This can be urgent, especially with sudden chest pain or shortness of breath.\n- **Bullae or blebs:** Larger air-filled spaces within the lung, often related to emphysema or prior lung damage.\n- **Cavities:** A dark \u201chole\u201d within an area of abnormal lung tissue may occur with certain infections (such as tuberculosis or a lung abscess), some cancers, or inflammatory disease.\n- **Technical/artifact causes:** Clothing, skin folds, nipple shadows, image exposure, or other positioning issues can sometimes create apparent spots.\n\nBy contrast, **white** spots or patches more often suggest fluid, infection (such as pneumonia), scarring, edema, or a mass\u2014though interpretation depends on the pattern.\n\nA chest X\u2011ray has to be interpreted in context by a radiologist or clinician. If the person has **new or severe shortness of breath, chest pain, blue lips, fainting, coughing blood, or rapidly worsening symptoms**, seek urgent medical care.",
+    "latency_ms": 4653.1,
+    "token_count": 427
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "2372ea5b3cde",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233429.63275,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 4653.1,
+        "token_count": 427,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.38; flagged=False"
+}

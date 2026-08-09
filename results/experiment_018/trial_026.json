@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:53:34.596416+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "How does a COVID infection relate to anxiety and depression in previously healthy individuals?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biomedical Research, Nursing",
+    "question_type": "Open-ended question that is potentially ambiguous| Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "COVID-19 can increase the risk of developing anxiety and depression even in people with no prior psychiatric illness. The relationship is **biological, psychological, and social**, and it can occur after mild as well as severe infection.\n\n- **Frequency:** In the weeks to months after infection, studies commonly find clinically significant anxiety or depressive symptoms in roughly **10\u201320%** of people, with higher rates in those who had severe disease, persistent symptoms, or major life disruption. Most infections do **not** lead to a lasting psychiatric disorder.\n- **Biological mechanisms:** Inflammation and immune signaling may affect brain circuits involved in mood and stress regulation. COVID can also disrupt sleep, autonomic function, energy, and concentration; prolonged symptoms (\u201clong COVID\u201d) can reinforce low mood and anxiety.\n- **Psychological effects:** Fear during illness, isolation, uncertainty, bereavement, financial stress, and loss of normal functioning can trigger symptoms. Hospitalization or intensive-care treatment may increase the risk of trauma-related symptoms.\n- **Timing and pattern:** Symptoms may begin during the infection or emerge weeks later. They can be temporary and improve over several weeks, but persistent symptoms lasting months warrant assessment.\n- **Risk factors:** Prior\u2014even remote\u2014mental-health vulnerability, severe infection, long COVID, poor sleep, chronic pain, social isolation, and ongoing stress increase risk. However, previously healthy people can also be affected.\n\nA COVID infection does **not** mean depression or anxiety is inevitable, nor that symptoms are \u201cjust psychological.\u201d Persistent sadness, loss of interest, excessive worry, panic, insomnia, cognitive difficulties, or impaired functioning for more than two weeks should be discussed with a clinician; treatable causes such as sleep problems, thyroid abnormalities, medication effects, and anemia may also need evaluation. Seek urgent help for suicidal thoughts, inability to care for yourself, severe agitation, confusion, or psychotic symptoms.",
+    "latency_ms": 4075.8,
+    "input_tokens": 93,
+    "output_tokens": 383
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How does a COVID infection relate to anxiety and depression in previously healthy individuals?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "COVID-19 can increase the risk of developing anxiety and depression even in people with no prior psychiatric illness. The relationship is **biological, psychological, and social**, and it can occur after mild as well as severe infection.\n\n- **Frequency:** In the weeks to months after infection, studies commonly find clinically significant anxiety or depressive symptoms in roughly **10\u201320%** of people, with higher rates in those who had severe disease, persistent symptoms, or major life disruption. Most infections do **not** lead to a lasting psychiatric disorder.\n- **Biological mechanisms:** Inflammation and immune signaling may affect brain circuits involved in mood and stress regulation. COVID can also disrupt sleep, autonomic function, energy, and concentration; prolonged symptoms (\u201clong COVID\u201d) can reinforce low mood and anxiety.\n- **Psychological effects:** Fear during illness, isolation, uncertainty, bereavement, financial stress, and loss of normal functioning can trigger symptoms. Hospitalization or intensive-care treatment may increase the risk of trauma-related symptoms.\n- **Timing and pattern:** Symptoms may begin during the infection or emerge weeks later. They can be temporary and improve over several weeks, but persistent symptoms lasting months warrant assessment.\n- **Risk factors:** Prior\u2014even remote\u2014mental-health vulnerability, severe infection, long COVID, poor sleep, chronic pain, social isolation, and ongoing stress increase risk. However, previously healthy people can also be affected.\n\nA COVID infection does **not** mean depression or anxiety is inevitable, nor that symptoms are \u201cjust psychological.\u201d Persistent sadness, loss of interest, excessive worry, panic, insomnia, cognitive difficulties, or impaired functioning for more than two weeks should be discussed with a clinician; treatable causes such as sleep problems, thyroid abnormalities, medication effects, and anemia may also need evaluation. Seek urgent help for suicidal thoughts, inability to care for yourself, severe agitation, confusion, or psychotic symptoms.",
+    "latency_ms": 4075.8,
+    "token_count": 476
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "cd75d90fdb25",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229614.5956755,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 4075.8,
+        "token_count": 476,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.26; flagged=False"
+}

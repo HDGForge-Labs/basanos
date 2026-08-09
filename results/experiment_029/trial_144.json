@@ -1,0 +1,75 @@
+{
+  "timestamp_utc": "2026-08-09T22:35:18.091537+00:00",
+  "detector": "context_degradation",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "who pays medical bills in great britain where does the money come from to pay these bills",
+    "gold_index": 9
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "In Great Britain, medical bills are primarily paid through the **National Health Service (NHS)**, which is publicly funded and free at the point of use for UK permanent residents [10]. The money to fund the NHS comes from **general taxation** [10], making it the main source of financing for healthcare in England, Scotland, and Wales.\n\nSpecifically:\n\n- **General taxation** is the core funding source, with the",
+    "latency_ms": 3863.7,
+    "input_tokens": 2108,
+    "output_tokens": 128
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "who pays medical bills in great britain where does the money come from to pay these bills",
+      "gold_index": 9,
+      "n_docs": 10
+    },
+    "response": "In Great Britain, medical bills are primarily paid through the **National Health Service (NHS)**, which is publicly funded and free at the point of use for UK permanent residents [10]. The money to fund the NHS comes from **general taxation** [10], making it the main source of financing for healthcare in England, Scotland, and Wales.\n\nSpecifically:\n\n- **General taxation** is the core funding source, with the",
+    "latency_ms": 3863.7,
+    "token_count": 2236,
+    "context_window_used": 0.92
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "69f0cea21f81",
+      "tool_name": "context_qa",
+      "status": "warn",
+      "timestamp": 1786314918.0906706,
+      "failures": [
+        {
+          "failure_mode": "context_degradation",
+          "confidence": 0.4,
+          "evidence": [
+            "Context window at 92.0% capacity"
+          ],
+          "remediation": [
+            "Implement context summarization before next tool call",
+            "Inject critical context markers at regular intervals",
+            "Use sliding window context management",
+            "Consider splitting task into smaller context-bounded subtasks"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 3863.7,
+        "token_count": 2236,
+        "context_window_used": 0.92,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Implement context summarization before next tool call",
+        "Inject critical context markers at regular intervals",
+        "Use sliding window context management",
+        "Consider splitting task into smaller context-bounded subtasks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.144; flagged=True; gold_index=9"
+}

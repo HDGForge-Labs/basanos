@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:29:57.524636+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What is the prozone error and how does it affect the blood test?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biomedical Science ",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Prozone Effect (Prozone Error)\n\nThe prozone effect is a false-negative or falsely weak-positive result that occurs in antibody-antigen agglutination or precipitation tests when the **antibody (or antigen) concentration is too high** relative to the other reagent.\n\n## Mechanism\n\nAgglutination and precipitation reactions depend on forming a lattice network of cross-linked antigen-antibody complexes. This lattice formation requires a specific ratio of antigen to antibody:\n\n- **Optimal zone (zone of equivalence):** Antigen and antibody concentrations are balanced, allowing extensive cross-linking and visible agglutination/precipitation.\n- **Prozone (antibody excess):** Too much antibody saturates all available antigen-binding sites individually, preventing cross-linking between separate antigen particles. Each antibody binds antigen but can't bridge multiple antigens together, so no visible lattice forms.\n- **Postzone (antigen excess):** The opposite problem\u2014too much antigen saturates antibody sites, again preventing cross-linking.\n\n## Clinical Relevance\n\n**Syphilis serology (VDRL/RPR)** is the classic example:\n- Patients with very high antibody titers (often secondary syphilis, or in HIV-coinfected patients) can show a **false-negative or weakly reactive result** on undiluted serum.\n- When the lab suspects prozone (e.g., strong clinical suspicion of syphilis but negative/weak nontreponemal test), they **dilute the serum** and retest. Diluting reduces antibody concentration into the equivalence zone, and previously \"negative\" samples become strongly positive.\n\n**Other examples:**\n- Rapid latex agglutination tests for various antigens/antibodies (e.g., some rheumatoid factor assays, CSF cryptococcal antigen testing)\n- Anti-red cell antibody testing in blood banking (crossmatching), where high-titer antibodies can cause weak or absent agglutination\n\n## Practical Impact on Testing\n\n1. **Missed diagnosis:** A true positive (e.g., active syphilis infection) may be read as negative.\n2. **Solution\u2014serial dilution:** Labs perform titers by diluting serum 1:2, 1:4, 1:8, up to 1:16 or higher. If agglutination/reactivity increases with dilution rather than decreasing, prozone is confirmed.\n3. **Clinical correlation is essential:** Any discordance between strong clinical suspicion and a negative serologic test should prompt the lab to consider prozone and request dilution testing rather than accepting the initial result at face value.\n\nThe postzone effect (antigen excess) causes a similar problem but is less commonly discussed clinically, though it's relevant in some quantitative immunoassays and can occur in HIV antigen/antibody combo tests or hepatitis surface antigen testing with very high antigen loads.",
+    "latency_ms": 11736.0,
+    "input_tokens": 133,
+    "output_tokens": 963
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the prozone error and how does it affect the blood test?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Prozone Effect (Prozone Error)\n\nThe prozone effect is a false-negative or falsely weak-positive result that occurs in antibody-antigen agglutination or precipitation tests when the **antibody (or antigen) concentration is too high** relative to the other reagent.\n\n## Mechanism\n\nAgglutination and precipitation reactions depend on forming a lattice network of cross-linked antigen-antibody complexes. This lattice formation requires a specific ratio of antigen to antibody:\n\n- **Optimal zone (zone of equivalence):** Antigen and antibody concentrations are balanced, allowing extensive cross-linking and visible agglutination/precipitation.\n- **Prozone (antibody excess):** Too much antibody saturates all available antigen-binding sites individually, preventing cross-linking between separate antigen particles. Each antibody binds antigen but can't bridge multiple antigens together, so no visible lattice forms.\n- **Postzone (antigen excess):** The opposite problem\u2014too much antigen saturates antibody sites, again preventing cross-linking.\n\n## Clinical Relevance\n\n**Syphilis serology (VDRL/RPR)** is the classic example:\n- Patients with very high antibody titers (often secondary syphilis, or in HIV-coinfected patients) can show a **false-negative or weakly reactive result** on undiluted serum.\n- When the lab suspects prozone (e.g., strong clinical suspicion of syphilis but negative/weak nontreponemal test), they **dilute the serum** and retest. Diluting reduces antibody concentration into the equivalence zone, and previously \"negative\" samples become strongly positive.\n\n**Other examples:**\n- Rapid latex agglutination tests for various antigens/antibodies (e.g., some rheumatoid factor assays, CSF cryptococcal antigen testing)\n- Anti-red cell antibody testing in blood banking (crossmatching), where high-titer antibodies can cause weak or absent agglutination\n\n## Practical Impact on Testing\n\n1. **Missed diagnosis:** A true positive (e.g., active syphilis infection) may be read as negative.\n2. **Solution\u2014serial dilution:** Labs perform titers by diluting serum 1:2, 1:4, 1:8, up to 1:16 or higher. If agglutination/reactivity increases with dilution rather than decreasing, prozone is confirmed.\n3. **Clinical correlation is essential:** Any discordance between strong clinical suspicion and a negative serologic test should prompt the lab to consider prozone and request dilution testing rather than accepting the initial result at face value.\n\nThe postzone effect (antigen excess) causes a similar problem but is less commonly discussed clinically, though it's relevant in some quantitative immunoassays and can occur in HIV antigen/antibody combo tests or hepatitis surface antigen testing with very high antigen loads.",
+    "latency_ms": 11736.0,
+    "token_count": 1096
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "d3e52c927ea5",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786238997.5238547,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.426,
+          "evidence": [
+            "Latency 11736ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11736.0,
+        "token_count": 1096,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.18; flagged=False"
+}

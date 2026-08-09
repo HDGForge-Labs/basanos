@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:53:34.752325+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "X entered into a lease agreement with Y for house. X builds a hot tub on the property but once his lease expires he tells Y he wants to remove the hot tub as he built it with his own money.Y argues that he is the owner of the hot tub by accession. Will Y's argument succeed in court?",
+    "field": "Law",
+    "specific_field": "Property Law",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Y\u2019s argument will succeed only if the hot tub has become a fixture\u2014i.e., so attached to the land or house that it is legally part of the immovable property by accession.\n\nThe court will not decide ownership merely because X paid for it. It will examine mainly:\n\n1. **Degree of physical attachment**\n   - A hot tub built into a deck, connected permanently to plumbing, drainage, electrical wiring, or concrete foundations is likely a fixture.\n   - A freestanding, portable hot tub that can be disconnected and removed without material damage is more likely a movable/chattel.\n\n2. **Purpose and intention of attachment**\n   - If it was installed as a lasting improvement to the house/property, it is likely treated as part of the property.\n   - If it was intended for X\u2019s personal temporary use during the lease and retained its independent character, X has a stronger claim.\n\nIn landlord\u2013tenant law, a tenant may generally remove **tenant\u2019s fixtures**\u2014items installed for the tenant\u2019s trade, domestic convenience, or enjoyment\u2014before the lease ends, provided removal does not cause substantial damage and the tenant repairs any resulting damage. A domestic hot tub may qualify as a tenant\u2019s fixture where it was installed for X\u2019s use rather than as a permanent improvement.\n\nTherefore:\n\n- **Y succeeds** if the hot tub is permanently incorporated into the property, was intended as a permanent improvement, or cannot be removed without substantial damage.\n- **X can remove it** if it is a removable tenant\u2019s fixture/chattel, he removes it before surrendering possession, and he makes good any damage caused by removal.\n\nThe fact that X financed its construction does not itself prevent accession; once an object becomes an integral fixture, ownership normally follows ownership of the land, subject to the tenant-fixture exception.",
+    "latency_ms": 5672.8,
+    "input_tokens": 142,
+    "output_tokens": 365
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "X entered into a lease agreement with Y for house. X builds a hot tub on the property but once his lease expires he tells Y he wants to remove the hot tub as he built it with his own money.Y argues that he is the owner of the hot tub by accession. Will Y's argument succeed in court?",
+      "field": "Law"
+    },
+    "response": "Y\u2019s argument will succeed only if the hot tub has become a fixture\u2014i.e., so attached to the land or house that it is legally part of the immovable property by accession.\n\nThe court will not decide ownership merely because X paid for it. It will examine mainly:\n\n1. **Degree of physical attachment**\n   - A hot tub built into a deck, connected permanently to plumbing, drainage, electrical wiring, or concrete foundations is likely a fixture.\n   - A freestanding, portable hot tub that can be disconnected and removed without material damage is more likely a movable/chattel.\n\n2. **Purpose and intention of attachment**\n   - If it was installed as a lasting improvement to the house/property, it is likely treated as part of the property.\n   - If it was intended for X\u2019s personal temporary use during the lease and retained its independent character, X has a stronger claim.\n\nIn landlord\u2013tenant law, a tenant may generally remove **tenant\u2019s fixtures**\u2014items installed for the tenant\u2019s trade, domestic convenience, or enjoyment\u2014before the lease ends, provided removal does not cause substantial damage and the tenant repairs any resulting damage. A domestic hot tub may qualify as a tenant\u2019s fixture where it was installed for X\u2019s use rather than as a permanent improvement.\n\nTherefore:\n\n- **Y succeeds** if the hot tub is permanently incorporated into the property, was intended as a permanent improvement, or cannot be removed without substantial damage.\n- **X can remove it** if it is a removable tenant\u2019s fixture/chattel, he removes it before surrendering possession, and he makes good any damage caused by removal.\n\nThe fact that X financed its construction does not itself prevent accession; once an object becomes an integral fixture, ownership normally follows ownership of the land, subject to the tenant-fixture exception.",
+    "latency_ms": 5672.8,
+    "token_count": 507
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "eb14786971cb",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233214.75155,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 5672.8,
+        "token_count": 507,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.9; flagged=False"
+}

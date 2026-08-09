@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:34:09.560240+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Someone thinks they took their dosage of hypertension medications, and may have taken them again in the morning. They have dementia and cannot remember. What can be done?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Dispensery",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Immediate Action Steps\n\n**First, check for symptoms of overdose/hypotension:**\n- Dizziness, lightheadedness\n- Confusion (beyond baseline)\n- Weakness or fainting\n- Rapid or irregular heartbeat\n- Blurred vision\n- Nausea\n\n**Take blood pressure and pulse right now**, then recheck every 30-60 minutes for the next few hours. This is your most useful objective data.\n\n# What to Do Based on What You Find\n\n**If BP is significantly low (systolic <90, or notably below their normal) or symptoms are present:**\n- Call Poison Control: **1-800-222-1222** (US) \u2014 they can advise based on the specific medication(s) and estimated dose\n- Or go to urgent care/ER, especially if the person is on medications like clonidine, beta-blockers, or calcium channel blockers, which can cause more dangerous drops or rebound effects\n\n**If BP is normal and no symptoms:**\n- Continue monitoring every hour for 4-6 hours\n- Have them stay seated/lying down if dizzy\n- Encourage fluids unless contraindicated\n- Call their doctor's office for guidance, especially to ask about the specific medications involved (some are more dangerous in double-dose than others)\n\n# Preventing This Going Forward\n\nSince dementia is involved, this will keep happening without a system change:\n\n1. **Blister packs / pre-filled pill organizers** \u2014 filled weekly by you or a pharmacy, with day/time compartments\n2. **Locked medication storage** \u2014 the person should not have independent access to the pill bottles\n3. **Automatic pill dispensers** (like Hero, MedMinder, or Philips Medication Dispenser) \u2014 these lock and only release the correct dose at scheduled times, often with alerts to a caregiver if missed or if someone tries to access early\n4. **Direct supervision** for each dose \u2014 someone administers and watches them take it, rather than leaving pills for them to take independently\n\nGiven the cognitive impairment, self-directed medication management is no longer safe, and this event is a signal that a caregiving/monitoring system needs to be put in place rather than relying on their memory.\n\n**Bottom line right now: check vitals, watch for symptoms, and call Poison Control if anything is off or you're unsure.**",
+    "latency_ms": 10153.2,
+    "input_tokens": 164,
+    "output_tokens": 748
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Someone thinks they took their dosage of hypertension medications, and may have taken them again in the morning. They have dementia and cannot remember. What can be done?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Immediate Action Steps\n\n**First, check for symptoms of overdose/hypotension:**\n- Dizziness, lightheadedness\n- Confusion (beyond baseline)\n- Weakness or fainting\n- Rapid or irregular heartbeat\n- Blurred vision\n- Nausea\n\n**Take blood pressure and pulse right now**, then recheck every 30-60 minutes for the next few hours. This is your most useful objective data.\n\n# What to Do Based on What You Find\n\n**If BP is significantly low (systolic <90, or notably below their normal) or symptoms are present:**\n- Call Poison Control: **1-800-222-1222** (US) \u2014 they can advise based on the specific medication(s) and estimated dose\n- Or go to urgent care/ER, especially if the person is on medications like clonidine, beta-blockers, or calcium channel blockers, which can cause more dangerous drops or rebound effects\n\n**If BP is normal and no symptoms:**\n- Continue monitoring every hour for 4-6 hours\n- Have them stay seated/lying down if dizzy\n- Encourage fluids unless contraindicated\n- Call their doctor's office for guidance, especially to ask about the specific medications involved (some are more dangerous in double-dose than others)\n\n# Preventing This Going Forward\n\nSince dementia is involved, this will keep happening without a system change:\n\n1. **Blister packs / pre-filled pill organizers** \u2014 filled weekly by you or a pharmacy, with day/time compartments\n2. **Locked medication storage** \u2014 the person should not have independent access to the pill bottles\n3. **Automatic pill dispensers** (like Hero, MedMinder, or Philips Medication Dispenser) \u2014 these lock and only release the correct dose at scheduled times, often with alerts to a caregiver if missed or if someone tries to access early\n4. **Direct supervision** for each dose \u2014 someone administers and watches them take it, rather than leaving pills for them to take independently\n\nGiven the cognitive impairment, self-directed medication management is no longer safe, and this event is a signal that a caregiving/monitoring system needs to be put in place rather than relying on their memory.\n\n**Bottom line right now: check vitals, watch for symptoms, and call Poison Control if anything is off or you're unsure.**",
+    "latency_ms": 10153.2,
+    "token_count": 912
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "53dfd80e9fd8",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239249.5594692,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4023,
+          "evidence": [
+            "Latency 10153ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 10153.2,
+        "token_count": 912,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.39; flagged=False"
+}

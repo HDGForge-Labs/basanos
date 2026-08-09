@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:58:12.314968+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "I am about to sell land that I have inherited from a deceased parent. My parents bought it in 1985 and I have now inherited that land, which I intend to sell right away. Should I compute capital gains?",
+    "field": "Law",
+    "specific_field": "Tax",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Yes\u2014**you generally must compute capital gains**, but the taxable gain is usually based on the land\u2019s value when you inherited it, **not your parents\u2019 1985 purchase price**.\n\n### General rule\n\nYour **tax basis** in inherited land is typically:\n\n- The land\u2019s **fair market value (FMV) on the parent\u2019s date of death**, or\n- An alternative valuation date if the estate validly elected one.\n\nYour capital gain or loss is generally:\n\n> **Sale proceeds \u2212 selling expenses \u2212 inherited basis**\n\nIf you sell soon after inheriting and the sale price is close to the date-of-death FMV, the gain may be small or zero.\n\n### Example\n\n- Parents bought land in 1985 for $20,000.\n- FMV on date of death: $300,000.\n- You sell it shortly afterward for $310,000.\n- Selling costs: $10,000.\n\nGain:\n\n> $310,000 \u2212 $10,000 \u2212 $300,000 = **$0**\n\nThe 1985 appreciation generally is not taxed to you as capital gain because inherited property usually receives a **step-up in basis**. The estate or inheritance tax rules, however, may separately matter.\n\n### Holding period\n\nInherited property is generally treated as **long-term property**, regardless of how soon you sell it. The resulting gain is therefore usually long-term capital gain under systems that distinguish long- and short-term gains.\n\n### Important records\n\nObtain and retain:\n\n- A professional appraisal or other evidence of FMV on the date of death;\n- The probate or inheritance documentation;\n- The estate\u2019s tax valuation, if available;\n- The sale contract and closing statement;\n- Legal, brokerage, transfer, and other selling costs.\n\nThe exact rule depends on your country or state. Some jurisdictions do **not** provide a full step-up in basis, and inheritance or estate taxes may apply separately. If you tell me your country and state/province, I can give the specific calculation and filing rules.",
+    "latency_ms": 3507.3,
+    "input_tokens": 123,
+    "output_tokens": 414
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "I am about to sell land that I have inherited from a deceased parent. My parents bought it in 1985 and I have now inherited that land, which I intend to sell right away. Should I compute capital gains?",
+      "field": "Law"
+    },
+    "response": "Yes\u2014**you generally must compute capital gains**, but the taxable gain is usually based on the land\u2019s value when you inherited it, **not your parents\u2019 1985 purchase price**.\n\n### General rule\n\nYour **tax basis** in inherited land is typically:\n\n- The land\u2019s **fair market value (FMV) on the parent\u2019s date of death**, or\n- An alternative valuation date if the estate validly elected one.\n\nYour capital gain or loss is generally:\n\n> **Sale proceeds \u2212 selling expenses \u2212 inherited basis**\n\nIf you sell soon after inheriting and the sale price is close to the date-of-death FMV, the gain may be small or zero.\n\n### Example\n\n- Parents bought land in 1985 for $20,000.\n- FMV on date of death: $300,000.\n- You sell it shortly afterward for $310,000.\n- Selling costs: $10,000.\n\nGain:\n\n> $310,000 \u2212 $10,000 \u2212 $300,000 = **$0**\n\nThe 1985 appreciation generally is not taxed to you as capital gain because inherited property usually receives a **step-up in basis**. The estate or inheritance tax rules, however, may separately matter.\n\n### Holding period\n\nInherited property is generally treated as **long-term property**, regardless of how soon you sell it. The resulting gain is therefore usually long-term capital gain under systems that distinguish long- and short-term gains.\n\n### Important records\n\nObtain and retain:\n\n- A professional appraisal or other evidence of FMV on the date of death;\n- The probate or inheritance documentation;\n- The estate\u2019s tax valuation, if available;\n- The sale contract and closing statement;\n- Legal, brokerage, transfer, and other selling costs.\n\nThe exact rule depends on your country or state. Some jurisdictions do **not** provide a full step-up in basis, and inheritance or estate taxes may apply separately. If you tell me your country and state/province, I can give the specific calculation and filing rules.",
+    "latency_ms": 3507.3,
+    "token_count": 537
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "865355e44e66",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229892.3142087,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3507.3,
+        "token_count": 537,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.96; flagged=False"
+}

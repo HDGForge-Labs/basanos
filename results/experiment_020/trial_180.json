@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T02:02:33.806780+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "How can we support people through addiction and homelessness?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Psychotherapy",
+    "question_type": "Advice or suggestions on how to approach a problem"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Supporting People Through Addiction and Homelessness\n\nThis is a complex, interconnected challenge. Research consistently shows that approximately 25-35% of people experiencing chronic homelessness have a substance use disorder, though estimates vary by study and population studied.\n\n## Evidence-Based Approaches\n\n**Housing First Model**\nThis approach has become the gold standard in many jurisdictions:\n- Studies show housing retention rates of roughly 70-90% after 1-2 years when Housing First principles are applied, compared to approximately 30-50% retention in traditional \"treatment first\" models\n- Removes sobriety requirements as a precondition for housing\n- Research from Pathways to Housing and similar programs suggests cost savings of around $15,000-$20,000 per person annually in reduced emergency services, hospitalizations, and incarceration\n\n**Medication-Assisted Treatment (MAT)**\n- Methadone maintenance can reduce illicit opioid use by approximately 60-70%\n- Buprenorphine (Suboxone) shows similar efficacy with roughly 40-60% reduction in overdose risk when properly maintained\n- Naltrexone (including extended-release Vivitrol, given as a monthly injection) shows variable adherence rates, often around 30-50% completion at 6 months\n\n## Practical Support Strategies\n\n**Harm Reduction Services**\n- Needle exchange programs reduce HIV transmission by an estimated 30-50% in studied populations\n- Naloxone distribution has been linked to overdose mortality reductions of roughly 20-40% in areas with robust distribution programs\n- Safe consumption sites (where legal) show reductions in public drug use and overdose deaths, though data varies significantly by location\n\n**Wraparound Services**\nEffective programs typically combine:\n- Case management (caseloads ideally around 15-25 clients per worker for intensive models)\n- Mental health treatment (co-occurring disorders present in approximately 50-75% of homeless individuals with substance use issues)\n- Job training and employment support\n- Legal aid services\n- Peer support specialists (people with lived experience)\n\n## Timeframes to Consider\n\n- Detox typically takes 3-7 days depending on substance\n- Meaningful behavioral change often requires 90 days to 1 year of sustained support\n- Housing stability metrics are usually measured at 6-month, 1-year, and 2-year marks\n- Relapse rates for substance use disorders range from approximately 40-60%, similar to other chronic diseases like hypertension or diabetes\n\n## Individual-Level Support\n\nIf you're helping someone directly:\n- Approach with non-judgment; shame-based approaches show poor outcomes\n- Learn naloxone administration (widely available, often free through health departments)\n- Connect people with local 211 services or SAMHSA's helpline (1-800-662-4357, available 24/7)\n- Understand that change often follows a stages-of-change model, and relapse is often part of recovery, not a sign of failure\n\n## Systemic Factors\n\n- Cities with robust Housing First programs (like Salt Lake City's earlier initiatives) reported reductions",
+    "latency_ms": 11914.3,
+    "input_tokens": 125,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How can we support people through addiction and homelessness?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Supporting People Through Addiction and Homelessness\n\nThis is a complex, interconnected challenge. Research consistently shows that approximately 25-35% of people experiencing chronic homelessness have a substance use disorder, though estimates vary by study and population studied.\n\n## Evidence-Based Approaches\n\n**Housing First Model**\nThis approach has become the gold standard in many jurisdictions:\n- Studies show housing retention rates of roughly 70-90% after 1-2 years when Housing First principles are applied, compared to approximately 30-50% retention in traditional \"treatment first\" models\n- Removes sobriety requirements as a precondition for housing\n- Research from Pathways to Housing and similar programs suggests cost savings of around $15,000-$20,000 per person annually in reduced emergency services, hospitalizations, and incarceration\n\n**Medication-Assisted Treatment (MAT)**\n- Methadone maintenance can reduce illicit opioid use by approximately 60-70%\n- Buprenorphine (Suboxone) shows similar efficacy with roughly 40-60% reduction in overdose risk when properly maintained\n- Naltrexone (including extended-release Vivitrol, given as a monthly injection) shows variable adherence rates, often around 30-50% completion at 6 months\n\n## Practical Support Strategies\n\n**Harm Reduction Services**\n- Needle exchange programs reduce HIV transmission by an estimated 30-50% in studied populations\n- Naloxone distribution has been linked to overdose mortality reductions of roughly 20-40% in areas with robust distribution programs\n- Safe consumption sites (where legal) show reductions in public drug use and overdose deaths, though data varies significantly by location\n\n**Wraparound Services**\nEffective programs typically combine:\n- Case management (caseloads ideally around 15-25 clients per worker for intensive models)\n- Mental health treatment (co-occurring disorders present in approximately 50-75% of homeless individuals with substance use issues)\n- Job training and employment support\n- Legal aid services\n- Peer support specialists (people with lived experience)\n\n## Timeframes to Consider\n\n- Detox typically takes 3-7 days depending on substance\n- Meaningful behavioral change often requires 90 days to 1 year of sustained support\n- Housing stability metrics are usually measured at 6-month, 1-year, and 2-year marks\n- Relapse rates for substance use disorders range from approximately 40-60%, similar to other chronic diseases like hypertension or diabetes\n\n## Individual-Level Support\n\nIf you're helping someone directly:\n- Approach with non-judgment; shame-based approaches show poor outcomes\n- Learn naloxone administration (widely available, often free through health departments)\n- Connect people with local 211 services or SAMHSA's helpline (1-800-662-4357, available 24/7)\n- Understand that change often follows a stages-of-change model, and relapse is often part of recovery, not a sign of failure\n\n## Systemic Factors\n\n- Cities with robust Housing First programs (like Salt Lake City's earlier initiatives) reported reductions",
+    "latency_ms": 11914.3,
+    "token_count": 1149,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "3aa55fd359bc",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240953.805978,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 22 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4287,
+          "evidence": [
+            "Latency 11914ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11914.3,
+        "token_count": 1149,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.180; flagged=True"
+}

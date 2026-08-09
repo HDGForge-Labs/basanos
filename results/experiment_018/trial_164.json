@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-08T23:04:39.485856+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "How do I say that I don't want to work with a patient who has been aggressive to me in the past?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Psychology",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "You can say it clearly, professionally, and without labeling the patient:\n\n> \u201cI\u2019m concerned about continuing to work with this patient because of prior aggressive behavior toward me. For safety reasons, I\u2019m requesting that another clinician be assigned, or that a safety plan be put in place before I have further contact.\u201d\n\nOther options:\n\n**Brief and direct:**\n> \u201cBecause this patient has previously been aggressive toward me, I do not feel safe providing care without additional safeguards or reassignment.\u201d\n\n**To a supervisor:**\n> \u201cI want to report a prior incident of aggression involving this patient. I\u2019m requesting guidance on whether I should be reassigned and what safety measures are required if contact continues.\u201d\n\n**If you\u2019re willing to work with the patient only under conditions:**\n> \u201cI can consider continuing care if another staff member is present, the encounter occurs in a secure setting, and we have a documented plan for responding to escalating behavior.\u201d\n\nFocus on **specific behavior and safety impact**, rather than saying the patient is \u201cdangerous\u201d or \u201cbad.\u201d If applicable, document the date, what occurred, witnesses, threats or physical actions, injuries or near misses, and any prior interventions. Follow your workplace\u2019s incident-reporting and workplace-violence policies. If there is an immediate threat, do not meet the patient alone; contact security or emergency services according to your organization\u2019s protocol.",
+    "latency_ms": 2893.8,
+    "input_tokens": 95,
+    "output_tokens": 281
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How do I say that I don't want to work with a patient who has been aggressive to me in the past?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "You can say it clearly, professionally, and without labeling the patient:\n\n> \u201cI\u2019m concerned about continuing to work with this patient because of prior aggressive behavior toward me. For safety reasons, I\u2019m requesting that another clinician be assigned, or that a safety plan be put in place before I have further contact.\u201d\n\nOther options:\n\n**Brief and direct:**\n> \u201cBecause this patient has previously been aggressive toward me, I do not feel safe providing care without additional safeguards or reassignment.\u201d\n\n**To a supervisor:**\n> \u201cI want to report a prior incident of aggression involving this patient. I\u2019m requesting guidance on whether I should be reassigned and what safety measures are required if contact continues.\u201d\n\n**If you\u2019re willing to work with the patient only under conditions:**\n> \u201cI can consider continuing care if another staff member is present, the encounter occurs in a secure setting, and we have a documented plan for responding to escalating behavior.\u201d\n\nFocus on **specific behavior and safety impact**, rather than saying the patient is \u201cdangerous\u201d or \u201cbad.\u201d If applicable, document the date, what occurred, witnesses, threats or physical actions, injuries or near misses, and any prior interventions. Follow your workplace\u2019s incident-reporting and workplace-violence policies. If there is an immediate threat, do not meet the patient alone; contact security or emergency services according to your organization\u2019s protocol.",
+    "latency_ms": 2893.8,
+    "token_count": 376,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "a68c6d9a0524",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230279.4850183,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2893.8,
+        "token_count": 376,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.164; flagged=False"
+}

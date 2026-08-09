@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-09T00:17:54.673133+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Is a sex worker entitled to compensation upon a claim of valid dismissal under the Labour Relations Act?",
+    "field": "Law",
+    "specific_field": "Labour Law",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Assuming you mean **South African law** and the **Labour Relations Act 66 of 1995 (LRA)**:\n\n**Generally, no.** If the dismissal is found to be **substantively and procedurally fair**\u2014that is, a *valid dismissal* for a fair reason and following a fair procedure\u2014the employee is not entitled to compensation merely because they were dismissed.\n\nUnder the LRA:\n\n- **Section 193(1)** provides remedies only where a dismissal is found to be **unfair**.\n- If the dismissal is fair, the CCMA or Labour Court will ordinarily dismiss the employee\u2019s unfair-dismissal claim.\n- This applies in principle even if the employee is a sex worker, although sex work has historically been criminalised in South Africa and this has created difficult public-policy and illegality issues in employment claims.\n\nWhere a dismissal is **unfair**, compensation may be available:\n\n1. **Ordinary unfair dismissal**  \n   - Compensation may be awarded up to a maximum of **12 months\u2019 remuneration** under **section 194(1)**.\n   - Reinstatement or re-employment may also be ordered under section 193, subject to the statutory exceptions.\n\n2. **Automatically unfair dismissal**\u2014for example, dismissal based on pregnancy, race, sex, gender, union activity, or another protected reason  \n   - Compensation may be up to **24 months\u2019 remuneration** under **section 194(3)**.\n\nA key case is **Kylie v CCMA and Others (2010) 31 ILJ 1600 (LAC)**. The Labour Appeal Court held that a sex worker could invoke the LRA\u2019s protection against unfair dismissal despite the illegality associated with sex work. However, the court stressed that remedies such as **reinstatement** may be inappropriate because they could compel continuation of an unlawful contract or activity. Compensation may nevertheless be considered where fairness and public policy justify it.\n\nSo the short answer is:\n\n- **Valid/fair dismissal:** no compensation under the LRA.\n- **Unfair dismissal:** a sex worker may, in appropriate circumstances, seek compensation, potentially up to **12 months\u2019 pay** (or **24 months\u2019 pay** for an automatically unfair dismissal), although illegality and public-policy considerations can affect the remedy.",
+    "latency_ms": 6067.1,
+    "input_tokens": 91,
+    "output_tokens": 471
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Is a sex worker entitled to compensation upon a claim of valid dismissal under the Labour Relations Act?",
+      "field": "Law"
+    },
+    "response": "Assuming you mean **South African law** and the **Labour Relations Act 66 of 1995 (LRA)**:\n\n**Generally, no.** If the dismissal is found to be **substantively and procedurally fair**\u2014that is, a *valid dismissal* for a fair reason and following a fair procedure\u2014the employee is not entitled to compensation merely because they were dismissed.\n\nUnder the LRA:\n\n- **Section 193(1)** provides remedies only where a dismissal is found to be **unfair**.\n- If the dismissal is fair, the CCMA or Labour Court will ordinarily dismiss the employee\u2019s unfair-dismissal claim.\n- This applies in principle even if the employee is a sex worker, although sex work has historically been criminalised in South Africa and this has created difficult public-policy and illegality issues in employment claims.\n\nWhere a dismissal is **unfair**, compensation may be available:\n\n1. **Ordinary unfair dismissal**  \n   - Compensation may be awarded up to a maximum of **12 months\u2019 remuneration** under **section 194(1)**.\n   - Reinstatement or re-employment may also be ordered under section 193, subject to the statutory exceptions.\n\n2. **Automatically unfair dismissal**\u2014for example, dismissal based on pregnancy, race, sex, gender, union activity, or another protected reason  \n   - Compensation may be up to **24 months\u2019 remuneration** under **section 194(3)**.\n\nA key case is **Kylie v CCMA and Others (2010) 31 ILJ 1600 (LAC)**. The Labour Appeal Court held that a sex worker could invoke the LRA\u2019s protection against unfair dismissal despite the illegality associated with sex work. However, the court stressed that remedies such as **reinstatement** may be inappropriate because they could compel continuation of an unlawful contract or activity. Compensation may nevertheless be considered where fairness and public policy justify it.\n\nSo the short answer is:\n\n- **Valid/fair dismissal:** no compensation under the LRA.\n- **Unfair dismissal:** a sex worker may, in appropriate circumstances, seek compensation, potentially up to **12 months\u2019 pay** (or **24 months\u2019 pay** for an automatically unfair dismissal), although illegality and public-policy considerations can affect the remedy.",
+    "latency_ms": 6067.1,
+    "token_count": 562,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "ce9cb1cf6c42",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234674.6724217,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 6067.1,
+        "token_count": 562,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.174; flagged=False"
+}

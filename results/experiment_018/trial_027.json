@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:53:37.054164+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Does pulsed fluoroscopy has more radiation than continuous fluoroscopy?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Radiology",
+    "question_type": "Directed question that has a single unambiguous answer| Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Usually, **no**. **Pulsed fluoroscopy generally delivers less radiation than continuous fluoroscopy** for the same procedure and image quality.\n\n- **Continuous fluoroscopy:** X-rays are produced continuously\u2014typically about 30 frames per second.\n- **Pulsed fluoroscopy:** X-rays are emitted in short bursts, often 7.5, 15, or 30 pulses per second. Fewer pulses usually mean a lower dose.\n\nRadiation dose depends on more than the mode:\n\n- Pulse rate and pulse width  \n- Fluoroscopy time  \n- Patient size and body part  \n- X-ray settings and automatic exposure control  \n- Magnification and image quality requirements  \n- Whether images are recorded or repeated  \n\nFor example, using **7.5 pulses/second instead of 30 pulses/second can substantially reduce dose**, sometimes by roughly 50\u201375%, though the exact reduction varies. However, pulsed fluoroscopy at a high pulse rate, or with long/high-output pulses, may use as much radiation as continuous fluoroscopy.\n\nThe key principle is: **use the lowest pulse rate and image quality that still safely allows the procedure**, along with minimizing fluoroscopy time, using collimation, and keeping the X-ray source as far from the patient as practical.",
+    "latency_ms": 2451.9,
+    "input_tokens": 91,
+    "output_tokens": 261
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Does pulsed fluoroscopy has more radiation than continuous fluoroscopy?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Usually, **no**. **Pulsed fluoroscopy generally delivers less radiation than continuous fluoroscopy** for the same procedure and image quality.\n\n- **Continuous fluoroscopy:** X-rays are produced continuously\u2014typically about 30 frames per second.\n- **Pulsed fluoroscopy:** X-rays are emitted in short bursts, often 7.5, 15, or 30 pulses per second. Fewer pulses usually mean a lower dose.\n\nRadiation dose depends on more than the mode:\n\n- Pulse rate and pulse width  \n- Fluoroscopy time  \n- Patient size and body part  \n- X-ray settings and automatic exposure control  \n- Magnification and image quality requirements  \n- Whether images are recorded or repeated  \n\nFor example, using **7.5 pulses/second instead of 30 pulses/second can substantially reduce dose**, sometimes by roughly 50\u201375%, though the exact reduction varies. However, pulsed fluoroscopy at a high pulse rate, or with long/high-output pulses, may use as much radiation as continuous fluoroscopy.\n\nThe key principle is: **use the lowest pulse rate and image quality that still safely allows the procedure**, along with minimizing fluoroscopy time, using collimation, and keeping the X-ray source as far from the patient as practical.",
+    "latency_ms": 2451.9,
+    "token_count": 352
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "cbd238e8a64f",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229617.0533636,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2451.9,
+        "token_count": 352,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.27; flagged=False"
+}

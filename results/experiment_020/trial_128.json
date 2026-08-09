@@ -1,0 +1,74 @@
+{
+  "timestamp_utc": "2026-08-09T01:52:04.803614+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is a command and Control Plan?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Emergency Planning",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Command and Control Plan (C2 Plan)\n\nA **Command and Control Plan** is a structured document or framework that outlines how leadership, decision-making authority, communication, and coordination will be organized and executed during an operation, incident, or organizational activity. It's used extensively in military, emergency management, law enforcement, and large-scale corporate operations.\n\n## Core Components\n\n### 1. **Organizational Structure**\n- Defines the chain of command, typically spanning **3 to 7 levels** depending on operation size\n- Identifies primary decision-makers and their backup/successor (usually **2-3 deep** in succession planning)\n- Establishes span of control\u2014generally recommended at a ratio of **1 supervisor to 3-7 subordinates** (often cited as the \"one-to-five\" rule in incident management)\n\n### 2. **Communication Protocols**\n- Specifies primary and backup communication channels (radio frequencies, phone lines, digital platforms)\n- Sets reporting intervals\u2014common standards include:\n  - Situation reports every **15 to 60 minutes** during active operations\n  - Formal briefings every **4 to 12 hours** for extended operations\n- Establishes **redundancy requirements**, often mandating at least **2-3 backup communication methods**\n\n### 3. **Decision-Making Authority**\n- Delineates **delegation of authority (DOA)** thresholds\u2014for example, field commanders might have authority to approve expenditures up to **$5,000-$50,000** without escalation\n- Defines trigger points for escalation (e.g., incidents affecting more than **50 people**, or events lasting beyond **72 hours**)\n\n### 4. **Roles and Responsibilities**\n- Assigns specific functions (Operations, Logistics, Planning, Finance/Admin\u2014mirroring the **Incident Command System (ICS)** model used in the U.S.)\n- Response time expectations for key roles, often **15 to 30 minutes** for initial activation\n\n### 5. **Common Operating Picture (COP)**\n- Ensures shared situational awareness across all levels\n- Update frequency typically ranges from **real-time** to every **30-60 minutes**\n\n## Typical Use Cases\n\n- **Military operations**: NATO and U.S. DoD doctrine (e.g., Joint Publication 3-0) emphasizes C2 as foundational to mission command\n- **Emergency management**: FEMA's National Incident Management System (NIMS) requires C2 structures for incidents involving multiple agencies\n- **Corporate crisis management**: Business continuity plans often mandate C2 plans be tested at least **annually**, with tabletop exercises lasting **2-4 hours**\n\n## Key Elements Often Included\n\n| Element | Typical Detail |\n|---|---|\n| Activation criteria | Specific thresholds (e.g., Category 3+ hurricane, 100+ casualties) |\n| Command post location | Primary + at least 1 alternate site |\n| Succession depth | 3-5 levels of backup leadership |\n| Review/update cycle | Annually, or after each major incident |\n| Training requirements | Often 8-40 hours",
+    "latency_ms": 12316.7,
+    "input_tokens": 121,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is a command and Control Plan?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "# Command and Control Plan (C2 Plan)\n\nA **Command and Control Plan** is a structured document or framework that outlines how leadership, decision-making authority, communication, and coordination will be organized and executed during an operation, incident, or organizational activity. It's used extensively in military, emergency management, law enforcement, and large-scale corporate operations.\n\n## Core Components\n\n### 1. **Organizational Structure**\n- Defines the chain of command, typically spanning **3 to 7 levels** depending on operation size\n- Identifies primary decision-makers and their backup/successor (usually **2-3 deep** in succession planning)\n- Establishes span of control\u2014generally recommended at a ratio of **1 supervisor to 3-7 subordinates** (often cited as the \"one-to-five\" rule in incident management)\n\n### 2. **Communication Protocols**\n- Specifies primary and backup communication channels (radio frequencies, phone lines, digital platforms)\n- Sets reporting intervals\u2014common standards include:\n  - Situation reports every **15 to 60 minutes** during active operations\n  - Formal briefings every **4 to 12 hours** for extended operations\n- Establishes **redundancy requirements**, often mandating at least **2-3 backup communication methods**\n\n### 3. **Decision-Making Authority**\n- Delineates **delegation of authority (DOA)** thresholds\u2014for example, field commanders might have authority to approve expenditures up to **$5,000-$50,000** without escalation\n- Defines trigger points for escalation (e.g., incidents affecting more than **50 people**, or events lasting beyond **72 hours**)\n\n### 4. **Roles and Responsibilities**\n- Assigns specific functions (Operations, Logistics, Planning, Finance/Admin\u2014mirroring the **Incident Command System (ICS)** model used in the U.S.)\n- Response time expectations for key roles, often **15 to 30 minutes** for initial activation\n\n### 5. **Common Operating Picture (COP)**\n- Ensures shared situational awareness across all levels\n- Update frequency typically ranges from **real-time** to every **30-60 minutes**\n\n## Typical Use Cases\n\n- **Military operations**: NATO and U.S. DoD doctrine (e.g., Joint Publication 3-0) emphasizes C2 as foundational to mission command\n- **Emergency management**: FEMA's National Incident Management System (NIMS) requires C2 structures for incidents involving multiple agencies\n- **Corporate crisis management**: Business continuity plans often mandate C2 plans be tested at least **annually**, with tabletop exercises lasting **2-4 hours**\n\n## Key Elements Often Included\n\n| Element | Typical Detail |\n|---|---|\n| Activation criteria | Specific thresholds (e.g., Category 3+ hurricane, 100+ casualties) |\n| Command post location | Primary + at least 1 alternate site |\n| Succession depth | 3-5 levels of backup leadership |\n| Review/update cycle | Annually, or after each major incident |\n| Training requirements | Often 8-40 hours",
+    "latency_ms": 12316.7,
+    "token_count": 1145,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "9add69042080",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240324.8028238,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4348,
+          "evidence": [
+            "Latency 12317ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12316.7,
+        "token_count": 1145,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.128; flagged=False"
+}

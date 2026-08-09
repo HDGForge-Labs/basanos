@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T22:59:50.794757+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is the first radiological sign of fetal death?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "medical profesional based in family medicine",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "The **earliest radiological sign of fetal death** is usually **fetal heart motion becoming absent on real-time ultrasound**\u2014specifically, no cardiac activity when it was previously present.\n\nIf referring to **plain X-ray findings**, the earliest classic sign is **Spalding\u2019s sign**: **overlapping or overriding fetal skull bones** due to loss of intracranial support. It generally appears **about 1\u20133 days after fetal death**, though timing varies.\n\nOther later radiographic signs include:\n\n- **Robert\u2019s sign:** fetal intracranial gas, often appearing **within roughly 12 hours to several days**\n- **Horner\u2019s sign:** curvature or collapse of the fetal spine\n- **Fetal maceration and soft-tissue changes**\n\nThus, the concise answer is: **absent fetal cardiac activity on ultrasound**; for traditional radiology exams, **Spalding\u2019s sign**.",
+    "latency_ms": 2081.0,
+    "input_tokens": 83,
+    "output_tokens": 189
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the first radiological sign of fetal death?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "The **earliest radiological sign of fetal death** is usually **fetal heart motion becoming absent on real-time ultrasound**\u2014specifically, no cardiac activity when it was previously present.\n\nIf referring to **plain X-ray findings**, the earliest classic sign is **Spalding\u2019s sign**: **overlapping or overriding fetal skull bones** due to loss of intracranial support. It generally appears **about 1\u20133 days after fetal death**, though timing varies.\n\nOther later radiographic signs include:\n\n- **Robert\u2019s sign:** fetal intracranial gas, often appearing **within roughly 12 hours to several days**\n- **Horner\u2019s sign:** curvature or collapse of the fetal spine\n- **Fetal maceration and soft-tissue changes**\n\nThus, the concise answer is: **absent fetal cardiac activity on ultrasound**; for traditional radiology exams, **Spalding\u2019s sign**.",
+    "latency_ms": 2081.0,
+    "token_count": 272,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "dd7952da866b",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229990.793998,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 2 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 2081.0,
+        "token_count": 272,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.118; flagged=True"
+}

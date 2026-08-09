@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:17:48.599076+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Why was it hard for people in the 80's to get a title deed especially the ones from townshops?",
+    "field": "Law",
+    "specific_field": "Paralegal",
+    "question_type": "Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "In many countries, especially South Africa, it was difficult for people in the 1980s to get title deeds for homes in townships because of apartheid-era land laws and housing policies.\n\nKey reasons included:\n\n- **Black residents were generally not allowed to own urban land freely.** Under laws such as the **Natives Land Act of 1913**, the **Native Trust and Land Act of 1936**, and later apartheid \u201cinflux control\u201d laws, Black South Africans were restricted to a small share of the country\u2019s land\u2014roughly **7% in 1913**, later expanded to about **13%**. Most townships were not designed as places where Black residents could own land outright.\n\n- **Township houses were commonly rented from the state or municipality.** Many families lived in council houses under a rental permit, site permit, or \u201cpermission to occupy,\u201d rather than a registered ownership title. Paying rent for **10, 20, or 30 years** did not automatically create legal ownership.\n\n- **The state controlled who could live in urban areas.** The apartheid government used pass laws and Section 10 rights under the Urban Areas Act to decide who was legally allowed to live in a town or city. A person could be regarded as a \u201ctemporary sojourner\u201d rather than a permanent urban resident, making ownership much harder or impossible.\n\n- **Land was often held by municipalities, the state, or development boards.** Even where a family occupied a house, the underlying land might legally belong to a local authority, the South African Development Trust, a homeland administration, or another government body. Before a deed could be issued, the land often had to be surveyed, formally proclaimed, subdivided, and transferred\u2014an expensive and slow administrative process.\n\n- **Township records were often incomplete or unreliable.** Addresses, plot boundaries, family details, permits, and payment records were not always properly recorded. In some cases, a house was allocated to one person but occupied by relatives, spouses, children, or tenants for decades. This later created disputes over who was entitled to receive the title deed.\n\n- **Women were frequently excluded from formal property rights.** Under apartheid and customary-law practices, official housing rights were often issued in the name of a male household head. Widows, unmarried women, divorced women, and adult children could therefore live in a house for years without being recognised as the legal owner.\n\n- **The cost and bureaucracy were major barriers.** Obtaining a title deed could require proof of occupation, municipal clearances, rates and service accounts, identity documents, death certificates, letters of authority for deceased estates, surveys, transfer paperwork, and conveyancing fees. For low-income households, even relatively modest legal or administrative costs could be unaffordable.\n\n- **Forced removals and homeland policies disrupted ownership.** During the apartheid period, millions of people were forcibly removed or relocated. Families moved between townships, rural areas, and so-called homelands, often losing documents and breaking the official paper trail needed to prove rights to a specific house.\n\n- **Political control was part of the system.** Restricting ownership helped the apartheid state control Black urban residents. Rental arrangements made it easier for authorities to evict people, relocate them, or deny them permanent residence rights.\n\nBy the mid-to-late **1980s**, some reforms began to allow more limited forms of township ownership, including the conversion of certain rental houses into ownership. But the process was uneven and did not immediately solve decades of missing records, disputed inheritance, unregistered land, unpaid municipal accounts, and administrative backlogs.\n\nSo, for many township families, the issue was not that they had no connection to the home\u2014they may have lived there for **20 to 50 years**\u2014but that the apartheid legal system deliberately separated occupation from full, registered ownership.",
+    "latency_ms": 11627.3,
+    "input_tokens": 95,
+    "output_tokens": 784
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Why was it hard for people in the 80's to get a title deed especially the ones from townshops?",
+      "field": "Law"
+    },
+    "response": "In many countries, especially South Africa, it was difficult for people in the 1980s to get title deeds for homes in townships because of apartheid-era land laws and housing policies.\n\nKey reasons included:\n\n- **Black residents were generally not allowed to own urban land freely.** Under laws such as the **Natives Land Act of 1913**, the **Native Trust and Land Act of 1936**, and later apartheid \u201cinflux control\u201d laws, Black South Africans were restricted to a small share of the country\u2019s land\u2014roughly **7% in 1913**, later expanded to about **13%**. Most townships were not designed as places where Black residents could own land outright.\n\n- **Township houses were commonly rented from the state or municipality.** Many families lived in council houses under a rental permit, site permit, or \u201cpermission to occupy,\u201d rather than a registered ownership title. Paying rent for **10, 20, or 30 years** did not automatically create legal ownership.\n\n- **The state controlled who could live in urban areas.** The apartheid government used pass laws and Section 10 rights under the Urban Areas Act to decide who was legally allowed to live in a town or city. A person could be regarded as a \u201ctemporary sojourner\u201d rather than a permanent urban resident, making ownership much harder or impossible.\n\n- **Land was often held by municipalities, the state, or development boards.** Even where a family occupied a house, the underlying land might legally belong to a local authority, the South African Development Trust, a homeland administration, or another government body. Before a deed could be issued, the land often had to be surveyed, formally proclaimed, subdivided, and transferred\u2014an expensive and slow administrative process.\n\n- **Township records were often incomplete or unreliable.** Addresses, plot boundaries, family details, permits, and payment records were not always properly recorded. In some cases, a house was allocated to one person but occupied by relatives, spouses, children, or tenants for decades. This later created disputes over who was entitled to receive the title deed.\n\n- **Women were frequently excluded from formal property rights.** Under apartheid and customary-law practices, official housing rights were often issued in the name of a male household head. Widows, unmarried women, divorced women, and adult children could therefore live in a house for years without being recognised as the legal owner.\n\n- **The cost and bureaucracy were major barriers.** Obtaining a title deed could require proof of occupation, municipal clearances, rates and service accounts, identity documents, death certificates, letters of authority for deceased estates, surveys, transfer paperwork, and conveyancing fees. For low-income households, even relatively modest legal or administrative costs could be unaffordable.\n\n- **Forced removals and homeland policies disrupted ownership.** During the apartheid period, millions of people were forcibly removed or relocated. Families moved between townships, rural areas, and so-called homelands, often losing documents and breaking the official paper trail needed to prove rights to a specific house.\n\n- **Political control was part of the system.** Restricting ownership helped the apartheid state control Black urban residents. Rental arrangements made it easier for authorities to evict people, relocate them, or deny them permanent residence rights.\n\nBy the mid-to-late **1980s**, some reforms began to allow more limited forms of township ownership, including the conversion of certain rental houses into ownership. But the process was uneven and did not immediately solve decades of missing records, disputed inheritance, unregistered land, unpaid municipal accounts, and administrative backlogs.\n\nSo, for many township families, the issue was not that they had no connection to the home\u2014they may have lived there for **20 to 50 years**\u2014but that the apartheid legal system deliberately separated occupation from full, registered ownership.",
+    "latency_ms": 11627.3,
+    "token_count": 879,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "6c752885092e",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234668.5983202,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 8 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4244,
+          "evidence": [
+            "Latency 11627ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11627.3,
+        "token_count": 879,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.173; flagged=True"
+}

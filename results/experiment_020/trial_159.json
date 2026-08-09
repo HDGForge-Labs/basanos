@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:58:26.952957+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What are the outcomes of using hyaluronidase?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Aesthetic",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Outcomes of Hyaluronidase Use\n\nHyaluronidase is an enzyme that breaks down hyaluronic acid, and its outcomes vary significantly based on the clinical application.\n\n## Aesthetic/Cosmetic Applications\n\n**Dissolving HA Filler Complications**\n- Approximately **80-90%** of unwanted filler volume can be dissolved within **24-48 hours** of injection\n- Vascular occlusion emergencies show improved outcomes when treated within the first **4-6 hours**, though intervention up to 24-48 hours can still provide benefit\n- Typical doses range from about **10-20 units** for small touch-ups to **150-200 units** for larger vascular emergencies\n- Complete dissolution often requires **1-3 treatment sessions**, spaced about **1 week apart**\n- Skin necrosis prevention success rates are estimated at **70-90%** when hyaluronidase is administered promptly during vascular compromise\n\n**Recovery Timeline**\n- Visible reduction in filler volume typically occurs within **24-72 hours**\n- Full metabolic clearance of both the filler and hyaluronidase itself takes approximately **24-48 hours** (enzyme half-life is very short, roughly **2-3 minutes** in tissue, though effects on HA persist longer)\n\n## Medical Applications\n\n**Subcutaneous Drug/Fluid Delivery (Hypodermoclysis)**\n- Enhances absorption rates of subcutaneously administered fluids by approximately **50-100%**\n- Commonly used doses: **150 units** per liter of subcutaneous fluid\n- Reduces tissue swelling/induration at injection sites by an estimated **30-50%** compared to fluids given without the enzyme\n\n**Ophthalmic Use (Retrobulbar/Peribulbar Blocks)**\n- Improves anesthetic spread, reducing onset time by approximately **30-50%**\n- Doses of **15-75 units/mL** are typically added to local anesthetic mixtures\n\n**Extravasation Injuries**\n- When used for extravasation of vesicant drugs (e.g., chemotherapy agents), tissue damage severity may be reduced by an estimated **40-60%** if administered within **1-4 hours** of the extravasation event\n- Typical dose: **150 units** diluted and injected subcutaneously around the affected area\n\n## Adverse Outcomes/Risks\n\n- **Allergic reactions**: occur in approximately **0.05-0.1%** of patients (higher in those with bee venom allergies due to cross-reactivity)\n- **Local injection site reactions** (redness, swelling): reported in roughly **10-15%** of cosmetic uses\n- **Anaphylaxis**: rare, estimated at less than **0.1%** of cases\n- Excessive dissolution of native (non-filler) hyaluronic acid can cause temporary loss of natural facial volume, typically resolving within **1-2 weeks** as the body regenerates HA\n\n## Factors Affecting Outcomes\n\n- **Filler type**: Higher cross-",
+    "latency_ms": 11872.6,
+    "input_tokens": 127,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the outcomes of using hyaluronidase?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Outcomes of Hyaluronidase Use\n\nHyaluronidase is an enzyme that breaks down hyaluronic acid, and its outcomes vary significantly based on the clinical application.\n\n## Aesthetic/Cosmetic Applications\n\n**Dissolving HA Filler Complications**\n- Approximately **80-90%** of unwanted filler volume can be dissolved within **24-48 hours** of injection\n- Vascular occlusion emergencies show improved outcomes when treated within the first **4-6 hours**, though intervention up to 24-48 hours can still provide benefit\n- Typical doses range from about **10-20 units** for small touch-ups to **150-200 units** for larger vascular emergencies\n- Complete dissolution often requires **1-3 treatment sessions**, spaced about **1 week apart**\n- Skin necrosis prevention success rates are estimated at **70-90%** when hyaluronidase is administered promptly during vascular compromise\n\n**Recovery Timeline**\n- Visible reduction in filler volume typically occurs within **24-72 hours**\n- Full metabolic clearance of both the filler and hyaluronidase itself takes approximately **24-48 hours** (enzyme half-life is very short, roughly **2-3 minutes** in tissue, though effects on HA persist longer)\n\n## Medical Applications\n\n**Subcutaneous Drug/Fluid Delivery (Hypodermoclysis)**\n- Enhances absorption rates of subcutaneously administered fluids by approximately **50-100%**\n- Commonly used doses: **150 units** per liter of subcutaneous fluid\n- Reduces tissue swelling/induration at injection sites by an estimated **30-50%** compared to fluids given without the enzyme\n\n**Ophthalmic Use (Retrobulbar/Peribulbar Blocks)**\n- Improves anesthetic spread, reducing onset time by approximately **30-50%**\n- Doses of **15-75 units/mL** are typically added to local anesthetic mixtures\n\n**Extravasation Injuries**\n- When used for extravasation of vesicant drugs (e.g., chemotherapy agents), tissue damage severity may be reduced by an estimated **40-60%** if administered within **1-4 hours** of the extravasation event\n- Typical dose: **150 units** diluted and injected subcutaneously around the affected area\n\n## Adverse Outcomes/Risks\n\n- **Allergic reactions**: occur in approximately **0.05-0.1%** of patients (higher in those with bee venom allergies due to cross-reactivity)\n- **Local injection site reactions** (redness, swelling): reported in roughly **10-15%** of cosmetic uses\n- **Anaphylaxis**: rare, estimated at less than **0.1%** of cases\n- Excessive dissolution of native (non-filler) hyaluronic acid can cause temporary loss of natural facial volume, typically resolving within **1-2 weeks** as the body regenerates HA\n\n## Factors Affecting Outcomes\n\n- **Filler type**: Higher cross-",
+    "latency_ms": 11872.6,
+    "token_count": 1151,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "980770570f24",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240706.9521823,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 24 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4281,
+          "evidence": [
+            "Latency 11873ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11872.6,
+        "token_count": 1151,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.159; flagged=True"
+}

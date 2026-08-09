@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:19:44.454075+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "If we apply GnRH to cultured neurons and observe neuritic growth, what would be the possible mechanism of action of this hormone on neurons?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Neuroscience researcher",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "GnRH can act directly on neurons, not only through the hypothalamic\u2013pituitary\u2013gonadal axis. If cultured neurons show increased neurite length, branching, or growth-cone activity after GnRH exposure, several mechanisms are plausible.\n\n1. **Activation of neuronal GnRH receptors**\n   - Many neuronal populations express **GnRH receptor type 1 (GnRHR1)**, a G-protein-coupled receptor.\n   - GnRHR1 commonly couples to **Gq/11**, activating:\n     - **phospholipase C (PLC)**\n     - cleavage of PIP2 into **IP3** and **DAG**\n     - IP3-dependent release of intracellular **Ca\u00b2\u207a**\n     - DAG-dependent activation of **protein kinase C (PKC)**.\n   - A short, regulated Ca\u00b2\u207a signal can promote growth-cone motility, actin remodeling, and neurite extension. In contrast, sustained excessive Ca\u00b2\u207a elevation may be inhibitory or toxic.\n\n2. **MAPK/ERK signaling and gene transcription**\n   - GnRH receptor activation can stimulate the **Ras\u2013Raf\u2013MEK\u2013ERK1/2 pathway**.\n   - ERK signaling promotes expression of growth-associated genes, including proteins involved in cytoskeletal assembly and neuronal plasticity.\n   - This may increase neurite elongation over approximately **6\u201348 hours**, whereas acute growth-cone changes may occur within minutes to a few hours.\n\n3. **PI3K\u2013Akt\u2013mTOR pathway**\n   - GnRH may activate **phosphoinositide 3-kinase (PI3K)** and downstream **Akt**.\n   - PI3K/Akt signaling supports neuronal survival, local protein synthesis, membrane expansion, and axonal/dendritic growth.\n   - Activation of **mTOR** can enhance translation of proteins needed for neurite formation, such as cytoskeletal and synaptic components.\n\n4. **Cytoskeletal remodeling**\n   - Neurite outgrowth requires coordinated regulation of:\n     - **actin filaments** in filopodia and lamellipodia,\n     - **microtubules** in the neurite shaft,\n     - small Rho-family GTPases, especially **Rac1**, **Cdc42**, and **RhoA**.\n   - GnRH signaling could favor Rac1/Cdc42 activity, which generally promotes filopodia formation and neurite extension, while reducing RhoA/ROCK-dependent growth-cone collapse.\n\n5. **Induction or release of neurotrophic factors**\n   - GnRH may increase expression or secretion of trophic molecules such as **BDNF**, **NGF**, or other locally acting growth factors.\n   - These factors can then act in an autocrine or paracrine manner through Trk receptors, further activating ERK and PI3K/Akt signaling.\n   - Thus, some apparent GnRH effect may be indirect: GnRH first stimulates the neuron or surrounding glial cells to produce a neurotrophic signal.\n\n6. **Modulation of neuronal excitability and calcium-dependent growth**\n   - GnRH can alter ion-channel activity, membrane potential, and intracellular calcium oscillations.\n   - Moderate activity-dependent Ca\u00b2\u207a signaling can activate **CaMKII**, **CREB**, and other transcriptional regulators associated with neuronal differentiation and process growth.\n   - The response may depend strongly on dose and exposure pattern. Pulsatile GnRH exposure, for example, may produce different outcomes from continuous exposure because GnRH receptors can desensitize after prolonged stimulation.\n\n7. **Developmental or guidance-related actions**\n   - During development, GnRH has been implicated in migration and maturation of GnRH neurons and other neural cells. In culture, it may influence expression of adhesion molecules, extracellular-matrix interactions, or guidance receptors.\n   - Possible targets include integrins, NCAM, cadherins, and pathways affecting responsiveness to guidance cues such as semaphorins, netrins, or ephrins.\n\nA practical mechanistic model would be:\n\n**GnRH \u2192 neuronal GnRHR \u2192 Gq/PLC \u2192 IP3/Ca\u00b2\u207a + DAG/PKC \u2192 ERK and PI3K/Akt activation \u2192 cytoskeletal remodeling, local protein synthesis, and growth-associated gene expression \u2192 increased neurite extension and/or branching.**\n\nTo test whether the effect is receptor-mediated, one could compare GnRH-treated cultures with cultures receiving a **GnRH receptor antagonist**, assess receptor expression by immunostaining or qPCR, and measure signaling markers such as phosphorylated **ERK1/2**, **Akt**, **CREB**, or **PKC**. Inhibitors of MEK/ERK, PI3K, PLC, intracellular calcium signaling, or ROCK can help distinguish whether the observed neurite growth depends primarily on trophic signaling, calcium/PKC signaling, or cytoskeletal regulation.",
+    "latency_ms": 12811.3,
+    "input_tokens": 100,
+    "output_tokens": 1018
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "If we apply GnRH to cultured neurons and observe neuritic growth, what would be the possible mechanism of action of this hormone on neurons?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "GnRH can act directly on neurons, not only through the hypothalamic\u2013pituitary\u2013gonadal axis. If cultured neurons show increased neurite length, branching, or growth-cone activity after GnRH exposure, several mechanisms are plausible.\n\n1. **Activation of neuronal GnRH receptors**\n   - Many neuronal populations express **GnRH receptor type 1 (GnRHR1)**, a G-protein-coupled receptor.\n   - GnRHR1 commonly couples to **Gq/11**, activating:\n     - **phospholipase C (PLC)**\n     - cleavage of PIP2 into **IP3** and **DAG**\n     - IP3-dependent release of intracellular **Ca\u00b2\u207a**\n     - DAG-dependent activation of **protein kinase C (PKC)**.\n   - A short, regulated Ca\u00b2\u207a signal can promote growth-cone motility, actin remodeling, and neurite extension. In contrast, sustained excessive Ca\u00b2\u207a elevation may be inhibitory or toxic.\n\n2. **MAPK/ERK signaling and gene transcription**\n   - GnRH receptor activation can stimulate the **Ras\u2013Raf\u2013MEK\u2013ERK1/2 pathway**.\n   - ERK signaling promotes expression of growth-associated genes, including proteins involved in cytoskeletal assembly and neuronal plasticity.\n   - This may increase neurite elongation over approximately **6\u201348 hours**, whereas acute growth-cone changes may occur within minutes to a few hours.\n\n3. **PI3K\u2013Akt\u2013mTOR pathway**\n   - GnRH may activate **phosphoinositide 3-kinase (PI3K)** and downstream **Akt**.\n   - PI3K/Akt signaling supports neuronal survival, local protein synthesis, membrane expansion, and axonal/dendritic growth.\n   - Activation of **mTOR** can enhance translation of proteins needed for neurite formation, such as cytoskeletal and synaptic components.\n\n4. **Cytoskeletal remodeling**\n   - Neurite outgrowth requires coordinated regulation of:\n     - **actin filaments** in filopodia and lamellipodia,\n     - **microtubules** in the neurite shaft,\n     - small Rho-family GTPases, especially **Rac1**, **Cdc42**, and **RhoA**.\n   - GnRH signaling could favor Rac1/Cdc42 activity, which generally promotes filopodia formation and neurite extension, while reducing RhoA/ROCK-dependent growth-cone collapse.\n\n5. **Induction or release of neurotrophic factors**\n   - GnRH may increase expression or secretion of trophic molecules such as **BDNF**, **NGF**, or other locally acting growth factors.\n   - These factors can then act in an autocrine or paracrine manner through Trk receptors, further activating ERK and PI3K/Akt signaling.\n   - Thus, some apparent GnRH effect may be indirect: GnRH first stimulates the neuron or surrounding glial cells to produce a neurotrophic signal.\n\n6. **Modulation of neuronal excitability and calcium-dependent growth**\n   - GnRH can alter ion-channel activity, membrane potential, and intracellular calcium oscillations.\n   - Moderate activity-dependent Ca\u00b2\u207a signaling can activate **CaMKII**, **CREB**, and other transcriptional regulators associated with neuronal differentiation and process growth.\n   - The response may depend strongly on dose and exposure pattern. Pulsatile GnRH exposure, for example, may produce different outcomes from continuous exposure because GnRH receptors can desensitize after prolonged stimulation.\n\n7. **Developmental or guidance-related actions**\n   - During development, GnRH has been implicated in migration and maturation of GnRH neurons and other neural cells. In culture, it may influence expression of adhesion molecules, extracellular-matrix interactions, or guidance receptors.\n   - Possible targets include integrins, NCAM, cadherins, and pathways affecting responsiveness to guidance cues such as semaphorins, netrins, or ephrins.\n\nA practical mechanistic model would be:\n\n**GnRH \u2192 neuronal GnRHR \u2192 Gq/PLC \u2192 IP3/Ca\u00b2\u207a + DAG/PKC \u2192 ERK and PI3K/Akt activation \u2192 cytoskeletal remodeling, local protein synthesis, and growth-associated gene expression \u2192 increased neurite extension and/or branching.**\n\nTo test whether the effect is receptor-mediated, one could compare GnRH-treated cultures with cultures receiving a **GnRH receptor antagonist**, assess receptor expression by immunostaining or qPCR, and measure signaling markers such as phosphorylated **ERK1/2**, **Akt**, **CREB**, or **PKC**. Inhibitors of MEK/ERK, PI3K, PLC, intracellular calcium signaling, or ROCK can help distinguish whether the observed neurite growth depends primarily on trophic signaling, calcium/PKC signaling, or cytoskeletal regulation.",
+    "latency_ms": 12811.3,
+    "token_count": 1118,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "85c1b9362418",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234784.453284,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 5 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4422,
+          "evidence": [
+            "Latency 12811ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12811.3,
+        "token_count": 1118,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.185; flagged=True"
+}

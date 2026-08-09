@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T02:00:02.552137+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "According to Freud what is called the most primitive part of the brain?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Clinical Psychologist",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Freud's Concept of the \"Id\"\n\nAccording to Sigmund Freud's psychoanalytic theory, the most primitive part of the psyche (not literally the brain, but the mental apparatus) is called the **Id**.\n\n## Key Characteristics of the Id\n\nFreud developed this concept primarily around **1920-1923**, most notably outlining it in his work *The Ego and the Id* (1923). The Id represents roughly the most instinctual and unconscious component of personality, present from birth.\n\n### Core Features:\n\n- **Operates on the \"pleasure principle\"** \u2014 seeking immediate gratification of desires, needs, and urges regardless of consequences\n- **Completely unconscious** \u2014 approximately (by Freud's estimation) the vast majority of mental processes, perhaps around 90% or more of psychic activity, occur below conscious awareness, with the Id being entirely part of this hidden realm\n- **Present from birth** \u2014 Freud believed infants operate almost entirely from the Id for roughly the first few years of life\n- **Houses basic drives** \u2014 including libido (sexual/life energy) and Thanatos (aggressive/death drive)\n- **Irrational and illogical** \u2014 lacks the capacity for logic, morality, or reality-testing\n\n## The Three-Part Structure\n\nFreud's model divided the psyche into three components, developing sequentially:\n\n1. **Id** \u2014 the primitive, instinctual part (present from birth)\n2. **Ego** \u2014 develops around **ages 2-3**, mediates between the Id and reality\n3. **Superego** \u2014 develops around **ages 3-5**, represents internalized morals and societal standards\n\n## Important Clarification\n\nIt's worth noting that Freud's \"Id\" is a **psychological/psychoanalytic construct**, not a literal anatomical brain structure. This differs from modern neuroscience concepts like the \"reptilian brain\" or limbic system (associated with researchers like Paul MacLean in the 1960s), which refer to actual evolutionary brain structures rather than Freud's theoretical model of personality.",
+    "latency_ms": 9056.0,
+    "input_tokens": 129,
+    "output_tokens": 661
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "According to Freud what is called the most primitive part of the brain?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Freud's Concept of the \"Id\"\n\nAccording to Sigmund Freud's psychoanalytic theory, the most primitive part of the psyche (not literally the brain, but the mental apparatus) is called the **Id**.\n\n## Key Characteristics of the Id\n\nFreud developed this concept primarily around **1920-1923**, most notably outlining it in his work *The Ego and the Id* (1923). The Id represents roughly the most instinctual and unconscious component of personality, present from birth.\n\n### Core Features:\n\n- **Operates on the \"pleasure principle\"** \u2014 seeking immediate gratification of desires, needs, and urges regardless of consequences\n- **Completely unconscious** \u2014 approximately (by Freud's estimation) the vast majority of mental processes, perhaps around 90% or more of psychic activity, occur below conscious awareness, with the Id being entirely part of this hidden realm\n- **Present from birth** \u2014 Freud believed infants operate almost entirely from the Id for roughly the first few years of life\n- **Houses basic drives** \u2014 including libido (sexual/life energy) and Thanatos (aggressive/death drive)\n- **Irrational and illogical** \u2014 lacks the capacity for logic, morality, or reality-testing\n\n## The Three-Part Structure\n\nFreud's model divided the psyche into three components, developing sequentially:\n\n1. **Id** \u2014 the primitive, instinctual part (present from birth)\n2. **Ego** \u2014 develops around **ages 2-3**, mediates between the Id and reality\n3. **Superego** \u2014 develops around **ages 3-5**, represents internalized morals and societal standards\n\n## Important Clarification\n\nIt's worth noting that Freud's \"Id\" is a **psychological/psychoanalytic construct**, not a literal anatomical brain structure. This differs from modern neuroscience concepts like the \"reptilian brain\" or limbic system (associated with researchers like Paul MacLean in the 1960s), which refer to actual evolutionary brain structures rather than Freud's theoretical model of personality.",
+    "latency_ms": 9056.0,
+    "token_count": 790,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "0988994ecd0a",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786240802.5513327,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 6 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 9056.0,
+        "token_count": 790,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.167; flagged=True"
+}

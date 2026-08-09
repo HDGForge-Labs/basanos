@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:58:04.037537+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "A female patient presents in the ER with pain in the leg and trouble breathing. The patient had a 7-hour flight in the previous day. What is the most recommended course of action here?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Emergency Medicine",
+    "question_type": "Advice or suggestions on how to approach a problem"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Suspected DVT with Pulmonary Embolism (PE)\n\nThis presentation\u2014unilateral leg pain following prolonged immobility (approximately 7-hour flight) combined with dyspnea\u2014is highly suggestive of **deep vein thrombosis (DVT) with possible pulmonary embolism (PE)**. This is a medical emergency requiring immediate, systematic evaluation.\n\n## Immediate Actions (First 10-15 minutes)\n\n1. **ABCs and vital signs** \u2014 Check oxygen saturation, blood pressure, heart rate, respiratory rate\n   - Hypoxia (SpO2 <94%), tachycardia (>100 bpm), or tachypnea (>20 breaths/min) raise urgency\n2. **Supplemental oxygen** if SpO2 <90-92%\n3. **IV access** and continuous cardiac/pulse oximetry monitoring\n4. **12-lead ECG** \u2014 Look for signs of right heart strain (S1Q3T3 pattern, seen in only about 10-20% of PE cases, but still worth checking); sinus tachycardia is most common finding (~40-45% of PE patients)\n\n## Risk Stratification\n\nUse the **Wells Score for PE** to estimate pretest probability:\n- Clinical signs of DVT: +3 points\n- PE is #1 diagnosis or equally likely: +3 points\n- Heart rate >100 bpm: +1.5 points\n- Immobilization/surgery in prior 4 weeks: +1.5 points\n- Previous DVT/PE: +1.5 points\n- Hemoptysis: +1 point\n- Malignancy: +1 point\n\n- **Score <2**: Low probability\n- **Score 2-6**: Moderate probability\n- **Score >6**: High probability\n\nGiven recent prolonged immobility (flight) + leg pain + dyspnea, this patient likely scores **\u22653-4.5**, placing her in moderate-to-high probability category.\n\n## Diagnostic Workup\n\n1. **D-dimer** (if low-to-moderate probability, Wells \u22644):\n   - If negative (<500 ng/mL, age-adjusted cutoff = age \u00d7 10 for patients >50), PE is essentially ruled out (sensitivity ~95-98%)\n   - If positive, proceed to imaging\n\n2. **CT Pulmonary Angiography (CTPA)** \u2014 Gold standard, sensitivity ~83-90%, specificity ~95-96%\n   - Should be obtained if Wells score is high (>6) regardless of D-dimer, or if D-dimer is positive\n\n3. **Compression ultrasound of the legs** \u2014 To confirm DVT (sensitivity ~90-95% for proximal DVT)\n\n4. **Troponin/BNP** \u2014 If PE confirmed, helps assess right ventricular strain and prognosis\n\n5. **Echocardiogram** \u2014 If hemodynamically unstable, to assess RV function/strain (bedside echo can be done rapidly in unstable patients)\n\n## Treatment\n\n### If PE/DVT Confirmed:\n\n**Hemodynamically stable pat",
+    "latency_ms": 10923.8,
+    "input_tokens": 165,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A female patient presents in the ER with pain in the leg and trouble breathing. The patient had a 7-hour flight in the previous day. What is the most recommended course of action here?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Suspected DVT with Pulmonary Embolism (PE)\n\nThis presentation\u2014unilateral leg pain following prolonged immobility (approximately 7-hour flight) combined with dyspnea\u2014is highly suggestive of **deep vein thrombosis (DVT) with possible pulmonary embolism (PE)**. This is a medical emergency requiring immediate, systematic evaluation.\n\n## Immediate Actions (First 10-15 minutes)\n\n1. **ABCs and vital signs** \u2014 Check oxygen saturation, blood pressure, heart rate, respiratory rate\n   - Hypoxia (SpO2 <94%), tachycardia (>100 bpm), or tachypnea (>20 breaths/min) raise urgency\n2. **Supplemental oxygen** if SpO2 <90-92%\n3. **IV access** and continuous cardiac/pulse oximetry monitoring\n4. **12-lead ECG** \u2014 Look for signs of right heart strain (S1Q3T3 pattern, seen in only about 10-20% of PE cases, but still worth checking); sinus tachycardia is most common finding (~40-45% of PE patients)\n\n## Risk Stratification\n\nUse the **Wells Score for PE** to estimate pretest probability:\n- Clinical signs of DVT: +3 points\n- PE is #1 diagnosis or equally likely: +3 points\n- Heart rate >100 bpm: +1.5 points\n- Immobilization/surgery in prior 4 weeks: +1.5 points\n- Previous DVT/PE: +1.5 points\n- Hemoptysis: +1 point\n- Malignancy: +1 point\n\n- **Score <2**: Low probability\n- **Score 2-6**: Moderate probability\n- **Score >6**: High probability\n\nGiven recent prolonged immobility (flight) + leg pain + dyspnea, this patient likely scores **\u22653-4.5**, placing her in moderate-to-high probability category.\n\n## Diagnostic Workup\n\n1. **D-dimer** (if low-to-moderate probability, Wells \u22644):\n   - If negative (<500 ng/mL, age-adjusted cutoff = age \u00d7 10 for patients >50), PE is essentially ruled out (sensitivity ~95-98%)\n   - If positive, proceed to imaging\n\n2. **CT Pulmonary Angiography (CTPA)** \u2014 Gold standard, sensitivity ~83-90%, specificity ~95-96%\n   - Should be obtained if Wells score is high (>6) regardless of D-dimer, or if D-dimer is positive\n\n3. **Compression ultrasound of the legs** \u2014 To confirm DVT (sensitivity ~90-95% for proximal DVT)\n\n4. **Troponin/BNP** \u2014 If PE confirmed, helps assess right ventricular strain and prognosis\n\n5. **Echocardiogram** \u2014 If hemodynamically unstable, to assess RV function/strain (bedside echo can be done rapidly in unstable patients)\n\n## Treatment\n\n### If PE/DVT Confirmed:\n\n**Hemodynamically stable pat",
+    "latency_ms": 10923.8,
+    "token_count": 1189,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "856e2dc514a1",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240684.036751,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 23 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4139,
+          "evidence": [
+            "Latency 10924ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 10923.8,
+        "token_count": 1189,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.157; flagged=True"
+}

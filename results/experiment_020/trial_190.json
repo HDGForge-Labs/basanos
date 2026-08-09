@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T02:04:42.701567+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "How can I perform lung function testing without putting strain or discomfort on the patient?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biomedical engineering. Main area of work is developing primary health care equipment.",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Performing Lung Function Testing Comfortably\n\n## Pre-Test Preparation\n\n**Patient Education & Comfort**\n- Explain the procedure thoroughly before starting\u2014anxiety significantly affects results, particularly forced expiratory maneuvers\n- Allow approximately 5-10 minutes of rest before testing, especially if the patient has walked to the clinic\n- Ensure the patient hasn't smoked for at least 1 hour prior, avoided heavy meals for roughly 2 hours, and abstained from vigorous exercise for about 30 minutes\n- Have patients wear loose, non-restrictive clothing around the chest and abdomen\n\n**Positioning**\n- Seated position is generally preferred over standing\u2014reduces fall risk and light-headedness from forced expiratory efforts\n- Ensure feet are flat on the floor, back supported, with roughly 90-degree hip and knee angles\n- Avoid neck flexion or extension during testing, as this can artificially alter airflow measurements by approximately 5-10%\n\n## Technique Modifications\n\n**Spirometry Specifically**\n- Use a nose clip to prevent air leakage, but ensure it's not overly tight\n- Allow 3-5 practice attempts before recording actual measurements, letting patients acclimate to the mouthpiece\n- Limit testing to a maximum of 8 attempts per session\u2014beyond this, fatigue reduces data quality rather than improving it\n- Allow approximately 1-2 minutes of recovery between forced maneuvers to prevent dizziness or bronchospasm\n- For patients with significant discomfort, consider slow vital capacity (SVC) maneuvers instead of forced maneuvers when appropriate for the clinical question\n\n**For Patients with Pain or Weakness**\n- Consider tidal breathing measurements (like impulse oscillometry) which require minimal effort compared to forced spirometry\n- Body plethysmography can measure lung volumes without requiring forceful exhalation\n- For post-surgical or rib fracture patients, provide a pillow to splint the chest/abdomen during forced maneuvers to reduce pain\n\n## Monitoring During Testing\n\n- Watch for signs of dizziness, chest pain, or excessive coughing\u2014stop immediately if these occur\n- Monitor oxygen saturation if baseline SpO2 is below approximately 92%\n- Limit breath-holding during diffusion capacity (DLCO) testing to about 10 seconds; if patients cannot tolerate this, shorter modified protocols exist\n- For elderly or frail patients, extend rest periods to 2-3 minutes between efforts rather than the standard 1 minute\n\n## Alternative/Gentler Approaches\n\n- **Peak flow meters**: Require less sustained effort than full spirometry, useful for monitoring rather than diagnosis\n- **Impulse oscillometry (IOS)**: Measures resistance during normal tidal breathing\u2014ideal for children, elderly, or those unable to perform forced maneuvers\n- **Six-minute walk test**: Can supplement functional assessment without requiring forceful resp",
+    "latency_ms": 12938.8,
+    "input_tokens": 135,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How can I perform lung function testing without putting strain or discomfort on the patient?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Performing Lung Function Testing Comfortably\n\n## Pre-Test Preparation\n\n**Patient Education & Comfort**\n- Explain the procedure thoroughly before starting\u2014anxiety significantly affects results, particularly forced expiratory maneuvers\n- Allow approximately 5-10 minutes of rest before testing, especially if the patient has walked to the clinic\n- Ensure the patient hasn't smoked for at least 1 hour prior, avoided heavy meals for roughly 2 hours, and abstained from vigorous exercise for about 30 minutes\n- Have patients wear loose, non-restrictive clothing around the chest and abdomen\n\n**Positioning**\n- Seated position is generally preferred over standing\u2014reduces fall risk and light-headedness from forced expiratory efforts\n- Ensure feet are flat on the floor, back supported, with roughly 90-degree hip and knee angles\n- Avoid neck flexion or extension during testing, as this can artificially alter airflow measurements by approximately 5-10%\n\n## Technique Modifications\n\n**Spirometry Specifically**\n- Use a nose clip to prevent air leakage, but ensure it's not overly tight\n- Allow 3-5 practice attempts before recording actual measurements, letting patients acclimate to the mouthpiece\n- Limit testing to a maximum of 8 attempts per session\u2014beyond this, fatigue reduces data quality rather than improving it\n- Allow approximately 1-2 minutes of recovery between forced maneuvers to prevent dizziness or bronchospasm\n- For patients with significant discomfort, consider slow vital capacity (SVC) maneuvers instead of forced maneuvers when appropriate for the clinical question\n\n**For Patients with Pain or Weakness**\n- Consider tidal breathing measurements (like impulse oscillometry) which require minimal effort compared to forced spirometry\n- Body plethysmography can measure lung volumes without requiring forceful exhalation\n- For post-surgical or rib fracture patients, provide a pillow to splint the chest/abdomen during forced maneuvers to reduce pain\n\n## Monitoring During Testing\n\n- Watch for signs of dizziness, chest pain, or excessive coughing\u2014stop immediately if these occur\n- Monitor oxygen saturation if baseline SpO2 is below approximately 92%\n- Limit breath-holding during diffusion capacity (DLCO) testing to about 10 seconds; if patients cannot tolerate this, shorter modified protocols exist\n- For elderly or frail patients, extend rest periods to 2-3 minutes between efforts rather than the standard 1 minute\n\n## Alternative/Gentler Approaches\n\n- **Peak flow meters**: Require less sustained effort than full spirometry, useful for monitoring rather than diagnosis\n- **Impulse oscillometry (IOS)**: Measures resistance during normal tidal breathing\u2014ideal for children, elderly, or those unable to perform forced maneuvers\n- **Six-minute walk test**: Can supplement functional assessment without requiring forceful resp",
+    "latency_ms": 12938.8,
+    "token_count": 1159,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "be382e69541c",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786241082.7007577,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 9 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4441,
+          "evidence": [
+            "Latency 12939ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12938.8,
+        "token_count": 1159,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.190; flagged=True"
+}

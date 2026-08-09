@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:07:28.150067+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "In the United Kingdom, what is the average age of onset for alcohol related dementia?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Dementia ",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "In the UK, there is **no single officially established average age of onset** for alcohol-related dementia. However, it commonly develops **earlier than typical Alzheimer\u2019s disease**, often in the **40s to 60s**, with many cases identified at approximately **50\u201360 years of age**.\n\nA related condition, **Wernicke\u2013Korsakoff syndrome**\u2014a form of alcohol-related brain damage caused mainly by severe vitamin B1 (thiamine) deficiency\u2014often becomes apparent after **roughly 10\u201320 years of heavy alcohol use**, although it can occur sooner, particularly with malnutrition or repeated alcohol withdrawal.\n\nFor comparison:\n\n- **Typical Alzheimer\u2019s disease onset:** usually after about **65 years**\n- **Alcohol-related dementia/brain damage:** often diagnosed approximately **10\u201320 years earlier**, frequently before age **65**\n- UK specialist guidance generally considers cognitive impairment in someone with a history of prolonged heavy drinking, especially when onset is before about **65**, as potentially alcohol-related\u2014but age alone cannot establish the diagnosis.\n\nThe actual age varies substantially depending on drinking quantity and duration, nutrition, liver disease, head injuries, withdrawal seizures, and other causes of cognitive impairment. A clinical assessment is important because some alcohol-related cognitive problems can **partly improve over several months\u2014often around 3\u201312 months\u2014after abstinence and adequate thiamine treatment**.",
+    "latency_ms": 2575.4,
+    "input_tokens": 89,
+    "output_tokens": 284
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "In the United Kingdom, what is the average age of onset for alcohol related dementia?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "In the UK, there is **no single officially established average age of onset** for alcohol-related dementia. However, it commonly develops **earlier than typical Alzheimer\u2019s disease**, often in the **40s to 60s**, with many cases identified at approximately **50\u201360 years of age**.\n\nA related condition, **Wernicke\u2013Korsakoff syndrome**\u2014a form of alcohol-related brain damage caused mainly by severe vitamin B1 (thiamine) deficiency\u2014often becomes apparent after **roughly 10\u201320 years of heavy alcohol use**, although it can occur sooner, particularly with malnutrition or repeated alcohol withdrawal.\n\nFor comparison:\n\n- **Typical Alzheimer\u2019s disease onset:** usually after about **65 years**\n- **Alcohol-related dementia/brain damage:** often diagnosed approximately **10\u201320 years earlier**, frequently before age **65**\n- UK specialist guidance generally considers cognitive impairment in someone with a history of prolonged heavy drinking, especially when onset is before about **65**, as potentially alcohol-related\u2014but age alone cannot establish the diagnosis.\n\nThe actual age varies substantially depending on drinking quantity and duration, nutrition, liver disease, head injuries, withdrawal seizures, and other causes of cognitive impairment. A clinical assessment is important because some alcohol-related cognitive problems can **partly improve over several months\u2014often around 3\u201312 months\u2014after abstinence and adequate thiamine treatment**.",
+    "latency_ms": 2575.4,
+    "token_count": 373,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "e400659f8f07",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230448.1493125,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 4 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 2575.4,
+        "token_count": 373,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.192; flagged=True"
+}

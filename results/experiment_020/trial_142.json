@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:54:58.025587+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What does the APGAR scale assess?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General medical",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# APGAR Scale\n\nThe APGAR score is a standardized assessment used to evaluate a newborn's physical condition immediately after birth. It was developed by Dr. Virginia Apgar in 1952 and remains a cornerstone of neonatal assessment worldwide.\n\n## Timing\nThe assessment is typically performed at approximately **1 minute** and **5 minutes** after birth. If the score remains low (below 7), it may be repeated at around **10, 15, or 20 minutes** as well.\n\n## The Five Components (APGAR Acronym)\n\nEach category is scored from **0 to 2 points**, for a maximum total of **10 points**:\n\n1. **A \u2013 Appearance (skin color)**\n- 0 points: Blue/pale all over\n- 1 point: Body pink, extremities blue (acrocyanosis)\n- 2 points: Completely pink\n\n2. **P \u2013 Pulse (heart rate)**\n- 0 points: Absent\n- 1 point: Below 100 beats per minute\n- 2 points: 100 beats per minute or greater\n\n3. **G \u2013 Grimace (reflex irritability)**\n- 0 points: No response to stimulation\n- 1 point: Grimace/weak cry with stimulation\n- 2 points: Vigorous cry, cough, or sneeze in response to stimulation\n\n4. **A \u2013 Activity (muscle tone)**\n- 0 points: Limp/flaccid\n- 1 point: Some flexion of arms/legs\n- 2 points: Active movement, good flexion\n\n5. **R \u2013 Respiration (breathing effort)**\n- 0 points: Absent\n- 1 point: Slow, irregular breathing, weak cry\n- 2 points: Strong cry, regular breathing\n\n## Score Interpretation\n\n- **7\u201310 points**: Considered normal/reassuring; infant is in good condition\n- **4\u20136 points**: Moderately abnormal; may require some resuscitative measures (e.g., stimulation, oxygen)\n- **0\u20133 points**: Low score; indicates need for immediate resuscitation and close monitoring\n\n## Clinical Notes\n\n- Roughly **90\u201395%** of newborns score between **8\u201310** at 5 minutes\n- A low 1-minute score doesn't necessarily predict long-term outcomes, but a persistently low score at **5 minutes or beyond** (especially below 5) is more concerning and associated with higher risk of complications\n- The score is a rapid clinical tool\u2014not a diagnostic instrument\u2014and doesn't predict long-term neurological outcomes with high reliability on its own\n- Approximately **1% of newborns** may have a 5-minute score below 7\n\nThe APGAR score allows healthcare providers to quickly identify infants who may need immediate medical intervention, such as suctioning, oxygen supplementation, or more advanced resuscitation efforts.",
+    "latency_ms": 10530.7,
+    "input_tokens": 122,
+    "output_tokens": 926
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What does the APGAR scale assess?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# APGAR Scale\n\nThe APGAR score is a standardized assessment used to evaluate a newborn's physical condition immediately after birth. It was developed by Dr. Virginia Apgar in 1952 and remains a cornerstone of neonatal assessment worldwide.\n\n## Timing\nThe assessment is typically performed at approximately **1 minute** and **5 minutes** after birth. If the score remains low (below 7), it may be repeated at around **10, 15, or 20 minutes** as well.\n\n## The Five Components (APGAR Acronym)\n\nEach category is scored from **0 to 2 points**, for a maximum total of **10 points**:\n\n1. **A \u2013 Appearance (skin color)**\n- 0 points: Blue/pale all over\n- 1 point: Body pink, extremities blue (acrocyanosis)\n- 2 points: Completely pink\n\n2. **P \u2013 Pulse (heart rate)**\n- 0 points: Absent\n- 1 point: Below 100 beats per minute\n- 2 points: 100 beats per minute or greater\n\n3. **G \u2013 Grimace (reflex irritability)**\n- 0 points: No response to stimulation\n- 1 point: Grimace/weak cry with stimulation\n- 2 points: Vigorous cry, cough, or sneeze in response to stimulation\n\n4. **A \u2013 Activity (muscle tone)**\n- 0 points: Limp/flaccid\n- 1 point: Some flexion of arms/legs\n- 2 points: Active movement, good flexion\n\n5. **R \u2013 Respiration (breathing effort)**\n- 0 points: Absent\n- 1 point: Slow, irregular breathing, weak cry\n- 2 points: Strong cry, regular breathing\n\n## Score Interpretation\n\n- **7\u201310 points**: Considered normal/reassuring; infant is in good condition\n- **4\u20136 points**: Moderately abnormal; may require some resuscitative measures (e.g., stimulation, oxygen)\n- **0\u20133 points**: Low score; indicates need for immediate resuscitation and close monitoring\n\n## Clinical Notes\n\n- Roughly **90\u201395%** of newborns score between **8\u201310** at 5 minutes\n- A low 1-minute score doesn't necessarily predict long-term outcomes, but a persistently low score at **5 minutes or beyond** (especially below 5) is more concerning and associated with higher risk of complications\n- The score is a rapid clinical tool\u2014not a diagnostic instrument\u2014and doesn't predict long-term neurological outcomes with high reliability on its own\n- Approximately **1% of newborns** may have a 5-minute score below 7\n\nThe APGAR score allows healthcare providers to quickly identify infants who may need immediate medical intervention, such as suctioning, oxygen supplementation, or more advanced resuscitation efforts.",
+    "latency_ms": 10530.7,
+    "token_count": 1048,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "0d071be10871",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240498.02481,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 13 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.408,
+          "evidence": [
+            "Latency 10531ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 10530.7,
+        "token_count": 1048,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.142; flagged=True"
+}

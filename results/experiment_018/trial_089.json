@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:57:44.295498+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "I am working with a family and I am not sure why the parents aren't doing what I have asked them to do. Can you give me some ideas on how to approach this please?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "social worker",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Parents may not be following recommendations for reasons that have little to do with unwillingness. A useful approach is to shift from **\u201cWhy aren\u2019t they complying?\u201d** to **\u201cWhat is making this difficult, unclear, or unacceptable for them?\u201d**\n\n### 1. Start with curiosity, not correction\nUse a calm, nonjudgmental conversation:\n\n> \u201cI\u2019ve noticed that the agreed plan hasn\u2019t been happening consistently. I\u2019d like to understand what has made it difficult and whether the plan still feels workable.\u201d\n\nAsk open questions:\n\n- \u201cWhat did you understand the plan to be?\u201d\n- \u201cWhat parts have been manageable, and what parts have not?\u201d\n- \u201cWhat gets in the way at home?\u201d\n- \u201cWhat concerns do you have about this recommendation?\u201d\n- \u201cHow confident are you that you can do this, from 0 to 10?\u201d\n- \u201cWhat would move that confidence up by one point?\u201d\n\n### 2. Check for practical barriers\nExplore factors such as:\n\n- Work schedules, transport, childcare, housing, or finances\n- Language, literacy, or accessibility needs\n- The task being too time-consuming or complicated\n- Different caregivers receiving different information\n- Child resistance, developmental needs, or sensory difficulties\n- Mental-health concerns, exhaustion, substance use, or family stress\n- Cultural or religious beliefs that affect the recommendation\n\nIf there is a practical barrier, solve that rather than repeating the instruction.\n\n### 3. Check whether the recommendation is clear and specific\n\u201cSpend more time with your child\u201d or \u201cuse consistent boundaries\u201d may be interpreted very differently. Agree on:\n\n- **Exactly what** the parents will do\n- **When and where**\n- **How often**\n- **Who is responsible**\n- **What success will look like**\n- **What they should do if it does not work**\n\nFor example:\n\n> \u201cAt 7:30 p.m. on Monday, Wednesday, and Friday, you will give one clear instruction, wait ten seconds, and use the agreed consequence if it is not followed.\u201d\n\nKeep the initial plan small\u2014one or two achievable actions rather than a long list.\n\n### 4. Invite disagreement explicitly\nSometimes parents do not follow a plan because they disagree but do not feel able to say so.\n\n> \u201cIt\u2019s okay if you have reservations. Which part of the plan does not fit with your view or your family?\u201d\n\nAcknowledge their perspective without abandoning professional boundaries:\n\n> \u201cI understand why that approach feels more natural. My concern is ____. Could we try this version for two weeks and review the results?\u201d\n\n### 5. Use collaborative planning\nAsk them to help design the intervention:\n\n> \u201cOf the options we discussed, which feels most realistic for your family?\u201d\n\nHave them explain the plan back in their own words\u2014often called a **teach-back**:\n\n> \u201cJust so I know I explained it clearly, can you talk me through what you will try at home?\u201d\n\n### 6. Follow up on attempts, not just outcomes\nReinforce effort and problem-solving, even if implementation was imperfect:\n\n> \u201cYou managed to try it twice despite a very difficult week. What did you learn from those attempts?\u201d\n\nReview regularly and adapt the plan rather than treating nonimplementation as failure.\n\n### 7. Be clear about responsibilities and safety\nDocument the agreed actions, timescales, and any missed appointments or risks. If the situation involves safeguarding concerns, medical risk, violence, severe neglect, or a child being placed at immediate risk, follow your organisation\u2019s safeguarding and escalation procedures rather than relying only on engagement strategies.\n\nA useful overall formulation is:\n\n**Understand \u2192 validate \u2192 identify barriers \u2192 simplify \u2192 agree \u2192 document \u2192 review.**",
+    "latency_ms": 5910.1,
+    "input_tokens": 115,
+    "output_tokens": 752
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "I am working with a family and I am not sure why the parents aren't doing what I have asked them to do. Can you give me some ideas on how to approach this please?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Parents may not be following recommendations for reasons that have little to do with unwillingness. A useful approach is to shift from **\u201cWhy aren\u2019t they complying?\u201d** to **\u201cWhat is making this difficult, unclear, or unacceptable for them?\u201d**\n\n### 1. Start with curiosity, not correction\nUse a calm, nonjudgmental conversation:\n\n> \u201cI\u2019ve noticed that the agreed plan hasn\u2019t been happening consistently. I\u2019d like to understand what has made it difficult and whether the plan still feels workable.\u201d\n\nAsk open questions:\n\n- \u201cWhat did you understand the plan to be?\u201d\n- \u201cWhat parts have been manageable, and what parts have not?\u201d\n- \u201cWhat gets in the way at home?\u201d\n- \u201cWhat concerns do you have about this recommendation?\u201d\n- \u201cHow confident are you that you can do this, from 0 to 10?\u201d\n- \u201cWhat would move that confidence up by one point?\u201d\n\n### 2. Check for practical barriers\nExplore factors such as:\n\n- Work schedules, transport, childcare, housing, or finances\n- Language, literacy, or accessibility needs\n- The task being too time-consuming or complicated\n- Different caregivers receiving different information\n- Child resistance, developmental needs, or sensory difficulties\n- Mental-health concerns, exhaustion, substance use, or family stress\n- Cultural or religious beliefs that affect the recommendation\n\nIf there is a practical barrier, solve that rather than repeating the instruction.\n\n### 3. Check whether the recommendation is clear and specific\n\u201cSpend more time with your child\u201d or \u201cuse consistent boundaries\u201d may be interpreted very differently. Agree on:\n\n- **Exactly what** the parents will do\n- **When and where**\n- **How often**\n- **Who is responsible**\n- **What success will look like**\n- **What they should do if it does not work**\n\nFor example:\n\n> \u201cAt 7:30 p.m. on Monday, Wednesday, and Friday, you will give one clear instruction, wait ten seconds, and use the agreed consequence if it is not followed.\u201d\n\nKeep the initial plan small\u2014one or two achievable actions rather than a long list.\n\n### 4. Invite disagreement explicitly\nSometimes parents do not follow a plan because they disagree but do not feel able to say so.\n\n> \u201cIt\u2019s okay if you have reservations. Which part of the plan does not fit with your view or your family?\u201d\n\nAcknowledge their perspective without abandoning professional boundaries:\n\n> \u201cI understand why that approach feels more natural. My concern is ____. Could we try this version for two weeks and review the results?\u201d\n\n### 5. Use collaborative planning\nAsk them to help design the intervention:\n\n> \u201cOf the options we discussed, which feels most realistic for your family?\u201d\n\nHave them explain the plan back in their own words\u2014often called a **teach-back**:\n\n> \u201cJust so I know I explained it clearly, can you talk me through what you will try at home?\u201d\n\n### 6. Follow up on attempts, not just outcomes\nReinforce effort and problem-solving, even if implementation was imperfect:\n\n> \u201cYou managed to try it twice despite a very difficult week. What did you learn from those attempts?\u201d\n\nReview regularly and adapt the plan rather than treating nonimplementation as failure.\n\n### 7. Be clear about responsibilities and safety\nDocument the agreed actions, timescales, and any missed appointments or risks. If the situation involves safeguarding concerns, medical risk, violence, severe neglect, or a child being placed at immediate risk, follow your organisation\u2019s safeguarding and escalation procedures rather than relying only on engagement strategies.\n\nA useful overall formulation is:\n\n**Understand \u2192 validate \u2192 identify barriers \u2192 simplify \u2192 agree \u2192 document \u2192 review.**",
+    "latency_ms": 5910.1,
+    "token_count": 867
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "3050410c1dbf",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229864.2947707,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 5910.1,
+        "token_count": 867,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.89; flagged=False"
+}

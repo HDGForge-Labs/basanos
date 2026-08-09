@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-09T00:06:51.134085+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "A worker doesn't want to go to work but refuses to break the contract so he pretends to be ill to be paid. The person that is in charge of the personnel administration knows that, how should they behave?",
+    "field": "Law",
+    "specific_field": "personnel administration",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "The personnel administrator should act professionally, fairly, and based on evidence\u2014not simply on suspicion.\n\n1. **Verify the facts**\n   - Check the company\u2019s sick-leave policy, employment contract, collective agreement, and applicable labor law.\n   - Confirm whether the employee supplied the required medical certificate, notification within the required timeframe, and any other documentation.\n   - Do not rely on rumors, personal impressions, or surveillance that may violate privacy laws.\n\n2. **Treat the absence as legitimate unless there is evidence otherwise**\n   - In many jurisdictions, a valid medical certificate creates a presumption that the employee is unable to work.\n   - The administrator should protect the employee\u2019s medical confidentiality. Managers generally need to know only work restrictions and expected absence duration, not diagnosis details.\n\n3. **Document objective concerns**\n   - Keep a factual record: dates of absences, late notifications, inconsistent statements, policy breaches, or verifiable evidence of misconduct.\n   - Avoid labels such as \u201cfaking illness\u201d unless the organization has reliable evidence.\n\n4. **Have a confidential meeting**\n   - When the employee returns, arrange a private return-to-work discussion.\n   - Ask neutral questions: whether they are fit to return, whether work conditions contributed to the absence, and whether support, adjustments, leave, or mediation may be needed.\n   - The real issue may be burnout, conflict, workload, mental-health difficulties, family pressures, or dissatisfaction rather than simple dishonesty.\n\n5. **Apply policy consistently**\n   - If there is credible evidence of fraud or misuse of sick leave, follow the established investigation and disciplinary procedure.\n   - Give the worker notice of the concern, an opportunity to explain, and access to representation where required.\n   - Possible outcomes can range from counseling and a written warning to more serious discipline, but dismissal should be considered only where legally justified, proportionate, and supported by evidence.\n\n6. **Avoid retaliation or discrimination**\n   - Do not punish someone merely for taking certified sick leave, reporting illness, having a disability, or raising workplace concerns.\n   - Be especially careful where illness may relate to disability, pregnancy, mental health, workplace injury, or protected leave rights.\n\n7. **Seek legal or HR advice before major action**\n   - Sick-pay fraud and dismissal rules vary substantially by country, state, contract, and union agreement.\n   - Before withholding pay, challenging a medical certificate, or terminating employment, obtain advice from HR leadership, labor counsel, or the relevant labor authority.\n\nIn short: respect legitimate sick leave and privacy, investigate only on objective grounds, discuss the issue privately, address underlying workplace problems where possible, and use a fair documented process if there is real evidence of deception.",
+    "latency_ms": 7591.3,
+    "input_tokens": 115,
+    "output_tokens": 546
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A worker doesn't want to go to work but refuses to break the contract so he pretends to be ill to be paid. The person that is in charge of the personnel administration knows that, how should they behave?",
+      "field": "Law"
+    },
+    "response": "The personnel administrator should act professionally, fairly, and based on evidence\u2014not simply on suspicion.\n\n1. **Verify the facts**\n   - Check the company\u2019s sick-leave policy, employment contract, collective agreement, and applicable labor law.\n   - Confirm whether the employee supplied the required medical certificate, notification within the required timeframe, and any other documentation.\n   - Do not rely on rumors, personal impressions, or surveillance that may violate privacy laws.\n\n2. **Treat the absence as legitimate unless there is evidence otherwise**\n   - In many jurisdictions, a valid medical certificate creates a presumption that the employee is unable to work.\n   - The administrator should protect the employee\u2019s medical confidentiality. Managers generally need to know only work restrictions and expected absence duration, not diagnosis details.\n\n3. **Document objective concerns**\n   - Keep a factual record: dates of absences, late notifications, inconsistent statements, policy breaches, or verifiable evidence of misconduct.\n   - Avoid labels such as \u201cfaking illness\u201d unless the organization has reliable evidence.\n\n4. **Have a confidential meeting**\n   - When the employee returns, arrange a private return-to-work discussion.\n   - Ask neutral questions: whether they are fit to return, whether work conditions contributed to the absence, and whether support, adjustments, leave, or mediation may be needed.\n   - The real issue may be burnout, conflict, workload, mental-health difficulties, family pressures, or dissatisfaction rather than simple dishonesty.\n\n5. **Apply policy consistently**\n   - If there is credible evidence of fraud or misuse of sick leave, follow the established investigation and disciplinary procedure.\n   - Give the worker notice of the concern, an opportunity to explain, and access to representation where required.\n   - Possible outcomes can range from counseling and a written warning to more serious discipline, but dismissal should be considered only where legally justified, proportionate, and supported by evidence.\n\n6. **Avoid retaliation or discrimination**\n   - Do not punish someone merely for taking certified sick leave, reporting illness, having a disability, or raising workplace concerns.\n   - Be especially careful where illness may relate to disability, pregnancy, mental health, workplace injury, or protected leave rights.\n\n7. **Seek legal or HR advice before major action**\n   - Sick-pay fraud and dismissal rules vary substantially by country, state, contract, and union agreement.\n   - Before withholding pay, challenging a medical certificate, or terminating employment, obtain advice from HR leadership, labor counsel, or the relevant labor authority.\n\nIn short: respect legitimate sick leave and privacy, investigate only on objective grounds, discuss the issue privately, address underlying workplace problems where possible, and use a fair documented process if there is real evidence of deception.",
+    "latency_ms": 7591.3,
+    "token_count": 661,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "37ba37229e78",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234011.13321,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 7591.3,
+        "token_count": 661,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.110; flagged=False"
+}

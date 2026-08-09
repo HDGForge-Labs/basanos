@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:39:35.405739+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "A 45-year-old woman presents to her doctor with a one-month history of fatigue, shortness of breath, and easy bruising. She has no significant past medical history. A blood test reveals anemia, leukopenia, and thrombocytopenia. A bone marrow biopsy is performed and reveals chronic myeloid leukemia (CML). The patient is referred to a hematologist-oncologist for treatment. The hematologist-oncologist discusses the treatment options with the patient, which include tyrosine kinase inhibitors (TKIs), allogeneic stem cell transplantation, and supportive care. The patient decides to undergo treatment with TKIs. What are the advantages and disadvantages of treatment with TKIs for CML?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Haematology",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Tyrosine Kinase Inhibitors for CML: Advantages and Disadvantages\n\n## Mechanism (Brief Context)\nCML is driven by the BCR-ABL1 fusion oncoprotein, a constitutively active tyrosine kinase resulting from the t(9;22) translocation (Philadelphia chromosome). TKIs competitively bind the ATP-binding pocket of ABL1, blocking downstream signaling that drives leukemic proliferation.\n\n## Advantages\n\n**1. High efficacy and durable responses**\n- Imatinib produces complete cytogenetic response in ~70-80% of patients and major molecular response in the majority within 12-18 months\n- Second-generation TKIs (dasatinib, nilotinib, bosutinib) achieve deeper, faster responses\n- 10-year survival rates now approach 80-90%, essentially normalizing life expectancy for many patients\n\n**2. Non-invasive, outpatient therapy**\n- Oral daily dosing avoids the morbidity/mortality risks of allogeneic transplant (no conditioning chemotherapy, no need for a donor, no graft-versus-host disease)\n\n**3. Lower treatment-related mortality**\n- Transplant-related mortality can be 10-20%; TKI therapy has negligible direct mortality risk\n\n**4. Potential for treatment-free remission (TFR)**\n- Patients achieving sustained deep molecular response (MR4.5) for 2+ years may successfully discontinue TKIs (~40-50% maintain remission off therapy)\n\n**5. Generational improvements address resistance**\n- Second/third-generation agents (dasatinib, nilotinib, bosutinib, ponatinib, asciminib) are effective against many imatinib-resistant BCR-ABL1 mutations, including T315I (ponatinib, asciminib)\n\n## Disadvantages\n\n**1. Requires indefinite therapy in most patients**\n- Most patients need lifelong treatment; discontinuation outside of TFR protocols risks relapse\n- This creates a substantial financial burden (branded TKIs can cost $100,000-150,000/year; generics have reduced imatinib costs significantly)\n\n**2. Adherence issues**\n- Missed doses (even <90% adherence) significantly reduce molecular response rates and increase resistance risk\n\n**3. Adverse effects vary by agent**\n- **Imatinib**: edema, muscle cramps, GI upset, myalgias\n- **Dasatinib**: pleural effusion, pulmonary hypertension (rare but serious)\n- **Nilotinib**: QT prolongation, hyperglycemia, significant increased risk of peripheral arterial occlusive disease and cardiovascular events\n- **Bosutinib**: diarrhea, hepatotoxicity\n- **Ponatinib**: high rates of arterial thrombosis/cardiovascular events (black box warning)\n\n**4. Development of resistance**\n- Point mutations in the ABL1 kinase domain (e.g., T315I) can confer resistance to multiple TKIs\n- Some pat",
+    "latency_ms": 11754.7,
+    "input_tokens": 355,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A 45-year-old woman presents to her doctor with a one-month history of fatigue, shortness of breath, and easy bruising. She has no significant past medical history. A blood test reveals anemia, leukopenia, and thrombocytopenia. A bone marrow biopsy is performed and reveals chronic myeloid leukemia (CML). The patient is referred to a hematologist-oncologist for treatment. The hematologist-oncologist discusses the treatment options with the patient, which include tyrosine kinase inhibitors (TKIs), allogeneic stem cell transplantation, and supportive care. The patient decides to undergo treatment with TKIs. What are the advantages and disadvantages of treatment with TKIs for CML?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Tyrosine Kinase Inhibitors for CML: Advantages and Disadvantages\n\n## Mechanism (Brief Context)\nCML is driven by the BCR-ABL1 fusion oncoprotein, a constitutively active tyrosine kinase resulting from the t(9;22) translocation (Philadelphia chromosome). TKIs competitively bind the ATP-binding pocket of ABL1, blocking downstream signaling that drives leukemic proliferation.\n\n## Advantages\n\n**1. High efficacy and durable responses**\n- Imatinib produces complete cytogenetic response in ~70-80% of patients and major molecular response in the majority within 12-18 months\n- Second-generation TKIs (dasatinib, nilotinib, bosutinib) achieve deeper, faster responses\n- 10-year survival rates now approach 80-90%, essentially normalizing life expectancy for many patients\n\n**2. Non-invasive, outpatient therapy**\n- Oral daily dosing avoids the morbidity/mortality risks of allogeneic transplant (no conditioning chemotherapy, no need for a donor, no graft-versus-host disease)\n\n**3. Lower treatment-related mortality**\n- Transplant-related mortality can be 10-20%; TKI therapy has negligible direct mortality risk\n\n**4. Potential for treatment-free remission (TFR)**\n- Patients achieving sustained deep molecular response (MR4.5) for 2+ years may successfully discontinue TKIs (~40-50% maintain remission off therapy)\n\n**5. Generational improvements address resistance**\n- Second/third-generation agents (dasatinib, nilotinib, bosutinib, ponatinib, asciminib) are effective against many imatinib-resistant BCR-ABL1 mutations, including T315I (ponatinib, asciminib)\n\n## Disadvantages\n\n**1. Requires indefinite therapy in most patients**\n- Most patients need lifelong treatment; discontinuation outside of TFR protocols risks relapse\n- This creates a substantial financial burden (branded TKIs can cost $100,000-150,000/year; generics have reduced imatinib costs significantly)\n\n**2. Adherence issues**\n- Missed doses (even <90% adherence) significantly reduce molecular response rates and increase resistance risk\n\n**3. Adverse effects vary by agent**\n- **Imatinib**: edema, muscle cramps, GI upset, myalgias\n- **Dasatinib**: pleural effusion, pulmonary hypertension (rare but serious)\n- **Nilotinib**: QT prolongation, hyperglycemia, significant increased risk of peripheral arterial occlusive disease and cardiovascular events\n- **Bosutinib**: diarrhea, hepatotoxicity\n- **Ponatinib**: high rates of arterial thrombosis/cardiovascular events (black box warning)\n\n**4. Development of resistance**\n- Point mutations in the ABL1 kinase domain (e.g., T315I) can confer resistance to multiple TKIs\n- Some pat",
+    "latency_ms": 11754.7,
+    "token_count": 1379
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "155831fcdb68",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239575.4050052,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4263,
+          "evidence": [
+            "Latency 11755ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11754.7,
+        "token_count": 1379,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.67; flagged=False"
+}

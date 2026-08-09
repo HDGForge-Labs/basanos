@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T01:29:33.261322+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "If my commute to work is 30 kilometers, what is the mileage reimbursement rate in Slovenia?",
+    "field": "Law",
+    "specific_field": "Law professional in office",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Mileage Reimbursement Rate in Slovenia\n\nIn Slovenia, mileage reimbursement (kilometrina) for the use of a private vehicle for business purposes is set at **0.43 EUR per kilometer** (tax-free threshold).\n\n## Key Details:\n\n- **Rate**: \u20ac0.43/km is the maximum amount that can be paid **tax-free and without social security contributions** under Slovenian tax regulations\n- Employers *can* pay more, but amounts exceeding \u20ac0.43/km are subject to income tax and social security contributions\n- This rate applies to the use of a private vehicle for **business trips** (slu\u017ebena pot), not necessarily for regular commuting between home and workplace\n\n## Important Distinction: Commute vs. Business Travel\n\nFor your specific case \u2014 a **regular daily commute** of 30 km to a fixed workplace \u2014 this is treated differently than ad-hoc business travel:\n\n- Regular commuting costs are typically reimbursed as **\"povra\u010dilo stro\u0161kov prevoza na delo in z dela\"** (transport to/from work reimbursement)\n- This is often calculated based on **public transport costs** or a **per-kilometer rate**, but the tax-free threshold for regular commuting is different from business travel mileage\n- The commonly referenced tax-free amount for regular work commute reimbursement has historically been around **\u20ac0.18/km** (this figure has been adjusted over time, so check current guidance from FURS \u2014 Finan\u010dna uprava Republike Slovenije)\n\n## Calculation Example (Business Travel Rate)\nIf your 30 km were a one-way business trip:\n- 30 km \u00d7 \u20ac0.43 = **\u20ac12.90** (one-way, tax-free)\n- Round trip (60 km): **\u20ac25.80**\n\n## Recommendation\nSince rates and thresholds are periodically updated by the Slovenian government and can depend on your specific employment contract or collective bargaining agreement, I'd recommend:\n1. Checking the current rate on the **FURS website** (gov.si)\n2. Reviewing your **employment contract** or applicable **collective agreement** (kolektivna pogodba), as some sectors negotiate different reimbursement terms\n\nWould you like help finding the specific collective agreement that might apply to your industry?",
+    "latency_ms": 8912.7,
+    "input_tokens": 150,
+    "output_tokens": 727
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "If my commute to work is 30 kilometers, what is the mileage reimbursement rate in Slovenia?",
+      "field": "Law"
+    },
+    "response": "# Mileage Reimbursement Rate in Slovenia\n\nIn Slovenia, mileage reimbursement (kilometrina) for the use of a private vehicle for business purposes is set at **0.43 EUR per kilometer** (tax-free threshold).\n\n## Key Details:\n\n- **Rate**: \u20ac0.43/km is the maximum amount that can be paid **tax-free and without social security contributions** under Slovenian tax regulations\n- Employers *can* pay more, but amounts exceeding \u20ac0.43/km are subject to income tax and social security contributions\n- This rate applies to the use of a private vehicle for **business trips** (slu\u017ebena pot), not necessarily for regular commuting between home and workplace\n\n## Important Distinction: Commute vs. Business Travel\n\nFor your specific case \u2014 a **regular daily commute** of 30 km to a fixed workplace \u2014 this is treated differently than ad-hoc business travel:\n\n- Regular commuting costs are typically reimbursed as **\"povra\u010dilo stro\u0161kov prevoza na delo in z dela\"** (transport to/from work reimbursement)\n- This is often calculated based on **public transport costs** or a **per-kilometer rate**, but the tax-free threshold for regular commuting is different from business travel mileage\n- The commonly referenced tax-free amount for regular work commute reimbursement has historically been around **\u20ac0.18/km** (this figure has been adjusted over time, so check current guidance from FURS \u2014 Finan\u010dna uprava Republike Slovenije)\n\n## Calculation Example (Business Travel Rate)\nIf your 30 km were a one-way business trip:\n- 30 km \u00d7 \u20ac0.43 = **\u20ac12.90** (one-way, tax-free)\n- Round trip (60 km): **\u20ac25.80**\n\n## Recommendation\nSince rates and thresholds are periodically updated by the Slovenian government and can depend on your specific employment contract or collective bargaining agreement, I'd recommend:\n1. Checking the current rate on the **FURS website** (gov.si)\n2. Reviewing your **employment contract** or applicable **collective agreement** (kolektivna pogodba), as some sectors negotiate different reimbursement terms\n\nWould you like help finding the specific collective agreement that might apply to your industry?",
+    "latency_ms": 8912.7,
+    "token_count": 877
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "9f0eb81da22e",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786238973.2605724,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 8912.7,
+        "token_count": 877,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.16; flagged=False"
+}

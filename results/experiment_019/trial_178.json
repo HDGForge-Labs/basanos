@@ -1,0 +1,74 @@
+{
+  "timestamp_utc": "2026-08-09T00:18:26.247842+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "On what basis is land reform in South Africa likely to be implemented?",
+    "field": "Law",
+    "specific_field": "Development practitioner ",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Land reform in South Africa is likely to be implemented on the basis of the Constitution, legislation, negotiated compensation rules, and public-interest considerations rather than through a single uniform method.\n\nThe main constitutional basis is **section 25 of the Constitution**, often called the property clause. It provides for:\n\n- **Restitution** for people or communities dispossessed of land after **19 June 1913** as a result of racially discriminatory laws or practices.\n- **Redistribution** to improve equitable access to land, especially for historically disadvantaged South Africans.\n- **Tenure reform** to secure the rights of farm dwellers, labour tenants, informal occupiers, and others whose land tenure is legally insecure.\n- **Expropriation for a public purpose or in the public interest**, subject to compensation that is \u201cjust and equitable.\u201d The Constitution expressly says that the public interest includes land reform and reforms aimed at correcting racial inequality in access to natural resources.\n\nIn practice, implementation is likely to rely on several criteria:\n\n1. **Restitution claims and historical dispossession**  \n   Land may be restored, or claimants compensated, where a valid claim shows dispossession after **1913** under racially discriminatory laws. The original national claims deadline was **31 December 1998**; later reopening attempts have been legally contested, so the administration of outstanding claims remains significant.\n\n2. **Willing seller\u2013willing buyer purchases and state acquisition**  \n   Historically, much redistribution has occurred through state purchases of farms or other land, followed by transfer or lease to beneficiaries. This remains a likely route where owners agree to sell.\n\n3. **Expropriation under the Expropriation Act, 2024**  \n   The **Expropriation Act 13 of 2024** creates a statutory framework for expropriation by the state for public purposes or in the public interest. Compensation is not automatically market value: it must be \u201cjust and equitable,\u201d considering factors such as:\n   - current use of the property;\n   - history of acquisition and use;\n   - market value;\n   - state investment or subsidy in acquiring or improving it; and\n   - the purpose of expropriation.\n\n   In limited circumstances, compensation may be **nil**, but this is not automatic. Examples identified in the legal framework include certain abandoned land, land held mainly for speculation, some state-subsidised land, and land posing health or safety risks. Each case would still require a fact-specific constitutional assessment.\n\n4. **Agricultural productivity and food security**  \n   Government policy generally indicates that land reform should not undermine food production, jobs, rural livelihoods, or agricultural exports. South Africa\u2019s commercial agriculture sector is relatively concentrated, and reforms are therefore likely to include support measures\u2014such as finance, training, water access, infrastructure, extension services, and market access\u2014rather than merely transferring title deeds.\n\n5. **Beneficiary need and capacity**  \n   Land allocation is likely to prioritise people with insecure tenure, emerging farmers, farm workers, rural communities, women, youth, and historically disadvantaged groups. However, successful implementation often depends on whether beneficiaries receive adequate post-settlement support.\n\n6. **Land audits, land-use planning, and unused or underutilised land**  \n   The state is likely to target suitable state-owned land, underutilised land, land acquired through restitution or redistribution programmes, and land identified through municipal or provincial planning processes. Urban land reform may also focus on well-located land near jobs, transport, schools, and services.\n\nThus, the legal foundation is not simply \u201ctaking land without compensation.\u201d The likely basis is a combination of **constitutional redress, public interest, land need, historical injustice, legally regulated expropriation, and compensation assessed case by case**.",
+    "latency_ms": 11246.4,
+    "input_tokens": 86,
+    "output_tokens": 774
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "On what basis is land reform in South Africa likely to be implemented?",
+      "field": "Law"
+    },
+    "response": "Land reform in South Africa is likely to be implemented on the basis of the Constitution, legislation, negotiated compensation rules, and public-interest considerations rather than through a single uniform method.\n\nThe main constitutional basis is **section 25 of the Constitution**, often called the property clause. It provides for:\n\n- **Restitution** for people or communities dispossessed of land after **19 June 1913** as a result of racially discriminatory laws or practices.\n- **Redistribution** to improve equitable access to land, especially for historically disadvantaged South Africans.\n- **Tenure reform** to secure the rights of farm dwellers, labour tenants, informal occupiers, and others whose land tenure is legally insecure.\n- **Expropriation for a public purpose or in the public interest**, subject to compensation that is \u201cjust and equitable.\u201d The Constitution expressly says that the public interest includes land reform and reforms aimed at correcting racial inequality in access to natural resources.\n\nIn practice, implementation is likely to rely on several criteria:\n\n1. **Restitution claims and historical dispossession**  \n   Land may be restored, or claimants compensated, where a valid claim shows dispossession after **1913** under racially discriminatory laws. The original national claims deadline was **31 December 1998**; later reopening attempts have been legally contested, so the administration of outstanding claims remains significant.\n\n2. **Willing seller\u2013willing buyer purchases and state acquisition**  \n   Historically, much redistribution has occurred through state purchases of farms or other land, followed by transfer or lease to beneficiaries. This remains a likely route where owners agree to sell.\n\n3. **Expropriation under the Expropriation Act, 2024**  \n   The **Expropriation Act 13 of 2024** creates a statutory framework for expropriation by the state for public purposes or in the public interest. Compensation is not automatically market value: it must be \u201cjust and equitable,\u201d considering factors such as:\n   - current use of the property;\n   - history of acquisition and use;\n   - market value;\n   - state investment or subsidy in acquiring or improving it; and\n   - the purpose of expropriation.\n\n   In limited circumstances, compensation may be **nil**, but this is not automatic. Examples identified in the legal framework include certain abandoned land, land held mainly for speculation, some state-subsidised land, and land posing health or safety risks. Each case would still require a fact-specific constitutional assessment.\n\n4. **Agricultural productivity and food security**  \n   Government policy generally indicates that land reform should not undermine food production, jobs, rural livelihoods, or agricultural exports. South Africa\u2019s commercial agriculture sector is relatively concentrated, and reforms are therefore likely to include support measures\u2014such as finance, training, water access, infrastructure, extension services, and market access\u2014rather than merely transferring title deeds.\n\n5. **Beneficiary need and capacity**  \n   Land allocation is likely to prioritise people with insecure tenure, emerging farmers, farm workers, rural communities, women, youth, and historically disadvantaged groups. However, successful implementation often depends on whether beneficiaries receive adequate post-settlement support.\n\n6. **Land audits, land-use planning, and unused or underutilised land**  \n   The state is likely to target suitable state-owned land, underutilised land, land acquired through restitution or redistribution programmes, and land identified through municipal or provincial planning processes. Urban land reform may also focus on well-located land near jobs, transport, schools, and services.\n\nThus, the legal foundation is not simply \u201ctaking land without compensation.\u201d The likely basis is a combination of **constitutional redress, public interest, land need, historical injustice, legally regulated expropriation, and compensation assessed case by case**.",
+    "latency_ms": 11246.4,
+    "token_count": 860,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "b8150a1ffc3e",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234706.2470307,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4187,
+          "evidence": [
+            "Latency 11246ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11246.4,
+        "token_count": 860,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.178; flagged=False"
+}

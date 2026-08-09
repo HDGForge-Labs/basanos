@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:53:48.802340+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Would we be healthier if we switched from a reactive healthcare system to preventative?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biochemistry",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Yes\u2014**a healthcare system with substantially more prevention would generally produce better health outcomes**, but prevention should complement rather than replace treatment.\n\nPreventive care can:\n\n- **Prevent illness:** vaccination, tobacco control, safer environments, nutrition, exercise, and infection prevention.\n- **Detect disease earlier:** screening for hypertension, diabetes, certain cancers, and cardiovascular risk can reduce complications and deaths.\n- **Lower costs in some areas:** preventing smoking-related disease, uncontrolled diabetes, and avoidable hospitalizations can save money, though not every screening or preventive program does.\n- **Improve equity:** community-based primary care, maternal care, and early intervention can reduce disparities.\n\nHowever, \u201cprevention\u201d is not automatically beneficial. Some screenings produce false positives, overdiagnosis, anxiety, and unnecessary treatment. Preventive services also cannot eliminate the need for emergency, surgical, and chronic-disease care. Many major health determinants\u2014housing, income, education, food access, pollution, and working conditions\u2014lie outside clinics, so prevention requires public-health and social-policy measures as well.\n\nThe strongest model is **prevention-oriented primary care plus reliable treatment**:\n\n1. Universal access to primary care and vaccines  \n2. Proactive management of blood pressure, cholesterol, diabetes, and mental health  \n3. Evidence-based cancer screening  \n4. Smoking cessation and alcohol/substance-use services  \n5. Early support for children, pregnancy, and aging  \n6. Healthy housing, food, transportation, workplaces, and environments  \n7. Fast access to specialist and emergency care when prevention fails  \n\nSo the answer is **yes, probably healthier overall\u2014but not simply by moving money from hospitals to screenings**. The best system prevents what can be prevented, detects disease when early treatment helps, and provides high-quality care for people who still become ill.",
+    "latency_ms": 3951.5,
+    "input_tokens": 93,
+    "output_tokens": 364
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Would we be healthier if we switched from a reactive healthcare system to preventative?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Yes\u2014**a healthcare system with substantially more prevention would generally produce better health outcomes**, but prevention should complement rather than replace treatment.\n\nPreventive care can:\n\n- **Prevent illness:** vaccination, tobacco control, safer environments, nutrition, exercise, and infection prevention.\n- **Detect disease earlier:** screening for hypertension, diabetes, certain cancers, and cardiovascular risk can reduce complications and deaths.\n- **Lower costs in some areas:** preventing smoking-related disease, uncontrolled diabetes, and avoidable hospitalizations can save money, though not every screening or preventive program does.\n- **Improve equity:** community-based primary care, maternal care, and early intervention can reduce disparities.\n\nHowever, \u201cprevention\u201d is not automatically beneficial. Some screenings produce false positives, overdiagnosis, anxiety, and unnecessary treatment. Preventive services also cannot eliminate the need for emergency, surgical, and chronic-disease care. Many major health determinants\u2014housing, income, education, food access, pollution, and working conditions\u2014lie outside clinics, so prevention requires public-health and social-policy measures as well.\n\nThe strongest model is **prevention-oriented primary care plus reliable treatment**:\n\n1. Universal access to primary care and vaccines  \n2. Proactive management of blood pressure, cholesterol, diabetes, and mental health  \n3. Evidence-based cancer screening  \n4. Smoking cessation and alcohol/substance-use services  \n5. Early support for children, pregnancy, and aging  \n6. Healthy housing, food, transportation, workplaces, and environments  \n7. Fast access to specialist and emergency care when prevention fails  \n\nSo the answer is **yes, probably healthier overall\u2014but not simply by moving money from hospitals to screenings**. The best system prevents what can be prevented, detects disease when early treatment helps, and provides high-quality care for people who still become ill.",
+    "latency_ms": 3951.5,
+    "token_count": 457
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "28df802c6ddc",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229628.8016288,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3951.5,
+        "token_count": 457,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.31; flagged=False"
+}

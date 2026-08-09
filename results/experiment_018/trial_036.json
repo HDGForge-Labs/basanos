@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:54:08.454802+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "A party doesn't honour their contract in a commercial dispute. What remedies are available to the injured party?",
+    "field": "Law",
+    "specific_field": "Commercial Law",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "In a commercial contract dispute, the injured party may have several remedies, depending on the contract, governing law, and nature of the breach:\n\n1. **Damages**\n   - **Expectation damages:** Put the injured party in the position they would have occupied had the contract been performed\u2014for example, lost profit or the cost of obtaining substitute performance.\n   - **Reliance damages:** Reimburse losses incurred because the party relied on the contract.\n   - **Consequential or indirect damages:** Additional foreseeable losses caused by the breach, such as interruption losses, if they were within the parties\u2019 reasonable contemplation and can be proven.\n   - **Incidental damages:** Reasonable expenses of responding to the breach, such as cover costs, inspection, storage, or arranging replacement services.\n   - **Liquidated damages:** A contractually agreed sum, enforceable where it is a genuine pre-estimate of likely loss rather than a penalty.\n   - **Nominal damages:** A small award where breach occurred but no substantial loss is proven.\n\n2. **Specific performance**\n   A court may order the breaching party to perform its contractual obligations. This is most likely where damages are inadequate, such as contracts involving unique property, rare goods, or specialized assets. Courts are less likely to order personal services or supervise complex ongoing performance.\n\n3. **Injunction**\n   An injunction may restrain conduct that breaches the contract\u2014for example, preventing disclosure of confidential information, enforcement of a restrictive covenant, or disposal of disputed property.\n\n4. **Termination or rescission**\n   If the breach is sufficiently serious\u2014often a repudiatory, fundamental, or expressly designated material breach\u2014the injured party may accept the breach, terminate the contract, and claim damages. The party may also affirm the contract and require continued performance, subject to applicable law.\n\n5. **Price reduction, repair, replacement, or re-performance**\n   In sale-of-goods, construction, technology, and service contracts, the injured party may have rights to reject defective performance, require repair or replacement, or claim a reduction in price.\n\n6. **Restitution or repayment**\n   The injured party may recover money or benefits transferred under a contract that was rescinded, terminated, or failed in a legally recognized way.\n\n7. **Set-off or withholding**\n   Where legally and contractually permitted, the injured party may set off amounts owed to the breaching party or withhold payment. This should be done cautiously, because an unjustified withholding can itself constitute a breach.\n\n8. **Contractual remedies**\n   The contract may provide notice-and-cure rights, service credits, indemnities, guarantees, step-in rights, termination fees, or dispute-resolution procedures. These provisions can materially alter the available remedies.\n\nThe injured party generally must **mitigate its losses**, meaning it should take reasonable steps to reduce the damage\u2014for example, purchasing substitute goods or finding an alternative supplier. It must also prove causation, foreseeability, and the amount of loss, and comply with contractual notice, limitation, arbitration, and governing-law clauses.\n\nA practical first step is to review the breach and remedies clauses, preserve evidence, issue any required formal notice, and avoid conduct that could amount to affirmation or waiver of the breach. The precise remedies depend heavily on the governing jurisdiction and contract wording.",
+    "latency_ms": 5065.8,
+    "input_tokens": 98,
+    "output_tokens": 665
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A party doesn't honour their contract in a commercial dispute. What remedies are available to the injured party?",
+      "field": "Law"
+    },
+    "response": "In a commercial contract dispute, the injured party may have several remedies, depending on the contract, governing law, and nature of the breach:\n\n1. **Damages**\n   - **Expectation damages:** Put the injured party in the position they would have occupied had the contract been performed\u2014for example, lost profit or the cost of obtaining substitute performance.\n   - **Reliance damages:** Reimburse losses incurred because the party relied on the contract.\n   - **Consequential or indirect damages:** Additional foreseeable losses caused by the breach, such as interruption losses, if they were within the parties\u2019 reasonable contemplation and can be proven.\n   - **Incidental damages:** Reasonable expenses of responding to the breach, such as cover costs, inspection, storage, or arranging replacement services.\n   - **Liquidated damages:** A contractually agreed sum, enforceable where it is a genuine pre-estimate of likely loss rather than a penalty.\n   - **Nominal damages:** A small award where breach occurred but no substantial loss is proven.\n\n2. **Specific performance**\n   A court may order the breaching party to perform its contractual obligations. This is most likely where damages are inadequate, such as contracts involving unique property, rare goods, or specialized assets. Courts are less likely to order personal services or supervise complex ongoing performance.\n\n3. **Injunction**\n   An injunction may restrain conduct that breaches the contract\u2014for example, preventing disclosure of confidential information, enforcement of a restrictive covenant, or disposal of disputed property.\n\n4. **Termination or rescission**\n   If the breach is sufficiently serious\u2014often a repudiatory, fundamental, or expressly designated material breach\u2014the injured party may accept the breach, terminate the contract, and claim damages. The party may also affirm the contract and require continued performance, subject to applicable law.\n\n5. **Price reduction, repair, replacement, or re-performance**\n   In sale-of-goods, construction, technology, and service contracts, the injured party may have rights to reject defective performance, require repair or replacement, or claim a reduction in price.\n\n6. **Restitution or repayment**\n   The injured party may recover money or benefits transferred under a contract that was rescinded, terminated, or failed in a legally recognized way.\n\n7. **Set-off or withholding**\n   Where legally and contractually permitted, the injured party may set off amounts owed to the breaching party or withhold payment. This should be done cautiously, because an unjustified withholding can itself constitute a breach.\n\n8. **Contractual remedies**\n   The contract may provide notice-and-cure rights, service credits, indemnities, guarantees, step-in rights, termination fees, or dispute-resolution procedures. These provisions can materially alter the available remedies.\n\nThe injured party generally must **mitigate its losses**, meaning it should take reasonable steps to reduce the damage\u2014for example, purchasing substitute goods or finding an alternative supplier. It must also prove causation, foreseeability, and the amount of loss, and comply with contractual notice, limitation, arbitration, and governing-law clauses.\n\nA practical first step is to review the breach and remedies clauses, preserve evidence, issue any required formal notice, and avoid conduct that could amount to affirmation or waiver of the breach. The precise remedies depend heavily on the governing jurisdiction and contract wording.",
+    "latency_ms": 5065.8,
+    "token_count": 763
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "b66744cb022e",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229648.4540048,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 5065.8,
+        "token_count": 763,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.36; flagged=False"
+}

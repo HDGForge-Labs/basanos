@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T02:01:12.399067+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Why was it hard for people in the 80's to get a title deed especially the ones from townshops?",
+    "field": "Law",
+    "specific_field": "Paralegal",
+    "question_type": "Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "In the 1980s\u2014particularly in South Africa's Black townships\u2014obtaining a title deed was extraordinarily difficult, and this was rooted in decades of apartheid-era legislation that deliberately restricted Black land and homeownership. Here's a detailed breakdown of why:\n\n## 1. Legal Prohibition on Black Land Ownership\n\n- The **Natives (Urban Areas) Act of 1923** and its amendments essentially barred Black South Africans from owning freehold property in urban areas (which included most townships like Soweto, Alexandra, and Gugulethu).\n- The **Group Areas Act of 1950** reinforced racial segregation, designating specific areas for specific races and preventing Black residents from holding full property rights in \"white\" designated urban zones\u2014even in townships that existed to house Black workers near cities.\n- For roughly **60 years** (from the 1920s to the mid-1980s), Black South Africans in urban townships could not legally own the land their homes were built on.\n\n## 2. The 99-Year Leasehold System (Introduced 1978)\n\n- In an attempt at partial reform, the government introduced the **99-year leasehold scheme** in 1978, allowing Black residents to lease (not own) property for up to 99 years.\n- However, uptake was extremely low\u2014estimates suggest fewer than **30%** of eligible township residents took up these leases by the mid-1980s, due to distrust of the apartheid government, bureaucratic complexity, and the fact that leasehold wasn't full ownership.\n\n## 3. Bureaucratic and Administrative Barriers\n\n- Township administration was handled by **Black Local Authorities (established under the 1982 Black Local Authorities Act)**, which were widely viewed as illegitimate and were under-resourced.\n- Record-keeping was poor: many townships had **incomplete or non-existent property registries**, especially in older, informally developed areas.\n- Processing a title deed application could take **months to years**, often requiring residents to travel to distant government offices, pay administrative fees equivalent to **10-20% of a monthly wage** for a low-income worker, and navig",
+    "latency_ms": 13145.4,
+    "input_tokens": 139,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Why was it hard for people in the 80's to get a title deed especially the ones from townshops?",
+      "field": "Law"
+    },
+    "response": "In the 1980s\u2014particularly in South Africa's Black townships\u2014obtaining a title deed was extraordinarily difficult, and this was rooted in decades of apartheid-era legislation that deliberately restricted Black land and homeownership. Here's a detailed breakdown of why:\n\n## 1. Legal Prohibition on Black Land Ownership\n\n- The **Natives (Urban Areas) Act of 1923** and its amendments essentially barred Black South Africans from owning freehold property in urban areas (which included most townships like Soweto, Alexandra, and Gugulethu).\n- The **Group Areas Act of 1950** reinforced racial segregation, designating specific areas for specific races and preventing Black residents from holding full property rights in \"white\" designated urban zones\u2014even in townships that existed to house Black workers near cities.\n- For roughly **60 years** (from the 1920s to the mid-1980s), Black South Africans in urban townships could not legally own the land their homes were built on.\n\n## 2. The 99-Year Leasehold System (Introduced 1978)\n\n- In an attempt at partial reform, the government introduced the **99-year leasehold scheme** in 1978, allowing Black residents to lease (not own) property for up to 99 years.\n- However, uptake was extremely low\u2014estimates suggest fewer than **30%** of eligible township residents took up these leases by the mid-1980s, due to distrust of the apartheid government, bureaucratic complexity, and the fact that leasehold wasn't full ownership.\n\n## 3. Bureaucratic and Administrative Barriers\n\n- Township administration was handled by **Black Local Authorities (established under the 1982 Black Local Authorities Act)**, which were widely viewed as illegitimate and were under-resourced.\n- Record-keeping was poor: many townships had **incomplete or non-existent property registries**, especially in older, informally developed areas.\n- Processing a title deed application could take **months to years**, often requiring residents to travel to distant government offices, pay administrative fees equivalent to **10-20% of a monthly wage** for a low-income worker, and navig",
+    "latency_ms": 13145.4,
+    "token_count": 1163,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "f9ad9549eaf7",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240872.3983345,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 12 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4472,
+          "evidence": [
+            "Latency 13145ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13145.4,
+        "token_count": 1163,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.173; flagged=True"
+}

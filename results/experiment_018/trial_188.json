@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:07:02.925052+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What are the potential consequences of a borrower breaching a covenant under the facility agreement?",
+    "field": "Law",
+    "specific_field": "Banking law",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Breaching a covenant under a facility agreement can have consequences ranging from a waiver request and additional reporting to acceleration of the debt and insolvency proceedings. The exact outcome depends on the covenant, the agreement\u2019s definitions and grace periods, the materiality of the breach, and the lender\u2019s commercial response.\n\n## Potential consequences\n\n1. **Event of default**\n\n   A covenant breach is often expressly listed as an **Event of Default**, either immediately or after:\n\n   - a cure period, commonly around **5\u201320 business days**;\n   - a threshold is exceeded, such as a leverage ratio breach by more than approximately **0.25x\u20130.50x**; or\n   - the breach is not remedied within a specified period.\n\n   Some breaches, particularly restrictions on payment, insolvency, or unauthorized disposals, may trigger an Event of Default immediately.\n\n2. **Suspension or cancellation of commitments**\n\n   The lender may be entitled to:\n\n   - stop making further loans;\n   - cancel undrawn commitments;\n   - refuse rollover requests;\n   - suspend letters of credit or other ancillary facilities; or\n   - reduce the borrower\u2019s borrowing base.\n\n   This can create an immediate liquidity problem even where no repayment has yet been demanded.\n\n3. **Acceleration of repayment**\n\n   Following an Event of Default, the lender may be able to declare all or part of the debt immediately due and payable. This may include:\n\n   - principal;\n   - accrued interest;\n   - default interest;\n   - fees;\n   - indemnities; and\n   - hedging termination amounts, where relevant.\n\n   A loan with **3\u20137 years** remaining to maturity could therefore become payable within a very short period, potentially within **24 hours** or upon notice, depending on the agreement and applicable law.\n\n4. **Default interest and additional fees**\n\n   Facility agreements commonly provide for default interest at a margin of approximately **1%\u20135% per annum above** the ordinary interest rate, although the rate varies. The borrower may also incur:\n\n   - waiver or amendment fees, often around **0.10%\u20131.00%** of commitments or outstanding debt;\n   - increased legal and advisory costs;\n   - monitoring fees;\n   - agency fees; and\n   - commitment or utilization fees.\n\n   For example, a **2% annual default margin** on **$50 million** of debt would add approximately **$1 million per year**, or about **$2,740 per day**, before compounding.\n\n5. **Mandatory cash sweep or other remedial measures**\n\n   The lender may require remedial steps such as:\n\n   - applying excess cash to debt repayment;\n   - an equity injection;\n   - asset sales;\n   - restrictions on acquisitions, dividends, or capital expenditure;\n   - delivery of a revised business plan;\n   - additional collateral or guarantees;\n   - tighter borrowing-base controls; or\n   - more frequent financial reporting.\n\n   A waiver may be conditional on a cure package, such as an equity contribution of a specified amount or a reduction in leverage by a particular date.\n\n6. **Renegotiation of the facility**\n\n   The lender may agree to waive or amend the breach, but commonly in exchange for:\n\n   - a higher interest margin;\n   - an upfront waiver fee;\n   - tighter covenant levels;\n   - additional financial covenants;\n   - stricter information undertakings;\n   - increased security;\n   - cash dominion or blocked-account arrangements; or\n   - restrictions on distributions and acquisitions.\n\n   A covenant reset may be temporary\u2014for example, for **1\u20134 quarterly testing periods**\u2014and may include a \u201cratchet\u201d requiring progressively tighter levels afterward.\n\n7. **Enforcement of security and guarantees**\n\n   If the debt is accelerated and remains unpaid, secured lenders may enforce security over assets such as:\n\n   - bank accounts;\n   - receivables;\n   - inventory;\n   - shares;\n   - real estate;\n   - intellectual property; or\n   - substantially all assets of the borrower.\n\n   They may also call on guarantees or security provided by parent companies, subsidiaries, sponsors, or individual guarantors. Enforcement procedures vary considerably by jurisdiction and may require notices, court orders, or insolvency appointments.\n\n8. **Cross-default or cross-acceleration**\n\n   The breach may trigger defaults under other financing arrangements. A facility agreement may contain a cross-default provision covering:\n\n   - other bank loans;\n   - bonds;\n   - finance leases;\n   - hedging arrangements;\n   - material trade debt; or\n   - other financial indebtedness.\n\n   A default under a facility of **$10 million** could therefore affect separate debt totaling **$100 million or more**, depending on the contractual thresholds.\n\n9. **Restriction on distributions and corporate actions**\n\n   Even before acceleration, the borrower may be prohibited from:\n\n   - paying dividends;\n   - repaying shareholder loans;\n   - making acquisitions;\n   - incurring additional debt;\n   - granting new security;\n   - disposing of assets;\n   -",
+    "latency_ms": 7647.8,
+    "input_tokens": 89,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the potential consequences of a borrower breaching a covenant under the facility agreement?",
+      "field": "Law"
+    },
+    "response": "Breaching a covenant under a facility agreement can have consequences ranging from a waiver request and additional reporting to acceleration of the debt and insolvency proceedings. The exact outcome depends on the covenant, the agreement\u2019s definitions and grace periods, the materiality of the breach, and the lender\u2019s commercial response.\n\n## Potential consequences\n\n1. **Event of default**\n\n   A covenant breach is often expressly listed as an **Event of Default**, either immediately or after:\n\n   - a cure period, commonly around **5\u201320 business days**;\n   - a threshold is exceeded, such as a leverage ratio breach by more than approximately **0.25x\u20130.50x**; or\n   - the breach is not remedied within a specified period.\n\n   Some breaches, particularly restrictions on payment, insolvency, or unauthorized disposals, may trigger an Event of Default immediately.\n\n2. **Suspension or cancellation of commitments**\n\n   The lender may be entitled to:\n\n   - stop making further loans;\n   - cancel undrawn commitments;\n   - refuse rollover requests;\n   - suspend letters of credit or other ancillary facilities; or\n   - reduce the borrower\u2019s borrowing base.\n\n   This can create an immediate liquidity problem even where no repayment has yet been demanded.\n\n3. **Acceleration of repayment**\n\n   Following an Event of Default, the lender may be able to declare all or part of the debt immediately due and payable. This may include:\n\n   - principal;\n   - accrued interest;\n   - default interest;\n   - fees;\n   - indemnities; and\n   - hedging termination amounts, where relevant.\n\n   A loan with **3\u20137 years** remaining to maturity could therefore become payable within a very short period, potentially within **24 hours** or upon notice, depending on the agreement and applicable law.\n\n4. **Default interest and additional fees**\n\n   Facility agreements commonly provide for default interest at a margin of approximately **1%\u20135% per annum above** the ordinary interest rate, although the rate varies. The borrower may also incur:\n\n   - waiver or amendment fees, often around **0.10%\u20131.00%** of commitments or outstanding debt;\n   - increased legal and advisory costs;\n   - monitoring fees;\n   - agency fees; and\n   - commitment or utilization fees.\n\n   For example, a **2% annual default margin** on **$50 million** of debt would add approximately **$1 million per year**, or about **$2,740 per day**, before compounding.\n\n5. **Mandatory cash sweep or other remedial measures**\n\n   The lender may require remedial steps such as:\n\n   - applying excess cash to debt repayment;\n   - an equity injection;\n   - asset sales;\n   - restrictions on acquisitions, dividends, or capital expenditure;\n   - delivery of a revised business plan;\n   - additional collateral or guarantees;\n   - tighter borrowing-base controls; or\n   - more frequent financial reporting.\n\n   A waiver may be conditional on a cure package, such as an equity contribution of a specified amount or a reduction in leverage by a particular date.\n\n6. **Renegotiation of the facility**\n\n   The lender may agree to waive or amend the breach, but commonly in exchange for:\n\n   - a higher interest margin;\n   - an upfront waiver fee;\n   - tighter covenant levels;\n   - additional financial covenants;\n   - stricter information undertakings;\n   - increased security;\n   - cash dominion or blocked-account arrangements; or\n   - restrictions on distributions and acquisitions.\n\n   A covenant reset may be temporary\u2014for example, for **1\u20134 quarterly testing periods**\u2014and may include a \u201cratchet\u201d requiring progressively tighter levels afterward.\n\n7. **Enforcement of security and guarantees**\n\n   If the debt is accelerated and remains unpaid, secured lenders may enforce security over assets such as:\n\n   - bank accounts;\n   - receivables;\n   - inventory;\n   - shares;\n   - real estate;\n   - intellectual property; or\n   - substantially all assets of the borrower.\n\n   They may also call on guarantees or security provided by parent companies, subsidiaries, sponsors, or individual guarantors. Enforcement procedures vary considerably by jurisdiction and may require notices, court orders, or insolvency appointments.\n\n8. **Cross-default or cross-acceleration**\n\n   The breach may trigger defaults under other financing arrangements. A facility agreement may contain a cross-default provision covering:\n\n   - other bank loans;\n   - bonds;\n   - finance leases;\n   - hedging arrangements;\n   - material trade debt; or\n   - other financial indebtedness.\n\n   A default under a facility of **$10 million** could therefore affect separate debt totaling **$100 million or more**, depending on the contractual thresholds.\n\n9. **Restriction on distributions and corporate actions**\n\n   Even before acceleration, the borrower may be prohibited from:\n\n   - paying dividends;\n   - repaying shareholder loans;\n   - making acquisitions;\n   - incurring additional debt;\n   - granting new security;\n   - disposing of assets;\n   -",
+    "latency_ms": 7647.8,
+    "token_count": 1113,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "bf881469f515",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230422.92429,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 12 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 7647.8,
+        "token_count": 1113,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.188; flagged=True"
+}

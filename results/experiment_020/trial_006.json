@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T01:27:38.263624+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Design an algorithm of hypertension drugs to help the clinician make the best medication choice according to the patient and their health characteristics.",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pharmacy field",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Hypertension Treatment Algorithm\n\n## Step 1: Confirm Diagnosis & Risk Stratification\n\n**BP Thresholds (ACC/AHA 2017 / ESC 2018):**\n- Elevated: 120-129/<80\n- Stage 1: 130-139/80-89\n- Stage 2: \u2265140/90\n\n**Before drug selection, assess:**\n- ASCVD risk score (10-year)\n- Target organ damage (LVH, CKD, retinopathy)\n- Comorbidities (diabetes, CAD, HF, CKD, stroke history)\n- Race/ethnicity (Black patients often respond better to CCBs/thiazides)\n- Age\n- Pregnancy status\n\n---\n\n## Step 2: Compelling Indications (Comorbidity-Driven Selection)\n\n| Condition | First-Line Choice | Rationale |\n|---|---|---|\n| **Heart Failure (HFrEF)** | ACEi/ARB/ARNI + Beta-blocker (carvedilol, metoprolol succinate, bisoprolol) + MRA (spironolactone) + SGLT2i | GDMT \u2014 mortality benefit |\n| **Post-MI / CAD** | Beta-blocker + ACEi | Reduces remodeling, mortality |\n| **CKD (proteinuric)** | ACEi or ARB | Renoprotective, reduces proteinuria |\n| **Diabetes** | ACEi/ARB | Renal protection |\n| **Atrial fibrillation** | Beta-blocker or non-DHP CCB (diltiazem/verapamil) | Rate control + BP |\n| **Isolated Systolic HTN (elderly)** | CCB (dihydropyridine) or thiazide | Best evidence (SHEP, HYVET) |\n| **Pregnancy** | Labetalol, Nifedipine, Methyldopa | Safety (avoid ACEi/ARB \u2014 teratogenic) |\n| **BPH** | Alpha-blocker (as add-on, not monotherapy) | Dual benefit |\n| **Osteoporosis** | Thiazide | Reduces calcium excretion |\n| **Migraine** | Beta-blocker (propranolol) or CCB | Prophylaxis overlap |\n| **Recurrent stroke prevention** | ACEi + thiazide | PROGRESS trial data |\n\n---\n\n## Step 3: No Compelling Indication \u2014 General Algorithm\n\n```\n                    STAGE 1-2 HTN, no compelling indication\n                                    |\n              \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n        Black patient                              Non-Black patient\n              |                                            |\n    Thiazide-like diuretic                    ACEi, ARB, CCB, or Thiazide\n    (chlorthalidone) OR CCB                    (any as first-line)\n    (amlodipine)                                          |\n              |                                            |\n              \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n                                     |\n                    BP not at goal after 1 month at max dose\n                                     |\n                    Add SEC",
+    "latency_ms": 10604.3,
+    "input_tokens": 156,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Design an algorithm of hypertension drugs to help the clinician make the best medication choice according to the patient and their health characteristics.",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Hypertension Treatment Algorithm\n\n## Step 1: Confirm Diagnosis & Risk Stratification\n\n**BP Thresholds (ACC/AHA 2017 / ESC 2018):**\n- Elevated: 120-129/<80\n- Stage 1: 130-139/80-89\n- Stage 2: \u2265140/90\n\n**Before drug selection, assess:**\n- ASCVD risk score (10-year)\n- Target organ damage (LVH, CKD, retinopathy)\n- Comorbidities (diabetes, CAD, HF, CKD, stroke history)\n- Race/ethnicity (Black patients often respond better to CCBs/thiazides)\n- Age\n- Pregnancy status\n\n---\n\n## Step 2: Compelling Indications (Comorbidity-Driven Selection)\n\n| Condition | First-Line Choice | Rationale |\n|---|---|---|\n| **Heart Failure (HFrEF)** | ACEi/ARB/ARNI + Beta-blocker (carvedilol, metoprolol succinate, bisoprolol) + MRA (spironolactone) + SGLT2i | GDMT \u2014 mortality benefit |\n| **Post-MI / CAD** | Beta-blocker + ACEi | Reduces remodeling, mortality |\n| **CKD (proteinuric)** | ACEi or ARB | Renoprotective, reduces proteinuria |\n| **Diabetes** | ACEi/ARB | Renal protection |\n| **Atrial fibrillation** | Beta-blocker or non-DHP CCB (diltiazem/verapamil) | Rate control + BP |\n| **Isolated Systolic HTN (elderly)** | CCB (dihydropyridine) or thiazide | Best evidence (SHEP, HYVET) |\n| **Pregnancy** | Labetalol, Nifedipine, Methyldopa | Safety (avoid ACEi/ARB \u2014 teratogenic) |\n| **BPH** | Alpha-blocker (as add-on, not monotherapy) | Dual benefit |\n| **Osteoporosis** | Thiazide | Reduces calcium excretion |\n| **Migraine** | Beta-blocker (propranolol) or CCB | Prophylaxis overlap |\n| **Recurrent stroke prevention** | ACEi + thiazide | PROGRESS trial data |\n\n---\n\n## Step 3: No Compelling Indication \u2014 General Algorithm\n\n```\n                    STAGE 1-2 HTN, no compelling indication\n                                    |\n              \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n        Black patient                              Non-Black patient\n              |                                            |\n    Thiazide-like diuretic                    ACEi, ARB, CCB, or Thiazide\n    (chlorthalidone) OR CCB                    (any as first-line)\n    (amlodipine)                                          |\n              |                                            |\n              \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n                                     |\n                    BP not at goal after 1 month at max dose\n                                     |\n                    Add SEC",
+    "latency_ms": 10604.3,
+    "token_count": 1180
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "8816eb972d01",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786238858.262911,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 10604.3,
+        "token_count": 1180,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.6; flagged=False"
+}

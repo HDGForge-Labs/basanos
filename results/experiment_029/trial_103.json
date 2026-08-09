@@ -1,0 +1,75 @@
+{
+  "timestamp_utc": "2026-08-09T22:33:02.560093+00:00",
+  "detector": "context_degradation",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "when were the words under god added to the pledge",
+    "gold_index": 9
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "The words \"under God\" were added to the Pledge of Allegiance on **Flag Day, June 14, 1954** (Document [10]). This addition followed years of advocacy\u2014Illinois attorney Louis Albert Bowman first suggested adding the phrase in 1948, citing Lincoln's Gettysburg Address as inspiration, and the Knights of Columbus began incorporating \"under God\"",
+    "latency_ms": 3665.8,
+    "input_tokens": 2239,
+    "output_tokens": 128
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "when were the words under god added to the pledge",
+      "gold_index": 9,
+      "n_docs": 10
+    },
+    "response": "The words \"under God\" were added to the Pledge of Allegiance on **Flag Day, June 14, 1954** (Document [10]). This addition followed years of advocacy-Illinois attorney Louis Albert Bowman first suggested adding the phrase in 1948, citing Lincoln's Gettysburg Address as inspiration, and the Knights of Columbus began incorporating \"under God\"",
+    "latency_ms": 3665.8,
+    "token_count": 2367,
+    "context_window_used": 0.92
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "a5cc5e9c6a3d",
+      "tool_name": "context_qa",
+      "status": "warn",
+      "timestamp": 1786314782.5592809,
+      "failures": [
+        {
+          "failure_mode": "context_degradation",
+          "confidence": 0.4,
+          "evidence": [
+            "Context window at 92.0% capacity"
+          ],
+          "remediation": [
+            "Implement context summarization before next tool call",
+            "Inject critical context markers at regular intervals",
+            "Use sliding window context management",
+            "Consider splitting task into smaller context-bounded subtasks"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 3665.8,
+        "token_count": 2367,
+        "context_window_used": 0.92,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Implement context summarization before next tool call",
+        "Inject critical context markers at regular intervals",
+        "Use sliding window context management",
+        "Consider splitting task into smaller context-bounded subtasks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.103; flagged=True; gold_index=9"
+}

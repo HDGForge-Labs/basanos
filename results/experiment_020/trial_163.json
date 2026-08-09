@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:59:16.932402+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Imagine we have a Patient Reported Outcome questionnaire that measures quality of life and has 3 different dimensions. What would be the best approach to analyzing the item adequacy of this instrument?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pharmaceutical industry",
+    "question_type": "Advice or suggestions on how to approach a problem"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Analyzing Item Adequacy in a Multidimensional PRO Instrument\n\nWhen evaluating item adequacy for a 3-dimensional quality of life PRO measure, you should adopt a multi-stage psychometric approach. Here's a comprehensive framework:\n\n## 1. Classical Test Theory (CTT) Approaches\n\n**Item-level descriptive statistics**\n- Examine floor/ceiling effects: items with more than approximately 15-20% of responses at the extreme categories may indicate poor discrimination\n- Check missing data rates per item; approximately 5-10% missingness may signal problematic wording or sensitivity\n- Review response distributions for skewness (values beyond \u00b11.0 to \u00b12.0 are often flagged as concerning)\n\n**Item-total correlations**\n- Corrected item-total correlations should generally exceed approximately 0.30-0.40 within each dimension\n- Values below roughly 0.20 suggest the item may not belong to that dimension or lacks discriminative power\n\n**Internal consistency**\n- Calculate Cronbach's alpha for each of the 3 dimensions separately (target: approximately 0.70-0.90)\n- Examine \"alpha if item deleted\" \u2014 if removing an item increases alpha by more than about 0.02-0.03, this warrants scrutiny\n- Consider McDonald's omega as a more robust alternative, especially with fewer than 5-6 items per dimension\n\n## 2. Factor Analytic Approaches\n\n**Exploratory Factor Analysis (EFA)** \u2014 if the structure needs re-examination\n- Factor loadings should ideally exceed approximately 0.40-0.50\n- Cross-loadings above roughly 0.30-0.32 on non-target factors suggest problematic items\n- Use parallel analysis or scree plots rather than eigenvalue >1 rule alone\n\n**Confirmatory Factor Analysis (CFA)** \u2014 since you already have 3 hypothesized dimensions\n- Test the 3-factor model fit using:\n  - CFI/TLI \u2265 0.90 (preferably \u22650.95)\n  - RMSEA \u2264 0.06-0.08\n  - SRMR \u2264 0.08\n- Standardized factor loadings should be \u2265 0.50-0.60, ideally \u22650.70\n- Examine modification indices (values >10 suggest potential cross-loadings or correlated errors)\n\n## 3. Item Response Theory (IRT) Analysis\n\nThis is often considered the gold standard for item adequacy assessment:\n\n**For polytomous items (typical in QoL measures), use Graded Response Model or Partial Credit Model**\n\n- **Item discrimination (a-parameter)**: values should ideally be \u22651.0, with >1.7 considered high\n- **Item difficulty/threshold parameters (b-parameters)**: check that thresholds are well-spaced (differences of roughly 0.5-1.0 logits) and cover the trait continuum, particularly around -3 to +3\n- **Item Information Curves**: identify items contributing minimal information (a flat, low curve suggests poor adequacy",
+    "latency_ms": 12714.3,
+    "input_tokens": 174,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Imagine we have a Patient Reported Outcome questionnaire that measures quality of life and has 3 different dimensions. What would be the best approach to analyzing the item adequacy of this instrument?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Analyzing Item Adequacy in a Multidimensional PRO Instrument\n\nWhen evaluating item adequacy for a 3-dimensional quality of life PRO measure, you should adopt a multi-stage psychometric approach. Here's a comprehensive framework:\n\n## 1. Classical Test Theory (CTT) Approaches\n\n**Item-level descriptive statistics**\n- Examine floor/ceiling effects: items with more than approximately 15-20% of responses at the extreme categories may indicate poor discrimination\n- Check missing data rates per item; approximately 5-10% missingness may signal problematic wording or sensitivity\n- Review response distributions for skewness (values beyond \u00b11.0 to \u00b12.0 are often flagged as concerning)\n\n**Item-total correlations**\n- Corrected item-total correlations should generally exceed approximately 0.30-0.40 within each dimension\n- Values below roughly 0.20 suggest the item may not belong to that dimension or lacks discriminative power\n\n**Internal consistency**\n- Calculate Cronbach's alpha for each of the 3 dimensions separately (target: approximately 0.70-0.90)\n- Examine \"alpha if item deleted\" \u2014 if removing an item increases alpha by more than about 0.02-0.03, this warrants scrutiny\n- Consider McDonald's omega as a more robust alternative, especially with fewer than 5-6 items per dimension\n\n## 2. Factor Analytic Approaches\n\n**Exploratory Factor Analysis (EFA)** \u2014 if the structure needs re-examination\n- Factor loadings should ideally exceed approximately 0.40-0.50\n- Cross-loadings above roughly 0.30-0.32 on non-target factors suggest problematic items\n- Use parallel analysis or scree plots rather than eigenvalue >1 rule alone\n\n**Confirmatory Factor Analysis (CFA)** \u2014 since you already have 3 hypothesized dimensions\n- Test the 3-factor model fit using:\n  - CFI/TLI \u2265 0.90 (preferably \u22650.95)\n  - RMSEA \u2264 0.06-0.08\n  - SRMR \u2264 0.08\n- Standardized factor loadings should be \u2265 0.50-0.60, ideally \u22650.70\n- Examine modification indices (values >10 suggest potential cross-loadings or correlated errors)\n\n## 3. Item Response Theory (IRT) Analysis\n\nThis is often considered the gold standard for item adequacy assessment:\n\n**For polytomous items (typical in QoL measures), use Graded Response Model or Partial Credit Model**\n\n- **Item discrimination (a-parameter)**: values should ideally be \u22651.0, with >1.7 considered high\n- **Item difficulty/threshold parameters (b-parameters)**: check that thresholds are well-spaced (differences of roughly 0.5-1.0 logits) and cover the trait continuum, particularly around -3 to +3\n- **Item Information Curves**: identify items contributing minimal information (a flat, low curve suggests poor adequacy",
+    "latency_ms": 12714.3,
+    "token_count": 1198,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "f61e77f92bc4",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240756.9316359,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 25 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4407,
+          "evidence": [
+            "Latency 12714ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12714.3,
+        "token_count": 1198,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.163; flagged=True"
+}

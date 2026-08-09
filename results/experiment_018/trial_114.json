@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T22:59:34.949737+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What are commercial disputes in law?",
+    "field": "Law",
+    "specific_field": "Commercial Law",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "**Commercial disputes** are legal disagreements arising from business or commercial activities. They usually involve companies, partnerships, investors, professionals, suppliers, customers, employees, or government bodies and concern money, contractual obligations, business assets, or commercial rights.\n\n## Common types of commercial disputes\n\n1. **Breach of contract**\n   - A party fails to deliver goods or services.\n   - Payment is late or withheld.\n   - Goods or work do not meet agreed specifications.\n   - A party improperly terminates the agreement.\n\n2. **Partnership and shareholder disputes**\n   - Disagreements about ownership, voting, profit distributions, or management.\n   - Allegations that directors or partners misused company funds.\n   - Disputes concerning the sale or valuation of shares.\n\n3. **Debt and payment disputes**\n   - Unpaid invoices, loans, or accounts.\n   - Disputes over interest, penalties, guarantees, or payment terms.\n   - Claims against guarantors or insurers.\n\n4. **Business sale and acquisition disputes**\n   - A buyer claims that the seller misrepresented the business.\n   - Disputes over warranties, earn-outs, assets, liabilities, or purchase price adjustments.\n   - Allegations that important information was concealed.\n\n5. **Construction and engineering disputes**\n   - Delays, defective work, cost overruns, design errors, or variation claims.\n   - Disagreements between owners, contractors, subcontractors, and consultants.\n\n6. **Intellectual-property disputes**\n   - Unauthorized use of trademarks, copyrights, patents, software, designs, or trade secrets.\n   - Disputes about ownership or licensing rights.\n\n7. **Competition and trade disputes**\n   - Alleged anti-competitive conduct, unlawful restraints, or misuse of market power.\n   - Distributor, franchise, territory, and pricing disputes.\n\n8. **Employment-related business disputes**\n   - Claims involving senior executives, confidentiality, noncompete clauses, bonuses, or misuse of company information.\n   - Some employment claims are treated separately under employment law.\n\n9. **Professional-negligence disputes**\n   - Claims against accountants, lawyers, architects, consultants, brokers, or other professional advisers for financial loss caused by alleged negligence.\n\n10. **Insolvency and restructuring disputes**\n   - Challenges to creditor claims, transactions before insolvency, director conduct, or priority of repayment.\n\n## How commercial disputes are resolved\n\nA dispute may be handled through:\n\n- **Negotiation**, where the parties attempt to agree directly.\n- **Mediation**, where a neutral mediator helps them reach a voluntary settlement.\n- **Arbitration**, where an arbitrator issues a usually binding decision.\n- **Litigation**, where a court determines the dispute and can issue enforceable orders.\n- **Expert determination**, often used for technical or valuation issues.\n\n## Typical remedies\n\nIf a claim succeeds, a court or arbitrator may award:\n\n- **Damages**\u2014money intended to compensate for loss.\n- **Interest** on overdue amounts.\n- **Specific performance**\u2014an order requiring a party to perform a contractual obligation.\n- **An injunction**\u2014an order requiring someone to stop or take a particular action.\n- **Rescission**\u2014setting aside a contract.\n- **Rectification**\u2014correcting a written document so it reflects the parties\u2019 agreement.\n- **A declaration** about the parties\u2019 legal rights.\n- **Legal costs**, depending on the applicable rules.\n\n## Example\n\nSuppose a retailer contracts to buy approximately **$100,000** of equipment from a supplier, with delivery required within **30 days**. The supplier delivers approximately **60%** of the order, and much of it is defective. The retailer might claim breach of contract and seek damages for replacement costs, lost profits, and reasonable expenses. The supplier might argue that the retailer failed to provide specifications or wrongfully rejected conforming goods.\n\nThe exact rules, limitation periods, available remedies, and court procedures depend heavily on the jurisdiction and the contract\u2019s governing-law clause.",
+    "latency_ms": 5612.5,
+    "input_tokens": 79,
+    "output_tokens": 814
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are commercial disputes in law?",
+      "field": "Law"
+    },
+    "response": "**Commercial disputes** are legal disagreements arising from business or commercial activities. They usually involve companies, partnerships, investors, professionals, suppliers, customers, employees, or government bodies and concern money, contractual obligations, business assets, or commercial rights.\n\n## Common types of commercial disputes\n\n1. **Breach of contract**\n   - A party fails to deliver goods or services.\n   - Payment is late or withheld.\n   - Goods or work do not meet agreed specifications.\n   - A party improperly terminates the agreement.\n\n2. **Partnership and shareholder disputes**\n   - Disagreements about ownership, voting, profit distributions, or management.\n   - Allegations that directors or partners misused company funds.\n   - Disputes concerning the sale or valuation of shares.\n\n3. **Debt and payment disputes**\n   - Unpaid invoices, loans, or accounts.\n   - Disputes over interest, penalties, guarantees, or payment terms.\n   - Claims against guarantors or insurers.\n\n4. **Business sale and acquisition disputes**\n   - A buyer claims that the seller misrepresented the business.\n   - Disputes over warranties, earn-outs, assets, liabilities, or purchase price adjustments.\n   - Allegations that important information was concealed.\n\n5. **Construction and engineering disputes**\n   - Delays, defective work, cost overruns, design errors, or variation claims.\n   - Disagreements between owners, contractors, subcontractors, and consultants.\n\n6. **Intellectual-property disputes**\n   - Unauthorized use of trademarks, copyrights, patents, software, designs, or trade secrets.\n   - Disputes about ownership or licensing rights.\n\n7. **Competition and trade disputes**\n   - Alleged anti-competitive conduct, unlawful restraints, or misuse of market power.\n   - Distributor, franchise, territory, and pricing disputes.\n\n8. **Employment-related business disputes**\n   - Claims involving senior executives, confidentiality, noncompete clauses, bonuses, or misuse of company information.\n   - Some employment claims are treated separately under employment law.\n\n9. **Professional-negligence disputes**\n   - Claims against accountants, lawyers, architects, consultants, brokers, or other professional advisers for financial loss caused by alleged negligence.\n\n10. **Insolvency and restructuring disputes**\n   - Challenges to creditor claims, transactions before insolvency, director conduct, or priority of repayment.\n\n## How commercial disputes are resolved\n\nA dispute may be handled through:\n\n- **Negotiation**, where the parties attempt to agree directly.\n- **Mediation**, where a neutral mediator helps them reach a voluntary settlement.\n- **Arbitration**, where an arbitrator issues a usually binding decision.\n- **Litigation**, where a court determines the dispute and can issue enforceable orders.\n- **Expert determination**, often used for technical or valuation issues.\n\n## Typical remedies\n\nIf a claim succeeds, a court or arbitrator may award:\n\n- **Damages**\u2014money intended to compensate for loss.\n- **Interest** on overdue amounts.\n- **Specific performance**\u2014an order requiring a party to perform a contractual obligation.\n- **An injunction**\u2014an order requiring someone to stop or take a particular action.\n- **Rescission**\u2014setting aside a contract.\n- **Rectification**\u2014correcting a written document so it reflects the parties\u2019 agreement.\n- **A declaration** about the parties\u2019 legal rights.\n- **Legal costs**, depending on the applicable rules.\n\n## Example\n\nSuppose a retailer contracts to buy approximately **$100,000** of equipment from a supplier, with delivery required within **30 days**. The supplier delivers approximately **60%** of the order, and much of it is defective. The retailer might claim breach of contract and seek damages for replacement costs, lost profits, and reasonable expenses. The supplier might argue that the retailer failed to provide specifications or wrongfully rejected conforming goods.\n\nThe exact rules, limitation periods, available remedies, and court procedures depend heavily on the jurisdiction and the contract\u2019s governing-law clause.",
+    "latency_ms": 5612.5,
+    "token_count": 893,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "6329716a6a3d",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229974.9489763,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 4 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 5612.5,
+        "token_count": 893,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.114; flagged=True"
+}

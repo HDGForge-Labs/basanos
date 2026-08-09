@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:55:52.699670+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What are the fundamental rights of the accused?",
+    "field": "Law",
+    "specific_field": "general law",
+    "question_type": "Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "The fundamental rights of an accused person generally include:\n\n1. **Presumption of innocence** \u2014 The accused is considered innocent until proven guilty.\n2. **Right to be informed of the charge** \u2014 They must receive clear, timely notice of the allegations and the applicable law.\n3. **Right to legal counsel** \u2014 They may consult and be represented by a lawyer; where required by law, counsel must be provided to those unable to afford one.\n4. **Right to a fair and public hearing** \u2014 The case must be decided by an independent, impartial, and legally established court within a reasonable time.\n5. **Right to remain silent and protection against self-incrimination** \u2014 The accused cannot generally be forced to confess or testify against themselves.\n6. **Right to examine evidence** \u2014 They must have a meaningful opportunity to review the prosecution\u2019s evidence and challenge its witnesses.\n7. **Right to present a defense** \u2014 This includes calling witnesses, presenting evidence, and obtaining interpretation or translation when necessary.\n8. **Right to confront witnesses** \u2014 Subject to limited lawful exceptions, the accused may question prosecution witnesses.\n9. **Protection against unlawful arrest and detention** \u2014 Arrest must have a lawful basis, and detained persons must be promptly informed of the reasons and brought before a judge.\n10. **Right to bail or release pending trial** \u2014 Pretrial detention should not be excessive or arbitrary.\n11. **Protection against double jeopardy** \u2014 A person generally cannot be tried or punished twice for the same offense after final judgment.\n12. **Protection against retroactive criminal laws** \u2014 A person cannot be convicted for conduct that was not criminal when committed, nor receive a harsher penalty imposed retroactively.\n13. **Right to appeal or review** \u2014 In criminal cases, the accused generally has access to review by a higher court as provided by law.\n14. **Right to humane treatment** \u2014 No torture, cruel, inhuman, or degrading treatment or punishment.\n15. **Right to privacy and due process** \u2014 Searches, seizures, and other state actions must comply with legal safeguards.\n\nThe exact scope varies by jurisdiction, but these rights are reflected in instruments such as the **Universal Declaration of Human Rights**, the **International Covenant on Civil and Political Rights**, and national constitutions and criminal-procedure laws.",
+    "latency_ms": 3576.7,
+    "input_tokens": 87,
+    "output_tokens": 467
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the fundamental rights of the accused?",
+      "field": "Law"
+    },
+    "response": "The fundamental rights of an accused person generally include:\n\n1. **Presumption of innocence** \u2014 The accused is considered innocent until proven guilty.\n2. **Right to be informed of the charge** \u2014 They must receive clear, timely notice of the allegations and the applicable law.\n3. **Right to legal counsel** \u2014 They may consult and be represented by a lawyer; where required by law, counsel must be provided to those unable to afford one.\n4. **Right to a fair and public hearing** \u2014 The case must be decided by an independent, impartial, and legally established court within a reasonable time.\n5. **Right to remain silent and protection against self-incrimination** \u2014 The accused cannot generally be forced to confess or testify against themselves.\n6. **Right to examine evidence** \u2014 They must have a meaningful opportunity to review the prosecution\u2019s evidence and challenge its witnesses.\n7. **Right to present a defense** \u2014 This includes calling witnesses, presenting evidence, and obtaining interpretation or translation when necessary.\n8. **Right to confront witnesses** \u2014 Subject to limited lawful exceptions, the accused may question prosecution witnesses.\n9. **Protection against unlawful arrest and detention** \u2014 Arrest must have a lawful basis, and detained persons must be promptly informed of the reasons and brought before a judge.\n10. **Right to bail or release pending trial** \u2014 Pretrial detention should not be excessive or arbitrary.\n11. **Protection against double jeopardy** \u2014 A person generally cannot be tried or punished twice for the same offense after final judgment.\n12. **Protection against retroactive criminal laws** \u2014 A person cannot be convicted for conduct that was not criminal when committed, nor receive a harsher penalty imposed retroactively.\n13. **Right to appeal or review** \u2014 In criminal cases, the accused generally has access to review by a higher court as provided by law.\n14. **Right to humane treatment** \u2014 No torture, cruel, inhuman, or degrading treatment or punishment.\n15. **Right to privacy and due process** \u2014 Searches, seizures, and other state actions must comply with legal safeguards.\n\nThe exact scope varies by jurisdiction, but these rights are reflected in instruments such as the **Universal Declaration of Human Rights**, the **International Covenant on Civil and Political Rights**, and national constitutions and criminal-procedure laws.",
+    "latency_ms": 3576.7,
+    "token_count": 554
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "d751106a834e",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229752.6988745,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3576.7,
+        "token_count": 554,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.63; flagged=False"
+}

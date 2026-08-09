@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:29:24.342629+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What services are provided by the Royal Fleet Auxiliary?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Maritime Operations",
+    "question_type": "Summarization of information on a topic| Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "The Royal Fleet Auxiliary (RFA) is a civilian-manned fleet owned by the UK Ministry of Defence that provides logistical and support services to the Royal Navy, enabling it to operate away from home ports for extended periods. Its main services include:\n\n**Replenishment at Sea (RAS)**\n- Fuel, ammunition, food, spare parts, and general stores are transferred to warships while underway, avoiding the need to return to port\n- Tankers such as the Tide-class (RFA Tidespring, Tiderace, Tidesurge, Tideforce) provide fuel replenishment\n- Solid support ships like RFA Fort Victoria carry ammunition, food, and stores\n\n**Amphibious and Landing Support**\n- Bay-class landing ship dock vessels (RFA Mounts Bay, Cardigan Bay, Lyme Bay) transport troops, vehicles, and equipment, and support amphibious landings via well docks and landing craft\n- These ships also support Royal Marines commando operations\n\n**Aviation Support**\n- Several RFA vessels carry helicopter flight decks and hangars, supporting anti-submarine warfare, transport, and maritime security helicopters\n- RFA Argus historically served as an aviation training and primary casualty receiving ship\n\n**Forward Basing and Support to Deployed Forces**\n- Ships like RFA Cardigan Bay have served as forward operating bases for mine countermeasures vessels in the Gulf, providing accommodation, maintenance facilities, and logistics hubs\n\n**Medical and Casualty Care**\n- RFA Argus functions as a primary casualty receiving ship with medical facilities including operating theatres, used during operations such as the 1982 Falklands War and subsequent deployments\n\n**Humanitarian Aid and Disaster Relief**\n- RFA vessels have delivered aid, evacuated civilians, and provided support during natural disasters, such as Caribbean hurricane relief operations and responses to earthquakes\n\n**Strategic Sealift**\n- Point-class sealift ships (chartered/operated in support of RFA logistics) move heavy military equipment and vehicles for deployments\n\n**Fleet Tanking and Fuel Storage**\n- Maintaining fuel stocks for naval operations both at sea and in support of shore establishments\n\nThe RFA's roughly 1,700 civilian personnel operate under Merchant Navy conditions of service but work closely integrated with Royal Navy operations, wearing a distinct RFA ensign (a blue field with the Union Flag in the canton, differentiated from the White Ensign of commissioned RN vessels). The current fleet includes tankers, solid support ships, landing ships, and the aviation training ship, with a new Fleet Solid Support ship programme underway to replace ageing vessels like Fort Victoria.",
+    "latency_ms": 12108.2,
+    "input_tokens": 136,
+    "output_tokens": 940
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What services are provided by the Royal Fleet Auxiliary?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "The Royal Fleet Auxiliary (RFA) is a civilian-manned fleet owned by the UK Ministry of Defence that provides logistical and support services to the Royal Navy, enabling it to operate away from home ports for extended periods. Its main services include:\n\n**Replenishment at Sea (RAS)**\n- Fuel, ammunition, food, spare parts, and general stores are transferred to warships while underway, avoiding the need to return to port\n- Tankers such as the Tide-class (RFA Tidespring, Tiderace, Tidesurge, Tideforce) provide fuel replenishment\n- Solid support ships like RFA Fort Victoria carry ammunition, food, and stores\n\n**Amphibious and Landing Support**\n- Bay-class landing ship dock vessels (RFA Mounts Bay, Cardigan Bay, Lyme Bay) transport troops, vehicles, and equipment, and support amphibious landings via well docks and landing craft\n- These ships also support Royal Marines commando operations\n\n**Aviation Support**\n- Several RFA vessels carry helicopter flight decks and hangars, supporting anti-submarine warfare, transport, and maritime security helicopters\n- RFA Argus historically served as an aviation training and primary casualty receiving ship\n\n**Forward Basing and Support to Deployed Forces**\n- Ships like RFA Cardigan Bay have served as forward operating bases for mine countermeasures vessels in the Gulf, providing accommodation, maintenance facilities, and logistics hubs\n\n**Medical and Casualty Care**\n- RFA Argus functions as a primary casualty receiving ship with medical facilities including operating theatres, used during operations such as the 1982 Falklands War and subsequent deployments\n\n**Humanitarian Aid and Disaster Relief**\n- RFA vessels have delivered aid, evacuated civilians, and provided support during natural disasters, such as Caribbean hurricane relief operations and responses to earthquakes\n\n**Strategic Sealift**\n- Point-class sealift ships (chartered/operated in support of RFA logistics) move heavy military equipment and vehicles for deployments\n\n**Fleet Tanking and Fuel Storage**\n- Maintaining fuel stocks for naval operations both at sea and in support of shore establishments\n\nThe RFA's roughly 1,700 civilian personnel operate under Merchant Navy conditions of service but work closely integrated with Royal Navy operations, wearing a distinct RFA ensign (a blue field with the Union Flag in the canton, differentiated from the White Ensign of commissioned RN vessels). The current fleet includes tankers, solid support ships, landing ships, and the aviation training ship, with a new Fleet Solid Support ship programme underway to replace ageing vessels like Fort Victoria.",
+    "latency_ms": 12108.2,
+    "token_count": 1076
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "e14d1cf73a71",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786238964.3418581,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4316,
+          "evidence": [
+            "Latency 12108ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12108.2,
+        "token_count": 1076,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.15; flagged=False"
+}

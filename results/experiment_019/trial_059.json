@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:59:46.368362+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Briefly list what contributions Antoine Lavoisiere provided to surgery.",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General medical",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Antoine Lavoisier did not make major direct contributions to operative surgery, but his work strongly influenced surgical science through physiology and chemistry:\n\n- **Explained respiration as oxidation:** He showed that breathing consumes oxygen and produces carbon dioxide, helping establish the chemical basis of respiration\u2014important for understanding anesthesia, shock, and resuscitation.\n- **Advanced knowledge of metabolism and heat production:** With Pierre-Simon Laplace, he demonstrated that animal respiration and combustion are chemically related, laying foundations for surgical physiology and nutritional support.\n- **Improved chemical measurement:** His use of careful quantitative methods, balances, and gas analysis helped introduce rigorous experimental standards into medicine and surgery.\n- **Promoted modern chemical nomenclature:** The standardized naming of chemical substances made medical and pharmaceutical communication more precise.\n- **Contributed to public-health medicine:** As a member of French scientific and medical reform efforts, he supported improved hospital hygiene, epidemiology, and public-health administration\u2014areas closely linked to surgical outcomes.\n\nHis influence on surgery was therefore mainly **foundational and indirect**, rather than through surgical techniques or instruments.",
+    "latency_ms": 4269.5,
+    "input_tokens": 92,
+    "output_tokens": 221
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Briefly list what contributions Antoine Lavoisiere provided to surgery.",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Antoine Lavoisier did not make major direct contributions to operative surgery, but his work strongly influenced surgical science through physiology and chemistry:\n\n- **Explained respiration as oxidation:** He showed that breathing consumes oxygen and produces carbon dioxide, helping establish the chemical basis of respiration\u2014important for understanding anesthesia, shock, and resuscitation.\n- **Advanced knowledge of metabolism and heat production:** With Pierre-Simon Laplace, he demonstrated that animal respiration and combustion are chemically related, laying foundations for surgical physiology and nutritional support.\n- **Improved chemical measurement:** His use of careful quantitative methods, balances, and gas analysis helped introduce rigorous experimental standards into medicine and surgery.\n- **Promoted modern chemical nomenclature:** The standardized naming of chemical substances made medical and pharmaceutical communication more precise.\n- **Contributed to public-health medicine:** As a member of French scientific and medical reform efforts, he supported improved hospital hygiene, epidemiology, and public-health administration\u2014areas closely linked to surgical outcomes.\n\nHis influence on surgery was therefore mainly **foundational and indirect**, rather than through surgical techniques or instruments.",
+    "latency_ms": 4269.5,
+    "token_count": 313
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "7eb34a80a0bc",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233586.3676336,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 4269.5,
+        "token_count": 313,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.59; flagged=False"
+}

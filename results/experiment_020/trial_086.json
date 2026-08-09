@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:43:30.174150+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "A company fails to deliver the products the promised. How can they defend themselves against a breach of contract claim?",
+    "field": "Law",
+    "specific_field": "Commercial Law",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "A company facing a breach of contract claim for non-delivery has several potential defenses, depending on the facts. Here are the main ones, with the legal mechanics behind each:\n\n## 1. **Force Majeure**\nIf the contract contains a force majeure clause, the company can argue that an unforeseeable event beyond its control (natural disaster, war, government action, pandemic-related shutdown, etc.) made performance impossible. Courts read these clauses narrowly, so the event must typically fall within the specific language of the clause\u2014generic \"unforeseen circumstances\" language often isn't enough. The company must also show it couldn't have mitigated the impact.\n\n## 2. **Impossibility or Impracticability of Performance**\nUnder UCC \u00a72-615 (for goods) or common law doctrines, a seller can argue that performance became objectively impossible or commercially impracticable due to an unforeseen event not contemplated at contract formation\u2014e.g., the only supplier of a critical component went out of business, or a government ban prohibited the sale. This is harder to prove than force majeure because there's no clause to point to; the company must show the specific risk wasn't allocated to them by the contract.\n\n## 3. **Frustration of Purpose**\nDistinct from impossibility, this argues that while performance was technically possible, the fundamental purpose of the contract was destroyed by an intervening event, making performance pointless for both parties.\n\n## 4. **The Buyer Breached First (Prior Material Breach)**\nIf the buyer failed to pay a deposit, provide necessary specifications, obtain required permits, or otherwise failed to perform a condition precedent, the seller can argue their non-performance was excused because the buyer's breach came first.\n\n## 5. **Anticipatory Repudiation by the Buyer**\nIf the buyer indicated\u2014through words or conduct\u2014that they wouldn't accept or pay for the goods, the seller may argue they were relieved of the obligation to tender delivery.\n\n## 6. **Contractual Limitations on Liability**\nMany contracts include:\n- **Limitation of liability clauses** capping damages (e.g., to the contract price or a multiple of fees paid)\n- **Exclusion of consequential damages** clauses barring lost profits or downstream losses\n- **Liquidated damages clauses** that specify the sole remedy, precluding additional breach claims\n\n## 7. **No Breach Occurred \u2014 Contract Terms Weren't Actually Violated**\n- The delivery deadline may have been an estimate, not a binding term (\"time is not of the essence\")\n- The contract may have allowed for partial shipments, substitutions, or delivery windows\n- Ambiguous language in the contract could be construed in the seller's favor\n\n## 8. **Failure to Mitigate Damages**\nEven if a breach occurred, the company can argue the buyer failed to mitigate losses (e.g., didn't seek a replacement supplier promptly), which limits the damages recoverable.\n\n## 9. **Waiver or Modification**\nIf the",
+    "latency_ms": 12417.8,
+    "input_tokens": 147,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A company fails to deliver the products the promised. How can they defend themselves against a breach of contract claim?",
+      "field": "Law"
+    },
+    "response": "A company facing a breach of contract claim for non-delivery has several potential defenses, depending on the facts. Here are the main ones, with the legal mechanics behind each:\n\n## 1. **Force Majeure**\nIf the contract contains a force majeure clause, the company can argue that an unforeseeable event beyond its control (natural disaster, war, government action, pandemic-related shutdown, etc.) made performance impossible. Courts read these clauses narrowly, so the event must typically fall within the specific language of the clause\u2014generic \"unforeseen circumstances\" language often isn't enough. The company must also show it couldn't have mitigated the impact.\n\n## 2. **Impossibility or Impracticability of Performance**\nUnder UCC \u00a72-615 (for goods) or common law doctrines, a seller can argue that performance became objectively impossible or commercially impracticable due to an unforeseen event not contemplated at contract formation\u2014e.g., the only supplier of a critical component went out of business, or a government ban prohibited the sale. This is harder to prove than force majeure because there's no clause to point to; the company must show the specific risk wasn't allocated to them by the contract.\n\n## 3. **Frustration of Purpose**\nDistinct from impossibility, this argues that while performance was technically possible, the fundamental purpose of the contract was destroyed by an intervening event, making performance pointless for both parties.\n\n## 4. **The Buyer Breached First (Prior Material Breach)**\nIf the buyer failed to pay a deposit, provide necessary specifications, obtain required permits, or otherwise failed to perform a condition precedent, the seller can argue their non-performance was excused because the buyer's breach came first.\n\n## 5. **Anticipatory Repudiation by the Buyer**\nIf the buyer indicated\u2014through words or conduct\u2014that they wouldn't accept or pay for the goods, the seller may argue they were relieved of the obligation to tender delivery.\n\n## 6. **Contractual Limitations on Liability**\nMany contracts include:\n- **Limitation of liability clauses** capping damages (e.g., to the contract price or a multiple of fees paid)\n- **Exclusion of consequential damages** clauses barring lost profits or downstream losses\n- **Liquidated damages clauses** that specify the sole remedy, precluding additional breach claims\n\n## 7. **No Breach Occurred \u2014 Contract Terms Weren't Actually Violated**\n- The delivery deadline may have been an estimate, not a binding term (\"time is not of the essence\")\n- The contract may have allowed for partial shipments, substitutions, or delivery windows\n- Ambiguous language in the contract could be construed in the seller's favor\n\n## 8. **Failure to Mitigate Damages**\nEven if a breach occurred, the company can argue the buyer failed to mitigate losses (e.g., didn't seek a replacement supplier promptly), which limits the damages recoverable.\n\n## 9. **Waiver or Modification**\nIf the",
+    "latency_ms": 12417.8,
+    "token_count": 1171
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "5c2290d5756b",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239810.1733396,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4363,
+          "evidence": [
+            "Latency 12418ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12417.8,
+        "token_count": 1171,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.86; flagged=False"
+}

@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:56:32.575096+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What is the best range of frequencies to transmit a message during the night?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Military communications",
+    "question_type": "Directed question that has a single unambiguous answer| Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "For **long-distance radio communication at night**, the best range is usually the **HF bands from about 3\u201310 MHz**, especially:\n\n- **3.5\u20134 MHz (80 m):** Reliable regional/nighttime communication, often several hundred kilometers.\n- **7 MHz (40 m):** Generally the best all-around nighttime band; supports regional and sometimes worldwide contacts.\n- **10 MHz (30 m):** Good for longer-distance communication with less congestion, though propagation can be weaker.\n\nAt night, the ionosphere\u2019s **D layer disappears**, reducing absorption of lower-frequency signals, while the **F layer supports skywave propagation**. As a result, frequencies around **5\u20138 MHz** are often most effective for moderate-to-long distances. For worldwide communication, **7\u201314 MHz** may work, with the optimum changing by season, solar activity, and distance.\n\nIf you mean **AM broadcast or ordinary shortwave transmission**, frequencies around **2\u201310 MHz** are commonly effective at night. For **local line-of-sight communication**, use VHF/UHF instead; nighttime does not usually make HF preferable unless you need beyond-horizon range.",
+    "latency_ms": 2635.5,
+    "input_tokens": 93,
+    "output_tokens": 238
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the best range of frequencies to transmit a message during the night?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "For **long-distance radio communication at night**, the best range is usually the **HF bands from about 3\u201310 MHz**, especially:\n\n- **3.5\u20134 MHz (80 m):** Reliable regional/nighttime communication, often several hundred kilometers.\n- **7 MHz (40 m):** Generally the best all-around nighttime band; supports regional and sometimes worldwide contacts.\n- **10 MHz (30 m):** Good for longer-distance communication with less congestion, though propagation can be weaker.\n\nAt night, the ionosphere\u2019s **D layer disappears**, reducing absorption of lower-frequency signals, while the **F layer supports skywave propagation**. As a result, frequencies around **5\u20138 MHz** are often most effective for moderate-to-long distances. For worldwide communication, **7\u201314 MHz** may work, with the optimum changing by season, solar activity, and distance.\n\nIf you mean **AM broadcast or ordinary shortwave transmission**, frequencies around **2\u201310 MHz** are commonly effective at night. For **local line-of-sight communication**, use VHF/UHF instead; nighttime does not usually make HF preferable unless you need beyond-horizon range.",
+    "latency_ms": 2635.5,
+    "token_count": 331
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "849037eb10d5",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229792.574313,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2635.5,
+        "token_count": 331,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.71; flagged=False"
+}

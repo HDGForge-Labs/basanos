@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:33:36.316562+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "A party doesn't honour their contract in a commercial dispute. What remedies are available to the injured party?",
+    "field": "Law",
+    "specific_field": "Commercial Law",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Remedies for Breach of Contract in Commercial Disputes\n\n## 1. Damages (Most Common Remedy)\n\n**Compensatory damages** - designed to put the injured party in the position they would have been in had the contract been performed:\n- **Expectation damages** - lost profits, cost of substitute performance\n- **Reliance damages** - out-of-pocket costs incurred in reliance on the contract (used when expectation losses are too speculative)\n- **Consequential damages** - foreseeable losses flowing from the breach (e.g., lost business from a supplier's late delivery), subject to the *Hadley v Baxendale* foreseeability test\n- **Liquidated damages** - pre-agreed sums in the contract, enforceable if a genuine pre-estimate of loss (not a penalty)\n\nDamages are subject to:\n- **Mitigation duty** - claimant must take reasonable steps to minimize losses\n- **Causation** - loss must flow from the breach\n- **Remoteness** - loss must have been reasonably foreseeable at contract formation\n\n## 2. Specific Performance\n\nCourt orders the breaching party to actually perform their contractual obligations. Available when:\n- Damages are inadequate (e.g., unique goods, real estate, IP licenses)\n- Contract terms are sufficiently certain\n- Not available for personal service contracts (courts won't compel someone to work)\n\n## 3. Injunctions\n\n- **Prohibitory injunction** - stops a party from doing something (e.g., breaching a non-compete clause)\n- **Mandatory injunction** - compels a positive act\n- **Interim/interlocutory injunction** - temporary relief pending trial\n\n## 4. Rescission\n\nContract is treated as void from inception; parties restored to pre-contract position. Available for:\n- Misrepresentation\n- Fundamental breach\n- Mutual mistake\n\nRequires **restitutio in integrum** (ability to restore both parties to original position) - can be barred if this isn't practically possible.\n\n## 5. Restitution/Unjust Enrichment\n\nRecovery of benefits conferred on the breaching party (e.g., deposits paid, value of part-performance) to prevent unjust enrichment, independent of proving actual loss.\n\n## 6. Termination (Repudiation)\n\nFor serious breaches (breach of condition, or repudiatory breach), the innocent party may:\n- Terminate the contract and sue for damages\n- Continue performance and sue for damages only (affirmation)\n\nDistinguish between:\n- **Conditions** - breach entitles termination\n- **Warranties** - breach only gives right to damages\n- **Innominate terms** - remedy depends on severity of consequences\n\n## 7. Declaratory Relief\n\nCourt declaration clarifying parties' rights/obligations - useful for resolving disputed interpretation without awarding damages.\n\n## Practical/Commercial Considerations\n\n- **Contractual clauses** may pre-determine remedies: limitation of liability clauses, exclusion clauses, indemnities, step-in rights\n- **Alternative dispute resolution** - many commercial contracts mandate arbitration or mediation before lit",
+    "latency_ms": 11221.2,
+    "input_tokens": 147,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A party doesn't honour their contract in a commercial dispute. What remedies are available to the injured party?",
+      "field": "Law"
+    },
+    "response": "# Remedies for Breach of Contract in Commercial Disputes\n\n## 1. Damages (Most Common Remedy)\n\n**Compensatory damages** - designed to put the injured party in the position they would have been in had the contract been performed:\n- **Expectation damages** - lost profits, cost of substitute performance\n- **Reliance damages** - out-of-pocket costs incurred in reliance on the contract (used when expectation losses are too speculative)\n- **Consequential damages** - foreseeable losses flowing from the breach (e.g., lost business from a supplier's late delivery), subject to the *Hadley v Baxendale* foreseeability test\n- **Liquidated damages** - pre-agreed sums in the contract, enforceable if a genuine pre-estimate of loss (not a penalty)\n\nDamages are subject to:\n- **Mitigation duty** - claimant must take reasonable steps to minimize losses\n- **Causation** - loss must flow from the breach\n- **Remoteness** - loss must have been reasonably foreseeable at contract formation\n\n## 2. Specific Performance\n\nCourt orders the breaching party to actually perform their contractual obligations. Available when:\n- Damages are inadequate (e.g., unique goods, real estate, IP licenses)\n- Contract terms are sufficiently certain\n- Not available for personal service contracts (courts won't compel someone to work)\n\n## 3. Injunctions\n\n- **Prohibitory injunction** - stops a party from doing something (e.g., breaching a non-compete clause)\n- **Mandatory injunction** - compels a positive act\n- **Interim/interlocutory injunction** - temporary relief pending trial\n\n## 4. Rescission\n\nContract is treated as void from inception; parties restored to pre-contract position. Available for:\n- Misrepresentation\n- Fundamental breach\n- Mutual mistake\n\nRequires **restitutio in integrum** (ability to restore both parties to original position) - can be barred if this isn't practically possible.\n\n## 5. Restitution/Unjust Enrichment\n\nRecovery of benefits conferred on the breaching party (e.g., deposits paid, value of part-performance) to prevent unjust enrichment, independent of proving actual loss.\n\n## 6. Termination (Repudiation)\n\nFor serious breaches (breach of condition, or repudiatory breach), the innocent party may:\n- Terminate the contract and sue for damages\n- Continue performance and sue for damages only (affirmation)\n\nDistinguish between:\n- **Conditions** - breach entitles termination\n- **Warranties** - breach only gives right to damages\n- **Innominate terms** - remedy depends on severity of consequences\n\n## 7. Declaratory Relief\n\nCourt declaration clarifying parties' rights/obligations - useful for resolving disputed interpretation without awarding damages.\n\n## Practical/Commercial Considerations\n\n- **Contractual clauses** may pre-determine remedies: limitation of liability clauses, exclusion clauses, indemnities, step-in rights\n- **Alternative dispute resolution** - many commercial contracts mandate arbitration or mediation before lit",
+    "latency_ms": 11221.2,
+    "token_count": 1171
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "efc02f31b0bc",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239216.3157873,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4183,
+          "evidence": [
+            "Latency 11221ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11221.2,
+        "token_count": 1171,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.36; flagged=False"
+}

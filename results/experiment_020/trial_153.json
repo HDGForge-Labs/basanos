@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:57:16.206515+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Can you summarize the standard procedure to treat a recurrent eczema on children? ",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Medical Primary Care ",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Standard Treatment Approach for Recurrent Eczema in Children\n\n## 1. Assessment & Diagnosis\n- Evaluate severity using criteria like SCORAD or EASI scores\n- Identify triggers (roughly 30-40% of cases involve food allergies in infants with moderate-severe eczema)\n- Document flare frequency and distribution pattern\n\n## 2. Basic Skincare Foundation (Daily, Ongoing)\n\n**Bathing:**\n- Lukewarm baths lasting approximately 5-10 minutes\n- Frequency of about once daily or every other day\n- Use gentle, fragrance-free cleansers\n\n**Moisturization:**\n- Apply emollients within approximately 3 minutes of bathing (\"soak and seal\" method)\n- Use liberally at least 2 times daily, often more during flares\n- Typical quantity: roughly 250-500g per week for widespread eczema in children\n- Ointments (like petroleum jelly) generally preferred over lotions for dry skin\n\n## 3. Topical Anti-Inflammatory Treatment\n\n**Topical Corticosteroids (first-line for flares):**\n- Low potency (hydrocortisone 1%) for face, neck, skin folds\n- Medium potency for body/limbs during active flares\n- Typical course: approximately 5-14 days for flare control\n- Applied once or twice daily to affected areas only\n\n**Topical Calcineurin Inhibitors (alternative/steroid-sparing):**\n- Tacrolimus 0.03% (children) or pimecrolimus 1%\n- Used for sensitive areas or steroid-resistant cases\n- Approved typically for children over 2 years old\n\n## 4. Proactive/Maintenance Therapy\n- **Weekend therapy**: Applying topical corticosteroids or calcineurin inhibitors 2x/week to previously affected areas even when skin appears clear\n- Can reduce relapse rates by approximately 50% compared to reactive treatment alone\n- Continued for around 3-6 months typically\n\n## 5. Managing Itch & Sleep Disruption\n- Antihistamines (sedating types like hydroxyzine) sometimes used at night, though evidence for itch relief is limited\n- Keep fingernails trimmed short\n- Consider wet wrap therapy during severe flares (applied for several hours or overnight)\n\n## 6. Addressing Triggers\n- Avoid known irritants (fragranced products, wool fabrics, harsh soaps)\n- Maintain room temperature around 18-20\u00b0C to reduce sweating triggers\n- Address food allergies only if clinically confirmed (avoid unnecessary elimination diets)\n\n## 7. Escalation for Severe/Refractory Cases\nWhen topical treatments fail after approximately 1-2 weeks of appropriate use:\n- Phototherapy (narrowband UVB) - typically 2-3 sessions/week for several weeks\n- Systemic options for severe cases (age-dependent): dupilumab (approved down to 6 months in many regions), methotrexate, or cyclosporine\n- Referral to pediat",
+    "latency_ms": 13468.5,
+    "input_tokens": 137,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Can you summarize the standard procedure to treat a recurrent eczema on children? ",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Standard Treatment Approach for Recurrent Eczema in Children\n\n## 1. Assessment & Diagnosis\n- Evaluate severity using criteria like SCORAD or EASI scores\n- Identify triggers (roughly 30-40% of cases involve food allergies in infants with moderate-severe eczema)\n- Document flare frequency and distribution pattern\n\n## 2. Basic Skincare Foundation (Daily, Ongoing)\n\n**Bathing:**\n- Lukewarm baths lasting approximately 5-10 minutes\n- Frequency of about once daily or every other day\n- Use gentle, fragrance-free cleansers\n\n**Moisturization:**\n- Apply emollients within approximately 3 minutes of bathing (\"soak and seal\" method)\n- Use liberally at least 2 times daily, often more during flares\n- Typical quantity: roughly 250-500g per week for widespread eczema in children\n- Ointments (like petroleum jelly) generally preferred over lotions for dry skin\n\n## 3. Topical Anti-Inflammatory Treatment\n\n**Topical Corticosteroids (first-line for flares):**\n- Low potency (hydrocortisone 1%) for face, neck, skin folds\n- Medium potency for body/limbs during active flares\n- Typical course: approximately 5-14 days for flare control\n- Applied once or twice daily to affected areas only\n\n**Topical Calcineurin Inhibitors (alternative/steroid-sparing):**\n- Tacrolimus 0.03% (children) or pimecrolimus 1%\n- Used for sensitive areas or steroid-resistant cases\n- Approved typically for children over 2 years old\n\n## 4. Proactive/Maintenance Therapy\n- **Weekend therapy**: Applying topical corticosteroids or calcineurin inhibitors 2x/week to previously affected areas even when skin appears clear\n- Can reduce relapse rates by approximately 50% compared to reactive treatment alone\n- Continued for around 3-6 months typically\n\n## 5. Managing Itch & Sleep Disruption\n- Antihistamines (sedating types like hydroxyzine) sometimes used at night, though evidence for itch relief is limited\n- Keep fingernails trimmed short\n- Consider wet wrap therapy during severe flares (applied for several hours or overnight)\n\n## 6. Addressing Triggers\n- Avoid known irritants (fragranced products, wool fabrics, harsh soaps)\n- Maintain room temperature around 18-20\u00b0C to reduce sweating triggers\n- Address food allergies only if clinically confirmed (avoid unnecessary elimination diets)\n\n## 7. Escalation for Severe/Refractory Cases\nWhen topical treatments fail after approximately 1-2 weeks of appropriate use:\n- Phototherapy (narrowband UVB) - typically 2-3 sessions/week for several weeks\n- Systemic options for severe cases (age-dependent): dupilumab (approved down to 6 months in many regions), methotrexate, or cyclosporine\n- Referral to pediat",
+    "latency_ms": 13468.5,
+    "token_count": 1161,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "960490ed80b1",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240636.2057369,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 16 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.452,
+          "evidence": [
+            "Latency 13468ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13468.5,
+        "token_count": 1161,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.153; flagged=True"
+}

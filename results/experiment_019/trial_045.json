@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:58:07.253800+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Do toxic chemicals become more or less toxic when they expire?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Dispensery",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "It depends on the chemical. \u201cExpired\u201d usually means the manufacturer no longer guarantees the stated purity, concentration, stability, or performance\u2014not that it automatically becomes harmless or more dangerous.\n\nCommon possibilities:\n\n- **Less toxic / less potent:** Some chemicals slowly break down into less active compounds. This is common for certain medicines, disinfectants, and pesticides.\n- **More toxic:** Some degrade into hazardous byproducts. Examples:\n  - **Diethyl ether and other ethers** can form explosive peroxides during storage.\n  - **Chloroform** can form phosgene under certain light/air conditions.\n  - Some **pesticides, solvents, and industrial chemicals** can generate more toxic impurities or decomposition products.\n- **Same toxicity but less reliable concentration:** Many stable chemicals remain hazardous long after their date. Acids, bases, heavy-metal compounds, cyanides, and many solvents may still be dangerous even if old.\n- **Physically more hazardous:** Aging can cause evaporation, concentration, pressure buildup, crystallization around caps, corrosion of containers, leaks, or formation of flammable/explosive residues.\n\nA good practical rule: **treat an expired toxic chemical as at least as hazardous as a fresh one unless you have verified chemical-specific stability information.** Do not smell, taste, test, mix, or pour it down a drain. Keep it in its original labeled container if possible, isolate leaking or damaged containers, and use a household hazardous-waste program, laboratory safety office, or licensed chemical-disposal service for disposal.",
+    "latency_ms": 5021.8,
+    "input_tokens": 90,
+    "output_tokens": 315
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Do toxic chemicals become more or less toxic when they expire?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "It depends on the chemical. \u201cExpired\u201d usually means the manufacturer no longer guarantees the stated purity, concentration, stability, or performance\u2014not that it automatically becomes harmless or more dangerous.\n\nCommon possibilities:\n\n- **Less toxic / less potent:** Some chemicals slowly break down into less active compounds. This is common for certain medicines, disinfectants, and pesticides.\n- **More toxic:** Some degrade into hazardous byproducts. Examples:\n  - **Diethyl ether and other ethers** can form explosive peroxides during storage.\n  - **Chloroform** can form phosgene under certain light/air conditions.\n  - Some **pesticides, solvents, and industrial chemicals** can generate more toxic impurities or decomposition products.\n- **Same toxicity but less reliable concentration:** Many stable chemicals remain hazardous long after their date. Acids, bases, heavy-metal compounds, cyanides, and many solvents may still be dangerous even if old.\n- **Physically more hazardous:** Aging can cause evaporation, concentration, pressure buildup, crystallization around caps, corrosion of containers, leaks, or formation of flammable/explosive residues.\n\nA good practical rule: **treat an expired toxic chemical as at least as hazardous as a fresh one unless you have verified chemical-specific stability information.** Do not smell, taste, test, mix, or pour it down a drain. Keep it in its original labeled container if possible, isolate leaking or damaged containers, and use a household hazardous-waste program, laboratory safety office, or licensed chemical-disposal service for disposal.",
+    "latency_ms": 5021.8,
+    "token_count": 405
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "6e0f310e4116",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233487.2530336,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 5021.8,
+        "token_count": 405,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.45; flagged=False"
+}

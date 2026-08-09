@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:57:41.135319+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "30 year old female has an episode of syncope post 2nd COVID vaccine, has a history of palpitations and dizziness - what test would you suggest to be carried out?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Cardiology",
+    "question_type": "Open-ended question that is potentially ambiguous| Advice or suggestions on how to approach a problem| Question that describes a hypothetical scenario and asks a question based on this scenario| Request for a list of resources where one can find more information| Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "For a 30-year-old with syncope, palpitations, and dizziness, the priority is to exclude an arrhythmia and structural heart disease. The initial assessment should include:\n\n- **12-lead ECG**\n- **Orthostatic blood pressure/heart-rate measurements** (lying and standing)\n- **Ambulatory ECG monitoring** \u2014 ideally a **24\u201372 hour Holter** if symptoms are frequent, or a **7\u201314 day event/patch monitor** if intermittent\n- **Echocardiogram** if there is an abnormal ECG, cardiac murmur, exertional syncope, family history of sudden cardiac death, or recurrent/unexplained episodes.\n\nIf the episode occurred immediately after vaccination, a **vasovagal faint** is common, but the history of prior palpitations/dizziness makes ambulatory rhythm monitoring particularly appropriate. Basic bloods (FBC, electrolytes, glucose, pregnancy test if relevant, thyroid function) may also be useful.\n\nUrgent cardiology/ED assessment is warranted if syncope occurred during exertion or while lying down, there was chest pain, breathlessness, sustained palpitations, abnormal ECG, known heart disease, or a family history of sudden unexplained death.",
+    "latency_ms": 3480.1,
+    "input_tokens": 115,
+    "output_tokens": 252
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "30 year old female has an episode of syncope post 2nd COVID vaccine, has a history of palpitations and dizziness - what test would you suggest to be carried out?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "For a 30-year-old with syncope, palpitations, and dizziness, the priority is to exclude an arrhythmia and structural heart disease. The initial assessment should include:\n\n- **12-lead ECG**\n- **Orthostatic blood pressure/heart-rate measurements** (lying and standing)\n- **Ambulatory ECG monitoring** \u2014 ideally a **24\u201372 hour Holter** if symptoms are frequent, or a **7\u201314 day event/patch monitor** if intermittent\n- **Echocardiogram** if there is an abnormal ECG, cardiac murmur, exertional syncope, family history of sudden cardiac death, or recurrent/unexplained episodes.\n\nIf the episode occurred immediately after vaccination, a **vasovagal faint** is common, but the history of prior palpitations/dizziness makes ambulatory rhythm monitoring particularly appropriate. Basic bloods (FBC, electrolytes, glucose, pregnancy test if relevant, thyroid function) may also be useful.\n\nUrgent cardiology/ED assessment is warranted if syncope occurred during exertion or while lying down, there was chest pain, breathlessness, sustained palpitations, abnormal ECG, known heart disease, or a family history of sudden unexplained death.",
+    "latency_ms": 3480.1,
+    "token_count": 367
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "aaed9d29429b",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233461.1345515,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3480.1,
+        "token_count": 367,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.42; flagged=False"
+}

@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:55:47.201669+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What is the effect that mental health has on police officers in the UK?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Police Officer",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Mental health has a substantial effect on UK police officers, influencing their wellbeing, safety, attendance, retention and effectiveness. The main effects are:\n\n- **Stress, anxiety and depression:** Officers regularly deal with violence, death, abuse, trauma, public scrutiny, heavy workloads and understaffing. This can produce chronic stress, anxiety, depressive symptoms and burnout.\n- **Post-traumatic stress disorder (PTSD):** Repeated exposure to serious incidents\u2014such as child deaths, suicides, murders, road collisions and assaults\u2014can lead to intrusive memories, nightmares, avoidance, hypervigilance and emotional numbness. Repeated \u201cordinary\u201d exposure can also be damaging, not just one exceptionally traumatic event.\n- **Sleep and physical health problems:** Shift work, night duties and hyperarousal commonly cause insomnia, fatigue, headaches, gastrointestinal symptoms and increased reliance on alcohol, nicotine or other substances.\n- **Reduced concentration and decision-making:** Poor mental health can impair attention, judgement, emotional regulation and reaction time\u2014particularly important in firearms, emergency-response and safeguarding work.\n- **Sickness absence and leaving the service:** Psychological illness is a major contributor to long-term sickness absence in policing. It can lead to restricted duties, early retirement, resignation and difficulties returning after trauma.\n- **Relationships and home life:** Shift patterns and emotional withdrawal can affect partners, children and friendships. Some officers find it difficult to discuss distress because of concerns about appearing weak or being judged as unfit for duty.\n- **Risk of self-harm and suicide:** Police officers can experience suicidal thoughts and suicide risk, especially where trauma, depression, alcohol misuse, relationship problems or occupational stress combine. UK research has highlighted the need for better prevention and confidential support.\n\nThe relationship is not entirely negative: many officers develop **resilience, strong teamwork, purpose and effective coping skills**. However, resilience does not make officers immune to psychological injury. Risk is increased by cumulative trauma, excessive workload, lack of control, inadequate supervision, poor organisational culture and stigma around seeking help.\n\nUK forces increasingly provide occupational-health services, peer support, trauma-focused counselling, welfare teams and programmes such as **Oscar Kilo**, the National Police Wellbeing Service. Support is most effective when it is confidential, timely, clinically appropriate and backed by organisational changes\u2014reasonable workloads, proper rest, supportive leadership and a culture where seeking help does not damage an officer\u2019s career.",
+    "latency_ms": 4530.3,
+    "input_tokens": 93,
+    "output_tokens": 486
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the effect that mental health has on police officers in the UK?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "Mental health has a substantial effect on UK police officers, influencing their wellbeing, safety, attendance, retention and effectiveness. The main effects are:\n\n- **Stress, anxiety and depression:** Officers regularly deal with violence, death, abuse, trauma, public scrutiny, heavy workloads and understaffing. This can produce chronic stress, anxiety, depressive symptoms and burnout.\n- **Post-traumatic stress disorder (PTSD):** Repeated exposure to serious incidents\u2014such as child deaths, suicides, murders, road collisions and assaults\u2014can lead to intrusive memories, nightmares, avoidance, hypervigilance and emotional numbness. Repeated \u201cordinary\u201d exposure can also be damaging, not just one exceptionally traumatic event.\n- **Sleep and physical health problems:** Shift work, night duties and hyperarousal commonly cause insomnia, fatigue, headaches, gastrointestinal symptoms and increased reliance on alcohol, nicotine or other substances.\n- **Reduced concentration and decision-making:** Poor mental health can impair attention, judgement, emotional regulation and reaction time\u2014particularly important in firearms, emergency-response and safeguarding work.\n- **Sickness absence and leaving the service:** Psychological illness is a major contributor to long-term sickness absence in policing. It can lead to restricted duties, early retirement, resignation and difficulties returning after trauma.\n- **Relationships and home life:** Shift patterns and emotional withdrawal can affect partners, children and friendships. Some officers find it difficult to discuss distress because of concerns about appearing weak or being judged as unfit for duty.\n- **Risk of self-harm and suicide:** Police officers can experience suicidal thoughts and suicide risk, especially where trauma, depression, alcohol misuse, relationship problems or occupational stress combine. UK research has highlighted the need for better prevention and confidential support.\n\nThe relationship is not entirely negative: many officers develop **resilience, strong teamwork, purpose and effective coping skills**. However, resilience does not make officers immune to psychological injury. Risk is increased by cumulative trauma, excessive workload, lack of control, inadequate supervision, poor organisational culture and stigma around seeking help.\n\nUK forces increasingly provide occupational-health services, peer support, trauma-focused counselling, welfare teams and programmes such as **Oscar Kilo**, the National Police Wellbeing Service. Support is most effective when it is confidential, timely, clinically appropriate and backed by organisational changes\u2014reasonable workloads, proper rest, supportive leadership and a culture where seeking help does not damage an officer\u2019s career.",
+    "latency_ms": 4530.3,
+    "token_count": 579
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "2f714cfc9c0f",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229747.1988926,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 4530.3,
+        "token_count": 579,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.61; flagged=False"
+}

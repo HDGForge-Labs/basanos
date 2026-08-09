@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:07:19.411627+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "How can I perform lung function testing without putting strain or discomfort on the patient?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biomedical engineering. Main area of work is developing primary health care equipment.",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "To minimize strain and discomfort, use **gentle, guideline-based pulmonary function testing**, with careful preparation, coaching, and continuous monitoring. Most standard tests are noninvasive and safe, but they can require forceful breathing, so tailor the protocol to the patient\u2019s age, diagnosis, frailty, and symptoms.\n\n## 1. Screen before testing\n\nDefer or obtain medical clearance for patients with potential contraindications, such as:\n\n- Recent myocardial infarction or unstable angina\u2014often within approximately **1 month**, depending on clinical policy\n- Recent pneumothorax\u2014until fully resolved\n- Recent thoracic, abdominal, eye, or brain surgery\u2014commonly within approximately **4\u20136 weeks**, or as directed by the surgeon\n- Active respiratory infection or significant hemoptysis\n- Severe uncontrolled hypertension or acute illness\n- Marked breathlessness at rest, syncope, confusion, or inability to follow instructions\n\nRecord baseline:\n\n- Heart rate, respiratory rate, oxygen saturation, and blood pressure when clinically appropriate\n- Current symptoms and usual oxygen requirement\n- Ability to sit upright and follow commands\n- Recent bronchodilator use, if bronchodilator testing is planned\n\nStop immediately for chest pain, faintness, severe breathlessness, cyanosis, new confusion, wheezing that rapidly worsens, or oxygen saturation falling to an unsafe level\u2014for example, below approximately **88%**, unless the patient\u2019s prescribed target is different.\n\n## 2. Optimize comfort and positioning\n\n- Test in a quiet, private, temperature-controlled room.\n- Seat the patient upright, preferably in a chair with armrests.\n- Use a nose clip only if tolerated; explain that the patient may breathe through the mouth.\n- Ensure the mouthpiece is comfortable and does not cause jaw fatigue.\n- Allow approximately **5\u201310 minutes** of seated rest before testing.\n- Avoid testing immediately after a heavy meal, vigorous exercise, or smoking; a practical interval is approximately **1\u20132 hours** after a large meal and at least **1 hour** after smoking.\n- Use a disposable bacterial/viral filter and check that the equipment has low resistance and is properly calibrated.\n\nA relaxed posture is important: shoulders down, neck neutral, feet supported, and no tight clothing around the chest or abdomen.\n\n## 3. Explain the procedure before starting\n\nDemonstrate the maneuver once and use simple coaching. Tell the patient:\n\n1. Breathe normally for a few breaths.\n2. Take a slow, complete breath in.\n3. Seal the lips around the mouthpiece.\n4. Blast the air out hard and continuously.\n5. Continue until completely empty\u2014usually at least approximately **6 seconds in adults**, but stop sooner if the patient becomes uncomfortable or cannot continue.\n6. Then inhale fully again if required by the protocol.\n\nAvoid repeatedly telling a frail or anxious patient to \u201cblow harder\u201d if they are already distressed. Use encouraging but calm instructions such as \u201csteady and continuous\u201d or \u201ckeep going as long as comfortable.\u201d\n\n## 4. Use a stepwise testing approach\n\n### A. Resting measurements\n\nStart with low-effort tests:\n\n- Respiratory rate and oxygen saturation\n- Resting breathing pattern\n- Pulse oximetry\n- Possibly respiratory muscle strength or tidal breathing measurements, if clinically indicated\n\nThese require little or no exertion and help determine whether more demanding testing is appropriate.\n\n### B. Spirometry\n\nSpirometry is generally brief, but forced expiration can be tiring. To reduce burden:\n\n- Begin with one practice maneuver.\n- Allow approximately **30\u201360 seconds** of rest between attempts, or longer if needed.\n- Aim for the minimum number of acceptable maneuvers needed for reliable results, generally **3**, rather than repeatedly testing unnecessarily.\n- Use a maximum of approximately **8 attempts in adults** and often fewer in children or frail patients, stopping earlier if quality is adequate or symptoms develop.\n- Stop when the results are repeatable and the patient is becoming fatigued.\n\nTypical adult acceptability criteria include two best FEV\u2081 and FVC values within approximately **150 mL** of each other. In children or patients with very low FVC, a tighter criterion such as approximately **100 mL** may apply under relevant standards.\n\nFor patients who cannot tolerate maximal forced expiration, document that the test was modified or incomplete rather than forcing additional attempts.\n\n### C. Slow vital capacity\n\nSlow vital capacity can be useful when forced spirometry is uncomfortable or poorly tolerated. The patient breathes in and out slowly and completely, without a forceful blast. This may be preferable for patients with:\n\n- Severe airflow obstruction\n- Chest discomfort\n- Frailty\n- Poor coordination\n- Anxiety about forceful expiration\n\n### D. Peak expiratory flow\n\nPeak-flow testing is quick but requires a forceful blow. Use only if clinically useful, and limit attempts to approximately **3**, with adequate rest. It is not a substitute for full spirometry when diagnostic precision is needed.\n\n### E. Gas transfer testing\n\nDiffusing capacity testing",
+    "latency_ms": 8256.6,
+    "input_tokens": 88,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How can I perform lung function testing without putting strain or discomfort on the patient?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "To minimize strain and discomfort, use **gentle, guideline-based pulmonary function testing**, with careful preparation, coaching, and continuous monitoring. Most standard tests are noninvasive and safe, but they can require forceful breathing, so tailor the protocol to the patient\u2019s age, diagnosis, frailty, and symptoms.\n\n## 1. Screen before testing\n\nDefer or obtain medical clearance for patients with potential contraindications, such as:\n\n- Recent myocardial infarction or unstable angina\u2014often within approximately **1 month**, depending on clinical policy\n- Recent pneumothorax\u2014until fully resolved\n- Recent thoracic, abdominal, eye, or brain surgery\u2014commonly within approximately **4\u20136 weeks**, or as directed by the surgeon\n- Active respiratory infection or significant hemoptysis\n- Severe uncontrolled hypertension or acute illness\n- Marked breathlessness at rest, syncope, confusion, or inability to follow instructions\n\nRecord baseline:\n\n- Heart rate, respiratory rate, oxygen saturation, and blood pressure when clinically appropriate\n- Current symptoms and usual oxygen requirement\n- Ability to sit upright and follow commands\n- Recent bronchodilator use, if bronchodilator testing is planned\n\nStop immediately for chest pain, faintness, severe breathlessness, cyanosis, new confusion, wheezing that rapidly worsens, or oxygen saturation falling to an unsafe level\u2014for example, below approximately **88%**, unless the patient\u2019s prescribed target is different.\n\n## 2. Optimize comfort and positioning\n\n- Test in a quiet, private, temperature-controlled room.\n- Seat the patient upright, preferably in a chair with armrests.\n- Use a nose clip only if tolerated; explain that the patient may breathe through the mouth.\n- Ensure the mouthpiece is comfortable and does not cause jaw fatigue.\n- Allow approximately **5\u201310 minutes** of seated rest before testing.\n- Avoid testing immediately after a heavy meal, vigorous exercise, or smoking; a practical interval is approximately **1\u20132 hours** after a large meal and at least **1 hour** after smoking.\n- Use a disposable bacterial/viral filter and check that the equipment has low resistance and is properly calibrated.\n\nA relaxed posture is important: shoulders down, neck neutral, feet supported, and no tight clothing around the chest or abdomen.\n\n## 3. Explain the procedure before starting\n\nDemonstrate the maneuver once and use simple coaching. Tell the patient:\n\n1. Breathe normally for a few breaths.\n2. Take a slow, complete breath in.\n3. Seal the lips around the mouthpiece.\n4. Blast the air out hard and continuously.\n5. Continue until completely empty\u2014usually at least approximately **6 seconds in adults**, but stop sooner if the patient becomes uncomfortable or cannot continue.\n6. Then inhale fully again if required by the protocol.\n\nAvoid repeatedly telling a frail or anxious patient to \u201cblow harder\u201d if they are already distressed. Use encouraging but calm instructions such as \u201csteady and continuous\u201d or \u201ckeep going as long as comfortable.\u201d\n\n## 4. Use a stepwise testing approach\n\n### A. Resting measurements\n\nStart with low-effort tests:\n\n- Respiratory rate and oxygen saturation\n- Resting breathing pattern\n- Pulse oximetry\n- Possibly respiratory muscle strength or tidal breathing measurements, if clinically indicated\n\nThese require little or no exertion and help determine whether more demanding testing is appropriate.\n\n### B. Spirometry\n\nSpirometry is generally brief, but forced expiration can be tiring. To reduce burden:\n\n- Begin with one practice maneuver.\n- Allow approximately **30\u201360 seconds** of rest between attempts, or longer if needed.\n- Aim for the minimum number of acceptable maneuvers needed for reliable results, generally **3**, rather than repeatedly testing unnecessarily.\n- Use a maximum of approximately **8 attempts in adults** and often fewer in children or frail patients, stopping earlier if quality is adequate or symptoms develop.\n- Stop when the results are repeatable and the patient is becoming fatigued.\n\nTypical adult acceptability criteria include two best FEV\u2081 and FVC values within approximately **150 mL** of each other. In children or patients with very low FVC, a tighter criterion such as approximately **100 mL** may apply under relevant standards.\n\nFor patients who cannot tolerate maximal forced expiration, document that the test was modified or incomplete rather than forcing additional attempts.\n\n### C. Slow vital capacity\n\nSlow vital capacity can be useful when forced spirometry is uncomfortable or poorly tolerated. The patient breathes in and out slowly and completely, without a forceful blast. This may be preferable for patients with:\n\n- Severe airflow obstruction\n- Chest discomfort\n- Frailty\n- Poor coordination\n- Anxiety about forceful expiration\n\n### D. Peak expiratory flow\n\nPeak-flow testing is quick but requires a forceful blow. Use only if clinically useful, and limit attempts to approximately **3**, with adequate rest. It is not a substitute for full spirometry when diagnostic precision is needed.\n\n### E. Gas transfer testing\n\nDiffusing capacity testing",
+    "latency_ms": 8256.6,
+    "token_count": 1112,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "5057cd88198b",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230439.410848,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 11 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 8256.6,
+        "token_count": 1112,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.190; flagged=True"
+}

@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-08T22:58:51.106043+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is the diagnostic criteria for Anorexia Nervosa?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Clinical Psychology",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "According to **DSM-5-TR**, anorexia nervosa is diagnosed when **all 3 core criteria** are present:\n\n1. **Restriction of energy intake**\n   - Persistent restriction of food intake leading to a **significantly low body weight** for the person\u2019s age, sex, developmental trajectory, and physical health.\n   - There is **no single BMI cutoff** in DSM-5-TR. In adults, a BMI below **18.5 kg/m\u00b2** is commonly considered underweight, and severity specifiers use:\n     - **Mild:** BMI \u2265 **17**\n     - **Moderate:** BMI **16\u201316.99**\n     - **Severe:** BMI **15\u201315.99**\n     - **Extreme:** BMI < **15**\n   - These BMI ranges are guidelines, not the sole basis for diagnosis. A person may meet criteria without being underweight by BMI, particularly in **atypical anorexia nervosa**.\n\n2. **Intense fear of gaining weight or becoming fat**\n   - Or persistent behavior that interferes with weight gain, even when the person is already at a significantly low weight.\n   - Examples include severe dietary restriction, excessive exercise, fasting, vomiting, or misuse of laxatives.\n\n3. **Disturbance in body-image perception or weight-related self-evaluation**\n   - The person may:\n     - Experience a distorted perception of body weight or shape;\n     - Place excessive importance on weight or shape when evaluating themselves; or\n     - Fail to recognize the seriousness of their current low body weight.\n\n### DSM-5-TR subtypes\n\n- **Restricting type:** During the previous **3 months**, the person has not had recurrent binge-eating or purging behavior. Weight loss is primarily achieved through dieting, fasting, and/or excessive exercise.\n- **Binge-eating/purging type:** During the previous **3 months**, the person has had recurrent episodes of binge eating or purging, such as self-induced vomiting or misuse of laxatives, diuretics, or enemas.\n\n### Important clinical points\n\n- **Amenorrhea is not required.** DSM-5 removed the former requirement that menstruation stop, because it does not apply to males, prepubertal individuals, people using hormonal contraception, or those with irregular cycles.\n- Diagnosis is based on the **overall clinical picture**, not BMI alone. Weight trajectory, nutritional status, medical complications, eating behaviors, fear of weight gain, and body-image disturbance all matter.\n- In children and adolescents, failure to gain expected weight or height-related growth can indicate significantly low weight even if the measured BMI is within a seemingly typical range.\n- The related diagnosis **atypical anorexia nervosa** is generally used when all major features are present but weight remains within or above the normal range despite substantial weight loss.\n\nA qualified clinician\u2014typically a physician, psychiatrist, psychologist, or eating-disorder specialist\u2014should make the diagnosis. Medical assessment may include vital signs, orthostatic pulse and blood pressure, electrolytes, glucose, kidney function, an ECG, and evaluation for dehydration or complications such as bradycardia and electrolyte abnormalities.",
+    "latency_ms": 4648.5,
+    "input_tokens": 84,
+    "output_tokens": 648
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the diagnostic criteria for Anorexia Nervosa?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "According to **DSM-5-TR**, anorexia nervosa is diagnosed when **all 3 core criteria** are present:\n\n1. **Restriction of energy intake**\n   - Persistent restriction of food intake leading to a **significantly low body weight** for the person\u2019s age, sex, developmental trajectory, and physical health.\n   - There is **no single BMI cutoff** in DSM-5-TR. In adults, a BMI below **18.5 kg/m\u00b2** is commonly considered underweight, and severity specifiers use:\n     - **Mild:** BMI \u2265 **17**\n     - **Moderate:** BMI **16\u201316.99**\n     - **Severe:** BMI **15\u201315.99**\n     - **Extreme:** BMI < **15**\n   - These BMI ranges are guidelines, not the sole basis for diagnosis. A person may meet criteria without being underweight by BMI, particularly in **atypical anorexia nervosa**.\n\n2. **Intense fear of gaining weight or becoming fat**\n   - Or persistent behavior that interferes with weight gain, even when the person is already at a significantly low weight.\n   - Examples include severe dietary restriction, excessive exercise, fasting, vomiting, or misuse of laxatives.\n\n3. **Disturbance in body-image perception or weight-related self-evaluation**\n   - The person may:\n     - Experience a distorted perception of body weight or shape;\n     - Place excessive importance on weight or shape when evaluating themselves; or\n     - Fail to recognize the seriousness of their current low body weight.\n\n### DSM-5-TR subtypes\n\n- **Restricting type:** During the previous **3 months**, the person has not had recurrent binge-eating or purging behavior. Weight loss is primarily achieved through dieting, fasting, and/or excessive exercise.\n- **Binge-eating/purging type:** During the previous **3 months**, the person has had recurrent episodes of binge eating or purging, such as self-induced vomiting or misuse of laxatives, diuretics, or enemas.\n\n### Important clinical points\n\n- **Amenorrhea is not required.** DSM-5 removed the former requirement that menstruation stop, because it does not apply to males, prepubertal individuals, people using hormonal contraception, or those with irregular cycles.\n- Diagnosis is based on the **overall clinical picture**, not BMI alone. Weight trajectory, nutritional status, medical complications, eating behaviors, fear of weight gain, and body-image disturbance all matter.\n- In children and adolescents, failure to gain expected weight or height-related growth can indicate significantly low weight even if the measured BMI is within a seemingly typical range.\n- The related diagnosis **atypical anorexia nervosa** is generally used when all major features are present but weight remains within or above the normal range despite substantial weight loss.\n\nA qualified clinician\u2014typically a physician, psychiatrist, psychologist, or eating-disorder specialist\u2014should make the diagnosis. Medical assessment may include vital signs, orthostatic pulse and blood pressure, electrolytes, glucose, kidney function, an ECG, and evaluation for dehydration or complications such as bradycardia and electrolyte abnormalities.",
+    "latency_ms": 4648.5,
+    "token_count": 732,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "9f051bb00727",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229931.10532,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 4648.5,
+        "token_count": 732,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.105; flagged=False"
+}

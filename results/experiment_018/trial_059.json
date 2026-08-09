@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:55:40.942398+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Briefly list what contributions Antoine Lavoisiere provided to surgery.",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General medical",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Antoine Lavoisier made **no major direct contributions to surgery**. His contributions were primarily to chemistry and medicine:\n\n- Established the role of **oxygen in respiration**, improving understanding of metabolism and tissue oxygenation.\n- Helped explain **combustion and oxidation**, foundational to physiological and later anesthetic science.\n- Promoted accurate **chemical measurement and experimentation**, influencing medical research.\n- Studied **animal heat production and metabolism**, relevant to understanding fever, nutrition, and recovery.\n\nHe was not a surgeon and did not develop surgical techniques or instruments.",
+    "latency_ms": 1923.9,
+    "input_tokens": 92,
+    "output_tokens": 115
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Briefly list what contributions Antoine Lavoisiere provided to surgery.",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Antoine Lavoisier made **no major direct contributions to surgery**. His contributions were primarily to chemistry and medicine:\n\n- Established the role of **oxygen in respiration**, improving understanding of metabolism and tissue oxygenation.\n- Helped explain **combustion and oxidation**, foundational to physiological and later anesthetic science.\n- Promoted accurate **chemical measurement and experimentation**, influencing medical research.\n- Studied **animal heat production and metabolism**, relevant to understanding fever, nutrition, and recovery.\n\nHe was not a surgeon and did not develop surgical techniques or instruments.",
+    "latency_ms": 1923.9,
+    "token_count": 207
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "18213d5507c9",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229740.941652,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 1923.9,
+        "token_count": 207,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.59; flagged=False"
+}

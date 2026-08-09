@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:55:18.342336+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "There is a spillage in my laboratory, and I just walked in to meet it. I don't know the chemical that was spilled, please direct me on the safest and important actions to take.",
+    "field": "Healthcare / Medicine",
+    "specific_field": "biomedical science",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Treat this as an **unknown-chemical emergency**.\n\n1. **Stop and move away immediately.** Do not touch, step through, smell, or attempt to identify the material. Warn anyone nearby and keep people out of the area. Avoid creating airflow that could spread vapors.\n2. **If anyone may be exposed:**  \n   - Move to fresh air if safe.  \n   - Remove contaminated clothing and place it in a sealed container/bag.  \n   - Use the emergency shower for skin exposure for **at least 15 minutes**.  \n   - Flush eyes at the eyewash for **at least 15 minutes**, holding eyelids open.  \n   - Call emergency medical services/poison control. Do not induce vomiting after ingestion.\n3. **Raise the alarm and report it.** Contact your laboratory\u2019s emergency number, principal investigator/lab manager, Environmental Health and Safety (EHS), and building security. If there are fumes, fire, injury, a large/unknown quantity, a strong reaction, or anyone feels ill, **evacuate and call emergency services (911/112 or your local equivalent)** from a safe location.\n4. **Evacuate if needed.** Close the door only if you can do so without passing through the spill or exposing yourself; do not lock anyone in. Pull the fire alarm if your site procedure requires it.\n5. **Do not clean it up.** Do not use spill kits, absorbents, water, neutralizers, or electrical equipment unless trained, authorized, and the substance has been positively identified. Unknown spills may be toxic, corrosive, reactive, flammable, radioactive, or biohazardous.\n6. From a safe location, provide responders with the room number, visible labels/container information, estimated amount, odors or vapors, injuries/exposures, and any reaction or fire. **Do not re-enter** until EHS/emergency responders declare it safe.\n\nIf you are currently in the room, leave now, warn others, close the door if safe, and call emergency services/EHS.",
+    "latency_ms": 3809.2,
+    "input_tokens": 117,
+    "output_tokens": 425
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "There is a spillage in my laboratory, and I just walked in to meet it. I don't know the chemical that was spilled, please direct me on the safest and important actions to take.",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Treat this as an **unknown-chemical emergency**.\n\n1. **Stop and move away immediately.** Do not touch, step through, smell, or attempt to identify the material. Warn anyone nearby and keep people out of the area. Avoid creating airflow that could spread vapors.\n2. **If anyone may be exposed:**  \n   - Move to fresh air if safe.  \n   - Remove contaminated clothing and place it in a sealed container/bag.  \n   - Use the emergency shower for skin exposure for **at least 15 minutes**.  \n   - Flush eyes at the eyewash for **at least 15 minutes**, holding eyelids open.  \n   - Call emergency medical services/poison control. Do not induce vomiting after ingestion.\n3. **Raise the alarm and report it.** Contact your laboratory\u2019s emergency number, principal investigator/lab manager, Environmental Health and Safety (EHS), and building security. If there are fumes, fire, injury, a large/unknown quantity, a strong reaction, or anyone feels ill, **evacuate and call emergency services (911/112 or your local equivalent)** from a safe location.\n4. **Evacuate if needed.** Close the door only if you can do so without passing through the spill or exposing yourself; do not lock anyone in. Pull the fire alarm if your site procedure requires it.\n5. **Do not clean it up.** Do not use spill kits, absorbents, water, neutralizers, or electrical equipment unless trained, authorized, and the substance has been positively identified. Unknown spills may be toxic, corrosive, reactive, flammable, radioactive, or biohazardous.\n6. From a safe location, provide responders with the room number, visible labels/container information, estimated amount, odors or vapors, injuries/exposures, and any reaction or fire. **Do not re-enter** until EHS/emergency responders declare it safe.\n\nIf you are currently in the room, leave now, warn others, close the door if safe, and call emergency services/EHS.",
+    "latency_ms": 3809.2,
+    "token_count": 542
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "4dc72cf8b417",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229718.3416018,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3809.2,
+        "token_count": 542,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.53; flagged=False"
+}

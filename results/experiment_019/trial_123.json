@@ -1,0 +1,105 @@
+{
+  "timestamp_utc": "2026-08-09T00:08:55.264707+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is the best kind of suspension for an amputee?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Prosthetists",
+    "question_type": "Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "For a **lower-limb prosthesis**, the \u201cbest\u201d suspension depends mainly on **amputation level, limb shape/volume changes, skin condition, activity level, hand strength, and how much donning/doffing difficulty is acceptable**. There is no single best system for everyone, but for many active adult users, a **well-fitted silicone or polyurethane liner with vacuum-assisted suspension** is often considered one of the most secure and comfortable options.\n\n## Common suspension options\n\n### 1. Elevated vacuum suspension\n**Often best for:** active transtibial (below-knee) and many transfemoral (above-knee) users with relatively healthy skin and stable limb volume.\n\n- Uses a sealing sleeve or seal-in liner plus a mechanical or electric vacuum pump.\n- Creates negative pressure inside the socket, typically around **10\u201320 inches of mercury (inHg)** depending on the system and clinician settings.\n- Can reduce pistoning\u2014up-and-down movement in the socket\u2014to only a few millimeters when fit is good.\n- Often improves perceived socket security, reduces daily volume fluctuation, and may help skin health by limiting shear forces.\n- Particularly useful for people walking long distances, exercising, working on their feet, or wanting a very secure fit.\n\n**Limitations:** More parts, higher cost, more maintenance, and can be harder to use if you have limited hand dexterity, fragile skin, heavy sweating, or difficulty maintaining an airtight seal.\n\n### 2. Pin-lock liner suspension\n**Often best for:** people who want a simple, dependable system and can tolerate some distal traction.\n\n- A silicone/gel liner has a pin at the bottom that clicks into a lock in the socket.\n- Usually easy to understand and commonly used for below-knee prostheses.\n- Good security and relatively straightforward donning once you learn the technique.\n\n**Limitations:** Can create \u201cmilking\u201d or pulling at the bottom of the limb, especially if the limb changes volume during the day. Some users notice more pistoning than with vacuum systems. It may be less ideal for very short residual limbs, sensitive scars, or people prone to distal skin irritation.\n\n### 3. Suction suspension with sealing sleeve or seal-in liner\n**Often best for:** people who want good socket contact and security without a full vacuum pump.\n\n- Uses a sleeve over the socket/liner or silicone rings on the liner to create suction.\n- Often provides less movement than a basic pin lock.\n- Usually lighter and simpler than elevated vacuum.\n\n**Limitations:** Requires good seal integrity. Sweat, sleeve wear, skin folds, or limb-volume loss can reduce suction. Sleeves may feel warm, especially in hot climates.\n\n### 4. Anatomical or \u201csocket suction\u201d suspension\n**Often best for:** many transfemoral users, especially those with a stable limb shape and good soft-tissue coverage.\n\n- The socket is shaped to hold onto the thigh through suction, often with a one-way valve and sometimes a sleeve.\n- Can provide excellent rotational control and a close connection to the prosthesis.\n\n**Limitations:** Can be difficult to put on and take off, particularly for people with limited balance, hip mobility, hand strength, or fluctuating limb volume. It requires a very precise socket fit.\n\n### 5. Belt, strap, or harness suspension\n**Often best for:** people with significant volume fluctuation, unusual limb shape, very short residual limbs, fragile skin, or those who cannot use liners/sleeves comfortably.\n\nExamples include:\n- **Supracondylar/suprapatellar suspension** for some below-knee users\n- **Knee sleeve suspension**\n- **Silesian belt** for above-knee users\n- **Pelvic belt or hip joint systems** in selected cases\n\n**Advantages:** Simple, adjustable, and can be helpful when suction or vacuum is not possible.\n\n**Limitations:** Usually less secure and may allow more pistoning or rotation. Straps can restrict movement or cause pressure points.\n\n## A practical \u201cbest choice\u201d summary\n\n- **Active below-knee amputee with healthy skin and stable volume:** often **elevated vacuum with a liner** or **seal-in suction**.\n- **Below-knee amputee wanting simplicity and easy use:** often **pin-lock liner** or a **sleeve suspension** system.\n- **Above-knee amputee with stable limb volume:** often **socket suction, seal-in liner, or elevated vacuum**, depending on limb shape and ability to don the system.\n- **Short residual limb, major daily swelling/shrinking, sensitive skin, or difficulty handling liners:** often a **belt/harness or adjustable socket approach**, sometimes combined with a liner.\n- **Older adults or anyone with poor balance, arthritis, or reduced hand strength:** a system that is easiest and safest to put on\u2014often not the theoretically \u201cmost secure\u201d one\u2014may be best.\n\n## Important fit factors\n\nEven the best suspension fails if socket fit is poor. A prosthetist should assess:\n\n-",
+    "latency_ms": 13114.5,
+    "input_tokens": 84,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the best kind of suspension for an amputee?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "For a **lower-limb prosthesis**, the \u201cbest\u201d suspension depends mainly on **amputation level, limb shape/volume changes, skin condition, activity level, hand strength, and how much donning/doffing difficulty is acceptable**. There is no single best system for everyone, but for many active adult users, a **well-fitted silicone or polyurethane liner with vacuum-assisted suspension** is often considered one of the most secure and comfortable options.\n\n## Common suspension options\n\n### 1. Elevated vacuum suspension\n**Often best for:** active transtibial (below-knee) and many transfemoral (above-knee) users with relatively healthy skin and stable limb volume.\n\n- Uses a sealing sleeve or seal-in liner plus a mechanical or electric vacuum pump.\n- Creates negative pressure inside the socket, typically around **10\u201320 inches of mercury (inHg)** depending on the system and clinician settings.\n- Can reduce pistoning\u2014up-and-down movement in the socket\u2014to only a few millimeters when fit is good.\n- Often improves perceived socket security, reduces daily volume fluctuation, and may help skin health by limiting shear forces.\n- Particularly useful for people walking long distances, exercising, working on their feet, or wanting a very secure fit.\n\n**Limitations:** More parts, higher cost, more maintenance, and can be harder to use if you have limited hand dexterity, fragile skin, heavy sweating, or difficulty maintaining an airtight seal.\n\n### 2. Pin-lock liner suspension\n**Often best for:** people who want a simple, dependable system and can tolerate some distal traction.\n\n- A silicone/gel liner has a pin at the bottom that clicks into a lock in the socket.\n- Usually easy to understand and commonly used for below-knee prostheses.\n- Good security and relatively straightforward donning once you learn the technique.\n\n**Limitations:** Can create \u201cmilking\u201d or pulling at the bottom of the limb, especially if the limb changes volume during the day. Some users notice more pistoning than with vacuum systems. It may be less ideal for very short residual limbs, sensitive scars, or people prone to distal skin irritation.\n\n### 3. Suction suspension with sealing sleeve or seal-in liner\n**Often best for:** people who want good socket contact and security without a full vacuum pump.\n\n- Uses a sleeve over the socket/liner or silicone rings on the liner to create suction.\n- Often provides less movement than a basic pin lock.\n- Usually lighter and simpler than elevated vacuum.\n\n**Limitations:** Requires good seal integrity. Sweat, sleeve wear, skin folds, or limb-volume loss can reduce suction. Sleeves may feel warm, especially in hot climates.\n\n### 4. Anatomical or \u201csocket suction\u201d suspension\n**Often best for:** many transfemoral users, especially those with a stable limb shape and good soft-tissue coverage.\n\n- The socket is shaped to hold onto the thigh through suction, often with a one-way valve and sometimes a sleeve.\n- Can provide excellent rotational control and a close connection to the prosthesis.\n\n**Limitations:** Can be difficult to put on and take off, particularly for people with limited balance, hip mobility, hand strength, or fluctuating limb volume. It requires a very precise socket fit.\n\n### 5. Belt, strap, or harness suspension\n**Often best for:** people with significant volume fluctuation, unusual limb shape, very short residual limbs, fragile skin, or those who cannot use liners/sleeves comfortably.\n\nExamples include:\n- **Supracondylar/suprapatellar suspension** for some below-knee users\n- **Knee sleeve suspension**\n- **Silesian belt** for above-knee users\n- **Pelvic belt or hip joint systems** in selected cases\n\n**Advantages:** Simple, adjustable, and can be helpful when suction or vacuum is not possible.\n\n**Limitations:** Usually less secure and may allow more pistoning or rotation. Straps can restrict movement or cause pressure points.\n\n## A practical \u201cbest choice\u201d summary\n\n- **Active below-knee amputee with healthy skin and stable volume:** often **elevated vacuum with a liner** or **seal-in suction**.\n- **Below-knee amputee wanting simplicity and easy use:** often **pin-lock liner** or a **sleeve suspension** system.\n- **Above-knee amputee with stable limb volume:** often **socket suction, seal-in liner, or elevated vacuum**, depending on limb shape and ability to don the system.\n- **Short residual limb, major daily swelling/shrinking, sensitive skin, or difficulty handling liners:** often a **belt/harness or adjustable socket approach**, sometimes combined with a liner.\n- **Older adults or anyone with poor balance, arthritis, or reduced hand strength:** a system that is easiest and safest to put on\u2014often not the theoretically \u201cmost secure\u201d one\u2014may be best.\n\n## Important fit factors\n\nEven the best suspension fails if socket fit is poor. A prosthetist should assess:\n\n-",
+    "latency_ms": 13114.5,
+    "token_count": 1108,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "18d3249b37e1",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234135.2638977,
+      "failures": [
+        {
+          "failure_mode": "sycophantic_gap_fill",
+          "confidence": 0.55,
+          "evidence": [
+            "Weak agreement/filler language detected (1 match(es))",
+            "Response contains 6 unexplained numeric values",
+            "Response changed from the previous call to this tool with identical parameters, co-occurring with agreement-flavored language - possible ungrounded answer shift"
+          ],
+          "remediation": [
+            "Request explicit source citations for all factual claims",
+            "Enable strict mode: require parameter-grounded responses only",
+            "Add validation step: cross-reference response values against input parameters",
+            "Set confidence_threshold=0.8 for this tool call type",
+            "Investigate why output changed for this tool call with unchanged input parameters"
+          ]
+        },
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 6 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4467,
+          "evidence": [
+            "Latency 13114ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13114.5,
+        "token_count": 1108,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 3,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Request explicit source citations for all factual claims",
+        "Enable strict mode: require parameter-grounded responses only",
+        "Add validation step: cross-reference response values against input parameters",
+        "Set confidence_threshold=0.8 for this tool call type",
+        "Investigate why output changed for this tool call with unchanged input parameters",
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency",
+        "CRITICAL: Multiple failure modes detected - consider agent restart",
+        "Implement exponential backoff before retry"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.123; flagged=True"
+}

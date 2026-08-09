@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:50:26.637311+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is known about the switch that occurs between patients with latent HIV and active infection?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Virologist",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# HIV Latency and Reactivation: The Molecular Switch\n\n## Overview\n\nHIV establishes a latent reservoir primarily in resting memory CD4+ T cells within approximately 1-3 days of initial infection, before the immune system or antiretroviral therapy (ART) can act. This reservoir is remarkably stable, with an estimated half-life of roughly 44 months, meaning it would take approximately 70+ years to naturally clear even with perfect ART adherence.\n\n## Key Mechanisms Controlling Latency\n\n### 1. **Transcriptional Silencing**\n- The HIV promoter (5' LTR) requires host transcription factors like **NF-\u03baB**, **NFAT**, and **Sp1** for activation\n- In resting T cells, these factors are largely sequestered in the cytoplasm or present at low levels\n- **P-TEFb** (positive transcription elongation factor b) is often sequestered in an inactive complex with **7SK snRNA** and **HEXIM1**, preventing efficient transcriptional elongation\n\n### 2. **Epigenetic Regulation**\n- **Histone deacetylases (HDACs)**, particularly **HDAC1, HDAC2, and HDAC3**, maintain a repressive chromatin state at the integration site\n- **DNA methylation** of CpG islands near the LTR can silence proviral expression\n- **Histone methyltransferases** (like EZH2) add repressive marks such as H3K27me3\n\n### 3. **Tat/TAR Feedback Loop**\n- Viral **Tat protein** binds the **TAR RNA element** to recruit P-TEFb and dramatically enhance transcription (up to 100-fold amplification)\n- In latency, insufficient Tat is produced to initiate this positive feedback loop, creating a self-reinforcing silent state\n\n### 4. **Integration Site Effects**\n- Provirus integrated into heterochromatin or in a reverse orientation relative to host genes tends toward deeper latency\n- Roughly 40-50% of intact proviruses reside in locations associated with transcriptional silencing\n\n## Triggers for Reactivation\n\nActivation signals that can flip the switch include:\n\n- **T-cell receptor (TCR) engagement** with cognate antigen\n- **Cytokine signaling**: IL-7, IL-15, IL-6, TNF-\u03b1\n- **Immune activation states**: co-infections, vaccinations\n- Homeostatic proliferation of memory T cells\n\n## \"Shock and Kill\" / \"Kick and Kill\" Strategy\n\nResearchers have tested **latency-reversing agents (LRAs)** to force reactivation for elimination:\n\n- **HDAC inhibitors**: vorinostat, panobinostat, romidepsin\n- **PKC agonists**: bryostatin-1, ingenol derivatives\n- **BET inhibitors**: JQ1\n- **TLR agonists**: TLR7/9 agonists\n\n**Clinical challenge**: These agents typically increase measurable viral RNA by only about 2-5 fold in patient trials\u2014far less than hoped\u2014and have **",
+    "latency_ms": 12161.7,
+    "input_tokens": 135,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is known about the switch that occurs between patients with latent HIV and active infection?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# HIV Latency and Reactivation: The Molecular Switch\n\n## Overview\n\nHIV establishes a latent reservoir primarily in resting memory CD4+ T cells within approximately 1-3 days of initial infection, before the immune system or antiretroviral therapy (ART) can act. This reservoir is remarkably stable, with an estimated half-life of roughly 44 months, meaning it would take approximately 70+ years to naturally clear even with perfect ART adherence.\n\n## Key Mechanisms Controlling Latency\n\n### 1. **Transcriptional Silencing**\n- The HIV promoter (5' LTR) requires host transcription factors like **NF-\u03baB**, **NFAT**, and **Sp1** for activation\n- In resting T cells, these factors are largely sequestered in the cytoplasm or present at low levels\n- **P-TEFb** (positive transcription elongation factor b) is often sequestered in an inactive complex with **7SK snRNA** and **HEXIM1**, preventing efficient transcriptional elongation\n\n### 2. **Epigenetic Regulation**\n- **Histone deacetylases (HDACs)**, particularly **HDAC1, HDAC2, and HDAC3**, maintain a repressive chromatin state at the integration site\n- **DNA methylation** of CpG islands near the LTR can silence proviral expression\n- **Histone methyltransferases** (like EZH2) add repressive marks such as H3K27me3\n\n### 3. **Tat/TAR Feedback Loop**\n- Viral **Tat protein** binds the **TAR RNA element** to recruit P-TEFb and dramatically enhance transcription (up to 100-fold amplification)\n- In latency, insufficient Tat is produced to initiate this positive feedback loop, creating a self-reinforcing silent state\n\n### 4. **Integration Site Effects**\n- Provirus integrated into heterochromatin or in a reverse orientation relative to host genes tends toward deeper latency\n- Roughly 40-50% of intact proviruses reside in locations associated with transcriptional silencing\n\n## Triggers for Reactivation\n\nActivation signals that can flip the switch include:\n\n- **T-cell receptor (TCR) engagement** with cognate antigen\n- **Cytokine signaling**: IL-7, IL-15, IL-6, TNF-\u03b1\n- **Immune activation states**: co-infections, vaccinations\n- Homeostatic proliferation of memory T cells\n\n## \"Shock and Kill\" / \"Kick and Kill\" Strategy\n\nResearchers have tested **latency-reversing agents (LRAs)** to force reactivation for elimination:\n\n- **HDAC inhibitors**: vorinostat, panobinostat, romidepsin\n- **PKC agonists**: bryostatin-1, ingenol derivatives\n- **BET inhibitors**: JQ1\n- **TLR agonists**: TLR7/9 agonists\n\n**Clinical challenge**: These agents typically increase measurable viral RNA by only about 2-5 fold in patient trials\u2014far less than hoped\u2014and have **",
+    "latency_ms": 12161.7,
+    "token_count": 1159,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "e18519550943",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240226.63647,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 14 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4324,
+          "evidence": [
+            "Latency 12162ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12161.7,
+        "token_count": 1159,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.120; flagged=True"
+}

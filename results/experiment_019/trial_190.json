@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:20:55.493095+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "How can I perform lung function testing without putting strain or discomfort on the patient?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biomedical engineering. Main area of work is developing primary health care equipment.",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "You can minimize strain and discomfort by choosing the least demanding test that still answers the clinical question, preparing the patient carefully, and stopping if symptoms occur.\n\n## 1. Prefer low-effort lung function measures when appropriate\n\n### Pulse oximetry\n- Completely noninvasive; a finger, ear, or forehead sensor measures oxygen saturation (SpO\u2082) and pulse.\n- Useful for resting oxygenation and during gentle activity.\n- Typical normal resting SpO\u2082 at sea level is about **95%\u2013100%**; persistent values below about **92%** generally warrant clinical assessment, though targets may differ in chronic hypercapnic COPD.\n\n### Respiratory rate and observation\n- Count breaths for a full **60 seconds** while the patient is relaxed.\n- Typical adult resting respiratory rate: approximately **12\u201320 breaths/minute**.\n- Observe work of breathing, accessory-muscle use, ability to speak full sentences, cyanosis, cough, and fatigue.\n\n### Peak expiratory flow (PEF)\n- Faster and generally less demanding than full spirometry, though it still requires a brief hard exhalation.\n- Useful mainly for monitoring asthma or airflow variation, not for diagnosing all lung diseases.\n- Use the patient\u2019s own \u201cpersonal best\u201d when available; a drop to about **50%\u201379%** of personal best is commonly considered a caution zone, while below about **50%** may indicate severe worsening and needs urgent action according to the patient\u2019s asthma plan.\n\n### Handheld or simplified spirometry\n- Can provide FEV\u2081 or FEV\u2086 with fewer maneuvers than full laboratory spirometry.\n- Consider this if the patient cannot tolerate repeated forced exhalations.\n- Results may be less complete than formal spirometry and should be interpreted in clinical context.\n\n### Oscillometry / impulse oscillometry (IOS)\n- Often one of the best options for patients unable to perform forceful spirometry.\n- The patient breathes quietly through a mouthpiece for roughly **20\u201360 seconds** while gentle pressure waves are applied.\n- Requires minimal cooperation and is particularly helpful in frail adults, young children, neuromuscular weakness, severe dyspnea, or poor spirometry technique.\n- Availability varies by center.\n\n### Tidal-breathing techniques\nDepending on setting and equipment, clinicians may use:\n- **Tidal breathing flow-volume loops**\n- **Respiratory inductance plethysmography**\n- **Capnography** for end-tidal CO\u2082\n- **Electrical impedance tomography** in specialized settings\n\nThese assess breathing during normal quiet respiration rather than requiring maximal inhalation and forced expiration.\n\n## 2. If spirometry is needed, make it as comfortable as possible\n\nSpirometry is often safe, but it can cause short-lived coughing, dizziness, chest tightness, or fatigue because it requires a maximal breath in followed by a hard, rapid exhalation. To reduce burden:\n\n1. **Screen for contraindications and instability first.**  \n   Defer or seek medical review if the patient has acute severe breathlessness, active chest pain, recent pneumothorax, unstable cardiac disease, recent major thoracic/abdominal/eye surgery, significant hemoptysis, or a contagious respiratory infection. Exact timing depends on the condition and local policy.\n\n2. **Test when the patient is stable.**  \n   Avoid testing during an acute exacerbation unless the result is needed urgently and a clinician judges it safe.\n\n3. **Use a comfortable upright position.**  \n   - Sit upright with back support.\n   - Keep both feet supported.\n   - Avoid standing if there is fall risk, frailty, dizziness, or severe dyspnea.\n   - Use a nose clip only if tolerated; a good mouth seal is still important.\n\n4. **Explain and demonstrate first.**  \n   Anxiety and poor understanding can increase perceived breathlessness. A short demonstration and calm coaching often reduce the number of attempts needed.\n\n5. **Limit repeated forced maneuvers.**  \n   Standard diagnostic spirometry often aims for at least **3 acceptable maneuvers**, but do not continue simply to meet a target if the patient is distressed, coughing repeatedly, light-headed, or fatigued. Give rest periods of about **1\u20132 minutes** or longer between attempts.\n\n6. **Use shorter or modified maneuvers when clinically acceptable.**  \n   In some patients, obtaining FEV\u2081 or FEV\u2086 may be more tolerable than insisting on a prolonged forced vital capacity maneuver. This should be decided by the supervising clinician and documented as a modified test.\n\n7. **Avoid unnecessary bronchodilator challenges.**  \n   A bronchodilator reversibility test may require repeated spirometry before and about **10\u201320 minutes** after a short-acting bronchodilator. If the patient is very frail or symptomatic, assess whether this added burden is essential.\n\n8. **Stop immediately if concerning symptoms occur.**  \n   Stop and assess if there is chest pain, marked dizziness, near",
+    "latency_ms": 13679.4,
+    "input_tokens": 88,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How can I perform lung function testing without putting strain or discomfort on the patient?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "You can minimize strain and discomfort by choosing the least demanding test that still answers the clinical question, preparing the patient carefully, and stopping if symptoms occur.\n\n## 1. Prefer low-effort lung function measures when appropriate\n\n### Pulse oximetry\n- Completely noninvasive; a finger, ear, or forehead sensor measures oxygen saturation (SpO\u2082) and pulse.\n- Useful for resting oxygenation and during gentle activity.\n- Typical normal resting SpO\u2082 at sea level is about **95%\u2013100%**; persistent values below about **92%** generally warrant clinical assessment, though targets may differ in chronic hypercapnic COPD.\n\n### Respiratory rate and observation\n- Count breaths for a full **60 seconds** while the patient is relaxed.\n- Typical adult resting respiratory rate: approximately **12\u201320 breaths/minute**.\n- Observe work of breathing, accessory-muscle use, ability to speak full sentences, cyanosis, cough, and fatigue.\n\n### Peak expiratory flow (PEF)\n- Faster and generally less demanding than full spirometry, though it still requires a brief hard exhalation.\n- Useful mainly for monitoring asthma or airflow variation, not for diagnosing all lung diseases.\n- Use the patient\u2019s own \u201cpersonal best\u201d when available; a drop to about **50%\u201379%** of personal best is commonly considered a caution zone, while below about **50%** may indicate severe worsening and needs urgent action according to the patient\u2019s asthma plan.\n\n### Handheld or simplified spirometry\n- Can provide FEV\u2081 or FEV\u2086 with fewer maneuvers than full laboratory spirometry.\n- Consider this if the patient cannot tolerate repeated forced exhalations.\n- Results may be less complete than formal spirometry and should be interpreted in clinical context.\n\n### Oscillometry / impulse oscillometry (IOS)\n- Often one of the best options for patients unable to perform forceful spirometry.\n- The patient breathes quietly through a mouthpiece for roughly **20\u201360 seconds** while gentle pressure waves are applied.\n- Requires minimal cooperation and is particularly helpful in frail adults, young children, neuromuscular weakness, severe dyspnea, or poor spirometry technique.\n- Availability varies by center.\n\n### Tidal-breathing techniques\nDepending on setting and equipment, clinicians may use:\n- **Tidal breathing flow-volume loops**\n- **Respiratory inductance plethysmography**\n- **Capnography** for end-tidal CO\u2082\n- **Electrical impedance tomography** in specialized settings\n\nThese assess breathing during normal quiet respiration rather than requiring maximal inhalation and forced expiration.\n\n## 2. If spirometry is needed, make it as comfortable as possible\n\nSpirometry is often safe, but it can cause short-lived coughing, dizziness, chest tightness, or fatigue because it requires a maximal breath in followed by a hard, rapid exhalation. To reduce burden:\n\n1. **Screen for contraindications and instability first.**  \n   Defer or seek medical review if the patient has acute severe breathlessness, active chest pain, recent pneumothorax, unstable cardiac disease, recent major thoracic/abdominal/eye surgery, significant hemoptysis, or a contagious respiratory infection. Exact timing depends on the condition and local policy.\n\n2. **Test when the patient is stable.**  \n   Avoid testing during an acute exacerbation unless the result is needed urgently and a clinician judges it safe.\n\n3. **Use a comfortable upright position.**  \n   - Sit upright with back support.\n   - Keep both feet supported.\n   - Avoid standing if there is fall risk, frailty, dizziness, or severe dyspnea.\n   - Use a nose clip only if tolerated; a good mouth seal is still important.\n\n4. **Explain and demonstrate first.**  \n   Anxiety and poor understanding can increase perceived breathlessness. A short demonstration and calm coaching often reduce the number of attempts needed.\n\n5. **Limit repeated forced maneuvers.**  \n   Standard diagnostic spirometry often aims for at least **3 acceptable maneuvers**, but do not continue simply to meet a target if the patient is distressed, coughing repeatedly, light-headed, or fatigued. Give rest periods of about **1\u20132 minutes** or longer between attempts.\n\n6. **Use shorter or modified maneuvers when clinically acceptable.**  \n   In some patients, obtaining FEV\u2081 or FEV\u2086 may be more tolerable than insisting on a prolonged forced vital capacity maneuver. This should be decided by the supervising clinician and documented as a modified test.\n\n7. **Avoid unnecessary bronchodilator challenges.**  \n   A bronchodilator reversibility test may require repeated spirometry before and about **10\u201320 minutes** after a short-acting bronchodilator. If the patient is very frail or symptomatic, assess whether this added burden is essential.\n\n8. **Stop immediately if concerning symptoms occur.**  \n   Stop and assess if there is chest pain, marked dizziness, near",
+    "latency_ms": 13679.4,
+    "token_count": 1112,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "a3e52c388ebb",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234855.492298,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 10 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4552,
+          "evidence": [
+            "Latency 13679ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13679.4,
+        "token_count": 1112,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.190; flagged=True"
+}

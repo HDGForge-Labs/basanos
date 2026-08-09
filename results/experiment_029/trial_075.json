@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T22:31:28.403184+00:00",
+  "detector": "context_degradation",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "which government had more power under the articles of confederation",
+    "gold_index": 0
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "Under the Articles of Confederation, **state governments held significantly more power than the national/federal government**.\n\nThe Articles were specifically designed with \"a guiding principle... to preserve the independence and sovereignty of the states\" (Document [1]). This resulted in a deliberately weak central government with severe limitations:\n\n- **Limited federal authority**: The federal government received only certain limited powers, while states retained most governm",
+    "latency_ms": 3545.4,
+    "input_tokens": 2186,
+    "output_tokens": 128
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "which government had more power under the articles of confederation",
+      "gold_index": 0,
+      "n_docs": 10
+    },
+    "response": "Under the Articles of Confederation, **state governments held significantly more power than the national/federal government**.\n\nThe Articles were specifically designed with \"a guiding principle... to preserve the independence and sovereignty of the states\" (Document [1]). This resulted in a deliberately weak central government with severe limitations:\n\n- **Limited federal authority**: The federal government received only certain limited powers, while states retained most governm",
+    "latency_ms": 3545.4,
+    "token_count": 2314,
+    "context_window_used": 0.25
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "d5d8212cf894",
+      "tool_name": "context_qa",
+      "status": "pass",
+      "timestamp": 1786314688.4024441,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3545.4,
+        "token_count": 2314,
+        "context_window_used": 0.25,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.75; flagged=False; gold_index=0"
+}

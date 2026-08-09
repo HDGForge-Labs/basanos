@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:54:42.097193+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Is \"Ethics Dumping\" still a common practice in less developed countries? ",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Clinical Research",
+    "question_type": "Open-ended question that is potentially ambiguous| Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Yes\u2014but it is better understood as an ongoing structural problem than as a universally common or openly acknowledged practice.\n\n**\u201cEthics dumping\u201d** means conducting research, testing, clinical trials, environmental projects, or other activities in a country because its ethical rules, enforcement, infrastructure, or political power are weaker than in the sponsor\u2019s home country. Examples include:\n\n- Clinical trials moved to countries with limited regulatory oversight or vulnerable patients.\n- Biomedical samples or genetic data collected without meaningful consent or fair benefit-sharing.\n- Pharmaceutical, mining, energy, or industrial projects imposing greater health and environmental risks on poorer communities.\n- Research institutions outsourcing animal experiments or other controversial work to jurisdictions with weaker protections.\n- Digital or AI experiments conducted where privacy, labor, or consumer protections are less developed.\n\nIt remains possible because of **unequal bargaining power, poverty, weak enforcement, limited ethics-review capacity, dependence on foreign investment, and regulatory gaps**. However, the situation has improved in many places. International standards such as the **Declaration of Helsinki**, **CIOMS guidelines**, **Good Clinical Practice**, national research-ethics committees, trial-registration requirements, and stronger local academic institutions have made blatant abuses more difficult.\n\nThe problem has not disappeared; it has often become **more subtle**. A project may formally comply with local law while still exploiting communities\u2014for example, by offering inadequate compensation, obtaining technically valid but poorly understood consent, withholding post-trial treatment, or excluding local researchers from ownership and benefits. Ethical standards can also be applied inconsistently: a sponsor may meet the rules of a poorer country while avoiding the stricter standards that would apply at home.\n\nSo the most accurate answer is: **ethics dumping still occurs, especially in clinical research, extractive industries, environmental experimentation, and data-intensive research, but its prevalence varies by sector and country and is increasingly challenged by regulation, oversight, and local resistance.**",
+    "latency_ms": 3805.8,
+    "input_tokens": 95,
+    "output_tokens": 383
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Is \"Ethics Dumping\" still a common practice in less developed countries? ",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Yes\u2014but it is better understood as an ongoing structural problem than as a universally common or openly acknowledged practice.\n\n**\u201cEthics dumping\u201d** means conducting research, testing, clinical trials, environmental projects, or other activities in a country because its ethical rules, enforcement, infrastructure, or political power are weaker than in the sponsor\u2019s home country. Examples include:\n\n- Clinical trials moved to countries with limited regulatory oversight or vulnerable patients.\n- Biomedical samples or genetic data collected without meaningful consent or fair benefit-sharing.\n- Pharmaceutical, mining, energy, or industrial projects imposing greater health and environmental risks on poorer communities.\n- Research institutions outsourcing animal experiments or other controversial work to jurisdictions with weaker protections.\n- Digital or AI experiments conducted where privacy, labor, or consumer protections are less developed.\n\nIt remains possible because of **unequal bargaining power, poverty, weak enforcement, limited ethics-review capacity, dependence on foreign investment, and regulatory gaps**. However, the situation has improved in many places. International standards such as the **Declaration of Helsinki**, **CIOMS guidelines**, **Good Clinical Practice**, national research-ethics committees, trial-registration requirements, and stronger local academic institutions have made blatant abuses more difficult.\n\nThe problem has not disappeared; it has often become **more subtle**. A project may formally comply with local law while still exploiting communities\u2014for example, by offering inadequate compensation, obtaining technically valid but poorly understood consent, withholding post-trial treatment, or excluding local researchers from ownership and benefits. Ethical standards can also be applied inconsistently: a sponsor may meet the rules of a poorer country while avoiding the stricter standards that would apply at home.\n\nSo the most accurate answer is: **ethics dumping still occurs, especially in clinical research, extractive industries, environmental experimentation, and data-intensive research, but its prevalence varies by sector and country and is increasingly challenged by regulation, oversight, and local resistance.**",
+    "latency_ms": 3805.8,
+    "token_count": 478
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "e080e669b416",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229682.0964403,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3805.8,
+        "token_count": 478,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.44; flagged=False"
+}

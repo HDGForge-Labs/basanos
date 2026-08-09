@@ -1,0 +1,105 @@
+{
+  "timestamp_utc": "2026-08-09T01:57:02.731164+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "I have a patient with a kidney stone. Should the patient do an ultrasound or a CT scan?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Radiology",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Imaging for Suspected Kidney Stone: Ultrasound vs. CT\n\n## Quick Answer\nFor **most patients**, ultrasound is now recommended as the **first-line imaging study**, especially in low-risk patients presenting to the ED, based on the STONE score and randomized trial data. However, the choice depends on clinical context.\n\n## Key Evidence\n\nThe landmark **2014 NEJM study by Smith-Bindman et al.** (STONE trial, ~2,776 patients) found:\n- No significant difference in **high-risk diagnoses missed** (0.4% ultrasound vs. 0.3% CT)\n- No difference in serious adverse events, pain scores, or return ED visits\n- Ultrasound resulted in **significantly less radiation exposure**\u2014roughly 40.5 mSv (cumulative) vs. 88.9 mSv over 6 months in CT-first groups\n\n## Detailed Comparison\n\n### Ultrasound\n**Advantages:**\n- No radiation exposure (critical for pregnant patients, children, recurrent stone-formers)\n- Lower cost\u2014typically **$200\u2013$400** vs. **$1,200\u2013$3,000+** for CT\n- Faster in many settings\n- Sensitivity: approximately **45\u201370%** for detecting stones\n- Specificity: approximately **75\u201390%**\n- Excellent at detecting **hydronephrosis** (surrogate marker for obstruction)\n\n**Limitations:**\n- Poor visualization of ureteral stones, especially mid-ureter (~10\u201317% detection)\n- Operator-dependent\n- Less accurate for stones <5mm\n- May miss alternative diagnoses (appendicitis, diverticulitis)\n\n### CT (Non-contrast CT, \"CT-KUB\")\n**Advantages:**\n- Sensitivity: approximately **95\u201398%**\n- Specificity: approximately **96\u201398%**\n- Detects stone size, location, and density (useful for treatment planning)\n- Identifies alternative pathology\n- Gold standard for stones \u22653mm\n\n**Limitations:**\n- Radiation dose: approximately **2\u201310 mSv** per study (low-dose protocols can reduce to ~1\u20132 mSv)\n- Higher cost\n- Contraindicated/cautioned in pregnancy\n\n## Recommended Approach by Patient Type\n\n| Patient Scenario | Preferred Initial Imaging |\n|---|---|\n| Pregnant patient | **Ultrasound** (avoid radiation) |\n| Children | **Ultrasound** first |\n| Low-risk (STONE score \u22645), classic presentation, known prior stones | **Ultrasound** or clinical management without imaging |\n| High STONE score (\u22659), atypical pain, fever, or diagnostic uncertainty | **CT** (low-dose protocol preferred) |\n| First-time presentation, need definitive stone size/location for urology referral | **CT** |\n| Renal function concerns, recurrent stone former needing frequent monitoring | **Ultrasound** to minimize cumulative radiation |\n\n## Practical Recommendation",
+    "latency_ms": 12456.6,
+    "input_tokens": 142,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "I have a patient with a kidney stone. Should the patient do an ultrasound or a CT scan?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Imaging for Suspected Kidney Stone: Ultrasound vs. CT\n\n## Quick Answer\nFor **most patients**, ultrasound is now recommended as the **first-line imaging study**, especially in low-risk patients presenting to the ED, based on the STONE score and randomized trial data. However, the choice depends on clinical context.\n\n## Key Evidence\n\nThe landmark **2014 NEJM study by Smith-Bindman et al.** (STONE trial, ~2,776 patients) found:\n- No significant difference in **high-risk diagnoses missed** (0.4% ultrasound vs. 0.3% CT)\n- No difference in serious adverse events, pain scores, or return ED visits\n- Ultrasound resulted in **significantly less radiation exposure**\u2014roughly 40.5 mSv (cumulative) vs. 88.9 mSv over 6 months in CT-first groups\n\n## Detailed Comparison\n\n### Ultrasound\n**Advantages:**\n- No radiation exposure (critical for pregnant patients, children, recurrent stone-formers)\n- Lower cost\u2014typically **$200\u2013$400** vs. **$1,200\u2013$3,000+** for CT\n- Faster in many settings\n- Sensitivity: approximately **45\u201370%** for detecting stones\n- Specificity: approximately **75\u201390%**\n- Excellent at detecting **hydronephrosis** (surrogate marker for obstruction)\n\n**Limitations:**\n- Poor visualization of ureteral stones, especially mid-ureter (~10\u201317% detection)\n- Operator-dependent\n- Less accurate for stones <5mm\n- May miss alternative diagnoses (appendicitis, diverticulitis)\n\n### CT (Non-contrast CT, \"CT-KUB\")\n**Advantages:**\n- Sensitivity: approximately **95\u201398%**\n- Specificity: approximately **96\u201398%**\n- Detects stone size, location, and density (useful for treatment planning)\n- Identifies alternative pathology\n- Gold standard for stones \u22653mm\n\n**Limitations:**\n- Radiation dose: approximately **2\u201310 mSv** per study (low-dose protocols can reduce to ~1\u20132 mSv)\n- Higher cost\n- Contraindicated/cautioned in pregnancy\n\n## Recommended Approach by Patient Type\n\n| Patient Scenario | Preferred Initial Imaging |\n|---|---|\n| Pregnant patient | **Ultrasound** (avoid radiation) |\n| Children | **Ultrasound** first |\n| Low-risk (STONE score \u22645), classic presentation, known prior stones | **Ultrasound** or clinical management without imaging |\n| High STONE score (\u22659), atypical pain, fever, or diagnostic uncertainty | **CT** (low-dose protocol preferred) |\n| First-time presentation, need definitive stone size/location for urology referral | **CT** |\n| Renal function concerns, recurrent stone former needing frequent monitoring | **Ultrasound** to minimize cumulative radiation |\n\n## Practical Recommendation",
+    "latency_ms": 12456.6,
+    "token_count": 1166,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "89cfc2d5d9c6",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240622.7303112,
+      "failures": [
+        {
+          "failure_mode": "sycophantic_gap_fill",
+          "confidence": 0.55,
+          "evidence": [
+            "Weak agreement/filler language detected (1 match(es))",
+            "Response contains 18 unexplained numeric values",
+            "Response changed from the previous call to this tool with identical parameters, co-occurring with agreement-flavored language - possible ungrounded answer shift"
+          ],
+          "remediation": [
+            "Request explicit source citations for all factual claims",
+            "Enable strict mode: require parameter-grounded responses only",
+            "Add validation step: cross-reference response values against input parameters",
+            "Set confidence_threshold=0.8 for this tool call type",
+            "Investigate why output changed for this tool call with unchanged input parameters"
+          ]
+        },
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 18 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4368,
+          "evidence": [
+            "Latency 12457ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12456.6,
+        "token_count": 1166,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 3,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Request explicit source citations for all factual claims",
+        "Enable strict mode: require parameter-grounded responses only",
+        "Add validation step: cross-reference response values against input parameters",
+        "Set confidence_threshold=0.8 for this tool call type",
+        "Investigate why output changed for this tool call with unchanged input parameters",
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency",
+        "CRITICAL: Multiple failure modes detected - consider agent restart",
+        "Implement exponential backoff before retry"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.152; flagged=True"
+}

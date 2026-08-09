@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:14:29.109270+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Can you summarize the standard procedure to treat a recurrent eczema on children? ",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Medical Primary Care ",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Recurrent childhood eczema (atopic dermatitis) is usually managed with a **maintenance skin-care plan plus early treatment of flares**. A pediatrician or dermatologist should confirm the diagnosis, especially if rashes are severe, infected, unusual, or not improving.\n\n## 1. Daily prevention: repair the skin barrier\n\n### Moisturize frequently\n- Apply a **thick, fragrance-free cream or ointment** at least **2 times daily**, and more often to very dry areas.\n- The most important application is within about **3 minutes after bathing** (\u201csoak and seal\u201d).\n- Ointments (such as plain petrolatum) are often more effective for very dry skin than lotions, which contain more water and may sting.\n- Use enough to leave the skin lightly glossy. A child with widespread eczema may need roughly **100\u2013250 g of emollient per week**, sometimes more.\n\n### Gentle bathing\n- Use **lukewarm**, not hot, water.\n- Keep baths or showers to about **5\u201310 minutes** daily or every other day, depending on dryness and preference.\n- Use a mild, fragrance-free cleanser only on dirty areas; avoid bubble baths, fragranced soaps, scrubs, and harsh washes.\n- Pat dry rather than rubbing.\n\n### Avoid common irritants\n- Fragrance, essential oils, scented detergents, fabric softeners, wool, overheating, sweat, smoke, and rough clothing can trigger flares.\n- Choose soft cotton layers and keep fingernails short to reduce skin injury from scratching.\n- Food allergy testing is **not routinely needed** unless there are immediate food reactions\u2014such as hives, vomiting, coughing/wheezing, or swelling\u2014after a specific food, or poor growth/severe disease under specialist evaluation.\n\n## 2. Treat flares early with topical anti-inflammatory medicine\n\nThe standard first-line flare treatment is usually a **topical corticosteroid** plus moisturizer.\n\n### Topical steroid strength is matched to body site and severity\nTypical examples:\n\n- **Face, eyelids, neck, groin, and skin folds:** usually a **low-potency steroid**, such as hydrocortisone **0.5%\u20131%**; sometimes prescription hydrocortisone **2.5%** or another low-potency option.\n- **Trunk, arms, and legs:** a low- to medium-potency prescription steroid may be used, such as triamcinolone **0.025%\u20130.1%**, depending on age and severity.\n- **Very thick, stubborn plaques** on areas like hands or feet may occasionally need a stronger steroid, generally under clinician guidance and for short periods.\n\nApply a thin layer to **active red, rough, itchy skin**, usually **once or twice daily**. Many modern regimens use **once daily** for adequate-strength products, but follow the specific prescription instructions.\n\nA common course is:\n- Treat until the skin is smooth and no longer itchy/red, often about **5\u20137 days** for mild flares.\n- Moderate flares may need around **1\u20132 weeks**.\n- If there is no clear improvement after about **7\u201314 days**, or the child needs repeated long courses, contact the clinician.\n\nAppropriate short-term topical steroid use is generally considered safe. The main risks\u2014skin thinning, stretch marks, easy bruising, and systemic absorption\u2014are more likely with **high-potency products**, prolonged continuous use, use under airtight coverings, or use on thin skin areas such as eyelids.\n\n### How much cream?\nClinicians may use \u201cfingertip units\u201d (FTUs):\n- **1 FTU** is the amount squeezed from an adult tube along the tip of the index finger to the first crease, roughly **0.5 g**.\n- It covers about **2 adult palm-sized areas** of skin.\nChildren need smaller amounts depending on age and body area. Your clinician or pharmacist can show you the correct quantity.\n\n## 3. Maintenance (\u201cproactive\u201d) treatment for frequent recurrences\n\nFor children who repeatedly flare in the same spots, a clinician may recommend:\n- Continue moisturizer daily, and\n- Apply the prescribed topical steroid or a non-steroid anti-inflammatory to previously affected \u201chot spots\u201d about **2 days per week**\u2014for example, Saturday and Wednesday\u2014even when skin looks clear.\n\nThis proactive approach can reduce flare frequency while limiting total steroid exposure.\n\n## 4. Non-steroid prescription options\n\nThese can be useful for sensitive locations, steroid-sparing maintenance, or persistent eczema:\n\n- **Tacrolimus ointment**: commonly used from age **2 years and older** in many settings; available in **0.03%** for children and **0.1%** for older adolescents/adults depending on local labeling.\n- **Pimecrolimus 1% cream**: often used from age **2 years and older**.\n- **Crisaborole 2% ointment**: approved in some regions for children as young",
+    "latency_ms": 13453.5,
+    "input_tokens": 87,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Can you summarize the standard procedure to treat a recurrent eczema on children? ",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Recurrent childhood eczema (atopic dermatitis) is usually managed with a **maintenance skin-care plan plus early treatment of flares**. A pediatrician or dermatologist should confirm the diagnosis, especially if rashes are severe, infected, unusual, or not improving.\n\n## 1. Daily prevention: repair the skin barrier\n\n### Moisturize frequently\n- Apply a **thick, fragrance-free cream or ointment** at least **2 times daily**, and more often to very dry areas.\n- The most important application is within about **3 minutes after bathing** (\u201csoak and seal\u201d).\n- Ointments (such as plain petrolatum) are often more effective for very dry skin than lotions, which contain more water and may sting.\n- Use enough to leave the skin lightly glossy. A child with widespread eczema may need roughly **100\u2013250 g of emollient per week**, sometimes more.\n\n### Gentle bathing\n- Use **lukewarm**, not hot, water.\n- Keep baths or showers to about **5\u201310 minutes** daily or every other day, depending on dryness and preference.\n- Use a mild, fragrance-free cleanser only on dirty areas; avoid bubble baths, fragranced soaps, scrubs, and harsh washes.\n- Pat dry rather than rubbing.\n\n### Avoid common irritants\n- Fragrance, essential oils, scented detergents, fabric softeners, wool, overheating, sweat, smoke, and rough clothing can trigger flares.\n- Choose soft cotton layers and keep fingernails short to reduce skin injury from scratching.\n- Food allergy testing is **not routinely needed** unless there are immediate food reactions\u2014such as hives, vomiting, coughing/wheezing, or swelling\u2014after a specific food, or poor growth/severe disease under specialist evaluation.\n\n## 2. Treat flares early with topical anti-inflammatory medicine\n\nThe standard first-line flare treatment is usually a **topical corticosteroid** plus moisturizer.\n\n### Topical steroid strength is matched to body site and severity\nTypical examples:\n\n- **Face, eyelids, neck, groin, and skin folds:** usually a **low-potency steroid**, such as hydrocortisone **0.5%\u20131%**; sometimes prescription hydrocortisone **2.5%** or another low-potency option.\n- **Trunk, arms, and legs:** a low- to medium-potency prescription steroid may be used, such as triamcinolone **0.025%\u20130.1%**, depending on age and severity.\n- **Very thick, stubborn plaques** on areas like hands or feet may occasionally need a stronger steroid, generally under clinician guidance and for short periods.\n\nApply a thin layer to **active red, rough, itchy skin**, usually **once or twice daily**. Many modern regimens use **once daily** for adequate-strength products, but follow the specific prescription instructions.\n\nA common course is:\n- Treat until the skin is smooth and no longer itchy/red, often about **5\u20137 days** for mild flares.\n- Moderate flares may need around **1\u20132 weeks**.\n- If there is no clear improvement after about **7\u201314 days**, or the child needs repeated long courses, contact the clinician.\n\nAppropriate short-term topical steroid use is generally considered safe. The main risks\u2014skin thinning, stretch marks, easy bruising, and systemic absorption\u2014are more likely with **high-potency products**, prolonged continuous use, use under airtight coverings, or use on thin skin areas such as eyelids.\n\n### How much cream?\nClinicians may use \u201cfingertip units\u201d (FTUs):\n- **1 FTU** is the amount squeezed from an adult tube along the tip of the index finger to the first crease, roughly **0.5 g**.\n- It covers about **2 adult palm-sized areas** of skin.\nChildren need smaller amounts depending on age and body area. Your clinician or pharmacist can show you the correct quantity.\n\n## 3. Maintenance (\u201cproactive\u201d) treatment for frequent recurrences\n\nFor children who repeatedly flare in the same spots, a clinician may recommend:\n- Continue moisturizer daily, and\n- Apply the prescribed topical steroid or a non-steroid anti-inflammatory to previously affected \u201chot spots\u201d about **2 days per week**\u2014for example, Saturday and Wednesday\u2014even when skin looks clear.\n\nThis proactive approach can reduce flare frequency while limiting total steroid exposure.\n\n## 4. Non-steroid prescription options\n\nThese can be useful for sensitive locations, steroid-sparing maintenance, or persistent eczema:\n\n- **Tacrolimus ointment**: commonly used from age **2 years and older** in many settings; available in **0.03%** for children and **0.1%** for older adolescents/adults depending on local labeling.\n- **Pimecrolimus 1% cream**: often used from age **2 years and older**.\n- **Crisaborole 2% ointment**: approved in some regions for children as young",
+    "latency_ms": 13453.5,
+    "token_count": 1111,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "a27443fdc17e",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234469.1084461,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 12 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4518,
+          "evidence": [
+            "Latency 13454ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13453.5,
+        "token_count": 1111,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.153; flagged=True"
+}

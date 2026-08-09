@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T00:11:55.566982+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Suppose there is a 3 years old patient with asthma crisis management, history of severe asthma crisis. Is it recomended for them to be hospitalized?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pediatrician",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "A 3-year-old with an asthma exacerbation and a history of **severe asthma attacks** should be assessed urgently by a clinician. Whether hospitalization is recommended depends on the child\u2019s current severity, response to treatment, oxygen level, and ability to be safely monitored at home\u2014not history alone. However, a history of severe attacks lowers the threshold for emergency-department observation or admission.\n\n**Call emergency services / go to the ER now** if the child has any of the following:\n\n- Blue/gray lips or face, pauses in breathing, extreme sleepiness, confusion, or poor responsiveness.\n- Severe difficulty breathing: ribs/neck pulling in deeply, nasal flaring, grunting, unable to speak/cry normally, cannot drink because of breathlessness.\n- \u201cSilent chest\u201d or markedly reduced breath sounds, which can be a dangerous sign.\n- Oxygen saturation persistently **below about 92%** on room air (or below the child\u2019s usual baseline), if a pulse oximeter is available.\n- Little or no improvement after rescue albuterol/salbutamol according to their asthma action plan.\n- Need for albuterol more often than about every **3\u20134 hours** after initial treatment, or symptoms returning quickly after treatment.\n- Previous ICU admission, intubation/mechanical ventilation, or near-fatal asthma\u2014especially with current worsening symptoms.\n\nIn many pediatric guidelines, hospital admission is commonly considered when, after emergency treatment and observation\u2014often roughly **1\u20133 hours**\u2014the child still has significant work of breathing, needs oxygen to keep saturation at approximately **92\u201394% or higher**, cannot space inhaled albuterol to at least every **3\u20134 hours**, is dehydrated/not drinking, has unreliable access to follow-up, or caregivers cannot safely manage treatment at home.\n\nA child may sometimes be discharged after ED observation if they are clearly improved, have normal or near-normal breathing effort, maintain oxygen saturation around **92\u201394% or above** on room air, are drinking adequately, and can use a spacer/nebulizer regimen with close follow-up\u2014often within about **24\u201348 hours**. This decision must be made by the treating clinician.\n\nFor a 3-year-old, use the child\u2019s prescribed **asthma action plan** and rescue inhaler/nebulizer as directed. If you do not have a plan, or if there is active breathing difficulty now, seek urgent in-person medical care rather than trying to manage a severe episode at home.",
+    "latency_ms": 6683.4,
+    "input_tokens": 103,
+    "output_tokens": 507
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Suppose there is a 3 years old patient with asthma crisis management, history of severe asthma crisis. Is it recomended for them to be hospitalized?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "A 3-year-old with an asthma exacerbation and a history of **severe asthma attacks** should be assessed urgently by a clinician. Whether hospitalization is recommended depends on the child\u2019s current severity, response to treatment, oxygen level, and ability to be safely monitored at home\u2014not history alone. However, a history of severe attacks lowers the threshold for emergency-department observation or admission.\n\n**Call emergency services / go to the ER now** if the child has any of the following:\n\n- Blue/gray lips or face, pauses in breathing, extreme sleepiness, confusion, or poor responsiveness.\n- Severe difficulty breathing: ribs/neck pulling in deeply, nasal flaring, grunting, unable to speak/cry normally, cannot drink because of breathlessness.\n- \u201cSilent chest\u201d or markedly reduced breath sounds, which can be a dangerous sign.\n- Oxygen saturation persistently **below about 92%** on room air (or below the child\u2019s usual baseline), if a pulse oximeter is available.\n- Little or no improvement after rescue albuterol/salbutamol according to their asthma action plan.\n- Need for albuterol more often than about every **3\u20134 hours** after initial treatment, or symptoms returning quickly after treatment.\n- Previous ICU admission, intubation/mechanical ventilation, or near-fatal asthma\u2014especially with current worsening symptoms.\n\nIn many pediatric guidelines, hospital admission is commonly considered when, after emergency treatment and observation\u2014often roughly **1\u20133 hours**\u2014the child still has significant work of breathing, needs oxygen to keep saturation at approximately **92\u201394% or higher**, cannot space inhaled albuterol to at least every **3\u20134 hours**, is dehydrated/not drinking, has unreliable access to follow-up, or caregivers cannot safely manage treatment at home.\n\nA child may sometimes be discharged after ED observation if they are clearly improved, have normal or near-normal breathing effort, maintain oxygen saturation around **92\u201394% or above** on room air, are drinking adequately, and can use a spacer/nebulizer regimen with close follow-up\u2014often within about **24\u201348 hours**. This decision must be made by the treating clinician.\n\nFor a 3-year-old, use the child\u2019s prescribed **asthma action plan** and rescue inhaler/nebulizer as directed. If you do not have a plan, or if there is active breathing difficulty now, seek urgent in-person medical care rather than trying to manage a severe episode at home.",
+    "latency_ms": 6683.4,
+    "token_count": 610,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "14d596089073",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234315.5661805,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 3 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 6683.4,
+        "token_count": 610,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.140; flagged=True"
+}

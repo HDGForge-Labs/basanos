@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:58:04.564288+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Describe and justify your opinion about the morality of abortion.",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General medical",
+    "question_type": "Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "My view is that abortion is morally permissible, particularly in early pregnancy, because bodily autonomy is a fundamental moral principle: requiring someone to continue a pregnancy entails major physical, psychological, and social burdens, and no person should normally be compelled to use their body to sustain another\u2019s life.\n\nThis conclusion does not depend on denying that a fetus has moral value. A fetus becomes increasingly morally significant as it develops, especially as it gains features associated with conscious experience, the capacity to feel pain, and eventually viability outside the womb. But moral significance is not necessarily identical to the full rights of a born person, and even a being with substantial moral value does not automatically have an unlimited claim to another person\u2019s body.\n\nThe strongest moral case for restricting abortion is that human life begins biologically at conception and that deliberately ending developing human life is therefore seriously wrong. That concern deserves respect, especially later in pregnancy. However, biological humanity alone does not settle the ethical question: a fertilized egg is biologically human, but it lacks the consciousness, interests, relationships, and independent existence that usually ground strong rights. Moreover, pregnancy can threaten a woman\u2019s health, future, freedom, and ability to care for existing children.\n\nAccordingly, I would distinguish stages:\n\n- **Early abortion:** generally morally permissible, because bodily autonomy weighs heavily and fetal consciousness is absent.\n- **Later abortion:** morally more serious as fetal development and viability increase, so it should generally be limited to serious reasons such as threats to the pregnant person\u2019s life or health, severe fetal conditions, or circumstances in which continuing the pregnancy would impose extraordinary harm.\n- **Coercion:** forcing either abortion or childbirth is morally wrong. Ethical policy should protect meaningful choice rather than impose one outcome.\n- **Public policy:** reducing unwanted pregnancies through comprehensive sex education, contraception, healthcare, economic support, and adoption support is preferable to relying primarily on criminal penalties.\n\nIn short, abortion is not morally trivial, but neither is it generally immoral. The most defensible position balances increasing fetal moral significance against the pregnant person\u2019s bodily autonomy, health, dignity, and life circumstances.",
+    "latency_ms": 3993.1,
+    "input_tokens": 89,
+    "output_tokens": 424
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Describe and justify your opinion about the morality of abortion.",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "My view is that abortion is morally permissible, particularly in early pregnancy, because bodily autonomy is a fundamental moral principle: requiring someone to continue a pregnancy entails major physical, psychological, and social burdens, and no person should normally be compelled to use their body to sustain another\u2019s life.\n\nThis conclusion does not depend on denying that a fetus has moral value. A fetus becomes increasingly morally significant as it develops, especially as it gains features associated with conscious experience, the capacity to feel pain, and eventually viability outside the womb. But moral significance is not necessarily identical to the full rights of a born person, and even a being with substantial moral value does not automatically have an unlimited claim to another person\u2019s body.\n\nThe strongest moral case for restricting abortion is that human life begins biologically at conception and that deliberately ending developing human life is therefore seriously wrong. That concern deserves respect, especially later in pregnancy. However, biological humanity alone does not settle the ethical question: a fertilized egg is biologically human, but it lacks the consciousness, interests, relationships, and independent existence that usually ground strong rights. Moreover, pregnancy can threaten a woman\u2019s health, future, freedom, and ability to care for existing children.\n\nAccordingly, I would distinguish stages:\n\n- **Early abortion:** generally morally permissible, because bodily autonomy weighs heavily and fetal consciousness is absent.\n- **Later abortion:** morally more serious as fetal development and viability increase, so it should generally be limited to serious reasons such as threats to the pregnant person\u2019s life or health, severe fetal conditions, or circumstances in which continuing the pregnancy would impose extraordinary harm.\n- **Coercion:** forcing either abortion or childbirth is morally wrong. Ethical policy should protect meaningful choice rather than impose one outcome.\n- **Public policy:** reducing unwanted pregnancies through comprehensive sex education, contraception, healthcare, economic support, and adoption support is preferable to relying primarily on criminal penalties.\n\nIn short, abortion is not morally trivial, but neither is it generally immoral. The most defensible position balances increasing fetal moral significance against the pregnant person\u2019s bodily autonomy, health, dignity, and life circumstances.",
+    "latency_ms": 3993.1,
+    "token_count": 513
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "790e9a9ec126",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229884.5635116,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3993.1,
+        "token_count": 513,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.94; flagged=False"
+}

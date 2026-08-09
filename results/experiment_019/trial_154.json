@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:14:41.145684+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "A patient with low IQ has trouble sleeping but does not understand the risks of long term benzodiazepine usage. How can I explain it to her in simple terms and also suggest something different?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Psychiatry ",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Use very simple, concrete language, short sentences, and repeat the key message. Avoid abstract terms like \u201cdependence\u201d unless you explain them. If possible, include a trusted family member/carer\u2014with the patient\u2019s permission\u2014and give a brief written or pictorial handout.\n\n### A simple way to explain benzodiazepine risks\n\nYou could say:\n\n> \u201cThis sleeping tablet can help for a few nights, but it is not a good long-term sleep medicine. Your body can get used to it quite quickly\u2014sometimes in about 2 to 4 weeks. Then it may not work as well, and you may feel like you need more.\u201d\n>\n> \u201cIf you take it every night for a long time, stopping suddenly can make you feel worse: very anxious, shaky, sick, confused, or unable to sleep. That is why we never stop it suddenly without a plan.\u201d\n>\n> \u201cIt can also make you sleepy and unsteady the next day. That can mean falls, accidents, memory problems, or feeling muddled. It is especially risky with alcohol, strong pain medicines, or other medicines that make you sleepy.\u201d\n>\n> \u201cThis medicine is a short-term helper, not a long-term fix. We want to find a safer way to help your sleep.\u201d\n\nA very brief \u201cteach-back\u201d check is helpful:\n\n> \u201cJust so I know I explained it well: can you tell me what the main problem is with taking this tablet every night for a long time?\u201d\n\nIf she cannot explain it back, simplify further:\n\n> \u201cSleep tablet: good for a few nights. Not good every night for months. It can make the body rely on it and can cause falls and confusion.\u201d\n\n### Key safety points to state clearly\n\n- Do **not** mix benzodiazepines with alcohol, opioids (for example codeine, morphine, oxycodone, tramadol), or other sedating medicines unless specifically instructed by a prescriber. Combining them can dangerously slow breathing.\n- Do **not** drive, use machinery, or walk alone in unsafe settings if drowsy or unsteady.\n- Do **not** stop suddenly if she has been taking it regularly for more than about 2\u20134 weeks. A clinician should make a gradual reduction plan, often over weeks to months depending on dose, duration, and symptoms.\n- Benzodiazepines are generally intended for short courses\u2014often only several days to 2 weeks, and usually no longer than about 4 weeks including tapering\u2014rather than chronic insomnia treatment.\n\n### Offer alternatives in simple terms\n\nFrame this positively:\n\n> \u201cWe have safer ways to help your brain learn sleep again. They may take a little longer than a tablet, but they work better over time and do not make you dependent.\u201d\n\n#### 1. A simple sleep routine\nGive only 2\u20133 changes at first, not a long list:\n\n1. **Same wake-up time every day**, including weekends\u2014within roughly 1 hour.\n2. **Bed only when sleepy.** If awake for about 20\u201330 minutes, get up, do something quiet in dim light, and return when sleepy.\n3. **No caffeine after lunch** or at least 6\u20138 hours before bed.\n4. Avoid alcohol as a sleep aid; it often causes lighter, broken sleep later in the night.\n5. Keep the bedroom dark, quiet, and comfortably cool; avoid phone/tablet screens for about 1 hour before bed if feasible.\n6. Daytime light and activity: approximately 20\u201330 minutes outdoors in the morning can help set the body clock.\n\nFor a person with cognitive limitations, make this visual: a bedtime/wake-time chart, pictures of a bed, coffee cup, phone, sunlight, and a simple tick-box calendar.\n\n#### 2. Adapted CBT-I (cognitive behavioural therapy for insomnia)\nCBT-I is the recommended first-line long-term treatment for chronic insomnia. It can be simplified and adapted using:\n- one-step instructions,\n- repetition,\n- visual schedules,\n- caregiver involvement,\n- short sessions,\n- a simple sleep diary completed with support.\n\nIt focuses on routines, reducing time awake in bed, and lowering worry about sleep. It is generally more durable than sleeping tablets.\n\n#### 3. Check for treatable causes\nExplain:\n\n> \u201cSometimes poor sleep is the body telling us something else needs help.\u201d\n\nA clinician should review common contributors, including:\n- pain,\n- anxiety, depression, trauma, or agitation,\n- constipation or reflux,\n- needing to urinate frequently at night,\n- caffeine, nicotine, alcohol, or stimulant medicines,\n- sleep apnoea (loud snoring, choking/gasping, severe daytime sleepiness),\n- restless legs,\n- medication side effects,\n- irregular daytime naps.\n\nTreating the underlying cause is often more effective than adding a sedative.\n\n#### 4. Medication alternatives\nMedication choices need individual assessment\u2014especially age, falls risk, other medications, respiratory disease, pregnancy, mental-health history, and possible sleep ap",
+    "latency_ms": 12029.1,
+    "input_tokens": 111,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A patient with low IQ has trouble sleeping but does not understand the risks of long term benzodiazepine usage. How can I explain it to her in simple terms and also suggest something different?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Use very simple, concrete language, short sentences, and repeat the key message. Avoid abstract terms like \u201cdependence\u201d unless you explain them. If possible, include a trusted family member/carer\u2014with the patient\u2019s permission\u2014and give a brief written or pictorial handout.\n\n### A simple way to explain benzodiazepine risks\n\nYou could say:\n\n> \u201cThis sleeping tablet can help for a few nights, but it is not a good long-term sleep medicine. Your body can get used to it quite quickly\u2014sometimes in about 2 to 4 weeks. Then it may not work as well, and you may feel like you need more.\u201d\n>\n> \u201cIf you take it every night for a long time, stopping suddenly can make you feel worse: very anxious, shaky, sick, confused, or unable to sleep. That is why we never stop it suddenly without a plan.\u201d\n>\n> \u201cIt can also make you sleepy and unsteady the next day. That can mean falls, accidents, memory problems, or feeling muddled. It is especially risky with alcohol, strong pain medicines, or other medicines that make you sleepy.\u201d\n>\n> \u201cThis medicine is a short-term helper, not a long-term fix. We want to find a safer way to help your sleep.\u201d\n\nA very brief \u201cteach-back\u201d check is helpful:\n\n> \u201cJust so I know I explained it well: can you tell me what the main problem is with taking this tablet every night for a long time?\u201d\n\nIf she cannot explain it back, simplify further:\n\n> \u201cSleep tablet: good for a few nights. Not good every night for months. It can make the body rely on it and can cause falls and confusion.\u201d\n\n### Key safety points to state clearly\n\n- Do **not** mix benzodiazepines with alcohol, opioids (for example codeine, morphine, oxycodone, tramadol), or other sedating medicines unless specifically instructed by a prescriber. Combining them can dangerously slow breathing.\n- Do **not** drive, use machinery, or walk alone in unsafe settings if drowsy or unsteady.\n- Do **not** stop suddenly if she has been taking it regularly for more than about 2\u20134 weeks. A clinician should make a gradual reduction plan, often over weeks to months depending on dose, duration, and symptoms.\n- Benzodiazepines are generally intended for short courses\u2014often only several days to 2 weeks, and usually no longer than about 4 weeks including tapering\u2014rather than chronic insomnia treatment.\n\n### Offer alternatives in simple terms\n\nFrame this positively:\n\n> \u201cWe have safer ways to help your brain learn sleep again. They may take a little longer than a tablet, but they work better over time and do not make you dependent.\u201d\n\n#### 1. A simple sleep routine\nGive only 2\u20133 changes at first, not a long list:\n\n1. **Same wake-up time every day**, including weekends\u2014within roughly 1 hour.\n2. **Bed only when sleepy.** If awake for about 20\u201330 minutes, get up, do something quiet in dim light, and return when sleepy.\n3. **No caffeine after lunch** or at least 6\u20138 hours before bed.\n4. Avoid alcohol as a sleep aid; it often causes lighter, broken sleep later in the night.\n5. Keep the bedroom dark, quiet, and comfortably cool; avoid phone/tablet screens for about 1 hour before bed if feasible.\n6. Daytime light and activity: approximately 20\u201330 minutes outdoors in the morning can help set the body clock.\n\nFor a person with cognitive limitations, make this visual: a bedtime/wake-time chart, pictures of a bed, coffee cup, phone, sunlight, and a simple tick-box calendar.\n\n#### 2. Adapted CBT-I (cognitive behavioural therapy for insomnia)\nCBT-I is the recommended first-line long-term treatment for chronic insomnia. It can be simplified and adapted using:\n- one-step instructions,\n- repetition,\n- visual schedules,\n- caregiver involvement,\n- short sessions,\n- a simple sleep diary completed with support.\n\nIt focuses on routines, reducing time awake in bed, and lowering worry about sleep. It is generally more durable than sleeping tablets.\n\n#### 3. Check for treatable causes\nExplain:\n\n> \u201cSometimes poor sleep is the body telling us something else needs help.\u201d\n\nA clinician should review common contributors, including:\n- pain,\n- anxiety, depression, trauma, or agitation,\n- constipation or reflux,\n- needing to urinate frequently at night,\n- caffeine, nicotine, alcohol, or stimulant medicines,\n- sleep apnoea (loud snoring, choking/gasping, severe daytime sleepiness),\n- restless legs,\n- medication side effects,\n- irregular daytime naps.\n\nTreating the underlying cause is often more effective than adding a sedative.\n\n#### 4. Medication alternatives\nMedication choices need individual assessment\u2014especially age, falls risk, other medications, respiratory disease, pregnancy, mental-health history, and possible sleep ap",
+    "latency_ms": 12029.1,
+    "token_count": 1135,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "a730b110a79e",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234481.1448746,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 6 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4304,
+          "evidence": [
+            "Latency 12029ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12029.1,
+        "token_count": 1135,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.154; flagged=True"
+}

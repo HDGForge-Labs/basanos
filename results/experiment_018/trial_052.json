@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:55:14.527001+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Can a person without one kidney take ibuprofen?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pharmacy",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "A person with one kidney **may be able to take ibuprofen, but it should not be used routinely without medical advice**.\n\nIbuprofen is an NSAID that can reduce blood flow to the kidney and cause acute kidney injury, especially with:\n\n- Dehydration, vomiting, diarrhea, or heavy sweating  \n- Chronic kidney disease or abnormal kidney tests  \n- Heart failure or uncontrolled high blood pressure  \n- Older age  \n- ACE inhibitors/ARBs or diuretics  \n- High doses or repeated use  \n\nIf a clinician confirms normal kidney function, an occasional **lowest effective dose** may be acceptable\u2014typically with food and good hydration\u2014but avoid prolonged use and do not combine it with other NSAIDs such as naproxen or diclofenac. **Acetaminophen (paracetamol)** is often preferred for pain, provided there is no significant liver disease and dosing limits are followed.\n\nAvoid ibuprofen and seek medical advice promptly if there is reduced urination, swelling, shortness of breath, severe weakness, or dark/bloody urine. A person with a solitary kidney should check with their doctor or pharmacist before taking it, particularly if the kidney was removed because of disease or kidney function is not known.",
+    "latency_ms": 2435.0,
+    "input_tokens": 88,
+    "output_tokens": 247
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Can a person without one kidney take ibuprofen?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "A person with one kidney **may be able to take ibuprofen, but it should not be used routinely without medical advice**.\n\nIbuprofen is an NSAID that can reduce blood flow to the kidney and cause acute kidney injury, especially with:\n\n- Dehydration, vomiting, diarrhea, or heavy sweating  \n- Chronic kidney disease or abnormal kidney tests  \n- Heart failure or uncontrolled high blood pressure  \n- Older age  \n- ACE inhibitors/ARBs or diuretics  \n- High doses or repeated use  \n\nIf a clinician confirms normal kidney function, an occasional **lowest effective dose** may be acceptable\u2014typically with food and good hydration\u2014but avoid prolonged use and do not combine it with other NSAIDs such as naproxen or diclofenac. **Acetaminophen (paracetamol)** is often preferred for pain, provided there is no significant liver disease and dosing limits are followed.\n\nAvoid ibuprofen and seek medical advice promptly if there is reduced urination, swelling, shortness of breath, severe weakness, or dark/bloody urine. A person with a solitary kidney should check with their doctor or pharmacist before taking it, particularly if the kidney was removed because of disease or kidney function is not known.",
+    "latency_ms": 2435.0,
+    "token_count": 335
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "5d484567345f",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229714.5262938,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2435.0,
+        "token_count": 335,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.52; flagged=False"
+}

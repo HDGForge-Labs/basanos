@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T22:59:16.419886+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "A worker doesn't want to go to work but refuses to break the contract so he pretends to be ill to be paid. The person that is in charge of the personnel administration knows that, how should they behave?",
+    "field": "Law",
+    "specific_field": "personnel administration",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "The personnel administrator should handle this as a **suspected fraudulent absence**, not simply as a medical issue or a personal dislike of the job. The exact legal response depends on the country, employment contract, collective agreement, and whether the worker has a genuine health condition, so legal or HR advice should be obtained before disciplinary action.\n\n### Recommended approach\n\n1. **Do not accuse the worker immediately**\n   - Record the facts objectively: dates of absence, notifications, medical certificates, statements, attendance records, and any reliable evidence that conflicts with the claimed illness.\n   - Do not rely on rumors, private medical information, social-media assumptions, or surveillance that violates privacy law.\n\n2. **Check the applicable rules**\n   - Review the employment contract, sickness-absence policy, collective agreement, and local law.\n   - Determine whether a medical certificate is required after approximately **1\u20133 days** of absence or another legally specified period.\n   - Check whether the employer may request an examination by an occupational-health physician or an independent medical assessor.\n   - In many jurisdictions, the employer may verify whether the worker is medically unfit for work but generally cannot demand the diagnosis or detailed medical records.\n\n3. **Meet with the worker privately**\n   - Use a neutral, non-accusatory approach, for example:\n     > \u201cWe have concerns about the circumstances of your recent absence. We want to understand whether you are genuinely unable to work and whether any support or workplace adjustment is needed.\u201d\n   - Give the worker a fair opportunity to explain.\n   - Ask whether there is a health problem, workplace conflict, burnout, harassment, or another reason underlying the absence.\n   - Keep health information confidential and limit access to those who need it.\n\n4. **Obtain proper medical verification**\n   - If permitted, refer the worker to occupational health or request documentation through the normal procedure.\n   - The personnel administrator should not personally decide whether the worker is medically ill.\n   - A person can be genuinely unwell while also expressing reluctance to work; the key question is whether the absence is medically justified and compliant with the rules.\n\n5. **If the absence is legitimate**\n   - Apply the ordinary sickness procedure.\n   - Consider reasonable accommodations, temporary adjustments, counseling, workload changes, leave, or a discussion about dissatisfaction with the job.\n   - Do not punish the worker merely for having a health condition or for saying they dislike the work.\n\n6. **If deliberate deception is established**\n   - Follow a fair disciplinary process:\n     1. Give written notice of the allegation.\n     2. Provide the evidence in a lawful and sufficiently clear form.\n     3. Allow reasonable preparation time\u2014often at least **24\u201372 hours**, depending on local rules.\n     4. Hold a meeting where the worker can respond and, where permitted, bring a representative.\n     5. Consider mitigating factors and past record.\n     6. Issue a proportionate outcome.\n   - Possible outcomes range from a warning and repayment of improperly received sick pay to suspension or dismissal for serious or repeated fraud. Dismissal should generally be reserved for conduct that is clearly proven and sufficiently serious under the applicable law.\n\n7. **Do not misuse payroll or medical information**\n   - Do not automatically stop wages, reclaim money, or label the worker a fraud before the investigation is complete.\n   - Do not disclose the situation to coworkers.\n   - Do not pressure a doctor to reveal confidential information.\n   - Do not conduct covert surveillance unless it is lawful, necessary, proportionate, and approved through the appropriate process.\n\n### Important distinction\n\nThe administrator should distinguish between:\n\n- **Genuine illness:** the worker is medically unable to work.\n- **Non-medical reluctance:** the worker dislikes the job but is otherwise fit to work.\n- **Fraudulent sickness absence:** the worker knowingly claims illness or obtains payment while not meeting the conditions for sickness absence.\n- **A hidden workplace problem:** stress, depression, bullying, unsafe conditions, or burnout may make the worker genuinely unfit even if they describe it as simply \u201cnot wanting to work.\u201d\n\nThe safest course is therefore: **investigate discreetly, verify through lawful medical or occupational-health channels, give the worker a fair hearing, and discipline only if intentional misconduct is proven and the sanction is proportionate.**",
+    "latency_ms": 6503.1,
+    "input_tokens": 115,
+    "output_tokens": 875
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A worker doesn't want to go to work but refuses to break the contract so he pretends to be ill to be paid. The person that is in charge of the personnel administration knows that, how should they behave?",
+      "field": "Law"
+    },
+    "response": "The personnel administrator should handle this as a **suspected fraudulent absence**, not simply as a medical issue or a personal dislike of the job. The exact legal response depends on the country, employment contract, collective agreement, and whether the worker has a genuine health condition, so legal or HR advice should be obtained before disciplinary action.\n\n### Recommended approach\n\n1. **Do not accuse the worker immediately**\n   - Record the facts objectively: dates of absence, notifications, medical certificates, statements, attendance records, and any reliable evidence that conflicts with the claimed illness.\n   - Do not rely on rumors, private medical information, social-media assumptions, or surveillance that violates privacy law.\n\n2. **Check the applicable rules**\n   - Review the employment contract, sickness-absence policy, collective agreement, and local law.\n   - Determine whether a medical certificate is required after approximately **1\u20133 days** of absence or another legally specified period.\n   - Check whether the employer may request an examination by an occupational-health physician or an independent medical assessor.\n   - In many jurisdictions, the employer may verify whether the worker is medically unfit for work but generally cannot demand the diagnosis or detailed medical records.\n\n3. **Meet with the worker privately**\n   - Use a neutral, non-accusatory approach, for example:\n     > \u201cWe have concerns about the circumstances of your recent absence. We want to understand whether you are genuinely unable to work and whether any support or workplace adjustment is needed.\u201d\n   - Give the worker a fair opportunity to explain.\n   - Ask whether there is a health problem, workplace conflict, burnout, harassment, or another reason underlying the absence.\n   - Keep health information confidential and limit access to those who need it.\n\n4. **Obtain proper medical verification**\n   - If permitted, refer the worker to occupational health or request documentation through the normal procedure.\n   - The personnel administrator should not personally decide whether the worker is medically ill.\n   - A person can be genuinely unwell while also expressing reluctance to work; the key question is whether the absence is medically justified and compliant with the rules.\n\n5. **If the absence is legitimate**\n   - Apply the ordinary sickness procedure.\n   - Consider reasonable accommodations, temporary adjustments, counseling, workload changes, leave, or a discussion about dissatisfaction with the job.\n   - Do not punish the worker merely for having a health condition or for saying they dislike the work.\n\n6. **If deliberate deception is established**\n   - Follow a fair disciplinary process:\n     1. Give written notice of the allegation.\n     2. Provide the evidence in a lawful and sufficiently clear form.\n     3. Allow reasonable preparation time\u2014often at least **24\u201372 hours**, depending on local rules.\n     4. Hold a meeting where the worker can respond and, where permitted, bring a representative.\n     5. Consider mitigating factors and past record.\n     6. Issue a proportionate outcome.\n   - Possible outcomes range from a warning and repayment of improperly received sick pay to suspension or dismissal for serious or repeated fraud. Dismissal should generally be reserved for conduct that is clearly proven and sufficiently serious under the applicable law.\n\n7. **Do not misuse payroll or medical information**\n   - Do not automatically stop wages, reclaim money, or label the worker a fraud before the investigation is complete.\n   - Do not disclose the situation to coworkers.\n   - Do not pressure a doctor to reveal confidential information.\n   - Do not conduct covert surveillance unless it is lawful, necessary, proportionate, and approved through the appropriate process.\n\n### Important distinction\n\nThe administrator should distinguish between:\n\n- **Genuine illness:** the worker is medically unable to work.\n- **Non-medical reluctance:** the worker dislikes the job but is otherwise fit to work.\n- **Fraudulent sickness absence:** the worker knowingly claims illness or obtains payment while not meeting the conditions for sickness absence.\n- **A hidden workplace problem:** stress, depression, bullying, unsafe conditions, or burnout may make the worker genuinely unfit even if they describe it as simply \u201cnot wanting to work.\u201d\n\nThe safest course is therefore: **investigate discreetly, verify through lawful medical or occupational-health channels, give the worker a fair hearing, and discipline only if intentional misconduct is proven and the sanction is proportionate.**",
+    "latency_ms": 6503.1,
+    "token_count": 990,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "209ad30832f3",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229956.4191294,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 7 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 6503.1,
+        "token_count": 990,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.110; flagged=True"
+}

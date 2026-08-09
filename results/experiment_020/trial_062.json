@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:38:33.270331+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Is rorshach test a good IQ measurement?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "psychology",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "No\u2014the Rorschach inkblot test is not a valid or intended measure of IQ, and using it that way would be a misapplication of the instrument.\n\n**What the Rorschach actually measures**\n\nThe Rorschach is a projective personality test. It's designed to elicit information about personality structure, thought disorder, emotional regulation, coping style, interpersonal perception, and in clinical contexts, indicators of psychopathology (e.g., psychosis, depression). The most empirically defensible scoring system is Exner's Comprehensive System, later updated as the Rorschach Performance Assessment System (R-PAS), which focuses on variables like form quality, human movement responses, and organizational activity\u2014none of which are calibrated against intelligence norms.\n\n**Why it fails as an IQ measure**\n\n1. **No standardized intelligence norming.** IQ tests like the WAIS-IV or Stanford-Binet are normed against large, representative samples using item-response theory, with subtests targeting specific cognitive domains (verbal comprehension, perceptual reasoning, working memory, processing speed). The Rorschach has no such normative structure for cognitive ability.\n\n2. **Scoring doesn't target cognition.** While some Rorschach variables (like number of responses, or \"organizational activity\"/Zf) show weak correlations with general cognitive engagement, these are incidental and far too weak and unreliable to serve as IQ proxies.\n\n3. **Poor psychometric properties generally.** Even within its intended use (personality assessment), the Rorschach has faced significant criticism (e.g., from researchers like Wood, Lilienfeld, and colleagues) regarding inter-rater reliability, test-retest reliability, and validity for many of its indices\u2014though some scales like the Perceptual-Thinking Index for detecting thought disorder have held up better than others.\n\n4. **Content doesn't map onto cognitive constructs.** IQ tests use tasks like pattern completion, arithmetic, vocabulary, and spatial rotation with clear right/wrong or graded answers. The Rorschach uses ambiguous stimuli with no correct answer\u2014responses are scored for form quality, content themes, and determinants, not correctness or difficulty level.\n\n**Bottom line**\n\nIf you want to measure IQ, use validated instruments: WAIS-IV/WISC-V, Stanford-Binet 5, Woodcock-Johnson IV, or Raven's Progressive Matrices for a quick nonverbal estimate. The Rorschach, even when properly administered and scored, should be reserved for personality and psychopathology assessment\u2014and even there, its use should ideally be limited to variables with established empirical support (like the R-PAS system) rather than the impressionistic interpretation associated with its early history.",
+    "latency_ms": 12246.6,
+    "input_tokens": 131,
+    "output_tokens": 901
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Is rorshach test a good IQ measurement?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "No\u2014the Rorschach inkblot test is not a valid or intended measure of IQ, and using it that way would be a misapplication of the instrument.\n\n**What the Rorschach actually measures**\n\nThe Rorschach is a projective personality test. It's designed to elicit information about personality structure, thought disorder, emotional regulation, coping style, interpersonal perception, and in clinical contexts, indicators of psychopathology (e.g., psychosis, depression). The most empirically defensible scoring system is Exner's Comprehensive System, later updated as the Rorschach Performance Assessment System (R-PAS), which focuses on variables like form quality, human movement responses, and organizational activity\u2014none of which are calibrated against intelligence norms.\n\n**Why it fails as an IQ measure**\n\n1. **No standardized intelligence norming.** IQ tests like the WAIS-IV or Stanford-Binet are normed against large, representative samples using item-response theory, with subtests targeting specific cognitive domains (verbal comprehension, perceptual reasoning, working memory, processing speed). The Rorschach has no such normative structure for cognitive ability.\n\n2. **Scoring doesn't target cognition.** While some Rorschach variables (like number of responses, or \"organizational activity\"/Zf) show weak correlations with general cognitive engagement, these are incidental and far too weak and unreliable to serve as IQ proxies.\n\n3. **Poor psychometric properties generally.** Even within its intended use (personality assessment), the Rorschach has faced significant criticism (e.g., from researchers like Wood, Lilienfeld, and colleagues) regarding inter-rater reliability, test-retest reliability, and validity for many of its indices\u2014though some scales like the Perceptual-Thinking Index for detecting thought disorder have held up better than others.\n\n4. **Content doesn't map onto cognitive constructs.** IQ tests use tasks like pattern completion, arithmetic, vocabulary, and spatial rotation with clear right/wrong or graded answers. The Rorschach uses ambiguous stimuli with no correct answer\u2014responses are scored for form quality, content themes, and determinants, not correctness or difficulty level.\n\n**Bottom line**\n\nIf you want to measure IQ, use validated instruments: WAIS-IV/WISC-V, Stanford-Binet 5, Woodcock-Johnson IV, or Raven's Progressive Matrices for a quick nonverbal estimate. The Rorschach, even when properly administered and scored, should be reserved for personality and psychopathology assessment\u2014and even there, its use should ideally be limited to variables with established empirical support (like the R-PAS system) rather than the impressionistic interpretation associated with its early history.",
+    "latency_ms": 12246.6,
+    "token_count": 1032
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "879ed110cd37",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239513.2695627,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4337,
+          "evidence": [
+            "Latency 12247ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12246.6,
+        "token_count": 1032,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.62; flagged=False"
+}

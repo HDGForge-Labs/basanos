@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T22:27:34.947845+00:00",
+  "detector": "context_degradation",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "where do red ear slider turtles lay eggs",
+    "gold_index": 0
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "Red-eared slider turtles lay their eggs on land, near the water. When ready to lay eggs, the female spends less time in the water and searches for a suitable nesting site by smelling and scratching at the ground. She then excavates a hole using her hind legs and deposits her eggs into it.",
+    "latency_ms": 3224.1,
+    "input_tokens": 2135,
+    "output_tokens": 94
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "where do red ear slider turtles lay eggs",
+      "gold_index": 0,
+      "n_docs": 10
+    },
+    "response": "Red-eared slider turtles lay their eggs on land, near the water. When ready to lay eggs, the female spends less time in the water and searches for a suitable nesting site by smelling and scratching at the ground. She then excavates a hole using her hind legs and deposits her eggs into it.",
+    "latency_ms": 3224.1,
+    "token_count": 2229,
+    "context_window_used": 0.25
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "0340290dbd6f",
+      "tool_name": "context_qa",
+      "status": "pass",
+      "timestamp": 1786314454.947125,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3224.1,
+        "token_count": 2229,
+        "context_window_used": 0.25,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.4; flagged=False; gold_index=0"
+}

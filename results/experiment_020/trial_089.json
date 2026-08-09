@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:44:06.924709+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "I am working with a family and I am not sure why the parents aren't doing what I have asked them to do. Can you give me some ideas on how to approach this please?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "social worker",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "Here's a practical framework for thinking through this, since \"not following through\" can stem from very different root causes that require different responses.\n\n**First, diagnose before you intervene further**\n\nAsk yourself (and possibly the parents, directly but gently):\n\n1. **Do they understand what you asked?** Instructions given verbally in a stressful moment (e.g., during a home visit, in a meeting with multiple professionals present) are often not retained. Ask them to explain back to you what they think you asked for.\n\n2. **Do they agree with it?** They may see the request as irrelevant, culturally inappropriate, or not addressing what they think the real problem is. Compliance is much lower when people don't buy into the reasoning.\n\n3. **Can they actually do it?** Consider concrete barriers: money, transport, childcare for other children, literacy, language, work shifts, mental health (depression saps executive function badly), substance use, domestic abuse (a controlling partner may be blocking action).\n\n4. **Is there a trust/history problem?** If they've had negative experiences with services before, or feel judged, shamed, or threatened (e.g., fear of children being removed), passive resistance or avoidance is common even when they outwardly agree in the room.\n\n5. **Is the task too big or too vague?** \"Improve the home environment\" or \"engage with support\" are not actionable. Break asks into small, specific, time-bound steps.\n\n**Practical next steps**\n\n- **Have a direct, non-blaming conversation**: \"I've noticed X hasn't happened yet \u2014 help me understand what's getting in the way.\" Curiosity lands better than repeating the instruction louder.\n- **Separate ability from willingness.** If it's ability, problem-solve logistics with them. If it's willingness, explore ambivalence \u2014 motivational interviewing techniques work well here (open questions, reflective listening, avoiding a lecturing stance).\n- **Check for competing priorities.** Something you see as a priority may be tenth on their list that day if they're dealing with eviction, debt, or a crisis with another child.\n- **Reduce cognitive load.** Put it in writing, one task at a time, with a specific deadline and named person responsible if there's more than one parent.\n- **Watch your own assumptions.** It's easy to read \"non-compliance\" as defiance when it's actually overwhelm, shame-driven avoidance, or disagreement they haven't voiced.\n- **Document specifically** what was asked, when, how it was communicated, and their stated reasons if you get them \u2014 this matters if the case escalates and you need to show reasonable efforts and their pattern of response.\n\n**If you suspect risk is escalating**\n\nIf the unmet request relates to child safety (e.g., removing a hazard, attending a medical appointment, ensuring supervision) and there's no reasonable explanation forthcoming, that's a different conversation \u2014 you may need to escalate through your agency's safeguarding procedures rather than keep re-asking.\n\nIf you tell me more about the context (what was asked, what sector you're in \u2014 social work, health, education \u2014 and what you've observed so far), I can help you narrow down which of these is likely at play and script the conversation.",
+    "latency_ms": 15533.8,
+    "input_tokens": 162,
+    "output_tokens": 1005
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "I am working with a family and I am not sure why the parents aren't doing what I have asked them to do. Can you give me some ideas on how to approach this please?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Here's a practical framework for thinking through this, since \"not following through\" can stem from very different root causes that require different responses.\n\n**First, diagnose before you intervene further**\n\nAsk yourself (and possibly the parents, directly but gently):\n\n1. **Do they understand what you asked?** Instructions given verbally in a stressful moment (e.g., during a home visit, in a meeting with multiple professionals present) are often not retained. Ask them to explain back to you what they think you asked for.\n\n2. **Do they agree with it?** They may see the request as irrelevant, culturally inappropriate, or not addressing what they think the real problem is. Compliance is much lower when people don't buy into the reasoning.\n\n3. **Can they actually do it?** Consider concrete barriers: money, transport, childcare for other children, literacy, language, work shifts, mental health (depression saps executive function badly), substance use, domestic abuse (a controlling partner may be blocking action).\n\n4. **Is there a trust/history problem?** If they've had negative experiences with services before, or feel judged, shamed, or threatened (e.g., fear of children being removed), passive resistance or avoidance is common even when they outwardly agree in the room.\n\n5. **Is the task too big or too vague?** \"Improve the home environment\" or \"engage with support\" are not actionable. Break asks into small, specific, time-bound steps.\n\n**Practical next steps**\n\n- **Have a direct, non-blaming conversation**: \"I've noticed X hasn't happened yet \u2014 help me understand what's getting in the way.\" Curiosity lands better than repeating the instruction louder.\n- **Separate ability from willingness.** If it's ability, problem-solve logistics with them. If it's willingness, explore ambivalence \u2014 motivational interviewing techniques work well here (open questions, reflective listening, avoiding a lecturing stance).\n- **Check for competing priorities.** Something you see as a priority may be tenth on their list that day if they're dealing with eviction, debt, or a crisis with another child.\n- **Reduce cognitive load.** Put it in writing, one task at a time, with a specific deadline and named person responsible if there's more than one parent.\n- **Watch your own assumptions.** It's easy to read \"non-compliance\" as defiance when it's actually overwhelm, shame-driven avoidance, or disagreement they haven't voiced.\n- **Document specifically** what was asked, when, how it was communicated, and their stated reasons if you get them \u2014 this matters if the case escalates and you need to show reasonable efforts and their pattern of response.\n\n**If you suspect risk is escalating**\n\nIf the unmet request relates to child safety (e.g., removing a hazard, attending a medical appointment, ensuring supervision) and there's no reasonable explanation forthcoming, that's a different conversation \u2014 you may need to escalate through your agency's safeguarding procedures rather than keep re-asking.\n\nIf you tell me more about the context (what was asked, what sector you're in \u2014 social work, health, education \u2014 and what you've observed so far), I can help you narrow down which of these is likely at play and script the conversation.",
+    "latency_ms": 15533.8,
+    "token_count": 1167
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "0b899c2da242",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239846.923937,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.483,
+          "evidence": [
+            "Latency 15534ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 15533.8,
+        "token_count": 1167,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.89; flagged=False"
+}

@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-09T00:16:17.377029+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "How do I say that I don't want to work with a patient who has been aggressive to me in the past?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Psychology",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "You can say it clearly, professionally, and in terms of safety and boundaries rather than personal dislike.\n\n**Direct version:**\n> \u201cI\u2019m not comfortable working with this patient due to previous aggressive behavior directed toward me. I\u2019m requesting that another staff member be assigned, or that appropriate safety measures be put in place before I provide care.\u201d\n\n**More formal version for a supervisor/manager:**\n> \u201cI need to raise a safety concern regarding this patient. During a previous interaction, the patient was aggressive toward me, and I do not feel safe providing care alone. I am requesting reassignment, a chaperone/security presence, or a documented behavior and safety plan before further contact.\u201d\n\n**If you are willing to work with them only under conditions:**\n> \u201cI can participate in the patient\u2019s care, but I\u2019m not willing to see them alone because of prior aggressive behavior. I need another staff member present and a clear plan for how escalation will be managed.\u201d\n\n**For documentation/charting\u2014keep it factual:**\n> \u201cPatient previously displayed aggressive behavior toward staff member, including [brief objective description, e.g., shouting, threatening language, striking objects, attempting to hit]. Staff member reports safety concern. Supervisor notified. Plan: [reassignment/two-person visits/security standby/behavioral contract].\u201d\n\nAvoid wording such as \u201cI refuse to work with them\u201d unless that is your organization\u2019s formal language. Usually, \u201cI have a safety concern,\u201d \u201cI do not feel safe working alone,\u201d and \u201cI am requesting reassignment or additional support\u201d are more professional and harder to dismiss.\n\nIf there was a threat, physical assault, stalking, weapon, or credible risk of harm, report it immediately through your workplace\u2019s incident-reporting process and follow emergency/security procedures.",
+    "latency_ms": 4697.1,
+    "input_tokens": 95,
+    "output_tokens": 361
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How do I say that I don't want to work with a patient who has been aggressive to me in the past?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "You can say it clearly, professionally, and in terms of safety and boundaries rather than personal dislike.\n\n**Direct version:**\n> \u201cI\u2019m not comfortable working with this patient due to previous aggressive behavior directed toward me. I\u2019m requesting that another staff member be assigned, or that appropriate safety measures be put in place before I provide care.\u201d\n\n**More formal version for a supervisor/manager:**\n> \u201cI need to raise a safety concern regarding this patient. During a previous interaction, the patient was aggressive toward me, and I do not feel safe providing care alone. I am requesting reassignment, a chaperone/security presence, or a documented behavior and safety plan before further contact.\u201d\n\n**If you are willing to work with them only under conditions:**\n> \u201cI can participate in the patient\u2019s care, but I\u2019m not willing to see them alone because of prior aggressive behavior. I need another staff member present and a clear plan for how escalation will be managed.\u201d\n\n**For documentation/charting\u2014keep it factual:**\n> \u201cPatient previously displayed aggressive behavior toward staff member, including [brief objective description, e.g., shouting, threatening language, striking objects, attempting to hit]. Staff member reports safety concern. Supervisor notified. Plan: [reassignment/two-person visits/security standby/behavioral contract].\u201d\n\nAvoid wording such as \u201cI refuse to work with them\u201d unless that is your organization\u2019s formal language. Usually, \u201cI have a safety concern,\u201d \u201cI do not feel safe working alone,\u201d and \u201cI am requesting reassignment or additional support\u201d are more professional and harder to dismiss.\n\nIf there was a threat, physical assault, stalking, weapon, or credible risk of harm, report it immediately through your workplace\u2019s incident-reporting process and follow emergency/security procedures.",
+    "latency_ms": 4697.1,
+    "token_count": 456,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "6461afe89371",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234577.3762763,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 4697.1,
+        "token_count": 456,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.164; flagged=False"
+}

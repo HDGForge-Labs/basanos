@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T00:22:23.095388+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "The occurrence of vulvoperinal condylomatosis in the university community has increased in the last 6 months. What preventive measure should be used to reduce the incidence of the disease?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General medicine ",
+    "question_type": "Open-ended question that is potentially ambiguous| Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "The most effective preventive measure is **vaccination against human papillomavirus (HPV)**, especially with the **9-valent HPV vaccine**, combined with safer-sex practices.\n\nVulvoperineal condylomatosis (anogenital warts) is usually caused by **low-risk HPV types 6 and 11**, which account for approximately **90% of genital warts**. The 9-valent vaccine protects against HPV 6 and 11 as well as several cancer-associated HPV types.\n\nKey prevention measures:\n\n- **Offer HPV vaccination widely in the university population**, ideally before sexual exposure, but it remains beneficial for many sexually active young adults.\n  - Routine vaccination is generally recommended at ages **11\u201312 years**.\n  - Catch-up vaccination is recommended through age **26 years**.\n  - For adults aged **27\u201345 years**, vaccination may be considered after individualized discussion with a clinician.\n  - If vaccination starts before age **15 years**: **2 doses** separated by about **6\u201312 months**.\n  - If started at age **15 years or older**: **3 doses** at approximately **0, 1\u20132, and 6 months**.\n\n- **Consistent and correct condom use** reduces HPV transmission, although it does not provide complete protection because HPV can infect uncovered genital/perineal skin. Condoms reduce risk but do not eliminate it.\n\n- **Sexual-health education**, including reducing number of new or concurrent partners and encouraging communication/testing for other STIs, should accompany vaccination.\n\n- **Prompt diagnosis and treatment of visible genital warts** can reduce lesions and symptoms, but treatment does not reliably eliminate HPV infection or guarantee prevention of transmission.\n\nThus, for a university-wide rise in cases, the primary public-health intervention is a **campus HPV vaccination campaign**, supported by condom promotion and accessible sexual-health services.",
+    "latency_ms": 4761.7,
+    "input_tokens": 111,
+    "output_tokens": 384
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "The occurrence of vulvoperinal condylomatosis in the university community has increased in the last 6 months. What preventive measure should be used to reduce the incidence of the disease?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "The most effective preventive measure is **vaccination against human papillomavirus (HPV)**, especially with the **9-valent HPV vaccine**, combined with safer-sex practices.\n\nVulvoperineal condylomatosis (anogenital warts) is usually caused by **low-risk HPV types 6 and 11**, which account for approximately **90% of genital warts**. The 9-valent vaccine protects against HPV 6 and 11 as well as several cancer-associated HPV types.\n\nKey prevention measures:\n\n- **Offer HPV vaccination widely in the university population**, ideally before sexual exposure, but it remains beneficial for many sexually active young adults.\n  - Routine vaccination is generally recommended at ages **11\u201312 years**.\n  - Catch-up vaccination is recommended through age **26 years**.\n  - For adults aged **27\u201345 years**, vaccination may be considered after individualized discussion with a clinician.\n  - If vaccination starts before age **15 years**: **2 doses** separated by about **6\u201312 months**.\n  - If started at age **15 years or older**: **3 doses** at approximately **0, 1\u20132, and 6 months**.\n\n- **Consistent and correct condom use** reduces HPV transmission, although it does not provide complete protection because HPV can infect uncovered genital/perineal skin. Condoms reduce risk but do not eliminate it.\n\n- **Sexual-health education**, including reducing number of new or concurrent partners and encouraging communication/testing for other STIs, should accompany vaccination.\n\n- **Prompt diagnosis and treatment of visible genital warts** can reduce lesions and symptoms, but treatment does not reliably eliminate HPV infection or guarantee prevention of transmission.\n\nThus, for a university-wide rise in cases, the primary public-health intervention is a **campus HPV vaccination campaign**, supported by condom promotion and accessible sexual-health services.",
+    "latency_ms": 4761.7,
+    "token_count": 495,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "ee55b2fb620c",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234943.0946276,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 10 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 4761.7,
+        "token_count": 495,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.200; flagged=True"
+}

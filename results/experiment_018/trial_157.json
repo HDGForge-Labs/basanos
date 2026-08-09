@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:03:57.716216+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "A female patient presents in the ER with pain in the leg and trouble breathing. The patient had a 7-hour flight in the previous day. What is the most recommended course of action here?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Emergency Medicine",
+    "question_type": "Advice or suggestions on how to approach a problem"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "This is a **medical emergency**\u2014leg pain after a long flight plus shortness of breath is highly concerning for **deep-vein thrombosis (DVT) with pulmonary embolism (PE)**.\n\n**Recommended action:**\n\n- **Activate emergency care immediately:** call emergency services (911/112 or the local equivalent). Do **not** let her drive herself.\n- Keep her **resting, still, and upright or in the position that makes breathing easiest**. Avoid walking, massaging the leg, or applying heat.\n- Check responsiveness and breathing. If she becomes unresponsive and is not breathing normally, begin CPR and use an AED if available.\n- Tell emergency clinicians about the **approximately 7-hour flight**, symptom onset, pregnancy/postpartum status, estrogen-containing contraceptives, prior clots, cancer, recent surgery, and medications.\n- In the ER, urgent assessment generally includes vital signs and oxygen saturation, ECG, blood tests such as troponin and D-dimer when appropriate, **compression ultrasound of the leg**, and often **CT pulmonary angiography** or an alternative scan. If PE suspicion is high, clinicians may start anticoagulation\u2014often before all imaging is complete if bleeding risk is acceptable. Treatment commonly involves anticoagulation for **at least about 3 months**, but this must be prescribed after evaluation.\n\nDo **not** take aspirin or someone else\u2019s anticoagulant, and do not delay for an appointment or try to manage this at home.",
+    "latency_ms": 3352.0,
+    "input_tokens": 111,
+    "output_tokens": 303
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A female patient presents in the ER with pain in the leg and trouble breathing. The patient had a 7-hour flight in the previous day. What is the most recommended course of action here?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "This is a **medical emergency**\u2014leg pain after a long flight plus shortness of breath is highly concerning for **deep-vein thrombosis (DVT) with pulmonary embolism (PE)**.\n\n**Recommended action:**\n\n- **Activate emergency care immediately:** call emergency services (911/112 or the local equivalent). Do **not** let her drive herself.\n- Keep her **resting, still, and upright or in the position that makes breathing easiest**. Avoid walking, massaging the leg, or applying heat.\n- Check responsiveness and breathing. If she becomes unresponsive and is not breathing normally, begin CPR and use an AED if available.\n- Tell emergency clinicians about the **approximately 7-hour flight**, symptom onset, pregnancy/postpartum status, estrogen-containing contraceptives, prior clots, cancer, recent surgery, and medications.\n- In the ER, urgent assessment generally includes vital signs and oxygen saturation, ECG, blood tests such as troponin and D-dimer when appropriate, **compression ultrasound of the leg**, and often **CT pulmonary angiography** or an alternative scan. If PE suspicion is high, clinicians may start anticoagulation\u2014often before all imaging is complete if bleeding risk is acceptable. Treatment commonly involves anticoagulation for **at least about 3 months**, but this must be prescribed after evaluation.\n\nDo **not** take aspirin or someone else\u2019s anticoagulant, and do not delay for an appointment or try to manage this at home.",
+    "latency_ms": 3352.0,
+    "token_count": 414,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "c7df3a2d815f",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230237.7154558,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 3 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 3352.0,
+        "token_count": 414,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.157; flagged=True"
+}

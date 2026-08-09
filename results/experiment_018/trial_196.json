@@ -1,0 +1,75 @@
+{
+  "timestamp_utc": "2026-08-08T23:07:46.728133+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Do the medicines used for diabetes foot ulcer work?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Sales rep in medicines",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Yes\u2014**some medicines help diabetic foot ulcers heal and prevent complications**, but **no pill or cream alone reliably heals an ulcer**. Healing usually requires a combined treatment plan, and effectiveness depends heavily on blood flow, infection, pressure on the foot, ulcer depth, kidney function, and blood-glucose control.\n\n### What treatments work\n\n- **Off-loading pressure:** Often the most important treatment for ulcers on the sole. A non-removable cast or \u201ctotal contact cast\u201d can substantially improve healing compared with ordinary shoes. It may be worn for roughly **4\u20138 weeks or longer**, with regular review.\n- **Wound cleaning and dressings:** Necessary to keep the wound moist but not excessively wet and to control drainage. Dressings support healing but do not substitute for pressure relief or removal of dead tissue.\n- **Debridement:** Removing dead or infected tissue, often every **1\u20132 weeks initially**, can improve healing when performed appropriately.\n- **Antibiotics:** Effective **only when there is a clinical infection**\u2014for example, spreading redness, warmth, swelling, pus, increasing pain, foul odor, or systemic symptoms. They do **not** heal an uninfected ulcer and should not be used merely as a precaution.\n  - Mild infections are commonly treated for about **1\u20132 weeks**.\n  - More extensive infections may require approximately **2\u20134 weeks** or intravenous treatment.\n  - Bone infection may require roughly **6 weeks or longer**, depending on surgery and test results.\n- **Blood-flow treatment:** If there is poor circulation, vascular procedures such as angioplasty or bypass may be needed. Without adequate blood flow, even excellent wound care may fail.\n- **Blood-glucose management:** Better glucose control supports immune function and healing, although rapidly lowering glucose without supervision can be dangerous. Targets are individualized; many adults are advised to aim for an HbA1c near **7%**, but people with severe illness, kidney disease, frailty, or recurrent hypoglycemia may need different targets.\n- **Specialized products:** Some cellular or tissue-based products, negative-pressure therapy, growth factors, or oxygen treatments can help selected ulcers, but benefits are variable and they are usually considered only after basic care has been optimized.\n\n### How successful are they?\n\nWith appropriate treatment, many uncomplicated ulcers heal over approximately **6\u201312 weeks**, although deeper or infected ulcers may take **3\u20136 months or more**. A wound that is not clearly shrinking after about **2\u20134 weeks** of proper treatment needs reassessment. Healing rates vary widely; studies of standard care often report roughly **40\u201360% healing by about 12 weeks**, while properly selected advanced treatments may improve this, but no treatment works for everyone.\n\n### Important cautions\n\nSeek urgent medical care **today** for any of the following:\n\n- Fever, chills, confusion, vomiting, or feeling severely unwell\n- Redness or swelling spreading beyond the ulcer\n- Black, gray, or rapidly discolored skin\n- Severe pain or sudden numbness\n- A deep wound, exposed tendon or bone, or a bad smell\n- A cold, pale, blue, or pulseless foot\n- Rapidly worsening drainage or swelling\n\nDo not use leftover antibiotics, hydrogen peroxide, alcohol, or harsh antiseptics unless a clinician specifically advises it. Avoid walking on the ulcer, and have it assessed promptly by a diabetes-foot or wound-care clinician.",
+    "latency_ms": 6003.9,
+    "input_tokens": 82,
+    "output_tokens": 700
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Do the medicines used for diabetes foot ulcer work?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Yes\u2014**some medicines help diabetic foot ulcers heal and prevent complications**, but **no pill or cream alone reliably heals an ulcer**. Healing usually requires a combined treatment plan, and effectiveness depends heavily on blood flow, infection, pressure on the foot, ulcer depth, kidney function, and blood-glucose control.\n\n### What treatments work\n\n- **Off-loading pressure:** Often the most important treatment for ulcers on the sole. A non-removable cast or \u201ctotal contact cast\u201d can substantially improve healing compared with ordinary shoes. It may be worn for roughly **4\u20138 weeks or longer**, with regular review.\n- **Wound cleaning and dressings:** Necessary to keep the wound moist but not excessively wet and to control drainage. Dressings support healing but do not substitute for pressure relief or removal of dead tissue.\n- **Debridement:** Removing dead or infected tissue, often every **1\u20132 weeks initially**, can improve healing when performed appropriately.\n- **Antibiotics:** Effective **only when there is a clinical infection**\u2014for example, spreading redness, warmth, swelling, pus, increasing pain, foul odor, or systemic symptoms. They do **not** heal an uninfected ulcer and should not be used merely as a precaution.\n  - Mild infections are commonly treated for about **1\u20132 weeks**.\n  - More extensive infections may require approximately **2\u20134 weeks** or intravenous treatment.\n  - Bone infection may require roughly **6 weeks or longer**, depending on surgery and test results.\n- **Blood-flow treatment:** If there is poor circulation, vascular procedures such as angioplasty or bypass may be needed. Without adequate blood flow, even excellent wound care may fail.\n- **Blood-glucose management:** Better glucose control supports immune function and healing, although rapidly lowering glucose without supervision can be dangerous. Targets are individualized; many adults are advised to aim for an HbA1c near **7%**, but people with severe illness, kidney disease, frailty, or recurrent hypoglycemia may need different targets.\n- **Specialized products:** Some cellular or tissue-based products, negative-pressure therapy, growth factors, or oxygen treatments can help selected ulcers, but benefits are variable and they are usually considered only after basic care has been optimized.\n\n### How successful are they?\n\nWith appropriate treatment, many uncomplicated ulcers heal over approximately **6\u201312 weeks**, although deeper or infected ulcers may take **3\u20136 months or more**. A wound that is not clearly shrinking after about **2\u20134 weeks** of proper treatment needs reassessment. Healing rates vary widely; studies of standard care often report roughly **40\u201360% healing by about 12 weeks**, while properly selected advanced treatments may improve this, but no treatment works for everyone.\n\n### Important cautions\n\nSeek urgent medical care **today** for any of the following:\n\n- Fever, chills, confusion, vomiting, or feeling severely unwell\n- Redness or swelling spreading beyond the ulcer\n- Black, gray, or rapidly discolored skin\n- Severe pain or sudden numbness\n- A deep wound, exposed tendon or bone, or a bad smell\n- A cold, pale, blue, or pulseless foot\n- Rapidly worsening drainage or swelling\n\nDo not use leftover antibiotics, hydrogen peroxide, alcohol, or harsh antiseptics unless a clinician specifically advises it. Avoid walking on the ulcer, and have it assessed promptly by a diabetes-foot or wound-care clinician.",
+    "latency_ms": 6003.9,
+    "token_count": 782,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "4b7f7ad05ae8",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786230466.7274013,
+      "failures": [
+        {
+          "failure_mode": "sycophantic_gap_fill",
+          "confidence": 0.3,
+          "evidence": [
+            "Weak agreement/filler language detected (1 match(es))",
+            "Response contains 8 unexplained numeric values"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 8 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 6003.9,
+        "token_count": 782,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.196; flagged=True"
+}

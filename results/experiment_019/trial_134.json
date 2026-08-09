@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-09T00:10:59.119295+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "There is a lawyer in court and he has his client but the other party's lawyer is missing, what happens?",
+    "field": "Law",
+    "specific_field": "jr lawyer ",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "What happens depends on the type of hearing, the court\u2019s rules, and whether the missing lawyer represents a party who was properly notified.\n\nTypical possibilities:\n\n1. **The judge waits briefly**\n   - Courts may wait roughly **10\u201330 minutes** if the lawyer is delayed by traffic, another courtroom, illness, or a scheduling problem.\n   - Court staff may call the lawyer\u2019s office or check whether they are appearing in another hearing.\n\n2. **The hearing is postponed or continued**\n   - If the absent lawyer has a legitimate reason\u2014such as an emergency, hospitalization, or conflicting court appearance\u2014the judge may reschedule the matter.\n   - The judge may require proof or an explanation, and may set a new date within approximately **days to a few weeks**, depending on the case and court calendar.\n\n3. **The party may have to proceed without their lawyer**\n   - A lawyer\u2019s absence does not always mean that lawyer\u2019s client is absent.\n   - The judge may ask the unrepresented party whether they want to proceed on their own, request a continuance, or contact their lawyer.\n   - In serious matters, especially criminal cases where someone\u2019s liberty is at stake, courts are generally more cautious about forcing a person to proceed without counsel.\n\n4. **The court may proceed without the missing side**\n   - If the opposing lawyer and/or their client had proper notice and simply failed to appear, the judge may hear the present side\u2019s request.\n   - In civil cases, this can lead to an **unopposed motion**, an order favorable to the appearing party, or sometimes a **default judgment** if the rules and notice requirements are met.\n   - A default judgment is not automatic merely because a lawyer misses one hearing; the exact procedure varies by jurisdiction.\n\n5. **The absent lawyer may be sanctioned**\n   - If there is no adequate excuse, the judge may issue a warning, order the lawyer to explain the absence, require payment of costs or attorney fees caused by the missed appearance, or impose other sanctions.\n   - Repeated failures to appear can lead to more serious consequences, including referral to a bar disciplinary authority.\n\n6. **The judge may protect the missing lawyer\u2019s client**\n   - Judges usually try not to punish a client too harshly for a lawyer\u2019s mistake, particularly where the result would be unfair or irreversible.\n   - However, if delays are repeated or the client also ignores the case, the court is more likely to proceed.\n\nSo, if one lawyer is present with their client and the other lawyer is missing, the most common immediate result is that the judge checks whether the absence is temporary or excusable. If not, the judge may either continue the matter or allow the present side to proceed, depending on the importance of the hearing and whether the absent side received proper notice.",
+    "latency_ms": 9024.2,
+    "input_tokens": 95,
+    "output_tokens": 570
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "There is a lawyer in court and he has his client but the other party's lawyer is missing, what happens?",
+      "field": "Law"
+    },
+    "response": "What happens depends on the type of hearing, the court\u2019s rules, and whether the missing lawyer represents a party who was properly notified.\n\nTypical possibilities:\n\n1. **The judge waits briefly**\n   - Courts may wait roughly **10\u201330 minutes** if the lawyer is delayed by traffic, another courtroom, illness, or a scheduling problem.\n   - Court staff may call the lawyer\u2019s office or check whether they are appearing in another hearing.\n\n2. **The hearing is postponed or continued**\n   - If the absent lawyer has a legitimate reason\u2014such as an emergency, hospitalization, or conflicting court appearance\u2014the judge may reschedule the matter.\n   - The judge may require proof or an explanation, and may set a new date within approximately **days to a few weeks**, depending on the case and court calendar.\n\n3. **The party may have to proceed without their lawyer**\n   - A lawyer\u2019s absence does not always mean that lawyer\u2019s client is absent.\n   - The judge may ask the unrepresented party whether they want to proceed on their own, request a continuance, or contact their lawyer.\n   - In serious matters, especially criminal cases where someone\u2019s liberty is at stake, courts are generally more cautious about forcing a person to proceed without counsel.\n\n4. **The court may proceed without the missing side**\n   - If the opposing lawyer and/or their client had proper notice and simply failed to appear, the judge may hear the present side\u2019s request.\n   - In civil cases, this can lead to an **unopposed motion**, an order favorable to the appearing party, or sometimes a **default judgment** if the rules and notice requirements are met.\n   - A default judgment is not automatic merely because a lawyer misses one hearing; the exact procedure varies by jurisdiction.\n\n5. **The absent lawyer may be sanctioned**\n   - If there is no adequate excuse, the judge may issue a warning, order the lawyer to explain the absence, require payment of costs or attorney fees caused by the missed appearance, or impose other sanctions.\n   - Repeated failures to appear can lead to more serious consequences, including referral to a bar disciplinary authority.\n\n6. **The judge may protect the missing lawyer\u2019s client**\n   - Judges usually try not to punish a client too harshly for a lawyer\u2019s mistake, particularly where the result would be unfair or irreversible.\n   - However, if delays are repeated or the client also ignores the case, the court is more likely to proceed.\n\nSo, if one lawyer is present with their client and the other lawyer is missing, the most common immediate result is that the judge checks whether the absence is temporary or excusable. If not, the judge may either continue the matter or allow the present side to proceed, depending on the importance of the hearing and whether the absent side received proper notice.",
+    "latency_ms": 9024.2,
+    "token_count": 665,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "7ac3c5c3c700",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234259.1185305,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 9024.2,
+        "token_count": 665,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.134; flagged=False"
+}

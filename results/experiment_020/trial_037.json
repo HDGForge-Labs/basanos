@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:33:48.371126+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What are the effects of bilateral contracts?",
+    "field": "Law",
+    "specific_field": "Common Law",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "The effects of bilateral contracts depend heavily on context\u2014contract law, electricity/commodity markets, or international relations\u2014so I'll cover the main ones.\n\n## In Contract Law\n\nA bilateral contract is one where both parties exchange mutual promises (as opposed to a unilateral contract, where one party promises in exchange for an act). Key effects:\n\n- **Mutual obligation from formation**: Both parties are bound the moment the promises are exchanged, not just when performance occurs. This is different from unilateral contracts, where the offeror is only bound once the offeree completes the requested act.\n- **Enforceability via consideration**: Each promise serves as consideration for the other, satisfying the bargain-for-exchange requirement. Breach by either party gives rise to a cause of action for the other (damages, specific performance, rescission).\n- **Risk allocation**: Because obligations attach immediately, bilateral contracts create anticipatory breach exposure\u2014if one party repudiates before performance is due, the other can sue immediately rather than waiting for the performance date.\n- **Symmetry of remedies**: Both sides have equivalent standing to sue for breach, unlike unilateral contracts where only the offeror is bound pre-performance.\n\n## In Electricity and Commodity Markets\n\nThis is a heavily studied area in energy economics, where \"bilateral contracts\" refers to direct buyer-seller agreements outside a centralized pool/spot market (e.g., PJM, Nord Pool). Effects include:\n\n- **Price stability and hedging**: Bilateral contrac",
+    "latency_ms": 12048.5,
+    "input_tokens": 129,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the effects of bilateral contracts?",
+      "field": "Law"
+    },
+    "response": "The effects of bilateral contracts depend heavily on context\u2014contract law, electricity/commodity markets, or international relations\u2014so I'll cover the main ones.\n\n## In Contract Law\n\nA bilateral contract is one where both parties exchange mutual promises (as opposed to a unilateral contract, where one party promises in exchange for an act). Key effects:\n\n- **Mutual obligation from formation**: Both parties are bound the moment the promises are exchanged, not just when performance occurs. This is different from unilateral contracts, where the offeror is only bound once the offeree completes the requested act.\n- **Enforceability via consideration**: Each promise serves as consideration for the other, satisfying the bargain-for-exchange requirement. Breach by either party gives rise to a cause of action for the other (damages, specific performance, rescission).\n- **Risk allocation**: Because obligations attach immediately, bilateral contracts create anticipatory breach exposure\u2014if one party repudiates before performance is due, the other can sue immediately rather than waiting for the performance date.\n- **Symmetry of remedies**: Both sides have equivalent standing to sue for breach, unlike unilateral contracts where only the offeror is bound pre-performance.\n\n## In Electricity and Commodity Markets\n\nThis is a heavily studied area in energy economics, where \"bilateral contracts\" refers to direct buyer-seller agreements outside a centralized pool/spot market (e.g., PJM, Nord Pool). Effects include:\n\n- **Price stability and hedging**: Bilateral contrac",
+    "latency_ms": 12048.5,
+    "token_count": 1153
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "6bfa6ab582a5",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239228.3703434,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4307,
+          "evidence": [
+            "Latency 12048ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12048.5,
+        "token_count": 1153,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.37; flagged=False"
+}

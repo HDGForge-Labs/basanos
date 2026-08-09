@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:34:45.602852+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "30 year old female has an episode of syncope post 2nd COVID vaccine, has a history of palpitations and dizziness - what test would you suggest to be carried out?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Cardiology",
+    "question_type": "Open-ended question that is potentially ambiguous| Advice or suggestions on how to approach a problem| Question that describes a hypothetical scenario and asks a question based on this scenario| Request for a list of resources where one can find more information| Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Recommended Workup for Syncope Post-Vaccination with History of Palpitations\n\n## First-Line Tests (Essential)\n\n**1. 12-lead ECG** \u2014 mandatory first step\n- Screen for QT prolongation/shortening, Brugada pattern, WPW (delta waves), AV block, bundle branch blocks, signs of arrhythmogenic cardiomyopathy\n\n**2. Echocardiogram**\n- Rule out structural heart disease, myocarditis/pericarditis (relevant given temporal association with COVID vaccination), valvular disease, cardiomyopathy\n\n**3. Ambulatory ECG Monitoring**\n- **24-48 hour Holter monitor** as initial step, but given episodic symptoms, an **extended event monitor or loop recorder (7-14 days, or implantable loop recorder if infrequent)** is more useful to capture arrhythmia during symptomatic episodes\n\n**4. Basic bloods**\n- FBC, electrolytes (K+, Mg2+, Ca2+), TSH, troponin (if temporal to vaccine/possible myocarditis), fasting glucose\n\n## Second-Line/Targeted Tests\n\n**5. Tilt Table Test**\n- Given the combination of syncope + palpitations + dizziness in a young female, **vasovagal syncope/POTS (Postural Orthostatic Tachycardia Syndrome)** is high on the differential \u2014 tilt testing helps confirm this, especially with continuous HR/BP monitoring\n\n**6. Active Stand Test / NASA Lean Test**\n- Simple bedside test for orthostatic intolerance and POTS \u2014 checks HR increase >30 bpm (or >120 bpm absolute) within 10 minutes of standing without significant BP drop\n\n**7. Cardiac MRI**\n- If myocarditis is suspected (elevated troponin, ECG changes, or echo abnormalities) \u2014 there's a recognized, though rare, association between COVID mRNA vaccines and myocarditis, particularly relevant in younger patients\n\n## Additional Considerations\n\n**8. Autonomic function testing**\n- If POTS/dysautonomia is suspected based on tilt test \u2014 consider referral to autonomic specialist\n\n**9. Electrophysiology Study (EPS)**\n- Only if non-invasive testing suggests high-risk arrhythmia or remains inconclusive with high clinical suspicion\n\n## Clinical Reasoning\n\nThe combination of **palpitations + dizziness + syncope** in a young female strongly suggests either:\n- **Arrhythmogenic cause** (SVT, less likely ventricular arrhythmia) \u2192 captured via prolonged rhythm monitoring\n- **Autonomic/POTS-related syncope** \u2192 captured via tilt table/active stand test\n- **Vaccine-associated myocarditis** (rare but reportable) \u2192 captured via troponin, ECG, echo, +/- cardiac MRI\n\n**Practical approach:** Start with ECG + echo + bloods + Holter/event monitor. If these are unremarkable but symptoms persist, proceed to til",
+    "latency_ms": 11616.8,
+    "input_tokens": 168,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "30 year old female has an episode of syncope post 2nd COVID vaccine, has a history of palpitations and dizziness - what test would you suggest to be carried out?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Recommended Workup for Syncope Post-Vaccination with History of Palpitations\n\n## First-Line Tests (Essential)\n\n**1. 12-lead ECG** \u2014 mandatory first step\n- Screen for QT prolongation/shortening, Brugada pattern, WPW (delta waves), AV block, bundle branch blocks, signs of arrhythmogenic cardiomyopathy\n\n**2. Echocardiogram**\n- Rule out structural heart disease, myocarditis/pericarditis (relevant given temporal association with COVID vaccination), valvular disease, cardiomyopathy\n\n**3. Ambulatory ECG Monitoring**\n- **24-48 hour Holter monitor** as initial step, but given episodic symptoms, an **extended event monitor or loop recorder (7-14 days, or implantable loop recorder if infrequent)** is more useful to capture arrhythmia during symptomatic episodes\n\n**4. Basic bloods**\n- FBC, electrolytes (K+, Mg2+, Ca2+), TSH, troponin (if temporal to vaccine/possible myocarditis), fasting glucose\n\n## Second-Line/Targeted Tests\n\n**5. Tilt Table Test**\n- Given the combination of syncope + palpitations + dizziness in a young female, **vasovagal syncope/POTS (Postural Orthostatic Tachycardia Syndrome)** is high on the differential \u2014 tilt testing helps confirm this, especially with continuous HR/BP monitoring\n\n**6. Active Stand Test / NASA Lean Test**\n- Simple bedside test for orthostatic intolerance and POTS \u2014 checks HR increase >30 bpm (or >120 bpm absolute) within 10 minutes of standing without significant BP drop\n\n**7. Cardiac MRI**\n- If myocarditis is suspected (elevated troponin, ECG changes, or echo abnormalities) \u2014 there's a recognized, though rare, association between COVID mRNA vaccines and myocarditis, particularly relevant in younger patients\n\n## Additional Considerations\n\n**8. Autonomic function testing**\n- If POTS/dysautonomia is suspected based on tilt test \u2014 consider referral to autonomic specialist\n\n**9. Electrophysiology Study (EPS)**\n- Only if non-invasive testing suggests high-risk arrhythmia or remains inconclusive with high clinical suspicion\n\n## Clinical Reasoning\n\nThe combination of **palpitations + dizziness + syncope** in a young female strongly suggests either:\n- **Arrhythmogenic cause** (SVT, less likely ventricular arrhythmia) \u2192 captured via prolonged rhythm monitoring\n- **Autonomic/POTS-related syncope** \u2192 captured via tilt table/active stand test\n- **Vaccine-associated myocarditis** (rare but reportable) \u2192 captured via troponin, ECG, echo, +/- cardiac MRI\n\n**Practical approach:** Start with ECG + echo + bloods + Holter/event monitor. If these are unremarkable but symptoms persist, proceed to til",
+    "latency_ms": 11616.8,
+    "token_count": 1192
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "5fbf364e348b",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239285.6020713,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4243,
+          "evidence": [
+            "Latency 11617ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11616.8,
+        "token_count": 1192,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.42; flagged=False"
+}

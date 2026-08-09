@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:53:21.934179+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "There is a lawyer in court and he has his client but the other party's lawyer is missing, what happens?",
+    "field": "Law",
+    "specific_field": "jr lawyer ",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# What Happens When Opposing Counsel Fails to Appear in Court\n\nIf an opposing lawyer is missing from a court proceeding, several things can happen depending on the type of hearing, jurisdiction, and circumstances. Here's a breakdown:\n\n## Immediate Steps the Judge Typically Takes\n\n**1. Inquiry into the absence (roughly 5-15 minutes of court time)**\n- The judge will usually ask the present attorney if they have any knowledge of why opposing counsel is absent\n- Court staff may attempt to contact the missing attorney's office by phone\n- The judge may check court records for any filed continuance requests or notices\n\n**2. Brief recess or continuance**\n- Judges often grant a short recess\u2014commonly around 10-30 minutes\u2014to allow time for the attorney to arrive (traffic, scheduling conflicts, etc.)\n- If there's no response, the case might be moved further down the day's docket, sometimes with 1-2 hours added flexibility\n\n## Possible Outcomes\n\n### If No Valid Excuse Emerges:\n\n**Default Judgment (in civil cases)**\n- If it's a scheduled hearing and the absent side fails to appear without excuse, the court may enter a default judgment in favor of the present party\n- This is more common when the missing lawyer's *client* is also absent, not just the attorney\n\n**Continuance (postponement)**\n- Many judges will simply reschedule the hearing, especially for a first-time absence\n- This could push the case anywhere from a few days to several weeks or even 1-3 months, depending on court backlog\n- Judges often show more leniency here since the failure is the attorney's, not necessarily the client's\n\n**Sanctions Against the Absent Attorney**\n- Courts can impose monetary sanctions, which might range from approximately $100 to $1,000+ depending on jurisdiction and severity\n- Repeated absences could lead to referrals to the state bar association for disciplinary review\n\n### If the Client (Not Just the Lawyer) is Also Absent:\n- This significantly increases the odds of default judgment\n- In criminal cases, if a defendant fails to appear, a bench warrant may be issued\n\n## Ethical/Professional Consequences for the Missing Attorney\n- Potential bar complaints\n- Malpractice liability exposure if the client suffers damages due to the missed appearance\n- Damage to professional reputation, which can affect future case referrals\n\n## Important Variables That Affect the Outcome\n- **Type of case**: Criminal cases have stricter appearance requirements than civil cases\n- **Type of hearing**: A trial absence is treated far more seriously than a missed status conference\n- **Jurisdiction**: Federal courts, state courts, and local courts have different rules (e.g., Federal Rule of Civil Procedure 55 governs default judgments in U.S. federal civil cases)\n- **History**: A first-time absence is treated more leniently than a pattern of no-shows\n\n## Bottom Line\nIn most cases, judges try to avoid punishing a client for their attorney's failure to appear, especially if it's a first occurrence. Expect a continuance in roughly ",
+    "latency_ms": 11684.2,
+    "input_tokens": 141,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "There is a lawyer in court and he has his client but the other party's lawyer is missing, what happens?",
+      "field": "Law"
+    },
+    "response": "# What Happens When Opposing Counsel Fails to Appear in Court\n\nIf an opposing lawyer is missing from a court proceeding, several things can happen depending on the type of hearing, jurisdiction, and circumstances. Here's a breakdown:\n\n## Immediate Steps the Judge Typically Takes\n\n**1. Inquiry into the absence (roughly 5-15 minutes of court time)**\n- The judge will usually ask the present attorney if they have any knowledge of why opposing counsel is absent\n- Court staff may attempt to contact the missing attorney's office by phone\n- The judge may check court records for any filed continuance requests or notices\n\n**2. Brief recess or continuance**\n- Judges often grant a short recess\u2014commonly around 10-30 minutes\u2014to allow time for the attorney to arrive (traffic, scheduling conflicts, etc.)\n- If there's no response, the case might be moved further down the day's docket, sometimes with 1-2 hours added flexibility\n\n## Possible Outcomes\n\n### If No Valid Excuse Emerges:\n\n**Default Judgment (in civil cases)**\n- If it's a scheduled hearing and the absent side fails to appear without excuse, the court may enter a default judgment in favor of the present party\n- This is more common when the missing lawyer's *client* is also absent, not just the attorney\n\n**Continuance (postponement)**\n- Many judges will simply reschedule the hearing, especially for a first-time absence\n- This could push the case anywhere from a few days to several weeks or even 1-3 months, depending on court backlog\n- Judges often show more leniency here since the failure is the attorney's, not necessarily the client's\n\n**Sanctions Against the Absent Attorney**\n- Courts can impose monetary sanctions, which might range from approximately $100 to $1,000+ depending on jurisdiction and severity\n- Repeated absences could lead to referrals to the state bar association for disciplinary review\n\n### If the Client (Not Just the Lawyer) is Also Absent:\n- This significantly increases the odds of default judgment\n- In criminal cases, if a defendant fails to appear, a bench warrant may be issued\n\n## Ethical/Professional Consequences for the Missing Attorney\n- Potential bar complaints\n- Malpractice liability exposure if the client suffers damages due to the missed appearance\n- Damage to professional reputation, which can affect future case referrals\n\n## Important Variables That Affect the Outcome\n- **Type of case**: Criminal cases have stricter appearance requirements than civil cases\n- **Type of hearing**: A trial absence is treated far more seriously than a missed status conference\n- **Jurisdiction**: Federal courts, state courts, and local courts have different rules (e.g., Federal Rule of Civil Procedure 55 governs default judgments in U.S. federal civil cases)\n- **History**: A first-time absence is treated more leniently than a pattern of no-shows\n\n## Bottom Line\nIn most cases, judges try to avoid punishing a client for their attorney's failure to appear, especially if it's a first occurrence. Expect a continuance in roughly ",
+    "latency_ms": 11684.2,
+    "token_count": 1165,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "3eede94d8033",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240401.9333544,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 10 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4253,
+          "evidence": [
+            "Latency 11684ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11684.2,
+        "token_count": 1165,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.134; flagged=True"
+}

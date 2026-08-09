@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-08T23:05:36.771940+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Is a sex worker entitled to compensation upon a claim of valid dismissal under the Labour Relations Act?",
+    "field": "Law",
+    "specific_field": "Labour Law",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Assuming you mean **South Africa\u2019s Labour Relations Act 66 of 1995 (LRA)**: **generally, no\u2014not where the claim depends on the sex work itself being an employment relationship**, because a contract for the provision of sexual services is unlawful and unenforceable.\n\nThe leading authority is **_Kylie v Commission for Conciliation, Mediation and Arbitration and Others 2010 (4) SA 383 (CC)**. The Constitutional Court held that a sex worker is **not excluded from the LRA merely because sex work is criminalised**, and that the worker may refer an alleged unfair dismissal to the CCMA. However, the Court also held that the ordinary contractual remedies\u2014especially **reinstatement** or an order requiring the employer to continue the sexual-services relationship\u2014cannot be granted where they would enforce an illegal contract.\n\nAccordingly:\n\n- **Access to the LRA/CCMA:** Yes, potentially. A sex worker may challenge a dismissal as unfair.\n- **Finding of unfair dismissal:** Possible, depending on the facts and the employer\u2019s reason and procedure.\n- **Reinstatement:** Generally unavailable, because it would effectively enforce or revive an unlawful contract.\n- **Back pay or contractual damages:** Generally unavailable where the claim requires enforcement of the illegal sex-work contract.\n- **Compensation for unfair dismissal:** Potentially available, but it is discretionary and must be assessed consistently with the illegality of the underlying relationship. The court in _Kylie_ did not create an automatic entitlement to compensation in every case.\n\nUnder **section 194 of the LRA**, compensation for an unfair dismissal is ordinarily capped at:\n\n- **12 months\u2019 remuneration** for an ordinary unfair dismissal; or\n- **24 months\u2019 remuneration** where the dismissal is automatically unfair.\n\nBut those statutory limits do **not** necessarily mean that a sex worker automatically receives 12 or 24 months\u2019 remuneration. The decisive issue is whether granting compensation would improperly enforce the unlawful contract. The court must balance the LRA\u2019s protective purpose\u2014particularly protection against arbitrary dismissal\u2014with public policy and the criminal-law prohibition on sex work.\n\nTherefore, the short answer is:\n\n> **A sex worker may invoke the LRA and pursue an unfair-dismissal claim, but is not automatically entitled to compensation. Compensation may be refused where it would amount to enforcement of the unlawful sex-work contract; reinstatement is generally not available.**\n\nThe outcome can differ if the person performed **lawful non-sexual work**\u2014for example, reception, cleaning, management, administration, or other services\u2014under a separate employment relationship. In that event, ordinary LRA remedies may be available for the lawful employment component.",
+    "latency_ms": 4480.2,
+    "input_tokens": 91,
+    "output_tokens": 544
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Is a sex worker entitled to compensation upon a claim of valid dismissal under the Labour Relations Act?",
+      "field": "Law"
+    },
+    "response": "Assuming you mean **South Africa\u2019s Labour Relations Act 66 of 1995 (LRA)**: **generally, no\u2014not where the claim depends on the sex work itself being an employment relationship**, because a contract for the provision of sexual services is unlawful and unenforceable.\n\nThe leading authority is **_Kylie v Commission for Conciliation, Mediation and Arbitration and Others 2010 (4) SA 383 (CC)**. The Constitutional Court held that a sex worker is **not excluded from the LRA merely because sex work is criminalised**, and that the worker may refer an alleged unfair dismissal to the CCMA. However, the Court also held that the ordinary contractual remedies\u2014especially **reinstatement** or an order requiring the employer to continue the sexual-services relationship\u2014cannot be granted where they would enforce an illegal contract.\n\nAccordingly:\n\n- **Access to the LRA/CCMA:** Yes, potentially. A sex worker may challenge a dismissal as unfair.\n- **Finding of unfair dismissal:** Possible, depending on the facts and the employer\u2019s reason and procedure.\n- **Reinstatement:** Generally unavailable, because it would effectively enforce or revive an unlawful contract.\n- **Back pay or contractual damages:** Generally unavailable where the claim requires enforcement of the illegal sex-work contract.\n- **Compensation for unfair dismissal:** Potentially available, but it is discretionary and must be assessed consistently with the illegality of the underlying relationship. The court in _Kylie_ did not create an automatic entitlement to compensation in every case.\n\nUnder **section 194 of the LRA**, compensation for an unfair dismissal is ordinarily capped at:\n\n- **12 months\u2019 remuneration** for an ordinary unfair dismissal; or\n- **24 months\u2019 remuneration** where the dismissal is automatically unfair.\n\nBut those statutory limits do **not** necessarily mean that a sex worker automatically receives 12 or 24 months\u2019 remuneration. The decisive issue is whether granting compensation would improperly enforce the unlawful contract. The court must balance the LRA\u2019s protective purpose\u2014particularly protection against arbitrary dismissal\u2014with public policy and the criminal-law prohibition on sex work.\n\nTherefore, the short answer is:\n\n> **A sex worker may invoke the LRA and pursue an unfair-dismissal claim, but is not automatically entitled to compensation. Compensation may be refused where it would amount to enforcement of the unlawful sex-work contract; reinstatement is generally not available.**\n\nThe outcome can differ if the person performed **lawful non-sexual work**\u2014for example, reception, cleaning, management, administration, or other services\u2014under a separate employment relationship. In that event, ordinary LRA remedies may be available for the lawful employment component.",
+    "latency_ms": 4480.2,
+    "token_count": 635,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "c655dd1a899d",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230336.7711241,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 4480.2,
+        "token_count": 635,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.174; flagged=False"
+}

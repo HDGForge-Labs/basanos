@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:35:11.419156+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Is \"Ethics Dumping\" still a common practice in less developed countries? ",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Clinical Research",
+    "question_type": "Open-ended question that is potentially ambiguous| Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Ethics Dumping: Current Status\n\nYes, ethics dumping remains a documented and ongoing problem, though awareness and countermeasures have improved since the term gained prominence around 2013-2015 (largely through the work of Doris Schroeder and the TRUST Project, funded by the EU Horizon 2020 program).\n\n## What's driving continued prevalence\n\n**Structural incentives remain unchanged**: Clinical trials, biobanking, and genomics research remain cheaper and faster in Low- and Middle-Income Countries (LMICs) due to:\n- Lower costs per participant\n- Larger treatment-na\u00efve populations\n- Weaker regulatory enforcement capacity (even where laws exist on paper)\n- Research ethics committees that are under-resourced or lack technical expertise to evaluate complex protocols (genomics, AI-driven health research, biobanking consent)\n\n## Documented recent cases and patterns\n\n- **COVID-19 vaccine trials** (2020-2021) raised ethics dumping concerns, particularly around trials conducted in countries like South Africa, Brazil, and India where post-trial access to successful vaccines/treatments was not guaranteed to participants or their communities.\n- **Genomic and biobank research** in Africa continues to draw criticism\u2014samples collected for one stated purpose are stored and used for unrelated future research without renewed consent (a practice sometimes called \"broad consent abuse\").\n- **HIV/AIDS PrEP trials** in African countries have faced scrutiny over informed consent adequacy given literacy levels, language barriers, and power differentials.\n- **San people (Southern Africa) genomic research**: Ongoing tension over benefit-sharing after earlier controversies where genetic material was used without adequate community consent or return of benefits.\n\n## Institutional responses (partial mitigation)\n\n- **EU Horizon Europe** now requires ethics self-assessment and explicitly names ethics dumping as a form of research misconduct.\n- **The Global Code of Conduct for Research in Resource-Poor Settings** (2018, out of TRUST) is now cited in some institutional review board (IRB) training.\n- **South Africa's NHREC**, **India's ICMR guidelines**, and various African bioethics networks (like PANDORA, the Pan-African Bioethics Initiative) have strengthened local oversight.\n\n## Persistent gaps\n\n- Many funding bodies still don't mandate local ethics committee co-review alongside sponsor-country review.\n- \"Helicopter research\" (extracting data/samples without local co-authorship or capacity-building) remains common in fields like conservation biology, anthropology, and infectious disease genomics.\n- Enforcement is inconsistent\u2014having a Code of Conduct doesn't guarantee compliance, especially when funding pressure incentivizes speed over deliberation.\n\n**Bottom line**: Ethics dumping hasn't disappeared, but it's shifted from being an unrecognized default practice to a recognized risk that better-resourced institutions are expected to actively counter \u2014 with actual compliance varying significantly by field, funder, and country.\n\n",
+    "latency_ms": 14221.1,
+    "input_tokens": 140,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Is \"Ethics Dumping\" still a common practice in less developed countries? ",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Ethics Dumping: Current Status\n\nYes, ethics dumping remains a documented and ongoing problem, though awareness and countermeasures have improved since the term gained prominence around 2013-2015 (largely through the work of Doris Schroeder and the TRUST Project, funded by the EU Horizon 2020 program).\n\n## What's driving continued prevalence\n\n**Structural incentives remain unchanged**: Clinical trials, biobanking, and genomics research remain cheaper and faster in Low- and Middle-Income Countries (LMICs) due to:\n- Lower costs per participant\n- Larger treatment-na\u00efve populations\n- Weaker regulatory enforcement capacity (even where laws exist on paper)\n- Research ethics committees that are under-resourced or lack technical expertise to evaluate complex protocols (genomics, AI-driven health research, biobanking consent)\n\n## Documented recent cases and patterns\n\n- **COVID-19 vaccine trials** (2020-2021) raised ethics dumping concerns, particularly around trials conducted in countries like South Africa, Brazil, and India where post-trial access to successful vaccines/treatments was not guaranteed to participants or their communities.\n- **Genomic and biobank research** in Africa continues to draw criticism\u2014samples collected for one stated purpose are stored and used for unrelated future research without renewed consent (a practice sometimes called \"broad consent abuse\").\n- **HIV/AIDS PrEP trials** in African countries have faced scrutiny over informed consent adequacy given literacy levels, language barriers, and power differentials.\n- **San people (Southern Africa) genomic research**: Ongoing tension over benefit-sharing after earlier controversies where genetic material was used without adequate community consent or return of benefits.\n\n## Institutional responses (partial mitigation)\n\n- **EU Horizon Europe** now requires ethics self-assessment and explicitly names ethics dumping as a form of research misconduct.\n- **The Global Code of Conduct for Research in Resource-Poor Settings** (2018, out of TRUST) is now cited in some institutional review board (IRB) training.\n- **South Africa's NHREC**, **India's ICMR guidelines**, and various African bioethics networks (like PANDORA, the Pan-African Bioethics Initiative) have strengthened local oversight.\n\n## Persistent gaps\n\n- Many funding bodies still don't mandate local ethics committee co-review alongside sponsor-country review.\n- \"Helicopter research\" (extracting data/samples without local co-authorship or capacity-building) remains common in fields like conservation biology, anthropology, and infectious disease genomics.\n- Enforcement is inconsistent\u2014having a Code of Conduct doesn't guarantee compliance, especially when funding pressure incentivizes speed over deliberation.\n\n**Bottom line**: Ethics dumping hasn't disappeared, but it's shifted from being an unrecognized default practice to a recognized risk that better-resourced institutions are expected to actively counter \u2014 with actual compliance varying significantly by field, funder, and country.\n\n",
+    "latency_ms": 14221.1,
+    "token_count": 1164
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "18c46864445d",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239311.418273,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4633,
+          "evidence": [
+            "Latency 14221ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 14221.1,
+        "token_count": 1164,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.44; flagged=False"
+}

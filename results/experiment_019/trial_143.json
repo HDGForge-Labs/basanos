@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:12:26.961612+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Imagine you have a patient after hip surgery (14days passed) write me a rehabilitation plan for this patient.",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Physical Medicine and Rehabilitation also COVID patients",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Below is a **general post\u2013hip surgery rehabilitation plan for postoperative day 14 onward**. It must be adjusted for the exact operation\u2014most commonly **total hip replacement (THA)**, hip hemiarthroplasty, hip fracture fixation, arthroscopy, or tendon repair\u2014and for the surgeon\u2019s specific weight-bearing and motion restrictions.\n\nAt **2 weeks**, the patient should still be under active surgical follow-up. The surgeon\u2019s instructions override this plan, particularly for **weight-bearing status, hip precautions, wound management, and anticoagulation**.\n\n---\n\n# Postoperative Hip Rehabilitation Plan: Starting at Day 14\n\n## 1. First: Confirm Surgical Restrictions\n\nBefore progressing exercises, confirm all of the following from the operative note or surgeon:\n\n- **Procedure:** total hip arthroplasty, hemiarthroplasty, fracture fixation, arthroscopy, etc.\n- **Surgical approach:** posterior, anterior, lateral/direct lateral, or other.\n- **Weight-bearing status:**  \n  - Weight bearing as tolerated (WBAT), or  \n  - Partial weight bearing\u2014often about **25% to 50% body weight**, or  \n  - Toe-touch/non-weight bearing.\n- **Hip precautions:** often maintained for approximately **6 weeks**, sometimes **8\u201312 weeks**.\n- **DVT prophylaxis:** medication and duration\u2014commonly approximately **14\u201335 days** after hip replacement, depending on patient risk and local protocol.\n- **Wound status:** staples/sutures are often removed around **10\u201314 days** if the incision is dry and healing normally.\n\n---\n\n# Typical Hip Precautions\n\n## If posterior approach precautions apply\nUsually for about **6 weeks**:\n\n- Do not bend the hip beyond **90\u00b0**.\n- Do not cross the legs or bring the operated leg across the body midline (avoid hip adduction).\n- Do not turn the operated foot/knee inward excessively (avoid internal rotation).\n- Use a raised toilet seat and firm chair with armrests.\n- Avoid low sofas, low toilets, deep recliners, and twisting while standing.\n\n## If anterior approach precautions apply\nOften fewer restrictions, but commonly avoid for roughly **4\u20136 weeks**:\n\n- Excessive hip extension\u2014do not step far behind with the operated leg.\n- Excessive external rotation, especially combined with extension.\n- Pivoting or twisting sharply on the operated leg.\n\n**Important:** Precautions vary significantly. Some modern THA protocols use \u201cpose avoidance\u201d rather than strict precautions, but this must come from the surgical team.\n\n---\n\n# Phase 1: Postoperative Days 14\u201321\n## Goals\nBy the end of week 3, typical goals are:\n\n- Pain generally controlled at approximately **0\u20134/10** at rest and not escalating after activity.\n- Incision dry, closed, and without spreading redness.\n- Safe transfers, bed mobility, toileting, and basic household walking.\n- Walking short distances with an appropriate assistive device.\n- Reduced swelling and improved quadriceps/gluteal activation.\n- Hip range of motion progressing within surgical precautions.\n- No falls, no signs of infection, and no DVT symptoms.\n\n## Frequency\n- **Physical therapy:** approximately **2\u20133 sessions per week** initially, if available.\n- **Home exercise program:** **1\u20132 sessions daily**, usually **15\u201330 minutes** each.\n- **Walking:** several short bouts daily rather than one long walk.\n\n## Walking and Functional Mobility\nIf cleared as **weight bearing as tolerated**:\n\n- Use a **front-wheeled walker** or crutches as instructed.\n- Walk approximately **5\u201310 minutes**, about **3\u20135 times per day**, at a comfortable pace.\n- Increase total walking volume gradually, often no more than around **10% per week** if pain and swelling remain controlled.\n- Focus on equal step length, upright posture, heel-to-toe pattern, and avoiding a limp.\n- Do not discontinue the walker/cane simply because pain is reduced; transition only when gait is stable and non-antalgic.\n\n### Transfer practice\nPractice **3\u20135 repetitions**, **1\u20132 times/day**:\n\n- Sit-to-stand from a firm, elevated chair.\n- Keep the operated leg slightly forward if needed for comfort.\n- Use armrests; avoid low seating.\n- Do not twist the body over a planted foot.\n\n## Exercises: Days 14\u201321\nPerform only within comfort and precautions. Mild muscular soreness is acceptable; sharp groin pain, catching, instability, or worsening pain is not.\n\n### 1. Ankle pumps\n- **20\u201330 repetitions**\n- **3\u20135 times/day**\n- Helps circulation and swelling control.\n\n### 2. Quad sets\n- Tighten the front thigh muscle and press knee gently toward the bed.\n- Hold **5\u201310 seconds**\n- **10\u201315 repetitions**, **2\u20133 times/day**\n\n### 3. Gluteal sets\n- Squeeze buttock muscles without holding breath.\n- Hold",
+    "latency_ms": 13709.5,
+    "input_tokens": 94,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Imagine you have a patient after hip surgery (14days passed) write me a rehabilitation plan for this patient.",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Below is a **general post\u2013hip surgery rehabilitation plan for postoperative day 14 onward**. It must be adjusted for the exact operation\u2014most commonly **total hip replacement (THA)**, hip hemiarthroplasty, hip fracture fixation, arthroscopy, or tendon repair\u2014and for the surgeon\u2019s specific weight-bearing and motion restrictions.\n\nAt **2 weeks**, the patient should still be under active surgical follow-up. The surgeon\u2019s instructions override this plan, particularly for **weight-bearing status, hip precautions, wound management, and anticoagulation**.\n\n---\n\n# Postoperative Hip Rehabilitation Plan: Starting at Day 14\n\n## 1. First: Confirm Surgical Restrictions\n\nBefore progressing exercises, confirm all of the following from the operative note or surgeon:\n\n- **Procedure:** total hip arthroplasty, hemiarthroplasty, fracture fixation, arthroscopy, etc.\n- **Surgical approach:** posterior, anterior, lateral/direct lateral, or other.\n- **Weight-bearing status:**  \n  - Weight bearing as tolerated (WBAT), or  \n  - Partial weight bearing\u2014often about **25% to 50% body weight**, or  \n  - Toe-touch/non-weight bearing.\n- **Hip precautions:** often maintained for approximately **6 weeks**, sometimes **8\u201312 weeks**.\n- **DVT prophylaxis:** medication and duration\u2014commonly approximately **14\u201335 days** after hip replacement, depending on patient risk and local protocol.\n- **Wound status:** staples/sutures are often removed around **10\u201314 days** if the incision is dry and healing normally.\n\n---\n\n# Typical Hip Precautions\n\n## If posterior approach precautions apply\nUsually for about **6 weeks**:\n\n- Do not bend the hip beyond **90\u00b0**.\n- Do not cross the legs or bring the operated leg across the body midline (avoid hip adduction).\n- Do not turn the operated foot/knee inward excessively (avoid internal rotation).\n- Use a raised toilet seat and firm chair with armrests.\n- Avoid low sofas, low toilets, deep recliners, and twisting while standing.\n\n## If anterior approach precautions apply\nOften fewer restrictions, but commonly avoid for roughly **4\u20136 weeks**:\n\n- Excessive hip extension\u2014do not step far behind with the operated leg.\n- Excessive external rotation, especially combined with extension.\n- Pivoting or twisting sharply on the operated leg.\n\n**Important:** Precautions vary significantly. Some modern THA protocols use \u201cpose avoidance\u201d rather than strict precautions, but this must come from the surgical team.\n\n---\n\n# Phase 1: Postoperative Days 14\u201321\n## Goals\nBy the end of week 3, typical goals are:\n\n- Pain generally controlled at approximately **0\u20134/10** at rest and not escalating after activity.\n- Incision dry, closed, and without spreading redness.\n- Safe transfers, bed mobility, toileting, and basic household walking.\n- Walking short distances with an appropriate assistive device.\n- Reduced swelling and improved quadriceps/gluteal activation.\n- Hip range of motion progressing within surgical precautions.\n- No falls, no signs of infection, and no DVT symptoms.\n\n## Frequency\n- **Physical therapy:** approximately **2\u20133 sessions per week** initially, if available.\n- **Home exercise program:** **1\u20132 sessions daily**, usually **15\u201330 minutes** each.\n- **Walking:** several short bouts daily rather than one long walk.\n\n## Walking and Functional Mobility\nIf cleared as **weight bearing as tolerated**:\n\n- Use a **front-wheeled walker** or crutches as instructed.\n- Walk approximately **5\u201310 minutes**, about **3\u20135 times per day**, at a comfortable pace.\n- Increase total walking volume gradually, often no more than around **10% per week** if pain and swelling remain controlled.\n- Focus on equal step length, upright posture, heel-to-toe pattern, and avoiding a limp.\n- Do not discontinue the walker/cane simply because pain is reduced; transition only when gait is stable and non-antalgic.\n\n### Transfer practice\nPractice **3\u20135 repetitions**, **1\u20132 times/day**:\n\n- Sit-to-stand from a firm, elevated chair.\n- Keep the operated leg slightly forward if needed for comfort.\n- Use armrests; avoid low seating.\n- Do not twist the body over a planted foot.\n\n## Exercises: Days 14\u201321\nPerform only within comfort and precautions. Mild muscular soreness is acceptable; sharp groin pain, catching, instability, or worsening pain is not.\n\n### 1. Ankle pumps\n- **20\u201330 repetitions**\n- **3\u20135 times/day**\n- Helps circulation and swelling control.\n\n### 2. Quad sets\n- Tighten the front thigh muscle and press knee gently toward the bed.\n- Hold **5\u201310 seconds**\n- **10\u201315 repetitions**, **2\u20133 times/day**\n\n### 3. Gluteal sets\n- Squeeze buttock muscles without holding breath.\n- Hold",
+    "latency_ms": 13709.5,
+    "token_count": 1118,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "851720907faf",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234346.9608114,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 15 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4556,
+          "evidence": [
+            "Latency 13710ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13709.5,
+        "token_count": 1118,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.143; flagged=True"
+}

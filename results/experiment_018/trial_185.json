@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:06:38.725155+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "If we apply GnRH to cultured neurons and observe neuritic growth, what would be the possible mechanism of action of this hormone on neurons?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Neuroscience researcher",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "GnRH can promote neuritic growth through a **direct, nonclassical neurotrophic signaling pathway**, although the exact mechanism depends on the neuron type, GnRH concentration, receptor expression, and culture conditions.\n\n### Possible mechanism\n\n1. **Activation of neuronal GnRH receptors**\n   - GnRH receptors are typically **Gq/11-coupled GPCRs**.\n   - GnRH binding activates **phospholipase C (PLC)**, leading to:\n     \\[\n     \\text{PIP}_2 \\rightarrow \\text{IP}_3 + \\text{DAG}\n     \\]\n   - IP\u2083 increases intracellular **Ca\u00b2\u207a**, while DAG activates **protein kinase C (PKC)**.\n\n2. **Stimulation of growth-related kinase pathways**\n   - Ca\u00b2\u207a/PKC signaling may activate:\n     - **Ras\u2013Raf\u2013MEK\u2013ERK/MAPK**\n     - **PI3K\u2013Akt**\n     - Possibly **JNK/p38 MAPK**, depending on cell type and exposure duration\n   - ERK and Akt are particularly plausible pathways because they regulate cytoskeletal remodeling, survival, and neurite extension.\n\n3. **Cytoskeletal remodeling**\n   - Downstream signaling can alter:\n     - **Rho-family GTPases** such as Rac1, Cdc42, and RhoA\n     - Actin polymerization\n     - Microtubule stability and tubulin organization\n     - Growth-cone motility\n   - A relative increase in Rac1/Cdc42 activity, or suppression of inhibitory RhoA signaling, could favor neurite initiation and elongation.\n\n4. **Induction of neurotrophic factors**\n   - GnRH signaling may increase expression or release of factors such as:\n     - **BDNF**\n     - **NGF**\n     - **FGF2**\n     - Possibly **IGF-1**\n   - These factors could then act through Trk or related receptor tyrosine kinases in an autocrine or paracrine manner, amplifying neuritic growth.\n\n5. **Transcriptional effects**\n   - Sustained ERK, Ca\u00b2\u207a, or CREB activation could increase transcription of genes involved in neuronal differentiation and neurite extension, including genes encoding:\n     - Cytoskeletal proteins\n     - Adhesion molecules\n     - Neurotrophins\n     - Synaptic proteins\n\n6. **Possible transactivation of receptor tyrosine kinases**\n   - GPCR signaling can sometimes transactivate **EGF, BDNF/Trk, or FGF receptors**, thereby enhancing PI3K\u2013Akt and ERK signaling.\n   - This would provide a mechanism by which GnRH produces a stronger or longer-lasting neuritogenic response than direct second-messenger signaling alone.\n\n### Important qualifications\n\n- GnRH may act through **locally expressed neuronal GnRH receptors**, but receptor expression should be confirmed by **RT-qPCR, immunocytochemistry, or receptor-binding assays**.\n- The response may be **biphasic or concentration-dependent**. A neuritogenic effect might occur at approximately **picomolar-to-low-nanomolar concentrations**, whereas higher concentrations\u2014roughly **10\u2013100 times above the effective range**\u2014could produce receptor desensitization, altered calcium signaling, or even cellular stress.\n- In some cultures, the effect could be indirect through contaminating or deliberately included **glial cells**, which may release BDNF, NGF, or other trophic factors after GnRH stimulation.\n- GnRH receptor signaling often shows **rapid desensitization and internalization**, potentially within approximately **10\u201360 minutes**, so exposure duration is important.\n\n### Experiments to test the mechanism\n\nA plausible pathway could be tested by showing that neuritic growth is reduced by:\n\n- A GnRH receptor antagonist or receptor knockdown\n- **PLC inhibitors**\n- **PKC inhibitors**\n- **MEK/ERK inhibitors**, such as U0126\n- **PI3K inhibitors**, such as LY294002\n- Intracellular Ca\u00b2\u207a chelation\n- Rho-family GTPase inhibition or manipulation\n- Neutralization of BDNF or NGF\n- Removal of glial cells or use of neuron-only cultures\n\nMeasurements at approximately **5\u201330 minutes** could assess Ca\u00b2\u207a, PKC, ERK, and Akt activation, whereas neurite length, number of neurites, branching, and growth-cone morphology could be quantified after approximately **24\u201372 hours**.\n\nOverall, the most likely model is:\n\n\\[\n\\text{GnRH} \\rightarrow \\text{GnRH receptor} \\rightarrow \\text{PLC/Ca}^{2+}\\text{/PKC}\n\\rightarrow \\text{ERK and PI3K\u2013Akt} \\rightarrow \\text{cytoskeletal remodeling and trophic-factor expression}\n\\rightarrow \\text{neuritic growth}\n\\]\n\n",
+    "latency_ms": 6980.4,
+    "input_tokens": 100,
+    "output_tokens": 1023
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "If we apply GnRH to cultured neurons and observe neuritic growth, what would be the possible mechanism of action of this hormone on neurons?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "GnRH can promote neuritic growth through a **direct, nonclassical neurotrophic signaling pathway**, although the exact mechanism depends on the neuron type, GnRH concentration, receptor expression, and culture conditions.\n\n### Possible mechanism\n\n1. **Activation of neuronal GnRH receptors**\n   - GnRH receptors are typically **Gq/11-coupled GPCRs**.\n   - GnRH binding activates **phospholipase C (PLC)**, leading to:\n     \\[\n     \\text{PIP}_2 \\rightarrow \\text{IP}_3 + \\text{DAG}\n     \\]\n   - IP\u2083 increases intracellular **Ca\u00b2\u207a**, while DAG activates **protein kinase C (PKC)**.\n\n2. **Stimulation of growth-related kinase pathways**\n   - Ca\u00b2\u207a/PKC signaling may activate:\n     - **Ras\u2013Raf\u2013MEK\u2013ERK/MAPK**\n     - **PI3K\u2013Akt**\n     - Possibly **JNK/p38 MAPK**, depending on cell type and exposure duration\n   - ERK and Akt are particularly plausible pathways because they regulate cytoskeletal remodeling, survival, and neurite extension.\n\n3. **Cytoskeletal remodeling**\n   - Downstream signaling can alter:\n     - **Rho-family GTPases** such as Rac1, Cdc42, and RhoA\n     - Actin polymerization\n     - Microtubule stability and tubulin organization\n     - Growth-cone motility\n   - A relative increase in Rac1/Cdc42 activity, or suppression of inhibitory RhoA signaling, could favor neurite initiation and elongation.\n\n4. **Induction of neurotrophic factors**\n   - GnRH signaling may increase expression or release of factors such as:\n     - **BDNF**\n     - **NGF**\n     - **FGF2**\n     - Possibly **IGF-1**\n   - These factors could then act through Trk or related receptor tyrosine kinases in an autocrine or paracrine manner, amplifying neuritic growth.\n\n5. **Transcriptional effects**\n   - Sustained ERK, Ca\u00b2\u207a, or CREB activation could increase transcription of genes involved in neuronal differentiation and neurite extension, including genes encoding:\n     - Cytoskeletal proteins\n     - Adhesion molecules\n     - Neurotrophins\n     - Synaptic proteins\n\n6. **Possible transactivation of receptor tyrosine kinases**\n   - GPCR signaling can sometimes transactivate **EGF, BDNF/Trk, or FGF receptors**, thereby enhancing PI3K\u2013Akt and ERK signaling.\n   - This would provide a mechanism by which GnRH produces a stronger or longer-lasting neuritogenic response than direct second-messenger signaling alone.\n\n### Important qualifications\n\n- GnRH may act through **locally expressed neuronal GnRH receptors**, but receptor expression should be confirmed by **RT-qPCR, immunocytochemistry, or receptor-binding assays**.\n- The response may be **biphasic or concentration-dependent**. A neuritogenic effect might occur at approximately **picomolar-to-low-nanomolar concentrations**, whereas higher concentrations\u2014roughly **10\u2013100 times above the effective range**\u2014could produce receptor desensitization, altered calcium signaling, or even cellular stress.\n- In some cultures, the effect could be indirect through contaminating or deliberately included **glial cells**, which may release BDNF, NGF, or other trophic factors after GnRH stimulation.\n- GnRH receptor signaling often shows **rapid desensitization and internalization**, potentially within approximately **10\u201360 minutes**, so exposure duration is important.\n\n### Experiments to test the mechanism\n\nA plausible pathway could be tested by showing that neuritic growth is reduced by:\n\n- A GnRH receptor antagonist or receptor knockdown\n- **PLC inhibitors**\n- **PKC inhibitors**\n- **MEK/ERK inhibitors**, such as U0126\n- **PI3K inhibitors**, such as LY294002\n- Intracellular Ca\u00b2\u207a chelation\n- Rho-family GTPase inhibition or manipulation\n- Neutralization of BDNF or NGF\n- Removal of glial cells or use of neuron-only cultures\n\nMeasurements at approximately **5\u201330 minutes** could assess Ca\u00b2\u207a, PKC, ERK, and Akt activation, whereas neurite length, number of neurites, branching, and growth-cone morphology could be quantified after approximately **24\u201372 hours**.\n\nOverall, the most likely model is:\n\n\\[\n\\text{GnRH} \\rightarrow \\text{GnRH receptor} \\rightarrow \\text{PLC/Ca}^{2+}\\text{/PKC}\n\\rightarrow \\text{ERK and PI3K\u2013Akt} \\rightarrow \\text{cytoskeletal remodeling and trophic-factor expression}\n\\rightarrow \\text{neuritic growth}\n\\]\n\n",
+    "latency_ms": 6980.4,
+    "token_count": 1123,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "0ac79b2e27c2",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230398.7243125,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 6 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 6980.4,
+        "token_count": 1123,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.185; flagged=True"
+}

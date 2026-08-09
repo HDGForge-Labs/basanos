@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:02:04.546767+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What are ZIPPOs in the context of naval warfare, and what are the NATO standard ones?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Naval Warfare & Navigation",
+    "question_type": "Directed question that has a single unambiguous answer| Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "In naval warfare, **ZIPPOs** are **small, rapidly deployable harbor-defense boats**\u2014usually fast, shallow-draft craft used to patrol, screen, and protect naval bases, anchorages, and narrow coastal approaches.\n\nThe term is generally associated with **armed harbor patrol boats** that may conduct:\n\n- **Anti-sabotage and anti-infiltration patrols**\n- **Inspection and interception of small craft**\n- **Anti-swimmer and anti-diver security**\n- **Coastal surveillance**\n- **Escort and liaison duties**\n- **Protection of ships at anchor and port facilities**\n\nA ZIPPO is not normally a major combatant such as a frigate or patrol vessel. It is closer to a **harbor-security or force-protection boat**, often operated by a navy, naval police, or military port authority. Exact usage can vary by country and source; \u201cZIPPO\u201d is not a universally standardized NATO ship classification in the way that terms such as **FPB**\u2014fast patrol boat\u2014or **RHIB** are.\n\n## NATO standard ZIPPOs\n\nThe NATO-standard ZIPPOs are commonly identified as:\n\n| NATO designation | General description | Typical role |\n|---|---|---|\n| **ZIPPO I** | Small harbor-defense patrol boat | Inner-harbor patrol, security, inspection |\n| **ZIPPO II** | Larger or more capable harbor-defense boat | Outer-harbor patrol, interception, escort |\n| **ZIPPO III** | The largest/highest-end ZIPPO variant | Extended coastal patrol and heavier weapons/sensors |\n\nThe numbering is broadly a **capability progression**, rather than a single universal boat design. In typical descriptions:\n\n- **ZIPPO I** boats are approximately **6\u201310 meters** long, with speeds around **20\u201335 knots**, crews of roughly **3\u20136 personnel**, and light machine-gun or small-arms armament.\n- **ZIPPO II** boats are approximately **10\u201315 meters** long, can reach roughly **25\u201340 knots**, carry around **5\u201310 personnel**, and may mount one or more **12.7 mm machine guns**, searchlights, radar, or electro-optical sensors.\n- **ZIPPO III** boats may be approximately **15\u201325 meters** long, with speeds around **25\u201345 knots**, crews of roughly **8\u201320 personnel**, and more substantial surveillance, communications, and weapons equipment.\n\nThose figures are **typical ranges rather than binding NATO specifications**. Actual dimensions, speed, crew, sensors, and armament depend on the national boat assigned to the designation.\n\nIn short, **ZIPPO I, II, and III are NATO-style categories for progressively larger and more capable harbor-defense patrol craft**, used primarily to secure ports, naval bases, anchorages, and coastal approaches.",
+    "latency_ms": 5005.6,
+    "input_tokens": 92,
+    "output_tokens": 577
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are ZIPPOs in the context of naval warfare, and what are the NATO standard ones?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "In naval warfare, **ZIPPOs** are **small, rapidly deployable harbor-defense boats**\u2014usually fast, shallow-draft craft used to patrol, screen, and protect naval bases, anchorages, and narrow coastal approaches.\n\nThe term is generally associated with **armed harbor patrol boats** that may conduct:\n\n- **Anti-sabotage and anti-infiltration patrols**\n- **Inspection and interception of small craft**\n- **Anti-swimmer and anti-diver security**\n- **Coastal surveillance**\n- **Escort and liaison duties**\n- **Protection of ships at anchor and port facilities**\n\nA ZIPPO is not normally a major combatant such as a frigate or patrol vessel. It is closer to a **harbor-security or force-protection boat**, often operated by a navy, naval police, or military port authority. Exact usage can vary by country and source; \u201cZIPPO\u201d is not a universally standardized NATO ship classification in the way that terms such as **FPB**\u2014fast patrol boat\u2014or **RHIB** are.\n\n## NATO standard ZIPPOs\n\nThe NATO-standard ZIPPOs are commonly identified as:\n\n| NATO designation | General description | Typical role |\n|---|---|---|\n| **ZIPPO I** | Small harbor-defense patrol boat | Inner-harbor patrol, security, inspection |\n| **ZIPPO II** | Larger or more capable harbor-defense boat | Outer-harbor patrol, interception, escort |\n| **ZIPPO III** | The largest/highest-end ZIPPO variant | Extended coastal patrol and heavier weapons/sensors |\n\nThe numbering is broadly a **capability progression**, rather than a single universal boat design. In typical descriptions:\n\n- **ZIPPO I** boats are approximately **6\u201310 meters** long, with speeds around **20\u201335 knots**, crews of roughly **3\u20136 personnel**, and light machine-gun or small-arms armament.\n- **ZIPPO II** boats are approximately **10\u201315 meters** long, can reach roughly **25\u201340 knots**, carry around **5\u201310 personnel**, and may mount one or more **12.7 mm machine guns**, searchlights, radar, or electro-optical sensors.\n- **ZIPPO III** boats may be approximately **15\u201325 meters** long, with speeds around **25\u201345 knots**, crews of roughly **8\u201320 personnel**, and more substantial surveillance, communications, and weapons equipment.\n\nThose figures are **typical ranges rather than binding NATO specifications**. Actual dimensions, speed, crew, sensors, and armament depend on the national boat assigned to the designation.\n\nIn short, **ZIPPO I, II, and III are NATO-style categories for progressively larger and more capable harbor-defense patrol craft**, used primarily to secure ports, naval bases, anchorages, and coastal approaches.",
+    "latency_ms": 5005.6,
+    "token_count": 669,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "745c2c4ab3ff",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230124.5460086,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 9 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 5005.6,
+        "token_count": 669,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.139; flagged=True"
+}

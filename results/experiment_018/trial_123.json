@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:00:25.464386+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is the best kind of suspension for an amputee?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Prosthetists",
+    "question_type": "Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "There is no single \u201cbest\u201d suspension for every amputee. The best choice depends on **amputation level, residual-limb shape and skin condition, activity level, sweating, muscle control, and whether the prosthesis is for daily walking, sports, or work**. A certified prosthetist should assess the limb in person\u2014especially if there is pain, skin breakdown, diabetes, poor circulation, or a recent amputation.\n\n## Common suspension options\n\n| Suspension type | Often best suited for | Main advantages | Common drawbacks |\n|---|---|---|---|\n| **Elevated vacuum suspension** | Active transtibial or transfemoral users; fluctuating limb volume; need for excellent control | Very secure attachment, reduced pistoning, may help manage daily volume changes | More expensive and mechanically complex; requires a good seal, maintenance, and sufficient skin tolerance |\n| **Suction suspension** | Transtibial or transfemoral users with a reasonably stable limb and good soft-tissue coverage | Secure, relatively low profile, no external straps | Can be difficult with sweating, volume fluctuation, or an irregular limb; donning may be harder |\n| **Seal-in liner / anatomical suspension** | Many below-knee amputees, especially those wanting fewer external components | Comfortable, clean appearance, good suspension without a sleeve in some designs | Requires an appropriate limb shape and intact skin; seal can fail with sweat or volume changes |\n| **Pin-locking liner** | New users, people with limited hand strength or dexterity, and many below-knee users | Simple to put on and remove; reliable when correctly fitted | Can cause distal traction or pressure at the end of the limb; may increase pistoning for some users |\n| **Lanyard or strap suspension** | People who need easier donning, have a short limb, or cannot tolerate distal pin pressure | Simple and adjustable; useful when suction is impractical | May allow more movement inside the socket and can create pressure or skin shear |\n| **Cuff strap or supracondylar suspension** | Some transtibial users with adequate knee anatomy and moderate activity | Simple, durable, and relatively inexpensive | Can irritate the thigh or limit comfort; generally less secure than vacuum or well-fitting suction |\n| **Pelvic-band or hip-joint suspension** | Certain transfemoral users, very short residual limbs, or difficult anatomy | Provides extra mechanical security when other systems are inadequate | Bulky, can restrict movement, and may be less comfortable or cosmetically appealing |\n| **Osseointegration** | Carefully selected adults with persistent socket intolerance or major socket-related limitations | Direct skeletal attachment eliminates the socket and may improve comfort and control | Major surgery, infection and fracture risks, long rehabilitation, and not appropriate for everyone |\n\n## General practical recommendations\n\n### For a below-knee amputation\n- **Most active users:** a well-fitted **seal-in or elevated-vacuum system** is often preferred when the skin can tolerate it.\n- **New amputees or people who value easy donning:** a **pin-lock liner** is often a practical starting point.\n- **Short residual limb, weak hand function, or difficult anatomy:** a **lanyard, strap, or suction system** may work better than a distal pin.\n- **Very sensitive distal tissue:** avoid assuming pin-lock is best; a vacuum, suction, or lanyard design may distribute forces more comfortably.\n\n### For an above-knee amputation\n- A **seal-in or suction socket**, often with **elevated vacuum**, can provide excellent control and reduce pistoning.\n- People with substantial volume fluctuation may benefit from **vacuum-assisted suspension**, adjustable sockets, or carefully managed liner and sock systems.\n- Those with a short residual limb or difficult soft-tissue control may need a **mechanical auxiliary suspension**, such as a pelvic belt or hip-joint system.\n\n## Elevated vacuum versus pin-lock\n\nA common comparison is:\n\n- **Elevated vacuum:** usually better for minimizing pistoning and maintaining contact with the socket during walking; often preferred by active users, but may require approximately **10\u201330 minutes** of daily maintenance and a good seal.\n- **Pin-lock:** usually easier to learn and remove; may be suitable for many users, but some experience distal pulling, discomfort, or increased movement inside the socket.\n\nNeither is automatically superior. A person who walks approximately **3\u20138 hours per day**, uses uneven terrain, or notices repeated pistoning may gain more from vacuum or suction. A person who needs fast, simple donning and has stable limb volume may do very well with pin-lock.\n\n## Fit matters more than the label\n\nEven the best suspension type will fail if the socket or liner is poorly fitted. Warning signs include:\n\n- Pain that persists for more than approximately **20\u201330 minutes** after removing the prosthesis\n- Redness lasting longer than approximately **20\u201330 minutes**\n- Blisters, open areas, drainage, numbness, or burning\n- A feeling",
+    "latency_ms": 8325.4,
+    "input_tokens": 84,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the best kind of suspension for an amputee?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "There is no single \u201cbest\u201d suspension for every amputee. The best choice depends on **amputation level, residual-limb shape and skin condition, activity level, sweating, muscle control, and whether the prosthesis is for daily walking, sports, or work**. A certified prosthetist should assess the limb in person\u2014especially if there is pain, skin breakdown, diabetes, poor circulation, or a recent amputation.\n\n## Common suspension options\n\n| Suspension type | Often best suited for | Main advantages | Common drawbacks |\n|---|---|---|---|\n| **Elevated vacuum suspension** | Active transtibial or transfemoral users; fluctuating limb volume; need for excellent control | Very secure attachment, reduced pistoning, may help manage daily volume changes | More expensive and mechanically complex; requires a good seal, maintenance, and sufficient skin tolerance |\n| **Suction suspension** | Transtibial or transfemoral users with a reasonably stable limb and good soft-tissue coverage | Secure, relatively low profile, no external straps | Can be difficult with sweating, volume fluctuation, or an irregular limb; donning may be harder |\n| **Seal-in liner / anatomical suspension** | Many below-knee amputees, especially those wanting fewer external components | Comfortable, clean appearance, good suspension without a sleeve in some designs | Requires an appropriate limb shape and intact skin; seal can fail with sweat or volume changes |\n| **Pin-locking liner** | New users, people with limited hand strength or dexterity, and many below-knee users | Simple to put on and remove; reliable when correctly fitted | Can cause distal traction or pressure at the end of the limb; may increase pistoning for some users |\n| **Lanyard or strap suspension** | People who need easier donning, have a short limb, or cannot tolerate distal pin pressure | Simple and adjustable; useful when suction is impractical | May allow more movement inside the socket and can create pressure or skin shear |\n| **Cuff strap or supracondylar suspension** | Some transtibial users with adequate knee anatomy and moderate activity | Simple, durable, and relatively inexpensive | Can irritate the thigh or limit comfort; generally less secure than vacuum or well-fitting suction |\n| **Pelvic-band or hip-joint suspension** | Certain transfemoral users, very short residual limbs, or difficult anatomy | Provides extra mechanical security when other systems are inadequate | Bulky, can restrict movement, and may be less comfortable or cosmetically appealing |\n| **Osseointegration** | Carefully selected adults with persistent socket intolerance or major socket-related limitations | Direct skeletal attachment eliminates the socket and may improve comfort and control | Major surgery, infection and fracture risks, long rehabilitation, and not appropriate for everyone |\n\n## General practical recommendations\n\n### For a below-knee amputation\n- **Most active users:** a well-fitted **seal-in or elevated-vacuum system** is often preferred when the skin can tolerate it.\n- **New amputees or people who value easy donning:** a **pin-lock liner** is often a practical starting point.\n- **Short residual limb, weak hand function, or difficult anatomy:** a **lanyard, strap, or suction system** may work better than a distal pin.\n- **Very sensitive distal tissue:** avoid assuming pin-lock is best; a vacuum, suction, or lanyard design may distribute forces more comfortably.\n\n### For an above-knee amputation\n- A **seal-in or suction socket**, often with **elevated vacuum**, can provide excellent control and reduce pistoning.\n- People with substantial volume fluctuation may benefit from **vacuum-assisted suspension**, adjustable sockets, or carefully managed liner and sock systems.\n- Those with a short residual limb or difficult soft-tissue control may need a **mechanical auxiliary suspension**, such as a pelvic belt or hip-joint system.\n\n## Elevated vacuum versus pin-lock\n\nA common comparison is:\n\n- **Elevated vacuum:** usually better for minimizing pistoning and maintaining contact with the socket during walking; often preferred by active users, but may require approximately **10\u201330 minutes** of daily maintenance and a good seal.\n- **Pin-lock:** usually easier to learn and remove; may be suitable for many users, but some experience distal pulling, discomfort, or increased movement inside the socket.\n\nNeither is automatically superior. A person who walks approximately **3\u20138 hours per day**, uses uneven terrain, or notices repeated pistoning may gain more from vacuum or suction. A person who needs fast, simple donning and has stable limb volume may do very well with pin-lock.\n\n## Fit matters more than the label\n\nEven the best suspension type will fail if the socket or liner is poorly fitted. Warning signs include:\n\n- Pain that persists for more than approximately **20\u201330 minutes** after removing the prosthesis\n- Redness lasting longer than approximately **20\u201330 minutes**\n- Blisters, open areas, drainage, numbness, or burning\n- A feeling",
+    "latency_ms": 8325.4,
+    "token_count": 1108,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "06eb30c8786d",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230025.463597,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 3 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 8325.4,
+        "token_count": 1108,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.123; flagged=True"
+}

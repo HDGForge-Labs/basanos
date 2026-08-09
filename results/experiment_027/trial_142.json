@@ -1,0 +1,75 @@
+{
+  "timestamp_utc": "2026-08-09T17:18:11.376230+00:00",
+  "detector": "context_degradation",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "what is the central idea of the poem the rime of ancient mariner",
+    "gold_index": 9
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "The central idea of *The Rime of the Ancient Mariner* is that violating nature has serious moral and psychological consequences. After killing an albatross, the Mariner suffers a curse and profound guilt, but begins to find redemption when he recognizes and blesses the beauty of living creatures. The poem ultimately emphasizes respect for nature, spiritual repentance, and love for all living things.",
+    "latency_ms": 1300.4,
+    "input_tokens": 1565,
+    "output_tokens": 80
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "what is the central idea of the poem the rime of ancient mariner",
+      "gold_index": 9,
+      "n_docs": 10
+    },
+    "response": "The central idea of *The Rime of the Ancient Mariner* is that violating nature has serious moral and psychological consequences. After killing an albatross, the Mariner suffers a curse and profound guilt, but begins to find redemption when he recognizes and blesses the beauty of living creatures. The poem ultimately emphasizes respect for nature, spiritual repentance, and love for all living things.",
+    "latency_ms": 1300.4,
+    "token_count": 1645,
+    "context_window_used": 0.92
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "66e3f98989b3",
+      "tool_name": "context_qa",
+      "status": "warn",
+      "timestamp": 1786295891.3754702,
+      "failures": [
+        {
+          "failure_mode": "context_degradation",
+          "confidence": 0.4,
+          "evidence": [
+            "Context window at 92.0% capacity"
+          ],
+          "remediation": [
+            "Implement context summarization before next tool call",
+            "Inject critical context markers at regular intervals",
+            "Use sliding window context management",
+            "Consider splitting task into smaller context-bounded subtasks"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 1300.4,
+        "token_count": 1645,
+        "context_window_used": 0.92,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Implement context summarization before next tool call",
+        "Inject critical context markers at regular intervals",
+        "Use sliding window context management",
+        "Consider splitting task into smaller context-bounded subtasks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.142; flagged=True; gold_index=9"
+}

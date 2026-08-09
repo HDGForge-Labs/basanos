@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:56:38.394338+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "How can we prevent the next pandemic?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Family medicine ",
+    "question_type": "Open-ended question that is potentially ambiguous| Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Preventing the Next Pandemic: A Multi-Layered Approach\n\nPreventing future pandemics requires action across several interconnected domains, from wildlife surveillance to global governance reform.\n\n## 1. Strengthen Disease Surveillance Systems\n\n**Early detection is critical** \u2014 most successful containment happens within the first 2-4 weeks of an outbreak.\n\n- Expand genomic sequencing capacity globally; currently only about 10-15% of countries have robust sequencing infrastructure\n- Build wastewater surveillance networks (proven effective for COVID-19, polio, and now used for roughly 40+ pathogens in some systems)\n- Establish real-time data-sharing platforms, aiming for outbreak reporting within 24-48 hours of detection rather than the weeks-to-months delays seen historically\n- Increase investment in the WHO's Hub for Pandemic and Epidemic Intelligence, which currently operates on a budget of roughly $50-100 million annually\u2014a fraction of what's needed\n\n## 2. Address Spillover at the Source\n\n**Approximately 70-75% of emerging infectious diseases are zoonotic**, jumping from animals to humans.\n\n- Reduce wildlife trade and wet market risks, which contributed to an estimated 2-3 major spillover events per decade historically, now increasing in frequency\n- Curb deforestation\u2014each 10% loss of forest cover is associated with roughly a 3-6% increase in disease outbreak risk in some models\n- Improve livestock biosecurity, since factory farming conditions can accelerate viral mutation and transmission\n- Fund \"One Health\" programs integrating human, animal, and environmental health monitoring (current global funding is estimated at only $1-2 billion annually against an estimated need of $10+ billion)\n\n## 3. Build Rapid Vaccine and Therapeutic Development\n\n- Support platform technologies like mRNA, which reduced vaccine development timelines from a typical 10-15 years to approximately 11 months during COVID-19\n- Invest in \"prototype pathogen\" research covering roughly 25 viral families to enable faster response to novel threats\n- Maintain manufacturing surge capacity\u2014aim for ability to produce **at least 2 billion vaccine doses within 6 months** of pandemic declaration (a benchmark proposed by CEPI, the Coalition for Epidemic Preparedness Innovations)\n- Pre-position funding: CEPI's 100 Days Mission estimates needing roughly $3.5 billion in sustained investment\n\n## 4. Strengthen Healthcare System Resilience\n\n- Maintain strategic stockpiles covering at least 3-6 months of PPE, ventilators, and essential medications\n- Increase global health workforce; the WHO estimates a shortfall of approximately 10 million health workers by 2030\n- Build surge capacity for hospital beds and ICU units\u2014many countries operate at 85-95% capacity even in non-crisis periods, leaving little margin\n- Improve supply chain diversification to avoid single-source dependencies (during COVID-19, over 60% of global PPE manufactur",
+    "latency_ms": 13498.6,
+    "input_tokens": 123,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How can we prevent the next pandemic?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Preventing the Next Pandemic: A Multi-Layered Approach\n\nPreventing future pandemics requires action across several interconnected domains, from wildlife surveillance to global governance reform.\n\n## 1. Strengthen Disease Surveillance Systems\n\n**Early detection is critical** \u2014 most successful containment happens within the first 2-4 weeks of an outbreak.\n\n- Expand genomic sequencing capacity globally; currently only about 10-15% of countries have robust sequencing infrastructure\n- Build wastewater surveillance networks (proven effective for COVID-19, polio, and now used for roughly 40+ pathogens in some systems)\n- Establish real-time data-sharing platforms, aiming for outbreak reporting within 24-48 hours of detection rather than the weeks-to-months delays seen historically\n- Increase investment in the WHO's Hub for Pandemic and Epidemic Intelligence, which currently operates on a budget of roughly $50-100 million annually\u2014a fraction of what's needed\n\n## 2. Address Spillover at the Source\n\n**Approximately 70-75% of emerging infectious diseases are zoonotic**, jumping from animals to humans.\n\n- Reduce wildlife trade and wet market risks, which contributed to an estimated 2-3 major spillover events per decade historically, now increasing in frequency\n- Curb deforestation\u2014each 10% loss of forest cover is associated with roughly a 3-6% increase in disease outbreak risk in some models\n- Improve livestock biosecurity, since factory farming conditions can accelerate viral mutation and transmission\n- Fund \"One Health\" programs integrating human, animal, and environmental health monitoring (current global funding is estimated at only $1-2 billion annually against an estimated need of $10+ billion)\n\n## 3. Build Rapid Vaccine and Therapeutic Development\n\n- Support platform technologies like mRNA, which reduced vaccine development timelines from a typical 10-15 years to approximately 11 months during COVID-19\n- Invest in \"prototype pathogen\" research covering roughly 25 viral families to enable faster response to novel threats\n- Maintain manufacturing surge capacity\u2014aim for ability to produce **at least 2 billion vaccine doses within 6 months** of pandemic declaration (a benchmark proposed by CEPI, the Coalition for Epidemic Preparedness Innovations)\n- Pre-position funding: CEPI's 100 Days Mission estimates needing roughly $3.5 billion in sustained investment\n\n## 4. Strengthen Healthcare System Resilience\n\n- Maintain strategic stockpiles covering at least 3-6 months of PPE, ventilators, and essential medications\n- Increase global health workforce; the WHO estimates a shortfall of approximately 10 million health workers by 2030\n- Build surge capacity for hospital beds and ICU units\u2014many countries operate at 85-95% capacity even in non-crisis periods, leaving little margin\n- Improve supply chain diversification to avoid single-source dependencies (during COVID-19, over 60% of global PPE manufactur",
+    "latency_ms": 13498.6,
+    "token_count": 1147,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "cf734c7608a2",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240598.3935566,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 22 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4525,
+          "evidence": [
+            "Latency 13499ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13498.6,
+        "token_count": 1147,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.150; flagged=True"
+}

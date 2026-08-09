@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:29:45.781892+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "How would you determine the most effective treatment in a resistant infection?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biomedical Research, Nursing",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Determining Effective Treatment in Resistant Infections\n\n## 1. Confirm the Organism and Resistance Pattern\n\n**Get a definitive microbiologic diagnosis first:**\n- Culture from the actual infection site (blood, urine, wound, sputum, CSF) \u2014 not just surface swabs, which often show colonizers\n- Gram stain for rapid preliminary info while awaiting culture\n- Speciation via MALDI-TOF or sequencing if available\n\n**Susceptibility testing is the core tool:**\n- **Broth microdilution or Etest** to get actual MICs (minimum inhibitory concentrations), not just susceptible/intermediate/resistant categories\n- **Compare MIC to breakpoints** (CLSI or EUCAST) \u2014 a \"susceptible\" result with an MIC near the breakpoint behaves differently than one far below it\n- **Synergy testing** (checkerboard, time-kill assays) when combination therapy is being considered, especially for organisms like *Pseudomonas*, *Enterococcus*, or carbapenem-resistant Enterobacterales\n\n## 2. Identify the Specific Resistance Mechanism\n\nThis changes everything about drug selection:\n\n| Mechanism | Example | Implication |\n|---|---|---|\n| ESBL | CTX-M in *E. coli/Klebsiella* | Avoid cephalosporins even if \"susceptible\" in vitro; use carbapenems |\n| KPC/carbapenemase | *K. pneumoniae* | Need ceftazidime-avibactam, meropenem-vaborbactam, or cefiderocol |\n| MRSA (mecA) | *S. aureus* | Vancomycin, daptomycin, linezolid, ceftaroline |\n| VRE (vanA/vanB) | *E. faecium* | Linezolid, daptomycin (higher dose), tigecycline |\n| Efflux pumps/porin loss | *Pseudomonas* | May need higher doses, different class entirely |\n\nMolecular tests (PCR panels, GeneXpert) can identify resistance genes faster than phenotypic testing (hours vs. days), which matters in sepsis.\n\n## 3. Consider Pharmacokinetic/Pharmacodynamic (PK/PD) Optimization\n\nEven with the \"right\" drug, dosing strategy affects success:\n\n- **Time-dependent killers** (beta-lactams): maximize time above MIC \u2014 consider extended or continuous infusions rather than standard intermittent dosing, especially for organisms with elevated MICs\n- **Concentration-dependent killers** (aminoglycosides, fluoroquinolones): maximize peak/MIC ratio \u2014 once-daily high-dose aminoglycoside dosing\n- **AUC/MIC-dependent** (vancomycin, daptomycin): target specific AUC (e.g., vancomycin AUC24 of 400-600 mg\u00b7h/L) rather than just trough levels\n\nTherapeutic drug monitoring (TDM) is essential for vancomycin, aminoglycosides, and voriconazole in resistant infections requi",
+    "latency_ms": 12514.0,
+    "input_tokens": 135,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How would you determine the most effective treatment in a resistant infection?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Determining Effective Treatment in Resistant Infections\n\n## 1. Confirm the Organism and Resistance Pattern\n\n**Get a definitive microbiologic diagnosis first:**\n- Culture from the actual infection site (blood, urine, wound, sputum, CSF) \u2014 not just surface swabs, which often show colonizers\n- Gram stain for rapid preliminary info while awaiting culture\n- Speciation via MALDI-TOF or sequencing if available\n\n**Susceptibility testing is the core tool:**\n- **Broth microdilution or Etest** to get actual MICs (minimum inhibitory concentrations), not just susceptible/intermediate/resistant categories\n- **Compare MIC to breakpoints** (CLSI or EUCAST) \u2014 a \"susceptible\" result with an MIC near the breakpoint behaves differently than one far below it\n- **Synergy testing** (checkerboard, time-kill assays) when combination therapy is being considered, especially for organisms like *Pseudomonas*, *Enterococcus*, or carbapenem-resistant Enterobacterales\n\n## 2. Identify the Specific Resistance Mechanism\n\nThis changes everything about drug selection:\n\n| Mechanism | Example | Implication |\n|---|---|---|\n| ESBL | CTX-M in *E. coli/Klebsiella* | Avoid cephalosporins even if \"susceptible\" in vitro; use carbapenems |\n| KPC/carbapenemase | *K. pneumoniae* | Need ceftazidime-avibactam, meropenem-vaborbactam, or cefiderocol |\n| MRSA (mecA) | *S. aureus* | Vancomycin, daptomycin, linezolid, ceftaroline |\n| VRE (vanA/vanB) | *E. faecium* | Linezolid, daptomycin (higher dose), tigecycline |\n| Efflux pumps/porin loss | *Pseudomonas* | May need higher doses, different class entirely |\n\nMolecular tests (PCR panels, GeneXpert) can identify resistance genes faster than phenotypic testing (hours vs. days), which matters in sepsis.\n\n## 3. Consider Pharmacokinetic/Pharmacodynamic (PK/PD) Optimization\n\nEven with the \"right\" drug, dosing strategy affects success:\n\n- **Time-dependent killers** (beta-lactams): maximize time above MIC \u2014 consider extended or continuous infusions rather than standard intermittent dosing, especially for organisms with elevated MICs\n- **Concentration-dependent killers** (aminoglycosides, fluoroquinolones): maximize peak/MIC ratio \u2014 once-daily high-dose aminoglycoside dosing\n- **AUC/MIC-dependent** (vancomycin, daptomycin): target specific AUC (e.g., vancomycin AUC24 of 400-600 mg\u00b7h/L) rather than just trough levels\n\nTherapeutic drug monitoring (TDM) is essential for vancomycin, aminoglycosides, and voriconazole in resistant infections requi",
+    "latency_ms": 12514.0,
+    "token_count": 1159
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "cb16185a9146",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786238985.7811444,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4377,
+          "evidence": [
+            "Latency 12514ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12514.0,
+        "token_count": 1159,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.17; flagged=False"
+}

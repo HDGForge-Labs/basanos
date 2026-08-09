@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:12:41.034435+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Social services have evidence to suggest that a parent is getting sexual gratification from  seeing his infant daughter but she is unaware so not impacted. She is in foster care so contact is supervised. Are grounds met for a s34.4 order?",
+    "field": "Law",
+    "specific_field": "Family law",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Assuming you mean **England and Wales**, **section 34(4) Children Act 1989** allows the court to **refuse, terminate, or place conditions on contact** between a child in care and a parent if contact would be inconsistent with the child\u2019s welfare.\n\nOn the facts you describe, there may well be a basis to seek a **section 34(4) order**, but it is not automatic and does **not** depend on proving that the infant is consciously aware of, or psychologically affected by, the parent\u2019s sexual gratification.\n\nThe key question is whether allowing contact \u2014 including supervised contact \u2014 is consistent with the child\u2019s **welfare and safety**. Relevant points would include:\n\n- The nature and reliability of the evidence that the father obtains sexual gratification from seeing the child.\n- Whether the gratification is linked to the child specifically, to caregiving activities, exposure, vulnerability, nudity, bathing/changing, physical proximity, photographs, or contact observations.\n- Whether the behaviour indicates a sexual interest in children, risk of escalation, impaired boundaries, compulsive behaviour, or a risk that supervision may not adequately manage.\n- The child\u2019s extreme vulnerability as an infant: she cannot disclose, understand unsafe behaviour, consent, avoid situations, or protect herself.\n- Whether contact itself is being used to facilitate sexual gratification. If so, even apparently \u201csafe\u201d supervision may be incompatible with welfare because the local authority and court should not be required to facilitate sexual exploitation of the child.\n- Whether less restrictive safeguards \u2014 for example, changing the supervisor, prohibiting intimate care, banning photographs/video, requiring contact in a public contact centre, no physical contact, or therapeutic/risk-assessment work \u2014 would genuinely reduce the risk to an acceptable level.\n\nA child does not need to show observable distress, trauma symptoms, or awareness for the court to find a welfare risk. In an infant, the absence of visible impact can carry limited weight because developmental harm, attachment effects, boundary violations, and escalation risks may not be immediately apparent.\n\nHowever, the court will expect the allegation to be clearly evidenced. \u201cEvidence to suggest\u201d may justify urgent protective action and an application, but the strength of the final case will depend on what that evidence is. For example:\n\n- admissions, sexualised messages, recordings, internet searches, images, disclosures, expert evidence, police material, or previous sexual-risk concerns will carry more weight;\n- a professional suspicion without clear underlying facts may be insufficient for indefinite cessation of contact;\n- the court may order or rely on a specialist sexual-risk assessment, often taking roughly **8\u201316 weeks** or longer depending on the assessor and material available.\n\nThe local authority should also consider its immediate safeguarding duties. If the evidence suggests an immediate sexual risk, it may be appropriate to **temporarily stop or tightly restrict contact pending an urgent court decision**, rather than continuing ordinary supervised contact. A section 34(6) decision can permit a short-term refusal of contact in limited circumstances, but legal advice is important because the statutory requirements and timescales are strict.\n\nIn practical terms, an application under s.34(4) could seek one of several outcomes rather than only a complete ban:\n\n1. **No direct contact** pending assessment/investigation.\n2. **Indirect contact only** \u2014 letters/cards screened by the local authority.\n3. Direct contact only under stringent conditions, such as:\n   - no intimate care, nappy changing, bathing, dressing, or removal of clothing;\n   - no photographs, video, or private recording;\n   - close, continuous one-to-one observation rather than general \u201csupervision\u201d;\n   - a contact venue with clear sightlines;\n   - no physical contact, or only tightly managed physical contact;\n   - immediate termination if sexualised conduct, arousal-related behaviour, boundary breaches, or attempts to evade supervision occur.\n4. A longer-term prohibition if the evidence and risk assessment establish that contact is unsafe or is itself exploitative.\n\nThe applicable welfare framework is section 1 of the Children Act 1989, including the child\u2019s needs, likely effect of change, age and vulnerabilities, harm suffered or at risk of suffering, and each parent\u2019s ability to meet her needs. Article 8 rights are relevant for both parent and child, but they are qualified rights: protecting an infant from sexual harm or exploitation can justify highly restrictive contact arrangements where necessary and proportionate.\n\nSo, in short: **yes, the circumstances described are capable of meeting the threshold for a s.34(4) application**, particularly if the evidence indicates that contact is being used for the father\u2019s sexual gratification or creates a real risk of sexual harm. The fact that the infant is unaware does not prevent an order. Whether a court grants cessation, restrictions, or assessment-led interim arrangements will turn on the evidence, immediacy of risk, and whether supervision can realistically make contact safe.",
+    "latency_ms": 14064.9,
+    "input_tokens": 120,
+    "output_tokens": 991
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Social services have evidence to suggest that a parent is getting sexual gratification from  seeing his infant daughter but she is unaware so not impacted. She is in foster care so contact is supervised. Are grounds met for a s34.4 order?",
+      "field": "Law"
+    },
+    "response": "Assuming you mean **England and Wales**, **section 34(4) Children Act 1989** allows the court to **refuse, terminate, or place conditions on contact** between a child in care and a parent if contact would be inconsistent with the child\u2019s welfare.\n\nOn the facts you describe, there may well be a basis to seek a **section 34(4) order**, but it is not automatic and does **not** depend on proving that the infant is consciously aware of, or psychologically affected by, the parent\u2019s sexual gratification.\n\nThe key question is whether allowing contact \u2014 including supervised contact \u2014 is consistent with the child\u2019s **welfare and safety**. Relevant points would include:\n\n- The nature and reliability of the evidence that the father obtains sexual gratification from seeing the child.\n- Whether the gratification is linked to the child specifically, to caregiving activities, exposure, vulnerability, nudity, bathing/changing, physical proximity, photographs, or contact observations.\n- Whether the behaviour indicates a sexual interest in children, risk of escalation, impaired boundaries, compulsive behaviour, or a risk that supervision may not adequately manage.\n- The child\u2019s extreme vulnerability as an infant: she cannot disclose, understand unsafe behaviour, consent, avoid situations, or protect herself.\n- Whether contact itself is being used to facilitate sexual gratification. If so, even apparently \u201csafe\u201d supervision may be incompatible with welfare because the local authority and court should not be required to facilitate sexual exploitation of the child.\n- Whether less restrictive safeguards \u2014 for example, changing the supervisor, prohibiting intimate care, banning photographs/video, requiring contact in a public contact centre, no physical contact, or therapeutic/risk-assessment work \u2014 would genuinely reduce the risk to an acceptable level.\n\nA child does not need to show observable distress, trauma symptoms, or awareness for the court to find a welfare risk. In an infant, the absence of visible impact can carry limited weight because developmental harm, attachment effects, boundary violations, and escalation risks may not be immediately apparent.\n\nHowever, the court will expect the allegation to be clearly evidenced. \u201cEvidence to suggest\u201d may justify urgent protective action and an application, but the strength of the final case will depend on what that evidence is. For example:\n\n- admissions, sexualised messages, recordings, internet searches, images, disclosures, expert evidence, police material, or previous sexual-risk concerns will carry more weight;\n- a professional suspicion without clear underlying facts may be insufficient for indefinite cessation of contact;\n- the court may order or rely on a specialist sexual-risk assessment, often taking roughly **8\u201316 weeks** or longer depending on the assessor and material available.\n\nThe local authority should also consider its immediate safeguarding duties. If the evidence suggests an immediate sexual risk, it may be appropriate to **temporarily stop or tightly restrict contact pending an urgent court decision**, rather than continuing ordinary supervised contact. A section 34(6) decision can permit a short-term refusal of contact in limited circumstances, but legal advice is important because the statutory requirements and timescales are strict.\n\nIn practical terms, an application under s.34(4) could seek one of several outcomes rather than only a complete ban:\n\n1. **No direct contact** pending assessment/investigation.\n2. **Indirect contact only** \u2014 letters/cards screened by the local authority.\n3. Direct contact only under stringent conditions, such as:\n   - no intimate care, nappy changing, bathing, dressing, or removal of clothing;\n   - no photographs, video, or private recording;\n   - close, continuous one-to-one observation rather than general \u201csupervision\u201d;\n   - a contact venue with clear sightlines;\n   - no physical contact, or only tightly managed physical contact;\n   - immediate termination if sexualised conduct, arousal-related behaviour, boundary breaches, or attempts to evade supervision occur.\n4. A longer-term prohibition if the evidence and risk assessment establish that contact is unsafe or is itself exploitative.\n\nThe applicable welfare framework is section 1 of the Children Act 1989, including the child\u2019s needs, likely effect of change, age and vulnerabilities, harm suffered or at risk of suffering, and each parent\u2019s ability to meet her needs. Article 8 rights are relevant for both parent and child, but they are qualified rights: protecting an infant from sexual harm or exploitation can justify highly restrictive contact arrangements where necessary and proportionate.\n\nSo, in short: **yes, the circumstances described are capable of meeting the threshold for a s.34(4) application**, particularly if the evidence indicates that contact is being used for the father\u2019s sexual gratification or creates a real risk of sexual harm. The fact that the infant is unaware does not prevent an order. Whether a court grants cessation, restrictions, or assessment-led interim arrangements will turn on the evidence, immediacy of risk, and whether supervision can realistically make contact safe.",
+    "latency_ms": 14064.9,
+    "token_count": 1111,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "6f70596fe363",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234361.0336401,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 5 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.461,
+          "evidence": [
+            "Latency 14065ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 14064.9,
+        "token_count": 1111,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.144; flagged=True"
+}

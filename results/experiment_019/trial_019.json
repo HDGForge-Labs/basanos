@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-08T23:54:45.563138+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Imagine we have a patient with a diagnosis of severe depression. What would be the best combination of treatments that could improve his mental health status?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pharmaceutical industry",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "For severe depression, the most effective approach is usually a **combined, measurement-based treatment plan** rather than any single intervention. The best combination depends on suicidality, psychosis, bipolar-spectrum symptoms, medical issues, prior treatment response, and patient preference\u2014but a typical evidence-based plan includes:\n\n1. **Prompt psychiatric assessment and safety planning**\n   - Assess suicidal thoughts, intent, access to means, psychosis, substance use, mania/hypomania, and ability to care for oneself.\n   - If there is imminent suicide risk, psychotic depression, severe self-neglect, catatonia, or inability to remain safe: **urgent emergency evaluation or inpatient treatment** is appropriate.\n   - Create a written safety plan, involve trusted supports when appropriate, and reduce access to lethal means.\n\n2. **Antidepressant medication**\n   - A first-line SSRI or SNRI is common, such as:\n     - **Sertraline, escitalopram, fluoxetine**\n     - **Venlafaxine or duloxetine**\n   - Dose should be optimized and response reviewed after roughly **4\u20136 weeks** at a therapeutic dose, sooner for safety/tolerability.\n   - If sleep loss, poor appetite, or weight loss are prominent, **mirtazapine** can be useful.\n   - If low energy and concentration predominate and anxiety is not severe, **bupropion** may be considered.\n   - Medication choice should be individualized by a prescriber, especially if there is a history of bipolar disorder, seizures, pregnancy, heart disease, or interacting medications.\n\n3. **Structured psychotherapy**\n   Combined medication plus psychotherapy is generally more effective than either alone in severe depression.\n   - **Cognitive behavioral therapy (CBT):** targets hopelessness, self-critical thinking, avoidance, and behavioral withdrawal.\n   - **Behavioral activation:** especially useful for severe inactivity; builds routine, activity, social contact, and reinforcement step by step.\n   - **Interpersonal therapy (IPT):** helpful when depression is linked to grief, role transitions, relationship conflict, or isolation.\n   - For chronic depression, trauma, or longstanding relational patterns, therapies such as **CBASP**, schema-focused work, or trauma-focused treatment may be added when appropriate.\n\n4. **Lifestyle and social interventions\u2014not as substitutes, but as treatment amplifiers**\n   - Regular sleep-wake schedule; address insomnia directly, often with **CBT-I**.\n   - Gradual physical activity, aiming toward about **150 minutes/week of moderate exercise** if medically feasible; even short daily walks can help initially.\n   - Regular meals, hydration, reduced alcohol/cannabis/other substance use, and evaluation of nutritional or medical contributors.\n   - Re-establishing social contact, practical support, work/school accommodations, and treatment of financial, housing, or relationship stressors.\n\n5. **Medical evaluation for contributors**\n   Clinicians commonly screen for conditions that can worsen depression or mimic it, including thyroid disease, anemia, B12/folate deficiency, sleep apnea, chronic pain, medication side effects, and substance use.\n\n6. **Escalation for treatment-resistant or urgently severe depression**\n   If adequate medication and psychotherapy trials do not work\u2014or if rapid improvement is needed\u2014specialist options include:\n   - **Electroconvulsive therapy (ECT):** often the fastest and most effective treatment for severe, psychotic, catatonic, or imminently suicidal depression.\n   - **Ketamine/esketamine:** can reduce depressive symptoms and suicidal thinking rapidly in selected treatment-resistant cases, under medical supervision.\n   - **Repetitive transcranial magnetic stimulation (rTMS):** noninvasive option for depression that has not responded adequately to medication.\n   - Medication augmentation, such as adding **lithium**, **aripiprazole**, **quetiapine**, or another evidence-based agent, under psychiatric management.\n\nA practical \u201cbest combination\u201d for many patients with severe nonpsychotic depression would be: **an antidepressant at an adequate dose + weekly CBT/behavioral activation + sleep and activity interventions + close follow-up every 1\u20132 weeks early in treatment**, with rapid psychiatric escalation to ECT, ketamine/esketamine, or augmentation if the condition is dangerous or not improving.\n\nIf the person has suicidal intent, a plan, psychotic symptoms, or cannot stay safe, this should be treated as an emergency: contact local emergency services, go to an emergency department, or call/text **988** in the U.S. and Canada.",
+    "latency_ms": 12189.3,
+    "input_tokens": 106,
+    "output_tokens": 929
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Imagine we have a patient with a diagnosis of severe depression. What would be the best combination of treatments that could improve his mental health status?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "For severe depression, the most effective approach is usually a **combined, measurement-based treatment plan** rather than any single intervention. The best combination depends on suicidality, psychosis, bipolar-spectrum symptoms, medical issues, prior treatment response, and patient preference\u2014but a typical evidence-based plan includes:\n\n1. **Prompt psychiatric assessment and safety planning**\n   - Assess suicidal thoughts, intent, access to means, psychosis, substance use, mania/hypomania, and ability to care for oneself.\n   - If there is imminent suicide risk, psychotic depression, severe self-neglect, catatonia, or inability to remain safe: **urgent emergency evaluation or inpatient treatment** is appropriate.\n   - Create a written safety plan, involve trusted supports when appropriate, and reduce access to lethal means.\n\n2. **Antidepressant medication**\n   - A first-line SSRI or SNRI is common, such as:\n     - **Sertraline, escitalopram, fluoxetine**\n     - **Venlafaxine or duloxetine**\n   - Dose should be optimized and response reviewed after roughly **4\u20136 weeks** at a therapeutic dose, sooner for safety/tolerability.\n   - If sleep loss, poor appetite, or weight loss are prominent, **mirtazapine** can be useful.\n   - If low energy and concentration predominate and anxiety is not severe, **bupropion** may be considered.\n   - Medication choice should be individualized by a prescriber, especially if there is a history of bipolar disorder, seizures, pregnancy, heart disease, or interacting medications.\n\n3. **Structured psychotherapy**\n   Combined medication plus psychotherapy is generally more effective than either alone in severe depression.\n   - **Cognitive behavioral therapy (CBT):** targets hopelessness, self-critical thinking, avoidance, and behavioral withdrawal.\n   - **Behavioral activation:** especially useful for severe inactivity; builds routine, activity, social contact, and reinforcement step by step.\n   - **Interpersonal therapy (IPT):** helpful when depression is linked to grief, role transitions, relationship conflict, or isolation.\n   - For chronic depression, trauma, or longstanding relational patterns, therapies such as **CBASP**, schema-focused work, or trauma-focused treatment may be added when appropriate.\n\n4. **Lifestyle and social interventions\u2014not as substitutes, but as treatment amplifiers**\n   - Regular sleep-wake schedule; address insomnia directly, often with **CBT-I**.\n   - Gradual physical activity, aiming toward about **150 minutes/week of moderate exercise** if medically feasible; even short daily walks can help initially.\n   - Regular meals, hydration, reduced alcohol/cannabis/other substance use, and evaluation of nutritional or medical contributors.\n   - Re-establishing social contact, practical support, work/school accommodations, and treatment of financial, housing, or relationship stressors.\n\n5. **Medical evaluation for contributors**\n   Clinicians commonly screen for conditions that can worsen depression or mimic it, including thyroid disease, anemia, B12/folate deficiency, sleep apnea, chronic pain, medication side effects, and substance use.\n\n6. **Escalation for treatment-resistant or urgently severe depression**\n   If adequate medication and psychotherapy trials do not work\u2014or if rapid improvement is needed\u2014specialist options include:\n   - **Electroconvulsive therapy (ECT):** often the fastest and most effective treatment for severe, psychotic, catatonic, or imminently suicidal depression.\n   - **Ketamine/esketamine:** can reduce depressive symptoms and suicidal thinking rapidly in selected treatment-resistant cases, under medical supervision.\n   - **Repetitive transcranial magnetic stimulation (rTMS):** noninvasive option for depression that has not responded adequately to medication.\n   - Medication augmentation, such as adding **lithium**, **aripiprazole**, **quetiapine**, or another evidence-based agent, under psychiatric management.\n\nA practical \u201cbest combination\u201d for many patients with severe nonpsychotic depression would be: **an antidepressant at an adequate dose + weekly CBT/behavioral activation + sleep and activity interventions + close follow-up every 1\u20132 weeks early in treatment**, with rapid psychiatric escalation to ECT, ketamine/esketamine, or augmentation if the condition is dangerous or not improving.\n\nIf the person has suicidal intent, a plan, psychotic symptoms, or cannot stay safe, this should be treated as an emergency: contact local emergency services, go to an emergency department, or call/text **988** in the U.S. and Canada.",
+    "latency_ms": 12189.3,
+    "token_count": 1035
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "74ad7b02783a",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786233285.5602903,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4328,
+          "evidence": [
+            "Latency 12189ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12189.3,
+        "token_count": 1035,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.19; flagged=False"
+}

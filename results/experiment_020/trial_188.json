@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T02:04:16.352126+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What are the potential consequences of a borrower breaching a covenant under the facility agreement?",
+    "field": "Law",
+    "specific_field": "Banking law",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Consequences of Breaching a Covenant Under a Facility Agreement\n\nWhen a borrower breaches a covenant under a facility agreement, several consequences can follow, ranging in severity depending on the nature of the breach, its materiality, and the specific terms negotiated in the agreement.\n\n## 1. Event of Default Classification\n\nA covenant breach typically triggers an **Event of Default** under the facility agreement. Most agreements distinguish between:\n\n- **Financial covenant breaches** (e.g., failing to maintain a debt-to-EBITDA ratio of, say, approximately 3.5:1 or an interest cover ratio of roughly 4:1)\n- **Information/reporting covenant breaches** (e.g., late delivery of financial statements, typically required within around 90-120 days of financial year-end)\n- **General/negative covenant breaches** (e.g., breaching restrictions on additional indebtedness, disposals, or change of control)\n\n## 2. Grace Periods and Cure Rights\n\nMany facility agreements provide a **cure period**, which can range from approximately **5 to 30 business days**, depending on the covenant type:\n\n- Payment defaults often have shorter grace periods (roughly 1-5 business days)\n- Financial covenant breaches may allow **equity cure rights**, permitting shareholders to inject cash (sometimes capped at around 2 cures in any 4-consecutive-quarter period, or a maximum of 4-5 cures over the life of the loan)\n- Reporting breaches might allow 10-20 business days for remediation\n\n## 3. Immediate Contractual Consequences\n\nIf the breach is not cured within the applicable grace period, the lender(s) may be entitled to:\n\n### a) Acceleration\n- Demand immediate repayment of all outstanding principal, accrued interest, and fees\n- This could represent 100% of the facility amount becoming due immediately\n\n### b) Cancellation of Commitments\n- Terminate any undrawn commitments (potentially cutting off access to, for example, a $50 million revolving credit facility)\n\n### c) Enforcement of Security\n- If the facility is secured, lenders may enforce security interests over collateral, potentially leading to asset seizure or appointment of a receiver/administrator\n\n### d) Increased Margin/Default Interest\n- Many agreements impose a **default interest rate**, often an additional **1-2%** per annum on top of the existing margin (potentially pushing all-in rates from around 5-6% to 7-8% or higher)\n\n## 4. Cross-Default and Cross-Acceleration Provisions\n\n- A breach under one facility can trigger **cross-default clauses** in other financing arrangements, potentially accelerating multiple debt instruments simultaneously\n- Thresholds for cross-default are often set at a materiality level, e.g., defaults exceeding **$5-10 million** or approximately **1-5%** of total assets\n\n## 5. Waiver and Amendment Negotiations\n\nRather than immediate enforcement, lenders often negotiate:\n\n- **Waivers**: Temporary forbearance, sometimes requiring a **waiver fee** of approximately **",
+    "latency_ms": 12042.0,
+    "input_tokens": 138,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the potential consequences of a borrower breaching a covenant under the facility agreement?",
+      "field": "Law"
+    },
+    "response": "# Consequences of Breaching a Covenant Under a Facility Agreement\n\nWhen a borrower breaches a covenant under a facility agreement, several consequences can follow, ranging in severity depending on the nature of the breach, its materiality, and the specific terms negotiated in the agreement.\n\n## 1. Event of Default Classification\n\nA covenant breach typically triggers an **Event of Default** under the facility agreement. Most agreements distinguish between:\n\n- **Financial covenant breaches** (e.g., failing to maintain a debt-to-EBITDA ratio of, say, approximately 3.5:1 or an interest cover ratio of roughly 4:1)\n- **Information/reporting covenant breaches** (e.g., late delivery of financial statements, typically required within around 90-120 days of financial year-end)\n- **General/negative covenant breaches** (e.g., breaching restrictions on additional indebtedness, disposals, or change of control)\n\n## 2. Grace Periods and Cure Rights\n\nMany facility agreements provide a **cure period**, which can range from approximately **5 to 30 business days**, depending on the covenant type:\n\n- Payment defaults often have shorter grace periods (roughly 1-5 business days)\n- Financial covenant breaches may allow **equity cure rights**, permitting shareholders to inject cash (sometimes capped at around 2 cures in any 4-consecutive-quarter period, or a maximum of 4-5 cures over the life of the loan)\n- Reporting breaches might allow 10-20 business days for remediation\n\n## 3. Immediate Contractual Consequences\n\nIf the breach is not cured within the applicable grace period, the lender(s) may be entitled to:\n\n### a) Acceleration\n- Demand immediate repayment of all outstanding principal, accrued interest, and fees\n- This could represent 100% of the facility amount becoming due immediately\n\n### b) Cancellation of Commitments\n- Terminate any undrawn commitments (potentially cutting off access to, for example, a $50 million revolving credit facility)\n\n### c) Enforcement of Security\n- If the facility is secured, lenders may enforce security interests over collateral, potentially leading to asset seizure or appointment of a receiver/administrator\n\n### d) Increased Margin/Default Interest\n- Many agreements impose a **default interest rate**, often an additional **1-2%** per annum on top of the existing margin (potentially pushing all-in rates from around 5-6% to 7-8% or higher)\n\n## 4. Cross-Default and Cross-Acceleration Provisions\n\n- A breach under one facility can trigger **cross-default clauses** in other financing arrangements, potentially accelerating multiple debt instruments simultaneously\n- Thresholds for cross-default are often set at a materiality level, e.g., defaults exceeding **$5-10 million** or approximately **1-5%** of total assets\n\n## 5. Waiver and Amendment Negotiations\n\nRather than immediate enforcement, lenders often negotiate:\n\n- **Waivers**: Temporary forbearance, sometimes requiring a **waiver fee** of approximately **",
+    "latency_ms": 12042.0,
+    "token_count": 1162,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "e83d4d5f8da0",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786241056.3513572,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 16 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4306,
+          "evidence": [
+            "Latency 12042ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12042.0,
+        "token_count": 1162,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.188; flagged=True"
+}

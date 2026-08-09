@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T00:04:01.183115+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "I have a patient who has taken venlafaxine for 10 years and has recently stopped due to side effects and now wants a different kind of medication, except an SNRI. What other medication could I give this patient with less side effects but still efficacious?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Psychiatry ",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "For a patient stopping long-term venlafaxine who wants to avoid another SNRI, the best alternative depends on the original target condition (MDD, GAD, panic disorder, etc.), prior treatment history, symptom profile, and which venlafaxine adverse effects were problematic. In general, **SSRIs are the usual first non-SNRI option**, with several relatively well-tolerated choices.\n\n### Common medication options\n\n| Option | When it is especially useful | Key adverse-effect considerations |\n|---|---|---|\n| **Escitalopram** | Depression and generalized anxiety; often a straightforward switch from venlafaxine | Usually well tolerated; possible nausea, sexual dysfunction, fatigue/insomnia; dose-related QTc concern, especially >20 mg/day or in cardiac risk |\n| **Sertraline** | Depression plus anxiety, panic, PTSD, OCD; reasonable in cardiovascular disease | More early GI effects/diarrhea than escitalopram; sexual dysfunction; can be activating initially |\n| **Fluoxetine** | Depression with fatigue/hypersomnia, low motivation; useful when discontinuation symptoms are a concern because of long half-life | Can be activating, worsen insomnia/anxiety initially; more drug-interaction potential via CYP2D6; sexual dysfunction |\n| **Mirtazapine** | Depression/anxiety with insomnia, poor appetite, weight loss, nausea, or sexual adverse effects on serotonergic agents | Sedation and weight gain are common; often less desirable with obesity, diabetes, OSA, or metabolic risk |\n| **Bupropion XL** | Depression with fatigue, low energy, cognitive slowing, sexual dysfunction, or concern about weight gain | Avoid or use cautiously with significant anxiety/panic, seizure disorder, eating disorder, alcohol/benzodiazepine withdrawal; can cause insomnia, tremor, dry mouth, elevated BP |\n| **Vortioxetine** | MDD with cognitive complaints (\u201cbrain fog\u201d), sexual side effects on SSRIs/SNRIs, or inadequate response to prior standard antidepressants | Nausea is common initially; generally relatively neutral for weight and sexual function compared with many SSRIs/SNRIs; cost/formulary may matter |\n\n### Practical selection by adverse-effect goal\n\n- **If venlafaxine caused sexual dysfunction, sweating, hypertension, or emotional blunting:** consider **bupropion XL** (if anxiety is not prominent) or **vortioxetine**.  \n- **If venlafaxine caused insomnia, activation, or nausea and the patient has poor sleep/appetite:** consider **mirtazapine**.  \n- **If the patient needs a broadly effective depression-and-anxiety medication with generally favorable tolerability:** **escitalopram** is often the simplest choice.  \n- **If panic/OCD/PTSD symptoms are prominent:** **sertraline** is a strong option.  \n- **If adherence or discontinuation sensitivity is a major concern:** **fluoxetine** may be helpful because of its long half-life, though it is not ideal for patients prone to activation/insomnia.\n\n### Important venlafaxine-specific issue\n\nAfter 10 years of venlafaxine, discontinuation symptoms can be substantial\u2014dizziness, \u201cbrain zaps,\u201d nausea, irritability, anxiety, insomnia, and flu-like symptoms. A gradual taper is generally preferable rather than abrupt cessation. If symptoms are already occurring, a clinician may need to temporarily reinstate a small venlafaxine dose and taper more slowly, or sometimes use a carefully planned transition to fluoxetine because its long half-life can smooth serotonergic withdrawal. This should be individualized, particularly if there is bipolar-spectrum illness, suicidality, pregnancy, significant cardiac disease, seizure risk, or complex polypharmacy.\n\nIf you need one general answer without additional history: **escitalopram** is often the best-tolerated conventional first choice after venlafaxine for combined depression/anxiety; **bupropion XL** is often preferred when avoiding sexual dysfunction and weight gain is the priority; and **mirtazapine** is preferred when insomnia and appetite loss dominate.",
+    "latency_ms": 11883.6,
+    "input_tokens": 132,
+    "output_tokens": 847
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "I have a patient who has taken venlafaxine for 10 years and has recently stopped due to side effects and now wants a different kind of medication, except an SNRI. What other medication could I give this patient with less side effects but still efficacious?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "For a patient stopping long-term venlafaxine who wants to avoid another SNRI, the best alternative depends on the original target condition (MDD, GAD, panic disorder, etc.), prior treatment history, symptom profile, and which venlafaxine adverse effects were problematic. In general, **SSRIs are the usual first non-SNRI option**, with several relatively well-tolerated choices.\n\n### Common medication options\n\n| Option | When it is especially useful | Key adverse-effect considerations |\n|---|---|---|\n| **Escitalopram** | Depression and generalized anxiety; often a straightforward switch from venlafaxine | Usually well tolerated; possible nausea, sexual dysfunction, fatigue/insomnia; dose-related QTc concern, especially >20 mg/day or in cardiac risk |\n| **Sertraline** | Depression plus anxiety, panic, PTSD, OCD; reasonable in cardiovascular disease | More early GI effects/diarrhea than escitalopram; sexual dysfunction; can be activating initially |\n| **Fluoxetine** | Depression with fatigue/hypersomnia, low motivation; useful when discontinuation symptoms are a concern because of long half-life | Can be activating, worsen insomnia/anxiety initially; more drug-interaction potential via CYP2D6; sexual dysfunction |\n| **Mirtazapine** | Depression/anxiety with insomnia, poor appetite, weight loss, nausea, or sexual adverse effects on serotonergic agents | Sedation and weight gain are common; often less desirable with obesity, diabetes, OSA, or metabolic risk |\n| **Bupropion XL** | Depression with fatigue, low energy, cognitive slowing, sexual dysfunction, or concern about weight gain | Avoid or use cautiously with significant anxiety/panic, seizure disorder, eating disorder, alcohol/benzodiazepine withdrawal; can cause insomnia, tremor, dry mouth, elevated BP |\n| **Vortioxetine** | MDD with cognitive complaints (\u201cbrain fog\u201d), sexual side effects on SSRIs/SNRIs, or inadequate response to prior standard antidepressants | Nausea is common initially; generally relatively neutral for weight and sexual function compared with many SSRIs/SNRIs; cost/formulary may matter |\n\n### Practical selection by adverse-effect goal\n\n- **If venlafaxine caused sexual dysfunction, sweating, hypertension, or emotional blunting:** consider **bupropion XL** (if anxiety is not prominent) or **vortioxetine**.  \n- **If venlafaxine caused insomnia, activation, or nausea and the patient has poor sleep/appetite:** consider **mirtazapine**.  \n- **If the patient needs a broadly effective depression-and-anxiety medication with generally favorable tolerability:** **escitalopram** is often the simplest choice.  \n- **If panic/OCD/PTSD symptoms are prominent:** **sertraline** is a strong option.  \n- **If adherence or discontinuation sensitivity is a major concern:** **fluoxetine** may be helpful because of its long half-life, though it is not ideal for patients prone to activation/insomnia.\n\n### Important venlafaxine-specific issue\n\nAfter 10 years of venlafaxine, discontinuation symptoms can be substantial\u2014dizziness, \u201cbrain zaps,\u201d nausea, irritability, anxiety, insomnia, and flu-like symptoms. A gradual taper is generally preferable rather than abrupt cessation. If symptoms are already occurring, a clinician may need to temporarily reinstate a small venlafaxine dose and taper more slowly, or sometimes use a carefully planned transition to fluoxetine because its long half-life can smooth serotonergic withdrawal. This should be individualized, particularly if there is bipolar-spectrum illness, suicidality, pregnancy, significant cardiac disease, seizure risk, or complex polypharmacy.\n\nIf you need one general answer without additional history: **escitalopram** is often the best-tolerated conventional first choice after venlafaxine for combined depression/anxiety; **bupropion XL** is often preferred when avoiding sexual dysfunction and weight gain is the priority; and **mirtazapine** is preferred when insomnia and appetite loss dominate.",
+    "latency_ms": 11883.6,
+    "token_count": 979
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "d4926c3d3676",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786233841.18233,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4283,
+          "evidence": [
+            "Latency 11884ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11883.6,
+        "token_count": 979,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.90; flagged=False"
+}

@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T00:07:57.517658+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "A 20 year old male is suffering severe headaches with visual disturbances. Is it likely to be a brain tumour?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "oncology",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Severe headache with visual disturbance **can be caused by many things besides a brain tumour**, including migraine (often with visual aura), eye problems, dehydration, medication/substance effects, infection, high blood pressure, or\u2014less commonly\u2014raised pressure inside the skull.\n\nA brain tumour is **not the most likely explanation** in a 20-year-old, especially if symptoms are new and episodic, but it cannot be ruled out from symptoms alone. Brain tumours are uncommon: in people aged roughly 15\u201324, the annual rate is only on the order of **a few cases per 100,000 people**. Most headaches, including severe ones, are not due to tumours.\n\nHowever, he should get **urgent medical assessment today**, especially because visual symptoms are involved. A clinician may need to examine his eyes/neurological function and decide whether brain imaging (usually MRI or CT) is needed.\n\nSeek emergency care immediately / call emergency services if any of these are present:\n\n- \u201cThunderclap\u201d headache: maximum severity within **seconds to 1 minute**\n- New weakness, numbness, facial droop, speech difficulty, confusion, fainting, seizure, or trouble walking\n- Persistent or worsening loss of vision, double vision, or a new abnormal pupil\n- Fever, stiff neck, rash, or severe illness\n- Repeated vomiting, particularly early-morning vomiting\n- Headache after a significant head injury\n- A steadily worsening pattern over **days to weeks**, especially if worse on waking, when coughing/straining, or when lying flat\n- Known cancer, immune suppression, or use of blood-thinning medication\n\nIf the visual disturbance is a temporary shimmering/zig-zag pattern or blind spot that develops over about **5\u201360 minutes** and is followed by headache, migraine with aura is possible\u2014but a first severe episode still merits prompt assessment.\n\nUntil evaluated, avoid driving if vision is affected, avoid alcohol/recreational drugs, and use only labelled doses of simple pain relief if safe for him. If the headache is severe right now or the visual symptoms are ongoing, go to an emergency department now.",
+    "latency_ms": 6150.8,
+    "input_tokens": 95,
+    "output_tokens": 436
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A 20 year old male is suffering severe headaches with visual disturbances. Is it likely to be a brain tumour?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Severe headache with visual disturbance **can be caused by many things besides a brain tumour**, including migraine (often with visual aura), eye problems, dehydration, medication/substance effects, infection, high blood pressure, or\u2014less commonly\u2014raised pressure inside the skull.\n\nA brain tumour is **not the most likely explanation** in a 20-year-old, especially if symptoms are new and episodic, but it cannot be ruled out from symptoms alone. Brain tumours are uncommon: in people aged roughly 15\u201324, the annual rate is only on the order of **a few cases per 100,000 people**. Most headaches, including severe ones, are not due to tumours.\n\nHowever, he should get **urgent medical assessment today**, especially because visual symptoms are involved. A clinician may need to examine his eyes/neurological function and decide whether brain imaging (usually MRI or CT) is needed.\n\nSeek emergency care immediately / call emergency services if any of these are present:\n\n- \u201cThunderclap\u201d headache: maximum severity within **seconds to 1 minute**\n- New weakness, numbness, facial droop, speech difficulty, confusion, fainting, seizure, or trouble walking\n- Persistent or worsening loss of vision, double vision, or a new abnormal pupil\n- Fever, stiff neck, rash, or severe illness\n- Repeated vomiting, particularly early-morning vomiting\n- Headache after a significant head injury\n- A steadily worsening pattern over **days to weeks**, especially if worse on waking, when coughing/straining, or when lying flat\n- Known cancer, immune suppression, or use of blood-thinning medication\n\nIf the visual disturbance is a temporary shimmering/zig-zag pattern or blind spot that develops over about **5\u201360 minutes** and is followed by headache, migraine with aura is possible\u2014but a first severe episode still merits prompt assessment.\n\nUntil evaluated, avoid driving if vision is affected, avoid alcohol/recreational drugs, and use only labelled doses of simple pain relief if safe for him. If the headache is severe right now or the visual symptoms are ongoing, go to an emergency department now.",
+    "latency_ms": 6150.8,
+    "token_count": 531,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "995a743d1a1a",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234077.5168843,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 5 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 6150.8,
+        "token_count": 531,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.117; flagged=True"
+}

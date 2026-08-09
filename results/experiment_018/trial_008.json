@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:52:22.758216+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What kind of impact does social media have on patients with anorexia?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "psychiatrist",
+    "question_type": "Open-ended question that is potentially ambiguous| Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Social media can have **both harmful and helpful effects** on people with anorexia nervosa, but exposure to appearance-focused or eating-disorder content is generally associated with greater risk and symptom worsening.\n\n### Potential harms\n- **Triggers comparison and body dissatisfaction:** Idealized, edited, or extremely thin images can make patients feel larger or less attractive and reinforce the belief that thinness equals worth.\n- **Reinforces eating-disorder behaviors:** \u201cPro-ana\u201d communities, calorie-counting posts, \u201cwhat I eat in a day\u201d content, fasting challenges, body-checking, and weight-loss competitions can normalize restriction and provide techniques for losing weight.\n- **Increases compulsive monitoring:** Repeated weighing, mirror checking, tracking calories, and checking likes or comments can become part of the illness.\n- **Promotes shame and secrecy:** Public commentary about weight, food, or appearance may increase distress and discourage treatment.\n- **Interferes with recovery:** Algorithm-driven feeds can repeatedly deliver triggering content, even after a person views it once. Social media use may also worsen anxiety, depression, sleep, and isolation.\n\n### Potential benefits\n- **Connection and reduced isolation:** Moderated recovery communities can provide peer support and reassurance.\n- **Access to information and treatment:** Patients may find therapists, support groups, crisis resources, and evidence-based recovery education.\n- **Positive body and food messaging:** Diverse, non-diet-focused content can challenge appearance ideals and support normalized eating.\n- **Accountability and motivation:** Some people use private, clinically guided online tools to track recovery goals or communicate with treatment teams.\n\n### What matters most\nThe effect depends heavily on **the content viewed, the person\u2019s stage of illness, and how social media is used**. For someone with anorexia, useful steps include:\n\n1. Unfollow, mute, or block weight-loss, body-checking, \u201cthinspiration,\u201d and calorie-focused accounts.\n2. Use \u201cnot interested\u201d tools and reset recommendation algorithms.\n3. Follow recovery-oriented, weight-inclusive, and professionally moderated accounts.\n4. Avoid engaging with posts that compare bodies, weights, meals, or exercise.\n5. Set time limits and avoid social media during meals or when distressed.\n6. Discuss online content openly with an eating-disorder clinician or trusted person.\n\nSocial media should not replace treatment. If it is increasing restriction, purging, compulsive exercise, self-harm thoughts, or medical symptoms, it is important to contact an eating-disorder professional promptly.",
+    "latency_ms": 5443.6,
+    "input_tokens": 92,
+    "output_tokens": 506
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What kind of impact does social media have on patients with anorexia?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Social media can have **both harmful and helpful effects** on people with anorexia nervosa, but exposure to appearance-focused or eating-disorder content is generally associated with greater risk and symptom worsening.\n\n### Potential harms\n- **Triggers comparison and body dissatisfaction:** Idealized, edited, or extremely thin images can make patients feel larger or less attractive and reinforce the belief that thinness equals worth.\n- **Reinforces eating-disorder behaviors:** \u201cPro-ana\u201d communities, calorie-counting posts, \u201cwhat I eat in a day\u201d content, fasting challenges, body-checking, and weight-loss competitions can normalize restriction and provide techniques for losing weight.\n- **Increases compulsive monitoring:** Repeated weighing, mirror checking, tracking calories, and checking likes or comments can become part of the illness.\n- **Promotes shame and secrecy:** Public commentary about weight, food, or appearance may increase distress and discourage treatment.\n- **Interferes with recovery:** Algorithm-driven feeds can repeatedly deliver triggering content, even after a person views it once. Social media use may also worsen anxiety, depression, sleep, and isolation.\n\n### Potential benefits\n- **Connection and reduced isolation:** Moderated recovery communities can provide peer support and reassurance.\n- **Access to information and treatment:** Patients may find therapists, support groups, crisis resources, and evidence-based recovery education.\n- **Positive body and food messaging:** Diverse, non-diet-focused content can challenge appearance ideals and support normalized eating.\n- **Accountability and motivation:** Some people use private, clinically guided online tools to track recovery goals or communicate with treatment teams.\n\n### What matters most\nThe effect depends heavily on **the content viewed, the person\u2019s stage of illness, and how social media is used**. For someone with anorexia, useful steps include:\n\n1. Unfollow, mute, or block weight-loss, body-checking, \u201cthinspiration,\u201d and calorie-focused accounts.\n2. Use \u201cnot interested\u201d tools and reset recommendation algorithms.\n3. Follow recovery-oriented, weight-inclusive, and professionally moderated accounts.\n4. Avoid engaging with posts that compare bodies, weights, meals, or exercise.\n5. Set time limits and avoid social media during meals or when distressed.\n6. Discuss online content openly with an eating-disorder clinician or trusted person.\n\nSocial media should not replace treatment. If it is increasing restriction, purging, compulsive exercise, self-harm thoughts, or medical symptoms, it is important to contact an eating-disorder professional promptly.",
+    "latency_ms": 5443.6,
+    "token_count": 598
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "6e27b1ef18e1",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229542.7573743,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 5443.6,
+        "token_count": 598,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.8; flagged=False"
+}

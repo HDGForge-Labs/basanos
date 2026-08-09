@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:59:57.304092+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What is the effect that mental health has on police officers in the UK?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Police Officer",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Mental health has a major effect on UK police officers\u2019 wellbeing, decision-making, attendance, retention, and relationships. Policing combines repeated exposure to trauma with shift work, public scrutiny, high workloads, violence, and organisational pressures, making officers more vulnerable to stress-related problems than many other occupations.\n\nKey effects include:\n\n- **Higher rates of stress, anxiety, depression and burnout.** Officers may experience persistent hypervigilance, sleep disturbance, irritability, low mood, exhaustion and reduced concentration. Workloads, understaffing, overtime and administrative demands can be as harmful as critical incidents.\n\n- **Trauma and PTSD symptoms.** Repeated exposure to deaths, child abuse, serious violence, road fatalities and suicides can produce post-traumatic stress symptoms: intrusive memories, nightmares, avoidance, emotional numbness and heightened startle responses. Cumulative exposure is important\u2014harm may develop gradually rather than after one major incident.\n\n- **Impaired operational judgement.** Poor mental health can reduce attention, memory, emotional regulation and tolerance of ambiguity. In operational settings this may contribute to slower decision-making, more defensive or risk-averse policing, difficulty communicating calmly, or\u2014at the other extreme\u2014impulsive reactions under pressure.\n\n- **Effects on public interactions.** Officers experiencing burnout or trauma may become detached, cynical or emotionally blunted. That can affect empathy, patience and communication with victims, suspects and colleagues, potentially undermining public confidence and procedural fairness.\n\n- **Sickness absence, presenteeism and early departure.** Mental-health-related absence is a significant cause of lost working time in policing. Many officers also continue working while unwell (\u201cpresenteeism\u201d), which can prolong illness and increase mistakes. Some leave the service, retire early, move to restricted duties or seek roles with less exposure.\n\n- **Increased risk of alcohol misuse, relationship strain and suicide.** Some officers use alcohol or other unhealthy coping strategies to manage sleep problems or distress. Shift patterns and emotional withdrawal can place pressure on family life. Suicide risk is a serious concern in policing, particularly where distress is combined with isolation, disciplinary concerns, financial problems, trauma or reluctance to seek help.\n\n- **Stigma and barriers to disclosure.** Despite improvements, some officers fear that admitting mental ill-health will damage promotion prospects, firearms status, specialist-role eligibility or colleagues\u2019 perceptions. This can delay support until symptoms become severe.\n\n- **Impact on teams and organisations.** Poor mental health affects morale, cohesion, supervision, grievance and misconduct processes, and staff turnover. It also increases pressure on remaining officers, creating a cycle of workload and stress.\n\nUK police forces increasingly use occupational health services, trauma-risk management, peer support, employee assistance programmes, counselling, the Police Federation\u2019s welfare services, and charities such as Police Care UK. The most effective approaches combine early confidential support with practical organisational changes\u2014adequate staffing, predictable rest, supportive supervision, fair misconduct processes, and reduced stigma\u2014rather than placing responsibility solely on individual officers.",
+    "latency_ms": 9373.1,
+    "input_tokens": 93,
+    "output_tokens": 606
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the effect that mental health has on police officers in the UK?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "Mental health has a major effect on UK police officers\u2019 wellbeing, decision-making, attendance, retention, and relationships. Policing combines repeated exposure to trauma with shift work, public scrutiny, high workloads, violence, and organisational pressures, making officers more vulnerable to stress-related problems than many other occupations.\n\nKey effects include:\n\n- **Higher rates of stress, anxiety, depression and burnout.** Officers may experience persistent hypervigilance, sleep disturbance, irritability, low mood, exhaustion and reduced concentration. Workloads, understaffing, overtime and administrative demands can be as harmful as critical incidents.\n\n- **Trauma and PTSD symptoms.** Repeated exposure to deaths, child abuse, serious violence, road fatalities and suicides can produce post-traumatic stress symptoms: intrusive memories, nightmares, avoidance, emotional numbness and heightened startle responses. Cumulative exposure is important\u2014harm may develop gradually rather than after one major incident.\n\n- **Impaired operational judgement.** Poor mental health can reduce attention, memory, emotional regulation and tolerance of ambiguity. In operational settings this may contribute to slower decision-making, more defensive or risk-averse policing, difficulty communicating calmly, or\u2014at the other extreme\u2014impulsive reactions under pressure.\n\n- **Effects on public interactions.** Officers experiencing burnout or trauma may become detached, cynical or emotionally blunted. That can affect empathy, patience and communication with victims, suspects and colleagues, potentially undermining public confidence and procedural fairness.\n\n- **Sickness absence, presenteeism and early departure.** Mental-health-related absence is a significant cause of lost working time in policing. Many officers also continue working while unwell (\u201cpresenteeism\u201d), which can prolong illness and increase mistakes. Some leave the service, retire early, move to restricted duties or seek roles with less exposure.\n\n- **Increased risk of alcohol misuse, relationship strain and suicide.** Some officers use alcohol or other unhealthy coping strategies to manage sleep problems or distress. Shift patterns and emotional withdrawal can place pressure on family life. Suicide risk is a serious concern in policing, particularly where distress is combined with isolation, disciplinary concerns, financial problems, trauma or reluctance to seek help.\n\n- **Stigma and barriers to disclosure.** Despite improvements, some officers fear that admitting mental ill-health will damage promotion prospects, firearms status, specialist-role eligibility or colleagues\u2019 perceptions. This can delay support until symptoms become severe.\n\n- **Impact on teams and organisations.** Poor mental health affects morale, cohesion, supervision, grievance and misconduct processes, and staff turnover. It also increases pressure on remaining officers, creating a cycle of workload and stress.\n\nUK police forces increasingly use occupational health services, trauma-risk management, peer support, employee assistance programmes, counselling, the Police Federation\u2019s welfare services, and charities such as Police Care UK. The most effective approaches combine early confidential support with practical organisational changes\u2014adequate staffing, predictable rest, supportive supervision, fair misconduct processes, and reduced stigma\u2014rather than placing responsibility solely on individual officers.",
+    "latency_ms": 9373.1,
+    "token_count": 699
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "6e1ba2cf158b",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233597.3013303,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 9373.1,
+        "token_count": 699,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.61; flagged=False"
+}

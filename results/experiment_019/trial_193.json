@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:21:22.258851+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Imagine a patient presents with high grade fever. All the investigations done are negative and we are unable to find the cause of the fever. What could it be?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "acute medicine",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "A high-grade fever with unrevealing initial tests can be **fever of unknown origin (FUO)**, but it is not a diagnosis by itself. Traditionally, FUO means fever \u226538.3\u00b0C (101\u00b0F) on several occasions for \u22653 weeks with no diagnosis after appropriate evaluation; in hospitalized patients, concern is often raised much sooner if fever is persistent or severe.\n\nEven when \u201call investigations are negative,\u201d common possibilities include:\n\n### 1. Infection not detected by routine tests\nThis remains the most common concern, especially early in illness or after antibiotics.\n\n- **Viral infections:** influenza, COVID-19, dengue, chikungunya, EBV/CMV, viral hepatitis, acute HIV, etc. Some tests can be falsely negative if done too early or too late.\n- **Tuberculosis:** especially extrapulmonary TB, which may not show on an initial chest X-ray or sputum test.\n- **Malaria:** blood smears can miss low-level infection; often require repeat smears\u2014commonly 2\u20133 samples over about 24\u201348 hours\u2014or PCR/rapid testing depending on location.\n- **Hidden bacterial infection/abscess:** dental infection, sinusitis, liver abscess, kidney infection, gallbladder infection, pelvic infection, infective endocarditis, spinal infection, or deep-seated abscess. Blood cultures can be negative, particularly after antibiotics.\n- **Enteric fever (typhoid), leptospirosis, rickettsial illness, brucellosis**, or other region/travel-related infections.\n\n### 2. Autoimmune or inflammatory disease\nThese can cause persistent fever and elevated inflammatory markers even without obvious local symptoms.\n\n- **Systemic lupus erythematosus (SLE)**\n- **Rheumatoid arthritis/Still\u2019s disease**\n- **Vasculitis** such as giant-cell arteritis, polyarteritis nodosa, ANCA-associated vasculitis\n- **Sarcoidosis**\n- **Inflammatory bowel disease**\n- **Adult-onset Still\u2019s disease**, often associated with very high spiking fever, joint pains, rash, high ferritin\u2014sometimes ferritin is >1,000 ng/mL and can be much higher.\n\n### 3. Cancer-related fever\nLess common than infection but important when fever is prolonged.\n\n- **Lymphoma** and **leukemia**\n- Kidney cancer, liver cancer, and other solid tumors\n- Clues can include unexplained weight loss, night sweats, enlarged lymph nodes, anemia, low platelets, abnormal LDH, or enlarged liver/spleen.\n\n### 4. Drug fever\nA medication can cause fever without infection. It may occur days to several weeks after starting a drug.\n\nCommon culprits include:\n- Antibiotics, especially beta-lactams and sulfonamides\n- Anti-seizure medicines\n- Allopurinol\n- Some anti-inflammatory drugs\n- Heparin and certain biologic/immunotherapy drugs\n\nDrug fever may be accompanied by rash, eosinophilia, or relatively slow pulse despite high temperature, but these are not always present. Fever often improves within roughly 48\u201372 hours after stopping the responsible drug, though this must only be done under medical guidance.\n\n### 5. Thrombosis or tissue injury\n- Deep-vein thrombosis (DVT) or pulmonary embolism\n- Heart attack\n- Severe hematoma, tissue necrosis, pancreatitis\n- Post-operative or post-traumatic inflammation\n\n### 6. Endocrine, neurologic, or other causes\nLess common causes include thyroid storm, adrenal crisis, heat-related illness, and\u2014in critically ill patients\u2014central/neurogenic fever.\n\n### 7. Factitious or measurement-related fever\nRarely, temperature readings may be inaccurate due to technique/device issues, or fever may be intentionally induced. This should only be considered after genuine medical causes have been carefully assessed.\n\n## Important: high fever can be an emergency\nSeek urgent in-person medical care or emergency evaluation if there is fever with any of the following:\n\n- Temperature \u226540\u00b0C (104\u00b0F), especially persistent\n- Confusion, fainting, severe headache, stiff neck, seizure, or new weakness\n- Shortness of breath, chest pain, oxygen saturation <94% if measured\n- Purple/petechial rash, severe rash, or rapidly worsening illness\n- Low blood pressure, cold/clammy skin, very fast heart rate, or reduced urine output\n- Severe abdominal pain, repeated vomiting, dehydration, or inability to drink\n- Pregnancy, immune suppression, chemotherapy, transplant, HIV with low CD4 count, very young children, or older/frail adults\n\n## What clinicians usually reassess\nA careful review often finds the clue: duration and pattern of fever; travel; mosquito/tick/animal exposure; food/water exposure; TB contact; sexual history; recent procedures or dental work; implanted devices; medication list; and symptoms such as weight loss",
+    "latency_ms": 13407.4,
+    "input_tokens": 104,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Imagine a patient presents with high grade fever. All the investigations done are negative and we are unable to find the cause of the fever. What could it be?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "A high-grade fever with unrevealing initial tests can be **fever of unknown origin (FUO)**, but it is not a diagnosis by itself. Traditionally, FUO means fever \u226538.3\u00b0C (101\u00b0F) on several occasions for \u22653 weeks with no diagnosis after appropriate evaluation; in hospitalized patients, concern is often raised much sooner if fever is persistent or severe.\n\nEven when \u201call investigations are negative,\u201d common possibilities include:\n\n### 1. Infection not detected by routine tests\nThis remains the most common concern, especially early in illness or after antibiotics.\n\n- **Viral infections:** influenza, COVID-19, dengue, chikungunya, EBV/CMV, viral hepatitis, acute HIV, etc. Some tests can be falsely negative if done too early or too late.\n- **Tuberculosis:** especially extrapulmonary TB, which may not show on an initial chest X-ray or sputum test.\n- **Malaria:** blood smears can miss low-level infection; often require repeat smears\u2014commonly 2\u20133 samples over about 24\u201348 hours\u2014or PCR/rapid testing depending on location.\n- **Hidden bacterial infection/abscess:** dental infection, sinusitis, liver abscess, kidney infection, gallbladder infection, pelvic infection, infective endocarditis, spinal infection, or deep-seated abscess. Blood cultures can be negative, particularly after antibiotics.\n- **Enteric fever (typhoid), leptospirosis, rickettsial illness, brucellosis**, or other region/travel-related infections.\n\n### 2. Autoimmune or inflammatory disease\nThese can cause persistent fever and elevated inflammatory markers even without obvious local symptoms.\n\n- **Systemic lupus erythematosus (SLE)**\n- **Rheumatoid arthritis/Still\u2019s disease**\n- **Vasculitis** such as giant-cell arteritis, polyarteritis nodosa, ANCA-associated vasculitis\n- **Sarcoidosis**\n- **Inflammatory bowel disease**\n- **Adult-onset Still\u2019s disease**, often associated with very high spiking fever, joint pains, rash, high ferritin\u2014sometimes ferritin is >1,000 ng/mL and can be much higher.\n\n### 3. Cancer-related fever\nLess common than infection but important when fever is prolonged.\n\n- **Lymphoma** and **leukemia**\n- Kidney cancer, liver cancer, and other solid tumors\n- Clues can include unexplained weight loss, night sweats, enlarged lymph nodes, anemia, low platelets, abnormal LDH, or enlarged liver/spleen.\n\n### 4. Drug fever\nA medication can cause fever without infection. It may occur days to several weeks after starting a drug.\n\nCommon culprits include:\n- Antibiotics, especially beta-lactams and sulfonamides\n- Anti-seizure medicines\n- Allopurinol\n- Some anti-inflammatory drugs\n- Heparin and certain biologic/immunotherapy drugs\n\nDrug fever may be accompanied by rash, eosinophilia, or relatively slow pulse despite high temperature, but these are not always present. Fever often improves within roughly 48\u201372 hours after stopping the responsible drug, though this must only be done under medical guidance.\n\n### 5. Thrombosis or tissue injury\n- Deep-vein thrombosis (DVT) or pulmonary embolism\n- Heart attack\n- Severe hematoma, tissue necrosis, pancreatitis\n- Post-operative or post-traumatic inflammation\n\n### 6. Endocrine, neurologic, or other causes\nLess common causes include thyroid storm, adrenal crisis, heat-related illness, and\u2014in critically ill patients\u2014central/neurogenic fever.\n\n### 7. Factitious or measurement-related fever\nRarely, temperature readings may be inaccurate due to technique/device issues, or fever may be intentionally induced. This should only be considered after genuine medical causes have been carefully assessed.\n\n## Important: high fever can be an emergency\nSeek urgent in-person medical care or emergency evaluation if there is fever with any of the following:\n\n- Temperature \u226540\u00b0C (104\u00b0F), especially persistent\n- Confusion, fainting, severe headache, stiff neck, seizure, or new weakness\n- Shortness of breath, chest pain, oxygen saturation <94% if measured\n- Purple/petechial rash, severe rash, or rapidly worsening illness\n- Low blood pressure, cold/clammy skin, very fast heart rate, or reduced urine output\n- Severe abdominal pain, repeated vomiting, dehydration, or inability to drink\n- Pregnancy, immune suppression, chemotherapy, transplant, HIV with low CD4 count, very young children, or older/frail adults\n\n## What clinicians usually reassess\nA careful review often finds the clue: duration and pattern of fever; travel; mosquito/tick/animal exposure; food/water exposure; TB contact; sexual history; recent procedures or dental work; implanted devices; medication list; and symptoms such as weight loss",
+    "latency_ms": 13407.4,
+    "token_count": 1128,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "b1a565ad467b",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234882.2580469,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 14 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4511,
+          "evidence": [
+            "Latency 13407ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13407.4,
+        "token_count": 1128,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.193; flagged=True"
+}

@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T00:12:13.237075+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What does the APGAR scale assess?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General medical",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "The **APGAR scale** is a rapid assessment of a newborn\u2019s condition immediately after birth. It helps clinicians judge whether the baby needs urgent support such as airway assistance, oxygen, or resuscitation.\n\nIt is typically scored at **1 minute** and **5 minutes** after delivery. If the 5-minute score is low\u2014usually **below 7**\u2014it may be repeated every **5 minutes** up to about **20 minutes**.\n\n**APGAR** stands for:\n\n| Letter | Assessment | What is evaluated |\n|---|---|---|\n| **A** | **Appearance** | Skin color |\n| **P** | **Pulse** | Heart rate |\n| **G** | **Grimace** | Reflex irritability / response to stimulation |\n| **A** | **Activity** | Muscle tone |\n| **R** | **Respiration** | Breathing effort |\n\nEach category receives a score of **0, 1, or 2**, for a total possible score of **0\u201310**.\n\nTypical interpretation:\n\n- **7\u201310:** Generally reassuring; the newborn is adapting well outside the womb.\n- **4\u20136:** Moderately depressed; may need stimulation, warming, oxygen, or other support.\n- **0\u20133:** Severely depressed; requires immediate resuscitative intervention.\n\nExamples of component scoring include:\n\n- **Pulse:** 0 = absent; 1 = below **100 beats/minute**; 2 = at least **100 beats/minute**.\n- **Respiration:** 0 = absent; 1 = slow, weak, or irregular; 2 = strong cry with effective breathing.\n- **Activity/muscle tone:** 0 = limp; 1 = some flexion; 2 = active movement.\n- **Appearance:** 0 = blue/pale; 1 = pink body with blue hands/feet; 2 = completely pink.\n- **Grimace:** 0 = no response to stimulation; 1 = facial grimace; 2 = cough, sneeze, cry, or vigorous withdrawal.\n\nThe APGAR score is **not designed to predict long-term intelligence, neurologic outcome, or overall health by itself**. It is mainly a quick snapshot of how the infant is doing in the first minutes of life.",
+    "latency_ms": 5284.0,
+    "input_tokens": 80,
+    "output_tokens": 474
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What does the APGAR scale assess?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "The **APGAR scale** is a rapid assessment of a newborn\u2019s condition immediately after birth. It helps clinicians judge whether the baby needs urgent support such as airway assistance, oxygen, or resuscitation.\n\nIt is typically scored at **1 minute** and **5 minutes** after delivery. If the 5-minute score is low\u2014usually **below 7**\u2014it may be repeated every **5 minutes** up to about **20 minutes**.\n\n**APGAR** stands for:\n\n| Letter | Assessment | What is evaluated |\n|---|---|---|\n| **A** | **Appearance** | Skin color |\n| **P** | **Pulse** | Heart rate |\n| **G** | **Grimace** | Reflex irritability / response to stimulation |\n| **A** | **Activity** | Muscle tone |\n| **R** | **Respiration** | Breathing effort |\n\nEach category receives a score of **0, 1, or 2**, for a total possible score of **0\u201310**.\n\nTypical interpretation:\n\n- **7\u201310:** Generally reassuring; the newborn is adapting well outside the womb.\n- **4\u20136:** Moderately depressed; may need stimulation, warming, oxygen, or other support.\n- **0\u20133:** Severely depressed; requires immediate resuscitative intervention.\n\nExamples of component scoring include:\n\n- **Pulse:** 0 = absent; 1 = below **100 beats/minute**; 2 = at least **100 beats/minute**.\n- **Respiration:** 0 = absent; 1 = slow, weak, or irregular; 2 = strong cry with effective breathing.\n- **Activity/muscle tone:** 0 = limp; 1 = some flexion; 2 = active movement.\n- **Appearance:** 0 = blue/pale; 1 = pink body with blue hands/feet; 2 = completely pink.\n- **Grimace:** 0 = no response to stimulation; 1 = facial grimace; 2 = cough, sneeze, cry, or vigorous withdrawal.\n\nThe APGAR score is **not designed to predict long-term intelligence, neurologic outcome, or overall health by itself**. It is mainly a quick snapshot of how the infant is doing in the first minutes of life.",
+    "latency_ms": 5284.0,
+    "token_count": 554,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "fc9890b8be55",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234333.2362187,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 8 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 5284.0,
+        "token_count": 554,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.142; flagged=True"
+}

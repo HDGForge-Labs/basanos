@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:16:12.673694+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Imagine we have a Patient Reported Outcome questionnaire that measures quality of life and has 3 different dimensions. What would be the best approach to analyzing the item adequacy of this instrument?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pharmaceutical industry",
+    "question_type": "Advice or suggestions on how to approach a problem"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "For a 3-dimension quality-of-life Patient-Reported Outcome (PRO) questionnaire, the strongest approach is usually a **multistage psychometric evaluation** combining classical test theory (CTT), factor analysis, and item response theory (IRT)/Rasch methods. \u201cItem adequacy\u201d should be assessed both **within each dimension** and across the full questionnaire.\n\n## 1. Start with the intended measurement model\n\nFirst, specify whether the questionnaire is intended to produce:\n\n- **3 separate domain scores**, one for each quality-of-life dimension;\n- A **total score** as well as domain scores; or\n- A hierarchical structure, such as 3 first-order dimensions loading on an overall quality-of-life factor.\n\nItem adequacy must be assessed relative to that intended structure. An item can be adequate for its own domain but inappropriate for a single total score.\n\nA typical minimum sample size for an initial item-level analysis is approximately **200\u2013300 participants**, but **500+** is preferable for stable factor analysis and IRT parameter estimates. For a questionnaire with, for example, 20\u201330 items, a rough rule is at least **10\u201320 respondents per item**, with a practical minimum of about **300 respondents**.\n\n---\n\n## 2. Assess content adequacy first\n\nBefore relying on statistics, assess whether each item is conceptually appropriate.\n\nUse an expert panel\u2014including clinicians, psychometricians, and ideally patients\u2014to rate each item for:\n\n- Relevance to its intended dimension\n- Clarity and comprehensibility\n- Redundancy with other items\n- Appropriateness of recall period and response options\n- Cultural and language suitability\n- Whether the item reflects patient-important quality-of-life content\n\nA common approach is the **Content Validity Index (CVI)**.\n\n- For item-level CVI (I-CVI), experts rate relevance on a 4-point scale.\n- An I-CVI of approximately **0.78 or higher** is often considered acceptable when there are 6\u201310 experts.\n- A scale-level CVI (S-CVI) of approximately **0.90 or higher** is generally desirable.\n\nConduct qualitative cognitive interviews with roughly **5\u201315 patients per round**, often continuing until no new comprehension problems emerge. Look for misunderstanding, ambiguous wording, inappropriate response options, or recall difficulties.\n\n---\n\n## 3. Examine item distributions and data quality\n\nFor each item, review:\n\n- Missing data\n- Response category use\n- Mean, standard deviation, median, skewness, and kurtosis\n- Floor and ceiling effects\n- Item response patterns\n\nUseful warning thresholds include:\n\n- **Missing responses >5%**: investigate wording, sensitivity, irrelevance, or burden.\n- **Missing responses >10%**: usually a substantial concern.\n- **Floor or ceiling endorsement >15%\u201320%**: may indicate limited ability to distinguish people at the low or high end of quality of life.\n- **One response category selected by >80%\u201390%**: suggests poor targeting or limited discrimination.\n- Categories with very few responses, for example **<5%** of the sample, may be unstable and may need to be collapsed.\n\nFor ordinal Likert-type response options, inspect whether all categories are used and ordered meaningfully. If respondents cannot distinguish \u201ca little,\u201d \u201cmoderately,\u201d and \u201cquite a bit,\u201d the response scale may not function as intended.\n\n---\n\n## 4. Evaluate item\u2013total and item\u2013domain relationships\n\nFor each dimension, calculate **corrected item\u2013total correlations**\u2014that is, the correlation between an item and the total score of its own dimension excluding that item.\n\nTypical interpretation:\n\n- **<0.20**: weak relationship; item may not fit the dimension.\n- **0.20\u20130.29**: borderline.\n- **\u22650.30**: generally acceptable.\n- **\u22650.40**: good.\n- **>0.70\u20130.80**: may indicate redundancy, especially if several items are very highly correlated.\n\nAlso examine:\n\n- Correlation of each item with its intended dimension\n- Correlations with the other 2 dimensions\n- Item discriminant validity\n\nAn item should generally correlate more strongly with its own domain than with non-target domains. A practical rule is that the item\u2019s correlation with its assigned domain should exceed correlations with other domains by at least approximately **0.10\u20130.20**, ideally with statistically significant differences where relevant.\n\n---\n\n## 5. Test the 3-dimensional structure using factor analysis\n\n### Exploratory factor analysis (EFA)\n\nIf the dimensional structure is not firmly established, begin with EFA. Because PRO responses are usually ordinal, use:\n\n- **Polychoric correlations**\n- An ordinal extraction method, such as robust weighted least squares\n- **Oblique rotation** (for example, oblimin or promax), because quality-of-life dimensions are usually correlated\n\nDo not rely only on the eigenvalue-greater-than-1 rule. Use:\n\n- Parallel",
+    "latency_ms": 11862.4,
+    "input_tokens": 109,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Imagine we have a Patient Reported Outcome questionnaire that measures quality of life and has 3 different dimensions. What would be the best approach to analyzing the item adequacy of this instrument?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "For a 3-dimension quality-of-life Patient-Reported Outcome (PRO) questionnaire, the strongest approach is usually a **multistage psychometric evaluation** combining classical test theory (CTT), factor analysis, and item response theory (IRT)/Rasch methods. \u201cItem adequacy\u201d should be assessed both **within each dimension** and across the full questionnaire.\n\n## 1. Start with the intended measurement model\n\nFirst, specify whether the questionnaire is intended to produce:\n\n- **3 separate domain scores**, one for each quality-of-life dimension;\n- A **total score** as well as domain scores; or\n- A hierarchical structure, such as 3 first-order dimensions loading on an overall quality-of-life factor.\n\nItem adequacy must be assessed relative to that intended structure. An item can be adequate for its own domain but inappropriate for a single total score.\n\nA typical minimum sample size for an initial item-level analysis is approximately **200\u2013300 participants**, but **500+** is preferable for stable factor analysis and IRT parameter estimates. For a questionnaire with, for example, 20\u201330 items, a rough rule is at least **10\u201320 respondents per item**, with a practical minimum of about **300 respondents**.\n\n---\n\n## 2. Assess content adequacy first\n\nBefore relying on statistics, assess whether each item is conceptually appropriate.\n\nUse an expert panel\u2014including clinicians, psychometricians, and ideally patients\u2014to rate each item for:\n\n- Relevance to its intended dimension\n- Clarity and comprehensibility\n- Redundancy with other items\n- Appropriateness of recall period and response options\n- Cultural and language suitability\n- Whether the item reflects patient-important quality-of-life content\n\nA common approach is the **Content Validity Index (CVI)**.\n\n- For item-level CVI (I-CVI), experts rate relevance on a 4-point scale.\n- An I-CVI of approximately **0.78 or higher** is often considered acceptable when there are 6\u201310 experts.\n- A scale-level CVI (S-CVI) of approximately **0.90 or higher** is generally desirable.\n\nConduct qualitative cognitive interviews with roughly **5\u201315 patients per round**, often continuing until no new comprehension problems emerge. Look for misunderstanding, ambiguous wording, inappropriate response options, or recall difficulties.\n\n---\n\n## 3. Examine item distributions and data quality\n\nFor each item, review:\n\n- Missing data\n- Response category use\n- Mean, standard deviation, median, skewness, and kurtosis\n- Floor and ceiling effects\n- Item response patterns\n\nUseful warning thresholds include:\n\n- **Missing responses >5%**: investigate wording, sensitivity, irrelevance, or burden.\n- **Missing responses >10%**: usually a substantial concern.\n- **Floor or ceiling endorsement >15%\u201320%**: may indicate limited ability to distinguish people at the low or high end of quality of life.\n- **One response category selected by >80%\u201390%**: suggests poor targeting or limited discrimination.\n- Categories with very few responses, for example **<5%** of the sample, may be unstable and may need to be collapsed.\n\nFor ordinal Likert-type response options, inspect whether all categories are used and ordered meaningfully. If respondents cannot distinguish \u201ca little,\u201d \u201cmoderately,\u201d and \u201cquite a bit,\u201d the response scale may not function as intended.\n\n---\n\n## 4. Evaluate item\u2013total and item\u2013domain relationships\n\nFor each dimension, calculate **corrected item\u2013total correlations**\u2014that is, the correlation between an item and the total score of its own dimension excluding that item.\n\nTypical interpretation:\n\n- **<0.20**: weak relationship; item may not fit the dimension.\n- **0.20\u20130.29**: borderline.\n- **\u22650.30**: generally acceptable.\n- **\u22650.40**: good.\n- **>0.70\u20130.80**: may indicate redundancy, especially if several items are very highly correlated.\n\nAlso examine:\n\n- Correlation of each item with its intended dimension\n- Correlations with the other 2 dimensions\n- Item discriminant validity\n\nAn item should generally correlate more strongly with its own domain than with non-target domains. A practical rule is that the item\u2019s correlation with its assigned domain should exceed correlations with other domains by at least approximately **0.10\u20130.20**, ideally with statistically significant differences where relevant.\n\n---\n\n## 5. Test the 3-dimensional structure using factor analysis\n\n### Exploratory factor analysis (EFA)\n\nIf the dimensional structure is not firmly established, begin with EFA. Because PRO responses are usually ordinal, use:\n\n- **Polychoric correlations**\n- An ordinal extraction method, such as robust weighted least squares\n- **Oblique rotation** (for example, oblimin or promax), because quality-of-life dimensions are usually correlated\n\nDo not rely only on the eigenvalue-greater-than-1 rule. Use:\n\n- Parallel",
+    "latency_ms": 11862.4,
+    "token_count": 1133,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "35bf5540d127",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234572.6728997,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 20 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4279,
+          "evidence": [
+            "Latency 11862ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11862.4,
+        "token_count": 1133,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.163; flagged=True"
+}

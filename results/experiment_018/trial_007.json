@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:52:17.308948+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What is the best biological agent for treatment of hidradenitis suppurativa having failed adalimumab?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Dermatology",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "For **hidradenitis suppurativa (HS) that has failed adalimumab**, the best-supported next biologic is usually **secukinumab (Cosentyx)**, an **IL\u201117A inhibitor**.\n\n- It is FDA-approved for **moderate-to-severe HS** in adults and adolescents \u226512 years in the U.S.\n- Typical adult dosing: **300 mg subcutaneously weekly through week 5, then every 4 weeks**; some patients benefit from continuing every 2 weeks, depending on local labeling and response.\n- In phase 3 trials, roughly **one-third to two-fifths of patients** achieved HiSCR50 at week 16, including patients with prior biologic exposure.\n\nOther important options:\n\n- **Bimekizumab (Bimzelx)** \u2014 IL\u201117A/F inhibitor; approved for HS in some regions and highly effective, but availability and labeling vary. Monitor for candidiasis and avoid in inflammatory bowel disease.\n- **Infliximab** \u2014 often used off-label for severe, refractory HS, particularly with extensive inflammatory disease or Crohn\u2019s disease; commonly given by IV infusion, with dosing often escalated beyond standard regimens.\n- **Ustekinumab** \u2014 sometimes used off-label, but generally has weaker evidence than IL\u201117 inhibitors.\n- **Anifrolumab, guselkumab, and other agents** are not currently preferred standard choices for HS.\n\nBefore switching, confirm that adalimumab truly failed\u2014adequate dose, duration, adherence, and treatment of tunnels/abscesses\u2014and distinguish **inflammatory activity** from fixed scarring, which biologics will not reverse. **Surgery (deroofing or wide excision)** is often needed for persistent tunnels, even when systemic therapy is continued.\n\nThe choice should be individualized, especially if there is **Crohn\u2019s disease, ulcerative colitis, recurrent candidiasis, severe acne, or infection risk**: IL\u201117 inhibitors can worsen or trigger inflammatory bowel disease, whereas infliximab may be preferable when Crohn\u2019s disease coexists.",
+    "latency_ms": 4109.0,
+    "input_tokens": 100,
+    "output_tokens": 433
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the best biological agent for treatment of hidradenitis suppurativa having failed adalimumab?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "For **hidradenitis suppurativa (HS) that has failed adalimumab**, the best-supported next biologic is usually **secukinumab (Cosentyx)**, an **IL\u201117A inhibitor**.\n\n- It is FDA-approved for **moderate-to-severe HS** in adults and adolescents \u226512 years in the U.S.\n- Typical adult dosing: **300 mg subcutaneously weekly through week 5, then every 4 weeks**; some patients benefit from continuing every 2 weeks, depending on local labeling and response.\n- In phase 3 trials, roughly **one-third to two-fifths of patients** achieved HiSCR50 at week 16, including patients with prior biologic exposure.\n\nOther important options:\n\n- **Bimekizumab (Bimzelx)** \u2014 IL\u201117A/F inhibitor; approved for HS in some regions and highly effective, but availability and labeling vary. Monitor for candidiasis and avoid in inflammatory bowel disease.\n- **Infliximab** \u2014 often used off-label for severe, refractory HS, particularly with extensive inflammatory disease or Crohn\u2019s disease; commonly given by IV infusion, with dosing often escalated beyond standard regimens.\n- **Ustekinumab** \u2014 sometimes used off-label, but generally has weaker evidence than IL\u201117 inhibitors.\n- **Anifrolumab, guselkumab, and other agents** are not currently preferred standard choices for HS.\n\nBefore switching, confirm that adalimumab truly failed\u2014adequate dose, duration, adherence, and treatment of tunnels/abscesses\u2014and distinguish **inflammatory activity** from fixed scarring, which biologics will not reverse. **Surgery (deroofing or wide excision)** is often needed for persistent tunnels, even when systemic therapy is continued.\n\nThe choice should be individualized, especially if there is **Crohn\u2019s disease, ulcerative colitis, recurrent candidiasis, severe acne, or infection risk**: IL\u201117 inhibitors can worsen or trigger inflammatory bowel disease, whereas infliximab may be preferable when Crohn\u2019s disease coexists.",
+    "latency_ms": 4109.0,
+    "token_count": 533
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "f41fcadb3b5c",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229537.3079944,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 4109.0,
+        "token_count": 533,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.7; flagged=False"
+}

@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:32:33.819976+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Would we be healthier if we switched from a reactive healthcare system to preventative?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biochemistry",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "Yes, substantially\u2014but with important caveats about what \"prevention\" actually delivers and where it doesn't save money even if it improves health.\n\n**Where the evidence is strong:**\n\n- Vaccination is the clearest win: eliminating/controlling measles, polio, and reducing pneumococcal disease and HPV-related cancers produces enormous health gains per dollar.\n- Blood pressure control and statins for high-risk patients are cost-effective and reduce strokes/MIs substantially\u2014decades of trial data (ALLHAT, and others) back this up.\n- Smoking cessation interventions are among the most cost-effective health interventions that exist.\n- Colorectal cancer screening (colonoscopy, FIT tests) catches disease at curable stages and has good trial-based mortality reduction data.\n\n**Where it's murkier than the popular narrative suggests:**\n\n- Many preventive interventions improve health but don't save money\u2014they cost money to gain quality-adjusted life years, which is a legitimate trade but different from the \"prevention pays for itself\" claim often made politically. Diabetes prevention programs, for instance, improve outcomes but at a net cost.\n- Some screening causes net harm at the population level through overdiagnosis: PSA screening for prostate cancer, mammography in certain age brackets, and thyroid cancer screening in South Korea are documented cases where screening intensity led to overtreatment (surgery, radiation) for cancers that would never have caused symptoms.\n- \"Preventative\" often gets rhetorically stretched to include annual physicals and general wellness checks for healthy adults\u2014the evidence for these reducing mortality is weak. Cochrane reviews of general health checks show minimal to no effect on mortality.\n\n**The structural problem:**\nUS healthcare spends roughly 97 cents of every dollar on treatment and 3 cents on prevention/public health, while the CDC estimates ~40% of annual deaths stem from behavioral/preventable causes (smoking, diet, inactivity, alcohol). That imbalance is real and skewed by fee-for-service reimbursement that pays well for procedures and poorly for counseling, care coordination, or population health work. Countries with stronger primary care systems (UK historically, though NHS strain complicates this now) tend to get better population health outcomes per dollar spent than the US, which is consistent with underinvestment in prevention/primary care being a real problem.\n\n**Bottom line:** Redirecting resources toward high-value prevention (vaccination, BP/lipid management, smoking cessation, targeted cancer screening per USPSTF guidelines, addressing social determinants like food security and housing) would likely improve population health substantially. But \"prevention\" isn't uniformly good\u2014low-value screening can cause net harm, and much prevention is a genuine cost, not a free lunch, even when worth doing.",
+    "latency_ms": 12555.1,
+    "input_tokens": 141,
+    "output_tokens": 927
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Would we be healthier if we switched from a reactive healthcare system to preventative?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Yes, substantially\u2014but with important caveats about what \"prevention\" actually delivers and where it doesn't save money even if it improves health.\n\n**Where the evidence is strong:**\n\n- Vaccination is the clearest win: eliminating/controlling measles, polio, and reducing pneumococcal disease and HPV-related cancers produces enormous health gains per dollar.\n- Blood pressure control and statins for high-risk patients are cost-effective and reduce strokes/MIs substantially\u2014decades of trial data (ALLHAT, and others) back this up.\n- Smoking cessation interventions are among the most cost-effective health interventions that exist.\n- Colorectal cancer screening (colonoscopy, FIT tests) catches disease at curable stages and has good trial-based mortality reduction data.\n\n**Where it's murkier than the popular narrative suggests:**\n\n- Many preventive interventions improve health but don't save money\u2014they cost money to gain quality-adjusted life years, which is a legitimate trade but different from the \"prevention pays for itself\" claim often made politically. Diabetes prevention programs, for instance, improve outcomes but at a net cost.\n- Some screening causes net harm at the population level through overdiagnosis: PSA screening for prostate cancer, mammography in certain age brackets, and thyroid cancer screening in South Korea are documented cases where screening intensity led to overtreatment (surgery, radiation) for cancers that would never have caused symptoms.\n- \"Preventative\" often gets rhetorically stretched to include annual physicals and general wellness checks for healthy adults\u2014the evidence for these reducing mortality is weak. Cochrane reviews of general health checks show minimal to no effect on mortality.\n\n**The structural problem:**\nUS healthcare spends roughly 97 cents of every dollar on treatment and 3 cents on prevention/public health, while the CDC estimates ~40% of annual deaths stem from behavioral/preventable causes (smoking, diet, inactivity, alcohol). That imbalance is real and skewed by fee-for-service reimbursement that pays well for procedures and poorly for counseling, care coordination, or population health work. Countries with stronger primary care systems (UK historically, though NHS strain complicates this now) tend to get better population health outcomes per dollar spent than the US, which is consistent with underinvestment in prevention/primary care being a real problem.\n\n**Bottom line:** Redirecting resources toward high-value prevention (vaccination, BP/lipid management, smoking cessation, targeted cancer screening per USPSTF guidelines, addressing social determinants like food security and housing) would likely improve population health substantially. But \"prevention\" isn't uniformly good\u2014low-value screening can cause net harm, and much prevention is a genuine cost, not a free lunch, even when worth doing.",
+    "latency_ms": 12555.1,
+    "token_count": 1068
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "ecd4c90dfd16",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239153.8192308,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4383,
+          "evidence": [
+            "Latency 12555ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12555.1,
+        "token_count": 1068,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.31; flagged=False"
+}

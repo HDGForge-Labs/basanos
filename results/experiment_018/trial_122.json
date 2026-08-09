@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-08T23:00:17.131992+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What cardiac condition affects neonates born to diabetic mothers?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Paediatrics",
+    "question_type": "Directed question that has a single unambiguous answer| Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Neonates born to diabetic mothers are at increased risk of **hypertrophic cardiomyopathy (HCM)**, often called **infant-of-diabetic-mother cardiomyopathy**.\n\n- It typically causes **asymmetric septal or ventricular hypertrophy**, especially thickening of the interventricular septum and left ventricular walls.\n- The hypertrophy may produce **left ventricular outflow tract obstruction**, impaired diastolic relaxation, or congestive heart failure.\n- It is usually transient and often improves over approximately **2\u201312 months** as the infant\u2019s hyperinsulinemic state resolves.\n- Congenital heart defects, such as **transposition of the great arteries** or **ventricular septal defects**, are also more common, particularly when maternal diabetes was poorly controlled during early pregnancy.",
+    "latency_ms": 2562.0,
+    "input_tokens": 83,
+    "output_tokens": 167
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What cardiac condition affects neonates born to diabetic mothers?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Neonates born to diabetic mothers are at increased risk of **hypertrophic cardiomyopathy (HCM)**, often called **infant-of-diabetic-mother cardiomyopathy**.\n\n- It typically causes **asymmetric septal or ventricular hypertrophy**, especially thickening of the interventricular septum and left ventricular walls.\n- The hypertrophy may produce **left ventricular outflow tract obstruction**, impaired diastolic relaxation, or congestive heart failure.\n- It is usually transient and often improves over approximately **2\u201312 months** as the infant\u2019s hyperinsulinemic state resolves.\n- Congenital heart defects, such as **transposition of the great arteries** or **ventricular septal defects**, are also more common, particularly when maternal diabetes was poorly controlled during early pregnancy.",
+    "latency_ms": 2562.0,
+    "token_count": 250,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "b89cf985ea1c",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230017.131151,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2562.0,
+        "token_count": 250,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.122; flagged=False"
+}

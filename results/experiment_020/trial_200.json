@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T02:06:36.327470+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "The occurrence of vulvoperinal condylomatosis in the university community has increased in the last 6 months. What preventive measure should be used to reduce the incidence of the disease?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General medicine ",
+    "question_type": "Open-ended question that is potentially ambiguous| Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Vulvoperineal Condylomatosis: Preventive Measures\n\n## Primary Prevention: HPV Vaccination\n\nThe **most effective preventive measure** is the **HPV vaccine** (quadrivalent or nonavalent), which protects against HPV serotypes 6 and 11\u2014responsible for approximately **90% of condyloma acuminata (genital warts) cases**.\n\n### Vaccination Recommendations:\n- **Target age**: Ideally administered between **9-14 years old** (before sexual debut)\n- **Catch-up vaccination**: Recommended up to **26 years old** (relevant for university population)\n- **Extended range**: Some guidelines now support vaccination up to **45 years old** based on individual risk assessment\n- **Dosing schedule**:\n  - Ages 9-14: **2 doses**, separated by **6-12 months**\n  - Ages 15-26: **3 doses** at 0, **1-2 months**, and **6 months**\n- **Efficacy**: Reduces genital wart incidence by approximately **90%** when administered before HPV exposure\n\n## Complementary Preventive Measures\n\n### 1. Barrier Protection\n- **Consistent condom use** reduces transmission risk by approximately **60-70%** (not 100%, since HPV can infect areas not covered by condoms)\n\n### 2. Behavioral/Educational Interventions\n- Reduce **number of sexual partners**\n- Avoid contact with visible lesions\n- **Sex education campaigns** targeting university populations (18-25 years, peak incidence age group)\n\n### 3. Screening and Early Detection\n- Regular gynecological/urological exams\n- Partner notification and simultaneous treatment to prevent reinfection cycles\n\n### 4. Immune System Support\n- Address risk factors that increase susceptibility:\n  - Smoking cessation (smokers have **~2x higher risk**)\n  - Avoid immunosuppression when possible\n  - Adequate nutrition\n\n## Recommended Institutional Strategy\n\nGiven the **outbreak context** (increased cases over **6 months** in a university setting), I recommend implementing:\n\n1. **Mass vaccination campaign** at the student health clinic\n2. **Educational workshops** on STI prevention\n3. **Free/subsidized condom distribution**\n4. **Confidential screening services**\n5. **Contact tracing** for recent partners of diagnosed cases\n\n**Bottom line**: While condom use and behavioral changes help, **HPV vaccination remains the gold-standard preventive intervention**, capable of reducing new condyloma cases by up to **90%** in vaccinated, HPV-naive individuals.",
+    "latency_ms": 11402.1,
+    "input_tokens": 166,
+    "output_tokens": 875
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "The occurrence of vulvoperinal condylomatosis in the university community has increased in the last 6 months. What preventive measure should be used to reduce the incidence of the disease?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Vulvoperineal Condylomatosis: Preventive Measures\n\n## Primary Prevention: HPV Vaccination\n\nThe **most effective preventive measure** is the **HPV vaccine** (quadrivalent or nonavalent), which protects against HPV serotypes 6 and 11\u2014responsible for approximately **90% of condyloma acuminata (genital warts) cases**.\n\n### Vaccination Recommendations:\n- **Target age**: Ideally administered between **9-14 years old** (before sexual debut)\n- **Catch-up vaccination**: Recommended up to **26 years old** (relevant for university population)\n- **Extended range**: Some guidelines now support vaccination up to **45 years old** based on individual risk assessment\n- **Dosing schedule**:\n  - Ages 9-14: **2 doses**, separated by **6-12 months**\n  - Ages 15-26: **3 doses** at 0, **1-2 months**, and **6 months**\n- **Efficacy**: Reduces genital wart incidence by approximately **90%** when administered before HPV exposure\n\n## Complementary Preventive Measures\n\n### 1. Barrier Protection\n- **Consistent condom use** reduces transmission risk by approximately **60-70%** (not 100%, since HPV can infect areas not covered by condoms)\n\n### 2. Behavioral/Educational Interventions\n- Reduce **number of sexual partners**\n- Avoid contact with visible lesions\n- **Sex education campaigns** targeting university populations (18-25 years, peak incidence age group)\n\n### 3. Screening and Early Detection\n- Regular gynecological/urological exams\n- Partner notification and simultaneous treatment to prevent reinfection cycles\n\n### 4. Immune System Support\n- Address risk factors that increase susceptibility:\n  - Smoking cessation (smokers have **~2x higher risk**)\n  - Avoid immunosuppression when possible\n  - Adequate nutrition\n\n## Recommended Institutional Strategy\n\nGiven the **outbreak context** (increased cases over **6 months** in a university setting), I recommend implementing:\n\n1. **Mass vaccination campaign** at the student health clinic\n2. **Educational workshops** on STI prevention\n3. **Free/subsidized condom distribution**\n4. **Confidential screening services**\n5. **Contact tracing** for recent partners of diagnosed cases\n\n**Bottom line**: While condom use and behavioral changes help, **HPV vaccination remains the gold-standard preventive intervention**, capable of reducing new condyloma cases by up to **90%** in vaccinated, HPV-naive individuals.",
+    "latency_ms": 11402.1,
+    "token_count": 1041,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "f0f80d281bbe",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786241196.326683,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 18 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.421,
+          "evidence": [
+            "Latency 11402ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11402.1,
+        "token_count": 1041,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.200; flagged=True"
+}

@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T00:10:37.321538+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is your opinion on euthanasia?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biomedical Science ",
+    "question_type": "Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "I don\u2019t have personal beliefs, but I can offer a balanced ethical perspective.\n\nEuthanasia is one of the most difficult issues in medicine because it involves two important values that can conflict:\n\n- **Respect for autonomy:** Competent adults may feel they should have control over decisions about unbearable, irreversible suffering and the manner of their death.\n- **Protection of vulnerable people and the value of life:** Laws and medical ethics also need to guard against coercion, untreated depression, financial or family pressure, inadequate disability support, and decisions made during temporary crises.\n\nA defensible approach, in my view, is that if euthanasia or medical assistance in dying is legal, it should be available only under strict safeguards. These commonly include:\n\n1. **A serious, incurable medical condition** causing suffering the person finds intolerable.\n2. **Decision-making capacity**, assessed carefully\u2014often by more than 1 clinician when there is doubt.\n3. **A voluntary, persistent request**, rather than a request made under pressure or during an acute crisis.\n4. **Full information** about prognosis, palliative care, pain management, hospice, and other alternatives.\n5. **Waiting or reflection periods** in many systems, often ranging from several days to roughly 90 days depending on circumstances.\n6. **Independent review and documentation**, with reporting requirements and oversight.\n7. **Strong palliative-care access**, so euthanasia is not chosen because someone lacks pain relief, home support, mental-health care, or financial security.\n\nIt is also important to distinguish terms:\n\n- **Withdrawing or refusing life-sustaining treatment** allows a disease to take its course and is widely accepted in many medical systems.\n- **Palliative sedation** reduces consciousness to relieve otherwise uncontrollable symptoms near death; its intent is symptom relief, not causing death.\n- **Euthanasia** generally means a clinician directly administers medication with the intent to cause death.\n- **Assisted suicide / medical assistance in dying** may involve a clinician prescribing or providing medication that the patient self-administers, though legal definitions vary.\n\nReasonable people\u2014including doctors, patients, disability advocates, religious communities, and ethicists\u2014can disagree in good faith. The strongest common ground is that nobody should be forced to endure uncontrolled suffering, and nobody should feel pressured toward death because they lack care, dignity, housing, support, or belonging.",
+    "latency_ms": 7567.7,
+    "input_tokens": 80,
+    "output_tokens": 480
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is your opinion on euthanasia?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "I don\u2019t have personal beliefs, but I can offer a balanced ethical perspective.\n\nEuthanasia is one of the most difficult issues in medicine because it involves two important values that can conflict:\n\n- **Respect for autonomy:** Competent adults may feel they should have control over decisions about unbearable, irreversible suffering and the manner of their death.\n- **Protection of vulnerable people and the value of life:** Laws and medical ethics also need to guard against coercion, untreated depression, financial or family pressure, inadequate disability support, and decisions made during temporary crises.\n\nA defensible approach, in my view, is that if euthanasia or medical assistance in dying is legal, it should be available only under strict safeguards. These commonly include:\n\n1. **A serious, incurable medical condition** causing suffering the person finds intolerable.\n2. **Decision-making capacity**, assessed carefully\u2014often by more than 1 clinician when there is doubt.\n3. **A voluntary, persistent request**, rather than a request made under pressure or during an acute crisis.\n4. **Full information** about prognosis, palliative care, pain management, hospice, and other alternatives.\n5. **Waiting or reflection periods** in many systems, often ranging from several days to roughly 90 days depending on circumstances.\n6. **Independent review and documentation**, with reporting requirements and oversight.\n7. **Strong palliative-care access**, so euthanasia is not chosen because someone lacks pain relief, home support, mental-health care, or financial security.\n\nIt is also important to distinguish terms:\n\n- **Withdrawing or refusing life-sustaining treatment** allows a disease to take its course and is widely accepted in many medical systems.\n- **Palliative sedation** reduces consciousness to relieve otherwise uncontrollable symptoms near death; its intent is symptom relief, not causing death.\n- **Euthanasia** generally means a clinician directly administers medication with the intent to cause death.\n- **Assisted suicide / medical assistance in dying** may involve a clinician prescribing or providing medication that the patient self-administers, though legal definitions vary.\n\nReasonable people\u2014including doctors, patients, disability advocates, religious communities, and ethicists\u2014can disagree in good faith. The strongest common ground is that nobody should be forced to endure uncontrolled suffering, and nobody should feel pressured toward death because they lack care, dignity, housing, support, or belonging.",
+    "latency_ms": 7567.7,
+    "token_count": 560,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "f6df75c17b73",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234237.3207076,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 2 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 7567.7,
+        "token_count": 560,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.132; flagged=True"
+}

@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:41:07.508716+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "A patient with metastatic lung cancer, currently receiving treatment with carboplatin, paclitaxel, and pembrolizumab develops sudden worsening of dyspnea. What are the possible causes of dyspnea and what would the initial workup include?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Oncology",
+    "question_type": "Summarization of information on a topic| Advice or suggestions on how to approach a problem"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Dyspnea in a Patient on Carboplatin/Paclitaxel/Pembrolizumab\n\n## Differential Diagnosis\n\n**Related to malignancy progression**\n- Progressive intrathoracic tumor burden\n- Malignant pleural effusion (common with lung primary)\n- Malignant pericardial effusion/tamponade\n- Lymphangitic carcinomatosis\n- Airway obstruction from endobronchial disease\n- Superior vena cava syndrome\n\n**Related to pembrolizumab (immune-related adverse events)**\n- **Pneumonitis** \u2014 the classic ICI pulmonary toxicity; can be fulminant, occurs anywhere from weeks to >1 year into treatment\n- Myocarditis (can present with dyspnea, often with chest pain/arrhythmia)\n- Sarcoid-like granulomatous reactions\n\n**Related to carboplatin/paclitaxel**\n- Hypersensitivity/infusion reaction (paclitaxel especially \u2014 usually occurs during/shortly after infusion)\n- Chemotherapy-induced cardiotoxicity (less common with this regimen than anthracyclines, but paclitaxel can potentiate)\n- Anemia from myelosuppression \u2192 high-output dyspnea\n- Neutropenic sepsis with pulmonary source\n\n**Infectious**\n- Bacterial pneumonia (immunosuppressed from chemo, possible neutropenia)\n- Atypical/opportunistic infection (PJP if on steroids from prior irAE)\n- COVID-19 or other viral pneumonia\n- Sepsis from another source causing tachypnea\n\n**Other important considerations**\n- **Pulmonary embolism** \u2014 malignancy is a major hypercoagulable state; lung cancer patients on active chemo carry high VTE risk (Khorana score elevated)\n- Radiation pneumonitis (if prior thoracic RT)\n- Underlying COPD/CHF exacerbation\n- Anemia\n- Anxiety/panic (diagnosis of exclusion)\n\n## Initial Workup\n\n**Immediate bedside assessment**\n- Vitals: RR, SpO2, HR, BP, temperature\n- Focused exam: breath sounds (crackles, decreased air entry, wheeze), JVD, muffled heart sounds/pulsus paradoxus (tamponade), lower extremity edema/asymmetry (DVT), signs of infection\n\n**Labs**\n- CBC with differential (anemia, neutropenia, eosinophilia suggesting irAE)\n- CMP (renal/hepatic function, electrolytes)\n- Troponin and BNP (myocarditis, cardiac strain)\n- D-dimer (if PE suspected, though often elevated from malignancy alone \u2014 low specificity here)\n- ABG or venous blood gas if hypoxic/tachypneic\n- Procalcitonin/blood cultures if infection suspected\n- TSH (can be affected by ICI-induced thyroiditis, contributing to symptoms)\n\n**Imaging**\n- **CT chest with contrast (CT-",
+    "latency_ms": 12268.3,
+    "input_tokens": 197,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A patient with metastatic lung cancer, currently receiving treatment with carboplatin, paclitaxel, and pembrolizumab develops sudden worsening of dyspnea. What are the possible causes of dyspnea and what would the initial workup include?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Dyspnea in a Patient on Carboplatin/Paclitaxel/Pembrolizumab\n\n## Differential Diagnosis\n\n**Related to malignancy progression**\n- Progressive intrathoracic tumor burden\n- Malignant pleural effusion (common with lung primary)\n- Malignant pericardial effusion/tamponade\n- Lymphangitic carcinomatosis\n- Airway obstruction from endobronchial disease\n- Superior vena cava syndrome\n\n**Related to pembrolizumab (immune-related adverse events)**\n- **Pneumonitis** \u2014 the classic ICI pulmonary toxicity; can be fulminant, occurs anywhere from weeks to >1 year into treatment\n- Myocarditis (can present with dyspnea, often with chest pain/arrhythmia)\n- Sarcoid-like granulomatous reactions\n\n**Related to carboplatin/paclitaxel**\n- Hypersensitivity/infusion reaction (paclitaxel especially \u2014 usually occurs during/shortly after infusion)\n- Chemotherapy-induced cardiotoxicity (less common with this regimen than anthracyclines, but paclitaxel can potentiate)\n- Anemia from myelosuppression \u2192 high-output dyspnea\n- Neutropenic sepsis with pulmonary source\n\n**Infectious**\n- Bacterial pneumonia (immunosuppressed from chemo, possible neutropenia)\n- Atypical/opportunistic infection (PJP if on steroids from prior irAE)\n- COVID-19 or other viral pneumonia\n- Sepsis from another source causing tachypnea\n\n**Other important considerations**\n- **Pulmonary embolism** \u2014 malignancy is a major hypercoagulable state; lung cancer patients on active chemo carry high VTE risk (Khorana score elevated)\n- Radiation pneumonitis (if prior thoracic RT)\n- Underlying COPD/CHF exacerbation\n- Anemia\n- Anxiety/panic (diagnosis of exclusion)\n\n## Initial Workup\n\n**Immediate bedside assessment**\n- Vitals: RR, SpO2, HR, BP, temperature\n- Focused exam: breath sounds (crackles, decreased air entry, wheeze), JVD, muffled heart sounds/pulsus paradoxus (tamponade), lower extremity edema/asymmetry (DVT), signs of infection\n\n**Labs**\n- CBC with differential (anemia, neutropenia, eosinophilia suggesting irAE)\n- CMP (renal/hepatic function, electrolytes)\n- Troponin and BNP (myocarditis, cardiac strain)\n- D-dimer (if PE suspected, though often elevated from malignancy alone \u2014 low specificity here)\n- ABG or venous blood gas if hypoxic/tachypneic\n- Procalcitonin/blood cultures if infection suspected\n- TSH (can be affected by ICI-induced thyroiditis, contributing to symptoms)\n\n**Imaging**\n- **CT chest with contrast (CT-",
+    "latency_ms": 12268.3,
+    "token_count": 1221
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "d4f67075f24e",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239667.5079505,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.434,
+          "evidence": [
+            "Latency 12268ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12268.3,
+        "token_count": 1221,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.75; flagged=False"
+}

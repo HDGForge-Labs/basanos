@@ -1,0 +1,75 @@
+{
+  "timestamp_utc": "2026-08-09T22:35:23.888298+00:00",
+  "detector": "context_degradation",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "what was the name of the first continent",
+    "gold_index": 9
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "Based on the documents provided, this question can be interpreted in two ways:\n\n**If asking about the first supercontinent:** The name was **Pangaea** (also spelled Pangea), a supercontinent that existed during the late Paleozoic and early Mesozoic eras. It formed approximately 335 million years ago from earlier continental units and began breaking apart about 175 million years ago. Pangaea was",
+    "latency_ms": 5791.0,
+    "input_tokens": 2229,
+    "output_tokens": 128
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "what was the name of the first continent",
+      "gold_index": 9,
+      "n_docs": 10
+    },
+    "response": "Based on the documents provided, this question can be interpreted in two ways:\n\n**If asking about the first supercontinent:** The name was **Pangaea** (also spelled Pangea), a supercontinent that existed during the late Paleozoic and early Mesozoic eras. It formed approximately 335 million years ago from earlier continental units and began breaking apart about 175 million years ago. Pangaea was",
+    "latency_ms": 5791.0,
+    "token_count": 2357,
+    "context_window_used": 0.92
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "37d5b7a46c87",
+      "tool_name": "context_qa",
+      "status": "warn",
+      "timestamp": 1786314923.887451,
+      "failures": [
+        {
+          "failure_mode": "context_degradation",
+          "confidence": 0.4,
+          "evidence": [
+            "Context window at 92.0% capacity"
+          ],
+          "remediation": [
+            "Implement context summarization before next tool call",
+            "Inject critical context markers at regular intervals",
+            "Use sliding window context management",
+            "Consider splitting task into smaller context-bounded subtasks"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 5791.0,
+        "token_count": 2357,
+        "context_window_used": 0.92,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Implement context summarization before next tool call",
+        "Inject critical context markers at regular intervals",
+        "Use sliding window context management",
+        "Consider splitting task into smaller context-bounded subtasks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.145; flagged=True; gold_index=9"
+}

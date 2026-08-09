@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T22:59:57.444511+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "A married couple have two minor children aged 8 and 10. Upon divorce the wife files for maintenance from the husband. How will the maintenance amount be determined?",
+    "field": "Law",
+    "specific_field": "Family Law",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Maintenance is determined under the law of the jurisdiction where the divorce or support proceeding is filed. The exact rules differ substantially, but courts commonly consider the following factors rather than applying one universal formula:\n\n1. **Children\u2019s needs**\n   - Food, clothing, housing, utilities, schooling, books, transport, medical and dental care, childcare, extracurricular activities, and special needs.\n   - For children aged **8 and 10**, the court may examine actual monthly expenses and may use child-support guidelines based on the parents\u2019 combined income.\n   - If the children spend time with both parents, overnight arrangements may affect the amount.\n\n2. **Each parent\u2019s income and earning capacity**\n   - Salary, bonuses, commissions, business income, rental income, investments, pensions, benefits, and other resources.\n   - The court may consider earning capacity if a parent is voluntarily unemployed or underemployed.\n   - Income may be assessed from tax returns, payslips, bank statements, business accounts, property records, and employment evidence.\n\n3. **The wife\u2019s financial need**\n   - Her reasonable monthly living expenses, housing costs, health expenses, childcare, and ability to work.\n   - Whether she has income or assets of her own.\n   - Whether she gave up employment or career opportunities to care for the children or support the husband\u2019s career.\n\n4. **The husband\u2019s ability to pay**\n   - His reasonable living expenses and existing legal obligations.\n   - The court generally does not require payment that leaves him unable to meet basic needs, but it may reject extravagant or unnecessary expenses.\n   - Debts incurred for genuine necessities may be considered differently from discretionary or recently incurred debts.\n\n5. **Standard of living during the marriage**\n   - Courts often try, where resources permit, to preserve a reasonably comparable standard of living for the wife and children.\n   - This does not necessarily mean maintaining every luxury or dividing income equally.\n\n6. **Duration and type of maintenance**\n   - **Child support** normally continues until each child reaches the statutory age\u2014often **18**, sometimes **19**, **21**, or completion of secondary education, depending on local law.\n   - **Spousal maintenance** may be temporary, rehabilitative, periodic, or lump-sum. It may last for a defined period, until remarriage, cohabitation, death, or a material change in circumstances.\n   - Maintenance may also be awarded during the divorce proceedings as **interim maintenance**.\n\n### Common calculation approaches\n\nDepending on the jurisdiction, the court may use:\n\n- A statutory percentage of the paying parent\u2019s income;\n- An income-shares formula based on both parents\u2019 incomes;\n- A needs-and-ability-to-pay assessment;\n- A guideline amount plus a separate award for housing, education, medical care, or childcare;\n- A hybrid calculation for both child and spousal support.\n\nFor illustration only, if the husband earns approximately **$6,000 per month net**, the wife earns approximately **$1,500**, and the children\u2019s reasonable combined monthly expenses are about **$2,400**, the court might allocate those expenses between the parents according to their relative incomes\u2014roughly **80%** to the husband and **20%** to the wife\u2014before considering custody time, taxes, healthcare, childcare, and other adjustments. A spousal-maintenance award would then depend on the wife\u2019s demonstrated shortfall and the husband\u2019s remaining ability to pay. This example is not a legal formula and cannot predict the actual award.\n\n### Information usually required\n\nThe parties commonly submit:\n\n- Recent **2\u20133 years** of tax returns;\n- Approximately **3\u201312 months** of payslips and bank statements;\n- A sworn statement of monthly income and expenses;\n- Mortgage or rent records;\n- School and childcare bills;\n- Health-insurance and medical expenses;\n- Proof of debts and assets;\n- Evidence concerning childcare arrangements and each parent\u2019s time with the children.\n\nThe court may also impute income, scrutinize unexplained transfers, and require disclosure if it believes income has been concealed.\n\nThe key distinction is between **child maintenance**, calculated primarily from the children\u2019s needs and parental incomes, and **spousal maintenance**, calculated primarily from the wife\u2019s need, the husband\u2019s ability to pay, the marital standard of living, and the marriage\u2019s duration. The governing statute and court guidelines of the relevant country or state are necessary to calculate a reliable figure.",
+    "latency_ms": 6642.8,
+    "input_tokens": 105,
+    "output_tokens": 898
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A married couple have two minor children aged 8 and 10. Upon divorce the wife files for maintenance from the husband. How will the maintenance amount be determined?",
+      "field": "Law"
+    },
+    "response": "Maintenance is determined under the law of the jurisdiction where the divorce or support proceeding is filed. The exact rules differ substantially, but courts commonly consider the following factors rather than applying one universal formula:\n\n1. **Children\u2019s needs**\n   - Food, clothing, housing, utilities, schooling, books, transport, medical and dental care, childcare, extracurricular activities, and special needs.\n   - For children aged **8 and 10**, the court may examine actual monthly expenses and may use child-support guidelines based on the parents\u2019 combined income.\n   - If the children spend time with both parents, overnight arrangements may affect the amount.\n\n2. **Each parent\u2019s income and earning capacity**\n   - Salary, bonuses, commissions, business income, rental income, investments, pensions, benefits, and other resources.\n   - The court may consider earning capacity if a parent is voluntarily unemployed or underemployed.\n   - Income may be assessed from tax returns, payslips, bank statements, business accounts, property records, and employment evidence.\n\n3. **The wife\u2019s financial need**\n   - Her reasonable monthly living expenses, housing costs, health expenses, childcare, and ability to work.\n   - Whether she has income or assets of her own.\n   - Whether she gave up employment or career opportunities to care for the children or support the husband\u2019s career.\n\n4. **The husband\u2019s ability to pay**\n   - His reasonable living expenses and existing legal obligations.\n   - The court generally does not require payment that leaves him unable to meet basic needs, but it may reject extravagant or unnecessary expenses.\n   - Debts incurred for genuine necessities may be considered differently from discretionary or recently incurred debts.\n\n5. **Standard of living during the marriage**\n   - Courts often try, where resources permit, to preserve a reasonably comparable standard of living for the wife and children.\n   - This does not necessarily mean maintaining every luxury or dividing income equally.\n\n6. **Duration and type of maintenance**\n   - **Child support** normally continues until each child reaches the statutory age\u2014often **18**, sometimes **19**, **21**, or completion of secondary education, depending on local law.\n   - **Spousal maintenance** may be temporary, rehabilitative, periodic, or lump-sum. It may last for a defined period, until remarriage, cohabitation, death, or a material change in circumstances.\n   - Maintenance may also be awarded during the divorce proceedings as **interim maintenance**.\n\n### Common calculation approaches\n\nDepending on the jurisdiction, the court may use:\n\n- A statutory percentage of the paying parent\u2019s income;\n- An income-shares formula based on both parents\u2019 incomes;\n- A needs-and-ability-to-pay assessment;\n- A guideline amount plus a separate award for housing, education, medical care, or childcare;\n- A hybrid calculation for both child and spousal support.\n\nFor illustration only, if the husband earns approximately **$6,000 per month net**, the wife earns approximately **$1,500**, and the children\u2019s reasonable combined monthly expenses are about **$2,400**, the court might allocate those expenses between the parents according to their relative incomes\u2014roughly **80%** to the husband and **20%** to the wife\u2014before considering custody time, taxes, healthcare, childcare, and other adjustments. A spousal-maintenance award would then depend on the wife\u2019s demonstrated shortfall and the husband\u2019s remaining ability to pay. This example is not a legal formula and cannot predict the actual award.\n\n### Information usually required\n\nThe parties commonly submit:\n\n- Recent **2\u20133 years** of tax returns;\n- Approximately **3\u201312 months** of payslips and bank statements;\n- A sworn statement of monthly income and expenses;\n- Mortgage or rent records;\n- School and childcare bills;\n- Health-insurance and medical expenses;\n- Proof of debts and assets;\n- Evidence concerning childcare arrangements and each parent\u2019s time with the children.\n\nThe court may also impute income, scrutinize unexplained transfers, and require disclosure if it believes income has been concealed.\n\nThe key distinction is between **child maintenance**, calculated primarily from the children\u2019s needs and parental incomes, and **spousal maintenance**, calculated primarily from the wife\u2019s need, the husband\u2019s ability to pay, the marital standard of living, and the marriage\u2019s duration. The governing statute and court guidelines of the relevant country or state are necessary to calculate a reliable figure.",
+    "latency_ms": 6642.8,
+    "token_count": 1003,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "5705eece6875",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229997.4437432,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 12 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 6642.8,
+        "token_count": 1003,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.119; flagged=True"
+}

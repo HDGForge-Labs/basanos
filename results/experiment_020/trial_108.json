@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:48:00.751210+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "If upper limbs suddenly become stronger than lower limbs, will people start walking on their hands?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Physiotherapy",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Why Humans Won't Switch to Hand-Walking (Even with Stronger Arms)\n\nThis is a fun thought experiment, but the answer is no\u2014for several biomechanical, physiological, and evolutionary reasons.\n\n## 1. Strength Isn't the Limiting Factor\n\nEven if upper limb strength increased dramatically\u2014say, by **50-100%**\u2014this wouldn't overcome the fundamental structural mismatches between arms and legs:\n\n- **Joint architecture**: Human hips and knees are built for sustained, repetitive load-bearing (roughly **1-1.5x body weight** per step, spiking to **2-3x body weight** during running). Shoulders and wrists are built for mobility and precision, not axial compression loading.\n- **Bone density and cross-sectional area**: Leg bones (femur, tibia) have roughly **2-3 times** the cross-sectional area and cortical thickness of arm bones (humerus, radius/ulna) specifically because they evolved to bear weight.\n\n## 2. Energy Cost Would Be Prohibitive\n\nStudies on animals that do walk on forelimbs (like brachiating primates or facultative quadrupeds) show:\n\n- Human hand-walking (as seen in gymnasts or acrobats) costs approximately **3-4 times more energy** than normal bipedal walking for the same distance.\n- Even elite gymnasts can typically sustain hand-walking for only **30 seconds to a few minutes**, compared to hours of normal walking.\n\n## 3. The Wrist Is a Weak Link\n\nThe wrist joint has a **much smaller range of stable load-bearing motion** than the ankle:\n- Wrist extension under load is typically limited to about **60-70 degrees** before pain/instability, whereas the ankle's push-off mechanics are optimized for repeated cycles at roughly **1-1.3 Hz** (normal walking cadence).\n- Carpal bones aren't structured for repetitive high-impact loading; long-term hand-walking would likely cause **degenerative changes within months to a few years** of regular use.\n\n## 4. Neurological Wiring Is Already Fixed\n\n- The **central pattern generators** (neural circuits in the spinal cord) that control locomotion are hardwired for bipedal gait patterns after early childhood development (typically established by ages **1-2 years**).\n- Even with a strength change, motor cortex allocation heavily favors fine hand motor control (roughly **30% of the motor cortex homunculus** is devoted to hands) rather than gross locomotor patterns.\n\n## 5. What Would Actually Happen Instead\n\nIf upper limb strength increased substantially, more likely outcomes include:\n- Increased use of arms for **climbing, carrying, throwing, or manipulation tasks**\n- Possible increased reliance on **quadrupedal crawling** in specific short-distance contexts (as seen in some sprinters' three-point stance)\n- **No change to primary gait**, since walking efficiency, energy expenditure, and joint durability\u2014not raw strength\u2014determine locomotor choice over a lifetime of use (typically **8,000-",
+    "latency_ms": 14007.2,
+    "input_tokens": 141,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "If upper limbs suddenly become stronger than lower limbs, will people start walking on their hands?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Why Humans Won't Switch to Hand-Walking (Even with Stronger Arms)\n\nThis is a fun thought experiment, but the answer is no\u2014for several biomechanical, physiological, and evolutionary reasons.\n\n## 1. Strength Isn't the Limiting Factor\n\nEven if upper limb strength increased dramatically\u2014say, by **50-100%**\u2014this wouldn't overcome the fundamental structural mismatches between arms and legs:\n\n- **Joint architecture**: Human hips and knees are built for sustained, repetitive load-bearing (roughly **1-1.5x body weight** per step, spiking to **2-3x body weight** during running). Shoulders and wrists are built for mobility and precision, not axial compression loading.\n- **Bone density and cross-sectional area**: Leg bones (femur, tibia) have roughly **2-3 times** the cross-sectional area and cortical thickness of arm bones (humerus, radius/ulna) specifically because they evolved to bear weight.\n\n## 2. Energy Cost Would Be Prohibitive\n\nStudies on animals that do walk on forelimbs (like brachiating primates or facultative quadrupeds) show:\n\n- Human hand-walking (as seen in gymnasts or acrobats) costs approximately **3-4 times more energy** than normal bipedal walking for the same distance.\n- Even elite gymnasts can typically sustain hand-walking for only **30 seconds to a few minutes**, compared to hours of normal walking.\n\n## 3. The Wrist Is a Weak Link\n\nThe wrist joint has a **much smaller range of stable load-bearing motion** than the ankle:\n- Wrist extension under load is typically limited to about **60-70 degrees** before pain/instability, whereas the ankle's push-off mechanics are optimized for repeated cycles at roughly **1-1.3 Hz** (normal walking cadence).\n- Carpal bones aren't structured for repetitive high-impact loading; long-term hand-walking would likely cause **degenerative changes within months to a few years** of regular use.\n\n## 4. Neurological Wiring Is Already Fixed\n\n- The **central pattern generators** (neural circuits in the spinal cord) that control locomotion are hardwired for bipedal gait patterns after early childhood development (typically established by ages **1-2 years**).\n- Even with a strength change, motor cortex allocation heavily favors fine hand motor control (roughly **30% of the motor cortex homunculus** is devoted to hands) rather than gross locomotor patterns.\n\n## 5. What Would Actually Happen Instead\n\nIf upper limb strength increased substantially, more likely outcomes include:\n- Increased use of arms for **climbing, carrying, throwing, or manipulation tasks**\n- Possible increased reliance on **quadrupedal crawling** in specific short-distance contexts (as seen in some sprinters' three-point stance)\n- **No change to primary gait**, since walking efficiency, energy expenditure, and joint durability\u2014not raw strength\u2014determine locomotor choice over a lifetime of use (typically **8,000-",
+    "latency_ms": 14007.2,
+    "token_count": 1165,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "30e3a44b3443",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240080.7503917,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 14 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4601,
+          "evidence": [
+            "Latency 14007ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 14007.2,
+        "token_count": 1165,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.108; flagged=True"
+}

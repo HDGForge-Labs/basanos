@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:36:26.617069+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What are the lessons we could learn from the different ways hospitals globally mitigated the inpatient spread of Covid 19? Could you summarise the available literature?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Internal medicine",
+    "question_type": "Summarization of information on a topic| Advice or suggestions on how to approach a problem| Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Lessons from Global Hospital COVID-19 Inpatient Spread Mitigation\n\n## 1. Structural/Engineering Controls\n\n**Negative pressure and ventilation strategies**\n- Hong Kong hospitals (drawing on SARS-era investments) had pre-built negative pressure isolation rooms and AIIRs (Airborne Infection Isolation Rooms), which correlated with markedly lower nosocomial transmission rates compared to hospitals retrofitting mid-pandemic\n- Studies from Wuhan's Jin Yin-tan Hospital and later systematic reviews (e.g., in *Journal of Hospital Infection*) found that hospitals with >12 air changes per hour in COVID wards had substantially reduced environmental viral contamination\n- Singapore and Taiwan rapidly converted general wards using portable HEPA filtration units when purpose-built negative pressure rooms were insufficient in number\n\n**Cohorting and zoning**\n- The \"hot zone/cold zone\" model (used extensively in Singapore, South Korea, and later adopted by NHS trusts) physically separated COVID-suspected/confirmed patients from other patients with distinct staff teams, PPE donning/doffing areas, and even separate entrances\n- UK Nightingale hospitals and similar surge facilities (Spain's IFEMA, Italy's Fiera Milano) attempted complete physical separation but had mixed success\u2014some became sites of significant staff-to-staff transmission due to close working conditions\n\n## 2. Testing and Screening Strategies\n\n**Universal admission testing**\n- This became standard by mid-2020 in most high-income settings, but timing mattered enormously. Studies (e.g., from Barnes-Jewish Hospital, St. Louis) showed that testing on admission missed early infections in the incubation period, necessitating repeat testing at 3-5 days\n- South Korea's approach of testing *before* hospital transfer (at drive-through/walk-through centers) reduced the window of unknown-status patients entering wards\n\n**Serial screening of asymptomatic staff**\n- Vanderbilt and Mass General studies found that routine staff screening (2x/week PCR) detected significant asymptomatic/presymptomatic transmission that symptom-screening alone missed\n- The UK's SIREN study specifically quantified this\u2014finding staff testing programs detected infections 3-5 days before symptom onset in many cases\n\n## 3. PPE Protocols and Their Evolution\n\n**Extended use vs. reuse debates**\n- Early pandemic PPE shortages forced innovations (UV decontamination of N95s at Duke, Nebraska Medicine; vaporized hydrogen peroxide sterilization) that later evidence showed maintained filtration efficacy for 3-5 cycles\n- Comparative studies between hospitals using fit-tested N95/FFP2/FFP3 respirators vs. surgical masks for aerosol-generating procedures showed clear differences in staff infection rates\u2014this became one of the more contentious literature areas given aerosol vs. droplet transmission debates\n\n**",
+    "latency_ms": 13424.2,
+    "input_tokens": 165,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the lessons we could learn from the different ways hospitals globally mitigated the inpatient spread of Covid 19? Could you summarise the available literature?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Lessons from Global Hospital COVID-19 Inpatient Spread Mitigation\n\n## 1. Structural/Engineering Controls\n\n**Negative pressure and ventilation strategies**\n- Hong Kong hospitals (drawing on SARS-era investments) had pre-built negative pressure isolation rooms and AIIRs (Airborne Infection Isolation Rooms), which correlated with markedly lower nosocomial transmission rates compared to hospitals retrofitting mid-pandemic\n- Studies from Wuhan's Jin Yin-tan Hospital and later systematic reviews (e.g., in *Journal of Hospital Infection*) found that hospitals with >12 air changes per hour in COVID wards had substantially reduced environmental viral contamination\n- Singapore and Taiwan rapidly converted general wards using portable HEPA filtration units when purpose-built negative pressure rooms were insufficient in number\n\n**Cohorting and zoning**\n- The \"hot zone/cold zone\" model (used extensively in Singapore, South Korea, and later adopted by NHS trusts) physically separated COVID-suspected/confirmed patients from other patients with distinct staff teams, PPE donning/doffing areas, and even separate entrances\n- UK Nightingale hospitals and similar surge facilities (Spain's IFEMA, Italy's Fiera Milano) attempted complete physical separation but had mixed success\u2014some became sites of significant staff-to-staff transmission due to close working conditions\n\n## 2. Testing and Screening Strategies\n\n**Universal admission testing**\n- This became standard by mid-2020 in most high-income settings, but timing mattered enormously. Studies (e.g., from Barnes-Jewish Hospital, St. Louis) showed that testing on admission missed early infections in the incubation period, necessitating repeat testing at 3-5 days\n- South Korea's approach of testing *before* hospital transfer (at drive-through/walk-through centers) reduced the window of unknown-status patients entering wards\n\n**Serial screening of asymptomatic staff**\n- Vanderbilt and Mass General studies found that routine staff screening (2x/week PCR) detected significant asymptomatic/presymptomatic transmission that symptom-screening alone missed\n- The UK's SIREN study specifically quantified this\u2014finding staff testing programs detected infections 3-5 days before symptom onset in many cases\n\n## 3. PPE Protocols and Their Evolution\n\n**Extended use vs. reuse debates**\n- Early pandemic PPE shortages forced innovations (UV decontamination of N95s at Duke, Nebraska Medicine; vaporized hydrogen peroxide sterilization) that later evidence showed maintained filtration efficacy for 3-5 cycles\n- Comparative studies between hospitals using fit-tested N95/FFP2/FFP3 respirators vs. surgical masks for aerosol-generating procedures showed clear differences in staff infection rates\u2014this became one of the more contentious literature areas given aerosol vs. droplet transmission debates\n\n**",
+    "latency_ms": 13424.2,
+    "token_count": 1189
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "dccc9b6e3e86",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239386.6163273,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4514,
+          "evidence": [
+            "Latency 13424ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13424.2,
+        "token_count": 1189,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.51; flagged=False"
+}

@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:34:33.979898+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "A 55 year old male patient describes the sudden appearance of a slight tremor and having noticed his handwriting getting smaller, what are the possible ways you'd find a diagnosis? ",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biomedical Research, Nursing",
+    "question_type": "Open-ended question that is potentially ambiguous| Advice or suggestions on how to approach a problem| Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Diagnostic Approach to Suspected Parkinsonism\n\nThis presentation (tremor + micrographia) raises concern for **Parkinson's disease or a parkinsonian syndrome**. Here's how I'd work this up:\n\n## 1. History (Key Details to Elicit)\n\n- **Tremor characteristics**: Resting vs. action/postural tremor, unilateral vs. bilateral onset, frequency (classic PD is 4-6 Hz pill-rolling, resting tremor)\n- **Onset**: True \"sudden\" onset is atypical for PD (which is insidious) \u2014 clarify if this means recently *noticed* vs. truly abrupt, which would raise suspicion for vascular/structural cause\n- **Associated symptoms**: Bradykinesia, rigidity, gait changes (shuffling, reduced arm swing), postural instability, falls\n- **Non-motor symptoms**: Anosmia, REM sleep behavior disorder (acting out dreams), constipation, depression, orthostatic lightheadedness (these often *precede* motor symptoms by years)\n- **Medication history**: Antipsychotics, metoclopramide, antiemetics (dopamine antagonists causing drug-induced parkinsonism)\n- **Toxin exposure**: Manganese, carbon monoxide, MPTP-like exposures\n- **Family history**: Early-onset PD, LRRK2/GBA mutations\n- **Alcohol responsiveness**: Essential tremor improves with alcohol; PD tremor does not\n\n## 2. Physical Examination\n\n- **Cardinal signs (TRAP)**: Tremor at rest, Rigidity (cogwheeling), Akinesia/bradykinesia, Postural instability\n- **Bradykinesia testing**: Finger tapping, hand opening/closing \u2014 look for decrementing amplitude\n- **Gait assessment**: Shuffling, reduced arm swing, festination, freezing\n- **Facial expression**: Hypomimia (masked facies)\n- **Speech**: Hypophonia\n- **Pull test**: For postural instability (usually a late finding \u2014 if present early, suspect atypical parkinsonism like PSP)\n- **Eye movements**: Vertical gaze palsy (suggests PSP, not PD)\n- **Autonomic testing**: Orthostatic BP (autonomic failure suggests MSA)\n- **Cerebellar signs**: Suggest MSA-C rather than PD\n\n## 3. Differential Diagnosis to Work Through\n\n| Condition | Distinguishing Features |\n|---|---|\n| **Idiopathic Parkinson's Disease** | Asymmetric onset, rest tremor, good levodopa response |\n| **Essential Tremor** | Postural/action tremor, improves with alcohol, often familial |\n| **Drug-induced parkinsonism** | Symmetric, history of offending drug, reversible |\n| **Vascular parkinsonism** | Lower body predominant, stepwise progression, vascular risk factors |\n| **Multiple System Atrophy (MSA)**",
+    "latency_ms": 12476.9,
+    "input_tokens": 175,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A 55 year old male patient describes the sudden appearance of a slight tremor and having noticed his handwriting getting smaller, what are the possible ways you'd find a diagnosis? ",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Diagnostic Approach to Suspected Parkinsonism\n\nThis presentation (tremor + micrographia) raises concern for **Parkinson's disease or a parkinsonian syndrome**. Here's how I'd work this up:\n\n## 1. History (Key Details to Elicit)\n\n- **Tremor characteristics**: Resting vs. action/postural tremor, unilateral vs. bilateral onset, frequency (classic PD is 4-6 Hz pill-rolling, resting tremor)\n- **Onset**: True \"sudden\" onset is atypical for PD (which is insidious) \u2014 clarify if this means recently *noticed* vs. truly abrupt, which would raise suspicion for vascular/structural cause\n- **Associated symptoms**: Bradykinesia, rigidity, gait changes (shuffling, reduced arm swing), postural instability, falls\n- **Non-motor symptoms**: Anosmia, REM sleep behavior disorder (acting out dreams), constipation, depression, orthostatic lightheadedness (these often *precede* motor symptoms by years)\n- **Medication history**: Antipsychotics, metoclopramide, antiemetics (dopamine antagonists causing drug-induced parkinsonism)\n- **Toxin exposure**: Manganese, carbon monoxide, MPTP-like exposures\n- **Family history**: Early-onset PD, LRRK2/GBA mutations\n- **Alcohol responsiveness**: Essential tremor improves with alcohol; PD tremor does not\n\n## 2. Physical Examination\n\n- **Cardinal signs (TRAP)**: Tremor at rest, Rigidity (cogwheeling), Akinesia/bradykinesia, Postural instability\n- **Bradykinesia testing**: Finger tapping, hand opening/closing \u2014 look for decrementing amplitude\n- **Gait assessment**: Shuffling, reduced arm swing, festination, freezing\n- **Facial expression**: Hypomimia (masked facies)\n- **Speech**: Hypophonia\n- **Pull test**: For postural instability (usually a late finding \u2014 if present early, suspect atypical parkinsonism like PSP)\n- **Eye movements**: Vertical gaze palsy (suggests PSP, not PD)\n- **Autonomic testing**: Orthostatic BP (autonomic failure suggests MSA)\n- **Cerebellar signs**: Suggest MSA-C rather than PD\n\n## 3. Differential Diagnosis to Work Through\n\n| Condition | Distinguishing Features |\n|---|---|\n| **Idiopathic Parkinson's Disease** | Asymmetric onset, rest tremor, good levodopa response |\n| **Essential Tremor** | Postural/action tremor, improves with alcohol, often familial |\n| **Drug-induced parkinsonism** | Symmetric, history of offending drug, reversible |\n| **Vascular parkinsonism** | Lower body predominant, stepwise progression, vascular risk factors |\n| **Multiple System Atrophy (MSA)**",
+    "latency_ms": 12476.9,
+    "token_count": 1199
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "915f9c2f4f4f",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239273.9791284,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4372,
+          "evidence": [
+            "Latency 12477ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12476.9,
+        "token_count": 1199,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.41; flagged=False"
+}

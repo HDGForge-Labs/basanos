@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:57:49.040325+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "I have a patient who has taken venlafaxine for 10 years and has recently stopped due to side effects and now wants a different kind of medication, except an SNRI. What other medication could I give this patient with less side effects but still efficacious?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Psychiatry ",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "For a patient stopping long-term venlafaxine, the best alternative depends on the indication, prior response, comorbidities, and the specific side effects\u2014but **an SSRI is usually the most evidence-based next class** for depression or anxiety, with generally better tolerability than venlafaxine.\n\n### Common options\n\n**1. Escitalopram**\n- Often a strong first choice for major depression and generalized anxiety.\n- Typical starting dose: **5\u201310 mg daily**; usual target **10\u201320 mg daily**.\n- Generally low interaction burden and relatively neutral regarding sedation and weight.\n- Possible effects: nausea, insomnia or somnolence, sexual dysfunction.\n- Check QT-risk factors at higher doses or in patients with cardiac disease.\n\n**2. Sertraline**\n- Effective for depression, panic disorder, PTSD, OCD, and social anxiety.\n- Start **25\u201350 mg daily**; usual range **50\u2013200 mg daily**.\n- Favorable in cardiovascular disease and often preferred when pregnancy is relevant.\n- More likely than escitalopram to cause initial gastrointestinal effects or diarrhea.\n\n**3. Fluoxetine**\n- Long half-life makes it useful when discontinuation symptoms are a concern.\n- Start **10\u201320 mg daily**; usual range **20\u201360 mg daily**.\n- More activating; may worsen anxiety, insomnia, or agitation.\n- Numerous CYP-mediated interactions and a long persistence if adverse effects occur.\n\nIf the patient wants a **non-serotonergic option**, consider:\n\n**Bupropion XL**\n- Start **150 mg each morning**, increasing to **300 mg daily** if appropriate.\n- Lower rates of sexual dysfunction, weight gain, and sedation; may improve energy and concentration.\n- Avoid in seizure disorders, eating disorders, abrupt alcohol/benzodiazepine withdrawal, or uncontrolled hypertension.\n- Less suitable as monotherapy for prominent anxiety and can initially increase activation or insomnia.\n\n**Mirtazapine**\n- Start **7.5\u201315 mg nightly**, usual range **15\u201345 mg**.\n- Useful when insomnia, poor appetite, or weight loss are prominent; relatively low sexual side-effect burden.\n- Main drawbacks are sedation and weight gain, particularly early in treatment.\n\n### Important transition issue\n\nAfter 10 years of venlafaxine, **abrupt discontinuation can cause significant withdrawal**\u2014dizziness, \u201cbrain zaps,\u201d nausea, irritability, anxiety, and flu-like symptoms. If they stopped recently and symptoms emerged, consider reinstating a tolerated venlafaxine dose and tapering gradually, often over **several weeks or longer**, or using a carefully monitored cross-taper to the new drug. Avoid overlapping venlafaxine with another serotonergic antidepressant without a specific plan because of serotonin-toxicity risk.\n\nA practical default for many patients is **escitalopram**, while **bupropion** is preferable when sexual dysfunction, fatigue, or weight gain are major concerns and anxiety is not prominent. Assess suicidality, bipolar history, substance use, and the reason for venlafaxine discontinuation before switching.",
+    "latency_ms": 4738.9,
+    "input_tokens": 132,
+    "output_tokens": 635
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "I have a patient who has taken venlafaxine for 10 years and has recently stopped due to side effects and now wants a different kind of medication, except an SNRI. What other medication could I give this patient with less side effects but still efficacious?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "For a patient stopping long-term venlafaxine, the best alternative depends on the indication, prior response, comorbidities, and the specific side effects\u2014but **an SSRI is usually the most evidence-based next class** for depression or anxiety, with generally better tolerability than venlafaxine.\n\n### Common options\n\n**1. Escitalopram**\n- Often a strong first choice for major depression and generalized anxiety.\n- Typical starting dose: **5\u201310 mg daily**; usual target **10\u201320 mg daily**.\n- Generally low interaction burden and relatively neutral regarding sedation and weight.\n- Possible effects: nausea, insomnia or somnolence, sexual dysfunction.\n- Check QT-risk factors at higher doses or in patients with cardiac disease.\n\n**2. Sertraline**\n- Effective for depression, panic disorder, PTSD, OCD, and social anxiety.\n- Start **25\u201350 mg daily**; usual range **50\u2013200 mg daily**.\n- Favorable in cardiovascular disease and often preferred when pregnancy is relevant.\n- More likely than escitalopram to cause initial gastrointestinal effects or diarrhea.\n\n**3. Fluoxetine**\n- Long half-life makes it useful when discontinuation symptoms are a concern.\n- Start **10\u201320 mg daily**; usual range **20\u201360 mg daily**.\n- More activating; may worsen anxiety, insomnia, or agitation.\n- Numerous CYP-mediated interactions and a long persistence if adverse effects occur.\n\nIf the patient wants a **non-serotonergic option**, consider:\n\n**Bupropion XL**\n- Start **150 mg each morning**, increasing to **300 mg daily** if appropriate.\n- Lower rates of sexual dysfunction, weight gain, and sedation; may improve energy and concentration.\n- Avoid in seizure disorders, eating disorders, abrupt alcohol/benzodiazepine withdrawal, or uncontrolled hypertension.\n- Less suitable as monotherapy for prominent anxiety and can initially increase activation or insomnia.\n\n**Mirtazapine**\n- Start **7.5\u201315 mg nightly**, usual range **15\u201345 mg**.\n- Useful when insomnia, poor appetite, or weight loss are prominent; relatively low sexual side-effect burden.\n- Main drawbacks are sedation and weight gain, particularly early in treatment.\n\n### Important transition issue\n\nAfter 10 years of venlafaxine, **abrupt discontinuation can cause significant withdrawal**\u2014dizziness, \u201cbrain zaps,\u201d nausea, irritability, anxiety, and flu-like symptoms. If they stopped recently and symptoms emerged, consider reinstating a tolerated venlafaxine dose and tapering gradually, often over **several weeks or longer**, or using a carefully monitored cross-taper to the new drug. Avoid overlapping venlafaxine with another serotonergic antidepressant without a specific plan because of serotonin-toxicity risk.\n\nA practical default for many patients is **escitalopram**, while **bupropion** is preferable when sexual dysfunction, fatigue, or weight gain are major concerns and anxiety is not prominent. Assess suicidality, bipolar history, substance use, and the reason for venlafaxine discontinuation before switching.",
+    "latency_ms": 4738.9,
+    "token_count": 767
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "02b1476addcf",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229869.0395977,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 4738.9,
+        "token_count": 767,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.90; flagged=False"
+}

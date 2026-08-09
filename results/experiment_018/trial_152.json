@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:03:30.243479+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "I have a patient with a kidney stone. Should the patient do an ultrasound or a CT scan?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Radiology",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "For suspected kidney stones, the choice depends on age, pregnancy status, clinical stability, and whether the goal is initial diagnosis or urgent complication assessment.\n\n### Typical approach\n\n**1. Nonpregnant adults**\n- **Low-dose noncontrast CT of the abdomen/pelvis** is the most accurate test:\n  - Sensitivity approximately **90\u201397%**\n  - Specificity approximately **95\u2013100%**\n  - Detects stone size, location, obstruction, and alternative diagnoses.\n- Use **low-dose protocols**, often around **1\u20133 mSv** when feasible, rather than a standard CT dose of roughly **5\u201315 mSv**.\n- CT is particularly appropriate when:\n  - The diagnosis is uncertain\n  - Pain is severe or atypical\n  - There is fever, sepsis concern, renal impairment, or a solitary kidney\n  - Symptoms persist or recur\n  - An alternative diagnosis is possible\n  - The patient has not previously had an imaging-confirmed stone\n\n**2. Pregnancy**\n- **Ultrasound is the preferred first test**, regardless of trimester.\n- If ultrasound is nondiagnostic and clinical concern remains:\n  - Consider **MRI without gadolinium** in selected cases.\n  - CT should generally be reserved for situations where the result is essential and cannot be obtained otherwise, using the lowest reasonable dose.\n- Fetal radiation risk is especially considered above approximately **50 mGy**, while typical modern low-dose abdominal CT protocols are generally below this, but avoiding unnecessary radiation remains important.\n\n**3. Children and adolescents**\n- Start with **renal/bladder ultrasound**, ideally with assessment of ureteral jets and hydronephrosis.\n- Use low-dose CT only if ultrasound is nondiagnostic and the result will change management.\n\n**4. Stable patient with a classic, uncomplicated presentation**\n- Ultrasound is a reasonable radiation-free initial test, especially when there is a high pretest probability and no red flags.\n- However, ultrasound is less sensitive for small or ureteral stones:\n  - Overall sensitivity roughly **45\u201370%**\n  - Specificity roughly **80\u201395%**\n  - It may detect hydronephrosis without directly visualizing the stone.\n- A negative ultrasound does **not** reliably exclude a ureteral stone.\n\n### Urgent evaluation\n\nImaging should be expedited\u2014often with CT in a nonpregnant adult\u2014if there is:\n\n- Fever, rigors, or suspected infection\n- Hypotension, tachycardia, or sepsis\n- Anuria or markedly reduced urine output\n- Acute kidney injury or rising creatinine\n- A solitary functioning kidney or bilateral obstruction\n- Uncontrolled vomiting or pain\n- Diagnostic uncertainty\n- Immunosuppression\n\n**Obstructed infected urine is a urologic emergency.** It requires immediate antibiotics and urgent drainage, typically with a ureteral stent or nephrostomy; definitive stone removal is usually delayed until infection is controlled.\n\n### Practical summary\n\n- **Pregnant patient or child:** ultrasound first.\n- **Typical stable nonpregnant adult:** low-dose noncontrast CT is the most definitive test; ultrasound is reasonable when avoiding radiation is important.\n- **Severe, atypical, recurrent, or complicated presentation:** low-dose noncontrast CT is usually preferred.\n- **Ultrasound showing hydronephrosis does not by itself establish the cause**, and CT may be needed if management depends on stone size, location, or an alternative diagnosis.",
+    "latency_ms": 5416.4,
+    "input_tokens": 92,
+    "output_tokens": 709
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "I have a patient with a kidney stone. Should the patient do an ultrasound or a CT scan?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "For suspected kidney stones, the choice depends on age, pregnancy status, clinical stability, and whether the goal is initial diagnosis or urgent complication assessment.\n\n### Typical approach\n\n**1. Nonpregnant adults**\n- **Low-dose noncontrast CT of the abdomen/pelvis** is the most accurate test:\n  - Sensitivity approximately **90\u201397%**\n  - Specificity approximately **95\u2013100%**\n  - Detects stone size, location, obstruction, and alternative diagnoses.\n- Use **low-dose protocols**, often around **1\u20133 mSv** when feasible, rather than a standard CT dose of roughly **5\u201315 mSv**.\n- CT is particularly appropriate when:\n  - The diagnosis is uncertain\n  - Pain is severe or atypical\n  - There is fever, sepsis concern, renal impairment, or a solitary kidney\n  - Symptoms persist or recur\n  - An alternative diagnosis is possible\n  - The patient has not previously had an imaging-confirmed stone\n\n**2. Pregnancy**\n- **Ultrasound is the preferred first test**, regardless of trimester.\n- If ultrasound is nondiagnostic and clinical concern remains:\n  - Consider **MRI without gadolinium** in selected cases.\n  - CT should generally be reserved for situations where the result is essential and cannot be obtained otherwise, using the lowest reasonable dose.\n- Fetal radiation risk is especially considered above approximately **50 mGy**, while typical modern low-dose abdominal CT protocols are generally below this, but avoiding unnecessary radiation remains important.\n\n**3. Children and adolescents**\n- Start with **renal/bladder ultrasound**, ideally with assessment of ureteral jets and hydronephrosis.\n- Use low-dose CT only if ultrasound is nondiagnostic and the result will change management.\n\n**4. Stable patient with a classic, uncomplicated presentation**\n- Ultrasound is a reasonable radiation-free initial test, especially when there is a high pretest probability and no red flags.\n- However, ultrasound is less sensitive for small or ureteral stones:\n  - Overall sensitivity roughly **45\u201370%**\n  - Specificity roughly **80\u201395%**\n  - It may detect hydronephrosis without directly visualizing the stone.\n- A negative ultrasound does **not** reliably exclude a ureteral stone.\n\n### Urgent evaluation\n\nImaging should be expedited\u2014often with CT in a nonpregnant adult\u2014if there is:\n\n- Fever, rigors, or suspected infection\n- Hypotension, tachycardia, or sepsis\n- Anuria or markedly reduced urine output\n- Acute kidney injury or rising creatinine\n- A solitary functioning kidney or bilateral obstruction\n- Uncontrolled vomiting or pain\n- Diagnostic uncertainty\n- Immunosuppression\n\n**Obstructed infected urine is a urologic emergency.** It requires immediate antibiotics and urgent drainage, typically with a ureteral stent or nephrostomy; definitive stone removal is usually delayed until infection is controlled.\n\n### Practical summary\n\n- **Pregnant patient or child:** ultrasound first.\n- **Typical stable nonpregnant adult:** low-dose noncontrast CT is the most definitive test; ultrasound is reasonable when avoiding radiation is important.\n- **Severe, atypical, recurrent, or complicated presentation:** low-dose noncontrast CT is usually preferred.\n- **Ultrasound showing hydronephrosis does not by itself establish the cause**, and CT may be needed if management depends on stone size, location, or an alternative diagnosis.",
+    "latency_ms": 5416.4,
+    "token_count": 801,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "e3b5f063b97e",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230210.2427003,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 10 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 5416.4,
+        "token_count": 801,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.152; flagged=True"
+}

@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:56:50.267095+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Consider a scenario where a patient presents with symptoms of both bipolar disorder and borderline personality disorder. How can clinicians accurately differentiate between the two conditions?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "psychiatrist",
+    "question_type": "Directed question that has a single unambiguous answer| Summarization of information on a topic| Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Differentiating Bipolar Disorder from Borderline Personality Disorder\n\nThis is one of the most challenging differential diagnoses in psychiatry, with studies suggesting approximately 20% of patients with BPD also meet criteria for bipolar disorder, and misdiagnosis rates ranging from roughly 10-40% in various clinical samples. Here's a comprehensive framework for differentiation:\n\n## 1. Mood Episode Duration and Pattern\n\n**Bipolar Disorder:**\n- Manic episodes last a minimum of **7 days** (or any duration if hospitalization required)\n- Hypomanic episodes last at least **4 consecutive days**\n- Depressive episodes typically persist for **at least 2 weeks**\n- Mood states are relatively **sustained and episodic**, with distinct onset and offset\n- Between episodes, patients often return to a stable baseline (euthymia)\n\n**BPD:**\n- Mood shifts occur rapidly, often within **hours to a few days**\n- Some patients report multiple mood shifts within a **single day** (ultra-ultradian cycling)\n- Mood instability is **chronic and pervasive**, not episodic in the classic sense\n- Baseline tends to include persistent feelings of emptiness or dysphoria even between acute shifts\n\n## 2. Triggers and Context\n\n**Bipolar Disorder:**\n- Episodes can occur **spontaneously**, without clear environmental triggers\n- Circadian disruption (e.g., sleep deprivation, jet lag) is a common precipitant\n- Postpartum period carries significantly elevated risk (roughly 20-30% relapse risk)\n\n**BPD:**\n- Mood shifts are typically **reactive to interpersonal events**\u2014perceived rejection, abandonment, or conflict\n- Symptoms are closely tied to **relational triggers**\n- Approximately 70-80% of mood fluctuations in BPD can be traced to identifiable interpersonal stressors\n\n## 3. Quality of Elevated Mood States\n\n**Bipolar Mania/Hypomania:**\n- Decreased need for sleep (e.g., functioning on **3-4 hours** without fatigue)\n- Grandiosity or inflated self-esteem\n- Pressured speech, racing thoughts\n- Increased goal-directed activity\n- Risky behavior driven by **euphoria or irritability with expansive quality**\n- Psychomotor agitation with a distinctly \"revved up\" quality\n\n**BPD \"Highs\":**\n- Elevated mood is typically **reactive** (e.g., excitement about a new relationship)\n- Lacks the pervasive grandiosity of true mania\n- Sleep changes are less pronounced and not accompanied by decreased need for sleep\n- Energy fluctuations are less biologically driven\n\n## 4. Impulsivity and Self-Harm\n\n**BPD:**\n- Self-harm and suicidal behavior are often **chronic, recurrent**, and used as emotional regulation strategies\n- Prevalence of self-harm in BPD approaches **65-80%**\n- Impulsivity is present",
+    "latency_ms": 11865.8,
+    "input_tokens": 167,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Consider a scenario where a patient presents with symptoms of both bipolar disorder and borderline personality disorder. How can clinicians accurately differentiate between the two conditions?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Differentiating Bipolar Disorder from Borderline Personality Disorder\n\nThis is one of the most challenging differential diagnoses in psychiatry, with studies suggesting approximately 20% of patients with BPD also meet criteria for bipolar disorder, and misdiagnosis rates ranging from roughly 10-40% in various clinical samples. Here's a comprehensive framework for differentiation:\n\n## 1. Mood Episode Duration and Pattern\n\n**Bipolar Disorder:**\n- Manic episodes last a minimum of **7 days** (or any duration if hospitalization required)\n- Hypomanic episodes last at least **4 consecutive days**\n- Depressive episodes typically persist for **at least 2 weeks**\n- Mood states are relatively **sustained and episodic**, with distinct onset and offset\n- Between episodes, patients often return to a stable baseline (euthymia)\n\n**BPD:**\n- Mood shifts occur rapidly, often within **hours to a few days**\n- Some patients report multiple mood shifts within a **single day** (ultra-ultradian cycling)\n- Mood instability is **chronic and pervasive**, not episodic in the classic sense\n- Baseline tends to include persistent feelings of emptiness or dysphoria even between acute shifts\n\n## 2. Triggers and Context\n\n**Bipolar Disorder:**\n- Episodes can occur **spontaneously**, without clear environmental triggers\n- Circadian disruption (e.g., sleep deprivation, jet lag) is a common precipitant\n- Postpartum period carries significantly elevated risk (roughly 20-30% relapse risk)\n\n**BPD:**\n- Mood shifts are typically **reactive to interpersonal events**\u2014perceived rejection, abandonment, or conflict\n- Symptoms are closely tied to **relational triggers**\n- Approximately 70-80% of mood fluctuations in BPD can be traced to identifiable interpersonal stressors\n\n## 3. Quality of Elevated Mood States\n\n**Bipolar Mania/Hypomania:**\n- Decreased need for sleep (e.g., functioning on **3-4 hours** without fatigue)\n- Grandiosity or inflated self-esteem\n- Pressured speech, racing thoughts\n- Increased goal-directed activity\n- Risky behavior driven by **euphoria or irritability with expansive quality**\n- Psychomotor agitation with a distinctly \"revved up\" quality\n\n**BPD \"Highs\":**\n- Elevated mood is typically **reactive** (e.g., excitement about a new relationship)\n- Lacks the pervasive grandiosity of true mania\n- Sleep changes are less pronounced and not accompanied by decreased need for sleep\n- Energy fluctuations are less biologically driven\n\n## 4. Impulsivity and Self-Harm\n\n**BPD:**\n- Self-harm and suicidal behavior are often **chronic, recurrent**, and used as emotional regulation strategies\n- Prevalence of self-harm in BPD approaches **65-80%**\n- Impulsivity is present",
+    "latency_ms": 11865.8,
+    "token_count": 1191,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "9f828c3e12a0",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240610.2663043,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 12 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.428,
+          "evidence": [
+            "Latency 11866ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11865.8,
+        "token_count": 1191,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.151; flagged=True"
+}

@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:50:14.468553+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "A married couple have two minor children aged 8 and 10. Upon divorce the wife files for maintenance from the husband. How will the maintenance amount be determined?",
+    "field": "Law",
+    "specific_field": "Family Law",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Determination of Maintenance Amount in Divorce Cases\n\nMaintenance determination varies by jurisdiction, but most legal systems follow similar underlying principles. Here's a comprehensive breakdown of how courts typically approach this:\n\n## 1. **Key Factors Courts Consider**\n\n### Income and Financial Capacity\n- **Husband's gross income**: salary, business income, investments, rental income\n- **Disclosed vs. actual income**: Courts often scrutinize whether the declared income (say, \u20b950,000/month or $3,000/month) matches lifestyle indicators\n- **Earning capacity**: Even if currently underemployed, courts may impute income based on qualifications and work history\n- **Assets**: Property, savings, investments (roughly 20-30% weightage in overall assessment)\n\n### Wife's Financial Status\n- Her own income, if employed (may reduce quantum by approximately 30-50%)\n- Educational qualifications and employability\n- Whether she sacrificed career for homemaking (often increases award by 15-25%)\n\n### Children's Needs (Critical Factor Here)\n- **Educational expenses**: School fees, tuition, extracurricular activities\n- **Medical/healthcare costs**: Insurance, routine care, emergencies\n- **Daily living expenses**: Food, clothing, shelter proportion\n- **Age-specific needs**: An 8-year-old and 10-year-old may have different costs (older child often needs ~10-15% more due to escalating educational needs)\n\n## 2. **Common Calculation Methods**\n\n### Percentage-of-Income Formula (used in many jurisdictions)\n- **For one child**: approximately 15-20% of husband's net income\n- **For two children**: approximately 20-25% of net income (not simply doubled, as some economies of scale apply)\n- **Spousal maintenance separately**: additional 15-25% depending on marriage duration\n\n### Example Calculation:\nIf husband's net monthly income = $5,000 (or \u20b94,00,000):\n- Child maintenance (2 children): ~25% = $1,250\n- Spousal maintenance: ~20% = $1,000\n- **Total**: approximately $2,250/month (45% of net income)\n\n*Note: Many jurisdictions cap total maintenance at 40-50% of income to leave the payer with subsistence funds*\n\n## 3. **Standard of Living Principle**\nCourts typically aim to ensure children maintain a lifestyle **reasonably comparable** to what they experienced during the marriage \u2014 not identical, but not drastically reduced (avoiding more than a 30-40% lifestyle drop where possible).\n\n## 4. **Duration-Based Considerations**\n- **Child maintenance**: Continues until age of majority (18) or completion of education (sometimes extended to 21-25 for higher education, especially for daughters in some jurisdictions)\n- **Spousal maintenance**: May be:\n  - **Rehabilitative**: 2-5 years if wife needs to become self-sufficient\n  - **Permanent**: If marriage lasted 10+ years and wife has limited earning capacity\n\n## 5",
+    "latency_ms": 12402.2,
+    "input_tokens": 161,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A married couple have two minor children aged 8 and 10. Upon divorce the wife files for maintenance from the husband. How will the maintenance amount be determined?",
+      "field": "Law"
+    },
+    "response": "# Determination of Maintenance Amount in Divorce Cases\n\nMaintenance determination varies by jurisdiction, but most legal systems follow similar underlying principles. Here's a comprehensive breakdown of how courts typically approach this:\n\n## 1. **Key Factors Courts Consider**\n\n### Income and Financial Capacity\n- **Husband's gross income**: salary, business income, investments, rental income\n- **Disclosed vs. actual income**: Courts often scrutinize whether the declared income (say, \u20b950,000/month or $3,000/month) matches lifestyle indicators\n- **Earning capacity**: Even if currently underemployed, courts may impute income based on qualifications and work history\n- **Assets**: Property, savings, investments (roughly 20-30% weightage in overall assessment)\n\n### Wife's Financial Status\n- Her own income, if employed (may reduce quantum by approximately 30-50%)\n- Educational qualifications and employability\n- Whether she sacrificed career for homemaking (often increases award by 15-25%)\n\n### Children's Needs (Critical Factor Here)\n- **Educational expenses**: School fees, tuition, extracurricular activities\n- **Medical/healthcare costs**: Insurance, routine care, emergencies\n- **Daily living expenses**: Food, clothing, shelter proportion\n- **Age-specific needs**: An 8-year-old and 10-year-old may have different costs (older child often needs ~10-15% more due to escalating educational needs)\n\n## 2. **Common Calculation Methods**\n\n### Percentage-of-Income Formula (used in many jurisdictions)\n- **For one child**: approximately 15-20% of husband's net income\n- **For two children**: approximately 20-25% of net income (not simply doubled, as some economies of scale apply)\n- **Spousal maintenance separately**: additional 15-25% depending on marriage duration\n\n### Example Calculation:\nIf husband's net monthly income = $5,000 (or \u20b94,00,000):\n- Child maintenance (2 children): ~25% = $1,250\n- Spousal maintenance: ~20% = $1,000\n- **Total**: approximately $2,250/month (45% of net income)\n\n*Note: Many jurisdictions cap total maintenance at 40-50% of income to leave the payer with subsistence funds*\n\n## 3. **Standard of Living Principle**\nCourts typically aim to ensure children maintain a lifestyle **reasonably comparable** to what they experienced during the marriage \u2014 not identical, but not drastically reduced (avoiding more than a 30-40% lifestyle drop where possible).\n\n## 4. **Duration-Based Considerations**\n- **Child maintenance**: Continues until age of majority (18) or completion of education (sometimes extended to 21-25 for higher education, especially for daughters in some jurisdictions)\n- **Spousal maintenance**: May be:\n  - **Rehabilitative**: 2-5 years if wife needs to become self-sufficient\n  - **Permanent**: If marriage lasted 10+ years and wife has limited earning capacity\n\n## 5",
+    "latency_ms": 12402.2,
+    "token_count": 1185,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "73420a418a42",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240214.4677951,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 17 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.436,
+          "evidence": [
+            "Latency 12402ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12402.2,
+        "token_count": 1185,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.119; flagged=True"
+}

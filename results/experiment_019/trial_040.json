@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:57:24.794734+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "In the field relying on brain psychology, how do they know when the hypothesis is going to give a good result?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Sales rep in medicines",
+    "question_type": "Open-ended question that is potentially ambiguous| Summarization of information on a topic| Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "In psychology and neuroscience, they do not know in advance that a hypothesis will \u201cgive a good result.\u201d They estimate whether it is likely to be useful, then test it under controlled conditions.\n\nA hypothesis is considered promising when it has several features:\n\n- **It follows from an existing theory or prior evidence.**  \n  For example, if prior studies show that sleep deprivation impairs attention, a reasonable hypothesis is: \u201cPeople deprived of sleep will perform worse on sustained-attention tasks.\u201d\n\n- **It is specific and falsifiable.**  \n  \u201cStress affects the brain\u201d is too vague.  \n  \u201cParticipants exposed to acute stress will show increased cortisol and reduced working-memory accuracy compared with controls\u201d can be tested and potentially disproved.\n\n- **It makes measurable predictions.**  \n  Brain-related work needs operational measures: reaction time, error rates, questionnaires, hormone levels, EEG signals, fMRI activation, eye tracking, clinical symptoms, and so on.\n\n- **The study is designed to rule out alternative explanations.**  \n  Researchers use comparison groups, random assignment, blinding where possible, placebo/sham conditions, and controls for age, medication, sleep, education, and other confounders.\n\n- **The expected effect is large enough to detect.**  \n  Before collecting data, researchers often conduct a **power analysis**. This estimates how many participants are needed to have a good chance\u2014commonly 80% or 90%\u2014of detecting an effect of a specified size if it is real.\n\n- **The statistical plan is set in advance.**  \n  In stronger studies, scientists preregister which outcomes they will test and how. This reduces the risk of searching through many analyses until something looks significant.\n\nAfter the study, a result is considered stronger when:\n\n1. The data match the prediction.  \n2. The difference is unlikely to be due to chance\u2014for example, a confidence interval excludes no effect and the statistical test meets the pre-specified threshold.  \n3. The effect size is meaningful, not merely statistically significant.  \n4. The finding replicates in new samples, laboratories, and settings.  \n5. The result fits with converging evidence from behavior, brain measures, biology, and clinical outcomes.\n\nFor example, suppose researchers hypothesize that a cognitive-behavioral therapy reduces anxiety by changing threat-related processing in the amygdala. A convincing study would not rely only on a brain scan. It might show that, compared with a control treatment, the therapy:\n\n- lowers anxiety symptoms,\n- improves behavioral responses to threat,\n- changes a pre-specified neural measure,\n- shows that the brain change predicts symptom improvement,\n- and replicates in another group.\n\nSo the key point is: they do not judge a hypothesis by whether it produces a desirable or exciting result. They judge it by whether it produces **clear, testable predictions that survive rigorous attempts to disprove them**.",
+    "latency_ms": 7876.4,
+    "input_tokens": 101,
+    "output_tokens": 593
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "In the field relying on brain psychology, how do they know when the hypothesis is going to give a good result?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "In psychology and neuroscience, they do not know in advance that a hypothesis will \u201cgive a good result.\u201d They estimate whether it is likely to be useful, then test it under controlled conditions.\n\nA hypothesis is considered promising when it has several features:\n\n- **It follows from an existing theory or prior evidence.**  \n  For example, if prior studies show that sleep deprivation impairs attention, a reasonable hypothesis is: \u201cPeople deprived of sleep will perform worse on sustained-attention tasks.\u201d\n\n- **It is specific and falsifiable.**  \n  \u201cStress affects the brain\u201d is too vague.  \n  \u201cParticipants exposed to acute stress will show increased cortisol and reduced working-memory accuracy compared with controls\u201d can be tested and potentially disproved.\n\n- **It makes measurable predictions.**  \n  Brain-related work needs operational measures: reaction time, error rates, questionnaires, hormone levels, EEG signals, fMRI activation, eye tracking, clinical symptoms, and so on.\n\n- **The study is designed to rule out alternative explanations.**  \n  Researchers use comparison groups, random assignment, blinding where possible, placebo/sham conditions, and controls for age, medication, sleep, education, and other confounders.\n\n- **The expected effect is large enough to detect.**  \n  Before collecting data, researchers often conduct a **power analysis**. This estimates how many participants are needed to have a good chance\u2014commonly 80% or 90%\u2014of detecting an effect of a specified size if it is real.\n\n- **The statistical plan is set in advance.**  \n  In stronger studies, scientists preregister which outcomes they will test and how. This reduces the risk of searching through many analyses until something looks significant.\n\nAfter the study, a result is considered stronger when:\n\n1. The data match the prediction.  \n2. The difference is unlikely to be due to chance\u2014for example, a confidence interval excludes no effect and the statistical test meets the pre-specified threshold.  \n3. The effect size is meaningful, not merely statistically significant.  \n4. The finding replicates in new samples, laboratories, and settings.  \n5. The result fits with converging evidence from behavior, brain measures, biology, and clinical outcomes.\n\nFor example, suppose researchers hypothesize that a cognitive-behavioral therapy reduces anxiety by changing threat-related processing in the amygdala. A convincing study would not rely only on a brain scan. It might show that, compared with a control treatment, the therapy:\n\n- lowers anxiety symptoms,\n- improves behavioral responses to threat,\n- changes a pre-specified neural measure,\n- shows that the brain change predicts symptom improvement,\n- and replicates in another group.\n\nSo the key point is: they do not judge a hypothesis by whether it produces a desirable or exciting result. They judge it by whether it produces **clear, testable predictions that survive rigorous attempts to disprove them**.",
+    "latency_ms": 7876.4,
+    "token_count": 694
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "7e955afb9850",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233444.793976,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 7876.4,
+        "token_count": 694,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.40; flagged=False"
+}

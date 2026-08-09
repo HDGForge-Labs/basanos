@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T22:07:07.184442+00:00",
+  "detector": "context_degradation",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "when did the smoking ban in public places start",
+    "gold_index": 0
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Smoking bans in public places began at different times by location. In the UK, Scotland\u2019s ban started on 26 March 2006, and England\u2019s began on 1 July 2007.",
+    "latency_ms": 1135.1,
+    "input_tokens": 1405,
+    "output_tokens": 43
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "when did the smoking ban in public places start",
+      "gold_index": 0,
+      "n_docs": 10
+    },
+    "response": "Smoking bans in public places began at different times by location. In the UK, Scotland's ban started on 26 March 2006, and England's began on 1 July 2007.",
+    "latency_ms": 1135.1,
+    "token_count": 1448,
+    "context_window_used": 0.25
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "c68203a33fa3",
+      "tool_name": "context_qa",
+      "status": "pass",
+      "timestamp": 1786313227.183676,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 1135.1,
+        "token_count": 1448,
+        "context_window_used": 0.25,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.5; flagged=False; gold_index=0"
+}

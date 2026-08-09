@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T22:58:58.082918+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What are the possible causes of a 7 days old newborn with yellowish color, seizures and altered mental status?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General Physician",
+    "question_type": "Open-ended question that is potentially ambiguous| Summarization of information on a topic| Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "A **7-day-old newborn with yellow skin/eyes plus seizures and altered mental status is a medical emergency**. This can indicate **severe hyperbilirubinemia causing acute bilirubin encephalopathy/kernicterus**, but dangerous infections, metabolic problems, bleeding, and low oxygen or glucose must also be considered. **Call emergency services or go to a neonatal emergency unit immediately\u2014do not wait for a routine appointment.**\n\n## Important possible causes\n\n### 1. Severe unconjugated hyperbilirubinemia\nHigh indirect bilirubin can cross the immature blood\u2013brain barrier and injure the brain.\n\nPossible reasons include:\n\n- **Hemolysis from blood-group incompatibility**\n  - ABO incompatibility\n  - Rh incompatibility\n  - Positive direct antiglobulin/Coombs test\n- **G6PD deficiency**, especially after exposure to oxidant drugs, mothballs/naphthalene, henna, or certain foods\n- **Hereditary spherocytosis or other red-cell disorders**\n- **Significant bruising, cephalohematoma, or internal bleeding**\n- **Prematurity or low birth weight**\n- **Sepsis**, which can increase bilirubin and worsen neurologic vulnerability\n- **Poor feeding, dehydration, or excessive weight loss**\n- Rarely, **Crigler\u2013Najjar syndrome** or other bilirubin-processing disorders\n\nWarning signs of acute bilirubin encephalopathy include:\n\n- Increasing sleepiness or difficulty waking\n- Poor feeding or weak sucking\n- Hypotonia or unusual floppiness initially\n- High-pitched cry\n- Irritability, arching of the neck/back, or stiffness\n- Apnea\n- Seizures\n- Progression to coma\n\nA bilirubin level that is dangerous depends on **age in hours, gestational age, hemolysis, albumin, and clinical condition**. In a symptomatic infant, **any markedly elevated level is urgent**; treatment may require **intensive phototherapy and exchange transfusion**. A visibly yellow infant with seizures should not be judged by color alone.\n\n### 2. Neonatal sepsis or meningitis\nAt 7 days, infection may be acquired around delivery or after birth. Organisms can include:\n\n- **Group B Streptococcus**\n- **E. coli**\n- **Listeria monocytogenes**\n- Other Gram-negative bacteria\n- **Staphylococci**\n- Viral infections, including **HSV**, which can present with seizures even without obvious skin lesions\n\nPossible signs:\n\n- Temperature instability; newborns may be **cold rather than febrile**\n- Poor feeding, lethargy, weak cry\n- Breathing difficulty, apnea, or cyanosis\n- Abnormal heart rate or perfusion\n- Seizures or altered consciousness\n- Jaundice, especially if it appears early, worsens quickly, or occurs with illness\n\nThis requires urgent blood cultures, often lumbar puncture if safe, and **immediate empiric intravenous antibiotics**, with antiviral therapy considered when HSV is possible.\n\n### 3. Low blood glucose\nNeonatal hypoglycemia can cause seizures and altered consciousness, and may occur with:\n\n- Poor feeding or dehydration\n- Prematurity or growth restriction\n- Infant of a diabetic mother\n- Sepsis\n- Hyperinsulinism\n- Certain metabolic diseases\n\nA bedside glucose should be checked immediately. **A glucose below approximately 45 mg/dL (2.5 mmol/L)** is concerning in many clinical contexts; a symptomatic infant requires immediate treatment, often intravenous dextrose. Exact treatment thresholds vary by protocol, but seizures make this an emergency regardless of the number.\n\n### 4. Low calcium, magnesium, or other electrolyte abnormalities\nHypocalcemia, hypomagnesemia, sodium abnormalities, or severe dehydration can provoke neonatal seizures. Causes include:\n\n- Prematurity\n- Maternal diabetes or hyperparathyroidism\n- Vitamin D or calcium disorders\n- Renal disease\n- Diarrhea or inadequate intake\n- Certain medications\n\n### 5. Intracranial bleeding or birth-related brain injury\nPossible causes include:\n\n- Intraventricular hemorrhage, especially in premature infants\n- Subdural or subarachnoid hemorrhage\n- Birth trauma\n- Hypoxic-ischemic encephalopathy\n- Cerebral venous thrombosis\n- Stroke\n\nRisk factors include difficult delivery, vacuum or forceps use, prematurity, clotting disorders, and severe perinatal distress. Neuroimaging\u2014cranial ultrasound, MRI, or CT when necessary\u2014may be required.\n\n### 6. Inborn errors of metabolism\nThese may present after several days when feeding-related metabolic stress develops. Possibilities include:\n\n- Urea-cycle disorders\n- Organic acidemias\n- Maple syrup urine disease\n- Fatty-acid oxidation disorders\n- Galactosemia\n- Disorders of mitochondrial energy metabolism\n\nClues can include:\n\n- Vomiting or poor feeding\n- Progressive lethargy\n-",
+    "latency_ms": 6970.0,
+    "input_tokens": 95,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the possible causes of a 7 days old newborn with yellowish color, seizures and altered mental status?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "A **7-day-old newborn with yellow skin/eyes plus seizures and altered mental status is a medical emergency**. This can indicate **severe hyperbilirubinemia causing acute bilirubin encephalopathy/kernicterus**, but dangerous infections, metabolic problems, bleeding, and low oxygen or glucose must also be considered. **Call emergency services or go to a neonatal emergency unit immediately\u2014do not wait for a routine appointment.**\n\n## Important possible causes\n\n### 1. Severe unconjugated hyperbilirubinemia\nHigh indirect bilirubin can cross the immature blood\u2013brain barrier and injure the brain.\n\nPossible reasons include:\n\n- **Hemolysis from blood-group incompatibility**\n  - ABO incompatibility\n  - Rh incompatibility\n  - Positive direct antiglobulin/Coombs test\n- **G6PD deficiency**, especially after exposure to oxidant drugs, mothballs/naphthalene, henna, or certain foods\n- **Hereditary spherocytosis or other red-cell disorders**\n- **Significant bruising, cephalohematoma, or internal bleeding**\n- **Prematurity or low birth weight**\n- **Sepsis**, which can increase bilirubin and worsen neurologic vulnerability\n- **Poor feeding, dehydration, or excessive weight loss**\n- Rarely, **Crigler\u2013Najjar syndrome** or other bilirubin-processing disorders\n\nWarning signs of acute bilirubin encephalopathy include:\n\n- Increasing sleepiness or difficulty waking\n- Poor feeding or weak sucking\n- Hypotonia or unusual floppiness initially\n- High-pitched cry\n- Irritability, arching of the neck/back, or stiffness\n- Apnea\n- Seizures\n- Progression to coma\n\nA bilirubin level that is dangerous depends on **age in hours, gestational age, hemolysis, albumin, and clinical condition**. In a symptomatic infant, **any markedly elevated level is urgent**; treatment may require **intensive phototherapy and exchange transfusion**. A visibly yellow infant with seizures should not be judged by color alone.\n\n### 2. Neonatal sepsis or meningitis\nAt 7 days, infection may be acquired around delivery or after birth. Organisms can include:\n\n- **Group B Streptococcus**\n- **E. coli**\n- **Listeria monocytogenes**\n- Other Gram-negative bacteria\n- **Staphylococci**\n- Viral infections, including **HSV**, which can present with seizures even without obvious skin lesions\n\nPossible signs:\n\n- Temperature instability; newborns may be **cold rather than febrile**\n- Poor feeding, lethargy, weak cry\n- Breathing difficulty, apnea, or cyanosis\n- Abnormal heart rate or perfusion\n- Seizures or altered consciousness\n- Jaundice, especially if it appears early, worsens quickly, or occurs with illness\n\nThis requires urgent blood cultures, often lumbar puncture if safe, and **immediate empiric intravenous antibiotics**, with antiviral therapy considered when HSV is possible.\n\n### 3. Low blood glucose\nNeonatal hypoglycemia can cause seizures and altered consciousness, and may occur with:\n\n- Poor feeding or dehydration\n- Prematurity or growth restriction\n- Infant of a diabetic mother\n- Sepsis\n- Hyperinsulinism\n- Certain metabolic diseases\n\nA bedside glucose should be checked immediately. **A glucose below approximately 45 mg/dL (2.5 mmol/L)** is concerning in many clinical contexts; a symptomatic infant requires immediate treatment, often intravenous dextrose. Exact treatment thresholds vary by protocol, but seizures make this an emergency regardless of the number.\n\n### 4. Low calcium, magnesium, or other electrolyte abnormalities\nHypocalcemia, hypomagnesemia, sodium abnormalities, or severe dehydration can provoke neonatal seizures. Causes include:\n\n- Prematurity\n- Maternal diabetes or hyperparathyroidism\n- Vitamin D or calcium disorders\n- Renal disease\n- Diarrhea or inadequate intake\n- Certain medications\n\n### 5. Intracranial bleeding or birth-related brain injury\nPossible causes include:\n\n- Intraventricular hemorrhage, especially in premature infants\n- Subdural or subarachnoid hemorrhage\n- Birth trauma\n- Hypoxic-ischemic encephalopathy\n- Cerebral venous thrombosis\n- Stroke\n\nRisk factors include difficult delivery, vacuum or forceps use, prematurity, clotting disorders, and severe perinatal distress. Neuroimaging\u2014cranial ultrasound, MRI, or CT when necessary\u2014may be required.\n\n### 6. Inborn errors of metabolism\nThese may present after several days when feeding-related metabolic stress develops. Possibilities include:\n\n- Urea-cycle disorders\n- Organic acidemias\n- Maple syrup urine disease\n- Fatty-acid oxidation disorders\n- Galactosemia\n- Disorders of mitochondrial energy metabolism\n\nClues can include:\n\n- Vomiting or poor feeding\n- Progressive lethargy\n-",
+    "latency_ms": 6970.0,
+    "token_count": 1119,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "b561c26e86b2",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229938.0820727,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 8 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 6970.0,
+        "token_count": 1119,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.106; flagged=True"
+}

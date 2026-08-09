@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:54:14.522642+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "If a patient's X ray has dark spots on the chest what does it mean?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Orthopedics and Physiotherapist",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Dark spots on a chest X\u2011ray can mean different things depending on their **location, size, shape, and whether they are truly abnormal**. On X\u2011rays, **air appears dark**, so normal lungs are mostly dark. Possible explanations include:\n\n- **Normal air-filled lung tissue** or overlapping structures such as ribs, blood vessels, or skin folds  \n- **Lung nodules or masses**, which usually appear as *white* spots rather than dark ones  \n- **Areas of excess air** (hyperinflation), such as with emphysema or a pneumothorax (collapsed lung)  \n- **Cavities** from infections such as tuberculosis or certain fungal infections  \n- **Technical artifacts** from movement, clothing, or the imaging process  \n- Occasionally, an area of reduced blood flow or other lung abnormality\n\nThe image must be interpreted with the patient\u2019s symptoms and the radiologist\u2019s report; the phrase \u201cdark spots\u201d alone is not enough to diagnose anything. Seek urgent medical care for severe shortness of breath, chest pain, blue lips, coughing blood, or sudden worsening symptoms.",
+    "latency_ms": 2262.5,
+    "input_tokens": 94,
+    "output_tokens": 230
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "If a patient's X ray has dark spots on the chest what does it mean?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Dark spots on a chest X\u2011ray can mean different things depending on their **location, size, shape, and whether they are truly abnormal**. On X\u2011rays, **air appears dark**, so normal lungs are mostly dark. Possible explanations include:\n\n- **Normal air-filled lung tissue** or overlapping structures such as ribs, blood vessels, or skin folds  \n- **Lung nodules or masses**, which usually appear as *white* spots rather than dark ones  \n- **Areas of excess air** (hyperinflation), such as with emphysema or a pneumothorax (collapsed lung)  \n- **Cavities** from infections such as tuberculosis or certain fungal infections  \n- **Technical artifacts** from movement, clothing, or the imaging process  \n- Occasionally, an area of reduced blood flow or other lung abnormality\n\nThe image must be interpreted with the patient\u2019s symptoms and the radiologist\u2019s report; the phrase \u201cdark spots\u201d alone is not enough to diagnose anything. Seek urgent medical care for severe shortness of breath, chest pain, blue lips, coughing blood, or sudden worsening symptoms.",
+    "latency_ms": 2262.5,
+    "token_count": 324
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "1ca770e9811a",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229654.5219038,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2262.5,
+        "token_count": 324,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.38; flagged=False"
+}

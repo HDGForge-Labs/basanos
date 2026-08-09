@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:10:03.389516+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What does the theory of unforeseen circumstances encompass in civil law?",
+    "field": "Law",
+    "specific_field": "Common Law",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "In civil law, the **theory of unforeseen circumstances**\u2014often called *impr\u00e9vision*, *hardship*, or the doctrine of changed circumstances\u2014addresses what happens when an existing contract becomes **exceptionally more burdensome** for one party because of events that occurred after the contract was made.\n\nIt is primarily concerned with preserving contractual fairness when performance is still possible, but has become economically or practically abnormal.\n\n## Core idea\n\nThe doctrine may allow a court, arbitrator, or the parties themselves to:\n\n1. **Renegotiate the contract** in good faith;\n2. **Adapt or revise its terms** to restore contractual balance;\n3. **Suspend or limit performance** in some systems;\n4. **Terminate or rescind the contract** if adaptation is impossible or negotiations fail; or\n5. In narrower systems, deny relief and hold the party to the original bargain under *pacta sunt servanda*\u2014\u201cagreements must be kept.\u201d\n\nThe exact remedy depends heavily on the jurisdiction and the contract.\n\n## Typical requirements\n\nAlthough civil-law systems formulate the doctrine differently, it generally requires several elements:\n\n- **A change in circumstances after contract formation.**  \n  The event must arise after the parties entered into the agreement. A price increase, supply disruption, war, embargo, currency collapse, major regulatory change, pandemic-related restriction, or severe energy shortage may qualify.\n\n- **Unforeseeability.**  \n  The event must have been something the disadvantaged party could not reasonably have foreseen when contracting. Ordinary inflation, routine market fluctuation, predictable seasonal shortages, or normal commercial risks usually do not qualify.\n\n- **Exceptional burden or loss of contractual equilibrium.**  \n  Performance must become substantially more onerous\u2014often involving a major increase in costs, a significant reduction in the value received, or a severe distortion of the bargain. The doctrine normally does **not** apply merely because performance has become less profitable.\n\n- **No assumption of the relevant risk.**  \n  A party generally cannot invoke hardship if it expressly assumed the risk through a fixed-price clause, price-adjustment mechanism, force-majeure allocation, currency-risk provision, or similar contractual term.\n\n- **No fault by the invoking party.**  \n  The party seeking relief must not have caused or contributed materially to the changed circumstances.\n\n- **Performance remains possible.**  \n  This distinguishes hardship from **force majeure** or impossibility. Under hardship, performance can still be made, but only at an excessively burdensome cost or under radically altered conditions. Under force majeure, performance may be impossible or prevented.\n\n## Difference from force majeure\n\nThe distinction is important:\n\n| Doctrine | Effect on performance | Typical consequence |\n|---|---|---|\n| **Force majeure / impossibility** | Performance is impossible, illegal, or prevented | Suspension, excuse from liability, or termination |\n| **Unforeseen circumstances / hardship** | Performance remains possible but becomes excessively onerous | Renegotiation, judicial adaptation, or termination in some systems |\n\nFor example, if a government embargo makes delivery illegal, that may be force majeure. If the embargo causes the supplier\u2019s shipping costs to rise by approximately 300%, while delivery remains possible, the issue may be hardship or unforeseen circumstances.\n\n## Civil-law examples\n\n### France\n\nFrench law historically rejected judicial revision of private contracts based solely on changed circumstances. That position changed with the 2016 reform of the Civil Code.\n\nUnder **Article 1195 of the French Civil Code**, a party may request renegotiation where:\n\n- an unforeseeable change of circumstances occurs after formation;\n- performance becomes **excessively onerous**;\n- that party had not accepted the risk of such a change.\n\nDuring renegotiation, the party must generally continue performing its obligations. If negotiations fail, the parties may agree to terminate or jointly ask a judge to adapt the contract. If they cannot agree, a court may revise or terminate the contract under the statutory conditions.\n\nHowever, Article 1195 is generally **not mandatory**: commercial parties often exclude it expressly, particularly in sophisticated international contracts.\n\n### Germany\n\nGerman law recognizes a broad doctrine of disturbance of the basis of the transaction under **Section 313 of the German Civil Code (BGB)**.\n\nRelief may be available when:\n\n- circumstances that became a fundamental basis of the contract have significantly changed after conclusion;\n- the parties would not have concluded the contract, or would have concluded it on different terms, had they foreseen the change; and\n- holding the affected party to the unmodified agreement would be unreasonable after considering risk allocation.\n\nThe usual remedy is adaptation of the contract. Termination may be available if adaptation cannot reasonably be achieved.\n\n### Italy\n\nItalian law recognizes *eccessiva onerosit\u00e0 sopravvenuta*\u2014supervening excessive onerousness\u2014especially for contracts requiring performance over time or at a future date.\n\nUnder **Article 1467 of the Italian Civil Code**, a party may seek termination where performance becomes excessively onerous due to extraordinary and unforeseeable",
+    "latency_ms": 12426.1,
+    "input_tokens": 84,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What does the theory of unforeseen circumstances encompass in civil law?",
+      "field": "Law"
+    },
+    "response": "In civil law, the **theory of unforeseen circumstances**\u2014often called *impr\u00e9vision*, *hardship*, or the doctrine of changed circumstances\u2014addresses what happens when an existing contract becomes **exceptionally more burdensome** for one party because of events that occurred after the contract was made.\n\nIt is primarily concerned with preserving contractual fairness when performance is still possible, but has become economically or practically abnormal.\n\n## Core idea\n\nThe doctrine may allow a court, arbitrator, or the parties themselves to:\n\n1. **Renegotiate the contract** in good faith;\n2. **Adapt or revise its terms** to restore contractual balance;\n3. **Suspend or limit performance** in some systems;\n4. **Terminate or rescind the contract** if adaptation is impossible or negotiations fail; or\n5. In narrower systems, deny relief and hold the party to the original bargain under *pacta sunt servanda*\u2014\u201cagreements must be kept.\u201d\n\nThe exact remedy depends heavily on the jurisdiction and the contract.\n\n## Typical requirements\n\nAlthough civil-law systems formulate the doctrine differently, it generally requires several elements:\n\n- **A change in circumstances after contract formation.**  \n  The event must arise after the parties entered into the agreement. A price increase, supply disruption, war, embargo, currency collapse, major regulatory change, pandemic-related restriction, or severe energy shortage may qualify.\n\n- **Unforeseeability.**  \n  The event must have been something the disadvantaged party could not reasonably have foreseen when contracting. Ordinary inflation, routine market fluctuation, predictable seasonal shortages, or normal commercial risks usually do not qualify.\n\n- **Exceptional burden or loss of contractual equilibrium.**  \n  Performance must become substantially more onerous\u2014often involving a major increase in costs, a significant reduction in the value received, or a severe distortion of the bargain. The doctrine normally does **not** apply merely because performance has become less profitable.\n\n- **No assumption of the relevant risk.**  \n  A party generally cannot invoke hardship if it expressly assumed the risk through a fixed-price clause, price-adjustment mechanism, force-majeure allocation, currency-risk provision, or similar contractual term.\n\n- **No fault by the invoking party.**  \n  The party seeking relief must not have caused or contributed materially to the changed circumstances.\n\n- **Performance remains possible.**  \n  This distinguishes hardship from **force majeure** or impossibility. Under hardship, performance can still be made, but only at an excessively burdensome cost or under radically altered conditions. Under force majeure, performance may be impossible or prevented.\n\n## Difference from force majeure\n\nThe distinction is important:\n\n| Doctrine | Effect on performance | Typical consequence |\n|---|---|---|\n| **Force majeure / impossibility** | Performance is impossible, illegal, or prevented | Suspension, excuse from liability, or termination |\n| **Unforeseen circumstances / hardship** | Performance remains possible but becomes excessively onerous | Renegotiation, judicial adaptation, or termination in some systems |\n\nFor example, if a government embargo makes delivery illegal, that may be force majeure. If the embargo causes the supplier\u2019s shipping costs to rise by approximately 300%, while delivery remains possible, the issue may be hardship or unforeseen circumstances.\n\n## Civil-law examples\n\n### France\n\nFrench law historically rejected judicial revision of private contracts based solely on changed circumstances. That position changed with the 2016 reform of the Civil Code.\n\nUnder **Article 1195 of the French Civil Code**, a party may request renegotiation where:\n\n- an unforeseeable change of circumstances occurs after formation;\n- performance becomes **excessively onerous**;\n- that party had not accepted the risk of such a change.\n\nDuring renegotiation, the party must generally continue performing its obligations. If negotiations fail, the parties may agree to terminate or jointly ask a judge to adapt the contract. If they cannot agree, a court may revise or terminate the contract under the statutory conditions.\n\nHowever, Article 1195 is generally **not mandatory**: commercial parties often exclude it expressly, particularly in sophisticated international contracts.\n\n### Germany\n\nGerman law recognizes a broad doctrine of disturbance of the basis of the transaction under **Section 313 of the German Civil Code (BGB)**.\n\nRelief may be available when:\n\n- circumstances that became a fundamental basis of the contract have significantly changed after conclusion;\n- the parties would not have concluded the contract, or would have concluded it on different terms, had they foreseen the change; and\n- holding the affected party to the unmodified agreement would be unreasonable after considering risk allocation.\n\nThe usual remedy is adaptation of the contract. Termination may be available if adaptation cannot reasonably be achieved.\n\n### Italy\n\nItalian law recognizes *eccessiva onerosit\u00e0 sopravvenuta*\u2014supervening excessive onerousness\u2014especially for contracts requiring performance over time or at a future date.\n\nUnder **Article 1467 of the Italian Civil Code**, a party may seek termination where performance becomes excessively onerous due to extraordinary and unforeseeable",
+    "latency_ms": 12426.1,
+    "token_count": 1108,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "7f4cbff6ca08",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234203.3865378,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 5 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4364,
+          "evidence": [
+            "Latency 12426ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12426.1,
+        "token_count": 1108,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.129; flagged=True"
+}

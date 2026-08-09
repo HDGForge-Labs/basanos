@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:04:10.579411+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What are the outcomes of using hyaluronidase?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Aesthetic",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Hyaluronidase is an enzyme that temporarily breaks down hyaluronic acid in tissues, increasing fluid dispersion and permeability. Its outcomes depend strongly on why it is used.\n\n## Common intended outcomes\n\n- **Improved absorption or spread of injected medicines and fluids:** It can help subcutaneous fluids, local anesthetics, contrast agents, and some injected medicines disperse more evenly.\n- **Reduction of localized swelling from hyaluronic-acid filler:** In aesthetic medicine, it can dissolve or soften hyaluronic-acid filler, usually producing visible improvement within **minutes to several hours**, with more complete resolution often taking **about 24\u201372 hours**. Persistent or extensive filler may require repeat treatment after reassessment.\n- **Emergency treatment of vascular filler complications:** If filler has entered or compressed a blood vessel, hyaluronidase may help restore blood flow. Treatment is time-sensitive\u2014ideally started within **minutes to a few hours**\u2014but it is not guaranteed to prevent tissue loss or vision injury.\n- **Improved treatment of extravasation:** It may help disperse certain medications or fluids that leak into surrounding tissue, depending on the drug involved.\n\n## Expected short-term effects\n\nAt the injection site, people may experience:\n\n- Mild burning or stinging lasting roughly **seconds to a few minutes**\n- Redness, warmth, tenderness, or bruising for approximately **1\u20133 days**\n- Temporary softening, flattening, or loss of volume where hyaluronic-acid filler was placed\n- Swelling that may initially increase briefly before improving\n- Temporary reduction in the tissue\u2019s hyaluronic-acid content; the body generally restores it over **roughly 1\u20133 days**, though the filler itself may take longer to reaccumulate or may not return fully\n\nHyaluronidase does **not** dissolve non-hyaluronic fillers such as calcium hydroxylapatite, poly-L-lactic acid, polymethylmethacrylate, or silicone.\n\n## Potential adverse outcomes\n\nMost reactions are mild, but possible complications include:\n\n- Local pain, itching, redness, swelling, or bruising\n- Headache, nausea, dizziness, or light-headedness\n- **Allergic reactions**, including hives, facial or throat swelling, wheezing, low blood pressure, or anaphylaxis. Severe allergy is uncommon but requires emergency treatment.\n- Infection, although uncommon with proper sterile technique\n- Uneven cosmetic results or **overcorrection**, particularly if natural tissue hyaluronic acid is also affected\n- Loss of desired filler volume beyond the intended area\n- Rarely, skin injury, scarring, or necrosis when treating vascular compromise\u2014often because blood-flow damage occurred before treatment or because additional procedures are needed\n\n## Important emergency distinction\n\nAfter filler treatment, symptoms such as:\n\n- Increasing or severe pain\n- Pale, gray, blue, or mottled skin\n- Cool skin or delayed capillary refill\u2014roughly **more than 2 seconds**\n- Blistering or skin breakdown\n- New visual disturbance, eye pain, weakness, difficulty speaking, or severe headache\n\ncan indicate vascular occlusion or another emergency. Hyaluronidase may be part of treatment, but urgent evaluation by an experienced injector, ophthalmologist, emergency clinician, or vascular specialist is necessary. **Vision changes require immediate emergency care**, because permanent injury can develop within **minutes to hours**.\n\n## Timing and duration\n\n- Onset: often within **minutes to several hours**\n- Most visible improvement: commonly within **24\u201372 hours**\n- Reassessment: often around **24\u201348 hours** for vascular complications or around **1\u20132 weeks** for routine cosmetic correction\n- Effect duration: the enzyme itself is short-acting, generally lasting **hours rather than weeks**\n\nThe appropriate dose varies substantially by purpose, product, filler type, location, and severity. It should be administered only by a trained clinician; self-injection is unsafe, especially near the nose, lips, eyes, or other areas with high vascular risk.",
+    "latency_ms": 6685.6,
+    "input_tokens": 84,
+    "output_tokens": 818
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the outcomes of using hyaluronidase?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Hyaluronidase is an enzyme that temporarily breaks down hyaluronic acid in tissues, increasing fluid dispersion and permeability. Its outcomes depend strongly on why it is used.\n\n## Common intended outcomes\n\n- **Improved absorption or spread of injected medicines and fluids:** It can help subcutaneous fluids, local anesthetics, contrast agents, and some injected medicines disperse more evenly.\n- **Reduction of localized swelling from hyaluronic-acid filler:** In aesthetic medicine, it can dissolve or soften hyaluronic-acid filler, usually producing visible improvement within **minutes to several hours**, with more complete resolution often taking **about 24\u201372 hours**. Persistent or extensive filler may require repeat treatment after reassessment.\n- **Emergency treatment of vascular filler complications:** If filler has entered or compressed a blood vessel, hyaluronidase may help restore blood flow. Treatment is time-sensitive\u2014ideally started within **minutes to a few hours**\u2014but it is not guaranteed to prevent tissue loss or vision injury.\n- **Improved treatment of extravasation:** It may help disperse certain medications or fluids that leak into surrounding tissue, depending on the drug involved.\n\n## Expected short-term effects\n\nAt the injection site, people may experience:\n\n- Mild burning or stinging lasting roughly **seconds to a few minutes**\n- Redness, warmth, tenderness, or bruising for approximately **1\u20133 days**\n- Temporary softening, flattening, or loss of volume where hyaluronic-acid filler was placed\n- Swelling that may initially increase briefly before improving\n- Temporary reduction in the tissue\u2019s hyaluronic-acid content; the body generally restores it over **roughly 1\u20133 days**, though the filler itself may take longer to reaccumulate or may not return fully\n\nHyaluronidase does **not** dissolve non-hyaluronic fillers such as calcium hydroxylapatite, poly-L-lactic acid, polymethylmethacrylate, or silicone.\n\n## Potential adverse outcomes\n\nMost reactions are mild, but possible complications include:\n\n- Local pain, itching, redness, swelling, or bruising\n- Headache, nausea, dizziness, or light-headedness\n- **Allergic reactions**, including hives, facial or throat swelling, wheezing, low blood pressure, or anaphylaxis. Severe allergy is uncommon but requires emergency treatment.\n- Infection, although uncommon with proper sterile technique\n- Uneven cosmetic results or **overcorrection**, particularly if natural tissue hyaluronic acid is also affected\n- Loss of desired filler volume beyond the intended area\n- Rarely, skin injury, scarring, or necrosis when treating vascular compromise\u2014often because blood-flow damage occurred before treatment or because additional procedures are needed\n\n## Important emergency distinction\n\nAfter filler treatment, symptoms such as:\n\n- Increasing or severe pain\n- Pale, gray, blue, or mottled skin\n- Cool skin or delayed capillary refill\u2014roughly **more than 2 seconds**\n- Blistering or skin breakdown\n- New visual disturbance, eye pain, weakness, difficulty speaking, or severe headache\n\ncan indicate vascular occlusion or another emergency. Hyaluronidase may be part of treatment, but urgent evaluation by an experienced injector, ophthalmologist, emergency clinician, or vascular specialist is necessary. **Vision changes require immediate emergency care**, because permanent injury can develop within **minutes to hours**.\n\n## Timing and duration\n\n- Onset: often within **minutes to several hours**\n- Most visible improvement: commonly within **24\u201372 hours**\n- Reassessment: often around **24\u201348 hours** for vascular complications or around **1\u20132 weeks** for routine cosmetic correction\n- Effect duration: the enzyme itself is short-acting, generally lasting **hours rather than weeks**\n\nThe appropriate dose varies substantially by purpose, product, filler type, location, and severity. It should be administered only by a trained clinician; self-injection is unsafe, especially near the nose, lips, eyes, or other areas with high vascular risk.",
+    "latency_ms": 6685.6,
+    "token_count": 902,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "a24079258669",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230250.5786147,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 3 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 6685.6,
+        "token_count": 902,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.159; flagged=True"
+}

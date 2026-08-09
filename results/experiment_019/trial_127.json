@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:09:38.801644+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Does the medical field require one to be consumed by drugs rather than holistic medicines?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Sales rep in medicines",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "No. Modern medicine does **not** require a person to be \u201cconsumed by drugs,\u201d and reputable clinicians generally do not see medication as the only valid form of care.\n\nMedical treatment is ideally based on the **best available evidence**, the seriousness of the condition, a person\u2019s values, and the expected balance of benefit versus risk. For many problems, non-drug approaches are the preferred first step.\n\nExamples:\n\n- **Mild to moderate high blood pressure:** lifestyle measures\u2014such as losing roughly **5%\u201310%** of body weight if overweight, limiting sodium to around **1,500\u20132,300 mg/day**, exercising about **150 minutes/week**, moderating alcohol, and improving sleep\u2014can meaningfully lower blood pressure. Medication may still be needed if pressures remain high or cardiovascular risk is elevated.\n- **Type 2 diabetes or prediabetes:** nutrition changes, physical activity, weight management, and sleep can substantially improve glucose control. However, medicines such as metformin, GLP-1 medications, insulin, or others may be important when blood sugar is significantly elevated or complications are present.\n- **Depression, anxiety, and insomnia:** psychotherapy, regular exercise, structured sleep treatment such as CBT-I, social support, and stress-management practices can be highly effective. Medication can be useful for moderate-to-severe symptoms, recurrent illness, or when non-drug treatment alone has not been enough.\n- **Chronic pain:** physical therapy, graded activity, cognitive behavioral therapy, heat/cold, occupational therapy, and certain complementary approaches may be central parts of care. Long-term opioid use is generally avoided when possible because of dependence, overdose, constipation, hormonal effects, and other risks.\n- **High cholesterol:** diet, activity, smoking cessation, and weight changes help, but a statin may dramatically reduce heart attack and stroke risk in people with established cardiovascular disease or high-risk profiles.\n\n\u201cHolistic\u201d care can be valuable when it means caring for the whole person: food, movement, sleep, mental health, relationships, stress, culture, finances, and purpose. Many clinicians actively support that approach.\n\nThe key distinction is between:\n\n1. **Evidence-based complementary care**, used alongside standard treatment when appropriate\u2014such as exercise, meditation, therapy, yoga, acupuncture for selected symptoms, or nutrition counseling; and  \n2. **Unproven alternatives**, especially when they replace treatment for serious illness such as cancer, severe infection, heart disease, epilepsy, diabetes with dangerous glucose levels, or psychosis.\n\nNatural does not automatically mean safe. For example, St. John\u2019s wort can interact with antidepressants, birth-control pills, blood thinners, transplant medications, and many other drugs. Some supplements can affect the liver, kidneys, blood pressure, bleeding risk, or anesthesia. Supplements are also often less tightly regulated than prescription medications.\n\nA good medical relationship should include questions such as:\n\n- What happens if I do not take this medication?\n- What lifestyle or non-drug options could help?\n- How much benefit should I realistically expect?\n- What side effects and interactions are likely?\n- Is this meant for days, months, or lifelong use?\n- Can we reassess in about **4\u201312 weeks**, depending on the condition?\n- Is there a safe tapering plan if I improve?\n\nFor some conditions, medication is optional or temporary. For others\u2014such as bacterial sepsis, severe asthma attacks, type 1 diabetes, certain seizure disorders, organ-transplant rejection prevention, or serious hypertension\u2014medication can be lifesaving and should not be stopped abruptly.\n\nThe most balanced approach is usually **integrative care**: use lifestyle and holistic supports wherever they help, and use medication when the evidence shows that its benefits outweigh its risks.",
+    "latency_ms": 10352.2,
+    "input_tokens": 88,
+    "output_tokens": 760
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Does the medical field require one to be consumed by drugs rather than holistic medicines?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "No. Modern medicine does **not** require a person to be \u201cconsumed by drugs,\u201d and reputable clinicians generally do not see medication as the only valid form of care.\n\nMedical treatment is ideally based on the **best available evidence**, the seriousness of the condition, a person\u2019s values, and the expected balance of benefit versus risk. For many problems, non-drug approaches are the preferred first step.\n\nExamples:\n\n- **Mild to moderate high blood pressure:** lifestyle measures\u2014such as losing roughly **5%\u201310%** of body weight if overweight, limiting sodium to around **1,500\u20132,300 mg/day**, exercising about **150 minutes/week**, moderating alcohol, and improving sleep\u2014can meaningfully lower blood pressure. Medication may still be needed if pressures remain high or cardiovascular risk is elevated.\n- **Type 2 diabetes or prediabetes:** nutrition changes, physical activity, weight management, and sleep can substantially improve glucose control. However, medicines such as metformin, GLP-1 medications, insulin, or others may be important when blood sugar is significantly elevated or complications are present.\n- **Depression, anxiety, and insomnia:** psychotherapy, regular exercise, structured sleep treatment such as CBT-I, social support, and stress-management practices can be highly effective. Medication can be useful for moderate-to-severe symptoms, recurrent illness, or when non-drug treatment alone has not been enough.\n- **Chronic pain:** physical therapy, graded activity, cognitive behavioral therapy, heat/cold, occupational therapy, and certain complementary approaches may be central parts of care. Long-term opioid use is generally avoided when possible because of dependence, overdose, constipation, hormonal effects, and other risks.\n- **High cholesterol:** diet, activity, smoking cessation, and weight changes help, but a statin may dramatically reduce heart attack and stroke risk in people with established cardiovascular disease or high-risk profiles.\n\n\u201cHolistic\u201d care can be valuable when it means caring for the whole person: food, movement, sleep, mental health, relationships, stress, culture, finances, and purpose. Many clinicians actively support that approach.\n\nThe key distinction is between:\n\n1. **Evidence-based complementary care**, used alongside standard treatment when appropriate\u2014such as exercise, meditation, therapy, yoga, acupuncture for selected symptoms, or nutrition counseling; and  \n2. **Unproven alternatives**, especially when they replace treatment for serious illness such as cancer, severe infection, heart disease, epilepsy, diabetes with dangerous glucose levels, or psychosis.\n\nNatural does not automatically mean safe. For example, St. John\u2019s wort can interact with antidepressants, birth-control pills, blood thinners, transplant medications, and many other drugs. Some supplements can affect the liver, kidneys, blood pressure, bleeding risk, or anesthesia. Supplements are also often less tightly regulated than prescription medications.\n\nA good medical relationship should include questions such as:\n\n- What happens if I do not take this medication?\n- What lifestyle or non-drug options could help?\n- How much benefit should I realistically expect?\n- What side effects and interactions are likely?\n- Is this meant for days, months, or lifelong use?\n- Can we reassess in about **4\u201312 weeks**, depending on the condition?\n- Is there a safe tapering plan if I improve?\n\nFor some conditions, medication is optional or temporary. For others\u2014such as bacterial sepsis, severe asthma attacks, type 1 diabetes, certain seizure disorders, organ-transplant rejection prevention, or serious hypertension\u2014medication can be lifesaving and should not be stopped abruptly.\n\nThe most balanced approach is usually **integrative care**: use lifestyle and holistic supports wherever they help, and use medication when the evidence shows that its benefits outweigh its risks.",
+    "latency_ms": 10352.2,
+    "token_count": 848,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "61cf964fcb44",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234178.8008316,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 7 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4053,
+          "evidence": [
+            "Latency 10352ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 10352.2,
+        "token_count": 848,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.127; flagged=True"
+}

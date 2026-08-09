@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-09T00:07:30.014784+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What are commercial disputes in law?",
+    "field": "Law",
+    "specific_field": "Commercial Law",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Commercial disputes are legal disagreements arising from business, trade, or commercial transactions. They usually involve companies, partnerships, investors, suppliers, customers, lenders, insurers, or business owners rather than purely personal matters.\n\nCommon examples include:\n\n- **Breach of contract:** One party fails to perform agreed obligations, such as not delivering goods, missing payment deadlines, or providing defective services.\n- **Payment and debt disputes:** Unpaid invoices, disputed charges, loan defaults, guarantees, or credit agreements.\n- **Shareholder and partnership disputes:** Disagreements over ownership percentages, management control, profit distribution, director duties, or a partner leaving a business.\n- **Supply-chain disputes:** Arguments over late delivery, defective products, pricing changes, minimum-order commitments, or termination of supply arrangements.\n- **Business sale and acquisition disputes:** Claims involving warranties, representations, earn-out payments, valuation, or undisclosed liabilities after buying or selling a business.\n- **Intellectual-property disputes:** Conflicts over trademarks, patents, copyright, trade secrets, licensing, or misuse of confidential information.\n- **Employment-related business disputes:** Senior executive contracts, restrictive covenants, non-compete clauses, poaching employees, or misuse of client lists.\n- **Construction and property disputes:** Delays, defects, payment claims, lease disputes, commercial rent, or development agreements.\n- **Insurance and finance disputes:** Coverage disputes, denied claims, banking issues, investment losses, or disputes under financial agreements.\n- **Competition and unfair-trading claims:** Allegations of anti-competitive conduct, misleading statements, unlawful interference with business relationships, or breach of consumer/business regulations.\n\nA commercial dispute normally turns on legal rights and obligations created by:\n\n1. A written or oral contract;\n2. Statute or regulation;\n3. Common-law duties, such as negligence or fiduciary duties;\n4. Company documents, such as shareholder agreements or articles of association; or\n5. Trade practices and industry standards.\n\nThe usual remedies may include:\n\n- **Damages:** Money to compensate for losses, such as lost profits or replacement costs.\n- **Debt recovery:** An order requiring payment of an unpaid sum, often plus contractual or statutory interest.\n- **Specific performance:** A court order requiring a party to perform a contractual obligation.\n- **Injunctions:** Orders stopping conduct, for example preventing disclosure of trade secrets or breach of a non-compete clause.\n- **Rescission:** Cancelling a contract in some circumstances, such as misrepresentation.\n- **Declaratory relief:** A court declaration about the parties\u2019 rights or contractual meaning.\n\nCommercial disputes can be resolved through negotiation, mediation, arbitration, adjudication in certain sectors such as construction, or court litigation. Many business contracts require disputes to go to arbitration or mediation before court proceedings. The best route often depends on the amount in dispute, urgency, confidentiality concerns, governing law, available evidence, and the dispute-resolution clause in the contract.",
+    "latency_ms": 8111.7,
+    "input_tokens": 79,
+    "output_tokens": 593
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are commercial disputes in law?",
+      "field": "Law"
+    },
+    "response": "Commercial disputes are legal disagreements arising from business, trade, or commercial transactions. They usually involve companies, partnerships, investors, suppliers, customers, lenders, insurers, or business owners rather than purely personal matters.\n\nCommon examples include:\n\n- **Breach of contract:** One party fails to perform agreed obligations, such as not delivering goods, missing payment deadlines, or providing defective services.\n- **Payment and debt disputes:** Unpaid invoices, disputed charges, loan defaults, guarantees, or credit agreements.\n- **Shareholder and partnership disputes:** Disagreements over ownership percentages, management control, profit distribution, director duties, or a partner leaving a business.\n- **Supply-chain disputes:** Arguments over late delivery, defective products, pricing changes, minimum-order commitments, or termination of supply arrangements.\n- **Business sale and acquisition disputes:** Claims involving warranties, representations, earn-out payments, valuation, or undisclosed liabilities after buying or selling a business.\n- **Intellectual-property disputes:** Conflicts over trademarks, patents, copyright, trade secrets, licensing, or misuse of confidential information.\n- **Employment-related business disputes:** Senior executive contracts, restrictive covenants, non-compete clauses, poaching employees, or misuse of client lists.\n- **Construction and property disputes:** Delays, defects, payment claims, lease disputes, commercial rent, or development agreements.\n- **Insurance and finance disputes:** Coverage disputes, denied claims, banking issues, investment losses, or disputes under financial agreements.\n- **Competition and unfair-trading claims:** Allegations of anti-competitive conduct, misleading statements, unlawful interference with business relationships, or breach of consumer/business regulations.\n\nA commercial dispute normally turns on legal rights and obligations created by:\n\n1. A written or oral contract;\n2. Statute or regulation;\n3. Common-law duties, such as negligence or fiduciary duties;\n4. Company documents, such as shareholder agreements or articles of association; or\n5. Trade practices and industry standards.\n\nThe usual remedies may include:\n\n- **Damages:** Money to compensate for losses, such as lost profits or replacement costs.\n- **Debt recovery:** An order requiring payment of an unpaid sum, often plus contractual or statutory interest.\n- **Specific performance:** A court order requiring a party to perform a contractual obligation.\n- **Injunctions:** Orders stopping conduct, for example preventing disclosure of trade secrets or breach of a non-compete clause.\n- **Rescission:** Cancelling a contract in some circumstances, such as misrepresentation.\n- **Declaratory relief:** A court declaration about the parties\u2019 rights or contractual meaning.\n\nCommercial disputes can be resolved through negotiation, mediation, arbitration, adjudication in certain sectors such as construction, or court litigation. Many business contracts require disputes to go to arbitration or mediation before court proceedings. The best route often depends on the amount in dispute, urgency, confidentiality concerns, governing law, available evidence, and the dispute-resolution clause in the contract.",
+    "latency_ms": 8111.7,
+    "token_count": 672,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "ca6fb5328723",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234050.013963,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 8111.7,
+        "token_count": 672,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.114; flagged=False"
+}

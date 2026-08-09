@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T02:03:24.825705+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "You have two analysers. One breaks and you have to do some maintenance on the other one. How do you do it if you still have to test the urgent blood samples?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biomedical Science ",
+    "question_type": "Advice or suggestions on how to approach a problem"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Managing Urgent Blood Testing with Single Analyser Downtime\n\nThis is a critical laboratory continuity scenario. Here's a systematic approach:\n\n## Immediate Triage Steps\n\n**1. Assess the maintenance urgency**\n- Determine if maintenance is preventive (can be delayed roughly 2-4 hours) or corrective (must be done now due to error flags/QC failures)\n- Check if the analyser can run in a limited capacity during maintenance (some allow partial module servicing while others still function)\n\n**2. Prioritize sample queue immediately**\n- Sort into STAT/critical (results needed within approximately 30-60 minutes), urgent (within 1-2 hours), and routine\n- Contact clinical teams to flag expected delays of roughly 30 minutes to 2 hours depending on maintenance complexity\n\n## Practical Workflow Solutions\n\n**Option A: Send-out to another facility**\n- If you have a reference lab or sister hospital lab within approximately 20-30 minutes transport time, courier critical samples there\n- Common for tests where a 1-2 hour delay is clinically dangerous (e.g., troponin, lactate, potassium in suspected hyperkalemia)\n\n**Option B: Manual/backup methods**\n- Point-of-care testing (POCT) devices for critical analytes: glucose, electrolytes, blood gases, lactate, troponin \u2014 many hospitals keep i-STAT or similar devices for exactly this scenario\n- POCT typically gives results in approximately 2-5 minutes vs. 20-45 minutes on a full analyser\n\n**Option C: Expedited maintenance**\n- If maintenance is roughly 15-30 minutes (e.g., probe cleaning, reagent replacement, simple calibration), consider running 2-3 most critical STAT samples manually via POCT while completing maintenance, then resume analyser for the queue\n\n**Option D: Stagger maintenance**\n- Some maintenance tasks can be split \u2014 run urgent samples first (accepting a 10-15 minute delay), then perform maintenance immediately after, rather than before\n\n## Communication Protocol\n\n- Notify ED, ICU, and ordering physicians of expected turnaround time delays (be specific: \"results delayed by approximately 45-60 minutes\")\n- Document the analyser downtime start/end time for QA records\n- Log which samples were run via backup method vs. main analyser (important for result verification and audit trail)\n\n## Post-Maintenance QC\n\n- Once maintenance is complete, run quality control materials (typically 2-3 levels) before resuming patient sample testing\n- Confirm QC results fall within acceptable range (commonly within \u00b12SD of target mean) before releasing patient results\n- This QC step itself typically takes about 10-15 minutes but is non-negotiable for result validity\n\n## Key Priority Order:\n1. **Patient safety** (don't skip QC even under time pressure)\n2. **Speed** (use POCT/send-out for truly critical results)\n3. **Communication** (keep clinicians informed of realistic timelines)\n4. **Documentation** (for accreditation and",
+    "latency_ms": 14587.3,
+    "input_tokens": 156,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "You have two analysers. One breaks and you have to do some maintenance on the other one. How do you do it if you still have to test the urgent blood samples?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Managing Urgent Blood Testing with Single Analyser Downtime\n\nThis is a critical laboratory continuity scenario. Here's a systematic approach:\n\n## Immediate Triage Steps\n\n**1. Assess the maintenance urgency**\n- Determine if maintenance is preventive (can be delayed roughly 2-4 hours) or corrective (must be done now due to error flags/QC failures)\n- Check if the analyser can run in a limited capacity during maintenance (some allow partial module servicing while others still function)\n\n**2. Prioritize sample queue immediately**\n- Sort into STAT/critical (results needed within approximately 30-60 minutes), urgent (within 1-2 hours), and routine\n- Contact clinical teams to flag expected delays of roughly 30 minutes to 2 hours depending on maintenance complexity\n\n## Practical Workflow Solutions\n\n**Option A: Send-out to another facility**\n- If you have a reference lab or sister hospital lab within approximately 20-30 minutes transport time, courier critical samples there\n- Common for tests where a 1-2 hour delay is clinically dangerous (e.g., troponin, lactate, potassium in suspected hyperkalemia)\n\n**Option B: Manual/backup methods**\n- Point-of-care testing (POCT) devices for critical analytes: glucose, electrolytes, blood gases, lactate, troponin \u2014 many hospitals keep i-STAT or similar devices for exactly this scenario\n- POCT typically gives results in approximately 2-5 minutes vs. 20-45 minutes on a full analyser\n\n**Option C: Expedited maintenance**\n- If maintenance is roughly 15-30 minutes (e.g., probe cleaning, reagent replacement, simple calibration), consider running 2-3 most critical STAT samples manually via POCT while completing maintenance, then resume analyser for the queue\n\n**Option D: Stagger maintenance**\n- Some maintenance tasks can be split \u2014 run urgent samples first (accepting a 10-15 minute delay), then perform maintenance immediately after, rather than before\n\n## Communication Protocol\n\n- Notify ED, ICU, and ordering physicians of expected turnaround time delays (be specific: \"results delayed by approximately 45-60 minutes\")\n- Document the analyser downtime start/end time for QA records\n- Log which samples were run via backup method vs. main analyser (important for result verification and audit trail)\n\n## Post-Maintenance QC\n\n- Once maintenance is complete, run quality control materials (typically 2-3 levels) before resuming patient sample testing\n- Confirm QC results fall within acceptable range (commonly within \u00b12SD of target mean) before releasing patient results\n- This QC step itself typically takes about 10-15 minutes but is non-negotiable for result validity\n\n## Key Priority Order:\n1. **Patient safety** (don't skip QC even under time pressure)\n2. **Speed** (use POCT/send-out for truly critical results)\n3. **Communication** (keep clinicians informed of realistic timelines)\n4. **Documentation** (for accreditation and",
+    "latency_ms": 14587.3,
+    "token_count": 1180,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "57a3a73200b5",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786241004.8249207,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 11 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4688,
+          "evidence": [
+            "Latency 14587ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 14587.3,
+        "token_count": 1180,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.184; flagged=True"
+}

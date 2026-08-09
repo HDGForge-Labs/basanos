@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:28:17.488952+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "X entered into a lease agreement with Y for house. X builds a hot tub on the property but once his lease expires he tells Y he wants to remove the hot tub as he built it with his own money.Y argues that he is the owner of the hot tub by accession. Will Y's argument succeed in court?",
+    "field": "Law",
+    "specific_field": "Property Law",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Fixture Analysis: Tenant's Hot Tub\n\nY's accession argument will likely **fail**, and X will generally be permitted to remove the hot tub, provided he restores the property to its original condition. Here's the legal reasoning:\n\n## The Tenant's Fixture Doctrine\n\nWhile the general common law rule of accession holds that items permanently affixed to real property become part of that property (and thus belong to the landowner), there is a well-established **exception for tenant's trade/domestic fixtures**. Courts have long recognized that tenants who add improvements for their own use during the lease term retain the right to remove those improvements before the lease ends, or within a reasonable time after termination.\n\n## Key Factors Courts Examine\n\n**1. Degree of annexation**\n- Is the hot tub bolted/plumbed into the structure, or simply resting on a deck/patio?\n- A built-in, hardwired, plumbed-in tub weighs more toward becoming a fixture than a portable one.\n\n**2. Purpose and intent of annexation**\n- Was it installed for the tenant's personal enjoyment/comfort (favors removal) or to permanently improve the property for the landlord's benefit (favors accession)?\n- Courts ask: would a reasonable person view this as intended to be permanent, or as an improvement for the tenant's own temporary use?\n\n**3. Damage caused by removal**\n- If removal would cause **significant structural damage** to the house or land, courts are more reluctant to allow removal.\n- If removal can be done with minimal/repairable damage (patching a deck, capping plumbing), removal is favored.\n\n**4. Who paid for it**\n- The fact that X used his own money supports his claim, though this alone isn't determinative\u2014many permanent improvements are still tenant-funded.\n\n## Likely Outcome\n\nGiven the facts as presented (X built it with his own money, and hot tubs are typically installed for personal recreational use rather than to permanently enhance the freehold), courts would likely classify this as a **removable tenant's fixture**, not permanent accession. \n\n**X's obligations upon removal:**\n- He must remove it within a reasonable time (often before lease termination or shortly after)\n- He must repair any damage caused by installation/removal (e.g., patch decking, cap electrical/plumbing lines)\n- If he fails to remove it within a reasonable time, courts may deem it abandoned, and it *could* then pass to Y by operation of law (not \"accession\" in the traditional sense, but abandonment).\n\n## Bottom Line\n\nY's accession theory conflates \"attached to land\" with \"belongs to landlord automatically.\" The law draws a critical distinction for tenant improvements. **X likely wins the right to remove the hot tub**, subject to a duty to repair resulting damage and to act within a reasonable timeframe.",
+    "latency_ms": 12063.3,
+    "input_tokens": 207,
+    "output_tokens": 914
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "X entered into a lease agreement with Y for house. X builds a hot tub on the property but once his lease expires he tells Y he wants to remove the hot tub as he built it with his own money.Y argues that he is the owner of the hot tub by accession. Will Y's argument succeed in court?",
+      "field": "Law"
+    },
+    "response": "# Fixture Analysis: Tenant's Hot Tub\n\nY's accession argument will likely **fail**, and X will generally be permitted to remove the hot tub, provided he restores the property to its original condition. Here's the legal reasoning:\n\n## The Tenant's Fixture Doctrine\n\nWhile the general common law rule of accession holds that items permanently affixed to real property become part of that property (and thus belong to the landowner), there is a well-established **exception for tenant's trade/domestic fixtures**. Courts have long recognized that tenants who add improvements for their own use during the lease term retain the right to remove those improvements before the lease ends, or within a reasonable time after termination.\n\n## Key Factors Courts Examine\n\n**1. Degree of annexation**\n- Is the hot tub bolted/plumbed into the structure, or simply resting on a deck/patio?\n- A built-in, hardwired, plumbed-in tub weighs more toward becoming a fixture than a portable one.\n\n**2. Purpose and intent of annexation**\n- Was it installed for the tenant's personal enjoyment/comfort (favors removal) or to permanently improve the property for the landlord's benefit (favors accession)?\n- Courts ask: would a reasonable person view this as intended to be permanent, or as an improvement for the tenant's own temporary use?\n\n**3. Damage caused by removal**\n- If removal would cause **significant structural damage** to the house or land, courts are more reluctant to allow removal.\n- If removal can be done with minimal/repairable damage (patching a deck, capping plumbing), removal is favored.\n\n**4. Who paid for it**\n- The fact that X used his own money supports his claim, though this alone isn't determinative\u2014many permanent improvements are still tenant-funded.\n\n## Likely Outcome\n\nGiven the facts as presented (X built it with his own money, and hot tubs are typically installed for personal recreational use rather than to permanently enhance the freehold), courts would likely classify this as a **removable tenant's fixture**, not permanent accession. \n\n**X's obligations upon removal:**\n- He must remove it within a reasonable time (often before lease termination or shortly after)\n- He must repair any damage caused by installation/removal (e.g., patch decking, cap electrical/plumbing lines)\n- If he fails to remove it within a reasonable time, courts may deem it abandoned, and it *could* then pass to Y by operation of law (not \"accession\" in the traditional sense, but abandonment).\n\n## Bottom Line\n\nY's accession theory conflates \"attached to land\" with \"belongs to landlord automatically.\" The law draws a critical distinction for tenant improvements. **X likely wins the right to remove the hot tub**, subject to a duty to repair resulting damage and to act within a reasonable timeframe.",
+    "latency_ms": 12063.3,
+    "token_count": 1121
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "81869fe7162c",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786238897.4881692,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4309,
+          "evidence": [
+            "Latency 12063ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12063.3,
+        "token_count": 1121,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.9; flagged=False"
+}

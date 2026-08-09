@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:54:33.352961+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What is the prozone error and how does it affect the blood test?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biomedical Science ",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "The **prozone effect** (also called a **high-dose hook effect**) is a laboratory testing error that happens when a blood sample contains an **extremely high amount of the substance being tested for**, usually an antibody or antigen.\n\nInstead of producing a very strong positive result, the excess can interfere with the test reaction and cause a **falsely low, weakly positive, or even negative result**.\n\n### How it happens\nMany blood tests rely on antibodies binding to an antigen and forming detectable complexes. In the prozone effect:\n\n- There is so much antibody or antigen in the sample that the normal \u201cbridging\u201d or complex formation does not occur properly.\n- The analyzer may fail to detect the expected signal.\n- The result can therefore underestimate the true concentration.\n\n### Tests where it can occur\nIt is classically associated with:\n\n- **Syphilis screening tests** such as RPR and VDRL  \n  - Very high antibody levels can rarely make a patient with syphilis test falsely negative.\n- **Pregnancy tests / hCG tests**\n  - Extremely high hCG levels, such as in some molar pregnancies or multiple gestations, can rarely cause a false-negative or unexpectedly low result.\n- **Hormone, tumor-marker, and immunoassay tests**\n  - Examples can include prolactin, PSA, ferritin, troponin, thyroid-related assays, and some infectious-disease tests, depending on the assay design.\n- **Certain antibody-based tests** in autoimmune disease or transfusion medicine.\n\n### Effect on the blood test\nThe practical effect is that a person may have a condition or very high level of a marker, but the laboratory report may look:\n\n- Negative when it should be positive\n- Lower than expected\n- Inconsistent with symptoms or other clinical findings\n\n### How laboratories check for it\nIf the result does not fit the clinical picture, the lab can repeat the test using **serial dilution** of the blood sample. Diluting the sample reduces the excess antigen or antibody; if the measured result then becomes much higher or turns positive, that supports a prozone/hook effect.\n\nIn short: the prozone effect is a rare false-negative or falsely low result caused by **too much of the target substance**, not too little.",
+    "latency_ms": 5892.6,
+    "input_tokens": 93,
+    "output_tokens": 466
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the prozone error and how does it affect the blood test?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "The **prozone effect** (also called a **high-dose hook effect**) is a laboratory testing error that happens when a blood sample contains an **extremely high amount of the substance being tested for**, usually an antibody or antigen.\n\nInstead of producing a very strong positive result, the excess can interfere with the test reaction and cause a **falsely low, weakly positive, or even negative result**.\n\n### How it happens\nMany blood tests rely on antibodies binding to an antigen and forming detectable complexes. In the prozone effect:\n\n- There is so much antibody or antigen in the sample that the normal \u201cbridging\u201d or complex formation does not occur properly.\n- The analyzer may fail to detect the expected signal.\n- The result can therefore underestimate the true concentration.\n\n### Tests where it can occur\nIt is classically associated with:\n\n- **Syphilis screening tests** such as RPR and VDRL  \n  - Very high antibody levels can rarely make a patient with syphilis test falsely negative.\n- **Pregnancy tests / hCG tests**\n  - Extremely high hCG levels, such as in some molar pregnancies or multiple gestations, can rarely cause a false-negative or unexpectedly low result.\n- **Hormone, tumor-marker, and immunoassay tests**\n  - Examples can include prolactin, PSA, ferritin, troponin, thyroid-related assays, and some infectious-disease tests, depending on the assay design.\n- **Certain antibody-based tests** in autoimmune disease or transfusion medicine.\n\n### Effect on the blood test\nThe practical effect is that a person may have a condition or very high level of a marker, but the laboratory report may look:\n\n- Negative when it should be positive\n- Lower than expected\n- Inconsistent with symptoms or other clinical findings\n\n### How laboratories check for it\nIf the result does not fit the clinical picture, the lab can repeat the test using **serial dilution** of the blood sample. Diluting the sample reduces the excess antigen or antibody; if the measured result then becomes much higher or turns positive, that supports a prozone/hook effect.\n\nIn short: the prozone effect is a rare false-negative or falsely low result caused by **too much of the target substance**, not too little.",
+    "latency_ms": 5892.6,
+    "token_count": 559
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "45a02b7b2b79",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233273.3522036,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 5892.6,
+        "token_count": 559,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.18; flagged=False"
+}

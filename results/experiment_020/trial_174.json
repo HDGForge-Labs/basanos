@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T02:01:24.253195+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Is a sex worker entitled to compensation upon a claim of valid dismissal under the Labour Relations Act?",
+    "field": "Law",
+    "specific_field": "Labour Law",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Sex Work and Compensation Under Labour Relations Frameworks\n\nThis is a nuanced legal question that depends heavily on jurisdiction, as approaches to sex work regulation vary dramatically across countries.\n\n## The South African Context (Key Precedent)\n\nThis question is most notably addressed in **South African labour law**, particularly through the case of **Kylie v CCMA (2010)**, decided by the Labour Appeal Court.\n\n### Key Findings from *Kylie v CCMA*:\n\n- The court held that a sex worker **could approach the CCMA** (Commission for Conciliation, Mediation and Arbitration) for relief regarding **unfair dismissal**, despite sex work being criminalized under South Africa's Sexual Offences Act\n- The court distinguished between:\n  - **Reinstatement** (generally refused, since courts won't order someone back into illegal work)\n  - **Compensation** (potentially available as a remedy)\n\n### Reasoning:\nApproximately the court's logic centered on:\n1. **Section 23 of the Constitution** guarantees \"everyone\" the right to fair labour practices \u2014 not just those in lawful employment\n2. Denying *all* remedies would leave sex workers entirely unprotected against exploitative or abusive employers (brothel owners), creating a vulnerable class with zero labour protections\n3. However, courts remain reluctant to enforce contracts that are illegal at their core\n\n## Practical Outcome\n\nIn *Kylie*, compensation was awarded despite the underlying contract being connected to illegal activity \u2014 approximately the court awarded **4 months' remuneration** as compensation for procedurally unfair dismissal, while declining to order reinstatement.\n\n## Important Caveats\n\n1. **Jurisdiction-specific**: This reasoning applies primarily to South African law. Countries with different legal frameworks (UK, US states, Australia, New Zealand) treat this very differently depending on whether sex work is:\n   - Fully criminalized\n   - Partially decriminalized (e.g., New Zealand's Prostitution Reform Act 2003)\n   - Legalized and regulated (e.g., parts of Nevada, Germany, Netherlands)\n\n2. **Employment vs. self-employment**: Many sex workers are classified as independent contractors rather than employees, which would remove them from standard Labour Relations Act protections entirely regardless of the underlying legality question\n\n3. **The illegality doctrine**: Common law traditionally holds that courts won't enforce contracts *ex turpi causa* (arising from illegal cause) \u2014 the South African approach represents a notable departure from strict application of this doctrine in the labour context\n\n## Bottom Line\n\n**If you're asking about a specific jurisdiction**, the answer could differ significantly. Could you clarify:\n- Which country's Labour Relations Act you're referring to?\n- Whether sex work is criminalized, decriminalized, or legalized in that jurisdiction?\n\nThis would allow me to give you a more precise and applicable answer.",
+    "latency_ms": 11847.1,
+    "input_tokens": 147,
+    "output_tokens": 982
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Is a sex worker entitled to compensation upon a claim of valid dismissal under the Labour Relations Act?",
+      "field": "Law"
+    },
+    "response": "# Sex Work and Compensation Under Labour Relations Frameworks\n\nThis is a nuanced legal question that depends heavily on jurisdiction, as approaches to sex work regulation vary dramatically across countries.\n\n## The South African Context (Key Precedent)\n\nThis question is most notably addressed in **South African labour law**, particularly through the case of **Kylie v CCMA (2010)**, decided by the Labour Appeal Court.\n\n### Key Findings from *Kylie v CCMA*:\n\n- The court held that a sex worker **could approach the CCMA** (Commission for Conciliation, Mediation and Arbitration) for relief regarding **unfair dismissal**, despite sex work being criminalized under South Africa's Sexual Offences Act\n- The court distinguished between:\n  - **Reinstatement** (generally refused, since courts won't order someone back into illegal work)\n  - **Compensation** (potentially available as a remedy)\n\n### Reasoning:\nApproximately the court's logic centered on:\n1. **Section 23 of the Constitution** guarantees \"everyone\" the right to fair labour practices \u2014 not just those in lawful employment\n2. Denying *all* remedies would leave sex workers entirely unprotected against exploitative or abusive employers (brothel owners), creating a vulnerable class with zero labour protections\n3. However, courts remain reluctant to enforce contracts that are illegal at their core\n\n## Practical Outcome\n\nIn *Kylie*, compensation was awarded despite the underlying contract being connected to illegal activity \u2014 approximately the court awarded **4 months' remuneration** as compensation for procedurally unfair dismissal, while declining to order reinstatement.\n\n## Important Caveats\n\n1. **Jurisdiction-specific**: This reasoning applies primarily to South African law. Countries with different legal frameworks (UK, US states, Australia, New Zealand) treat this very differently depending on whether sex work is:\n   - Fully criminalized\n   - Partially decriminalized (e.g., New Zealand's Prostitution Reform Act 2003)\n   - Legalized and regulated (e.g., parts of Nevada, Germany, Netherlands)\n\n2. **Employment vs. self-employment**: Many sex workers are classified as independent contractors rather than employees, which would remove them from standard Labour Relations Act protections entirely regardless of the underlying legality question\n\n3. **The illegality doctrine**: Common law traditionally holds that courts won't enforce contracts *ex turpi causa* (arising from illegal cause) \u2014 the South African approach represents a notable departure from strict application of this doctrine in the labour context\n\n## Bottom Line\n\n**If you're asking about a specific jurisdiction**, the answer could differ significantly. Could you clarify:\n- Which country's Labour Relations Act you're referring to?\n- Whether sex work is criminalized, decriminalized, or legalized in that jurisdiction?\n\nThis would allow me to give you a more precise and applicable answer.",
+    "latency_ms": 11847.1,
+    "token_count": 1129,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "01d0c74aac59",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240884.2524102,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 4 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4277,
+          "evidence": [
+            "Latency 11847ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11847.1,
+        "token_count": 1129,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.174; flagged=True"
+}

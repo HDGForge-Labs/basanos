@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:56:04.422080+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What's the treatment suggested for a four year old with head trauma?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pediatrician",
+    "question_type": "Directed question that has a single unambiguous answer| Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "For a **4-year-old with head trauma**, treatment depends on severity. **Any significant head injury should be assessed by a clinician**, and emergency evaluation is needed for concerning symptoms.\n\n### Call emergency services now if the child has:\n- Loss of consciousness, seizure, worsening drowsiness, confusion, or is difficult to wake\n- Repeated vomiting, severe/worsening headache, unusual behavior, weakness, poor coordination, or trouble speaking/walking\n- Unequal pupils, blood or clear fluid from the nose/ears, or a soft spot/swelling that is rapidly enlarging\n- Neck pain, breathing problems, or a suspected skull fracture\n- A high-force injury\u2014fall from height, car crash, or being struck forcefully\n\n### If the child is alert and has only a minor bump:\n- Keep them with a responsible adult and observe closely for **24\u201348 hours**.\n- Apply a cold pack wrapped in cloth for **15\u201320 minutes at a time**.\n- Let them rest and sleep normally; you should be able to wake them and confirm normal responsiveness.\n- For pain, use **acetaminophen/paracetamol according to the child\u2019s weight and package/clinician instructions**. Avoid aspirin; avoid ibuprofen during the first 24 hours unless a clinician advises it, especially if bleeding is possible.\n- Avoid rough play, sports, climbing, and screens if they worsen symptoms.\n- Do not give food or drink if they are vomiting, very drowsy, or may need urgent surgery.\n\nA child with possible concussion should be evaluated by a healthcare professional, particularly if symptoms persist or develop. **Do not shake the child or leave them alone.**",
+    "latency_ms": 3323.1,
+    "input_tokens": 91,
+    "output_tokens": 344
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What's the treatment suggested for a four year old with head trauma?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "For a **4-year-old with head trauma**, treatment depends on severity. **Any significant head injury should be assessed by a clinician**, and emergency evaluation is needed for concerning symptoms.\n\n### Call emergency services now if the child has:\n- Loss of consciousness, seizure, worsening drowsiness, confusion, or is difficult to wake\n- Repeated vomiting, severe/worsening headache, unusual behavior, weakness, poor coordination, or trouble speaking/walking\n- Unequal pupils, blood or clear fluid from the nose/ears, or a soft spot/swelling that is rapidly enlarging\n- Neck pain, breathing problems, or a suspected skull fracture\n- A high-force injury\u2014fall from height, car crash, or being struck forcefully\n\n### If the child is alert and has only a minor bump:\n- Keep them with a responsible adult and observe closely for **24\u201348 hours**.\n- Apply a cold pack wrapped in cloth for **15\u201320 minutes at a time**.\n- Let them rest and sleep normally; you should be able to wake them and confirm normal responsiveness.\n- For pain, use **acetaminophen/paracetamol according to the child\u2019s weight and package/clinician instructions**. Avoid aspirin; avoid ibuprofen during the first 24 hours unless a clinician advises it, especially if bleeding is possible.\n- Avoid rough play, sports, climbing, and screens if they worsen symptoms.\n- Do not give food or drink if they are vomiting, very drowsy, or may need urgent surgery.\n\nA child with possible concussion should be evaluated by a healthcare professional, particularly if symptoms persist or develop. **Do not shake the child or leave them alone.**",
+    "latency_ms": 3323.1,
+    "token_count": 435
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "0a054c0e3a7f",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229764.4212432,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3323.1,
+        "token_count": 435,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.65; flagged=False"
+}

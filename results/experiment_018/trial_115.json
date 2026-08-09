@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T22:59:42.869040+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is known about DNA methylation profiles in patients with latent HIV-1 or with an active infection?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Virologist",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "DNA methylation is increasingly recognized as an important layer of HIV-1 biology, but the findings differ substantially between **latent infection**, **untreated active infection**, and **antiretroviral-treated infection**. Most available studies are observational, use peripheral blood rather than tissue reservoirs, and report associations rather than proof of causality.\n\n## 1. Latent HIV-1 infection\n\n### Viral DNA methylation and proviral silencing\n\nHIV-1 proviral latency is associated with epigenetic repression at and around the **5\u2032 long terminal repeat (LTR)** promoter. Reported mechanisms include:\n\n- **CpG methylation of the HIV-1 LTR**, especially in or near transcription-factor-binding regions.\n- Recruitment of methyl-CpG-binding proteins such as **MeCP2** and **MBD proteins**.\n- Association with repressive histone marks, particularly:\n  - **H3K9me2/3**\n  - **H3K27me3**\n  - reduced histone acetylation\n- Recruitment of chromatin-remodeling and transcriptional-repressor complexes.\n\nThe overall effect is reduced recruitment of RNA polymerase II and transcription factors such as **NF-\u03baB**, **NFAT**, and **AP-1**, thereby decreasing HIV-1 transcription.\n\nHowever, viral LTR methylation is **not a universal feature of every latent reservoir**. Many inducible proviruses are poorly methylated at the LTR, while heavily methylated proviruses may be deeply silenced or defective. The proviral genome is also highly heterogeneous: in many treated individuals, approximately **90%\u201399% or more** of cell-associated HIV DNA is defective, so bulk measurements can be strongly influenced by nonproductive proviruses.\n\n### Host-cell methylation patterns in latency\n\nIn people with suppressive antiretroviral therapy (ART), studies of CD4\u207a T cells have identified methylation differences in genes involved in:\n\n- T-cell activation and differentiation\n- NF-\u03baB and T-cell receptor signaling\n- interferon responses\n- apoptosis and survival\n- chromatin regulation\n- inflammatory and metabolic pathways\n\nThe direction of change is not entirely consistent across studies. Depending on the cohort, tissue, cell subset, ART duration, and assay, investigators have reported:\n\n- increased methylation at some immune-regulatory loci, potentially reducing expression;\n- decreased methylation at inflammatory or activation-related loci;\n- persistence of an HIV-associated epigenetic \u201cscar\u201d despite years of viral suppression.\n\nSome methylation signatures appear to overlap with those seen in **immune aging**, chronic inflammation, and repeated T-cell stimulation. These changes may help explain why treated individuals can have residual immune activation even when plasma HIV RNA is below routine assay detection, commonly **below approximately 20\u201350 copies/mL**, depending on the assay.\n\n### Reservoir-associated methylation\n\nThe most relevant reservoir is generally found in resting memory CD4\u207a T cells, including:\n\n- central memory T cells;\n- transitional memory T cells;\n- effector memory T cells;\n- tissue-resident and lymphoid-tissue CD4\u207a cells.\n\nMethylation patterns in circulating CD4\u207a cells do not necessarily represent the reservoir in lymph nodes, gut-associated lymphoid tissue, genital tissues, or the central nervous system. This is a major limitation because tissue reservoirs can differ substantially from blood reservoirs.\n\nIn addition, methylation is only one component of latency. A provirus can remain silent because of:\n\n- integration into a transcriptionally inactive genomic region;\n- defective or deleted proviral sequence;\n- lack of transcription factors;\n- nucleosome positioning;\n- histone deacetylation;\n- transcriptional interference;\n- RNA-processing defects;\n- immune-mediated elimination of cells that reactivate.\n\n## 2. Active untreated HIV-1 infection\n\n### Global host DNA methylation changes\n\nUntreated viremia is associated with broader changes in host-cell DNA methylation. These changes are often detected in peripheral blood mononuclear cells or purified CD4\u207a T cells and can involve hundreds to thousands of CpG sites, depending on the platform and statistical threshold.\n\nCommonly reported biological themes include:\n\n- interferon and antiviral signaling;\n- innate immune activation;\n- inflammatory cytokine pathways;\n- T-cell activation and exhaustion;\n- antigen presentation;\n- apoptosis;\n- cell-cycle regulation;\n- mitochondrial and metabolic pathways;\n- hematopoietic-cell composition.\n\nSome cohorts show **global hypomethylation**, whereas others identify locus-specific hypermethylation or mixed patterns. The apparent direction depends on whether the analysis measures:\n\n- all leukocytes versus purified CD4\u207a cells;\n- promoter CpGs versus enhancers and gene bodies;\n- acute versus chronic infection;\n- untreated versus ART-treated infection;\n- cell-composition changes rather than true within-cell changes.\n\n### Infection-related cell-composition effects\n\nA significant fraction of the methylation signal in whole blood may reflect shifts in leukocyte populations rather than methylation changes within a fixed cell type. For example, untreated",
+    "latency_ms": 7912.3,
+    "input_tokens": 93,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is known about DNA methylation profiles in patients with latent HIV-1 or with an active infection?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "DNA methylation is increasingly recognized as an important layer of HIV-1 biology, but the findings differ substantially between **latent infection**, **untreated active infection**, and **antiretroviral-treated infection**. Most available studies are observational, use peripheral blood rather than tissue reservoirs, and report associations rather than proof of causality.\n\n## 1. Latent HIV-1 infection\n\n### Viral DNA methylation and proviral silencing\n\nHIV-1 proviral latency is associated with epigenetic repression at and around the **5\u2032 long terminal repeat (LTR)** promoter. Reported mechanisms include:\n\n- **CpG methylation of the HIV-1 LTR**, especially in or near transcription-factor-binding regions.\n- Recruitment of methyl-CpG-binding proteins such as **MeCP2** and **MBD proteins**.\n- Association with repressive histone marks, particularly:\n  - **H3K9me2/3**\n  - **H3K27me3**\n  - reduced histone acetylation\n- Recruitment of chromatin-remodeling and transcriptional-repressor complexes.\n\nThe overall effect is reduced recruitment of RNA polymerase II and transcription factors such as **NF-\u03baB**, **NFAT**, and **AP-1**, thereby decreasing HIV-1 transcription.\n\nHowever, viral LTR methylation is **not a universal feature of every latent reservoir**. Many inducible proviruses are poorly methylated at the LTR, while heavily methylated proviruses may be deeply silenced or defective. The proviral genome is also highly heterogeneous: in many treated individuals, approximately **90%\u201399% or more** of cell-associated HIV DNA is defective, so bulk measurements can be strongly influenced by nonproductive proviruses.\n\n### Host-cell methylation patterns in latency\n\nIn people with suppressive antiretroviral therapy (ART), studies of CD4\u207a T cells have identified methylation differences in genes involved in:\n\n- T-cell activation and differentiation\n- NF-\u03baB and T-cell receptor signaling\n- interferon responses\n- apoptosis and survival\n- chromatin regulation\n- inflammatory and metabolic pathways\n\nThe direction of change is not entirely consistent across studies. Depending on the cohort, tissue, cell subset, ART duration, and assay, investigators have reported:\n\n- increased methylation at some immune-regulatory loci, potentially reducing expression;\n- decreased methylation at inflammatory or activation-related loci;\n- persistence of an HIV-associated epigenetic \u201cscar\u201d despite years of viral suppression.\n\nSome methylation signatures appear to overlap with those seen in **immune aging**, chronic inflammation, and repeated T-cell stimulation. These changes may help explain why treated individuals can have residual immune activation even when plasma HIV RNA is below routine assay detection, commonly **below approximately 20\u201350 copies/mL**, depending on the assay.\n\n### Reservoir-associated methylation\n\nThe most relevant reservoir is generally found in resting memory CD4\u207a T cells, including:\n\n- central memory T cells;\n- transitional memory T cells;\n- effector memory T cells;\n- tissue-resident and lymphoid-tissue CD4\u207a cells.\n\nMethylation patterns in circulating CD4\u207a cells do not necessarily represent the reservoir in lymph nodes, gut-associated lymphoid tissue, genital tissues, or the central nervous system. This is a major limitation because tissue reservoirs can differ substantially from blood reservoirs.\n\nIn addition, methylation is only one component of latency. A provirus can remain silent because of:\n\n- integration into a transcriptionally inactive genomic region;\n- defective or deleted proviral sequence;\n- lack of transcription factors;\n- nucleosome positioning;\n- histone deacetylation;\n- transcriptional interference;\n- RNA-processing defects;\n- immune-mediated elimination of cells that reactivate.\n\n## 2. Active untreated HIV-1 infection\n\n### Global host DNA methylation changes\n\nUntreated viremia is associated with broader changes in host-cell DNA methylation. These changes are often detected in peripheral blood mononuclear cells or purified CD4\u207a T cells and can involve hundreds to thousands of CpG sites, depending on the platform and statistical threshold.\n\nCommonly reported biological themes include:\n\n- interferon and antiviral signaling;\n- innate immune activation;\n- inflammatory cytokine pathways;\n- T-cell activation and exhaustion;\n- antigen presentation;\n- apoptosis;\n- cell-cycle regulation;\n- mitochondrial and metabolic pathways;\n- hematopoietic-cell composition.\n\nSome cohorts show **global hypomethylation**, whereas others identify locus-specific hypermethylation or mixed patterns. The apparent direction depends on whether the analysis measures:\n\n- all leukocytes versus purified CD4\u207a cells;\n- promoter CpGs versus enhancers and gene bodies;\n- acute versus chronic infection;\n- untreated versus ART-treated infection;\n- cell-composition changes rather than true within-cell changes.\n\n### Infection-related cell-composition effects\n\nA significant fraction of the methylation signal in whole blood may reflect shifts in leukocyte populations rather than methylation changes within a fixed cell type. For example, untreated",
+    "latency_ms": 7912.3,
+    "token_count": 1117,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "f56b2b114eb7",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229982.8682842,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 5 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 7912.3,
+        "token_count": 1117,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.115; flagged=True"
+}

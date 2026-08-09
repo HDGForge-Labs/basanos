@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:55:38.630357+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "36 year old starting medications for mental health issues - which are most like to cause Long QT on an ECG recording?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Cardiology",
+    "question_type": "Summarization of information on a topic| Question that describes a hypothetical scenario and asks a question based on this scenario| Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Medications Most Likely to Cause QT Prolongation\n\n## Highest Risk Psychiatric Medications\n\n**Antipsychotics (highest risk category):**\n- **Ziprasidone** - one of the most QT-prolonging antipsychotics, can increase QTc by approximately 15-20 ms at therapeutic doses\n- **Thioridazine** - considered highest risk, often avoided due to QT effects (can prolong QTc by roughly 30-35 ms)\n- **Haloperidol** - especially with IV administration or doses above approximately 20-30 mg/day; risk increases substantially with rapid IV push\n- **Chlorpromazine** and other low-potency typical antipsychotics\n- **Quetiapine** - moderate risk, dose-dependent\n- **Iloperidone** - notable QT prolongation risk among newer atypicals\n\n**Antidepressants:**\n- **Citalopram/Escitalopram** - citalopram carries an FDA boxed warning; doses above **40 mg/day** are not recommended (max 20 mg/day in patients over 60, hepatic impairment, or poor CYP2C19 metabolizers)\n- **Escitalopram** doses above **20 mg/day** carry increased risk\n- **Tricyclic antidepressants** (amitriptyline, imipramine, nortriptyline) - risk increases significantly in overdose or at higher therapeutic doses\n- **Venlafaxine** - modest QT effects, more relevant in overdose\n\n## Key Risk Thresholds\n\n- **Normal QTc**: <440 ms (men), <460 ms (women)\n- **Borderline prolongation**: 440-460 ms (men), 460-470 ms (women)\n- **Clinically significant prolongation**: >500 ms or increase of >60 ms from baseline\n- **Risk of Torsades de Pointes** increases substantially once QTc exceeds approximately 500 ms\n\n## Clinical Recommendations Before Starting\n\n1. **Baseline ECG** recommended if starting citalopram, ziprasidone, high-dose haloperidol, or if patient has cardiac risk factors\n2. **Check for additional risk factors:**\n   - Hypokalemia (K+ <3.5 mEq/L) or hypomagnesemia (Mg <1.5 mg/dL)\n   - Family history of sudden cardiac death or congenital long QT syndrome\n   - Concurrent QT-prolonging medications (methadone, certain antibiotics like azithromycin/fluoroquinolones, antiemetics like ondansetron)\n   - Bradycardia, female sex, older age\n   - Structural heart disease\n\n3. **Follow-up ECG** typically recommended after dose titration, especially for citalopram or antipsychotics reaching higher doses\n\n## Lower-Risk Alternatives (if QT concern is significant)\n- **Sertraline** - relatively favorable cardiac profile among SSRIs\n- **Aripiprazole** - among the lowest QT-prolonging antipsychotics (~1-2 ms increase typically)\n- **L",
+    "latency_ms": 11432.1,
+    "input_tokens": 144,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "36 year old starting medications for mental health issues - which are most like to cause Long QT on an ECG recording?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Medications Most Likely to Cause QT Prolongation\n\n## Highest Risk Psychiatric Medications\n\n**Antipsychotics (highest risk category):**\n- **Ziprasidone** - one of the most QT-prolonging antipsychotics, can increase QTc by approximately 15-20 ms at therapeutic doses\n- **Thioridazine** - considered highest risk, often avoided due to QT effects (can prolong QTc by roughly 30-35 ms)\n- **Haloperidol** - especially with IV administration or doses above approximately 20-30 mg/day; risk increases substantially with rapid IV push\n- **Chlorpromazine** and other low-potency typical antipsychotics\n- **Quetiapine** - moderate risk, dose-dependent\n- **Iloperidone** - notable QT prolongation risk among newer atypicals\n\n**Antidepressants:**\n- **Citalopram/Escitalopram** - citalopram carries an FDA boxed warning; doses above **40 mg/day** are not recommended (max 20 mg/day in patients over 60, hepatic impairment, or poor CYP2C19 metabolizers)\n- **Escitalopram** doses above **20 mg/day** carry increased risk\n- **Tricyclic antidepressants** (amitriptyline, imipramine, nortriptyline) - risk increases significantly in overdose or at higher therapeutic doses\n- **Venlafaxine** - modest QT effects, more relevant in overdose\n\n## Key Risk Thresholds\n\n- **Normal QTc**: <440 ms (men), <460 ms (women)\n- **Borderline prolongation**: 440-460 ms (men), 460-470 ms (women)\n- **Clinically significant prolongation**: >500 ms or increase of >60 ms from baseline\n- **Risk of Torsades de Pointes** increases substantially once QTc exceeds approximately 500 ms\n\n## Clinical Recommendations Before Starting\n\n1. **Baseline ECG** recommended if starting citalopram, ziprasidone, high-dose haloperidol, or if patient has cardiac risk factors\n2. **Check for additional risk factors:**\n   - Hypokalemia (K+ <3.5 mEq/L) or hypomagnesemia (Mg <1.5 mg/dL)\n   - Family history of sudden cardiac death or congenital long QT syndrome\n   - Concurrent QT-prolonging medications (methadone, certain antibiotics like azithromycin/fluoroquinolones, antiemetics like ondansetron)\n   - Bradycardia, female sex, older age\n   - Structural heart disease\n\n3. **Follow-up ECG** typically recommended after dose titration, especially for citalopram or antipsychotics reaching higher doses\n\n## Lower-Risk Alternatives (if QT concern is significant)\n- **Sertraline** - relatively favorable cardiac profile among SSRIs\n- **Aripiprazole** - among the lowest QT-prolonging antipsychotics (~1-2 ms increase typically)\n- **L",
+    "latency_ms": 11432.1,
+    "token_count": 1168,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "6efacc59d26b",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240538.6295688,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 14 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4215,
+          "evidence": [
+            "Latency 11432ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11432.1,
+        "token_count": 1168,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.145; flagged=True"
+}

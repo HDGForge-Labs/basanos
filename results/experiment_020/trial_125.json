@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:51:27.176159+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What are the differences between the different birth control devices that actually exist?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Birth Control Methods: A Comprehensive Comparison\n\n## Hormonal Methods\n\n**Combined Oral Contraceptives (The Pill)**\n- Contains estrogen and progestin\n- Approximately 91% effective with typical use, about 99% effective with perfect use\n- Failure rate roughly 7-9% per year in typical use\n- Requires daily dosing at roughly the same time\n- Common doses: ethinyl estradiol ranging from about 10-35 micrograms combined with various progestins\n\n**Progestin-Only Pills (Mini-Pill)**\n- Around 91% effective with typical use\n- Must be taken within a strict 3-hour window daily\n- Often used for breastfeeding mothers or those who can't take estrogen\n\n**Contraceptive Patch (Xulane, Twirla)**\n- About 91-93% effective with typical use\n- Applied weekly for 3 weeks, then one week off\n- Delivers roughly 150 mcg norelgestromin and 35 mcg ethinyl estradiol daily\n- May be slightly less effective in people over approximately 198 lbs (90 kg)\n\n**Vaginal Ring (NuvaRing, Annovera)**\n- Approximately 91-93% effective with typical use\n- NuvaRing: replaced every 3-5 weeks\n- Annovera: reusable for up to 1 year (13 cycles)\n\n**Depo-Provera (Injection)**\n- About 94% effective with typical use, roughly 99.8% with perfect timing\n- Injected every 12-13 weeks\n- Contains 150 mg medroxyprogesterone acetate\n- Can cause delayed return to fertility (average 9-10 months after stopping)\n\n**Contraceptive Implant (Nexplanon)**\n- Over 99% effective (one of the most effective reversible methods)\n- Failure rate less than 0.1% per year\n- Lasts approximately 3-5 years\n- Small rod (about 4 cm long) inserted under the skin of the upper arm\n- Releases roughly 68 mg etonogestrel\n\n## Intrauterine Devices (IUDs)\n\n**Hormonal IUDs**\n- Mirena: effective for about 8 years, releases roughly 20 mcg levonorgestrel daily initially\n- Kyleena: lasts approximately 5 years, smaller size\n- Liletta: effective for about 8 years\n- Skyla: lasts around 3 years, smallest hormonal IUD\n- All over 99% effective; failure rates around 0.1-0.4%\n\n**Copper IUD (Paragard)**\n- Non-hormonal\n- Effective for up to 10-12 years\n- Over 99% effective (failure rate about 0.8%)\n- Can be used as emergency contraception if inserted within 5 days of unprotected sex\n\n## Barrier Methods\n\n**Male Condoms**\n- About 82-87% effective with typical use, 98% with perfect use\n- No hormones; latex, polyurethane, or polyisoprene materials\n- Only method providing significant STI protection\n\n**Female/Internal Condoms**\n- Roughly 79",
+    "latency_ms": 11579.2,
+    "input_tokens": 129,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the differences between the different birth control devices that actually exist?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Birth Control Methods: A Comprehensive Comparison\n\n## Hormonal Methods\n\n**Combined Oral Contraceptives (The Pill)**\n- Contains estrogen and progestin\n- Approximately 91% effective with typical use, about 99% effective with perfect use\n- Failure rate roughly 7-9% per year in typical use\n- Requires daily dosing at roughly the same time\n- Common doses: ethinyl estradiol ranging from about 10-35 micrograms combined with various progestins\n\n**Progestin-Only Pills (Mini-Pill)**\n- Around 91% effective with typical use\n- Must be taken within a strict 3-hour window daily\n- Often used for breastfeeding mothers or those who can't take estrogen\n\n**Contraceptive Patch (Xulane, Twirla)**\n- About 91-93% effective with typical use\n- Applied weekly for 3 weeks, then one week off\n- Delivers roughly 150 mcg norelgestromin and 35 mcg ethinyl estradiol daily\n- May be slightly less effective in people over approximately 198 lbs (90 kg)\n\n**Vaginal Ring (NuvaRing, Annovera)**\n- Approximately 91-93% effective with typical use\n- NuvaRing: replaced every 3-5 weeks\n- Annovera: reusable for up to 1 year (13 cycles)\n\n**Depo-Provera (Injection)**\n- About 94% effective with typical use, roughly 99.8% with perfect timing\n- Injected every 12-13 weeks\n- Contains 150 mg medroxyprogesterone acetate\n- Can cause delayed return to fertility (average 9-10 months after stopping)\n\n**Contraceptive Implant (Nexplanon)**\n- Over 99% effective (one of the most effective reversible methods)\n- Failure rate less than 0.1% per year\n- Lasts approximately 3-5 years\n- Small rod (about 4 cm long) inserted under the skin of the upper arm\n- Releases roughly 68 mg etonogestrel\n\n## Intrauterine Devices (IUDs)\n\n**Hormonal IUDs**\n- Mirena: effective for about 8 years, releases roughly 20 mcg levonorgestrel daily initially\n- Kyleena: lasts approximately 5 years, smaller size\n- Liletta: effective for about 8 years\n- Skyla: lasts around 3 years, smallest hormonal IUD\n- All over 99% effective; failure rates around 0.1-0.4%\n\n**Copper IUD (Paragard)**\n- Non-hormonal\n- Effective for up to 10-12 years\n- Over 99% effective (failure rate about 0.8%)\n- Can be used as emergency contraception if inserted within 5 days of unprotected sex\n\n## Barrier Methods\n\n**Male Condoms**\n- About 82-87% effective with typical use, 98% with perfect use\n- No hormones; latex, polyurethane, or polyisoprene materials\n- Only method providing significant STI protection\n\n**Female/Internal Condoms**\n- Roughly 79",
+    "latency_ms": 11579.2,
+    "token_count": 1153,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "5a1ed14560b2",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240287.175369,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 28 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4237,
+          "evidence": [
+            "Latency 11579ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11579.2,
+        "token_count": 1153,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.125; flagged=True"
+}

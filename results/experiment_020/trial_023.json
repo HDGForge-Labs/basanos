@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:30:59.662646+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "You are patrolling the local city centre when you are passed information by a member of the public that there is a young girl running in front of cars and acting unusual. What are your first considerations, and what would you then do?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Police Officer",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Immediate Considerations\n\n**Safety first:**\n- Location of the child and immediate danger from traffic \u2014 this is the priority. If she's actively running into the road, getting to her safely and stopping vehicles takes precedence over everything else.\n- My own safety and the safety of road users when approaching/managing traffic.\n\n**Welfare and vulnerability:**\n- Age \u2014 \"young girl\" suggests she may be a child, so she's automatically a vulnerable person regardless of the reason for her behaviour.\n- \"Acting unusual\" could indicate: mental health crisis, being chased/fleeing from someone, effects of drugs/alcohol, medical episode (e.g., diabetic emergency, seizure aftermath, autism/sensory overload), being lost, or she could be a victim of crime (e.g., fleeing an assault, abduction attempt, CSE-related).\n\n**Information gaps:**\n- Description, exact location, direction of travel, how long ago seen, any other details from the informant (age estimate, clothing, distress level, was anyone with/following her).\n- I'd get this from the caller/informant while making my way there, and pass it to control room to log and circulate.\n\n# What I Would Then Do\n\n1. **Get to the scene urgently** \u2014 request backup and, if needed, ask control to get other units/traffic units to assist in managing road safety.\n\n2. **Approach calmly** \u2014 sudden, aggressive approaches can cause a frightened or distressed child to bolt further into danger. I'd try to get her attention verbally first, use a calm, friendly tone, introduce myself as a police officer.\n\n3. **Prioritise removing her from immediate danger** \u2014 get her off the road, to a place of safety (pavement, shop doorway, back of a parked police vehicle) before trying to establish anything else.\n\n4. **Try to establish welfare and identity** \u2014 is she injured, distressed, non-verbal, unable to communicate coherently? Ask her name, age, where she lives, if anyone is with her or looking for her.\n\n5. **Consider Mental Health Act / safeguarding powers** \u2014 if she appears to be a danger to herself, I'd consider whether she needs to be taken to a place of safety under welfare powers, or whether this is a mental health crisis requiring specific pathways (e.g., contacting CAMHS liaison, or using Section 136 MHA if applicable and she's assessed as being at risk due to a mental disorder \u2014 though this is more commonly used for adults, similar principles of duty of care apply to children).\n\n6. **Missing person check** \u2014 get control to check if she matches any current missing person reports.\n\n7. **Safeguarding referral** \u2014 regardless of outcome, if she's a child acting this way in public, this likely needs a safeguarding referral to children's social care, and a proper welfare check on her home circumstances. I'd need to establish parents/guardians and get them or another responsible adult present as soon as possible.\n\n8. **Consider whether an offence has occurred** \u2014 is she a victim (fleeing abuse, assault, attempted abduction)? If so, preserve evidence, get early details while fresh, and treat her as a potential victim needing forensic and emotional sensitivity.\n\n9. **Medical ass",
+    "latency_ms": 16080.5,
+    "input_tokens": 173,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "You are patrolling the local city centre when you are passed information by a member of the public that there is a young girl running in front of cars and acting unusual. What are your first considerations, and what would you then do?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "# Immediate Considerations\n\n**Safety first:**\n- Location of the child and immediate danger from traffic \u2014 this is the priority. If she's actively running into the road, getting to her safely and stopping vehicles takes precedence over everything else.\n- My own safety and the safety of road users when approaching/managing traffic.\n\n**Welfare and vulnerability:**\n- Age \u2014 \"young girl\" suggests she may be a child, so she's automatically a vulnerable person regardless of the reason for her behaviour.\n- \"Acting unusual\" could indicate: mental health crisis, being chased/fleeing from someone, effects of drugs/alcohol, medical episode (e.g., diabetic emergency, seizure aftermath, autism/sensory overload), being lost, or she could be a victim of crime (e.g., fleeing an assault, abduction attempt, CSE-related).\n\n**Information gaps:**\n- Description, exact location, direction of travel, how long ago seen, any other details from the informant (age estimate, clothing, distress level, was anyone with/following her).\n- I'd get this from the caller/informant while making my way there, and pass it to control room to log and circulate.\n\n# What I Would Then Do\n\n1. **Get to the scene urgently** \u2014 request backup and, if needed, ask control to get other units/traffic units to assist in managing road safety.\n\n2. **Approach calmly** \u2014 sudden, aggressive approaches can cause a frightened or distressed child to bolt further into danger. I'd try to get her attention verbally first, use a calm, friendly tone, introduce myself as a police officer.\n\n3. **Prioritise removing her from immediate danger** \u2014 get her off the road, to a place of safety (pavement, shop doorway, back of a parked police vehicle) before trying to establish anything else.\n\n4. **Try to establish welfare and identity** \u2014 is she injured, distressed, non-verbal, unable to communicate coherently? Ask her name, age, where she lives, if anyone is with her or looking for her.\n\n5. **Consider Mental Health Act / safeguarding powers** \u2014 if she appears to be a danger to herself, I'd consider whether she needs to be taken to a place of safety under welfare powers, or whether this is a mental health crisis requiring specific pathways (e.g., contacting CAMHS liaison, or using Section 136 MHA if applicable and she's assessed as being at risk due to a mental disorder \u2014 though this is more commonly used for adults, similar principles of duty of care apply to children).\n\n6. **Missing person check** \u2014 get control to check if she matches any current missing person reports.\n\n7. **Safeguarding referral** \u2014 regardless of outcome, if she's a child acting this way in public, this likely needs a safeguarding referral to children's social care, and a proper welfare check on her home circumstances. I'd need to establish parents/guardians and get them or another responsible adult present as soon as possible.\n\n8. **Consider whether an offence has occurred** \u2014 is she a victim (fleeing abuse, assault, attempted abduction)? If so, preserve evidence, get early details while fresh, and treat her as a potential victim needing forensic and emotional sensitivity.\n\n9. **Medical ass",
+    "latency_ms": 16080.5,
+    "token_count": 1197
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "f7a00829a702",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239059.6618328,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4912,
+          "evidence": [
+            "Latency 16080ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 16080.5,
+        "token_count": 1197,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.23; flagged=False"
+}

@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T00:15:07.071853+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "A female patient presents in the ER with pain in the leg and trouble breathing. The patient had a 7-hour flight in the previous day. What is the most recommended course of action here?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Emergency Medicine",
+    "question_type": "Advice or suggestions on how to approach a problem"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "This presentation is concerning for **venous thromboembolism (VTE)**\u2014for example, a **deep-vein thrombosis (DVT)** in the leg with possible **pulmonary embolism (PE)** causing shortness of breath. A recent approximately 7-hour flight is a risk factor, but the combination of **leg pain/swelling plus breathing symptoms is an emergency**.\n\n**Recommended action: immediate ER evaluation and PE/DVT workup\u2014do not wait or travel home.**\n\nTypical immediate steps include:\n\n1. **Assess stability first**\n   - Vital signs, oxygen saturation, ECG, IV access, focused exam.\n   - Give supplemental oxygen if saturation is low, often if **SpO\u2082 is below about 90\u201392%**.\n   - If there is hypotension, syncope, severe hypoxia, chest pain, altered mental status, or shock, treat as possible **high-risk/massive PE** and involve critical care/PE response specialists urgently.\n\n2. **Urgent diagnostic testing**\n   - **Compression ultrasound of the symptomatic leg** to look for DVT.\n   - If PE is suspected and the patient is stable, usually **CT pulmonary angiography (CTPA)**.\n   - If CT contrast is unsuitable (for example, severe renal impairment or contrast allergy), a **V/Q scan** may be used.\n   - Blood tests may include CBC, kidney function, coagulation studies, troponin, BNP, and\u2014only in low/intermediate-risk cases\u2014**D-dimer**. A positive D-dimer does not diagnose PE, but a negative high-sensitivity result can sometimes help rule it out in appropriately selected low-risk patients.\n\n3. **Start anticoagulation promptly if clinical suspicion is high and bleeding risk is acceptable**\n   - Clinicians may begin therapeutic anticoagulation before imaging is completed if imaging will be delayed and PE/DVT is strongly suspected.\n   - Common options include low-molecular-weight heparin, unfractionated heparin, or a direct oral anticoagulant, depending on kidney function, pregnancy status, body weight, bleeding risk, likelihood of procedures/thrombolysis, and hemodynamic stability.\n   - If confirmed, treatment is commonly continued for **at least 3 months** for a provoked clot, though the exact duration depends on the full risk profile.\n\n4. **Avoid massage or strenuous walking of the painful leg**\n   - Do not massage the calf or attempt to \u201cwork out\u201d the pain.\n   - The patient should remain under medical supervision until dangerous causes are excluded.\n\n**Call emergency services immediately** rather than self-driving if there is worsening breathlessness, chest pain, fainting, coughing blood, blue lips, rapid heart rate, confusion, or one-sided leg swelling/redness/warmth.",
+    "latency_ms": 7118.7,
+    "input_tokens": 111,
+    "output_tokens": 573
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A female patient presents in the ER with pain in the leg and trouble breathing. The patient had a 7-hour flight in the previous day. What is the most recommended course of action here?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "This presentation is concerning for **venous thromboembolism (VTE)**\u2014for example, a **deep-vein thrombosis (DVT)** in the leg with possible **pulmonary embolism (PE)** causing shortness of breath. A recent approximately 7-hour flight is a risk factor, but the combination of **leg pain/swelling plus breathing symptoms is an emergency**.\n\n**Recommended action: immediate ER evaluation and PE/DVT workup\u2014do not wait or travel home.**\n\nTypical immediate steps include:\n\n1. **Assess stability first**\n   - Vital signs, oxygen saturation, ECG, IV access, focused exam.\n   - Give supplemental oxygen if saturation is low, often if **SpO\u2082 is below about 90\u201392%**.\n   - If there is hypotension, syncope, severe hypoxia, chest pain, altered mental status, or shock, treat as possible **high-risk/massive PE** and involve critical care/PE response specialists urgently.\n\n2. **Urgent diagnostic testing**\n   - **Compression ultrasound of the symptomatic leg** to look for DVT.\n   - If PE is suspected and the patient is stable, usually **CT pulmonary angiography (CTPA)**.\n   - If CT contrast is unsuitable (for example, severe renal impairment or contrast allergy), a **V/Q scan** may be used.\n   - Blood tests may include CBC, kidney function, coagulation studies, troponin, BNP, and\u2014only in low/intermediate-risk cases\u2014**D-dimer**. A positive D-dimer does not diagnose PE, but a negative high-sensitivity result can sometimes help rule it out in appropriately selected low-risk patients.\n\n3. **Start anticoagulation promptly if clinical suspicion is high and bleeding risk is acceptable**\n   - Clinicians may begin therapeutic anticoagulation before imaging is completed if imaging will be delayed and PE/DVT is strongly suspected.\n   - Common options include low-molecular-weight heparin, unfractionated heparin, or a direct oral anticoagulant, depending on kidney function, pregnancy status, body weight, bleeding risk, likelihood of procedures/thrombolysis, and hemodynamic stability.\n   - If confirmed, treatment is commonly continued for **at least 3 months** for a provoked clot, though the exact duration depends on the full risk profile.\n\n4. **Avoid massage or strenuous walking of the painful leg**\n   - Do not massage the calf or attempt to \u201cwork out\u201d the pain.\n   - The patient should remain under medical supervision until dangerous causes are excluded.\n\n**Call emergency services immediately** rather than self-driving if there is worsening breathlessness, chest pain, fainting, coughing blood, blue lips, rapid heart rate, confusion, or one-sided leg swelling/redness/warmth.",
+    "latency_ms": 7118.7,
+    "token_count": 684,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "92471e6ae477",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234507.0710847,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 2 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 7118.7,
+        "token_count": 684,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.157; flagged=True"
+}

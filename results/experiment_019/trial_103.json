@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T00:05:55.362774+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "You have a patient admitted for upper gastrointestinal bleeding, the endoscopy reveals a gastric ulcer in incisura angularis with a point of hematin and minimal traces of dark blood in the stomach. Biopsies of the ulcer margin and an antral biopsy are performed for the rapid urease test with a positive result. What is the next step?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General medicine",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "The next step is to treat **Helicobacter pylori infection with eradication therapy** and continue acid suppression for ulcer healing.\n\nBecause the ulcer has only a **flat pigmented spot/hematin (Forrest IIc)** with minimal old blood and no active bleeding or visible vessel, it is a **low-risk stigmata** lesion:\n\n- **No endoscopic hemostatic therapy** is required.\n- A high-dose continuous IV PPI infusion is generally **not necessary** after this finding.\n- Start or continue an **oral proton-pump inhibitor (PPI)**, typically standard dose twice daily initially, e.g.:\n  - omeprazole **20 mg twice daily**, or\n  - pantoprazole **40 mg twice daily**,\n  for approximately **14 days**, then usually once daily to complete ulcer healing, commonly a total of **8 weeks** for a gastric ulcer.\n\nFor the positive rapid urease test, prescribe **14-day bismuth quadruple therapy** in most settings, especially where clarithromycin resistance is unknown or exceeds about **15%**:\n\n- PPI twice daily\n- Bismuth subsalicylate **524 mg four times daily** (or bismuth subcitrate **120\u2013300 mg four times daily**)\n- Tetracycline **500 mg four times daily**\n- Metronidazole **500 mg three to four times daily**\n\nIf local resistance patterns and prior macrolide exposure support it, an alternative is **14-day concomitant therapy** (PPI + amoxicillin + clarithromycin + metronidazole), but empiric clarithromycin triple therapy is generally avoided unless susceptibility is known.\n\nAlso:\n\n1. **Avoid NSAIDs**, aspirin unless essential for secondary cardiovascular prevention, smoking, and excess alcohol.\n2. If aspirin is required for **secondary cardiovascular prevention**, it is usually resumed promptly\u2014often within **1\u20133 days** once bleeding is controlled\u2014with ongoing PPI protection.\n3. Confirm eradication with a **urea breath test or stool antigen test** at least **4 weeks after antibiotics** and after withholding PPIs for approximately **2 weeks**.\n4. Because this is a **gastric ulcer**, arrange a repeat upper endoscopy with repeat biopsies in about **6\u20138 weeks** (often up to **12 weeks**) to document healing and exclude malignancy, even if initial biopsies are benign.",
+    "latency_ms": 5816.1,
+    "input_tokens": 141,
+    "output_tokens": 497
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "You have a patient admitted for upper gastrointestinal bleeding, the endoscopy reveals a gastric ulcer in incisura angularis with a point of hematin and minimal traces of dark blood in the stomach. Biopsies of the ulcer margin and an antral biopsy are performed for the rapid urease test with a positive result. What is the next step?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "The next step is to treat **Helicobacter pylori infection with eradication therapy** and continue acid suppression for ulcer healing.\n\nBecause the ulcer has only a **flat pigmented spot/hematin (Forrest IIc)** with minimal old blood and no active bleeding or visible vessel, it is a **low-risk stigmata** lesion:\n\n- **No endoscopic hemostatic therapy** is required.\n- A high-dose continuous IV PPI infusion is generally **not necessary** after this finding.\n- Start or continue an **oral proton-pump inhibitor (PPI)**, typically standard dose twice daily initially, e.g.:\n  - omeprazole **20 mg twice daily**, or\n  - pantoprazole **40 mg twice daily**,\n  for approximately **14 days**, then usually once daily to complete ulcer healing, commonly a total of **8 weeks** for a gastric ulcer.\n\nFor the positive rapid urease test, prescribe **14-day bismuth quadruple therapy** in most settings, especially where clarithromycin resistance is unknown or exceeds about **15%**:\n\n- PPI twice daily\n- Bismuth subsalicylate **524 mg four times daily** (or bismuth subcitrate **120\u2013300 mg four times daily**)\n- Tetracycline **500 mg four times daily**\n- Metronidazole **500 mg three to four times daily**\n\nIf local resistance patterns and prior macrolide exposure support it, an alternative is **14-day concomitant therapy** (PPI + amoxicillin + clarithromycin + metronidazole), but empiric clarithromycin triple therapy is generally avoided unless susceptibility is known.\n\nAlso:\n\n1. **Avoid NSAIDs**, aspirin unless essential for secondary cardiovascular prevention, smoking, and excess alcohol.\n2. If aspirin is required for **secondary cardiovascular prevention**, it is usually resumed promptly\u2014often within **1\u20133 days** once bleeding is controlled\u2014with ongoing PPI protection.\n3. Confirm eradication with a **urea breath test or stool antigen test** at least **4 weeks after antibiotics** and after withholding PPIs for approximately **2 weeks**.\n4. Because this is a **gastric ulcer**, arrange a repeat upper endoscopy with repeat biopsies in about **6\u20138 weeks** (often up to **12 weeks**) to document healing and exclude malignancy, even if initial biopsies are benign.",
+    "latency_ms": 5816.1,
+    "token_count": 638,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "83b4d1b60e99",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233955.362023,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 13 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 5816.1,
+        "token_count": 638,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.103; flagged=True"
+}

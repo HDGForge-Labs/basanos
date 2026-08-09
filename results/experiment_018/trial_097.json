@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:58:15.185305+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "A 30 year old primigravid pregnant woman walks into the clinic complaining of intense contractions that last. How can a physician differentiate between true onset of labour and braxton hicks contractions?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "internal medicine",
+    "question_type": "Directed question that has a single unambiguous answer| Advice or suggestions on how to approach a problem| Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "A physician distinguishes **true labour** from **Braxton Hicks (\u201cfalse labour\u201d) contractions** by assessing the **pattern of contractions and, most importantly, cervical change**.\n\n| Feature | True labour | Braxton Hicks contractions |\n|---|---|---|\n| **Regularity** | Regular, rhythmic contractions | Irregular and unpredictable |\n| **Frequency/duration** | Become progressively **more frequent, longer, and stronger**\u2014e.g., every 5 minutes, lasting ~60 seconds | Do not show a progressive pattern; may remain brief or variable |\n| **Pain** | Usually intensifies and may begin in the back and radiate anteriorly; not relieved by rest or hydration | Usually felt mainly in the abdomen; often mild/moderate |\n| **Effect of activity** | Continue or intensify despite walking, movement, or position change | Often decrease with rest, hydration, bladder emptying, or changing position |\n| **Cervix** | Causes progressive **effacement and dilation** on serial examination | No progressive cervical dilation or effacement |\n| **Associated signs** | Possible bloody show, rupture of membranes, increasing pelvic pressure | Usually no bloody show or membrane rupture |\n\n### Clinical confirmation\nThe key diagnostic test is **serial cervical examination**, usually over 1\u20132 hours:\n\n- **True labour:** demonstrable cervical dilation and/or effacement over time.\n- **Braxton Hicks:** contractions occur without progressive cervical change.\n\nThe physician should also assess fetal presentation and wellbeing and ask about **rupture of membranes, vaginal bleeding, decreased fetal movement, fever, or severe constant pain**. If the patient is preterm\u2014before **37 weeks**\u2014regular painful contractions with cervical change should be treated as possible **preterm labour** and evaluated urgently.",
+    "latency_ms": 2864.9,
+    "input_tokens": 116,
+    "output_tokens": 361
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A 30 year old primigravid pregnant woman walks into the clinic complaining of intense contractions that last. How can a physician differentiate between true onset of labour and braxton hicks contractions?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "A physician distinguishes **true labour** from **Braxton Hicks (\u201cfalse labour\u201d) contractions** by assessing the **pattern of contractions and, most importantly, cervical change**.\n\n| Feature | True labour | Braxton Hicks contractions |\n|---|---|---|\n| **Regularity** | Regular, rhythmic contractions | Irregular and unpredictable |\n| **Frequency/duration** | Become progressively **more frequent, longer, and stronger**\u2014e.g., every 5 minutes, lasting ~60 seconds | Do not show a progressive pattern; may remain brief or variable |\n| **Pain** | Usually intensifies and may begin in the back and radiate anteriorly; not relieved by rest or hydration | Usually felt mainly in the abdomen; often mild/moderate |\n| **Effect of activity** | Continue or intensify despite walking, movement, or position change | Often decrease with rest, hydration, bladder emptying, or changing position |\n| **Cervix** | Causes progressive **effacement and dilation** on serial examination | No progressive cervical dilation or effacement |\n| **Associated signs** | Possible bloody show, rupture of membranes, increasing pelvic pressure | Usually no bloody show or membrane rupture |\n\n### Clinical confirmation\nThe key diagnostic test is **serial cervical examination**, usually over 1\u20132 hours:\n\n- **True labour:** demonstrable cervical dilation and/or effacement over time.\n- **Braxton Hicks:** contractions occur without progressive cervical change.\n\nThe physician should also assess fetal presentation and wellbeing and ask about **rupture of membranes, vaginal bleeding, decreased fetal movement, fever, or severe constant pain**. If the patient is preterm\u2014before **37 weeks**\u2014regular painful contractions with cervical change should be treated as possible **preterm labour** and evaluated urgently.",
+    "latency_ms": 2864.9,
+    "token_count": 477
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "99f530830f80",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229895.1845372,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2864.9,
+        "token_count": 477,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.97; flagged=False"
+}

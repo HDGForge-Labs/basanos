@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T00:08:00.327125+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is the first radiological sign of fetal death?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "medical profesional based in family medicine",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "The earliest classic radiological sign of **intrauterine fetal death** is **Spalding\u2019s sign**:  \n\n- **Overlapping of the fetal skull bones** due to collapse of the brain and loss of intracranial pressure.  \n- It is usually visible on plain radiography **about 3\u20137 days after fetal death**, although it may occasionally appear earlier or later.\n\nOther later radiographic signs include:\n\n- **Deuel\u2019s halo sign**: scalp edema producing a double contour around the fetal skull, often seen after roughly **1\u20132 weeks**.  \n- **Robert\u2019s sign**: gas in the fetal heart and major vessels, a relatively late sign.  \n\nIn current practice, **ultrasound absence of fetal cardiac activity** is the definitive and much earlier method for diagnosing fetal death.",
+    "latency_ms": 2803.7,
+    "input_tokens": 83,
+    "output_tokens": 169
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the first radiological sign of fetal death?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "The earliest classic radiological sign of **intrauterine fetal death** is **Spalding\u2019s sign**:  \n\n- **Overlapping of the fetal skull bones** due to collapse of the brain and loss of intracranial pressure.  \n- It is usually visible on plain radiography **about 3\u20137 days after fetal death**, although it may occasionally appear earlier or later.\n\nOther later radiographic signs include:\n\n- **Deuel\u2019s halo sign**: scalp edema producing a double contour around the fetal skull, often seen after roughly **1\u20132 weeks**.  \n- **Robert\u2019s sign**: gas in the fetal heart and major vessels, a relatively late sign.  \n\nIn current practice, **ultrasound absence of fetal cardiac activity** is the definitive and much earlier method for diagnosing fetal death.",
+    "latency_ms": 2803.7,
+    "token_count": 252,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "871e79bac0da",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234080.3263652,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 2 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 2803.7,
+        "token_count": 252,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.118; flagged=True"
+}

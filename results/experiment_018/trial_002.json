@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:51:52.879075+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What diseases are caused by pathogenic bacteria?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biomedical technologist",
+    "question_type": "Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Pathogenic bacteria cause many diseases, including:\n\n- **Tuberculosis** \u2014 *Mycobacterium tuberculosis*\n- **Pneumonia** \u2014 commonly *Streptococcus pneumoniae*, *Klebsiella pneumoniae*, and others\n- **Strep throat and scarlet fever** \u2014 *Streptococcus pyogenes*\n- **Whooping cough** \u2014 *Bordetella pertussis*\n- **Diphtheria** \u2014 *Corynebacterium diphtheriae*\n- **Cholera** \u2014 *Vibrio cholerae*\n- **Typhoid fever** \u2014 *Salmonella Typhi*\n- **Bacterial dysentery** \u2014 *Shigella* species\n- **Food poisoning** \u2014 *Salmonella*, pathogenic *E. coli*, *Campylobacter*, *Staphylococcus aureus*, and *Clostridium perfringens*\n- **Cholera-like diarrheal disease** \u2014 enterotoxigenic *E. coli*\n- **Urinary tract infections** \u2014 especially *Escherichia coli*\n- **Gonorrhea** \u2014 *Neisseria gonorrhoeae*\n- **Syphilis** \u2014 *Treponema pallidum*\n- **Chlamydia** \u2014 *Chlamydia trachomatis*\n- **Bacterial meningitis** \u2014 *Neisseria meningitidis*, *Haemophilus influenzae*, and *Streptococcus pneumoniae*\n- **Tetanus** \u2014 *Clostridium tetani*\n- **Botulism** \u2014 *Clostridium botulinum*\n- **Gas gangrene** \u2014 mainly *Clostridium perfringens*\n- **Leprosy** \u2014 *Mycobacterium leprae*\n- **Lyme disease** \u2014 *Borrelia burgdorferi*\n- **Plague** \u2014 *Yersinia pestis*\n- **Anthrax** \u2014 *Bacillus anthracis*\n- **Bacterial skin infections** such as impetigo, cellulitis, and boils \u2014 often *Staphylococcus aureus* or *Streptococcus pyogenes*\n- **Peptic ulcers** \u2014 associated with *Helicobacter pylori*\n\nSome bacteria cause disease by invading tissues, while others produce toxins. Disease severity depends on the bacterium, the infection site, and the person\u2019s immune system.",
+    "latency_ms": 3335.4,
+    "input_tokens": 86,
+    "output_tokens": 498
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What diseases are caused by pathogenic bacteria?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Pathogenic bacteria cause many diseases, including:\n\n- **Tuberculosis** \u2014 *Mycobacterium tuberculosis*\n- **Pneumonia** \u2014 commonly *Streptococcus pneumoniae*, *Klebsiella pneumoniae*, and others\n- **Strep throat and scarlet fever** \u2014 *Streptococcus pyogenes*\n- **Whooping cough** \u2014 *Bordetella pertussis*\n- **Diphtheria** \u2014 *Corynebacterium diphtheriae*\n- **Cholera** \u2014 *Vibrio cholerae*\n- **Typhoid fever** \u2014 *Salmonella Typhi*\n- **Bacterial dysentery** \u2014 *Shigella* species\n- **Food poisoning** \u2014 *Salmonella*, pathogenic *E. coli*, *Campylobacter*, *Staphylococcus aureus*, and *Clostridium perfringens*\n- **Cholera-like diarrheal disease** \u2014 enterotoxigenic *E. coli*\n- **Urinary tract infections** \u2014 especially *Escherichia coli*\n- **Gonorrhea** \u2014 *Neisseria gonorrhoeae*\n- **Syphilis** \u2014 *Treponema pallidum*\n- **Chlamydia** \u2014 *Chlamydia trachomatis*\n- **Bacterial meningitis** \u2014 *Neisseria meningitidis*, *Haemophilus influenzae*, and *Streptococcus pneumoniae*\n- **Tetanus** \u2014 *Clostridium tetani*\n- **Botulism** \u2014 *Clostridium botulinum*\n- **Gas gangrene** \u2014 mainly *Clostridium perfringens*\n- **Leprosy** \u2014 *Mycobacterium leprae*\n- **Lyme disease** \u2014 *Borrelia burgdorferi*\n- **Plague** \u2014 *Yersinia pestis*\n- **Anthrax** \u2014 *Bacillus anthracis*\n- **Bacterial skin infections** such as impetigo, cellulitis, and boils \u2014 often *Staphylococcus aureus* or *Streptococcus pyogenes*\n- **Peptic ulcers** \u2014 associated with *Helicobacter pylori*\n\nSome bacteria cause disease by invading tissues, while others produce toxins. Disease severity depends on the bacterium, the infection site, and the person\u2019s immune system.",
+    "latency_ms": 3335.4,
+    "token_count": 584
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "fd2dac8bfbc5",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229512.8782625,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3335.4,
+        "token_count": 584,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.2; flagged=False"
+}

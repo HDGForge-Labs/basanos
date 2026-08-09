@@ -1,0 +1,70 @@
+{
+  "timestamp_utc": "2026-08-08T23:56:13.448152+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Would we be healthier if we switched from a reactive healthcare system to preventative?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biochemistry",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Yes\u2014overall, populations would be healthier if healthcare systems shifted more strongly from reacting to illness toward preventing it.\n\nPreventative care reduces the incidence, severity, and cost of many of the biggest causes of disability and early death: cardiovascular disease, type 2 diabetes, several cancers, chronic lung disease, infectious disease, dental disease, and injuries. Examples include:\n\n- **Vaccination:** prevents infections before they occur and avoids complications, hospitalizations, and transmission.\n- **Blood-pressure screening and treatment:** hypertension is usually silent but is a major cause of stroke, heart attack, kidney failure, and dementia.\n- **Smoking prevention and cessation:** among the most effective interventions for reducing cancer, heart disease, COPD, and premature death.\n- **Screening programs:** such as cervical screening, colorectal cancer screening, mammography for appropriate age groups, and diabetes/lipid screening can identify disease at more treatable stages.\n- **Prenatal, infant, and child care:** improves lifelong health through vaccination, nutrition, developmental support, and early treatment of hearing, vision, or developmental problems.\n- **Nutrition, physical activity, sleep, alcohol, and mental-health support:** can reduce risk across multiple conditions at once.\n\nThe largest gains often come from prevention outside clinics: safer housing, clean air and water, road safety, access to nutritious food, education, tobacco and alcohol policy, paid leave, and places where people can safely walk, cycle, and exercise. These measures can improve health at a population scale more effectively than asking individuals to make difficult choices in unhealthy environments.\n\nBut \u201cpreventative\u201d should not mean abandoning reactive care. People will still have accidents, infections, genetic disorders, childbirth complications, cancers, mental illness, and diseases that cannot be prevented. A strong system needs both: rapid, high-quality treatment when people are ill and sustained investment in preventing avoidable illness.\n\nOne important caveat: not every screening test or wellness intervention is beneficial. Prevention works best when it is evidence-based and targeted to people likely to benefit, because excessive testing can cause false positives, overdiagnosis, unnecessary treatment, anxiety, and cost.\n\nSo the best model is not purely preventative\u2014it is a healthcare and public-health system that prioritizes effective prevention while preserving excellent acute and chronic care.",
+    "latency_ms": 6149.0,
+    "input_tokens": 93,
+    "output_tokens": 457
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Would we be healthier if we switched from a reactive healthcare system to preventative?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Yes\u2014overall, populations would be healthier if healthcare systems shifted more strongly from reacting to illness toward preventing it.\n\nPreventative care reduces the incidence, severity, and cost of many of the biggest causes of disability and early death: cardiovascular disease, type 2 diabetes, several cancers, chronic lung disease, infectious disease, dental disease, and injuries. Examples include:\n\n- **Vaccination:** prevents infections before they occur and avoids complications, hospitalizations, and transmission.\n- **Blood-pressure screening and treatment:** hypertension is usually silent but is a major cause of stroke, heart attack, kidney failure, and dementia.\n- **Smoking prevention and cessation:** among the most effective interventions for reducing cancer, heart disease, COPD, and premature death.\n- **Screening programs:** such as cervical screening, colorectal cancer screening, mammography for appropriate age groups, and diabetes/lipid screening can identify disease at more treatable stages.\n- **Prenatal, infant, and child care:** improves lifelong health through vaccination, nutrition, developmental support, and early treatment of hearing, vision, or developmental problems.\n- **Nutrition, physical activity, sleep, alcohol, and mental-health support:** can reduce risk across multiple conditions at once.\n\nThe largest gains often come from prevention outside clinics: safer housing, clean air and water, road safety, access to nutritious food, education, tobacco and alcohol policy, paid leave, and places where people can safely walk, cycle, and exercise. These measures can improve health at a population scale more effectively than asking individuals to make difficult choices in unhealthy environments.\n\nBut \u201cpreventative\u201d should not mean abandoning reactive care. People will still have accidents, infections, genetic disorders, childbirth complications, cancers, mental illness, and diseases that cannot be prevented. A strong system needs both: rapid, high-quality treatment when people are ill and sustained investment in preventing avoidable illness.\n\nOne important caveat: not every screening test or wellness intervention is beneficial. Prevention works best when it is evidence-based and targeted to people likely to benefit, because excessive testing can cause false positives, overdiagnosis, unnecessary treatment, anxiety, and cost.\n\nSo the best model is not purely preventative\u2014it is a healthcare and public-health system that prioritizes effective prevention while preserving excellent acute and chronic care.",
+    "latency_ms": 6149.0,
+    "token_count": 550
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "b9ca7068902a",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786233373.4473555,
+      "failures": [
+        {
+          "failure_mode": "sycophantic_gap_fill",
+          "confidence": 0.35,
+          "evidence": [
+            "Weak agreement/filler language detected (1 match(es))",
+            "Response changed from the previous call to this tool with identical parameters, co-occurring with agreement-flavored language - possible ungrounded answer shift"
+          ],
+          "remediation": [
+            "Investigate why output changed for this tool call with unchanged input parameters"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 6149.0,
+        "token_count": 550,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Investigate why output changed for this tool call with unchanged input parameters"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.31; flagged=False"
+}

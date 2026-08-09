@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:59:06.829515+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "There is a spillage in my laboratory, and I just walked in to meet it. I don't know the chemical that was spilled, please direct me on the safest and important actions to take.",
+    "field": "Healthcare / Medicine",
+    "specific_field": "biomedical science",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Treat this as an unknown hazardous-material release. Do not try to identify, clean up, or \u201cneutralize\u201d it yourself.\n\n1. **Stop and keep your distance.**  \n   Do not walk through it, touch it, smell it closely, or use equipment nearby. Avoid breathing vapors or dust.\n\n2. **Leave the room immediately.**  \n   Exit by the safest route without crossing the spill. Close the door behind you if you can do so without delay. Do not lock it.\n\n3. **Warn others and prevent entry.**  \n   Tell anyone nearby not to enter. Post someone at a safe distance only if this can be done safely; otherwise notify building/security staff.\n\n4. **Activate emergency procedures.**  \n   Call your site\u2019s emergency number, laboratory safety/EHS office, security, or fire department. State clearly:  \n   - \u201cUnknown chemical spill in laboratory\u201d  \n   - Exact building, floor, room number, and access route  \n   - Approximate amount and appearance (liquid/powder, color, odor only if noticed incidentally)  \n   - Whether there is smoke, fire, strong fumes, broken containers, or anyone exposed/injured  \n   - Whether the spill is near drains, heat sources, gas cylinders, electrical equipment, or reactive materials.\n\n5. **If there is fire, smoke, strong odor, visible vapor, or a large spill:**  \n   Trigger the building fire alarm if appropriate under your local procedure and evacuate the area/building. Do not re-enter until emergency responders declare it safe.\n\n6. **If you may have been exposed:**  \n   - **On skin/clothing:** Remove contaminated clothing while using the safety shower; flush skin with water for at least **15 minutes**.  \n   - **In eyes:** Use the eyewash immediately and rinse continuously for at least **15 minutes**, holding eyelids open.  \n   - **Inhalation:** Move to fresh air, avoid exertion, and seek medical evaluation.  \n   - **Ingestion:** Do not induce vomiting; get emergency medical/poison-center guidance.  \n   Report any exposure even if you feel well.\n\n7. **Do not do these things:**  \n   - Do not use spill pads, absorbents, or a spill kit for an unknown material.  \n   - Do not add water, acids, bases, bleach, solvents, or other \u201cneutralizers.\u201d  \n   - Do not switch electrical equipment on or off near the spill.  \n   - Do not attempt ventilation changes unless your emergency plan specifically directs it.  \n   - Do not wash material into a sink or floor drain.\n\n8. **Provide information from a safe location.**  \n   Tell responders what work was being done in that lab, which chemicals are normally stored/used nearby, and whether any labels, inventory records, notebooks, or CCTV may help identify the source. Do not go back in to obtain them.\n\nRemain outside the hazard area and wait for trained emergency/EHS personnel.",
+    "latency_ms": 7894.0,
+    "input_tokens": 117,
+    "output_tokens": 614
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "There is a spillage in my laboratory, and I just walked in to meet it. I don't know the chemical that was spilled, please direct me on the safest and important actions to take.",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Treat this as an unknown hazardous-material release. Do not try to identify, clean up, or \u201cneutralize\u201d it yourself.\n\n1. **Stop and keep your distance.**  \n   Do not walk through it, touch it, smell it closely, or use equipment nearby. Avoid breathing vapors or dust.\n\n2. **Leave the room immediately.**  \n   Exit by the safest route without crossing the spill. Close the door behind you if you can do so without delay. Do not lock it.\n\n3. **Warn others and prevent entry.**  \n   Tell anyone nearby not to enter. Post someone at a safe distance only if this can be done safely; otherwise notify building/security staff.\n\n4. **Activate emergency procedures.**  \n   Call your site\u2019s emergency number, laboratory safety/EHS office, security, or fire department. State clearly:  \n   - \u201cUnknown chemical spill in laboratory\u201d  \n   - Exact building, floor, room number, and access route  \n   - Approximate amount and appearance (liquid/powder, color, odor only if noticed incidentally)  \n   - Whether there is smoke, fire, strong fumes, broken containers, or anyone exposed/injured  \n   - Whether the spill is near drains, heat sources, gas cylinders, electrical equipment, or reactive materials.\n\n5. **If there is fire, smoke, strong odor, visible vapor, or a large spill:**  \n   Trigger the building fire alarm if appropriate under your local procedure and evacuate the area/building. Do not re-enter until emergency responders declare it safe.\n\n6. **If you may have been exposed:**  \n   - **On skin/clothing:** Remove contaminated clothing while using the safety shower; flush skin with water for at least **15 minutes**.  \n   - **In eyes:** Use the eyewash immediately and rinse continuously for at least **15 minutes**, holding eyelids open.  \n   - **Inhalation:** Move to fresh air, avoid exertion, and seek medical evaluation.  \n   - **Ingestion:** Do not induce vomiting; get emergency medical/poison-center guidance.  \n   Report any exposure even if you feel well.\n\n7. **Do not do these things:**  \n   - Do not use spill pads, absorbents, or a spill kit for an unknown material.  \n   - Do not add water, acids, bases, bleach, solvents, or other \u201cneutralizers.\u201d  \n   - Do not switch electrical equipment on or off near the spill.  \n   - Do not attempt ventilation changes unless your emergency plan specifically directs it.  \n   - Do not wash material into a sink or floor drain.\n\n8. **Provide information from a safe location.**  \n   Tell responders what work was being done in that lab, which chemicals are normally stored/used nearby, and whether any labels, inventory records, notebooks, or CCTV may help identify the source. Do not go back in to obtain them.\n\nRemain outside the hazard area and wait for trained emergency/EHS personnel.",
+    "latency_ms": 7894.0,
+    "token_count": 731
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "09d5b9cfcaf9",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233546.8286672,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 7894.0,
+        "token_count": 731,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.53; flagged=False"
+}

@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T01:27:13.491697+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What are the intervention strategies to recommend for people with hypertension?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Dietician/ Nutritionist ",
+    "question_type": "Advice or suggestions on how to approach a problem| Question that describes a hypothetical scenario and asks a question based on this scenario| Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Intervention Strategies for Hypertension Management\n\n## Lifestyle Modifications (First-line for all patients)\n\n**Dietary Changes**\n- **DASH diet**: Rich in fruits, vegetables, whole grains, low-fat dairy; can lower systolic BP by 8-14 mmHg\n- **Sodium restriction**: Target <2,300 mg/day, ideally 1,500 mg/day (reduces SBP by 2-8 mmHg)\n- **Increased potassium**: 3,500-5,000 mg/day from food sources (bananas, potatoes, leafy greens) unless contraindicated by kidney disease\n- **Limit alcohol**: \u22642 drinks/day for men, \u22641 drink/day for women (can reduce SBP by 2-4 mmHg)\n\n**Physical Activity**\n- 150 minutes/week of moderate aerobic exercise (brisk walking, cycling)\n- Resistance training 2-3 days/week\n- Can reduce SBP by 4-9 mmHg\n\n**Weight Management**\n- Target BMI 18.5-24.9 kg/m\u00b2\n- Each 1 kg weight loss associated with ~1 mmHg SBP reduction\n\n**Other**\n- Smoking cessation\n- Stress reduction techniques (mindfulness, meditation)\n- Adequate sleep (7-9 hours), screening for sleep apnea\n\n## Pharmacological Interventions\n\n**First-line agents (per JNC 8, ACC/AHA guidelines):**\n\n1. **Thiazide diuretics** (chlorthalidone, hydrochlorothiazide)\n2. **ACE inhibitors** (lisinopril, enalapril)\n3. **ARBs** (losartan, valsartan)\n4. **Calcium channel blockers** (amlodipine, diltiazem)\n\n**Selection considerations:**\n- Black patients often respond better to CCBs/thiazides as monotherapy\n- ACE-I/ARBs preferred with diabetes, CKD, proteinuria\n- Beta-blockers reserved for specific indications (post-MI, heart failure, arrhythmias)\n\n**Combination therapy**: Often needed if BP >20/10 mmHg above goal; ACE-I/ARB + CCB or + thiazide are common combinations\n\n## Monitoring & Follow-up\n\n- **Home BP monitoring**: Validated device, proper technique, averaged readings\n- **Target BP**: <130/80 mmHg for most adults (per 2017 ACC/AHA guidelines); <140/90 for some populations per other guidelines\n- Regular follow-up: monthly until controlled, then every 3-6 months\n- Monitor renal function/electrolytes with ACE-I, ARB, diuretics\n\n## Patient Education & Adherence\n\n- Medication adherence counseling (address cost, side effects, pill burden)\n- Teach self-monitoring techniques\n- Address health literacy barriers\n- Consider combination pills to reduce pill burden\n\n## Special Population Considerations\n\n- **Elderly**: Start low, titrate slow",
+    "latency_ms": 11238.7,
+    "input_tokens": 136,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the intervention strategies to recommend for people with hypertension?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Intervention Strategies for Hypertension Management\n\n## Lifestyle Modifications (First-line for all patients)\n\n**Dietary Changes**\n- **DASH diet**: Rich in fruits, vegetables, whole grains, low-fat dairy; can lower systolic BP by 8-14 mmHg\n- **Sodium restriction**: Target <2,300 mg/day, ideally 1,500 mg/day (reduces SBP by 2-8 mmHg)\n- **Increased potassium**: 3,500-5,000 mg/day from food sources (bananas, potatoes, leafy greens) unless contraindicated by kidney disease\n- **Limit alcohol**: \u22642 drinks/day for men, \u22641 drink/day for women (can reduce SBP by 2-4 mmHg)\n\n**Physical Activity**\n- 150 minutes/week of moderate aerobic exercise (brisk walking, cycling)\n- Resistance training 2-3 days/week\n- Can reduce SBP by 4-9 mmHg\n\n**Weight Management**\n- Target BMI 18.5-24.9 kg/m\u00b2\n- Each 1 kg weight loss associated with ~1 mmHg SBP reduction\n\n**Other**\n- Smoking cessation\n- Stress reduction techniques (mindfulness, meditation)\n- Adequate sleep (7-9 hours), screening for sleep apnea\n\n## Pharmacological Interventions\n\n**First-line agents (per JNC 8, ACC/AHA guidelines):**\n\n1. **Thiazide diuretics** (chlorthalidone, hydrochlorothiazide)\n2. **ACE inhibitors** (lisinopril, enalapril)\n3. **ARBs** (losartan, valsartan)\n4. **Calcium channel blockers** (amlodipine, diltiazem)\n\n**Selection considerations:**\n- Black patients often respond better to CCBs/thiazides as monotherapy\n- ACE-I/ARBs preferred with diabetes, CKD, proteinuria\n- Beta-blockers reserved for specific indications (post-MI, heart failure, arrhythmias)\n\n**Combination therapy**: Often needed if BP >20/10 mmHg above goal; ACE-I/ARB + CCB or + thiazide are common combinations\n\n## Monitoring & Follow-up\n\n- **Home BP monitoring**: Validated device, proper technique, averaged readings\n- **Target BP**: <130/80 mmHg for most adults (per 2017 ACC/AHA guidelines); <140/90 for some populations per other guidelines\n- Regular follow-up: monthly until controlled, then every 3-6 months\n- Monitor renal function/electrolytes with ACE-I, ARB, diuretics\n\n## Patient Education & Adherence\n\n- Medication adherence counseling (address cost, side effects, pill burden)\n- Teach self-monitoring techniques\n- Address health literacy barriers\n- Consider combination pills to reduce pill burden\n\n## Special Population Considerations\n\n- **Elderly**: Start low, titrate slow",
+    "latency_ms": 11238.7,
+    "token_count": 1160
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "012f248c995c",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786238833.4909325,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 11238.7,
+        "token_count": 1160,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.4; flagged=False"
+}

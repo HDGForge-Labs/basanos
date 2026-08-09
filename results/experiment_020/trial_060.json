@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T01:38:07.912041+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "How could you summarize the Ethics' Code of Athens in a consize way?",
+    "field": "Law",
+    "specific_field": "Public Relations and Crisis Communication",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# The Code of Ethics of Athens (1965)\n\nThe Code of Ethics of Athens was adopted in 1965 by the United Nations and UNESCO-affiliated organizations as one of the earliest international ethical frameworks for public relations practitioners. Here's a concise summary:\n\n## Core Principles\n\n**Foundation**: Rooted in the Universal Declaration of Human Rights, requiring practitioners to respect human dignity and rights of expression, opinion, and free movement of information.\n\n**Key Commitments**, practitioners pledge to:\n\n1. **Truth and accuracy** \u2013 Provide truthful information and never spread false or misleading news\n2. **Human dignity** \u2013 Establish communication channels that foster mutual trust and respect between people and institutions\n3. **Public interest** \u2013 Serve the interests of both the organization and the public simultaneously, avoiding manipulation\n4. **No manipulation** \u2013 Never use methods that subordinate truth to other interests (like personal gain)\n5. **Respect for privacy** \u2013 Avoid tactics that exploit or degrade individuals\n6. **Professional integrity** \u2013 Refrain from actions that could corrupt communication channels or public information systems\n\n## What It Prohibits\n- Deliberate deception or dissemination of false information\n- Creating organizations that serve hidden or unstated interests\n- Exploiting causes to unfairly benefit unrelated interests\n- Debasing individual dignity for commercial or political gain\n\n## Significance\nIt's often considered a precursor to modern PR/communications ethics codes and emphasized that professional communicators have social responsibilities beyond just serving clients\u2014they serve the broader public trust in information systems.\n\nWould you like me to compare it to more modern codes (like PRSA's or IPRA's current codes) to see how these principles have evolved?",
+    "latency_ms": 8076.5,
+    "input_tokens": 139,
+    "output_tokens": 584
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How could you summarize the Ethics' Code of Athens in a consize way?",
+      "field": "Law"
+    },
+    "response": "# The Code of Ethics of Athens (1965)\n\nThe Code of Ethics of Athens was adopted in 1965 by the United Nations and UNESCO-affiliated organizations as one of the earliest international ethical frameworks for public relations practitioners. Here's a concise summary:\n\n## Core Principles\n\n**Foundation**: Rooted in the Universal Declaration of Human Rights, requiring practitioners to respect human dignity and rights of expression, opinion, and free movement of information.\n\n**Key Commitments**, practitioners pledge to:\n\n1. **Truth and accuracy** \u2013 Provide truthful information and never spread false or misleading news\n2. **Human dignity** \u2013 Establish communication channels that foster mutual trust and respect between people and institutions\n3. **Public interest** \u2013 Serve the interests of both the organization and the public simultaneously, avoiding manipulation\n4. **No manipulation** \u2013 Never use methods that subordinate truth to other interests (like personal gain)\n5. **Respect for privacy** \u2013 Avoid tactics that exploit or degrade individuals\n6. **Professional integrity** \u2013 Refrain from actions that could corrupt communication channels or public information systems\n\n## What It Prohibits\n- Deliberate deception or dissemination of false information\n- Creating organizations that serve hidden or unstated interests\n- Exploiting causes to unfairly benefit unrelated interests\n- Debasing individual dignity for commercial or political gain\n\n## Significance\nIt's often considered a precursor to modern PR/communications ethics codes and emphasized that professional communicators have social responsibilities beyond just serving clients\u2014they serve the broader public trust in information systems.\n\nWould you like me to compare it to more modern codes (like PRSA's or IPRA's current codes) to see how these principles have evolved?",
+    "latency_ms": 8076.5,
+    "token_count": 723
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "29787a97e9b1",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786239487.9113007,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 8076.5,
+        "token_count": 723,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.60; flagged=False"
+}

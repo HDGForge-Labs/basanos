@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:45:42.405718+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "A 30 year old primigravid pregnant woman walks into the clinic complaining of intense contractions that last. How can a physician differentiate between true onset of labour and braxton hicks contractions?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "internal medicine",
+    "question_type": "Directed question that has a single unambiguous answer| Advice or suggestions on how to approach a problem| Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Differentiating True Labor from Braxton Hicks Contractions\n\n## Key Clinical Differentiators\n\n### 1. **Contraction Pattern**\n- **True labor**: Regular, rhythmic contractions that occur at progressively shorter intervals (e.g., every 10 min \u2192 every 5 min \u2192 every 3 min)\n- **Braxton Hicks**: Irregular, unpredictable timing with no consistent pattern\n\n### 2. **Intensity Progression**\n- **True labor**: Contractions steadily increase in intensity and duration over time\n- **Braxton Hicks**: Intensity remains relatively constant or may even decrease\n\n### 3. **Response to Activity/Position Change**\n- **True labor**: Contractions persist or intensify regardless of position change, walking, or rest\n- **Braxton Hicks**: Often subside with rest, position change, ambulation, or hydration\n\n### 4. **Response to Hydration/Rest**\n- Give the patient a bolus of oral fluids and have her rest for 30-60 minutes\n- **Braxton Hicks** typically resolve or significantly diminish\n- **True labor** contractions continue unabated\n\n### 5. **Location of Pain**\n- **True labor**: Pain typically starts in the lower back and radiates to the lower abdomen (like a wave)\n- **Braxton Hicks**: Usually localized to the lower abdomen/front, described as tightening rather than pain\n\n### 6. **Cervical Changes** (Most Definitive)\n- **Digital cervical exam**: Assess for dilation and effacement\n  - True labor causes progressive cervical dilation (>3-4 cm with contractions) and effacement\n  - Braxton Hicks: No significant cervical change on serial exams\n- Perform serial exams 1-2 hours apart if diagnosis is unclear\n\n### 7. **Tocodynamometer/Cardiotocography (CTG)**\n- Objectively measures contraction frequency, duration, and regularity\n- Concurrent fetal heart rate monitoring assesses fetal wellbeing\n\n## Practical Approach\n\n1. **History**: Onset, frequency, duration, radiation of pain, associated symptoms (bloody show, rupture of membranes)\n2. **Physical exam**: Palpate contractions (Leopold's maneuvers), check cervix (dilation/effacement/station - Bishop score)\n3. **Observation period**: Admit to labor triage for 1-2 hours of continuous monitoring with serial cervical exams\n4. **Fetal fibronectin test**: If preterm and diagnosis unclear, a negative fFN has high negative predictive value for labor within 7-14 days\n\n## Red Flags Warranting Immediate Attention\n- Rupture of membranes (gush or continuous leak of fluid)\n- Vaginal bleeding\n- Decreased fetal movement\n- Regular contractions <10 minutes apart before 37 weeks (preterm labor concern)\n\n## Summary Table\n\n| Feature | True Labor | Braxton Hicks |\n|---------|-----------|----------------|\n| Regularity |",
+    "latency_ms": 11022.2,
+    "input_tokens": 177,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A 30 year old primigravid pregnant woman walks into the clinic complaining of intense contractions that last. How can a physician differentiate between true onset of labour and braxton hicks contractions?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Differentiating True Labor from Braxton Hicks Contractions\n\n## Key Clinical Differentiators\n\n### 1. **Contraction Pattern**\n- **True labor**: Regular, rhythmic contractions that occur at progressively shorter intervals (e.g., every 10 min \u2192 every 5 min \u2192 every 3 min)\n- **Braxton Hicks**: Irregular, unpredictable timing with no consistent pattern\n\n### 2. **Intensity Progression**\n- **True labor**: Contractions steadily increase in intensity and duration over time\n- **Braxton Hicks**: Intensity remains relatively constant or may even decrease\n\n### 3. **Response to Activity/Position Change**\n- **True labor**: Contractions persist or intensify regardless of position change, walking, or rest\n- **Braxton Hicks**: Often subside with rest, position change, ambulation, or hydration\n\n### 4. **Response to Hydration/Rest**\n- Give the patient a bolus of oral fluids and have her rest for 30-60 minutes\n- **Braxton Hicks** typically resolve or significantly diminish\n- **True labor** contractions continue unabated\n\n### 5. **Location of Pain**\n- **True labor**: Pain typically starts in the lower back and radiates to the lower abdomen (like a wave)\n- **Braxton Hicks**: Usually localized to the lower abdomen/front, described as tightening rather than pain\n\n### 6. **Cervical Changes** (Most Definitive)\n- **Digital cervical exam**: Assess for dilation and effacement\n  - True labor causes progressive cervical dilation (>3-4 cm with contractions) and effacement\n  - Braxton Hicks: No significant cervical change on serial exams\n- Perform serial exams 1-2 hours apart if diagnosis is unclear\n\n### 7. **Tocodynamometer/Cardiotocography (CTG)**\n- Objectively measures contraction frequency, duration, and regularity\n- Concurrent fetal heart rate monitoring assesses fetal wellbeing\n\n## Practical Approach\n\n1. **History**: Onset, frequency, duration, radiation of pain, associated symptoms (bloody show, rupture of membranes)\n2. **Physical exam**: Palpate contractions (Leopold's maneuvers), check cervix (dilation/effacement/station - Bishop score)\n3. **Observation period**: Admit to labor triage for 1-2 hours of continuous monitoring with serial cervical exams\n4. **Fetal fibronectin test**: If preterm and diagnosis unclear, a negative fFN has high negative predictive value for labor within 7-14 days\n\n## Red Flags Warranting Immediate Attention\n- Rupture of membranes (gush or continuous leak of fluid)\n- Vaginal bleeding\n- Decreased fetal movement\n- Regular contractions <10 minutes apart before 37 weeks (preterm labor concern)\n\n## Summary Table\n\n| Feature | True Labor | Braxton Hicks |\n|---------|-----------|----------------|\n| Regularity |",
+    "latency_ms": 11022.2,
+    "token_count": 1201
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "2d7a3ac0945d",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239942.4049585,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4153,
+          "evidence": [
+            "Latency 11022ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11022.2,
+        "token_count": 1201,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.97; flagged=False"
+}

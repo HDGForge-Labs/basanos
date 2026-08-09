@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:10:29.747032+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "I am a new intern in the blood transfusion laboratory, please write a standard SOP for me for preparing a fresh frozen plasma.",
+    "field": "Healthcare / Medicine",
+    "specific_field": "biomedical science",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "# Standard Operating Procedure (SOP): Preparation of Fresh Frozen Plasma (FFP)\n\n**Document title:** Preparation of Fresh Frozen Plasma  \n**Department:** Blood Transfusion Laboratory / Blood Component Preparation  \n**SOP number:** [Insert local number]  \n**Version:** [Insert version]  \n**Effective date:** [Insert date]  \n**Review date:** [Insert date; typically every 1\u20132 years]  \n**Prepared by:** [Name/position]  \n**Approved by:** [Medical Director/Quality Manager]  \n\n> **Important:** This is a training template. It must be adapted to your country\u2019s regulatory requirements, blood-service licence, validated equipment, anticoagulant system, and local quality-management system. Do not independently prepare or release FFP until trained, competency-assessed, and authorized.\n\n---\n\n## 1. Purpose\n\nTo describe the standardized procedure for preparing **Fresh Frozen Plasma (FFP)** from an eligible whole-blood donation or apheresis plasma donation, ensuring preservation of labile coagulation factors, especially factors V and VIII, and ensuring traceability, sterility, correct labelling, storage, and quarantine/release procedures.\n\n---\n\n## 2. Scope\n\nThis SOP applies to trained and authorized staff processing:\n\n- Whole blood collected into an approved anticoagulant-preservative system, such as **CPD** or **CPDA-1**.\n- Plasma collected by apheresis, where applicable.\n- Component preparation using a validated centrifuge, plasma extractor/expressor, tube sealer, blast freezer, freezer storage system, and blood-bank information system.\n\nThis SOP does **not** cover:\n\n- Thawing FFP for clinical issue.\n- Preparation of cryoprecipitate.\n- Preparation of solvent/detergent-treated plasma.\n- Plasma fractionation for albumin or immunoglobulin manufacture.\n- Management of transfusion reactions.\n\n---\n\n## 3. Definitions\n\n### 3.1 Fresh Frozen Plasma (FFP)\nPlasma separated from whole blood or collected by apheresis and frozen within the time limit defined by local regulations and validated procedures, commonly **within 8 hours** of collection in many standards.\n\nFFP contains coagulation factors, including relatively preserved labile factors such as factor V and factor VIII.\n\n### 3.2 Plasma\nThe liquid component of anticoagulated blood. It contains water, proteins, electrolytes, coagulation factors, fibrinogen, and immunoglobulins.\n\n### 3.3 Whole-blood-derived FFP\nFFP prepared by centrifuging whole blood, separating plasma from red cells, and freezing the plasma within the permitted timeframe.\n\n### 3.4 Apheresis FFP\nPlasma obtained directly by apheresis collection and frozen according to the validated procedure.\n\n### 3.5 Quarantine\nA status in which a blood component is physically and electronically segregated and cannot be issued until all required testing and release criteria have been met.\n\n---\n\n## 4. Responsibilities\n\n### 4.1 Blood Collection Staff\n- Verify donor identity and collection labels.\n- Collect whole blood according to the approved collection procedure.\n- Record collection time, donation number, anticoagulant type, and any collection abnormalities.\n- Ensure the unit is transferred promptly under controlled conditions.\n\n### 4.2 Component Preparation Staff\n- Confirm eligibility of the donation for component preparation.\n- Prepare FFP only using validated equipment and procedures.\n- Maintain temperature control, sterility, traceability, and documentation.\n- Quarantine all components until testing and release criteria are met.\n- Report deviations, equipment alarms, spills, leaks, and labelling errors immediately.\n\n### 4.3 Quality/Medical Staff\n- Approve component specifications.\n- Review deviations and non-conformances.\n- Authorize release procedures according to local policy.\n- Monitor quality-control results and corrective/preventive actions.\n\n---\n\n## 5. Safety Precautions\n\n1. Treat all blood donations as potentially infectious.\n2. Wear appropriate personal protective equipment (PPE):\n   - Laboratory coat or gown.\n   - Gloves.\n   - Eye/face protection where splash risk exists.\n3. Do not recap needles.\n4. Use approved sharps containers for sharps disposal.\n5. Disinfect blood spills using the locally approved disinfectant, for example a chlorine-releasing agent at approximately **1,000\u201310,000 ppm available chlorine**, according to the spill size and local procedure.\n6. Handle bags carefully to avoid leaks, punctures, broken seals, and contamination.\n7. Follow local procedures for cold injury prevention when working near blast freezers at approximately **\u221230\u00b0C to \u221280\u00b0C**.\n8. Report all exposure incidents immediately and follow occupational-health procedures.\n\n---\n\n## 6. Materials and Equipment\n\n### 6.1 Materials\n- Whole blood collection pack approved for component preparation, for example a triple, quadruple, or top-and-bottom bag system.\n- Validated anticoagulant-preservative solution, such as CPD or CPDA-1.\n- Ster",
+    "latency_ms": 12285.5,
+    "input_tokens": 98,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "I am a new intern in the blood transfusion laboratory, please write a standard SOP for me for preparing a fresh frozen plasma.",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Standard Operating Procedure (SOP): Preparation of Fresh Frozen Plasma (FFP)\n\n**Document title:** Preparation of Fresh Frozen Plasma  \n**Department:** Blood Transfusion Laboratory / Blood Component Preparation  \n**SOP number:** [Insert local number]  \n**Version:** [Insert version]  \n**Effective date:** [Insert date]  \n**Review date:** [Insert date; typically every 1\u20132 years]  \n**Prepared by:** [Name/position]  \n**Approved by:** [Medical Director/Quality Manager]  \n\n> **Important:** This is a training template. It must be adapted to your country\u2019s regulatory requirements, blood-service licence, validated equipment, anticoagulant system, and local quality-management system. Do not independently prepare or release FFP until trained, competency-assessed, and authorized.\n\n---\n\n## 1. Purpose\n\nTo describe the standardized procedure for preparing **Fresh Frozen Plasma (FFP)** from an eligible whole-blood donation or apheresis plasma donation, ensuring preservation of labile coagulation factors, especially factors V and VIII, and ensuring traceability, sterility, correct labelling, storage, and quarantine/release procedures.\n\n---\n\n## 2. Scope\n\nThis SOP applies to trained and authorized staff processing:\n\n- Whole blood collected into an approved anticoagulant-preservative system, such as **CPD** or **CPDA-1**.\n- Plasma collected by apheresis, where applicable.\n- Component preparation using a validated centrifuge, plasma extractor/expressor, tube sealer, blast freezer, freezer storage system, and blood-bank information system.\n\nThis SOP does **not** cover:\n\n- Thawing FFP for clinical issue.\n- Preparation of cryoprecipitate.\n- Preparation of solvent/detergent-treated plasma.\n- Plasma fractionation for albumin or immunoglobulin manufacture.\n- Management of transfusion reactions.\n\n---\n\n## 3. Definitions\n\n### 3.1 Fresh Frozen Plasma (FFP)\nPlasma separated from whole blood or collected by apheresis and frozen within the time limit defined by local regulations and validated procedures, commonly **within 8 hours** of collection in many standards.\n\nFFP contains coagulation factors, including relatively preserved labile factors such as factor V and factor VIII.\n\n### 3.2 Plasma\nThe liquid component of anticoagulated blood. It contains water, proteins, electrolytes, coagulation factors, fibrinogen, and immunoglobulins.\n\n### 3.3 Whole-blood-derived FFP\nFFP prepared by centrifuging whole blood, separating plasma from red cells, and freezing the plasma within the permitted timeframe.\n\n### 3.4 Apheresis FFP\nPlasma obtained directly by apheresis collection and frozen according to the validated procedure.\n\n### 3.5 Quarantine\nA status in which a blood component is physically and electronically segregated and cannot be issued until all required testing and release criteria have been met.\n\n---\n\n## 4. Responsibilities\n\n### 4.1 Blood Collection Staff\n- Verify donor identity and collection labels.\n- Collect whole blood according to the approved collection procedure.\n- Record collection time, donation number, anticoagulant type, and any collection abnormalities.\n- Ensure the unit is transferred promptly under controlled conditions.\n\n### 4.2 Component Preparation Staff\n- Confirm eligibility of the donation for component preparation.\n- Prepare FFP only using validated equipment and procedures.\n- Maintain temperature control, sterility, traceability, and documentation.\n- Quarantine all components until testing and release criteria are met.\n- Report deviations, equipment alarms, spills, leaks, and labelling errors immediately.\n\n### 4.3 Quality/Medical Staff\n- Approve component specifications.\n- Review deviations and non-conformances.\n- Authorize release procedures according to local policy.\n- Monitor quality-control results and corrective/preventive actions.\n\n---\n\n## 5. Safety Precautions\n\n1. Treat all blood donations as potentially infectious.\n2. Wear appropriate personal protective equipment (PPE):\n   - Laboratory coat or gown.\n   - Gloves.\n   - Eye/face protection where splash risk exists.\n3. Do not recap needles.\n4. Use approved sharps containers for sharps disposal.\n5. Disinfect blood spills using the locally approved disinfectant, for example a chlorine-releasing agent at approximately **1,000\u201310,000 ppm available chlorine**, according to the spill size and local procedure.\n6. Handle bags carefully to avoid leaks, punctures, broken seals, and contamination.\n7. Follow local procedures for cold injury prevention when working near blast freezers at approximately **\u221230\u00b0C to \u221280\u00b0C**.\n8. Report all exposure incidents immediately and follow occupational-health procedures.\n\n---\n\n## 6. Materials and Equipment\n\n### 6.1 Materials\n- Whole blood collection pack approved for component preparation, for example a triple, quadruple, or top-and-bottom bag system.\n- Validated anticoagulant-preservative solution, such as CPD or CPDA-1.\n- Ster",
+    "latency_ms": 12285.5,
+    "token_count": 1122,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "aaffd72cc392",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234229.746221,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 17 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4343,
+          "evidence": [
+            "Latency 12286ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12285.5,
+        "token_count": 1122,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.131; flagged=True"
+}

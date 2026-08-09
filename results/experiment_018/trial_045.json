@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:54:44.383789+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Do toxic chemicals become more or less toxic when they expire?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Dispensery",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "It depends on the chemical and how it degrades\u2014expiration does **not** reliably make a toxic chemical safer.\n\n- **Some become less toxic** if they break down into harmless products. For example, many oxidizers slowly lose potency.\n- **Some become more toxic** because they form hazardous decomposition products. Old ethers can form explosive **peroxides**; some pesticides and solvents can degrade into more harmful compounds.\n- **Some remain essentially unchanged** and stay toxic for decades, including many heavy metals, cyanide salts, and persistent pesticides.\n- **Container aging can increase danger** through leaks, pressure buildup, crystallization, or contamination. A chemical may be chemically weaker but physically more dangerous.\n\nTreat expired chemicals as potentially hazardous: don\u2019t taste, mix, heat, open suspicious containers, or dispose of them in household drains or trash. Keep them sealed and labeled, isolate damaged or crystallized containers, and contact local hazardous-waste services or poison control for handling guidance.",
+    "latency_ms": 2280.8,
+    "input_tokens": 90,
+    "output_tokens": 200
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Do toxic chemicals become more or less toxic when they expire?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "It depends on the chemical and how it degrades\u2014expiration does **not** reliably make a toxic chemical safer.\n\n- **Some become less toxic** if they break down into harmless products. For example, many oxidizers slowly lose potency.\n- **Some become more toxic** because they form hazardous decomposition products. Old ethers can form explosive **peroxides**; some pesticides and solvents can degrade into more harmful compounds.\n- **Some remain essentially unchanged** and stay toxic for decades, including many heavy metals, cyanide salts, and persistent pesticides.\n- **Container aging can increase danger** through leaks, pressure buildup, crystallization, or contamination. A chemical may be chemically weaker but physically more dangerous.\n\nTreat expired chemicals as potentially hazardous: don\u2019t taste, mix, heat, open suspicious containers, or dispose of them in household drains or trash. Keep them sealed and labeled, isolate damaged or crystallized containers, and contact local hazardous-waste services or poison control for handling guidance.",
+    "latency_ms": 2280.8,
+    "token_count": 290
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "015e9a03169d",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229684.3830283,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2280.8,
+        "token_count": 290,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.45; flagged=False"
+}

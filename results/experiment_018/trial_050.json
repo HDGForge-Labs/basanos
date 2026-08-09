@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:55:03.293131+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What is the recommended medication to prescribe for a first episode of psychosis?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Psychiatric Healthcare",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "For a **first episode of psychosis**, the recommended medication is an **oral second-generation (atypical) antipsychotic**, started at a **low dose and titrated slowly**, alongside urgent psychiatric assessment and psychosocial support.\n\nCommon first-line options include:\n\n- **Risperidone**: often started at **0.5\u20131 mg twice daily**, commonly targeting **2\u20134 mg/day**\n- **Aripiprazole**: **5\u201310 mg/day**, commonly **10\u201315 mg/day**\n- **Olanzapine**: **5\u201310 mg nightly**, commonly **10\u201320 mg/day**\n- **Quetiapine**: **25\u201350 mg twice daily**, titrated toward **300\u2013600 mg/day**\n\nChoice should be individualized based on adverse-effect risks, medical history, substance use, pregnancy potential, patient preference, and access to monitoring. **Olanzapine is generally avoided as the initial choice when alternatives are suitable because of substantial weight gain and metabolic effects.** Antipsychotic treatment is usually continued for **at least 1\u20132 years after remission** in a first episode, with specialist-guided tapering if appropriate.\n\nIf there is **catatonia, severe agitation, danger to self or others, delirium, suspected intoxication/withdrawal, or a medical cause**, urgent emergency evaluation and possible admission are required. **Clozapine is not first-line**; it is used for treatment-resistant psychosis or persistent suicidality after adequate trials of other antipsychotics.",
+    "latency_ms": 2685.7,
+    "input_tokens": 93,
+    "output_tokens": 322
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the recommended medication to prescribe for a first episode of psychosis?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "For a **first episode of psychosis**, the recommended medication is an **oral second-generation (atypical) antipsychotic**, started at a **low dose and titrated slowly**, alongside urgent psychiatric assessment and psychosocial support.\n\nCommon first-line options include:\n\n- **Risperidone**: often started at **0.5\u20131 mg twice daily**, commonly targeting **2\u20134 mg/day**\n- **Aripiprazole**: **5\u201310 mg/day**, commonly **10\u201315 mg/day**\n- **Olanzapine**: **5\u201310 mg nightly**, commonly **10\u201320 mg/day**\n- **Quetiapine**: **25\u201350 mg twice daily**, titrated toward **300\u2013600 mg/day**\n\nChoice should be individualized based on adverse-effect risks, medical history, substance use, pregnancy potential, patient preference, and access to monitoring. **Olanzapine is generally avoided as the initial choice when alternatives are suitable because of substantial weight gain and metabolic effects.** Antipsychotic treatment is usually continued for **at least 1\u20132 years after remission** in a first episode, with specialist-guided tapering if appropriate.\n\nIf there is **catatonia, severe agitation, danger to self or others, delirium, suspected intoxication/withdrawal, or a medical cause**, urgent emergency evaluation and possible admission are required. **Clozapine is not first-line**; it is used for treatment-resistant psychosis or persistent suicidality after adequate trials of other antipsychotics.",
+    "latency_ms": 2685.7,
+    "token_count": 415
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "112fe4a687f8",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229703.2923946,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2685.7,
+        "token_count": 415,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.50; flagged=False"
+}

@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:53:42.017105+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "A 70 years old lady come to the pharmacy to take prescription medication, and doesn't know when to take the pills. Where can I guide her to find out that information?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pharmacist",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario| Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Guide her first to the **prescribing doctor or pharmacist** for clear, medication-specific instructions. She should **not guess**, especially if she takes several medicines.\n\nPractical steps:\n\n1. **Check the prescription label**\u2014it should state the dose and timing, such as \u201conce daily in the morning\u201d or \u201cwith food.\u201d\n2. **Review each medicine with the pharmacist**, including:\n   - What it is for  \n   - Exactly when and how to take it  \n   - Whether to take it with food  \n   - What to do if a dose is missed  \n   - Important interactions or side effects\n3. Ask the pharmacy to provide a **large-print medication schedule**, pill organizer, or synchronized dosing times.\n4. If instructions are unclear or the label is missing, **contact the prescriber before taking the medicine**.\n5. If she has difficulty remembering, involve a **family member or caregiver** and use reminders or a medication-management service.\n\nFor reliable general information, she may also use the **official patient information leaflet** supplied with the medicine or a trusted source such as **NHS Medicines A\u2013Z** or **MedlinePlus**, but these should supplement\u2014not replace\u2014pharmacist or prescriber counseling.",
+    "latency_ms": 2602.2,
+    "input_tokens": 113,
+    "output_tokens": 252
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A 70 years old lady come to the pharmacy to take prescription medication, and doesn't know when to take the pills. Where can I guide her to find out that information?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Guide her first to the **prescribing doctor or pharmacist** for clear, medication-specific instructions. She should **not guess**, especially if she takes several medicines.\n\nPractical steps:\n\n1. **Check the prescription label**\u2014it should state the dose and timing, such as \u201conce daily in the morning\u201d or \u201cwith food.\u201d\n2. **Review each medicine with the pharmacist**, including:\n   - What it is for  \n   - Exactly when and how to take it  \n   - Whether to take it with food  \n   - What to do if a dose is missed  \n   - Important interactions or side effects\n3. Ask the pharmacy to provide a **large-print medication schedule**, pill organizer, or synchronized dosing times.\n4. If instructions are unclear or the label is missing, **contact the prescriber before taking the medicine**.\n5. If she has difficulty remembering, involve a **family member or caregiver** and use reminders or a medication-management service.\n\nFor reliable general information, she may also use the **official patient information leaflet** supplied with the medicine or a trusted source such as **NHS Medicines A\u2013Z** or **MedlinePlus**, but these should supplement\u2014not replace\u2014pharmacist or prescriber counseling.",
+    "latency_ms": 2602.2,
+    "token_count": 365
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "168068fcaa95",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229622.016389,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2602.2,
+        "token_count": 365,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.29; flagged=False"
+}

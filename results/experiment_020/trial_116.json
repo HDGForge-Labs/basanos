@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:49:39.597446+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "While on operations, a gunner officer is ordered to engage a village with indirect fire since it is a concentration area for enemy troops forming to attack friendly forces.  The gunner realizes, however, that civilians are likely located in the village as well. Should he disobey orders in order to preserve civilian lives or carry out his mission regardless?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Army officer",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Legal and Ethical Framework for This Scenario\n\nThis is fundamentally a question governed by the **Law of Armed Conflict (LOAC)**, not a binary choice between blind obedience and outright disobedience. The officer has professional and legal obligations that shape a third path.\n\n## The Core Legal Principles at Play\n\n**1. Distinction**\nUnder Additional Protocol I (Article 48) and customary international humanitarian law, forces must distinguish between combatants and civilians. A village is not inherently a legitimate target simply because enemy troops are present there\u2014civilians retain protection unless they are directly participating in hostilities.\n\n**2. Proportionality**\nArticle 51(5)(b) of AP I prohibits attacks where expected civilian casualties would be **excessive in relation to the concrete and direct military advantage anticipated**. This requires the officer to actually weigh:\n- Estimated enemy troop concentration (e.g., is this a company of ~100-150 troops, or a smaller element?)\n- Estimated civilian population in the village (could range from dozens to several hundred or more)\n- Military value of disrupting the attack versus alternative means available\n\n**3. Precautions in Attack (Article 57)**\nCommanders must take \"all feasible precautions\" to minimize civilian harm, including:\n- Choice of weapons and timing\n- Verifying targets through reconnaissance or intelligence (aiming for roughly 90%+ confidence when possible)\n- Issuing warnings where feasible, unless surprise is operationally essential\n\n## What the Officer Should Actually Do\n\n**Not blind obedience, and not unilateral disobedience\u2014but escalation and clarification:**\n\n1. **Query the order immediately** \u2014 Request clarification on whether the order accounts for known/suspected civilian presence. Ask if ISR (intelligence, surveillance, reconnaissance) assets have confirmed civilian density.\n\n2. **Request updated targeting data** \u2014 If time permits (even a delay of 10-15 minutes could matter), request updated imagery or human intelligence to refine the target area.\n\n3. **Propose mitigation measures**:\n   - Adjust fire to a more precise location within the village if enemy concentration is identifiable (e.g., a specific compound rather than saturating the entire village)\n   - Request a warning shot or brief delay to allow civilian dispersal, if tactically feasible\n   - Suggest alternative munitions with reduced blast radius if proportionality is borderline\n\n4. **Refuse only if the order is manifestly unlawful** \u2014 Under the **Nuremberg principles** and most military codes (e.g., UCMJ Article 92, or the Rome Statute Article 33), a subordinate must refuse an order that is **manifestly illegal**\u2014for example, an order to deliberately target civilians with no military justification, or where the anticipated civilian harm is grossly disproportionate to any conceivable military gain (e.g., leveling an entire village of 500+ civilians to kill an estimated 20 enemy fighters).\n\n## The Bottom Line\n\nIf, after seeking clarification, the officer determines the strike as ordered would cause **clearly excessive civil",
+    "latency_ms": 13586.6,
+    "input_tokens": 216,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "While on operations, a gunner officer is ordered to engage a village with indirect fire since it is a concentration area for enemy troops forming to attack friendly forces.  The gunner realizes, however, that civilians are likely located in the village as well. Should he disobey orders in order to preserve civilian lives or carry out his mission regardless?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "# Legal and Ethical Framework for This Scenario\n\nThis is fundamentally a question governed by the **Law of Armed Conflict (LOAC)**, not a binary choice between blind obedience and outright disobedience. The officer has professional and legal obligations that shape a third path.\n\n## The Core Legal Principles at Play\n\n**1. Distinction**\nUnder Additional Protocol I (Article 48) and customary international humanitarian law, forces must distinguish between combatants and civilians. A village is not inherently a legitimate target simply because enemy troops are present there\u2014civilians retain protection unless they are directly participating in hostilities.\n\n**2. Proportionality**\nArticle 51(5)(b) of AP I prohibits attacks where expected civilian casualties would be **excessive in relation to the concrete and direct military advantage anticipated**. This requires the officer to actually weigh:\n- Estimated enemy troop concentration (e.g., is this a company of ~100-150 troops, or a smaller element?)\n- Estimated civilian population in the village (could range from dozens to several hundred or more)\n- Military value of disrupting the attack versus alternative means available\n\n**3. Precautions in Attack (Article 57)**\nCommanders must take \"all feasible precautions\" to minimize civilian harm, including:\n- Choice of weapons and timing\n- Verifying targets through reconnaissance or intelligence (aiming for roughly 90%+ confidence when possible)\n- Issuing warnings where feasible, unless surprise is operationally essential\n\n## What the Officer Should Actually Do\n\n**Not blind obedience, and not unilateral disobedience\u2014but escalation and clarification:**\n\n1. **Query the order immediately** \u2014 Request clarification on whether the order accounts for known/suspected civilian presence. Ask if ISR (intelligence, surveillance, reconnaissance) assets have confirmed civilian density.\n\n2. **Request updated targeting data** \u2014 If time permits (even a delay of 10-15 minutes could matter), request updated imagery or human intelligence to refine the target area.\n\n3. **Propose mitigation measures**:\n   - Adjust fire to a more precise location within the village if enemy concentration is identifiable (e.g., a specific compound rather than saturating the entire village)\n   - Request a warning shot or brief delay to allow civilian dispersal, if tactically feasible\n   - Suggest alternative munitions with reduced blast radius if proportionality is borderline\n\n4. **Refuse only if the order is manifestly unlawful** \u2014 Under the **Nuremberg principles** and most military codes (e.g., UCMJ Article 92, or the Rome Statute Article 33), a subordinate must refuse an order that is **manifestly illegal**\u2014for example, an order to deliberately target civilians with no military justification, or where the anticipated civilian harm is grossly disproportionate to any conceivable military gain (e.g., leveling an entire village of 500+ civilians to kill an estimated 20 enemy fighters).\n\n## The Bottom Line\n\nIf, after seeking clarification, the officer determines the strike as ordered would cause **clearly excessive civil",
+    "latency_ms": 13586.6,
+    "token_count": 1240,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "fd62249f3142",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240179.5966668,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 16 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4538,
+          "evidence": [
+            "Latency 13587ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13586.6,
+        "token_count": 1240,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.116; flagged=True"
+}

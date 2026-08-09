@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:54:12.254902+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What are the effects of bilateral contracts?",
+    "field": "Law",
+    "specific_field": "Common Law",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Bilateral contracts are agreements in which **both parties make legally enforceable promises**\u2014for example, one party promises to deliver goods and the other promises to pay.\n\nTheir main effects are:\n\n1. **Mutual obligations arise**  \n   Each party becomes both a promisor and a promisee. The obligations are generally enforceable even before either party has performed.\n\n2. **Performance is exchanged**  \n   Each promise is typically given in return for the other. For example, delivery and payment are reciprocal performances.\n\n3. **Breach gives remedies to the innocent party**  \n   If one party fails to perform, the other may generally seek:\n   - damages,\n   - specific performance where damages are inadequate,\n   - an injunction in appropriate cases,\n   - termination or rescission where the breach is sufficiently serious.\n\n4. **The parties may suspend or withhold performance**  \n   Where obligations are dependent or intended to occur concurrently, one party may be entitled to refuse performance until the other performs or shows readiness to perform.\n\n5. **A breach may discharge future obligations**  \n   A serious breach\u2014usually a breach of a condition or a sufficiently fundamental breach\u2014can allow the innocent party to terminate the contract and claim damages. A minor breach normally gives only a right to damages.\n\n6. **The contract creates enforceable rights against both parties**  \n   Unlike a unilateral contract, acceptance usually occurs through a promise to perform, not only through completing an act.\n\n7. **Third parties generally receive no rights or obligations**  \n   Under the traditional doctrine of privity, only the contracting parties can sue or be sued, subject to statutory and common-law exceptions.\n\n8. **Risk and ownership may pass according to the agreement and applicable law**  \n   In contracts for goods, the contract may determine when title, possession, risk, and payment obligations transfer.\n\nIn short, the central effect of a bilateral contract is to create **reciprocal, enforceable obligations**, with legal remedies available if either party fails to perform.",
+    "latency_ms": 3794.2,
+    "input_tokens": 86,
+    "output_tokens": 409
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the effects of bilateral contracts?",
+      "field": "Law"
+    },
+    "response": "Bilateral contracts are agreements in which **both parties make legally enforceable promises**\u2014for example, one party promises to deliver goods and the other promises to pay.\n\nTheir main effects are:\n\n1. **Mutual obligations arise**  \n   Each party becomes both a promisor and a promisee. The obligations are generally enforceable even before either party has performed.\n\n2. **Performance is exchanged**  \n   Each promise is typically given in return for the other. For example, delivery and payment are reciprocal performances.\n\n3. **Breach gives remedies to the innocent party**  \n   If one party fails to perform, the other may generally seek:\n   - damages,\n   - specific performance where damages are inadequate,\n   - an injunction in appropriate cases,\n   - termination or rescission where the breach is sufficiently serious.\n\n4. **The parties may suspend or withhold performance**  \n   Where obligations are dependent or intended to occur concurrently, one party may be entitled to refuse performance until the other performs or shows readiness to perform.\n\n5. **A breach may discharge future obligations**  \n   A serious breach\u2014usually a breach of a condition or a sufficiently fundamental breach\u2014can allow the innocent party to terminate the contract and claim damages. A minor breach normally gives only a right to damages.\n\n6. **The contract creates enforceable rights against both parties**  \n   Unlike a unilateral contract, acceptance usually occurs through a promise to perform, not only through completing an act.\n\n7. **Third parties generally receive no rights or obligations**  \n   Under the traditional doctrine of privity, only the contracting parties can sue or be sued, subject to statutory and common-law exceptions.\n\n8. **Risk and ownership may pass according to the agreement and applicable law**  \n   In contracts for goods, the contract may determine when title, possession, risk, and payment obligations transfer.\n\nIn short, the central effect of a bilateral contract is to create **reciprocal, enforceable obligations**, with legal remedies available if either party fails to perform.",
+    "latency_ms": 3794.2,
+    "token_count": 495
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "d28bb5fce287",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229652.2540226,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3794.2,
+        "token_count": 495,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.37; flagged=False"
+}

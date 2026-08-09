@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:07:25.568380+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Why are infant formula brands not necessarily promoted to pregnant and lactating women?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Dietician/ Nutritionist ",
+    "question_type": "Directed question that has a single unambiguous answer| Open-ended question that is potentially ambiguous| Question that describes a hypothetical scenario and asks a question based on this scenario| Request for a list of resources where one can find more information| Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Infant formula brands are often **not directly promoted to pregnant or breastfeeding women because infant-feeding marketing is heavily regulated and considered capable of undermining breastfeeding**.\n\nKey reasons include:\n\n1. **Protection of breastfeeding**\n   - Health authorities such as the WHO and UNICEF recommend exclusive breastfeeding for about the first **6 months**, followed by continued breastfeeding with complementary foods up to **2 years or longer**.\n   - Direct advertising during pregnancy or lactation may encourage mothers to view formula as the default or as equivalent to breast milk, potentially reducing breastfeeding initiation or duration.\n\n2. **International marketing rules**\n   - The WHO International Code of Marketing of Breast-milk Substitutes, adopted in **1981**, discourages advertising breast-milk substitutes directly to the public.\n   - It specifically addresses promotion to pregnant women, mothers, families, and health workers.\n   - The Code recommends that formula marketing be limited and that companies should not create the impression that formula is superior or equivalent to breast milk.\n\n3. **National laws and restrictions**\n   - Many countries prohibit or restrict:\n     - Advertising infant formula for babies under approximately **6 months**\n     - Free samples or gifts to pregnant women and mothers\n     - Promotions in hospitals and maternity facilities\n     - Direct marketing through social media, email, parenting websites, or healthcare professionals\n   - Rules vary substantially: some countries regulate only formula for infants under **6 months**, while others cover follow-on formula for infants up to **12 months** or older.\n\n4. **Avoiding commercial influence at a vulnerable time**\n   - Pregnancy and the early postpartum period are times when parents may be particularly anxious and receptive to advice.\n   - A promotional message can be mistaken for medical guidance, especially if it comes through a hospital, midwife, pediatrician, or antenatal class.\n   - For that reason, health professionals are generally expected to provide **balanced, evidence-based information**, including how to breastfeed and how to use formula safely when it is needed.\n\n5. **Infant formula is a substitute, not a routine supplement**\n   - Formula is an important and safe alternative when breastfeeding is not possible, insufficient, contraindicated, or not chosen.\n   - However, routine formula supplementation can reduce breast stimulation. Even **one or two regular formula feeds per day** may reduce milk removal for some mothers, potentially lowering milk production unless pumping or breastfeeding continues.\n   - Marketing before birth may therefore increase early, unnecessary supplementation.\n\n6. **Health and safety concerns**\n   - Breast milk contains immune factors and is associated with lower risks of some infant infections, particularly gastrointestinal and respiratory infections.\n   - Formula can provide complete nutrition when prepared correctly, but powdered formula is **not sterile**. Incorrect preparation, contaminated water, unsafe storage, or keeping prepared formula at room temperature for too long can cause serious illness.\n   - Standard safety advice commonly includes preparing formula exactly as directed, using it promptly, and discarding leftovers after a feed\u2014often within approximately **1 hour**, depending on local guidance.\n\n7. **Ethical and reputational considerations**\n   - Aggressive marketing can create conflicts of interest for healthcare institutions and professionals.\n   - Companies may therefore use less direct approaches, such as advertising toddler milks, sponsoring parenting content, or promoting general brand awareness, although these practices are also restricted or criticized in many countries.\n\nThis does **not** mean parents should never receive information about formula. Parents who need or choose formula should receive clear, nonjudgmental guidance about product selection, preparation, feeding amounts, sterilization, and safe storage. The main distinction is between **objective counseling and support** versus **commercial promotion intended to increase sales**.",
+    "latency_ms": 6151.4,
+    "input_tokens": 87,
+    "output_tokens": 741
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Why are infant formula brands not necessarily promoted to pregnant and lactating women?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Infant formula brands are often **not directly promoted to pregnant or breastfeeding women because infant-feeding marketing is heavily regulated and considered capable of undermining breastfeeding**.\n\nKey reasons include:\n\n1. **Protection of breastfeeding**\n   - Health authorities such as the WHO and UNICEF recommend exclusive breastfeeding for about the first **6 months**, followed by continued breastfeeding with complementary foods up to **2 years or longer**.\n   - Direct advertising during pregnancy or lactation may encourage mothers to view formula as the default or as equivalent to breast milk, potentially reducing breastfeeding initiation or duration.\n\n2. **International marketing rules**\n   - The WHO International Code of Marketing of Breast-milk Substitutes, adopted in **1981**, discourages advertising breast-milk substitutes directly to the public.\n   - It specifically addresses promotion to pregnant women, mothers, families, and health workers.\n   - The Code recommends that formula marketing be limited and that companies should not create the impression that formula is superior or equivalent to breast milk.\n\n3. **National laws and restrictions**\n   - Many countries prohibit or restrict:\n     - Advertising infant formula for babies under approximately **6 months**\n     - Free samples or gifts to pregnant women and mothers\n     - Promotions in hospitals and maternity facilities\n     - Direct marketing through social media, email, parenting websites, or healthcare professionals\n   - Rules vary substantially: some countries regulate only formula for infants under **6 months**, while others cover follow-on formula for infants up to **12 months** or older.\n\n4. **Avoiding commercial influence at a vulnerable time**\n   - Pregnancy and the early postpartum period are times when parents may be particularly anxious and receptive to advice.\n   - A promotional message can be mistaken for medical guidance, especially if it comes through a hospital, midwife, pediatrician, or antenatal class.\n   - For that reason, health professionals are generally expected to provide **balanced, evidence-based information**, including how to breastfeed and how to use formula safely when it is needed.\n\n5. **Infant formula is a substitute, not a routine supplement**\n   - Formula is an important and safe alternative when breastfeeding is not possible, insufficient, contraindicated, or not chosen.\n   - However, routine formula supplementation can reduce breast stimulation. Even **one or two regular formula feeds per day** may reduce milk removal for some mothers, potentially lowering milk production unless pumping or breastfeeding continues.\n   - Marketing before birth may therefore increase early, unnecessary supplementation.\n\n6. **Health and safety concerns**\n   - Breast milk contains immune factors and is associated with lower risks of some infant infections, particularly gastrointestinal and respiratory infections.\n   - Formula can provide complete nutrition when prepared correctly, but powdered formula is **not sterile**. Incorrect preparation, contaminated water, unsafe storage, or keeping prepared formula at room temperature for too long can cause serious illness.\n   - Standard safety advice commonly includes preparing formula exactly as directed, using it promptly, and discarding leftovers after a feed\u2014often within approximately **1 hour**, depending on local guidance.\n\n7. **Ethical and reputational considerations**\n   - Aggressive marketing can create conflicts of interest for healthcare institutions and professionals.\n   - Companies may therefore use less direct approaches, such as advertising toddler milks, sponsoring parenting content, or promoting general brand awareness, although these practices are also restricted or criticized in many countries.\n\nThis does **not** mean parents should never receive information about formula. Parents who need or choose formula should receive clear, nonjudgmental guidance about product selection, preparation, feeding amounts, sterilization, and safe storage. The main distinction is between **objective counseling and support** versus **commercial promotion intended to increase sales**.",
+    "latency_ms": 6151.4,
+    "token_count": 828,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "ef36bd549cd6",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230445.5676425,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 5 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 6151.4,
+        "token_count": 828,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.191; flagged=True"
+}

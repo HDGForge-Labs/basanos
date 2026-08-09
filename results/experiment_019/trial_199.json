@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:22:18.326936+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Why do some patients respond to one CGRP antagonist well but not another from the same medication class?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Neurology ",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Patients can respond very differently to CGRP-targeting migraine drugs even when the medicines are in the same broad class. This is common and does not necessarily mean the diagnosis is wrong or that \u201cCGRP drugs don\u2019t work\u201d for that person.\n\nKey reasons include:\n\n1. **They do not all block CGRP in exactly the same way**\n   - Some drugs are **monoclonal antibodies (mAbs)** used for prevention:\n     - **Erenumab** blocks the **CGRP receptor**.\n     - **Fremanezumab, galcanezumab, and eptinezumab** bind the **CGRP ligand** itself.\n   - Small-molecule CGRP antagonists (\u201cgepants\u201d)\u2014such as **ubrogepant, rimegepant, zavegepant, and atogepant**\u2014also act differently from antibodies in receptor binding, tissue penetration, and duration of effect.\n   - A patient may respond to ligand blockade but not receptor blockade, or vice versa. CGRP signaling involves more than one receptor-related pathway, so blocking one component may not produce identical effects in every person.\n\n2. **Different pharmacokinetics: dose, route, speed, and duration**\n   - The antibodies have very long half-lives, generally around **27\u201331 days**, and are usually injected every month or every 3 months.\n   - Eptinezumab is given intravenously every **12 weeks** and reaches high blood levels quickly; some patients notice benefit within **1 day to 1 week**.\n   - Subcutaneous antibodies may take longer to show a stable effect. A reasonable preventive trial is often at least **3 months**, and sometimes **6 months**, especially if there is partial improvement.\n   - Gepants have much shorter durations\u2014often hours to roughly **1 day** depending on the product\u2014and may be better suited for acute treatment or, in the case of atogepant/rimegepant, prevention.\n   - A medication can fail simply because its exposure is not optimal for that patient: absorption, injection technique, body size, metabolism, kidney/liver function, and adherence can all matter.\n\n3. **Migraine biology differs between people\u2014and within the same person over time**\n   - CGRP is important in migraine, but it is not the only pathway. Other systems include PACAP, glutamate, serotonin, dopamine, inflammatory mediators, and brainstem pain-processing circuits.\n   - In some attacks, CGRP signaling may be the dominant driver; in others, it may be less central.\n   - A person\u2019s migraine pattern can also change with hormonal status, sleep disruption, stress, menopause, pregnancy/postpartum changes, infection, weight changes, or medication overuse.\n\n4. **Genetic and receptor-level differences**\n   - Genetic variation can influence CGRP production, receptor structure, drug clearance, immune response, and pain sensitivity.\n   - Differences in receptor density or signaling in the trigeminal system, blood vessels, and peripheral nerves may affect whether a particular antagonist reaches and blocks the most relevant target.\n   - These factors are biologically plausible, although routine genetic testing is not currently used to select a CGRP medication.\n\n5. **\u201cSame class\u201d does not mean interchangeable efficacy**\n   - In clinical trials, average results are similar enough to group these medications together, but individual responses vary substantially.\n   - For preventive CGRP antibodies, roughly **40%\u201360%** of patients with episodic migraine may achieve at least a **50% reduction in monthly migraine days** in many trial populations. That also means a large proportion do not reach that threshold with any one drug.\n   - In chronic migraine, where patients begin with at least **15 headache days per month** and at least **8 migraine days per month**, response rates are often lower on average, especially in people who have failed multiple prior preventives.\n   - A patient who does not respond to one antibody may still respond to another. Real-world studies commonly find that a meaningful minority\u2014often roughly **25%\u201350%**, depending on definitions and population\u2014improve after switching.\n\n6. **The endpoint may differ: fewer attacks versus less severe attacks**\n   - One medication may reduce migraine frequency by only about **2\u20134 days per month** but make attacks shorter, less painful, or more responsive to rescue treatment.\n   - Another may not lower the attack count much but may reduce nausea, light sensitivity, allodynia, emergency visits, or missed work days.\n   - If success is defined only as a **50% reduction in monthly migraine days**, clinically useful partial responses can be missed.\n\n7. **Timing of acute treatment matters for gepants**\n   - For acute migraine treatment, treatment earlier in the attack\u2014ideally when pain is mild rather than severe\u2014often improves the chance of being pain-free or returning to normal function within about **2 hours**.\n   - Delayed dosing, vomiting, gastric slowing during migraine, or taking the drug after central sensitization",
+    "latency_ms": 12905.2,
+    "input_tokens": 92,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Why do some patients respond to one CGRP antagonist well but not another from the same medication class?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Patients can respond very differently to CGRP-targeting migraine drugs even when the medicines are in the same broad class. This is common and does not necessarily mean the diagnosis is wrong or that \u201cCGRP drugs don\u2019t work\u201d for that person.\n\nKey reasons include:\n\n1. **They do not all block CGRP in exactly the same way**\n   - Some drugs are **monoclonal antibodies (mAbs)** used for prevention:\n     - **Erenumab** blocks the **CGRP receptor**.\n     - **Fremanezumab, galcanezumab, and eptinezumab** bind the **CGRP ligand** itself.\n   - Small-molecule CGRP antagonists (\u201cgepants\u201d)\u2014such as **ubrogepant, rimegepant, zavegepant, and atogepant**\u2014also act differently from antibodies in receptor binding, tissue penetration, and duration of effect.\n   - A patient may respond to ligand blockade but not receptor blockade, or vice versa. CGRP signaling involves more than one receptor-related pathway, so blocking one component may not produce identical effects in every person.\n\n2. **Different pharmacokinetics: dose, route, speed, and duration**\n   - The antibodies have very long half-lives, generally around **27\u201331 days**, and are usually injected every month or every 3 months.\n   - Eptinezumab is given intravenously every **12 weeks** and reaches high blood levels quickly; some patients notice benefit within **1 day to 1 week**.\n   - Subcutaneous antibodies may take longer to show a stable effect. A reasonable preventive trial is often at least **3 months**, and sometimes **6 months**, especially if there is partial improvement.\n   - Gepants have much shorter durations\u2014often hours to roughly **1 day** depending on the product\u2014and may be better suited for acute treatment or, in the case of atogepant/rimegepant, prevention.\n   - A medication can fail simply because its exposure is not optimal for that patient: absorption, injection technique, body size, metabolism, kidney/liver function, and adherence can all matter.\n\n3. **Migraine biology differs between people\u2014and within the same person over time**\n   - CGRP is important in migraine, but it is not the only pathway. Other systems include PACAP, glutamate, serotonin, dopamine, inflammatory mediators, and brainstem pain-processing circuits.\n   - In some attacks, CGRP signaling may be the dominant driver; in others, it may be less central.\n   - A person\u2019s migraine pattern can also change with hormonal status, sleep disruption, stress, menopause, pregnancy/postpartum changes, infection, weight changes, or medication overuse.\n\n4. **Genetic and receptor-level differences**\n   - Genetic variation can influence CGRP production, receptor structure, drug clearance, immune response, and pain sensitivity.\n   - Differences in receptor density or signaling in the trigeminal system, blood vessels, and peripheral nerves may affect whether a particular antagonist reaches and blocks the most relevant target.\n   - These factors are biologically plausible, although routine genetic testing is not currently used to select a CGRP medication.\n\n5. **\u201cSame class\u201d does not mean interchangeable efficacy**\n   - In clinical trials, average results are similar enough to group these medications together, but individual responses vary substantially.\n   - For preventive CGRP antibodies, roughly **40%\u201360%** of patients with episodic migraine may achieve at least a **50% reduction in monthly migraine days** in many trial populations. That also means a large proportion do not reach that threshold with any one drug.\n   - In chronic migraine, where patients begin with at least **15 headache days per month** and at least **8 migraine days per month**, response rates are often lower on average, especially in people who have failed multiple prior preventives.\n   - A patient who does not respond to one antibody may still respond to another. Real-world studies commonly find that a meaningful minority\u2014often roughly **25%\u201350%**, depending on definitions and population\u2014improve after switching.\n\n6. **The endpoint may differ: fewer attacks versus less severe attacks**\n   - One medication may reduce migraine frequency by only about **2\u20134 days per month** but make attacks shorter, less painful, or more responsive to rescue treatment.\n   - Another may not lower the attack count much but may reduce nausea, light sensitivity, allodynia, emergency visits, or missed work days.\n   - If success is defined only as a **50% reduction in monthly migraine days**, clinically useful partial responses can be missed.\n\n7. **Timing of acute treatment matters for gepants**\n   - For acute migraine treatment, treatment earlier in the attack\u2014ideally when pain is mild rather than severe\u2014often improves the chance of being pain-free or returning to normal function within about **2 hours**.\n   - Delayed dosing, vomiting, gastric slowing during migraine, or taking the drug after central sensitization",
+    "latency_ms": 12905.2,
+    "token_count": 1116,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "e8adf71944dd",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234938.3261673,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 11 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4436,
+          "evidence": [
+            "Latency 12905ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12905.2,
+        "token_count": 1116,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.199; flagged=True"
+}

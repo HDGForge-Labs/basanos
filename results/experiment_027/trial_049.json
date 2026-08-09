@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T17:16:46.149682+00:00",
+  "detector": "context_degradation",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "which is the fastest train in india and what is its speed",
+    "gold_index": 0
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "The fastest train in India is the **Gatimaan Express**, with a top speed of **160 km/h**.",
+    "latency_ms": 1928.6,
+    "input_tokens": 1451,
+    "output_tokens": 27
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "which is the fastest train in india and what is its speed",
+      "gold_index": 0,
+      "n_docs": 10
+    },
+    "response": "The fastest train in India is the **Gatimaan Express**, with a top speed of **160 km/h**.",
+    "latency_ms": 1928.6,
+    "token_count": 1478,
+    "context_window_used": 0.25
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "f91a5d7f0d64",
+      "tool_name": "context_qa",
+      "status": "pass",
+      "timestamp": 1786295806.1489427,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 1928.6,
+        "token_count": 1478,
+        "context_window_used": 0.25,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.49; flagged=False; gold_index=0"
+}

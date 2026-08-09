@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:52:49.697499+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "If my commute to work is 30 kilometers, what is the mileage reimbursement rate in Slovenia?",
+    "field": "Law",
+    "specific_field": "Law professional in office",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "In Slovenia, mileage reimbursement for commuting is generally **10% of the price of regular unleaded petrol (NMB-95) per kilometer**, for the distance between home and work.\n\nFor a **30 km one-way commute**:\n\n- **One-way:** 30 km \u00d7 10% of the petrol price  \n- **Round trip:** 60 km \u00d7 10% of the petrol price\n\nFor example, if NMB-95 costs **\u20ac1.50/L**, the rate is **\u20ac0.15/km**, giving:\n\n- **\u20ac4.50 per day one way**, or\n- **\u20ac9.00 per day for a round trip**\n\nThe exact amount changes with the officially applicable petrol price and may depend on your collective agreement or employment contract.",
+    "latency_ms": 1782.8,
+    "input_tokens": 97,
+    "output_tokens": 159
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "If my commute to work is 30 kilometers, what is the mileage reimbursement rate in Slovenia?",
+      "field": "Law"
+    },
+    "response": "In Slovenia, mileage reimbursement for commuting is generally **10% of the price of regular unleaded petrol (NMB-95) per kilometer**, for the distance between home and work.\n\nFor a **30 km one-way commute**:\n\n- **One-way:** 30 km \u00d7 10% of the petrol price  \n- **Round trip:** 60 km \u00d7 10% of the petrol price\n\nFor example, if NMB-95 costs **\u20ac1.50/L**, the rate is **\u20ac0.15/km**, giving:\n\n- **\u20ac4.50 per day one way**, or\n- **\u20ac9.00 per day for a round trip**\n\nThe exact amount changes with the officially applicable petrol price and may depend on your collective agreement or employment contract.",
+    "latency_ms": 1782.8,
+    "token_count": 256
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "0ece67d78d3f",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229569.69669,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 1782.8,
+        "token_count": 256,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.16; flagged=False"
+}

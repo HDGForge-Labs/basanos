@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-09T00:19:09.220801+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "The doctor prescribes an intravenous therapy with the wrong dosage but I know which one is right and I postpone it. Is this wrong?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "nurse ",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "If you believe an IV medication dose is wrong, **do not administer it until it has been clarified**. Pausing or postponing an order because of a credible safety concern is generally the safer action than giving a potentially harmful dose.\n\nWhat to do immediately:\n\n1. **Verify the order**  \n   Check the medication name, concentration, patient weight, route, rate, indication, renal/hepatic function, allergies, and whether the dose is expressed correctly (for example, mg vs mcg, units vs mL, or mg/kg vs total dose).\n\n2. **Contact the prescriber promptly**  \n   State the concern clearly and specifically:  \n   \u201cI\u2019m concerned this IV dose is ___; based on ___, I believe the intended/appropriate dose may be ___ . Can you confirm or revise the order?\u201d\n\n3. **Escalate if needed**  \n   If the prescriber is unavailable or dismisses a serious concern, contact the charge nurse, supervising clinician, pharmacist, rapid-response/medical officer, or follow your institution\u2019s chain-of-command policy. For high-alert IV drugs\u2014such as insulin, heparin, opioids, vasopressors, chemotherapy, potassium, concentrated electrolytes, or pediatric weight-based drugs\u2014seek urgent pharmacist and senior clinical review.\n\n4. **Document objectively**  \n   Record the time, the order, why it was held, who you contacted, the response, and the final verified plan. Avoid accusatory wording; document facts.\n\n5. **Monitor the patient and avoid unnecessary delay**  \n   Some therapies are time-critical. If withholding the medication could itself cause harm\u2014such as treatment for sepsis, status epilepticus, severe hyperkalemia, stroke-related thrombolysis decisions, or anaphylaxis\u2014escalate immediately rather than simply waiting.\n\nYou should not independently substitute a different dose unless you are authorized by your role and local policy. But **questioning, holding, and escalating a suspected unsafe order is appropriate patient-safety practice**. If you are not a clinician, tell the nurse or doctor immediately that you are concerned and ask for the order to be rechecked with the pharmacy.",
+    "latency_ms": 6223.6,
+    "input_tokens": 99,
+    "output_tokens": 440
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "The doctor prescribes an intravenous therapy with the wrong dosage but I know which one is right and I postpone it. Is this wrong?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "If you believe an IV medication dose is wrong, **do not administer it until it has been clarified**. Pausing or postponing an order because of a credible safety concern is generally the safer action than giving a potentially harmful dose.\n\nWhat to do immediately:\n\n1. **Verify the order**  \n   Check the medication name, concentration, patient weight, route, rate, indication, renal/hepatic function, allergies, and whether the dose is expressed correctly (for example, mg vs mcg, units vs mL, or mg/kg vs total dose).\n\n2. **Contact the prescriber promptly**  \n   State the concern clearly and specifically:  \n   \u201cI\u2019m concerned this IV dose is ___; based on ___, I believe the intended/appropriate dose may be ___ . Can you confirm or revise the order?\u201d\n\n3. **Escalate if needed**  \n   If the prescriber is unavailable or dismisses a serious concern, contact the charge nurse, supervising clinician, pharmacist, rapid-response/medical officer, or follow your institution\u2019s chain-of-command policy. For high-alert IV drugs\u2014such as insulin, heparin, opioids, vasopressors, chemotherapy, potassium, concentrated electrolytes, or pediatric weight-based drugs\u2014seek urgent pharmacist and senior clinical review.\n\n4. **Document objectively**  \n   Record the time, the order, why it was held, who you contacted, the response, and the final verified plan. Avoid accusatory wording; document facts.\n\n5. **Monitor the patient and avoid unnecessary delay**  \n   Some therapies are time-critical. If withholding the medication could itself cause harm\u2014such as treatment for sepsis, status epilepticus, severe hyperkalemia, stroke-related thrombolysis decisions, or anaphylaxis\u2014escalate immediately rather than simply waiting.\n\nYou should not independently substitute a different dose unless you are authorized by your role and local policy. But **questioning, holding, and escalating a suspected unsafe order is appropriate patient-safety practice**. If you are not a clinician, tell the nurse or doctor immediately that you are concerned and ask for the order to be rechecked with the pharmacy.",
+    "latency_ms": 6223.6,
+    "token_count": 539,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "8adab39f84a3",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234749.220039,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 6223.6,
+        "token_count": 539,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.182; flagged=False"
+}

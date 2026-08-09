@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T00:21:35.008034+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Should expectorant or antitussive syrup be recommended for a wet cough?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pharmacist",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "For a **wet/productive cough**\u2014one bringing up mucus or phlegm\u2014an **expectorant** is generally more appropriate than an **antitussive**.\n\n- **Expectorants** (for example, **guaifenesin**) may help thin and loosen mucus, making it easier to cough out. Typical adult OTC dosing is often **200\u2013400 mg every 4 hours** for immediate-release products, or **600\u20131,200 mg every 12 hours** for extended-release products, with a usual maximum of **2,400 mg/day**. Drink plenty of fluids, unless a clinician has restricted your fluid intake.\n- **Antitussives** (cough suppressants, such as **dextromethorphan**) are usually better suited to a **dry, irritating, nonproductive cough**, especially if it is disrupting sleep. Suppressing a wet cough can sometimes make it harder to clear mucus from the airways.\n\nAn antitussive may occasionally be used short-term at night if coughing is severe and preventing sleep, but this should be individualized\u2014particularly if there is a lot of sputum, wheezing, chronic lung disease, asthma, COPD, or a suspected infection.\n\nAvoid or seek pharmacist/clinician advice before using dextromethorphan if you take certain antidepressants or serotonergic medicines, especially **MAO inhibitors within the last 14 days**, because of interaction risks. Combination \u201ccold and cough\u201d syrups can also duplicate ingredients such as acetaminophen/paracetamol.\n\nSeek medical assessment urgently for cough with **shortness of breath, chest pain, blue lips, confusion, coughing blood, oxygen saturation below about 92%** (if measured), or high fever. Arrange evaluation if a cough lasts more than **about 3 weeks**, or sooner if it is worsening or accompanied by persistent fever, significant weakness, or thick foul-smelling sputum.",
+    "latency_ms": 5432.2,
+    "input_tokens": 89,
+    "output_tokens": 394
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Should expectorant or antitussive syrup be recommended for a wet cough?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "For a **wet/productive cough**\u2014one bringing up mucus or phlegm\u2014an **expectorant** is generally more appropriate than an **antitussive**.\n\n- **Expectorants** (for example, **guaifenesin**) may help thin and loosen mucus, making it easier to cough out. Typical adult OTC dosing is often **200\u2013400 mg every 4 hours** for immediate-release products, or **600\u20131,200 mg every 12 hours** for extended-release products, with a usual maximum of **2,400 mg/day**. Drink plenty of fluids, unless a clinician has restricted your fluid intake.\n- **Antitussives** (cough suppressants, such as **dextromethorphan**) are usually better suited to a **dry, irritating, nonproductive cough**, especially if it is disrupting sleep. Suppressing a wet cough can sometimes make it harder to clear mucus from the airways.\n\nAn antitussive may occasionally be used short-term at night if coughing is severe and preventing sleep, but this should be individualized\u2014particularly if there is a lot of sputum, wheezing, chronic lung disease, asthma, COPD, or a suspected infection.\n\nAvoid or seek pharmacist/clinician advice before using dextromethorphan if you take certain antidepressants or serotonergic medicines, especially **MAO inhibitors within the last 14 days**, because of interaction risks. Combination \u201ccold and cough\u201d syrups can also duplicate ingredients such as acetaminophen/paracetamol.\n\nSeek medical assessment urgently for cough with **shortness of breath, chest pain, blue lips, confusion, coughing blood, oxygen saturation below about 92%** (if measured), or high fever. Arrange evaluation if a cough lasts more than **about 3 weeks**, or sooner if it is worsening or accompanied by persistent fever, significant weakness, or thick foul-smelling sputum.",
+    "latency_ms": 5432.2,
+    "token_count": 483,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "b8d6f5abe37b",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234895.0071976,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 9 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 5432.2,
+        "token_count": 483,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.195; flagged=True"
+}

@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T00:04:25.880830+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Should you extract third molars prolifically?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Dentistry",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "No. Third molars (\u201cwisdom teeth\u201d) should not be extracted routinely or \u201cprophylactically\u201d in everyone.\n\nExtraction is appropriate when there is a clear current or high-likelihood future problem, such as:\n\n- Recurrent pericoronitis (infection/inflammation of gum around a partially erupted tooth)\n- Caries in the third molar or damage/caries to the adjacent second molar\n- Periodontal bone loss or deep pockets behind the second molar\n- Cyst, tumor, root resorption, or other pathology on imaging\n- Non-restorable tooth, fracture, or symptomatic impaction\n- Interference with planned orthodontic, jaw, or reconstructive surgery in a specific treatment plan\n\nIf an impacted or erupted third molar is disease-free, cleansable, and not harming the second molar, observation is generally reasonable. Monitoring typically includes periodic clinical examination and radiographs when indicated.\n\nThe decision is individualized because removal has real risks, especially for lower third molars: dry socket, infection, bleeding, damage to the lingual or inferior alveolar nerve causing numbness, sinus communication for upper teeth, and surgical complications. Risks generally increase with age and with roots close to the inferior alveolar nerve.\n\nA useful approach is to have an oral and maxillofacial surgeon assess:\n\n1. Symptoms and history of infections  \n2. Ability to clean the area  \n3. Position of the tooth and impact on the second molar  \n4. X-ray/CBCT evidence of pathology or nerve proximity  \n5. Your age, medical factors, and anticipated follow-up reliability  \n\nSo: extract problematic or clearly high-risk third molars, but do not remove them indiscriminately.",
+    "latency_ms": 5707.0,
+    "input_tokens": 87,
+    "output_tokens": 348
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Should you extract third molars prolifically?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "No. Third molars (\u201cwisdom teeth\u201d) should not be extracted routinely or \u201cprophylactically\u201d in everyone.\n\nExtraction is appropriate when there is a clear current or high-likelihood future problem, such as:\n\n- Recurrent pericoronitis (infection/inflammation of gum around a partially erupted tooth)\n- Caries in the third molar or damage/caries to the adjacent second molar\n- Periodontal bone loss or deep pockets behind the second molar\n- Cyst, tumor, root resorption, or other pathology on imaging\n- Non-restorable tooth, fracture, or symptomatic impaction\n- Interference with planned orthodontic, jaw, or reconstructive surgery in a specific treatment plan\n\nIf an impacted or erupted third molar is disease-free, cleansable, and not harming the second molar, observation is generally reasonable. Monitoring typically includes periodic clinical examination and radiographs when indicated.\n\nThe decision is individualized because removal has real risks, especially for lower third molars: dry socket, infection, bleeding, damage to the lingual or inferior alveolar nerve causing numbness, sinus communication for upper teeth, and surgical complications. Risks generally increase with age and with roots close to the inferior alveolar nerve.\n\nA useful approach is to have an oral and maxillofacial surgeon assess:\n\n1. Symptoms and history of infections  \n2. Ability to clean the area  \n3. Position of the tooth and impact on the second molar  \n4. X-ray/CBCT evidence of pathology or nerve proximity  \n5. Your age, medical factors, and anticipated follow-up reliability  \n\nSo: extract problematic or clearly high-risk third molars, but do not remove them indiscriminately.",
+    "latency_ms": 5707.0,
+    "token_count": 435
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "2be9deb8a91a",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233865.8800492,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 5707.0,
+        "token_count": 435,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.93; flagged=False"
+}

@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-08T23:02:32.503103+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Social services have evidence to suggest that a parent is getting sexual gratification from  seeing his infant daughter but she is unaware so not impacted. She is in foster care so contact is supervised. Are grounds met for a s34.4 order?",
+    "field": "Law",
+    "specific_field": "Family law",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Assuming you mean **section 34(4) of the Children Act 1989 in England and Wales**, the threshold is not simply whether the parent\u2019s conduct is morally concerning. The court must be satisfied that **it is necessary to prohibit the parent from exercising contact** because contact would otherwise place the child at risk of harm, or for another statutory reason under the relevant provision.\n\nOn the facts you give, **grounds may be capable of being met, but it is not automatic**. The important issues are:\n\n- **Credible evidence of sexualised interest or gratification**: for example, professional observations, admissions, sexually explicit messages or images, grooming-type behaviour, concerning statements, or expert assessment. A bare suspicion or an inference that the parent finds the child attractive may not be enough.\n- **The nature and risk of the behaviour**: whether the parent merely has inappropriate thoughts, or whether there is sexualised staring, touching, photographing, comments, attempts to obtain privacy, boundary-testing, or escalation.\n- **The child\u2019s age and vulnerability**: an infant cannot understand or report what is happening, and lack of awareness does not mean lack of risk. Harm can include sexual abuse, emotional harm, grooming, exposure to sexualised behaviour, and later trauma.\n- **Whether supervised contact actually controls the risk**: the court may ask whether contact can be made safe through conditions such as continuous line-of-sight supervision, no nappy changing or intimate care, no photographs, no physical contact beyond specified limits, two supervisors, or professionally supervised contact only.\n- **The impact of contact on the child**: distress, behavioural change, freezing, sleep disturbance, or other indicators may be relevant, but the child does not need to show symptoms for a protective order to be justified.\n- **Proportionality and necessity**: stopping contact altogether is a serious interference with family life. The court must consider whether a less restrictive arrangement would adequately protect the child.\n\nIf the evidence suggests a **real and identifiable risk of sexual abuse or sexualised boundary violations**, the fact that the infant is currently unaware will not prevent the court finding that contact is unsafe. An infant\u2019s lack of awareness is generally more likely to demonstrate vulnerability than to eliminate risk.\n\nHowever, if the evidence only establishes that the parent experiences private sexual thoughts while looking at the child, without evidence of conduct, communication, or a realistic risk that those thoughts will affect contact, a section 34(4) order may be more difficult to justify. The court would likely require a careful risk assessment and may initially consider tighter supervision or other restrictions rather than a complete prohibition.\n\nThe local authority should normally put before the court:\n\n1. The precise evidence relied on, with dates and sources.\n2. Any admissions, police intelligence, criminal investigation material, or expert opinion.\n3. A clear explanation of why existing supervision is insufficient.\n4. A proposed contact-risk assessment and safety plan.\n5. Consideration of less restrictive alternatives.\n6. The likely effect on the child and the parent-child relationship.\n7. Any position from the guardian and the child\u2019s solicitor, if appointed.\n\nIf there is an **immediate safeguarding concern**, contact should be urgently reviewed and may need to be paused pending legal advice and a court decision, but the local authority should obtain advice from its child-care solicitor promptly. The exact answer depends on the wording of the order already in force and the statutory provision being invoked; \u201cs34.4\u201d can refer to different provisions in different jurisdictions, so the court, the child\u2019s guardian, and the local-authority solicitor should confirm the applicable section.",
+    "latency_ms": 6333.3,
+    "input_tokens": 120,
+    "output_tokens": 732
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Social services have evidence to suggest that a parent is getting sexual gratification from  seeing his infant daughter but she is unaware so not impacted. She is in foster care so contact is supervised. Are grounds met for a s34.4 order?",
+      "field": "Law"
+    },
+    "response": "Assuming you mean **section 34(4) of the Children Act 1989 in England and Wales**, the threshold is not simply whether the parent\u2019s conduct is morally concerning. The court must be satisfied that **it is necessary to prohibit the parent from exercising contact** because contact would otherwise place the child at risk of harm, or for another statutory reason under the relevant provision.\n\nOn the facts you give, **grounds may be capable of being met, but it is not automatic**. The important issues are:\n\n- **Credible evidence of sexualised interest or gratification**: for example, professional observations, admissions, sexually explicit messages or images, grooming-type behaviour, concerning statements, or expert assessment. A bare suspicion or an inference that the parent finds the child attractive may not be enough.\n- **The nature and risk of the behaviour**: whether the parent merely has inappropriate thoughts, or whether there is sexualised staring, touching, photographing, comments, attempts to obtain privacy, boundary-testing, or escalation.\n- **The child\u2019s age and vulnerability**: an infant cannot understand or report what is happening, and lack of awareness does not mean lack of risk. Harm can include sexual abuse, emotional harm, grooming, exposure to sexualised behaviour, and later trauma.\n- **Whether supervised contact actually controls the risk**: the court may ask whether contact can be made safe through conditions such as continuous line-of-sight supervision, no nappy changing or intimate care, no photographs, no physical contact beyond specified limits, two supervisors, or professionally supervised contact only.\n- **The impact of contact on the child**: distress, behavioural change, freezing, sleep disturbance, or other indicators may be relevant, but the child does not need to show symptoms for a protective order to be justified.\n- **Proportionality and necessity**: stopping contact altogether is a serious interference with family life. The court must consider whether a less restrictive arrangement would adequately protect the child.\n\nIf the evidence suggests a **real and identifiable risk of sexual abuse or sexualised boundary violations**, the fact that the infant is currently unaware will not prevent the court finding that contact is unsafe. An infant\u2019s lack of awareness is generally more likely to demonstrate vulnerability than to eliminate risk.\n\nHowever, if the evidence only establishes that the parent experiences private sexual thoughts while looking at the child, without evidence of conduct, communication, or a realistic risk that those thoughts will affect contact, a section 34(4) order may be more difficult to justify. The court would likely require a careful risk assessment and may initially consider tighter supervision or other restrictions rather than a complete prohibition.\n\nThe local authority should normally put before the court:\n\n1. The precise evidence relied on, with dates and sources.\n2. Any admissions, police intelligence, criminal investigation material, or expert opinion.\n3. A clear explanation of why existing supervision is insufficient.\n4. A proposed contact-risk assessment and safety plan.\n5. Consideration of less restrictive alternatives.\n6. The likely effect on the child and the parent-child relationship.\n7. Any position from the guardian and the child\u2019s solicitor, if appointed.\n\nIf there is an **immediate safeguarding concern**, contact should be urgently reviewed and may need to be paused pending legal advice and a court decision, but the local authority should obtain advice from its child-care solicitor promptly. The exact answer depends on the wording of the order already in force and the statutory provision being invoked; \u201cs34.4\u201d can refer to different provisions in different jurisdictions, so the court, the child\u2019s guardian, and the local-authority solicitor should confirm the applicable section.",
+    "latency_ms": 6333.3,
+    "token_count": 852,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "c5091b8fa5c3",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230152.5023515,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 6333.3,
+        "token_count": 852,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.144; flagged=False"
+}

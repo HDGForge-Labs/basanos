@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:42:54.174793+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What are the differences between professions about patients returning as volunteers?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Occupational Therapy",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Patients Returning as Volunteers: Professional Differences\n\nThis phenomenon varies significantly across healthcare and helping professions:\n\n## Mental Health/Addiction Services\n- **Most common and formalized** of all fields\n- Peer support specialist roles are often explicitly built around this pathway (e.g., addiction counselors who are themselves in recovery)\n- 12-step programs institutionalize this through sponsorship and service commitments\n- Certification pathways exist specifically for \"lived experience\" workers (Certified Peer Specialists, Recovery Coaches)\n\n## Oncology/Cancer Care\n- Common in patient navigation and support roles\n- Organizations like the American Cancer Society actively recruit survivors as volunteers (Reach to Recovery, Road to Recovery programs)\n- Less often leads to formal clinical employment compared to mental health field\n- Volunteering typically happens 2+ years post-treatment, after establishing remission\n\n## Physical Rehabilitation/PT\n- Less institutionalized than mental health\n- When it occurs, often informal (returning to thank staff, occasional mentoring of new patients)\n- Rarely creates formal employment pathways\n- More likely to remain in volunteer capacity rather than professionalize\n\n## Hospice/Palliative Care\n- Family members of deceased patients volunteer more often than patients themselves (obviously)\n- Bereaved family volunteers are common and valued for their perspective\n- Creates unique ethical considerations around grief processing while helping others\n\n## Emergency Medicine/Surgery\n- Least common pathway\n- Episodic nature of care means less relationship-building conducive to return\n- When it happens, usually as \"thank you\" gestures (fundraising, occasional talks) rather than ongoing service\n\n## Key Differentiating Factors Across Professions\n\n1. **Chronicity of condition**: Ongoing conditions (addiction, chronic illness) create more return-volunteer opportunities than acute care\n2. **Identity centrality**: Conditions that become part of identity (recovery status) drive more \"giving back\" than transient illness\n3. **Institutional infrastructure**: Some fields have built explicit pathways (peer specialist certifications); others treat it as incidental\n4. **Boundary concerns**: Mental health fields have developed more sophisticated frameworks for navigating dual-relationship ethics than other specialties\n\nThe mental health/addiction field stands out as having transformed this from an occasional occurrence into a recognized professional pathway with training, certification, and reimbursement structures\u2014something largely absent in other medical specialties.",
+    "latency_ms": 10949.3,
+    "input_tokens": 134,
+    "output_tokens": 845
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the differences between professions about patients returning as volunteers?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Patients Returning as Volunteers: Professional Differences\n\nThis phenomenon varies significantly across healthcare and helping professions:\n\n## Mental Health/Addiction Services\n- **Most common and formalized** of all fields\n- Peer support specialist roles are often explicitly built around this pathway (e.g., addiction counselors who are themselves in recovery)\n- 12-step programs institutionalize this through sponsorship and service commitments\n- Certification pathways exist specifically for \"lived experience\" workers (Certified Peer Specialists, Recovery Coaches)\n\n## Oncology/Cancer Care\n- Common in patient navigation and support roles\n- Organizations like the American Cancer Society actively recruit survivors as volunteers (Reach to Recovery, Road to Recovery programs)\n- Less often leads to formal clinical employment compared to mental health field\n- Volunteering typically happens 2+ years post-treatment, after establishing remission\n\n## Physical Rehabilitation/PT\n- Less institutionalized than mental health\n- When it occurs, often informal (returning to thank staff, occasional mentoring of new patients)\n- Rarely creates formal employment pathways\n- More likely to remain in volunteer capacity rather than professionalize\n\n## Hospice/Palliative Care\n- Family members of deceased patients volunteer more often than patients themselves (obviously)\n- Bereaved family volunteers are common and valued for their perspective\n- Creates unique ethical considerations around grief processing while helping others\n\n## Emergency Medicine/Surgery\n- Least common pathway\n- Episodic nature of care means less relationship-building conducive to return\n- When it happens, usually as \"thank you\" gestures (fundraising, occasional talks) rather than ongoing service\n\n## Key Differentiating Factors Across Professions\n\n1. **Chronicity of condition**: Ongoing conditions (addiction, chronic illness) create more return-volunteer opportunities than acute care\n2. **Identity centrality**: Conditions that become part of identity (recovery status) drive more \"giving back\" than transient illness\n3. **Institutional infrastructure**: Some fields have built explicit pathways (peer specialist certifications); others treat it as incidental\n4. **Boundary concerns**: Mental health fields have developed more sophisticated frameworks for navigating dual-relationship ethics than other specialties\n\nThe mental health/addiction field stands out as having transformed this from an occasional occurrence into a recognized professional pathway with training, certification, and reimbursement structures\u2014something largely absent in other medical specialties.",
+    "latency_ms": 10949.3,
+    "token_count": 979
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "01ea49a1ea55",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239774.1740253,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4142,
+          "evidence": [
+            "Latency 10949ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 10949.3,
+        "token_count": 979,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.83; flagged=False"
+}

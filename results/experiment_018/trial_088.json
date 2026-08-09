@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:57:38.379276+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "How many cards of fingerprints can I take in one shift?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Forensic department ",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "It depends on the fingerprinting method, staffing, and whether each card requires rolled and flat impressions, but a practical estimate is:\n\n- **Ink-and-card fingerprinting:** about **10\u201320 complete cards per hour**\n- **Live-scan capture with electronic printing:** about **15\u201330 cards per hour**\n- **Including identity checks, forms, re-prints, and cleanup:** typically **60\u2013120 cards in an 8-hour shift**\n\nFor planning, use **80\u2013100 fingerprint cards per shift per technician** as a realistic standard. Difficult prints, children, elderly subjects, language barriers, or high documentation requirements can reduce that to **40\u201370**. Fast, well-organized live-scan stations may reach **120\u2013160**.",
+    "latency_ms": 3003.5,
+    "input_tokens": 90,
+    "output_tokens": 156
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How many cards of fingerprints can I take in one shift?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "It depends on the fingerprinting method, staffing, and whether each card requires rolled and flat impressions, but a practical estimate is:\n\n- **Ink-and-card fingerprinting:** about **10\u201320 complete cards per hour**\n- **Live-scan capture with electronic printing:** about **15\u201330 cards per hour**\n- **Including identity checks, forms, re-prints, and cleanup:** typically **60\u2013120 cards in an 8-hour shift**\n\nFor planning, use **80\u2013100 fingerprint cards per shift per technician** as a realistic standard. Difficult prints, children, elderly subjects, language barriers, or high documentation requirements can reduce that to **40\u201370**. Fast, well-organized live-scan stations may reach **120\u2013160**.",
+    "latency_ms": 3003.5,
+    "token_count": 246
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "86cf7ce9da05",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229858.3785434,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3003.5,
+        "token_count": 246,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.88; flagged=False"
+}

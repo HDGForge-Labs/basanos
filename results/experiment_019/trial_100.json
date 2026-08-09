@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T00:05:24.131396+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Why do people look down on healthcare workers?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Healthcare ",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "People don\u2019t universally look down on healthcare workers, but some do, often for a mix of social, economic, and psychological reasons:\n\n- **They associate healthcare with unpleasant experiences.** Pain, bad news, bills, waiting rooms, loss of control, and illness can get projected onto nurses, doctors, aides, receptionists, and paramedics\u2014even when those workers are not responsible for the underlying problem.\n\n- **They misunderstand what healthcare work involves.** Many people see only the brief interaction: \u201cthe nurse took my vitals,\u201d \u201cthe doctor was in for five minutes,\u201d \u201cthe receptionist was rude.\u201d They do not see the clinical judgment, documentation, coordination, safety checks, emotional labor, staffing shortages, and liability involved.\n\n- **Classism and sexism play a major role.** Roles historically dominated by women\u2014especially nursing, caregiving, medical assisting, home health, and support staff\u2014have often been treated as \u201cjust caring\u201d rather than skilled professional labor. Nursing assistants, home health aides, cleaners, transport staff, and dietary workers are especially undervalued despite being essential.\n\n- **Healthcare has become tied to customer-service expectations.** Patients may view themselves as customers and expect immediate access, unlimited time, specific medications or tests, and perfect outcomes. But healthcare workers have to enforce triage, safety rules, appointment limits, insurance restrictions, and evidence-based boundaries. That can be mistaken for indifference.\n\n- **People blame workers for system failures.** Long waits, high costs, insurance denials, understaffing, rushed appointments, and poor continuity of care are largely structural problems. The person at the bedside or front desk becomes the visible target.\n\n- **Some people distrust institutions and experts.** Political polarization, misinformation, conspiracy beliefs, and past real abuses in medicine can make people suspicious of clinicians generally. That distrust is often directed at individual workers who have little power over policy.\n\n- **Healthcare work is sometimes seen as \u201cnot real work\u201d unless it is highly prestigious.** Society may glorify physicians while devaluing bedside staff, support workers, and allied health professionals\u2014even though modern care depends on teams. Conversely, some people resent doctors or assume they are arrogant or overpaid.\n\n- **Burnout can be misread as poor character.** Exhausted workers may sound brief, detached, or procedural after long shifts, high patient loads, violence, grief, and inadequate staffing. Patients may interpret that as coldness rather than a sign of an overloaded system.\n\nThere is also an important distinction: criticism of healthcare can be legitimate when workers or institutions provide poor, discriminatory, unsafe, or unethical care. But contempt for healthcare workers as a group usually reflects misunderstanding, frustration with the system, or devaluation of care labor\u2014not the actual importance or difficulty of the work.",
+    "latency_ms": 9043.3,
+    "input_tokens": 87,
+    "output_tokens": 565
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Why do people look down on healthcare workers?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "People don\u2019t universally look down on healthcare workers, but some do, often for a mix of social, economic, and psychological reasons:\n\n- **They associate healthcare with unpleasant experiences.** Pain, bad news, bills, waiting rooms, loss of control, and illness can get projected onto nurses, doctors, aides, receptionists, and paramedics\u2014even when those workers are not responsible for the underlying problem.\n\n- **They misunderstand what healthcare work involves.** Many people see only the brief interaction: \u201cthe nurse took my vitals,\u201d \u201cthe doctor was in for five minutes,\u201d \u201cthe receptionist was rude.\u201d They do not see the clinical judgment, documentation, coordination, safety checks, emotional labor, staffing shortages, and liability involved.\n\n- **Classism and sexism play a major role.** Roles historically dominated by women\u2014especially nursing, caregiving, medical assisting, home health, and support staff\u2014have often been treated as \u201cjust caring\u201d rather than skilled professional labor. Nursing assistants, home health aides, cleaners, transport staff, and dietary workers are especially undervalued despite being essential.\n\n- **Healthcare has become tied to customer-service expectations.** Patients may view themselves as customers and expect immediate access, unlimited time, specific medications or tests, and perfect outcomes. But healthcare workers have to enforce triage, safety rules, appointment limits, insurance restrictions, and evidence-based boundaries. That can be mistaken for indifference.\n\n- **People blame workers for system failures.** Long waits, high costs, insurance denials, understaffing, rushed appointments, and poor continuity of care are largely structural problems. The person at the bedside or front desk becomes the visible target.\n\n- **Some people distrust institutions and experts.** Political polarization, misinformation, conspiracy beliefs, and past real abuses in medicine can make people suspicious of clinicians generally. That distrust is often directed at individual workers who have little power over policy.\n\n- **Healthcare work is sometimes seen as \u201cnot real work\u201d unless it is highly prestigious.** Society may glorify physicians while devaluing bedside staff, support workers, and allied health professionals\u2014even though modern care depends on teams. Conversely, some people resent doctors or assume they are arrogant or overpaid.\n\n- **Burnout can be misread as poor character.** Exhausted workers may sound brief, detached, or procedural after long shifts, high patient loads, violence, grief, and inadequate staffing. Patients may interpret that as coldness rather than a sign of an overloaded system.\n\nThere is also an important distinction: criticism of healthcare can be legitimate when workers or institutions provide poor, discriminatory, unsafe, or unethical care. But contempt for healthcare workers as a group usually reflects misunderstanding, frustration with the system, or devaluation of care labor\u2014not the actual importance or difficulty of the work.",
+    "latency_ms": 9043.3,
+    "token_count": 652
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "c6a53b85ca5e",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233924.1306975,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 9043.3,
+        "token_count": 652,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.100; flagged=False"
+}

@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T01:27:02.246331+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What are the differences between Acute myeloid leukemia and Chronic myeloid leukemia?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "oncology",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Acute Myeloid Leukemia (AML) vs Chronic Myeloid Leukemia (CML)\n\n## Cell of Origin & Maturation Arrest\n- **AML**: Malignant transformation of myeloid progenitor cells with a block in differentiation\u2014cells arrest at the **blast** stage. Blasts accumulate and fail to mature into functional granulocytes, monocytes, etc.\n- **CML**: Originates from a pluripotent hematopoietic stem cell, but cells largely **retain the ability to differentiate**. You see a full spectrum of myeloid maturation (myeloblasts through mature neutrophils), just in excessive, dysregulated numbers.\n\n## Genetic Driver\n- **AML**: Heterogeneous. Common mutations/translocations include **FLT3-ITD, NPM1, CEBPA, t(8;21) RUNX1-RUNX1T1, inv(16) CBFB-MYH11, t(15;17) PML-RARA** (APL), and others. No single unifying genetic lesion.\n- **CML**: Defined by the **Philadelphia chromosome, t(9;22)(q34;q11)**, producing the **BCR-ABL1 fusion gene**. This fusion protein has constitutive tyrosine kinase activity, driving proliferation. Present in >90-95% of cases.\n\n## Clinical Course\n- **AML**: Aggressive, rapidly progressive (days to weeks). Presents with symptoms of marrow failure\u2014**anemia, thrombocytopenia (bleeding/bruising), neutropenia (infections)**\u2014because blasts crowd out normal hematopoiesis.\n- **CML**: Indolent, slow-growing, often **discovered incidentally** on routine CBC. Progresses through phases:\n  - **Chronic phase** (median duration years, especially with TKI therapy)\n  - **Accelerated phase**\n  - **Blast crisis** (transforms into an acute leukemia, either myeloid or lymphoid)\n\n## Peripheral Blood/Bone Marrow Findings\n- **AML**: **\u226520% blasts** in blood or marrow required for diagnosis (per WHO criteria). Auer rods may be seen (pathognomonic for myeloid lineage).\n- **CML**: Marked **leukocytosis** (often >100,000/\u00b5L) with a **left shift showing the full spectrum** of granulocyte maturation\u2014myelocytes, metamyelocytes, bands, segmented neutrophils. **Basophilia and eosinophilia** are characteristic. Blasts are typically <10% in chronic phase.\n\n## Age & Epidemiology\n- **AML**: Median age ~65-70 years, though it occurs across all ages (including a notable pediatric incidence). Associated with prior chemotherapy/radiation, myelodysplastic syndrome, certain genetic syndromes (Down syndrome).\n- **CML**: Median age ~55-65 years. Less common in children.\n\n## Leukocyte Alkaline Phosphatase (LAP) Score\n- **AML**",
+    "latency_ms": 10672.1,
+    "input_tokens": 146,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the differences between Acute myeloid leukemia and Chronic myeloid leukemia?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Acute Myeloid Leukemia (AML) vs Chronic Myeloid Leukemia (CML)\n\n## Cell of Origin & Maturation Arrest\n- **AML**: Malignant transformation of myeloid progenitor cells with a block in differentiation\u2014cells arrest at the **blast** stage. Blasts accumulate and fail to mature into functional granulocytes, monocytes, etc.\n- **CML**: Originates from a pluripotent hematopoietic stem cell, but cells largely **retain the ability to differentiate**. You see a full spectrum of myeloid maturation (myeloblasts through mature neutrophils), just in excessive, dysregulated numbers.\n\n## Genetic Driver\n- **AML**: Heterogeneous. Common mutations/translocations include **FLT3-ITD, NPM1, CEBPA, t(8;21) RUNX1-RUNX1T1, inv(16) CBFB-MYH11, t(15;17) PML-RARA** (APL), and others. No single unifying genetic lesion.\n- **CML**: Defined by the **Philadelphia chromosome, t(9;22)(q34;q11)**, producing the **BCR-ABL1 fusion gene**. This fusion protein has constitutive tyrosine kinase activity, driving proliferation. Present in >90-95% of cases.\n\n## Clinical Course\n- **AML**: Aggressive, rapidly progressive (days to weeks). Presents with symptoms of marrow failure\u2014**anemia, thrombocytopenia (bleeding/bruising), neutropenia (infections)**\u2014because blasts crowd out normal hematopoiesis.\n- **CML**: Indolent, slow-growing, often **discovered incidentally** on routine CBC. Progresses through phases:\n  - **Chronic phase** (median duration years, especially with TKI therapy)\n  - **Accelerated phase**\n  - **Blast crisis** (transforms into an acute leukemia, either myeloid or lymphoid)\n\n## Peripheral Blood/Bone Marrow Findings\n- **AML**: **\u226520% blasts** in blood or marrow required for diagnosis (per WHO criteria). Auer rods may be seen (pathognomonic for myeloid lineage).\n- **CML**: Marked **leukocytosis** (often >100,000/\u00b5L) with a **left shift showing the full spectrum** of granulocyte maturation\u2014myelocytes, metamyelocytes, bands, segmented neutrophils. **Basophilia and eosinophilia** are characteristic. Blasts are typically <10% in chronic phase.\n\n## Age & Epidemiology\n- **AML**: Median age ~65-70 years, though it occurs across all ages (including a notable pediatric incidence). Associated with prior chemotherapy/radiation, myelodysplastic syndrome, certain genetic syndromes (Down syndrome).\n- **CML**: Median age ~55-65 years. Less common in children.\n\n## Leukocyte Alkaline Phosphatase (LAP) Score\n- **AML**",
+    "latency_ms": 10672.1,
+    "token_count": 1170
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "1d9df309fe1b",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786238822.2455955,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 10672.1,
+        "token_count": 1170,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.3; flagged=False"
+}

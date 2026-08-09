@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T01:44:29.113981+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What are the symptoms of sepsis?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Critical care",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Symptoms of Sepsis\n\nSepsis is a life-threatening response to infection that requires immediate medical attention. Symptoms often develop rapidly and can be remembered using the mnemonic **SEPSIS**:\n\n## Core Signs and Symptoms\n\n**Vital sign changes:**\n- **Fever** (>101\u00b0F/38.3\u00b0C) or **hypothermia** (<96.8\u00b0F/36\u00b0C)\n- **Tachycardia** \u2014 heart rate >90 beats/min\n- **Tachypnea** \u2014 rapid breathing, >20 breaths/min\n- **Hypotension** \u2014 low blood pressure, particularly concerning if systolic BP drops below 90 mmHg\n\n**Mental status changes:**\n- Confusion, disorientation, or altered consciousness\n- Extreme lethargy or difficulty waking\n\n**Skin changes:**\n- Clammy or sweaty skin\n- Mottled or discolored skin\n- Cool extremities despite fever (indicating poor perfusion)\n\n**Other key indicators:**\n- Extreme pain or discomfort (\"worst pain ever felt\" is a common patient description)\n- Shortness of breath\n- Decreased urine output\n- Nausea and vomiting\n\n## Progression to Septic Shock\n\nIf untreated, sepsis can progress to **septic shock**, marked by:\n- Severe hypotension unresponsive to fluid resuscitation\n- Elevated **lactate levels** (>2 mmol/L indicates tissue hypoperfusion)\n- Multi-organ dysfunction (kidney failure, liver failure, respiratory failure)\n- Mottled skin, cold extremities\n\n## Clinical Screening Tools\n\nHealthcare providers often use:\n- **qSOFA** (quick Sequential Organ Failure Assessment): altered mentation, respiratory rate \u226522/min, systolic BP \u2264100 mmHg\n- **SIRS criteria**: temperature abnormality, heart rate >90, respiratory rate >20, abnormal white blood cell count\n\n## Important Note\n\nSepsis symptoms can be subtle initially, especially in elderly patients, infants, or immunocompromised individuals, who may not mount a typical fever response. **Time is critical**\u2014each hour of delayed antibiotic treatment increases mortality risk by approximately 4-8%. Anyone with a known infection who develops these symptoms should seek emergency care immediately.",
+    "latency_ms": 9575.5,
+    "input_tokens": 128,
+    "output_tokens": 797
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the symptoms of sepsis?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Symptoms of Sepsis\n\nSepsis is a life-threatening response to infection that requires immediate medical attention. Symptoms often develop rapidly and can be remembered using the mnemonic **SEPSIS**:\n\n## Core Signs and Symptoms\n\n**Vital sign changes:**\n- **Fever** (>101\u00b0F/38.3\u00b0C) or **hypothermia** (<96.8\u00b0F/36\u00b0C)\n- **Tachycardia** \u2014 heart rate >90 beats/min\n- **Tachypnea** \u2014 rapid breathing, >20 breaths/min\n- **Hypotension** \u2014 low blood pressure, particularly concerning if systolic BP drops below 90 mmHg\n\n**Mental status changes:**\n- Confusion, disorientation, or altered consciousness\n- Extreme lethargy or difficulty waking\n\n**Skin changes:**\n- Clammy or sweaty skin\n- Mottled or discolored skin\n- Cool extremities despite fever (indicating poor perfusion)\n\n**Other key indicators:**\n- Extreme pain or discomfort (\"worst pain ever felt\" is a common patient description)\n- Shortness of breath\n- Decreased urine output\n- Nausea and vomiting\n\n## Progression to Septic Shock\n\nIf untreated, sepsis can progress to **septic shock**, marked by:\n- Severe hypotension unresponsive to fluid resuscitation\n- Elevated **lactate levels** (>2 mmol/L indicates tissue hypoperfusion)\n- Multi-organ dysfunction (kidney failure, liver failure, respiratory failure)\n- Mottled skin, cold extremities\n\n## Clinical Screening Tools\n\nHealthcare providers often use:\n- **qSOFA** (quick Sequential Organ Failure Assessment): altered mentation, respiratory rate \u226522/min, systolic BP \u2264100 mmHg\n- **SIRS criteria**: temperature abnormality, heart rate >90, respiratory rate >20, abnormal white blood cell count\n\n## Important Note\n\nSepsis symptoms can be subtle initially, especially in elderly patients, infants, or immunocompromised individuals, who may not mount a typical fever response. **Time is critical**\u2014each hour of delayed antibiotic treatment increases mortality risk by approximately 4-8%. Anyone with a known infection who develops these symptoms should seek emergency care immediately.",
+    "latency_ms": 9575.5,
+    "token_count": 925
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "99a1d35f872b",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786239869.1131892,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 9575.5,
+        "token_count": 925,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.91; flagged=False"
+}

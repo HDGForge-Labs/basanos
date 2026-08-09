@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:52:43.808960+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "I am a new intern in the blood transfusion laboratory, please write a standard SOP for me for preparing a fresh frozen plasma.",
+    "field": "Healthcare / Medicine",
+    "specific_field": "biomedical science",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Standard Operating Procedure: Preparation of Fresh Frozen Plasma (FFP)\n\n## 1. Purpose\nThis SOP outlines the standard procedure for the preparation, freezing, labeling, storage, and quality control of Fresh Frozen Plasma (FFP) from whole blood donations in the blood transfusion laboratory.\n\n## 2. Scope\nThis procedure applies to all laboratory personnel involved in component preparation from whole blood collections.\n\n## 3. Responsibility\n- Trained blood bank technologists/interns under supervision\n- Quality Assurance officer for periodic audits\n- Laboratory supervisor for final release approval\n\n## 4. Materials and Equipment Required\n- Whole blood units (collected in CPD, CPDA-1, or CP2D anticoagulant)\n- Refrigerated centrifuge (temperature range approximately 2\u00b0C to 6\u00b0C)\n- Plasma extractor\n- Tube sealer\n- Blast freezer or plasma freezer (capable of reaching approximately -30\u00b0C or colder within 1 hour, ideally within **30 minutes**)\n- Deep freezer for storage (-18\u00b0C to -30\u00b0C or colder, per institutional policy)\n- Weighing scale\n- Sterile connecting devices (if pooling or splitting)\n- Labels and tie tags\n- Personal protective equipment (PPE): gloves, lab coat, face shield\n\n## 5. Timeframe Requirements (Critical)\n- Whole blood must be processed into FFP **within 6\u20138 hours** of collection if using standard anticoagulant (CPD), to preserve labile coagulation factors (Factor V and Factor VIII).\n- If extended processing is required (e.g., using CPDA-1), plasma may be separated within **18\u201324 hours** in some protocols, but check institutional/regulatory guidelines, as this affects Factor VIII yield.\n- Some protocols allow separation up to **24 hours** post-collection under refrigerated storage (4\u00b0C), producing \"FP24\" rather than true FFP.\n\n## 6. Procedure\n\n### Step 1: Pre-Processing Check\n1. Verify donor unit details: donation number, blood group, collection date/time, and volume (typically **450 mL \u00b1 45 mL** or **350 mL \u00b1 35 mL** depending on bag size).\n2. Inspect the unit for:\n   - Hemolysis\n   - Clots\n   - Leakage\n   - Abnormal color\n3. Confirm the unit has been tested and cleared for transfusion-transmitted infections (HIV, HBV, HCV, syphilis, and others per local guidelines).\n\n### Step 2: Centrifugation\n1. Load whole blood units into the refrigerated centrifuge.\n2. Centrifuge at **heavy spin** settings, typically:\n   - Speed: approximately **3,000\u20135,000 RPM** (or equivalent RCF of about **3,000\u20135,000 x g**, depending on manufacturer specifications)\n   - Duration: approximately **10\u201315 minutes**\n   - Temperature: maintained at **2\u00b0C to 6\u00b0C**",
+    "latency_ms": 11417.1,
+    "input_tokens": 154,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "I am a new intern in the blood transfusion laboratory, please write a standard SOP for me for preparing a fresh frozen plasma.",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Standard Operating Procedure: Preparation of Fresh Frozen Plasma (FFP)\n\n## 1. Purpose\nThis SOP outlines the standard procedure for the preparation, freezing, labeling, storage, and quality control of Fresh Frozen Plasma (FFP) from whole blood donations in the blood transfusion laboratory.\n\n## 2. Scope\nThis procedure applies to all laboratory personnel involved in component preparation from whole blood collections.\n\n## 3. Responsibility\n- Trained blood bank technologists/interns under supervision\n- Quality Assurance officer for periodic audits\n- Laboratory supervisor for final release approval\n\n## 4. Materials and Equipment Required\n- Whole blood units (collected in CPD, CPDA-1, or CP2D anticoagulant)\n- Refrigerated centrifuge (temperature range approximately 2\u00b0C to 6\u00b0C)\n- Plasma extractor\n- Tube sealer\n- Blast freezer or plasma freezer (capable of reaching approximately -30\u00b0C or colder within 1 hour, ideally within **30 minutes**)\n- Deep freezer for storage (-18\u00b0C to -30\u00b0C or colder, per institutional policy)\n- Weighing scale\n- Sterile connecting devices (if pooling or splitting)\n- Labels and tie tags\n- Personal protective equipment (PPE): gloves, lab coat, face shield\n\n## 5. Timeframe Requirements (Critical)\n- Whole blood must be processed into FFP **within 6\u20138 hours** of collection if using standard anticoagulant (CPD), to preserve labile coagulation factors (Factor V and Factor VIII).\n- If extended processing is required (e.g., using CPDA-1), plasma may be separated within **18\u201324 hours** in some protocols, but check institutional/regulatory guidelines, as this affects Factor VIII yield.\n- Some protocols allow separation up to **24 hours** post-collection under refrigerated storage (4\u00b0C), producing \"FP24\" rather than true FFP.\n\n## 6. Procedure\n\n### Step 1: Pre-Processing Check\n1. Verify donor unit details: donation number, blood group, collection date/time, and volume (typically **450 mL \u00b1 45 mL** or **350 mL \u00b1 35 mL** depending on bag size).\n2. Inspect the unit for:\n   - Hemolysis\n   - Clots\n   - Leakage\n   - Abnormal color\n3. Confirm the unit has been tested and cleared for transfusion-transmitted infections (HIV, HBV, HCV, syphilis, and others per local guidelines).\n\n### Step 2: Centrifugation\n1. Load whole blood units into the refrigerated centrifuge.\n2. Centrifuge at **heavy spin** settings, typically:\n   - Speed: approximately **3,000\u20135,000 RPM** (or equivalent RCF of about **3,000\u20135,000 x g**, depending on manufacturer specifications)\n   - Duration: approximately **10\u201315 minutes**\n   - Temperature: maintained at **2\u00b0C to 6\u00b0C**",
+    "latency_ms": 11417.1,
+    "token_count": 1178,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "76e29d67b246",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240363.8081737,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 15 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4213,
+          "evidence": [
+            "Latency 11417ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11417.1,
+        "token_count": 1178,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.131; flagged=True"
+}

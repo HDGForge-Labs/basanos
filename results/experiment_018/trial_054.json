@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:55:22.060334+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Supose there is female 30yo patient who is pregnant of 32 weeks, she presents with moderate transvaginal bleeding and no other symptoms, what would be the best initial course of action to address this patient? ",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Primary care",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "A 32-week pregnant patient with **moderate vaginal bleeding should be managed as an obstetric emergency** until placental abruption, placenta previa, vasa previa, and labor are excluded.\n\n**Initial management:**\n\n1. **Stabilize and assess immediately**\n   - Activate obstetric/emergency evaluation; place her in the **left lateral position**.\n   - Assess airway, breathing, circulation, mental status, pain, uterine tone, and fetal movement.\n   - Continuous **fetal heart-rate and uterine monitoring**.\n   - Record vital signs frequently and quantify ongoing blood loss.\n\n2. **Establish IV access and obtain tests**\n   - Two large-bore IV lines.\n   - CBC, blood type and crossmatch, coagulation studies including fibrinogen, and renal/metabolic panel.\n   - Check Rh status; administer **anti-D immune globulin** if Rh-negative, unless fetal\u2013maternal hemorrhage testing guides additional dosing.\n\n3. **Do not perform a digital vaginal examination**\n   - **Until placenta previa is excluded by ultrasound**, because it can provoke catastrophic hemorrhage.\n   - A sterile speculum examination may be considered after stabilization and with obstetric supervision.\n\n4. **Urgent ultrasound**\n   - Determine placental location and assess for previa, fetal presentation, amniotic fluid, and possible abruption. A normal ultrasound does **not** reliably exclude abruption.\n\n5. **Prepare for delivery if indicated**\n   - Immediate delivery is required for maternal instability, persistent/heavy bleeding, nonreassuring fetal status, significant abruption, or labor.\n   - If mother and fetus remain stable and bleeding settles, hospital observation is appropriate. At 32 weeks, give **antenatal corticosteroids** for fetal lung maturation; consider **magnesium sulfate for neuroprotection if delivery appears imminent before 32\u201333+6 weeks**, according to local protocol.\n\nThe key first step is **maternal resuscitation with continuous fetal monitoring and urgent obstetric assessment\u2014without a digital vaginal examination before excluding placenta previa**.",
+    "latency_ms": 3711.9,
+    "input_tokens": 124,
+    "output_tokens": 420
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Supose there is female 30yo patient who is pregnant of 32 weeks, she presents with moderate transvaginal bleeding and no other symptoms, what would be the best initial course of action to address this patient? ",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "A 32-week pregnant patient with **moderate vaginal bleeding should be managed as an obstetric emergency** until placental abruption, placenta previa, vasa previa, and labor are excluded.\n\n**Initial management:**\n\n1. **Stabilize and assess immediately**\n   - Activate obstetric/emergency evaluation; place her in the **left lateral position**.\n   - Assess airway, breathing, circulation, mental status, pain, uterine tone, and fetal movement.\n   - Continuous **fetal heart-rate and uterine monitoring**.\n   - Record vital signs frequently and quantify ongoing blood loss.\n\n2. **Establish IV access and obtain tests**\n   - Two large-bore IV lines.\n   - CBC, blood type and crossmatch, coagulation studies including fibrinogen, and renal/metabolic panel.\n   - Check Rh status; administer **anti-D immune globulin** if Rh-negative, unless fetal\u2013maternal hemorrhage testing guides additional dosing.\n\n3. **Do not perform a digital vaginal examination**\n   - **Until placenta previa is excluded by ultrasound**, because it can provoke catastrophic hemorrhage.\n   - A sterile speculum examination may be considered after stabilization and with obstetric supervision.\n\n4. **Urgent ultrasound**\n   - Determine placental location and assess for previa, fetal presentation, amniotic fluid, and possible abruption. A normal ultrasound does **not** reliably exclude abruption.\n\n5. **Prepare for delivery if indicated**\n   - Immediate delivery is required for maternal instability, persistent/heavy bleeding, nonreassuring fetal status, significant abruption, or labor.\n   - If mother and fetus remain stable and bleeding settles, hospital observation is appropriate. At 32 weeks, give **antenatal corticosteroids** for fetal lung maturation; consider **magnesium sulfate for neuroprotection if delivery appears imminent before 32\u201333+6 weeks**, according to local protocol.\n\nThe key first step is **maternal resuscitation with continuous fetal monitoring and urgent obstetric assessment\u2014without a digital vaginal examination before excluding placenta previa**.",
+    "latency_ms": 3711.9,
+    "token_count": 544
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "d815f5bece6f",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229722.0596182,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3711.9,
+        "token_count": 544,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.54; flagged=False"
+}

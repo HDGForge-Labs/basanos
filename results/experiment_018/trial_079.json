@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:57:02.380686+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Is there any resources which provide information that using PR threatment in rehabilitation of patients after orthopaedic surgeries is faster than normal?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Physical Medicine and Rehabilitation also COVID patients",
+    "question_type": "Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Yes. If by **PR treatment** you mean **platelet-rich plasma (PRP)**, there are clinical studies and systematic reviews evaluating whether PRP speeds recovery after orthopedic surgery. The overall evidence is **mixed and procedure-specific**: PRP may improve pain or healing in selected operations, but it has not consistently been shown to make rehabilitation faster than standard care.\n\n### Useful evidence sources\n\n1. **Cochrane Library**\n   - Search: **\u201cplatelet-rich plasma surgery orthopaedic rehabilitation\u201d**\n   - Cochrane reviews are useful for assessing randomized trials and the certainty of evidence.\n\n2. **PubMed**\n   Use searches such as:\n   - `platelet rich plasma postoperative rehabilitation randomized trial`\n   - `PRP after ACL reconstruction systematic review`\n   - `PRP rotator cuff repair meta-analysis`\n   - `PRP cartilage repair rehabilitation`\n   - `platelet rich plasma orthopaedic surgery recovery time`\n\n3. **Major systematic-review journals**\n   Search reviews in:\n   - *The American Journal of Sports Medicine*\n   - *Arthroscopy*\n   - *Knee Surgery, Sports Traumatology, Arthroscopy*\n   - *Journal of Shoulder and Elbow Surgery*\n   - *Clinical Orthopaedics and Related Research*\n\n### What the evidence generally shows\n\n- **Rotator cuff repair:** PRP may slightly reduce re-tear rates in some studies, particularly with certain tear types, but consistent reductions in pain, time to strength recovery, or return to work/sport are not established.\n- **ACL reconstruction:** PRP has generally not produced a reliable clinically important acceleration in return to sport or functional rehabilitation.\n- **Meniscal or cartilage procedures:** Some studies report improved pain or MRI findings, but evidence that PRP allows substantially faster rehabilitation is limited.\n- **Tendon or ligament surgery:** Results vary greatly depending on PRP preparation, injection timing, surgical technique, and rehabilitation protocol.\n- **Knee or hip arthroplasty:** PRP is not routinely proven to shorten hospital stay or functional recovery, although some trials examine postoperative pain and wound healing.\n\nA key issue is that \u201cPRP\u201d is not one standardized treatment. Studies differ in platelet concentration, leukocyte content, activation method, number of injections, and timing. Therefore, results from one operation cannot automatically be applied to another.\n\n### How to assess whether it is \u201cfaster\u201d\n\nLook for studies reporting objective outcomes such as:\n\n- Time to achieve predefined range-of-motion goals\n- Time to full weight bearing\n- Time to return to work or sport\n- Time to regain strength\n- Validated scores such as KOOS, WOMAC, IKDC, Constant-Murley, or ASES\n- Complication and reoperation rates\n\nA statistically significant improvement is not necessarily a clinically meaningful faster recovery. For example, a small improvement in a questionnaire score may not reduce the number of weeks required for rehabilitation.\n\n### Practical conclusion\n\nThere is **no general evidence that PRP makes rehabilitation faster after all orthopedic surgeries**. It may provide benefits in selected procedures, but it should be considered an adjunct rather than a proven replacement for standard postoperative rehabilitation. The best evidence should be evaluated for the specific surgery\u2014for example, ACL reconstruction, rotator cuff repair, meniscal repair, or joint replacement.",
+    "latency_ms": 4940.3,
+    "input_tokens": 104,
+    "output_tokens": 674
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Is there any resources which provide information that using PR threatment in rehabilitation of patients after orthopaedic surgeries is faster than normal?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Yes. If by **PR treatment** you mean **platelet-rich plasma (PRP)**, there are clinical studies and systematic reviews evaluating whether PRP speeds recovery after orthopedic surgery. The overall evidence is **mixed and procedure-specific**: PRP may improve pain or healing in selected operations, but it has not consistently been shown to make rehabilitation faster than standard care.\n\n### Useful evidence sources\n\n1. **Cochrane Library**\n   - Search: **\u201cplatelet-rich plasma surgery orthopaedic rehabilitation\u201d**\n   - Cochrane reviews are useful for assessing randomized trials and the certainty of evidence.\n\n2. **PubMed**\n   Use searches such as:\n   - `platelet rich plasma postoperative rehabilitation randomized trial`\n   - `PRP after ACL reconstruction systematic review`\n   - `PRP rotator cuff repair meta-analysis`\n   - `PRP cartilage repair rehabilitation`\n   - `platelet rich plasma orthopaedic surgery recovery time`\n\n3. **Major systematic-review journals**\n   Search reviews in:\n   - *The American Journal of Sports Medicine*\n   - *Arthroscopy*\n   - *Knee Surgery, Sports Traumatology, Arthroscopy*\n   - *Journal of Shoulder and Elbow Surgery*\n   - *Clinical Orthopaedics and Related Research*\n\n### What the evidence generally shows\n\n- **Rotator cuff repair:** PRP may slightly reduce re-tear rates in some studies, particularly with certain tear types, but consistent reductions in pain, time to strength recovery, or return to work/sport are not established.\n- **ACL reconstruction:** PRP has generally not produced a reliable clinically important acceleration in return to sport or functional rehabilitation.\n- **Meniscal or cartilage procedures:** Some studies report improved pain or MRI findings, but evidence that PRP allows substantially faster rehabilitation is limited.\n- **Tendon or ligament surgery:** Results vary greatly depending on PRP preparation, injection timing, surgical technique, and rehabilitation protocol.\n- **Knee or hip arthroplasty:** PRP is not routinely proven to shorten hospital stay or functional recovery, although some trials examine postoperative pain and wound healing.\n\nA key issue is that \u201cPRP\u201d is not one standardized treatment. Studies differ in platelet concentration, leukocyte content, activation method, number of injections, and timing. Therefore, results from one operation cannot automatically be applied to another.\n\n### How to assess whether it is \u201cfaster\u201d\n\nLook for studies reporting objective outcomes such as:\n\n- Time to achieve predefined range-of-motion goals\n- Time to full weight bearing\n- Time to return to work or sport\n- Time to regain strength\n- Validated scores such as KOOS, WOMAC, IKDC, Constant-Murley, or ASES\n- Complication and reoperation rates\n\nA statistically significant improvement is not necessarily a clinically meaningful faster recovery. For example, a small improvement in a questionnaire score may not reduce the number of weeks required for rehabilitation.\n\n### Practical conclusion\n\nThere is **no general evidence that PRP makes rehabilitation faster after all orthopedic surgeries**. It may provide benefits in selected procedures, but it should be considered an adjunct rather than a proven replacement for standard postoperative rehabilitation. The best evidence should be evaluated for the specific surgery\u2014for example, ACL reconstruction, rotator cuff repair, meniscal repair, or joint replacement.",
+    "latency_ms": 4940.3,
+    "token_count": 778
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "19830a8f90a0",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229822.3798769,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 4940.3,
+        "token_count": 778,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.79; flagged=False"
+}

@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T22:31:55.482507+00:00",
+  "detector": "context_degradation",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "who won the champions league final in 2016",
+    "gold_index": 0
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "Real Madrid won the 2016 UEFA Champions League Final, defeating fellow Spanish club Atl\u00e9tico Madrid 5\u20133 on penalties after the match ended 1\u20131 following extra time. The final was held at the San Siro stadium in Milan, Italy, on 28 May 2016. This victory gave Real Madrid a record-extending 11th Champions League/European Cup title.\n\n",
+    "latency_ms": 3411.9,
+    "input_tokens": 2360,
+    "output_tokens": 128
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "who won the champions league final in 2016",
+      "gold_index": 0,
+      "n_docs": 10
+    },
+    "response": "Real Madrid won the 2016 UEFA Champions League Final, defeating fellow Spanish club Atl\u00e9tico Madrid 5-3 on penalties after the match ended 1-1 following extra time. The final was held at the San Siro stadium in Milan, Italy, on 28 May 2016. This victory gave Real Madrid a record-extending 11th Champions League/European Cup title.\n\n",
+    "latency_ms": 3411.9,
+    "token_count": 2488,
+    "context_window_used": 0.25
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "5d81a2f7d06f",
+      "tool_name": "context_qa",
+      "status": "pass",
+      "timestamp": 1786314715.4817781,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3411.9,
+        "token_count": 2488,
+        "context_window_used": 0.25,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.83; flagged=False; gold_index=0"
+}

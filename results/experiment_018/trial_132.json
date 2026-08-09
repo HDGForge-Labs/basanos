@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-08T23:01:26.562965+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is your opinion on euthanasia?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biomedical Science ",
+    "question_type": "Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "My view is that euthanasia is morally serious and can be ethically permissible in limited circumstances, but it requires exceptionally strong safeguards.\n\nI distinguish between:\n\n- **Voluntary euthanasia:** a competent adult explicitly requests death.\n- **Assisted suicide:** the patient receives the means but performs the final act.\n- **Non-voluntary euthanasia:** the person cannot express a decision.\n- **Involuntary euthanasia:** it occurs against the person\u2019s wishes; this is unequivocally wrong.\n\nI support considering voluntary euthanasia when all of the following are present:\n\n1. The person has a terminal or irreversibly debilitating condition, typically causing persistent and intolerable suffering.\n2. The request is informed, repeated, and free from coercion.\n3. The person has decision-making capacity, ideally confirmed by at least **2 independent clinicians**.\n4. Reasonable treatments\u2014including palliative care, pain control, psychological support, and social assistance\u2014have been discussed and made available.\n5. There is a formal waiting period, with the exact duration depending on the situation and jurisdiction.\n6. Independent review and careful documentation occur.\n7. The patient can withdraw the request at any time.\n\nMy main concern is that a \u201cchoice\u201d can be distorted by depression, inadequate healthcare, disability prejudice, poverty, loneliness, family pressure, or the belief that one is a burden. For that reason, euthanasia should never become a substitute for hospice care, disability support, mental-health treatment, or affordable medical care.\n\nI also recognize the opposing moral view: some people believe intentionally ending an innocent human life is always wrong, regardless of suffering. That position deserves respect, especially where religious or philosophical convictions are involved.\n\nSo, in short: **I do not regard euthanasia as inherently always right or always wrong. I regard it as potentially justified in narrowly defined, voluntary cases, while believing that protecting vulnerable people and ensuring genuine alternatives are essential.**",
+    "latency_ms": 3728.7,
+    "input_tokens": 80,
+    "output_tokens": 390
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is your opinion on euthanasia?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "My view is that euthanasia is morally serious and can be ethically permissible in limited circumstances, but it requires exceptionally strong safeguards.\n\nI distinguish between:\n\n- **Voluntary euthanasia:** a competent adult explicitly requests death.\n- **Assisted suicide:** the patient receives the means but performs the final act.\n- **Non-voluntary euthanasia:** the person cannot express a decision.\n- **Involuntary euthanasia:** it occurs against the person\u2019s wishes; this is unequivocally wrong.\n\nI support considering voluntary euthanasia when all of the following are present:\n\n1. The person has a terminal or irreversibly debilitating condition, typically causing persistent and intolerable suffering.\n2. The request is informed, repeated, and free from coercion.\n3. The person has decision-making capacity, ideally confirmed by at least **2 independent clinicians**.\n4. Reasonable treatments\u2014including palliative care, pain control, psychological support, and social assistance\u2014have been discussed and made available.\n5. There is a formal waiting period, with the exact duration depending on the situation and jurisdiction.\n6. Independent review and careful documentation occur.\n7. The patient can withdraw the request at any time.\n\nMy main concern is that a \u201cchoice\u201d can be distorted by depression, inadequate healthcare, disability prejudice, poverty, loneliness, family pressure, or the belief that one is a burden. For that reason, euthanasia should never become a substitute for hospice care, disability support, mental-health treatment, or affordable medical care.\n\nI also recognize the opposing moral view: some people believe intentionally ending an innocent human life is always wrong, regardless of suffering. That position deserves respect, especially where religious or philosophical convictions are involved.\n\nSo, in short: **I do not regard euthanasia as inherently always right or always wrong. I regard it as potentially justified in narrowly defined, voluntary cases, while believing that protecting vulnerable people and ensuring genuine alternatives are essential.**",
+    "latency_ms": 3728.7,
+    "token_count": 470,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "50b6f779913b",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230086.5622156,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3728.7,
+        "token_count": 470,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.132; flagged=False"
+}

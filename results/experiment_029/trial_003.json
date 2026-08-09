@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T22:27:31.718153+00:00",
+  "detector": "context_degradation",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "when were the words under god added to the pledge",
+    "gold_index": 0
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "The words \"under God\" were added to the Pledge of Allegiance on **Flag Day, June 14, 1954**. This change was signed into law by President Dwight D. Eisenhower after being passed by Congress, marking the most recent alteration to the Pledge's wording. The idea originated earlier, however\u2014attorney Louis Albert Bowman first suggested adding \"under God\" (inspired by Linc",
+    "latency_ms": 2756.5,
+    "input_tokens": 2239,
+    "output_tokens": 128
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "when were the words under god added to the pledge",
+      "gold_index": 0,
+      "n_docs": 10
+    },
+    "response": "The words \"under God\" were added to the Pledge of Allegiance on **Flag Day, June 14, 1954**. This change was signed into law by President Dwight D. Eisenhower after being passed by Congress, marking the most recent alteration to the Pledge's wording. The idea originated earlier, however-attorney Louis Albert Bowman first suggested adding \"under God\" (inspired by Linc",
+    "latency_ms": 2756.5,
+    "token_count": 2367,
+    "context_window_used": 0.25
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "c92f7ca7b4be",
+      "tool_name": "context_qa",
+      "status": "pass",
+      "timestamp": 1786314451.7173276,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2756.5,
+        "token_count": 2367,
+        "context_window_used": 0.25,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.3; flagged=False; gold_index=0"
+}

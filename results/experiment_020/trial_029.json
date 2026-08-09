@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T01:32:11.145120+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "A 70 years old lady come to the pharmacy to take prescription medication, and doesn't know when to take the pills. Where can I guide her to find out that information?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pharmacist",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario| Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Guiding an Elderly Patient on Medication Timing\n\nHere's how to help her find this information properly:\n\n## Immediate Sources (In the Pharmacy)\n\n1. **Prescription label** - The dosing instructions are printed directly on the pill bottle/package (e.g., \"Take 1 tablet twice daily with food\"). Point to this specifically and read it with her, as text may be small.\n\n2. **Pharmacist consultation** - As pharmacy staff, you (or the on-duty pharmacist) are actually the best immediate resource. Every pharmacy is required to offer counseling on new prescriptions. Don't just point her elsewhere \u2014 walk her through it:\n   - When to take it (morning/evening, specific hours)\n   - With or without food\n   - Spacing from other medications\n   - What to do if she misses a dose\n\n3. **Medication information sheet** - Most pharmacies print a patient information leaflet with each new prescription that includes timing, food interactions, and side effects.\n\n## Additional Resources to Mention\n\n- **Her prescribing doctor's office** - if there's any ambiguity about intent (e.g., \"as needed\" dosing)\n- **Pill organizer with pharmacist's help** - offer to help her set up a weekly pill organizer with times written out, which is especially useful for elderly patients managing multiple medications\n- **Written schedule** - Consider writing out a simple, large-print schedule (e.g., \"8 AM - 1 pill with breakfast; 8 PM - 1 pill with dinner\")\n\n## Practical Tip for This Situation\n\nGiven her age, I'd recommend **not just directing her to read the label herself** \u2014 offer direct verbal counseling on the spot. Elderly patients may have vision difficulty reading small print or cognitive load remembering complex instructions. Confirm understanding by asking her to repeat back the instructions (\"teach-back method\"), which is standard practice for ensuring medication adherence in older adults.",
+    "latency_ms": 9126.6,
+    "input_tokens": 165,
+    "output_tokens": 633
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A 70 years old lady come to the pharmacy to take prescription medication, and doesn't know when to take the pills. Where can I guide her to find out that information?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Guiding an Elderly Patient on Medication Timing\n\nHere's how to help her find this information properly:\n\n## Immediate Sources (In the Pharmacy)\n\n1. **Prescription label** - The dosing instructions are printed directly on the pill bottle/package (e.g., \"Take 1 tablet twice daily with food\"). Point to this specifically and read it with her, as text may be small.\n\n2. **Pharmacist consultation** - As pharmacy staff, you (or the on-duty pharmacist) are actually the best immediate resource. Every pharmacy is required to offer counseling on new prescriptions. Don't just point her elsewhere \u2014 walk her through it:\n   - When to take it (morning/evening, specific hours)\n   - With or without food\n   - Spacing from other medications\n   - What to do if she misses a dose\n\n3. **Medication information sheet** - Most pharmacies print a patient information leaflet with each new prescription that includes timing, food interactions, and side effects.\n\n## Additional Resources to Mention\n\n- **Her prescribing doctor's office** - if there's any ambiguity about intent (e.g., \"as needed\" dosing)\n- **Pill organizer with pharmacist's help** - offer to help her set up a weekly pill organizer with times written out, which is especially useful for elderly patients managing multiple medications\n- **Written schedule** - Consider writing out a simple, large-print schedule (e.g., \"8 AM - 1 pill with breakfast; 8 PM - 1 pill with dinner\")\n\n## Practical Tip for This Situation\n\nGiven her age, I'd recommend **not just directing her to read the label herself** \u2014 offer direct verbal counseling on the spot. Elderly patients may have vision difficulty reading small print or cognitive load remembering complex instructions. Confirm understanding by asking her to repeat back the instructions (\"teach-back method\"), which is standard practice for ensuring medication adherence in older adults.",
+    "latency_ms": 9126.6,
+    "token_count": 798
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "56546627e1ee",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786239131.142369,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 9126.6,
+        "token_count": 798,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.29; flagged=False"
+}

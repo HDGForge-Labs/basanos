@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T22:08:45.596709+00:00",
+  "detector": "context_degradation",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "where are mucosal associated lymphoid tissues present in the human body and why",
+    "gold_index": 0
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Mucosa-associated lymphoid tissue (MALT) is found beneath mucosal surfaces, including the gastrointestinal tract (tonsils, appendix, and small intestine), oral and nasopharyngeal passages, lungs, salivary glands, thyroid, breast, eye, and skin.  \n\nIt is present at these sites because mucosal surfaces are major entry points for antigens and infectious agents. MALT provides a first line of immune defense by detecting these antigens and mounting appropriate local immune responses while helping maintain tolerance to food and commensal bacteria.",
+    "latency_ms": 2016.4,
+    "input_tokens": 1546,
+    "output_tokens": 114
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "where are mucosal associated lymphoid tissues present in the human body and why",
+      "gold_index": 0,
+      "n_docs": 10
+    },
+    "response": "Mucosa-associated lymphoid tissue (MALT) is found beneath mucosal surfaces, including the gastrointestinal tract (tonsils, appendix, and small intestine), oral and nasopharyngeal passages, lungs, salivary glands, thyroid, breast, eye, and skin.  \n\nIt is present at these sites because mucosal surfaces are major entry points for antigens and infectious agents. MALT provides a first line of immune defense by detecting these antigens and mounting appropriate local immune responses while helping maintain tolerance to food and commensal bacteria.",
+    "latency_ms": 2016.4,
+    "token_count": 1660,
+    "context_window_used": 0.25
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "9c16d1b2e45e",
+      "tool_name": "context_qa",
+      "status": "pass",
+      "timestamp": 1786313325.5958712,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2016.4,
+        "token_count": 1660,
+        "context_window_used": 0.25,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.95; flagged=False; gold_index=0"
+}

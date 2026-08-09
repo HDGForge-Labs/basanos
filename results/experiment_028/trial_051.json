@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T22:07:58.820718+00:00",
+  "detector": "context_degradation",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "where are unipolar neurons found in spinal cord",
+    "gold_index": 0
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Unipolar (pseudounipolar) sensory neurons are found in the dorsal root ganglia of spinal nerves, with their central branches entering the posterior (dorsal) horn of the spinal cord.",
+    "latency_ms": 815.9,
+    "input_tokens": 1503,
+    "output_tokens": 45
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "where are unipolar neurons found in spinal cord",
+      "gold_index": 0,
+      "n_docs": 10
+    },
+    "response": "Unipolar (pseudounipolar) sensory neurons are found in the dorsal root ganglia of spinal nerves, with their central branches entering the posterior (dorsal) horn of the spinal cord.",
+    "latency_ms": 815.9,
+    "token_count": 1548,
+    "context_window_used": 0.25
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "889635113b8b",
+      "tool_name": "context_qa",
+      "status": "pass",
+      "timestamp": 1786313278.820016,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 815.9,
+        "token_count": 1548,
+        "context_window_used": 0.25,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.51; flagged=False; gold_index=0"
+}

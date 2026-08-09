@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:54:36.526833+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Suppose there is a 3 years old patient with asthma crisis management, history of severe asthma crisis. Is it recomended for them to be hospitalized?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pediatrician",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Pediatric Asthma Crisis Management in a 3-Year-Old with History of Severe Exacerbations\n\nYes, this child would generally warrant **strong consideration for hospitalization or at minimum close monitoring/extended observation**, given the combination of young age and prior severe exacerbation history. Let me break down the reasoning and thresholds involved.\n\n## Risk Factors Present in This Case\n\nThis patient has **two major risk factors** that lower the threshold for hospitalization:\n- **Age under 5 years** (higher risk of rapid deterioration, respiratory fatigue, difficulty communicating symptoms)\n- **History of severe asthma crisis** (previous ICU admission, intubation, or near-fatal episode increases risk of recurrence by approximately **3-4 fold**)\n\n## Assessment Criteria Guiding the Decision\n\n### Clinical Severity Scoring\nUsing tools like the **Pediatric Respiratory Assessment Measure (PRAM)** or **Pulmonary Score**, key parameters include:\n\n- **Oxygen saturation (SpO2)**:\n  - \u226595% \u2192 Mild\n  - 91-94% \u2192 Moderate\n  - <90-91% \u2192 Severe \u2192 **strongly indicates hospitalization**\n\n- **Respiratory rate** (for age 1-5 years, normal ~20-30/min):\n  - >40 breaths/min suggests moderate-severe distress\n\n- **Heart rate**:\n  - >180 bpm (infants) or >130-140 bpm (young children) suggests severe distress\n\n- **Use of accessory muscles, nasal flaring, retractions**: presence of moderate-severe retractions warrants closer monitoring\n\n- **Air entry/wheezing**: silent chest (no air movement) is an **ominous sign** requiring immediate escalation\n\n## Response to Initial Treatment (Critical Decision Point)\n\nAfter **1 hour** of treatment with:\n- **Nebulized salbutamol/albuterol**: typically 2.5-5 mg per dose, or via MDI with spacer at **2-4 puffs (100 mcg/puff) every 20 minutes for 3 doses**\n- **Systemic corticosteroids**: oral prednisolone **1-2 mg/kg** (max ~40-60 mg) or dexamethasone **0.3-0.6 mg/kg**\n- **Ipratropium bromide** (if severe): 250 mcg nebulized, combined with salbutamol for first 3 doses\n\n**Hospitalization is recommended if:**\n- SpO2 remains **<92-94%** on room air after treatment\n- Persistent moderate-to-severe retractions or tachypnea\n- Poor or incomplete response to **3 doses of bronchodilators** within 1-2 hours\n- PRAM/clinical score remains in moderate-severe range\n- Signs of exhaustion, altered mental status, or inability to feed/drink\n\n## Specific Recommendation for This Patient\n\nGiven:\n1. **Age 3 years** (increased vulnerability)\n2. **Prior severe crisis** (documented risk factor for recurr",
+    "latency_ms": 12689.5,
+    "input_tokens": 160,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Suppose there is a 3 years old patient with asthma crisis management, history of severe asthma crisis. Is it recomended for them to be hospitalized?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Pediatric Asthma Crisis Management in a 3-Year-Old with History of Severe Exacerbations\n\nYes, this child would generally warrant **strong consideration for hospitalization or at minimum close monitoring/extended observation**, given the combination of young age and prior severe exacerbation history. Let me break down the reasoning and thresholds involved.\n\n## Risk Factors Present in This Case\n\nThis patient has **two major risk factors** that lower the threshold for hospitalization:\n- **Age under 5 years** (higher risk of rapid deterioration, respiratory fatigue, difficulty communicating symptoms)\n- **History of severe asthma crisis** (previous ICU admission, intubation, or near-fatal episode increases risk of recurrence by approximately **3-4 fold**)\n\n## Assessment Criteria Guiding the Decision\n\n### Clinical Severity Scoring\nUsing tools like the **Pediatric Respiratory Assessment Measure (PRAM)** or **Pulmonary Score**, key parameters include:\n\n- **Oxygen saturation (SpO2)**:\n  - \u226595% \u2192 Mild\n  - 91-94% \u2192 Moderate\n  - <90-91% \u2192 Severe \u2192 **strongly indicates hospitalization**\n\n- **Respiratory rate** (for age 1-5 years, normal ~20-30/min):\n  - >40 breaths/min suggests moderate-severe distress\n\n- **Heart rate**:\n  - >180 bpm (infants) or >130-140 bpm (young children) suggests severe distress\n\n- **Use of accessory muscles, nasal flaring, retractions**: presence of moderate-severe retractions warrants closer monitoring\n\n- **Air entry/wheezing**: silent chest (no air movement) is an **ominous sign** requiring immediate escalation\n\n## Response to Initial Treatment (Critical Decision Point)\n\nAfter **1 hour** of treatment with:\n- **Nebulized salbutamol/albuterol**: typically 2.5-5 mg per dose, or via MDI with spacer at **2-4 puffs (100 mcg/puff) every 20 minutes for 3 doses**\n- **Systemic corticosteroids**: oral prednisolone **1-2 mg/kg** (max ~40-60 mg) or dexamethasone **0.3-0.6 mg/kg**\n- **Ipratropium bromide** (if severe): 250 mcg nebulized, combined with salbutamol for first 3 doses\n\n**Hospitalization is recommended if:**\n- SpO2 remains **<92-94%** on room air after treatment\n- Persistent moderate-to-severe retractions or tachypnea\n- Poor or incomplete response to **3 doses of bronchodilators** within 1-2 hours\n- PRAM/clinical score remains in moderate-severe range\n- Signs of exhaustion, altered mental status, or inability to feed/drink\n\n## Specific Recommendation for This Patient\n\nGiven:\n1. **Age 3 years** (increased vulnerability)\n2. **Prior severe crisis** (documented risk factor for recurr",
+    "latency_ms": 12689.5,
+    "token_count": 1184,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "a2cbeb198b95",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240476.5260434,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 20 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4403,
+          "evidence": [
+            "Latency 12690ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12689.5,
+        "token_count": 1184,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.140; flagged=True"
+}

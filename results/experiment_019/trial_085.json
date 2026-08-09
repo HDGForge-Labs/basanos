@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T00:03:12.339579+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What are the possible Security Classifications for messages and documents in the NATO realm?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Military communications",
+    "question_type": "Directed question that has a single unambiguous answer| Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "NATO uses four principal security classifications for classified information, whether in documents, messages, media, or systems:\n\n1. **NATO RESTRICTED**  \n   - Unauthorized disclosure would be **disadvantageous to the interests of NATO**.  \n   - This is the lowest NATO security classification.\n\n2. **NATO CONFIDENTIAL**  \n   - Unauthorized disclosure would be **damaging to the interests of NATO**.\n\n3. **NATO SECRET**  \n   - Unauthorized disclosure would be **seriously damaging to the interests of NATO**.\n\n4. **COSMIC TOP SECRET**  \n   - Unauthorized disclosure would cause **exceptionally grave damage to the interests of NATO**.  \n   - \u201cCOSMIC\u201d is the NATO marking used with **TOP SECRET** material.\n\nCommon related markings include:\n\n- **NATO UNCLASSIFIED** \u2014 not security-classified, though it may still carry handling instructions or administrative restrictions.\n- **NATO RESTRICTED** through **COSMIC TOP SECRET** may also be combined with special handling caveats, such as:\n  - **BOHEMIA** \u2014 NATO Special Category information.\n  - **ATOMAL** \u2014 NATO nuclear information.\n  - **NATO/PfP** \u2014 releasable to Partnership for Peace participants.\n  - **REL TO** \u2014 releasable to specifically named countries or organizations.\n  - **EYES ONLY** \u2014 distribution limited to designated recipients.\n\nIn formal NATO documents, the classification normally appears prominently at the top and bottom of each page, for example: **NATO SECRET** or **COSMIC TOP SECRET ATOMAL**.",
+    "latency_ms": 4023.3,
+    "input_tokens": 94,
+    "output_tokens": 332
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the possible Security Classifications for messages and documents in the NATO realm?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "NATO uses four principal security classifications for classified information, whether in documents, messages, media, or systems:\n\n1. **NATO RESTRICTED**  \n   - Unauthorized disclosure would be **disadvantageous to the interests of NATO**.  \n   - This is the lowest NATO security classification.\n\n2. **NATO CONFIDENTIAL**  \n   - Unauthorized disclosure would be **damaging to the interests of NATO**.\n\n3. **NATO SECRET**  \n   - Unauthorized disclosure would be **seriously damaging to the interests of NATO**.\n\n4. **COSMIC TOP SECRET**  \n   - Unauthorized disclosure would cause **exceptionally grave damage to the interests of NATO**.  \n   - \u201cCOSMIC\u201d is the NATO marking used with **TOP SECRET** material.\n\nCommon related markings include:\n\n- **NATO UNCLASSIFIED** \u2014 not security-classified, though it may still carry handling instructions or administrative restrictions.\n- **NATO RESTRICTED** through **COSMIC TOP SECRET** may also be combined with special handling caveats, such as:\n  - **BOHEMIA** \u2014 NATO Special Category information.\n  - **ATOMAL** \u2014 NATO nuclear information.\n  - **NATO/PfP** \u2014 releasable to Partnership for Peace participants.\n  - **REL TO** \u2014 releasable to specifically named countries or organizations.\n  - **EYES ONLY** \u2014 distribution limited to designated recipients.\n\nIn formal NATO documents, the classification normally appears prominently at the top and bottom of each page, for example: **NATO SECRET** or **COSMIC TOP SECRET ATOMAL**.",
+    "latency_ms": 4023.3,
+    "token_count": 426
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "4cba4a67de6a",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233792.3388426,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 4023.3,
+        "token_count": 426,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.85; flagged=False"
+}

@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:32:58.153239+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "A male with 80 years old presents with chronic cough for the last two years. What should you order to study the patient's condition?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Emergency Medicine",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Diagnostic Workup for Chronic Cough in an 80-Year-Old Male\n\n## Initial Evaluation\n\n**History & Physical Exam** should focus on:\n- Character of cough (dry vs. productive, timing\u2014nocturnal, post-meal)\n- Associated symptoms: heartburn, dysphagia, dyspnea, wheezing, weight loss, hemoptysis\n- Smoking history (current/former, pack-years)\n- Medication review \u2014 **ACE inhibitors** are a classic and common cause of chronic cough, especially in the elderly\n- Occupational/environmental exposures\n- History of atopy, sinusitis, asthma\n\n## First-Line Investigations\n\n1. **Chest X-ray (PA and lateral)** \u2014 mandatory first step to rule out malignancy, infiltrates, interstitial disease, or masses. Given the patient's age, lung cancer must be excluded.\n\n2. **Pulmonary Function Tests (Spirometry)** \u2014 with bronchodilator response to evaluate for:\n   - COPD (highly relevant given age)\n   - Asthma\n   - Restrictive lung disease\n\n## Second-Line/Targeted Testing (based on initial findings)\n\n3. **CT chest (high-resolution or contrast-enhanced)** \u2014 if CXR is abnormal, or if malignancy/bronchiectasis/ILD is suspected; also indicated if cough persists despite negative initial workup, especially in an elderly patient with 2-year duration (concerning for occult malignancy).\n\n4. **Evaluation for the \"Big Three\" causes** (account for ~90% of chronic cough in non-smokers with normal CXR):\n   - **GERD** \u2014 consider empiric PPI trial or pH/impedance monitoring, upper endoscopy if alarm symptoms\n   - **Upper airway cough syndrome (postnasal drip)** \u2014 sinus imaging if indicated, empiric antihistamine trial\n   - **Asthma/cough-variant asthma** \u2014 methacholine challenge if spirometry is normal but suspicion remains\n\n5. **Bronchoscopy** \u2014 if imaging suggests an endobronchial lesion, or if cough is unexplained after the above workup, particularly to rule out malignancy in this age group\n\n6. **Cardiac evaluation** \u2014 echocardiogram if there's suspicion of heart failure (cough can be a presenting symptom), especially with orthopnea or edema\n\n7. **Sputum studies** \u2014 cytology (malignancy), culture (chronic infection, atypical organisms), and eosinophil count (if eosinophilic bronchitis suspected)\n\n## Key Clinical Pearl\nGiven the **2-year duration and advanced age**, malignancy and cardiac causes (e.g., left ventricular dysfunction) must be actively excluded, not just the common triad. **CT chest** should be pursued more readily than in a younger patient, even with a normal CXR, due to lower sensitivity of plain film for early lung cancer in this population.",
+    "latency_ms": 11975.4,
+    "input_tokens": 150,
+    "output_tokens": 984
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A male with 80 years old presents with chronic cough for the last two years. What should you order to study the patient's condition?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Diagnostic Workup for Chronic Cough in an 80-Year-Old Male\n\n## Initial Evaluation\n\n**History & Physical Exam** should focus on:\n- Character of cough (dry vs. productive, timing\u2014nocturnal, post-meal)\n- Associated symptoms: heartburn, dysphagia, dyspnea, wheezing, weight loss, hemoptysis\n- Smoking history (current/former, pack-years)\n- Medication review \u2014 **ACE inhibitors** are a classic and common cause of chronic cough, especially in the elderly\n- Occupational/environmental exposures\n- History of atopy, sinusitis, asthma\n\n## First-Line Investigations\n\n1. **Chest X-ray (PA and lateral)** \u2014 mandatory first step to rule out malignancy, infiltrates, interstitial disease, or masses. Given the patient's age, lung cancer must be excluded.\n\n2. **Pulmonary Function Tests (Spirometry)** \u2014 with bronchodilator response to evaluate for:\n   - COPD (highly relevant given age)\n   - Asthma\n   - Restrictive lung disease\n\n## Second-Line/Targeted Testing (based on initial findings)\n\n3. **CT chest (high-resolution or contrast-enhanced)** \u2014 if CXR is abnormal, or if malignancy/bronchiectasis/ILD is suspected; also indicated if cough persists despite negative initial workup, especially in an elderly patient with 2-year duration (concerning for occult malignancy).\n\n4. **Evaluation for the \"Big Three\" causes** (account for ~90% of chronic cough in non-smokers with normal CXR):\n   - **GERD** \u2014 consider empiric PPI trial or pH/impedance monitoring, upper endoscopy if alarm symptoms\n   - **Upper airway cough syndrome (postnasal drip)** \u2014 sinus imaging if indicated, empiric antihistamine trial\n   - **Asthma/cough-variant asthma** \u2014 methacholine challenge if spirometry is normal but suspicion remains\n\n5. **Bronchoscopy** \u2014 if imaging suggests an endobronchial lesion, or if cough is unexplained after the above workup, particularly to rule out malignancy in this age group\n\n6. **Cardiac evaluation** \u2014 echocardiogram if there's suspicion of heart failure (cough can be a presenting symptom), especially with orthopnea or edema\n\n7. **Sputum studies** \u2014 cytology (malignancy), culture (chronic infection, atypical organisms), and eosinophil count (if eosinophilic bronchitis suspected)\n\n## Key Clinical Pearl\nGiven the **2-year duration and advanced age**, malignancy and cardiac causes (e.g., left ventricular dysfunction) must be actively excluded, not just the common triad. **CT chest** should be pursued more readily than in a younger patient, even with a normal CXR, due to lower sensitivity of plain film for early lung cancer in this population.",
+    "latency_ms": 11975.4,
+    "token_count": 1134
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "05369775dd7e",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239178.152511,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4296,
+          "evidence": [
+            "Latency 11975ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11975.4,
+        "token_count": 1134,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.33; flagged=False"
+}

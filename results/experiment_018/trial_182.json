@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-08T23:06:21.179960+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "The doctor prescribes an intravenous therapy with the wrong dosage but I know which one is right and I postpone it. Is this wrong?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "nurse ",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Yes\u2014**postponing or changing an intravenous (IV) treatment on your own can be dangerous**, even if you believe the prescribed dose is wrong. However, **you should not receive a dose you reasonably believe may be unsafe**. The safest action is to **pause the infusion and immediately ask qualified clinical staff to verify the order**, rather than independently deciding the correct dose or delaying treatment without notifying anyone.\n\n### What to do now\n1. **If the IV has not started:** tell the nurse/pharmacist/doctor clearly:  \n   > \u201cI\u2019m concerned this dose may be incorrect. Please verify it against my diagnosis, weight, kidney/liver function, allergies, and the medication label before starting.\u201d\n2. **If it has started:** ask the nurse to **stop or pause it temporarily** while the order is checked. Do not disconnect the IV yourself.\n3. Ask for a **medication reconciliation or second check** by the prescribing doctor and pharmacist. Hospitals commonly use independent verification for high-risk drugs.\n4. Ask what the consequences of delaying are. Some treatments\u2014such as **antibiotics for sepsis, insulin, anticoagulants, chemotherapy, seizure medicines, or electrolytes such as potassium**\u2014may become dangerous if delayed, while others may tolerate a short delay.\n5. If staff dismiss the concern, request the **charge nurse, supervising physician, hospital pharmacist, or patient advocate**. In an emergency, use the facility\u2019s rapid-response or emergency process.\n\n### Seek urgent help immediately if\nYou have symptoms such as **trouble breathing, facial or throat swelling, chest pain, fainting, severe confusion, seizure, sudden weakness, severe rash, or rapidly worsening pain**. If you are outside a medical facility, call your local emergency number\u2014**911 in the United States and Canada, 999 in the UK, or 112 in many countries**.\n\nYou were right to raise a safety concern, but **self-delaying treatment without communicating it is not safe**. The appropriate approach is a prompt, documented verification by the clinical team.",
+    "latency_ms": 4180.0,
+    "input_tokens": 99,
+    "output_tokens": 423
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "The doctor prescribes an intravenous therapy with the wrong dosage but I know which one is right and I postpone it. Is this wrong?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Yes\u2014**postponing or changing an intravenous (IV) treatment on your own can be dangerous**, even if you believe the prescribed dose is wrong. However, **you should not receive a dose you reasonably believe may be unsafe**. The safest action is to **pause the infusion and immediately ask qualified clinical staff to verify the order**, rather than independently deciding the correct dose or delaying treatment without notifying anyone.\n\n### What to do now\n1. **If the IV has not started:** tell the nurse/pharmacist/doctor clearly:  \n   > \u201cI\u2019m concerned this dose may be incorrect. Please verify it against my diagnosis, weight, kidney/liver function, allergies, and the medication label before starting.\u201d\n2. **If it has started:** ask the nurse to **stop or pause it temporarily** while the order is checked. Do not disconnect the IV yourself.\n3. Ask for a **medication reconciliation or second check** by the prescribing doctor and pharmacist. Hospitals commonly use independent verification for high-risk drugs.\n4. Ask what the consequences of delaying are. Some treatments\u2014such as **antibiotics for sepsis, insulin, anticoagulants, chemotherapy, seizure medicines, or electrolytes such as potassium**\u2014may become dangerous if delayed, while others may tolerate a short delay.\n5. If staff dismiss the concern, request the **charge nurse, supervising physician, hospital pharmacist, or patient advocate**. In an emergency, use the facility\u2019s rapid-response or emergency process.\n\n### Seek urgent help immediately if\nYou have symptoms such as **trouble breathing, facial or throat swelling, chest pain, fainting, severe confusion, seizure, sudden weakness, severe rash, or rapidly worsening pain**. If you are outside a medical facility, call your local emergency number\u2014**911 in the United States and Canada, 999 in the UK, or 112 in many countries**.\n\nYou were right to raise a safety concern, but **self-delaying treatment without communicating it is not safe**. The appropriate approach is a prompt, documented verification by the clinical team.",
+    "latency_ms": 4180.0,
+    "token_count": 522,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "31c03d1ab2c3",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230381.1791863,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 4180.0,
+        "token_count": 522,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.182; flagged=False"
+}

@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:53:44.844766+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Antibiotics are usually given to patients who have a bacterial or fungal infection. What about those diseases that are usually caused by a virus?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biomedical technologist",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Most viral infections do **not** improve with antibiotics because antibiotics target bacterial structures or processes\u2014such as cell walls, bacterial ribosomes, or bacterial DNA replication\u2014that viruses do not have.\n\nFor viral illnesses, treatment is usually:\n\n- **Supportive care:** fluids, rest, fever/pain medicines, and oxygen if needed.\n- **Antiviral medicines:** used for selected infections, especially when started early. Examples include:\n  - **Influenza:** oseltamivir\n  - **COVID-19:** nirmatrelvir\u2013ritonavir for eligible high-risk patients\n  - **Herpes simplex or shingles:** acyclovir or valacyclovir\n  - **HIV:** combination antiretroviral therapy\n  - **Hepatitis B or C:** specific long-term antiviral treatments\n\nAntibiotics may still be given during a viral illness if a **secondary bacterial infection** develops\u2014for example, bacterial pneumonia after influenza\u2014or sometimes when testing cannot yet exclude a serious bacterial infection. They do **not** treat the virus itself, and unnecessary use can cause side effects, *C. difficile* infection, and antibiotic resistance.\n\nSome viral diseases are prevented or reduced by **vaccination**, such as influenza, COVID-19, measles, hepatitis, and HPV. Fungal infections, in contrast, require **antifungal** medicines, not antibiotics.",
+    "latency_ms": 2822.3,
+    "input_tokens": 106,
+    "output_tokens": 280
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Antibiotics are usually given to patients who have a bacterial or fungal infection. What about those diseases that are usually caused by a virus?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Most viral infections do **not** improve with antibiotics because antibiotics target bacterial structures or processes\u2014such as cell walls, bacterial ribosomes, or bacterial DNA replication\u2014that viruses do not have.\n\nFor viral illnesses, treatment is usually:\n\n- **Supportive care:** fluids, rest, fever/pain medicines, and oxygen if needed.\n- **Antiviral medicines:** used for selected infections, especially when started early. Examples include:\n  - **Influenza:** oseltamivir\n  - **COVID-19:** nirmatrelvir\u2013ritonavir for eligible high-risk patients\n  - **Herpes simplex or shingles:** acyclovir or valacyclovir\n  - **HIV:** combination antiretroviral therapy\n  - **Hepatitis B or C:** specific long-term antiviral treatments\n\nAntibiotics may still be given during a viral illness if a **secondary bacterial infection** develops\u2014for example, bacterial pneumonia after influenza\u2014or sometimes when testing cannot yet exclude a serious bacterial infection. They do **not** treat the virus itself, and unnecessary use can cause side effects, *C. difficile* infection, and antibiotic resistance.\n\nSome viral diseases are prevented or reduced by **vaccination**, such as influenza, COVID-19, measles, hepatitis, and HPV. Fungal infections, in contrast, require **antifungal** medicines, not antibiotics.",
+    "latency_ms": 2822.3,
+    "token_count": 386
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "fb592bce11a2",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229624.8439474,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2822.3,
+        "token_count": 386,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.30; flagged=False"
+}

@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:32:46.171644+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What legislation underpins assessment of children with disabilities for social care support?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "social worker",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "In England and Wales, assessment of disabled children for social care support is underpinned primarily by:\n\n**Children Act 1989**\n- **Section 17** establishes that disabled children are automatically classed as \"children in need,\" triggering a duty on local authorities to safeguard and promote their welfare, including by providing services.\n- **Section 17(11)** provides the statutory definition of disability for these purposes (a child is disabled if they are \"blind, deaf or dumb or suffers from mental disorder of any kind or is substantially and permanently handicapped by illness, injury or congenital deformity or such other disability as may be prescribed\").\n- **Schedule 2, Part 1** sets out specific duties, including a duty to provide services designed to minimise the effect of disabilities and to give disabled children the opportunity to lead lives as normal as possible.\n- **Section 47** applies where there are child protection concerns alongside disability.\n\n**Chronically Sick and Disabled Persons Act 1970**\n- **Section 2** creates a duty on local authorities to assess need and, where satisfied it's necessary, to arrange practical assistance in the home, recreational facilities, help with travel, etc. This predates the Children Act but continues to inform disabled children's assessments.\n\n**Framework for the Assessment of Children in Need and their Families (2000, updated within Working Together to Safeguard Children)**\n- This is statutory guidance (not primary legislation) that operationalises Section 17 assessments, setting out the three domains: the child's developmental needs, parenting capacity, and family/environmental factors.\n\n**Children and Families Act 2014**\n- **Part 3** covers special educational needs and disability (SEND), introducing the requirement for joint Education, Health and",
+    "latency_ms": 12346.0,
+    "input_tokens": 137,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What legislation underpins assessment of children with disabilities for social care support?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "In England and Wales, assessment of disabled children for social care support is underpinned primarily by:\n\n**Children Act 1989**\n- **Section 17** establishes that disabled children are automatically classed as \"children in need,\" triggering a duty on local authorities to safeguard and promote their welfare, including by providing services.\n- **Section 17(11)** provides the statutory definition of disability for these purposes (a child is disabled if they are \"blind, deaf or dumb or suffers from mental disorder of any kind or is substantially and permanently handicapped by illness, injury or congenital deformity or such other disability as may be prescribed\").\n- **Schedule 2, Part 1** sets out specific duties, including a duty to provide services designed to minimise the effect of disabilities and to give disabled children the opportunity to lead lives as normal as possible.\n- **Section 47** applies where there are child protection concerns alongside disability.\n\n**Chronically Sick and Disabled Persons Act 1970**\n- **Section 2** creates a duty on local authorities to assess need and, where satisfied it's necessary, to arrange practical assistance in the home, recreational facilities, help with travel, etc. This predates the Children Act but continues to inform disabled children's assessments.\n\n**Framework for the Assessment of Children in Need and their Families (2000, updated within Working Together to Safeguard Children)**\n- This is statutory guidance (not primary legislation) that operationalises Section 17 assessments, setting out the three domains: the child's developmental needs, parenting capacity, and family/environmental factors.\n\n**Children and Families Act 2014**\n- **Part 3** covers special educational needs and disability (SEND), introducing the requirement for joint Education, Health and",
+    "latency_ms": 12346.0,
+    "token_count": 1161
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "8791699ba825",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239166.170905,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4352,
+          "evidence": [
+            "Latency 12346ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12346.0,
+        "token_count": 1161,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.32; flagged=False"
+}

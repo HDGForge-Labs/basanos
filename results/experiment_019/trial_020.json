@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:54:48.313078+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "A 45 year old female shows up at a clinic complaining of increased urination, increased taste and more than usual appetite, family history shows fatigue mother was a diabetic and died of complications of diabetes. Patient presented with edema and further examination reveals tremor of fingers following flexion, what is your provisional diagnosis given the clinical picture?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biochemistry",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "The provisional diagnosis is **diabetes mellitus, most likely type 2 diabetes mellitus**, presenting with the classic triad of:\n\n- **Polyuria** (increased urination)\n- **Polydipsia** (increased thirst; \u201cincreased taste\u201d likely means thirst)\n- **Polyphagia** (increased appetite)\n\nHer age (45 years), family history of diabetes, fatigue, and edema support type 2 diabetes, possibly already with **diabetic nephropathy/protein loss** contributing to edema.\n\nThe **finger tremor on flexion** may indicate **hypoglycemia-related tremor** if she has been having fluctuating glucose levels, or it may be an independent finding such as hyperthyroidism/anxiety; however, the main working diagnosis remains **diabetes mellitus type 2**.\n\nConfirm with fasting plasma glucose, HbA1c, urine glucose/ketones, renal function tests, and urine albumin-to-creatinine ratio.",
+    "latency_ms": 2743.6,
+    "input_tokens": 144,
+    "output_tokens": 200
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A 45 year old female shows up at a clinic complaining of increased urination, increased taste and more than usual appetite, family history shows fatigue mother was a diabetic and died of complications of diabetes. Patient presented with edema and further examination reveals tremor of fingers following flexion, what is your provisional diagnosis given the clinical picture?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "The provisional diagnosis is **diabetes mellitus, most likely type 2 diabetes mellitus**, presenting with the classic triad of:\n\n- **Polyuria** (increased urination)\n- **Polydipsia** (increased thirst; \u201cincreased taste\u201d likely means thirst)\n- **Polyphagia** (increased appetite)\n\nHer age (45 years), family history of diabetes, fatigue, and edema support type 2 diabetes, possibly already with **diabetic nephropathy/protein loss** contributing to edema.\n\nThe **finger tremor on flexion** may indicate **hypoglycemia-related tremor** if she has been having fluctuating glucose levels, or it may be an independent finding such as hyperthyroidism/anxiety; however, the main working diagnosis remains **diabetes mellitus type 2**.\n\nConfirm with fasting plasma glucose, HbA1c, urine glucose/ketones, renal function tests, and urine albumin-to-creatinine ratio.",
+    "latency_ms": 2743.6,
+    "token_count": 344
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "692bd48e79e6",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233288.3122294,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2743.6,
+        "token_count": 344,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.20; flagged=False"
+}

@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:07:43.413795+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is known about DNA methylation profiles in patients with latent HIV-1 or with an active infection?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Virologist",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "DNA methylation\u2014addition of a methyl group to cytosine, usually at CpG dinucleotides\u2014is altered both in people living with HIV-1 and in the latent HIV reservoir itself. Findings differ depending on whether one is studying:\n\n1. **Host-cell methylation** in blood or tissues,\n2. **Methylation of the integrated HIV provirus**, or\n3. **Treated, suppressed infection versus untreated/active viremia**.\n\nThe field is still heterogeneous: cohorts are often small, cell populations vary, and antiretroviral therapy (ART), smoking, age, sex, co-infections, and changing immune-cell composition can strongly affect results.\n\n## 1. Host DNA methylation in active or chronic HIV-1 infection\n\n### Broad pattern: altered immune and inflammatory epigenetic regulation\nStudies of peripheral blood mononuclear cells (PBMCs), whole blood, CD4 T cells, monocytes, and natural killer cells generally find widespread differences in CpG methylation in people with HIV compared with HIV-negative controls.\n\nReported changes commonly involve genes and pathways related to:\n\n- Type I interferon and antiviral signaling\n- T-cell activation and exhaustion\n- Cytokine and chemokine signaling\n- Innate immune sensing\n- Apoptosis and cell survival\n- Cell-cycle regulation\n- Metabolism and mitochondrial function\n- Neuroinflammation and cardiovascular-risk pathways\n\nMany epigenome-wide association studies detect anywhere from **hundreds to several thousand differentially methylated CpG sites**, depending on sample type, statistical threshold, and whether cell-type proportions are adjusted for.\n\n### Interferon-response genes\nIn untreated or viremic HIV infection, methylation changes are often reported at interferon-stimulated and immune-response genes, such as:\n\n- **IFITM1/IFITM3**\n- **IFI27**\n- **IFI44/IFI44L**\n- **ISG15**\n- **MX1**\n- **OAS-family genes**\n- **STAT1**\n- **IRF-family genes**\n\nThe direction is locus-specific. Reduced methylation at regulatory regions can be associated with higher transcription of interferon-stimulated genes, consistent with chronic immune activation. However, prolonged infection can also produce more complex patterns compatible with immune dysfunction, tolerance, or exhaustion rather than a uniformly \u201cactivated\u201d profile.\n\n### T-cell exhaustion and immune-regulatory loci\nChronic antigen stimulation in HIV is associated with methylation changes in pathways related to T-cell differentiation and exhaustion, including genes such as:\n\n- **PDCD1** (encoding PD-1)\n- **CTLA4**\n- **LAG3**\n- **TIGIT**\n- **TOX**\n- **TBX21**\n- **EOMES**\n- **FOXP3**\n- **IL2RA**\n- **IFNG**\n\nFor example, demethylation of certain enhancer or promoter regions in exhausted T cells can stabilize expression of inhibitory receptors. This is conceptually similar to what is seen in chronic viral infections and cancer, although the exact HIV-associated signature depends heavily on whether investigators sort specific CD4 or CD8 T-cell subsets.\n\n### Effects of viral load and CD4 count\nMore active viremia tends to be associated with stronger methylation perturbations. In general:\n\n- **Higher plasma HIV RNA**, often above about **10\u00b3\u201310\u2074 copies/mL**, is associated with more pronounced immune activation and more detectable host epigenetic changes.\n- **Lower CD4 counts**, especially below about **200 cells/\u00b5L**, are associated with advanced immune dysfunction and may show distinct methylation patterns from individuals with preserved CD4 counts.\n- Suppressive ART, conventionally HIV RNA below about **50 copies/mL**, reduces but does not necessarily normalize these abnormalities.\n\nBecause whole blood has changing proportions of CD4 T cells, CD8 T cells, monocytes, B cells, and neutrophils during infection, apparent methylation differences can partly reflect altered cell composition. Cell-sorted studies are therefore especially informative.\n\n## 2. Methylation in people on suppressive ART\n\nEven with durable viral suppression, many people with HIV retain epigenetic signatures of prior infection, chronic inflammation, immune aging, and ART exposure.\n\n### \u201cAccelerated epigenetic aging\u201d\nSeveral studies using DNA-methylation clocks\u2014such as Horvath, Hannum, PhenoAge, or GrimAge-type measures\u2014have reported that people with HIV can show epigenetic age acceleration.\n\nTypical reported averages vary by cohort, but are often roughly:\n\n- **About 2\u20135 years** of age acceleration in many treated cohorts;\n- In some studies, **about 5\u201310 years** or more, particularly in people with substantial comorbidity, historical severe immunosuppression, smoking, hepatitis co-infection, or persistent inflammation.\n\nThis is not universal, and clock estimates are influenced by blood-cell composition and social/clinical factors. Nonetheless, HIV is frequently associated with a methylation profile resembling partially accelerated immune",
+    "latency_ms": 13390.4,
+    "input_tokens": 93,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is known about DNA methylation profiles in patients with latent HIV-1 or with an active infection?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "DNA methylation\u2014addition of a methyl group to cytosine, usually at CpG dinucleotides\u2014is altered both in people living with HIV-1 and in the latent HIV reservoir itself. Findings differ depending on whether one is studying:\n\n1. **Host-cell methylation** in blood or tissues,\n2. **Methylation of the integrated HIV provirus**, or\n3. **Treated, suppressed infection versus untreated/active viremia**.\n\nThe field is still heterogeneous: cohorts are often small, cell populations vary, and antiretroviral therapy (ART), smoking, age, sex, co-infections, and changing immune-cell composition can strongly affect results.\n\n## 1. Host DNA methylation in active or chronic HIV-1 infection\n\n### Broad pattern: altered immune and inflammatory epigenetic regulation\nStudies of peripheral blood mononuclear cells (PBMCs), whole blood, CD4 T cells, monocytes, and natural killer cells generally find widespread differences in CpG methylation in people with HIV compared with HIV-negative controls.\n\nReported changes commonly involve genes and pathways related to:\n\n- Type I interferon and antiviral signaling\n- T-cell activation and exhaustion\n- Cytokine and chemokine signaling\n- Innate immune sensing\n- Apoptosis and cell survival\n- Cell-cycle regulation\n- Metabolism and mitochondrial function\n- Neuroinflammation and cardiovascular-risk pathways\n\nMany epigenome-wide association studies detect anywhere from **hundreds to several thousand differentially methylated CpG sites**, depending on sample type, statistical threshold, and whether cell-type proportions are adjusted for.\n\n### Interferon-response genes\nIn untreated or viremic HIV infection, methylation changes are often reported at interferon-stimulated and immune-response genes, such as:\n\n- **IFITM1/IFITM3**\n- **IFI27**\n- **IFI44/IFI44L**\n- **ISG15**\n- **MX1**\n- **OAS-family genes**\n- **STAT1**\n- **IRF-family genes**\n\nThe direction is locus-specific. Reduced methylation at regulatory regions can be associated with higher transcription of interferon-stimulated genes, consistent with chronic immune activation. However, prolonged infection can also produce more complex patterns compatible with immune dysfunction, tolerance, or exhaustion rather than a uniformly \u201cactivated\u201d profile.\n\n### T-cell exhaustion and immune-regulatory loci\nChronic antigen stimulation in HIV is associated with methylation changes in pathways related to T-cell differentiation and exhaustion, including genes such as:\n\n- **PDCD1** (encoding PD-1)\n- **CTLA4**\n- **LAG3**\n- **TIGIT**\n- **TOX**\n- **TBX21**\n- **EOMES**\n- **FOXP3**\n- **IL2RA**\n- **IFNG**\n\nFor example, demethylation of certain enhancer or promoter regions in exhausted T cells can stabilize expression of inhibitory receptors. This is conceptually similar to what is seen in chronic viral infections and cancer, although the exact HIV-associated signature depends heavily on whether investigators sort specific CD4 or CD8 T-cell subsets.\n\n### Effects of viral load and CD4 count\nMore active viremia tends to be associated with stronger methylation perturbations. In general:\n\n- **Higher plasma HIV RNA**, often above about **10\u00b3\u201310\u2074 copies/mL**, is associated with more pronounced immune activation and more detectable host epigenetic changes.\n- **Lower CD4 counts**, especially below about **200 cells/\u00b5L**, are associated with advanced immune dysfunction and may show distinct methylation patterns from individuals with preserved CD4 counts.\n- Suppressive ART, conventionally HIV RNA below about **50 copies/mL**, reduces but does not necessarily normalize these abnormalities.\n\nBecause whole blood has changing proportions of CD4 T cells, CD8 T cells, monocytes, B cells, and neutrophils during infection, apparent methylation differences can partly reflect altered cell composition. Cell-sorted studies are therefore especially informative.\n\n## 2. Methylation in people on suppressive ART\n\nEven with durable viral suppression, many people with HIV retain epigenetic signatures of prior infection, chronic inflammation, immune aging, and ART exposure.\n\n### \u201cAccelerated epigenetic aging\u201d\nSeveral studies using DNA-methylation clocks\u2014such as Horvath, Hannum, PhenoAge, or GrimAge-type measures\u2014have reported that people with HIV can show epigenetic age acceleration.\n\nTypical reported averages vary by cohort, but are often roughly:\n\n- **About 2\u20135 years** of age acceleration in many treated cohorts;\n- In some studies, **about 5\u201310 years** or more, particularly in people with substantial comorbidity, historical severe immunosuppression, smoking, hepatitis co-infection, or persistent inflammation.\n\nThis is not universal, and clock estimates are influenced by blood-cell composition and social/clinical factors. Nonetheless, HIV is frequently associated with a methylation profile resembling partially accelerated immune",
+    "latency_ms": 13390.4,
+    "token_count": 1117,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "18a75b754473",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234063.4129944,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 5 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4509,
+          "evidence": [
+            "Latency 13390ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13390.4,
+        "token_count": 1117,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.115; flagged=True"
+}

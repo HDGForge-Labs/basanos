@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T00:04:43.624230+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What first-line tests would you request for the management of sarcoidosis?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Generalist physician",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "For suspected or newly diagnosed sarcoidosis, first-line testing should establish organ involvement, assess severity, and exclude important mimics/infections before immunosuppression.\n\n### Core baseline tests\n- **Full blood count (FBC)** \u2013 anaemia, leukopenia/lymphopenia, thrombocytopenia.\n- **Urea, electrolytes, creatinine/eGFR** \u2013 renal involvement and hypercalcaemia-related renal impairment.\n- **Liver function tests** \u2013 especially ALP and GGT for hepatic sarcoidosis.\n- **Corrected serum calcium** (or ionised calcium) and **phosphate**.\n- **25-hydroxy-vitamin D and 1,25-dihydroxy-vitamin D** if calcium is elevated, renal disease is present, or vitamin D replacement is being considered.\n- **Urinalysis** and, where appropriate, **urine calcium** (spot calcium:creatinine ratio or 24-hour urinary calcium).\n- **CRP/ESR** \u2013 nonspecific, but useful as baseline inflammatory markers.\n- **Serum ACE** \u2013 may support diagnosis and provide a baseline in some patients, but is neither sensitive nor specific and should not be used alone to diagnose or monitor disease.\n\n### Respiratory assessment\n- **Chest radiograph** \u2013 baseline thoracic staging and hilar/mediastinal adenopathy or parenchymal disease.\n- **Pulmonary function tests:** spirometry, lung volumes and **DLCO/TLCO**.\n- **ECG (12-lead)** \u2013 screen all patients for cardiac sarcoidosis.\n- **High-resolution CT chest** if chest radiograph is abnormal, symptoms/PFTs suggest significant pulmonary disease, or there is diagnostic uncertainty.\n\n### Diagnostic confirmation / exclusion of alternatives\n- **Tissue biopsy** from the safest accessible active site\u2014e.g. skin lesion, peripheral lymph node, endobronchial/EBUS-guided hilar or mediastinal node biopsy\u2014showing non-caseating granulomas.\n- Send relevant tissue/respiratory samples for **mycobacterial and fungal stains/culture**, especially before corticosteroids or other immunosuppression.\n- **TB testing** (IGRA \u00b1 additional testing according to epidemiology/risk) before immunosuppressive treatment.\n- Consider **HIV testing** where clinically appropriate.\n\n### Routine extrapulmonary screening\n- **Ophthalmology assessment with slit-lamp examination**, even without visual symptoms, to detect uveitis.\n- Careful history and examination for skin, neurological, joint, cardiac and upper-airway involvement.\n- If palpitations, syncope, presyncope, chest pain, unexplained dyspnoea, or abnormal ECG: **echocardiography** and urgent cardiology assessment; cardiac MRI or FDG-PET is usually second-line.\n\n### Before starting systemic treatment\nIf corticosteroids or steroid-sparing agents are likely:\n- Baseline **blood pressure, weight/BMI, glucose or HbA1c, lipids**, and osteoporosis risk assessment.\n- **DEXA scan** if prolonged oral corticosteroids are anticipated or fracture risk is elevated.\n- Hepatitis B/C screening and vaccination review before agents such as methotrexate, azathioprine or biologics.\n\nIn practice, a typical initial panel is: FBC, renal profile, LFTs, calcium, urinalysis, inflammatory markers, chest X-ray, full PFTs including DLCO, ECG, eye review, and biopsy/culture-based exclusion of infection where diagnosis is not already secure.",
+    "latency_ms": 8918.7,
+    "input_tokens": 93,
+    "output_tokens": 733
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What first-line tests would you request for the management of sarcoidosis?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "For suspected or newly diagnosed sarcoidosis, first-line testing should establish organ involvement, assess severity, and exclude important mimics/infections before immunosuppression.\n\n### Core baseline tests\n- **Full blood count (FBC)** \u2013 anaemia, leukopenia/lymphopenia, thrombocytopenia.\n- **Urea, electrolytes, creatinine/eGFR** \u2013 renal involvement and hypercalcaemia-related renal impairment.\n- **Liver function tests** \u2013 especially ALP and GGT for hepatic sarcoidosis.\n- **Corrected serum calcium** (or ionised calcium) and **phosphate**.\n- **25-hydroxy-vitamin D and 1,25-dihydroxy-vitamin D** if calcium is elevated, renal disease is present, or vitamin D replacement is being considered.\n- **Urinalysis** and, where appropriate, **urine calcium** (spot calcium:creatinine ratio or 24-hour urinary calcium).\n- **CRP/ESR** \u2013 nonspecific, but useful as baseline inflammatory markers.\n- **Serum ACE** \u2013 may support diagnosis and provide a baseline in some patients, but is neither sensitive nor specific and should not be used alone to diagnose or monitor disease.\n\n### Respiratory assessment\n- **Chest radiograph** \u2013 baseline thoracic staging and hilar/mediastinal adenopathy or parenchymal disease.\n- **Pulmonary function tests:** spirometry, lung volumes and **DLCO/TLCO**.\n- **ECG (12-lead)** \u2013 screen all patients for cardiac sarcoidosis.\n- **High-resolution CT chest** if chest radiograph is abnormal, symptoms/PFTs suggest significant pulmonary disease, or there is diagnostic uncertainty.\n\n### Diagnostic confirmation / exclusion of alternatives\n- **Tissue biopsy** from the safest accessible active site\u2014e.g. skin lesion, peripheral lymph node, endobronchial/EBUS-guided hilar or mediastinal node biopsy\u2014showing non-caseating granulomas.\n- Send relevant tissue/respiratory samples for **mycobacterial and fungal stains/culture**, especially before corticosteroids or other immunosuppression.\n- **TB testing** (IGRA \u00b1 additional testing according to epidemiology/risk) before immunosuppressive treatment.\n- Consider **HIV testing** where clinically appropriate.\n\n### Routine extrapulmonary screening\n- **Ophthalmology assessment with slit-lamp examination**, even without visual symptoms, to detect uveitis.\n- Careful history and examination for skin, neurological, joint, cardiac and upper-airway involvement.\n- If palpitations, syncope, presyncope, chest pain, unexplained dyspnoea, or abnormal ECG: **echocardiography** and urgent cardiology assessment; cardiac MRI or FDG-PET is usually second-line.\n\n### Before starting systemic treatment\nIf corticosteroids or steroid-sparing agents are likely:\n- Baseline **blood pressure, weight/BMI, glucose or HbA1c, lipids**, and osteoporosis risk assessment.\n- **DEXA scan** if prolonged oral corticosteroids are anticipated or fracture risk is elevated.\n- Hepatitis B/C screening and vaccination review before agents such as methotrexate, azathioprine or biologics.\n\nIn practice, a typical initial panel is: FBC, renal profile, LFTs, calcium, urinalysis, inflammatory markers, chest X-ray, full PFTs including DLCO, ECG, eye review, and biopsy/culture-based exclusion of infection where diagnosis is not already secure.",
+    "latency_ms": 8918.7,
+    "token_count": 826
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "363e71cb0b2f",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233883.6235058,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 8918.7,
+        "token_count": 826,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.95; flagged=False"
+}

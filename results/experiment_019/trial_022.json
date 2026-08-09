@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:55:07.551420+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "If a 90 year old male has high level of frailty, lives alone and high risk of falls, should he live home alone without a package of care? ",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Dementia ",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "No. A 90-year-old man with **high frailty and a high risk of falls should not generally be left living alone without support**. Whether he can remain at home depends on a formal assessment of his abilities and risks, but an unsupported arrangement would be unsafe in many cases.\n\nHe should have an urgent multidisciplinary assessment covering:\n\n- **Falls risk:** previous falls, balance, walking aid needs, blood pressure drops, vision, footwear, home hazards, medication effects.\n- **Ability to manage daily life:** washing, dressing, toileting, preparing meals, taking medicines, shopping, finances, and using a phone or alarm.\n- **Cognition and decision-making capacity:** memory problems, delirium, confusion, ability to understand and weigh the risks of living alone.\n- **Medical contributors:** infection, dehydration, anaemia, Parkinsonism, stroke effects, heart rhythm problems, sedating medicines, alcohol use, etc.\n- **Social supports:** family/neighbours nearby, frequency of contact, carers, and emergency response arrangements.\n\nIf he wishes to remain at home and has capacity, this should usually involve a **care package**, tailored to need\u2014for example:\n\n- Carer visits once to several times daily for personal care, meals and medication.\n- Falls alarm/telecare pendant, monitored smoke/CO alarms, and regular welfare checks.\n- Occupational therapy home assessment: grab rails, shower chair, raised toilet seat, stair rails, removal of trip hazards, improved lighting, possibly a hospital bed or downstairs living setup.\n- Physiotherapy/strength and balance programme where appropriate.\n- Medication review, especially sedatives, sleeping tablets, strong pain medicines, blood-pressure drugs and drugs causing low blood sugar.\n- Meal provision, hydration plan, community nursing if needed, and family/community support.\n\nIf his needs cannot be safely met with domiciliary care\u2014or if he cannot reliably summon help after a fall, has repeated prolonged \u201clong lies,\u201d severe cognitive impairment, or requires overnight supervision\u2014then **supported housing, extra-care accommodation, or a care home may be safer**.\n\nA high-risk older adult living alone without care should prompt referral to his GP/geriatric team and local adult social care service promptly, particularly after any recent fall or decline.",
+    "latency_ms": 7357.0,
+    "input_tokens": 112,
+    "output_tokens": 453
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "If a 90 year old male has high level of frailty, lives alone and high risk of falls, should he live home alone without a package of care? ",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "No. A 90-year-old man with **high frailty and a high risk of falls should not generally be left living alone without support**. Whether he can remain at home depends on a formal assessment of his abilities and risks, but an unsupported arrangement would be unsafe in many cases.\n\nHe should have an urgent multidisciplinary assessment covering:\n\n- **Falls risk:** previous falls, balance, walking aid needs, blood pressure drops, vision, footwear, home hazards, medication effects.\n- **Ability to manage daily life:** washing, dressing, toileting, preparing meals, taking medicines, shopping, finances, and using a phone or alarm.\n- **Cognition and decision-making capacity:** memory problems, delirium, confusion, ability to understand and weigh the risks of living alone.\n- **Medical contributors:** infection, dehydration, anaemia, Parkinsonism, stroke effects, heart rhythm problems, sedating medicines, alcohol use, etc.\n- **Social supports:** family/neighbours nearby, frequency of contact, carers, and emergency response arrangements.\n\nIf he wishes to remain at home and has capacity, this should usually involve a **care package**, tailored to need\u2014for example:\n\n- Carer visits once to several times daily for personal care, meals and medication.\n- Falls alarm/telecare pendant, monitored smoke/CO alarms, and regular welfare checks.\n- Occupational therapy home assessment: grab rails, shower chair, raised toilet seat, stair rails, removal of trip hazards, improved lighting, possibly a hospital bed or downstairs living setup.\n- Physiotherapy/strength and balance programme where appropriate.\n- Medication review, especially sedatives, sleeping tablets, strong pain medicines, blood-pressure drugs and drugs causing low blood sugar.\n- Meal provision, hydration plan, community nursing if needed, and family/community support.\n\nIf his needs cannot be safely met with domiciliary care\u2014or if he cannot reliably summon help after a fall, has repeated prolonged \u201clong lies,\u201d severe cognitive impairment, or requires overnight supervision\u2014then **supported housing, extra-care accommodation, or a care home may be safer**.\n\nA high-risk older adult living alone without care should prompt referral to his GP/geriatric team and local adult social care service promptly, particularly after any recent fall or decline.",
+    "latency_ms": 7357.0,
+    "token_count": 565
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "3bb0c1478664",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233307.5506632,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 7357.0,
+        "token_count": 565,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.22; flagged=False"
+}

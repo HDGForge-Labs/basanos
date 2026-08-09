@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T02:06:12.800768+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What are the two types of hearing loss?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Audiology",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Two Main Types of Hearing Loss\n\n## 1. Conductive Hearing Loss\n\nThis occurs when sound waves are blocked from reaching the inner ear, typically due to problems in the outer or middle ear.\n\n**Common causes include:**\n- Earwax (cerumen) buildup\n- Fluid in the middle ear (often from infections)\n- Ear infections (otitis media)\n- Perforated eardrum\n- Otosclerosis (abnormal bone growth in the middle ear)\n- Foreign objects in the ear canal\n- Malformed outer or middle ear structures\n\n**Key characteristics:**\n- Often treatable with medical or surgical intervention\n- Hearing loss severity typically ranges from approximately mild (around 25-40 decibels) to moderately severe (about 55-70 decibels)\n- Many cases are reversible, with roughly 70-80% of causes being treatable\n\n## 2. Sensorineural Hearing Loss (SNHL)\n\nThis results from damage to the inner ear (cochlea) or the auditory nerve pathways to the brain.\n\n**Common causes include:**\n- Aging (presbycusis) \u2014 affects roughly one-third of adults between ages 65-74, and nearly half of those over 75\n- Noise exposure (prolonged exposure above approximately 85 decibels can cause damage)\n- Genetic factors\n- Certain medications (ototoxic drugs)\n- Viral infections\n- Meniere's disease\n- Head trauma\n\n**Key characteristics:**\n- Usually permanent\n- Accounts for approximately 90% of all hearing loss cases in adults\n- Severity ranges widely, from mild (about 26-40 dB) to profound (greater than 90 dB)\n- Often treated with hearing aids or cochlear implants rather than cured\n\n## Mixed Hearing Loss\nIt's worth noting that some individuals experience **both types simultaneously**, known as mixed hearing loss, which involves damage in both the outer/middle ear and the inner ear or auditory nerve.",
+    "latency_ms": 7163.5,
+    "input_tokens": 122,
+    "output_tokens": 665
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the two types of hearing loss?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Two Main Types of Hearing Loss\n\n## 1. Conductive Hearing Loss\n\nThis occurs when sound waves are blocked from reaching the inner ear, typically due to problems in the outer or middle ear.\n\n**Common causes include:**\n- Earwax (cerumen) buildup\n- Fluid in the middle ear (often from infections)\n- Ear infections (otitis media)\n- Perforated eardrum\n- Otosclerosis (abnormal bone growth in the middle ear)\n- Foreign objects in the ear canal\n- Malformed outer or middle ear structures\n\n**Key characteristics:**\n- Often treatable with medical or surgical intervention\n- Hearing loss severity typically ranges from approximately mild (around 25-40 decibels) to moderately severe (about 55-70 decibels)\n- Many cases are reversible, with roughly 70-80% of causes being treatable\n\n## 2. Sensorineural Hearing Loss (SNHL)\n\nThis results from damage to the inner ear (cochlea) or the auditory nerve pathways to the brain.\n\n**Common causes include:**\n- Aging (presbycusis) \u2014 affects roughly one-third of adults between ages 65-74, and nearly half of those over 75\n- Noise exposure (prolonged exposure above approximately 85 decibels can cause damage)\n- Genetic factors\n- Certain medications (ototoxic drugs)\n- Viral infections\n- Meniere's disease\n- Head trauma\n\n**Key characteristics:**\n- Usually permanent\n- Accounts for approximately 90% of all hearing loss cases in adults\n- Severity ranges widely, from mild (about 26-40 dB) to profound (greater than 90 dB)\n- Often treated with hearing aids or cochlear implants rather than cured\n\n## Mixed Hearing Loss\nIt's worth noting that some individuals experience **both types simultaneously**, known as mixed hearing loss, which involves damage in both the outer/middle ear and the inner ear or auditory nerve.",
+    "latency_ms": 7163.5,
+    "token_count": 787,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "749e2bb1d985",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786241172.7999032,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 13 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 7163.5,
+        "token_count": 787,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.198; flagged=True"
+}

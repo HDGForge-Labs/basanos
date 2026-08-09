@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T00:01:04.080294+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "A group of patients presenting with diarrhea 6 hours after eating out in a restaurant. The patients reported eating salads and meat. What are the most likely agents causing such disease? ",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Emergency Medicine",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "The most likely cause is **preformed toxin food poisoning**, especially:\n\n- **Staphylococcus aureus** \u2014 commonly associated with foods handled after cooking, including **salads** (potato, egg, tuna, chicken salads) and sliced/processed meats. Incubation is typically **1\u20136 hours**, with abrupt nausea, vomiting, abdominal cramps, and sometimes diarrhea.\n- **Bacillus cereus** \u2014 can cause illness within **1\u20136 hours** from a preformed emetic toxin, classically with rice or starchy foods but also possible in meats and other improperly stored foods. Its diarrheal form usually has a longer incubation (about 8\u201316 hours).\n\nWith diarrhea beginning around **6 hours after a restaurant meal involving salads and meat**, **S. aureus enterotoxin** is the classic and most likely agent.",
+    "latency_ms": 3036.4,
+    "input_tokens": 114,
+    "output_tokens": 176
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A group of patients presenting with diarrhea 6 hours after eating out in a restaurant. The patients reported eating salads and meat. What are the most likely agents causing such disease? ",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "The most likely cause is **preformed toxin food poisoning**, especially:\n\n- **Staphylococcus aureus** \u2014 commonly associated with foods handled after cooking, including **salads** (potato, egg, tuna, chicken salads) and sliced/processed meats. Incubation is typically **1\u20136 hours**, with abrupt nausea, vomiting, abdominal cramps, and sometimes diarrhea.\n- **Bacillus cereus** \u2014 can cause illness within **1\u20136 hours** from a preformed emetic toxin, classically with rice or starchy foods but also possible in meats and other improperly stored foods. Its diarrheal form usually has a longer incubation (about 8\u201316 hours).\n\nWith diarrhea beginning around **6 hours after a restaurant meal involving salads and meat**, **S. aureus enterotoxin** is the classic and most likely agent.",
+    "latency_ms": 3036.4,
+    "token_count": 290
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "b9c2b6fbd317",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233664.0794823,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3036.4,
+        "token_count": 290,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.69; flagged=False"
+}

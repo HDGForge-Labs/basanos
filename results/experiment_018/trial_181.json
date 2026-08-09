@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-08T23:06:16.993225+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "A and B are the daughters of C. When C was alive she gave A a car and R250000 to start a business. B didn't receive those amenities. When C died she left an equal share of the estate to both daughters. What is the method of accounting for the gifts would be done during distribution? ",
+    "field": "Law",
+    "specific_field": "Law of succession",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "The answer depends on **the will**, the **nature of the gifts**, and the **law governing the estate**. Assuming this is a South African estate, the usual method is called **collation** or **hotchpot accounting**.\n\n## 1. First determine whether the gifts must be collated\n\nA lifetime gift to a child is not automatically deducted from that child\u2019s inheritance. It must generally be clear that the gift was intended as an **advance on the child\u2019s inheritance**.\n\nThe executor should examine:\n\n- C\u2019s will;\n- any written agreement, deed, or correspondence;\n- whether the payment was described as an **advance**, **loan**, or **donation**;\n- whether C stated that the gift should be taken into account when the estate was distributed;\n- the surrounding circumstances and the parties\u2019 intentions.\n\nIf C expressly said, for example, \u201cthis is an advance on A\u2019s inheritance,\u201d the gift will normally be brought into account. If it was an outright donation with no such condition, it may not be deducted.\n\n## 2. If collation applies: calculate the value of the gifts\n\nThe relevant amount is usually the value of the gift when it was given, unless the will or applicable law requires another valuation.\n\nThe calculation would be:\n\n- Value of car when given: **R[car value]**\n- Cash given to A: **R250,000**\n- Total lifetime benefit to A: **R[car value] + R250,000**\n\nThe car should be valued using evidence such as:\n\n- the purchase invoice;\n- an independent valuation;\n- its fair market value on the date of transfer;\n- evidence of whether C paid registration, insurance, or other costs.\n\nFor example, if the car was worth **R300,000** when given:\n\n- Car: **R300,000**\n- Cash: **R250,000**\n- Total to be brought into account: **R550,000**\n\n## 3. Add the lifetime gift to the net estate\n\nSuppose the net estate available for distribution is **R1,450,000**, and the car was worth **R300,000** when donated.\n\nThe notional estate for equalisation would be:\n\n- Net estate: **R1,450,000**\n- A\u2019s prior benefit: **R550,000**\n- Notional total: **R2,000,000**\n\nAn equal share for each daughter would be:\n\n- **R2,000,000 \u00f7 2 = R1,000,000**\n\nA has already received **R550,000**, so A would receive from the deceased estate:\n\n- **R1,000,000 \u2212 R550,000 = R450,000**\n\nB, having received no advancement, would receive:\n\n- **R1,000,000**\n\nThe final economic position would therefore be:\n\n- A: **R550,000 previously received + R450,000 from the estate = R1,000,000**\n- B: **R1,000,000 from the estate = R1,000,000**\n\n## 4. Important distinction: usually a credit, not a repayment\n\nIn the ordinary case, A does not necessarily have to return the car or pay R550,000 into the estate. The amount is usually treated as a **credit against A\u2019s inheritance**.\n\nIf A\u2019s prior benefit is greater than her calculated share, the result can depend on the will and the applicable law. For example:\n\n- Net estate: **R500,000**\n- A\u2019s prior benefit: **R550,000**\n- Notional estate: **R1,050,000**\n- Each daughter\u2019s notional share: **R525,000**\n\nA may receive nothing further. Whether A must repay the excess **R25,000** would depend on the wording of the gift, the will, and applicable law. A child is often not required to repay an excess unless the relevant legal arrangement or testamentary instructions require it.\n\n## 5. If the gifts were not intended as advances\n\nIf C intended the car and R250,000 as completed donations during her lifetime, and there is no evidence that they were advances on inheritance, then the estate may be divided equally without adjustment:\n\n- A receives **50%** of the net estate;\n- B receives **50%** of the net estate;\n- A keeps the car and R250,000.\n\nFor example, if the net estate is **R1,450,000**:\n\n- A receives **R725,000** from the estate, in addition to the earlier gifts;\n- B receives **R725,000**.\n\n## 6. Practical estate-account wording\n\nThe liquidation and distribution account could show something similar to:\n\n> \u201cIn accordance with the deceased\u2019s instructions and the principle of collation, the value of the motor vehicle donated to A during the deceased\u2019s lifetime, assessed at R[amount], together with the cash advancement of R250,000, is brought into account",
+    "latency_ms": 6695.8,
+    "input_tokens": 136,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A and B are the daughters of C. When C was alive she gave A a car and R250000 to start a business. B didn't receive those amenities. When C died she left an equal share of the estate to both daughters. What is the method of accounting for the gifts would be done during distribution? ",
+      "field": "Law"
+    },
+    "response": "The answer depends on **the will**, the **nature of the gifts**, and the **law governing the estate**. Assuming this is a South African estate, the usual method is called **collation** or **hotchpot accounting**.\n\n## 1. First determine whether the gifts must be collated\n\nA lifetime gift to a child is not automatically deducted from that child\u2019s inheritance. It must generally be clear that the gift was intended as an **advance on the child\u2019s inheritance**.\n\nThe executor should examine:\n\n- C\u2019s will;\n- any written agreement, deed, or correspondence;\n- whether the payment was described as an **advance**, **loan**, or **donation**;\n- whether C stated that the gift should be taken into account when the estate was distributed;\n- the surrounding circumstances and the parties\u2019 intentions.\n\nIf C expressly said, for example, \u201cthis is an advance on A\u2019s inheritance,\u201d the gift will normally be brought into account. If it was an outright donation with no such condition, it may not be deducted.\n\n## 2. If collation applies: calculate the value of the gifts\n\nThe relevant amount is usually the value of the gift when it was given, unless the will or applicable law requires another valuation.\n\nThe calculation would be:\n\n- Value of car when given: **R[car value]**\n- Cash given to A: **R250,000**\n- Total lifetime benefit to A: **R[car value] + R250,000**\n\nThe car should be valued using evidence such as:\n\n- the purchase invoice;\n- an independent valuation;\n- its fair market value on the date of transfer;\n- evidence of whether C paid registration, insurance, or other costs.\n\nFor example, if the car was worth **R300,000** when given:\n\n- Car: **R300,000**\n- Cash: **R250,000**\n- Total to be brought into account: **R550,000**\n\n## 3. Add the lifetime gift to the net estate\n\nSuppose the net estate available for distribution is **R1,450,000**, and the car was worth **R300,000** when donated.\n\nThe notional estate for equalisation would be:\n\n- Net estate: **R1,450,000**\n- A\u2019s prior benefit: **R550,000**\n- Notional total: **R2,000,000**\n\nAn equal share for each daughter would be:\n\n- **R2,000,000 \u00f7 2 = R1,000,000**\n\nA has already received **R550,000**, so A would receive from the deceased estate:\n\n- **R1,000,000 \u2212 R550,000 = R450,000**\n\nB, having received no advancement, would receive:\n\n- **R1,000,000**\n\nThe final economic position would therefore be:\n\n- A: **R550,000 previously received + R450,000 from the estate = R1,000,000**\n- B: **R1,000,000 from the estate = R1,000,000**\n\n## 4. Important distinction: usually a credit, not a repayment\n\nIn the ordinary case, A does not necessarily have to return the car or pay R550,000 into the estate. The amount is usually treated as a **credit against A\u2019s inheritance**.\n\nIf A\u2019s prior benefit is greater than her calculated share, the result can depend on the will and the applicable law. For example:\n\n- Net estate: **R500,000**\n- A\u2019s prior benefit: **R550,000**\n- Notional estate: **R1,050,000**\n- Each daughter\u2019s notional share: **R525,000**\n\nA may receive nothing further. Whether A must repay the excess **R25,000** would depend on the wording of the gift, the will, and applicable law. A child is often not required to repay an excess unless the relevant legal arrangement or testamentary instructions require it.\n\n## 5. If the gifts were not intended as advances\n\nIf C intended the car and R250,000 as completed donations during her lifetime, and there is no evidence that they were advances on inheritance, then the estate may be divided equally without adjustment:\n\n- A receives **50%** of the net estate;\n- B receives **50%** of the net estate;\n- A keeps the car and R250,000.\n\nFor example, if the net estate is **R1,450,000**:\n\n- A receives **R725,000** from the estate, in addition to the earlier gifts;\n- B receives **R725,000**.\n\n## 6. Practical estate-account wording\n\nThe liquidation and distribution account could show something similar to:\n\n> \u201cIn accordance with the deceased\u2019s instructions and the principle of collation, the value of the motor vehicle donated to A during the deceased\u2019s lifetime, assessed at R[amount], together with the cash advancement of R250,000, is brought into account",
+    "latency_ms": 6695.8,
+    "token_count": 1160,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "5143386084ba",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230376.9924662,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 6695.8,
+        "token_count": 1160,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.181; flagged=False"
+}

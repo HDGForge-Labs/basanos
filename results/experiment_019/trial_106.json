@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:06:21.711675+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What are the possible causes of a 7 days old newborn with yellowish color, seizures and altered mental status?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General Physician",
+    "question_type": "Open-ended question that is potentially ambiguous| Summarization of information on a topic| Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "A 7-day-old newborn with **yellow discoloration (jaundice), seizures, and altered mental status** is a **medical emergency**. This combination can indicate severe hyperbilirubinemia with risk of **acute bilirubin encephalopathy/kernicterus**, but other life-threatening disorders can coexist or mimic it. Immediate hospital/NICU assessment is needed.\n\nImportant possible causes include:\n\n## 1. Severe unconjugated hyperbilirubinemia causing acute bilirubin encephalopathy\nThis is a major concern when jaundice is accompanied by poor feeding, lethargy, abnormal tone, high-pitched cry, arching of the neck/back (opisthotonus), apnea, or seizures.\n\nPossible reasons bilirubin becomes dangerously high include:\n\n- **Hemolytic disease of the newborn**\n  - ABO incompatibility, commonly mother blood group O and baby A or B.\n  - Rh incompatibility, especially if maternal anti-D antibodies are present.\n  - Other red-cell antibodies (Kell, Duffy, etc.).\n  - Often associated with anemia, reticulocytosis, positive direct antiglobulin/Coombs test, and jaundice beginning in the first 24 hours.\n\n- **Glucose-6-phosphate dehydrogenase (G6PD) deficiency**\n  - Can cause abrupt hemolysis and rapidly rising bilirubin, sometimes after exposure to oxidative triggers.\n  - More common in some African, Mediterranean, Middle Eastern, South Asian, and Southeast Asian populations.\n\n- **Hereditary red-cell disorders**\n  - Hereditary spherocytosis, pyruvate kinase deficiency, thalassemia/hemoglobin disorders, and other hemolytic anemias.\n\n- **Excess red-cell breakdown from bruising or bleeding**\n  - Cephalohematoma, extensive bruising after difficult delivery, internal bleeding, or polycythemia.\n  - Polycythemia is often defined as venous hematocrit \u226565%.\n\n- **Prematurity or low birth weight**\n  - Preterm babies have less mature bilirubin processing and lower tolerance for bilirubin toxicity.\n\n- **Poor feeding / dehydration / \u201cbreastfeeding jaundice\u201d**\n  - Inadequate milk intake during the first week can reduce stooling and bilirubin elimination.\n  - Weight loss exceeding about 7%\u201310% of birth weight, few wet diapers, or scant stools raises concern.\n\n- **Breast milk jaundice**\n  - Usually emerges after about day 3\u20137 and may persist for weeks, but it generally does **not** cause seizures unless bilirubin becomes extremely high or another illness is present.\n\n- **Hypothyroidism**\n  - Can cause prolonged jaundice, poor feeding, lethargy, constipation, hypotonia, and sometimes hypothermia.\n\n- **Genetic/conjugation disorders**\n  - Crigler\u2013Najjar syndrome, Gilbert syndrome, and other disorders of bilirubin conjugation. Crigler\u2013Najjar type I can produce very high unconjugated bilirubin and kernicterus risk.\n\n## 2. Neonatal sepsis, meningitis, or encephalitis\nAt 7 days, bacterial infection is a critical alternative or coexisting diagnosis. It can cause jaundice, poor feeding, lethargy, temperature instability, apnea, seizures, and altered consciousness.\n\nPotential pathogens include:\n\n- **Group B Streptococcus**\n- **Escherichia coli**\n- **Listeria monocytogenes**\n- Other gram-negative bacteria\n- **Herpes simplex virus (HSV)**, especially if seizures, liver dysfunction, skin vesicles, or severe illness are present\n\nSepsis may cause jaundice through hemolysis, liver dysfunction, poor feeding/dehydration, or cholestasis. A newborn can be septic without fever; hypothermia or normal temperature is common.\n\n## 3. Hypoglycemia\nLow blood glucose can cause jitteriness, poor feeding, limpness, apnea, cyanosis, altered consciousness, and seizures.\n\nRisk factors include:\n\n- Infant of a mother with diabetes\n- Prematurity, growth restriction, or large-for-gestational-age infant\n- Sepsis\n- Poor feeding or prolonged fasting\n- Endocrine or metabolic disease\n\nIn symptomatic newborns, a blood glucose below about **45 mg/dL (2.5 mmol/L)** is commonly treated urgently, though exact protocols vary.\n\n## 4. Electrolyte or metabolic disturbances\nSeveral biochemical abnormalities can cause neonatal seizures and encephalopathy:\n\n- **Hypocalcemia**: often total calcium below about **7 mg/dL (1.75 mmol/L)** in term infants, depending on laboratory reference ranges.\n- **Hypernatremic dehydration**, usually from inadequate milk intake; sodium may be >**150 mmol/L**, with severe cases >**160 mmol/L**.\n- **Hyponatremia**, often sodium <**125\u2013130 mmol/L**.\n- **Hypomagnesemia**\n- Severe acidosis or renal failure",
+    "latency_ms": 12277.0,
+    "input_tokens": 95,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the possible causes of a 7 days old newborn with yellowish color, seizures and altered mental status?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "A 7-day-old newborn with **yellow discoloration (jaundice), seizures, and altered mental status** is a **medical emergency**. This combination can indicate severe hyperbilirubinemia with risk of **acute bilirubin encephalopathy/kernicterus**, but other life-threatening disorders can coexist or mimic it. Immediate hospital/NICU assessment is needed.\n\nImportant possible causes include:\n\n## 1. Severe unconjugated hyperbilirubinemia causing acute bilirubin encephalopathy\nThis is a major concern when jaundice is accompanied by poor feeding, lethargy, abnormal tone, high-pitched cry, arching of the neck/back (opisthotonus), apnea, or seizures.\n\nPossible reasons bilirubin becomes dangerously high include:\n\n- **Hemolytic disease of the newborn**\n  - ABO incompatibility, commonly mother blood group O and baby A or B.\n  - Rh incompatibility, especially if maternal anti-D antibodies are present.\n  - Other red-cell antibodies (Kell, Duffy, etc.).\n  - Often associated with anemia, reticulocytosis, positive direct antiglobulin/Coombs test, and jaundice beginning in the first 24 hours.\n\n- **Glucose-6-phosphate dehydrogenase (G6PD) deficiency**\n  - Can cause abrupt hemolysis and rapidly rising bilirubin, sometimes after exposure to oxidative triggers.\n  - More common in some African, Mediterranean, Middle Eastern, South Asian, and Southeast Asian populations.\n\n- **Hereditary red-cell disorders**\n  - Hereditary spherocytosis, pyruvate kinase deficiency, thalassemia/hemoglobin disorders, and other hemolytic anemias.\n\n- **Excess red-cell breakdown from bruising or bleeding**\n  - Cephalohematoma, extensive bruising after difficult delivery, internal bleeding, or polycythemia.\n  - Polycythemia is often defined as venous hematocrit \u226565%.\n\n- **Prematurity or low birth weight**\n  - Preterm babies have less mature bilirubin processing and lower tolerance for bilirubin toxicity.\n\n- **Poor feeding / dehydration / \u201cbreastfeeding jaundice\u201d**\n  - Inadequate milk intake during the first week can reduce stooling and bilirubin elimination.\n  - Weight loss exceeding about 7%\u201310% of birth weight, few wet diapers, or scant stools raises concern.\n\n- **Breast milk jaundice**\n  - Usually emerges after about day 3\u20137 and may persist for weeks, but it generally does **not** cause seizures unless bilirubin becomes extremely high or another illness is present.\n\n- **Hypothyroidism**\n  - Can cause prolonged jaundice, poor feeding, lethargy, constipation, hypotonia, and sometimes hypothermia.\n\n- **Genetic/conjugation disorders**\n  - Crigler\u2013Najjar syndrome, Gilbert syndrome, and other disorders of bilirubin conjugation. Crigler\u2013Najjar type I can produce very high unconjugated bilirubin and kernicterus risk.\n\n## 2. Neonatal sepsis, meningitis, or encephalitis\nAt 7 days, bacterial infection is a critical alternative or coexisting diagnosis. It can cause jaundice, poor feeding, lethargy, temperature instability, apnea, seizures, and altered consciousness.\n\nPotential pathogens include:\n\n- **Group B Streptococcus**\n- **Escherichia coli**\n- **Listeria monocytogenes**\n- Other gram-negative bacteria\n- **Herpes simplex virus (HSV)**, especially if seizures, liver dysfunction, skin vesicles, or severe illness are present\n\nSepsis may cause jaundice through hemolysis, liver dysfunction, poor feeding/dehydration, or cholestasis. A newborn can be septic without fever; hypothermia or normal temperature is common.\n\n## 3. Hypoglycemia\nLow blood glucose can cause jitteriness, poor feeding, limpness, apnea, cyanosis, altered consciousness, and seizures.\n\nRisk factors include:\n\n- Infant of a mother with diabetes\n- Prematurity, growth restriction, or large-for-gestational-age infant\n- Sepsis\n- Poor feeding or prolonged fasting\n- Endocrine or metabolic disease\n\nIn symptomatic newborns, a blood glucose below about **45 mg/dL (2.5 mmol/L)** is commonly treated urgently, though exact protocols vary.\n\n## 4. Electrolyte or metabolic disturbances\nSeveral biochemical abnormalities can cause neonatal seizures and encephalopathy:\n\n- **Hypocalcemia**: often total calcium below about **7 mg/dL (1.75 mmol/L)** in term infants, depending on laboratory reference ranges.\n- **Hypernatremic dehydration**, usually from inadequate milk intake; sodium may be >**150 mmol/L**, with severe cases >**160 mmol/L**.\n- **Hyponatremia**, often sodium <**125\u2013130 mmol/L**.\n- **Hypomagnesemia**\n- Severe acidosis or renal failure",
+    "latency_ms": 12277.0,
+    "token_count": 1119,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "6d88b88dde5c",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786233981.7108696,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 12 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4342,
+          "evidence": [
+            "Latency 12277ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12277.0,
+        "token_count": 1119,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.106; flagged=True"
+}

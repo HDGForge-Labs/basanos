@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T01:43:51.384494+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "How many cards of fingerprints can I take in one shift?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Forensic department ",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "The answer depends entirely on the context you're working in, but here's concrete guidance based on typical practice:\n\n**Ten-print card fingerprinting (booking/applicant processing):**\nAn experienced examiner or technician doing standard ten-print cards (rolled or livescan) can typically process **30-60 subjects per 8-hour shift**, depending on:\n- Whether you're doing manual ink rolling vs. livescan capture\n- Cooperation level of subjects (arrestees vs. applicants differ significantly)\n- Whether you're also doing photographs, property intake, etc. simultaneously\n- Quality control requirements (redoing smudged or incomplete prints)\n\nLivescan systems significantly speed this up\u2014experienced operators can push 60-80 cards/shift if it's dedicated fingerprinting with no other booking duties, since capture takes 2-5 minutes per subject versus 8-10 minutes for manual ink cards.\n\n**Latent print processing (crime scene/lab work):**\nThis is a completely different metric\u2014you're not counting \"cards per shift\" but rather scenes processed or items examined. A crime scene tech might process one complex scene, or process 10-20 individual items for latent prints in a shift, depending on complexity.\n\n**If this is a specific job/training requirement:**\nMany agencies set quotas\u2014for example, some corrections/booking facilities require **20-30 cards minimum** per shift as a performance standard, while high-volume facilities (large county jails) may expect 50+.\n\nIf you can tell me your specific context (booking facility, applicant processing site, crime lab, training exam, or a specific agency's SOP you're trying to meet), I can give you a more precise number.",
+    "latency_ms": 8545.8,
+    "input_tokens": 133,
+    "output_tokens": 545
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How many cards of fingerprints can I take in one shift?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "The answer depends entirely on the context you're working in, but here's concrete guidance based on typical practice:\n\n**Ten-print card fingerprinting (booking/applicant processing):**\nAn experienced examiner or technician doing standard ten-print cards (rolled or livescan) can typically process **30-60 subjects per 8-hour shift**, depending on:\n- Whether you're doing manual ink rolling vs. livescan capture\n- Cooperation level of subjects (arrestees vs. applicants differ significantly)\n- Whether you're also doing photographs, property intake, etc. simultaneously\n- Quality control requirements (redoing smudged or incomplete prints)\n\nLivescan systems significantly speed this up\u2014experienced operators can push 60-80 cards/shift if it's dedicated fingerprinting with no other booking duties, since capture takes 2-5 minutes per subject versus 8-10 minutes for manual ink cards.\n\n**Latent print processing (crime scene/lab work):**\nThis is a completely different metric\u2014you're not counting \"cards per shift\" but rather scenes processed or items examined. A crime scene tech might process one complex scene, or process 10-20 individual items for latent prints in a shift, depending on complexity.\n\n**If this is a specific job/training requirement:**\nMany agencies set quotas\u2014for example, some corrections/booking facilities require **20-30 cards minimum** per shift as a performance standard, while high-volume facilities (large county jails) may expect 50+.\n\nIf you can tell me your specific context (booking facility, applicant processing site, crime lab, training exam, or a specific agency's SOP you're trying to meet), I can give you a more precise number.",
+    "latency_ms": 8545.8,
+    "token_count": 678
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "181b3db212b4",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786239831.3837545,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 8545.8,
+        "token_count": 678,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.88; flagged=False"
+}

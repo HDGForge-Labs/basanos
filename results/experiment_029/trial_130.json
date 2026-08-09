@@ -1,0 +1,75 @@
+{
+  "timestamp_utc": "2026-08-09T22:34:32.086830+00:00",
+  "detector": "context_degradation",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "what culture region is germany a part of",
+    "gold_index": 9
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "Based on the provided documents, Germany's culture is shaped by the broader **German-speaking world**, from which its national identity and traditions have developed. Historically, Germany has been called \"Das Land der Dichter und Denker\" (the country of poets and thinkers), reflecting its significant intellectual and cultural influence within European culture, both religious and secular (Document [1], [5]).\n\nWithin Germany it",
+    "latency_ms": 3681.8,
+    "input_tokens": 2204,
+    "output_tokens": 128
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "what culture region is germany a part of",
+      "gold_index": 9,
+      "n_docs": 10
+    },
+    "response": "Based on the provided documents, Germany's culture is shaped by the broader **German-speaking world**, from which its national identity and traditions have developed. Historically, Germany has been called \"Das Land der Dichter und Denker\" (the country of poets and thinkers), reflecting its significant intellectual and cultural influence within European culture, both religious and secular (Document [1], [5]).\n\nWithin Germany it",
+    "latency_ms": 3681.8,
+    "token_count": 2332,
+    "context_window_used": 0.92
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "df6f14ad90cb",
+      "tool_name": "context_qa",
+      "status": "warn",
+      "timestamp": 1786314872.085979,
+      "failures": [
+        {
+          "failure_mode": "context_degradation",
+          "confidence": 0.4,
+          "evidence": [
+            "Context window at 92.0% capacity"
+          ],
+          "remediation": [
+            "Implement context summarization before next tool call",
+            "Inject critical context markers at regular intervals",
+            "Use sliding window context management",
+            "Consider splitting task into smaller context-bounded subtasks"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 3681.8,
+        "token_count": 2332,
+        "context_window_used": 0.92,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Implement context summarization before next tool call",
+        "Inject critical context markers at regular intervals",
+        "Use sliding window context management",
+        "Consider splitting task into smaller context-bounded subtasks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.130; flagged=True; gold_index=9"
+}

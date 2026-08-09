@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T22:27:26.571525+00:00",
+  "detector": "context_degradation",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "what was the religion in persia before islam",
+    "gold_index": 0
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "Before Islam, the dominant religion in Persia was **Zoroastrianism**, which served as the official state religion from around 600 BCE to 650 CE, spanning the Median, Achaemenid, Parthian, and Sasanian eras. Founded by the prophet Zoroaster (Zarathustra), it was one of the world's first monotheistic religions, centered on the worship of Ahura",
+    "latency_ms": 3712.4,
+    "input_tokens": 2344,
+    "output_tokens": 128
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "what was the religion in persia before islam",
+      "gold_index": 0,
+      "n_docs": 10
+    },
+    "response": "Before Islam, the dominant religion in Persia was **Zoroastrianism**, which served as the official state religion from around 600 BCE to 650 CE, spanning the Median, Achaemenid, Parthian, and Sasanian eras. Founded by the prophet Zoroaster (Zarathustra), it was one of the world's first monotheistic religions, centered on the worship of Ahura",
+    "latency_ms": 3712.4,
+    "token_count": 2472,
+    "context_window_used": 0.25
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "b27fd1d9fef5",
+      "tool_name": "context_qa",
+      "status": "pass",
+      "timestamp": 1786314446.5705657,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3712.4,
+        "token_count": 2472,
+        "context_window_used": 0.25,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.1; flagged=False; gold_index=0"
+}

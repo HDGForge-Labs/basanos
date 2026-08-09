@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T22:08:36.009091+00:00",
+  "detector": "context_degradation",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "who is the most played artist on spotify",
+    "gold_index": 0
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Drake was Spotify\u2019s most streamed artist, including for the second consecutive year in 2016.",
+    "latency_ms": 928.7,
+    "input_tokens": 1419,
+    "output_tokens": 23
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "who is the most played artist on spotify",
+      "gold_index": 0,
+      "n_docs": 10
+    },
+    "response": "Drake was Spotify's most streamed artist, including for the second consecutive year in 2016.",
+    "latency_ms": 928.7,
+    "token_count": 1442,
+    "context_window_used": 0.25
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "94167f784059",
+      "tool_name": "context_qa",
+      "status": "pass",
+      "timestamp": 1786313316.0083718,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 928.7,
+        "token_count": 1442,
+        "context_window_used": 0.25,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.87; flagged=False; gold_index=0"
+}

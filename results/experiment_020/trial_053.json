@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:36:51.894733+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "There is a spillage in my laboratory, and I just walked in to meet it. I don't know the chemical that was spilled, please direct me on the safest and important actions to take.",
+    "field": "Healthcare / Medicine",
+    "specific_field": "biomedical science",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Immediate Actions for an Unknown Chemical Spill\n\n## First 30 Seconds \u2014 Do NOT Approach\n\n1. **Stop and assess from the doorway.** Do not walk into the room or approach the spill.\n2. **Check for people in distress** \u2014 if someone is down or injured near the spill, this becomes a rescue situation requiring emergency responders, not a solo action on your part (entering could make you a second casualty).\n3. **Look for clues without entering:**\n   - Is there a visible container, label, or chemical bottle nearby?\n   - Any odor (from the doorway only), vapor cloud, smoke, or unusual color?\n   - Any hissing, fire, or reaction happening (bubbling, foaming)?\n\n## Evacuate and Alert\n\n4. **Evacuate the immediate area** \u2014 get yourself and anyone else out of the room.\n5. **Close the door** behind you if possible to contain vapors, without locking anyone in.\n6. **Alert others in the lab/building** \u2014 verbally and via alarm if available.\n7. **Call for help:**\n   - Your institution's **EHS (Environmental Health & Safety) office** or lab safety officer\n   - **Emergency services (fire department/hazmat)** if the spill is large, the substance is unknown and there are signs of toxicity/reactivity, or anyone is symptomatic\n   - Many campuses/institutions have a dedicated spill hotline \u2014 call it\n\n## While Waiting for Help\n\n8. **Do not attempt cleanup yourself** \u2014 unknown chemicals could be:\n   - Toxic by inhalation or skin contact\n   - Corrosive\n   - Flammable\n   - Reactive with water or air\n9. **Turn off ignition sources** if safely accessible from outside the room (e.g., a switch by the door) \u2014 but don't re-enter to do this.\n10. **Ventilation:** Don't run in to open windows, but if a fume hood was already running, let it continue.\n11. **Note symptoms** \u2014 if you or anyone nearby develops eye/throat irritation, coughing, dizziness, or headache, move further away and mention this to responders immediately.\n12. **Gather information for responders** without re-entering:\n    - What was likely being used in that lab recently (check with colleagues/lab notebook if accessible outside the room)\n    - Any Safety Data Sheets (SDS) for chemicals stored/used in that lab \u2014 pull these from your files or binder if you can do so without approaching the spill\n\n## What NOT to Do\n\n- Don't try to identify the chemical by smell (leaning in) or touch\n- Don't use paper towels, absorbents, or a mop without knowing what you're dealing with\n- Don't assume it's \"probably fine\" because the room looks calm\n- Don't pour anything on it (water can react violently with some chemicals, e.g., alkali metals, certain acids)\n\n## Key Principle\n\n**Unknown spill = hazmat-level uncertainty.** Treat it as though it could be worst-case (toxic, corrosive, or reactive) until trained personnel with proper PPE and identification tools (pH paper, chemical databases, air monitoring) tell you otherwise",
+    "latency_ms": 15602.5,
+    "input_tokens": 168,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "There is a spillage in my laboratory, and I just walked in to meet it. I don't know the chemical that was spilled, please direct me on the safest and important actions to take.",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Immediate Actions for an Unknown Chemical Spill\n\n## First 30 Seconds \u2014 Do NOT Approach\n\n1. **Stop and assess from the doorway.** Do not walk into the room or approach the spill.\n2. **Check for people in distress** \u2014 if someone is down or injured near the spill, this becomes a rescue situation requiring emergency responders, not a solo action on your part (entering could make you a second casualty).\n3. **Look for clues without entering:**\n   - Is there a visible container, label, or chemical bottle nearby?\n   - Any odor (from the doorway only), vapor cloud, smoke, or unusual color?\n   - Any hissing, fire, or reaction happening (bubbling, foaming)?\n\n## Evacuate and Alert\n\n4. **Evacuate the immediate area** \u2014 get yourself and anyone else out of the room.\n5. **Close the door** behind you if possible to contain vapors, without locking anyone in.\n6. **Alert others in the lab/building** \u2014 verbally and via alarm if available.\n7. **Call for help:**\n   - Your institution's **EHS (Environmental Health & Safety) office** or lab safety officer\n   - **Emergency services (fire department/hazmat)** if the spill is large, the substance is unknown and there are signs of toxicity/reactivity, or anyone is symptomatic\n   - Many campuses/institutions have a dedicated spill hotline \u2014 call it\n\n## While Waiting for Help\n\n8. **Do not attempt cleanup yourself** \u2014 unknown chemicals could be:\n   - Toxic by inhalation or skin contact\n   - Corrosive\n   - Flammable\n   - Reactive with water or air\n9. **Turn off ignition sources** if safely accessible from outside the room (e.g., a switch by the door) \u2014 but don't re-enter to do this.\n10. **Ventilation:** Don't run in to open windows, but if a fume hood was already running, let it continue.\n11. **Note symptoms** \u2014 if you or anyone nearby develops eye/throat irritation, coughing, dizziness, or headache, move further away and mention this to responders immediately.\n12. **Gather information for responders** without re-entering:\n    - What was likely being used in that lab recently (check with colleagues/lab notebook if accessible outside the room)\n    - Any Safety Data Sheets (SDS) for chemicals stored/used in that lab \u2014 pull these from your files or binder if you can do so without approaching the spill\n\n## What NOT to Do\n\n- Don't try to identify the chemical by smell (leaning in) or touch\n- Don't use paper towels, absorbents, or a mop without knowing what you're dealing with\n- Don't assume it's \"probably fine\" because the room looks calm\n- Don't pour anything on it (water can react violently with some chemicals, e.g., alkali metals, certain acids)\n\n## Key Principle\n\n**Unknown spill = hazmat-level uncertainty.** Treat it as though it could be worst-case (toxic, corrosive, or reactive) until trained personnel with proper PPE and identification tools (pH paper, chemical databases, air monitoring) tell you otherwise",
+    "latency_ms": 15602.5,
+    "token_count": 1192
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "f2a7f6f9c099",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239411.8939235,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.484,
+          "evidence": [
+            "Latency 15602ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 15602.5,
+        "token_count": 1192,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.53; flagged=False"
+}

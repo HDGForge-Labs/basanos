@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:56:07.292976+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Antibiotics are usually given to patients who have a bacterial or fungal infection. What about those diseases that are usually caused by a virus?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biomedical technologist",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Diseases caused by viruses are not treated with antibiotics, because antibiotics target bacterial structures and processes\u2014such as cell walls, bacterial ribosomes, or bacterial DNA replication\u2014that viruses do not have.\n\nManagement depends on the virus and severity:\n\n- **Many viral infections:** Supportive care only\u2014rest, fluids, fever/pain control (for example acetaminophen or ibuprofen when appropriate), and treatment of symptoms. Examples include most colds, uncomplicated influenza-like illnesses, and many cases of viral gastroenteritis.\n- **Specific antiviral drugs:** Used for certain viruses, especially when started early or in higher-risk patients. Examples:\n  - **Influenza:** oseltamivir, zanamivir, baloxavir\n  - **COVID-19:** nirmatrelvir/ritonavir (Paxlovid), remdesivir in appropriate patients\n  - **Herpes viruses:** acyclovir, valacyclovir, famciclovir\n  - **HIV:** combination antiretroviral therapy\n  - **Hepatitis B/C:** antiviral medicines that suppress hepatitis B or can cure hepatitis C\n- **Vaccination:** Prevents many viral diseases or reduces their severity, such as influenza, COVID-19, measles, polio, hepatitis B, HPV, and shingles.\n- **Immune-based treatments:** In selected cases, monoclonal antibodies, immunoglobulin, or other therapies may be used.\n\nAntibiotics may still be prescribed if a person with a viral infection develops a **secondary bacterial infection**, such as bacterial pneumonia, sinusitis meeting bacterial criteria, strep throat, or an ear infection. Using antibiotics for a virus alone does not help and can cause side effects and promote antibiotic-resistant bacteria.",
+    "latency_ms": 4770.7,
+    "input_tokens": 106,
+    "output_tokens": 356
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Antibiotics are usually given to patients who have a bacterial or fungal infection. What about those diseases that are usually caused by a virus?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Diseases caused by viruses are not treated with antibiotics, because antibiotics target bacterial structures and processes\u2014such as cell walls, bacterial ribosomes, or bacterial DNA replication\u2014that viruses do not have.\n\nManagement depends on the virus and severity:\n\n- **Many viral infections:** Supportive care only\u2014rest, fluids, fever/pain control (for example acetaminophen or ibuprofen when appropriate), and treatment of symptoms. Examples include most colds, uncomplicated influenza-like illnesses, and many cases of viral gastroenteritis.\n- **Specific antiviral drugs:** Used for certain viruses, especially when started early or in higher-risk patients. Examples:\n  - **Influenza:** oseltamivir, zanamivir, baloxavir\n  - **COVID-19:** nirmatrelvir/ritonavir (Paxlovid), remdesivir in appropriate patients\n  - **Herpes viruses:** acyclovir, valacyclovir, famciclovir\n  - **HIV:** combination antiretroviral therapy\n  - **Hepatitis B/C:** antiviral medicines that suppress hepatitis B or can cure hepatitis C\n- **Vaccination:** Prevents many viral diseases or reduces their severity, such as influenza, COVID-19, measles, polio, hepatitis B, HPV, and shingles.\n- **Immune-based treatments:** In selected cases, monoclonal antibodies, immunoglobulin, or other therapies may be used.\n\nAntibiotics may still be prescribed if a person with a viral infection develops a **secondary bacterial infection**, such as bacterial pneumonia, sinusitis meeting bacterial criteria, strep throat, or an ear infection. Using antibiotics for a virus alone does not help and can cause side effects and promote antibiotic-resistant bacteria.",
+    "latency_ms": 4770.7,
+    "token_count": 462
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "32867a602d4c",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233367.2922187,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 4770.7,
+        "token_count": 462,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.30; flagged=False"
+}

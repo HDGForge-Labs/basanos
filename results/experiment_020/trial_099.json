@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:46:08.068290+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What is the best diet for general longevity?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biochemistry",
+    "question_type": "Directed question that has a single unambiguous answer| Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Diet for Longevity: The Evidence-Based Approach\n\nThere's no single \"perfect\" diet, but there's strong convergent evidence across population studies (Blue Zones), randomized trials, and mechanistic research pointing to common principles.\n\n## Core Framework: Mediterranean-Pattern, Plant-Forward\n\n**Foundation (most of your calories):**\n- Vegetables (especially leafy greens, cruciferous), fruits, legumes (beans, lentils), whole grains, nuts, olive oil\n- This pattern is associated with 20-25% lower all-cause mortality in cohort studies (PREDIMED trial, Nurses' Health Study)\n\n**Protein sources, ranked by longevity data:**\n- Fish (especially fatty fish for omega-3s) \u2014 consistently associated with lower cardiovascular mortality\n- Legumes \u2014 the single dietary variable most correlated with survival across Blue Zone populations\n- Poultry \u2014 neutral to mildly beneficial\n- Red meat, especially processed meat \u2014 consistently associated with higher mortality (each 50g/day of processed meat correlates with ~15-20% increased mortality risk in meta-analyses)\n\n## Specific Mechanistic Levers\n\n**1. Protein quantity and timing**\n- Evidence suggests moderate protein (~0.8-1.0g/kg body weight for most adults, higher for older adults >65 to prevent sarcopenia) rather than very high intake\n- Plant protein specifically associated with lower mortality than animal protein in Harvard cohort data (200,000+ participants)\n- IGF-1 pathway: chronically high protein/animal protein may accelerate aging via mTOR/IGF-1 signaling; this trades off against muscle maintenance in elderly, so protein needs likely increase with age\n\n**2. Caloric moderation**\n- Okinawan traditional diet (hara hachi bu - eating to 80% fullness) correlates with exceptional longevity\n- Caloric restriction extends lifespan in every model organism tested; in humans, CALERIE trial showed 12-15% CR improved metabolic biomarkers of aging\n- Practical translation: avoid chronic caloric surplus rather than extreme restriction\n\n**3. Meal timing / eating window**\n- Time-restricted eating (8-10 hour windows) shows metabolic benefits (improved insulin sensitivity) independent of weight loss in some trials\n- Evidence is more robust for metabolic health markers than hard mortality data yet\n\n**4. Specific foods with strong evidence**\n- Nuts: 5x/week associated with ~20% lower mortality (multiple cohorts)\n- Olive oil: replacing butter/margarine associated with lower mortality (Harvard cohort, 2022)\n- Fermented foods: emerging evidence for microbiome diversity benefits\n\n## What to Minimize\n\n- Refined carbohydrates and added sugar (glycemic load correlates with inflammation, insulin resistance)\n- Processed meat (strongest, most consistent negative signal in nutritional epidemiology)\n- Ultra-processed foods",
+    "latency_ms": 13293.6,
+    "input_tokens": 127,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the best diet for general longevity?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Diet for Longevity: The Evidence-Based Approach\n\nThere's no single \"perfect\" diet, but there's strong convergent evidence across population studies (Blue Zones), randomized trials, and mechanistic research pointing to common principles.\n\n## Core Framework: Mediterranean-Pattern, Plant-Forward\n\n**Foundation (most of your calories):**\n- Vegetables (especially leafy greens, cruciferous), fruits, legumes (beans, lentils), whole grains, nuts, olive oil\n- This pattern is associated with 20-25% lower all-cause mortality in cohort studies (PREDIMED trial, Nurses' Health Study)\n\n**Protein sources, ranked by longevity data:**\n- Fish (especially fatty fish for omega-3s) \u2014 consistently associated with lower cardiovascular mortality\n- Legumes \u2014 the single dietary variable most correlated with survival across Blue Zone populations\n- Poultry \u2014 neutral to mildly beneficial\n- Red meat, especially processed meat \u2014 consistently associated with higher mortality (each 50g/day of processed meat correlates with ~15-20% increased mortality risk in meta-analyses)\n\n## Specific Mechanistic Levers\n\n**1. Protein quantity and timing**\n- Evidence suggests moderate protein (~0.8-1.0g/kg body weight for most adults, higher for older adults >65 to prevent sarcopenia) rather than very high intake\n- Plant protein specifically associated with lower mortality than animal protein in Harvard cohort data (200,000+ participants)\n- IGF-1 pathway: chronically high protein/animal protein may accelerate aging via mTOR/IGF-1 signaling; this trades off against muscle maintenance in elderly, so protein needs likely increase with age\n\n**2. Caloric moderation**\n- Okinawan traditional diet (hara hachi bu - eating to 80% fullness) correlates with exceptional longevity\n- Caloric restriction extends lifespan in every model organism tested; in humans, CALERIE trial showed 12-15% CR improved metabolic biomarkers of aging\n- Practical translation: avoid chronic caloric surplus rather than extreme restriction\n\n**3. Meal timing / eating window**\n- Time-restricted eating (8-10 hour windows) shows metabolic benefits (improved insulin sensitivity) independent of weight loss in some trials\n- Evidence is more robust for metabolic health markers than hard mortality data yet\n\n**4. Specific foods with strong evidence**\n- Nuts: 5x/week associated with ~20% lower mortality (multiple cohorts)\n- Olive oil: replacing butter/margarine associated with lower mortality (Harvard cohort, 2022)\n- Fermented foods: emerging evidence for microbiome diversity benefits\n\n## What to Minimize\n\n- Refined carbohydrates and added sugar (glycemic load correlates with inflammation, insulin resistance)\n- Processed meat (strongest, most consistent negative signal in nutritional epidemiology)\n- Ultra-processed foods",
+    "latency_ms": 13293.6,
+    "token_count": 1151
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "bfd7ade574a8",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239968.067533,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4494,
+          "evidence": [
+            "Latency 13294ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13293.6,
+        "token_count": 1151,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.99; flagged=False"
+}

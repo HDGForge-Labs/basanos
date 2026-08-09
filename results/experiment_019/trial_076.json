@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T00:01:54.398098+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "How can you find out if a person has childhood traumas?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Care home",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "You usually can\u2019t reliably tell from the outside. Childhood trauma is personal, and many people show no obvious signs\u2014or may have similar signs for completely different reasons. The only way to know is if the person chooses to share it, often after building trust.\n\nPossible patterns that can *sometimes* be associated with early trauma include:\n\n- Strong reactions to criticism, conflict, rejection, yelling, or perceived abandonment  \n- Hypervigilance: always scanning for danger, difficulty relaxing, startling easily  \n- Avoiding certain topics, places, people, touch, or emotional closeness  \n- Trouble trusting others, setting boundaries, or feeling safe in relationships  \n- People-pleasing, fawning, or intense fear of disappointing others  \n- Emotional numbness, dissociation, memory gaps, or feeling \u201cnot present\u201d under stress  \n- Anger outbursts, panic, shame, low self-worth, or disproportionate guilt  \n- Sleep problems, nightmares, chronic tension, headaches, stomach symptoms  \n- Repeating unhealthy relationship patterns or using substances/other behaviors to cope  \n\nNone of these proves trauma. They can also occur with anxiety, depression, neurodivergence, current stress, medical problems, or ordinary personality differences.\n\nA respectful approach is:\n\n1. **Don\u2019t diagnose or interrogate them.** Avoid questions like \u201cWhat happened to you?\u201d  \n2. **Create safety and privacy.** Be consistent, nonjudgmental, and respect boundaries.  \n3. **Ask open, optional questions.** For example:  \n   - \u201cYou seem uncomfortable when voices get raised\u2014would you like to take a break?\u201d  \n   - \u201cIs there anything you\u2019d like me to know about what helps you feel safe?\u201d  \n   - \u201cYou don\u2019t have to explain, but I\u2019m here if you ever want to talk.\u201d  \n4. **Believe them if they disclose.** Say things like: \u201cI\u2019m sorry that happened,\u201d \u201cThank you for trusting me,\u201d and \u201cIt wasn\u2019t your fault.\u201d  \n5. **Don\u2019t pressure for details.** Let them control what, when, and how much they share.  \n6. **Encourage professional support if they want it.** Trauma-informed therapists can help without requiring someone to recount everything immediately.\n\nIf you are concerned that someone is currently being abused, is in immediate danger, or may harm themselves, contact local emergency services or a crisis resource right away.",
+    "latency_ms": 6530.1,
+    "input_tokens": 91,
+    "output_tokens": 492
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How can you find out if a person has childhood traumas?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "You usually can\u2019t reliably tell from the outside. Childhood trauma is personal, and many people show no obvious signs\u2014or may have similar signs for completely different reasons. The only way to know is if the person chooses to share it, often after building trust.\n\nPossible patterns that can *sometimes* be associated with early trauma include:\n\n- Strong reactions to criticism, conflict, rejection, yelling, or perceived abandonment  \n- Hypervigilance: always scanning for danger, difficulty relaxing, startling easily  \n- Avoiding certain topics, places, people, touch, or emotional closeness  \n- Trouble trusting others, setting boundaries, or feeling safe in relationships  \n- People-pleasing, fawning, or intense fear of disappointing others  \n- Emotional numbness, dissociation, memory gaps, or feeling \u201cnot present\u201d under stress  \n- Anger outbursts, panic, shame, low self-worth, or disproportionate guilt  \n- Sleep problems, nightmares, chronic tension, headaches, stomach symptoms  \n- Repeating unhealthy relationship patterns or using substances/other behaviors to cope  \n\nNone of these proves trauma. They can also occur with anxiety, depression, neurodivergence, current stress, medical problems, or ordinary personality differences.\n\nA respectful approach is:\n\n1. **Don\u2019t diagnose or interrogate them.** Avoid questions like \u201cWhat happened to you?\u201d  \n2. **Create safety and privacy.** Be consistent, nonjudgmental, and respect boundaries.  \n3. **Ask open, optional questions.** For example:  \n   - \u201cYou seem uncomfortable when voices get raised\u2014would you like to take a break?\u201d  \n   - \u201cIs there anything you\u2019d like me to know about what helps you feel safe?\u201d  \n   - \u201cYou don\u2019t have to explain, but I\u2019m here if you ever want to talk.\u201d  \n4. **Believe them if they disclose.** Say things like: \u201cI\u2019m sorry that happened,\u201d \u201cThank you for trusting me,\u201d and \u201cIt wasn\u2019t your fault.\u201d  \n5. **Don\u2019t pressure for details.** Let them control what, when, and how much they share.  \n6. **Encourage professional support if they want it.** Trauma-informed therapists can help without requiring someone to recount everything immediately.\n\nIf you are concerned that someone is currently being abused, is in immediate danger, or may harm themselves, contact local emergency services or a crisis resource right away.",
+    "latency_ms": 6530.1,
+    "token_count": 583
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "c5fbc4aa7710",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233714.3973615,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 6530.1,
+        "token_count": 583,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.76; flagged=False"
+}

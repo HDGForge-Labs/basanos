@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:56:18.678642+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Why would a child be removed from their parents care?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "social worker",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "A child may be removed from their parents\u2019 care when authorities believe the child faces a serious risk of harm and cannot be kept safe at home, even with support. Common reasons include:\n\n- Physical abuse or severe punishment  \n- Sexual abuse or exploitation  \n- Serious neglect, such as lack of food, medical care, supervision, shelter, or safe hygiene  \n- Domestic violence that places the child at significant risk  \n- A parent\u2019s severe substance misuse, mental-health crisis, or incapacity when it prevents safe care  \n- Dangerous home conditions, abandonment, or a parent\u2019s inability or refusal to protect the child from another unsafe person  \n- Certain serious criminal or safeguarding concerns\n\nRemoval is generally intended as a protective measure, not a punishment. In many places, social services first try safety plans, relatives\u2019 help, treatment, parenting support, or supervision. Emergency removal may occur when the danger is immediate; otherwise, a court or child-protection authority usually becomes involved and must review the decision. The exact legal threshold and process depend on the country or state.",
+    "latency_ms": 2285.9,
+    "input_tokens": 89,
+    "output_tokens": 214
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Why would a child be removed from their parents care?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "A child may be removed from their parents\u2019 care when authorities believe the child faces a serious risk of harm and cannot be kept safe at home, even with support. Common reasons include:\n\n- Physical abuse or severe punishment  \n- Sexual abuse or exploitation  \n- Serious neglect, such as lack of food, medical care, supervision, shelter, or safe hygiene  \n- Domestic violence that places the child at significant risk  \n- A parent\u2019s severe substance misuse, mental-health crisis, or incapacity when it prevents safe care  \n- Dangerous home conditions, abandonment, or a parent\u2019s inability or refusal to protect the child from another unsafe person  \n- Certain serious criminal or safeguarding concerns\n\nRemoval is generally intended as a protective measure, not a punishment. In many places, social services first try safety plans, relatives\u2019 help, treatment, parenting support, or supervision. Emergency removal may occur when the danger is immediate; otherwise, a court or child-protection authority usually becomes involved and must review the decision. The exact legal threshold and process depend on the country or state.",
+    "latency_ms": 2285.9,
+    "token_count": 303
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "dad99ebed4f8",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229778.6779027,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2285.9,
+        "token_count": 303,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.68; flagged=False"
+}

@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T00:03:32.762805+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What are the risks of inserting a nasogastric tube during a night shift?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Patient Safety",
+    "question_type": "Open-ended question that is potentially ambiguous| Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Inserting a nasogastric (NG) tube at night carries the same core procedural risks as daytime placement, but night-shift conditions can increase the chance of errors because of fatigue, reduced staffing, fewer immediately available senior staff, poorer lighting, and delays in obtaining or reviewing confirmation imaging.\n\nKey risks include:\n\n- **Misplacement into the airway or lungs**  \n  The most serious risk. The tube can enter the trachea/bronchial tree rather than the stomach. If feeds, water, or medication are given through a misplaced tube, this can cause aspiration pneumonitis, pneumonia, hypoxia, lung injury, or death.\n\n- **Failure to confirm position before use**  \n  Night shifts may involve delays in chest/abdominal X-ray reporting or pressure to start feeding/medication promptly. Auscultation of insufflated air (\u201cwhoosh test\u201d) is not reliable and should not be used to confirm gastric placement. Use institutional policy\u2014typically gastric aspirate pH testing when appropriate and/or radiographic confirmation.\n\n- **Aspiration during insertion**  \n  Patients with reduced consciousness, vomiting, poor cough reflex, dysphagia, stroke, intoxication, or sedation are at particular risk. Positioning, suction readiness, and stopping if the patient coughs, desaturates, or develops respiratory distress are important.\n\n- **Nasal, pharyngeal, or oesophageal trauma**  \n  This includes epistaxis, mucosal abrasion, pain, sinus injury, and rarely oesophageal perforation. Risk is higher with coagulopathy, thrombocytopenia, anticoagulants, facial trauma, previous ENT surgery, oesophageal strictures, varices, or difficult anatomy.\n\n- **Intracranial placement in patients with skull-base or severe mid-face fractures**  \n  This is rare but catastrophic. Avoid nasal insertion in suspected basilar skull fracture or significant facial trauma; use an oral route or specialist-guided alternative.\n\n- **Bradycardia, arrhythmia, laryngospasm, or vasovagal events**  \n  Nasopharyngeal stimulation can provoke vagal responses, especially in frail or unstable patients. Monitor closely in high-risk patients.\n\n- **Tube coiling, knotting, or failure to pass**  \n  The tube may coil in the mouth, pharynx, oesophagus, or stomach. Repeated forceful attempts increase trauma and misplacement risk.\n\n- **Delayed recognition of complications**  \n  Reduced overnight observation or handover gaps can mean a misplaced, displaced, blocked, or poorly secured tube is noticed later.\n\n- **Reduced escalation support**  \n  Difficult insertions, patients with altered anatomy, intubated patients, or those requiring post-pyloric tubes may need senior, ENT, anaesthetic, gastroenterology, or radiology support that may be less immediately available overnight.\n\nTo reduce risk on a night shift:\n\n1. Confirm that the tube is genuinely needed urgently; defer non-urgent insertion if appropriate.  \n2. Check contraindications\u2014especially facial/skull-base trauma, oesophageal pathology, bleeding risk, and airway compromise.  \n3. Use adequate lighting, patient identification, positioning, monitoring, and a trained second person if the patient is high risk.  \n4. Stop immediately for persistent coughing, cyanosis, desaturation, respiratory distress, inability to speak, resistance, or bleeding.  \n5. Do not use the tube for feed, fluid, or medication until position is confirmed by the approved method and documented.  \n6. Escalate early if placement is difficult, the patient is unstable, or confirmation is unavailable.\n\nThe highest-risk error is **administering anything through an unconfirmed or incorrectly positioned tube**.",
+    "latency_ms": 9595.7,
+    "input_tokens": 95,
+    "output_tokens": 756
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the risks of inserting a nasogastric tube during a night shift?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Inserting a nasogastric (NG) tube at night carries the same core procedural risks as daytime placement, but night-shift conditions can increase the chance of errors because of fatigue, reduced staffing, fewer immediately available senior staff, poorer lighting, and delays in obtaining or reviewing confirmation imaging.\n\nKey risks include:\n\n- **Misplacement into the airway or lungs**  \n  The most serious risk. The tube can enter the trachea/bronchial tree rather than the stomach. If feeds, water, or medication are given through a misplaced tube, this can cause aspiration pneumonitis, pneumonia, hypoxia, lung injury, or death.\n\n- **Failure to confirm position before use**  \n  Night shifts may involve delays in chest/abdominal X-ray reporting or pressure to start feeding/medication promptly. Auscultation of insufflated air (\u201cwhoosh test\u201d) is not reliable and should not be used to confirm gastric placement. Use institutional policy\u2014typically gastric aspirate pH testing when appropriate and/or radiographic confirmation.\n\n- **Aspiration during insertion**  \n  Patients with reduced consciousness, vomiting, poor cough reflex, dysphagia, stroke, intoxication, or sedation are at particular risk. Positioning, suction readiness, and stopping if the patient coughs, desaturates, or develops respiratory distress are important.\n\n- **Nasal, pharyngeal, or oesophageal trauma**  \n  This includes epistaxis, mucosal abrasion, pain, sinus injury, and rarely oesophageal perforation. Risk is higher with coagulopathy, thrombocytopenia, anticoagulants, facial trauma, previous ENT surgery, oesophageal strictures, varices, or difficult anatomy.\n\n- **Intracranial placement in patients with skull-base or severe mid-face fractures**  \n  This is rare but catastrophic. Avoid nasal insertion in suspected basilar skull fracture or significant facial trauma; use an oral route or specialist-guided alternative.\n\n- **Bradycardia, arrhythmia, laryngospasm, or vasovagal events**  \n  Nasopharyngeal stimulation can provoke vagal responses, especially in frail or unstable patients. Monitor closely in high-risk patients.\n\n- **Tube coiling, knotting, or failure to pass**  \n  The tube may coil in the mouth, pharynx, oesophagus, or stomach. Repeated forceful attempts increase trauma and misplacement risk.\n\n- **Delayed recognition of complications**  \n  Reduced overnight observation or handover gaps can mean a misplaced, displaced, blocked, or poorly secured tube is noticed later.\n\n- **Reduced escalation support**  \n  Difficult insertions, patients with altered anatomy, intubated patients, or those requiring post-pyloric tubes may need senior, ENT, anaesthetic, gastroenterology, or radiology support that may be less immediately available overnight.\n\nTo reduce risk on a night shift:\n\n1. Confirm that the tube is genuinely needed urgently; defer non-urgent insertion if appropriate.  \n2. Check contraindications\u2014especially facial/skull-base trauma, oesophageal pathology, bleeding risk, and airway compromise.  \n3. Use adequate lighting, patient identification, positioning, monitoring, and a trained second person if the patient is high risk.  \n4. Stop immediately for persistent coughing, cyanosis, desaturation, respiratory distress, inability to speak, resistance, or bleeding.  \n5. Do not use the tube for feed, fluid, or medication until position is confirmed by the approved method and documented.  \n6. Escalate early if placement is difficult, the patient is unstable, or confirmation is unavailable.\n\nThe highest-risk error is **administering anything through an unconfirmed or incorrectly positioned tube**.",
+    "latency_ms": 9595.7,
+    "token_count": 851
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "9fa68a7da7bc",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233812.761973,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 9595.7,
+        "token_count": 851,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.87; flagged=False"
+}

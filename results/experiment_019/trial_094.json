@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T00:04:34.699115+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Describe and justify your opinion about the morality of abortion.",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General medical",
+    "question_type": "Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "My view is that abortion is morally permissible in the early stages of pregnancy, and that its moral seriousness increases as pregnancy progresses\u2014especially once there is credible capacity for conscious experience and, later, viability. The central reason is that pregnancy involves one person\u2019s body being used continuously, invasively, and at nontrivial physical, social, and economic cost. A state should not ordinarily compel someone to provide that bodily support, even for a developing human life.\n\nAn embryo is biologically human from fertilization, but biological humanity alone does not settle full moral status. Early embryos have no brain, consciousness, interests, sensations, relationships, or capacity to suffer. Treating a fertilized egg as morally identical to a newborn leads to implausible conclusions\u2014for example, treating failed implantation or the disposal of unused IVF embryos as comparable to the death of a child. Early abortion therefore does not, in my judgment, wrong a being in the same way that killing a conscious person does.\n\nThe moral balance changes during fetal development. By roughly the second half of pregnancy, the fetus has increasingly developed neurological structures, and later abortions deserve greater ethical scrutiny because the possibility of fetal sentience and the prospect of independent survival become more substantial. That does not erase the pregnant person\u2019s rights or make abortion automatically impermissible. Serious threats to health, severe fetal conditions, rape, coercion, and major changes in life circumstances can justify abortion at any stage. But absent such reasons, elective abortion late in pregnancy is morally weightier than early abortion.\n\nThis supports a legal framework with broad access early in pregnancy, meaningful protection of medical decision-making throughout pregnancy, and progressively stronger safeguards later on\u2014while preserving clear exceptions for the pregnant person\u2019s life, physical and mental health, grave fetal conditions, and pregnancies resulting from rape or incest. In practice, most abortions occur early; reducing later abortions is best achieved not through punishment, but through contraception access, accurate sex education, affordable health care, support for parents, paid leave, child care, and economic security.\n\nI also think moral disagreement is reasonable here. People who believe personhood begins at conception are expressing a serious moral intuition about human vulnerability. But in a pluralistic society, that intuition should not automatically authorize the government to force pregnancy and childbirth on people who do not share it. The law should be especially cautious before imposing such profound bodily obligations.",
+    "latency_ms": 8812.4,
+    "input_tokens": 89,
+    "output_tokens": 477
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Describe and justify your opinion about the morality of abortion.",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "My view is that abortion is morally permissible in the early stages of pregnancy, and that its moral seriousness increases as pregnancy progresses\u2014especially once there is credible capacity for conscious experience and, later, viability. The central reason is that pregnancy involves one person\u2019s body being used continuously, invasively, and at nontrivial physical, social, and economic cost. A state should not ordinarily compel someone to provide that bodily support, even for a developing human life.\n\nAn embryo is biologically human from fertilization, but biological humanity alone does not settle full moral status. Early embryos have no brain, consciousness, interests, sensations, relationships, or capacity to suffer. Treating a fertilized egg as morally identical to a newborn leads to implausible conclusions\u2014for example, treating failed implantation or the disposal of unused IVF embryos as comparable to the death of a child. Early abortion therefore does not, in my judgment, wrong a being in the same way that killing a conscious person does.\n\nThe moral balance changes during fetal development. By roughly the second half of pregnancy, the fetus has increasingly developed neurological structures, and later abortions deserve greater ethical scrutiny because the possibility of fetal sentience and the prospect of independent survival become more substantial. That does not erase the pregnant person\u2019s rights or make abortion automatically impermissible. Serious threats to health, severe fetal conditions, rape, coercion, and major changes in life circumstances can justify abortion at any stage. But absent such reasons, elective abortion late in pregnancy is morally weightier than early abortion.\n\nThis supports a legal framework with broad access early in pregnancy, meaningful protection of medical decision-making throughout pregnancy, and progressively stronger safeguards later on\u2014while preserving clear exceptions for the pregnant person\u2019s life, physical and mental health, grave fetal conditions, and pregnancies resulting from rape or incest. In practice, most abortions occur early; reducing later abortions is best achieved not through punishment, but through contraception access, accurate sex education, affordable health care, support for parents, paid leave, child care, and economic security.\n\nI also think moral disagreement is reasonable here. People who believe personhood begins at conception are expressing a serious moral intuition about human vulnerability. But in a pluralistic society, that intuition should not automatically authorize the government to force pregnancy and childbirth on people who do not share it. The law should be especially cautious before imposing such profound bodily obligations.",
+    "latency_ms": 8812.4,
+    "token_count": 566
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "e973657b72b7",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233874.6983287,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 8812.4,
+        "token_count": 566,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.94; flagged=False"
+}

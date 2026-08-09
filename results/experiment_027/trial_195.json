@@ -1,0 +1,75 @@
+{
+  "timestamp_utc": "2026-08-09T17:19:00.595801+00:00",
+  "detector": "context_degradation",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "where are mucosal associated lymphoid tissues present in the human body and why",
+    "gold_index": 9
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Mucosa-associated lymphoid tissues (MALT) are diffuse collections of lymphoid tissue beneath mucosal surfaces, especially in the:\n\n- Gastrointestinal tract, including the intestine, appendix, and stomach (GALT)\n- Tonsils and nasopharynx (including Waldeyer\u2019s ring/NALT)\n- Respiratory tract and lungs\n- Oral cavity and salivary glands\n- Thyroid, breast, eyes, and skin\n\nThey are present at these sites because mucosal surfaces are major entry points for pathogens and foreign antigens. MALT provides a first line of immune defense by sampling antigens, producing",
+    "latency_ms": 1388.6,
+    "input_tokens": 1546,
+    "output_tokens": 128
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "where are mucosal associated lymphoid tissues present in the human body and why",
+      "gold_index": 9,
+      "n_docs": 10
+    },
+    "response": "Mucosa-associated lymphoid tissues (MALT) are diffuse collections of lymphoid tissue beneath mucosal surfaces, especially in the:\n\n- Gastrointestinal tract, including the intestine, appendix, and stomach (GALT)\n- Tonsils and nasopharynx (including Waldeyer's ring/NALT)\n- Respiratory tract and lungs\n- Oral cavity and salivary glands\n- Thyroid, breast, eyes, and skin\n\nThey are present at these sites because mucosal surfaces are major entry points for pathogens and foreign antigens. MALT provides a first line of immune defense by sampling antigens, producing",
+    "latency_ms": 1388.6,
+    "token_count": 1674,
+    "context_window_used": 0.92
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "6efd0891a3d6",
+      "tool_name": "context_qa",
+      "status": "warn",
+      "timestamp": 1786295940.595058,
+      "failures": [
+        {
+          "failure_mode": "context_degradation",
+          "confidence": 0.4,
+          "evidence": [
+            "Context window at 92.0% capacity"
+          ],
+          "remediation": [
+            "Implement context summarization before next tool call",
+            "Inject critical context markers at regular intervals",
+            "Use sliding window context management",
+            "Consider splitting task into smaller context-bounded subtasks"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 1388.6,
+        "token_count": 1674,
+        "context_window_used": 0.92,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Implement context summarization before next tool call",
+        "Inject critical context markers at regular intervals",
+        "Use sliding window context management",
+        "Consider splitting task into smaller context-bounded subtasks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.195; flagged=True; gold_index=9"
+}

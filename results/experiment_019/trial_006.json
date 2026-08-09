@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-08T23:53:14.417626+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Design an algorithm of hypertension drugs to help the clinician make the best medication choice according to the patient and their health characteristics.",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pharmacy field",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "## Adult Hypertension Drug-Selection Algorithm\n\n### 1. Confirm that pharmacologic therapy is indicated\nUse **average out-of-office BP** when possible (home or ambulatory monitoring) and assess cardiovascular risk.\n\n| BP category | Typical action |\n|---|---|\n| **Stage 1:** 130\u2013139/80\u201389 mmHg | Lifestyle therapy first if low ASCVD risk; start medication if established CVD, CKD, diabetes with high risk, target-organ damage, or estimated 10-year ASCVD risk \u226510% |\n| **Stage 2:** \u2265140/90 mmHg | Start medication plus lifestyle intervention |\n| **\u226520/10 mmHg above target** (e.g., \u2265150/90 for a <130/80 target) | Start **two complementary agents**, preferably as a single-pill combination |\n| **Hypertensive emergency:** severe BP elevation plus acute end-organ injury | Hospital/ICU management with IV therapy\u2014not routine outpatient algorithm |\n\nUsual treatment goal: **<130/80 mmHg** for most adults if tolerated.  \nFor frail older adults, orthostatic hypotension, or limited life expectancy, individualize\u2014often SBP 130\u2013140 mmHg is reasonable.\n\n---\n\n## 2. Initial clinical screen before choosing a drug\n\nObtain or review:\n\n- Serum creatinine/eGFR, potassium, sodium\n- Urine albumin-to-creatinine ratio (UACR)\n- Diabetes status and A1c\n- CAD, prior MI, angina, heart failure type and EF\n- Atrial fibrillation or other tachyarrhythmia\n- Stroke/TIA history\n- Pregnancy status/plans and contraception\n- Asthma/COPD, gout, BPH, migraine, tremor\n- Resting heart rate, ECG for AV block\n- Medication causes of hypertension: NSAIDs, stimulants, decongestants, glucocorticoids, SNRIs, oral contraceptives, calcineurin inhibitors, alcohol, cocaine/amphetamines, licorice\n- Orthostatic BP, frailty, falls, volume status\n- Race/ethnicity is less important than comorbidity, but in patients of Black African ancestry without CKD/albuminuria or HF, a thiazide-like diuretic or dihydropyridine calcium-channel blocker is usually the most effective initial monotherapy.\n\n---\n\n# 3. Choose the first-line drug class\n\nThe four standard first-line classes are:\n\n1. **ACE inhibitor (ACEi)**\n2. **Angiotensin receptor blocker (ARB)**\n3. **Thiazide-like diuretic**\n4. **Dihydropyridine calcium-channel blocker (DHP-CCB)**\n\n### Preferred first-line agents\n\n| Class | Preferred examples | Typical starting dose | Useful features |\n|---|---:|---:|---|\n| ACE inhibitor | Lisinopril, ramipril, perindopril | Lisinopril 5\u201310 mg daily | CKD with albuminuria, diabetes with albuminuria, HFrEF, post-MI |\n| ARB | Losartan, valsartan, irbesartan, telmisartan | Losartan 25\u201350 mg daily | Same broad indications as ACEi; preferred if ACEi cough/angioedema history excluding severe ARB contraindications |\n| Thiazide-like diuretic | **Chlorthalidone**, **indapamide** | Chlorthalidone 12.5 mg daily; indapamide 1.25 mg daily | Strong BP reduction, especially salt-sensitive/isolated systolic HTN |\n| DHP-CCB | Amlodipine, nifedipine ER | Amlodipine 2.5\u20135 mg daily | Effective in older adults, Black patients, isolated systolic HTN, angina |\n\n**Prefer thiazide-like agents over hydrochlorothiazide** when feasible because chlorthalidone and indapamide generally provide longer 24-hour BP control and stronger outcome evidence.\n\n---\n\n# 4. Comorbidity-directed drug selection\n\n## A. Chronic kidney disease\n\n### CKD with albuminuria\n- **UACR \u226530 mg/g:** start an **ACEi or ARB**.\n- Particularly important with **UACR \u2265300 mg/g** or diabetic kidney disease.\n\n**Do not combine ACEi + ARB.**  \nCheck creatinine and potassium **7\u201314 days** after initiation or dose escalation.\n\nAcceptable: creatinine rise up to roughly **30%** from baseline.  \nInvestigate or reduce/stop if:\n- Creatinine rises >30%\n- Potassium persistently >5.5\u20136.0 mmol/L\n- Symptomatic hypotension\n- Suspected renal artery stenosis or volume depletion\n\n### CKD without albuminuria\n- ACEi/ARB, DHP",
+    "latency_ms": 11168.2,
+    "input_tokens": 102,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Design an algorithm of hypertension drugs to help the clinician make the best medication choice according to the patient and their health characteristics.",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "## Adult Hypertension Drug-Selection Algorithm\n\n### 1. Confirm that pharmacologic therapy is indicated\nUse **average out-of-office BP** when possible (home or ambulatory monitoring) and assess cardiovascular risk.\n\n| BP category | Typical action |\n|---|---|\n| **Stage 1:** 130\u2013139/80\u201389 mmHg | Lifestyle therapy first if low ASCVD risk; start medication if established CVD, CKD, diabetes with high risk, target-organ damage, or estimated 10-year ASCVD risk \u226510% |\n| **Stage 2:** \u2265140/90 mmHg | Start medication plus lifestyle intervention |\n| **\u226520/10 mmHg above target** (e.g., \u2265150/90 for a <130/80 target) | Start **two complementary agents**, preferably as a single-pill combination |\n| **Hypertensive emergency:** severe BP elevation plus acute end-organ injury | Hospital/ICU management with IV therapy\u2014not routine outpatient algorithm |\n\nUsual treatment goal: **<130/80 mmHg** for most adults if tolerated.  \nFor frail older adults, orthostatic hypotension, or limited life expectancy, individualize\u2014often SBP 130\u2013140 mmHg is reasonable.\n\n---\n\n## 2. Initial clinical screen before choosing a drug\n\nObtain or review:\n\n- Serum creatinine/eGFR, potassium, sodium\n- Urine albumin-to-creatinine ratio (UACR)\n- Diabetes status and A1c\n- CAD, prior MI, angina, heart failure type and EF\n- Atrial fibrillation or other tachyarrhythmia\n- Stroke/TIA history\n- Pregnancy status/plans and contraception\n- Asthma/COPD, gout, BPH, migraine, tremor\n- Resting heart rate, ECG for AV block\n- Medication causes of hypertension: NSAIDs, stimulants, decongestants, glucocorticoids, SNRIs, oral contraceptives, calcineurin inhibitors, alcohol, cocaine/amphetamines, licorice\n- Orthostatic BP, frailty, falls, volume status\n- Race/ethnicity is less important than comorbidity, but in patients of Black African ancestry without CKD/albuminuria or HF, a thiazide-like diuretic or dihydropyridine calcium-channel blocker is usually the most effective initial monotherapy.\n\n---\n\n# 3. Choose the first-line drug class\n\nThe four standard first-line classes are:\n\n1. **ACE inhibitor (ACEi)**\n2. **Angiotensin receptor blocker (ARB)**\n3. **Thiazide-like diuretic**\n4. **Dihydropyridine calcium-channel blocker (DHP-CCB)**\n\n### Preferred first-line agents\n\n| Class | Preferred examples | Typical starting dose | Useful features |\n|---|---:|---:|---|\n| ACE inhibitor | Lisinopril, ramipril, perindopril | Lisinopril 5\u201310 mg daily | CKD with albuminuria, diabetes with albuminuria, HFrEF, post-MI |\n| ARB | Losartan, valsartan, irbesartan, telmisartan | Losartan 25\u201350 mg daily | Same broad indications as ACEi; preferred if ACEi cough/angioedema history excluding severe ARB contraindications |\n| Thiazide-like diuretic | **Chlorthalidone**, **indapamide** | Chlorthalidone 12.5 mg daily; indapamide 1.25 mg daily | Strong BP reduction, especially salt-sensitive/isolated systolic HTN |\n| DHP-CCB | Amlodipine, nifedipine ER | Amlodipine 2.5\u20135 mg daily | Effective in older adults, Black patients, isolated systolic HTN, angina |\n\n**Prefer thiazide-like agents over hydrochlorothiazide** when feasible because chlorthalidone and indapamide generally provide longer 24-hour BP control and stronger outcome evidence.\n\n---\n\n# 4. Comorbidity-directed drug selection\n\n## A. Chronic kidney disease\n\n### CKD with albuminuria\n- **UACR \u226530 mg/g:** start an **ACEi or ARB**.\n- Particularly important with **UACR \u2265300 mg/g** or diabetic kidney disease.\n\n**Do not combine ACEi + ARB.**  \nCheck creatinine and potassium **7\u201314 days** after initiation or dose escalation.\n\nAcceptable: creatinine rise up to roughly **30%** from baseline.  \nInvestigate or reduce/stop if:\n- Creatinine rises >30%\n- Potassium persistently >5.5\u20136.0 mmol/L\n- Symptomatic hypotension\n- Suspected renal artery stenosis or volume depletion\n\n### CKD without albuminuria\n- ACEi/ARB, DHP",
+    "latency_ms": 11168.2,
+    "token_count": 1126
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "1c3b7b3d89aa",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786233194.416851,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4175,
+          "evidence": [
+            "Latency 11168ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11168.2,
+        "token_count": 1126,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.6; flagged=False"
+}

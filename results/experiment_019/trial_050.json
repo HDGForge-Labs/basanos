@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:58:40.247416+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What is the recommended medication to prescribe for a first episode of psychosis?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Psychiatric Healthcare",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "For a **first episode of psychosis**, the usual first-line medication is a **second-generation (atypical) antipsychotic**, started at a low dose and titrated cautiously.\n\nCommon preferred options include:\n\n- **Aripiprazole**: often a good first choice because of relatively low risk of weight gain, diabetes, lipid abnormalities, sedation, and prolactin elevation. Typical starting dose: **5\u201310 mg daily**, often targeting **10\u201315 mg daily**.\n- **Risperidone**: effective and widely used; start low, e.g. **0.5\u20131 mg nightly**, usually target **2\u20134 mg/day**. At higher doses it can cause prolactin elevation and extrapyramidal symptoms.\n- **Olanzapine**: very effective but generally not preferred first if alternatives are suitable because it has a high risk of substantial weight gain and metabolic adverse effects. Typical start: **2.5\u20135 mg nightly**.\n- **Quetiapine**: useful when sedation is desirable or there is prominent mood/anxiety/insomnia, but may require higher doses for antipsychotic efficacy and can cause sedation and metabolic effects.\n\nA practical answer is: **aripiprazole or low-dose risperidone are common first-line choices for first-episode psychosis**, selected according to the person\u2019s symptoms, medical/metabolic risk, prior response, adverse-effect preferences, substance use, and likelihood of adherence.\n\nKey prescribing principles:\n\n1. **Confirm and assess the cause**: rule out delirium, intoxication/withdrawal, neurologic or medical causes, bipolar mania, severe depression with psychosis, and medication-induced psychosis.\n2. **Use lower doses than in chronic schizophrenia**, because people with first-episode psychosis are usually more medication-sensitive.\n3. **Obtain baseline monitoring**: weight/BMI and waist circumference, blood pressure, fasting glucose or HbA1c, lipids, CBC/CMP as indicated, prolactin if using risperidone/paliperidone, pregnancy test where relevant, and ECG if cardiac risk/QT-prolonging drugs are present.\n4. **Combine medication with coordinated specialty care**: psychoeducation, family intervention, CBT for psychosis, support for school/work, substance-use treatment, and suicide-risk assessment.\n5. **If severe agitation or immediate danger is present**, urgent psychiatric/emergency assessment is needed; short-term benzodiazepines may sometimes be used adjunctively under supervision.\n\nMedication choice and initiation should be made by a clinician evaluating the patient directly, especially because first-episode psychosis can require urgent assessment and safeguarding.",
+    "latency_ms": 6853.7,
+    "input_tokens": 93,
+    "output_tokens": 547
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the recommended medication to prescribe for a first episode of psychosis?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "For a **first episode of psychosis**, the usual first-line medication is a **second-generation (atypical) antipsychotic**, started at a low dose and titrated cautiously.\n\nCommon preferred options include:\n\n- **Aripiprazole**: often a good first choice because of relatively low risk of weight gain, diabetes, lipid abnormalities, sedation, and prolactin elevation. Typical starting dose: **5\u201310 mg daily**, often targeting **10\u201315 mg daily**.\n- **Risperidone**: effective and widely used; start low, e.g. **0.5\u20131 mg nightly**, usually target **2\u20134 mg/day**. At higher doses it can cause prolactin elevation and extrapyramidal symptoms.\n- **Olanzapine**: very effective but generally not preferred first if alternatives are suitable because it has a high risk of substantial weight gain and metabolic adverse effects. Typical start: **2.5\u20135 mg nightly**.\n- **Quetiapine**: useful when sedation is desirable or there is prominent mood/anxiety/insomnia, but may require higher doses for antipsychotic efficacy and can cause sedation and metabolic effects.\n\nA practical answer is: **aripiprazole or low-dose risperidone are common first-line choices for first-episode psychosis**, selected according to the person\u2019s symptoms, medical/metabolic risk, prior response, adverse-effect preferences, substance use, and likelihood of adherence.\n\nKey prescribing principles:\n\n1. **Confirm and assess the cause**: rule out delirium, intoxication/withdrawal, neurologic or medical causes, bipolar mania, severe depression with psychosis, and medication-induced psychosis.\n2. **Use lower doses than in chronic schizophrenia**, because people with first-episode psychosis are usually more medication-sensitive.\n3. **Obtain baseline monitoring**: weight/BMI and waist circumference, blood pressure, fasting glucose or HbA1c, lipids, CBC/CMP as indicated, prolactin if using risperidone/paliperidone, pregnancy test where relevant, and ECG if cardiac risk/QT-prolonging drugs are present.\n4. **Combine medication with coordinated specialty care**: psychoeducation, family intervention, CBT for psychosis, support for school/work, substance-use treatment, and suicide-risk assessment.\n5. **If severe agitation or immediate danger is present**, urgent psychiatric/emergency assessment is needed; short-term benzodiazepines may sometimes be used adjunctively under supervision.\n\nMedication choice and initiation should be made by a clinician evaluating the patient directly, especially because first-episode psychosis can require urgent assessment and safeguarding.",
+    "latency_ms": 6853.7,
+    "token_count": 640
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "142f9d7e2d94",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233520.246679,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 6853.7,
+        "token_count": 640,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.50; flagged=False"
+}

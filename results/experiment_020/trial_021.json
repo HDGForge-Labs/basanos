@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:30:31.155383+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "How can Rasch analysis inform the analysis of Patient Reported Outcome instruments?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pharmaceutical industry",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Rasch Analysis in PRO Instrument Development and Validation\n\nRasch analysis provides a probabilistic measurement framework that transforms ordinal PRO data into interval-level measurement, addressing fundamental psychometric requirements that classical test theory (CTT) cannot fully satisfy. Here's how it informs PRO analysis:\n\n## Core Theoretical Contribution\n\nThe Rasch model specifies that the probability of a person endorsing an item is a logistic function of the difference between person ability (\u03b8) and item difficulty (\u03b2):\n\nP(X=1) = exp(\u03b8-\u03b2) / [1+exp(\u03b8-\u03b2)]\n\nThis is a **prescriptive model** \u2014 data either fit this mathematical requirement for fundamental measurement or they don't, unlike CTT/factor analytic approaches that describe whatever structure exists in the data.\n\n## Specific Applications to PRO Analysis\n\n**1. Testing Unidimensionality**\n- Principal Components Analysis of residuals (PCAR) checks whether items measure a single underlying construct\n- Eigenvalue of first residual contrast >2.0 (Raschmodel-based criterion) suggests a possible second dimension\n- Critical for PROs claiming to measure a single construct (e.g., \"fatigue,\" \"physical function\")\n\n**2. Category/Response Option Functioning**\n- Examines whether Likert-type response categories work as intended (e.g., \"none/mild/moderate/severe\")\n- Identifies disordered thresholds \u2014 where categories don't represent increasing levels of the construct in the expected order\n- Common finding: 5-7 point scales often function as fewer effective categories, suggesting collapsing response options\n\n**3. Differential Item Functioning (DIF)**\n- Tests whether items behave differently across subgroups (age, sex, language, culture) at the same underlying trait level\n- Essential for cross-cultural adaptation and ensuring measurement invariance\n- Distinguishes \"uniform DIF\" (constant difference) from \"non-uniform DIF\" (interaction effects)\n\n**4. Item Fit Statistics**\n- Infit and outfit mean-square statistics (typically expecting values 0.5\u20131.5, though ranges vary by source) identify items that don't conform to model expectations\n- Misfitting items may indicate poor wording, multidimensionality, or local dependence\n\n**5. Local Independence**\n- Tests whether items are answered independently of each other after accounting for the latent trait\n- Redundant items (e.g., \"I feel tired\" and \"I feel exhausted\") violate this assumption and inflate reliability estimates artificially\n\n**6. Targeting**\n- Person-item maps show whether item difficulty range matches the range of respondent ability\n- Reveals floor/ceiling effects and gaps in item coverage across the trait continuum\n- Informs where new items are needed\n\n**7. Creating Interval-Level Scores**\n- Converts raw ordinal summed scores into logit-based interval measures\n- Enables legitimate use of parametric statistics, meaningful score differences, and calculation of true change scores (critical for longitudinal/treatment-response PRO applications)\n\n##",
+    "latency_ms": 12596.7,
+    "input_tokens": 145,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How can Rasch analysis inform the analysis of Patient Reported Outcome instruments?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Rasch Analysis in PRO Instrument Development and Validation\n\nRasch analysis provides a probabilistic measurement framework that transforms ordinal PRO data into interval-level measurement, addressing fundamental psychometric requirements that classical test theory (CTT) cannot fully satisfy. Here's how it informs PRO analysis:\n\n## Core Theoretical Contribution\n\nThe Rasch model specifies that the probability of a person endorsing an item is a logistic function of the difference between person ability (\u03b8) and item difficulty (\u03b2):\n\nP(X=1) = exp(\u03b8-\u03b2) / [1+exp(\u03b8-\u03b2)]\n\nThis is a **prescriptive model** \u2014 data either fit this mathematical requirement for fundamental measurement or they don't, unlike CTT/factor analytic approaches that describe whatever structure exists in the data.\n\n## Specific Applications to PRO Analysis\n\n**1. Testing Unidimensionality**\n- Principal Components Analysis of residuals (PCAR) checks whether items measure a single underlying construct\n- Eigenvalue of first residual contrast >2.0 (Raschmodel-based criterion) suggests a possible second dimension\n- Critical for PROs claiming to measure a single construct (e.g., \"fatigue,\" \"physical function\")\n\n**2. Category/Response Option Functioning**\n- Examines whether Likert-type response categories work as intended (e.g., \"none/mild/moderate/severe\")\n- Identifies disordered thresholds \u2014 where categories don't represent increasing levels of the construct in the expected order\n- Common finding: 5-7 point scales often function as fewer effective categories, suggesting collapsing response options\n\n**3. Differential Item Functioning (DIF)**\n- Tests whether items behave differently across subgroups (age, sex, language, culture) at the same underlying trait level\n- Essential for cross-cultural adaptation and ensuring measurement invariance\n- Distinguishes \"uniform DIF\" (constant difference) from \"non-uniform DIF\" (interaction effects)\n\n**4. Item Fit Statistics**\n- Infit and outfit mean-square statistics (typically expecting values 0.5\u20131.5, though ranges vary by source) identify items that don't conform to model expectations\n- Misfitting items may indicate poor wording, multidimensionality, or local dependence\n\n**5. Local Independence**\n- Tests whether items are answered independently of each other after accounting for the latent trait\n- Redundant items (e.g., \"I feel tired\" and \"I feel exhausted\") violate this assumption and inflate reliability estimates artificially\n\n**6. Targeting**\n- Person-item maps show whether item difficulty range matches the range of respondent ability\n- Reveals floor/ceiling effects and gaps in item coverage across the trait continuum\n- Informs where new items are needed\n\n**7. Creating Interval-Level Scores**\n- Converts raw ordinal summed scores into logit-based interval measures\n- Enables legitimate use of parametric statistics, meaningful score differences, and calculation of true change scores (critical for longitudinal/treatment-response PRO applications)\n\n##",
+    "latency_ms": 12596.7,
+    "token_count": 1169
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "090a2f2be2d9",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239031.1546216,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.439,
+          "evidence": [
+            "Latency 12597ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12596.7,
+        "token_count": 1169,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.21; flagged=False"
+}

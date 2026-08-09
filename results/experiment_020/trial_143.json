@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:55:10.445200+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Imagine you have a patient after hip surgery (14days passed) write me a rehabilitation plan for this patient.",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Physical Medicine and Rehabilitation also COVID patients",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Post-Hip Surgery Rehabilitation Plan (Day 14 Post-Op)\n\n## Initial Assessment Considerations\n\nBefore finalizing this plan, confirm:\n- **Type of surgery**: Total hip arthroplasty (THA), hemiarthroplasty, hip fracture fixation (ORIF), or hip resurfacing\n- **Surgical approach**: Posterior, anterolateral, or direct anterior (affects precautions)\n- **Weight-bearing status**: Full weight-bearing (FWB), partial weight-bearing (PWB), or weight-bearing as tolerated (WBAT)\n- **Patient factors**: Age, baseline mobility, comorbidities (osteoporosis, diabetes, cardiovascular status)\n\nThis plan assumes a **standard THA with posterior approach, FWB status**, typical for approximately 70-80% of elective hip replacement patients.\n\n---\n\n## Phase Overview: Day 14 = Early Recovery Phase (Weeks 2-4)\n\nBy day 14, patients typically transition from acute post-op care to active rehabilitation. Expect:\n- Surgical incision approximately 80-90% healed (staples/sutures often removed by day 10-14)\n- Pain levels reduced to roughly 3-5/10 from initial 7-9/10\n- Independent or minimally-assisted ambulation with assistive device\n\n---\n\n## 1. Precautions (if Posterior Approach)\n\nMaintain hip precautions for **approximately 6-12 weeks** total (surgeon-dependent):\n- No hip flexion beyond **90 degrees**\n- No hip adduction past midline\n- No internal rotation of the hip\n- Avoid combined flexion + internal rotation + adduction (dislocation risk position)\n\n*Note: Anterior approach patients have different/fewer precautions\u2014typically avoid extension + external rotation combined.*\n\n---\n\n## 2. Pain and Swelling Management\n\n- **NSAIDs/analgesics**: Continue as prescribed; aim to wean opioids by week 3-4 if possible\n- **Ice application**: 15-20 minutes, 3-4 times daily post-exercise\n- **Elevation**: Legs elevated when resting, especially first 2-3 weeks\n- Monitor for signs of DVT (calf swelling, warmth, redness) or infection (fever >38\u00b0C, increased redness/discharge)\n\n---\n\n## 3. Exercise Program (Days 14-21)\n\n### A. Ankle Pumps & Circulation Exercises\n- 10 reps, every 1-2 hours while awake\n- Continue for DVT prophylaxis\n\n### B. Isometric Exercises\n- **Quad sets**: 10 reps x 3 sets/day, hold 5-10 seconds\n- **Gluteal sets**: 10 reps x 3 sets/day, hold 5-10 seconds\n\n### C. Active Range of Motion (AROM)\n- **Heel slides** (within precautions, avoid >90\u00b0 flexion): 10-15 reps x 2-3 sets/day\n- **Hip abduction/adduction**",
+    "latency_ms": 12413.0,
+    "input_tokens": 147,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Imagine you have a patient after hip surgery (14days passed) write me a rehabilitation plan for this patient.",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Post-Hip Surgery Rehabilitation Plan (Day 14 Post-Op)\n\n## Initial Assessment Considerations\n\nBefore finalizing this plan, confirm:\n- **Type of surgery**: Total hip arthroplasty (THA), hemiarthroplasty, hip fracture fixation (ORIF), or hip resurfacing\n- **Surgical approach**: Posterior, anterolateral, or direct anterior (affects precautions)\n- **Weight-bearing status**: Full weight-bearing (FWB), partial weight-bearing (PWB), or weight-bearing as tolerated (WBAT)\n- **Patient factors**: Age, baseline mobility, comorbidities (osteoporosis, diabetes, cardiovascular status)\n\nThis plan assumes a **standard THA with posterior approach, FWB status**, typical for approximately 70-80% of elective hip replacement patients.\n\n---\n\n## Phase Overview: Day 14 = Early Recovery Phase (Weeks 2-4)\n\nBy day 14, patients typically transition from acute post-op care to active rehabilitation. Expect:\n- Surgical incision approximately 80-90% healed (staples/sutures often removed by day 10-14)\n- Pain levels reduced to roughly 3-5/10 from initial 7-9/10\n- Independent or minimally-assisted ambulation with assistive device\n\n---\n\n## 1. Precautions (if Posterior Approach)\n\nMaintain hip precautions for **approximately 6-12 weeks** total (surgeon-dependent):\n- No hip flexion beyond **90 degrees**\n- No hip adduction past midline\n- No internal rotation of the hip\n- Avoid combined flexion + internal rotation + adduction (dislocation risk position)\n\n*Note: Anterior approach patients have different/fewer precautions\u2014typically avoid extension + external rotation combined.*\n\n---\n\n## 2. Pain and Swelling Management\n\n- **NSAIDs/analgesics**: Continue as prescribed; aim to wean opioids by week 3-4 if possible\n- **Ice application**: 15-20 minutes, 3-4 times daily post-exercise\n- **Elevation**: Legs elevated when resting, especially first 2-3 weeks\n- Monitor for signs of DVT (calf swelling, warmth, redness) or infection (fever >38\u00b0C, increased redness/discharge)\n\n---\n\n## 3. Exercise Program (Days 14-21)\n\n### A. Ankle Pumps & Circulation Exercises\n- 10 reps, every 1-2 hours while awake\n- Continue for DVT prophylaxis\n\n### B. Isometric Exercises\n- **Quad sets**: 10 reps x 3 sets/day, hold 5-10 seconds\n- **Gluteal sets**: 10 reps x 3 sets/day, hold 5-10 seconds\n\n### C. Active Range of Motion (AROM)\n- **Heel slides** (within precautions, avoid >90\u00b0 flexion): 10-15 reps x 2-3 sets/day\n- **Hip abduction/adduction**",
+    "latency_ms": 12413.0,
+    "token_count": 1171,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "b1794e72914d",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240510.444375,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 18 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4362,
+          "evidence": [
+            "Latency 12413ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12413.0,
+        "token_count": 1171,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.143; flagged=True"
+}

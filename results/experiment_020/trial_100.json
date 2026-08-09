@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:46:21.281890+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Why do people look down on healthcare workers?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Healthcare ",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "The framing needs some unpacking, because survey data (Gallup's annual honesty/ethics poll, for instance) consistently ranks nurses as the most trusted profession in the U.S., with pharmacists and doctors also near the top. So \"people look down on healthcare workers\" isn't true as a blanket statement. But there are real, specific dynamics where healthcare workers experience disrespect, and they're worth naming individually rather than lumping together.\n\n**1. Internal hierarchy within medicine itself**\nPhysicians occupy the top of a status pyramid that treats nurses, CNAs, medical assistants, and techs as subordinate rather than as fellow clinicians with their own expertise. \"Just a nurse\" is a",
+    "latency_ms": 13207.4,
+    "input_tokens": 129,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Why do people look down on healthcare workers?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "The framing needs some unpacking, because survey data (Gallup's annual honesty/ethics poll, for instance) consistently ranks nurses as the most trusted profession in the U.S., with pharmacists and doctors also near the top. So \"people look down on healthcare workers\" isn't true as a blanket statement. But there are real, specific dynamics where healthcare workers experience disrespect, and they're worth naming individually rather than lumping together.\n\n**1. Internal hierarchy within medicine itself**\nPhysicians occupy the top of a status pyramid that treats nurses, CNAs, medical assistants, and techs as subordinate rather than as fellow clinicians with their own expertise. \"Just a nurse\" is a",
+    "latency_ms": 13207.4,
+    "token_count": 1153
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "c1b3a1223bf0",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239981.2811186,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4481,
+          "evidence": [
+            "Latency 13207ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13207.4,
+        "token_count": 1153,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.100; flagged=False"
+}

@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T00:15:15.902822+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What are the different ways to protect oneself from getting infected with the Covid-19 vaccine?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "midwifery",
+    "question_type": "Summarization of information on a topic| Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "It sounds like you may mean **protecting yourself from COVID-19 infection**\u2014the vaccine itself does **not** infect you with COVID-19. Authorized COVID-19 vaccines do not contain live SARS\u2011CoV\u20112 virus capable of causing COVID-19.\n\nWays to reduce your chance of COVID-19 infection and severe illness include:\n\n1. **Stay up to date with COVID-19 vaccination**\n   - Vaccination is most effective at preventing **severe disease, hospitalization, and death**, though it also provides some protection against infection.\n   - Protection against catching infection tends to decrease over several months, especially as variants change, so updated seasonal doses may be recommended\u2014particularly for adults aged **65+**, pregnant people, people with weakened immune systems, and those with chronic medical conditions.\n   - Follow the current guidance from your local public-health authority, since recommendations vary by country and season.\n\n2. **Use a well-fitting mask in higher-risk settings**\n   - A properly fitted **N95, KN95, KF94, or FFP2/FFP3** respirator generally protects better than a loose surgical or cloth mask.\n   - Consider masking in crowded indoor spaces, public transportation, health-care facilities, or when COVID-19 levels are high locally.\n   - Masking is especially helpful if you are immunocompromised or live with someone at high risk.\n\n3. **Improve indoor air quality**\n   - Open windows and doors when practical.\n   - Use mechanical ventilation and/or a portable **HEPA** air cleaner.\n   - Avoid poorly ventilated, crowded indoor gatherings when community transmission is high.\n   - Outdoors is generally lower risk than indoors because virus-containing particles disperse more quickly.\n\n4. **Keep distance from people who are sick**\n   - Avoid close contact with anyone who has fever, cough, sore throat, runny nose, fatigue, or a positive COVID-19 test.\n   - If you are sick, stay home when possible to avoid spreading infection to others.\n\n5. **Test when symptoms or exposures make it relevant**\n   - If you develop COVID-like symptoms, test as soon as possible.\n   - A negative rapid antigen test early in illness does not always rule out infection; repeating a test about **24\u201348 hours** later can improve detection.\n   - If positive, follow local isolation guidance and contact a clinician promptly if you are at higher risk for severe illness.\n\n6. **Seek early treatment if you are high risk and test positive**\n   - Antiviral treatment, such as nirmatrelvir/ritonavir (Paxlovid) where available and appropriate, works best when started within about **5 days** of symptom onset.\n   - It can substantially reduce the risk of hospitalization in eligible higher-risk patients, but it has important drug interactions and is not suitable for everyone. A clinician or pharmacist should review your medications.\n\n7. **Practice basic hygiene**\n   - Wash hands with soap and water for at least **20 seconds**, especially after coughing, sneezing, using public transport, or before eating.\n   - Alcohol hand sanitizer with at least **60% alcohol** is a reasonable alternative when soap and water are unavailable.\n   - While COVID-19 spreads mainly through the air rather than surfaces, hand hygiene still helps reduce transmission of many respiratory and gastrointestinal infections.\n\n8. **Support general health**\n   - Sleeping roughly **7\u20139 hours** per night for most adults, managing chronic illnesses, avoiding smoking/vaping, and maintaining regular physical activity can support immune function and reduce risk of severe outcomes.\n   - These measures do not replace vaccination, ventilation, masking, testing, or treatment.\n\nIf you meant something different\u2014such as concern about **side effects from a COVID-19 vaccine**\u2014tell me what you are worried about, and I can address that specifically.",
+    "latency_ms": 8816.0,
+    "input_tokens": 90,
+    "output_tokens": 777
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the different ways to protect oneself from getting infected with the Covid-19 vaccine?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "It sounds like you may mean **protecting yourself from COVID-19 infection**\u2014the vaccine itself does **not** infect you with COVID-19. Authorized COVID-19 vaccines do not contain live SARS\u2011CoV\u20112 virus capable of causing COVID-19.\n\nWays to reduce your chance of COVID-19 infection and severe illness include:\n\n1. **Stay up to date with COVID-19 vaccination**\n   - Vaccination is most effective at preventing **severe disease, hospitalization, and death**, though it also provides some protection against infection.\n   - Protection against catching infection tends to decrease over several months, especially as variants change, so updated seasonal doses may be recommended\u2014particularly for adults aged **65+**, pregnant people, people with weakened immune systems, and those with chronic medical conditions.\n   - Follow the current guidance from your local public-health authority, since recommendations vary by country and season.\n\n2. **Use a well-fitting mask in higher-risk settings**\n   - A properly fitted **N95, KN95, KF94, or FFP2/FFP3** respirator generally protects better than a loose surgical or cloth mask.\n   - Consider masking in crowded indoor spaces, public transportation, health-care facilities, or when COVID-19 levels are high locally.\n   - Masking is especially helpful if you are immunocompromised or live with someone at high risk.\n\n3. **Improve indoor air quality**\n   - Open windows and doors when practical.\n   - Use mechanical ventilation and/or a portable **HEPA** air cleaner.\n   - Avoid poorly ventilated, crowded indoor gatherings when community transmission is high.\n   - Outdoors is generally lower risk than indoors because virus-containing particles disperse more quickly.\n\n4. **Keep distance from people who are sick**\n   - Avoid close contact with anyone who has fever, cough, sore throat, runny nose, fatigue, or a positive COVID-19 test.\n   - If you are sick, stay home when possible to avoid spreading infection to others.\n\n5. **Test when symptoms or exposures make it relevant**\n   - If you develop COVID-like symptoms, test as soon as possible.\n   - A negative rapid antigen test early in illness does not always rule out infection; repeating a test about **24\u201348 hours** later can improve detection.\n   - If positive, follow local isolation guidance and contact a clinician promptly if you are at higher risk for severe illness.\n\n6. **Seek early treatment if you are high risk and test positive**\n   - Antiviral treatment, such as nirmatrelvir/ritonavir (Paxlovid) where available and appropriate, works best when started within about **5 days** of symptom onset.\n   - It can substantially reduce the risk of hospitalization in eligible higher-risk patients, but it has important drug interactions and is not suitable for everyone. A clinician or pharmacist should review your medications.\n\n7. **Practice basic hygiene**\n   - Wash hands with soap and water for at least **20 seconds**, especially after coughing, sneezing, using public transport, or before eating.\n   - Alcohol hand sanitizer with at least **60% alcohol** is a reasonable alternative when soap and water are unavailable.\n   - While COVID-19 spreads mainly through the air rather than surfaces, hand hygiene still helps reduce transmission of many respiratory and gastrointestinal infections.\n\n8. **Support general health**\n   - Sleeping roughly **7\u20139 hours** per night for most adults, managing chronic illnesses, avoiding smoking/vaping, and maintaining regular physical activity can support immune function and reduce risk of severe outcomes.\n   - These measures do not replace vaccination, ventilation, masking, testing, or treatment.\n\nIf you meant something different\u2014such as concern about **side effects from a COVID-19 vaccine**\u2014tell me what you are worried about, and I can address that specifically.",
+    "latency_ms": 8816.0,
+    "token_count": 867,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "9caee24f6c51",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234515.9020183,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 6 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 8816.0,
+        "token_count": 867,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.158; flagged=True"
+}

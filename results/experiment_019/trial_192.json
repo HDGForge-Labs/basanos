@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T00:21:08.843169+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "In the United Kingdom, what is the average age of onset for alcohol related dementia?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Dementia ",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "In the UK, alcohol-related dementia is usually considered a **younger-onset dementia**. The average age at presentation/onset is commonly reported as **around 55 years**, with many cases occurring between **about 45 and 65 years**.\n\nSome UK clinical and charity sources describe alcohol-related brain damage/dementia as most often affecting people in their **40s to 50s**, and it is substantially more common before age 65 than most other dementia types. Exact averages vary because diagnoses are inconsistent and symptoms may develop gradually after years of heavy drinking, nutritional deficiency\u2014especially thiamine (vitamin B1) deficiency\u2014and repeated withdrawal or illness.\n\nImportantly, alcohol-related cognitive impairment can sometimes **partly improve** with sustained abstinence, good nutrition, thiamine treatment, and support\u2014unlike many progressive neurodegenerative dementias.",
+    "latency_ms": 3344.0,
+    "input_tokens": 89,
+    "output_tokens": 177
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "In the United Kingdom, what is the average age of onset for alcohol related dementia?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "In the UK, alcohol-related dementia is usually considered a **younger-onset dementia**. The average age at presentation/onset is commonly reported as **around 55 years**, with many cases occurring between **about 45 and 65 years**.\n\nSome UK clinical and charity sources describe alcohol-related brain damage/dementia as most often affecting people in their **40s to 50s**, and it is substantially more common before age 65 than most other dementia types. Exact averages vary because diagnoses are inconsistent and symptoms may develop gradually after years of heavy drinking, nutritional deficiency\u2014especially thiamine (vitamin B1) deficiency\u2014and repeated withdrawal or illness.\n\nImportantly, alcohol-related cognitive impairment can sometimes **partly improve** with sustained abstinence, good nutrition, thiamine treatment, and support\u2014unlike many progressive neurodegenerative dementias.",
+    "latency_ms": 3344.0,
+    "token_count": 266,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "34fd078305d2",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234868.8423853,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 3 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 3344.0,
+        "token_count": 266,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.192; flagged=True"
+}

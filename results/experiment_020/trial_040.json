@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:34:21.496364+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "In the field relying on brain psychology, how do they know when the hypothesis is going to give a good result?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Sales rep in medicines",
+    "question_type": "Open-ended question that is potentially ambiguous| Summarization of information on a topic| Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "In cognitive neuroscience and psychology, researchers don't have a crystal ball, but they use several converging signals to judge whether a hypothesis is likely to pan out before and during testing:\n\n**1. Grounding in established neural/cognitive architecture**\nIf a hypothesis predicts, say, that working memory load will increase dorsolateral prefrontal cortex (DLPFC) activation, that's a good bet because decades of lesion studies, single-unit recordings in primates (Goldman-Rakic's work), and fMRI meta-analyses (e.g., Owen et al.'s n-back meta-analysis) already establish that pathway. Hypotheses that map onto well-characterized circuits (amygdala-fear, hippocampus-memory consolidation, basal ganglia-habit formation) start with higher prior probability of confirmation.\n\n**2. Effect size estimates from meta-analysis**\nBefore running a study, researchers pull effect sizes from prior meta-analyses (Cohen's d, r) to estimate whether their design has enough statistical power to detect the expected effect. Tools like G*Power let you calculate needed sample size given an expected effect size (e.g., d = 0.4 for many cognitive priming effects). If pilot data or literature suggests the true effect is tiny (d < 0.2) and your sample is 30 participants, you already know you're underpowered and unlikely to get a clean result.\n\n**3. Pilot studies**\nSmall-N pilot studies (n=10-20) test whether the man",
+    "latency_ms": 11930.7,
+    "input_tokens": 146,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "In the field relying on brain psychology, how do they know when the hypothesis is going to give a good result?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "In cognitive neuroscience and psychology, researchers don't have a crystal ball, but they use several converging signals to judge whether a hypothesis is likely to pan out before and during testing:\n\n**1. Grounding in established neural/cognitive architecture**\nIf a hypothesis predicts, say, that working memory load will increase dorsolateral prefrontal cortex (DLPFC) activation, that's a good bet because decades of lesion studies, single-unit recordings in primates (Goldman-Rakic's work), and fMRI meta-analyses (e.g., Owen et al.'s n-back meta-analysis) already establish that pathway. Hypotheses that map onto well-characterized circuits (amygdala-fear, hippocampus-memory consolidation, basal ganglia-habit formation) start with higher prior probability of confirmation.\n\n**2. Effect size estimates from meta-analysis**\nBefore running a study, researchers pull effect sizes from prior meta-analyses (Cohen's d, r) to estimate whether their design has enough statistical power to detect the expected effect. Tools like G*Power let you calculate needed sample size given an expected effect size (e.g., d = 0.4 for many cognitive priming effects). If pilot data or literature suggests the true effect is tiny (d < 0.2) and your sample is 30 participants, you already know you're underpowered and unlikely to get a clean result.\n\n**3. Pilot studies**\nSmall-N pilot studies (n=10-20) test whether the man",
+    "latency_ms": 11930.7,
+    "token_count": 1170
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "c0910d1fd70c",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239261.4956148,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.429,
+          "evidence": [
+            "Latency 11931ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11930.7,
+        "token_count": 1170,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.40; flagged=False"
+}

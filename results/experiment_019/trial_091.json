@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T00:04:06.003296+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What are the symptoms of sepsis?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Critical care",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Sepsis is a life-threatening reaction to an infection that can rapidly cause organ failure. Symptoms can appear suddenly and may include:\n\n- Fever (often >38\u00b0C / 100.4\u00b0F) or abnormally low temperature (<36\u00b0C / 96.8\u00b0F)\n- Chills, shaking, or feeling extremely cold\n- Fast heart rate or palpitations\n- Fast breathing, shortness of breath, or difficulty breathing\n- New confusion, disorientation, unusual sleepiness, or difficulty staying awake\n- Extreme weakness, severe malaise, or \u201cfeeling like something is very wrong\u201d\n- Low blood pressure: dizziness, fainting, clammy skin, or inability to stand\n- Pale, mottled, bluish, or unusually cold skin, lips, or fingertips\n- Reduced urination or very dark urine\n- Nausea, vomiting, diarrhea, or severe abdominal pain\n- Severe pain or discomfort anywhere in the body\n- A new rash, especially purple spots or bruising-like marks that do not fade when pressed\n\nIn infants and children, warning signs include poor feeding, vomiting, unusually high or low temperature, rapid breathing, grunting, limpness, inconsolable crying, a rash, fewer wet diapers, or being difficult to wake.\n\nCall emergency services or seek urgent emergency care immediately if someone with a known or suspected infection develops confusion, trouble breathing, blue/mottled skin, fainting, very low urine output, or rapidly worsening illness. Sepsis needs prompt hospital treatment with antibiotics, fluids, and support for affected organs.",
+    "latency_ms": 4814.4,
+    "input_tokens": 86,
+    "output_tokens": 320
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the symptoms of sepsis?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Sepsis is a life-threatening reaction to an infection that can rapidly cause organ failure. Symptoms can appear suddenly and may include:\n\n- Fever (often >38\u00b0C / 100.4\u00b0F) or abnormally low temperature (<36\u00b0C / 96.8\u00b0F)\n- Chills, shaking, or feeling extremely cold\n- Fast heart rate or palpitations\n- Fast breathing, shortness of breath, or difficulty breathing\n- New confusion, disorientation, unusual sleepiness, or difficulty staying awake\n- Extreme weakness, severe malaise, or \u201cfeeling like something is very wrong\u201d\n- Low blood pressure: dizziness, fainting, clammy skin, or inability to stand\n- Pale, mottled, bluish, or unusually cold skin, lips, or fingertips\n- Reduced urination or very dark urine\n- Nausea, vomiting, diarrhea, or severe abdominal pain\n- Severe pain or discomfort anywhere in the body\n- A new rash, especially purple spots or bruising-like marks that do not fade when pressed\n\nIn infants and children, warning signs include poor feeding, vomiting, unusually high or low temperature, rapid breathing, grunting, limpness, inconsolable crying, a rash, fewer wet diapers, or being difficult to wake.\n\nCall emergency services or seek urgent emergency care immediately if someone with a known or suspected infection develops confusion, trouble breathing, blue/mottled skin, fainting, very low urine output, or rapidly worsening illness. Sepsis needs prompt hospital treatment with antibiotics, fluids, and support for affected organs.",
+    "latency_ms": 4814.4,
+    "token_count": 406
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "9f300acbc73c",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233846.0025358,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 4814.4,
+        "token_count": 406,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.91; flagged=False"
+}

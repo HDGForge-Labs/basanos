@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:13:49.116370+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "How can we prevent the next pandemic?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Family medicine ",
+    "question_type": "Open-ended question that is potentially ambiguous| Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Preventing the next pandemic requires reducing the chance that dangerous pathogens emerge, detecting outbreaks early, and stopping spread before local transmission becomes international transmission. No single measure is sufficient; the strongest approach is a layered global system.\n\n## 1. Reduce spillover from animals to people\n\nMost emerging infectious diseases originate in animals. Prevention starts where people, livestock, wildlife, and ecosystems interact.\n\n- **Regulate high-risk wildlife trade and markets.** Ban or tightly control trade in live wild mammals and birds known to carry zoonotic viruses, especially when multiple species are housed together. Require veterinary inspection, species traceability, sanitation, and rapid reporting of animal deaths.\n- **Improve farm biosecurity.** Separate poultry, pigs, cattle, and other livestock from wild animals; control visitor access; use protective clothing; test animals during unusual illness or death events.\n- **Protect habitats and reduce risky land-use change.** Deforestation, mining, road building, and expansion of farms can bring people into closer contact with bats, rodents, primates, and other reservoir species. Land-use projects should include infectious-disease risk assessments, not only environmental impact assessments.\n- **Protect workers with high exposure.** Farmers, veterinarians, slaughterhouse workers, wildlife handlers, laboratory personnel, and market vendors need training, masks or respirators where appropriate, gloves, vaccination when available, and access to testing and paid sick leave.\n- **Use a \u201cOne Health\u201d approach.** Human health, animal health, agriculture, food safety, and environmental agencies should share surveillance data. An unexplained livestock die-off, for example, should trigger coordinated animal and human testing within roughly 24\u201348 hours.\n\n## 2. Detect outbreaks much earlier\n\nA pathogen is easiest to contain in its first days or weeks, before it spreads widely.\n\n- **Build reliable local surveillance.** Every country should be able to detect clusters of unusual pneumonia, hemorrhagic fever, neurological illness, severe diarrhea, or unexplained deaths.\n- **Expand laboratory capacity.** Countries need decentralized PCR testing, sequencing, trained laboratory staff, secure sample transport, and reliable supplies. A useful goal is the ability to identify a novel pathogen or unusual outbreak signal within about 7 days, rather than waiting several weeks.\n- **Use genomic sequencing routinely.** Sequencing can show whether cases are linked, identify new variants, and reveal whether a virus is spreading between people. Public-health systems should rapidly share anonymized sequences through international databases.\n- **Monitor wastewater and environmental samples.** Wastewater surveillance can detect some respiratory and gastrointestinal pathogens before hospitals see large numbers of cases. It should be used in major cities, airports, universities, prisons, and other high-density settings.\n- **Strengthen clinical reporting.** Electronic reporting systems should allow clinicians to flag unusual disease clusters immediately. Hospitals should not need to wait for laboratory confirmation before alerting public-health authorities.\n- **Support community-based reporting.** Local health workers, pharmacists, veterinarians, and community leaders often notice abnormal illness patterns first. They need clear channels to report concerns without punishment.\n\n## 3. Ensure transparent, rapid international reporting\n\nDelays of even a few weeks can make containment dramatically harder.\n\n- Countries should report suspected high-consequence outbreaks to the World Health Organization and neighboring countries quickly\u2014ideally within about 24 hours of confirming a serious, unusual public-health event.\n- Governments should protect whistleblowers, clinicians, journalists, and researchers who report health threats in good faith.\n- International agreements should require sharing of pathogen samples, genetic sequences, epidemiological data, and clinical information while also ensuring fair access to resulting vaccines, tests, and treatments.\n- Outbreak reporting must not automatically trigger disproportionate travel bans or trade penalties. If countries are economically punished for transparency, they may delay reporting in the future.\n\n## 4. Build rapid response teams before emergencies happen\n\nThe goal is to contain outbreaks while case numbers are still small.\n\n- Maintain trained local and national teams for case investigation, contact tracing, infection prevention, risk communication, laboratory work, and logistics.\n- Deploy investigation teams within roughly 24\u201372 hours of an alert.\n- Maintain emergency stockpiles of personal protective equipment, diagnostic supplies, oxygen equipment, antivirals, and basic medical consumables.\n- Use clear incident-command systems so health agencies, hospitals, laboratories, schools, transportation authorities, and local leaders know who is responsible for what.\n- Conduct regular simulations\u2014at least annually at national level and periodically across borders\u2014to test whether systems work under pressure.\n\n## 5. Make hospitals safer and more resilient\n\nHospitals can either contain outbreaks or amplify them.\n\n- Improve ventilation and air filtration in clinics, emergency departments, long-term-care facilities, and crowded indoor spaces. For airborne infection control, many settings aim for roughly 6\u201312 air changes per hour in higher-risk clinical areas, though requirements vary by facility and country.\n- Maintain isolation rooms or flexible spaces that can be converted quickly during outbreaks.\n- Train health-care workers in infection prevention: hand hygiene, respiratory protection, safe specimen handling",
+    "latency_ms": 14718.7,
+    "input_tokens": 80,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How can we prevent the next pandemic?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Preventing the next pandemic requires reducing the chance that dangerous pathogens emerge, detecting outbreaks early, and stopping spread before local transmission becomes international transmission. No single measure is sufficient; the strongest approach is a layered global system.\n\n## 1. Reduce spillover from animals to people\n\nMost emerging infectious diseases originate in animals. Prevention starts where people, livestock, wildlife, and ecosystems interact.\n\n- **Regulate high-risk wildlife trade and markets.** Ban or tightly control trade in live wild mammals and birds known to carry zoonotic viruses, especially when multiple species are housed together. Require veterinary inspection, species traceability, sanitation, and rapid reporting of animal deaths.\n- **Improve farm biosecurity.** Separate poultry, pigs, cattle, and other livestock from wild animals; control visitor access; use protective clothing; test animals during unusual illness or death events.\n- **Protect habitats and reduce risky land-use change.** Deforestation, mining, road building, and expansion of farms can bring people into closer contact with bats, rodents, primates, and other reservoir species. Land-use projects should include infectious-disease risk assessments, not only environmental impact assessments.\n- **Protect workers with high exposure.** Farmers, veterinarians, slaughterhouse workers, wildlife handlers, laboratory personnel, and market vendors need training, masks or respirators where appropriate, gloves, vaccination when available, and access to testing and paid sick leave.\n- **Use a \u201cOne Health\u201d approach.** Human health, animal health, agriculture, food safety, and environmental agencies should share surveillance data. An unexplained livestock die-off, for example, should trigger coordinated animal and human testing within roughly 24\u201348 hours.\n\n## 2. Detect outbreaks much earlier\n\nA pathogen is easiest to contain in its first days or weeks, before it spreads widely.\n\n- **Build reliable local surveillance.** Every country should be able to detect clusters of unusual pneumonia, hemorrhagic fever, neurological illness, severe diarrhea, or unexplained deaths.\n- **Expand laboratory capacity.** Countries need decentralized PCR testing, sequencing, trained laboratory staff, secure sample transport, and reliable supplies. A useful goal is the ability to identify a novel pathogen or unusual outbreak signal within about 7 days, rather than waiting several weeks.\n- **Use genomic sequencing routinely.** Sequencing can show whether cases are linked, identify new variants, and reveal whether a virus is spreading between people. Public-health systems should rapidly share anonymized sequences through international databases.\n- **Monitor wastewater and environmental samples.** Wastewater surveillance can detect some respiratory and gastrointestinal pathogens before hospitals see large numbers of cases. It should be used in major cities, airports, universities, prisons, and other high-density settings.\n- **Strengthen clinical reporting.** Electronic reporting systems should allow clinicians to flag unusual disease clusters immediately. Hospitals should not need to wait for laboratory confirmation before alerting public-health authorities.\n- **Support community-based reporting.** Local health workers, pharmacists, veterinarians, and community leaders often notice abnormal illness patterns first. They need clear channels to report concerns without punishment.\n\n## 3. Ensure transparent, rapid international reporting\n\nDelays of even a few weeks can make containment dramatically harder.\n\n- Countries should report suspected high-consequence outbreaks to the World Health Organization and neighboring countries quickly\u2014ideally within about 24 hours of confirming a serious, unusual public-health event.\n- Governments should protect whistleblowers, clinicians, journalists, and researchers who report health threats in good faith.\n- International agreements should require sharing of pathogen samples, genetic sequences, epidemiological data, and clinical information while also ensuring fair access to resulting vaccines, tests, and treatments.\n- Outbreak reporting must not automatically trigger disproportionate travel bans or trade penalties. If countries are economically punished for transparency, they may delay reporting in the future.\n\n## 4. Build rapid response teams before emergencies happen\n\nThe goal is to contain outbreaks while case numbers are still small.\n\n- Maintain trained local and national teams for case investigation, contact tracing, infection prevention, risk communication, laboratory work, and logistics.\n- Deploy investigation teams within roughly 24\u201372 hours of an alert.\n- Maintain emergency stockpiles of personal protective equipment, diagnostic supplies, oxygen equipment, antivirals, and basic medical consumables.\n- Use clear incident-command systems so health agencies, hospitals, laboratories, schools, transportation authorities, and local leaders know who is responsible for what.\n- Conduct regular simulations\u2014at least annually at national level and periodically across borders\u2014to test whether systems work under pressure.\n\n## 5. Make hospitals safer and more resilient\n\nHospitals can either contain outbreaks or amplify them.\n\n- Improve ventilation and air filtration in clinics, emergency departments, long-term-care facilities, and crowded indoor spaces. For airborne infection control, many settings aim for roughly 6\u201312 air changes per hour in higher-risk clinical areas, though requirements vary by facility and country.\n- Maintain isolation rooms or flexible spaces that can be converted quickly during outbreaks.\n- Train health-care workers in infection prevention: hand hygiene, respiratory protection, safe specimen handling",
+    "latency_ms": 14718.7,
+    "token_count": 1104,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "7611265b8c7b",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234429.1155922,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 8 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4708,
+          "evidence": [
+            "Latency 14719ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 14718.7,
+        "token_count": 1104,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.150; flagged=True"
+}

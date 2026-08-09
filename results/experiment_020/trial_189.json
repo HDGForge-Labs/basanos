@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T02:04:29.755159+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "How can you understand the mind of a politician while his speech?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Care home",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Understanding a Politician's Mind During Their Speech\n\nAnalyzing political speech requires attention to multiple layers\u2014verbal, vocal, and non-verbal. Here's a detailed framework:\n\n## 1. **Verbal Content Analysis**\n\n- **Word choice patterns**: Politicians using approximately 60-70% abstract nouns (freedom, justice, prosperity) versus concrete specifics often signal avoidance of accountability or lack of a detailed plan.\n- **Pronoun usage**: Frequent use of \"we/us\" (roughly 3-4 times more than \"I\") suggests attempts to build collective identity; excessive \"I\" statements may indicate ego-driven messaging or personal responsibility claims.\n- **Hedging language**: Phrases like \"we will try,\" \"hopefully,\" or \"in most cases\" appearing more than 5-6 times in a 10-minute speech often reveal uncertainty or deliberate ambiguity to avoid future blame.\n- **Repetition frequency**: Key phrases repeated 3+ times typically indicate core messaging the speaker wants to embed\u2014this is a deliberate rhetorical strategy, not necessarily deception.\n\n## 2. **Vocal/Paralinguistic Cues**\n\n- **Speech rate**: Average conversational pace is about 120-150 words per minute. A sudden increase to 180+ WPM during specific topics may indicate discomfort or eagerness to move past a subject.\n- **Pitch variation**: A rise of roughly 20-30 Hz above baseline can indicate emotional arousal (excitement or anxiety).\n- **Pauses**: Micro-pauses lasting 0.5-1 second before answering tough questions may suggest cognitive load (formulating a careful response) rather than dishonesty per se.\n- **Vocal fry or trembling**: Can indicate stress, especially if it appears only during specific segments (e.g., economic policy vs. foreign policy).\n\n## 3. **Non-Verbal Micro-Expressions**\n\n- **Facial micro-expressions**: These last only about 1/25 to 1/5 of a second (40-200 milliseconds) and can reveal fleeting genuine emotions (per Paul Ekman's research) that contradict verbal messaging.\n- **Blink rate**: Normal is about 15-20 blinks per minute; increases to 30-40+ blinks per minute under questioning may correlate with stress (though this is not forensically reliable alone).\n- **Hand gestures**: Open palm gestures (roughly 70-80% of persuasive speakers use these) tend to signal openness; self-touching gestures (adjusting tie, touching face) at a rate of more than 5-6 times per minute may indicate discomfort.\n\n## 4. **Rhetorical Strategy Recognition**\n\n- **Deflection patterns**: Watch for bridging phrases like \"but what's really important is...\" \u2014 used to pivot away from roughly 15-20% of direct questions in typical press conferences.\n- **Emotional appeals vs. logical appeals ratio**: A speech with 80%+ emotional language (fear, hope",
+    "latency_ms": 13396.0,
+    "input_tokens": 127,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How can you understand the mind of a politician while his speech?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Understanding a Politician's Mind During Their Speech\n\nAnalyzing political speech requires attention to multiple layers\u2014verbal, vocal, and non-verbal. Here's a detailed framework:\n\n## 1. **Verbal Content Analysis**\n\n- **Word choice patterns**: Politicians using approximately 60-70% abstract nouns (freedom, justice, prosperity) versus concrete specifics often signal avoidance of accountability or lack of a detailed plan.\n- **Pronoun usage**: Frequent use of \"we/us\" (roughly 3-4 times more than \"I\") suggests attempts to build collective identity; excessive \"I\" statements may indicate ego-driven messaging or personal responsibility claims.\n- **Hedging language**: Phrases like \"we will try,\" \"hopefully,\" or \"in most cases\" appearing more than 5-6 times in a 10-minute speech often reveal uncertainty or deliberate ambiguity to avoid future blame.\n- **Repetition frequency**: Key phrases repeated 3+ times typically indicate core messaging the speaker wants to embed\u2014this is a deliberate rhetorical strategy, not necessarily deception.\n\n## 2. **Vocal/Paralinguistic Cues**\n\n- **Speech rate**: Average conversational pace is about 120-150 words per minute. A sudden increase to 180+ WPM during specific topics may indicate discomfort or eagerness to move past a subject.\n- **Pitch variation**: A rise of roughly 20-30 Hz above baseline can indicate emotional arousal (excitement or anxiety).\n- **Pauses**: Micro-pauses lasting 0.5-1 second before answering tough questions may suggest cognitive load (formulating a careful response) rather than dishonesty per se.\n- **Vocal fry or trembling**: Can indicate stress, especially if it appears only during specific segments (e.g., economic policy vs. foreign policy).\n\n## 3. **Non-Verbal Micro-Expressions**\n\n- **Facial micro-expressions**: These last only about 1/25 to 1/5 of a second (40-200 milliseconds) and can reveal fleeting genuine emotions (per Paul Ekman's research) that contradict verbal messaging.\n- **Blink rate**: Normal is about 15-20 blinks per minute; increases to 30-40+ blinks per minute under questioning may correlate with stress (though this is not forensically reliable alone).\n- **Hand gestures**: Open palm gestures (roughly 70-80% of persuasive speakers use these) tend to signal openness; self-touching gestures (adjusting tie, touching face) at a rate of more than 5-6 times per minute may indicate discomfort.\n\n## 4. **Rhetorical Strategy Recognition**\n\n- **Deflection patterns**: Watch for bridging phrases like \"but what's really important is...\" \u2014 used to pivot away from roughly 15-20% of direct questions in typical press conferences.\n- **Emotional appeals vs. logical appeals ratio**: A speech with 80%+ emotional language (fear, hope",
+    "latency_ms": 13396.0,
+    "token_count": 1151,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "f3e1093ce509",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786241069.7543595,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 20 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4509,
+          "evidence": [
+            "Latency 13396ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13396.0,
+        "token_count": 1151,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.189; flagged=True"
+}

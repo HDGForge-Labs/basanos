@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:52:42.777000+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What are the differences between Acute myeloid leukemia and Chronic myeloid leukemia?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "oncology",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "**Acute myeloid leukemia (AML)** and **chronic myeloid leukemia (CML)** are both cancers of myeloid blood-forming cells in the bone marrow, but they differ substantially in speed, cell type, genetics, symptoms, and treatment.\n\n| Feature | AML | CML |\n|---|---|---|\n| **Course** | Rapidly progressive; untreated can become fatal within weeks to months | Usually slowly progressive initially; may be stable for years with treatment |\n| **Predominant cells** | Immature myeloid precursor cells (\u201cblasts\u201d) | More mature granulocytic cells, especially neutrophils and their precursors |\n| **Bone marrow / blood finding** | \u226520% myeloblasts in marrow or blood is generally diagnostic | Marked leukocytosis with cells at many stages of granulocyte maturation; blasts are low in chronic phase |\n| **Typical age** | Mostly older adults, though can occur at any age | Often middle-aged adults; can occur in younger adults and rarely children |\n| **Main genetic feature** | Genetically diverse: e.g., NPM1, FLT3, CEBPA, RUNX1, TP53; some subtypes have recurrent translocations | Defined by the **Philadelphia chromosome**, t(9;22), creating the **BCR::ABL1** fusion gene |\n| **Symptoms at presentation** | Often abrupt: fatigue, fever/infections, bruising/bleeding, anemia, bone pain | May be found incidentally; fatigue, weight loss, night sweats, early satiety or left upper abdominal fullness from splenomegaly |\n| **Cytopenias** | Common: anemia, thrombocytopenia, neutropenia despite high WBC count | Often very high WBC and platelets; anemia may be mild initially |\n| **Urgency** | Medical urgency; some forms are emergencies | Usually not an immediate emergency in chronic phase, though very high counts or advanced disease require prompt care |\n| **Standard treatment** | Intensive induction chemotherapy \u00b1 targeted drugs, then consolidation; stem-cell transplant for selected higher-risk patients | Oral targeted **tyrosine kinase inhibitors (TKIs)** such as imatinib, dasatinib, nilotinib, bosutinib, or asciminib |\n| **Potential for cure** | Many patients can be cured, particularly with appropriate risk-adapted treatment; transplant may be curative | TKIs control disease extremely well; some patients with deep, sustained molecular remission can attempt treatment-free remission. Stem-cell transplant is potentially curative but now uncommon |\n| **Natural evolution** | Does not have \u201cchronic phase\u201d; it is acute from onset | Has chronic phase, accelerated phase, and can transform into blast phase, which resembles acute leukemia |\n\n### Key distinctions\n\n#### AML: a blast-cell leukemia\nAML results from accumulation of immature myeloid cells that cannot mature normally. These blasts crowd out normal marrow production, causing:\n\n- **Anemia** \u2192 fatigue, shortness of breath\n- **Low platelets** \u2192 bruising, nosebleeds, gum bleeding, petechiae\n- **Low functional neutrophils** \u2192 serious infections and fever\n\nA special subtype, **acute promyelocytic leukemia (APL)**, is associated with **PML::RARA** and can cause severe disseminated intravascular coagulation (DIC). It requires immediate treatment with **all-trans retinoic acid (ATRA)**, often before genetic confirmation if suspected.\n\n#### CML: a BCR::ABL1-driven chronic myeloproliferative neoplasm\nCML is driven by continuously active BCR::ABL1 tyrosine kinase signaling. It produces large numbers of granulocytes, often with:\n\n- Very elevated white blood cell count\n- Basophilia and sometimes eosinophilia\n- Enlarged spleen\n- Elevated platelet count\n\nModern TKIs suppress BCR::ABL1 very effectively. In chronic phase, life expectancy with appropriate monitoring and treatment is often close to normal.\n\n### Can CML become AML?\nCML can progress to **blast phase**, where blasts reach \u226520% in blood or marrow. This may be **myeloid blast phase** (AML-like) or lymphoid blast phase (ALL-like). Blast-phase CML is much more difficult to treat than chronic-phase CML.\n\n### Bottom line\n- **AML** is an aggressive leukemia of immature myeloid blasts that requires urgent induction-based treatment.\n- **CML** is usually a slower, BCR::ABL1-positive disease dominated by mature myeloid cells and is typically managed long-term with targeted oral kinase inhibitors.",
+    "latency_ms": 11044.0,
+    "input_tokens": 95,
+    "output_tokens": 960
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the differences between Acute myeloid leukemia and Chronic myeloid leukemia?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "**Acute myeloid leukemia (AML)** and **chronic myeloid leukemia (CML)** are both cancers of myeloid blood-forming cells in the bone marrow, but they differ substantially in speed, cell type, genetics, symptoms, and treatment.\n\n| Feature | AML | CML |\n|---|---|---|\n| **Course** | Rapidly progressive; untreated can become fatal within weeks to months | Usually slowly progressive initially; may be stable for years with treatment |\n| **Predominant cells** | Immature myeloid precursor cells (\u201cblasts\u201d) | More mature granulocytic cells, especially neutrophils and their precursors |\n| **Bone marrow / blood finding** | \u226520% myeloblasts in marrow or blood is generally diagnostic | Marked leukocytosis with cells at many stages of granulocyte maturation; blasts are low in chronic phase |\n| **Typical age** | Mostly older adults, though can occur at any age | Often middle-aged adults; can occur in younger adults and rarely children |\n| **Main genetic feature** | Genetically diverse: e.g., NPM1, FLT3, CEBPA, RUNX1, TP53; some subtypes have recurrent translocations | Defined by the **Philadelphia chromosome**, t(9;22), creating the **BCR::ABL1** fusion gene |\n| **Symptoms at presentation** | Often abrupt: fatigue, fever/infections, bruising/bleeding, anemia, bone pain | May be found incidentally; fatigue, weight loss, night sweats, early satiety or left upper abdominal fullness from splenomegaly |\n| **Cytopenias** | Common: anemia, thrombocytopenia, neutropenia despite high WBC count | Often very high WBC and platelets; anemia may be mild initially |\n| **Urgency** | Medical urgency; some forms are emergencies | Usually not an immediate emergency in chronic phase, though very high counts or advanced disease require prompt care |\n| **Standard treatment** | Intensive induction chemotherapy \u00b1 targeted drugs, then consolidation; stem-cell transplant for selected higher-risk patients | Oral targeted **tyrosine kinase inhibitors (TKIs)** such as imatinib, dasatinib, nilotinib, bosutinib, or asciminib |\n| **Potential for cure** | Many patients can be cured, particularly with appropriate risk-adapted treatment; transplant may be curative | TKIs control disease extremely well; some patients with deep, sustained molecular remission can attempt treatment-free remission. Stem-cell transplant is potentially curative but now uncommon |\n| **Natural evolution** | Does not have \u201cchronic phase\u201d; it is acute from onset | Has chronic phase, accelerated phase, and can transform into blast phase, which resembles acute leukemia |\n\n### Key distinctions\n\n#### AML: a blast-cell leukemia\nAML results from accumulation of immature myeloid cells that cannot mature normally. These blasts crowd out normal marrow production, causing:\n\n- **Anemia** \u2192 fatigue, shortness of breath\n- **Low platelets** \u2192 bruising, nosebleeds, gum bleeding, petechiae\n- **Low functional neutrophils** \u2192 serious infections and fever\n\nA special subtype, **acute promyelocytic leukemia (APL)**, is associated with **PML::RARA** and can cause severe disseminated intravascular coagulation (DIC). It requires immediate treatment with **all-trans retinoic acid (ATRA)**, often before genetic confirmation if suspected.\n\n#### CML: a BCR::ABL1-driven chronic myeloproliferative neoplasm\nCML is driven by continuously active BCR::ABL1 tyrosine kinase signaling. It produces large numbers of granulocytes, often with:\n\n- Very elevated white blood cell count\n- Basophilia and sometimes eosinophilia\n- Enlarged spleen\n- Elevated platelet count\n\nModern TKIs suppress BCR::ABL1 very effectively. In chronic phase, life expectancy with appropriate monitoring and treatment is often close to normal.\n\n### Can CML become AML?\nCML can progress to **blast phase**, where blasts reach \u226520% in blood or marrow. This may be **myeloid blast phase** (AML-like) or lymphoid blast phase (ALL-like). Blast-phase CML is much more difficult to treat than chronic-phase CML.\n\n### Bottom line\n- **AML** is an aggressive leukemia of immature myeloid blasts that requires urgent induction-based treatment.\n- **CML** is usually a slower, BCR::ABL1-positive disease dominated by mature myeloid cells and is typically managed long-term with targeted oral kinase inhibitors.",
+    "latency_ms": 11044.0,
+    "token_count": 1055
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "36a0a051604e",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233162.7762747,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 11044.0,
+        "token_count": 1055,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.3; flagged=False"
+}

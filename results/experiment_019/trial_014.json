@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:54:06.861531+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Can direct evidence in a case that has been obtained illegally be considered by the court in some cases if it directly points to the defendant's guilt?",
+    "field": "Law",
+    "specific_field": "civil law",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "It depends on the jurisdiction, but in many legal systems\u2014especially the United States\u2014illegally obtained direct evidence is **not automatically admissible simply because it strongly proves guilt**.\n\nIn U.S. criminal cases, evidence obtained in violation of the Constitution, such as through an unlawful search or seizure, may be excluded under the **exclusionary rule**. The fact that it is direct, reliable, or highly incriminating generally does not override the constitutional violation.\n\nHowever, courts may admit it under recognized exceptions, including:\n\n- **Good-faith exception:** Police reasonably relied on a warrant later found defective.\n- **Inevitable discovery:** The evidence would lawfully have been found anyway.\n- **Independent source doctrine:** The same evidence was later obtained through an untainted, lawful source.\n- **Attenuation doctrine:** The connection between the illegality and the evidence became sufficiently remote\u2014for example, after an intervening voluntary act.\n- **Impeachment use:** Some unlawfully obtained evidence may be used to challenge a defendant\u2019s credibility if the defendant testifies inconsistently, though not generally as substantive proof in the prosecution\u2019s main case.\n- **Private-party conduct:** The exclusionary rule normally applies to government misconduct, not evidence illegally obtained by a private person acting independently of law enforcement.\n\nFor example, if police illegally search a home and find a weapon, the weapon may be suppressed even if it clearly links the accused to the crime. But if investigators were already lawfully conducting a search that would inevitably have found it, the court may allow it.\n\nOther countries use different balancing tests. Some permit judges to weigh the seriousness of the rights violation against the importance and reliability of the evidence. But even there, \u201cit proves guilt\u201d alone is usually not enough; courts consider fairness, deterrence of misconduct, and the integrity of the justice system.",
+    "latency_ms": 5098.7,
+    "input_tokens": 107,
+    "output_tokens": 378
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Can direct evidence in a case that has been obtained illegally be considered by the court in some cases if it directly points to the defendant's guilt?",
+      "field": "Law"
+    },
+    "response": "It depends on the jurisdiction, but in many legal systems\u2014especially the United States\u2014illegally obtained direct evidence is **not automatically admissible simply because it strongly proves guilt**.\n\nIn U.S. criminal cases, evidence obtained in violation of the Constitution, such as through an unlawful search or seizure, may be excluded under the **exclusionary rule**. The fact that it is direct, reliable, or highly incriminating generally does not override the constitutional violation.\n\nHowever, courts may admit it under recognized exceptions, including:\n\n- **Good-faith exception:** Police reasonably relied on a warrant later found defective.\n- **Inevitable discovery:** The evidence would lawfully have been found anyway.\n- **Independent source doctrine:** The same evidence was later obtained through an untainted, lawful source.\n- **Attenuation doctrine:** The connection between the illegality and the evidence became sufficiently remote\u2014for example, after an intervening voluntary act.\n- **Impeachment use:** Some unlawfully obtained evidence may be used to challenge a defendant\u2019s credibility if the defendant testifies inconsistently, though not generally as substantive proof in the prosecution\u2019s main case.\n- **Private-party conduct:** The exclusionary rule normally applies to government misconduct, not evidence illegally obtained by a private person acting independently of law enforcement.\n\nFor example, if police illegally search a home and find a weapon, the weapon may be suppressed even if it clearly links the accused to the crime. But if investigators were already lawfully conducting a search that would inevitably have found it, the court may allow it.\n\nOther countries use different balancing tests. Some permit judges to weigh the seriousness of the rights violation against the importance and reliability of the evidence. But even there, \u201cit proves guilt\u201d alone is usually not enough; courts consider fairness, deterrence of misconduct, and the integrity of the justice system.",
+    "latency_ms": 5098.7,
+    "token_count": 485
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "ef8a70089db4",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233246.8607829,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 5098.7,
+        "token_count": 485,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.14; flagged=False"
+}

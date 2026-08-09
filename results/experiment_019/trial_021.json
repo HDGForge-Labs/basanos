@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-08T23:55:00.187826+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "How can Rasch analysis inform the analysis of Patient Reported Outcome instruments?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pharmaceutical industry",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Rasch analysis is a modern psychometric method used to evaluate whether a Patient Reported Outcome (PRO) instrument measures a construct\u2014such as pain, fatigue, physical function, or quality of life\u2014in a valid, reliable, and interpretable way.\n\nIt models the probability of a respondent endorsing an item response category as a function of:\n\n- the person\u2019s level of the latent trait (for example, disability severity), and\n- the item\u2019s difficulty, severity, or \u201clocation\u201d on that trait continuum.\n\nIn its simplest form:\n\n\\[\nP(\\text{endorsement}) = f(\\text{person ability/trait} - \\text{item difficulty})\n\\]\n\nFor polytomous PRO response scales (eg, \u201cnone,\u201d \u201cmild,\u201d \u201cmoderate,\u201d \u201csevere\u201d), variants such as the Partial Credit Model or Rating Scale Model are commonly used.\n\n## How Rasch analysis informs PRO instrument evaluation\n\n### 1. Tests whether items measure one underlying construct\nMany PRO scores are calculated by summing item responses. That is only meaningful if the items assess a sufficiently unidimensional construct.\n\nRasch analysis helps assess this through:\n\n- item fit statistics;\n- residual principal components analysis;\n- local-dependence analyses.\n\nIf an instrument intended to measure physical function contains items that instead divide into mobility, self-care, and social participation domains, a single total score may be inappropriate. The measure may need separate subscales or item revision.\n\n### 2. Identifies poorly functioning items\nRasch fit statistics identify items that do not behave as expected under the measurement model.\n\nCommon indicators include:\n\n- **Infit mean square**: sensitive to unexpected responses near a person\u2019s trait level.\n- **Outfit mean square**: sensitive to outlying or unusual responses.\n- Values roughly between **0.7 and 1.3** are often considered acceptable in clinical PRO development, although acceptable thresholds depend on sample size and purpose.\n\nExamples of problematic items:\n\n- An item is too ambiguous (\u201cI feel unwell\u201d).\n- An item is interpreted differently across patients.\n- An item measures a different concept than the intended domain.\n- An item is redundant with another item.\n- Responses are driven by external factors rather than the target construct.\n\nMisfitting items may be revised, removed, split into a different domain, or retained for clinical-content reasons with transparent justification.\n\n### 3. Evaluates response-category functioning\nRasch analysis is particularly useful for determining whether Likert-type response options work as intended.\n\nIt can identify:\n\n- **disordered thresholds**, where respondents cannot consistently distinguish adjacent categories;\n- categories that are rarely used;\n- categories that duplicate one another;\n- uneven category spacing.\n\nFor example, a five-category response scale\u2014\u201cnever,\u201d \u201crarely,\u201d \u201csometimes,\u201d \u201coften,\u201d \u201calways\u201d\u2014may show that \u201crarely\u201d and \u201csometimes\u201d are not distinguishable in practice. Collapsing categories may improve measurement, such as using \u201cnever,\u201d \u201csometimes,\u201d and \u201coften/always.\u201d\n\nThis is important because conventional scoring assumes that categories are ordered and meaningfully distinct.\n\n### 4. Places patients and items on the same metric\nRasch analysis produces a common interval-scale metric, usually expressed in **logits**.\n\nThis allows investigators to compare:\n\n- the distribution of patient severity or functioning;\n- the range covered by the instrument\u2019s items;\n- whether the questionnaire is appropriately targeted to the population.\n\nFor example, if a fatigue PRO contains mostly severe-fatigue items but is used in a mildly symptomatic outpatient population, many respondents may score at the low end. The instrument will have poor precision for mild fatigue and substantial floor effects.\n\nA **person\u2013item map** or Wright map visually shows whether item locations cover the range of patient experiences.\n\n### 5. Detects floor and ceiling problems more meaningfully\nTraditional analyses report the proportion scoring at the minimum or maximum possible score. Rasch analysis goes further by showing whether there are enough items at the low and high ends of the construct.\n\nFor example:\n\n- A ceiling effect in a physical-function scale may indicate that highly functioning patients are not adequately differentiated.\n- A floor effect in a symptom scale may indicate that mild or absent symptoms are poorly represented.\n\nThe solution may be to add easier/harder items, create adaptive testing item banks, or use a different measure for that population.\n\n### 6. Assesses measurement precision across the trait continuum\nRasch analysis provides information on where a PRO is most precise.\n\nIt can estimate:\n\n- person reliability;\n- item reliability;\n- person separation index;\n- standard errors at different trait levels;\n- test information functions.\n\nUnlike a single Cronbach\u2019s alpha, this shows whether the scale is reliable for patients with mild, moderate, and severe symptoms. A PRO may be very precise in moderate disease but unreliable at the extremes.\n\n### 7. Supports transformation from ordinal scores to interval-level estimates\nRaw summed Likert scores are generally ordinal: the difference between scores of 1 and 2 may not be equivalent to the difference between 4",
+    "latency_ms": 11859.2,
+    "input_tokens": 93,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How can Rasch analysis inform the analysis of Patient Reported Outcome instruments?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Rasch analysis is a modern psychometric method used to evaluate whether a Patient Reported Outcome (PRO) instrument measures a construct\u2014such as pain, fatigue, physical function, or quality of life\u2014in a valid, reliable, and interpretable way.\n\nIt models the probability of a respondent endorsing an item response category as a function of:\n\n- the person\u2019s level of the latent trait (for example, disability severity), and\n- the item\u2019s difficulty, severity, or \u201clocation\u201d on that trait continuum.\n\nIn its simplest form:\n\n\\[\nP(\\text{endorsement}) = f(\\text{person ability/trait} - \\text{item difficulty})\n\\]\n\nFor polytomous PRO response scales (eg, \u201cnone,\u201d \u201cmild,\u201d \u201cmoderate,\u201d \u201csevere\u201d), variants such as the Partial Credit Model or Rating Scale Model are commonly used.\n\n## How Rasch analysis informs PRO instrument evaluation\n\n### 1. Tests whether items measure one underlying construct\nMany PRO scores are calculated by summing item responses. That is only meaningful if the items assess a sufficiently unidimensional construct.\n\nRasch analysis helps assess this through:\n\n- item fit statistics;\n- residual principal components analysis;\n- local-dependence analyses.\n\nIf an instrument intended to measure physical function contains items that instead divide into mobility, self-care, and social participation domains, a single total score may be inappropriate. The measure may need separate subscales or item revision.\n\n### 2. Identifies poorly functioning items\nRasch fit statistics identify items that do not behave as expected under the measurement model.\n\nCommon indicators include:\n\n- **Infit mean square**: sensitive to unexpected responses near a person\u2019s trait level.\n- **Outfit mean square**: sensitive to outlying or unusual responses.\n- Values roughly between **0.7 and 1.3** are often considered acceptable in clinical PRO development, although acceptable thresholds depend on sample size and purpose.\n\nExamples of problematic items:\n\n- An item is too ambiguous (\u201cI feel unwell\u201d).\n- An item is interpreted differently across patients.\n- An item measures a different concept than the intended domain.\n- An item is redundant with another item.\n- Responses are driven by external factors rather than the target construct.\n\nMisfitting items may be revised, removed, split into a different domain, or retained for clinical-content reasons with transparent justification.\n\n### 3. Evaluates response-category functioning\nRasch analysis is particularly useful for determining whether Likert-type response options work as intended.\n\nIt can identify:\n\n- **disordered thresholds**, where respondents cannot consistently distinguish adjacent categories;\n- categories that are rarely used;\n- categories that duplicate one another;\n- uneven category spacing.\n\nFor example, a five-category response scale\u2014\u201cnever,\u201d \u201crarely,\u201d \u201csometimes,\u201d \u201coften,\u201d \u201calways\u201d\u2014may show that \u201crarely\u201d and \u201csometimes\u201d are not distinguishable in practice. Collapsing categories may improve measurement, such as using \u201cnever,\u201d \u201csometimes,\u201d and \u201coften/always.\u201d\n\nThis is important because conventional scoring assumes that categories are ordered and meaningfully distinct.\n\n### 4. Places patients and items on the same metric\nRasch analysis produces a common interval-scale metric, usually expressed in **logits**.\n\nThis allows investigators to compare:\n\n- the distribution of patient severity or functioning;\n- the range covered by the instrument\u2019s items;\n- whether the questionnaire is appropriately targeted to the population.\n\nFor example, if a fatigue PRO contains mostly severe-fatigue items but is used in a mildly symptomatic outpatient population, many respondents may score at the low end. The instrument will have poor precision for mild fatigue and substantial floor effects.\n\nA **person\u2013item map** or Wright map visually shows whether item locations cover the range of patient experiences.\n\n### 5. Detects floor and ceiling problems more meaningfully\nTraditional analyses report the proportion scoring at the minimum or maximum possible score. Rasch analysis goes further by showing whether there are enough items at the low and high ends of the construct.\n\nFor example:\n\n- A ceiling effect in a physical-function scale may indicate that highly functioning patients are not adequately differentiated.\n- A floor effect in a symptom scale may indicate that mild or absent symptoms are poorly represented.\n\nThe solution may be to add easier/harder items, create adaptive testing item banks, or use a different measure for that population.\n\n### 6. Assesses measurement precision across the trait continuum\nRasch analysis provides information on where a PRO is most precise.\n\nIt can estimate:\n\n- person reliability;\n- item reliability;\n- person separation index;\n- standard errors at different trait levels;\n- test information functions.\n\nUnlike a single Cronbach\u2019s alpha, this shows whether the scale is reliable for patients with mild, moderate, and severe symptoms. A PRO may be very precise in moderate disease but unreliable at the extremes.\n\n### 7. Supports transformation from ordinal scores to interval-level estimates\nRaw summed Likert scores are generally ordinal: the difference between scores of 1 and 2 may not be equivalent to the difference between 4",
+    "latency_ms": 11859.2,
+    "token_count": 1117
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "1fa743847746",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786233300.1870244,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4279,
+          "evidence": [
+            "Latency 11859ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11859.2,
+        "token_count": 1117,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.21; flagged=False"
+}

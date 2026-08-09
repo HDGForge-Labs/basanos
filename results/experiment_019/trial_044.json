@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:58:02.226247+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Is \"Ethics Dumping\" still a common practice in less developed countries? ",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Clinical Research",
+    "question_type": "Open-ended question that is potentially ambiguous| Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Yes. \u201cEthics dumping\u201d remains a significant concern in many low- and middle-income countries (LMICs), though it is increasingly recognized and challenged by local researchers, ethics committees, regulators, journalists, and community organizations.\n\nIt refers to researchers, companies, or institutions conducting work in settings with weaker regulatory capacity or greater economic dependence that would face stricter ethical, legal, or public scrutiny in wealthier countries. It is most often discussed in:\n\n- **Clinical trials:** Testing drugs, vaccines, devices, or trial designs on populations with limited access to healthcare, weak informed-consent processes, inadequate adverse-event monitoring, or poor post-trial access to successful treatments.\n- **Genomics and biobanking:** Exporting samples and data with limited local control, weak benefit-sharing arrangements, or consent forms that do not meaningfully explain future commercial or international uses.\n- **Digital health and AI:** Deploying facial recognition, health-data platforms, algorithmic triage systems, or data extraction projects where privacy law, cybersecurity, and algorithmic accountability are less developed.\n- **Environmental and occupational research:** Studying pollution, pesticides, mining, waste disposal, or hazardous industrial exposures in communities that have little power to refuse participation or demand remediation.\n- **Reproductive and public-health interventions:** Trials or programs involving contraception, maternal health, infectious disease, or behavioral interventions where participants may have constrained choices because of poverty or limited care alternatives.\n\nThe issue is not that research in LMICs is inherently unethical. Much essential, high-quality research must be conducted where the relevant diseases and health burdens occur. The ethical problem arises when a project is designed around regulatory arbitrage or exploitation\u2014for example, using a placebo when an effective treatment is available, offering inadequate compensation or consent, excluding local investigators from leadership, exporting samples without governance, or failing to ensure that participants can access the resulting product afterward.\n\nSeveral safeguards have improved since the term became widely used:\n\n- Stronger national research-ethics systems in many countries.\n- Requirements for local ethics review and local scientific collaboration.\n- International standards such as the **Declaration of Helsinki**, **CIOMS guidelines**, and **Good Clinical Practice** rules.\n- Greater emphasis on community engagement, data sovereignty, fair partnerships, capacity-building, and post-trial access.\n- More scrutiny from major funders, journals, and regulators.\n\nBut enforcement is uneven. Ethics dumping is most likely where there are major resource asymmetries, fragile oversight institutions, limited legal remedies, or populations facing poverty, displacement, conflict, or restricted access to care. It is therefore still common enough to be a live concern\u2014not a historical practice\u2014but it is increasingly visible and contested rather than routinely ignored.",
+    "latency_ms": 8540.4,
+    "input_tokens": 95,
+    "output_tokens": 543
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Is \"Ethics Dumping\" still a common practice in less developed countries? ",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Yes. \u201cEthics dumping\u201d remains a significant concern in many low- and middle-income countries (LMICs), though it is increasingly recognized and challenged by local researchers, ethics committees, regulators, journalists, and community organizations.\n\nIt refers to researchers, companies, or institutions conducting work in settings with weaker regulatory capacity or greater economic dependence that would face stricter ethical, legal, or public scrutiny in wealthier countries. It is most often discussed in:\n\n- **Clinical trials:** Testing drugs, vaccines, devices, or trial designs on populations with limited access to healthcare, weak informed-consent processes, inadequate adverse-event monitoring, or poor post-trial access to successful treatments.\n- **Genomics and biobanking:** Exporting samples and data with limited local control, weak benefit-sharing arrangements, or consent forms that do not meaningfully explain future commercial or international uses.\n- **Digital health and AI:** Deploying facial recognition, health-data platforms, algorithmic triage systems, or data extraction projects where privacy law, cybersecurity, and algorithmic accountability are less developed.\n- **Environmental and occupational research:** Studying pollution, pesticides, mining, waste disposal, or hazardous industrial exposures in communities that have little power to refuse participation or demand remediation.\n- **Reproductive and public-health interventions:** Trials or programs involving contraception, maternal health, infectious disease, or behavioral interventions where participants may have constrained choices because of poverty or limited care alternatives.\n\nThe issue is not that research in LMICs is inherently unethical. Much essential, high-quality research must be conducted where the relevant diseases and health burdens occur. The ethical problem arises when a project is designed around regulatory arbitrage or exploitation\u2014for example, using a placebo when an effective treatment is available, offering inadequate compensation or consent, excluding local investigators from leadership, exporting samples without governance, or failing to ensure that participants can access the resulting product afterward.\n\nSeveral safeguards have improved since the term became widely used:\n\n- Stronger national research-ethics systems in many countries.\n- Requirements for local ethics review and local scientific collaboration.\n- International standards such as the **Declaration of Helsinki**, **CIOMS guidelines**, and **Good Clinical Practice** rules.\n- Greater emphasis on community engagement, data sovereignty, fair partnerships, capacity-building, and post-trial access.\n- More scrutiny from major funders, journals, and regulators.\n\nBut enforcement is uneven. Ethics dumping is most likely where there are major resource asymmetries, fragile oversight institutions, limited legal remedies, or populations facing poverty, displacement, conflict, or restricted access to care. It is therefore still common enough to be a live concern\u2014not a historical practice\u2014but it is increasingly visible and contested rather than routinely ignored.",
+    "latency_ms": 8540.4,
+    "token_count": 638
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "15b48e5739e5",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233482.2255354,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 8540.4,
+        "token_count": 638,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.44; flagged=False"
+}

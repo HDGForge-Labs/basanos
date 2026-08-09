@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:37:50.994252+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What does a strategic manager do in an emergency?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Emergency Planning",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# The Role of a Strategic Manager in an Emergency\n\nA strategic manager in a crisis operates fundamentally differently than in day-to-day operations\u2014they shift from optimizing for growth/efficiency to managing survival, continuity, and organizational resilience. Here's what this looks like concretely:\n\n## 1. Activate Command Structure\n- Trigger the crisis management plan (if one exists) or rapidly establish an incident command structure\n- Designate clear decision-making authority\u2014often centralizing power temporarily to enable fast action (e.g., a CEO or COO taking direct control rather than routing decisions through normal hierarchy)\n- Assemble a crisis team with representatives from operations, finance, legal, communications, and HR\n\n## 2. Rapid Situation Assessment\n- Gather real-time data on the scope, scale, and trajectory of the emergency\n- Distinguish between what's known, unknown, and assumed (avoiding decisions based on incomplete information treated as fact)\n- Identify which stakeholders, assets, and operations are at immediate risk\n\n## 3. Triage and Prioritization\n- Apply a hierarchy: life safety first, then legal/regulatory compliance, then asset protection, then reputation, then financial performance\n- Decide what to sacrifice\u2014strategic managers often must abandon short-term profitability or growth targets to preserve long-term viability (e.g., halting production, pulling products, furloughing staff)\n\n## 4. Resource Reallocation\n- Redirect capital, personnel, and inventory away from planned initiatives toward crisis response\n- Freeze discretionary spending; secure emergency credit lines if cash flow is threatened\n- Example: During COVID-19, many retailers reallocated capital budgets from store expansion to e-commerce infrastructure within weeks\n\n## 5. Communication Management\n- Control the narrative internally (employees) and externally (customers, investors, media, regulators)\n- Issue timely, honest updates even with incomplete information\u2014silence or delay is often more damaging than admitting uncertainty\n- Example: Johnson & Johnson's 1982 Tylenol response is the classic case\u2014immediate transparency and product recall preserved long-term trust\n\n## 6. Scenario Planning Under Compressed Timelines\n- Run rapid best-case/worst-case/likely-case analyses, often in hours rather than the weeks typical of normal strategic planning\n- Build contingency branches: \"If X happens by Friday, we do Y; if not, we pivot to Z\"\n\n## 7. Legal and Regulatory Navigation\n- Ensure compliance with disclosure requirements (e.g., SEC rules for material events in public companies)\n- Coordinate with legal counsel on liability exposure before making public statements or operational changes\n\n## 8. Post-Crisis Transition Planning\n- Even while managing the acute phase, a strategic manager should be identifying the \"off-ramp\"\u2014criteria for when to shift from crisis mode back to normal operations\n- Begin capturing lessons learned in real-time rather than waiting until after resolution\n\n---\n\n**Key distinction from normal strategic management:** Time horizons",
+    "latency_ms": 12763.7,
+    "input_tokens": 130,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What does a strategic manager do in an emergency?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "# The Role of a Strategic Manager in an Emergency\n\nA strategic manager in a crisis operates fundamentally differently than in day-to-day operations\u2014they shift from optimizing for growth/efficiency to managing survival, continuity, and organizational resilience. Here's what this looks like concretely:\n\n## 1. Activate Command Structure\n- Trigger the crisis management plan (if one exists) or rapidly establish an incident command structure\n- Designate clear decision-making authority\u2014often centralizing power temporarily to enable fast action (e.g., a CEO or COO taking direct control rather than routing decisions through normal hierarchy)\n- Assemble a crisis team with representatives from operations, finance, legal, communications, and HR\n\n## 2. Rapid Situation Assessment\n- Gather real-time data on the scope, scale, and trajectory of the emergency\n- Distinguish between what's known, unknown, and assumed (avoiding decisions based on incomplete information treated as fact)\n- Identify which stakeholders, assets, and operations are at immediate risk\n\n## 3. Triage and Prioritization\n- Apply a hierarchy: life safety first, then legal/regulatory compliance, then asset protection, then reputation, then financial performance\n- Decide what to sacrifice\u2014strategic managers often must abandon short-term profitability or growth targets to preserve long-term viability (e.g., halting production, pulling products, furloughing staff)\n\n## 4. Resource Reallocation\n- Redirect capital, personnel, and inventory away from planned initiatives toward crisis response\n- Freeze discretionary spending; secure emergency credit lines if cash flow is threatened\n- Example: During COVID-19, many retailers reallocated capital budgets from store expansion to e-commerce infrastructure within weeks\n\n## 5. Communication Management\n- Control the narrative internally (employees) and externally (customers, investors, media, regulators)\n- Issue timely, honest updates even with incomplete information\u2014silence or delay is often more damaging than admitting uncertainty\n- Example: Johnson & Johnson's 1982 Tylenol response is the classic case\u2014immediate transparency and product recall preserved long-term trust\n\n## 6. Scenario Planning Under Compressed Timelines\n- Run rapid best-case/worst-case/likely-case analyses, often in hours rather than the weeks typical of normal strategic planning\n- Build contingency branches: \"If X happens by Friday, we do Y; if not, we pivot to Z\"\n\n## 7. Legal and Regulatory Navigation\n- Ensure compliance with disclosure requirements (e.g., SEC rules for material events in public companies)\n- Coordinate with legal counsel on liability exposure before making public statements or operational changes\n\n## 8. Post-Crisis Transition Planning\n- Even while managing the acute phase, a strategic manager should be identifying the \"off-ramp\"\u2014criteria for when to shift from crisis mode back to normal operations\n- Begin capturing lessons learned in real-time rather than waiting until after resolution\n\n---\n\n**Key distinction from normal strategic management:** Time horizons",
+    "latency_ms": 12763.7,
+    "token_count": 1154
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "ea7c31f071aa",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239470.9935021,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4415,
+          "evidence": [
+            "Latency 12764ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12763.7,
+        "token_count": 1154,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.58; flagged=False"
+}

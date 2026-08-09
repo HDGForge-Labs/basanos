@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T00:00:42.918013+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "My company, located in Mexico, fired a person that came to work with a level of alcohol in the blood of 0.009. This person is suing the company due to that decision. Can this person win the sue?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Occupational Health, Environment and Safety",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "It depends heavily on the facts, the applicable Mexican labor law provisions, the company\u2019s internal work rules, and the evidence. But a blood-alcohol level of **0.009** by itself is often a weak basis for a justified dismissal in Mexico\u2014especially if the unit is **0.009% BAC** (about 0.09 g/L), which is very low and may not establish that the employee was \u201cintoxicated.\u201d\n\nUnder Mexico\u2019s Federal Labor Law (*Ley Federal del Trabajo*), Article 47 allows dismissal without employer liability when an employee:\n\n- Comes to work **intoxicated** or under the influence of narcotics/drugs, unless medically prescribed; or\n- Commits certain serious misconduct.\n\nThe key legal issue is usually not whether any alcohol was present, but whether the employee was legally and factually **intoxicated / under the influence at work**, and whether the employer can prove it.\n\nImportant points:\n\n1. **0.009 is very low**\n   - If stated as **0.009% BAC**, it is approximately **0.09 g/L**.\n   - That is far below many impairment thresholds used in traffic and workplace contexts. It can result from residual alcohol, certain foods/medicines, testing variation, or a very small amount of drinking.\n   - It does not automatically prove intoxication or impairment.\n\n2. **The employer bears the burden of proving the dismissal cause**\n   To defend a termination for cause, the company normally needs reliable evidence, such as:\n   - A properly performed and documented alcohol test;\n   - Clear test units, calibration, chain of custody, and qualified personnel;\n   - Witness statements describing observable impairment or workplace-risk behavior;\n   - A valid internal work regulation (*Reglamento Interior de Trabajo*) or policy prohibiting alcohol use/presence, communicated to the employee;\n   - A prompt written dismissal notice stating the specific conduct, date, time, place, and legal ground under Article 47.\n\n3. **Notice requirements are critical**\n   Article 47 requires a written notice of dismissal explaining the conduct and dates. It must be delivered to the employee, or the employer must notify the Labor Court within the statutory timeframe if delivery is not possible. Failure to comply can make the termination legally unjustified even if there was misconduct.\n\n4. **A zero-tolerance policy helps, but is not always decisive**\n   A company may have stricter safety rules\u2014especially in transportation, manufacturing, aviation, mining, healthcare, heavy machinery, or other safety-sensitive work. Still, the employer must show:\n   - The rule was valid, known to the employee, and consistently applied;\n   - The testing and disciplinary process were reliable and proportionate;\n   - The employee\u2019s position justified the safety restriction; and\n   - The specific policy authorizes dismissal, not merely a lesser sanction.\n\n5. **If the firing is ruled unjustified**\n   The employee may seek reinstatement or severance. In a typical unjustified-dismissal case, potential exposure can include:\n   - Three months\u2019 integrated salary (*indemnizaci\u00f3n constitucional*);\n   - Accrued wages/interest as applicable;\n   - Proportional benefits;\n   - In some circumstances, 20 days\u2019 salary per year of service, depending on the claim and outcome.\n\n### Practical assessment\n\nIf the company fired the employee solely because a test showed **0.009**, with no evidence of impairment, no safety incident, no valid zero-alcohol rule, or defects in the termination notice/testing process, the employee has a meaningful chance of winning an unjustified-dismissal claim.\n\nIf, however, the worker occupied a safety-critical role, the company had a well-documented and properly registered/internalized zero-tolerance alcohol policy, the testing procedure was reliable, the employee was properly notified, and the dismissal notice complied with Article 47, the company has a stronger defense\u2014even at a low reading.\n\nThe company should have Mexican labor counsel immediately review: the employment file, the *Reglamento Interior de Trabajo*, the alcohol/drug policy, the laboratory or breath-test records, witness statements, the dismissal letter, and proof of delivery or court notification.",
+    "latency_ms": 10991.7,
+    "input_tokens": 124,
+    "output_tokens": 848
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "My company, located in Mexico, fired a person that came to work with a level of alcohol in the blood of 0.009. This person is suing the company due to that decision. Can this person win the sue?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "It depends heavily on the facts, the applicable Mexican labor law provisions, the company\u2019s internal work rules, and the evidence. But a blood-alcohol level of **0.009** by itself is often a weak basis for a justified dismissal in Mexico\u2014especially if the unit is **0.009% BAC** (about 0.09 g/L), which is very low and may not establish that the employee was \u201cintoxicated.\u201d\n\nUnder Mexico\u2019s Federal Labor Law (*Ley Federal del Trabajo*), Article 47 allows dismissal without employer liability when an employee:\n\n- Comes to work **intoxicated** or under the influence of narcotics/drugs, unless medically prescribed; or\n- Commits certain serious misconduct.\n\nThe key legal issue is usually not whether any alcohol was present, but whether the employee was legally and factually **intoxicated / under the influence at work**, and whether the employer can prove it.\n\nImportant points:\n\n1. **0.009 is very low**\n   - If stated as **0.009% BAC**, it is approximately **0.09 g/L**.\n   - That is far below many impairment thresholds used in traffic and workplace contexts. It can result from residual alcohol, certain foods/medicines, testing variation, or a very small amount of drinking.\n   - It does not automatically prove intoxication or impairment.\n\n2. **The employer bears the burden of proving the dismissal cause**\n   To defend a termination for cause, the company normally needs reliable evidence, such as:\n   - A properly performed and documented alcohol test;\n   - Clear test units, calibration, chain of custody, and qualified personnel;\n   - Witness statements describing observable impairment or workplace-risk behavior;\n   - A valid internal work regulation (*Reglamento Interior de Trabajo*) or policy prohibiting alcohol use/presence, communicated to the employee;\n   - A prompt written dismissal notice stating the specific conduct, date, time, place, and legal ground under Article 47.\n\n3. **Notice requirements are critical**\n   Article 47 requires a written notice of dismissal explaining the conduct and dates. It must be delivered to the employee, or the employer must notify the Labor Court within the statutory timeframe if delivery is not possible. Failure to comply can make the termination legally unjustified even if there was misconduct.\n\n4. **A zero-tolerance policy helps, but is not always decisive**\n   A company may have stricter safety rules\u2014especially in transportation, manufacturing, aviation, mining, healthcare, heavy machinery, or other safety-sensitive work. Still, the employer must show:\n   - The rule was valid, known to the employee, and consistently applied;\n   - The testing and disciplinary process were reliable and proportionate;\n   - The employee\u2019s position justified the safety restriction; and\n   - The specific policy authorizes dismissal, not merely a lesser sanction.\n\n5. **If the firing is ruled unjustified**\n   The employee may seek reinstatement or severance. In a typical unjustified-dismissal case, potential exposure can include:\n   - Three months\u2019 integrated salary (*indemnizaci\u00f3n constitucional*);\n   - Accrued wages/interest as applicable;\n   - Proportional benefits;\n   - In some circumstances, 20 days\u2019 salary per year of service, depending on the claim and outcome.\n\n### Practical assessment\n\nIf the company fired the employee solely because a test showed **0.009**, with no evidence of impairment, no safety incident, no valid zero-alcohol rule, or defects in the termination notice/testing process, the employee has a meaningful chance of winning an unjustified-dismissal claim.\n\nIf, however, the worker occupied a safety-critical role, the company had a well-documented and properly registered/internalized zero-tolerance alcohol policy, the testing procedure was reliable, the employee was properly notified, and the dismissal notice complied with Article 47, the company has a stronger defense\u2014even at a low reading.\n\nThe company should have Mexican labor counsel immediately review: the employment file, the *Reglamento Interior de Trabajo*, the alcohol/drug policy, the laboratory or breath-test records, witness statements, the dismissal letter, and proof of delivery or court notification.",
+    "latency_ms": 10991.7,
+    "token_count": 972
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "8c930bca2655",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786233642.9150815,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4149,
+          "evidence": [
+            "Latency 10992ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 10991.7,
+        "token_count": 972,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.66; flagged=False"
+}

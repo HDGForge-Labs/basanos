@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-08T23:03:47.115979+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Describes Hodge's blueprints.",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General medicine",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Could you clarify which **Hodge** you mean? \u201cHodge\u2019s blueprints\u201d could refer to several things\u2014for example:\n\n- **Hodge** in a novel, film, game, or television series  \n- **Hodge blueprints** in architecture or engineering  \n- **Hodge\u2019s blueprints** as a historical or technical document  \n- A specific person named Hodge whose plans you want described  \n\nPlease provide the work, character, or context, and I\u2019ll describe the blueprints in detail.",
+    "latency_ms": 1252.9,
+    "input_tokens": 80,
+    "output_tokens": 106
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Describes Hodge's blueprints.",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Could you clarify which **Hodge** you mean? \u201cHodge\u2019s blueprints\u201d could refer to several things\u2014for example:\n\n- **Hodge** in a novel, film, game, or television series  \n- **Hodge blueprints** in architecture or engineering  \n- **Hodge\u2019s blueprints** as a historical or technical document  \n- A specific person named Hodge whose plans you want described  \n\nPlease provide the work, character, or context, and I\u2019ll describe the blueprints in detail.",
+    "latency_ms": 1252.9,
+    "token_count": 186,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "e808d94f1180",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230227.1151824,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 1252.9,
+        "token_count": 186,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.155; flagged=False"
+}

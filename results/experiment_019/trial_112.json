@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:07:08.034484+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "How can we classify studies conducted by transgender people? As the gender they define themselves as or as a separate category, transgender people?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "I am a nursing and dentistry teacher",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "The best practice is usually **not to force transgender participants into a category based solely on sex assigned at birth**, and also **not to treat \u201ctransgender\u201d as one homogeneous gender category** unless that is what the research question requires.\n\nA good approach is to collect and report at least two distinct variables:\n\n1. **Current gender identity**  \n   Examples: woman, man, nonbinary, genderqueer, agender, another self-described identity, prefer not to answer.\n\n2. **Sex assigned at birth**  \n   Examples: female, male, intersex/another sex characteristic, prefer not to answer.\n\nThis is often called a **two-step method**. It allows researchers to identify transgender and cisgender participants without misgendering them.\n\n## How to classify participants\n\n### If the study concerns gendered social experiences\nClassify participants according to their **self-identified gender**.\n\nFor example:\n\n- A transgender woman should generally be classified with women when studying sexism, workplace treatment of women, gender identity, voting attitudes by gender, or social experiences of womanhood.\n- A transgender man should generally be classified with men in research about men\u2019s social roles, masculinity, or experiences of being perceived as male.\n- Nonbinary participants should have a separate nonbinary/self-described category where sample size permits, rather than being forced into \u201cmale\u201d or \u201cfemale.\u201d\n\nIn reporting, you might write:\n\n> Participants included 420 women (including 35 transgender women), 390 men (including 28 transgender men), and 60 nonbinary participants.\n\nThis respects identity while retaining relevant descriptive information.\n\n### If the study concerns medical, physiological, or reproductive variables\nGender identity alone may not be sufficient. The relevant classification should be based on the **specific biological or clinical variable being studied**, not on a broad or misleading \u201cmale/female\u201d label.\n\nFor example, research may need information about:\n\n- organs present, such as uterus, ovaries, testes, prostate, or breast tissue;\n- hormone exposure, including estrogen, testosterone, puberty blockers, or anti-androgens;\n- surgical history;\n- pregnancy potential;\n- menstrual status;\n- chromosome or genetic information, but only when genuinely relevant;\n- duration and dosage of gender-affirming hormone therapy.\n\nFor instance, a study of cervical cancer screening should recruit and analyze people **with a cervix**, which can include cisgender women, transgender men, some nonbinary people, and some intersex people. It should not describe the eligible population simply as \u201cwomen\u201d if that excludes relevant participants.\n\nSimilarly, a study of prostate cancer should refer to people **with a prostate**, rather than assuming all such participants are men.\n\n### If transgender status itself is the research topic\nThen transgender people can be analyzed as a separate category, but it is usually better to distinguish groups where possible:\n\n- transgender women;\n- transgender men;\n- nonbinary people;\n- other gender-diverse identities;\n- cisgender comparison groups, if relevant.\n\nLumping all transgender people together can conceal substantial differences. For example, transgender women and transgender men may differ in healthcare access, exposure to discrimination, hormone use, reproductive anatomy, and social treatment. Nonbinary participants may have different experiences again.\n\n## Avoid these approaches\n\nAvoid:\n\n- classifying a transgender woman as \u201cmale\u201d solely because she was assigned male at birth;\n- classifying a transgender man as \u201cfemale\u201d solely because he was assigned female at birth;\n- using \u201ctransgender\u201d as a third gender category alongside \u201cmen\u201d and \u201cwomen,\u201d because transgender women are women and transgender men are men;\n- treating all transgender people as medically identical;\n- collecting sex assigned at birth, surgical status, or hormone use when it is not relevant to the study;\n- publishing small subgroup counts that could identify participants, particularly in small samples.\n\n## Practical survey wording\n\nA common two-step format is:\n\n**Question 1: What is your current gender identity?**  \n- Woman  \n- Man  \n- Nonbinary  \n- Another gender identity: ___  \n- Prefer not to answer  \n\n**Question 2: What sex were you assigned at birth, on your original birth certificate?**  \n- Female  \n- Male  \n- Another sex designation / intersex  \n- Prefer not to answer  \n\nYou can then identify a participant as transgender when their current gender identity differs from their sex assigned at birth, while still respecting how they identify.\n\n## Analysis and reporting\n\nThe correct analysis depends on sample size and study purpose.\n\n- With a large enough sample, report transgender women, transgender men, and nonbinary participants separately.\n- With a smaller sample, combine groups only when scientifically justified and state clearly that this was done because of limited statistical power.\n- Avoid \u201cother\u201d as the only label for transgender or nonbinary people; it can be stigmatizing and analytically uninformative.\n- Consider privacy: if there are fewer than about 5\u201310 people in a subgroup, suppress or aggregate some descriptive results to reduce re-identification risk.\n- Explain in the methods section exactly how gender identity, sex",
+    "latency_ms": 12031.4,
+    "input_tokens": 98,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How can we classify studies conducted by transgender people? As the gender they define themselves as or as a separate category, transgender people?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "The best practice is usually **not to force transgender participants into a category based solely on sex assigned at birth**, and also **not to treat \u201ctransgender\u201d as one homogeneous gender category** unless that is what the research question requires.\n\nA good approach is to collect and report at least two distinct variables:\n\n1. **Current gender identity**  \n   Examples: woman, man, nonbinary, genderqueer, agender, another self-described identity, prefer not to answer.\n\n2. **Sex assigned at birth**  \n   Examples: female, male, intersex/another sex characteristic, prefer not to answer.\n\nThis is often called a **two-step method**. It allows researchers to identify transgender and cisgender participants without misgendering them.\n\n## How to classify participants\n\n### If the study concerns gendered social experiences\nClassify participants according to their **self-identified gender**.\n\nFor example:\n\n- A transgender woman should generally be classified with women when studying sexism, workplace treatment of women, gender identity, voting attitudes by gender, or social experiences of womanhood.\n- A transgender man should generally be classified with men in research about men\u2019s social roles, masculinity, or experiences of being perceived as male.\n- Nonbinary participants should have a separate nonbinary/self-described category where sample size permits, rather than being forced into \u201cmale\u201d or \u201cfemale.\u201d\n\nIn reporting, you might write:\n\n> Participants included 420 women (including 35 transgender women), 390 men (including 28 transgender men), and 60 nonbinary participants.\n\nThis respects identity while retaining relevant descriptive information.\n\n### If the study concerns medical, physiological, or reproductive variables\nGender identity alone may not be sufficient. The relevant classification should be based on the **specific biological or clinical variable being studied**, not on a broad or misleading \u201cmale/female\u201d label.\n\nFor example, research may need information about:\n\n- organs present, such as uterus, ovaries, testes, prostate, or breast tissue;\n- hormone exposure, including estrogen, testosterone, puberty blockers, or anti-androgens;\n- surgical history;\n- pregnancy potential;\n- menstrual status;\n- chromosome or genetic information, but only when genuinely relevant;\n- duration and dosage of gender-affirming hormone therapy.\n\nFor instance, a study of cervical cancer screening should recruit and analyze people **with a cervix**, which can include cisgender women, transgender men, some nonbinary people, and some intersex people. It should not describe the eligible population simply as \u201cwomen\u201d if that excludes relevant participants.\n\nSimilarly, a study of prostate cancer should refer to people **with a prostate**, rather than assuming all such participants are men.\n\n### If transgender status itself is the research topic\nThen transgender people can be analyzed as a separate category, but it is usually better to distinguish groups where possible:\n\n- transgender women;\n- transgender men;\n- nonbinary people;\n- other gender-diverse identities;\n- cisgender comparison groups, if relevant.\n\nLumping all transgender people together can conceal substantial differences. For example, transgender women and transgender men may differ in healthcare access, exposure to discrimination, hormone use, reproductive anatomy, and social treatment. Nonbinary participants may have different experiences again.\n\n## Avoid these approaches\n\nAvoid:\n\n- classifying a transgender woman as \u201cmale\u201d solely because she was assigned male at birth;\n- classifying a transgender man as \u201cfemale\u201d solely because he was assigned female at birth;\n- using \u201ctransgender\u201d as a third gender category alongside \u201cmen\u201d and \u201cwomen,\u201d because transgender women are women and transgender men are men;\n- treating all transgender people as medically identical;\n- collecting sex assigned at birth, surgical status, or hormone use when it is not relevant to the study;\n- publishing small subgroup counts that could identify participants, particularly in small samples.\n\n## Practical survey wording\n\nA common two-step format is:\n\n**Question 1: What is your current gender identity?**  \n- Woman  \n- Man  \n- Nonbinary  \n- Another gender identity: ___  \n- Prefer not to answer  \n\n**Question 2: What sex were you assigned at birth, on your original birth certificate?**  \n- Female  \n- Male  \n- Another sex designation / intersex  \n- Prefer not to answer  \n\nYou can then identify a participant as transgender when their current gender identity differs from their sex assigned at birth, while still respecting how they identify.\n\n## Analysis and reporting\n\nThe correct analysis depends on sample size and study purpose.\n\n- With a large enough sample, report transgender women, transgender men, and nonbinary participants separately.\n- With a smaller sample, combine groups only when scientifically justified and state clearly that this was done because of limited statistical power.\n- Avoid \u201cother\u201d as the only label for transgender or nonbinary people; it can be stigmatizing and analytically uninformative.\n- Consider privacy: if there are fewer than about 5\u201310 people in a subgroup, suppress or aggregate some descriptive results to reduce re-identification risk.\n- Explain in the methods section exactly how gender identity, sex",
+    "latency_ms": 12031.4,
+    "token_count": 1122,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "3a4bcba87ebb",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234028.0336852,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 8 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4305,
+          "evidence": [
+            "Latency 12031ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12031.4,
+        "token_count": 1122,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.112; flagged=True"
+}

@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:44:55.382401+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Should you extract third molars prolifically?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Dentistry",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "No \u2014 prophylactic extraction of asymptomatic, disease-free third molars as a blanket policy is not justified, and the evidence base has moved firmly against \"extract them all\" protocols.\n\n**Where extraction is clearly indicated:**\n- Recurrent pericoronitis\n- Non-restorable caries in the third molar or caries on the distal of the second molar caused by the impacted third molar\n- Periodontal pathology (pocketing, bone loss) associated with the tooth\n- Cystic change (dentigerous cyst, keratocyst) or other pathology in the follicle\n- Root resorption of adjacent teeth\n- Recurrent pain clearly attributable to the tooth\n- Orthodontic indications in select cases (though evidence for routine extraction to prevent late lower incisor crowding is weak \u2014 Little's studies showed third molars are not a reliable predictor)\n- Pre-prosthetic or pre-radiotherapy planning where future extraction risk is high (e.g., before head and neck radiotherapy, to avoid osteoradionecrosis risk later)\n\n**Where prophylactic extraction is not supported:**\n- NICE guidance (UK, 2000) explicitly recommends against prophylactic removal of pathology-free impacted third molars, based on lack of evidence that this prevents future disease and given the morbidity of the procedure.\n- AAOMS in the US takes a more permissive stance toward \"prophylactic\" removal, arguing that asymptomatic teeth can harbor subclinical disease and that risk increases with age, but this remains controversial and is not universally accepted by health economists or by UK/European bodies.\n\n**Why prolific extraction is problematic:**\n- Surgical risks are non-trivial: inferior alveolar nerve injury (temporary in up to 5%, permanent in ~1% depending on position/depth), lingual nerve injury, dry socket (up to 30% in mandibular extractions depending on technique), infection, hemorrhage, mandibular fracture in rare deeply impacted cases.\n- Cost-benefit: population-level prophylactic removal generates a large number of unnecessary surgeries to prevent a smaller number of future problems.\n- Many impacted third molars remain asymptomatic and disease-free for life if properly monitored.\n\n**Practical approach:**\nRisk-stratify. Use clinical exam plus imaging (OPG, and CBCT if the tooth is close to the IAN canal \u2014 look for signs like darkening/deflection of the root, loss of the canal's white line, canal narrowing) to assess nerve proximity and pathology. Monitor asymptomatic, disease-free impactions radiographically at intervals. Extract only when there's a defined pathological or symptomatic indication, or a strong prognostic reason (e.g., patient going into a context where follow-up care will be unavailable, or pre-radiotherapy).\n\nSo: selective, evidence-based extraction \u2014 yes. Prolific, blanket prophylactic extraction \u2014 no.",
+    "latency_ms": 13796.9,
+    "input_tokens": 128,
+    "output_tokens": 981
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Should you extract third molars prolifically?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "No \u2014 prophylactic extraction of asymptomatic, disease-free third molars as a blanket policy is not justified, and the evidence base has moved firmly against \"extract them all\" protocols.\n\n**Where extraction is clearly indicated:**\n- Recurrent pericoronitis\n- Non-restorable caries in the third molar or caries on the distal of the second molar caused by the impacted third molar\n- Periodontal pathology (pocketing, bone loss) associated with the tooth\n- Cystic change (dentigerous cyst, keratocyst) or other pathology in the follicle\n- Root resorption of adjacent teeth\n- Recurrent pain clearly attributable to the tooth\n- Orthodontic indications in select cases (though evidence for routine extraction to prevent late lower incisor crowding is weak \u2014 Little's studies showed third molars are not a reliable predictor)\n- Pre-prosthetic or pre-radiotherapy planning where future extraction risk is high (e.g., before head and neck radiotherapy, to avoid osteoradionecrosis risk later)\n\n**Where prophylactic extraction is not supported:**\n- NICE guidance (UK, 2000) explicitly recommends against prophylactic removal of pathology-free impacted third molars, based on lack of evidence that this prevents future disease and given the morbidity of the procedure.\n- AAOMS in the US takes a more permissive stance toward \"prophylactic\" removal, arguing that asymptomatic teeth can harbor subclinical disease and that risk increases with age, but this remains controversial and is not universally accepted by health economists or by UK/European bodies.\n\n**Why prolific extraction is problematic:**\n- Surgical risks are non-trivial: inferior alveolar nerve injury (temporary in up to 5%, permanent in ~1% depending on position/depth), lingual nerve injury, dry socket (up to 30% in mandibular extractions depending on technique), infection, hemorrhage, mandibular fracture in rare deeply impacted cases.\n- Cost-benefit: population-level prophylactic removal generates a large number of unnecessary surgeries to prevent a smaller number of future problems.\n- Many impacted third molars remain asymptomatic and disease-free for life if properly monitored.\n\n**Practical approach:**\nRisk-stratify. Use clinical exam plus imaging (OPG, and CBCT if the tooth is close to the IAN canal \u2014 look for signs like darkening/deflection of the root, loss of the canal's white line, canal narrowing) to assess nerve proximity and pathology. Monitor asymptomatic, disease-free impactions radiographically at intervals. Extract only when there's a defined pathological or symptomatic indication, or a strong prognostic reason (e.g., patient going into a context where follow-up care will be unavailable, or pre-radiotherapy).\n\nSo: selective, evidence-based extraction \u2014 yes. Prolific, blanket prophylactic extraction \u2014 no.",
+    "latency_ms": 13796.9,
+    "token_count": 1109
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "9c532f3f482e",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239895.3816693,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.457,
+          "evidence": [
+            "Latency 13797ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13796.9,
+        "token_count": 1109,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.93; flagged=False"
+}

@@ -1,0 +1,94 @@
+{
+  "timestamp_utc": "2026-08-09T01:27:51.639480+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What is the best biological agent for treatment of hidradenitis suppurativa having failed adalimumab?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Dermatology",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "For a patient who has failed adalimumab, **secukinumab** is currently the best-supported next biologic, and **bimekizumab** is an excellent (and arguably more potent) alternative where available.\n\n**Secukinumab (anti-IL-17A)**\n- FDA-approved for HS in 2023 based on SUNSHINE and SUNRISE trials\n- Dosing: 300 mg every 2 weeks (higher frequency than psoriasis dosing) is often used, though label starts at every 4 weeks after loading\n- Clinically meaningful HiSCR (Hidradenitis Suppurativa Clinical Response) rates around 42\u201346% at week 16, with continued improvement through week 52\n- Works well as a second-line biologic after anti-TNF failure because it targets a different pathway (IL-17 vs TNF-\u03b1), and HS has a strong Th17-driven inflammatory component\n\n**Bimekizumab (anti-IL-17A and IL-17F)**\n- Not yet universally approved for HS in all markets (approved in EU/UK; FDA review pending/ongoing depending on timing), but data are compelling\n- BE HEARD I and BE HEARD II trials showed HiSCR75 and HiSCR90 rates notably higher than historical anti-TNF or IL-17A-only data, with HiSCR50 around 55-60% at week 16\n- Dual IL-17A/F blockade may offer superior efficacy in HS given the role of IL-17F in follicular inflammation\n- If available and reimbursable, many HS specialists now consider it their preferred second-line option over secukinumab due to the more robust HiSCR75/90 response rates\n\n**Practical sequencing considerations:**\n1. If adalimumab failed due to **primary non-response** (never worked), switching class to IL-17 inhibition (secukinumab or bimekizumab) makes more biological sense than trying infliximab, since persistent TNF pathway activity may be less relevant.\n2. If adalimumab failed due to **secondary loss of response** (worked, then stopped), infliximab (5-10 mg/kg, sometimes dosed as high as every 4 weeks) can still be tried since anti-drug antibody profiles differ between anti-TNF agents, but most guidelines now favor moving to a different mechanistic class after anti-TNF failure rather than intra-class switching.\n3. Bimekizumab has the strongest phase 3 data for HS-specific outcomes to date and is increasingly favored when access allows.\n\n**Bottom line:** Secukinumab is the most established evidence-",
+    "latency_ms": 13369.9,
+    "input_tokens": 148,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the best biological agent for treatment of hidradenitis suppurativa having failed adalimumab?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "For a patient who has failed adalimumab, **secukinumab** is currently the best-supported next biologic, and **bimekizumab** is an excellent (and arguably more potent) alternative where available.\n\n**Secukinumab (anti-IL-17A)**\n- FDA-approved for HS in 2023 based on SUNSHINE and SUNRISE trials\n- Dosing: 300 mg every 2 weeks (higher frequency than psoriasis dosing) is often used, though label starts at every 4 weeks after loading\n- Clinically meaningful HiSCR (Hidradenitis Suppurativa Clinical Response) rates around 42\u201346% at week 16, with continued improvement through week 52\n- Works well as a second-line biologic after anti-TNF failure because it targets a different pathway (IL-17 vs TNF-\u03b1), and HS has a strong Th17-driven inflammatory component\n\n**Bimekizumab (anti-IL-17A and IL-17F)**\n- Not yet universally approved for HS in all markets (approved in EU/UK; FDA review pending/ongoing depending on timing), but data are compelling\n- BE HEARD I and BE HEARD II trials showed HiSCR75 and HiSCR90 rates notably higher than historical anti-TNF or IL-17A-only data, with HiSCR50 around 55-60% at week 16\n- Dual IL-17A/F blockade may offer superior efficacy in HS given the role of IL-17F in follicular inflammation\n- If available and reimbursable, many HS specialists now consider it their preferred second-line option over secukinumab due to the more robust HiSCR75/90 response rates\n\n**Practical sequencing considerations:**\n1. If adalimumab failed due to **primary non-response** (never worked), switching class to IL-17 inhibition (secukinumab or bimekizumab) makes more biological sense than trying infliximab, since persistent TNF pathway activity may be less relevant.\n2. If adalimumab failed due to **secondary loss of response** (worked, then stopped), infliximab (5-10 mg/kg, sometimes dosed as high as every 4 weeks) can still be tried since anti-drug antibody profiles differ between anti-TNF agents, but most guidelines now favor moving to a different mechanistic class after anti-TNF failure rather than intra-class switching.\n3. Bimekizumab has the strongest phase 3 data for HS-specific outcomes to date and is increasingly favored when access allows.\n\n**Bottom line:** Secukinumab is the most established evidence-",
+    "latency_ms": 13369.9,
+    "token_count": 1172
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "c516be037f98",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786238871.6386504,
+      "failures": [
+        {
+          "failure_mode": "sycophantic_gap_fill",
+          "confidence": 0.55,
+          "evidence": [
+            "Weak agreement/filler language detected (1 match(es))",
+            "Response contains 14 unexplained numeric values",
+            "Response changed from the previous call to this tool with identical parameters, co-occurring with agreement-flavored language - possible ungrounded answer shift"
+          ],
+          "remediation": [
+            "Request explicit source citations for all factual claims",
+            "Enable strict mode: require parameter-grounded responses only",
+            "Add validation step: cross-reference response values against input parameters",
+            "Set confidence_threshold=0.8 for this tool call type",
+            "Investigate why output changed for this tool call with unchanged input parameters"
+          ]
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4505,
+          "evidence": [
+            "Latency 13370ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13369.9,
+        "token_count": 1172,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Request explicit source citations for all factual claims",
+        "Enable strict mode: require parameter-grounded responses only",
+        "Add validation step: cross-reference response values against input parameters",
+        "Set confidence_threshold=0.8 for this tool call type",
+        "Investigate why output changed for this tool call with unchanged input parameters",
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.7; flagged=False"
+}

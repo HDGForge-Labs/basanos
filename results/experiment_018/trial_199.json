@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:08:04.031892+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Why do some patients respond to one CGRP antagonist well but not another from the same medication class?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Neurology ",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Patients can respond differently to individual CGRP antagonists\u2014even within the same class\u2014because \u201csame mechanism\u201d does not mean \u201cidentical drug effect.\u201d The main reasons include:\n\n1. **Different molecular targets**\n   - The class includes:\n     - **CGRP-receptor antagonists**: ubrogepant, rimegepant, zavegepant, and atogepant.\n     - **CGRP monoclonal antibodies**: erenumab targets the CGRP receptor; fremanezumab, galcanezumab, and eptinezumab bind the CGRP ligand.\n   - Blocking the ligand versus the receptor may affect which tissues and migraine pathways are inhibited most effectively in a particular patient.\n\n2. **Different distribution into relevant tissues**\n   - Small-molecule \u201cgepants\u201d are taken orally or intranasally and reach the bloodstream relatively quickly.\n   - Monoclonal antibodies are large proteins, given by injection or infusion, and remain mainly outside cells and the blood\u2013brain barrier.\n   - Migraine biology involves the trigeminal nerves, meninges, blood vessels, and central pain-processing regions. Differences in tissue penetration and exposure may matter even though all drugs affect CGRP signaling.\n\n3. **Pharmacokinetic differences**\n   - Gepants generally begin working within about **30 minutes to 2 hours**, depending on the product and route.\n   - Their effects typically last approximately **12\u201348 hours**.\n   - Monoclonal antibodies have half-lives of roughly **20\u201340 days**, so their effects build and stabilize over approximately **1\u20133 months**, sometimes longer.\n   - A patient may need rapid, short-term relief, sustained prevention, or both; the drug\u2019s exposure profile can therefore influence perceived benefit.\n\n4. **Individual differences in migraine biology**\n   - CGRP is important in many, but not all, migraine attacks. Other mediators\u2014such as PACAP, nitric oxide, glutamate, serotonin, and pituitary adenylate cyclase-activating pathways\u2014also contribute.\n   - In one patient, CGRP signaling may be a dominant driver; in another, it may be only one part of a larger pain network.\n   - Genetic differences in CGRP receptors, downstream signaling, drug transport, metabolism, or immune responses may also alter effectiveness, although clinically useful genetic tests are not yet routinely available.\n\n5. **Differences in metabolism and drug exposure**\n   - Oral gepants are affected by gastrointestinal absorption and liver enzymes, particularly **CYP3A4** and transport proteins for some agents.\n   - Strong CYP3A4 inhibitors or inducers can substantially change drug concentrations; examples include certain antifungals, macrolide antibiotics, anticonvulsants, and herbal products such as St. John\u2019s wort.\n   - Differences in kidney or liver function, body size, age, and other medications can alter exposure. Two drugs in the same class may therefore produce very different effective concentrations in the same person.\n\n6. **Dose and dosing schedule**\n   - A medication may appear ineffective if the dose is too low, the dosing interval is too long, or treatment is stopped before an adequate trial.\n   - Preventive therapies are commonly assessed after approximately **8\u201312 weeks** at a therapeutic dose, although some patients improve earlier and others require **4\u20136 months**.\n   - For monoclonal antibodies, clinicians often allow at least **3 monthly doses**\u2014or approximately **6 months** in selected cases\u2014before deciding that the treatment has failed.\n   - Acute treatments should generally be evaluated across several appropriately treated attacks, often around **2\u20134 attacks**, rather than a single episode.\n\n7. **Formulation and route of administration**\n   - An orally disintegrating tablet, conventional tablet, nasal spray, injection, or intravenous infusion can produce different onset times and absorption.\n   - Vomiting, gastroparesis, severe nausea, or delayed gastric emptying may reduce the reliability of oral acute treatment. In such cases, a nasal or injectable option may work better even if the pharmacologic target is similar.\n\n8. **Side effects and tolerability**\n   - A drug may technically reduce migraine frequency but still be judged unsuccessful because of adverse effects.\n   - Constipation is particularly associated with erenumab, while nausea, fatigue, injection-site reactions, or taste disturbance may occur with other agents.\n   - If adverse effects cause missed doses, the patient\u2019s real-world response may be worse than the drug\u2019s pharmacologic potential.\n\n9. **Antibodies and immune-related differences**\n   - Monoclonal antibodies can rarely produce anti-drug antibodies that reduce exposure or activity.\n   - This appears uncommon for most CGRP antibodies, generally reported in the low single-digit percentage range in trials, but the frequency varies by product and study.\n   - Differences in molecular structure, formulation, and immunogenicity may explain why a person responds to one antibody but not another.\n\n10. **Placebo and attack-to-attack variability**\n   ",
+    "latency_ms": 7702.7,
+    "input_tokens": 92,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Why do some patients respond to one CGRP antagonist well but not another from the same medication class?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Patients can respond differently to individual CGRP antagonists\u2014even within the same class\u2014because \u201csame mechanism\u201d does not mean \u201cidentical drug effect.\u201d The main reasons include:\n\n1. **Different molecular targets**\n   - The class includes:\n     - **CGRP-receptor antagonists**: ubrogepant, rimegepant, zavegepant, and atogepant.\n     - **CGRP monoclonal antibodies**: erenumab targets the CGRP receptor; fremanezumab, galcanezumab, and eptinezumab bind the CGRP ligand.\n   - Blocking the ligand versus the receptor may affect which tissues and migraine pathways are inhibited most effectively in a particular patient.\n\n2. **Different distribution into relevant tissues**\n   - Small-molecule \u201cgepants\u201d are taken orally or intranasally and reach the bloodstream relatively quickly.\n   - Monoclonal antibodies are large proteins, given by injection or infusion, and remain mainly outside cells and the blood\u2013brain barrier.\n   - Migraine biology involves the trigeminal nerves, meninges, blood vessels, and central pain-processing regions. Differences in tissue penetration and exposure may matter even though all drugs affect CGRP signaling.\n\n3. **Pharmacokinetic differences**\n   - Gepants generally begin working within about **30 minutes to 2 hours**, depending on the product and route.\n   - Their effects typically last approximately **12\u201348 hours**.\n   - Monoclonal antibodies have half-lives of roughly **20\u201340 days**, so their effects build and stabilize over approximately **1\u20133 months**, sometimes longer.\n   - A patient may need rapid, short-term relief, sustained prevention, or both; the drug\u2019s exposure profile can therefore influence perceived benefit.\n\n4. **Individual differences in migraine biology**\n   - CGRP is important in many, but not all, migraine attacks. Other mediators\u2014such as PACAP, nitric oxide, glutamate, serotonin, and pituitary adenylate cyclase-activating pathways\u2014also contribute.\n   - In one patient, CGRP signaling may be a dominant driver; in another, it may be only one part of a larger pain network.\n   - Genetic differences in CGRP receptors, downstream signaling, drug transport, metabolism, or immune responses may also alter effectiveness, although clinically useful genetic tests are not yet routinely available.\n\n5. **Differences in metabolism and drug exposure**\n   - Oral gepants are affected by gastrointestinal absorption and liver enzymes, particularly **CYP3A4** and transport proteins for some agents.\n   - Strong CYP3A4 inhibitors or inducers can substantially change drug concentrations; examples include certain antifungals, macrolide antibiotics, anticonvulsants, and herbal products such as St. John\u2019s wort.\n   - Differences in kidney or liver function, body size, age, and other medications can alter exposure. Two drugs in the same class may therefore produce very different effective concentrations in the same person.\n\n6. **Dose and dosing schedule**\n   - A medication may appear ineffective if the dose is too low, the dosing interval is too long, or treatment is stopped before an adequate trial.\n   - Preventive therapies are commonly assessed after approximately **8\u201312 weeks** at a therapeutic dose, although some patients improve earlier and others require **4\u20136 months**.\n   - For monoclonal antibodies, clinicians often allow at least **3 monthly doses**\u2014or approximately **6 months** in selected cases\u2014before deciding that the treatment has failed.\n   - Acute treatments should generally be evaluated across several appropriately treated attacks, often around **2\u20134 attacks**, rather than a single episode.\n\n7. **Formulation and route of administration**\n   - An orally disintegrating tablet, conventional tablet, nasal spray, injection, or intravenous infusion can produce different onset times and absorption.\n   - Vomiting, gastroparesis, severe nausea, or delayed gastric emptying may reduce the reliability of oral acute treatment. In such cases, a nasal or injectable option may work better even if the pharmacologic target is similar.\n\n8. **Side effects and tolerability**\n   - A drug may technically reduce migraine frequency but still be judged unsuccessful because of adverse effects.\n   - Constipation is particularly associated with erenumab, while nausea, fatigue, injection-site reactions, or taste disturbance may occur with other agents.\n   - If adverse effects cause missed doses, the patient\u2019s real-world response may be worse than the drug\u2019s pharmacologic potential.\n\n9. **Antibodies and immune-related differences**\n   - Monoclonal antibodies can rarely produce anti-drug antibodies that reduce exposure or activity.\n   - This appears uncommon for most CGRP antibodies, generally reported in the low single-digit percentage range in trials, but the frequency varies by product and study.\n   - Differences in molecular structure, formulation, and immunogenicity may explain why a person responds to one antibody but not another.\n\n10. **Placebo and attack-to-attack variability**\n   ",
+    "latency_ms": 7702.7,
+    "token_count": 1116,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "d7aa983ac0d0",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230484.031108,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 9 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 7702.7,
+        "token_count": 1116,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.199; flagged=True"
+}

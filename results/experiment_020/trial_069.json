@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:39:56.888770+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "A group of patients presenting with diarrhea 6 hours after eating out in a restaurant. The patients reported eating salads and meat. What are the most likely agents causing such disease? ",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Emergency Medicine",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Likely Causative Agents\n\nGiven the **short incubation period (6 hours)**, this timeframe is highly characteristic of a **preformed toxin-mediated illness** rather than an infection requiring bacterial multiplication in the host. The most likely agents are:\n\n## 1. Staphylococcus aureus (Most Likely)\n- **Incubation: 1\u20136 hours** (classic fit)\n- **Mechanism:** Preformed heat-stable enterotoxin (A-E, especially enterotoxin A) ingested with food\n- **Source:** Contaminated by food handlers (nasal carriage, skin lesions) touching salads/cold foods after cooking, then left at room/warm temperature allowing toxin production\n- **Symptoms:** Sudden onset nausea, **vomiting** (prominent), abdominal cramps, diarrhea; usually **afebrile**\n- **Foods:** Salads (egg, potato, chicken, macaroni), sliced meats \u2014 fits the history perfectly\n\n## 2. Bacillus cereus (Emetic Type)\n- **Incubation: 1\u20136 hours**\n- **Toxin:** Cereulide (preformed, heat-stable)\n- **Foods:** Classically fried rice, but can occur with reheated meats\n- **Symptoms:** Vomiting predominant, similar to S. aureus\n\n## Less Likely (Incubation Too Short)\n| Organism | Typical Incubation |\n|---|---|\n| *Salmonella* | 6\u201372 hours (usually 12\u201336h) |\n| *Clostridium perfringens* | 8\u201316 hours |\n| *E. coli* (various) | 12 hours\u20135 days |\n| *Campylobacter* | 2\u20135 days |\n\n## Most Probable Diagnosis\n**Staphylococcal food poisoning** is the top consideration due to:\n- Exact incubation window match\n- Salads (mayo-based, egg, meat salads) are classic vehicles\n- Meat dishes handled post-cooking\n- Point-source outbreak pattern (multiple patients, same restaurant/meal)\n\n## Confirmatory Steps\n- Stool/vomitus culture (though toxin-mediated illness may show no live organisms)\n- **Test food samples** for preformed enterotoxin (ELISA) or cereulide\n- Check food handler for skin infections/nasal swabs for *S. aureus*\n- Assess food storage temperature history (danger zone: 4\u201360\u00b0C)",
+    "latency_ms": 10381.5,
+    "input_tokens": 173,
+    "output_tokens": 815
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A group of patients presenting with diarrhea 6 hours after eating out in a restaurant. The patients reported eating salads and meat. What are the most likely agents causing such disease? ",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Likely Causative Agents\n\nGiven the **short incubation period (6 hours)**, this timeframe is highly characteristic of a **preformed toxin-mediated illness** rather than an infection requiring bacterial multiplication in the host. The most likely agents are:\n\n## 1. Staphylococcus aureus (Most Likely)\n- **Incubation: 1\u20136 hours** (classic fit)\n- **Mechanism:** Preformed heat-stable enterotoxin (A-E, especially enterotoxin A) ingested with food\n- **Source:** Contaminated by food handlers (nasal carriage, skin lesions) touching salads/cold foods after cooking, then left at room/warm temperature allowing toxin production\n- **Symptoms:** Sudden onset nausea, **vomiting** (prominent), abdominal cramps, diarrhea; usually **afebrile**\n- **Foods:** Salads (egg, potato, chicken, macaroni), sliced meats \u2014 fits the history perfectly\n\n## 2. Bacillus cereus (Emetic Type)\n- **Incubation: 1\u20136 hours**\n- **Toxin:** Cereulide (preformed, heat-stable)\n- **Foods:** Classically fried rice, but can occur with reheated meats\n- **Symptoms:** Vomiting predominant, similar to S. aureus\n\n## Less Likely (Incubation Too Short)\n| Organism | Typical Incubation |\n|---|---|\n| *Salmonella* | 6\u201372 hours (usually 12\u201336h) |\n| *Clostridium perfringens* | 8\u201316 hours |\n| *E. coli* (various) | 12 hours\u20135 days |\n| *Campylobacter* | 2\u20135 days |\n\n## Most Probable Diagnosis\n**Staphylococcal food poisoning** is the top consideration due to:\n- Exact incubation window match\n- Salads (mayo-based, egg, meat salads) are classic vehicles\n- Meat dishes handled post-cooking\n- Point-source outbreak pattern (multiple patients, same restaurant/meal)\n\n## Confirmatory Steps\n- Stool/vomitus culture (though toxin-mediated illness may show no live organisms)\n- **Test food samples** for preformed enterotoxin (ELISA) or cereulide\n- Check food handler for skin infections/nasal swabs for *S. aureus*\n- Assess food storage temperature history (danger zone: 4\u201360\u00b0C)",
+    "latency_ms": 10381.5,
+    "token_count": 988
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "c0fd181957db",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239596.8880415,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4057,
+          "evidence": [
+            "Latency 10382ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 10381.5,
+        "token_count": 988,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.69; flagged=False"
+}

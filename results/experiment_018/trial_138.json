@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:01:59.535109+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Is there any difference in time of threatment of patients COVID+ who were using pulmonary rehabilitation and those who did not?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Physical Medicine and Rehabilitation also COVID patients",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Yes, **pulmonary rehabilitation may affect recovery time in patients who are COVID-19 positive**, but the difference depends strongly on disease severity, timing, rehabilitation intensity, comorbidities, and what you mean by \u201ctreatment time.\u201d\n\n### What the evidence suggests\n\nPulmonary rehabilitation generally **does not shorten the duration of viral positivity or the required isolation period**. It is mainly intended to improve:\n\n- Exercise capacity\n- Breathlessness\n- Muscle strength\n- Functional independence\n- Fatigue\n- Quality of life\n- Recovery after hospitalization or severe COVID-19\n\nStudies of post-acute COVID rehabilitation commonly report meaningful improvement after approximately **4\u20138 weeks** of supervised or structured rehabilitation, sometimes with improvement within **2\u20134 weeks**. Patients receiving rehabilitation often show better functional outcomes than those receiving usual care alone, but evidence that it reduces hospital length of stay or total \u201ctreatment duration\u201d is less consistent.\n\n### Hospitalized or severe COVID-19\n\nFor hospitalized patients, early, carefully monitored rehabilitation may help reduce:\n\n- Loss of muscle strength\n- Time to mobilization\n- Dependence on supplemental oxygen\n- Functional disability after discharge\n\nSome studies report hospital-stay reductions of approximately **1\u20135 days**, but this is not consistent across all studies and may reflect differences in patient severity, hospital protocols, and rehabilitation availability. In critically ill patients, rehabilitation must be individualized because excessive exertion during unstable disease can worsen oxygen desaturation, cardiovascular stress, or fatigue.\n\n### Patients recovering after discharge\n\nFor people with persistent symptoms\u2014often called **long COVID or post-COVID condition**\u2014rehabilitation may improve walking distance and symptoms over approximately **6\u201312 weeks**. For example, studies frequently report:\n\n- Six-minute walking distance increases of roughly **30\u2013100 meters**\n- Exercise capacity improvements of approximately **10\u201330%**\n- Reduced dyspnea and fatigue scores after around **4\u20138 weeks**\n- Improved activities of daily living over approximately **6\u201312 weeks**\n\nHowever, these improvements do not necessarily mean that the patient becomes COVID-negative sooner.\n\n### Important safety point\n\nPulmonary rehabilitation should generally be postponed or modified during the acute infectious phase if the patient has:\n\n- Resting oxygen saturation below approximately **90\u201392%**, unless a clinician has set a different target\n- Fever above approximately **38\u00b0C**\n- Increasing oxygen requirements\n- Chest pain, fainting, new arrhythmia, or severe breathlessness\n- Resting heart rate above approximately **120 beats/minute**\n- Significant clinical instability\n\nDuring exercise, many programs pause or reduce activity if oxygen saturation falls below approximately **88\u201390%**, although targets may differ for patients with chronic lung disease. Patients with post-exertional malaise should avoid a fixed \u201cpush through\u201d exercise program; pacing and symptom-guided rehabilitation are usually safer.\n\n### Bottom line\n\nPatients who participate in appropriately prescribed pulmonary rehabilitation may recover **functional capacity and symptoms faster\u2014often over weeks rather than months\u2014than similar patients receiving no rehabilitation**, particularly after hospitalization. However:\n\n- It usually **does not shorten viral shedding or isolation time**.\n- It may or may not shorten hospital stay.\n- The strongest evidence is for improved function, breathlessness, fatigue, and quality of life.\n- Rehabilitation should be supervised or medically cleared, especially in patients with low oxygen levels, heart disease, severe lung disease, or post-exertional worsening.\n\nThe exact difference in treatment time cannot be stated without knowing the patient\u2019s age, COVID severity, hospitalization status, oxygen requirement, comorbidities, rehabilitation program, and whether \u201ctreatment time\u201d refers to hospital stay, oxygen therapy, viral positivity, or recovery of function.",
+    "latency_ms": 6227.8,
+    "input_tokens": 96,
+    "output_tokens": 750
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Is there any difference in time of threatment of patients COVID+ who were using pulmonary rehabilitation and those who did not?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Yes, **pulmonary rehabilitation may affect recovery time in patients who are COVID-19 positive**, but the difference depends strongly on disease severity, timing, rehabilitation intensity, comorbidities, and what you mean by \u201ctreatment time.\u201d\n\n### What the evidence suggests\n\nPulmonary rehabilitation generally **does not shorten the duration of viral positivity or the required isolation period**. It is mainly intended to improve:\n\n- Exercise capacity\n- Breathlessness\n- Muscle strength\n- Functional independence\n- Fatigue\n- Quality of life\n- Recovery after hospitalization or severe COVID-19\n\nStudies of post-acute COVID rehabilitation commonly report meaningful improvement after approximately **4\u20138 weeks** of supervised or structured rehabilitation, sometimes with improvement within **2\u20134 weeks**. Patients receiving rehabilitation often show better functional outcomes than those receiving usual care alone, but evidence that it reduces hospital length of stay or total \u201ctreatment duration\u201d is less consistent.\n\n### Hospitalized or severe COVID-19\n\nFor hospitalized patients, early, carefully monitored rehabilitation may help reduce:\n\n- Loss of muscle strength\n- Time to mobilization\n- Dependence on supplemental oxygen\n- Functional disability after discharge\n\nSome studies report hospital-stay reductions of approximately **1\u20135 days**, but this is not consistent across all studies and may reflect differences in patient severity, hospital protocols, and rehabilitation availability. In critically ill patients, rehabilitation must be individualized because excessive exertion during unstable disease can worsen oxygen desaturation, cardiovascular stress, or fatigue.\n\n### Patients recovering after discharge\n\nFor people with persistent symptoms\u2014often called **long COVID or post-COVID condition**\u2014rehabilitation may improve walking distance and symptoms over approximately **6\u201312 weeks**. For example, studies frequently report:\n\n- Six-minute walking distance increases of roughly **30\u2013100 meters**\n- Exercise capacity improvements of approximately **10\u201330%**\n- Reduced dyspnea and fatigue scores after around **4\u20138 weeks**\n- Improved activities of daily living over approximately **6\u201312 weeks**\n\nHowever, these improvements do not necessarily mean that the patient becomes COVID-negative sooner.\n\n### Important safety point\n\nPulmonary rehabilitation should generally be postponed or modified during the acute infectious phase if the patient has:\n\n- Resting oxygen saturation below approximately **90\u201392%**, unless a clinician has set a different target\n- Fever above approximately **38\u00b0C**\n- Increasing oxygen requirements\n- Chest pain, fainting, new arrhythmia, or severe breathlessness\n- Resting heart rate above approximately **120 beats/minute**\n- Significant clinical instability\n\nDuring exercise, many programs pause or reduce activity if oxygen saturation falls below approximately **88\u201390%**, although targets may differ for patients with chronic lung disease. Patients with post-exertional malaise should avoid a fixed \u201cpush through\u201d exercise program; pacing and symptom-guided rehabilitation are usually safer.\n\n### Bottom line\n\nPatients who participate in appropriately prescribed pulmonary rehabilitation may recover **functional capacity and symptoms faster\u2014often over weeks rather than months\u2014than similar patients receiving no rehabilitation**, particularly after hospitalization. However:\n\n- It usually **does not shorten viral shedding or isolation time**.\n- It may or may not shorten hospital stay.\n- The strongest evidence is for improved function, breathlessness, fatigue, and quality of life.\n- Rehabilitation should be supervised or medically cleared, especially in patients with low oxygen levels, heart disease, severe lung disease, or post-exertional worsening.\n\nThe exact difference in treatment time cannot be stated without knowing the patient\u2019s age, COVID severity, hospitalization status, oxygen requirement, comorbidities, rehabilitation program, and whether \u201ctreatment time\u201d refers to hospital stay, oxygen therapy, viral positivity, or recovery of function.",
+    "latency_ms": 6227.8,
+    "token_count": 846,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "cd9c72e5f2d0",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230119.5343175,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 11 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 6227.8,
+        "token_count": 846,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.138; flagged=True"
+}

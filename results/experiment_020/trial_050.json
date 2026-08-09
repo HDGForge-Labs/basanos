@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:36:13.186217+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What is the recommended medication to prescribe for a first episode of psychosis?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Psychiatric Healthcare",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "For first-episode psychosis (FEP), a second-generation (atypical) antipsychotic is the standard first-line treatment, started at a low dose and titrated slowly \u2014 patients who are antipsychotic-na\u00efve are markedly more sensitive to both therapeutic and adverse effects than those with chronic illness, so doses used for established schizophrenia are typically too high.\n\n**Preferred first-line agents:**\n\n- **Risperidone**: start 0.5\u20131 mg/day, target dose usually 2\u20134 mg/day (compared to 4\u20136 mg in chronic illness). Good efficacy data in FEP trials (e.g., EUFEST). Watch for prolactin elevation and EPS at higher doses.\n\n- **Aripiprazole**: start 5 mg/day, target 10\u201315 mg/day. Lower risk of weight gain/metabolic effects and prolactin elevation than risperidone or olanzapine; favored when metabolic risk is a concern. Can cause akathisia.\n\n- **Olanzapine**: start 5 mg/day, target 10\u201315 mg/day. Effective, but significant weight gain and metabolic risk (dyslipidemia,",
+    "latency_ms": 12055.0,
+    "input_tokens": 139,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the recommended medication to prescribe for a first episode of psychosis?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "For first-episode psychosis (FEP), a second-generation (atypical) antipsychotic is the standard first-line treatment, started at a low dose and titrated slowly \u2014 patients who are antipsychotic-na\u00efve are markedly more sensitive to both therapeutic and adverse effects than those with chronic illness, so doses used for established schizophrenia are typically too high.\n\n**Preferred first-line agents:**\n\n- **Risperidone**: start 0.5\u20131 mg/day, target dose usually 2\u20134 mg/day (compared to 4\u20136 mg in chronic illness). Good efficacy data in FEP trials (e.g., EUFEST). Watch for prolactin elevation and EPS at higher doses.\n\n- **Aripiprazole**: start 5 mg/day, target 10\u201315 mg/day. Lower risk of weight gain/metabolic effects and prolactin elevation than risperidone or olanzapine; favored when metabolic risk is a concern. Can cause akathisia.\n\n- **Olanzapine**: start 5 mg/day, target 10\u201315 mg/day. Effective, but significant weight gain and metabolic risk (dyslipidemia,",
+    "latency_ms": 12055.0,
+    "token_count": 1163
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "f6679830ab87",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239373.1854596,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4308,
+          "evidence": [
+            "Latency 12055ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12055.0,
+        "token_count": 1163,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.50; flagged=False"
+}

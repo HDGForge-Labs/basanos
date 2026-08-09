@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:58:50.727075+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Describe the pharmacokynetic differences of lansoprazole and omeprazole and make an argument for which one would be better for an elderly female patient with liver issues.",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pharmacy field",
+    "question_type": "Open-ended question that is potentially ambiguous| Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Pharmacokinetic Comparison: Lansoprazole vs. Omeprazole\n\n## Absorption and Bioavailability\n\n**Omeprazole:**\n- Oral bioavailability starts around 35-40% after a single dose but increases to approximately 60-65% with repeated dosing due to reduced first-pass metabolism\n- Peak plasma concentrations (Tmax) occur in roughly 1-3 hours\n- Absorption can be somewhat delayed by food\n\n**Lansoprazole:**\n- Bioavailability is higher initially, around 80-91%, and remains relatively stable with repeated dosing\n- Tmax occurs at approximately 1.5-2.2 hours\n- Food can decrease absorption by roughly 50% if taken with meals, so it's best administered on an empty stomach\n\n## Metabolism (Critical for Liver-Impaired Patients)\n\nBoth drugs are metabolized primarily via **hepatic CYP2C19** and to a lesser extent **CYP3A4**, but there are meaningful differences:\n\n**Omeprazole:**\n- Half-life in normal patients: approximately 0.5-1 hour\n- In patients with hepatic impairment, half-life can extend dramatically to **3 hours or more**, sometimes reported up to 18-20 hours in severe hepatic dysfunction\n- Clearance is reduced by approximately 50% or more in cirrhotic patients\n- Omeprazole is a well-documented inhibitor of CYP2C19, increasing interaction potential with drugs like clopidogrel, warfarin, and diazepam\n\n**Lansoprazole:**\n- Half-life in normal patients: approximately 1-1.5 hours\n- In hepatic impairment, half-life increases to roughly 3.2-7.2 hours (Child-Pugh Class B/C data)\n- AUC (area under curve) increases by approximately 500% in severe hepatic impairment, though this is somewhat variable across studies\n- Generally considered to have a **weaker inhibitory effect on CYP2C19 and CYP3A4** compared to omeprazole, translating to fewer drug-drug interactions\n\n## Drug Interaction Profile\n\nThis is particularly relevant for elderly patients who are frequently on polypharmacy (average elderly patients take **4-9 medications** concurrently):\n\n- **Omeprazole** significantly inhibits CYP2C19, reducing the antiplatelet efficacy of clopidogrel by up to 40-50% in some studies \u2014 a major concern if the patient has cardiovascular comorbidities\n- **Lansoprazole** has a comparatively lower affinity for CYP2C19 inhibition, making it a somewhat \"cleaner\" option for patients on multiple medications\n\n## Protein Binding\n\n- Omeprazole: approximately 95% protein-bound\n- Lansoprazole: approximately 97% protein-bound\n\nBoth are highly protein-bound, meaning hypoalbuminemia (common in hepatic dysfunction, especially in cirrhotic patients where albumin can drop below 3.5 g/dL) could increase free dr",
+    "latency_ms": 12118.4,
+    "input_tokens": 162,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Describe the pharmacokynetic differences of lansoprazole and omeprazole and make an argument for which one would be better for an elderly female patient with liver issues.",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Pharmacokinetic Comparison: Lansoprazole vs. Omeprazole\n\n## Absorption and Bioavailability\n\n**Omeprazole:**\n- Oral bioavailability starts around 35-40% after a single dose but increases to approximately 60-65% with repeated dosing due to reduced first-pass metabolism\n- Peak plasma concentrations (Tmax) occur in roughly 1-3 hours\n- Absorption can be somewhat delayed by food\n\n**Lansoprazole:**\n- Bioavailability is higher initially, around 80-91%, and remains relatively stable with repeated dosing\n- Tmax occurs at approximately 1.5-2.2 hours\n- Food can decrease absorption by roughly 50% if taken with meals, so it's best administered on an empty stomach\n\n## Metabolism (Critical for Liver-Impaired Patients)\n\nBoth drugs are metabolized primarily via **hepatic CYP2C19** and to a lesser extent **CYP3A4**, but there are meaningful differences:\n\n**Omeprazole:**\n- Half-life in normal patients: approximately 0.5-1 hour\n- In patients with hepatic impairment, half-life can extend dramatically to **3 hours or more**, sometimes reported up to 18-20 hours in severe hepatic dysfunction\n- Clearance is reduced by approximately 50% or more in cirrhotic patients\n- Omeprazole is a well-documented inhibitor of CYP2C19, increasing interaction potential with drugs like clopidogrel, warfarin, and diazepam\n\n**Lansoprazole:**\n- Half-life in normal patients: approximately 1-1.5 hours\n- In hepatic impairment, half-life increases to roughly 3.2-7.2 hours (Child-Pugh Class B/C data)\n- AUC (area under curve) increases by approximately 500% in severe hepatic impairment, though this is somewhat variable across studies\n- Generally considered to have a **weaker inhibitory effect on CYP2C19 and CYP3A4** compared to omeprazole, translating to fewer drug-drug interactions\n\n## Drug Interaction Profile\n\nThis is particularly relevant for elderly patients who are frequently on polypharmacy (average elderly patients take **4-9 medications** concurrently):\n\n- **Omeprazole** significantly inhibits CYP2C19, reducing the antiplatelet efficacy of clopidogrel by up to 40-50% in some studies \u2014 a major concern if the patient has cardiovascular comorbidities\n- **Lansoprazole** has a comparatively lower affinity for CYP2C19 inhibition, making it a somewhat \"cleaner\" option for patients on multiple medications\n\n## Protein Binding\n\n- Omeprazole: approximately 95% protein-bound\n- Lansoprazole: approximately 97% protein-bound\n\nBoth are highly protein-bound, meaning hypoalbuminemia (common in hepatic dysfunction, especially in cirrhotic patients where albumin can drop below 3.5 g/dL) could increase free dr",
+    "latency_ms": 12118.4,
+    "token_count": 1186,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "cd3dc6c6f22e",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240730.7262557,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 22 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4318,
+          "evidence": [
+            "Latency 12118ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12118.4,
+        "token_count": 1186,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.161; flagged=True"
+}

@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:59:12.997860+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Supose there is female 30yo patient who is pregnant of 32 weeks, she presents with moderate transvaginal bleeding and no other symptoms, what would be the best initial course of action to address this patient? ",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Primary care",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "At 32 weeks with **moderate painless third-trimester vaginal bleeding**, manage as **placenta previa or placental abruption until proven otherwise**.\n\n**Initial actions:**\n\n1. **Immediate maternal stabilization**\n   - Assess ABCs, vital signs, mental status, quantify bleeding.\n   - Place **two large-bore IV lines**.\n   - Begin IV crystalloid if unstable; prepare blood products if bleeding is significant.\n   - Continuous maternal pulse oximetry and monitoring.\n\n2. **Do NOT perform a digital vaginal/cervical examination**\n   - A digital exam can precipitate massive hemorrhage if placenta previa is present.\n   - A sterile speculum exam may be considered later if needed, but only after maternal stabilization and with previa evaluated.\n\n3. **Assess the fetus**\n   - Start **continuous electronic fetal heart-rate monitoring** and uterine activity monitoring.\n\n4. **Laboratory evaluation**\n   - CBC/hemoglobin and platelets.\n   - Type and crossmatch blood.\n   - Coagulation studies including fibrinogen (especially if abruption is possible).\n   - Kleihauer\u2013Betke/fetomaternal hemorrhage testing as appropriate.\n   - If Rh-negative, administer **Rh(D) immune globulin** after obtaining testing.\n\n5. **Urgent obstetric ultrasound**\n   - Transabdominal plus **transvaginal ultrasound** to determine placental location; transvaginal ultrasound is safe and is the most accurate test for placenta previa.\n   - Ultrasound may support, but cannot reliably exclude, placental abruption.\n\n6. **Obstetric consultation/admission**\n   - Admit for observation and management; involve anesthesia and blood bank early if bleeding is ongoing or substantial.\n\n**Disposition depends on stability:**\n- If bleeding is ongoing/heavy, maternal instability develops, fetal tracing is nonreassuring, or there is suspected significant abruption: **urgent delivery, usually cesarean delivery** at 32 weeks.\n- If mother and fetus are stable and bleeding stops, expectant inpatient management may be possible, with **antenatal corticosteroids** (e.g., betamethasone) because preterm delivery risk is high at 32 weeks.\n\nThe key first principle is: **stabilize mother and fetus, obtain ultrasound, and avoid digital cervical examination until placenta previa has been excluded.**",
+    "latency_ms": 6162.2,
+    "input_tokens": 124,
+    "output_tokens": 483
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Supose there is female 30yo patient who is pregnant of 32 weeks, she presents with moderate transvaginal bleeding and no other symptoms, what would be the best initial course of action to address this patient? ",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "At 32 weeks with **moderate painless third-trimester vaginal bleeding**, manage as **placenta previa or placental abruption until proven otherwise**.\n\n**Initial actions:**\n\n1. **Immediate maternal stabilization**\n   - Assess ABCs, vital signs, mental status, quantify bleeding.\n   - Place **two large-bore IV lines**.\n   - Begin IV crystalloid if unstable; prepare blood products if bleeding is significant.\n   - Continuous maternal pulse oximetry and monitoring.\n\n2. **Do NOT perform a digital vaginal/cervical examination**\n   - A digital exam can precipitate massive hemorrhage if placenta previa is present.\n   - A sterile speculum exam may be considered later if needed, but only after maternal stabilization and with previa evaluated.\n\n3. **Assess the fetus**\n   - Start **continuous electronic fetal heart-rate monitoring** and uterine activity monitoring.\n\n4. **Laboratory evaluation**\n   - CBC/hemoglobin and platelets.\n   - Type and crossmatch blood.\n   - Coagulation studies including fibrinogen (especially if abruption is possible).\n   - Kleihauer\u2013Betke/fetomaternal hemorrhage testing as appropriate.\n   - If Rh-negative, administer **Rh(D) immune globulin** after obtaining testing.\n\n5. **Urgent obstetric ultrasound**\n   - Transabdominal plus **transvaginal ultrasound** to determine placental location; transvaginal ultrasound is safe and is the most accurate test for placenta previa.\n   - Ultrasound may support, but cannot reliably exclude, placental abruption.\n\n6. **Obstetric consultation/admission**\n   - Admit for observation and management; involve anesthesia and blood bank early if bleeding is ongoing or substantial.\n\n**Disposition depends on stability:**\n- If bleeding is ongoing/heavy, maternal instability develops, fetal tracing is nonreassuring, or there is suspected significant abruption: **urgent delivery, usually cesarean delivery** at 32 weeks.\n- If mother and fetus are stable and bleeding stops, expectant inpatient management may be possible, with **antenatal corticosteroids** (e.g., betamethasone) because preterm delivery risk is high at 32 weeks.\n\nThe key first principle is: **stabilize mother and fetus, obtain ultrasound, and avoid digital cervical examination until placenta previa has been excluded.**",
+    "latency_ms": 6162.2,
+    "token_count": 607
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "2ce8d55c394c",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233552.9971163,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 6162.2,
+        "token_count": 607,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.54; flagged=False"
+}

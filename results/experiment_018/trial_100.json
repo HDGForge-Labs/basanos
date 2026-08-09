@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:58:25.158136+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Why do people look down on healthcare workers?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Healthcare ",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "People generally don\u2019t look down on healthcare workers as a group\u2014healthcare is widely respected\u2014but several factors can create that impression:\n\n- **Frustration with the healthcare system gets directed at individuals.** High prices, insurance denials, long waits, staffing shortages, and confusing bureaucracy are often experienced through nurses, doctors, receptionists, or technicians, even when those workers don\u2019t control the policies.\n- **Power imbalance and vulnerability.** Patients may feel frightened, exposed, or ignored. That can turn into anger or condescension toward the person treating them.\n- **Professional stereotypes.** Some people view healthcare workers as \u201cjust doing a job,\u201d especially when they misunderstand the education, emotional labor, and technical judgment involved.\n- **Class and status perceptions.** Certain roles\u2014especially aides, nursing assistants, cleaners, home-care workers, and support staff\u2014are undervalued despite being essential. Gender and racial bias also contribute, since many care roles are disproportionately held by women and people of color.\n- **Bad personal experiences.** One dismissive interaction can lead someone to generalize about an entire profession.\n- **Online culture and misinformation.** Social media can amplify stories of negligence or incompetence while overlooking routine, competent care.\n- **Burnout and reduced warmth.** Understaffing and exhaustion can make workers seem rushed or detached, which patients may interpret as arrogance or indifference.\n\nThere is also a broader contradiction: people may **admire healthcare workers in principle while treating them poorly in practice**\u2014demanding instant service, questioning their expertise, or blaming them for institutional failures. Much of the disrespect reflects stress, inequality, and a broken healthcare system rather than the actual value of the workers\u2019 contribution.",
+    "latency_ms": 3380.6,
+    "input_tokens": 87,
+    "output_tokens": 351
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Why do people look down on healthcare workers?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "People generally don\u2019t look down on healthcare workers as a group\u2014healthcare is widely respected\u2014but several factors can create that impression:\n\n- **Frustration with the healthcare system gets directed at individuals.** High prices, insurance denials, long waits, staffing shortages, and confusing bureaucracy are often experienced through nurses, doctors, receptionists, or technicians, even when those workers don\u2019t control the policies.\n- **Power imbalance and vulnerability.** Patients may feel frightened, exposed, or ignored. That can turn into anger or condescension toward the person treating them.\n- **Professional stereotypes.** Some people view healthcare workers as \u201cjust doing a job,\u201d especially when they misunderstand the education, emotional labor, and technical judgment involved.\n- **Class and status perceptions.** Certain roles\u2014especially aides, nursing assistants, cleaners, home-care workers, and support staff\u2014are undervalued despite being essential. Gender and racial bias also contribute, since many care roles are disproportionately held by women and people of color.\n- **Bad personal experiences.** One dismissive interaction can lead someone to generalize about an entire profession.\n- **Online culture and misinformation.** Social media can amplify stories of negligence or incompetence while overlooking routine, competent care.\n- **Burnout and reduced warmth.** Understaffing and exhaustion can make workers seem rushed or detached, which patients may interpret as arrogance or indifference.\n\nThere is also a broader contradiction: people may **admire healthcare workers in principle while treating them poorly in practice**\u2014demanding instant service, questioning their expertise, or blaming them for institutional failures. Much of the disrespect reflects stress, inequality, and a broken healthcare system rather than the actual value of the workers\u2019 contribution.",
+    "latency_ms": 3380.6,
+    "token_count": 438
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "c8d92611d6d0",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229905.1573772,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3380.6,
+        "token_count": 438,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.100; flagged=False"
+}

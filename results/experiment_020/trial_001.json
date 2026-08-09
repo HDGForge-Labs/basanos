@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T01:26:43.492536+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "If I leave work without informing anyone to become an influencer, what recourse does my employer have?",
+    "field": "Law",
+    "specific_field": "Labour Law",
+    "question_type": "Open-ended question that is potentially ambiguous| Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "Depends heavily on your employment status, contract terms, and jurisdiction, but here's what's realistically on the table:\n\n**Immediate consequences**\n\n- **Termination for job abandonment.** Most employers treat unexplained absence of 2-3 consecutive days as voluntary resignation or grounds for termination. You'd likely lose eligibility for unemployment benefits since you quit rather than were laid off.\n- **Loss of accrued benefits.** Unused PTO payout rules vary by state/country \u2014 some require payout regardless of how you left, others don't.\n\n**Financial/legal exposure**\n\n- **Breach of contract claims** \u2014 if you have an employment contract with a notice period requirement, the employer could theoretically sue for damages caused by your sudden departure (cost of emergency hiring, lost business, project delays). In practice, these suits are rare because damages are hard to prove and not worth litigating unless you're in a senior/specialized role with a written contract explicitly addressing this.\n- **Non-compete/non-solicitation clauses** \u2014 if you signed one, becoming an influencer might trigger issues if your content competes with their business or you solicit clients/colleagues.\n- **Confidentiality/NDA violations** \u2014 if your content as an influencer references your former employer, discusses internal matters, or uses their branding/likeness, you could face legal action for breach of NDA or defamation if you say anything false or damaging.\n- **Return of company property** \u2014 laptop, badge, equipment. Failure to return can result in a police report for theft or a deduction from final paycheck (where legal).\n\n**Reputational fallout**\n\n- Your employer may give **negative references** to future employers, mentioning job abandonment specifically \u2014 this is often the most lasting practical consequence.\n- If you're in a licensed profession (nursing, law, finance, etc.), some regulatory bodies take a dim view of unprofessional conduct, though this rarely rises to license revocation on its own.\n\n**What's unlikely**\n\n- Criminal charges \u2014 abandoning a job isn't a crime unless tied to theft, fraud, or breach of a specific legal duty (e.g., certain government/military contracts, essential services during declared emergencies).\n- Garnishment of influencer income \u2014 extremely rare unless a court judgment specifically orders it after a successful lawsuit.\n\n**Practical bottom line:** For most at-will employees without contracts, the real cost is a bad reference and burned bridge, not legal action. The calculus changes sharply if you have a signed contract, hold sensitive data, work in a regulated industry, or are in a leadership role where your departure causes provable financial harm.",
+    "latency_ms": 11755.7,
+    "input_tokens": 143,
+    "output_tokens": 846
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "If I leave work without informing anyone to become an influencer, what recourse does my employer have?",
+      "field": "Law"
+    },
+    "response": "Depends heavily on your employment status, contract terms, and jurisdiction, but here's what's realistically on the table:\n\n**Immediate consequences**\n\n- **Termination for job abandonment.** Most employers treat unexplained absence of 2-3 consecutive days as voluntary resignation or grounds for termination. You'd likely lose eligibility for unemployment benefits since you quit rather than were laid off.\n- **Loss of accrued benefits.** Unused PTO payout rules vary by state/country \u2014 some require payout regardless of how you left, others don't.\n\n**Financial/legal exposure**\n\n- **Breach of contract claims** \u2014 if you have an employment contract with a notice period requirement, the employer could theoretically sue for damages caused by your sudden departure (cost of emergency hiring, lost business, project delays). In practice, these suits are rare because damages are hard to prove and not worth litigating unless you're in a senior/specialized role with a written contract explicitly addressing this.\n- **Non-compete/non-solicitation clauses** \u2014 if you signed one, becoming an influencer might trigger issues if your content competes with their business or you solicit clients/colleagues.\n- **Confidentiality/NDA violations** \u2014 if your content as an influencer references your former employer, discusses internal matters, or uses their branding/likeness, you could face legal action for breach of NDA or defamation if you say anything false or damaging.\n- **Return of company property** \u2014 laptop, badge, equipment. Failure to return can result in a police report for theft or a deduction from final paycheck (where legal).\n\n**Reputational fallout**\n\n- Your employer may give **negative references** to future employers, mentioning job abandonment specifically \u2014 this is often the most lasting practical consequence.\n- If you're in a licensed profession (nursing, law, finance, etc.), some regulatory bodies take a dim view of unprofessional conduct, though this rarely rises to license revocation on its own.\n\n**What's unlikely**\n\n- Criminal charges \u2014 abandoning a job isn't a crime unless tied to theft, fraud, or breach of a specific legal duty (e.g., certain government/military contracts, essential services during declared emergencies).\n- Garnishment of influencer income \u2014 extremely rare unless a court judgment specifically orders it after a successful lawsuit.\n\n**Practical bottom line:** For most at-will employees without contracts, the real cost is a bad reference and burned bridge, not legal action. The calculus changes sharply if you have a signed contract, hold sensitive data, work in a regulated industry, or are in a leadership role where your departure causes provable financial harm.",
+    "latency_ms": 11755.7,
+    "token_count": 989
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "a9694b4d388c",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786238803.4916549,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 11755.7,
+        "token_count": 989,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.1; flagged=False"
+}

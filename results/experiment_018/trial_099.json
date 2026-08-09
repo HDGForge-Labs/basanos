@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:58:21.771289+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What is the best diet for general longevity?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biochemistry",
+    "question_type": "Directed question that has a single unambiguous answer| Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "The best-supported pattern for longevity is a **Mediterranean-style, predominantly plant-based diet**\u2014similar to the diets associated with long-lived populations\u2014combined with appropriate calorie control and adequate protein.\n\n### Emphasize\n- **Vegetables and fruit:** especially leafy greens, cruciferous vegetables, berries, and other colorful produce.\n- **Legumes:** beans, lentils, and chickpeas several times per week.\n- **Whole grains:** oats, barley, brown rice, and whole-grain bread.\n- **Nuts and seeds:** a small handful most days.\n- **Unsaturated fats:** extra-virgin olive oil, avocado, and nuts.\n- **Fish:** particularly oily fish, roughly 1\u20132 times weekly.\n- **Fermented or minimally processed dairy**, if tolerated, such as yogurt.\n- **Adequate protein:** commonly about **1.0\u20131.2 g/kg of body weight daily** for healthy older adults, adjusted for medical conditions and activity.\n\n### Limit\n- Processed meat and keep red meat occasional.\n- Sugary drinks, refined carbohydrates, and heavily processed snack foods.\n- Excess sodium, especially if you have high blood pressure.\n- Alcohol: **none is required for health**; if consumed, keep it low.\n- Chronic overeating. Maintaining a healthy waist circumference and body weight is more important than pursuing extreme fasting or very low-calorie diets.\n\n### A practical plate\nAt most meals:\n- **\u00bd plate:** vegetables and/or fruit  \n- **\u00bc plate:** beans, fish, eggs, poultry, tofu, or another protein  \n- **\u00bc plate:** whole grains or starchy vegetables  \n- Add olive oil, nuts, or seeds for healthy fat.\n\nThe strongest evidence favors **overall dietary pattern**, not a particular \u201csuperfood,\u201d supplement, or eating window. A high-quality Mediterranean diet with sufficient protein, regular physical activity, good sleep, and no smoking is a better longevity strategy than keto, carnivore, detox diets, or aggressive intermittent fasting.",
+    "latency_ms": 3444.4,
+    "input_tokens": 87,
+    "output_tokens": 412
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the best diet for general longevity?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "The best-supported pattern for longevity is a **Mediterranean-style, predominantly plant-based diet**\u2014similar to the diets associated with long-lived populations\u2014combined with appropriate calorie control and adequate protein.\n\n### Emphasize\n- **Vegetables and fruit:** especially leafy greens, cruciferous vegetables, berries, and other colorful produce.\n- **Legumes:** beans, lentils, and chickpeas several times per week.\n- **Whole grains:** oats, barley, brown rice, and whole-grain bread.\n- **Nuts and seeds:** a small handful most days.\n- **Unsaturated fats:** extra-virgin olive oil, avocado, and nuts.\n- **Fish:** particularly oily fish, roughly 1\u20132 times weekly.\n- **Fermented or minimally processed dairy**, if tolerated, such as yogurt.\n- **Adequate protein:** commonly about **1.0\u20131.2 g/kg of body weight daily** for healthy older adults, adjusted for medical conditions and activity.\n\n### Limit\n- Processed meat and keep red meat occasional.\n- Sugary drinks, refined carbohydrates, and heavily processed snack foods.\n- Excess sodium, especially if you have high blood pressure.\n- Alcohol: **none is required for health**; if consumed, keep it low.\n- Chronic overeating. Maintaining a healthy waist circumference and body weight is more important than pursuing extreme fasting or very low-calorie diets.\n\n### A practical plate\nAt most meals:\n- **\u00bd plate:** vegetables and/or fruit  \n- **\u00bc plate:** beans, fish, eggs, poultry, tofu, or another protein  \n- **\u00bc plate:** whole grains or starchy vegetables  \n- Add olive oil, nuts, or seeds for healthy fat.\n\nThe strongest evidence favors **overall dietary pattern**, not a particular \u201csuperfood,\u201d supplement, or eating window. A high-quality Mediterranean diet with sufficient protein, regular physical activity, good sleep, and no smoking is a better longevity strategy than keto, carnivore, detox diets, or aggressive intermittent fasting.",
+    "latency_ms": 3444.4,
+    "token_count": 499
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "2b329cef6499",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229901.7704973,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3444.4,
+        "token_count": 499,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.99; flagged=False"
+}

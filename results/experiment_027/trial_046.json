@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T17:16:42.246533+00:00",
+  "detector": "context_degradation",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "when did come fly with me come out",
+    "gold_index": 0
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "\u201cCome Fly with Me\u201d can refer to several works:\n\n- The **Frank Sinatra album** came out in **1958**.\n- The **song** was released in **1957**.\n- The **1963 film** was released on **27 March 1963**.\n- The **TV series** premiered on **25 December 2010**.\n- **Michael Bubl\u00e9\u2019s live album** was released on **8 March 2004**.",
+    "latency_ms": 1122.5,
+    "input_tokens": 1499,
+    "output_tokens": 98
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "when did come fly with me come out",
+      "gold_index": 0,
+      "n_docs": 10
+    },
+    "response": "\"Come Fly with Me\" can refer to several works:\n\n- The **Frank Sinatra album** came out in **1958**.\n- The **song** was released in **1957**.\n- The **1963 film** was released on **27 March 1963**.\n- The **TV series** premiered on **25 December 2010**.\n- **Michael Bubl\u00e9's live album** was released on **8 March 2004**.",
+    "latency_ms": 1122.5,
+    "token_count": 1597,
+    "context_window_used": 0.25
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "d08bccc827b1",
+      "tool_name": "context_qa",
+      "status": "pass",
+      "timestamp": 1786295802.2458086,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 1122.5,
+        "token_count": 1597,
+        "context_window_used": 0.25,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.46; flagged=False; gold_index=0"
+}

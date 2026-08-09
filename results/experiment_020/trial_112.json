@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:48:50.380029+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "How can we classify studies conducted by transgender people? As the gender they define themselves as or as a separate category, transgender people?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "I am a nursing and dentistry teacher",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Classifying Research on Transgender Populations\n\nThis is a nuanced methodological question in research design. Here's how it's typically approached:\n\n## Common Classification Approaches\n\n**1. Self-identified gender category (most widely recommended)**\nMost contemporary research guidelines (APA, WHO, and roughly 70-80% of peer-reviewed journals with explicit trans-inclusive policies) recommend classifying participants according to their self-identified gender. This means a transgender woman would be classified as female/woman, and a transgender man as male/man, consistent with affirmative research practices.\n\n**2. Separate \"transgender\" category**\nSome studies\u2014particularly those focused specifically on transgender health disparities, gender-affirming care outcomes, or minority stress research\u2014use a distinct transgender category. This is common in roughly 40-50% of clinical/medical studies specifically examining trans-specific health outcomes (e.g., hormone therapy effects, surgical outcomes).\n\n**3. Two-step method (increasingly standard)**\nThis has become the gold-standard approach in about the last 10-15 years, especially since around 2013-2015:\n- **Step 1:** Ask sex assigned at birth\n- **Step 2:** Ask current gender identity\n\nThis allows researchers to:\n- Identify transgender status (when birth-assigned sex \u2260 current gender identity)\n- Analyze data by current gender identity OR by trans status, depending on research question\n- Achieves sensitivity of approximately 90-95% in correctly identifying transgender respondents in survey research\n\n## Context-Dependent Recommendations\n\n| Research Purpose | Recommended Classification |\n|---|---|\n| General social/psychological studies | Self-identified gender |\n| Trans-specific health disparities | Separate transgender category or two-step method |\n| Hormone/surgical outcome studies | Often stratified by transition status, sometimes with birth-assigned sex noted |\n| Population prevalence studies | Two-step method (allows flexible analysis) |\n\n## Key Considerations\n\n- **Sample size**: Transgender individuals represent roughly 0.5-1.6% of populations studied (varying by country/survey), so small samples often get merged into gender categories to preserve statistical power, while large-scale studies (n>1000+) can maintain separate categories.\n- **Nonbinary/genderqueer individuals**: Require additional categories beyond binary classification\u2014roughly 25-35% of transgender-identified people in some surveys identify as nonbinary rather than binary trans men/women.\n- **Consent and dignity**: Best practice emphasizes asking participants how they wish to be categorized rather than imposing a framework.\n\nThe choice ultimately depends on your specific research question\u2014whether you're studying gender-related phenomena generally (favoring self-identified categories) or studying effects specifically related to transgender status/experience (favoring separate categorization or the two-step method).",
+    "latency_ms": 11231.7,
+    "input_tokens": 148,
+    "output_tokens": 945
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How can we classify studies conducted by transgender people? As the gender they define themselves as or as a separate category, transgender people?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Classifying Research on Transgender Populations\n\nThis is a nuanced methodological question in research design. Here's how it's typically approached:\n\n## Common Classification Approaches\n\n**1. Self-identified gender category (most widely recommended)**\nMost contemporary research guidelines (APA, WHO, and roughly 70-80% of peer-reviewed journals with explicit trans-inclusive policies) recommend classifying participants according to their self-identified gender. This means a transgender woman would be classified as female/woman, and a transgender man as male/man, consistent with affirmative research practices.\n\n**2. Separate \"transgender\" category**\nSome studies\u2014particularly those focused specifically on transgender health disparities, gender-affirming care outcomes, or minority stress research\u2014use a distinct transgender category. This is common in roughly 40-50% of clinical/medical studies specifically examining trans-specific health outcomes (e.g., hormone therapy effects, surgical outcomes).\n\n**3. Two-step method (increasingly standard)**\nThis has become the gold-standard approach in about the last 10-15 years, especially since around 2013-2015:\n- **Step 1:** Ask sex assigned at birth\n- **Step 2:** Ask current gender identity\n\nThis allows researchers to:\n- Identify transgender status (when birth-assigned sex \u2260 current gender identity)\n- Analyze data by current gender identity OR by trans status, depending on research question\n- Achieves sensitivity of approximately 90-95% in correctly identifying transgender respondents in survey research\n\n## Context-Dependent Recommendations\n\n| Research Purpose | Recommended Classification |\n|---|---|\n| General social/psychological studies | Self-identified gender |\n| Trans-specific health disparities | Separate transgender category or two-step method |\n| Hormone/surgical outcome studies | Often stratified by transition status, sometimes with birth-assigned sex noted |\n| Population prevalence studies | Two-step method (allows flexible analysis) |\n\n## Key Considerations\n\n- **Sample size**: Transgender individuals represent roughly 0.5-1.6% of populations studied (varying by country/survey), so small samples often get merged into gender categories to preserve statistical power, while large-scale studies (n>1000+) can maintain separate categories.\n- **Nonbinary/genderqueer individuals**: Require additional categories beyond binary classification\u2014roughly 25-35% of transgender-identified people in some surveys identify as nonbinary rather than binary trans men/women.\n- **Consent and dignity**: Best practice emphasizes asking participants how they wish to be categorized rather than imposing a framework.\n\nThe choice ultimately depends on your specific research question\u2014whether you're studying gender-related phenomena generally (favoring self-identified categories) or studying effects specifically related to transgender status/experience (favoring separate categorization or the two-step method).",
+    "latency_ms": 11231.7,
+    "token_count": 1093,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "fa60e345ec2f",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240130.3792472,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 18 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4185,
+          "evidence": [
+            "Latency 11232ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11231.7,
+        "token_count": 1093,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.112; flagged=True"
+}

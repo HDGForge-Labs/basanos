@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:04:36.586255+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Imagine we have a Patient Reported Outcome questionnaire that measures quality of life and has 3 different dimensions. What would be the best approach to analyzing the item adequacy of this instrument?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pharmaceutical industry",
+    "question_type": "Advice or suggestions on how to approach a problem"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "A strong approach is to evaluate **item adequacy at both the item level and the three-dimension scale level**, using a combination of content validity, reliability, dimensionality, response-functioning, and validity analyses. Do not rely on one statistic alone.\n\n## 1. Clarify the measurement model\n\nFirst specify whether the questionnaire is intended to be:\n\n- **Three correlated reflective dimensions**: items are effects or indicators of an underlying quality-of-life construct.\n- **A higher-order model**: the three dimensions represent a broader overall quality-of-life factor.\n- **A formative or index model**: items collectively define quality of life, so high inter-item correlations are not necessarily expected.\n\nFor most multidimensional PROMs, the starting model is:\n\n\\[\n\\text{Item} \\rightarrow \\text{Dimension 1, Dimension 2, Dimension 3}\n\\]\n\nwith the three dimensions allowed to correlate. Test a higher-order factor only if theory supports a general total score.\n\n## 2. Examine content validity before statistical testing\n\nItem adequacy begins with whether the items are relevant, understandable, and sufficiently comprehensive.\n\nUse:\n\n- Literature review and expert review.\n- Cognitive interviews with approximately **5\u201315 patients per major subgroup**.\n- Expert ratings of relevance, clarity, and comprehensiveness.\n- Assessment of whether important aspects of each dimension are missing.\n- Checks for redundancy, ambiguous wording, double-barreled questions, and inappropriate recall periods.\n\nUseful quantitative indices include:\n\n### Item-level content validity index\n\n\\[\nI\\text{-}CVI = \\frac{\\text{number of experts rating the item as relevant}}{\\text{total number of experts}}\n\\]\n\nA commonly used target is:\n\n- \\(I\\text{-}CVI \\geq 0.78\\) with approximately **6 or more experts**\n- Higher standards, such as approximately **0.90**, may be used for important instruments\n\nAlso calculate a scale-level content validity index, such as the average \\(I\\)-CVI across items.\n\nFor patient comprehension, identify items for which approximately **10% or more** of respondents report difficulty understanding the wording or response options.\n\n## 3. Inspect missing data and response distributions\n\nFor every item, report:\n\n- Percentage missing\n- Percentage selecting each response category\n- Floor and ceiling percentages\n- Mean, standard deviation, median, skewness, and kurtosis\n- \u201cNot applicable\u201d or \u201cunable to answer\u201d frequency\n- Time to completion, if available\n\nPotential warning signs are:\n\n- More than approximately **5%\u201310% missing responses**\n- More than approximately **80%\u201390%** of respondents selecting one category\n- A category selected by fewer than approximately **5%** of respondents\n- Strong floor or ceiling effects, often defined as approximately **15% or more** at the lowest or highest possible score\n- Categories that are never or almost never used\n\nIf adjacent response categories are rarely selected, consider whether categories should be collapsed\u2014but only if this is substantively defensible and consistent with the intended scoring system.\n\n## 4. Assess dimensionality\n\nBecause the instrument has three dimensions, test whether items actually follow that structure.\n\n### Exploratory factor analysis\n\nUse EFA if the structure is uncertain or the instrument is newly developed.\n\nFor ordinal Likert-type items:\n\n- Use **polychoric correlations**\n- Use an estimator such as **weighted least squares**, rather than ordinary Pearson correlations when categories are limited\n- Determine the number of factors using **parallel analysis**, minimum average partial testing, and theory\u2014not eigenvalues greater than 1 alone\n- Use an oblique rotation because the three quality-of-life dimensions are likely correlated\n\nPotentially acceptable item-level patterns include:\n\n- Primary loading approximately **\u2265 0.40**\n- Preferably primary loading approximately **\u2265 0.50**\n- Cross-loadings below approximately **0.20\u20130.30**\n- Difference between the primary and secondary loading of approximately **\u2265 0.20**\n\nAn item with low loading, substantial cross-loading, or an unexpected factor may be poorly aligned with its intended dimension.\n\n### Confirmatory factor analysis\n\nUse CFA to test:\n\n1. A one-factor model\n2. A correlated three-factor model\n3. If theoretically justified, a higher-order three-factor model\n4. Possibly a bifactor model if a total score is being considered\n\nFor ordinal items, use an ordinal estimator such as **WLSMV** or an appropriate robust estimator.\n\nCommon approximate fit guidelines are:\n\n- CFI and TLI approximately **\u2265 0.90** for minimally acceptable fit and **\u2265 0.95** for good fit\n- RMSEA approximately **\u2264 0.08** for acceptable fit and **\u2264 0.06** for good fit\n- SRMR approximately **\u2264 0.08**\n- Report the **90% confidence interval** for RMSEA\n\nDo not delete items solely to improve fit. Modification indices can identify local problems, but post hoc correlated residuals should have",
+    "latency_ms": 7114.5,
+    "input_tokens": 109,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Imagine we have a Patient Reported Outcome questionnaire that measures quality of life and has 3 different dimensions. What would be the best approach to analyzing the item adequacy of this instrument?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "A strong approach is to evaluate **item adequacy at both the item level and the three-dimension scale level**, using a combination of content validity, reliability, dimensionality, response-functioning, and validity analyses. Do not rely on one statistic alone.\n\n## 1. Clarify the measurement model\n\nFirst specify whether the questionnaire is intended to be:\n\n- **Three correlated reflective dimensions**: items are effects or indicators of an underlying quality-of-life construct.\n- **A higher-order model**: the three dimensions represent a broader overall quality-of-life factor.\n- **A formative or index model**: items collectively define quality of life, so high inter-item correlations are not necessarily expected.\n\nFor most multidimensional PROMs, the starting model is:\n\n\\[\n\\text{Item} \\rightarrow \\text{Dimension 1, Dimension 2, Dimension 3}\n\\]\n\nwith the three dimensions allowed to correlate. Test a higher-order factor only if theory supports a general total score.\n\n## 2. Examine content validity before statistical testing\n\nItem adequacy begins with whether the items are relevant, understandable, and sufficiently comprehensive.\n\nUse:\n\n- Literature review and expert review.\n- Cognitive interviews with approximately **5\u201315 patients per major subgroup**.\n- Expert ratings of relevance, clarity, and comprehensiveness.\n- Assessment of whether important aspects of each dimension are missing.\n- Checks for redundancy, ambiguous wording, double-barreled questions, and inappropriate recall periods.\n\nUseful quantitative indices include:\n\n### Item-level content validity index\n\n\\[\nI\\text{-}CVI = \\frac{\\text{number of experts rating the item as relevant}}{\\text{total number of experts}}\n\\]\n\nA commonly used target is:\n\n- \\(I\\text{-}CVI \\geq 0.78\\) with approximately **6 or more experts**\n- Higher standards, such as approximately **0.90**, may be used for important instruments\n\nAlso calculate a scale-level content validity index, such as the average \\(I\\)-CVI across items.\n\nFor patient comprehension, identify items for which approximately **10% or more** of respondents report difficulty understanding the wording or response options.\n\n## 3. Inspect missing data and response distributions\n\nFor every item, report:\n\n- Percentage missing\n- Percentage selecting each response category\n- Floor and ceiling percentages\n- Mean, standard deviation, median, skewness, and kurtosis\n- \u201cNot applicable\u201d or \u201cunable to answer\u201d frequency\n- Time to completion, if available\n\nPotential warning signs are:\n\n- More than approximately **5%\u201310% missing responses**\n- More than approximately **80%\u201390%** of respondents selecting one category\n- A category selected by fewer than approximately **5%** of respondents\n- Strong floor or ceiling effects, often defined as approximately **15% or more** at the lowest or highest possible score\n- Categories that are never or almost never used\n\nIf adjacent response categories are rarely selected, consider whether categories should be collapsed\u2014but only if this is substantively defensible and consistent with the intended scoring system.\n\n## 4. Assess dimensionality\n\nBecause the instrument has three dimensions, test whether items actually follow that structure.\n\n### Exploratory factor analysis\n\nUse EFA if the structure is uncertain or the instrument is newly developed.\n\nFor ordinal Likert-type items:\n\n- Use **polychoric correlations**\n- Use an estimator such as **weighted least squares**, rather than ordinary Pearson correlations when categories are limited\n- Determine the number of factors using **parallel analysis**, minimum average partial testing, and theory\u2014not eigenvalues greater than 1 alone\n- Use an oblique rotation because the three quality-of-life dimensions are likely correlated\n\nPotentially acceptable item-level patterns include:\n\n- Primary loading approximately **\u2265 0.40**\n- Preferably primary loading approximately **\u2265 0.50**\n- Cross-loadings below approximately **0.20\u20130.30**\n- Difference between the primary and secondary loading of approximately **\u2265 0.20**\n\nAn item with low loading, substantial cross-loading, or an unexpected factor may be poorly aligned with its intended dimension.\n\n### Confirmatory factor analysis\n\nUse CFA to test:\n\n1. A one-factor model\n2. A correlated three-factor model\n3. If theoretically justified, a higher-order three-factor model\n4. Possibly a bifactor model if a total score is being considered\n\nFor ordinal items, use an ordinal estimator such as **WLSMV** or an appropriate robust estimator.\n\nCommon approximate fit guidelines are:\n\n- CFI and TLI approximately **\u2265 0.90** for minimally acceptable fit and **\u2265 0.95** for good fit\n- RMSEA approximately **\u2264 0.08** for acceptable fit and **\u2264 0.06** for good fit\n- SRMR approximately **\u2264 0.08**\n- Report the **90% confidence interval** for RMSEA\n\nDo not delete items solely to improve fit. Modification indices can identify local problems, but post hoc correlated residuals should have",
+    "latency_ms": 7114.5,
+    "token_count": 1133,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "6b7c131a5ffd",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230276.5854876,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 18 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 7114.5,
+        "token_count": 1133,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.163; flagged=True"
+}

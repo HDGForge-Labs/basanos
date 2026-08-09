@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:38:21.016954+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What is the effect that mental health has on police officers in the UK?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Police Officer",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Mental Health Effects on UK Police Officers\n\n## Prevalence of Mental Health Issues\n\nPolice officers in the UK experience significantly elevated rates of mental health problems compared to the general population:\n\n- **PTSD**: Studies suggest 10-20% of officers show symptoms consistent with PTSD, compared to roughly 4-5% in the general population\n- **Depression and anxiety**: Surveys by the Police Federation and mental health charity **Mind** (through the \"Blue Light Programme\") have found around 90% of officers have experienced stress, low mood, or poor mental health related to their work\n- **Suicide risk**: Police officers have historically shown elevated suicide rates compared to other professions, though exact figures are contested and underreported\n\n## Key Contributing Factors\n\n**Operational trauma exposure**\n- Repeated exposure to violence, death, child abuse cases, and traumatic incidents\n- Cumulative trauma from attending fatal road accidents, suicides, and serious assaults\n\n**Organisational stressors**\n- Chronic understaffing (officer numbers dropped significantly after 2010 austerity cuts before the 2019-2023 uplift programme)\n- Excessive workload and long shifts\n- Poor management support in some forces\n- Bureaucracy and paperwork burden\n\n**Public scrutiny and accountability**\n- Increased use of body-worn cameras and social media scrutiny\n- Fear of complaints, misconduct investigations, or legal action\n- The IOPC (Independent Office for Police Conduct) investigation process can be lengthy and stressful even when officers are cleared\n\n## Practical Consequences\n\n**On individuals:**\n- Increased alcohol misuse (studies suggest higher rates than general population)\n- Relationship breakdown and divorce rates above national average\n- Physical health impacts (cardiovascular issues linked to chronic stress)\n\n**On policing effectiveness:**\n- Sickness absence: mental health is one of the leading causes of long-term sick leave in UK forces\n- Early retirement on medical grounds\n- Reduced decision-making capacity in high-stress situations\n- Officer retention problems\u2014experienced officers leaving mid-career\n\n## Institutional Responses\n\n- **Oscar Kilo** (National Police Wellbeing Service) established in 2019 to coordinate wellbeing support across 43 territorial forces\n- **TRiM** (Trauma Risk Management) peer support programmes in many forces\n- Mandatory wellbeing check-ins after traumatic incidents in some forces\n- Police Federation campaigns highlighting the \"hidden injuries\" of policing\n\n## Notable Gaps\n\n- Data collection remains inconsistent across the 43 individual forces in England and Wales\n- Occupational health provision varies significantly by force\n- Stigma around seeking help persists, particularly among frontline response officers, despite official destigmatisation campaigns\n- Research specifically on female officers and mental health remains underdeveloped compared to general workforce studies\n\nThe overall picture is one of a workforce carrying disproportionate psychological burden relative to resources allocated to support them, with wellbe",
+    "latency_ms": 13098.2,
+    "input_tokens": 134,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the effect that mental health has on police officers in the UK?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "# Mental Health Effects on UK Police Officers\n\n## Prevalence of Mental Health Issues\n\nPolice officers in the UK experience significantly elevated rates of mental health problems compared to the general population:\n\n- **PTSD**: Studies suggest 10-20% of officers show symptoms consistent with PTSD, compared to roughly 4-5% in the general population\n- **Depression and anxiety**: Surveys by the Police Federation and mental health charity **Mind** (through the \"Blue Light Programme\") have found around 90% of officers have experienced stress, low mood, or poor mental health related to their work\n- **Suicide risk**: Police officers have historically shown elevated suicide rates compared to other professions, though exact figures are contested and underreported\n\n## Key Contributing Factors\n\n**Operational trauma exposure**\n- Repeated exposure to violence, death, child abuse cases, and traumatic incidents\n- Cumulative trauma from attending fatal road accidents, suicides, and serious assaults\n\n**Organisational stressors**\n- Chronic understaffing (officer numbers dropped significantly after 2010 austerity cuts before the 2019-2023 uplift programme)\n- Excessive workload and long shifts\n- Poor management support in some forces\n- Bureaucracy and paperwork burden\n\n**Public scrutiny and accountability**\n- Increased use of body-worn cameras and social media scrutiny\n- Fear of complaints, misconduct investigations, or legal action\n- The IOPC (Independent Office for Police Conduct) investigation process can be lengthy and stressful even when officers are cleared\n\n## Practical Consequences\n\n**On individuals:**\n- Increased alcohol misuse (studies suggest higher rates than general population)\n- Relationship breakdown and divorce rates above national average\n- Physical health impacts (cardiovascular issues linked to chronic stress)\n\n**On policing effectiveness:**\n- Sickness absence: mental health is one of the leading causes of long-term sick leave in UK forces\n- Early retirement on medical grounds\n- Reduced decision-making capacity in high-stress situations\n- Officer retention problems\u2014experienced officers leaving mid-career\n\n## Institutional Responses\n\n- **Oscar Kilo** (National Police Wellbeing Service) established in 2019 to coordinate wellbeing support across 43 territorial forces\n- **TRiM** (Trauma Risk Management) peer support programmes in many forces\n- Mandatory wellbeing check-ins after traumatic incidents in some forces\n- Police Federation campaigns highlighting the \"hidden injuries\" of policing\n\n## Notable Gaps\n\n- Data collection remains inconsistent across the 43 individual forces in England and Wales\n- Occupational health provision varies significantly by force\n- Stigma around seeking help persists, particularly among frontline response officers, despite official destigmatisation campaigns\n- Research specifically on female officers and mental health remains underdeveloped compared to general workforce studies\n\nThe overall picture is one of a workforce carrying disproportionate psychological burden relative to resources allocated to support them, with wellbe",
+    "latency_ms": 13098.2,
+    "token_count": 1158
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "0e532f62b9cf",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239501.0161524,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4465,
+          "evidence": [
+            "Latency 13098ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13098.2,
+        "token_count": 1158,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.61; flagged=False"
+}

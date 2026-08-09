@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-08T23:05:06.022639+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What are the cardinal symptoms of laryngotracheitis?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General Medicine ",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "The **cardinal symptoms of laryngotracheitis (croup)** are:\n\n- **Barking, \u201cseal-like\u201d cough**\n- **Hoarseness or a muffled/raspy voice**\n- **Inspiratory stridor**\u2014a harsh, high-pitched noise when breathing in, often worse with crying or agitation\n- **Variable breathing difficulty**, including chest or neck retractions in more severe cases\n- **Low-grade fever and cold symptoms** such as runny nose may occur, typically for about **1\u20133 days** before the characteristic cough and stridor\n\nSymptoms commonly worsen at night and peak around **1\u20133 days** after onset. **Stridor at rest, blue lips, marked chest retractions, drooling, inability to swallow, lethargy, or rapidly worsening breathing** require urgent medical assessment.",
+    "latency_ms": 2029.0,
+    "input_tokens": 84,
+    "output_tokens": 174
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the cardinal symptoms of laryngotracheitis?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "The **cardinal symptoms of laryngotracheitis (croup)** are:\n\n- **Barking, \u201cseal-like\u201d cough**\n- **Hoarseness or a muffled/raspy voice**\n- **Inspiratory stridor**\u2014a harsh, high-pitched noise when breathing in, often worse with crying or agitation\n- **Variable breathing difficulty**, including chest or neck retractions in more severe cases\n- **Low-grade fever and cold symptoms** such as runny nose may occur, typically for about **1\u20133 days** before the characteristic cough and stridor\n\nSymptoms commonly worsen at night and peak around **1\u20133 days** after onset. **Stridor at rest, blue lips, marked chest retractions, drooling, inability to swallow, lethargy, or rapidly worsening breathing** require urgent medical assessment.",
+    "latency_ms": 2029.0,
+    "token_count": 258,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "47e78e446436",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230306.0219235,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2029.0,
+        "token_count": 258,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.169; flagged=False"
+}

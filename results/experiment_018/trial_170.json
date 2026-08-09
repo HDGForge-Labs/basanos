@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:05:08.843886+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is the most expensive chemo drug used in the UK?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Oncology Pharmacist ",
+    "question_type": "Directed question that has a single unambiguous answer| Summarization of information on a topic| Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "There isn\u2019t one definitive answer because UK prices vary by **indication, dose, procurement contract, and whether \u201cchemotherapy\u201d includes newer targeted or immune treatments**.\n\n- **Among conventional cytotoxic chemotherapy drugs**, **peglated liposomal doxorubicin (Caelyx)** is often one of the most expensive routinely used options. A typical **50 mg vial costs roughly \u00a31,300\u2013\u00a31,700** at NHS list prices, although actual NHS purchase prices may be confidential and lower.\n- **High-cost cancer medicines sometimes loosely called chemotherapy** can cost far more:\n  - **CAR-T therapies**: approximately **\u00a3150,000\u2013\u00a3300,000 per treatment**, before some hospital and supportive-care costs.\n  - **Yescarta (axicabtagene ciloleucel)** and **Kymriah (tisagenlecleucel)** are examples, though these are cellular immunotherapies rather than standard chemotherapy.\n  - Some newer targeted medicines cost **tens of thousands of pounds per course**, depending on duration.\n\nIf you mean a **standard intravenous chemotherapy drug administered in NHS hospitals**, the answer is likely to be a formulation such as **Caelyx**, but the \u201cmost expensive\u201d depends heavily on the patient\u2019s body-surface area and regimen. NHS England may also obtain confidential discounts through commercial agreements, so the publicly listed price is not necessarily what the NHS pays.",
+    "latency_ms": 2815.4,
+    "input_tokens": 84,
+    "output_tokens": 291
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the most expensive chemo drug used in the UK?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "There isn\u2019t one definitive answer because UK prices vary by **indication, dose, procurement contract, and whether \u201cchemotherapy\u201d includes newer targeted or immune treatments**.\n\n- **Among conventional cytotoxic chemotherapy drugs**, **peglated liposomal doxorubicin (Caelyx)** is often one of the most expensive routinely used options. A typical **50 mg vial costs roughly \u00a31,300\u2013\u00a31,700** at NHS list prices, although actual NHS purchase prices may be confidential and lower.\n- **High-cost cancer medicines sometimes loosely called chemotherapy** can cost far more:\n  - **CAR-T therapies**: approximately **\u00a3150,000\u2013\u00a3300,000 per treatment**, before some hospital and supportive-care costs.\n  - **Yescarta (axicabtagene ciloleucel)** and **Kymriah (tisagenlecleucel)** are examples, though these are cellular immunotherapies rather than standard chemotherapy.\n  - Some newer targeted medicines cost **tens of thousands of pounds per course**, depending on duration.\n\nIf you mean a **standard intravenous chemotherapy drug administered in NHS hospitals**, the answer is likely to be a formulation such as **Caelyx**, but the \u201cmost expensive\u201d depends heavily on the patient\u2019s body-surface area and regimen. NHS England may also obtain confidential discounts through commercial agreements, so the publicly listed price is not necessarily what the NHS pays.",
+    "latency_ms": 2815.4,
+    "token_count": 375,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "e32f27290338",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230308.8431091,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 4 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 2815.4,
+        "token_count": 375,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.170; flagged=True"
+}

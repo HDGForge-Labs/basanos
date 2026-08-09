@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-08T23:58:33.387451+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Provide research sources of in vitro analysis of antiviral abilities of Nigerian herbs against sars cov 2.",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Virology",
+    "question_type": "Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Below are research sources relevant to **in-vitro antiviral evaluation of Nigerian medicinal plants against SARS\u2011CoV\u20112**, plus closely related Nigerian-herb studies that are often cited in this context.\n\n## Direct SARS\u2011CoV\u20112 in-vitro / cell-free antiviral target studies\n\nMost published Nigerian-plant SARS\u2011CoV\u20112 work has been **enzyme-based or computational**, rather than infection experiments in SARS\u2011CoV\u20112\u2013infected Vero E6, Calu\u20113, or human airway cells.\n\n1. **Adeoye, A. O., et al. (2020\u20132021). Studies on Nigerian medicinal-plant phytochemicals as SARS\u2011CoV\u20112 main protease inhibitors**\n   - Commonly evaluated plants/phytochemicals include *Vernonia amygdalina* (bitter leaf), *Azadirachta indica* (neem), *Ocimum gratissimum* (scent leaf), *Garcinia kola* (bitter kola), *Zingiber officinale* (ginger), *Allium sativum* (garlic), and *Carica papaya*.\n   - These reports generally use molecular docking against SARS\u2011CoV\u20112 3CLpro/Mpro, sometimes followed by molecular dynamics\u2014not authentic viral replication assays.\n   - Search terms: **\u201cAdeoye Nigerian medicinal plants SARS-CoV-2 Mpro\u201d** and **\u201cNigerian plants SARS-CoV-2 main protease inhibition.\u201d**\n\n2. **Ojo, O. A., et al. (2021). _In silico identification of phytochemicals from Nigerian medicinal plants as potential inhibitors of SARS\u2011CoV\u20112 main protease_**\n   - Examined phytochemicals such as quercetin, kaempferol, luteolin, apigenin, rutin, catechin, and related flavonoids present in Nigerian ethnomedicinal plants.\n   - Important limitation: docking affinity is not evidence of antiviral activity in cells.\n\n3. **Uwugiaren, N., et al. (2021\u20132022). _In-vitro inhibition of SARS\u2011CoV\u20112 main protease by African medicinal plant metabolites/extracts_**\n   - Work in this area has evaluated protease inhibition in a biochemical assay, often involving flavonoids and phenolics found in West African/Nigerian plants.\n   - Look specifically for assays described as **\u201cSARS\u2011CoV\u20112 3CL protease inhibition assay,\u201d \u201cMpro fluorometric assay,\u201d** or **\u201cFRET-based Mpro assay.\u201d**\n   - This category provides stronger evidence than docking but still does not prove inhibition of virus replication in human cells.\n\n## Nigerian herbs with relevant prior in-vitro antiviral evidence\n\nThese studies do not necessarily use SARS\u2011CoV\u20112, but they support why the plants were proposed for coronavirus investigation.\n\n4. **Garcinia kola (bitter kola)**\n   - **Iwu, M. M., Duncan, A. R., & Okunji, C. O. (1990). _New antimicrobials of plant origin._** In: *Perspectives on New Crops and New Uses*.\n   - **Iwu, M. M. (1985\u20131993 series)** reported antimicrobial and antiviral properties of *Garcinia kola* constituents, particularly biflavonoids such as **kolaviron**.\n   - Anti-influenza and anti-other-virus effects have been reported for biflavonoid-rich preparations, but this must not be interpreted as proof of activity against SARS\u2011CoV\u20112.\n\n5. **Vernonia amygdalina (bitter leaf)**\n   - **Iwalokun, B. A., et al. (2006). \u201cThe in vitro antimicrobial properties of aqueous and methanol extracts of Vernonia amygdalina.\u201d**  \n   - Several later studies report antiviral or immunomodulatory potential of *V. amygdalina* constituents, including luteolin and other flavonoids. SARS\u2011CoV\u20112 claims are mainly docking-based unless supported by a specific cell-culture paper.\n\n6. **Azadirachta indica (neem)**\n   - **Parida, M. M., et al. (2002). \u201cInhibitory potential of neem (Azadirachta indica Juss) leaves on dengue virus type-2 replication.\u201d _Journal of Ethnopharmacology_, 79(2), 273\u2013278.**\n   - This is a genuine cell-based antiviral study against dengue virus, not SARS\u2011CoV\u20112.\n   - Neem limonoids and flavonoids have also been assessed in SARS\u2011CoV\u20112 docking and enzyme-inhibition literature.\n\n7. **Ocimum gratissimum (African basil/scent leaf)**\n   - **Adeola, S. A., & others; Nigerian pharmacognosy literature** has documented antimicrobial, antioxidant, and antiviral-screen",
+    "latency_ms": 13331.5,
+    "input_tokens": 98,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Provide research sources of in vitro analysis of antiviral abilities of Nigerian herbs against sars cov 2.",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Below are research sources relevant to **in-vitro antiviral evaluation of Nigerian medicinal plants against SARS\u2011CoV\u20112**, plus closely related Nigerian-herb studies that are often cited in this context.\n\n## Direct SARS\u2011CoV\u20112 in-vitro / cell-free antiviral target studies\n\nMost published Nigerian-plant SARS\u2011CoV\u20112 work has been **enzyme-based or computational**, rather than infection experiments in SARS\u2011CoV\u20112\u2013infected Vero E6, Calu\u20113, or human airway cells.\n\n1. **Adeoye, A. O., et al. (2020\u20132021). Studies on Nigerian medicinal-plant phytochemicals as SARS\u2011CoV\u20112 main protease inhibitors**\n   - Commonly evaluated plants/phytochemicals include *Vernonia amygdalina* (bitter leaf), *Azadirachta indica* (neem), *Ocimum gratissimum* (scent leaf), *Garcinia kola* (bitter kola), *Zingiber officinale* (ginger), *Allium sativum* (garlic), and *Carica papaya*.\n   - These reports generally use molecular docking against SARS\u2011CoV\u20112 3CLpro/Mpro, sometimes followed by molecular dynamics\u2014not authentic viral replication assays.\n   - Search terms: **\u201cAdeoye Nigerian medicinal plants SARS-CoV-2 Mpro\u201d** and **\u201cNigerian plants SARS-CoV-2 main protease inhibition.\u201d**\n\n2. **Ojo, O. A., et al. (2021). _In silico identification of phytochemicals from Nigerian medicinal plants as potential inhibitors of SARS\u2011CoV\u20112 main protease_**\n   - Examined phytochemicals such as quercetin, kaempferol, luteolin, apigenin, rutin, catechin, and related flavonoids present in Nigerian ethnomedicinal plants.\n   - Important limitation: docking affinity is not evidence of antiviral activity in cells.\n\n3. **Uwugiaren, N., et al. (2021\u20132022). _In-vitro inhibition of SARS\u2011CoV\u20112 main protease by African medicinal plant metabolites/extracts_**\n   - Work in this area has evaluated protease inhibition in a biochemical assay, often involving flavonoids and phenolics found in West African/Nigerian plants.\n   - Look specifically for assays described as **\u201cSARS\u2011CoV\u20112 3CL protease inhibition assay,\u201d \u201cMpro fluorometric assay,\u201d** or **\u201cFRET-based Mpro assay.\u201d**\n   - This category provides stronger evidence than docking but still does not prove inhibition of virus replication in human cells.\n\n## Nigerian herbs with relevant prior in-vitro antiviral evidence\n\nThese studies do not necessarily use SARS\u2011CoV\u20112, but they support why the plants were proposed for coronavirus investigation.\n\n4. **Garcinia kola (bitter kola)**\n   - **Iwu, M. M., Duncan, A. R., & Okunji, C. O. (1990). _New antimicrobials of plant origin._** In: *Perspectives on New Crops and New Uses*.\n   - **Iwu, M. M. (1985\u20131993 series)** reported antimicrobial and antiviral properties of *Garcinia kola* constituents, particularly biflavonoids such as **kolaviron**.\n   - Anti-influenza and anti-other-virus effects have been reported for biflavonoid-rich preparations, but this must not be interpreted as proof of activity against SARS\u2011CoV\u20112.\n\n5. **Vernonia amygdalina (bitter leaf)**\n   - **Iwalokun, B. A., et al. (2006). \u201cThe in vitro antimicrobial properties of aqueous and methanol extracts of Vernonia amygdalina.\u201d**  \n   - Several later studies report antiviral or immunomodulatory potential of *V. amygdalina* constituents, including luteolin and other flavonoids. SARS\u2011CoV\u20112 claims are mainly docking-based unless supported by a specific cell-culture paper.\n\n6. **Azadirachta indica (neem)**\n   - **Parida, M. M., et al. (2002). \u201cInhibitory potential of neem (Azadirachta indica Juss) leaves on dengue virus type-2 replication.\u201d _Journal of Ethnopharmacology_, 79(2), 273\u2013278.**\n   - This is a genuine cell-based antiviral study against dengue virus, not SARS\u2011CoV\u20112.\n   - Neem limonoids and flavonoids have also been assessed in SARS\u2011CoV\u20112 docking and enzyme-inhibition literature.\n\n7. **Ocimum gratissimum (African basil/scent leaf)**\n   - **Adeola, S. A., & others; Nigerian pharmacognosy literature** has documented antimicrobial, antioxidant, and antiviral-screen",
+    "latency_ms": 13331.5,
+    "token_count": 1122
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "04854d805594",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786233513.3866825,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.45,
+          "evidence": [
+            "Latency 13332ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13331.5,
+        "token_count": 1122,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.49; flagged=False"
+}

@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:30:07.863929+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Imagine we have a patient with a diagnosis of severe depression. What would be the best combination of treatments that could improve his mental health status?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pharmaceutical industry",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Treatment Approach for Severe Depression\n\nFor severe depression, monotherapy is often insufficient. Here's an evidence-based combination approach:\n\n## Core Combination: Medication + Psychotherapy\n\n**Pharmacotherapy (first-line choices):**\n- **SSRIs**: Sertraline, escitalopram (good efficacy/tolerability balance)\n- **SNRIs**: Venlafaxine, duloxetine (particularly useful if pain symptoms coexist)\n- For severe/treatment-resistant cases: **Mirtazapine** (helps with sleep/appetite) or augmentation strategies\n\n**Psychotherapy (concurrent, not sequential):**\n- **Cognitive Behavioral Therapy (CBT)** \u2013 strongest evidence base\n- **Interpersonal Therapy (IPT)** \u2013 especially if relational triggers are present\n- Behavioral Activation as a core component\n\nThe combination of medication + CBT/IPT consistently outperforms either alone in RCTs, particularly for severe presentations.\n\n## For Severe/Resistant Cases, Consider Adding:\n\n**Augmentation strategies:**\n- Atypical antipsychotics (aripiprazole, quetiapine XR) at low doses\n- Lithium augmentation\n- Second antidepressant with complementary mechanism (e.g., bupropion + SSRI)\n\n**Neuromodulation (especially if):**\n- Psychotic features present\n- High suicide risk\n- Treatment resistance after 2+ adequate trials\n- **ECT** remains gold standard for severe/psychotic depression \u2013 fastest, most robust response rate (~70-90%)\n- **rTMS** as a less invasive alternative\n- **Ketamine/esketamine** for rapid symptom reduction, especially with suicidality\n\n## Essential Adjunctive Elements\n\n1. **Risk assessment**: Suicide risk stratification is non-negotiable in severe depression\n2. **Psychoeducation**: For patient and family\n3. **Sleep regulation**: Often addressed pharmacologically and behaviorally\n4. **Exercise**: Adjunctive benefit, moderate effect size (not standalone for severe cases)\n5. **Social support/case management**: Address functional impairment\n\n## Practical Sequencing\n\n1. Start SSRI/SNRI + begin CBT/IPT simultaneously\n2. Reassess at 4-6 weeks\n3. If inadequate response: optimize dose, then consider augmentation or switching\n4. If still resistant or high risk: refer for ECT evaluation\n\n**Key point**: The \"best\" combination is individualized based on symptom profile (melancholic vs. atypical features), comorbidities, prior treatment response, suicide risk, and patient preference. A treatment-resistant depression protocol should be triggered after failure of 2 adequate medication trials.",
+    "latency_ms": 10332.8,
+    "input_tokens": 158,
+    "output_tokens": 944
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Imagine we have a patient with a diagnosis of severe depression. What would be the best combination of treatments that could improve his mental health status?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Treatment Approach for Severe Depression\n\nFor severe depression, monotherapy is often insufficient. Here's an evidence-based combination approach:\n\n## Core Combination: Medication + Psychotherapy\n\n**Pharmacotherapy (first-line choices):**\n- **SSRIs**: Sertraline, escitalopram (good efficacy/tolerability balance)\n- **SNRIs**: Venlafaxine, duloxetine (particularly useful if pain symptoms coexist)\n- For severe/treatment-resistant cases: **Mirtazapine** (helps with sleep/appetite) or augmentation strategies\n\n**Psychotherapy (concurrent, not sequential):**\n- **Cognitive Behavioral Therapy (CBT)** \u2013 strongest evidence base\n- **Interpersonal Therapy (IPT)** \u2013 especially if relational triggers are present\n- Behavioral Activation as a core component\n\nThe combination of medication + CBT/IPT consistently outperforms either alone in RCTs, particularly for severe presentations.\n\n## For Severe/Resistant Cases, Consider Adding:\n\n**Augmentation strategies:**\n- Atypical antipsychotics (aripiprazole, quetiapine XR) at low doses\n- Lithium augmentation\n- Second antidepressant with complementary mechanism (e.g., bupropion + SSRI)\n\n**Neuromodulation (especially if):**\n- Psychotic features present\n- High suicide risk\n- Treatment resistance after 2+ adequate trials\n- **ECT** remains gold standard for severe/psychotic depression \u2013 fastest, most robust response rate (~70-90%)\n- **rTMS** as a less invasive alternative\n- **Ketamine/esketamine** for rapid symptom reduction, especially with suicidality\n\n## Essential Adjunctive Elements\n\n1. **Risk assessment**: Suicide risk stratification is non-negotiable in severe depression\n2. **Psychoeducation**: For patient and family\n3. **Sleep regulation**: Often addressed pharmacologically and behaviorally\n4. **Exercise**: Adjunctive benefit, moderate effect size (not standalone for severe cases)\n5. **Social support/case management**: Address functional impairment\n\n## Practical Sequencing\n\n1. Start SSRI/SNRI + begin CBT/IPT simultaneously\n2. Reassess at 4-6 weeks\n3. If inadequate response: optimize dose, then consider augmentation or switching\n4. If still resistant or high risk: refer for ECT evaluation\n\n**Key point**: The \"best\" combination is individualized based on symptom profile (melancholic vs. atypical features), comorbidities, prior treatment response, suicide risk, and patient preference. A treatment-resistant depression protocol should be triggered after failure of 2 adequate medication trials.",
+    "latency_ms": 10332.8,
+    "token_count": 1102
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "abcd824b9331",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239007.863126,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.405,
+          "evidence": [
+            "Latency 10333ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 10332.8,
+        "token_count": 1102,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.19; flagged=False"
+}

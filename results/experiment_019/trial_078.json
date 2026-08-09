@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T00:02:11.534630+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What is the best way to protect a testator's wishes? ",
+    "field": "Law",
+    "specific_field": "Law of succession",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "The best protection is a professionally drafted, properly executed estate plan that is clear, current, and difficult to challenge. Key steps:\n\n1. **Use a qualified estate-planning lawyer**\n   - DIY wills are more vulnerable to ambiguity, execution errors, and challenges based on capacity or undue influence.\n   - A lawyer can tailor documents to local probate law and coordinate beneficiary designations, trusts, taxes, and incapacity planning.\n\n2. **Execute the will with strict formalities**\n   - Sign it in the presence of the required number of disinterested witnesses\u2014often two.\n   - Use witnesses who are not beneficiaries and are not closely connected to beneficiaries.\n   - Include a **self-proving affidavit** signed before a notary, where permitted. This greatly simplifies probate because witnesses usually need not later appear in court.\n\n3. **Document testamentary capacity and independence**\n   - If age, illness, dementia concerns, family conflict, or an unequal distribution could invite a challenge, obtain a contemporaneous medical assessment or letter confirming capacity.\n   - Have the lawyer meet privately with the testator, without beneficiaries present, and keep detailed notes showing the testator understood the assets, family members, and consequences of the plan.\n   - Avoid having a beneficiary arrange the lawyer, drive the testator to meetings, sit in on instructions, or participate in execution.\n\n4. **Explain unusual decisions in a separate memorandum or letter**\n   - A concise \u201cletter of explanation\u201d can explain why someone is receiving less, being omitted, or why a particular fiduciary was chosen.\n   - Keep it factual and non-inflammatory. It may not control the legal distribution, but it can reduce misunderstandings and provide evidence of intent.\n\n5. **Use trusts when appropriate**\n   - A **revocable living trust** can provide continuity during incapacity, avoid or reduce probate administration in many jurisdictions, and make administration more private.\n   - For minor children, vulnerable beneficiaries, spendthrift concerns, or blended families, trusts can impose protective terms that a simple outright gift cannot.\n\n6. **Coordinate non-probate assets**\n   - Retirement accounts, life insurance, payable-on-death accounts, transfer-on-death registrations, and jointly held property usually pass by beneficiary designation or title\u2014not by the will.\n   - Review these designations regularly so they match the overall plan.\n\n7. **Choose the executor or trustee carefully**\n   - Select someone competent, trustworthy, organized, and able to handle family conflict.\n   - Consider a professional fiduciary, bank, or trust company where family disputes or large assets are involved.\n\n8. **Include a no-contest clause where enforceable**\n   - A properly drafted in terrorem/no-contest clause can discourage meritless challenges by providing that a beneficiary who unsuccessfully contests forfeits what they would otherwise receive.\n   - Its effectiveness varies by jurisdiction and should be drafted by counsel.\n\n9. **Update the plan after major life events**\n   - Review after marriage, divorce, death of a beneficiary or fiduciary, birth/adoption, major asset changes, relocation to another state or country, or tax-law changes.\n   - Destroy superseded originals and ensure the current original can be located.\n\n10. **Store originals securely and make them findable**\n   - Keep signed originals in a secure place such as the lawyer\u2019s vault, a safe-deposit box with accessible arrangements, or a fireproof home safe.\n   - Tell the executor where they are and provide the lawyer\u2019s contact information. Do not rely solely on scanned copies.\n\nFor a will likely to be contested, the strongest practical combination is: independent estate-planning counsel, private attorney-client meetings, disinterested witnesses, a self-proving affidavit, contemporaneous capacity evidence, and careful documentation of the testator\u2019s independent instructions.",
+    "latency_ms": 12226.6,
+    "input_tokens": 92,
+    "output_tokens": 766
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the best way to protect a testator's wishes? ",
+      "field": "Law"
+    },
+    "response": "The best protection is a professionally drafted, properly executed estate plan that is clear, current, and difficult to challenge. Key steps:\n\n1. **Use a qualified estate-planning lawyer**\n   - DIY wills are more vulnerable to ambiguity, execution errors, and challenges based on capacity or undue influence.\n   - A lawyer can tailor documents to local probate law and coordinate beneficiary designations, trusts, taxes, and incapacity planning.\n\n2. **Execute the will with strict formalities**\n   - Sign it in the presence of the required number of disinterested witnesses\u2014often two.\n   - Use witnesses who are not beneficiaries and are not closely connected to beneficiaries.\n   - Include a **self-proving affidavit** signed before a notary, where permitted. This greatly simplifies probate because witnesses usually need not later appear in court.\n\n3. **Document testamentary capacity and independence**\n   - If age, illness, dementia concerns, family conflict, or an unequal distribution could invite a challenge, obtain a contemporaneous medical assessment or letter confirming capacity.\n   - Have the lawyer meet privately with the testator, without beneficiaries present, and keep detailed notes showing the testator understood the assets, family members, and consequences of the plan.\n   - Avoid having a beneficiary arrange the lawyer, drive the testator to meetings, sit in on instructions, or participate in execution.\n\n4. **Explain unusual decisions in a separate memorandum or letter**\n   - A concise \u201cletter of explanation\u201d can explain why someone is receiving less, being omitted, or why a particular fiduciary was chosen.\n   - Keep it factual and non-inflammatory. It may not control the legal distribution, but it can reduce misunderstandings and provide evidence of intent.\n\n5. **Use trusts when appropriate**\n   - A **revocable living trust** can provide continuity during incapacity, avoid or reduce probate administration in many jurisdictions, and make administration more private.\n   - For minor children, vulnerable beneficiaries, spendthrift concerns, or blended families, trusts can impose protective terms that a simple outright gift cannot.\n\n6. **Coordinate non-probate assets**\n   - Retirement accounts, life insurance, payable-on-death accounts, transfer-on-death registrations, and jointly held property usually pass by beneficiary designation or title\u2014not by the will.\n   - Review these designations regularly so they match the overall plan.\n\n7. **Choose the executor or trustee carefully**\n   - Select someone competent, trustworthy, organized, and able to handle family conflict.\n   - Consider a professional fiduciary, bank, or trust company where family disputes or large assets are involved.\n\n8. **Include a no-contest clause where enforceable**\n   - A properly drafted in terrorem/no-contest clause can discourage meritless challenges by providing that a beneficiary who unsuccessfully contests forfeits what they would otherwise receive.\n   - Its effectiveness varies by jurisdiction and should be drafted by counsel.\n\n9. **Update the plan after major life events**\n   - Review after marriage, divorce, death of a beneficiary or fiduciary, birth/adoption, major asset changes, relocation to another state or country, or tax-law changes.\n   - Destroy superseded originals and ensure the current original can be located.\n\n10. **Store originals securely and make them findable**\n   - Keep signed originals in a secure place such as the lawyer\u2019s vault, a safe-deposit box with accessible arrangements, or a fireproof home safe.\n   - Tell the executor where they are and provide the lawyer\u2019s contact information. Do not rely solely on scanned copies.\n\nFor a will likely to be contested, the strongest practical combination is: independent estate-planning counsel, private attorney-client meetings, disinterested witnesses, a self-proving affidavit, contemporaneous capacity evidence, and careful documentation of the testator\u2019s independent instructions.",
+    "latency_ms": 12226.6,
+    "token_count": 858
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "ce606e8fed44",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786233731.5315819,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4334,
+          "evidence": [
+            "Latency 12227ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12226.6,
+        "token_count": 858,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.78; flagged=False"
+}

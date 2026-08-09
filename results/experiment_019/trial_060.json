@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:59:47.912013+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "How could you summarize the Ethics' Code of Athens in a consize way?",
+    "field": "Law",
+    "specific_field": "Public Relations and Crisis Communication",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "The **Code of Ethics of Athens** can be summarized as a commitment to **integrity, respect, responsibility, fairness, and service to the public good**. It calls on individuals to act honestly, avoid conflicts of interest, respect others\u2019 rights and dignity, protect confidentiality, comply with the law, and make decisions transparently and accountably.",
+    "latency_ms": 1537.8,
+    "input_tokens": 94,
+    "output_tokens": 73
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How could you summarize the Ethics' Code of Athens in a consize way?",
+      "field": "Law"
+    },
+    "response": "The **Code of Ethics of Athens** can be summarized as a commitment to **integrity, respect, responsibility, fairness, and service to the public good**. It calls on individuals to act honestly, avoid conflicts of interest, respect others\u2019 rights and dignity, protect confidentiality, comply with the law, and make decisions transparently and accountably.",
+    "latency_ms": 1537.8,
+    "token_count": 167
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "d9330f018337",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233587.9112995,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 1537.8,
+        "token_count": 167,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.60; flagged=False"
+}

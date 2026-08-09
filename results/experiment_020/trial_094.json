@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:45:10.574105+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Describe and justify your opinion about the morality of abortion.",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General medical",
+    "question_type": "Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# On the Morality of Abortion\n\nI'll give you my actual assessment rather than a survey of positions, though I'll note where reasonable people diverge and why.\n\n## My view\n\nI think abortion is morally permissible, at least through the point of fetal viability (roughly 22-24 weeks), and that the permissibility question becomes genuinely harder\u2014though I still lean permissive\u2014after that point when it's for serious medical reasons.\n\n## Why\n\n**The moral status of the fetus is a matter of degree, not a light switch.** The strongest anti-abortion arguments rely on the idea that a fertilized egg has full moral status equivalent to a born person from conception. I don't find this credible. A zygote has no nervous system, no capacity for sensation, no psychological continuity with anything\u2014none of the properties we actually use, in every other context, to ground moral status (sentience, the capacity to suffer, self-awareness, having interests that can be frustrated). If you found a way to \"save\" a thousand frozen embryos versus one three-year-old from a fire, virtually everyone would save the child, and I think that intuition tracks something true, not just sentiment.\n\n**Sentience is doing the real work.** The capacity to suffer or to have subjective experience at all seems to me the most defensible threshold for moral status\u2014it's what grounds our concern for animals, for instance. Current evidence on fetal neurological development suggests the earliest plausible point for something like sentience is around 20-24 weeks (thalamocortical connections forming), which is not coincidentally close to where \"viability\" and many legal lines already sit. This is why I don't treat first-trimester abortion (when ~90% of abortions occur) as remotely comparable to killing a born infant.\n\n**Bodily autonomy matters independently.** Even if one grants the fetus some moral status earlier than I do, Judith Jarvis Thomson's violinist argument still has force: nobody is normally required to sustain another being's life using their own body and organs against their will, even when that being is unambiguously a person. We don't compel people to donate blood or bone marrow even to save an existing person who will die without it. So the \"fetus is a person\" premise, even if granted, doesn't automatically yield \"abortion is impermissible\"\u2014it has to be argued for separately, and I think that argument is harder than opponents usually acknowledge.\n\n**Where I take the other side seriously:** Late-term abortion for non-medical reasons is the case I find least comfortable defending, precisely because viability and plausible sentience have kicked in. My honest view is that this is rare (well under 1% of abortions, almost always involving fetal anomaly or maternal health crisis) and that the people making these decisions\u2014patients and doctors under acute distress\u2014are not the ones who need a stranger's moral policing. I'm more confident in the permissibility of early abortion than I am dismissive of all qualms about late abortion.\n\n## Where I think the debate goes wrong\n\nBoth sides often overstate certainty. Pro-life advocates frequently assume fetal personhood as a premise rather than defending it, then treat the rest as obvious. Pro-choice advocates sometimes dodge the moral status question entirely and rest everything on autonomy",
+    "latency_ms": 15185.3,
+    "input_tokens": 134,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Describe and justify your opinion about the morality of abortion.",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# On the Morality of Abortion\n\nI'll give you my actual assessment rather than a survey of positions, though I'll note where reasonable people diverge and why.\n\n## My view\n\nI think abortion is morally permissible, at least through the point of fetal viability (roughly 22-24 weeks), and that the permissibility question becomes genuinely harder\u2014though I still lean permissive\u2014after that point when it's for serious medical reasons.\n\n## Why\n\n**The moral status of the fetus is a matter of degree, not a light switch.** The strongest anti-abortion arguments rely on the idea that a fertilized egg has full moral status equivalent to a born person from conception. I don't find this credible. A zygote has no nervous system, no capacity for sensation, no psychological continuity with anything\u2014none of the properties we actually use, in every other context, to ground moral status (sentience, the capacity to suffer, self-awareness, having interests that can be frustrated). If you found a way to \"save\" a thousand frozen embryos versus one three-year-old from a fire, virtually everyone would save the child, and I think that intuition tracks something true, not just sentiment.\n\n**Sentience is doing the real work.** The capacity to suffer or to have subjective experience at all seems to me the most defensible threshold for moral status\u2014it's what grounds our concern for animals, for instance. Current evidence on fetal neurological development suggests the earliest plausible point for something like sentience is around 20-24 weeks (thalamocortical connections forming), which is not coincidentally close to where \"viability\" and many legal lines already sit. This is why I don't treat first-trimester abortion (when ~90% of abortions occur) as remotely comparable to killing a born infant.\n\n**Bodily autonomy matters independently.** Even if one grants the fetus some moral status earlier than I do, Judith Jarvis Thomson's violinist argument still has force: nobody is normally required to sustain another being's life using their own body and organs against their will, even when that being is unambiguously a person. We don't compel people to donate blood or bone marrow even to save an existing person who will die without it. So the \"fetus is a person\" premise, even if granted, doesn't automatically yield \"abortion is impermissible\"\u2014it has to be argued for separately, and I think that argument is harder than opponents usually acknowledge.\n\n**Where I take the other side seriously:** Late-term abortion for non-medical reasons is the case I find least comfortable defending, precisely because viability and plausible sentience have kicked in. My honest view is that this is rare (well under 1% of abortions, almost always involving fetal anomaly or maternal health crisis) and that the people making these decisions\u2014patients and doctors under acute distress\u2014are not the ones who need a stranger's moral policing. I'm more confident in the permissibility of early abortion than I am dismissive of all qualms about late abortion.\n\n## Where I think the debate goes wrong\n\nBoth sides often overstate certainty. Pro-life advocates frequently assume fetal personhood as a premise rather than defending it, then treat the rest as obvious. Pro-choice advocates sometimes dodge the moral status question entirely and rest everything on autonomy",
+    "latency_ms": 15185.3,
+    "token_count": 1158
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "91a6dc8099c5",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239910.5732954,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4778,
+          "evidence": [
+            "Latency 15185ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 15185.3,
+        "token_count": 1158,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.94; flagged=False"
+}

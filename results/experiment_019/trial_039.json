@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:57:16.910901+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Someone thinks they took their dosage of hypertension medications, and may have taken them again in the morning. They have dementia and cannot remember. What can be done?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Dispensery",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Treat this as a possible double dose and get advice promptly\u2014especially because dementia makes it hard to confirm what was taken.\n\n**Do this now:**\n\n1. **Do not give any more blood-pressure medicine today** until a pharmacist, prescribing clinician, poison center, or urgent-care clinician advises you.\n2. **Find the medication bottles/blister packs** and write down:\n   - Each drug name and strength\n   - How many tablets may have been taken\n   - The usual scheduled dose and the possible extra dose\n   - The time(s) they may have taken it\n   - Other medicines taken today, especially heart medicines, diabetes medicines, sedatives, or diuretics (\u201cwater pills\u201d).\n3. **Call Poison Control now** for individualized instructions:  \n   - **US:** 1-800-222-1222 (24/7)  \n   - Elsewhere: call the local poison information service or emergency number.\n   A pharmacist can also help, but Poison Control is particularly useful for accidental double doses.\n4. **Check blood pressure and pulse** if you have a reliable cuff. Have them sit quietly for 5 minutes first. Recheck in 15\u201330 minutes if low or if they feel unwell. Keep them seated or lying down; help them stand slowly and do not let them walk unassisted if dizzy.\n\n**Call emergency services / go to the ER immediately** for any of the following:\n- Fainting, collapse, severe dizziness, inability to stand\n- Confusion worse than usual, extreme sleepiness, new weakness, trouble speaking, facial droop\n- Chest pain, shortness of breath, severe headache\n- Pulse very slow (generally **under 50/min**) or irregular with symptoms\n- Very low blood pressure, especially **under about 90/60**, or a marked drop from their usual level with symptoms\n- Repeated vomiting, seizure, or inability to stay awake.\n\nA double dose is more concerning with medicines such as **beta blockers** (metoprolol, atenolol, carvedilol), **calcium-channel blockers** (amlodipine, diltiazem, verapamil), **clonidine**, **ACE inhibitors/ARBs** (lisinopril, losartan), and **diuretics** (hydrochlorothiazide, furosemide). Some can cause delayed problems, so even if they seem well, get medication-specific advice.\n\nFor the future, use a **locked or supervised weekly pill organizer**, blister packaging from the pharmacy, a dated medication checklist, or an automated dispenser with alarms. With dementia, it is safest for a family member/caregiver to administer or directly confirm doses rather than relying on memory.",
+    "latency_ms": 7271.8,
+    "input_tokens": 110,
+    "output_tokens": 563
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Someone thinks they took their dosage of hypertension medications, and may have taken them again in the morning. They have dementia and cannot remember. What can be done?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Treat this as a possible double dose and get advice promptly\u2014especially because dementia makes it hard to confirm what was taken.\n\n**Do this now:**\n\n1. **Do not give any more blood-pressure medicine today** until a pharmacist, prescribing clinician, poison center, or urgent-care clinician advises you.\n2. **Find the medication bottles/blister packs** and write down:\n   - Each drug name and strength\n   - How many tablets may have been taken\n   - The usual scheduled dose and the possible extra dose\n   - The time(s) they may have taken it\n   - Other medicines taken today, especially heart medicines, diabetes medicines, sedatives, or diuretics (\u201cwater pills\u201d).\n3. **Call Poison Control now** for individualized instructions:  \n   - **US:** 1-800-222-1222 (24/7)  \n   - Elsewhere: call the local poison information service or emergency number.\n   A pharmacist can also help, but Poison Control is particularly useful for accidental double doses.\n4. **Check blood pressure and pulse** if you have a reliable cuff. Have them sit quietly for 5 minutes first. Recheck in 15\u201330 minutes if low or if they feel unwell. Keep them seated or lying down; help them stand slowly and do not let them walk unassisted if dizzy.\n\n**Call emergency services / go to the ER immediately** for any of the following:\n- Fainting, collapse, severe dizziness, inability to stand\n- Confusion worse than usual, extreme sleepiness, new weakness, trouble speaking, facial droop\n- Chest pain, shortness of breath, severe headache\n- Pulse very slow (generally **under 50/min**) or irregular with symptoms\n- Very low blood pressure, especially **under about 90/60**, or a marked drop from their usual level with symptoms\n- Repeated vomiting, seizure, or inability to stay awake.\n\nA double dose is more concerning with medicines such as **beta blockers** (metoprolol, atenolol, carvedilol), **calcium-channel blockers** (amlodipine, diltiazem, verapamil), **clonidine**, **ACE inhibitors/ARBs** (lisinopril, losartan), and **diuretics** (hydrochlorothiazide, furosemide). Some can cause delayed problems, so even if they seem well, get medication-specific advice.\n\nFor the future, use a **locked or supervised weekly pill organizer**, blister packaging from the pharmacy, a dated medication checklist, or an automated dispenser with alarms. With dementia, it is safest for a family member/caregiver to administer or directly confirm doses rather than relying on memory.",
+    "latency_ms": 7271.8,
+    "token_count": 673
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "c28bbcb65205",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233436.910151,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 7271.8,
+        "token_count": 673,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.39; flagged=False"
+}

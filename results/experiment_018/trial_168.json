@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:05:03.988038+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Why some bacteria could cause deadly infections in some people while others can recover quickly?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Molecular Microbiology",
+    "question_type": "Directed question that has a single unambiguous answer| Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Bacteria can cause very different outcomes because **infection severity depends on both the bacterium and the person\u2019s defenses**, not just the presence of bacteria. The same species can cause a mild illness in one person and life-threatening sepsis in another.\n\n### Main reasons\n\n1. **Different bacterial strains**\n   - Some strains carry stronger **virulence factors**, such as toxins, capsules that prevent immune destruction, or adhesins that help them attach to tissues.\n   - For example, some *Staphylococcus aureus* strains produce toxins or resist multiple antibiotics, while less-virulent strains may cause only a localized skin infection.\n   - Bacterial dose matters too: exposure to a very large number of organisms can overwhelm defenses more easily than a small exposure.\n\n2. **The infection site**\n   - A bacterium confined to the skin may be treatable, while the same organism in the **bloodstream, brain, heart valves, or lungs** can become rapidly dangerous.\n   - Meningitis, bloodstream infection, severe pneumonia, and abdominal infections can deteriorate within **hours**, sometimes before obvious symptoms appear.\n\n3. **Age and immune-system strength**\n   - Infants\u2014especially those younger than about **3 months**\u2014and adults older than roughly **65 years** are at higher risk.\n   - People with weakened immunity from cancer treatment, organ transplantation, HIV, steroid medicines, or biologic drugs may not contain bacteria effectively.\n   - Diabetes, kidney disease, liver disease, heart failure, and chronic lung disease can also reduce resilience.\n\n4. **Existing barriers and local defenses**\n   - Healthy skin, stomach acid, mucus, normal gut bacteria, and airway clearance mechanisms block many infections.\n   - A wound, burn, surgery, catheter, ventilator, or damaged intestinal lining can provide bacteria with direct access to deeper tissues or blood.\n\n5. **Genetic and biological differences**\n   - People vary genetically in immune receptors, inflammation control, antibody responses, and blood-clotting pathways.\n   - Some people produce an excessive inflammatory response. In severe infections, this can lead to **sepsis**, low blood pressure, clotting abnormalities, and organ failure even when the bacteria themselves are no longer multiplying rapidly.\n\n6. **Speed of recognition and treatment**\n   - Early appropriate antibiotics, source control\u2014such as draining an abscess\u2014and supportive care can greatly improve survival.\n   - Delays of even **several hours** in severe sepsis can matter. Treatment also depends on whether the organism is antibiotic-resistant.\n   - A localized infection may improve within roughly **1\u20133 days** after effective treatment, whereas severe bloodstream or organ infections may require **1\u20133 weeks or longer** and sometimes intensive care.\n\n7. **Amount of bacterial exposure and route of entry**\n   - Inhalation into the lungs, swallowing contaminated food, injection into tissue, or direct entry into blood can produce different risks.\n   - The same bacterium may cause mild intestinal symptoms when swallowed but severe disease if it enters the bloodstream.\n\n8. **Prior immunity and microbiome**\n   - Previous infection, vaccination, or colonization by related organisms can help the immune system respond faster.\n   - A healthy microbiome can prevent harmful bacteria from overgrowing; recent antibiotics can disrupt this protection.\n\n### Why recovery can be quick\n\nA person may recover rapidly when the bacteria are less aggressive, the infection remains localized, the immune system is healthy, the bacterial dose is small, and treatment is started promptly. Symptoms may improve within **24\u201372 hours**, although the full course of antibiotics should generally be completed as prescribed.\n\n### Why infection can become deadly\n\nSevere infection can trigger **sepsis**, in which an abnormal immune response damages organs. Warning signs include:\n\n- Confusion, extreme sleepiness, or difficulty waking\n- Trouble breathing or breathing faster than about **22 breaths per minute**\n- Very fast heart rate, faintness, or unusually low blood pressure\n- Bluish, pale, mottled, or clammy skin\n- Very little urine\n- Severe weakness, rapidly worsening pain, or a temperature above about **38\u00b0C (100.4\u00b0F)** or below about **36\u00b0C (96.8\u00b0F)**\n\nThese signs require **urgent emergency evaluation**. In babies, older adults, and immunocompromised people, serious infection may occur without a high fever.",
+    "latency_ms": 6752.9,
+    "input_tokens": 88,
+    "output_tokens": 885
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Why some bacteria could cause deadly infections in some people while others can recover quickly?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Bacteria can cause very different outcomes because **infection severity depends on both the bacterium and the person\u2019s defenses**, not just the presence of bacteria. The same species can cause a mild illness in one person and life-threatening sepsis in another.\n\n### Main reasons\n\n1. **Different bacterial strains**\n   - Some strains carry stronger **virulence factors**, such as toxins, capsules that prevent immune destruction, or adhesins that help them attach to tissues.\n   - For example, some *Staphylococcus aureus* strains produce toxins or resist multiple antibiotics, while less-virulent strains may cause only a localized skin infection.\n   - Bacterial dose matters too: exposure to a very large number of organisms can overwhelm defenses more easily than a small exposure.\n\n2. **The infection site**\n   - A bacterium confined to the skin may be treatable, while the same organism in the **bloodstream, brain, heart valves, or lungs** can become rapidly dangerous.\n   - Meningitis, bloodstream infection, severe pneumonia, and abdominal infections can deteriorate within **hours**, sometimes before obvious symptoms appear.\n\n3. **Age and immune-system strength**\n   - Infants\u2014especially those younger than about **3 months**\u2014and adults older than roughly **65 years** are at higher risk.\n   - People with weakened immunity from cancer treatment, organ transplantation, HIV, steroid medicines, or biologic drugs may not contain bacteria effectively.\n   - Diabetes, kidney disease, liver disease, heart failure, and chronic lung disease can also reduce resilience.\n\n4. **Existing barriers and local defenses**\n   - Healthy skin, stomach acid, mucus, normal gut bacteria, and airway clearance mechanisms block many infections.\n   - A wound, burn, surgery, catheter, ventilator, or damaged intestinal lining can provide bacteria with direct access to deeper tissues or blood.\n\n5. **Genetic and biological differences**\n   - People vary genetically in immune receptors, inflammation control, antibody responses, and blood-clotting pathways.\n   - Some people produce an excessive inflammatory response. In severe infections, this can lead to **sepsis**, low blood pressure, clotting abnormalities, and organ failure even when the bacteria themselves are no longer multiplying rapidly.\n\n6. **Speed of recognition and treatment**\n   - Early appropriate antibiotics, source control\u2014such as draining an abscess\u2014and supportive care can greatly improve survival.\n   - Delays of even **several hours** in severe sepsis can matter. Treatment also depends on whether the organism is antibiotic-resistant.\n   - A localized infection may improve within roughly **1\u20133 days** after effective treatment, whereas severe bloodstream or organ infections may require **1\u20133 weeks or longer** and sometimes intensive care.\n\n7. **Amount of bacterial exposure and route of entry**\n   - Inhalation into the lungs, swallowing contaminated food, injection into tissue, or direct entry into blood can produce different risks.\n   - The same bacterium may cause mild intestinal symptoms when swallowed but severe disease if it enters the bloodstream.\n\n8. **Prior immunity and microbiome**\n   - Previous infection, vaccination, or colonization by related organisms can help the immune system respond faster.\n   - A healthy microbiome can prevent harmful bacteria from overgrowing; recent antibiotics can disrupt this protection.\n\n### Why recovery can be quick\n\nA person may recover rapidly when the bacteria are less aggressive, the infection remains localized, the immune system is healthy, the bacterial dose is small, and treatment is started promptly. Symptoms may improve within **24\u201372 hours**, although the full course of antibiotics should generally be completed as prescribed.\n\n### Why infection can become deadly\n\nSevere infection can trigger **sepsis**, in which an abnormal immune response damages organs. Warning signs include:\n\n- Confusion, extreme sleepiness, or difficulty waking\n- Trouble breathing or breathing faster than about **22 breaths per minute**\n- Very fast heart rate, faintness, or unusually low blood pressure\n- Bluish, pale, mottled, or clammy skin\n- Very little urine\n- Severe weakness, rapidly worsening pain, or a temperature above about **38\u00b0C (100.4\u00b0F)** or below about **36\u00b0C (96.8\u00b0F)**\n\nThese signs require **urgent emergency evaluation**. In babies, older adults, and immunocompromised people, serious infection may occur without a high fever.",
+    "latency_ms": 6752.9,
+    "token_count": 973,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "af8ff6504b3b",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230303.9872742,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 9 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 6752.9,
+        "token_count": 973,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.168; flagged=True"
+}

@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:53:46.191832+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What are the steps in a cranial nerve exam?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pharmacist",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "A standard cranial nerve examination assesses CN I\u2013XII systematically:\n\n1. **CN I \u2013 Olfactory**\n   - Test each nostril separately with a familiar non-irritating odor (e.g., coffee, soap).\n   - Ensure nasal passages are reasonably patent first.\n   - Avoid ammonia or alcohol swabs because they stimulate trigeminal nerve endings.\n\n2. **CN II \u2013 Optic**\n   - **Visual acuity:** Snellen chart or near card, one eye at a time.\n   - **Visual fields:** Confrontation testing in all quadrants.\n   - **Pupillary afferent function:** Assess direct and consensual light responses; perform swinging-flashlight test for a relative afferent pupillary defect.\n   - **Fundoscopy:** Inspect optic disc, retinal vessels, macula, and retina if indicated.\n\n3. **CN III, IV, VI \u2013 Oculomotor, Trochlear, Abducens**\n   - Inspect eyelid position for ptosis and pupil size/shape.\n   - Assess pupil light reflexes and accommodation (CN III parasympathetic).\n   - Test extraocular movements in an \u201cH\u201d pattern.\n   - Ask about or look for diplopia, nystagmus, impaired adduction/elevation/depression (III), impaired depression in adduction (IV), or impaired abduction (VI).\n\n4. **CN V \u2013 Trigeminal**\n   - **Sensation:** Test light touch and/or pinprick over the three divisions bilaterally:\n     - V1 ophthalmic: forehead\n     - V2 maxillary: cheek\n     - V3 mandibular: jaw\n   - **Motor:** Palpate masseter and temporalis while the patient clenches teeth; ask them to open the jaw against resistance.\n   - Observe for jaw deviation on opening (toward the weak side).\n   - **Corneal reflex** if needed: afferent limb is V1; efferent limb is VII.\n\n5. **CN VII \u2013 Facial**\n   - Inspect for facial asymmetry.\n   - Ask the patient to:\n     - Raise eyebrows/wrinkle forehead\n     - Close eyes tightly against resistance\n     - Smile/show teeth\n     - Puff out cheeks\n   - Assess taste on the anterior two-thirds of the tongue only when specifically indicated.\n\n6. **CN VIII \u2013 Vestibulocochlear**\n   - Screen hearing with whispered voice or finger rub, each ear separately.\n   - If abnormal, perform:\n     - **Weber:** tuning fork on midline forehead.\n     - **Rinne:** compare air conduction with bone conduction at each ear.\n   - Assess vestibular function if indicated: nystagmus, gait, Romberg, head impulse test.\n\n7. **CN IX and X \u2013 Glossopharyngeal and Vagus**\n   - Listen to voice for hoarseness, dysarthria, or nasal quality.\n   - Ask the patient to say \u201cah\u201d; observe symmetric palatal elevation and uvular position.\n   - Assess swallowing and cough when relevant.\n   - Gag reflex may be tested selectively: afferent limb CN IX, efferent limb CN X. It is not routinely necessary in an alert patient with normal voice and swallowing.\n\n8. **CN XI \u2013 Spinal Accessory**\n   - Test sternocleidomastoid: turn head against resistance; weakness causes difficulty turning the head away from the affected side.\n   - Test trapezius: shoulder shrug against resistance.\n\n9. **CN XII \u2013 Hypoglossal**\n   - Inspect tongue for atrophy or fasciculations.\n   - Ask patient to protrude the tongue; it deviates toward the weak side in a lower motor neuron lesion.\n   - Test side-to-side tongue movement and strength against the cheek.\n   - Listen for lingual dysarthria.\n\nA concise routine sequence is: **smell \u2192 vision/pupils \u2192 eye movements \u2192 facial sensation/jaw \u2192 facial movements \u2192 hearing \u2192 palate/voice/swallow \u2192 shoulders \u2192 tongue.**",
+    "latency_ms": 9649.0,
+    "input_tokens": 89,
+    "output_tokens": 830
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the steps in a cranial nerve exam?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "A standard cranial nerve examination assesses CN I\u2013XII systematically:\n\n1. **CN I \u2013 Olfactory**\n   - Test each nostril separately with a familiar non-irritating odor (e.g., coffee, soap).\n   - Ensure nasal passages are reasonably patent first.\n   - Avoid ammonia or alcohol swabs because they stimulate trigeminal nerve endings.\n\n2. **CN II \u2013 Optic**\n   - **Visual acuity:** Snellen chart or near card, one eye at a time.\n   - **Visual fields:** Confrontation testing in all quadrants.\n   - **Pupillary afferent function:** Assess direct and consensual light responses; perform swinging-flashlight test for a relative afferent pupillary defect.\n   - **Fundoscopy:** Inspect optic disc, retinal vessels, macula, and retina if indicated.\n\n3. **CN III, IV, VI \u2013 Oculomotor, Trochlear, Abducens**\n   - Inspect eyelid position for ptosis and pupil size/shape.\n   - Assess pupil light reflexes and accommodation (CN III parasympathetic).\n   - Test extraocular movements in an \u201cH\u201d pattern.\n   - Ask about or look for diplopia, nystagmus, impaired adduction/elevation/depression (III), impaired depression in adduction (IV), or impaired abduction (VI).\n\n4. **CN V \u2013 Trigeminal**\n   - **Sensation:** Test light touch and/or pinprick over the three divisions bilaterally:\n     - V1 ophthalmic: forehead\n     - V2 maxillary: cheek\n     - V3 mandibular: jaw\n   - **Motor:** Palpate masseter and temporalis while the patient clenches teeth; ask them to open the jaw against resistance.\n   - Observe for jaw deviation on opening (toward the weak side).\n   - **Corneal reflex** if needed: afferent limb is V1; efferent limb is VII.\n\n5. **CN VII \u2013 Facial**\n   - Inspect for facial asymmetry.\n   - Ask the patient to:\n     - Raise eyebrows/wrinkle forehead\n     - Close eyes tightly against resistance\n     - Smile/show teeth\n     - Puff out cheeks\n   - Assess taste on the anterior two-thirds of the tongue only when specifically indicated.\n\n6. **CN VIII \u2013 Vestibulocochlear**\n   - Screen hearing with whispered voice or finger rub, each ear separately.\n   - If abnormal, perform:\n     - **Weber:** tuning fork on midline forehead.\n     - **Rinne:** compare air conduction with bone conduction at each ear.\n   - Assess vestibular function if indicated: nystagmus, gait, Romberg, head impulse test.\n\n7. **CN IX and X \u2013 Glossopharyngeal and Vagus**\n   - Listen to voice for hoarseness, dysarthria, or nasal quality.\n   - Ask the patient to say \u201cah\u201d; observe symmetric palatal elevation and uvular position.\n   - Assess swallowing and cough when relevant.\n   - Gag reflex may be tested selectively: afferent limb CN IX, efferent limb CN X. It is not routinely necessary in an alert patient with normal voice and swallowing.\n\n8. **CN XI \u2013 Spinal Accessory**\n   - Test sternocleidomastoid: turn head against resistance; weakness causes difficulty turning the head away from the affected side.\n   - Test trapezius: shoulder shrug against resistance.\n\n9. **CN XII \u2013 Hypoglossal**\n   - Inspect tongue for atrophy or fasciculations.\n   - Ask patient to protrude the tongue; it deviates toward the weak side in a lower motor neuron lesion.\n   - Test side-to-side tongue movement and strength against the cheek.\n   - Listen for lingual dysarthria.\n\nA concise routine sequence is: **smell \u2192 vision/pupils \u2192 eye movements \u2192 facial sensation/jaw \u2192 facial movements \u2192 hearing \u2192 palate/voice/swallow \u2192 shoulders \u2192 tongue.**",
+    "latency_ms": 9649.0,
+    "token_count": 919
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "4385616073fc",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233226.1911106,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 9649.0,
+        "token_count": 919,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.11; flagged=False"
+}

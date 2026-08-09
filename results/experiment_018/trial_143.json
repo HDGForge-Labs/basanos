@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:02:26.162189+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Imagine you have a patient after hip surgery (14days passed) write me a rehabilitation plan for this patient.",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Physical Medicine and Rehabilitation also COVID patients",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Below is a **general rehabilitation framework for a patient 14 days after hip surgery**. The exact plan depends heavily on the procedure\u2014**total hip replacement, hip fracture fixation, hip resurfacing, arthroscopy, or revision surgery**\u2014and on the surgeon\u2019s restrictions. This should be confirmed with the operating surgeon and a licensed physical therapist before implementation.\n\n## First: confirm the surgical restrictions\n\nBefore progressing exercise, verify:\n\n- **Weight-bearing status:**  \n  - Weight bearing as tolerated (WBAT)  \n  - Partial weight bearing, such as approximately **25\u201350%**  \n  - Toe-touch or non-weight bearing\n- **Hip precautions:**  \n  - Posterior approach precautions may include avoiding hip flexion beyond approximately **90\u00b0**, crossing the legs, and excessive inward rotation for roughly **6 weeks**, depending on the surgeon.  \n  - Anterior approach precautions may include avoiding excessive hip extension and external rotation for approximately **4\u20136 weeks**.  \n- Presence of complications, drains, infection, fracture, dislocation, nerve injury, or blood clots.\n\nDo not use a generic plan if the patient has a fracture fixation, revision, abductor repair, tendon repair, or surgeon-imposed restrictions.\n\n# Rehabilitation plan: postoperative day 14 onward\n\n## Goals for weeks 2\u20133\n\nPrimary goals:\n\n1. Protect the surgical repair.\n2. Control pain and swelling.\n3. Maintain safe mobility.\n4. Prevent blood clots, stiffness, muscle wasting, and falls.\n5. Restore basic hip and knee movement without forcing range.\n6. Progress walking gradually and safely.\n7. Achieve independence with basic activities of daily living.\n\n## Pain and swelling management\n\n- Use prescribed analgesics exactly as directed.\n- Ice the hip for approximately **15\u201320 minutes**, **3\u20135 times daily**, with a cloth barrier between the ice pack and skin.\n- Elevate the leg when resting if this does not increase hip discomfort.\n- Avoid sitting continuously for more than approximately **30\u201345 minutes** during the day.\n- Change position regularly, but avoid twisting on the operated leg.\n- Aim for exercise-related discomfort no higher than approximately **3\u20134/10**, and pain should return to its usual level within about **12\u201324 hours**.\n\n## Walking and mobility\n\n### If weight bearing is allowed\n\n- Walk with a walker or two crutches.\n- Practice walking **5\u201310 minutes**, approximately **3\u20135 times daily**, rather than one long session.\n- Begin with short indoor distances, such as approximately **30\u2013100 meters**, depending on symptoms and balance.\n- Increase total walking distance by no more than approximately **10\u201320% every 2\u20133 days**, provided pain and swelling do not worsen.\n- Use the assistive device until the patient can walk:\n  - Without a limp,\n  - Without significant pain,\n  - Without the hip dropping or trunk leaning,\n  - With good balance and safe turns.\n\n### If partial or non-weight bearing is ordered\n\nFollow the surgeon\u2019s prescribed limit precisely. The patient should be taught:\n\n- How to use crutches or a walker.\n- How to keep the specified percentage of weight off the leg.\n- Safe transfers and stair technique.\n- No progression to full weight bearing until cleared.\n\n### Stairs\n\nUse a handrail and an assistive device:\n\n- Going up: **good leg first**, then operated leg and aid.\n- Going down: **assistive device first**, then operated leg, then good leg.\n\nAvoid pivoting. Turn by taking several small steps.\n\n## Exercises: approximately 2\u20134 sessions daily\n\nPerform exercises slowly. Begin with approximately **5\u201310 repetitions**, progressing toward **10\u201315 repetitions** as tolerated. Stop if there is sharp pain, a feeling of instability, or increasing swelling.\n\n### 1. Ankle pumps\n\n- Move the ankles up and down.\n- Perform **20\u201330 repetitions every 1\u20132 hours while awake**.\n- These help circulation and reduce stiffness.\n\n### 2. Quadriceps sets\n\n- Lie or sit with the leg straight.\n- Tighten the thigh by pressing the knee gently downward.\n- Hold approximately **5 seconds**.\n- Perform **10 repetitions**, **2\u20134 times daily**.\n\n### 3. Gluteal squeezes\n\n- Tighten the buttock muscles without lifting the pelvis.\n- Hold approximately **5 seconds**.\n- Perform **10\u201315 repetitions**, **2\u20134 times daily**.\n\n### 4. Heel slides\n\n- Lying on the back, slide the heel toward the buttocks and then slowly straighten the leg.\n- Stay within the allowed hip-flexion range.\n- Perform approximately **10 repetitions**.\n- Do not force the movement or exceed surgeon-prescribed precautions.\n\n### 5. Knee extension\n\n- Place a rolled towel under the knee.\n- Gently straighten the knee while lifting the heel slightly.\n- Hold approximately **2\u20135 seconds**.\n- Perform **10 repetitions**.\n\n### 6.",
+    "latency_ms": 7619.8,
+    "input_tokens": 94,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Imagine you have a patient after hip surgery (14days passed) write me a rehabilitation plan for this patient.",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Below is a **general rehabilitation framework for a patient 14 days after hip surgery**. The exact plan depends heavily on the procedure\u2014**total hip replacement, hip fracture fixation, hip resurfacing, arthroscopy, or revision surgery**\u2014and on the surgeon\u2019s restrictions. This should be confirmed with the operating surgeon and a licensed physical therapist before implementation.\n\n## First: confirm the surgical restrictions\n\nBefore progressing exercise, verify:\n\n- **Weight-bearing status:**  \n  - Weight bearing as tolerated (WBAT)  \n  - Partial weight bearing, such as approximately **25\u201350%**  \n  - Toe-touch or non-weight bearing\n- **Hip precautions:**  \n  - Posterior approach precautions may include avoiding hip flexion beyond approximately **90\u00b0**, crossing the legs, and excessive inward rotation for roughly **6 weeks**, depending on the surgeon.  \n  - Anterior approach precautions may include avoiding excessive hip extension and external rotation for approximately **4\u20136 weeks**.  \n- Presence of complications, drains, infection, fracture, dislocation, nerve injury, or blood clots.\n\nDo not use a generic plan if the patient has a fracture fixation, revision, abductor repair, tendon repair, or surgeon-imposed restrictions.\n\n# Rehabilitation plan: postoperative day 14 onward\n\n## Goals for weeks 2\u20133\n\nPrimary goals:\n\n1. Protect the surgical repair.\n2. Control pain and swelling.\n3. Maintain safe mobility.\n4. Prevent blood clots, stiffness, muscle wasting, and falls.\n5. Restore basic hip and knee movement without forcing range.\n6. Progress walking gradually and safely.\n7. Achieve independence with basic activities of daily living.\n\n## Pain and swelling management\n\n- Use prescribed analgesics exactly as directed.\n- Ice the hip for approximately **15\u201320 minutes**, **3\u20135 times daily**, with a cloth barrier between the ice pack and skin.\n- Elevate the leg when resting if this does not increase hip discomfort.\n- Avoid sitting continuously for more than approximately **30\u201345 minutes** during the day.\n- Change position regularly, but avoid twisting on the operated leg.\n- Aim for exercise-related discomfort no higher than approximately **3\u20134/10**, and pain should return to its usual level within about **12\u201324 hours**.\n\n## Walking and mobility\n\n### If weight bearing is allowed\n\n- Walk with a walker or two crutches.\n- Practice walking **5\u201310 minutes**, approximately **3\u20135 times daily**, rather than one long session.\n- Begin with short indoor distances, such as approximately **30\u2013100 meters**, depending on symptoms and balance.\n- Increase total walking distance by no more than approximately **10\u201320% every 2\u20133 days**, provided pain and swelling do not worsen.\n- Use the assistive device until the patient can walk:\n  - Without a limp,\n  - Without significant pain,\n  - Without the hip dropping or trunk leaning,\n  - With good balance and safe turns.\n\n### If partial or non-weight bearing is ordered\n\nFollow the surgeon\u2019s prescribed limit precisely. The patient should be taught:\n\n- How to use crutches or a walker.\n- How to keep the specified percentage of weight off the leg.\n- Safe transfers and stair technique.\n- No progression to full weight bearing until cleared.\n\n### Stairs\n\nUse a handrail and an assistive device:\n\n- Going up: **good leg first**, then operated leg and aid.\n- Going down: **assistive device first**, then operated leg, then good leg.\n\nAvoid pivoting. Turn by taking several small steps.\n\n## Exercises: approximately 2\u20134 sessions daily\n\nPerform exercises slowly. Begin with approximately **5\u201310 repetitions**, progressing toward **10\u201315 repetitions** as tolerated. Stop if there is sharp pain, a feeling of instability, or increasing swelling.\n\n### 1. Ankle pumps\n\n- Move the ankles up and down.\n- Perform **20\u201330 repetitions every 1\u20132 hours while awake**.\n- These help circulation and reduce stiffness.\n\n### 2. Quadriceps sets\n\n- Lie or sit with the leg straight.\n- Tighten the thigh by pressing the knee gently downward.\n- Hold approximately **5 seconds**.\n- Perform **10 repetitions**, **2\u20134 times daily**.\n\n### 3. Gluteal squeezes\n\n- Tighten the buttock muscles without lifting the pelvis.\n- Hold approximately **5 seconds**.\n- Perform **10\u201315 repetitions**, **2\u20134 times daily**.\n\n### 4. Heel slides\n\n- Lying on the back, slide the heel toward the buttocks and then slowly straighten the leg.\n- Stay within the allowed hip-flexion range.\n- Perform approximately **10 repetitions**.\n- Do not force the movement or exceed surgeon-prescribed precautions.\n\n### 5. Knee extension\n\n- Place a rolled towel under the knee.\n- Gently straighten the knee while lifting the heel slightly.\n- Hold approximately **2\u20135 seconds**.\n- Perform **10 repetitions**.\n\n### 6.",
+    "latency_ms": 7619.8,
+    "token_count": 1118,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "71a058dd6b34",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230146.1614182,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 14 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 7619.8,
+        "token_count": 1118,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.143; flagged=True"
+}

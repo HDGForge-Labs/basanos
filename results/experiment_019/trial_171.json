@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:17:24.625043+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "I found a protein expressed in both humans and Pseudomonas aeruginosa. They have quite similar protein structures but completely different sequences and functions. How could this happen?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Molecular Microbiology",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "This is very plausible, and it is a classic example of **structural conservation without detectable sequence or functional conservation**. Protein structure is often much more evolutionarily constrained than amino-acid sequence.\n\nSeveral mechanisms could explain what you found:\n\n1. **Convergent evolution**\n   - Humans and *Pseudomonas aeruginosa* may independently have evolved proteins with a similar fold because that fold is physically useful or particularly stable.\n   - There are only a limited number of energetically favorable ways for a polypeptide chain to fold. Proteins with unrelated ancestry can therefore arrive at similar 3D architectures.\n   - This is especially common for compact folds such as beta-barrels, helix bundles, Rossmann-like folds, TIM barrels, and coiled-coils.\n\n2. **Divergent evolution from an extremely ancient ancestor**\n   - The proteins could descend from a common ancestral protein that existed before the bacterial\u2013eukaryotic split, roughly more than **1.5\u20132 billion years ago**.\n   - Over that timescale, sequence identity can fall below the range where homology is easy to detect\u2014often below about **15\u201320% amino-acid identity**\u2014while the core fold remains recognizable.\n   - Function can also change substantially through mutation, gene duplication, domain fusion, altered regulation, and changes in binding partners. This is called **functional divergence**.\n\n3. **A shared \u201cprotein fold\u201d does not imply a shared function**\n   - The overall fold may provide a stable scaffold, while a relatively small part of the structure determines function.\n   - For enzymes, changing even a few residues in an active site\u2014sometimes only about **2\u201310 key positions**\u2014can alter substrate specificity or abolish catalysis.\n   - For binding proteins, different surface loops, charge distributions, or pocket shapes can change interaction partners despite a nearly identical structural core.\n   - Thus, two proteins can have similar backbone architecture but use different surface regions and perform unrelated cellular roles.\n\n4. **Sequence can drift while structural constraints remain**\n   - Many amino-acid substitutions are tolerated if they preserve broad chemical properties:\n     - hydrophobic residues in the buried core,\n     - polar or charged residues on the surface,\n     - residues compatible with helices, beta-strands, turns, or loops.\n   - For example, leucine, isoleucine, valine, and methionine can often substitute for one another in a hydrophobic core with little effect on fold.\n   - A protein can retain only a small number of strongly conserved \u201cfold-determining\u201d residues while most of its sequence changes.\n\n5. **Domain-level similarity rather than whole-protein similarity**\n   - One or both proteins may be multidomain proteins.\n   - The structural similarity may involve only one domain\u2014for example, a domain of roughly **80\u2013300 residues**\u2014while the rest of the proteins differ in size, localization, regulation, and function.\n   - Human proteins frequently gain additional domains, disordered regions, targeting sequences, or regulatory segments compared with bacterial proteins.\n\n6. **Possible horizontal gene transfer, though less likely for a human protein**\n   - *P. aeruginosa* is very capable of horizontal gene transfer, and bacterial genes can spread through plasmids, phages, and other mobile elements.\n   - Direct recent transfer between humans and *Pseudomonas* would be unusual, but transfer through intermediate organisms, ancient transfer events, or transfer of a broadly distributed microbial gene family can complicate evolutionary history.\n   - If this were recent transfer, you would generally expect more obvious sequence similarity than in your description.\n\nA useful distinction is:\n\n- **Homology**: shared evolutionary ancestry.\n- **Structural analogy**: similar structure because of convergence, not ancestry.\n- **Functional analogy**: similar function, possibly with or without shared ancestry.\n\nTo distinguish these possibilities, you could examine:\n\n- **Sequence-profile matches** using HMMER, HHpred, or Foldseek\u2014not just pairwise BLAST.\n- **Structural alignment quality**, especially TM-score:\n  - a TM-score above approximately **0.5** usually suggests the same general fold;\n  - values around **0.7\u20130.9** indicate much stronger structural resemblance;\n  - but a high TM-score alone does not prove common ancestry.\n- **Alignment coverage**: similarity across most of a domain is more suggestive of common ancestry than a match limited to a small structural motif.\n- **Conserved active-site or ligand-binding residues**: shared catalytic geometry and chemically equivalent residues support homology; different active sites support fold reuse or functional divergence.\n- **Domain architecture** and genomic context: bacterial operons versus human pathway associations may clarify function and origin.\n- **Phylogenetic distribution**: if homolog-like proteins occur across bacteria, archaea, and eukaryotes, an ancient origin becomes more plausible.\n\nIn short: proteins can retain a similar fold because folding physics strongly limits viable structures, while sequence and function can evolve dramatically. Your",
+    "latency_ms": 13143.4,
+    "input_tokens": 107,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "I found a protein expressed in both humans and Pseudomonas aeruginosa. They have quite similar protein structures but completely different sequences and functions. How could this happen?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "This is very plausible, and it is a classic example of **structural conservation without detectable sequence or functional conservation**. Protein structure is often much more evolutionarily constrained than amino-acid sequence.\n\nSeveral mechanisms could explain what you found:\n\n1. **Convergent evolution**\n   - Humans and *Pseudomonas aeruginosa* may independently have evolved proteins with a similar fold because that fold is physically useful or particularly stable.\n   - There are only a limited number of energetically favorable ways for a polypeptide chain to fold. Proteins with unrelated ancestry can therefore arrive at similar 3D architectures.\n   - This is especially common for compact folds such as beta-barrels, helix bundles, Rossmann-like folds, TIM barrels, and coiled-coils.\n\n2. **Divergent evolution from an extremely ancient ancestor**\n   - The proteins could descend from a common ancestral protein that existed before the bacterial\u2013eukaryotic split, roughly more than **1.5\u20132 billion years ago**.\n   - Over that timescale, sequence identity can fall below the range where homology is easy to detect\u2014often below about **15\u201320% amino-acid identity**\u2014while the core fold remains recognizable.\n   - Function can also change substantially through mutation, gene duplication, domain fusion, altered regulation, and changes in binding partners. This is called **functional divergence**.\n\n3. **A shared \u201cprotein fold\u201d does not imply a shared function**\n   - The overall fold may provide a stable scaffold, while a relatively small part of the structure determines function.\n   - For enzymes, changing even a few residues in an active site\u2014sometimes only about **2\u201310 key positions**\u2014can alter substrate specificity or abolish catalysis.\n   - For binding proteins, different surface loops, charge distributions, or pocket shapes can change interaction partners despite a nearly identical structural core.\n   - Thus, two proteins can have similar backbone architecture but use different surface regions and perform unrelated cellular roles.\n\n4. **Sequence can drift while structural constraints remain**\n   - Many amino-acid substitutions are tolerated if they preserve broad chemical properties:\n     - hydrophobic residues in the buried core,\n     - polar or charged residues on the surface,\n     - residues compatible with helices, beta-strands, turns, or loops.\n   - For example, leucine, isoleucine, valine, and methionine can often substitute for one another in a hydrophobic core with little effect on fold.\n   - A protein can retain only a small number of strongly conserved \u201cfold-determining\u201d residues while most of its sequence changes.\n\n5. **Domain-level similarity rather than whole-protein similarity**\n   - One or both proteins may be multidomain proteins.\n   - The structural similarity may involve only one domain\u2014for example, a domain of roughly **80\u2013300 residues**\u2014while the rest of the proteins differ in size, localization, regulation, and function.\n   - Human proteins frequently gain additional domains, disordered regions, targeting sequences, or regulatory segments compared with bacterial proteins.\n\n6. **Possible horizontal gene transfer, though less likely for a human protein**\n   - *P. aeruginosa* is very capable of horizontal gene transfer, and bacterial genes can spread through plasmids, phages, and other mobile elements.\n   - Direct recent transfer between humans and *Pseudomonas* would be unusual, but transfer through intermediate organisms, ancient transfer events, or transfer of a broadly distributed microbial gene family can complicate evolutionary history.\n   - If this were recent transfer, you would generally expect more obvious sequence similarity than in your description.\n\nA useful distinction is:\n\n- **Homology**: shared evolutionary ancestry.\n- **Structural analogy**: similar structure because of convergence, not ancestry.\n- **Functional analogy**: similar function, possibly with or without shared ancestry.\n\nTo distinguish these possibilities, you could examine:\n\n- **Sequence-profile matches** using HMMER, HHpred, or Foldseek\u2014not just pairwise BLAST.\n- **Structural alignment quality**, especially TM-score:\n  - a TM-score above approximately **0.5** usually suggests the same general fold;\n  - values around **0.7\u20130.9** indicate much stronger structural resemblance;\n  - but a high TM-score alone does not prove common ancestry.\n- **Alignment coverage**: similarity across most of a domain is more suggestive of common ancestry than a match limited to a small structural motif.\n- **Conserved active-site or ligand-binding residues**: shared catalytic geometry and chemically equivalent residues support homology; different active sites support fold reuse or functional divergence.\n- **Domain architecture** and genomic context: bacterial operons versus human pathway associations may clarify function and origin.\n- **Phylogenetic distribution**: if homolog-like proteins occur across bacteria, archaea, and eukaryotes, an ancient origin becomes more plausible.\n\nIn short: proteins can retain a similar fold because folding physics strongly limits viable structures, while sequence and function can evolve dramatically. Your",
+    "latency_ms": 13143.4,
+    "token_count": 1131,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "dd7b596fa07f",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234644.624259,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 7 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4472,
+          "evidence": [
+            "Latency 13143ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13143.4,
+        "token_count": 1131,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.171; flagged=True"
+}

@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T02:06:05.630855+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "How can AI better support image guided therapy procedures? What could be the approach or use of AI of heart treatment?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Image guided therapy ",
+    "question_type": "Advice or suggestions on how to approach a problem| Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# AI Support for Image-Guided Therapy (IGT) Procedures\n\n## Current Challenges AI Can Address\n\nImage-guided procedures\u2014particularly cardiac interventions\u2014face several persistent challenges:\n- Radiation exposure (fluoroscopy time averaging roughly 15-45 minutes per complex ablation procedure)\n- Procedural variability between operators (success rates can vary by approximately 10-20% between high-volume and low-volume centers)\n- Real-time decision-making under time pressure\n- Difficulty integrating multiple imaging modalities (echo, CT, MRI, fluoroscopy) simultaneously\n\n## Key AI Approaches for IGT\n\n### 1. **Real-Time Image Segmentation and Registration**\n- Deep learning models (typically U-Net or nnU-Net architectures) can segment cardiac chambers in under 1-2 seconds per frame, compared to manual segmentation taking 5-10 minutes\n- Automated fusion of pre-procedural CT/MRI with live fluoroscopy or intracardiac echo, reducing registration errors from roughly 3-5mm (manual) to under 1-2mm\n\n### 2. **Motion Compensation and Tracking**\n- AI-based catheter tip tracking can achieve accuracy within approximately 0.5-1.5mm\n- Respiratory and cardiac motion compensation algorithms can reduce image blur/artifact by an estimated 40-60%\n\n### 3. **Predictive Analytics for Procedural Guidance**\n- Machine learning models predicting optimal ablation lesion parameters (contact force typically targeting 10-20 grams, ablation duration of roughly 20-40 seconds per lesion)\n- Risk stratification models flagging complications with reported AUC values of approximately 0.80-0.90 in retrospective studies\n\n### 4. **Radiation Dose Reduction**\n- AI-enhanced image reconstruction from low-dose fluoroscopy can reduce radiation exposure by an estimated 30-50% while maintaining diagnostic image quality\n- Some systems report reducing fluoroscopy time by roughly 20-35% through improved visualization\n\n---\n\n## Specific Applications in Cardiac Treatment\n\n### **Atrial Fibrillation (AFib) Ablation**\n- AI algorithms analyze electroanatomical mapping data to identify arrhythmogenic substrate, with some studies showing improved first-pass isolation rates from baseline ~70% to approximately 85-90%\n- Automated detection of pulmonary vein anatomy variants (present in roughly 20-30% of patients) reduces procedural planning time by an estimated 15-25 minutes\n\n### **Structural Heart Disease (TAVR/TAVI)**\n- AI-based annulus sizing algorithms improve valve size selection accuracy, potentially reducing paravalvular leak incidence (historically occurring in approximately 10-15% of cases) to below 5%\n- Automated CT analysis for calcium scoring and access route assessment can cut planning time from roughly 30-45 minutes to under",
+    "latency_ms": 12029.9,
+    "input_tokens": 144,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How can AI better support image guided therapy procedures? What could be the approach or use of AI of heart treatment?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# AI Support for Image-Guided Therapy (IGT) Procedures\n\n## Current Challenges AI Can Address\n\nImage-guided procedures\u2014particularly cardiac interventions\u2014face several persistent challenges:\n- Radiation exposure (fluoroscopy time averaging roughly 15-45 minutes per complex ablation procedure)\n- Procedural variability between operators (success rates can vary by approximately 10-20% between high-volume and low-volume centers)\n- Real-time decision-making under time pressure\n- Difficulty integrating multiple imaging modalities (echo, CT, MRI, fluoroscopy) simultaneously\n\n## Key AI Approaches for IGT\n\n### 1. **Real-Time Image Segmentation and Registration**\n- Deep learning models (typically U-Net or nnU-Net architectures) can segment cardiac chambers in under 1-2 seconds per frame, compared to manual segmentation taking 5-10 minutes\n- Automated fusion of pre-procedural CT/MRI with live fluoroscopy or intracardiac echo, reducing registration errors from roughly 3-5mm (manual) to under 1-2mm\n\n### 2. **Motion Compensation and Tracking**\n- AI-based catheter tip tracking can achieve accuracy within approximately 0.5-1.5mm\n- Respiratory and cardiac motion compensation algorithms can reduce image blur/artifact by an estimated 40-60%\n\n### 3. **Predictive Analytics for Procedural Guidance**\n- Machine learning models predicting optimal ablation lesion parameters (contact force typically targeting 10-20 grams, ablation duration of roughly 20-40 seconds per lesion)\n- Risk stratification models flagging complications with reported AUC values of approximately 0.80-0.90 in retrospective studies\n\n### 4. **Radiation Dose Reduction**\n- AI-enhanced image reconstruction from low-dose fluoroscopy can reduce radiation exposure by an estimated 30-50% while maintaining diagnostic image quality\n- Some systems report reducing fluoroscopy time by roughly 20-35% through improved visualization\n\n---\n\n## Specific Applications in Cardiac Treatment\n\n### **Atrial Fibrillation (AFib) Ablation**\n- AI algorithms analyze electroanatomical mapping data to identify arrhythmogenic substrate, with some studies showing improved first-pass isolation rates from baseline ~70% to approximately 85-90%\n- Automated detection of pulmonary vein anatomy variants (present in roughly 20-30% of patients) reduces procedural planning time by an estimated 15-25 minutes\n\n### **Structural Heart Disease (TAVR/TAVI)**\n- AI-based annulus sizing algorithms improve valve size selection accuracy, potentially reducing paravalvular leak incidence (historically occurring in approximately 10-15% of cases) to below 5%\n- Automated CT analysis for calcium scoring and access route assessment can cut planning time from roughly 30-45 minutes to under",
+    "latency_ms": 12029.9,
+    "token_count": 1168,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "ea8880849751",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786241165.6300666,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 22 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4304,
+          "evidence": [
+            "Latency 12030ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12029.9,
+        "token_count": 1168,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.197; flagged=True"
+}

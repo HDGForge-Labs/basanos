@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:58:00.565124+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Should you extract third molars prolifically?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Dentistry",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "No. Third molars (\u201cwisdom teeth\u201d) should not be extracted prophylactically in every patient.\n\n**Extraction is generally indicated when there is:**\n- Recurrent pericoronitis or infection\n- Untreatable caries in the tooth or adjacent second molar\n- Periodontal destruction, distal bone loss, or a deep pocket affecting the second molar\n- Cyst, tumor, resorption, fracture, or other pathology\n- Clear interference with planned jaw surgery, orthodontic treatment, or prosthetic reconstruction\n- A nonfunctional tooth with a high likelihood of disease and poor access for monitoring or restoration\n\n**Retention is reasonable when the tooth is:**\n- Fully erupted, functional, hygienic, and free of caries or periodontal disease\n- Impacted but asymptomatic, without associated pathology, and can be monitored clinically and radiographically\n\nRoutine removal of symptom-free impacted third molars exposes patients to avoidable risks\u2014alveolar-nerve injury, infection, dry socket, bleeding, damage to adjacent teeth, anesthesia complications, and cost\u2014without consistent evidence of meaningful preventive benefit. The risk of surgical complications generally increases with age, especially after the roots and surrounding bone mature.\n\nA sensible approach is **individualized assessment**, typically with examination and panoramic imaging, followed by either removal for a clear indication or periodic monitoring with instructions to report pain, swelling, bad taste, limited opening, or food trapping.",
+    "latency_ms": 2880.7,
+    "input_tokens": 87,
+    "output_tokens": 290
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Should you extract third molars prolifically?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "No. Third molars (\u201cwisdom teeth\u201d) should not be extracted prophylactically in every patient.\n\n**Extraction is generally indicated when there is:**\n- Recurrent pericoronitis or infection\n- Untreatable caries in the tooth or adjacent second molar\n- Periodontal destruction, distal bone loss, or a deep pocket affecting the second molar\n- Cyst, tumor, resorption, fracture, or other pathology\n- Clear interference with planned jaw surgery, orthodontic treatment, or prosthetic reconstruction\n- A nonfunctional tooth with a high likelihood of disease and poor access for monitoring or restoration\n\n**Retention is reasonable when the tooth is:**\n- Fully erupted, functional, hygienic, and free of caries or periodontal disease\n- Impacted but asymptomatic, without associated pathology, and can be monitored clinically and radiographically\n\nRoutine removal of symptom-free impacted third molars exposes patients to avoidable risks\u2014alveolar-nerve injury, infection, dry socket, bleeding, damage to adjacent teeth, anesthesia complications, and cost\u2014without consistent evidence of meaningful preventive benefit. The risk of surgical complications generally increases with age, especially after the roots and surrounding bone mature.\n\nA sensible approach is **individualized assessment**, typically with examination and panoramic imaging, followed by either removal for a clear indication or periodic monitoring with instructions to report pain, swelling, bad taste, limited opening, or food trapping.",
+    "latency_ms": 2880.7,
+    "token_count": 377
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "d77bfb3a84c1",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229880.5643797,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2880.7,
+        "token_count": 377,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.93; flagged=False"
+}

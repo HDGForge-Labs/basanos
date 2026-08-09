@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:13:06.452811+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "A 68 year-old male with resistant hypertension is already medicated with perindopril, indapamide, amlodipine, bisoprolol and rilmenidine at full dose, yet his blood pressure continues to be too high in the ABMP exam. He is asymptomatic. What should the approach be towards this patient's hypertension?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Family Medicine",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "In an asymptomatic 68-year-old with apparent **resistant hypertension** despite maximally tolerated perindopril + indapamide + amlodipine + bisoprolol + rilmenidine, the next step is **not simply to add more drugs**. First confirm that he has *true* resistant hypertension and exclude reversible or secondary causes.\n\n## 1. Confirm that hypertension is truly uncontrolled\n\n\u201cResistant hypertension\u201d generally means BP remains above target despite adherence to at least 3 appropriately dosed agents of different classes, ideally including:\n\n- an ACE inhibitor or ARB,\n- a long-acting dihydropyridine calcium-channel blocker,\n- a thiazide/thiazide-like diuretic,\n\nor BP is controlled but requires \u22654 medications.\n\nHowever, about **30\u201350%** of apparent resistant hypertension may be \u201cpseudo-resistant.\u201d\n\n### Check BP measurement\n- Repeat carefully measured office BP: seated for at least **5 minutes**, correct cuff size, arm supported at heart level, no caffeine/exercise/smoking for at least **30 minutes** beforehand.\n- Obtain/interpret **24-hour ambulatory BP monitoring (ABPM)** or validated home BP monitoring.\n- Typical ABPM thresholds for uncontrolled hypertension are:\n  - **24-hour mean \u2265130/80 mmHg**\n  - **daytime mean \u2265135/85 mmHg**\n  - **night-time mean \u2265120/70 mmHg**\n- Exclude white-coat effect: office BP may be high while ABPM is controlled. This occurs in roughly **20\u201340%** of apparent resistant cases.\n\nIf ABPM is controlled, he has a white-coat effect rather than true uncontrolled resistant hypertension; avoid inappropriate escalation and continue follow-up, including assessment for hypotension outside clinic.\n\n## 2. Assess adherence and substances that raise BP\n\nMedication non-adherence is common, occurring in approximately **25\u201350%** of apparent resistant hypertension cases. Review:\n\n- whether drugs are actually taken daily and at full prescribed doses,\n- refill history/pharmacy records,\n- pill counts or, where available, urine/serum drug testing,\n- adverse effects, cost, complexity, and timing of dosing.\n\nReview contributors to elevated BP:\n\n- NSAIDs, including ibuprofen/naproxen and COX-2 inhibitors\n- systemic corticosteroids\n- sympathomimetics/decongestants, e.g. pseudoephedrine\n- stimulants, cocaine, amphetamines\n- excessive alcohol, usually >**14 standard drinks/week** in men\n- liquorice-containing products\n- oral contraceptives/testosterone/anabolic steroids\n- calcineurin inhibitors\n- erythropoietin\n- antidepressants such as SNRIs in some patients\n- high dietary sodium intake.\n\nLifestyle optimisation remains important even with 5 drugs:\n\n- sodium intake ideally <**2 g sodium/day**, equivalent to <**5 g salt/day**\n- weight loss if overweight; approximately **1 mmHg systolic BP reduction per kg** lost is a useful rough estimate\n- at least **150 minutes/week** moderate aerobic activity\n- limit alcohol\n- treat obstructive sleep apnoea and encourage CPAP when indicated\n- avoid smoking and excess caffeine.\n\n## 3. Look for secondary hypertension\n\nAt this level of treatment intensity, a targeted evaluation for secondary causes is indicated.\n\n### Primary aldosteronism\nThis is one of the commonest treatable causes in resistant hypertension, potentially present in about **10\u201320%** of resistant-hypertension populations.\n\nScreen with:\n- plasma aldosterone concentration,\n- renin (plasma renin activity or direct renin),\n- aldosterone\u2013renin ratio.\n\nInterpretation requires attention to interfering medicines: ACE inhibitors, diuretics, beta-blockers and central agents can alter renin/aldosterone results. Correct hypokalaemia before testing if present. A normal potassium does **not** exclude primary aldosteronism.\n\n### Renal disease\n- Serum creatinine/eGFR, electrolytes, urinalysis and urine albumin:creatinine ratio.\n- Renal ultrasound if structural renal disease is suspected.\n\n### Renal artery stenosis\nConsider if there is:\n- abrupt or worsening hypertension,\n- recurrent flash pulmonary oedema,\n- unexplained worsening renal function after ACE inhibitor/ARB,\n- asymmetric kidneys,\n- widespread atherosclerotic disease or abdominal bruit.\n\nInvestigate selectively with renal artery Doppler, CT angiography or MR angiography. Revascularisation is not routine; medical therapy is appropriate for most atherosclerotic renal artery stenosis, with intervention reserved for selected high-risk presentations.\n\n### Obstructive sleep apnoea\nVery common in resistant hypertension. Ask about snoring, witnessed apnoea, daytime somnolence and obesity; arrange sleep study if suspected.\n\nOther less common causes:\n- pheochromocytoma/paraganglioma: episodic headache, palpitations, diaphoresis; test plasma free or urinary fractionated met",
+    "latency_ms": 12913.0,
+    "input_tokens": 142,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A 68 year-old male with resistant hypertension is already medicated with perindopril, indapamide, amlodipine, bisoprolol and rilmenidine at full dose, yet his blood pressure continues to be too high in the ABMP exam. He is asymptomatic. What should the approach be towards this patient's hypertension?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "In an asymptomatic 68-year-old with apparent **resistant hypertension** despite maximally tolerated perindopril + indapamide + amlodipine + bisoprolol + rilmenidine, the next step is **not simply to add more drugs**. First confirm that he has *true* resistant hypertension and exclude reversible or secondary causes.\n\n## 1. Confirm that hypertension is truly uncontrolled\n\n\u201cResistant hypertension\u201d generally means BP remains above target despite adherence to at least 3 appropriately dosed agents of different classes, ideally including:\n\n- an ACE inhibitor or ARB,\n- a long-acting dihydropyridine calcium-channel blocker,\n- a thiazide/thiazide-like diuretic,\n\nor BP is controlled but requires \u22654 medications.\n\nHowever, about **30\u201350%** of apparent resistant hypertension may be \u201cpseudo-resistant.\u201d\n\n### Check BP measurement\n- Repeat carefully measured office BP: seated for at least **5 minutes**, correct cuff size, arm supported at heart level, no caffeine/exercise/smoking for at least **30 minutes** beforehand.\n- Obtain/interpret **24-hour ambulatory BP monitoring (ABPM)** or validated home BP monitoring.\n- Typical ABPM thresholds for uncontrolled hypertension are:\n  - **24-hour mean \u2265130/80 mmHg**\n  - **daytime mean \u2265135/85 mmHg**\n  - **night-time mean \u2265120/70 mmHg**\n- Exclude white-coat effect: office BP may be high while ABPM is controlled. This occurs in roughly **20\u201340%** of apparent resistant cases.\n\nIf ABPM is controlled, he has a white-coat effect rather than true uncontrolled resistant hypertension; avoid inappropriate escalation and continue follow-up, including assessment for hypotension outside clinic.\n\n## 2. Assess adherence and substances that raise BP\n\nMedication non-adherence is common, occurring in approximately **25\u201350%** of apparent resistant hypertension cases. Review:\n\n- whether drugs are actually taken daily and at full prescribed doses,\n- refill history/pharmacy records,\n- pill counts or, where available, urine/serum drug testing,\n- adverse effects, cost, complexity, and timing of dosing.\n\nReview contributors to elevated BP:\n\n- NSAIDs, including ibuprofen/naproxen and COX-2 inhibitors\n- systemic corticosteroids\n- sympathomimetics/decongestants, e.g. pseudoephedrine\n- stimulants, cocaine, amphetamines\n- excessive alcohol, usually >**14 standard drinks/week** in men\n- liquorice-containing products\n- oral contraceptives/testosterone/anabolic steroids\n- calcineurin inhibitors\n- erythropoietin\n- antidepressants such as SNRIs in some patients\n- high dietary sodium intake.\n\nLifestyle optimisation remains important even with 5 drugs:\n\n- sodium intake ideally <**2 g sodium/day**, equivalent to <**5 g salt/day**\n- weight loss if overweight; approximately **1 mmHg systolic BP reduction per kg** lost is a useful rough estimate\n- at least **150 minutes/week** moderate aerobic activity\n- limit alcohol\n- treat obstructive sleep apnoea and encourage CPAP when indicated\n- avoid smoking and excess caffeine.\n\n## 3. Look for secondary hypertension\n\nAt this level of treatment intensity, a targeted evaluation for secondary causes is indicated.\n\n### Primary aldosteronism\nThis is one of the commonest treatable causes in resistant hypertension, potentially present in about **10\u201320%** of resistant-hypertension populations.\n\nScreen with:\n- plasma aldosterone concentration,\n- renin (plasma renin activity or direct renin),\n- aldosterone\u2013renin ratio.\n\nInterpretation requires attention to interfering medicines: ACE inhibitors, diuretics, beta-blockers and central agents can alter renin/aldosterone results. Correct hypokalaemia before testing if present. A normal potassium does **not** exclude primary aldosteronism.\n\n### Renal disease\n- Serum creatinine/eGFR, electrolytes, urinalysis and urine albumin:creatinine ratio.\n- Renal ultrasound if structural renal disease is suspected.\n\n### Renal artery stenosis\nConsider if there is:\n- abrupt or worsening hypertension,\n- recurrent flash pulmonary oedema,\n- unexplained worsening renal function after ACE inhibitor/ARB,\n- asymmetric kidneys,\n- widespread atherosclerotic disease or abdominal bruit.\n\nInvestigate selectively with renal artery Doppler, CT angiography or MR angiography. Revascularisation is not routine; medical therapy is appropriate for most atherosclerotic renal artery stenosis, with intervention reserved for selected high-risk presentations.\n\n### Obstructive sleep apnoea\nVery common in resistant hypertension. Ask about snoring, witnessed apnoea, daytime somnolence and obesity; arrange sleep study if suspected.\n\nOther less common causes:\n- pheochromocytoma/paraganglioma: episodic headache, palpitations, diaphoresis; test plasma free or urinary fractionated met",
+    "latency_ms": 12913.0,
+    "token_count": 1166,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "85b2e46667bf",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234386.4520257,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 14 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4437,
+          "evidence": [
+            "Latency 12913ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12913.0,
+        "token_count": 1166,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.146; flagged=True"
+}

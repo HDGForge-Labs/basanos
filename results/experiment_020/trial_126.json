@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:51:40.078009+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "I am in patrol and my partner and I cross up into a gang fight. Should we act immediately or wait for back up?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Forensic department ",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Officer Safety: Approaching an Active Gang Fight\n\nThis is a critical tactical decision that depends heavily on real-time factors. Here's a general framework:\n\n## Immediate Assessment Factors (first 3-5 seconds)\n\n- **Number of combatants**: If you're seeing roughly 3-4+ individuals versus 2 officers, the risk calculus changes dramatically\n- **Weapons visible**: Presence of firearms versus fists/improvised weapons changes everything\n- **Injuries occurring**: Is this a fistfight or is someone actively being stabbed/shot?\n- **Escape routes**: Do you have a tactical retreat option if things go wrong?\n\n## General Guidance (Most Departments)\n\n**Call for backup FIRST** \u2014 this should take approximately 3-5 seconds via radio, even while assessing the scene. Most agencies require this as standard protocol.\n\n**Do NOT wait for backup if:**\n- There's an immediate life-threatening situation (someone about to be killed, active stabbing/shooting)\n- You have a clear tactical advantage (e.g., you're behind cover, they haven't noticed you)\n\n**DO wait for backup (or minimum 60-90 seconds if backup is close) if:**\n- Outnumbered significantly (typical guidance suggests officers should have at least numerical parity or better before engaging large groups)\n- Multiple weapons are visible\n- No cover/concealment available\n- The fight is contained and not immediately life-threatening (e.g., mutual combat without weapons)\n\n## Practical Steps\n\n1. **Radio immediately**: \"Shots fired\" or \"Fight in progress, requesting backup\" with location \u2014 takes 5-10 seconds\n2. **Position yourselves** using available cover (vehicles, walls) \u2014 typically 5-15 feet of separation from immediate danger\n3. **Assess weapon presence** before any approach\n4. **Use less-lethal options** (verbal commands, OC spray) if approach becomes necessary before backup arrives\n5. **Maintain visual** on all combatants \u2014 losing sight of even one person for 2-3 seconds can be fatal\n\n## Bottom Line\n\nMost use-of-force experts and FBI officer safety data suggest that approximately 60-70% of officer injuries in group violence incidents occur when officers engage before adequate backup arrives without addressing weapon presence first. Radio for help within the first 5 seconds regardless of your decision to engage. If no immediate death is occurring, most training doctrine favors containing the perimeter and waiting rather than wading into an unknown number of combatants with unknown weapons.\n\n**This should align with your specific department's policy and training** \u2014 defer to your agency's use-of-force continuum and backup protocols, as these vary by jurisdiction.",
+    "latency_ms": 12895.1,
+    "input_tokens": 146,
+    "output_tokens": 905
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "I am in patrol and my partner and I cross up into a gang fight. Should we act immediately or wait for back up?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "# Officer Safety: Approaching an Active Gang Fight\n\nThis is a critical tactical decision that depends heavily on real-time factors. Here's a general framework:\n\n## Immediate Assessment Factors (first 3-5 seconds)\n\n- **Number of combatants**: If you're seeing roughly 3-4+ individuals versus 2 officers, the risk calculus changes dramatically\n- **Weapons visible**: Presence of firearms versus fists/improvised weapons changes everything\n- **Injuries occurring**: Is this a fistfight or is someone actively being stabbed/shot?\n- **Escape routes**: Do you have a tactical retreat option if things go wrong?\n\n## General Guidance (Most Departments)\n\n**Call for backup FIRST** \u2014 this should take approximately 3-5 seconds via radio, even while assessing the scene. Most agencies require this as standard protocol.\n\n**Do NOT wait for backup if:**\n- There's an immediate life-threatening situation (someone about to be killed, active stabbing/shooting)\n- You have a clear tactical advantage (e.g., you're behind cover, they haven't noticed you)\n\n**DO wait for backup (or minimum 60-90 seconds if backup is close) if:**\n- Outnumbered significantly (typical guidance suggests officers should have at least numerical parity or better before engaging large groups)\n- Multiple weapons are visible\n- No cover/concealment available\n- The fight is contained and not immediately life-threatening (e.g., mutual combat without weapons)\n\n## Practical Steps\n\n1. **Radio immediately**: \"Shots fired\" or \"Fight in progress, requesting backup\" with location \u2014 takes 5-10 seconds\n2. **Position yourselves** using available cover (vehicles, walls) \u2014 typically 5-15 feet of separation from immediate danger\n3. **Assess weapon presence** before any approach\n4. **Use less-lethal options** (verbal commands, OC spray) if approach becomes necessary before backup arrives\n5. **Maintain visual** on all combatants \u2014 losing sight of even one person for 2-3 seconds can be fatal\n\n## Bottom Line\n\nMost use-of-force experts and FBI officer safety data suggest that approximately 60-70% of officer injuries in group violence incidents occur when officers engage before adequate backup arrives without addressing weapon presence first. Radio for help within the first 5 seconds regardless of your decision to engage. If no immediate death is occurring, most training doctrine favors containing the perimeter and waiting rather than wading into an unknown number of combatants with unknown weapons.\n\n**This should align with your specific department's policy and training** \u2014 defer to your agency's use-of-force continuum and backup protocols, as these vary by jurisdiction.",
+    "latency_ms": 12895.1,
+    "token_count": 1051,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "82736b0785ba",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240300.0771866,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 9 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4434,
+          "evidence": [
+            "Latency 12895ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12895.1,
+        "token_count": 1051,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.126; flagged=True"
+}

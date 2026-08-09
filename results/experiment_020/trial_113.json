@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:49:02.045796+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What type of health supplies require approbation?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Medical devices",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Health Supplies Requiring Regulatory Approval\n\nHealth-related products fall into several regulatory categories, each with distinct approval pathways, typically overseen by agencies like the FDA (U.S.), EMA (Europe), or equivalent national bodies. Here's a breakdown:\n\n## 1. Prescription Pharmaceuticals\n- **Requires**: New Drug Application (NDA) or Biologics License Application (BLA)\n- **Timeline**: Approximately 10-15 years from discovery to market; FDA review alone takes about 10-12 months (standard) or roughly 6-8 months (priority review)\n- **Success rate**: Only about 10-12% of drugs entering Phase I trials receive final approval\n- **Cost**: Estimated at around $1-2.6 billion per approved drug, including failures\n\n## 2. Medical Devices\nClassified by risk level under FDA's three-tier system:\n- **Class I** (low risk, e.g., bandages, tongue depressors): About 95% exempt from premarket review\n- **Class II** (moderate risk, e.g., infusion pumps, contact lenses): Require 510(k) clearance; roughly 3,000-4,000 cleared annually; review takes approximately 90-180 days\n- **Class III** (high risk, e.g., pacemakers, implants): Require Premarket Approval (PMA); review can take 180 days to several years; approval rates are notably lower, often cited around 1-2% of submissions reaching this tier\n\n## 3. Vaccines\n- **Requires**: BLA submission with extensive clinical trial data\n- **Timeline**: Historically 10-15 years, though emergency authorizations (like COVID-19 vaccines) compressed this to approximately 11-12 months\n- **Trial phases**: Typically involve 20,000-40,000+ participants in Phase III trials\n\n## 4. Biologics (including gene/cell therapies)\n- **Requires**: BLA approval\n- **Additional oversight**: Often requires REMS (Risk Evaluation and Mitigation Strategy)\n- **Approval numbers**: FDA approves roughly 10-20 novel biologics annually\n\n## 5. In Vitro Diagnostics (IVDs)\n- **Requires**: 510(k), De Novo, or PMA p",
+    "latency_ms": 11659.6,
+    "input_tokens": 122,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What type of health supplies require approbation?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Health Supplies Requiring Regulatory Approval\n\nHealth-related products fall into several regulatory categories, each with distinct approval pathways, typically overseen by agencies like the FDA (U.S.), EMA (Europe), or equivalent national bodies. Here's a breakdown:\n\n## 1. Prescription Pharmaceuticals\n- **Requires**: New Drug Application (NDA) or Biologics License Application (BLA)\n- **Timeline**: Approximately 10-15 years from discovery to market; FDA review alone takes about 10-12 months (standard) or roughly 6-8 months (priority review)\n- **Success rate**: Only about 10-12% of drugs entering Phase I trials receive final approval\n- **Cost**: Estimated at around $1-2.6 billion per approved drug, including failures\n\n## 2. Medical Devices\nClassified by risk level under FDA's three-tier system:\n- **Class I** (low risk, e.g., bandages, tongue depressors): About 95% exempt from premarket review\n- **Class II** (moderate risk, e.g., infusion pumps, contact lenses): Require 510(k) clearance; roughly 3,000-4,000 cleared annually; review takes approximately 90-180 days\n- **Class III** (high risk, e.g., pacemakers, implants): Require Premarket Approval (PMA); review can take 180 days to several years; approval rates are notably lower, often cited around 1-2% of submissions reaching this tier\n\n## 3. Vaccines\n- **Requires**: BLA submission with extensive clinical trial data\n- **Timeline**: Historically 10-15 years, though emergency authorizations (like COVID-19 vaccines) compressed this to approximately 11-12 months\n- **Trial phases**: Typically involve 20,000-40,000+ participants in Phase III trials\n\n## 4. Biologics (including gene/cell therapies)\n- **Requires**: BLA approval\n- **Additional oversight**: Often requires REMS (Risk Evaluation and Mitigation Strategy)\n- **Approval numbers**: FDA approves roughly 10-20 novel biologics annually\n\n## 5. In Vitro Diagnostics (IVDs)\n- **Requires**: 510(k), De Novo, or PMA p",
+    "latency_ms": 11659.6,
+    "token_count": 1146,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "5d191f26902d",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240142.044939,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 20 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4249,
+          "evidence": [
+            "Latency 11660ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11659.6,
+        "token_count": 1146,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.113; flagged=True"
+}

@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:57:04.974590+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What are the effects of bilateral contracts?",
+    "field": "Law",
+    "specific_field": "Common Law",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "A **bilateral contract** is an agreement in which both parties exchange promises\u2014for example, a seller promises to deliver goods and a buyer promises to pay.\n\nIts main legal effects are:\n\n1. **Creates reciprocal obligations**  \n   Each party becomes both a debtor and a creditor: each owes performance and is entitled to the other party\u2019s performance.\n\n2. **Makes the promises enforceable**  \n   Once validly formed\u2014offer, acceptance, consideration or another recognized basis, capacity, and lawful purpose\u2014either party can sue or seek another remedy if the other fails to perform.\n\n3. **Performance by one party may depend on the other\u2019s performance**  \n   In many bilateral contracts, obligations are concurrent or conditional. A buyer may refuse payment until delivery is tendered; a seller may refuse delivery until payment is made, depending on the contract terms.\n\n4. **Breach gives rise to remedies**  \n   If one party breaches, the other may seek:\n   - damages for financial loss,\n   - specific performance in appropriate cases, especially unique property,\n   - cancellation/rescission or termination for material breach,\n   - restitution of benefits already transferred,\n   - enforcement of contractual penalty or liquidated-damages provisions where valid.\n\n5. **Can allocate risk and define rights**  \n   The contract can specify price, timing, quality standards, warranties, risk of loss, confidentiality, indemnity, dispute resolution, and limits on liability.\n\n6. **May excuse or discharge duties in defined circumstances**  \n   Duties can end through full performance, mutual agreement, release, novation, impossibility, frustration of purpose, or a valid force-majeure clause.\n\n7. **Creates defenses and counterclaims**  \n   A party sued for nonperformance may assert defenses such as the other party\u2019s prior material breach, fraud, mistake, duress, illegality, lack of capacity, or failure of a condition precedent.\n\nIn short, a bilateral contract binds each side to perform its promise and gives each side legal remedies if the other side does not.",
+    "latency_ms": 5421.9,
+    "input_tokens": 86,
+    "output_tokens": 415
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the effects of bilateral contracts?",
+      "field": "Law"
+    },
+    "response": "A **bilateral contract** is an agreement in which both parties exchange promises\u2014for example, a seller promises to deliver goods and a buyer promises to pay.\n\nIts main legal effects are:\n\n1. **Creates reciprocal obligations**  \n   Each party becomes both a debtor and a creditor: each owes performance and is entitled to the other party\u2019s performance.\n\n2. **Makes the promises enforceable**  \n   Once validly formed\u2014offer, acceptance, consideration or another recognized basis, capacity, and lawful purpose\u2014either party can sue or seek another remedy if the other fails to perform.\n\n3. **Performance by one party may depend on the other\u2019s performance**  \n   In many bilateral contracts, obligations are concurrent or conditional. A buyer may refuse payment until delivery is tendered; a seller may refuse delivery until payment is made, depending on the contract terms.\n\n4. **Breach gives rise to remedies**  \n   If one party breaches, the other may seek:\n   - damages for financial loss,\n   - specific performance in appropriate cases, especially unique property,\n   - cancellation/rescission or termination for material breach,\n   - restitution of benefits already transferred,\n   - enforcement of contractual penalty or liquidated-damages provisions where valid.\n\n5. **Can allocate risk and define rights**  \n   The contract can specify price, timing, quality standards, warranties, risk of loss, confidentiality, indemnity, dispute resolution, and limits on liability.\n\n6. **May excuse or discharge duties in defined circumstances**  \n   Duties can end through full performance, mutual agreement, release, novation, impossibility, frustration of purpose, or a valid force-majeure clause.\n\n7. **Creates defenses and counterclaims**  \n   A party sued for nonperformance may assert defenses such as the other party\u2019s prior material breach, fraud, mistake, duress, illegality, lack of capacity, or failure of a condition precedent.\n\nIn short, a bilateral contract binds each side to perform its promise and gives each side legal remedies if the other side does not.",
+    "latency_ms": 5421.9,
+    "token_count": 501
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "393b24b71393",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233424.9738336,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 5421.9,
+        "token_count": 501,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.37; flagged=False"
+}

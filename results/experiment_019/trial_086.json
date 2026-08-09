@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T00:03:23.151824+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "A company fails to deliver the products the promised. How can they defend themselves against a breach of contract claim?",
+    "field": "Law",
+    "specific_field": "Commercial Law",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "A company sued for failure to deliver promised products can defend a breach-of-contract claim in several ways, depending on the contract terms and facts:\n\n1. **No enforceable contract existed**\n   - No valid offer and acceptance.\n   - The alleged promise was too vague to be enforceable (for example, no defined quantity, delivery date, price, or product specifications).\n   - The person who made the promise lacked authority to bind the company.\n   - A required written agreement was missing\u2014for example, where the Statute of Frauds requires a signed writing for a sale of goods worth $500 or more under UCC rules.\n\n2. **The company did not actually breach**\n   - It delivered conforming goods.\n   - Delivery was timely under the contract\u2019s actual terms.\n   - The customer prevented delivery, refused to accept goods, failed to provide shipping instructions, or did not make a required payment or deposit.\n   - The contract allowed substitutions, partial deliveries, revised dates, or cancellation under the circumstances.\n\n3. **The customer breached first or failed a condition**\n   - The buyer failed to pay, provide credit assurance, issue a purchase order, approve specifications, supply necessary information, or meet another condition precedent.\n   - A material prior breach by the customer may excuse the company\u2019s later performance.\n   - Under the UCC, a seller may suspend delivery if it has reasonable grounds for insecurity about the buyer\u2019s performance and the buyer fails to provide adequate assurance.\n\n4. **Force majeure or impossibility/frustration**\n   - A force-majeure clause may excuse or delay performance for events such as natural disasters, war, government restrictions, strikes, port closures, supply-chain disruptions, or severe shortages\u2014if the event falls within the clause and the company complied with notice and mitigation requirements.\n   - Even without such a clause, performance may be excused by impossibility, impracticability, or frustration of purpose where an unforeseeable event fundamentally prevented performance. For goods, UCC \u00a7 2-615 can excuse delay or non-delivery caused by contingencies whose nonoccurrence was a basic assumption of the contract.\n\n5. **The delivery obligation was modified, waived, or cancelled**\n   - The parties agreed to extend delivery dates, reduce quantities, substitute products, or cancel the order.\n   - The buyer waived strict compliance by accepting prior late deliveries or agreeing orally or in writing to a revised schedule.\n   - The contract may require modifications to be in writing, so the company should preserve emails, order amendments, and meeting records.\n\n6. **The buyer\u2019s claim is barred by contract limitations**\n   - A contractual limitation of liability may cap damages.\n   - An exclusive-remedy clause may limit the buyer to replacement goods, repair, refund, or cover costs.\n   - The contract may exclude consequential, incidental, lost-profit, or business-interruption damages.\n   - A notice-of-claim provision, short contractual limitations period, arbitration clause, or forum-selection clause may restrict the claim or require a different process.\n\n7. **The buyer cannot prove damages or failed to mitigate**\n   - The buyer must prove actual damages caused by the nondelivery.\n   - The company can argue the buyer could reasonably have obtained substitute products (\u201ccover\u201d) and failed to do so.\n   - Claimed lost profits may be too speculative, unforeseeable, or not within the parties\u2019 contemplation when contracting.\n   - The buyer may have received value from partial deliveries, alternative products, refunds, or resale opportunities that reduce damages.\n\n8. **The goods were unavailable due to allocation or commercial impracticability**\n   - If supply was genuinely constrained, a seller may sometimes allocate available inventory among customers in a fair and reasonable manner under UCC \u00a7 2-615.\n   - This defense is stronger where the shortage resulted from an unforeseen event rather than the company simply choosing to sell inventory to a more profitable customer.\n\n9. **The claim is procedurally defective**\n   - The lawsuit was filed too late under the applicable statute of limitations.\n   - The plaintiff sued the wrong legal entity.\n   - The plaintiff lacks standing, such as where it was not the contracting party or did not receive an assignment of rights.\n\nTo make these defenses effective, the company should preserve the signed contract, purchase orders, communications, delivery records, inventory and supplier records, force-majeure notices, internal decision records, and evidence of the customer\u2019s nonpayment or failure to cooperate. The strongest defense usually comes from the contract\u2019s exact delivery, delay, force-majeure, limitation-of-liability, notice, and remedy provisions.",
+    "latency_ms": 10804.7,
+    "input_tokens": 100,
+    "output_tokens": 931
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A company fails to deliver the products the promised. How can they defend themselves against a breach of contract claim?",
+      "field": "Law"
+    },
+    "response": "A company sued for failure to deliver promised products can defend a breach-of-contract claim in several ways, depending on the contract terms and facts:\n\n1. **No enforceable contract existed**\n   - No valid offer and acceptance.\n   - The alleged promise was too vague to be enforceable (for example, no defined quantity, delivery date, price, or product specifications).\n   - The person who made the promise lacked authority to bind the company.\n   - A required written agreement was missing\u2014for example, where the Statute of Frauds requires a signed writing for a sale of goods worth $500 or more under UCC rules.\n\n2. **The company did not actually breach**\n   - It delivered conforming goods.\n   - Delivery was timely under the contract\u2019s actual terms.\n   - The customer prevented delivery, refused to accept goods, failed to provide shipping instructions, or did not make a required payment or deposit.\n   - The contract allowed substitutions, partial deliveries, revised dates, or cancellation under the circumstances.\n\n3. **The customer breached first or failed a condition**\n   - The buyer failed to pay, provide credit assurance, issue a purchase order, approve specifications, supply necessary information, or meet another condition precedent.\n   - A material prior breach by the customer may excuse the company\u2019s later performance.\n   - Under the UCC, a seller may suspend delivery if it has reasonable grounds for insecurity about the buyer\u2019s performance and the buyer fails to provide adequate assurance.\n\n4. **Force majeure or impossibility/frustration**\n   - A force-majeure clause may excuse or delay performance for events such as natural disasters, war, government restrictions, strikes, port closures, supply-chain disruptions, or severe shortages\u2014if the event falls within the clause and the company complied with notice and mitigation requirements.\n   - Even without such a clause, performance may be excused by impossibility, impracticability, or frustration of purpose where an unforeseeable event fundamentally prevented performance. For goods, UCC \u00a7 2-615 can excuse delay or non-delivery caused by contingencies whose nonoccurrence was a basic assumption of the contract.\n\n5. **The delivery obligation was modified, waived, or cancelled**\n   - The parties agreed to extend delivery dates, reduce quantities, substitute products, or cancel the order.\n   - The buyer waived strict compliance by accepting prior late deliveries or agreeing orally or in writing to a revised schedule.\n   - The contract may require modifications to be in writing, so the company should preserve emails, order amendments, and meeting records.\n\n6. **The buyer\u2019s claim is barred by contract limitations**\n   - A contractual limitation of liability may cap damages.\n   - An exclusive-remedy clause may limit the buyer to replacement goods, repair, refund, or cover costs.\n   - The contract may exclude consequential, incidental, lost-profit, or business-interruption damages.\n   - A notice-of-claim provision, short contractual limitations period, arbitration clause, or forum-selection clause may restrict the claim or require a different process.\n\n7. **The buyer cannot prove damages or failed to mitigate**\n   - The buyer must prove actual damages caused by the nondelivery.\n   - The company can argue the buyer could reasonably have obtained substitute products (\u201ccover\u201d) and failed to do so.\n   - Claimed lost profits may be too speculative, unforeseeable, or not within the parties\u2019 contemplation when contracting.\n   - The buyer may have received value from partial deliveries, alternative products, refunds, or resale opportunities that reduce damages.\n\n8. **The goods were unavailable due to allocation or commercial impracticability**\n   - If supply was genuinely constrained, a seller may sometimes allocate available inventory among customers in a fair and reasonable manner under UCC \u00a7 2-615.\n   - This defense is stronger where the shortage resulted from an unforeseen event rather than the company simply choosing to sell inventory to a more profitable customer.\n\n9. **The claim is procedurally defective**\n   - The lawsuit was filed too late under the applicable statute of limitations.\n   - The plaintiff sued the wrong legal entity.\n   - The plaintiff lacks standing, such as where it was not the contracting party or did not receive an assignment of rights.\n\nTo make these defenses effective, the company should preserve the signed contract, purchase orders, communications, delivery records, inventory and supplier records, force-majeure notices, internal decision records, and evidence of the customer\u2019s nonpayment or failure to cooperate. The strongest defense usually comes from the contract\u2019s exact delivery, delay, force-majeure, limitation-of-liability, notice, and remedy provisions.",
+    "latency_ms": 10804.7,
+    "token_count": 1031
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "f6d8c8534c56",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786233803.1510208,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4121,
+          "evidence": [
+            "Latency 10805ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 10804.7,
+        "token_count": 1031,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.86; flagged=False"
+}

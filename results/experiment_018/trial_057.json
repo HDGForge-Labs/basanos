@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:55:34.945895+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "In a situation where an allied unit detects a probable or eminent attack on another allied unit, what do the rules of engagement dictate?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Military communications",
+    "question_type": "Open-ended question that is potentially ambiguous| Summarization of information on a topic| Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Rules of engagement (ROE) generally require the detecting allied unit to **warn and promptly report the threat**, **share all relevant intelligence**, and **take immediate defensive action if necessary to protect the threatened unit or other personnel**.\n\nTypically, the unit may:\n\n- Notify the threatened unit and its higher headquarters through established command channels.\n- Attempt de-escalation or issue a warning where feasible.\n- Use force, including **deadly force**, when it is reasonably necessary to defend the threatened allied unit against an imminent attack.\n- Use only the force necessary and proportionate to the threat, while complying with distinction, proportionality, and precautions under the law of armed conflict.\n- Coordinate with the threatened unit and obtain higher authorization when time permits\u2014but **prior approval is normally not required for an immediate defensive response** if delay would endanger lives.\n\nThe exact authority depends on the mission, applicable ROE, national caveats, and the definition of \u201chostile act\u201d or \u201chostile intent.\u201d ROE are mission-specific; they do not automatically authorize every allied unit to intervene offensively. In short: **report, warn if practicable, coordinate, and act decisively in self-defense or defense of the threatened allied force when the attack is imminent.**",
+    "latency_ms": 2871.3,
+    "input_tokens": 104,
+    "output_tokens": 256
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "In a situation where an allied unit detects a probable or eminent attack on another allied unit, what do the rules of engagement dictate?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "Rules of engagement (ROE) generally require the detecting allied unit to **warn and promptly report the threat**, **share all relevant intelligence**, and **take immediate defensive action if necessary to protect the threatened unit or other personnel**.\n\nTypically, the unit may:\n\n- Notify the threatened unit and its higher headquarters through established command channels.\n- Attempt de-escalation or issue a warning where feasible.\n- Use force, including **deadly force**, when it is reasonably necessary to defend the threatened allied unit against an imminent attack.\n- Use only the force necessary and proportionate to the threat, while complying with distinction, proportionality, and precautions under the law of armed conflict.\n- Coordinate with the threatened unit and obtain higher authorization when time permits\u2014but **prior approval is normally not required for an immediate defensive response** if delay would endanger lives.\n\nThe exact authority depends on the mission, applicable ROE, national caveats, and the definition of \u201chostile act\u201d or \u201chostile intent.\u201d ROE are mission-specific; they do not automatically authorize every allied unit to intervene offensively. In short: **report, warn if practicable, coordinate, and act decisively in self-defense or defense of the threatened allied force when the attack is imminent.**",
+    "latency_ms": 2871.3,
+    "token_count": 360
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "f25ec3127b85",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229734.9450765,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2871.3,
+        "token_count": 360,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.57; flagged=False"
+}

@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:42:32.163432+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What the exact differences are between the male and the female brain?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "psychiatrist",
+    "question_type": "Summarization of information on a topic| Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Male vs. Female Brain Differences\n\nThe differences are real but smaller and more overlapping than popular science claims suggest. Here's the actual data:\n\n## Size and Structure\n\n- **Total volume**: Male brains average ~11-12% larger than female brains, even after controlling for body size. This is roughly proportional to overall body size differences, not intelligence.\n- **Neuron density**: Female brains have higher neuronal density in some cortical areas despite smaller overall volume\u2014so raw size doesn't translate to processing capacity.\n\n## Specific Regions (Average Differences)\n\n- **Amygdala**: Slightly larger in males on average; implicated in some studies showing different activation patterns during fear/threat processing (though findings are inconsistent across studies)\n- **Hippocampus**: Some studies show proportionally larger relative volume in females, linked to verbal memory tasks\u2014but this finding doesn't replicate consistently\n- **Corpus callosum**: Older claims (1980s-90s) that women have proportionally larger corpus callosum (better hemisphere communication) have **not held up well** in meta-analyses with larger samples\n- **Gray vs. white matter ratios**: Males tend to have more white matter relative to gray matter; unclear functional significance\n\n## What the \"Connectome\" Studies Found\n\nThe widely-cited 2014 Penn study (Ingalhalikar et al.) claimed male brains show more front-to-back connectivity (within hemispheres) while female brains show more left-right connectivity (between hemispheres). This got massive media coverage as \"proof\" men are wired for perception/action and women for analytical/intuitive processing.\n\n**Problem**: This study has been heavily criticized for:\n- Not controlling for brain size (larger brains naturally show different connectivity patterns regardless of sex)\n- Overinterpreting statistical differences that showed enormous overlap between groups\n- The follow-up literature has largely failed to replicate clean sex-based connectivity signatures\n\n## The Critical Statistical Reality\n\nThis is the part most popular coverage omits: **for virtually every brain measure studied, the distributions between men and women overlap by 65-90%.**\n\nDaphna Joel's 2015 study analyzing MRI data from over 1,400 brains found that when you look at multiple brain regions simultaneously, **only 0-8% of brains show consistently \"male\" or \"female\" patterns across all measured regions**. Most brains are mosaics of features found more commonly in one sex or the other. You cannot look at a brain scan and reliably determine sex from structure alone in the way you could, say, identify sex from a pelvic bone.\n\n## Hormonal Influences (More Robust Findings)\n\n- **Prenatal testosterone exposure** does influence brain development\u2014seen clearly in conditions like congenital adrenal hyperplasia (CAH), where girls exposed to higher prenatal androgens show more male-typical play behavior and some cognitive differences\n- **Puberty and cyclical hormones**: Estrogen and progesterone fluctuations affect hippocampal plasticity, mood-regulation circuits; documented in menstrual cycle neu",
+    "latency_ms": 13857.4,
+    "input_tokens": 131,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What the exact differences are between the male and the female brain?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Male vs. Female Brain Differences\n\nThe differences are real but smaller and more overlapping than popular science claims suggest. Here's the actual data:\n\n## Size and Structure\n\n- **Total volume**: Male brains average ~11-12% larger than female brains, even after controlling for body size. This is roughly proportional to overall body size differences, not intelligence.\n- **Neuron density**: Female brains have higher neuronal density in some cortical areas despite smaller overall volume\u2014so raw size doesn't translate to processing capacity.\n\n## Specific Regions (Average Differences)\n\n- **Amygdala**: Slightly larger in males on average; implicated in some studies showing different activation patterns during fear/threat processing (though findings are inconsistent across studies)\n- **Hippocampus**: Some studies show proportionally larger relative volume in females, linked to verbal memory tasks\u2014but this finding doesn't replicate consistently\n- **Corpus callosum**: Older claims (1980s-90s) that women have proportionally larger corpus callosum (better hemisphere communication) have **not held up well** in meta-analyses with larger samples\n- **Gray vs. white matter ratios**: Males tend to have more white matter relative to gray matter; unclear functional significance\n\n## What the \"Connectome\" Studies Found\n\nThe widely-cited 2014 Penn study (Ingalhalikar et al.) claimed male brains show more front-to-back connectivity (within hemispheres) while female brains show more left-right connectivity (between hemispheres). This got massive media coverage as \"proof\" men are wired for perception/action and women for analytical/intuitive processing.\n\n**Problem**: This study has been heavily criticized for:\n- Not controlling for brain size (larger brains naturally show different connectivity patterns regardless of sex)\n- Overinterpreting statistical differences that showed enormous overlap between groups\n- The follow-up literature has largely failed to replicate clean sex-based connectivity signatures\n\n## The Critical Statistical Reality\n\nThis is the part most popular coverage omits: **for virtually every brain measure studied, the distributions between men and women overlap by 65-90%.**\n\nDaphna Joel's 2015 study analyzing MRI data from over 1,400 brains found that when you look at multiple brain regions simultaneously, **only 0-8% of brains show consistently \"male\" or \"female\" patterns across all measured regions**. Most brains are mosaics of features found more commonly in one sex or the other. You cannot look at a brain scan and reliably determine sex from structure alone in the way you could, say, identify sex from a pelvic bone.\n\n## Hormonal Influences (More Robust Findings)\n\n- **Prenatal testosterone exposure** does influence brain development\u2014seen clearly in conditions like congenital adrenal hyperplasia (CAH), where girls exposed to higher prenatal androgens show more male-typical play behavior and some cognitive differences\n- **Puberty and cyclical hormones**: Estrogen and progesterone fluctuations affect hippocampal plasticity, mood-regulation circuits; documented in menstrual cycle neu",
+    "latency_ms": 13857.4,
+    "token_count": 1155
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "6da2733641dc",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239752.1626513,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4579,
+          "evidence": [
+            "Latency 13857ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13857.4,
+        "token_count": 1155,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.81; flagged=False"
+}

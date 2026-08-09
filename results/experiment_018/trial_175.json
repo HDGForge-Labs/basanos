@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:05:38.280120+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is the condition that is associated with Carhartt\u2019s Notch?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Audiology",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Carhartt\u2019s **notch**\u2014more commonly called **Carhartt\u2019s notch** or **Carhart notch**\u2014is associated with **otosclerosis**, a condition causing abnormal bone formation and fixation of the stapes in the middle ear.\n\nOn an **audiogram**, it appears as a dip in **bone-conduction hearing thresholds**, classically around **2,000 Hz**\u2014often approximately **5\u201325 dB**, though the size can vary. It is considered a classic, but not completely specific, finding of otosclerosis.",
+    "latency_ms": 1502.6,
+    "input_tokens": 87,
+    "output_tokens": 115
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the condition that is associated with Carhartt\u2019s Notch?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Carhartt\u2019s **notch**\u2014more commonly called **Carhartt\u2019s notch** or **Carhart notch**\u2014is associated with **otosclerosis**, a condition causing abnormal bone formation and fixation of the stapes in the middle ear.\n\nOn an **audiogram**, it appears as a dip in **bone-conduction hearing thresholds**, classically around **2,000 Hz**\u2014often approximately **5\u201325 dB**, though the size can vary. It is considered a classic, but not completely specific, finding of otosclerosis.",
+    "latency_ms": 1502.6,
+    "token_count": 202,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "068c7d4730d2",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230338.279242,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 3 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 1502.6,
+        "token_count": 202,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.175; flagged=True"
+}

@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:20:29.108871+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What are the potential consequences of a borrower breaching a covenant under the facility agreement?",
+    "field": "Law",
+    "specific_field": "Banking law",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "A covenant breach under a facility agreement can have consequences ranging from a short cure period and increased reporting obligations to immediate acceleration of the entire debt. The exact outcome depends on the wording of the agreement, the type of covenant, materiality thresholds, grace periods, and whether lenders agree to waive the breach.\n\nCommon consequences include:\n\n1. **Requirement to remedy the breach**\n   - Many agreements allow a cure period, often around **5\u201330 business days** for administrative or reporting breaches and approximately **10\u201360 days** for certain financial covenant breaches.\n   - For example, a borrower that fails to deliver quarterly financial statements by the required date may have about **10\u201330 days** to provide them.\n   - Some breaches cannot realistically be cured, such as an unauthorised disposal of a key asset, an impermissible acquisition, or a breach of a negative pledge.\n\n2. **Event of Default**\n   - If the breach is not remedied within any applicable grace period, it will commonly become an **Event of Default**.\n   - Certain covenants may be classified as \u201cimmediate\u201d defaults, meaning no cure period applies\u2014for example, failure to pay principal or interest when due, insolvency-related events, fraud, or intentional misrepresentation.\n   - A technical breach may still be an Event of Default even if the lender has suffered no actual financial loss.\n\n3. **Lender waiver, consent, or amendment process**\n   - The borrower may request a waiver before or after the breach. A waiver can be:\n     - a one-off waiver for a specific breach;\n     - a temporary waiver, perhaps until the next testing date;\n     - an amendment to the covenant or financial thresholds.\n   - Lenders often require a fee. In mid-market finance, waiver or amendment fees may be around **0.25%\u20131.00%** of the relevant commitments or outstanding loans, though this varies widely.\n   - Lenders may also require stricter terms, such as lower leverage limits, increased interest margins, additional security, equity injections, cash retention, or more frequent reporting.\n   - In syndicated facilities, the required lender approval level is commonly **more than 50%**, **66\u2154%**, or **75%** of commitments, depending on the provision. Certain \u201call lender\u201d matters\u2014such as changing principal amounts, maturity, or core payment terms\u2014may require **100%** consent.\n\n4. **Increased pricing or default interest**\n   - Once an Event of Default is continuing, the agreement may permit the lender to charge default interest.\n   - Default interest is often the ordinary interest rate plus approximately **1%\u20132% per annum**, though some agreements use higher margins.\n   - A lender may also increase the applicable margin, remove pricing discounts, or require fees for continued forbearance.\n\n5. **Cancellation of undrawn commitments**\n   - The lenders may cancel all or part of available but undrawn commitments.\n   - This can be particularly damaging where the borrower relies on a revolving credit facility, overdraft, working-capital line, letter-of-credit facility, or capex facility.\n   - The borrower may be unable to fund payroll, inventory purchases, tax liabilities, seasonal working-capital needs, or planned acquisitions.\n\n6. **Acceleration of the debt**\n   - Following an Event of Default, lenders may declare all outstanding loans, accrued interest, fees, and other amounts immediately due and payable.\n   - This is often called **acceleration**.\n   - For example, a borrower with \u00a325 million outstanding under a \u00a340 million revolving facility could be required to repay the full \u00a325 million immediately, rather than over the remaining contractual term.\n   - In some facilities, acceleration requires instructions from \u201cMajority Lenders\u201d; in bilateral lending, the single lender will generally control the decision.\n\n7. **Enforcement of security**\n   - If the facility is secured, lenders may enforce security after default, subject to the facility terms and applicable law.\n   - Security may cover assets such as bank accounts, receivables, inventory, real estate, intellectual property, shares in subsidiaries, plant and machinery, and insurance proceeds.\n   - Enforcement options may include appointing a receiver, taking control of charged assets, collecting receivables directly, enforcing share pledges, or selling secured assets.\n   - The value achieved in enforcement may be significantly lower than ordinary-market value, especially in a distressed sale.\n\n8. **Cash control and account restrictions**\n   - Lenders may impose cash-management measures, including:\n     - blocked or controlled bank accounts;\n     - cash sweeps, under which surplus cash must repay debt;\n     - lockbox arrangements for customer receipts;\n     - restrictions on transfers within the group;\n     - limits on capital expenditure, acquisitions, dividends, management fees, or shareholder loans.\n   - A cash sweep may require, for example, **50%\u2013100%** of excess cash flow, asset-sale proceeds, insurance recoveries, or equity proceeds to be applied toward repayment.\n\n9. **Cross-default",
+    "latency_ms": 14842.6,
+    "input_tokens": 89,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the potential consequences of a borrower breaching a covenant under the facility agreement?",
+      "field": "Law"
+    },
+    "response": "A covenant breach under a facility agreement can have consequences ranging from a short cure period and increased reporting obligations to immediate acceleration of the entire debt. The exact outcome depends on the wording of the agreement, the type of covenant, materiality thresholds, grace periods, and whether lenders agree to waive the breach.\n\nCommon consequences include:\n\n1. **Requirement to remedy the breach**\n   - Many agreements allow a cure period, often around **5\u201330 business days** for administrative or reporting breaches and approximately **10\u201360 days** for certain financial covenant breaches.\n   - For example, a borrower that fails to deliver quarterly financial statements by the required date may have about **10\u201330 days** to provide them.\n   - Some breaches cannot realistically be cured, such as an unauthorised disposal of a key asset, an impermissible acquisition, or a breach of a negative pledge.\n\n2. **Event of Default**\n   - If the breach is not remedied within any applicable grace period, it will commonly become an **Event of Default**.\n   - Certain covenants may be classified as \u201cimmediate\u201d defaults, meaning no cure period applies\u2014for example, failure to pay principal or interest when due, insolvency-related events, fraud, or intentional misrepresentation.\n   - A technical breach may still be an Event of Default even if the lender has suffered no actual financial loss.\n\n3. **Lender waiver, consent, or amendment process**\n   - The borrower may request a waiver before or after the breach. A waiver can be:\n     - a one-off waiver for a specific breach;\n     - a temporary waiver, perhaps until the next testing date;\n     - an amendment to the covenant or financial thresholds.\n   - Lenders often require a fee. In mid-market finance, waiver or amendment fees may be around **0.25%\u20131.00%** of the relevant commitments or outstanding loans, though this varies widely.\n   - Lenders may also require stricter terms, such as lower leverage limits, increased interest margins, additional security, equity injections, cash retention, or more frequent reporting.\n   - In syndicated facilities, the required lender approval level is commonly **more than 50%**, **66\u2154%**, or **75%** of commitments, depending on the provision. Certain \u201call lender\u201d matters\u2014such as changing principal amounts, maturity, or core payment terms\u2014may require **100%** consent.\n\n4. **Increased pricing or default interest**\n   - Once an Event of Default is continuing, the agreement may permit the lender to charge default interest.\n   - Default interest is often the ordinary interest rate plus approximately **1%\u20132% per annum**, though some agreements use higher margins.\n   - A lender may also increase the applicable margin, remove pricing discounts, or require fees for continued forbearance.\n\n5. **Cancellation of undrawn commitments**\n   - The lenders may cancel all or part of available but undrawn commitments.\n   - This can be particularly damaging where the borrower relies on a revolving credit facility, overdraft, working-capital line, letter-of-credit facility, or capex facility.\n   - The borrower may be unable to fund payroll, inventory purchases, tax liabilities, seasonal working-capital needs, or planned acquisitions.\n\n6. **Acceleration of the debt**\n   - Following an Event of Default, lenders may declare all outstanding loans, accrued interest, fees, and other amounts immediately due and payable.\n   - This is often called **acceleration**.\n   - For example, a borrower with \u00a325 million outstanding under a \u00a340 million revolving facility could be required to repay the full \u00a325 million immediately, rather than over the remaining contractual term.\n   - In some facilities, acceleration requires instructions from \u201cMajority Lenders\u201d; in bilateral lending, the single lender will generally control the decision.\n\n7. **Enforcement of security**\n   - If the facility is secured, lenders may enforce security after default, subject to the facility terms and applicable law.\n   - Security may cover assets such as bank accounts, receivables, inventory, real estate, intellectual property, shares in subsidiaries, plant and machinery, and insurance proceeds.\n   - Enforcement options may include appointing a receiver, taking control of charged assets, collecting receivables directly, enforcing share pledges, or selling secured assets.\n   - The value achieved in enforcement may be significantly lower than ordinary-market value, especially in a distressed sale.\n\n8. **Cash control and account restrictions**\n   - Lenders may impose cash-management measures, including:\n     - blocked or controlled bank accounts;\n     - cash sweeps, under which surplus cash must repay debt;\n     - lockbox arrangements for customer receipts;\n     - restrictions on transfers within the group;\n     - limits on capital expenditure, acquisitions, dividends, management fees, or shareholder loans.\n   - A cash sweep may require, for example, **50%\u2013100%** of excess cash flow, asset-sale proceeds, insurance recoveries, or equity proceeds to be applied toward repayment.\n\n9. **Cross-default",
+    "latency_ms": 14842.6,
+    "token_count": 1113,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "dbe3c13d2606",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234829.1080513,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 9 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4726,
+          "evidence": [
+            "Latency 14843ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 14842.6,
+        "token_count": 1113,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.188; flagged=True"
+}

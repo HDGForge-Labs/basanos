@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:18:11.155158+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Why is the category of nurses in Italy little recognized unlike doctors?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "nurse ",
+    "question_type": "Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Nursing in Italy has historically been less socially and institutionally recognized than medicine for a mix of cultural, legal, organizational, and economic reasons. This is changing, but unevenly.\n\n### 1. A historically doctor-centered health system\nItaly\u2019s National Health Service, the **Servizio Sanitario Nazionale (SSN)**, was created in **1978** and developed around a strongly medical model: diagnosis, treatment decisions, prescriptions, and much of the organization of care are led by physicians.\n\nTraditionally, nurses were viewed mainly as executing medical orders rather than as autonomous clinical professionals. Although this legal framework has changed substantially since the **1990s**, public attitudes and workplace hierarchies often change more slowly than laws.\n\n### 2. Nursing was long seen as \u201cassistance\u201d rather than a profession\nFor decades, Italian nursing was associated with practical bedside care\u2014hygiene, basic assistance, administration of therapies, and support to doctors\u2014rather than with clinical assessment, care planning, patient education, prevention, and case management.\n\nA major legal turning point was:\n\n- **Ministerial Decree 739/1994**, which defined the professional profile of the nurse.\n- **Law 42/1999**, which removed the old concept of nursing as an \u201cauxiliary health profession.\u201d\n- **Law 251/2000**, which recognized nurses\u2019 professional autonomy, responsibility, management, education, and research roles.\n\nIn theory, these reforms mean Italian nurses are autonomous professionals responsible for nursing assessment, planning, implementation, and evaluation of care. In practice, many hospitals and local services still operate according to older, physician-dominated habits.\n\n### 3. Less education visibility and fewer advanced-practice roles\nItalian nurses now generally complete a **3-year university degree**\u2014a *Laurea in Infermieristica*, usually worth **180 ECTS credits**\u2014and must register with the professional nursing order, the **OPI** (*Ordine delle Professioni Infermieristiche*).\n\nHowever, Italy has been slower than countries such as the United States, Canada, the United Kingdom, and Australia in formally developing widespread advanced-practice nursing roles. For example, Italy has limited nationally standardized equivalents of:\n\n- Nurse practitioners with independent diagnosis and prescribing authority;\n- Advanced clinical nurse specialists with broad formal autonomy;\n- Nurse-led primary-care clinics on a large scale;\n- Prescribing nurses.\n\nItalian nurses generally cannot independently prescribe medicines or make medical diagnoses. This makes their expertise less visible to the public, because patients often associate professional authority with the ability to diagnose, prescribe, or issue certificates.\n\n### 4. Salary and career structures send a message of lower status\nPay is one of the clearest indicators of professional recognition. Exact figures vary by region, employer, seniority, night shifts, and overtime, but a public-sector nurse in Italy may commonly earn roughly **\u20ac1,500\u2013\u20ac2,000 net per month** in ordinary conditions, with higher amounts when substantial shift, night, holiday, or overtime allowances apply.\n\nPhysicians, especially specialists, hospital consultants, self-employed doctors, and those combining public and private work, usually earn considerably more. The income gap is not only about education length\u2014medical training is much longer\u2014but also about bargaining power, career ladders, private practice opportunities, and decision-making authority.\n\nNursing careers can also feel \u201cflat\u201d: many nurses remain in broadly similar clinical roles for decades, with relatively limited access to specialist, advanced-practice, managerial, or academic posts. When there are few visible promotion paths, the profession may be perceived as less prestigious.\n\n### 5. Chronic understaffing reduces recognition rather than increasing it\nItaly has long had fewer nurses per population than many other high-income European countries. OECD and Eurostat comparisons have often placed Italy at roughly **6\u20137 nurses per 1,000 inhabitants**, compared with an EU/OECD average commonly around **8\u20139 per 1,000**; countries such as Germany, France, the Netherlands, Switzerland, and Nordic states are often substantially higher.\n\nThe exact comparison depends on whether the data count practising nurses, licensed nurses, or all nursing personnel. But the broad pattern is clear: Italy has a relatively low nursing workforce for an ageing population.\n\nThis shortage produces difficult conditions:\n\n- high patient-to-nurse workloads;\n- rotating shifts, nights, weekends, and holidays;\n- overtime and missed breaks;\n- limited time for relational, educational, and preventive care;\n- burnout and migration abroad.\n\nParadoxically, when nurses are overloaded with essential routine tasks, their more advanced skills\u2014clinical monitoring, prevention, discharge planning, patient education, care coordination\u2014can become less visible.\n\n### 6. Gender history and social stereotypes\nNursing has historically been a predominantly female profession, while medicine was historically male-dominated and socially prestigious. Even though medicine is now much more gender-balanced, old gendered assumptions remain influential.\n\nCare work is often wrongly treated as \u201cnatural\u201d female work rather than highly skilled work requiring clinical judgement, pharmacological knowledge, communication, ethics",
+    "latency_ms": 14450.0,
+    "input_tokens": 85,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Why is the category of nurses in Italy little recognized unlike doctors?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Nursing in Italy has historically been less socially and institutionally recognized than medicine for a mix of cultural, legal, organizational, and economic reasons. This is changing, but unevenly.\n\n### 1. A historically doctor-centered health system\nItaly\u2019s National Health Service, the **Servizio Sanitario Nazionale (SSN)**, was created in **1978** and developed around a strongly medical model: diagnosis, treatment decisions, prescriptions, and much of the organization of care are led by physicians.\n\nTraditionally, nurses were viewed mainly as executing medical orders rather than as autonomous clinical professionals. Although this legal framework has changed substantially since the **1990s**, public attitudes and workplace hierarchies often change more slowly than laws.\n\n### 2. Nursing was long seen as \u201cassistance\u201d rather than a profession\nFor decades, Italian nursing was associated with practical bedside care\u2014hygiene, basic assistance, administration of therapies, and support to doctors\u2014rather than with clinical assessment, care planning, patient education, prevention, and case management.\n\nA major legal turning point was:\n\n- **Ministerial Decree 739/1994**, which defined the professional profile of the nurse.\n- **Law 42/1999**, which removed the old concept of nursing as an \u201cauxiliary health profession.\u201d\n- **Law 251/2000**, which recognized nurses\u2019 professional autonomy, responsibility, management, education, and research roles.\n\nIn theory, these reforms mean Italian nurses are autonomous professionals responsible for nursing assessment, planning, implementation, and evaluation of care. In practice, many hospitals and local services still operate according to older, physician-dominated habits.\n\n### 3. Less education visibility and fewer advanced-practice roles\nItalian nurses now generally complete a **3-year university degree**\u2014a *Laurea in Infermieristica*, usually worth **180 ECTS credits**\u2014and must register with the professional nursing order, the **OPI** (*Ordine delle Professioni Infermieristiche*).\n\nHowever, Italy has been slower than countries such as the United States, Canada, the United Kingdom, and Australia in formally developing widespread advanced-practice nursing roles. For example, Italy has limited nationally standardized equivalents of:\n\n- Nurse practitioners with independent diagnosis and prescribing authority;\n- Advanced clinical nurse specialists with broad formal autonomy;\n- Nurse-led primary-care clinics on a large scale;\n- Prescribing nurses.\n\nItalian nurses generally cannot independently prescribe medicines or make medical diagnoses. This makes their expertise less visible to the public, because patients often associate professional authority with the ability to diagnose, prescribe, or issue certificates.\n\n### 4. Salary and career structures send a message of lower status\nPay is one of the clearest indicators of professional recognition. Exact figures vary by region, employer, seniority, night shifts, and overtime, but a public-sector nurse in Italy may commonly earn roughly **\u20ac1,500\u2013\u20ac2,000 net per month** in ordinary conditions, with higher amounts when substantial shift, night, holiday, or overtime allowances apply.\n\nPhysicians, especially specialists, hospital consultants, self-employed doctors, and those combining public and private work, usually earn considerably more. The income gap is not only about education length\u2014medical training is much longer\u2014but also about bargaining power, career ladders, private practice opportunities, and decision-making authority.\n\nNursing careers can also feel \u201cflat\u201d: many nurses remain in broadly similar clinical roles for decades, with relatively limited access to specialist, advanced-practice, managerial, or academic posts. When there are few visible promotion paths, the profession may be perceived as less prestigious.\n\n### 5. Chronic understaffing reduces recognition rather than increasing it\nItaly has long had fewer nurses per population than many other high-income European countries. OECD and Eurostat comparisons have often placed Italy at roughly **6\u20137 nurses per 1,000 inhabitants**, compared with an EU/OECD average commonly around **8\u20139 per 1,000**; countries such as Germany, France, the Netherlands, Switzerland, and Nordic states are often substantially higher.\n\nThe exact comparison depends on whether the data count practising nurses, licensed nurses, or all nursing personnel. But the broad pattern is clear: Italy has a relatively low nursing workforce for an ageing population.\n\nThis shortage produces difficult conditions:\n\n- high patient-to-nurse workloads;\n- rotating shifts, nights, weekends, and holidays;\n- overtime and missed breaks;\n- limited time for relational, educational, and preventive care;\n- burnout and migration abroad.\n\nParadoxically, when nurses are overloaded with essential routine tasks, their more advanced skills\u2014clinical monitoring, prevention, discharge planning, patient education, care coordination\u2014can become less visible.\n\n### 6. Gender history and social stereotypes\nNursing has historically been a predominantly female profession, while medicine was historically male-dominated and socially prestigious. Even though medicine is now much more gender-balanced, old gendered assumptions remain influential.\n\nCare work is often wrongly treated as \u201cnatural\u201d female work rather than highly skilled work requiring clinical judgement, pharmacological knowledge, communication, ethics",
+    "latency_ms": 14450.0,
+    "token_count": 1109,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "68ce5c04aaec",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234691.1543703,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 17 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4667,
+          "evidence": [
+            "Latency 14450ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 14450.0,
+        "token_count": 1109,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.176; flagged=True"
+}

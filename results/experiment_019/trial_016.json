@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:54:14.562553+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "If my commute to work is 30 kilometers, what is the mileage reimbursement rate in Slovenia?",
+    "field": "Law",
+    "specific_field": "Law professional in office",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "In Slovenia, commuting reimbursement is generally calculated based on the distance from your home to your workplace, typically for the actual working days in a month.\n\nThe commonly used tax-free benchmark is **\u20ac0.21 per kilometre**, subject to the applicable Slovenian tax rules and employer policy.\n\nFor a **30 km one-way commute**:\n\n- **One-way distance:** 30 km  \n- **Daily round trip:** 60 km  \n- **At \u20ac0.21/km:** **\u20ac12.60 per workday**\n\nFor example, over **22 working days**:\n\n- 60 km \u00d7 22 days = 1,320 km  \n- 1,320 km \u00d7 \u20ac0.21 = **\u20ac277.20 per month**\n\nHowever, Slovenian employers may reimburse commuting differently\u2014for example, by the cost of public transport, a fixed amount set by a collective agreement, or a lower/higher contractual rate. The exact entitlement therefore depends on your employment contract, collective agreement, and employer\u2019s internal rules.",
+    "latency_ms": 2459.9,
+    "input_tokens": 97,
+    "output_tokens": 208
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "If my commute to work is 30 kilometers, what is the mileage reimbursement rate in Slovenia?",
+      "field": "Law"
+    },
+    "response": "In Slovenia, commuting reimbursement is generally calculated based on the distance from your home to your workplace, typically for the actual working days in a month.\n\nThe commonly used tax-free benchmark is **\u20ac0.21 per kilometre**, subject to the applicable Slovenian tax rules and employer policy.\n\nFor a **30 km one-way commute**:\n\n- **One-way distance:** 30 km  \n- **Daily round trip:** 60 km  \n- **At \u20ac0.21/km:** **\u20ac12.60 per workday**\n\nFor example, over **22 working days**:\n\n- 60 km \u00d7 22 days = 1,320 km  \n- 1,320 km \u00d7 \u20ac0.21 = **\u20ac277.20 per month**\n\nHowever, Slovenian employers may reimburse commuting differently\u2014for example, by the cost of public transport, a fixed amount set by a collective agreement, or a lower/higher contractual rate. The exact entitlement therefore depends on your employment contract, collective agreement, and employer\u2019s internal rules.",
+    "latency_ms": 2459.9,
+    "token_count": 305
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "f164b2fd60a7",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233254.5617394,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2459.9,
+        "token_count": 305,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.16; flagged=False"
+}

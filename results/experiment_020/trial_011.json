@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:28:34.340951+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What are the steps in a cranial nerve exam?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pharmacist",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Cranial Nerve Examination\n\n## CN I (Olfactory)\n- Test each nostril separately with non-irritating substances (coffee, vanilla, soap)\n- Often omitted unless there's specific concern (head trauma, neurodegenerative workup)\n\n## CN II (Optic)\n- **Visual acuity**: Snellen chart (each eye separately, with corrective lenses)\n- **Visual fields**: Confrontation testing, comparing patient's fields to your own\n- **Pupillary light reflex**: Direct and consensual response\n- **Fundoscopy**: Optic disc, cup-to-disc ratio, papilledema\n\n## CN III, IV, VI (Oculomotor, Trochlear, Abducens) \u2014 tested together\n- **Extraocular movements**: \"H\" pattern testing all six cardinal directions\n- **Pupil size/symmetry and reactivity** (CN III)\n- **Ptosis** assessment (CN III)\n- **Convergence**\n- **Nystagmus** observation\n- CN IV controls superior oblique (down and in); CN VI controls lateral rectus (abduction)\n\n## CN V (Trigeminal)\n- **Sensory**: Light touch/pinprick in three divisions (ophthalmic, maxillary, mandibular) bilaterally\n- **Motor**: Palpate masseter/temporalis while patient clenches jaw; jaw opening against resistance\n- **Corneal reflex**: Wisp of cotton touches cornea \u2192 blink (afferent V, efferent VII)\n- **Jaw jerk reflex**\n\n## CN VII (Facial)\n- **Motor**: Raise eyebrows, close eyes tightly (test orbicularis oculi strength), smile, puff cheeks, show teeth\n- Distinguish **central** (forehead sparing) vs **peripheral** (Bell's palsy) lesions\n- **Taste**: Anterior 2/3 of tongue (rarely tested formally)\n\n## CN VIII (Vestibulocochlear)\n- **Hearing**: Whisper test, finger rub\n- **Weber test**: Tuning fork on vertex \u2014 lateralizes to affected ear (conductive) or away (sensorineural)\n- **Rinne test**: Compares air vs bone conduction\n- Vestibular testing (nystagmus, Dix-Hallpike) if indicated\n\n## CN IX, X (Glossopharyngeal, Vagus) \u2014 tested together\n- **Palate elevation**: Say \"ah\" \u2014 uvula deviates away from lesion\n- **Gag reflex**: Afferent IX, efferent X\n- **Voice quality**: Hoarseness suggests vagal involvement\n- **Swallowing assessment**\n\n## CN XI (Accessory)\n- **Shoulder shrug** against resistance (trapezius)\n- **Head turn** against resistance (sternocleidomastoid) \u2014 tests contralateral muscle\n\n## CN XII (Hypoglossal)\n- **Tongue protrusion**: Deviates **toward** the side of a lesion (LMN)\n- Inspect for **at",
+    "latency_ms": 10444.5,
+    "input_tokens": 131,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the steps in a cranial nerve exam?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Cranial Nerve Examination\n\n## CN I (Olfactory)\n- Test each nostril separately with non-irritating substances (coffee, vanilla, soap)\n- Often omitted unless there's specific concern (head trauma, neurodegenerative workup)\n\n## CN II (Optic)\n- **Visual acuity**: Snellen chart (each eye separately, with corrective lenses)\n- **Visual fields**: Confrontation testing, comparing patient's fields to your own\n- **Pupillary light reflex**: Direct and consensual response\n- **Fundoscopy**: Optic disc, cup-to-disc ratio, papilledema\n\n## CN III, IV, VI (Oculomotor, Trochlear, Abducens) \u2014 tested together\n- **Extraocular movements**: \"H\" pattern testing all six cardinal directions\n- **Pupil size/symmetry and reactivity** (CN III)\n- **Ptosis** assessment (CN III)\n- **Convergence**\n- **Nystagmus** observation\n- CN IV controls superior oblique (down and in); CN VI controls lateral rectus (abduction)\n\n## CN V (Trigeminal)\n- **Sensory**: Light touch/pinprick in three divisions (ophthalmic, maxillary, mandibular) bilaterally\n- **Motor**: Palpate masseter/temporalis while patient clenches jaw; jaw opening against resistance\n- **Corneal reflex**: Wisp of cotton touches cornea \u2192 blink (afferent V, efferent VII)\n- **Jaw jerk reflex**\n\n## CN VII (Facial)\n- **Motor**: Raise eyebrows, close eyes tightly (test orbicularis oculi strength), smile, puff cheeks, show teeth\n- Distinguish **central** (forehead sparing) vs **peripheral** (Bell's palsy) lesions\n- **Taste**: Anterior 2/3 of tongue (rarely tested formally)\n\n## CN VIII (Vestibulocochlear)\n- **Hearing**: Whisper test, finger rub\n- **Weber test**: Tuning fork on vertex \u2014 lateralizes to affected ear (conductive) or away (sensorineural)\n- **Rinne test**: Compares air vs bone conduction\n- Vestibular testing (nystagmus, Dix-Hallpike) if indicated\n\n## CN IX, X (Glossopharyngeal, Vagus) \u2014 tested together\n- **Palate elevation**: Say \"ah\" \u2014 uvula deviates away from lesion\n- **Gag reflex**: Afferent IX, efferent X\n- **Voice quality**: Hoarseness suggests vagal involvement\n- **Swallowing assessment**\n\n## CN XI (Accessory)\n- **Shoulder shrug** against resistance (trapezius)\n- **Head turn** against resistance (sternocleidomastoid) \u2014 tests contralateral muscle\n\n## CN XII (Hypoglossal)\n- **Tongue protrusion**: Deviates **toward** the side of a lesion (LMN)\n- Inspect for **at",
+    "latency_ms": 10444.5,
+    "token_count": 1155
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "1ba6cebc3e1f",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786238914.3401098,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4067,
+          "evidence": [
+            "Latency 10444ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 10444.5,
+        "token_count": 1155,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.11; flagged=False"
+}

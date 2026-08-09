@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:04:14.496924+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "If a child can't say the 's' sound, can that be changed?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Speech and Language Therapy - children's therapy",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Yes. Difficulty saying the **\u201cs\u201d sound** can often be improved, especially with help from a **speech-language pathologist (SLP)**.\n\n### What is typical?\n- Many children develop a clear **/s/** between roughly **3 and 5 years old**.\n- Some children may still have an immature \u201cth-like\u201d /s/ or a slight lisp until around **6\u20137 years**, depending on the child and the speech pattern.\n- If the child is **5 or older** and is consistently unable to make /s/, is hard to understand, or is frustrated, an SLP evaluation is reasonable.\n- Seek advice sooner if the child has difficulty with **many sounds**, has trouble understanding language, has hearing concerns, or speech suddenly changes.\n\n### What treatment may involve\nAn SLP may work through stages such as:\n\n1. Finding the correct tongue placement  \n   - Tongue close to, but not between, the teeth  \n   - Teeth nearly together  \n   - Air directed down the middle of the tongue  \n   - Lips relaxed or slightly smiling  \n\n2. Practicing the sound by itself: **\u201cssss\u201d**\n\n3. Moving to syllables: **\u201csee, say, sue\u201d**\n\n4. Practicing words: **\u201csun, soup, bus\u201d**\n\n5. Using it in sentences and everyday conversation\n\nProgress varies. Some children improve in **a few weeks**, while others need **several months** of regular practice. Short sessions\u2014about **5\u201310 minutes**, **once or twice daily**\u2014are often more useful than long, tiring sessions.\n\nAvoid repeatedly saying \u201cNo, that\u2019s wrong.\u201d Instead, model the sound naturally:  \nChild: \u201cthun.\u201d  \nAdult: \u201cYes, **sun**! The **sun** is bright.\u201d\n\nA hearing check can also be helpful, because even mild hearing loss from frequent ear infections can affect speech-sound learning. An SLP can determine whether the issue is a **frontal lisp**, a **lateral lisp**, or another speech pattern and recommend the appropriate exercises.",
+    "latency_ms": 3911.6,
+    "input_tokens": 88,
+    "output_tokens": 427
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "If a child can't say the 's' sound, can that be changed?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Yes. Difficulty saying the **\u201cs\u201d sound** can often be improved, especially with help from a **speech-language pathologist (SLP)**.\n\n### What is typical?\n- Many children develop a clear **/s/** between roughly **3 and 5 years old**.\n- Some children may still have an immature \u201cth-like\u201d /s/ or a slight lisp until around **6\u20137 years**, depending on the child and the speech pattern.\n- If the child is **5 or older** and is consistently unable to make /s/, is hard to understand, or is frustrated, an SLP evaluation is reasonable.\n- Seek advice sooner if the child has difficulty with **many sounds**, has trouble understanding language, has hearing concerns, or speech suddenly changes.\n\n### What treatment may involve\nAn SLP may work through stages such as:\n\n1. Finding the correct tongue placement  \n   - Tongue close to, but not between, the teeth  \n   - Teeth nearly together  \n   - Air directed down the middle of the tongue  \n   - Lips relaxed or slightly smiling  \n\n2. Practicing the sound by itself: **\u201cssss\u201d**\n\n3. Moving to syllables: **\u201csee, say, sue\u201d**\n\n4. Practicing words: **\u201csun, soup, bus\u201d**\n\n5. Using it in sentences and everyday conversation\n\nProgress varies. Some children improve in **a few weeks**, while others need **several months** of regular practice. Short sessions\u2014about **5\u201310 minutes**, **once or twice daily**\u2014are often more useful than long, tiring sessions.\n\nAvoid repeatedly saying \u201cNo, that\u2019s wrong.\u201d Instead, model the sound naturally:  \nChild: \u201cthun.\u201d  \nAdult: \u201cYes, **sun**! The **sun** is bright.\u201d\n\nA hearing check can also be helpful, because even mild hearing loss from frequent ear infections can affect speech-sound learning. An SLP can determine whether the issue is a **frontal lisp**, a **lateral lisp**, or another speech pattern and recommend the appropriate exercises.",
+    "latency_ms": 3911.6,
+    "token_count": 515,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "e42ffb5486b4",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230254.496154,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 3 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 3911.6,
+        "token_count": 515,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.160; flagged=True"
+}

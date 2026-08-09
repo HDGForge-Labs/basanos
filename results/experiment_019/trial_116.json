@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-09T00:07:51.360767+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "While on operations, a gunner officer is ordered to engage a village with indirect fire since it is a concentration area for enemy troops forming to attack friendly forces.  The gunner realizes, however, that civilians are likely located in the village as well. Should he disobey orders in order to preserve civilian lives or carry out his mission regardless?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Army officer",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "He should **not treat this as a choice between blind obedience and unilateral disobedience**. He has a duty to comply with lawful orders, but also an independent duty under the law of armed conflict (LOAC/IHL) to **refuse a manifestly unlawful order**.\n\nA village used by enemy forces can be a lawful military objective, but civilians and civilian objects remain protected. Indirect fire is lawful only if the attack complies with the core rules:\n\n- **Distinction:** fire must be directed at a specific military objective\u2014such as identified enemy troops, command posts, weapons, or assembly areas\u2014not simply \u201cthe village.\u201d\n- **Proportionality:** expected incidental civilian death, injury, and damage cannot be excessive compared with the concrete and direct military advantage anticipated.\n- **Precautions in attack:** commanders and fires personnel must take all feasible measures to verify the target, select means and timing that reduce civilian harm, and cancel or suspend fire if the target is not lawful or circumstances change.\n- **Military necessity and humanity:** operational advantage does not eliminate these constraints.\n\nPractically, the gunner should immediately raise the concern through the chain of command and request clarification: What is the confirmed enemy location? What civilian-presence information exists? What collateral-damage estimate or civilian-harm mitigation measures have been considered? Can the mission use a different aim point, munition, fuze, time of attack, observation method, warning, or smaller/less destructive fires? Is there a more precise alternative?\n\nFor example, if the order is to fire an area target across a populated village without reliable target identification, without assessing likely civilians, or where the expected civilian harm is clearly excessive, the gunner should report that the order may be unlawful and seek a lawful revised mission. If the illegality is **manifest**\u2014for example, an order expressly directs fire at civilians, civilian homes as such, or an indiscriminate area bombardment of a populated area\u2014he must refuse to execute it and report it immediately.\n\nConversely, the mere possibility that civilians are present does **not automatically prohibit** engagement. If enemy troops are reliably identified and are forming for an imminent attack, commanders may lawfully engage them provided expected civilian harm is not excessive and feasible precautions are taken. The decision normally rests at the appropriate command level, but the gunner must provide accurate information and must not execute an obviously unlawful fire mission.\n\nIn short: **do not carry out the mission \u201cregardless,\u201d and do not simply disobey without reporting or seeking clarification.** Escalate the civilian-risk concern, request target refinement and mitigation, follow lawful revised orders, and refuse only if the order is clearly unlawful.",
+    "latency_ms": 7939.5,
+    "input_tokens": 142,
+    "output_tokens": 546
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "While on operations, a gunner officer is ordered to engage a village with indirect fire since it is a concentration area for enemy troops forming to attack friendly forces.  The gunner realizes, however, that civilians are likely located in the village as well. Should he disobey orders in order to preserve civilian lives or carry out his mission regardless?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "He should **not treat this as a choice between blind obedience and unilateral disobedience**. He has a duty to comply with lawful orders, but also an independent duty under the law of armed conflict (LOAC/IHL) to **refuse a manifestly unlawful order**.\n\nA village used by enemy forces can be a lawful military objective, but civilians and civilian objects remain protected. Indirect fire is lawful only if the attack complies with the core rules:\n\n- **Distinction:** fire must be directed at a specific military objective\u2014such as identified enemy troops, command posts, weapons, or assembly areas\u2014not simply \u201cthe village.\u201d\n- **Proportionality:** expected incidental civilian death, injury, and damage cannot be excessive compared with the concrete and direct military advantage anticipated.\n- **Precautions in attack:** commanders and fires personnel must take all feasible measures to verify the target, select means and timing that reduce civilian harm, and cancel or suspend fire if the target is not lawful or circumstances change.\n- **Military necessity and humanity:** operational advantage does not eliminate these constraints.\n\nPractically, the gunner should immediately raise the concern through the chain of command and request clarification: What is the confirmed enemy location? What civilian-presence information exists? What collateral-damage estimate or civilian-harm mitigation measures have been considered? Can the mission use a different aim point, munition, fuze, time of attack, observation method, warning, or smaller/less destructive fires? Is there a more precise alternative?\n\nFor example, if the order is to fire an area target across a populated village without reliable target identification, without assessing likely civilians, or where the expected civilian harm is clearly excessive, the gunner should report that the order may be unlawful and seek a lawful revised mission. If the illegality is **manifest**\u2014for example, an order expressly directs fire at civilians, civilian homes as such, or an indiscriminate area bombardment of a populated area\u2014he must refuse to execute it and report it immediately.\n\nConversely, the mere possibility that civilians are present does **not automatically prohibit** engagement. If enemy troops are reliably identified and are forming for an imminent attack, commanders may lawfully engage them provided expected civilian harm is not excessive and feasible precautions are taken. The decision normally rests at the appropriate command level, but the gunner must provide accurate information and must not execute an obviously unlawful fire mission.\n\nIn short: **do not carry out the mission \u201cregardless,\u201d and do not simply disobey without reporting or seeking clarification.** Escalate the civilian-risk concern, request target refinement and mitigation, follow lawful revised orders, and refuse only if the order is clearly unlawful.",
+    "latency_ms": 7939.5,
+    "token_count": 688,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "52dd9e8d4e04",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234071.35997,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 7939.5,
+        "token_count": 688,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.116; flagged=False"
+}

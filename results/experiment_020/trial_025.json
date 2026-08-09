@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:31:26.550889+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "The type of drug used for insomnia require prolonged use of them, can't it be solved using psychiatric scans and helmets used to read brain neurons?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Sales rep in medicines",
+    "question_type": "Open-ended question that is potentially ambiguous| Question that describes a hypothetical scenario and asks a question based on this scenario| Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Why \"Brain Scans/Helmets\" Won't Replace Sleep Medications (Yet)\n\nYour question touches on real cutting-edge research, but there's a fundamental mismatch between what EEG/neurofeedback devices *can* do and what insomnia actually *is*.\n\n## What insomnia medications actually do\n\n- **Benzodiazepines/Z-drugs** (zolpidem, eszopiclone): Enhance GABA-A receptor activity, essentially forcing sedation by boosting the brain's main inhibitory neurotransmitter\n- **Orexin antagonists** (suvorexant, lemborexant): Block wake-promoting orexin signaling\n- **Antidepressants** (trazodone, doxepin): Used off-label for sedating side effects via histamine/serotonin blockade\n\nThese require prolonged use because insomnia is often driven by underlying dysregulation\u2014anxiety circuits, cortisol rhythm disruption, learned hyperarousal\u2014not a simple \"switch\" that needs flipping once.\n\n## Why EEG helmets/neurofeedback fall short as replacements\n\n**1. Reading \u2260 Fixing**\nEEG helmets (like Muse, or clinical neurofeedback systems) measure electrical activity at the scalp\u2014they're extremely limited in spatial resolution and can't detect activity from deep structures like the hypothalamus, amygdala, or brainstem sleep centers (VLPO, locus coeruleus) that actually govern sleep-wake transitions.\n\n**2. Neurofeedback exists, but modestly**\nNeurofeedback for insomnia has been studied since the 1970s (Cortical slow-wave training, SMR protocols). Results are inconsistent\u2014modest improvements in some trials, but nothing close to pharmacological efficacy for moderate-severe insomnia. It's not FDA-approved as a primary treatment.\n\n**3. tDCS/TMS show promise, not replacement**\nTranscranial direct current stimulation and transcranial magnetic stimulation *can* modulate cortical excitability and have shown some benefit in small insomnia trials, but effects are typically modest, session-dependent, and don't address hormonal/homeostatic sleep drive issues.\n\n**4. The real bottleneck: sleep is a whole-body process**\nSleep involves melatonin, core body temperature drop, adenosine buildup, cortisol suppression, and autonomic nervous system shifts\u2014not just cortical electrical patterns. A helmet reading brainwaves has no way to intervene in adenosine accumulation or circadian phase, for example.\n\n## What's actually being explored instead\n\n- **CBT-I (Cognitive Behavioral Therapy for Insomnia)**: The actual gold-standard *non-drug* treatment, more durable than any device, works by recalibrating sleep drive and cognitive hyperarousal\n- **Closed-loop acoustic stimulation**: Devices that detect slow-wave sleep and play precisely-timed sounds to enhance deep sleep (real research, e.g., from Sleep Cycle/academic labs)\u2014this is",
+    "latency_ms": 13218.8,
+    "input_tokens": 162,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "The type of drug used for insomnia require prolonged use of them, can't it be solved using psychiatric scans and helmets used to read brain neurons?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Why \"Brain Scans/Helmets\" Won't Replace Sleep Medications (Yet)\n\nYour question touches on real cutting-edge research, but there's a fundamental mismatch between what EEG/neurofeedback devices *can* do and what insomnia actually *is*.\n\n## What insomnia medications actually do\n\n- **Benzodiazepines/Z-drugs** (zolpidem, eszopiclone): Enhance GABA-A receptor activity, essentially forcing sedation by boosting the brain's main inhibitory neurotransmitter\n- **Orexin antagonists** (suvorexant, lemborexant): Block wake-promoting orexin signaling\n- **Antidepressants** (trazodone, doxepin): Used off-label for sedating side effects via histamine/serotonin blockade\n\nThese require prolonged use because insomnia is often driven by underlying dysregulation\u2014anxiety circuits, cortisol rhythm disruption, learned hyperarousal\u2014not a simple \"switch\" that needs flipping once.\n\n## Why EEG helmets/neurofeedback fall short as replacements\n\n**1. Reading \u2260 Fixing**\nEEG helmets (like Muse, or clinical neurofeedback systems) measure electrical activity at the scalp\u2014they're extremely limited in spatial resolution and can't detect activity from deep structures like the hypothalamus, amygdala, or brainstem sleep centers (VLPO, locus coeruleus) that actually govern sleep-wake transitions.\n\n**2. Neurofeedback exists, but modestly**\nNeurofeedback for insomnia has been studied since the 1970s (Cortical slow-wave training, SMR protocols). Results are inconsistent\u2014modest improvements in some trials, but nothing close to pharmacological efficacy for moderate-severe insomnia. It's not FDA-approved as a primary treatment.\n\n**3. tDCS/TMS show promise, not replacement**\nTranscranial direct current stimulation and transcranial magnetic stimulation *can* modulate cortical excitability and have shown some benefit in small insomnia trials, but effects are typically modest, session-dependent, and don't address hormonal/homeostatic sleep drive issues.\n\n**4. The real bottleneck: sleep is a whole-body process**\nSleep involves melatonin, core body temperature drop, adenosine buildup, cortisol suppression, and autonomic nervous system shifts\u2014not just cortical electrical patterns. A helmet reading brainwaves has no way to intervene in adenosine accumulation or circadian phase, for example.\n\n## What's actually being explored instead\n\n- **CBT-I (Cognitive Behavioral Therapy for Insomnia)**: The actual gold-standard *non-drug* treatment, more durable than any device, works by recalibrating sleep drive and cognitive hyperarousal\n- **Closed-loop acoustic stimulation**: Devices that detect slow-wave sleep and play precisely-timed sounds to enhance deep sleep (real research, e.g., from Sleep Cycle/academic labs)\u2014this is",
+    "latency_ms": 13218.8,
+    "token_count": 1186
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "6e66289d6c7f",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239086.5501254,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4483,
+          "evidence": [
+            "Latency 13219ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13218.8,
+        "token_count": 1186,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.25; flagged=False"
+}

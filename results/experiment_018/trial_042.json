@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:54:31.095987+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "30 year old female has an episode of syncope post 2nd COVID vaccine, has a history of palpitations and dizziness - what test would you suggest to be carried out?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Cardiology",
+    "question_type": "Open-ended question that is potentially ambiguous| Advice or suggestions on how to approach a problem| Question that describes a hypothetical scenario and asks a question based on this scenario| Request for a list of resources where one can find more information| Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "A **12\u2011lead ECG** should be performed first, followed by **ambulatory rhythm monitoring** because recurrent palpitations with syncope can indicate an intermittent arrhythmia.\n\n**Suggested evaluation:**\n- **ECG**: assess QT interval, conduction disease, pre-excitation (WPW), Brugada pattern, and other abnormalities.\n- **Ambulatory monitor**:\n  - 24\u201348-hour Holter if symptoms occur daily.\n  - 1\u20134-week event monitor/patch if less frequent.\n  - **Implantable loop recorder** if episodes are rare but unexplained or concerning.\n- **Echocardiogram** if the ECG is abnormal, there is a murmur, exertional syncope, family history of sudden cardiac death, or suspected structural heart disease.\n- **Orthostatic vital signs** and, if appropriate, **tilt-table testing** to assess vasovagal syncope or POTS.\n- Basic blood tests such as CBC, electrolytes, glucose, and thyroid function may help identify contributors.\n\nThe episode occurring after vaccination may have been **vasovagal**, often triggered by pain, anxiety, dehydration, or prolonged standing, but the preceding history of palpitations means an arrhythmia must be excluded rather than attributing it solely to the vaccine.\n\nShe should seek urgent assessment if syncope occurred during exertion or while supine, or with chest pain, sustained palpitations, breathlessness, injury, abnormal ECG, or a family history of sudden unexplained death.",
+    "latency_ms": 2858.8,
+    "input_tokens": 115,
+    "output_tokens": 313
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "30 year old female has an episode of syncope post 2nd COVID vaccine, has a history of palpitations and dizziness - what test would you suggest to be carried out?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "A **12\u2011lead ECG** should be performed first, followed by **ambulatory rhythm monitoring** because recurrent palpitations with syncope can indicate an intermittent arrhythmia.\n\n**Suggested evaluation:**\n- **ECG**: assess QT interval, conduction disease, pre-excitation (WPW), Brugada pattern, and other abnormalities.\n- **Ambulatory monitor**:\n  - 24\u201348-hour Holter if symptoms occur daily.\n  - 1\u20134-week event monitor/patch if less frequent.\n  - **Implantable loop recorder** if episodes are rare but unexplained or concerning.\n- **Echocardiogram** if the ECG is abnormal, there is a murmur, exertional syncope, family history of sudden cardiac death, or suspected structural heart disease.\n- **Orthostatic vital signs** and, if appropriate, **tilt-table testing** to assess vasovagal syncope or POTS.\n- Basic blood tests such as CBC, electrolytes, glucose, and thyroid function may help identify contributors.\n\nThe episode occurring after vaccination may have been **vasovagal**, often triggered by pain, anxiety, dehydration, or prolonged standing, but the preceding history of palpitations means an arrhythmia must be excluded rather than attributing it solely to the vaccine.\n\nShe should seek urgent assessment if syncope occurred during exertion or while supine, or with chest pain, sustained palpitations, breathlessness, injury, abnormal ECG, or a family history of sudden unexplained death.",
+    "latency_ms": 2858.8,
+    "token_count": 428
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "329961eb4d1b",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229671.0952342,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2858.8,
+        "token_count": 428,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.42; flagged=False"
+}

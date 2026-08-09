@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:56:34.223018+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "How will the estate of an individual who dies without a will be distributed?",
+    "field": "Law",
+    "specific_field": "Property Law",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "If a person dies **without a valid will**, they are said to die **intestate**. Their estate is distributed under the intestacy laws of the jurisdiction where they lived (and, for real estate, sometimes where the property is located). The result is not based on what the deceased may have intended.\n\nA typical order of distribution is:\n\n1. **Spouse or civil partner**\n   - Usually receives all or a substantial share of the estate.\n   - If there are children, the spouse often receives a fixed statutory amount plus personal belongings and part of the remaining estate; the children receive the balance.\n   - Unmarried partners generally do **not** automatically inherit, even after a long relationship.\n\n2. **Children and descendants**\n   - Children commonly inherit if there is no surviving spouse, or share the estate with the spouse.\n   - If a child has died before the deceased but left children, those grandchildren usually take that child\u2019s share.\n\n3. **Parents**\n\n4. **Brothers and sisters, or their descendants**\n   - If a sibling has died, that sibling\u2019s children may inherit in their place.\n\n5. **More distant relatives**\n   - This can include grandparents, aunts and uncles, cousins, and descendants of those relatives, depending on the applicable law.\n\n6. **The state**\n   - If no qualifying relatives can be found, the estate passes to the government (often called *bona vacantia* or escheat).\n\nBefore distribution, the estate\u2019s debts, funeral expenses, taxes, and administration costs must be paid. Assets that pass outside the estate\u2014such as jointly owned property with survivorship rights, life-insurance proceeds paid to a named beneficiary, retirement accounts with nominated beneficiaries, and assets held in trust\u2014usually do not follow intestacy rules.",
+    "latency_ms": 4492.5,
+    "input_tokens": 93,
+    "output_tokens": 367
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How will the estate of an individual who dies without a will be distributed?",
+      "field": "Law"
+    },
+    "response": "If a person dies **without a valid will**, they are said to die **intestate**. Their estate is distributed under the intestacy laws of the jurisdiction where they lived (and, for real estate, sometimes where the property is located). The result is not based on what the deceased may have intended.\n\nA typical order of distribution is:\n\n1. **Spouse or civil partner**\n   - Usually receives all or a substantial share of the estate.\n   - If there are children, the spouse often receives a fixed statutory amount plus personal belongings and part of the remaining estate; the children receive the balance.\n   - Unmarried partners generally do **not** automatically inherit, even after a long relationship.\n\n2. **Children and descendants**\n   - Children commonly inherit if there is no surviving spouse, or share the estate with the spouse.\n   - If a child has died before the deceased but left children, those grandchildren usually take that child\u2019s share.\n\n3. **Parents**\n\n4. **Brothers and sisters, or their descendants**\n   - If a sibling has died, that sibling\u2019s children may inherit in their place.\n\n5. **More distant relatives**\n   - This can include grandparents, aunts and uncles, cousins, and descendants of those relatives, depending on the applicable law.\n\n6. **The state**\n   - If no qualifying relatives can be found, the estate passes to the government (often called *bona vacantia* or escheat).\n\nBefore distribution, the estate\u2019s debts, funeral expenses, taxes, and administration costs must be paid. Assets that pass outside the estate\u2014such as jointly owned property with survivorship rights, life-insurance proceeds paid to a named beneficiary, retirement accounts with nominated beneficiaries, and assets held in trust\u2014usually do not follow intestacy rules.",
+    "latency_ms": 4492.5,
+    "token_count": 460
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "452ea769f53d",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233394.2222266,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 4492.5,
+        "token_count": 460,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.34; flagged=False"
+}

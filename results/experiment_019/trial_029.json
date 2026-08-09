@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:56:02.517372+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "A 70 years old lady come to the pharmacy to take prescription medication, and doesn't know when to take the pills. Where can I guide her to find out that information?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pharmacist",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario| Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Guide her to the **prescription label** on each medication container. It should state:\n\n- **How much to take** (for example, \u201cTake 1 tablet\u201d)\n- **How often and when** (for example, \u201conce daily,\u201d \u201ctwice daily,\u201d \u201cat bedtime,\u201d \u201cwith food\u201d)\n- Any special instructions, such as avoiding alcohol or not crushing the tablet.\n\nIf the label is unclear, missing, or she has difficulty reading or understanding it, direct her to speak with the **pharmacist** before taking the medicine. The pharmacy can also provide a printed medication schedule, large-print labels, or compliance packaging/blister packs if appropriate.",
+    "latency_ms": 2159.5,
+    "input_tokens": 113,
+    "output_tokens": 139
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A 70 years old lady come to the pharmacy to take prescription medication, and doesn't know when to take the pills. Where can I guide her to find out that information?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Guide her to the **prescription label** on each medication container. It should state:\n\n- **How much to take** (for example, \u201cTake 1 tablet\u201d)\n- **How often and when** (for example, \u201conce daily,\u201d \u201ctwice daily,\u201d \u201cat bedtime,\u201d \u201cwith food\u201d)\n- Any special instructions, such as avoiding alcohol or not crushing the tablet.\n\nIf the label is unclear, missing, or she has difficulty reading or understanding it, direct her to speak with the **pharmacist** before taking the medicine. The pharmacy can also provide a printed medication schedule, large-print labels, or compliance packaging/blister packs if appropriate.",
+    "latency_ms": 2159.5,
+    "token_count": 252
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "7579e0511ac9",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233362.516615,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2159.5,
+        "token_count": 252,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.29; flagged=False"
+}

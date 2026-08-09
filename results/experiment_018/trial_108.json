@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T22:59:07.571368+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "If upper limbs suddenly become stronger than lower limbs, will people start walking on their hands?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Physiotherapy",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Not automatically. Walking on the hands requires more than stronger arms.\n\nA person would need:\n\n- **Sufficient shoulder, elbow, wrist, and hand strength** to support nearly **100% of body weight**, often roughly **50\u201370 kg (110\u2013155 lb)** for an average adult.\n- **Core and hip control** to keep the body balanced upside down.\n- **Wrist and finger endurance**, since the hands must repeatedly absorb and redirect body forces.\n- **Neurological coordination and balance** to prevent falling.\n- Enough **lower-limb function** to help with balance, initiate movement, or recover from a loss of stability.\n\nIf the upper limbs suddenly became much stronger while the legs stayed weak, people might be *more capable* of hand-walking, but most would not spontaneously choose it. Humans are optimized for upright bipedal walking: it is generally more energy-efficient, gives better vision, keeps the hands free, and avoids putting prolonged pressure on the wrists, palms, neck, and shoulders.\n\nThey might use their arms more for:\n\n- Pushing themselves up\n- Climbing or crawling\n- Supporting weight while moving\n- Using crutches or other aids\n- Brief handstands or hand-walking if they had trained balance\n\nOnly if the change also altered **balance, skeletal structure, joint tolerance, sensory control, and motor habits** would hand-walking become a natural replacement for ordinary walking. Even a person with extremely strong arms could still fall because hand-walking is primarily a **balance and coordination problem**, not just a strength problem.",
+    "latency_ms": 3206.7,
+    "input_tokens": 90,
+    "output_tokens": 320
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "If upper limbs suddenly become stronger than lower limbs, will people start walking on their hands?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Not automatically. Walking on the hands requires more than stronger arms.\n\nA person would need:\n\n- **Sufficient shoulder, elbow, wrist, and hand strength** to support nearly **100% of body weight**, often roughly **50\u201370 kg (110\u2013155 lb)** for an average adult.\n- **Core and hip control** to keep the body balanced upside down.\n- **Wrist and finger endurance**, since the hands must repeatedly absorb and redirect body forces.\n- **Neurological coordination and balance** to prevent falling.\n- Enough **lower-limb function** to help with balance, initiate movement, or recover from a loss of stability.\n\nIf the upper limbs suddenly became much stronger while the legs stayed weak, people might be *more capable* of hand-walking, but most would not spontaneously choose it. Humans are optimized for upright bipedal walking: it is generally more energy-efficient, gives better vision, keeps the hands free, and avoids putting prolonged pressure on the wrists, palms, neck, and shoulders.\n\nThey might use their arms more for:\n\n- Pushing themselves up\n- Climbing or crawling\n- Supporting weight while moving\n- Using crutches or other aids\n- Brief handstands or hand-walking if they had trained balance\n\nOnly if the change also altered **balance, skeletal structure, joint tolerance, sensory control, and motor habits** would hand-walking become a natural replacement for ordinary walking. Even a person with extremely strong arms could still fall because hand-walking is primarily a **balance and coordination problem**, not just a strength problem.",
+    "latency_ms": 3206.7,
+    "token_count": 410,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "3946530096a3",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229947.5705972,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 3 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 3206.7,
+        "token_count": 410,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.108; flagged=True"
+}

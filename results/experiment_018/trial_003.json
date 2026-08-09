@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:51:57.711550+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What are the differences between Acute myeloid leukemia and Chronic myeloid leukemia?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "oncology",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "| Feature | Acute myeloid leukemia (AML) | Chronic myeloid leukemia (CML) |\n|---|---|---|\n| **Typical course** | Rapidly progressive; untreated disease can become life-threatening within weeks to months | Usually slower progression over years, though it can transform into an acute \u201cblast crisis\u201d |\n| **Cell maturity** | Accumulation of immature myeloid blasts | Overproduction of relatively mature granulocytes and their precursors |\n| **Typical age** | More common in older adults, but occurs at any age | Most often diagnosed in middle-aged or older adults |\n| **Common symptoms** | Fatigue, pallor, infections, fever, easy bruising or bleeding, bone pain; symptoms arise from bone-marrow failure | May be asymptomatic initially; fatigue, weight loss, night sweats, abdominal fullness from an enlarged spleen, and sometimes gout-like symptoms |\n| **Blood findings** | Anemia, low platelets, and abnormal white-cell counts; circulating blasts may be present | Markedly elevated white-cell count with cells at many stages of granulocyte maturation; basophilia and often thrombocytosis |\n| **Diagnostic hallmark** | Increased myeloblasts\u2014generally **\u226520% blasts** in blood or bone marrow, unless certain defining genetic abnormalities are present | **BCR::ABL1 fusion gene**, usually caused by the **Philadelphia chromosome**, t(9;22) |\n| **Disease phases** | Not usually divided into chronic phases; may develop treatment-resistant or relapsed disease | Chronic phase \u2192 accelerated phase in some classifications \u2192 blast phase; blast phase resembles acute leukemia |\n| **Main treatment approach** | Intensive chemotherapy for suitable patients, often followed by targeted therapy for specific mutations and/or allogeneic stem-cell transplantation; less-intensive regimens such as azacitidine plus venetoclax are common for many older or medically frail patients | Oral **BCR::ABL1 tyrosine-kinase inhibitors (TKIs)** such as imatinib, dasatinib, nilotinib, bosutinib, or asciminib; transplantation is reserved mainly for resistant or advanced disease |\n| **Prognostic monitoring** | Blood counts, marrow examination, cytogenetic and molecular testing for measurable residual disease | Serial quantitative **BCR::ABL1 PCR** levels; a major goal is a deep molecular response |\n\n### Key distinction\n\n- **AML is an acute leukemia caused by a buildup of immature myeloid blasts**, leading quickly to bone-marrow failure.\n- **CML is a chronic myeloproliferative leukemia driven by BCR::ABL1**, producing excessive mature and maturing white cells and usually responding well to targeted TKIs.\n\nCML can eventually enter **blast phase**, which may resemble AML biologically and clinically, but the underlying disease and usual initial treatment are different.",
+    "latency_ms": 4826.6,
+    "input_tokens": 95,
+    "output_tokens": 587
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the differences between Acute myeloid leukemia and Chronic myeloid leukemia?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "| Feature | Acute myeloid leukemia (AML) | Chronic myeloid leukemia (CML) |\n|---|---|---|\n| **Typical course** | Rapidly progressive; untreated disease can become life-threatening within weeks to months | Usually slower progression over years, though it can transform into an acute \u201cblast crisis\u201d |\n| **Cell maturity** | Accumulation of immature myeloid blasts | Overproduction of relatively mature granulocytes and their precursors |\n| **Typical age** | More common in older adults, but occurs at any age | Most often diagnosed in middle-aged or older adults |\n| **Common symptoms** | Fatigue, pallor, infections, fever, easy bruising or bleeding, bone pain; symptoms arise from bone-marrow failure | May be asymptomatic initially; fatigue, weight loss, night sweats, abdominal fullness from an enlarged spleen, and sometimes gout-like symptoms |\n| **Blood findings** | Anemia, low platelets, and abnormal white-cell counts; circulating blasts may be present | Markedly elevated white-cell count with cells at many stages of granulocyte maturation; basophilia and often thrombocytosis |\n| **Diagnostic hallmark** | Increased myeloblasts\u2014generally **\u226520% blasts** in blood or bone marrow, unless certain defining genetic abnormalities are present | **BCR::ABL1 fusion gene**, usually caused by the **Philadelphia chromosome**, t(9;22) |\n| **Disease phases** | Not usually divided into chronic phases; may develop treatment-resistant or relapsed disease | Chronic phase \u2192 accelerated phase in some classifications \u2192 blast phase; blast phase resembles acute leukemia |\n| **Main treatment approach** | Intensive chemotherapy for suitable patients, often followed by targeted therapy for specific mutations and/or allogeneic stem-cell transplantation; less-intensive regimens such as azacitidine plus venetoclax are common for many older or medically frail patients | Oral **BCR::ABL1 tyrosine-kinase inhibitors (TKIs)** such as imatinib, dasatinib, nilotinib, bosutinib, or asciminib; transplantation is reserved mainly for resistant or advanced disease |\n| **Prognostic monitoring** | Blood counts, marrow examination, cytogenetic and molecular testing for measurable residual disease | Serial quantitative **BCR::ABL1 PCR** levels; a major goal is a deep molecular response |\n\n### Key distinction\n\n- **AML is an acute leukemia caused by a buildup of immature myeloid blasts**, leading quickly to bone-marrow failure.\n- **CML is a chronic myeloproliferative leukemia driven by BCR::ABL1**, producing excessive mature and maturing white cells and usually responding well to targeted TKIs.\n\nCML can eventually enter **blast phase**, which may resemble AML biologically and clinically, but the underlying disease and usual initial treatment are different.",
+    "latency_ms": 4826.6,
+    "token_count": 682
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "fea1e3d62aec",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229517.7107873,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 4826.6,
+        "token_count": 682,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.3; flagged=False"
+}

@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T00:19:17.791759+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Why do pregnant women often suffer from iron deficiency?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Dietician/ Nutritionist ",
+    "question_type": "Summarization of information on a topic| Advice or suggestions on how to approach a problem| Question that describes a hypothetical scenario and asks a question based on this scenario| Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Pregnant women often develop iron deficiency because pregnancy greatly increases the body\u2019s iron needs while also making it harder to keep up through diet alone.\n\nKey reasons include:\n\n- **More blood volume:** During pregnancy, plasma volume rises by roughly **40%\u201350%**, and red-cell mass rises by about **20%\u201330%**. The body needs extra iron to make hemoglobin, the oxygen-carrying protein in red blood cells. Because plasma increases more than red cells, hemoglobin concentration can also appear lower from \u201cphysiologic dilution,\u201d especially in the second trimester.\n\n- **The fetus and placenta need iron:** Iron is transferred to the developing baby and placenta, particularly in the final trimester. A typical singleton pregnancy requires roughly **1,000 mg** of additional iron overall:\n  - about **500 mg** for the mother\u2019s expanded red-cell mass,\n  - about **300\u2013350 mg** for the fetus and placenta,\n  - about **200\u2013250 mg** to cover normal blood loss around delivery.\n\n- **Daily requirements rise substantially:** Nonpregnant adult women generally need about **18 mg/day** of dietary iron, whereas pregnancy recommendations are about **27 mg/day**. In late pregnancy, absorbed iron requirements may rise to around **5\u20136 mg/day**, which is difficult to achieve if iron absorption is limited.\n\n- **Many women start pregnancy with low stores:** Menstrual blood loss, previous pregnancies, short intervals between pregnancies, heavy periods, vegetarian or low-iron diets, and prior bleeding can leave iron stores low before conception. A woman may have normal hemoglobin early in pregnancy but depleted iron stores, commonly reflected by a low ferritin level.\n\n- **Dietary iron is not always well absorbed:** Heme iron from meat, poultry, and fish is absorbed more efficiently than non-heme iron from plant foods. Tea, coffee, calcium supplements, and high-phytate foods can reduce non-heme iron absorption, while vitamin C can improve it.\n\n- **Nausea and food aversions:** First-trimester nausea, vomiting, reduced appetite, and aversions to meat or iron-rich foods can lower iron intake. Some people also cannot tolerate standard iron supplements because of constipation, nausea, abdominal pain, or reflux.\n\n- **Higher-risk situations increase demand or loss:** Twin or higher-order pregnancies, adolescent pregnancy, frequent pregnancies, malaria or intestinal parasites in some regions, celiac disease or inflammatory bowel disease, and bleeding during pregnancy can all increase the risk.\n\nIron deficiency may cause fatigue, weakness, shortness of breath, dizziness, palpitations, headaches, pica (such as craving ice), and reduced exercise tolerance. Severe anemia in pregnancy is associated with increased risks such as preterm birth, low birth weight, and needing transfusion if major bleeding occurs at delivery.\n\nFor screening, many clinicians check a complete blood count early in pregnancy and again around **24\u201328 weeks**. A hemoglobin level below about **11 g/dL** in the first or third trimester, or below about **10.5 g/dL** in the second trimester, is commonly used to define anemia in pregnancy, though iron deficiency can occur before anemia develops.",
+    "latency_ms": 8557.1,
+    "input_tokens": 82,
+    "output_tokens": 649
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Why do pregnant women often suffer from iron deficiency?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Pregnant women often develop iron deficiency because pregnancy greatly increases the body\u2019s iron needs while also making it harder to keep up through diet alone.\n\nKey reasons include:\n\n- **More blood volume:** During pregnancy, plasma volume rises by roughly **40%\u201350%**, and red-cell mass rises by about **20%\u201330%**. The body needs extra iron to make hemoglobin, the oxygen-carrying protein in red blood cells. Because plasma increases more than red cells, hemoglobin concentration can also appear lower from \u201cphysiologic dilution,\u201d especially in the second trimester.\n\n- **The fetus and placenta need iron:** Iron is transferred to the developing baby and placenta, particularly in the final trimester. A typical singleton pregnancy requires roughly **1,000 mg** of additional iron overall:\n  - about **500 mg** for the mother\u2019s expanded red-cell mass,\n  - about **300\u2013350 mg** for the fetus and placenta,\n  - about **200\u2013250 mg** to cover normal blood loss around delivery.\n\n- **Daily requirements rise substantially:** Nonpregnant adult women generally need about **18 mg/day** of dietary iron, whereas pregnancy recommendations are about **27 mg/day**. In late pregnancy, absorbed iron requirements may rise to around **5\u20136 mg/day**, which is difficult to achieve if iron absorption is limited.\n\n- **Many women start pregnancy with low stores:** Menstrual blood loss, previous pregnancies, short intervals between pregnancies, heavy periods, vegetarian or low-iron diets, and prior bleeding can leave iron stores low before conception. A woman may have normal hemoglobin early in pregnancy but depleted iron stores, commonly reflected by a low ferritin level.\n\n- **Dietary iron is not always well absorbed:** Heme iron from meat, poultry, and fish is absorbed more efficiently than non-heme iron from plant foods. Tea, coffee, calcium supplements, and high-phytate foods can reduce non-heme iron absorption, while vitamin C can improve it.\n\n- **Nausea and food aversions:** First-trimester nausea, vomiting, reduced appetite, and aversions to meat or iron-rich foods can lower iron intake. Some people also cannot tolerate standard iron supplements because of constipation, nausea, abdominal pain, or reflux.\n\n- **Higher-risk situations increase demand or loss:** Twin or higher-order pregnancies, adolescent pregnancy, frequent pregnancies, malaria or intestinal parasites in some regions, celiac disease or inflammatory bowel disease, and bleeding during pregnancy can all increase the risk.\n\nIron deficiency may cause fatigue, weakness, shortness of breath, dizziness, palpitations, headaches, pica (such as craving ice), and reduced exercise tolerance. Severe anemia in pregnancy is associated with increased risks such as preterm birth, low birth weight, and needing transfusion if major bleeding occurs at delivery.\n\nFor screening, many clinicians check a complete blood count early in pregnancy and again around **24\u201328 weeks**. A hemoglobin level below about **11 g/dL** in the first or third trimester, or below about **10.5 g/dL** in the second trimester, is commonly used to define anemia in pregnancy, though iron deficiency can occur before anemia develops.",
+    "latency_ms": 8557.1,
+    "token_count": 731,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "09caf6c08409",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234757.790962,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 13 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 8557.1,
+        "token_count": 731,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.183; flagged=True"
+}

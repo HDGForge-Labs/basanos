@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:57:53.107439+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "A patient comes for consultation with burns over 25% of his body surface, of varying degrees all over his body, what is the indicated treatment for this patient?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Surgeon",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Management of a Patient with ~25% TBSA Burns (Mixed Depth)\n\nA burn covering approximately 25% of total body surface area (TBSA) with varying depths (superficial partial, deep partial, and possibly full-thickness) is classified as a **major burn** and requires treatment at a specialized burn center. Here is a comprehensive approach:\n\n## 1. Initial Assessment (Primary Survey - ABCDE)\n\n- **Airway**: Assess for inhalation injury (facial burns, singed nasal hairs, soot in sputum, hoarseness). If suspected, early intubation is critical, as airway edema can progress rapidly within 6-24 hours.\n- **Breathing**: Give 100% high-flow oxygen; consider carbon monoxide poisoning (check carboxyhemoglobin levels).\n- **Circulation**: Establish 2 large-bore IV lines (14-16 gauge), preferably through unburned skin.\n- **Disability**: Neurological assessment.\n- **Exposure**: Remove all clothing/jewelry, keep patient warm (burns >20% risk hypothermia).\n\n## 2. Fluid Resuscitation\n\nSince burns exceed **20% TBSA**, aggressive IV fluid resuscitation is mandatory (oral intake is inadequate at this level).\n\n### Parkland Formula (most widely used):\n**Total fluid (Lactated Ringer's) = 4 mL \u00d7 body weight (kg) \u00d7 %TBSA burned**\n\n- Example: For a 70 kg patient with 25% TBSA burn:\n  - Total = 4 \u00d7 70 \u00d7 25 = **7,000 mL** in first 24 hours\n  - **50%** given in first **8 hours** from time of injury (not from arrival) = ~3,500 mL\n  - Remaining **50%** given over next **16 hours** = ~3,500 mL\n\n### Monitoring adequacy of resuscitation:\n- **Urine output**: target 0.5 mL/kg/hr in adults (30-50 mL/hr); 1.0 mL/kg/hr in children\n- Mean arterial pressure >60 mmHg\n- Heart rate <120 bpm\n- Adjust fluid rate hourly based on response (formulas are only a starting estimate)\n\n## 3. Wound Care\n\n- **Cool (not cold/iced) water** irrigation for first 10-20 minutes if within 3 hours of injury (avoid hypothermia)\n- Debride obviously dead tissue and broken blisters\n- Leave intact blisters <6mm generally alone; larger ones often debrided\n- **Topical antimicrobials**:\n  - Silver sulfadiazine 1% (avoid on face, and in G6PD deficiency, near-term pregnancy, infants <2 months)\n  - Alternatives: silver-impregnated dressings, mafenide acetate (better eschar penetration), bacitracin for facial burns\n- Cover with sterile, non-adherent dressings\n\n## 4. Pain Management\n\n- IV opioids (morphine 0.05-0.1 mg/kg IV, or f",
+    "latency_ms": 11728.7,
+    "input_tokens": 157,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A patient comes for consultation with burns over 25% of his body surface, of varying degrees all over his body, what is the indicated treatment for this patient?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Management of a Patient with ~25% TBSA Burns (Mixed Depth)\n\nA burn covering approximately 25% of total body surface area (TBSA) with varying depths (superficial partial, deep partial, and possibly full-thickness) is classified as a **major burn** and requires treatment at a specialized burn center. Here is a comprehensive approach:\n\n## 1. Initial Assessment (Primary Survey - ABCDE)\n\n- **Airway**: Assess for inhalation injury (facial burns, singed nasal hairs, soot in sputum, hoarseness). If suspected, early intubation is critical, as airway edema can progress rapidly within 6-24 hours.\n- **Breathing**: Give 100% high-flow oxygen; consider carbon monoxide poisoning (check carboxyhemoglobin levels).\n- **Circulation**: Establish 2 large-bore IV lines (14-16 gauge), preferably through unburned skin.\n- **Disability**: Neurological assessment.\n- **Exposure**: Remove all clothing/jewelry, keep patient warm (burns >20% risk hypothermia).\n\n## 2. Fluid Resuscitation\n\nSince burns exceed **20% TBSA**, aggressive IV fluid resuscitation is mandatory (oral intake is inadequate at this level).\n\n### Parkland Formula (most widely used):\n**Total fluid (Lactated Ringer's) = 4 mL \u00d7 body weight (kg) \u00d7 %TBSA burned**\n\n- Example: For a 70 kg patient with 25% TBSA burn:\n  - Total = 4 \u00d7 70 \u00d7 25 = **7,000 mL** in first 24 hours\n  - **50%** given in first **8 hours** from time of injury (not from arrival) = ~3,500 mL\n  - Remaining **50%** given over next **16 hours** = ~3,500 mL\n\n### Monitoring adequacy of resuscitation:\n- **Urine output**: target 0.5 mL/kg/hr in adults (30-50 mL/hr); 1.0 mL/kg/hr in children\n- Mean arterial pressure >60 mmHg\n- Heart rate <120 bpm\n- Adjust fluid rate hourly based on response (formulas are only a starting estimate)\n\n## 3. Wound Care\n\n- **Cool (not cold/iced) water** irrigation for first 10-20 minutes if within 3 hours of injury (avoid hypothermia)\n- Debride obviously dead tissue and broken blisters\n- Leave intact blisters <6mm generally alone; larger ones often debrided\n- **Topical antimicrobials**:\n  - Silver sulfadiazine 1% (avoid on face, and in G6PD deficiency, near-term pregnancy, infants <2 months)\n  - Alternatives: silver-impregnated dressings, mafenide acetate (better eschar penetration), bacitracin for facial burns\n- Cover with sterile, non-adherent dressings\n\n## 4. Pain Management\n\n- IV opioids (morphine 0.05-0.1 mg/kg IV, or f",
+    "latency_ms": 11728.7,
+    "token_count": 1181,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "4c6062e8260c",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240673.106663,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 24 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4259,
+          "evidence": [
+            "Latency 11729ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11728.7,
+        "token_count": 1181,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.156; flagged=True"
+}

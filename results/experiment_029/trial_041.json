@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T22:29:42.713845+00:00",
+  "detector": "context_degradation",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "who were the judges on dancing on ice 2014",
+    "gold_index": 0
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "Based on the 2014 series (series 9) of *Dancing on Ice*, the judging panel \u2014 known as \"The Ice Panel\" \u2014 consisted of:\n\n- **Robin Cousins**\n- **Jason Gardiner**\n- **Karen Barber**\n- **Ashley Roberts**\n\nRobin Cousins was absent for weeks 6 and 7 because he was commentating on the 2014 ",
+    "latency_ms": 3538.4,
+    "input_tokens": 2481,
+    "output_tokens": 128
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "who were the judges on dancing on ice 2014",
+      "gold_index": 0,
+      "n_docs": 10
+    },
+    "response": "Based on the 2014 series (series 9) of *Dancing on Ice*, the judging panel - known as \"The Ice Panel\" - consisted of:\n\n- **Robin Cousins**\n- **Jason Gardiner**\n- **Karen Barber**\n- **Ashley Roberts**\n\nRobin Cousins was absent for weeks 6 and 7 because he was commentating on the 2014 ",
+    "latency_ms": 3538.4,
+    "token_count": 2609,
+    "context_window_used": 0.25
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "12cfd56183e6",
+      "tool_name": "context_qa",
+      "status": "pass",
+      "timestamp": 1786314582.713076,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3538.4,
+        "token_count": 2609,
+        "context_window_used": 0.25,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.41; flagged=False; gold_index=0"
+}

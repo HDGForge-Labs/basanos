@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:32:21.258697+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Antibiotics are usually given to patients who have a bacterial or fungal infection. What about those diseases that are usually caused by a virus?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biomedical technologist",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "Antibiotics don't work against viruses at all \u2014 they target bacterial structures and processes (cell walls, ribosomes, DNA gyrase, folate synthesis pathways) that viruses simply don't have, since viruses aren't independently living cells. Giving antibiotics for a viral infection does nothing for the illness and just contributes to antibiotic resistance and side effects like disrupted gut flora.\n\nFor viral diseases, treatment falls into several categories:\n\n**Antiviral drugs** \u2013 these target viral-specific mechanisms:\n- **Oseltamivir (Tamiflu)** for influenza \u2014 inhibits neuraminidase\n- **Acyclovir/valacyclovir** for herpes viruses (HSV, VZV) \u2014 inhibits viral DNA polymerase\n- **Nirmatrelvir/ritonavir (Paxlovid)** and **remdesivir** for COVID-19 \u2014 protease inhibitor and RNA polymerase inhibitor respectively\n- **Antiretrovirals** (e.g., tenofovir, dolutegravir) for HIV \u2014 target reverse transcriptase, integrase, protease\n- **Sofosbuvir-based regimens** for Hepatitis C \u2014 direct-acting antivirals, now curative in most cases\n- **Ribavirin** for certain hemorrhagic fevers and RSV in specific contexts\n\n**Supportive care** \u2013 for many common viral illnesses (rhinovirus colds, most cases of viral gastroenteritis, many mild flu cases), there's no targeted drug, so treatment is symptomatic: fluids, rest, antipyretics/analgesics (acetaminophen, NSAIDs), antiemetics, oxygen support if needed.\n\n**Prevention via vaccination** \u2013 often more impactful than treatment: measles, mumps, rubella, varicella, hepatitis A/B, HPV, influenza, COVID-19, rabies (post-exposure), etc.\n\n**Monoclonal antibodies** \u2013 increasingly used, e.g., palivizumab for RSV prophylaxis in high-risk infants, or the various anti-spike monoclonals used early in COVID-19.\n\n**Interferons** \u2013 used historically for chronic Hepatitis B/C and still in some settings \u2014 they boost the host's innate antiviral response rather than targeting the virus directly.\n\nOne caveat worth noting clinically: sometimes antibiotics *are* given during a viral illness \u2014 not to treat the virus, but to treat a secondary bacterial infection that develops afterward (e.g., bacterial pneumonia following influenza, or a bacterial ear infection following a cold). That's a distinct clinical judgment call, not treatment of the virus itself.",
+    "latency_ms": 10106.3,
+    "input_tokens": 159,
+    "output_tokens": 885
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Antibiotics are usually given to patients who have a bacterial or fungal infection. What about those diseases that are usually caused by a virus?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Antibiotics don't work against viruses at all \u2014 they target bacterial structures and processes (cell walls, ribosomes, DNA gyrase, folate synthesis pathways) that viruses simply don't have, since viruses aren't independently living cells. Giving antibiotics for a viral infection does nothing for the illness and just contributes to antibiotic resistance and side effects like disrupted gut flora.\n\nFor viral diseases, treatment falls into several categories:\n\n**Antiviral drugs** \u2013 these target viral-specific mechanisms:\n- **Oseltamivir (Tamiflu)** for influenza \u2014 inhibits neuraminidase\n- **Acyclovir/valacyclovir** for herpes viruses (HSV, VZV) \u2014 inhibits viral DNA polymerase\n- **Nirmatrelvir/ritonavir (Paxlovid)** and **remdesivir** for COVID-19 \u2014 protease inhibitor and RNA polymerase inhibitor respectively\n- **Antiretrovirals** (e.g., tenofovir, dolutegravir) for HIV \u2014 target reverse transcriptase, integrase, protease\n- **Sofosbuvir-based regimens** for Hepatitis C \u2014 direct-acting antivirals, now curative in most cases\n- **Ribavirin** for certain hemorrhagic fevers and RSV in specific contexts\n\n**Supportive care** \u2013 for many common viral illnesses (rhinovirus colds, most cases of viral gastroenteritis, many mild flu cases), there's no targeted drug, so treatment is symptomatic: fluids, rest, antipyretics/analgesics (acetaminophen, NSAIDs), antiemetics, oxygen support if needed.\n\n**Prevention via vaccination** \u2013 often more impactful than treatment: measles, mumps, rubella, varicella, hepatitis A/B, HPV, influenza, COVID-19, rabies (post-exposure), etc.\n\n**Monoclonal antibodies** \u2013 increasingly used, e.g., palivizumab for RSV prophylaxis in high-risk infants, or the various anti-spike monoclonals used early in COVID-19.\n\n**Interferons** \u2013 used historically for chronic Hepatitis B/C and still in some settings \u2014 they boost the host's innate antiviral response rather than targeting the virus directly.\n\nOne caveat worth noting clinically: sometimes antibiotics *are* given during a viral illness \u2014 not to treat the virus, but to treat a secondary bacterial infection that develops afterward (e.g., bacterial pneumonia following influenza, or a bacterial ear infection following a cold). That's a distinct clinical judgment call, not treatment of the virus itself.",
+    "latency_ms": 10106.3,
+    "token_count": 1044
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "1e3f9c9d2305",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239141.2578573,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4016,
+          "evidence": [
+            "Latency 10106ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 10106.3,
+        "token_count": 1044,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.30; flagged=False"
+}

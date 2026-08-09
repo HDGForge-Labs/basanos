@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-08T23:55:20.693723+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "You are patrolling the local city centre when you are passed information by a member of the public that there is a young girl running in front of cars and acting unusual. What are your first considerations, and what would you then do?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Police Officer",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Your first priority is the girl\u2019s immediate safety and the safety of other road users. Treat this initially as a high-risk vulnerability and road-traffic incident, not simply \u201canti-social behaviour\u201d.\n\n### First considerations\n- **Immediate threat to life:** Is she currently in live traffic, at risk of being struck, or causing drivers to brake or swerve?\n- **Her apparent age and capacity:** A young child running into roads may be lost, distressed, intoxicated, experiencing a mental-health crisis, neurodivergent, fleeing someone, or responding to an emergency.\n- **Possible safeguarding risks:** Is she alone? Is anyone following, controlling, or trying to retrieve her? Could she be missing, exploited, or fleeing abuse?\n- **Public and officer safety:** The road layout, traffic speed, nearby crossings, crowds, potential weapons, and whether a vehicle needs to be stopped.\n- **Need for urgent resources:** Ambulance if injured, unwell, highly distressed, or intoxicated; additional police units for traffic control, containment, and safeguarding.\n\n### Immediate action\n1. **Locate her quickly and keep her under observation.**  \n   Update control with an exact location, direction of travel, description, and the immediate risk: for example, \u201cyoung female running in carriageway, traffic braking sharply, immediate risk of collision.\u201d\n\n2. **Request urgent assistance.**  \n   Ask for nearby units to assist with:\n   - traffic management or temporary road closure;\n   - approaching from different directions to prevent her entering further traffic;\n   - locating any responsible adult or associated person.\n   \n   Request ambulance if there is any indication of injury, medical crisis, intoxication, or acute mental distress.\n\n3. **Make the area safe.**  \n   Use a police vehicle, where safe and proportionate, to create a visible protective position and warn traffic. Activate emergency equipment as appropriate. Do not create a further hazard by stopping in an unsafe position or pursuing her in a way that drives her further into traffic.\n\n4. **Approach calmly and non-confrontationally.**  \n   Avoid shouting, sudden grabbing, or crowding her unless immediate physical intervention is necessary to stop her entering danger. Use simple language:\n   - \u201cYou\u2019re safe. I\u2019m here to help.\u201d\n   - \u201cPlease come over here with me, away from the road.\u201d\n   - \u201cCan you tell me your name? Are you hurt? Is anyone with you?\u201d\n\n   Keep a safe distance initially, lower your posture if appropriate, and try to guide her toward a safer area rather than chase her.\n\n5. **Use proportionate physical intervention if necessary.**  \n   If she is about to run into traffic or cannot be safely guided away, intervene physically only to the extent necessary to prevent serious injury or death. The justification is immediate necessity to protect life. Continually reassess, use the minimum force necessary, and seek medical assessment if restraint has been used or she appears unwell.\n\n### Once she is safe\n- Move her to a safe, visible, supervised place\u2014ideally inside a police vehicle, nearby police premises, or another suitable controlled environment\u2014without unnecessarily escalating her distress.\n- Establish basic details:\n  - name, age, address, school;\n  - whether she is lost or has run away;\n  - who she was with;\n  - whether she feels safe returning home;\n  - whether anyone has hurt, threatened, or frightened her;\n  - whether she has taken alcohol, drugs, medication, or has a medical condition.\n- Conduct relevant police checks: missing person reports, local concerns, previous vulnerability markers, and whether any adult claiming her is genuinely appropriate to care for her.\n- Record and preserve key information from the informant and witnesses, including descriptions of her behaviour, any vehicles or adults nearby, and CCTV opportunities.\n- Make safeguarding referrals and involve a parent/carer only after considering whether they may be linked to the risk. If there are concerns about neglect, abuse, exploitation, or inability to keep her safe, involve children\u2019s social care and follow local child-protection procedures.\n- Ensure an appropriate handover: parent/carer where safe, social care, emergency department, or another suitable safeguarding arrangement. Do not simply leave a vulnerable child at an address without confirming welfare and safety.\n\nThroughout, keep control updated, document the rationale for decisions\u2014particularly any use of force, restraint, transport, or decision to involve social care\u2014and treat the incident as a potential child-protection matter until the circumstances are established.",
+    "latency_ms": 13136.4,
+    "input_tokens": 125,
+    "output_tokens": 916
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "You are patrolling the local city centre when you are passed information by a member of the public that there is a young girl running in front of cars and acting unusual. What are your first considerations, and what would you then do?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "Your first priority is the girl\u2019s immediate safety and the safety of other road users. Treat this initially as a high-risk vulnerability and road-traffic incident, not simply \u201canti-social behaviour\u201d.\n\n### First considerations\n- **Immediate threat to life:** Is she currently in live traffic, at risk of being struck, or causing drivers to brake or swerve?\n- **Her apparent age and capacity:** A young child running into roads may be lost, distressed, intoxicated, experiencing a mental-health crisis, neurodivergent, fleeing someone, or responding to an emergency.\n- **Possible safeguarding risks:** Is she alone? Is anyone following, controlling, or trying to retrieve her? Could she be missing, exploited, or fleeing abuse?\n- **Public and officer safety:** The road layout, traffic speed, nearby crossings, crowds, potential weapons, and whether a vehicle needs to be stopped.\n- **Need for urgent resources:** Ambulance if injured, unwell, highly distressed, or intoxicated; additional police units for traffic control, containment, and safeguarding.\n\n### Immediate action\n1. **Locate her quickly and keep her under observation.**  \n   Update control with an exact location, direction of travel, description, and the immediate risk: for example, \u201cyoung female running in carriageway, traffic braking sharply, immediate risk of collision.\u201d\n\n2. **Request urgent assistance.**  \n   Ask for nearby units to assist with:\n   - traffic management or temporary road closure;\n   - approaching from different directions to prevent her entering further traffic;\n   - locating any responsible adult or associated person.\n   \n   Request ambulance if there is any indication of injury, medical crisis, intoxication, or acute mental distress.\n\n3. **Make the area safe.**  \n   Use a police vehicle, where safe and proportionate, to create a visible protective position and warn traffic. Activate emergency equipment as appropriate. Do not create a further hazard by stopping in an unsafe position or pursuing her in a way that drives her further into traffic.\n\n4. **Approach calmly and non-confrontationally.**  \n   Avoid shouting, sudden grabbing, or crowding her unless immediate physical intervention is necessary to stop her entering danger. Use simple language:\n   - \u201cYou\u2019re safe. I\u2019m here to help.\u201d\n   - \u201cPlease come over here with me, away from the road.\u201d\n   - \u201cCan you tell me your name? Are you hurt? Is anyone with you?\u201d\n\n   Keep a safe distance initially, lower your posture if appropriate, and try to guide her toward a safer area rather than chase her.\n\n5. **Use proportionate physical intervention if necessary.**  \n   If she is about to run into traffic or cannot be safely guided away, intervene physically only to the extent necessary to prevent serious injury or death. The justification is immediate necessity to protect life. Continually reassess, use the minimum force necessary, and seek medical assessment if restraint has been used or she appears unwell.\n\n### Once she is safe\n- Move her to a safe, visible, supervised place\u2014ideally inside a police vehicle, nearby police premises, or another suitable controlled environment\u2014without unnecessarily escalating her distress.\n- Establish basic details:\n  - name, age, address, school;\n  - whether she is lost or has run away;\n  - who she was with;\n  - whether she feels safe returning home;\n  - whether anyone has hurt, threatened, or frightened her;\n  - whether she has taken alcohol, drugs, medication, or has a medical condition.\n- Conduct relevant police checks: missing person reports, local concerns, previous vulnerability markers, and whether any adult claiming her is genuinely appropriate to care for her.\n- Record and preserve key information from the informant and witnesses, including descriptions of her behaviour, any vehicles or adults nearby, and CCTV opportunities.\n- Make safeguarding referrals and involve a parent/carer only after considering whether they may be linked to the risk. If there are concerns about neglect, abuse, exploitation, or inability to keep her safe, involve children\u2019s social care and follow local child-protection procedures.\n- Ensure an appropriate handover: parent/carer where safe, social care, emergency department, or another suitable safeguarding arrangement. Do not simply leave a vulnerable child at an address without confirming welfare and safety.\n\nThroughout, keep control updated, document the rationale for decisions\u2014particularly any use of force, restraint, transport, or decision to involve social care\u2014and treat the incident as a potential child-protection matter until the circumstances are established.",
+    "latency_ms": 13136.4,
+    "token_count": 1041
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "02ad31f3202b",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786233320.6929061,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.447,
+          "evidence": [
+            "Latency 13136ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13136.4,
+        "token_count": 1041,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.23; flagged=False"
+}

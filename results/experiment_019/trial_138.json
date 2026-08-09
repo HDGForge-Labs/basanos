@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T00:11:36.381519+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Is there any difference in time of threatment of patients COVID+ who were using pulmonary rehabilitation and those who did not?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Physical Medicine and Rehabilitation also COVID patients",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Yes\u2014generally, COVID-19 patients who receive pulmonary rehabilitation (PR) tend to recover functional capacity and sometimes leave hospital sooner than comparable patients who do not, but the effect on *total treatment time* varies substantially by illness severity, setting, and what \u201cpulmonary rehabilitation\u201d includes.\n\n### During hospitalization\nFor hospitalized COVID-19 patients\u2014especially after severe pneumonia, ICU admission, mechanical ventilation, or prolonged bed rest\u2014early, individualized rehabilitation can help reduce complications from immobility and speed recovery of:\n\n- walking ability and independence in daily activities,\n- breathlessness,\n- muscle strength,\n- oxygen tolerance,\n- ability to perform airway-clearance and breathing exercises.\n\nStudies and rehabilitation programs have reported reductions in hospital length of stay ranging from roughly **1\u20135 days** in some groups, but this is not consistent enough to guarantee a shorter admission for every patient. Length of stay is still driven mainly by oxygen requirement, respiratory failure, blood clots, secondary infection, kidney/heart complications, and need for ICU-level care.\n\nFor mild COVID-19, pulmonary rehabilitation usually does **not** meaningfully change the acute treatment duration, because many people recover at home within approximately **1\u20132 weeks** without formal rehab.\n\n### After discharge / long COVID\nThe clearest benefit is often after the acute infection. Structured PR programs\u2014commonly **2\u20133 sessions per week for 6\u20138 weeks**, sometimes up to **12 weeks**\u2014can improve:\n\n- 6-minute walk distance by roughly **30\u201380 meters** in many post-COVID studies,\n- exercise tolerance,\n- fatigue and dyspnea scores,\n- health-related quality of life.\n\nPatients receiving rehabilitation may return to usual daily activities or work sooner, but the exact difference can range from days to several weeks and depends heavily on baseline fitness, lung involvement, ICU stay, age, and coexisting disease.\n\n### Important caveat\nPulmonary rehabilitation is **not a substitute** for acute COVID treatment such as oxygen, antivirals when indicated, corticosteroids for patients needing supplemental oxygen, anticoagulation when appropriate, or ventilatory support. In acute severe illness, overly intense exercise can worsen symptoms; rehabilitation should be low-intensity, symptom-guided, and supervised when oxygen needs are significant.\n\n### Bottom line\n- **Yes, PR can shorten functional recovery time and may modestly shorten hospital stay in selected moderate-to-severe cases.**\n- **Evidence for a reliably shorter overall COVID treatment duration is limited and variable.**\n- Benefits are strongest in people with persistent breathlessness, reduced exercise capacity, prolonged hospitalization, ICU admission, or post-COVID symptoms lasting more than approximately **4\u201312 weeks**.\n\nIf you mean a specific study or dataset, the answer depends on its reported average/median treatment duration and how the rehabilitation and non-rehabilitation groups were matched for severity.",
+    "latency_ms": 8888.8,
+    "input_tokens": 96,
+    "output_tokens": 579
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Is there any difference in time of threatment of patients COVID+ who were using pulmonary rehabilitation and those who did not?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Yes\u2014generally, COVID-19 patients who receive pulmonary rehabilitation (PR) tend to recover functional capacity and sometimes leave hospital sooner than comparable patients who do not, but the effect on *total treatment time* varies substantially by illness severity, setting, and what \u201cpulmonary rehabilitation\u201d includes.\n\n### During hospitalization\nFor hospitalized COVID-19 patients\u2014especially after severe pneumonia, ICU admission, mechanical ventilation, or prolonged bed rest\u2014early, individualized rehabilitation can help reduce complications from immobility and speed recovery of:\n\n- walking ability and independence in daily activities,\n- breathlessness,\n- muscle strength,\n- oxygen tolerance,\n- ability to perform airway-clearance and breathing exercises.\n\nStudies and rehabilitation programs have reported reductions in hospital length of stay ranging from roughly **1\u20135 days** in some groups, but this is not consistent enough to guarantee a shorter admission for every patient. Length of stay is still driven mainly by oxygen requirement, respiratory failure, blood clots, secondary infection, kidney/heart complications, and need for ICU-level care.\n\nFor mild COVID-19, pulmonary rehabilitation usually does **not** meaningfully change the acute treatment duration, because many people recover at home within approximately **1\u20132 weeks** without formal rehab.\n\n### After discharge / long COVID\nThe clearest benefit is often after the acute infection. Structured PR programs\u2014commonly **2\u20133 sessions per week for 6\u20138 weeks**, sometimes up to **12 weeks**\u2014can improve:\n\n- 6-minute walk distance by roughly **30\u201380 meters** in many post-COVID studies,\n- exercise tolerance,\n- fatigue and dyspnea scores,\n- health-related quality of life.\n\nPatients receiving rehabilitation may return to usual daily activities or work sooner, but the exact difference can range from days to several weeks and depends heavily on baseline fitness, lung involvement, ICU stay, age, and coexisting disease.\n\n### Important caveat\nPulmonary rehabilitation is **not a substitute** for acute COVID treatment such as oxygen, antivirals when indicated, corticosteroids for patients needing supplemental oxygen, anticoagulation when appropriate, or ventilatory support. In acute severe illness, overly intense exercise can worsen symptoms; rehabilitation should be low-intensity, symptom-guided, and supervised when oxygen needs are significant.\n\n### Bottom line\n- **Yes, PR can shorten functional recovery time and may modestly shorten hospital stay in selected moderate-to-severe cases.**\n- **Evidence for a reliably shorter overall COVID treatment duration is limited and variable.**\n- Benefits are strongest in people with persistent breathlessness, reduced exercise capacity, prolonged hospitalization, ICU admission, or post-COVID symptoms lasting more than approximately **4\u201312 weeks**.\n\nIf you mean a specific study or dataset, the answer depends on its reported average/median treatment duration and how the rehabilitation and non-rehabilitation groups were matched for severity.",
+    "latency_ms": 8888.8,
+    "token_count": 675,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "294bb202edd7",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234296.3807693,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 7 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 8888.8,
+        "token_count": 675,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.138; flagged=True"
+}

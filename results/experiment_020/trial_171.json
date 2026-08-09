@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T02:00:47.111237+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "I found a protein expressed in both humans and Pseudomonas aeruginosa. They have quite similar protein structures but completely different sequences and functions. How could this happen?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Molecular Microbiology",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Convergent Structural Evolution: How Similar Folds Arise from Divergent Sequences\n\nThis is a fascinating but well-documented phenomenon in structural biology. Here's how it likely happened:\n\n## 1. **Protein Structure Space is Limited**\n\nThere are only approximately **1,000 to 2,000 distinct protein folds** estimated to exist in nature, despite there being an almost infinite number of possible amino acid sequences. Some estimates suggest the total fold space could be as constrained as **~10,000 folds maximum**. This means:\n\n- Sequence space is vastly larger than structure space (roughly **20^100** possible sequences for a 100-residue protein vs. only ~1,000-2,000 stable folds)\n- Different sequences frequently \"discover\" the same structural solution independently\n- Structures like the TIM barrel (\u03b2/\u03b1)8 fold appear in **roughly 10%** of all known enzyme structures despite huge sequence diversity\n\n## 2. **Physical and Chemical Constraints Favor Certain Folds**\n\nSome folds are simply more **thermodynamically stable** and **kinetically accessible** during folding:\n\n- Common folds like the **Rossmann fold**, **TIM barrel**, and **ferredoxin-like fold** appear repeatedly because they represent energy minima that are easy to reach\n- These folds tolerate approximately **70-90%** sequence variation while maintaining structural integrity\n- Certain secondary structure packing arrangements (like four-helix bundles) have particularly favorable packing geometries\n\n## 3. **Convergent Evolution (Analogous Structures)**\n\nIf the proteins have **completely different sequences** (typically less than **10-15% sequence identity**, which is often considered \"background noise\" in alignment) but similar structures, this strongly suggests **convergent evolution** rather than common ancestry:\n\n- Two evolutionarily unrelated lineages independently arrived at similar 3D solutions because that structure was optimal for a given function or stability requirement\n- Classic examples include:\n  - **Subtilisin vs. chymotrypsin**: Both are serine proteases with the same catalytic triad geometry (Ser-His-Asp) but almost entirely different folds and sequences\n  - **Concanavalin A and various bacterial lectins**: similar \u03b2-sandwich structures, different origins\n\n## 4. **Divergent Evolution Beyond Recognition**\n\nAlternatively, if there was a **very ancient common ancestor** (predating the divergence of bacteria and eukaryotes, roughly **3.5-4 billion years ago**), sequences can diverge so extensively that:\n\n- Sequence identity drops below **~20-25%**, the typical \"twilight zone\" threshold where homology becomes statistically undetectable by simple alignment tools like BLAST\n- Function can also diverge significantly through **neofunctionalization**, especially if gene duplication occurred\n- Structure remains conserved because the fold is under strong purifying selection (structural constraints evolve **much slower** than sequence, often by a factor of **3-10x**)\n\n## 5. **How to Distinguish Between",
+    "latency_ms": 12554.7,
+    "input_tokens": 164,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "I found a protein expressed in both humans and Pseudomonas aeruginosa. They have quite similar protein structures but completely different sequences and functions. How could this happen?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Convergent Structural Evolution: How Similar Folds Arise from Divergent Sequences\n\nThis is a fascinating but well-documented phenomenon in structural biology. Here's how it likely happened:\n\n## 1. **Protein Structure Space is Limited**\n\nThere are only approximately **1,000 to 2,000 distinct protein folds** estimated to exist in nature, despite there being an almost infinite number of possible amino acid sequences. Some estimates suggest the total fold space could be as constrained as **~10,000 folds maximum**. This means:\n\n- Sequence space is vastly larger than structure space (roughly **20^100** possible sequences for a 100-residue protein vs. only ~1,000-2,000 stable folds)\n- Different sequences frequently \"discover\" the same structural solution independently\n- Structures like the TIM barrel (\u03b2/\u03b1)8 fold appear in **roughly 10%** of all known enzyme structures despite huge sequence diversity\n\n## 2. **Physical and Chemical Constraints Favor Certain Folds**\n\nSome folds are simply more **thermodynamically stable** and **kinetically accessible** during folding:\n\n- Common folds like the **Rossmann fold**, **TIM barrel**, and **ferredoxin-like fold** appear repeatedly because they represent energy minima that are easy to reach\n- These folds tolerate approximately **70-90%** sequence variation while maintaining structural integrity\n- Certain secondary structure packing arrangements (like four-helix bundles) have particularly favorable packing geometries\n\n## 3. **Convergent Evolution (Analogous Structures)**\n\nIf the proteins have **completely different sequences** (typically less than **10-15% sequence identity**, which is often considered \"background noise\" in alignment) but similar structures, this strongly suggests **convergent evolution** rather than common ancestry:\n\n- Two evolutionarily unrelated lineages independently arrived at similar 3D solutions because that structure was optimal for a given function or stability requirement\n- Classic examples include:\n  - **Subtilisin vs. chymotrypsin**: Both are serine proteases with the same catalytic triad geometry (Ser-His-Asp) but almost entirely different folds and sequences\n  - **Concanavalin A and various bacterial lectins**: similar \u03b2-sandwich structures, different origins\n\n## 4. **Divergent Evolution Beyond Recognition**\n\nAlternatively, if there was a **very ancient common ancestor** (predating the divergence of bacteria and eukaryotes, roughly **3.5-4 billion years ago**), sequences can diverge so extensively that:\n\n- Sequence identity drops below **~20-25%**, the typical \"twilight zone\" threshold where homology becomes statistically undetectable by simple alignment tools like BLAST\n- Function can also diverge significantly through **neofunctionalization**, especially if gene duplication occurred\n- Structure remains conserved because the fold is under strong purifying selection (structural constraints evolve **much slower** than sequence, often by a factor of **3-10x**)\n\n## 5. **How to Distinguish Between",
+    "latency_ms": 12554.7,
+    "token_count": 1188,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "2a4ba2e0e0a2",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240847.1104627,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 15 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4383,
+          "evidence": [
+            "Latency 12555ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12554.7,
+        "token_count": 1188,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.171; flagged=True"
+}

@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T00:06:55.995083+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Can I leave a job at the end of a trial period?",
+    "field": "Law",
+    "specific_field": "personnel administration",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Yes. In most places, you can leave a job at the end of a trial or probationary period\u2014and usually you can resign during it as well.\n\nKey points:\n\n- **Check your contract or offer letter.** It may specify a shorter notice period during probation, often about **1 week**, **2 weeks**, or **1 month**. Some contracts require the same notice period throughout employment.\n- **If there is no written notice clause**, the legal default depends on your country/state. In many jurisdictions, employment is effectively **at-will**, meaning either side can end employment without notice, subject to limited exceptions.\n- **Give written notice.** A short email or letter is usually enough: state that you are resigning, give the date, and identify your intended final working day.\n- **You do not need to wait until the final day of probation.** If the role is not right for you, you can usually resign earlier, subject to your notice obligations.\n- **Your employer may end employment sooner.** In some contracts, the employer can choose to pay you instead of having you work your notice period, often called \u201cpayment in lieu of notice.\u201d\n- **Check practical issues:** final pay, unused holiday/PTO, return of equipment, confidentiality obligations, non-compete/non-solicitation clauses, bonus or training-repayment terms, and visa sponsorship if applicable.\n\nA simple resignation message could be:\n\n> Dear [Manager],  \n> Please accept this email as notice of my resignation from my role as [Job Title]. Under my contract, my notice period is [X], so my last working day will be [date]. Thank you for the opportunity.  \n> Kind regards,  \n> [Name]\n\nIf you tell me your country and what your contract says about probation and notice, I can explain the likely rules more specifically.",
+    "latency_ms": 4855.5,
+    "input_tokens": 85,
+    "output_tokens": 375
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Can I leave a job at the end of a trial period?",
+      "field": "Law"
+    },
+    "response": "Yes. In most places, you can leave a job at the end of a trial or probationary period\u2014and usually you can resign during it as well.\n\nKey points:\n\n- **Check your contract or offer letter.** It may specify a shorter notice period during probation, often about **1 week**, **2 weeks**, or **1 month**. Some contracts require the same notice period throughout employment.\n- **If there is no written notice clause**, the legal default depends on your country/state. In many jurisdictions, employment is effectively **at-will**, meaning either side can end employment without notice, subject to limited exceptions.\n- **Give written notice.** A short email or letter is usually enough: state that you are resigning, give the date, and identify your intended final working day.\n- **You do not need to wait until the final day of probation.** If the role is not right for you, you can usually resign earlier, subject to your notice obligations.\n- **Your employer may end employment sooner.** In some contracts, the employer can choose to pay you instead of having you work your notice period, often called \u201cpayment in lieu of notice.\u201d\n- **Check practical issues:** final pay, unused holiday/PTO, return of equipment, confidentiality obligations, non-compete/non-solicitation clauses, bonus or training-repayment terms, and visa sponsorship if applicable.\n\nA simple resignation message could be:\n\n> Dear [Manager],  \n> Please accept this email as notice of my resignation from my role as [Job Title]. Under my contract, my notice period is [X], so my last working day will be [date]. Thank you for the opportunity.  \n> Kind regards,  \n> [Name]\n\nIf you tell me your country and what your contract says about probation and notice, I can explain the likely rules more specifically.",
+    "latency_ms": 4855.5,
+    "token_count": 460,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "89bf053804ab",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234015.9943283,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 2 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 4855.5,
+        "token_count": 460,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.111; flagged=True"
+}

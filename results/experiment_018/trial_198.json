@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-08T23:07:56.322263+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What are the two types of hearing loss?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Audiology",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "The two main types of hearing loss are:\n\n1. **Conductive hearing loss** \u2014 Sound is blocked or reduced in the **outer or middle ear**, such as by earwax, fluid, an ear infection, a perforated eardrum, or problems with the tiny middle-ear bones. It is often temporary or treatable.\n\n2. **Sensorineural hearing loss** \u2014 Damage occurs in the **inner ear (cochlea) or auditory nerve**, commonly from aging, prolonged loud-noise exposure, certain medications, infections, or genetic factors. It is usually permanent, though hearing aids or cochlear implants may help.\n\nA third category, **mixed hearing loss**, combines conductive and sensorineural loss.",
+    "latency_ms": 1732.6,
+    "input_tokens": 81,
+    "output_tokens": 147
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the two types of hearing loss?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "The two main types of hearing loss are:\n\n1. **Conductive hearing loss** \u2014 Sound is blocked or reduced in the **outer or middle ear**, such as by earwax, fluid, an ear infection, a perforated eardrum, or problems with the tiny middle-ear bones. It is often temporary or treatable.\n\n2. **Sensorineural hearing loss** \u2014 Damage occurs in the **inner ear (cochlea) or auditory nerve**, commonly from aging, prolonged loud-noise exposure, certain medications, infections, or genetic factors. It is usually permanent, though hearing aids or cochlear implants may help.\n\nA third category, **mixed hearing loss**, combines conductive and sensorineural loss.",
+    "latency_ms": 1732.6,
+    "token_count": 228,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "4d04d64f7d8c",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230476.3215,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 1732.6,
+        "token_count": 228,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.198; flagged=False"
+}

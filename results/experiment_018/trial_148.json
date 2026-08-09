@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T23:02:59.982095+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Where can I get detailed protocols for microRNA analysis?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Research scientist",
+    "question_type": "Directed question that has a single unambiguous answer| Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "You can find detailed, validated microRNA-analysis protocols in several reliable places, depending on whether you need **RNA extraction, reverse transcription/qPCR, small-RNA sequencing, microarray analysis, in situ hybridization, or bioinformatics**.\n\n## 1. Peer-reviewed protocol journals\n\nThese are often the best sources for step-by-step procedures:\n\n- **Nature Protocols** \u2014 highly detailed, usually includes reagent lists, timing, troubleshooting, and quality-control criteria.\n- **Methods in Molecular Biology** \u2014 book chapters focused on specific microRNA workflows, such as:\n  - total RNA and small-RNA extraction,\n  - stem-loop or poly(A)-tailing RT-qPCR,\n  - small-RNA library preparation,\n  - miRNA in situ hybridization,\n  - extracellular-vesicle miRNA analysis.\n- **Current Protocols** \u2014 practical protocols with alternatives and troubleshooting.\n- **STAR Protocols** \u2014 open-access or freely available protocols associated with published studies.\n- **Bio-protocol** \u2014 detailed, often openly accessible experimental procedures.\n- **JoVE** \u2014 video demonstrations, particularly useful for tissue handling, RNA extraction, and in situ methods.\n\nUseful searches include:\n\n- `\"microRNA RT-qPCR protocol\" site:nature.com/protocols`\n- `\"small RNA sequencing library preparation protocol\" site:currentprotocols.com`\n- `\"miRNA in situ hybridization protocol\" site:protocols.io`\n- `\"extracellular vesicle miRNA extraction protocol\" site:bioprotocol.org`\n\n## 2. MIQE and consensus reporting guidelines\n\nFor quantitative PCR, consult the **MIQE guidelines** and the updated **miRNA-specific reporting recommendations**. These address:\n\n- RNA quantity and integrity,\n- reverse-transcription chemistry,\n- primer and assay validation,\n- amplification efficiency,\n- reference-gene selection,\n- technical replicates,\n- no-template and no-RT controls,\n- limit of detection,\n- normalization and statistical reporting.\n\nFor qPCR, typical acceptance criteria often include:\n\n- amplification efficiency approximately **90\u2013110%**,\n- standard-curve slope approximately **\u22123.58 to \u22123.10**,\n- coefficient of determination \\(R^2\\) commonly at least **0.98\u20130.99**,\n- technical replicate differences preferably below approximately **0.3\u20130.5 Cq**,\n- melt-curve confirmation for SYBR Green assays.\n\nDo not assume that commonly used controls such as **U6, 5S rRNA, or miR-16** are universally appropriate; their stability must be demonstrated in the specific tissue, disease model, and treatment condition.\n\n## 3. Manufacturer protocols and application notes\n\nFor practical, assay-specific instructions, start with the manufacturer of your extraction kit, RT kit, or detection platform. Useful sources include:\n\n- **QIAGEN miRNA assays and miRNeasy kits**\n- **Thermo Fisher TaqMan Advanced miRNA assays**\n- **Bio-Rad small-RNA and digital-PCR workflows**\n- **Takara Bio SMARTer small-RNA sequencing kits**\n- **NEBNext small-RNA library-preparation protocols**\n- **Illumina TruSeq or equivalent small-RNA sequencing workflows**\n- **Exiqon/LNA-based miRNA assays**, where available through current suppliers\n\nThese protocols usually specify:\n\n- minimum input RNA, often approximately **1\u2013100 ng** for sensitive qPCR assays and approximately **100 ng\u20131 \u00b5g** for many sequencing workflows;\n- reaction volumes, commonly approximately **10\u201320 \u00b5L** for RT-qPCR;\n- recommended cycle numbers, often approximately **35\u201345 cycles**;\n- adapter and indexing requirements for sequencing;\n- recommended RNA storage, commonly at approximately **\u221280 \u00b0C**;\n- acceptable purity ratios, often roughly **A260/A280 = 1.8\u20132.1**, while recognizing that spectrophotometric ratios are unreliable for very low RNA quantities.\n\nTreat vendor protocols as platform-specific rather than universally interchangeable.\n\n## 4. Protocols.io and laboratory repositories\n\n**Protocols.io** is particularly useful for current, versioned laboratory methods. Search for:\n\n- \u201csmall RNA extraction\u201d\n- \u201cmiRNA RT-qPCR\u201d\n- \u201cmiRNA sequencing\u201d\n- \u201cmiRNA normalization\u201d\n- \u201cmiRNA in situ hybridization\u201d\n- \u201cextracellular vesicle small RNA\u201d\n\nAlso check:\n\n- **Addgene protocols**\n- supplementary methods in relevant publications\n- institutional core-facility protocols\n- **Galaxy Training Network** tutorials for small-RNA sequencing analysis\n\n## 5. Bioinformatics resources\n\nFor sequencing-based miRNA analysis, use resources that explicitly address short-read and isomiR issues:\n\n- **miRBase** \u2014 mature and precursor miRNA annotations.\n- **MirGeneDB** \u2014 curated miRNA gene annotations.\n- **sRNAbench**, **miRDeep2**, and **miRge3.0** \u2014 small-RNA processing and miRNA quantification.\n- **Galaxy** \u2014 reproducible, graphical workflows.\n-",
+    "latency_ms": 9218.9,
+    "input_tokens": 83,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Where can I get detailed protocols for microRNA analysis?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "You can find detailed, validated microRNA-analysis protocols in several reliable places, depending on whether you need **RNA extraction, reverse transcription/qPCR, small-RNA sequencing, microarray analysis, in situ hybridization, or bioinformatics**.\n\n## 1. Peer-reviewed protocol journals\n\nThese are often the best sources for step-by-step procedures:\n\n- **Nature Protocols** \u2014 highly detailed, usually includes reagent lists, timing, troubleshooting, and quality-control criteria.\n- **Methods in Molecular Biology** \u2014 book chapters focused on specific microRNA workflows, such as:\n  - total RNA and small-RNA extraction,\n  - stem-loop or poly(A)-tailing RT-qPCR,\n  - small-RNA library preparation,\n  - miRNA in situ hybridization,\n  - extracellular-vesicle miRNA analysis.\n- **Current Protocols** \u2014 practical protocols with alternatives and troubleshooting.\n- **STAR Protocols** \u2014 open-access or freely available protocols associated with published studies.\n- **Bio-protocol** \u2014 detailed, often openly accessible experimental procedures.\n- **JoVE** \u2014 video demonstrations, particularly useful for tissue handling, RNA extraction, and in situ methods.\n\nUseful searches include:\n\n- `\"microRNA RT-qPCR protocol\" site:nature.com/protocols`\n- `\"small RNA sequencing library preparation protocol\" site:currentprotocols.com`\n- `\"miRNA in situ hybridization protocol\" site:protocols.io`\n- `\"extracellular vesicle miRNA extraction protocol\" site:bioprotocol.org`\n\n## 2. MIQE and consensus reporting guidelines\n\nFor quantitative PCR, consult the **MIQE guidelines** and the updated **miRNA-specific reporting recommendations**. These address:\n\n- RNA quantity and integrity,\n- reverse-transcription chemistry,\n- primer and assay validation,\n- amplification efficiency,\n- reference-gene selection,\n- technical replicates,\n- no-template and no-RT controls,\n- limit of detection,\n- normalization and statistical reporting.\n\nFor qPCR, typical acceptance criteria often include:\n\n- amplification efficiency approximately **90\u2013110%**,\n- standard-curve slope approximately **\u22123.58 to \u22123.10**,\n- coefficient of determination \\(R^2\\) commonly at least **0.98\u20130.99**,\n- technical replicate differences preferably below approximately **0.3\u20130.5 Cq**,\n- melt-curve confirmation for SYBR Green assays.\n\nDo not assume that commonly used controls such as **U6, 5S rRNA, or miR-16** are universally appropriate; their stability must be demonstrated in the specific tissue, disease model, and treatment condition.\n\n## 3. Manufacturer protocols and application notes\n\nFor practical, assay-specific instructions, start with the manufacturer of your extraction kit, RT kit, or detection platform. Useful sources include:\n\n- **QIAGEN miRNA assays and miRNeasy kits**\n- **Thermo Fisher TaqMan Advanced miRNA assays**\n- **Bio-Rad small-RNA and digital-PCR workflows**\n- **Takara Bio SMARTer small-RNA sequencing kits**\n- **NEBNext small-RNA library-preparation protocols**\n- **Illumina TruSeq or equivalent small-RNA sequencing workflows**\n- **Exiqon/LNA-based miRNA assays**, where available through current suppliers\n\nThese protocols usually specify:\n\n- minimum input RNA, often approximately **1\u2013100 ng** for sensitive qPCR assays and approximately **100 ng\u20131 \u00b5g** for many sequencing workflows;\n- reaction volumes, commonly approximately **10\u201320 \u00b5L** for RT-qPCR;\n- recommended cycle numbers, often approximately **35\u201345 cycles**;\n- adapter and indexing requirements for sequencing;\n- recommended RNA storage, commonly at approximately **\u221280 \u00b0C**;\n- acceptable purity ratios, often roughly **A260/A280 = 1.8\u20132.1**, while recognizing that spectrophotometric ratios are unreliable for very low RNA quantities.\n\nTreat vendor protocols as platform-specific rather than universally interchangeable.\n\n## 4. Protocols.io and laboratory repositories\n\n**Protocols.io** is particularly useful for current, versioned laboratory methods. Search for:\n\n- \u201csmall RNA extraction\u201d\n- \u201cmiRNA RT-qPCR\u201d\n- \u201cmiRNA sequencing\u201d\n- \u201cmiRNA normalization\u201d\n- \u201cmiRNA in situ hybridization\u201d\n- \u201cextracellular vesicle small RNA\u201d\n\nAlso check:\n\n- **Addgene protocols**\n- supplementary methods in relevant publications\n- institutional core-facility protocols\n- **Galaxy Training Network** tutorials for small-RNA sequencing analysis\n\n## 5. Bioinformatics resources\n\nFor sequencing-based miRNA analysis, use resources that explicitly address short-read and isomiR issues:\n\n- **miRBase** \u2014 mature and precursor miRNA annotations.\n- **MirGeneDB** \u2014 curated miRNA gene annotations.\n- **sRNAbench**, **miRDeep2**, and **miRge3.0** \u2014 small-RNA processing and miRNA quantification.\n- **Galaxy** \u2014 reproducible, graphical workflows.\n-",
+    "latency_ms": 9218.9,
+    "token_count": 1107,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "71fdaba56b8e",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230179.9813328,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 16 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 9218.9,
+        "token_count": 1107,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.148; flagged=True"
+}

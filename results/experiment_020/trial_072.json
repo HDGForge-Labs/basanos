@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:40:34.871282+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What is the clinical use of catecholamine measurement?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biochemistry",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Clinical Use of Catecholamine Measurement\n\n## Primary Indication: Pheochromocytoma/Paraganglioma Diagnosis\n\nCatecholamine measurement (epinephrine, norepinephrine, dopamine, and their metabolites) is used primarily to diagnose **catecholamine-secreting tumors**:\n\n- **Pheochromocytomas** (adrenal medulla)\n- **Paragangliomas** (extra-adrenal sympathetic/parasympathetic tissue)\n\n## Preferred Testing Approach\n\n**Plasma free metanephrines** or **24-hour urine fractionated metanephrines/catecholamines** are the tests of choice\u2014metabolites are preferred over parent catecholamines because:\n- Metanephrines are produced continuously within tumor cells (independent of episodic hormone release)\n- Plasma catecholamines have very short half-lives (~2 minutes) and fluctuate with stress, posture, and pain\n- Sensitivity for metanephrines approaches 96-100% for plasma free metanephrines\n\n## Clinical Scenarios Prompting Testing\n\n1. **Resistant/paroxysmal hypertension** with classic triad: headache, palpitations, diaphoresis\n2. **Adrenal incidentaloma** \u2014 mandatory biochemical screening regardless of imaging characteristics\n3. **Hereditary syndromes**: MEN2A/2B, von Hippel-Lindau, neurofibromatosis type 1, SDHx mutations (surveillance)\n4. **Family history** of pheochromocytoma/paraganglioma\n5. **Hypertensive crisis** during surgery, anesthesia induction, or childbirth\n6. **Unexplained cardiomyopathy** (catecholamine-induced, including Takotsubo-like presentations)\n\n## Result Interpretation\n\n- **Elevation >4x upper limit of normal** is highly specific for pheochromocytoma\n- **Mild elevations (2-4x)** require confirmatory testing (clonidine suppression test) due to false positives from:\n  - Medications: tricyclic antidepressants, MAO inhibitors, levodopa, decongestants, acetaminophen (interferes with some assays)\n  - Physiologic stress, obstructive sleep apnea\n  - Renal failure (impaired clearance)\n\n## Other Clinical Applications\n\n- **Neuroblastoma** diagnosis in children \u2014 urinary VMA (vanillylmandelic acid) and HVA (homovanillic acid) are standard tumor markers\n- **Autonomic failure evaluation** \u2014 low catecholamines with orthostatic hypotension suggest pure autonomic failure vs. multiple system atrophy\n- **Carcinoid syndrome workup** (less commonly, alongside 5-HIAA)\n\n## Pre-Test Preparation (Critical for Accuracy)\n\n- Patient supine and fasting for plasma testing (30 minutes rest)\n- Avoid caffeine, nicotine, strenuous exercise 24 hours prior\n- Discontinue interfering medications when clin",
+    "latency_ms": 10739.8,
+    "input_tokens": 132,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the clinical use of catecholamine measurement?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Clinical Use of Catecholamine Measurement\n\n## Primary Indication: Pheochromocytoma/Paraganglioma Diagnosis\n\nCatecholamine measurement (epinephrine, norepinephrine, dopamine, and their metabolites) is used primarily to diagnose **catecholamine-secreting tumors**:\n\n- **Pheochromocytomas** (adrenal medulla)\n- **Paragangliomas** (extra-adrenal sympathetic/parasympathetic tissue)\n\n## Preferred Testing Approach\n\n**Plasma free metanephrines** or **24-hour urine fractionated metanephrines/catecholamines** are the tests of choice\u2014metabolites are preferred over parent catecholamines because:\n- Metanephrines are produced continuously within tumor cells (independent of episodic hormone release)\n- Plasma catecholamines have very short half-lives (~2 minutes) and fluctuate with stress, posture, and pain\n- Sensitivity for metanephrines approaches 96-100% for plasma free metanephrines\n\n## Clinical Scenarios Prompting Testing\n\n1. **Resistant/paroxysmal hypertension** with classic triad: headache, palpitations, diaphoresis\n2. **Adrenal incidentaloma** \u2014 mandatory biochemical screening regardless of imaging characteristics\n3. **Hereditary syndromes**: MEN2A/2B, von Hippel-Lindau, neurofibromatosis type 1, SDHx mutations (surveillance)\n4. **Family history** of pheochromocytoma/paraganglioma\n5. **Hypertensive crisis** during surgery, anesthesia induction, or childbirth\n6. **Unexplained cardiomyopathy** (catecholamine-induced, including Takotsubo-like presentations)\n\n## Result Interpretation\n\n- **Elevation >4x upper limit of normal** is highly specific for pheochromocytoma\n- **Mild elevations (2-4x)** require confirmatory testing (clonidine suppression test) due to false positives from:\n  - Medications: tricyclic antidepressants, MAO inhibitors, levodopa, decongestants, acetaminophen (interferes with some assays)\n  - Physiologic stress, obstructive sleep apnea\n  - Renal failure (impaired clearance)\n\n## Other Clinical Applications\n\n- **Neuroblastoma** diagnosis in children \u2014 urinary VMA (vanillylmandelic acid) and HVA (homovanillic acid) are standard tumor markers\n- **Autonomic failure evaluation** \u2014 low catecholamines with orthostatic hypotension suggest pure autonomic failure vs. multiple system atrophy\n- **Carcinoid syndrome workup** (less commonly, alongside 5-HIAA)\n\n## Pre-Test Preparation (Critical for Accuracy)\n\n- Patient supine and fasting for plasma testing (30 minutes rest)\n- Avoid caffeine, nicotine, strenuous exercise 24 hours prior\n- Discontinue interfering medications when clin",
+    "latency_ms": 10739.8,
+    "token_count": 1156
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "4148216bf867",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239634.8705707,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4111,
+          "evidence": [
+            "Latency 10740ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 10739.8,
+        "token_count": 1156,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.72; flagged=False"
+}

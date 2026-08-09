@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:55:42.655074+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "How could you summarize the Ethics' Code of Athens in a consize way?",
+    "field": "Law",
+    "specific_field": "Public Relations and Crisis Communication",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "The **Code of Athens** is an ethical guide for public relations and communications professionals. In essence, it requires them to:\n\n- Respect **human dignity, human rights, and truth**.\n- Act with **honesty, accuracy, fairness, and transparency**.\n- Serve the **public interest**, not merely personal or organizational gain.\n- Avoid deception, manipulation, discrimination, conflicts of interest, and harm.\n- Protect confidential information and accept responsibility for their actions.\n- Reject communication practices that incite hatred, violence, or violate freedom and justice.\n\n**In one sentence:** *Communicators should use their influence truthfully, responsibly, and respectfully, while protecting human rights and the public good.*",
+    "latency_ms": 1707.2,
+    "input_tokens": 94,
+    "output_tokens": 142
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How could you summarize the Ethics' Code of Athens in a consize way?",
+      "field": "Law"
+    },
+    "response": "The **Code of Athens** is an ethical guide for public relations and communications professionals. In essence, it requires them to:\n\n- Respect **human dignity, human rights, and truth**.\n- Act with **honesty, accuracy, fairness, and transparency**.\n- Serve the **public interest**, not merely personal or organizational gain.\n- Avoid deception, manipulation, discrimination, conflicts of interest, and harm.\n- Protect confidential information and accept responsibility for their actions.\n- Reject communication practices that incite hatred, violence, or violate freedom and justice.\n\n**In one sentence:** *Communicators should use their influence truthfully, responsibly, and respectfully, while protecting human rights and the public good.*",
+    "latency_ms": 1707.2,
+    "token_count": 236
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "78a4340f6280",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229742.6542385,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 1707.2,
+        "token_count": 236,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.60; flagged=False"
+}

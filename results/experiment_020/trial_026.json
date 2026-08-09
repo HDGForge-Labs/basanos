@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:31:38.979997+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "How does a COVID infection relate to anxiety and depression in previously healthy individuals?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biomedical Research, Nursing",
+    "question_type": "Open-ended question that is potentially ambiguous| Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# COVID-19 Infection and New-Onset Anxiety/Depression\n\n## The Basic Epidemiology\n\nLarge cohort studies show elevated rates of new-onset anxiety and depression following COVID-19 infection compared to matched controls or people with other respiratory infections. The Al-Aly et al. VA study (2022, published in *BMJ*) found that COVID survivors had significantly increased risk of incident anxiety disorders (HR ~1.35) and depressive disorders (HR ~1.39) in the year following infection, even among those with mild disease not requiring hospitalization. Studies from the UK Biobank and TriNetX databases show similar patterns, with roughly 20-30% excess risk of new psychiatric diagnoses in the 6-12 months post-infection.\n\n## Proposed Mechanisms\n\n**1. Direct neuroinflammatory effects**\n- SARS-CoV-2 triggers a systemic inflammatory response with elevated IL-6, TNF-alpha, and CRP\n- These peripheral cytokines can cross or signal across the blood-brain barrier, activating microglia\n- Neuroinflammation in limbic structures (hippocampus, amygdala) is mechanistically linked to depression in other inflammatory conditions (this mirrors \"sickness behavior\" biology)\n\n**2. Vascular and thrombotic mechanisms**\n- COVID causes endothelial dysfunction and microclotting\n- Silent microinfarcts or hypoperfusion in frontal-limbic circuits may contribute to mood dysregulation\n- This overlaps with vascular depression models seen in other conditions\n\n**3. HPA axis dysregulation**\n- Acute infection stress and inflammation can dysregulate cortisol rhythms\n- Chronic HPA axis disruption is a known contributor to both anxiety and depressive symptoms\n\n**4. Direct viral neurotropism**\n- Evidence of viral RNA/protein in olfactory bulb and brainstem in some autopsy studies\n- Possible viral effects on brainstem nuclei (locus coeruleus, raphe nuclei) that regulate mood and arousal\n- Loss of smell (anosmia) itself correlates with depressive symptoms independent of psychological mechanisms\n\n**5. Autonomic dysfunction**\n- Many long-COVID patients develop dysautonomia/POTS-like symptoms\n- Chronic autonomic symptoms (palpitations, dizziness) can drive secondary anxiety through interoceptive awareness and health anxiety loops\n\n## Psychosocial/Non-Biological Contributors\n\n- **Illness-related fear**: uncertainty about long-term health, fear of reinfection or long-COVID\n- **Functional impairment**: fatigue and cognitive symptoms (\"brain fog\") limiting work/social function, which independently drives depression\n- **Isolation during acute illness**: quarantine periods removing social support at a vulnerable time\n- **Sleep disruption**: common post-COVID, bidirectionally linked to mood disorders\n- **Loss of identity/functioning**: previ",
+    "latency_ms": 12422.4,
+    "input_tokens": 143,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How does a COVID infection relate to anxiety and depression in previously healthy individuals?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# COVID-19 Infection and New-Onset Anxiety/Depression\n\n## The Basic Epidemiology\n\nLarge cohort studies show elevated rates of new-onset anxiety and depression following COVID-19 infection compared to matched controls or people with other respiratory infections. The Al-Aly et al. VA study (2022, published in *BMJ*) found that COVID survivors had significantly increased risk of incident anxiety disorders (HR ~1.35) and depressive disorders (HR ~1.39) in the year following infection, even among those with mild disease not requiring hospitalization. Studies from the UK Biobank and TriNetX databases show similar patterns, with roughly 20-30% excess risk of new psychiatric diagnoses in the 6-12 months post-infection.\n\n## Proposed Mechanisms\n\n**1. Direct neuroinflammatory effects**\n- SARS-CoV-2 triggers a systemic inflammatory response with elevated IL-6, TNF-alpha, and CRP\n- These peripheral cytokines can cross or signal across the blood-brain barrier, activating microglia\n- Neuroinflammation in limbic structures (hippocampus, amygdala) is mechanistically linked to depression in other inflammatory conditions (this mirrors \"sickness behavior\" biology)\n\n**2. Vascular and thrombotic mechanisms**\n- COVID causes endothelial dysfunction and microclotting\n- Silent microinfarcts or hypoperfusion in frontal-limbic circuits may contribute to mood dysregulation\n- This overlaps with vascular depression models seen in other conditions\n\n**3. HPA axis dysregulation**\n- Acute infection stress and inflammation can dysregulate cortisol rhythms\n- Chronic HPA axis disruption is a known contributor to both anxiety and depressive symptoms\n\n**4. Direct viral neurotropism**\n- Evidence of viral RNA/protein in olfactory bulb and brainstem in some autopsy studies\n- Possible viral effects on brainstem nuclei (locus coeruleus, raphe nuclei) that regulate mood and arousal\n- Loss of smell (anosmia) itself correlates with depressive symptoms independent of psychological mechanisms\n\n**5. Autonomic dysfunction**\n- Many long-COVID patients develop dysautonomia/POTS-like symptoms\n- Chronic autonomic symptoms (palpitations, dizziness) can drive secondary anxiety through interoceptive awareness and health anxiety loops\n\n## Psychosocial/Non-Biological Contributors\n\n- **Illness-related fear**: uncertainty about long-term health, fear of reinfection or long-COVID\n- **Functional impairment**: fatigue and cognitive symptoms (\"brain fog\") limiting work/social function, which independently drives depression\n- **Isolation during acute illness**: quarantine periods removing social support at a vulnerable time\n- **Sleep disruption**: common post-COVID, bidirectionally linked to mood disorders\n- **Loss of identity/functioning**: previ",
+    "latency_ms": 12422.4,
+    "token_count": 1167
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "ff8331367b4e",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239098.979237,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4363,
+          "evidence": [
+            "Latency 12422ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12422.4,
+        "token_count": 1167,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.26; flagged=False"
+}

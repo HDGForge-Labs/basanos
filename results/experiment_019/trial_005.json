@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:53:03.235425+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Can a small company sucessfully use the same trade mark as a major competitor?",
+    "field": "Law",
+    "specific_field": "Intellecutal property law",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Usually, no\u2014at least not safely.\n\nA small company can use the same or a confusingly similar trade mark only in limited circumstances. The key question is not company size; it is whether customers are likely to think the goods or services come from, are connected with, or are endorsed by the major competitor.\n\nYou are at high risk of infringement if:\n\n- The mark is identical or very similar in spelling, sound, meaning, or appearance.\n- You sell the same or related goods/services.\n- You use similar branding, packaging, colours, logos, or marketing channels.\n- The larger company\u2019s mark is well known or has a strong reputation.\n- Your use could make people assume a commercial connection.\n\nFor example, a small software company using **\u201cAPPLE CLOUD\u201d** for consumer cloud storage would be highly likely to face objections from Apple. A caf\u00e9 called **\u201cStarbux\u201d** could also be risky because it evokes Starbucks even if the spelling differs.\n\nIt may be possible where the businesses are genuinely unrelated and there is little chance of confusion\u2014for example, the same word used for unrelated specialist goods in different markets. But famous marks receive broader protection, sometimes even across unrelated categories, particularly where the use takes unfair advantage of their reputation or damages it.\n\nThere are a few narrower situations where use may be lawful:\n\n- **Different goods/services and no likely confusion**, especially with a non-famous mark.\n- **Descriptive use**, such as truthfully describing characteristics of your product rather than using the term as your brand.\n- **Nominative/reference use**, such as saying your repair service works on a competitor\u2019s product, provided the use is necessary and does not imply affiliation.\n- **Earlier local use or prior rights**, depending on the country and facts.\n- **A licence or coexistence agreement** with the trademark owner.\n\nIn practice, a major competitor can oppose your trademark application, demand that you stop trading under the name, seek delivery-up or destruction of branded materials, claim damages or profits, and seek an injunction. Rebranding after launch is often much more expensive than choosing a clear name at the outset.\n\nBefore adopting a mark, search:\n\n1. Registered trademarks in every country where you will sell or advertise.\n2. Similar\u2014not just identical\u2014marks.\n3. Company-name registers, domain names, app stores, social media, and general web use.\n4. The relevant trademark classes and closely related classes.\n\nThe safest commercial answer is: choose a distinctive mark that is clearly separated from your major competitor\u2019s name, logo, and overall branding.",
+    "latency_ms": 8522.8,
+    "input_tokens": 94,
+    "output_tokens": 517
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Can a small company sucessfully use the same trade mark as a major competitor?",
+      "field": "Law"
+    },
+    "response": "Usually, no\u2014at least not safely.\n\nA small company can use the same or a confusingly similar trade mark only in limited circumstances. The key question is not company size; it is whether customers are likely to think the goods or services come from, are connected with, or are endorsed by the major competitor.\n\nYou are at high risk of infringement if:\n\n- The mark is identical or very similar in spelling, sound, meaning, or appearance.\n- You sell the same or related goods/services.\n- You use similar branding, packaging, colours, logos, or marketing channels.\n- The larger company\u2019s mark is well known or has a strong reputation.\n- Your use could make people assume a commercial connection.\n\nFor example, a small software company using **\u201cAPPLE CLOUD\u201d** for consumer cloud storage would be highly likely to face objections from Apple. A caf\u00e9 called **\u201cStarbux\u201d** could also be risky because it evokes Starbucks even if the spelling differs.\n\nIt may be possible where the businesses are genuinely unrelated and there is little chance of confusion\u2014for example, the same word used for unrelated specialist goods in different markets. But famous marks receive broader protection, sometimes even across unrelated categories, particularly where the use takes unfair advantage of their reputation or damages it.\n\nThere are a few narrower situations where use may be lawful:\n\n- **Different goods/services and no likely confusion**, especially with a non-famous mark.\n- **Descriptive use**, such as truthfully describing characteristics of your product rather than using the term as your brand.\n- **Nominative/reference use**, such as saying your repair service works on a competitor\u2019s product, provided the use is necessary and does not imply affiliation.\n- **Earlier local use or prior rights**, depending on the country and facts.\n- **A licence or coexistence agreement** with the trademark owner.\n\nIn practice, a major competitor can oppose your trademark application, demand that you stop trading under the name, seek delivery-up or destruction of branded materials, claim damages or profits, and seek an injunction. Rebranding after launch is often much more expensive than choosing a clear name at the outset.\n\nBefore adopting a mark, search:\n\n1. Registered trademarks in every country where you will sell or advertise.\n2. Similar\u2014not just identical\u2014marks.\n3. Company-name registers, domain names, app stores, social media, and general web use.\n4. The relevant trademark classes and closely related classes.\n\nThe safest commercial answer is: choose a distinctive mark that is clearly separated from your major competitor\u2019s name, logo, and overall branding.",
+    "latency_ms": 8522.8,
+    "token_count": 611
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "74aacdc7edeb",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233183.2346647,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 8522.8,
+        "token_count": 611,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.5; flagged=False"
+}

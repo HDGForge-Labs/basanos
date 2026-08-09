@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:41:34.609282+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Why is it that when an accused is caught on act, they can't be guilty immediately?",
+    "field": "Law",
+    "specific_field": "Paralegal",
+    "question_type": "Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "The confusion here rests on a mix-up between factual guilt and legal guilt. Even when someone is caught \"in the act,\" the legal system still requires that guilt be formally established through process, for several concrete reasons:\n\n**1. \"Caught in the act\" is itself a factual claim that needs verification**\n\nWhat looks like someone \"caught in the act\" to a witness, a mob, or the police might actually be:\n- Mistaken identity (someone else fled, this person was nearby)\n- A staged or coerced scenario\n- Self-defense or a justified act rather than a crime\n- An incomplete picture \u2014 e.g., someone holding a bloody knife who just pulled it out of a victim to help them, not stabbed them\n- Fabricated evidence by an accuser (planted drugs, staged assault)\n\nPerception of an act is not the same as proof of a crime. Courts exist precisely because eyewitness accounts, including police accounts, are fallible and sometimes dishonest.\n\n**2. Guilt has legal elements beyond the physical act**\n\nAlmost every crime has both an actus reus (the act) and mens rea (the mental state \u2014 intent, knowledge, recklessness). Being seen doing something doesn't establish:\n- Intent (did they mean to do it?)\n- Capacity (were they a minor, mentally incapacitated, coerced?)\n- Justification or excuse (self-defense, necessity, duress)\n\nA person \"caught\" stabbing someone could be guilty of murder, guilty of manslaughter, or not guilty at all (self-defense), depending on facts a snapshot of the \"act\" doesn't reveal.\n\n**3. Presumption of innocence is a structural safeguard, not a factual claim**\n\nThe presumption of innocence isn't a statement that the person is *actually* innocent \u2014 it's a legal rule allocating the burden of proof to the state and requiring proof beyond a reasonable doubt (or the applicable standard) before punishment. This exists because:\n- Governments and mobs have historically abused summary judgment to persecute people\n- Punishing without process invites error and abuse that's hard to correct\n- The cost of wrongly convicting an innocent person is considered worse than the cost of process/delay\n\n**4. Due process requires an adjudicator, not the accuser or witness, to determine guilt**\n\nEven the police officer who \"catches\" someone doesn't get to declare guilt \u2014 that determination is reserved for courts/juries because:\n- Separation of functions prevents the same party from being accuser, judge, and executioner\n- It allows the accused to present a defense, cross-examine evidence, and contest facts\n\n**5. Practical/historical justification**\n\nSystems without this requirement \u2014 vigilante justice, extrajudicial punishment, \"caught red-handed\" summary executions \u2014 have a long history of killing or punishing innocent people (mistaken identity, racial/religious scapegoating, political persecution). The formal process exists as a check against exactly these failure modes.\n\n**In short:** \"Caught in the act\" describes an observation, not a verified legal conclusion. The legal system requires that observation to be tested \u2014 for accuracy, for legal sufficiency (intent, justification), and for fairness \u2014 before it converts into an official finding of gu",
+    "latency_ms": 14746.0,
+    "input_tokens": 141,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Why is it that when an accused is caught on act, they can't be guilty immediately?",
+      "field": "Law"
+    },
+    "response": "The confusion here rests on a mix-up between factual guilt and legal guilt. Even when someone is caught \"in the act,\" the legal system still requires that guilt be formally established through process, for several concrete reasons:\n\n**1. \"Caught in the act\" is itself a factual claim that needs verification**\n\nWhat looks like someone \"caught in the act\" to a witness, a mob, or the police might actually be:\n- Mistaken identity (someone else fled, this person was nearby)\n- A staged or coerced scenario\n- Self-defense or a justified act rather than a crime\n- An incomplete picture \u2014 e.g., someone holding a bloody knife who just pulled it out of a victim to help them, not stabbed them\n- Fabricated evidence by an accuser (planted drugs, staged assault)\n\nPerception of an act is not the same as proof of a crime. Courts exist precisely because eyewitness accounts, including police accounts, are fallible and sometimes dishonest.\n\n**2. Guilt has legal elements beyond the physical act**\n\nAlmost every crime has both an actus reus (the act) and mens rea (the mental state \u2014 intent, knowledge, recklessness). Being seen doing something doesn't establish:\n- Intent (did they mean to do it?)\n- Capacity (were they a minor, mentally incapacitated, coerced?)\n- Justification or excuse (self-defense, necessity, duress)\n\nA person \"caught\" stabbing someone could be guilty of murder, guilty of manslaughter, or not guilty at all (self-defense), depending on facts a snapshot of the \"act\" doesn't reveal.\n\n**3. Presumption of innocence is a structural safeguard, not a factual claim**\n\nThe presumption of innocence isn't a statement that the person is *actually* innocent \u2014 it's a legal rule allocating the burden of proof to the state and requiring proof beyond a reasonable doubt (or the applicable standard) before punishment. This exists because:\n- Governments and mobs have historically abused summary judgment to persecute people\n- Punishing without process invites error and abuse that's hard to correct\n- The cost of wrongly convicting an innocent person is considered worse than the cost of process/delay\n\n**4. Due process requires an adjudicator, not the accuser or witness, to determine guilt**\n\nEven the police officer who \"catches\" someone doesn't get to declare guilt \u2014 that determination is reserved for courts/juries because:\n- Separation of functions prevents the same party from being accuser, judge, and executioner\n- It allows the accused to present a defense, cross-examine evidence, and contest facts\n\n**5. Practical/historical justification**\n\nSystems without this requirement \u2014 vigilante justice, extrajudicial punishment, \"caught red-handed\" summary executions \u2014 have a long history of killing or punishing innocent people (mistaken identity, racial/religious scapegoating, political persecution). The formal process exists as a check against exactly these failure modes.\n\n**In short:** \"Caught in the act\" describes an observation, not a verified legal conclusion. The legal system requires that observation to be tested \u2014 for accuracy, for legal sufficiency (intent, justification), and for fairness \u2014 before it converts into an official finding of gu",
+    "latency_ms": 14746.0,
+    "token_count": 1165
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "a22ff1f49859",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239694.6085255,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4712,
+          "evidence": [
+            "Latency 14746ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 14746.0,
+        "token_count": 1165,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.77; flagged=False"
+}

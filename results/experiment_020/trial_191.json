@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T02:04:56.258317+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Why are infant formula brands not necessarily promoted to pregnant and lactating women?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Dietician/ Nutritionist ",
+    "question_type": "Directed question that has a single unambiguous answer| Open-ended question that is potentially ambiguous| Question that describes a hypothetical scenario and asks a question based on this scenario| Request for a list of resources where one can find more information| Request for opinion on a topic"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Restrictions on Infant Formula Marketing to Pregnant and Lactating Women\n\nInfant formula brands typically avoid direct marketing to pregnant and lactating women due to a combination of international codes, national regulations, and public health concerns. Here's a detailed breakdown:\n\n## The WHO International Code of Marketing of Breast-milk Substitutes\n\nAdopted in **1981** by the World Health Assembly, this code specifically prohibits:\n\n- **Direct advertising** of breast-milk substitutes to the general public, including pregnant women\n- **Free samples** or gifts to pregnant women, mothers, or their families\n- **Contact between formula company representatives and pregnant women** for promotional purposes\n- Promotional materials that could **undermine breastfeeding** as the optimal feeding method\n\nRoughly **136 countries** have implemented at least some provisions of this code into national law, though enforcement varies significantly\u2014with only about **25-30 countries** having fully comprehensive legislation matching all code provisions.\n\n## Public Health Rationale\n\n### Breastfeeding Promotion\nHealth organizations recommend **exclusive breastfeeding for the first 6 months** of life, with continued breastfeeding alongside complementary foods for **up to 2 years or beyond**. Marketing formula to pregnant women could:\n\n- Reduce breastfeeding initiation rates, which currently sit around **83%** in the U.S. but drop to approximately **25%** for exclusive breastfeeding at 6 months\n- Create doubt about milk supply adequacy before a woman has even attempted breastfeeding\n- Influence decisions during a vulnerable period when women are especially susceptible to marketing messages\n\n### Evidence of Harm from Aggressive Marketing\nStudies have shown that formula marketing exposure can decrease breastfeeding duration by roughly **2-8 weeks** on average, and hospitals that distribute formula samples see breastfeeding rates drop by approximately **15-20%** compared to \"Baby-Friendly\" certified hospitals that restrict such practices.\n\n## Regulatory Mechanisms in Specific Countries\n\n- **United States**: WIC (Women, Infants, and Children program) and FDA regulations limit certain formula marketing practices, though the U.S. has not fully adopted the WHO Code\n- **European Union**: Directive 2006/141/EC restricts advertising of infant formula (for babies 0-6 months) but allows some advertising of follow-on formula (6+ months)\n- **United Kingdom**: Bans advertising of infant formula but permits marketing of \"follow-on\" milk, creating a loophole companies sometimes exploit\n- **India**: The Infant Milk Substitutes Act (1992, amended 2003) imposes fines up to **\u20b93 lakh (~$3,600)** and imprisonment up to **3 years** for violations\n\n## Industry Workarounds\n\nDespite restrictions, companies have developed strategies such as:\n\n- Marketing \"toddler formulas\" or \"growing-up milks\" for children **12 months and older**, which fall outside strict regulations\n- Sponsoring health",
+    "latency_ms": 13549.7,
+    "input_tokens": 138,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Why are infant formula brands not necessarily promoted to pregnant and lactating women?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Restrictions on Infant Formula Marketing to Pregnant and Lactating Women\n\nInfant formula brands typically avoid direct marketing to pregnant and lactating women due to a combination of international codes, national regulations, and public health concerns. Here's a detailed breakdown:\n\n## The WHO International Code of Marketing of Breast-milk Substitutes\n\nAdopted in **1981** by the World Health Assembly, this code specifically prohibits:\n\n- **Direct advertising** of breast-milk substitutes to the general public, including pregnant women\n- **Free samples** or gifts to pregnant women, mothers, or their families\n- **Contact between formula company representatives and pregnant women** for promotional purposes\n- Promotional materials that could **undermine breastfeeding** as the optimal feeding method\n\nRoughly **136 countries** have implemented at least some provisions of this code into national law, though enforcement varies significantly\u2014with only about **25-30 countries** having fully comprehensive legislation matching all code provisions.\n\n## Public Health Rationale\n\n### Breastfeeding Promotion\nHealth organizations recommend **exclusive breastfeeding for the first 6 months** of life, with continued breastfeeding alongside complementary foods for **up to 2 years or beyond**. Marketing formula to pregnant women could:\n\n- Reduce breastfeeding initiation rates, which currently sit around **83%** in the U.S. but drop to approximately **25%** for exclusive breastfeeding at 6 months\n- Create doubt about milk supply adequacy before a woman has even attempted breastfeeding\n- Influence decisions during a vulnerable period when women are especially susceptible to marketing messages\n\n### Evidence of Harm from Aggressive Marketing\nStudies have shown that formula marketing exposure can decrease breastfeeding duration by roughly **2-8 weeks** on average, and hospitals that distribute formula samples see breastfeeding rates drop by approximately **15-20%** compared to \"Baby-Friendly\" certified hospitals that restrict such practices.\n\n## Regulatory Mechanisms in Specific Countries\n\n- **United States**: WIC (Women, Infants, and Children program) and FDA regulations limit certain formula marketing practices, though the U.S. has not fully adopted the WHO Code\n- **European Union**: Directive 2006/141/EC restricts advertising of infant formula (for babies 0-6 months) but allows some advertising of follow-on formula (6+ months)\n- **United Kingdom**: Bans advertising of infant formula but permits marketing of \"follow-on\" milk, creating a loophole companies sometimes exploit\n- **India**: The Infant Milk Substitutes Act (1992, amended 2003) imposes fines up to **\u20b93 lakh (~$3,600)** and imprisonment up to **3 years** for violations\n\n## Industry Workarounds\n\nDespite restrictions, companies have developed strategies such as:\n\n- Marketing \"toddler formulas\" or \"growing-up milks\" for children **12 months and older**, which fall outside strict regulations\n- Sponsoring health",
+    "latency_ms": 13549.7,
+    "token_count": 1162,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "6f2c643eff16",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786241096.2575448,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 18 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4532,
+          "evidence": [
+            "Latency 13550ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13549.7,
+        "token_count": 1162,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.191; flagged=True"
+}

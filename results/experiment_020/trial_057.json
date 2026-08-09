@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:37:38.224064+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "In a situation where an allied unit detects a probable or eminent attack on another allied unit, what do the rules of engagement dictate?",
+    "field": "Military or Law Enforcement",
+    "specific_field": "Military communications",
+    "question_type": "Open-ended question that is potentially ambiguous| Summarization of information on a topic| Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Rules of Engagement: Collective Self-Defense and Warning of Imminent Attack\n\nWhen an allied unit detects a probable or imminent attack on another allied unit, the response is generally governed by the principle of **collective self-defense**, which is a component of most standardized ROE frameworks (such as NATO's or U.S. Standing Rules of Engagement, SROE).\n\n## Core Obligations\n\n**1. Duty to Warn**\nThe detecting unit typically has an obligation to warn the threatened allied unit of the imminent danger through the fastest available communication means. This is often a mandatory action regardless of whether the unit intends to engage.\n\n**2. Collective Self-Defense Authorization**\nUnder most coalition ROE (including U.S. SROE and NATO MC 362), units are authorized to use necessary and proportional force to defend other designated forces \u2014 not just themselves \u2014 when:\n- Hostile intent is demonstrably present, or\n- A hostile act has begun or is unmistakably about to occur\n\nThis means the observing unit does not need to wait for the attack to fully materialize against the ally; **imminent** hostile intent is generally sufficient to justify preemptive defensive action.\n\n## Key Determinations Required\n\nBefore acting, the unit typically must assess:\n\n- **Hostile Intent**: Is there a clear indication (movement, targeting radar lock, weapons orientation, etc.) that an attack is about to happen?\n- **Identification**: Is the threat positively or reasonably identified as hostile (not a neutral or friendly asset)?\n- **Proportionality**: Would the response be proportional to the threat?\n- **Necessity**: Is force the only reasonable option to prevent the attack?\n\n## Practical Sequence of Actions\n\n1. **Immediate notification** to the threatened unit and chain of command\n2. **Continued monitoring/tracking** of the hostile contact\n3. **Request for engagement authority** if not already pre-delegated (in many ROE, self-defense and collective self-defense authority is inherent and does not require additional permission)\n4. **Engagement** if hostile act/intent is confirmed and other criteria (ID, proportionality) are met\n\n## Important Caveats\n\n- ROE specifics vary significantly by nation, coalition, mission mandate, and operational theater \u2014 the above reflects common frameworks but is not universal.\n- Some restrictive ROE environments (e.g., certain UN peacekeeping mandates) may require additional authorization before engaging in defense of another unit, even when NATO/US doctrine would permit immediate collective self-defense.\n- The specific triggers for \"hostile intent\" are usually defined in a classified Supplemental ROE annex specific to the mission, since publicly known definitions are intentionally broad in doctrine but tightened for specific operations.\n\nIf you're asking about a specific national ROE framework (e.g., current U.S. CJCS SROE, NATO, or a specific coalition mission), let me know and I can get more specific about the exact authorities and procedures involved.",
+    "latency_ms": 12707.3,
+    "input_tokens": 156,
+    "output_tokens": 979
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "In a situation where an allied unit detects a probable or eminent attack on another allied unit, what do the rules of engagement dictate?",
+      "field": "Military or Law Enforcement"
+    },
+    "response": "# Rules of Engagement: Collective Self-Defense and Warning of Imminent Attack\n\nWhen an allied unit detects a probable or imminent attack on another allied unit, the response is generally governed by the principle of **collective self-defense**, which is a component of most standardized ROE frameworks (such as NATO's or U.S. Standing Rules of Engagement, SROE).\n\n## Core Obligations\n\n**1. Duty to Warn**\nThe detecting unit typically has an obligation to warn the threatened allied unit of the imminent danger through the fastest available communication means. This is often a mandatory action regardless of whether the unit intends to engage.\n\n**2. Collective Self-Defense Authorization**\nUnder most coalition ROE (including U.S. SROE and NATO MC 362), units are authorized to use necessary and proportional force to defend other designated forces \u2014 not just themselves \u2014 when:\n- Hostile intent is demonstrably present, or\n- A hostile act has begun or is unmistakably about to occur\n\nThis means the observing unit does not need to wait for the attack to fully materialize against the ally; **imminent** hostile intent is generally sufficient to justify preemptive defensive action.\n\n## Key Determinations Required\n\nBefore acting, the unit typically must assess:\n\n- **Hostile Intent**: Is there a clear indication (movement, targeting radar lock, weapons orientation, etc.) that an attack is about to happen?\n- **Identification**: Is the threat positively or reasonably identified as hostile (not a neutral or friendly asset)?\n- **Proportionality**: Would the response be proportional to the threat?\n- **Necessity**: Is force the only reasonable option to prevent the attack?\n\n## Practical Sequence of Actions\n\n1. **Immediate notification** to the threatened unit and chain of command\n2. **Continued monitoring/tracking** of the hostile contact\n3. **Request for engagement authority** if not already pre-delegated (in many ROE, self-defense and collective self-defense authority is inherent and does not require additional permission)\n4. **Engagement** if hostile act/intent is confirmed and other criteria (ID, proportionality) are met\n\n## Important Caveats\n\n- ROE specifics vary significantly by nation, coalition, mission mandate, and operational theater \u2014 the above reflects common frameworks but is not universal.\n- Some restrictive ROE environments (e.g., certain UN peacekeeping mandates) may require additional authorization before engaging in defense of another unit, even when NATO/US doctrine would permit immediate collective self-defense.\n- The specific triggers for \"hostile intent\" are usually defined in a classified Supplemental ROE annex specific to the mission, since publicly known definitions are intentionally broad in doctrine but tightened for specific operations.\n\nIf you're asking about a specific national ROE framework (e.g., current U.S. CJCS SROE, NATO, or a specific coalition mission), let me know and I can get more specific about the exact authorities and procedures involved.",
+    "latency_ms": 12707.3,
+    "token_count": 1135
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "a2403af76da4",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239458.2233114,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4406,
+          "evidence": [
+            "Latency 12707ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12707.3,
+        "token_count": 1135,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.57; flagged=False"
+}

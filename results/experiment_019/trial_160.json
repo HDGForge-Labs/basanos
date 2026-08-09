@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-09T00:15:35.626684+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "If a child can't say the 's' sound, can that be changed?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Speech and Language Therapy - children's therapy",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Yes\u2014very often it can be changed with speech therapy and practice.\n\nA child who cannot yet produce /s/ may have a common speech-sound delay, such as a **frontal lisp** (air comes out between the teeth, making /s/ sound more like \u201cth\u201d) or a **lateral lisp** (air escapes over the sides of the tongue, sounding \u201cslushy\u201d). The /s/ sound is usually expected to be established by roughly **4 to 5 years old**, though some children master it a little later.\n\nA speech-language pathologist (SLP) can assess whether the difficulty is developmental or related to something else, such as:\n\n- Hearing loss or frequent ear infections  \n- Tongue, teeth, jaw, palate, or bite differences  \n- Mouth breathing, enlarged tonsils/adenoids, or chronic nasal congestion  \n- Tongue thrust or other oral-motor patterns  \n- A broader speech/language or developmental difference  \n\nTreatment commonly involves teaching the child where to place their tongue\u2014usually just behind the upper front teeth, without pushing it between the teeth\u2014and how to direct a narrow stream of air down the center of the tongue. Therapy may start with the sound alone (\u201cssss\u201d), then syllables (\u201csee,\u201d \u201cso\u201d), words, phrases, and conversation. Many children improve substantially over **weeks to several months**, while more established patterns can take **6 to 12 months or longer** of regular therapy and home practice.\n\nIt is especially worth seeking an SLP evaluation if the child is about **5 years or older**, is hard for unfamiliar people to understand, becomes frustrated or avoids talking, or has other speech sounds affected. In the United States, children can often be evaluated through their public school system at no cost, or by a private SLP; a pediatrician can also check hearing and refer you.\n\nAvoid repeatedly correcting or asking the child to \u201csay it right\u201d in a critical way. Instead, model the word naturally: if they say \u201cthun,\u201d you can respond, \u201cYes, **sun**\u2014the sun is bright!\u201d",
+    "latency_ms": 6381.1,
+    "input_tokens": 88,
+    "output_tokens": 426
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "If a child can't say the 's' sound, can that be changed?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Yes\u2014very often it can be changed with speech therapy and practice.\n\nA child who cannot yet produce /s/ may have a common speech-sound delay, such as a **frontal lisp** (air comes out between the teeth, making /s/ sound more like \u201cth\u201d) or a **lateral lisp** (air escapes over the sides of the tongue, sounding \u201cslushy\u201d). The /s/ sound is usually expected to be established by roughly **4 to 5 years old**, though some children master it a little later.\n\nA speech-language pathologist (SLP) can assess whether the difficulty is developmental or related to something else, such as:\n\n- Hearing loss or frequent ear infections  \n- Tongue, teeth, jaw, palate, or bite differences  \n- Mouth breathing, enlarged tonsils/adenoids, or chronic nasal congestion  \n- Tongue thrust or other oral-motor patterns  \n- A broader speech/language or developmental difference  \n\nTreatment commonly involves teaching the child where to place their tongue\u2014usually just behind the upper front teeth, without pushing it between the teeth\u2014and how to direct a narrow stream of air down the center of the tongue. Therapy may start with the sound alone (\u201cssss\u201d), then syllables (\u201csee,\u201d \u201cso\u201d), words, phrases, and conversation. Many children improve substantially over **weeks to several months**, while more established patterns can take **6 to 12 months or longer** of regular therapy and home practice.\n\nIt is especially worth seeking an SLP evaluation if the child is about **5 years or older**, is hard for unfamiliar people to understand, becomes frustrated or avoids talking, or has other speech sounds affected. In the United States, children can often be evaluated through their public school system at no cost, or by a private SLP; a pediatrician can also check hearing and refer you.\n\nAvoid repeatedly correcting or asking the child to \u201csay it right\u201d in a critical way. Instead, model the word naturally: if they say \u201cthun,\u201d you can respond, \u201cYes, **sun**\u2014the sun is bright!\u201d",
+    "latency_ms": 6381.1,
+    "token_count": 514,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "e85e58bf02ea",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234535.6259587,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 4 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 6381.1,
+        "token_count": 514,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.160; flagged=True"
+}

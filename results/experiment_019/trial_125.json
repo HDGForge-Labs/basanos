@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:09:20.125345+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What are the differences between the different birth control devices that actually exist?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "\u201cBirth control devices\u201d usually means methods that are physically worn, inserted, implanted, or used during sex. The biggest differences are **where they go, how long they work, whether they contain hormones, how effective they are, whether they protect against STIs, and whether you must remember them each time**.\n\n## Quick comparison\n\n| Device/method | Where/how used | Hormones? | Typical-use effectiveness | How long it lasts | STI protection? |\n|---|---|---:|---:|---:|---:|\n| **Hormonal IUD** | Inserted in uterus by clinician | Yes, progestin | Over **99%** effective | About **3\u20138 years** depending on brand | No |\n| **Copper IUD** | Inserted in uterus by clinician | No | Over **99%** effective | About **10\u201312 years**; some evidence supports longer | No |\n| **Arm implant** | Small rod under skin of upper arm | Yes, progestin | Over **99%** effective | About **3 years**; evidence may support up to **5 years** in some settings | No |\n| **Vaginal ring** | Flexible ring placed in vagina | Usually estrogen + progestin; one type progestin-only | About **93%** effective with typical use | Changed monthly, yearly device, or about every 13 weeks depending on type | No |\n| **Condom, external** | Covers penis | No | About **87%** effective typical use | One use | **Yes\u2014best widely available option** |\n| **Condom, internal** | Inserted in vagina or anus | No | About **79%** effective typical use | One use | Yes, reduces STI risk |\n| **Diaphragm** | Silicone cup covering cervix | No | About **83%** effective typical use, used with spermicide | Reusable for roughly **1\u20132 years** | No |\n| **Cervical cap** | Small cap over cervix | No | Roughly **71\u201386%** effective depending on prior vaginal birth | Reusable about **1 year** | No |\n| **Contraceptive sponge** | Sponge placed in vagina over cervix | Spermicide, not hormonal contraception | Roughly **76\u201388%** effective depending on prior birth | One use; can stay in up to **24 hours** | No |\n| **Spermicide alone** | Gel, foam, film, suppository, etc. in vagina | No | About **79%** effective typical use | One use | No |\n| **Permanent sterilization** | Surgery or procedure | No | Over **99%** effective | Permanent | No |\n\nEffectiveness figures describe pregnancy prevention over **1 year** of typical use. \u201cOver 99%\u201d methods generally lead to fewer than **1 pregnancy per 100 users per year**.\n\n---\n\n# 1. IUDs: the long-term devices placed in the uterus\n\nAn **IUD** (intrauterine device) is a small T-shaped device inserted through the cervix into the uterus by a trained clinician. Placement commonly takes only a few minutes, though cramping can occur during and for hours to days afterward.\n\nThere are two main kinds.\n\n## Hormonal IUDs\n\nThese release a small amount of **levonorgestrel**, a progestin, into the uterus.\n\nExamples include devices lasting approximately **3, 5, or 8 years**, depending on the product and local approval.\n\n### Main advantages\n- More than **99% effective**.\n- Very low-maintenance: no daily, weekly, or monthly action.\n- Fertility usually returns quickly after removal\u2014often within the first menstrual cycles.\n- Usually makes periods **lighter** and often less painful.\n- Some users stop bleeding altogether after several months; this is medically expected for many hormonal IUD users.\n- Can be useful for heavy menstrual bleeding.\n\n### Main drawbacks / side effects\n- Irregular spotting is common during the first approximately **3\u20136 months**.\n- Some people get acne, breast tenderness, headaches, mood changes, or ovarian cysts, though systemic hormone exposure is generally lower than with pills, patches, or many rings.\n- Does not prevent STIs.\n- Rare complications include expulsion\u2014often roughly **2\u201310%** depending on age, timing, and other factors\u2014perforation during insertion, approximately **1 in 1,000** insertions, and infection risk mainly in the first approximately **20 days** if an STI is present at insertion.\n\n### Best fit for\nPeople who want very effective, reversible contraception and would welcome lighter periods.\n\n---\n\n## Copper IUD\n\nThe copper IUD contains **no hormones**. Copper interferes with sperm movement and fertilization.\n\n### Main advantages\n- More than **99% effective**.\n- Works immediately after insertion.\n- Lasts about **10\u201312 years**, sometimes longer depending",
+    "latency_ms": 11712.1,
+    "input_tokens": 86,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the differences between the different birth control devices that actually exist?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "\u201cBirth control devices\u201d usually means methods that are physically worn, inserted, implanted, or used during sex. The biggest differences are **where they go, how long they work, whether they contain hormones, how effective they are, whether they protect against STIs, and whether you must remember them each time**.\n\n## Quick comparison\n\n| Device/method | Where/how used | Hormones? | Typical-use effectiveness | How long it lasts | STI protection? |\n|---|---|---:|---:|---:|---:|\n| **Hormonal IUD** | Inserted in uterus by clinician | Yes, progestin | Over **99%** effective | About **3\u20138 years** depending on brand | No |\n| **Copper IUD** | Inserted in uterus by clinician | No | Over **99%** effective | About **10\u201312 years**; some evidence supports longer | No |\n| **Arm implant** | Small rod under skin of upper arm | Yes, progestin | Over **99%** effective | About **3 years**; evidence may support up to **5 years** in some settings | No |\n| **Vaginal ring** | Flexible ring placed in vagina | Usually estrogen + progestin; one type progestin-only | About **93%** effective with typical use | Changed monthly, yearly device, or about every 13 weeks depending on type | No |\n| **Condom, external** | Covers penis | No | About **87%** effective typical use | One use | **Yes\u2014best widely available option** |\n| **Condom, internal** | Inserted in vagina or anus | No | About **79%** effective typical use | One use | Yes, reduces STI risk |\n| **Diaphragm** | Silicone cup covering cervix | No | About **83%** effective typical use, used with spermicide | Reusable for roughly **1\u20132 years** | No |\n| **Cervical cap** | Small cap over cervix | No | Roughly **71\u201386%** effective depending on prior vaginal birth | Reusable about **1 year** | No |\n| **Contraceptive sponge** | Sponge placed in vagina over cervix | Spermicide, not hormonal contraception | Roughly **76\u201388%** effective depending on prior birth | One use; can stay in up to **24 hours** | No |\n| **Spermicide alone** | Gel, foam, film, suppository, etc. in vagina | No | About **79%** effective typical use | One use | No |\n| **Permanent sterilization** | Surgery or procedure | No | Over **99%** effective | Permanent | No |\n\nEffectiveness figures describe pregnancy prevention over **1 year** of typical use. \u201cOver 99%\u201d methods generally lead to fewer than **1 pregnancy per 100 users per year**.\n\n---\n\n# 1. IUDs: the long-term devices placed in the uterus\n\nAn **IUD** (intrauterine device) is a small T-shaped device inserted through the cervix into the uterus by a trained clinician. Placement commonly takes only a few minutes, though cramping can occur during and for hours to days afterward.\n\nThere are two main kinds.\n\n## Hormonal IUDs\n\nThese release a small amount of **levonorgestrel**, a progestin, into the uterus.\n\nExamples include devices lasting approximately **3, 5, or 8 years**, depending on the product and local approval.\n\n### Main advantages\n- More than **99% effective**.\n- Very low-maintenance: no daily, weekly, or monthly action.\n- Fertility usually returns quickly after removal\u2014often within the first menstrual cycles.\n- Usually makes periods **lighter** and often less painful.\n- Some users stop bleeding altogether after several months; this is medically expected for many hormonal IUD users.\n- Can be useful for heavy menstrual bleeding.\n\n### Main drawbacks / side effects\n- Irregular spotting is common during the first approximately **3\u20136 months**.\n- Some people get acne, breast tenderness, headaches, mood changes, or ovarian cysts, though systemic hormone exposure is generally lower than with pills, patches, or many rings.\n- Does not prevent STIs.\n- Rare complications include expulsion\u2014often roughly **2\u201310%** depending on age, timing, and other factors\u2014perforation during insertion, approximately **1 in 1,000** insertions, and infection risk mainly in the first approximately **20 days** if an STI is present at insertion.\n\n### Best fit for\nPeople who want very effective, reversible contraception and would welcome lighter periods.\n\n---\n\n## Copper IUD\n\nThe copper IUD contains **no hormones**. Copper interferes with sperm movement and fertilization.\n\n### Main advantages\n- More than **99% effective**.\n- Works immediately after insertion.\n- Lasts about **10\u201312 years**, sometimes longer depending",
+    "latency_ms": 11712.1,
+    "token_count": 1110,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "f3cc226e0b90",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234160.124545,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 18 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4257,
+          "evidence": [
+            "Latency 11712ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11712.1,
+        "token_count": 1110,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.125; flagged=True"
+}

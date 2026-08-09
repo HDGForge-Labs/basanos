@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:55:25.127450+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "A case presented, 45 year old female, presents only some mild dyspnea, 4 hour evolution. She has a chest X-ray that was taken yesterday and you identify cardiomegaly. How do you measure the grades for cardiomegaly?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Cardiology",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Cardiomegaly on a chest radiograph is graded primarily by the **cardiothoracic ratio (CTR)**:\n\n\\[\n\\text{CTR}=\\frac{\\text{maximum transverse cardiac diameter}}{\\text{maximum internal transverse thoracic diameter}}\\times100\n\\]\n\n### How to measure it\nOn a **PA erect chest radiograph**:\n\n1. Measure from the **rightmost cardiac border to the midline**.\n2. Measure from the **leftmost cardiac border to the midline**.\n3. Add these two distances to obtain the maximal cardiac diameter.\n4. Measure the internal thoracic diameter between the inner rib margins at the same level.\n5. Divide cardiac diameter by thoracic diameter.\n\n### Adult grading by CTR\n\n| Cardiothoracic ratio | Interpretation |\n|---|---|\n| **\u226450%** | Normal |\n| **51\u201355%** | Mild cardiomegaly |\n| **56\u201360%** | Moderate cardiomegaly |\n| **>60%** | Severe cardiomegaly |\n\nMany clinical references simplify this as:\n\n- **Normal:** <0.50  \n- **Cardiomegaly:** \u22650.50  \n- **Marked cardiomegaly:** \u22650.60  \n\n### Important limitations\n- The **50% cutoff applies reliably to a well-inspirated PA film**.\n- On an **AP portable film**, especially if supine, the heart is magnified; a CTR above 50% does **not** reliably prove cardiomegaly.\n- Poor inspiration, rotation, obesity, pregnancy, pericardial effusion, and chest-wall deformity can falsely increase the apparent ratio.\n- A prior film showing enlargement indicates chronic enlargement, but the **4-hour dyspnea** should also prompt assessment for acute causes such as pulmonary edema, pleural effusion, pneumonia, pulmonary embolism, or acute coronary disease.",
+    "latency_ms": 3061.3,
+    "input_tokens": 131,
+    "output_tokens": 396
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A case presented, 45 year old female, presents only some mild dyspnea, 4 hour evolution. She has a chest X-ray that was taken yesterday and you identify cardiomegaly. How do you measure the grades for cardiomegaly?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Cardiomegaly on a chest radiograph is graded primarily by the **cardiothoracic ratio (CTR)**:\n\n\\[\n\\text{CTR}=\\frac{\\text{maximum transverse cardiac diameter}}{\\text{maximum internal transverse thoracic diameter}}\\times100\n\\]\n\n### How to measure it\nOn a **PA erect chest radiograph**:\n\n1. Measure from the **rightmost cardiac border to the midline**.\n2. Measure from the **leftmost cardiac border to the midline**.\n3. Add these two distances to obtain the maximal cardiac diameter.\n4. Measure the internal thoracic diameter between the inner rib margins at the same level.\n5. Divide cardiac diameter by thoracic diameter.\n\n### Adult grading by CTR\n\n| Cardiothoracic ratio | Interpretation |\n|---|---|\n| **\u226450%** | Normal |\n| **51\u201355%** | Mild cardiomegaly |\n| **56\u201360%** | Moderate cardiomegaly |\n| **>60%** | Severe cardiomegaly |\n\nMany clinical references simplify this as:\n\n- **Normal:** <0.50  \n- **Cardiomegaly:** \u22650.50  \n- **Marked cardiomegaly:** \u22650.60  \n\n### Important limitations\n- The **50% cutoff applies reliably to a well-inspirated PA film**.\n- On an **AP portable film**, especially if supine, the heart is magnified; a CTR above 50% does **not** reliably prove cardiomegaly.\n- Poor inspiration, rotation, obesity, pregnancy, pericardial effusion, and chest-wall deformity can falsely increase the apparent ratio.\n- A prior film showing enlargement indicates chronic enlargement, but the **4-hour dyspnea** should also prompt assessment for acute causes such as pulmonary edema, pleural effusion, pneumonia, pulmonary embolism, or acute coronary disease.",
+    "latency_ms": 3061.3,
+    "token_count": 527
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "bbc0b264c24b",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229725.126685,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3061.3,
+        "token_count": 527,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.55; flagged=False"
+}

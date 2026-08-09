@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-08T22:59:19.571185+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Can I leave a job at the end of a trial period?",
+    "field": "Law",
+    "specific_field": "personnel administration",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Yes\u2014usually you can leave a job at the end of a trial or probationary period, but the exact requirements depend on your employment contract and local law.\n\nCheck these points:\n\n- **Notice period:** Your contract may require, for example, **1 week, 2 weeks, or 1 month** of notice. Some contracts specify a shorter notice period during probation, while others require the same notice throughout employment.\n- **Fixed-term or trial agreement:** If you signed a fixed-term contract, you may be able to leave only if it includes a termination clause or if the employer agrees.\n- **Probation-end date:** You generally do not have to continue simply because the probation period has ended. However, if you keep working after that date, the regular employment terms may apply.\n- **Resignation procedure:** Give written notice\u2014usually by email or letter\u2014stating that you are resigning and identifying your intended final working day.\n- **Pay and leave:** You should normally receive wages through your final day and any legally required payment for accrued but unused vacation or holiday entitlement.\n- **Special restrictions:** Some roles may involve training-cost repayment clauses, visa sponsorship, professional licensing rules, or other contractual obligations.\n\nA simple resignation could say:\n\n> Dear [Manager],  \n> Please accept this letter as notice of my resignation from my position as [job title]. In accordance with my contract, my final working day will be [date].  \n> Kind regards,  \n> [Name]\n\nIf your contract says **no notice is required during probation**, you may be able to leave immediately; otherwise, follow the stated notice period. Check the contract and the employment law applicable in your country or state before choosing your final date.",
+    "latency_ms": 3146.2,
+    "input_tokens": 85,
+    "output_tokens": 349
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Can I leave a job at the end of a trial period?",
+      "field": "Law"
+    },
+    "response": "Yes\u2014usually you can leave a job at the end of a trial or probationary period, but the exact requirements depend on your employment contract and local law.\n\nCheck these points:\n\n- **Notice period:** Your contract may require, for example, **1 week, 2 weeks, or 1 month** of notice. Some contracts specify a shorter notice period during probation, while others require the same notice throughout employment.\n- **Fixed-term or trial agreement:** If you signed a fixed-term contract, you may be able to leave only if it includes a termination clause or if the employer agrees.\n- **Probation-end date:** You generally do not have to continue simply because the probation period has ended. However, if you keep working after that date, the regular employment terms may apply.\n- **Resignation procedure:** Give written notice\u2014usually by email or letter\u2014stating that you are resigning and identifying your intended final working day.\n- **Pay and leave:** You should normally receive wages through your final day and any legally required payment for accrued but unused vacation or holiday entitlement.\n- **Special restrictions:** Some roles may involve training-cost repayment clauses, visa sponsorship, professional licensing rules, or other contractual obligations.\n\nA simple resignation could say:\n\n> Dear [Manager],  \n> Please accept this letter as notice of my resignation from my position as [job title]. In accordance with my contract, my final working day will be [date].  \n> Kind regards,  \n> [Name]\n\nIf your contract says **no notice is required during probation**, you may be able to leave immediately; otherwise, follow the stated notice period. Check the contract and the employment law applicable in your country or state before choosing your final date.",
+    "latency_ms": 3146.2,
+    "token_count": 434,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "3d2faf5a36b2",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229959.570387,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3146.2,
+        "token_count": 434,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.111; flagged=False"
+}

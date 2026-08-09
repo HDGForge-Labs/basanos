@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:13:22.174868+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Where can I get detailed protocols for microRNA analysis?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Research scientist",
+    "question_type": "Directed question that has a single unambiguous answer| Request for a list of resources where one can find more information"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "You can get detailed microRNA (miRNA) analysis protocols from several high-quality sources, depending on whether you need extraction, qRT-PCR, sequencing, in situ hybridization, functional assays, or bioinformatics.\n\n### 1. Reagent and instrument manufacturers\nThese are often the most practical step-by-step sources because protocols are validated for specific kits and platforms.\n\n- **QIAGEN**\n  - miRNeasy kits for total RNA/small-RNA extraction\n  - miRCURY LNA miRNA PCR and miRNA isolation products\n  - Detailed handbooks usually include sample input ranges, centrifugation speeds, incubation times, and troubleshooting.\n  - Website: `qiagen.com`\n\n- **Thermo Fisher Scientific / Applied Biosystems**\n  - TaqMan Advanced miRNA assays, TaqMan MicroRNA assays, and related reverse-transcription/qPCR workflows\n  - Offers protocols for as little as roughly **1\u201310 ng total RNA** per reverse-transcription reaction, depending on assay format.\n  - Website: `thermofisher.com`\n\n- **NEB (New England Biolabs)**\n  - NEBNext Small RNA Library Prep workflows for Illumina sequencing\n  - Useful for small-RNA sequencing libraries, often starting with about **1 ng to 1 \u00b5g total RNA**, depending on sample quality and kit version.\n  - Website: `neb.com`\n\n- **Illumina**\n  - Small RNA sequencing library preparation guides and sequencing workflow documentation\n  - Website: `support.illumina.com`\n\n- **Takara Bio / Clontech**\n  - SMARTer small RNA-seq and low-input RNA protocols\n  - Particularly useful if working with limited RNA amounts, such as extracellular vesicles, plasma, serum, or sorted cells.\n  - Website: `takara.co`\n\n- **Exiqon / QIAGEN miRCURY**\n  - Strong resources for LNA-enhanced miRNA qPCR and in situ hybridization.\n  - Often includes recommendations for normalization, spike-ins, and quality-control thresholds.\n\n### 2. Protocol repositories\nThese are useful when you want methods independent of a particular commercial kit.\n\n- **protocols.io**\n  - Search terms: \u201cmiRNA extraction,\u201d \u201csmall RNA-seq,\u201d \u201cmicroRNA qPCR,\u201d \u201cmiRNA library preparation,\u201d or \u201cextracellular vesicle miRNA.\u201d\n  - Many protocols include editable versions, author comments, reagent lists, and version history.\n  - Website: `protocols.io`\n\n- **Nature Protocols**\n  - Highly detailed, peer-reviewed protocols with timing, anticipated results, troubleshooting, and reagent setup.\n  - Search for phrases such as:\n    - \u201cmicroRNA quantification\u201d\n    - \u201csmall RNA sequencing\u201d\n    - \u201cmiRNA in situ hybridization\u201d\n    - \u201cArgonaute RIP\u201d\n  - Website: `nature.com/nprot`\n\n- **Current Protocols**\n  - Extensive molecular biology method collection, including RNA isolation, qPCR, northern blotting, and sequencing preparation.\n  - Often available through university-library subscriptions.\n  - Website: `currentprotocols.onlinelibrary.wiley.com`\n\n- **Bio-protocol**\n  - Free and journal-linked protocols, often with practical details omitted from standard methods sections.\n  - Website: `bio-protocol.org`\n\n- **JoVE**\n  - Video protocols can be especially helpful for RNA extraction, gel purification of approximately **18\u201330 nucleotide** small RNAs, and tissue in situ hybridization.\n  - Website: `jove.com`\n\n### 3. Peer-reviewed methods papers\nFor detailed technical background and validated experimental design, search:\n\n- **PubMed**: `pubmed.ncbi.nlm.nih.gov`\n- **Google Scholar**: `scholar.google.com`\n\nUseful search strings include:\n\n- `\"microRNA qRT-PCR protocol normalization\"`\n- `\"small RNA sequencing library preparation protocol\"`\n- `\"serum plasma miRNA extraction protocol\"`\n- `\"extracellular vesicle microRNA workflow\"`\n- `\"LNA microRNA in situ hybridization protocol\"`\n- `\"microRNA northern blot protocol\"`\n- `\"miRNA target validation luciferase assay protocol\"`\n\nGood journals for protocols include:\n\n- *Nature Protocols*\n- *Methods in Molecular Biology*\n- *Methods*\n- *RNA*\n- *Nucleic Acids Research*\n- *Bio-protocol*\n- *STAR Protocols*\n\n### 4. Recommended protocol types by application\n\n| Goal | Recommended method/resources |\n|---|---|\n| Total RNA + miRNA extraction from cells/tissue | QIAGEN miRNeasy or Thermo Fisher mirVana manuals |\n| Plasma/serum miRNA | QIAGEN miRNeasy Serum/Plasma protocols; include synthetic spike-ins and hemolysis checks |\n| qRT-PCR validation | TaqMan Advanced miRNA or QIAGEN miRCURY LNA qPCR handbooks |\n| Broad miRNA profiling | Small RNA-seq workflows from NEB,",
+    "latency_ms": 12056.7,
+    "input_tokens": 83,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Where can I get detailed protocols for microRNA analysis?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "You can get detailed microRNA (miRNA) analysis protocols from several high-quality sources, depending on whether you need extraction, qRT-PCR, sequencing, in situ hybridization, functional assays, or bioinformatics.\n\n### 1. Reagent and instrument manufacturers\nThese are often the most practical step-by-step sources because protocols are validated for specific kits and platforms.\n\n- **QIAGEN**\n  - miRNeasy kits for total RNA/small-RNA extraction\n  - miRCURY LNA miRNA PCR and miRNA isolation products\n  - Detailed handbooks usually include sample input ranges, centrifugation speeds, incubation times, and troubleshooting.\n  - Website: `qiagen.com`\n\n- **Thermo Fisher Scientific / Applied Biosystems**\n  - TaqMan Advanced miRNA assays, TaqMan MicroRNA assays, and related reverse-transcription/qPCR workflows\n  - Offers protocols for as little as roughly **1\u201310 ng total RNA** per reverse-transcription reaction, depending on assay format.\n  - Website: `thermofisher.com`\n\n- **NEB (New England Biolabs)**\n  - NEBNext Small RNA Library Prep workflows for Illumina sequencing\n  - Useful for small-RNA sequencing libraries, often starting with about **1 ng to 1 \u00b5g total RNA**, depending on sample quality and kit version.\n  - Website: `neb.com`\n\n- **Illumina**\n  - Small RNA sequencing library preparation guides and sequencing workflow documentation\n  - Website: `support.illumina.com`\n\n- **Takara Bio / Clontech**\n  - SMARTer small RNA-seq and low-input RNA protocols\n  - Particularly useful if working with limited RNA amounts, such as extracellular vesicles, plasma, serum, or sorted cells.\n  - Website: `takara.co`\n\n- **Exiqon / QIAGEN miRCURY**\n  - Strong resources for LNA-enhanced miRNA qPCR and in situ hybridization.\n  - Often includes recommendations for normalization, spike-ins, and quality-control thresholds.\n\n### 2. Protocol repositories\nThese are useful when you want methods independent of a particular commercial kit.\n\n- **protocols.io**\n  - Search terms: \u201cmiRNA extraction,\u201d \u201csmall RNA-seq,\u201d \u201cmicroRNA qPCR,\u201d \u201cmiRNA library preparation,\u201d or \u201cextracellular vesicle miRNA.\u201d\n  - Many protocols include editable versions, author comments, reagent lists, and version history.\n  - Website: `protocols.io`\n\n- **Nature Protocols**\n  - Highly detailed, peer-reviewed protocols with timing, anticipated results, troubleshooting, and reagent setup.\n  - Search for phrases such as:\n    - \u201cmicroRNA quantification\u201d\n    - \u201csmall RNA sequencing\u201d\n    - \u201cmiRNA in situ hybridization\u201d\n    - \u201cArgonaute RIP\u201d\n  - Website: `nature.com/nprot`\n\n- **Current Protocols**\n  - Extensive molecular biology method collection, including RNA isolation, qPCR, northern blotting, and sequencing preparation.\n  - Often available through university-library subscriptions.\n  - Website: `currentprotocols.onlinelibrary.wiley.com`\n\n- **Bio-protocol**\n  - Free and journal-linked protocols, often with practical details omitted from standard methods sections.\n  - Website: `bio-protocol.org`\n\n- **JoVE**\n  - Video protocols can be especially helpful for RNA extraction, gel purification of approximately **18\u201330 nucleotide** small RNAs, and tissue in situ hybridization.\n  - Website: `jove.com`\n\n### 3. Peer-reviewed methods papers\nFor detailed technical background and validated experimental design, search:\n\n- **PubMed**: `pubmed.ncbi.nlm.nih.gov`\n- **Google Scholar**: `scholar.google.com`\n\nUseful search strings include:\n\n- `\"microRNA qRT-PCR protocol normalization\"`\n- `\"small RNA sequencing library preparation protocol\"`\n- `\"serum plasma miRNA extraction protocol\"`\n- `\"extracellular vesicle microRNA workflow\"`\n- `\"LNA microRNA in situ hybridization protocol\"`\n- `\"microRNA northern blot protocol\"`\n- `\"miRNA target validation luciferase assay protocol\"`\n\nGood journals for protocols include:\n\n- *Nature Protocols*\n- *Methods in Molecular Biology*\n- *Methods*\n- *RNA*\n- *Nucleic Acids Research*\n- *Bio-protocol*\n- *STAR Protocols*\n\n### 4. Recommended protocol types by application\n\n| Goal | Recommended method/resources |\n|---|---|\n| Total RNA + miRNA extraction from cells/tissue | QIAGEN miRNeasy or Thermo Fisher mirVana manuals |\n| Plasma/serum miRNA | QIAGEN miRNeasy Serum/Plasma protocols; include synthetic spike-ins and hemolysis checks |\n| qRT-PCR validation | TaqMan Advanced miRNA or QIAGEN miRCURY LNA qPCR handbooks |\n| Broad miRNA profiling | Small RNA-seq workflows from NEB,",
+    "latency_ms": 12056.7,
+    "token_count": 1107,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "accf663c56a7",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234402.1740155,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 5 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4309,
+          "evidence": [
+            "Latency 12057ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12056.7,
+        "token_count": 1107,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.148; flagged=True"
+}

@@ -1,0 +1,75 @@
+{
+  "timestamp_utc": "2026-08-09T22:38:02.478118+00:00",
+  "detector": "context_degradation",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "where does cerebrospinal fluid flow to when it exits the cerebral aqueduct",
+    "gold_index": 9
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "When cerebrospinal fluid exits the cerebral aqueduct, it flows into the **fourth ventricle** (since the aqueduct connects the third ventricle to the fourth ventricle). From the fourth ventricle, the CSF can then continue into either the **central canal of the spinal cord** or pass into the **subarachnoid cisterns** through three small openings\u2014the central median aperture and the",
+    "latency_ms": 3083.1,
+    "input_tokens": 2401,
+    "output_tokens": 128
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "where does cerebrospinal fluid flow to when it exits the cerebral aqueduct",
+      "gold_index": 9,
+      "n_docs": 10
+    },
+    "response": "When cerebrospinal fluid exits the cerebral aqueduct, it flows into the **fourth ventricle** (since the aqueduct connects the third ventricle to the fourth ventricle). From the fourth ventricle, the CSF can then continue into either the **central canal of the spinal cord** or pass into the **subarachnoid cisterns** through three small openings-the central median aperture and the",
+    "latency_ms": 3083.1,
+    "token_count": 2529,
+    "context_window_used": 0.92
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "b2ae9d89b9c0",
+      "tool_name": "context_qa",
+      "status": "warn",
+      "timestamp": 1786315082.4772506,
+      "failures": [
+        {
+          "failure_mode": "context_degradation",
+          "confidence": 0.4,
+          "evidence": [
+            "Context window at 92.0% capacity"
+          ],
+          "remediation": [
+            "Implement context summarization before next tool call",
+            "Inject critical context markers at regular intervals",
+            "Use sliding window context management",
+            "Consider splitting task into smaller context-bounded subtasks"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 3083.1,
+        "token_count": 2529,
+        "context_window_used": 0.92,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Implement context summarization before next tool call",
+        "Inject critical context markers at regular intervals",
+        "Use sliding window context management",
+        "Consider splitting task into smaller context-bounded subtasks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.197; flagged=True; gold_index=9"
+}

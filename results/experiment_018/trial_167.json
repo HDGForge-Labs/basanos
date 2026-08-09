@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-08T23:04:57.228429+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "According to Freud what is called the most primitive part of the brain?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Clinical Psychologist",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "According to Freud\u2019s **structural model of the psyche**, the **id** is considered the most primitive part of the mind\u2014not literally a physical part of the brain.\n\nThe id is:\n\n- Present from birth  \n- Entirely unconscious  \n- Driven by basic instincts and urges, such as hunger, sexuality, aggression, and pleasure  \n- Governed by the **pleasure principle**  \n- Regarded as the source of psychic energy, or libido  \n\nFreud later described the id as \u201cthe dark, inaccessible part of our personality.\u201d The **ego** develops to deal with reality, while the **superego** develops moral standards.",
+    "latency_ms": 1793.5,
+    "input_tokens": 86,
+    "output_tokens": 132
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "According to Freud what is called the most primitive part of the brain?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "According to Freud\u2019s **structural model of the psyche**, the **id** is considered the most primitive part of the mind\u2014not literally a physical part of the brain.\n\nThe id is:\n\n- Present from birth  \n- Entirely unconscious  \n- Driven by basic instincts and urges, such as hunger, sexuality, aggression, and pleasure  \n- Governed by the **pleasure principle**  \n- Regarded as the source of psychic energy, or libido  \n\nFreud later described the id as \u201cthe dark, inaccessible part of our personality.\u201d The **ego** develops to deal with reality, while the **superego** develops moral standards.",
+    "latency_ms": 1793.5,
+    "token_count": 218,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "c90b77e2c58b",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786230297.2276897,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 1793.5,
+        "token_count": 218,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.167; flagged=False"
+}

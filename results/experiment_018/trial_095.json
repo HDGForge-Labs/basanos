@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:58:08.801258+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What first-line tests would you request for the management of sarcoidosis?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Generalist physician",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "For **newly diagnosed or active sarcoidosis**, first-line tests are aimed at defining organ involvement, establishing a baseline before treatment, and excluding important mimics:\n\n### Core baseline assessment\n- **Full blood count**\n- **Urea, electrolytes and creatinine**\n- **Liver function tests**, including alkaline phosphatase\n- **Serum calcium** and albumin; consider **phosphate**\n- **Urinalysis** and, if hypercalcaemia or renal involvement is suspected, urinary calcium\n- **Inflammatory markers** such as ESR/CRP \u2014 supportive but nonspecific\n\n### Pulmonary assessment\n- **Chest radiograph** \u2014 stage hilar/mediastinal adenopathy and lung disease\n- **Pulmonary function tests**: spirometry, lung volumes and **DLCO**\n- **Resting oxygen saturation**; exertional oximetry or a 6-minute walk test if symptomatic or pulmonary disease is significant\n- **High-resolution CT chest** if the chest radiograph is abnormal but inadequate, symptoms are disproportionate, complications are suspected, or an alternative diagnosis needs evaluation\n\n### Screening for extrapulmonary disease\n- **12-lead ECG** for cardiac involvement\n- **Baseline ophthalmological examination**, including slit-lamp assessment, even without visual symptoms\n- **Neurological review and examination**; MRI/CSF only if symptoms or signs suggest neurosarcoidosis\n- **Skin examination**\n- **Directed assessment for renal, hepatic, endocrine and musculoskeletal involvement**\n\n### Tests before immunosuppression\n- **TB screening**: IGRA or tuberculin skin test, with chest imaging as appropriate\n- **Hepatitis B and C and HIV testing**\n- **Vaccination status**\n- Pregnancy testing where relevant\n- Consider **varicella immunity** and baseline infection risk assessment before substantial immunosuppression\n\n### Tissue confirmation\nA biopsy is **not always required** when the clinical and radiological picture is classic and there is no suspicion of an alternative diagnosis. If confirmation is needed, obtain the safest accessible tissue\u2014commonly:\n- **Endobronchial ultrasound-guided lymph-node sampling**\n- Transbronchial lung biopsy\n- Skin, peripheral lymph-node or other involved-organ biopsy\n\nOn tissue, look for **non-caseating granulomas**, while excluding infection and malignancy with appropriate stains and cultures.\n\n**Serum ACE is not a useful first-line monitoring test**: it lacks sensitivity and specificity and should not be used alone to diagnose or follow treatment response.",
+    "latency_ms": 4230.8,
+    "input_tokens": 93,
+    "output_tokens": 520
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What first-line tests would you request for the management of sarcoidosis?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "For **newly diagnosed or active sarcoidosis**, first-line tests are aimed at defining organ involvement, establishing a baseline before treatment, and excluding important mimics:\n\n### Core baseline assessment\n- **Full blood count**\n- **Urea, electrolytes and creatinine**\n- **Liver function tests**, including alkaline phosphatase\n- **Serum calcium** and albumin; consider **phosphate**\n- **Urinalysis** and, if hypercalcaemia or renal involvement is suspected, urinary calcium\n- **Inflammatory markers** such as ESR/CRP \u2014 supportive but nonspecific\n\n### Pulmonary assessment\n- **Chest radiograph** \u2014 stage hilar/mediastinal adenopathy and lung disease\n- **Pulmonary function tests**: spirometry, lung volumes and **DLCO**\n- **Resting oxygen saturation**; exertional oximetry or a 6-minute walk test if symptomatic or pulmonary disease is significant\n- **High-resolution CT chest** if the chest radiograph is abnormal but inadequate, symptoms are disproportionate, complications are suspected, or an alternative diagnosis needs evaluation\n\n### Screening for extrapulmonary disease\n- **12-lead ECG** for cardiac involvement\n- **Baseline ophthalmological examination**, including slit-lamp assessment, even without visual symptoms\n- **Neurological review and examination**; MRI/CSF only if symptoms or signs suggest neurosarcoidosis\n- **Skin examination**\n- **Directed assessment for renal, hepatic, endocrine and musculoskeletal involvement**\n\n### Tests before immunosuppression\n- **TB screening**: IGRA or tuberculin skin test, with chest imaging as appropriate\n- **Hepatitis B and C and HIV testing**\n- **Vaccination status**\n- Pregnancy testing where relevant\n- Consider **varicella immunity** and baseline infection risk assessment before substantial immunosuppression\n\n### Tissue confirmation\nA biopsy is **not always required** when the clinical and radiological picture is classic and there is no suspicion of an alternative diagnosis. If confirmation is needed, obtain the safest accessible tissue\u2014commonly:\n- **Endobronchial ultrasound-guided lymph-node sampling**\n- Transbronchial lung biopsy\n- Skin, peripheral lymph-node or other involved-organ biopsy\n\nOn tissue, look for **non-caseating granulomas**, while excluding infection and malignancy with appropriate stains and cultures.\n\n**Serum ACE is not a useful first-line monitoring test**: it lacks sensitivity and specificity and should not be used alone to diagnose or follow treatment response.",
+    "latency_ms": 4230.8,
+    "token_count": 613
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "8f4c02e60fe0",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229888.8004808,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 4230.8,
+        "token_count": 613,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.95; flagged=False"
+}

@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:57:29.565451+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "A patient with low IQ has trouble sleeping but does not understand the risks of long term benzodiazepine usage. How can I explain it to her in simple terms and also suggest something different?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Psychiatry ",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Explaining Benzodiazepine Risks in Simple Terms\n\nHere's an approach using very plain language, short sentences, and concrete comparisons:\n\n## Simple Explanation Script\n\n**\"This pill is like training wheels for sleep\"**\n- \"This medicine helps you sleep now, but your brain can forget how to sleep on its own if you use it too long.\"\n- \"Your body gets used to it \u2014 like how you get used to spicy food. Then you need more and more for it to work.\"\n- \"After a while, stopping suddenly can make you feel shaky, sick, or even cause seizures \u2014 that's dangerous.\"\n- \"It can also make you more likely to fall down, especially at night. Falls can break bones.\"\n- \"Long-term use \u2014 that means taking it every night for months or years \u2014 can make your memory worse and make you feel foggy during the day.\"\n\n## Use Visual/Concrete Comparisons\n- Compare to sugar: \"A little is okay sometimes, but too much every day is bad for your body.\"\n- Use a simple 1-10 scale or stoplight system (green = safe short-term use, red = long-term danger) if she responds well to colors/numbers.\n- Consider a simple picture/symbol chart showing \"sleepy pill today = ok, sleepy pill every night for months = not ok.\"\n\n## Practical Numbers to Keep in Mind (for caregivers, not necessarily to explain directly)\n- Benzodiazepines are generally recommended for **only about 2-4 weeks** of regular use.\n- Risk of dependence increases significantly after **about 4 weeks** of nightly use.\n- Falls and fracture risk can increase by **roughly 50%** in older adults using benzodiazepines regularly.\n- Cognitive impairment risk increases with **cumulative dose and duration**, particularly beyond **3-6 months**.\n\n---\n\n# Alternative Approaches to Suggest\n\n### 1. **Sleep Hygiene Changes** (simple, concrete habits)\n- \"Turn the lights down low **1 hour** before bed.\"\n- \"No phone or TV **30 minutes** before sleep.\"\n- \"Try to go to bed at the same time every night \u2014 like **9:00 PM** every day.\"\n- \"Keep the room cool and dark.\"\n\n### 2. **Melatonin**\n- Over-the-counter option, generally considered safer for longer-term use.\n- Typical starting dose: **0.5-3 mg**, taken **30-60 minutes** before bed.\n- Much lower risk of dependence compared to benzodiazepines.\n- Explain simply: \"This is a vitamin-like pill that helps your body remember it's nighttime.\"\n\n### 3. **Non-Benzodiazepine Sleep Aids** (if a doctor is involved)\n- Options like **trazodone** (low dose, often **25-50 mg**) or other non-addictive sleep medications may be considered by her physician.\n- These have a different safety profile with **lower dependence risk**.\n\n### 4. **Simple Relaxation Routines**\n- Warm bath or shower before bed.\n- Simple breathing exercise: \"Breathe in for **4 seconds**, hold for **4 seconds**, breathe out for",
+    "latency_ms": 13351.9,
+    "input_tokens": 168,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A patient with low IQ has trouble sleeping but does not understand the risks of long term benzodiazepine usage. How can I explain it to her in simple terms and also suggest something different?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Explaining Benzodiazepine Risks in Simple Terms\n\nHere's an approach using very plain language, short sentences, and concrete comparisons:\n\n## Simple Explanation Script\n\n**\"This pill is like training wheels for sleep\"**\n- \"This medicine helps you sleep now, but your brain can forget how to sleep on its own if you use it too long.\"\n- \"Your body gets used to it \u2014 like how you get used to spicy food. Then you need more and more for it to work.\"\n- \"After a while, stopping suddenly can make you feel shaky, sick, or even cause seizures \u2014 that's dangerous.\"\n- \"It can also make you more likely to fall down, especially at night. Falls can break bones.\"\n- \"Long-term use \u2014 that means taking it every night for months or years \u2014 can make your memory worse and make you feel foggy during the day.\"\n\n## Use Visual/Concrete Comparisons\n- Compare to sugar: \"A little is okay sometimes, but too much every day is bad for your body.\"\n- Use a simple 1-10 scale or stoplight system (green = safe short-term use, red = long-term danger) if she responds well to colors/numbers.\n- Consider a simple picture/symbol chart showing \"sleepy pill today = ok, sleepy pill every night for months = not ok.\"\n\n## Practical Numbers to Keep in Mind (for caregivers, not necessarily to explain directly)\n- Benzodiazepines are generally recommended for **only about 2-4 weeks** of regular use.\n- Risk of dependence increases significantly after **about 4 weeks** of nightly use.\n- Falls and fracture risk can increase by **roughly 50%** in older adults using benzodiazepines regularly.\n- Cognitive impairment risk increases with **cumulative dose and duration**, particularly beyond **3-6 months**.\n\n---\n\n# Alternative Approaches to Suggest\n\n### 1. **Sleep Hygiene Changes** (simple, concrete habits)\n- \"Turn the lights down low **1 hour** before bed.\"\n- \"No phone or TV **30 minutes** before sleep.\"\n- \"Try to go to bed at the same time every night \u2014 like **9:00 PM** every day.\"\n- \"Keep the room cool and dark.\"\n\n### 2. **Melatonin**\n- Over-the-counter option, generally considered safer for longer-term use.\n- Typical starting dose: **0.5-3 mg**, taken **30-60 minutes** before bed.\n- Much lower risk of dependence compared to benzodiazepines.\n- Explain simply: \"This is a vitamin-like pill that helps your body remember it's nighttime.\"\n\n### 3. **Non-Benzodiazepine Sleep Aids** (if a doctor is involved)\n- Options like **trazodone** (low dose, often **25-50 mg**) or other non-addictive sleep medications may be considered by her physician.\n- These have a different safety profile with **lower dependence risk**.\n\n### 4. **Simple Relaxation Routines**\n- Warm bath or shower before bed.\n- Simple breathing exercise: \"Breathe in for **4 seconds**, hold for **4 seconds**, breathe out for",
+    "latency_ms": 13351.9,
+    "token_count": 1192,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "c1f05e1e3913",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240649.5646229,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 13 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4503,
+          "evidence": [
+            "Latency 13352ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13351.9,
+        "token_count": 1192,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.154; flagged=True"
+}

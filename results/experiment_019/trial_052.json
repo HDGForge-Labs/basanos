@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:58:58.928340+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Can a person without one kidney take ibuprofen?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Pharmacy",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Yes\u2014many people with a single healthy kidney can take ibuprofen occasionally, but it should be used cautiously.\n\nIbuprofen and other NSAIDs can reduce blood flow to the kidneys. The risk is higher if you have any reduced kidney function, dehydration, heart failure, liver disease, high blood pressure, diabetes, are over 60, or take medicines such as ACE inhibitors/ARBs (for example lisinopril or losartan) or diuretics (\u201cwater pills\u201d).\n\nPractical guidance:\n\n- **Avoid routine or prolonged use** of ibuprofen unless your clinician says it is safe.\n- For an otherwise healthy adult with normal kidney tests, **a short course at the lowest effective dose** is usually acceptable\u2014for example, 200\u2013400 mg occasionally, following the package maximum.\n- **Do not take it while dehydrated** (vomiting, diarrhea, fever, poor fluid intake, heavy exercise/heat exposure) or during an acute illness that could affect kidney function.\n- Avoid combining it with other NSAIDs such as naproxen, aspirin for pain, diclofenac, or ketorolac.\n- If you need pain medicine frequently, **acetaminophen/paracetamol** is generally preferred for kidney safety when used within recommended dosing limits and if you do not have significant liver disease or heavy alcohol use.\n- If you have a solitary kidney due to donation, congenital absence, surgery, or kidney disease, it is sensible to ask your doctor whether you need periodic **creatinine/eGFR and urine protein** monitoring and whether NSAIDs should be avoided entirely.\n\nSeek medical care promptly for reduced urine output, swelling, sudden weight gain, shortness of breath, severe fatigue, or persistent nausea after taking an NSAID.",
+    "latency_ms": 4847.7,
+    "input_tokens": 88,
+    "output_tokens": 353
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Can a person without one kidney take ibuprofen?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Yes\u2014many people with a single healthy kidney can take ibuprofen occasionally, but it should be used cautiously.\n\nIbuprofen and other NSAIDs can reduce blood flow to the kidneys. The risk is higher if you have any reduced kidney function, dehydration, heart failure, liver disease, high blood pressure, diabetes, are over 60, or take medicines such as ACE inhibitors/ARBs (for example lisinopril or losartan) or diuretics (\u201cwater pills\u201d).\n\nPractical guidance:\n\n- **Avoid routine or prolonged use** of ibuprofen unless your clinician says it is safe.\n- For an otherwise healthy adult with normal kidney tests, **a short course at the lowest effective dose** is usually acceptable\u2014for example, 200\u2013400 mg occasionally, following the package maximum.\n- **Do not take it while dehydrated** (vomiting, diarrhea, fever, poor fluid intake, heavy exercise/heat exposure) or during an acute illness that could affect kidney function.\n- Avoid combining it with other NSAIDs such as naproxen, aspirin for pain, diclofenac, or ketorolac.\n- If you need pain medicine frequently, **acetaminophen/paracetamol** is generally preferred for kidney safety when used within recommended dosing limits and if you do not have significant liver disease or heavy alcohol use.\n- If you have a solitary kidney due to donation, congenital absence, surgery, or kidney disease, it is sensible to ask your doctor whether you need periodic **creatinine/eGFR and urine protein** monitoring and whether NSAIDs should be avoided entirely.\n\nSeek medical care promptly for reduced urine output, swelling, sudden weight gain, shortness of breath, severe fatigue, or persistent nausea after taking an NSAID.",
+    "latency_ms": 4847.7,
+    "token_count": 441
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "b20e66b70002",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233538.9276097,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 4847.7,
+        "token_count": 441,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.52; flagged=False"
+}

@@ -1,0 +1,79 @@
+{
+  "timestamp_utc": "2026-08-08T23:53:20.447517+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What is the best biological agent for treatment of hidradenitis suppurativa having failed adalimumab?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Dermatology",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "For moderate-to-severe hidradenitis suppurativa (HS) that has failed **adalimumab**, the best-supported next biologic is generally **secukinumab (Cosentyx)**, an **IL-17A inhibitor**.\n\n- It is FDA-approved for adults with moderate-to-severe HS.\n- Phase III SUNSHINE/SUNRISE trials showed clinically meaningful HS responses, including in many patients previously exposed to biologics.\n- Typical HS regimen: **300 mg subcutaneously weekly for 5 doses (weeks 0\u20134), then every 4 weeks**. Some patients with ongoing active disease may be treated every 2 weeks depending on local labeling and specialist practice.\n\nAnother strong approved option is **bimekizumab (Bimzelx)**, which blocks **IL-17A and IL-17F**. It has robust HS efficacy data and may be particularly attractive after TNF-inhibitor failure, though availability/approval and dosing vary by country. A common HS regimen is **320 mg every 2 weeks for 16 weeks, then every 4 weeks**.\n\nPractical choice:\n\n1. **Secukinumab** \u2013 usually the default next biologic after adalimumab failure because of approval, experience, and safety familiarity.  \n2. **Bimekizumab** \u2013 an excellent alternative and may have somewhat higher response rates in trial populations, but candidiasis is more frequent.  \n3. **Infliximab** \u2013 not formally approved for HS but remains an important off-label option, especially for severe, rapidly progressive, highly inflammatory disease, extensive tunnels, or concomitant inflammatory bowel disease. Typical specialist dosing is 5\u201310 mg/kg IV at weeks 0, 2, and 6, then every 4\u20138 weeks.\n\nAvoid or use caution with IL-17 blockers in patients with active inflammatory bowel disease, because they can precipitate or worsen Crohn disease/ulcerative colitis. In that situation, **infliximab** (or sometimes another TNF inhibitor) is often preferable.\n\nBiologic therapy works best alongside HS-specific management: smoking cessation if relevant, weight/metabolic management, topical/systemic antibiotics for acute inflammatory flares, hormonal therapy when appropriate, and surgical deroofing/excision for persistent tunnels and scarring.",
+    "latency_ms": 6023.6,
+    "input_tokens": 100,
+    "output_tokens": 478
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the best biological agent for treatment of hidradenitis suppurativa having failed adalimumab?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "For moderate-to-severe hidradenitis suppurativa (HS) that has failed **adalimumab**, the best-supported next biologic is generally **secukinumab (Cosentyx)**, an **IL-17A inhibitor**.\n\n- It is FDA-approved for adults with moderate-to-severe HS.\n- Phase III SUNSHINE/SUNRISE trials showed clinically meaningful HS responses, including in many patients previously exposed to biologics.\n- Typical HS regimen: **300 mg subcutaneously weekly for 5 doses (weeks 0\u20134), then every 4 weeks**. Some patients with ongoing active disease may be treated every 2 weeks depending on local labeling and specialist practice.\n\nAnother strong approved option is **bimekizumab (Bimzelx)**, which blocks **IL-17A and IL-17F**. It has robust HS efficacy data and may be particularly attractive after TNF-inhibitor failure, though availability/approval and dosing vary by country. A common HS regimen is **320 mg every 2 weeks for 16 weeks, then every 4 weeks**.\n\nPractical choice:\n\n1. **Secukinumab** \u2013 usually the default next biologic after adalimumab failure because of approval, experience, and safety familiarity.  \n2. **Bimekizumab** \u2013 an excellent alternative and may have somewhat higher response rates in trial populations, but candidiasis is more frequent.  \n3. **Infliximab** \u2013 not formally approved for HS but remains an important off-label option, especially for severe, rapidly progressive, highly inflammatory disease, extensive tunnels, or concomitant inflammatory bowel disease. Typical specialist dosing is 5\u201310 mg/kg IV at weeks 0, 2, and 6, then every 4\u20138 weeks.\n\nAvoid or use caution with IL-17 blockers in patients with active inflammatory bowel disease, because they can precipitate or worsen Crohn disease/ulcerative colitis. In that situation, **infliximab** (or sometimes another TNF inhibitor) is often preferable.\n\nBiologic therapy works best alongside HS-specific management: smoking cessation if relevant, weight/metabolic management, topical/systemic antibiotics for acute inflammatory flares, hormonal therapy when appropriate, and surgical deroofing/excision for persistent tunnels and scarring.",
+    "latency_ms": 6023.6,
+    "token_count": 578
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "1e2bd0d3ebeb",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786233200.446707,
+      "failures": [
+        {
+          "failure_mode": "sycophantic_gap_fill",
+          "confidence": 0.55,
+          "evidence": [
+            "Weak agreement/filler language detected (1 match(es))",
+            "Response contains 9 unexplained numeric values",
+            "Response changed from the previous call to this tool with identical parameters, co-occurring with agreement-flavored language - possible ungrounded answer shift"
+          ],
+          "remediation": [
+            "Request explicit source citations for all factual claims",
+            "Enable strict mode: require parameter-grounded responses only",
+            "Add validation step: cross-reference response values against input parameters",
+            "Set confidence_threshold=0.8 for this tool call type",
+            "Investigate why output changed for this tool call with unchanged input parameters"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 6023.6,
+        "token_count": 578,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Request explicit source citations for all factual claims",
+        "Enable strict mode: require parameter-grounded responses only",
+        "Add validation step: cross-reference response values against input parameters",
+        "Set confidence_threshold=0.8 for this tool call type",
+        "Investigate why output changed for this tool call with unchanged input parameters"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.7; flagged=False"
+}

@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T22:28:30.741364+00:00",
+  "detector": "context_degradation",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "who was the original host of jokers wild",
+    "gold_index": 0
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "The original host of \"The Joker's Wild\" (the American game show) was **Jack Barry**, who created the show and hosted it from its debut until his death in May 1984 [1][2].\n\nNote: There was also a separate British show called \"Jokers Wild\" (a comedy panel game show), which was hosted by **Barry Cryer** from 1969 to 1974 [5].",
+    "latency_ms": 3547.7,
+    "input_tokens": 2124,
+    "output_tokens": 119
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "who was the original host of jokers wild",
+      "gold_index": 0,
+      "n_docs": 10
+    },
+    "response": "The original host of \"The Joker's Wild\" (the American game show) was **Jack Barry**, who created the show and hosted it from its debut until his death in May 1984 [1][2].\n\nNote: There was also a separate British show called \"Jokers Wild\" (a comedy panel game show), which was hosted by **Barry Cryer** from 1969 to 1974 [5].",
+    "latency_ms": 3547.7,
+    "token_count": 2243,
+    "context_window_used": 0.25
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "a846e35655f3",
+      "tool_name": "context_qa",
+      "status": "pass",
+      "timestamp": 1786314510.7406182,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3547.7,
+        "token_count": 2243,
+        "context_window_used": 0.25,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.20; flagged=False; gold_index=0"
+}

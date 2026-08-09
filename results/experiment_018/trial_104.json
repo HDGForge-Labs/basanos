@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-08-08T22:58:46.451366+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is intestate succession?",
+    "field": "Law",
+    "specific_field": "Law of succession",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "**Intestate succession** is the legal process for distributing a person\u2019s property when they die **without a valid will**\u2014or when the will does not cover some of the person\u2019s assets.\n\nUnder intestate-succession laws:\n\n- The deceased person\u2019s **estate** is identified and debts, taxes, and administration expenses are generally paid first.\n- The remaining property is distributed to legally defined heirs, usually in a priority order such as:\n  1. Spouse or domestic partner  \n  2. Children and other descendants  \n  3. Parents  \n  4. Siblings  \n  5. More distant relatives\n- If no qualifying relatives can be found, the property may eventually pass to the **state**, a process often called *escheat*.\n\nThe exact distribution varies significantly by jurisdiction. For example, a surviving spouse might receive **all** or only **about one-half to two-thirds** of the estate, depending on whether the deceased also had children, whether those children were from the marriage, and local law.\n\nIntestate succession generally does **not** control assets that pass automatically through another arrangement, such as:\n\n- Life-insurance proceeds with a named beneficiary\n- Retirement accounts with a beneficiary designation\n- Jointly owned property with survivorship rights\n- Payable-on-death or transfer-on-death accounts\n- Assets held in certain trusts\n\nBecause the rules differ by country, state, or province, the specific outcome depends on the law where the deceased was legally domiciled and the type of property involved.",
+    "latency_ms": 2875.1,
+    "input_tokens": 78,
+    "output_tokens": 316
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is intestate succession?",
+      "field": "Law"
+    },
+    "response": "**Intestate succession** is the legal process for distributing a person\u2019s property when they die **without a valid will**\u2014or when the will does not cover some of the person\u2019s assets.\n\nUnder intestate-succession laws:\n\n- The deceased person\u2019s **estate** is identified and debts, taxes, and administration expenses are generally paid first.\n- The remaining property is distributed to legally defined heirs, usually in a priority order such as:\n  1. Spouse or domestic partner  \n  2. Children and other descendants  \n  3. Parents  \n  4. Siblings  \n  5. More distant relatives\n- If no qualifying relatives can be found, the property may eventually pass to the **state**, a process often called *escheat*.\n\nThe exact distribution varies significantly by jurisdiction. For example, a surviving spouse might receive **all** or only **about one-half to two-thirds** of the estate, depending on whether the deceased also had children, whether those children were from the marriage, and local law.\n\nIntestate succession generally does **not** control assets that pass automatically through another arrangement, such as:\n\n- Life-insurance proceeds with a named beneficiary\n- Retirement accounts with a beneficiary designation\n- Jointly owned property with survivorship rights\n- Payable-on-death or transfer-on-death accounts\n- Assets held in certain trusts\n\nBecause the rules differ by country, state, or province, the specific outcome depends on the law where the deceased was legally domiciled and the type of property involved.",
+    "latency_ms": 2875.1,
+    "token_count": 394,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "fbe5c8d32542",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229926.4506068,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 5 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        }
+      ],
+      "metrics": {
+        "latency_ms": 2875.1,
+        "token_count": 394,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": []
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.104; flagged=True"
+}

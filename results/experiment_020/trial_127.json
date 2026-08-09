@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:51:52.479940+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "Does the medical field require one to be consumed by drugs rather than holistic medicines?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Sales rep in medicines",
+    "question_type": "Open-ended question that is potentially ambiguous"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "No\u2014modern medicine does not require choosing pharmaceuticals over holistic approaches. This is a common misconception, and the reality is more nuanced. Here's a breakdown:\n\n## Medicine Isn't Just \"Drugs\"\n\nConventional medicine encompasses far more than pharmaceuticals:\n- **Lifestyle interventions** are often first-line treatment. For example, for type 2 diabetes, the American Diabetes Association recommends lifestyle modification (diet, exercise) as initial therapy, and structured programs like the Diabetes Prevention Program have shown roughly a 58% reduction in diabetes incidence through diet and exercise alone\u2014outperforming metformin, which showed about a 31% reduction.\n- For **hypertension**, guidelines suggest lifestyle changes (reducing sodium to below 2,300mg/day, the DASH diet, roughly 150 minutes/week of exercise) can lower systolic blood pressure by approximately 4-11 mmHg, sometimes avoiding medication entirely for stage 1 cases.\n- **Physical therapy** is now often prioritized over opioids for chronic back pain, per CDC guidelines updated around 2016 and revised in 2022.\n\n## Integrative Medicine Is Growing\n\n- Roughly 30-40% of U.S. adults use some form of complementary health approach (per NCCIH survey data, National Health Interview Survey).\n- Major academic medical centers (Mayo Clinic, Cleveland Clinic, Johns Hopkins) now have dedicated integrative medic",
+    "latency_ms": 12395.2,
+    "input_tokens": 137,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Does the medical field require one to be consumed by drugs rather than holistic medicines?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "No\u2014modern medicine does not require choosing pharmaceuticals over holistic approaches. This is a common misconception, and the reality is more nuanced. Here's a breakdown:\n\n## Medicine Isn't Just \"Drugs\"\n\nConventional medicine encompasses far more than pharmaceuticals:\n- **Lifestyle interventions** are often first-line treatment. For example, for type 2 diabetes, the American Diabetes Association recommends lifestyle modification (diet, exercise) as initial therapy, and structured programs like the Diabetes Prevention Program have shown roughly a 58% reduction in diabetes incidence through diet and exercise alone\u2014outperforming metformin, which showed about a 31% reduction.\n- For **hypertension**, guidelines suggest lifestyle changes (reducing sodium to below 2,300mg/day, the DASH diet, roughly 150 minutes/week of exercise) can lower systolic blood pressure by approximately 4-11 mmHg, sometimes avoiding medication entirely for stage 1 cases.\n- **Physical therapy** is now often prioritized over opioids for chronic back pain, per CDC guidelines updated around 2016 and revised in 2022.\n\n## Integrative Medicine Is Growing\n\n- Roughly 30-40% of U.S. adults use some form of complementary health approach (per NCCIH survey data, National Health Interview Survey).\n- Major academic medical centers (Mayo Clinic, Cleveland Clinic, Johns Hopkins) now have dedicated integrative medic",
+    "latency_ms": 12395.2,
+    "token_count": 1161,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "55def358fc15",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240312.4791622,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 11 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4359,
+          "evidence": [
+            "Latency 12395ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12395.2,
+        "token_count": 1161,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.127; flagged=True"
+}

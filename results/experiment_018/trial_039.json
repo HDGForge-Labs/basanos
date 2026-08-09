@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:54:18.911164+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "Someone thinks they took their dosage of hypertension medications, and may have taken them again in the morning. They have dementia and cannot remember. What can be done?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Dispensery",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Treat this as a **possible double dose** until confirmed.\n\n1. **Do not give any more blood-pressure medicine** until a clinician or poison specialist advises you. Don\u2019t \u201cmake up\u201d or skip future doses beyond that advice.\n2. **Immediately identify the medicines, strengths, prescribed dose, and possible times taken.** Check the pill organizer, blister pack, remaining tablets, pharmacy records, and medication list. Note other drugs\u2014especially insulin, diabetes tablets, sedatives, diuretics, beta-blockers, clonidine, or calcium-channel blockers.\n3. **Call Poison Control now for individualized advice**\u2014in the U.S.: **1-800-222-1222** (Poison Help; 24/7). Elsewhere, contact the local poison center or urgent medical service. Have the medication containers available. Do not wait for symptoms.\n4. **Call emergency services now** for fainting, severe weakness, confusion beyond baseline, difficulty breathing, chest pain, seizure, inability to awaken, severe dizziness, or signs of stroke. Also seek urgent help for a very low blood pressure\u2014particularly **below 90/60 mmHg with symptoms**\u2014or a pulse persistently below about **50/min**, unless their clinician has given different thresholds.\n5. While waiting: have them **sit or lie down**, rise slowly, and avoid driving, alcohol, or being left alone. Check blood pressure and pulse if available, but don\u2019t repeatedly delay contacting help. Do **not** induce vomiting or give extra fluids/salt as a \u201ccountermeasure.\u201d\n6. Because dementia makes monitoring and medication history unreliable, arrange **same-day clinical assessment** if the medication or amount cannot be established, especially with multiple drugs, kidney disease, frailty, or anticoagulants.\n\nSome overdoses\u2014particularly **amlodipine, verapamil/diltiazem, beta-blockers, clonidine, and diuretics**\u2014can worsen over several hours, so normal initial readings do not completely rule out danger. Future doses should be managed with a locked/blistered dispenser or supervised administration.",
+    "latency_ms": 4383.6,
+    "input_tokens": 110,
+    "output_tokens": 429
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "Someone thinks they took their dosage of hypertension medications, and may have taken them again in the morning. They have dementia and cannot remember. What can be done?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Treat this as a **possible double dose** until confirmed.\n\n1. **Do not give any more blood-pressure medicine** until a clinician or poison specialist advises you. Don\u2019t \u201cmake up\u201d or skip future doses beyond that advice.\n2. **Immediately identify the medicines, strengths, prescribed dose, and possible times taken.** Check the pill organizer, blister pack, remaining tablets, pharmacy records, and medication list. Note other drugs\u2014especially insulin, diabetes tablets, sedatives, diuretics, beta-blockers, clonidine, or calcium-channel blockers.\n3. **Call Poison Control now for individualized advice**\u2014in the U.S.: **1-800-222-1222** (Poison Help; 24/7). Elsewhere, contact the local poison center or urgent medical service. Have the medication containers available. Do not wait for symptoms.\n4. **Call emergency services now** for fainting, severe weakness, confusion beyond baseline, difficulty breathing, chest pain, seizure, inability to awaken, severe dizziness, or signs of stroke. Also seek urgent help for a very low blood pressure\u2014particularly **below 90/60 mmHg with symptoms**\u2014or a pulse persistently below about **50/min**, unless their clinician has given different thresholds.\n5. While waiting: have them **sit or lie down**, rise slowly, and avoid driving, alcohol, or being left alone. Check blood pressure and pulse if available, but don\u2019t repeatedly delay contacting help. Do **not** induce vomiting or give extra fluids/salt as a \u201ccountermeasure.\u201d\n6. Because dementia makes monitoring and medication history unreliable, arrange **same-day clinical assessment** if the medication or amount cannot be established, especially with multiple drugs, kidney disease, frailty, or anticoagulants.\n\nSome overdoses\u2014particularly **amlodipine, verapamil/diltiazem, beta-blockers, clonidine, and diuretics**\u2014can worsen over several hours, so normal initial readings do not completely rule out danger. Future doses should be managed with a locked/blistered dispenser or supervised administration.",
+    "latency_ms": 4383.6,
+    "token_count": 539
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "13deb27201eb",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229658.910388,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 4383.6,
+        "token_count": 539,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.39; flagged=False"
+}

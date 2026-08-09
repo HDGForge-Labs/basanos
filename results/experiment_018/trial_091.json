@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:57:51.236651+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What are the symptoms of sepsis?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Critical care",
+    "question_type": "Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Sepsis is a life-threatening medical emergency caused by the body\u2019s extreme response to an infection. Symptoms can develop quickly and may include:\n\n- **Fever, chills, or feeling unusually cold**\n- **Fast heart rate or weak pulse**\n- **Rapid or difficult breathing; shortness of breath**\n- **New confusion, disorientation, extreme sleepiness, or difficulty waking**\n- **Very low or very high body temperature**\n- **Cold, clammy, pale, bluish, or mottled skin**\n- **Severe pain or extreme discomfort**\n- **Very little or no urine**\n- **Sudden weakness or inability to stand**\n- **Nausea, vomiting, or diarrhea**\n\nIn infants and children, warning signs can include poor feeding, unusual sleepiness, inconsolable irritability, rapid breathing, pale or mottled skin, seizures, or fewer wet diapers.\n\n**Seek emergency medical care immediately** if sepsis is possible\u2014especially with an infection plus confusion, breathing difficulty, faintness, mottled skin, or markedly reduced urination. Call emergency services rather than driving if the person is severely ill.",
+    "latency_ms": 2190.5,
+    "input_tokens": 86,
+    "output_tokens": 231
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the symptoms of sepsis?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Sepsis is a life-threatening medical emergency caused by the body\u2019s extreme response to an infection. Symptoms can develop quickly and may include:\n\n- **Fever, chills, or feeling unusually cold**\n- **Fast heart rate or weak pulse**\n- **Rapid or difficult breathing; shortness of breath**\n- **New confusion, disorientation, extreme sleepiness, or difficulty waking**\n- **Very low or very high body temperature**\n- **Cold, clammy, pale, bluish, or mottled skin**\n- **Severe pain or extreme discomfort**\n- **Very little or no urine**\n- **Sudden weakness or inability to stand**\n- **Nausea, vomiting, or diarrhea**\n\nIn infants and children, warning signs can include poor feeding, unusual sleepiness, inconsolable irritability, rapid breathing, pale or mottled skin, seizures, or fewer wet diapers.\n\n**Seek emergency medical care immediately** if sepsis is possible\u2014especially with an infection plus confusion, breathing difficulty, faintness, mottled skin, or markedly reduced urination. Call emergency services rather than driving if the person is severely ill.",
+    "latency_ms": 2190.5,
+    "token_count": 317
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "0137e3b86d01",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229871.235834,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2190.5,
+        "token_count": 317,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.91; flagged=False"
+}

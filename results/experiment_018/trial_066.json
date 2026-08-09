@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:56:09.905906+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "My company, located in Mexico, fired a person that came to work with a level of alcohol in the blood of 0.009. This person is suing the company due to that decision. Can this person win the sue?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Occupational Health, Environment and Safety",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Yes, the employee could win, but **a blood-alcohol result of 0.009 alone does not determine the case**. The outcome depends on Mexican federal labor law, the workplace rules, the reliability of the test, the employee\u2019s job, and whether the company followed the required termination procedure.\n\n### Key Mexican-law issues\n\nUnder Mexico\u2019s Federal Labor Law, termination for cause may be justified if the worker:\n\n- Appears at work in a **drunken condition**; or\n- Commits another serious workplace violation established in the employment contract, collective agreement, work regulations, or applicable law.\n\nThe employer generally must give a **written notice of termination stating the specific conduct and dates**. Failure to provide proper notice can make the dismissal presumptively unjustified, exposing the company to reinstatement or severance-related liability.\n\n### Why \u201c0.009\u201d matters\n\nThe result must be interpreted correctly:\n\n- **0.009% BAC** is extremely low\u2014about **0.09 g/L**, generally below the legal driving limit in many jurisdictions and not automatically proof of drunkenness.\n- **0.009 BAC** is not the same as **0.09** or **0.9**. A decimal or unit error could be decisive.\n- A blood test showing alcohol does not necessarily prove that the employee was visibly intoxicated or unable to perform the job.\n- The company would need to establish the test\u2019s method, calibration, chain of custody, timing, laboratory reliability, and whether the result was reported in BAC, g/L, mg/dL, or another unit.\n\n### Factors favoring the company\n\nThe dismissal is more defensible if:\n\n- The employee worked in a safety-sensitive position\u2014driver, machine operator, industrial worker, security role, etc.;\n- Company work rules clearly prohibit reporting to work with alcohol in the system;\n- The employee showed objective signs of intoxication or impaired performance;\n- The test was administered under a written, consistently applied policy;\n- The employee was properly informed of the result and given an opportunity to respond;\n- The company issued a legally adequate written termination notice and can prove the facts.\n\n### Factors favoring the employee\n\nThe employee\u2019s claim is stronger if:\n\n- The only evidence is a very low reading of **0.009**;\n- There were no observable signs of intoxication or impairment;\n- No workplace rule prohibited any detectable alcohol level;\n- The test was informal, uncalibrated, improperly administered, or undocumented;\n- The company treated similar employees differently;\n- The termination notice was missing, vague, or legally defective;\n- The person was fired immediately without an opportunity to challenge the test or request a confirmatory test.\n\n### Likely assessment\n\nIf **0.009% BAC was the sole basis for dismissal**, particularly in a non-safety-sensitive job and without evidence of intoxication or a clear zero-tolerance policy, the company may have difficulty proving justified termination. The employee could potentially prevail in a labor proceeding and seek reinstatement or the applicable indemnification and benefits.\n\nIf the actual reading was **0.09 or 0.9**, or if the employee was demonstrably impaired while performing safety-sensitive work and the company followed its policies and statutory procedures, the company\u2019s defense would be substantially stronger.\n\nThe company should immediately have a Mexican labor lawyer review the original test report, its units, workplace regulations, termination notice, evidence of impairment, and the employee\u2019s job duties.",
+    "latency_ms": 5478.4,
+    "input_tokens": 124,
+    "output_tokens": 699
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "My company, located in Mexico, fired a person that came to work with a level of alcohol in the blood of 0.009. This person is suing the company due to that decision. Can this person win the sue?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Yes, the employee could win, but **a blood-alcohol result of 0.009 alone does not determine the case**. The outcome depends on Mexican federal labor law, the workplace rules, the reliability of the test, the employee\u2019s job, and whether the company followed the required termination procedure.\n\n### Key Mexican-law issues\n\nUnder Mexico\u2019s Federal Labor Law, termination for cause may be justified if the worker:\n\n- Appears at work in a **drunken condition**; or\n- Commits another serious workplace violation established in the employment contract, collective agreement, work regulations, or applicable law.\n\nThe employer generally must give a **written notice of termination stating the specific conduct and dates**. Failure to provide proper notice can make the dismissal presumptively unjustified, exposing the company to reinstatement or severance-related liability.\n\n### Why \u201c0.009\u201d matters\n\nThe result must be interpreted correctly:\n\n- **0.009% BAC** is extremely low\u2014about **0.09 g/L**, generally below the legal driving limit in many jurisdictions and not automatically proof of drunkenness.\n- **0.009 BAC** is not the same as **0.09** or **0.9**. A decimal or unit error could be decisive.\n- A blood test showing alcohol does not necessarily prove that the employee was visibly intoxicated or unable to perform the job.\n- The company would need to establish the test\u2019s method, calibration, chain of custody, timing, laboratory reliability, and whether the result was reported in BAC, g/L, mg/dL, or another unit.\n\n### Factors favoring the company\n\nThe dismissal is more defensible if:\n\n- The employee worked in a safety-sensitive position\u2014driver, machine operator, industrial worker, security role, etc.;\n- Company work rules clearly prohibit reporting to work with alcohol in the system;\n- The employee showed objective signs of intoxication or impaired performance;\n- The test was administered under a written, consistently applied policy;\n- The employee was properly informed of the result and given an opportunity to respond;\n- The company issued a legally adequate written termination notice and can prove the facts.\n\n### Factors favoring the employee\n\nThe employee\u2019s claim is stronger if:\n\n- The only evidence is a very low reading of **0.009**;\n- There were no observable signs of intoxication or impairment;\n- No workplace rule prohibited any detectable alcohol level;\n- The test was informal, uncalibrated, improperly administered, or undocumented;\n- The company treated similar employees differently;\n- The termination notice was missing, vague, or legally defective;\n- The person was fired immediately without an opportunity to challenge the test or request a confirmatory test.\n\n### Likely assessment\n\nIf **0.009% BAC was the sole basis for dismissal**, particularly in a non-safety-sensitive job and without evidence of intoxication or a clear zero-tolerance policy, the company may have difficulty proving justified termination. The employee could potentially prevail in a labor proceeding and seek reinstatement or the applicable indemnification and benefits.\n\nIf the actual reading was **0.09 or 0.9**, or if the employee was demonstrably impaired while performing safety-sensitive work and the company followed its policies and statutory procedures, the company\u2019s defense would be substantially stronger.\n\nThe company should immediately have a Mexican labor lawyer review the original test report, its units, workplace regulations, termination notice, evidence of impairment, and the employee\u2019s job duties.",
+    "latency_ms": 5478.4,
+    "token_count": 823
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "d650918fa059",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229769.9051125,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 5478.4,
+        "token_count": 823,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.66; flagged=False"
+}

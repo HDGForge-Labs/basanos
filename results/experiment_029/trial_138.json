@@ -1,0 +1,75 @@
+{
+  "timestamp_utc": "2026-08-09T22:34:55.901167+00:00",
+  "detector": "context_degradation",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "when did john hart play the lone ranger",
+    "gold_index": 9
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "John Hart played the Lone Ranger from 1952 to 1954, replacing Clayton Moore due to a contract/wage dispute. Hart appeared in 52 episodes during this period before Moore returned to the role in 1954.",
+    "latency_ms": 2076.5,
+    "input_tokens": 2236,
+    "output_tokens": 77
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "when did john hart play the lone ranger",
+      "gold_index": 9,
+      "n_docs": 10
+    },
+    "response": "John Hart played the Lone Ranger from 1952 to 1954, replacing Clayton Moore due to a contract/wage dispute. Hart appeared in 52 episodes during this period before Moore returned to the role in 1954.",
+    "latency_ms": 2076.5,
+    "token_count": 2313,
+    "context_window_used": 0.92
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "2c7ab2a61811",
+      "tool_name": "context_qa",
+      "status": "warn",
+      "timestamp": 1786314895.900396,
+      "failures": [
+        {
+          "failure_mode": "context_degradation",
+          "confidence": 0.4,
+          "evidence": [
+            "Context window at 92.0% capacity"
+          ],
+          "remediation": [
+            "Implement context summarization before next tool call",
+            "Inject critical context markers at regular intervals",
+            "Use sliding window context management",
+            "Consider splitting task into smaller context-bounded subtasks"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 2076.5,
+        "token_count": 2313,
+        "context_window_used": 0.92,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Implement context summarization before next tool call",
+        "Inject critical context markers at regular intervals",
+        "Use sliding window context management",
+        "Consider splitting task into smaller context-bounded subtasks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.138; flagged=True; gold_index=9"
+}

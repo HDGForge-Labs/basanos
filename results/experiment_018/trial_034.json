@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:53:59.895879+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "How will the estate of an individual who dies without a will be distributed?",
+    "field": "Law",
+    "specific_field": "Property Law",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "An individual who dies without a will dies **intestate**. Their estate is distributed under the intestacy laws of the jurisdiction where they lived, not according to personal wishes. The exact rules vary by country and, in the United States, by state, but the usual order is:\n\n1. **Estate administration**\n   - A court appoints an administrator, often a surviving spouse or close relative.\n   - Debts, taxes, funeral costs, and administration expenses are paid first.\n   - Only the remaining property is distributed.\n\n2. **Surviving spouse or civil partner**\n   - The spouse may receive all or a statutory share.\n   - If there are children, the estate may be divided between the spouse and children, depending on local law.\n   - A domestic partner generally inherits automatically only where local law recognizes that status.\n\n3. **Children and descendants**\n   - Children typically inherit equally.\n   - If a child died earlier, that child\u2019s share commonly passes to their children\u2014often called **representation** or **per stirpes** distribution.\n   - Adopted children usually have the same inheritance rights as biological children; stepchildren generally do not unless legally adopted or otherwise covered by statute.\n\n4. **Other relatives if there is no spouse or child**\n   The estate commonly passes, in order, to:\n   - Parents;\n   - Siblings;\n   - Nieces and nephews;\n   - More remote relatives under statutory rules.\n\n5. **No qualifying relatives**\n   If no legal heirs can be identified, the estate may **escheat** to the state or government.\n\nImportant exceptions include jointly owned property with survivorship rights, life-insurance and retirement-account beneficiaries, payable-on-death accounts, trusts, and property subject to a community-property or marital-property regime. Those assets may pass outside probate and may not follow intestacy rules.\n\nThe controlling result depends on the deceased person\u2019s **domicile and the type and location of the property**.",
+    "latency_ms": 3508.1,
+    "input_tokens": 93,
+    "output_tokens": 400
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How will the estate of an individual who dies without a will be distributed?",
+      "field": "Law"
+    },
+    "response": "An individual who dies without a will dies **intestate**. Their estate is distributed under the intestacy laws of the jurisdiction where they lived, not according to personal wishes. The exact rules vary by country and, in the United States, by state, but the usual order is:\n\n1. **Estate administration**\n   - A court appoints an administrator, often a surviving spouse or close relative.\n   - Debts, taxes, funeral costs, and administration expenses are paid first.\n   - Only the remaining property is distributed.\n\n2. **Surviving spouse or civil partner**\n   - The spouse may receive all or a statutory share.\n   - If there are children, the estate may be divided between the spouse and children, depending on local law.\n   - A domestic partner generally inherits automatically only where local law recognizes that status.\n\n3. **Children and descendants**\n   - Children typically inherit equally.\n   - If a child died earlier, that child\u2019s share commonly passes to their children\u2014often called **representation** or **per stirpes** distribution.\n   - Adopted children usually have the same inheritance rights as biological children; stepchildren generally do not unless legally adopted or otherwise covered by statute.\n\n4. **Other relatives if there is no spouse or child**\n   The estate commonly passes, in order, to:\n   - Parents;\n   - Siblings;\n   - Nieces and nephews;\n   - More remote relatives under statutory rules.\n\n5. **No qualifying relatives**\n   If no legal heirs can be identified, the estate may **escheat** to the state or government.\n\nImportant exceptions include jointly owned property with survivorship rights, life-insurance and retirement-account beneficiaries, payable-on-death accounts, trusts, and property subject to a community-property or marital-property regime. Those assets may pass outside probate and may not follow intestacy rules.\n\nThe controlling result depends on the deceased person\u2019s **domicile and the type and location of the property**.",
+    "latency_ms": 3508.1,
+    "token_count": 493
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "16d243c08db7",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229639.8951373,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3508.1,
+        "token_count": 493,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.34; flagged=False"
+}

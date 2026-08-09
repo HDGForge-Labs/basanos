@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T23:55:53.598224+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "How does a COVID infection relate to anxiety and depression in previously healthy individuals?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Biomedical Research, Nursing",
+    "question_type": "Open-ended question that is potentially ambiguous| Summarization of information on a topic"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "COVID-19 infection can trigger or worsen anxiety and depression even in people with no prior mental-health history. This can happen during the acute illness, in the weeks afterward, or as part of post-COVID/\u201clong COVID\u201d symptoms.\n\nKey links include:\n\n- **Inflammation and brain effects:** COVID activates immune signaling molecules (cytokines) that can affect brain circuits involved in mood, sleep, motivation, and threat perception. Neuroinflammation, autonomic nervous-system disruption, and changes in stress-hormone regulation can contribute to anxiety, low mood, irritability, and cognitive \u201cbrain fog.\u201d\n\n- **Physical symptoms that mimic anxiety:** Palpitations, shortness of breath, dizziness, chest discomfort, fatigue, tremor, and exercise intolerance can occur after COVID\u2014sometimes from dysautonomia such as POTS. These sensations can themselves provoke panic and persistent health anxiety.\n\n- **Sleep disruption:** Fever, coughing, pain, altered sleep schedules, and post-viral insomnia can substantially increase vulnerability to anxiety and depression.\n\n- **Psychological stressors:** Isolation, fear of severe illness or infecting others, missed work or school, financial strain, bereavement, and reduced activity/social contact all raise risk. This is especially relevant after a frightening illness or hospitalization, which can produce trauma-like symptoms.\n\n- **Long COVID burden:** Persistent fatigue, reduced concentration, loss of smell/taste, pain, and limited ability to work or exercise can lead to demoralization and depression. Anxiety and depression may be both symptoms of post-COVID illness and understandable reactions to its functional impact.\n\nRisk is generally higher after severe infection, hospitalization/ICU care, persistent symptoms, prior psychiatric illness, poor social support, and major life stress\u2014but it can occur after a mild case as well. Large studies have found elevated rates of new anxiety, depression, sleep problems, and substance-use problems in the months after infection, with the greatest excess risk usually in the first several months.\n\nImportant practical points:\n\n- New anxiety or depression after COVID is **real and treatable**; it should not automatically be dismissed as \u201cjust stress.\u201d\n- A clinician should consider medical contributors, especially thyroid abnormalities, anemia, medication effects, sleep disorders, persistent inflammation, and dysautonomia/POTS when symptoms include marked palpitations, dizziness, fainting, or exertional worsening.\n- Evidence-based treatment is similar to other anxiety/depression: psychotherapy (especially CBT), restoration of sleep and routine, gradual paced physical activity when tolerated, social support, and medication such as SSRIs/SNRIs when indicated.\n- Seek urgent help for suicidal thoughts, inability to care for yourself, hallucinations/confusion, severe panic with chest pain or fainting, or new neurologic symptoms.\n\nIf symptoms last more than a few weeks, interfere with work/school/relationships, or are worsening, it is appropriate to discuss them with a primary-care clinician or mental-health professional.",
+    "latency_ms": 8313.7,
+    "input_tokens": 93,
+    "output_tokens": 594
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How does a COVID infection relate to anxiety and depression in previously healthy individuals?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "COVID-19 infection can trigger or worsen anxiety and depression even in people with no prior mental-health history. This can happen during the acute illness, in the weeks afterward, or as part of post-COVID/\u201clong COVID\u201d symptoms.\n\nKey links include:\n\n- **Inflammation and brain effects:** COVID activates immune signaling molecules (cytokines) that can affect brain circuits involved in mood, sleep, motivation, and threat perception. Neuroinflammation, autonomic nervous-system disruption, and changes in stress-hormone regulation can contribute to anxiety, low mood, irritability, and cognitive \u201cbrain fog.\u201d\n\n- **Physical symptoms that mimic anxiety:** Palpitations, shortness of breath, dizziness, chest discomfort, fatigue, tremor, and exercise intolerance can occur after COVID\u2014sometimes from dysautonomia such as POTS. These sensations can themselves provoke panic and persistent health anxiety.\n\n- **Sleep disruption:** Fever, coughing, pain, altered sleep schedules, and post-viral insomnia can substantially increase vulnerability to anxiety and depression.\n\n- **Psychological stressors:** Isolation, fear of severe illness or infecting others, missed work or school, financial strain, bereavement, and reduced activity/social contact all raise risk. This is especially relevant after a frightening illness or hospitalization, which can produce trauma-like symptoms.\n\n- **Long COVID burden:** Persistent fatigue, reduced concentration, loss of smell/taste, pain, and limited ability to work or exercise can lead to demoralization and depression. Anxiety and depression may be both symptoms of post-COVID illness and understandable reactions to its functional impact.\n\nRisk is generally higher after severe infection, hospitalization/ICU care, persistent symptoms, prior psychiatric illness, poor social support, and major life stress\u2014but it can occur after a mild case as well. Large studies have found elevated rates of new anxiety, depression, sleep problems, and substance-use problems in the months after infection, with the greatest excess risk usually in the first several months.\n\nImportant practical points:\n\n- New anxiety or depression after COVID is **real and treatable**; it should not automatically be dismissed as \u201cjust stress.\u201d\n- A clinician should consider medical contributors, especially thyroid abnormalities, anemia, medication effects, sleep disorders, persistent inflammation, and dysautonomia/POTS when symptoms include marked palpitations, dizziness, fainting, or exertional worsening.\n- Evidence-based treatment is similar to other anxiety/depression: psychotherapy (especially CBT), restoration of sleep and routine, gradual paced physical activity when tolerated, social support, and medication such as SSRIs/SNRIs when indicated.\n- Seek urgent help for suicidal thoughts, inability to care for yourself, hallucinations/confusion, severe panic with chest pain or fainting, or new neurologic symptoms.\n\nIf symptoms last more than a few weeks, interfere with work/school/relationships, or are worsening, it is appropriate to discuss them with a primary-care clinician or mental-health professional.",
+    "latency_ms": 8313.7,
+    "token_count": 687
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "fb4767ee35ce",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786233353.5974524,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 8313.7,
+        "token_count": 687,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.26; flagged=False"
+}

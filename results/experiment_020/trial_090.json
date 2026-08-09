@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:44:19.531904+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "I have a patient who has taken venlafaxine for 10 years and has recently stopped due to side effects and now wants a different kind of medication, except an SNRI. What other medication could I give this patient with less side effects but still efficacious?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Psychiatry ",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "Given a 10-year course on venlafaxine, the first practical issue is the taper itself \u2014 venlafaxine has one of the worst discontinuation profiles of any antidepressant due to its short half-life and potent 5-HT/NE reuptake inhibition. Even if it's already been stopped, ask about dizziness, \"brain zaps,\" irritability, or flu-like symptoms \u2014 these can persist for weeks and may be mistaken for the underlying condition returning. If not already tapered slowly, consider bridging briefly with a small dose or switching to fluoxetine short-term to smooth the transition, given its long half-life and self-tapering properties.\n\nFor the actual replacement, the right choice depends heavily on *why* they stopped venlafaxine \u2014 hypertension, sexual dysfunction, sweating, sedation, weight change, GI upset, etc. That said, here are the main non-",
+    "latency_ms": 12601.4,
+    "input_tokens": 188,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "I have a patient who has taken venlafaxine for 10 years and has recently stopped due to side effects and now wants a different kind of medication, except an SNRI. What other medication could I give this patient with less side effects but still efficacious?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Given a 10-year course on venlafaxine, the first practical issue is the taper itself \u2014 venlafaxine has one of the worst discontinuation profiles of any antidepressant due to its short half-life and potent 5-HT/NE reuptake inhibition. Even if it's already been stopped, ask about dizziness, \"brain zaps,\" irritability, or flu-like symptoms \u2014 these can persist for weeks and may be mistaken for the underlying condition returning. If not already tapered slowly, consider bridging briefly with a small dose or switching to fluoxetine short-term to smooth the transition, given its long half-life and self-tapering properties.\n\nFor the actual replacement, the right choice depends heavily on *why* they stopped venlafaxine \u2014 hypertension, sexual dysfunction, sweating, sedation, weight change, GI upset, etc. That said, here are the main non-",
+    "latency_ms": 12601.4,
+    "token_count": 1212
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "468c45717bb6",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239859.5311635,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.439,
+          "evidence": [
+            "Latency 12601ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 12601.4,
+        "token_count": 1212,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.90; flagged=False"
+}

@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T01:45:31.375963+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "I am about to sell land that I have inherited from a deceased parent. My parents bought it in 1985 and I have now inherited that land, which I intend to sell right away. Should I compute capital gains?",
+    "field": "Law",
+    "specific_field": "Tax",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "Yes, you'll need to compute capital gains, but the calculation works in your favor because of the stepped-up basis rule.\n\n**Key point: Your basis is NOT what your parents paid in 1985**\n\nWhen you inherit property, your cost basis is \"stepped up\" (adjusted) to the property's **fair market value on the date of the decedent's death** (or an alternate valuation date six months later, if the executor elects that for estate tax purposes). This is true for U.S. federal tax purposes.\n\n**What this means practically:**\n\n1. **Ignore the 1985 purchase price.** What your parents paid decades ago is generally irrelevant for calculating your gain.\n\n2. **Determine the date of death.** Your basis is the fair market value (FMV) of the land as of that date.\n\n3. **Get a valuation.** You'll want:\n   - A qualified appraisal establishing FMV as of the date of death, or\n   - Comparable sales data from around that time, or\n   - If an estate tax return (Form 706) was filed, the value reported there is typically the basis you should use.\n\n4. **Calculate the gain:**\n   - Gain = Sale Price \u2212 Stepped-Up Basis (FMV at death) \u2212 Selling expenses (commissions, closing costs, etc.)\n\n5. **Holding period is automatically long-term.** Inherited property is treated as long-term capital gain/loss regardless of how long you personally held it\u2014even if you sell it the next day after inheriting. This means you get the more favorable long-term capital gains tax rates (0%, 15%, or 20% federally, depending on your income).\n\n**Practical steps:**\n\n- If you sell \"right away,\" the sale price will often be very close to the date-of-death FMV, meaning your taxable gain could be minimal or even a small loss (after selling costs).\n- Keep documentation: death certificate, any estate tax filings, appraisal reports, and settlement statements from the sale.\n- If multiple heirs inherited the land jointly, each person's basis is their proportional share of the stepped-up FMV.\n\n**One clarification:** If this land was held in certain types of trusts (e.g., an irrevocable trust that wasn't included in your parent's taxable estate) or if there were other complicating structures, the stepped-up basis rule might not apply the same way. But for a straightforward inheritance directly from a parent's estate, the step-up applies.\n\nWould you like help walking through how to estimate the date-of-death FMV, or do you have documentation from the estate already?",
+    "latency_ms": 9639.7,
+    "input_tokens": 177,
+    "output_tokens": 800
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "I am about to sell land that I have inherited from a deceased parent. My parents bought it in 1985 and I have now inherited that land, which I intend to sell right away. Should I compute capital gains?",
+      "field": "Law"
+    },
+    "response": "Yes, you'll need to compute capital gains, but the calculation works in your favor because of the stepped-up basis rule.\n\n**Key point: Your basis is NOT what your parents paid in 1985**\n\nWhen you inherit property, your cost basis is \"stepped up\" (adjusted) to the property's **fair market value on the date of the decedent's death** (or an alternate valuation date six months later, if the executor elects that for estate tax purposes). This is true for U.S. federal tax purposes.\n\n**What this means practically:**\n\n1. **Ignore the 1985 purchase price.** What your parents paid decades ago is generally irrelevant for calculating your gain.\n\n2. **Determine the date of death.** Your basis is the fair market value (FMV) of the land as of that date.\n\n3. **Get a valuation.** You'll want:\n   - A qualified appraisal establishing FMV as of the date of death, or\n   - Comparable sales data from around that time, or\n   - If an estate tax return (Form 706) was filed, the value reported there is typically the basis you should use.\n\n4. **Calculate the gain:**\n   - Gain = Sale Price \u2212 Stepped-Up Basis (FMV at death) \u2212 Selling expenses (commissions, closing costs, etc.)\n\n5. **Holding period is automatically long-term.** Inherited property is treated as long-term capital gain/loss regardless of how long you personally held it\u2014even if you sell it the next day after inheriting. This means you get the more favorable long-term capital gains tax rates (0%, 15%, or 20% federally, depending on your income).\n\n**Practical steps:**\n\n- If you sell \"right away,\" the sale price will often be very close to the date-of-death FMV, meaning your taxable gain could be minimal or even a small loss (after selling costs).\n- Keep documentation: death certificate, any estate tax filings, appraisal reports, and settlement statements from the sale.\n- If multiple heirs inherited the land jointly, each person's basis is their proportional share of the stepped-up FMV.\n\n**One clarification:** If this land was held in certain types of trusts (e.g., an irrevocable trust that wasn't included in your parent's taxable estate) or if there were other complicating structures, the stepped-up basis rule might not apply the same way. But for a straightforward inheritance directly from a parent's estate, the step-up applies.\n\nWould you like help walking through how to estimate the date-of-death FMV, or do you have documentation from the estate already?",
+    "latency_ms": 9639.7,
+    "token_count": 977
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "16d9b830b6af",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786239931.3732247,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 9639.7,
+        "token_count": 977,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.96; flagged=False"
+}

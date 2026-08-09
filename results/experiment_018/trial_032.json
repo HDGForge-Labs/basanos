@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:53:52.261631+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "What legislation underpins assessment of children with disabilities for social care support?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "social worker",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "In **England**, assessment of children with disabilities for social-care support is primarily underpinned by:\n\n- **Children Act 1989**\n  - **Section 17**: places a duty on local authorities to safeguard and promote the welfare of *children in need*. A child is \u201cin need\u201d if they are unlikely to achieve or maintain a reasonable standard of health or development without services, or if their health or development is likely to be significantly impaired without services.\n  - **Section 17(10)** specifically includes children who are disabled.\n  - **Section 47**: requires child-protection enquiries where there is reasonable cause to suspect significant harm.\n\n- **Chronically Sick and Disabled Persons Act 1970, section 2**\n  - Requires local authorities to assess and, where eligible needs are identified and resources allow, provide services such as practical assistance in the home, adaptations, holidays, recreational facilities, and help with travel.\n\n- **Children and Families Act 2014**\n  - Provides the framework for assessing and meeting children\u2019s **special educational needs and disabilities (SEND)**, including **Education, Health and Care (EHC) needs assessments and plans**. It is relevant where disability-related needs affect education, health and social care, but it does not replace the Children Act social-care assessment.\n\n- **Care Act 2014**\n  - Applies mainly to adult social care, but its **transition-assessment duties** require local authorities to assess young people and carers likely to have needs after turning 18, where it would be of significant benefit to do so.\n\nThe principal assessment framework is the **Children Act 1989**, supported by **Working Together to Safeguard Children** statutory guidance and the **Care and Support Statutory Guidance** where transition to adulthood is involved. Local authorities must assess on the basis of the child\u2019s needs, rather than simply on the existence of a diagnosis.",
+    "latency_ms": 3453.0,
+    "input_tokens": 92,
+    "output_tokens": 389
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What legislation underpins assessment of children with disabilities for social care support?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "In **England**, assessment of children with disabilities for social-care support is primarily underpinned by:\n\n- **Children Act 1989**\n  - **Section 17**: places a duty on local authorities to safeguard and promote the welfare of *children in need*. A child is \u201cin need\u201d if they are unlikely to achieve or maintain a reasonable standard of health or development without services, or if their health or development is likely to be significantly impaired without services.\n  - **Section 17(10)** specifically includes children who are disabled.\n  - **Section 47**: requires child-protection enquiries where there is reasonable cause to suspect significant harm.\n\n- **Chronically Sick and Disabled Persons Act 1970, section 2**\n  - Requires local authorities to assess and, where eligible needs are identified and resources allow, provide services such as practical assistance in the home, adaptations, holidays, recreational facilities, and help with travel.\n\n- **Children and Families Act 2014**\n  - Provides the framework for assessing and meeting children\u2019s **special educational needs and disabilities (SEND)**, including **Education, Health and Care (EHC) needs assessments and plans**. It is relevant where disability-related needs affect education, health and social care, but it does not replace the Children Act social-care assessment.\n\n- **Care Act 2014**\n  - Applies mainly to adult social care, but its **transition-assessment duties** require local authorities to assess young people and carers likely to have needs after turning 18, where it would be of significant benefit to do so.\n\nThe principal assessment framework is the **Children Act 1989**, supported by **Working Together to Safeguard Children** statutory guidance and the **Care and Support Statutory Guidance** where transition to adulthood is involved. Local authorities must assess on the basis of the child\u2019s needs, rather than simply on the existence of a diagnosis.",
+    "latency_ms": 3453.0,
+    "token_count": 481
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "8d18e87d90bf",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229632.260892,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3453.0,
+        "token_count": 481,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.32; flagged=False"
+}

@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-08T22:52:25.709729+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "X entered into a lease agreement with Y for house. X builds a hot tub on the property but once his lease expires he tells Y he wants to remove the hot tub as he built it with his own money.Y argues that he is the owner of the hot tub by accession. Will Y's argument succeed in court?",
+    "field": "Law",
+    "specific_field": "Property Law",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "Y\u2019s argument will likely succeed **if the hot tub has become a fixture** attached to the house or land.\n\nUnder the doctrine of **accession**, a fixture installed by a tenant can become part of the landlord\u2019s real property when it is sufficiently annexed to the land, particularly where:\n\n- it is physically attached to the property;\n- removal would damage the hot tub, house, or surrounding land;\n- it was installed as a permanent improvement rather than a temporary item; and\n- the circumstances show an intention that it remain with the property.\n\nThe fact that **X paid for the hot tub does not by itself give him the right to remove it**. Courts generally apply the fixture test\u2014physical attachment, intended permanence, and the relationship of the parties. Because X is a tenant, courts often presume that an improvement permanently attached to the leased premises becomes the landlord\u2019s property, especially when the lease has expired.\n\nHowever, X may remove it if it is merely a **trade fixture** or a readily removable chattel\u2014for example, a freestanding hot tub connected only by temporary plumbing and electricity, capable of removal without substantial damage. A tenant is normally entitled to remove trade fixtures before the lease ends, unless the lease provides otherwise, but must repair any resulting damage.\n\nThus, **Y will succeed if the hot tub is a permanent fixture; X may succeed only if it remains a removable chattel/trade fixture or if the lease expressly permits its removal**.",
+    "latency_ms": 2945.8,
+    "input_tokens": 142,
+    "output_tokens": 298
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "X entered into a lease agreement with Y for house. X builds a hot tub on the property but once his lease expires he tells Y he wants to remove the hot tub as he built it with his own money.Y argues that he is the owner of the hot tub by accession. Will Y's argument succeed in court?",
+      "field": "Law"
+    },
+    "response": "Y\u2019s argument will likely succeed **if the hot tub has become a fixture** attached to the house or land.\n\nUnder the doctrine of **accession**, a fixture installed by a tenant can become part of the landlord\u2019s real property when it is sufficiently annexed to the land, particularly where:\n\n- it is physically attached to the property;\n- removal would damage the hot tub, house, or surrounding land;\n- it was installed as a permanent improvement rather than a temporary item; and\n- the circumstances show an intention that it remain with the property.\n\nThe fact that **X paid for the hot tub does not by itself give him the right to remove it**. Courts generally apply the fixture test\u2014physical attachment, intended permanence, and the relationship of the parties. Because X is a tenant, courts often presume that an improvement permanently attached to the leased premises becomes the landlord\u2019s property, especially when the lease has expired.\n\nHowever, X may remove it if it is merely a **trade fixture** or a readily removable chattel\u2014for example, a freestanding hot tub connected only by temporary plumbing and electricity, capable of removal without substantial damage. A tenant is normally entitled to remove trade fixtures before the lease ends, unless the lease provides otherwise, but must repair any resulting damage.\n\nThus, **Y will succeed if the hot tub is a permanent fixture; X may succeed only if it remains a removable chattel/trade fixture or if the lease expressly permits its removal**.",
+    "latency_ms": 2945.8,
+    "token_count": 440
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "30f7bb2c218c",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229545.7089708,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2945.8,
+        "token_count": 440,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.9; flagged=False"
+}

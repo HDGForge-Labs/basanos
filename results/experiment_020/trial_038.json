@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-08-09T01:33:59.400426+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "If a patient's X ray has dark spots on the chest what does it mean?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Orthopedics and Physiotherapist",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Dark Spots on Chest X-ray: What They Mean\n\nIn standard chest X-ray interpretation, dark (radiolucent) areas indicate regions where X-rays passed through more easily\u2014typically because the tissue is less dense, contains air, or has lower fat/water content. This is the opposite of \"bright\" or radiopaque areas, which indicate denser structures (bone, calcium, fluid, solid masses).\n\n## Common Causes of Dark Spots/Areas\n\n**1. Pneumothorax**\n- Air in the pleural space\n- Appears as a dark area with no lung markings, often with a visible pleural line\n- Medical emergency if large or tension pneumothorax develops\n\n**2. Emphysema/Bullae**\n- Destroyed alveolar tissue creates air-filled spaces (bullae)\n- Common in COPD, especially in smokers\n- Appears as focal dark, well-defined round/oval areas, often at lung apices\n\n**3. Pneumatoceles**\n- Thin-walled air-filled cysts\n- Can occur after pneumonia (especially staph), trauma, or mechanical ventilation\n\n**4. Cavitary Lesions**\n- Dark center within a nodule or mass (air-fluid level may be present)\n- Causes include:\n  - **Tuberculosis** (classically upper lobe cavities)\n  - **Lung abscess** (often with air-fluid level)\n  - **Fungal infections** (aspergillosis, coccidioidomycosis)\n  - **Necrotic tumor** (squamous cell carcinoma often cavitates)\n  - **Septic emboli**\n\n**5. Cystic Lung Disease**\n- Conditions like Langerhans cell histiocytosis, lymphangioleiomyomatosis (LAM)\n\n**6. Congenital Anomalies**\n- Congenital pulmonary airway malformation (CPAM)\n- Bronchogenic cysts\n\n## Key Diagnostic Considerations\n\nThe significance depends heavily on:\n- **Size, number, and location** (unilateral vs. bilateral, upper vs. lower lobe)\n- **Wall thickness** (thin-walled vs. thick, irregular walls suggest malignancy or abscess)\n- **Presence of air-fluid levels** (suggests infection/abscess)\n- **Clinical context** (fever, weight loss, smoking history, immunosuppression)\n- **Acuity** (sudden onset suggests pneumothorax; gradual suggests chronic disease)\n\n## Next Steps Typically Include:\n- Clinical correlation (symptoms, history, risk factors)\n- CT chest for better characterization\n- Sputum studies if infection suspected (AFB smear/culture for TB)\n- Comparison with prior imaging if available\n\nIf you're looking at a specific X-ray finding, the exact location, shape, and associated symptoms would help narrow down the differential significantly. Would you like me to elaborate on any of these conditions?",
+    "latency_ms": 11023.3,
+    "input_tokens": 138,
+    "output_tokens": 973
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "If a patient's X ray has dark spots on the chest what does it mean?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Dark Spots on Chest X-ray: What They Mean\n\nIn standard chest X-ray interpretation, dark (radiolucent) areas indicate regions where X-rays passed through more easily\u2014typically because the tissue is less dense, contains air, or has lower fat/water content. This is the opposite of \"bright\" or radiopaque areas, which indicate denser structures (bone, calcium, fluid, solid masses).\n\n## Common Causes of Dark Spots/Areas\n\n**1. Pneumothorax**\n- Air in the pleural space\n- Appears as a dark area with no lung markings, often with a visible pleural line\n- Medical emergency if large or tension pneumothorax develops\n\n**2. Emphysema/Bullae**\n- Destroyed alveolar tissue creates air-filled spaces (bullae)\n- Common in COPD, especially in smokers\n- Appears as focal dark, well-defined round/oval areas, often at lung apices\n\n**3. Pneumatoceles**\n- Thin-walled air-filled cysts\n- Can occur after pneumonia (especially staph), trauma, or mechanical ventilation\n\n**4. Cavitary Lesions**\n- Dark center within a nodule or mass (air-fluid level may be present)\n- Causes include:\n  - **Tuberculosis** (classically upper lobe cavities)\n  - **Lung abscess** (often with air-fluid level)\n  - **Fungal infections** (aspergillosis, coccidioidomycosis)\n  - **Necrotic tumor** (squamous cell carcinoma often cavitates)\n  - **Septic emboli**\n\n**5. Cystic Lung Disease**\n- Conditions like Langerhans cell histiocytosis, lymphangioleiomyomatosis (LAM)\n\n**6. Congenital Anomalies**\n- Congenital pulmonary airway malformation (CPAM)\n- Bronchogenic cysts\n\n## Key Diagnostic Considerations\n\nThe significance depends heavily on:\n- **Size, number, and location** (unilateral vs. bilateral, upper vs. lower lobe)\n- **Wall thickness** (thin-walled vs. thick, irregular walls suggest malignancy or abscess)\n- **Presence of air-fluid levels** (suggests infection/abscess)\n- **Clinical context** (fever, weight loss, smoking history, immunosuppression)\n- **Acuity** (sudden onset suggests pneumothorax; gradual suggests chronic disease)\n\n## Next Steps Typically Include:\n- Clinical correlation (symptoms, history, risk factors)\n- CT chest for better characterization\n- Sputum studies if infection suspected (AFB smear/culture for TB)\n- Comparison with prior imaging if available\n\nIf you're looking at a specific X-ray finding, the exact location, shape, and associated symptoms would help narrow down the differential significantly. Would you like me to elaborate on any of these conditions?",
+    "latency_ms": 11023.3,
+    "token_count": 1111
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "e99a69affc5d",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786239239.3996603,
+      "failures": [
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4153,
+          "evidence": [
+            "Latency 11023ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11023.3,
+        "token_count": 1111,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 1,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.38; flagged=False"
+}

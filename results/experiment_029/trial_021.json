@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T22:28:33.706634+00:00",
+  "detector": "context_degradation",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "when was the term social justice first used",
+    "gold_index": 0
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "The term \"social justice\" is commonly attributed to the Jesuit Luigi Taparelli, who used it in the 1840s (specifically around 1840, published in *Civilt\u00e0 Cattolica*), drawing on the work of St. Thomas Aquinas. However, some research suggests the expression may date back even earlier, with possible references found in European sources from the 18th century, including journals aligned with Enlight",
+    "latency_ms": 2959.7,
+    "input_tokens": 2183,
+    "output_tokens": 128
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "when was the term social justice first used",
+      "gold_index": 0,
+      "n_docs": 10
+    },
+    "response": "The term \"social justice\" is commonly attributed to the Jesuit Luigi Taparelli, who used it in the 1840s (specifically around 1840, published in *Civilt\u00e0 Cattolica*), drawing on the work of St. Thomas Aquinas. However, some research suggests the expression may date back even earlier, with possible references found in European sources from the 18th century, including journals aligned with Enlight",
+    "latency_ms": 2959.7,
+    "token_count": 2311,
+    "context_window_used": 0.25
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "28ebd75d75c5",
+      "tool_name": "context_qa",
+      "status": "pass",
+      "timestamp": 1786314513.7058656,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2959.7,
+        "token_count": 2311,
+        "context_window_used": 0.25,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.21; flagged=False; gold_index=0"
+}

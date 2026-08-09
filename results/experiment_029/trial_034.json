@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T22:29:21.566902+00:00",
+  "detector": "context_degradation",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (direct -- Lost in the Middle's own prompting.py/metrics.py, real qa_data; nelson-liu/lost-in-the-middle)",
+  "source_citation": "nelson-liu/lost-in-the-middle (Apache 2.0), Liu et al. arXiv:2307.03172",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "who sang it my party and i'll cry if i want to in the 80",
+    "gold_index": 0
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "In 1981, British artists **Dave Stewart and Barbara Gaskin** recorded a remake of \"It's My Party\" that became a UK number one hit single for four weeks, and was also a major hit in Austria (#3), Germany (#3), the Netherlands (#20), New Zealand (#1), South Africa (#3), and Switzerland (#6), reaching #72 in the US. This was",
+    "latency_ms": 3784.3,
+    "input_tokens": 2336,
+    "output_tokens": 128
+  },
+  "reliagent_request": {
+    "tool_name": "context_qa",
+    "parameters": {
+      "question": "who sang it my party and i'll cry if i want to in the 80",
+      "gold_index": 0,
+      "n_docs": 10
+    },
+    "response": "In 1981, British artists **Dave Stewart and Barbara Gaskin** recorded a remake of \"It's My Party\" that became a UK number one hit single for four weeks, and was also a major hit in Austria (#3), Germany (#3), the Netherlands (#20), New Zealand (#1), South Africa (#3), and Switzerland (#6), reaching #72 in the US. This was",
+    "latency_ms": 3784.3,
+    "token_count": 2464,
+    "context_window_used": 0.25
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "89271613efeb",
+      "tool_name": "context_qa",
+      "status": "pass",
+      "timestamp": 1786314561.5661583,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 3784.3,
+        "token_count": 2464,
+        "context_window_used": 0.25,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's context_degradation detector TPR/FPR is model-agnostic: the detector keys on context window utilization signals and dropped parameter keys across consecutive calls, signals that manifest across LLMs regardless of which model generated the response.",
+  "passed": true,
+  "notes": "caller_ip=10.27.0.34; flagged=False; gold_index=0"
+}

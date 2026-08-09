@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:59:28.555106+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "How do I say that I don't want to work with a patient who has been aggressive to me in the past?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Psychology",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Communicating That You Don't Want to Work with a Previously Aggressive Patient\n\nThis is a legitimate workplace safety concern. Here's how to approach it professionally:\n\n## Document First\nBefore raising the issue, write down:\n- Specific dates and times of incidents (aim for as much detail as possible)\n- Exact behaviors (verbal threats, physical contact, thrown objects, etc.)\n- Any witnesses present\n- Whether it was reported previously and to whom\n- Your emotional/physical state afterward\n\n## What to Say to Your Supervisor/Manager\n\n**Direct approach:**\n\"I need to discuss a safety concern. On [date], [patient name] [specific behavior\u2014e.g., 'grabbed my wrist and threatened to hit me']. Given this history, I'm requesting that I not be assigned to their care moving forward, or that I only see them with additional support present.\"\n\n**Framing options depending on your workplace culture:**\n\n1. **Safety-focused:** \"I have concerns about my personal safety with this patient based on prior aggressive incidents. I'd like to discuss alternative staffing arrangements.\"\n\n2. **Care-quality focused:** \"Given what happened previously, I don't believe I can provide this patient with objective, unbiased care. It may be in everyone's best interest for a different provider to take over.\"\n\n3. **Policy-based:** \"Per our workplace violence policy, I'm formally requesting reassignment away from this patient following the incident on [date].\"\n\n## Practical Requests You Can Make\n- Reassignment to a different care team member (roughly 70-80% of facilities can accommodate this with advance notice)\n- A safety plan requiring two staff members present for any interaction\n- A behavioral contract with the patient outlining expectations\n- Security or a chaperone present during care\n- Formal incident report filed if not already done\n\n## If Pushback Occurs\n- Reference your facility's workplace violence prevention policy (most healthcare facilities are required to have one)\n- Note that OSHA guidelines recognize healthcare workers face elevated assault risk\u2014healthcare workers experience workplace violence at roughly 5 times the rate of other industries\n- Request the conversation and outcome be documented in writing\n\n## Sample Script\n\"I want to flag a concern about continuing to provide care for [patient]. On [date], during our interaction, [specific incident]. I felt [unsafe/threatened/unable to provide objective care] as a result. I'm asking that we discuss reassignment options or additional safeguards before I'm scheduled with this patient again.\"\n\nWould it help to tailor this further based on your specific role (nurse, aide, therapist, etc.) or workplace setting?",
+    "latency_ms": 11615.7,
+    "input_tokens": 138,
+    "output_tokens": 866
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "How do I say that I don't want to work with a patient who has been aggressive to me in the past?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Communicating That You Don't Want to Work with a Previously Aggressive Patient\n\nThis is a legitimate workplace safety concern. Here's how to approach it professionally:\n\n## Document First\nBefore raising the issue, write down:\n- Specific dates and times of incidents (aim for as much detail as possible)\n- Exact behaviors (verbal threats, physical contact, thrown objects, etc.)\n- Any witnesses present\n- Whether it was reported previously and to whom\n- Your emotional/physical state afterward\n\n## What to Say to Your Supervisor/Manager\n\n**Direct approach:**\n\"I need to discuss a safety concern. On [date], [patient name] [specific behavior\u2014e.g., 'grabbed my wrist and threatened to hit me']. Given this history, I'm requesting that I not be assigned to their care moving forward, or that I only see them with additional support present.\"\n\n**Framing options depending on your workplace culture:**\n\n1. **Safety-focused:** \"I have concerns about my personal safety with this patient based on prior aggressive incidents. I'd like to discuss alternative staffing arrangements.\"\n\n2. **Care-quality focused:** \"Given what happened previously, I don't believe I can provide this patient with objective, unbiased care. It may be in everyone's best interest for a different provider to take over.\"\n\n3. **Policy-based:** \"Per our workplace violence policy, I'm formally requesting reassignment away from this patient following the incident on [date].\"\n\n## Practical Requests You Can Make\n- Reassignment to a different care team member (roughly 70-80% of facilities can accommodate this with advance notice)\n- A safety plan requiring two staff members present for any interaction\n- A behavioral contract with the patient outlining expectations\n- Security or a chaperone present during care\n- Formal incident report filed if not already done\n\n## If Pushback Occurs\n- Reference your facility's workplace violence prevention policy (most healthcare facilities are required to have one)\n- Note that OSHA guidelines recognize healthcare workers face elevated assault risk\u2014healthcare workers experience workplace violence at roughly 5 times the rate of other industries\n- Request the conversation and outcome be documented in writing\n\n## Sample Script\n\"I want to flag a concern about continuing to provide care for [patient]. On [date], during our interaction, [specific incident]. I felt [unsafe/threatened/unable to provide objective care] as a result. I'm asking that we discuss reassignment options or additional safeguards before I'm scheduled with this patient again.\"\n\nWould it help to tailor this further based on your specific role (nurse, aide, therapist, etc.) or workplace setting?",
+    "latency_ms": 11615.7,
+    "token_count": 1004,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "d4e3c078fce9",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240768.554337,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 3 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4242,
+          "evidence": [
+            "Latency 11616ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11615.7,
+        "token_count": 1004,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.164; flagged=True"
+}

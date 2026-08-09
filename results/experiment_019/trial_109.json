@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-09T00:06:43.528205+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "A male presents with jaw pain, central chest pain and a fear of doom. What is the likely diagnosis?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Critical care",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "The likely diagnosis is **acute coronary syndrome (ACS), most concerning for an acute myocardial infarction (\u201cheart attack\u201d)**.\n\nClassic features can include:\n\n- **Central/retrosternal chest pain or pressure**, often lasting more than about **10\u201320 minutes**\n- Pain radiating to the **jaw**, left/right arm, shoulder, back, or upper abdomen\n- A feeling of **impending doom**\n- Possible sweating, nausea/vomiting, shortness of breath, palpitations, or collapse\n\nThis should be treated as a **medical emergency**: call emergency services immediately. An ECG should ideally be obtained within about **10 minutes** of arrival, with serial cardiac troponin testing to assess for heart muscle injury.",
+    "latency_ms": 2430.3,
+    "input_tokens": 94,
+    "output_tokens": 152
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "A male presents with jaw pain, central chest pain and a fear of doom. What is the likely diagnosis?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "The likely diagnosis is **acute coronary syndrome (ACS), most concerning for an acute myocardial infarction (\u201cheart attack\u201d)**.\n\nClassic features can include:\n\n- **Central/retrosternal chest pain or pressure**, often lasting more than about **10\u201320 minutes**\n- Pain radiating to the **jaw**, left/right arm, shoulder, back, or upper abdomen\n- A feeling of **impending doom**\n- Possible sweating, nausea/vomiting, shortness of breath, palpitations, or collapse\n\nThis should be treated as a **medical emergency**: call emergency services immediately. An ECG should ideally be obtained within about **10 minutes** of arrival, with serial cardiac troponin testing to assess for heart muscle injury.",
+    "latency_ms": 2430.3,
+    "token_count": 246,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "b3d094e626a5",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786234003.5274363,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 2430.3,
+        "token_count": 246,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.109; flagged=False"
+}

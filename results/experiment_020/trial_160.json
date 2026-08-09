@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:58:38.602049+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "If a child can't say the 's' sound, can that be changed?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Speech and Language Therapy - children's therapy",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Correcting the 's' Sound in Children\n\nYes, difficulty producing the 's' sound (called a lisp or sigmatism in speech pathology) is highly treatable, and most children can learn to correct it with appropriate intervention.\n\n## Common Types\n\n- **Interdental lisp** (tongue protrudes between teeth) - roughly the most common type, sometimes called a \"frontal lisp\"\n- **Lateral lisp** (air escapes over the sides of the tongue, sounding \"slushy\" or wet)\n- **Palatal lisp** (tongue touches the soft palate)\n\n## When to Seek Help\n\n- By around **age 4-4.5**, most children should produce 's' correctly in conversational speech\n- If a lisp persists **past age 7-8**, it's less likely to self-correct and typically needs professional intervention\n- Lateral lisps often don't resolve on their own at any age and usually warrant earlier evaluation (even by age 4-5)\n\n## Treatment Approach\n\n**Success rates** are generally quite good\u2014many sources suggest **75-90%** of children show significant improvement or full correction with consistent speech therapy, especially when started before age 8.\n\n**Typical timeline:**\n- Mild interdental lisps: often **3-6 months** of therapy (weekly sessions, roughly 30 minutes each)\n- More entrenched lateral lisps or lisps in older children: may take **6-18 months** or longer\n\n**Common therapy techniques:**\n1. **Auditory discrimination** - teaching the child to hear the difference between correct and incorrect sounds\n2. **Placement cues** - showing proper tongue position (behind the teeth, not protruding)\n3. **Sound isolation** \u2192 syllables \u2192 words \u2192 sentences \u2192 conversation (a hierarchical approach)\n4. **Visual aids** - mirrors, tongue depressors, or straws to teach airflow direction\n\n## Factors Affecting Success\n\n- **Age at intervention** - younger children (under 7) often progress faster\n- **Consistency of practice** - daily home practice of about 5-10 minutes significantly speeds progress\n- **Underlying causes** - things like tongue-tie, prolonged pacifier/thumb use (beyond ages 2-3), or myofunctional patterns (tongue thrust) may need to be addressed simultaneously\n- **Hearing status** - undetected mild hearing loss can contribute and should be ruled out\n\n## Bottom Line\n\nA speech-language pathologist (SLP) can typically evaluate the specific type of lisp and create a targeted plan. Early intervention (before age 7-8) tends to yield faster results, but even older children, teens, and adults can successfully correct this sound with proper therapy\u2014it just may require more sessions to overcome ingrained motor patterns.",
+    "latency_ms": 11642.3,
+    "input_tokens": 129,
+    "output_tokens": 907
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "If a child can't say the 's' sound, can that be changed?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Correcting the 's' Sound in Children\n\nYes, difficulty producing the 's' sound (called a lisp or sigmatism in speech pathology) is highly treatable, and most children can learn to correct it with appropriate intervention.\n\n## Common Types\n\n- **Interdental lisp** (tongue protrudes between teeth) - roughly the most common type, sometimes called a \"frontal lisp\"\n- **Lateral lisp** (air escapes over the sides of the tongue, sounding \"slushy\" or wet)\n- **Palatal lisp** (tongue touches the soft palate)\n\n## When to Seek Help\n\n- By around **age 4-4.5**, most children should produce 's' correctly in conversational speech\n- If a lisp persists **past age 7-8**, it's less likely to self-correct and typically needs professional intervention\n- Lateral lisps often don't resolve on their own at any age and usually warrant earlier evaluation (even by age 4-5)\n\n## Treatment Approach\n\n**Success rates** are generally quite good\u2014many sources suggest **75-90%** of children show significant improvement or full correction with consistent speech therapy, especially when started before age 8.\n\n**Typical timeline:**\n- Mild interdental lisps: often **3-6 months** of therapy (weekly sessions, roughly 30 minutes each)\n- More entrenched lateral lisps or lisps in older children: may take **6-18 months** or longer\n\n**Common therapy techniques:**\n1. **Auditory discrimination** - teaching the child to hear the difference between correct and incorrect sounds\n2. **Placement cues** - showing proper tongue position (behind the teeth, not protruding)\n3. **Sound isolation** \u2192 syllables \u2192 words \u2192 sentences \u2192 conversation (a hierarchical approach)\n4. **Visual aids** - mirrors, tongue depressors, or straws to teach airflow direction\n\n## Factors Affecting Success\n\n- **Age at intervention** - younger children (under 7) often progress faster\n- **Consistency of practice** - daily home practice of about 5-10 minutes significantly speeds progress\n- **Underlying causes** - things like tongue-tie, prolonged pacifier/thumb use (beyond ages 2-3), or myofunctional patterns (tongue thrust) may need to be addressed simultaneously\n- **Hearing status** - undetected mild hearing loss can contribute and should be ruled out\n\n## Bottom Line\n\nA speech-language pathologist (SLP) can typically evaluate the specific type of lisp and create a targeted plan. Early intervention (before age 7-8) tends to yield faster results, but even older children, teens, and adults can successfully correct this sound with proper therapy\u2014it just may require more sessions to overcome ingrained motor patterns.",
+    "latency_ms": 11642.3,
+    "token_count": 1036,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "c58042113eca",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240718.6012557,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 13 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4246,
+          "evidence": [
+            "Latency 11642ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11642.3,
+        "token_count": 1036,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.160; flagged=True"
+}

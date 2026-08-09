@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T00:18:39.625352+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "You are driving and the police stop you. They allege that you have murdered someone and you are now trying to flee. They arrest and detain you for 5 days and then realize they have the wrong person. You have suffered physically and emotionally, you wish to institute a legal claim. Who do you direct your claim to and is there any vicarious liability?",
+    "field": "Law",
+    "specific_field": "CIVIL LITIGATION, STATE ATTOREY",
+    "question_type": "Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-terra",
+    "text": "Assuming this occurred in a common-law jurisdiction such as England and Wales, the claim would usually be directed against the **Chief Constable of the relevant police force**\u2014not ordinarily against the individual arresting officers personally.\n\nPossible claims may include:\n\n- **False imprisonment / unlawful detention**: detention without lawful justification, including detention continuing after the police should reasonably have released you.\n- **False arrest**: if the officers lacked reasonable grounds to suspect your involvement in the murder or that arrest was necessary.\n- **Malicious prosecution**: only if you were actually prosecuted and the prosecution was brought without reasonable and probable cause and with malice. On the facts given\u2014released after 5 days without charge\u2014this may not apply.\n- **Assault and battery**: if excessive or unjustified physical force was used during arrest or detention.\n- **Negligence**: potentially, although claims are more commonly framed in false imprisonment, misfeasance, or Human Rights Act terms.\n- **Human Rights Act 1998 claim**: particularly for breach of Article 5 of the European Convention on Human Rights (right to liberty and security), and potentially Article 3 if treatment was inhuman or degrading.\n\n## Who to sue\n\nFor conduct of police officers acting in the course of their duties, proceedings are generally brought against:\n\n> **The Chief Constable of [the relevant police force]**\n\nFor example, if officers from Greater Manchester Police arrested you, the defendant would normally be:\n\n> **The Chief Constable of Greater Manchester Police**\n\nIf the arrest involved a national body rather than a territorial police force\u2014for example, the National Crime Agency, British Transport Police, Ministry of Defence Police, or an immigration enforcement body\u2014the appropriate defendant may instead be the relevant public authority, such as the **Secretary of State** or the statutory body itself.\n\n## Vicarious liability\n\nYes. The police force\u2019s Chief Constable is generally **vicariously liable** for torts committed by constables acting in the course of their police duties.\n\nThis means that if officers unlawfully arrested, detained, assaulted, or otherwise mistreated you while performing their role as police officers, the Chief Constable can usually be held legally responsible even if senior management did not personally know about or approve the conduct.\n\nThe usual questions are:\n\n1. Was the officer acting as a police officer at the time?\n2. Was there a sufficiently close connection between the officer\u2019s job and the wrongful conduct?\n3. Did the conduct occur during, or arise from, the officer\u2019s assigned police functions?\n\nAn arrest while you are driving, transport to custody, questioning, custody decisions, and detention for roughly **120 hours** would ordinarily be closely connected to police duties. Therefore, vicarious liability would normally arise.\n\n## Important legal issue: was 5 days\u2019 detention lawful?\n\nA detention lasting approximately **5 days (120 hours)** is highly significant. In England and Wales, detention without charge is normally limited under the Police and Criminal Evidence Act 1984 (\u201cPACE\u201d):\n\n- Initial detention: up to **24 hours**;\n- Authorised extension: up to **36 hours** for an indictable offence;\n- Magistrates\u2019 court warrant(s): potentially up to **96 hours** in total for a serious arrestable/indictable offence.\n\nFor terrorism-related detention, different legislation may allow longer periods, historically up to **14 days**, but murder alone is not automatically a terrorism case.\n\nThus, if you were held for about **120 hours** without charge in an ordinary murder investigation, that exceeds the usual **96-hour** PACE maximum. Unless there was another clear statutory basis\u2014such as terrorism legislation, immigration powers, mental-health detention, or a court order\u2014the final roughly **24 hours** may be particularly vulnerable to challenge.\n\nHowever, even detention within the first **24\u201396 hours** can be unlawful if:\n\n- the original arrest lacked reasonable grounds;\n- the officers confused you with a suspect without taking basic verifying steps;\n- custody reviews were not properly carried out;\n- the investigation was not conducted diligently and expeditiously;\n- evidence emerged showing you were not the suspect, but release was delayed;\n- police used detention for an improper purpose.\n\n## Damages\n\nIf liability is established, damages may include:\n\n- **Basic compensatory damages** for loss of liberty, distress, humiliation, and reputational harm;\n- **Aggravated damages** where police conduct was particularly oppressive, high-handed, insulting, or prolonged without justification;\n- **Special damages** for measurable financial losses\u2014for example, lost earnings, missed work, cancelled contracts, travel costs, medical expenses, or counselling costs;\n- potentially **exemplary damages** in limited cases involving oppressive, arbitrary, or unconstitutional conduct by public officials;\n- damages under the **Human Rights Act**, where necessary to provide \u201cjust satisfaction\u201d for an Article 5 violation.\n\nThe value depends heavily on facts. A wrongful detention of approximately **5 days** involving a murder allegation, physical injury, public arrest, and serious emotional harm could be substantially",
+    "latency_ms": 13369.7,
+    "input_tokens": 147,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "You are driving and the police stop you. They allege that you have murdered someone and you are now trying to flee. They arrest and detain you for 5 days and then realize they have the wrong person. You have suffered physically and emotionally, you wish to institute a legal claim. Who do you direct your claim to and is there any vicarious liability?",
+      "field": "Law"
+    },
+    "response": "Assuming this occurred in a common-law jurisdiction such as England and Wales, the claim would usually be directed against the **Chief Constable of the relevant police force**\u2014not ordinarily against the individual arresting officers personally.\n\nPossible claims may include:\n\n- **False imprisonment / unlawful detention**: detention without lawful justification, including detention continuing after the police should reasonably have released you.\n- **False arrest**: if the officers lacked reasonable grounds to suspect your involvement in the murder or that arrest was necessary.\n- **Malicious prosecution**: only if you were actually prosecuted and the prosecution was brought without reasonable and probable cause and with malice. On the facts given\u2014released after 5 days without charge\u2014this may not apply.\n- **Assault and battery**: if excessive or unjustified physical force was used during arrest or detention.\n- **Negligence**: potentially, although claims are more commonly framed in false imprisonment, misfeasance, or Human Rights Act terms.\n- **Human Rights Act 1998 claim**: particularly for breach of Article 5 of the European Convention on Human Rights (right to liberty and security), and potentially Article 3 if treatment was inhuman or degrading.\n\n## Who to sue\n\nFor conduct of police officers acting in the course of their duties, proceedings are generally brought against:\n\n> **The Chief Constable of [the relevant police force]**\n\nFor example, if officers from Greater Manchester Police arrested you, the defendant would normally be:\n\n> **The Chief Constable of Greater Manchester Police**\n\nIf the arrest involved a national body rather than a territorial police force\u2014for example, the National Crime Agency, British Transport Police, Ministry of Defence Police, or an immigration enforcement body\u2014the appropriate defendant may instead be the relevant public authority, such as the **Secretary of State** or the statutory body itself.\n\n## Vicarious liability\n\nYes. The police force\u2019s Chief Constable is generally **vicariously liable** for torts committed by constables acting in the course of their police duties.\n\nThis means that if officers unlawfully arrested, detained, assaulted, or otherwise mistreated you while performing their role as police officers, the Chief Constable can usually be held legally responsible even if senior management did not personally know about or approve the conduct.\n\nThe usual questions are:\n\n1. Was the officer acting as a police officer at the time?\n2. Was there a sufficiently close connection between the officer\u2019s job and the wrongful conduct?\n3. Did the conduct occur during, or arise from, the officer\u2019s assigned police functions?\n\nAn arrest while you are driving, transport to custody, questioning, custody decisions, and detention for roughly **120 hours** would ordinarily be closely connected to police duties. Therefore, vicarious liability would normally arise.\n\n## Important legal issue: was 5 days\u2019 detention lawful?\n\nA detention lasting approximately **5 days (120 hours)** is highly significant. In England and Wales, detention without charge is normally limited under the Police and Criminal Evidence Act 1984 (\u201cPACE\u201d):\n\n- Initial detention: up to **24 hours**;\n- Authorised extension: up to **36 hours** for an indictable offence;\n- Magistrates\u2019 court warrant(s): potentially up to **96 hours** in total for a serious arrestable/indictable offence.\n\nFor terrorism-related detention, different legislation may allow longer periods, historically up to **14 days**, but murder alone is not automatically a terrorism case.\n\nThus, if you were held for about **120 hours** without charge in an ordinary murder investigation, that exceeds the usual **96-hour** PACE maximum. Unless there was another clear statutory basis\u2014such as terrorism legislation, immigration powers, mental-health detention, or a court order\u2014the final roughly **24 hours** may be particularly vulnerable to challenge.\n\nHowever, even detention within the first **24\u201396 hours** can be unlawful if:\n\n- the original arrest lacked reasonable grounds;\n- the officers confused you with a suspect without taking basic verifying steps;\n- custody reviews were not properly carried out;\n- the investigation was not conducted diligently and expeditiously;\n- evidence emerged showing you were not the suspect, but release was delayed;\n- police used detention for an improper purpose.\n\n## Damages\n\nIf liability is established, damages may include:\n\n- **Basic compensatory damages** for loss of liberty, distress, humiliation, and reputational harm;\n- **Aggravated damages** where police conduct was particularly oppressive, high-handed, insulting, or prolonged without justification;\n- **Special damages** for measurable financial losses\u2014for example, lost earnings, missed work, cancelled contracts, travel costs, medical expenses, or counselling costs;\n- potentially **exemplary damages** in limited cases involving oppressive, arbitrary, or unconstitutional conduct by public officials;\n- damages under the **Human Rights Act**, where necessary to provide \u201cjust satisfaction\u201d for an Article 5 violation.\n\nThe value depends heavily on facts. A wrongful detention of approximately **5 days** involving a murder allegation, physical injury, public arrest, and serious emotional harm could be substantially",
+    "latency_ms": 13369.7,
+    "token_count": 1171,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "bdc96a478dda",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786234719.6245508,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 8 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4505,
+          "evidence": [
+            "Latency 13370ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 13369.7,
+        "token_count": 1171,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.179; flagged=True"
+}

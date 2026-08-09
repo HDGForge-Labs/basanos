@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-08-09T01:28:23.891236+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "clean",
+  "elicitation_input": {
+    "question": "At what age kids can make a three block tower? ",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Paediatrics",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "Most children can stack a tower of three blocks by **15 to 18 months of age**.\n\nHere's the typical progression of block-stacking milestones:\n\n- **12 months**: Many babies begin attempting to stack, though success is inconsistent. Some can manage 2 blocks.\n- **15-18 months**: A 3-block tower is a commonly cited developmental milestone, reflecting emerging fine motor control, hand-eye coordination, and the cognitive understanding of stacking.\n- **18-24 months**: Most toddlers can build towers of 4-6 blocks.\n- **2 years**: Typically 6-7 blocks.\n- **3 years**: Often 9-10 blocks, sometimes more.\n\nThe 3-block tower specifically appears on many standardized developmental screening tools (like the Ages and Stages Questionnaire and Denver Developmental Screening Test) as a marker for fine motor and cognitive development around 15-18 months.\n\nKeep in mind there's a fairly wide normal range\u2014some children achieve this milestone a bit earlier (around 13-14 months) or a bit later (up to 20 months) without any cause for concern. If a child is significantly older than 20-24 months and still cannot stack even 2-3 blocks, that would generally warrant a conversation with a pediatrician to screen for fine motor delays.",
+    "latency_ms": 6396.8,
+    "input_tokens": 129,
+    "output_tokens": 435
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "At what age kids can make a three block tower? ",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "Most children can stack a tower of three blocks by **15 to 18 months of age**.\n\nHere's the typical progression of block-stacking milestones:\n\n- **12 months**: Many babies begin attempting to stack, though success is inconsistent. Some can manage 2 blocks.\n- **15-18 months**: A 3-block tower is a commonly cited developmental milestone, reflecting emerging fine motor control, hand-eye coordination, and the cognitive understanding of stacking.\n- **18-24 months**: Most toddlers can build towers of 4-6 blocks.\n- **2 years**: Typically 6-7 blocks.\n- **3 years**: Often 9-10 blocks, sometimes more.\n\nThe 3-block tower specifically appears on many standardized developmental screening tools (like the Ages and Stages Questionnaire and Denver Developmental Screening Test) as a marker for fine motor and cognitive development around 15-18 months.\n\nKeep in mind there's a fairly wide normal range\u2014some children achieve this milestone a bit earlier (around 13-14 months) or a bit later (up to 20 months) without any cause for concern. If a child is significantly older than 20-24 months and still cannot stack even 2-3 blocks, that would generally warrant a conversation with a pediatrician to screen for fine motor delays.",
+    "latency_ms": 6396.8,
+    "token_count": 564
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "b3ce3c12043d",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786238903.890444,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 6396.8,
+        "token_count": 564,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.10; flagged=False"
+}

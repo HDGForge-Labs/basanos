@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-08-08T22:59:29.330257+00:00",
+  "detector": "hallucination",
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What type of health supplies require approbation?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Medical devices",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "gpt-5.6-luna",
+    "text": "\u201cApprobation\u201d usually means **official approval or authorization**. The health supplies that require it depend on the country, but generally include products that can affect diagnosis, treatment, patient safety, or infection control.\n\nCommon categories include:\n\n- **Medicines and vaccines**: prescription drugs, over-the-counter medicines, biologics, vaccines, blood products, and controlled substances.\n- **Medical devices**: syringes, infusion pumps, ventilators, implants, pacemakers, surgical instruments, diagnostic equipment, and sometimes lower-risk products such as bandages or examination gloves.\n- **In-vitro diagnostic products**: pregnancy tests, blood-glucose meters, HIV tests, laboratory reagents, and COVID-19 test kits.\n- **Personal protective equipment**: medical gloves, surgical masks, respirators, protective gowns, and eye protection\u2014especially when making medical or infection-control claims.\n- **Sterile and infection-control supplies**: sterilization equipment, disinfectants, antiseptics, wound-care products, and products labeled as sterile.\n- **Medical gases and specialized supplies**: oxygen, anesthetic gases, dialysis supplies, and blood-storage or transfusion equipment.\n- **Nutritional and therapeutic products**: infant formula, enteral-feeding products, special medical foods, and products making disease-treatment claims.\n- **Dental and surgical materials**: dental implants, bone cement, sutures, surgical mesh, and tissue-engineering products.\n- **Products containing human or animal-derived materials**: tissues, grafts, sera, enzymes, and certain biologically derived products.\n- **Health products making therapeutic claims**: supplements, herbal remedies, cosmetics, or wellness products may require approval or registration if they claim to prevent, diagnose, or treat disease.\n\nApproval may involve **product registration, conformity assessment, import permits, manufacturing licenses, quality certificates, or batch-release authorization**. Requirements are often risk-based: higher-risk products\u2014such as implants, vaccines, sterile injectables, and diagnostic tests\u2014usually require more extensive review than ordinary non-sterile supplies.\n\nThe exact authority varies by jurisdiction\u2014for example, the **FDA** in the United States, the **MHRA** in the United Kingdom, the **European Medicines Agency and national authorities** in the EU, or another national medicines and medical-device regulator.",
+    "latency_ms": 4149.5,
+    "input_tokens": 82,
+    "output_tokens": 469
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What type of health supplies require approbation?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "\u201cApprobation\u201d usually means **official approval or authorization**. The health supplies that require it depend on the country, but generally include products that can affect diagnosis, treatment, patient safety, or infection control.\n\nCommon categories include:\n\n- **Medicines and vaccines**: prescription drugs, over-the-counter medicines, biologics, vaccines, blood products, and controlled substances.\n- **Medical devices**: syringes, infusion pumps, ventilators, implants, pacemakers, surgical instruments, diagnostic equipment, and sometimes lower-risk products such as bandages or examination gloves.\n- **In-vitro diagnostic products**: pregnancy tests, blood-glucose meters, HIV tests, laboratory reagents, and COVID-19 test kits.\n- **Personal protective equipment**: medical gloves, surgical masks, respirators, protective gowns, and eye protection\u2014especially when making medical or infection-control claims.\n- **Sterile and infection-control supplies**: sterilization equipment, disinfectants, antiseptics, wound-care products, and products labeled as sterile.\n- **Medical gases and specialized supplies**: oxygen, anesthetic gases, dialysis supplies, and blood-storage or transfusion equipment.\n- **Nutritional and therapeutic products**: infant formula, enteral-feeding products, special medical foods, and products making disease-treatment claims.\n- **Dental and surgical materials**: dental implants, bone cement, sutures, surgical mesh, and tissue-engineering products.\n- **Products containing human or animal-derived materials**: tissues, grafts, sera, enzymes, and certain biologically derived products.\n- **Health products making therapeutic claims**: supplements, herbal remedies, cosmetics, or wellness products may require approval or registration if they claim to prevent, diagnose, or treat disease.\n\nApproval may involve **product registration, conformity assessment, import permits, manufacturing licenses, quality certificates, or batch-release authorization**. Requirements are often risk-based: higher-risk products\u2014such as implants, vaccines, sterile injectables, and diagnostic tests\u2014usually require more extensive review than ordinary non-sterile supplies.\n\nThe exact authority varies by jurisdiction\u2014for example, the **FDA** in the United States, the **MHRA** in the United Kingdom, the **European Medicines Agency and national authorities** in the EU, or another national medicines and medical-device regulator.",
+    "latency_ms": 4149.5,
+    "token_count": 551,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "492af6c560aa",
+      "tool_name": "expertqa_answer",
+      "status": "pass",
+      "timestamp": 1786229969.3295212,
+      "failures": [],
+      "metrics": {
+        "latency_ms": 4149.5,
+        "token_count": 551,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 0,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Tool call passed all reliability checks"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": false,
+  "notes": "caller_ip=10.18.0.113; flagged=False"
+}

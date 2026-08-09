@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:47:34.337122+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What are the possible causes of a 7 days old newborn with yellowish color, seizures and altered mental status?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "General Physician",
+    "question_type": "Open-ended question that is potentially ambiguous| Summarization of information on a topic| Question that describes a hypothetical scenario and asks a question based on this scenario"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# Neonatal Jaundice with Seizures and Altered Mental Status at Day 7 of Life\n\nThis presentation is a **medical emergency** suggesting possible **acute bilirubin encephalopathy (kernicterus)** or a severe underlying systemic illness. Here are the possible causes, organized by category:\n\n## 1. Severe Hyperbilirubinemia \u2192 Bilirubin Encephalopathy (Kernicterus)\nThis is the most likely unifying diagnosis given the triad described.\n\n**Underlying causes of severe unconjugated hyperbilirubinemia:**\n- **Hemolytic disease**\n  - Rh incompatibility (isoimmunization)\n  - ABO incompatibility\n  - G6PD deficiency (common in males, certain ethnicities \u2014 Mediterranean, African, Asian descent)\n  - Hereditary spherocytosis or other RBC membrane defects\n  - Pyruvate kinase deficiency\n- **Non-hemolytic causes**\n  - Breast milk jaundice/breastfeeding failure jaundice (inadequate intake, dehydration)\n  - Crigler-Najjar syndrome (Type 1 or 2)\n  - Gilbert syndrome (usually milder)\n  - Polycythemia\n  - Cephalohematoma or extensive bruising (bilirubin from RBC breakdown)\n\n**Risk thresholds:** Bilirubin levels typically become concerning for kernicterus when total serum bilirubin exceeds **approximately 25\u201330 mg/dL**, though susceptibility varies with gestational age, hemolysis, and albumin-binding capacity. Acute encephalopathy can occur at lower levels (around **20 mg/dL**) in preterm or sick infants.\n\n## 2. Neonatal Sepsis / Meningitis\n- Can cause **both** jaundice (from hemolysis or hepatic dysfunction) **and** seizures/altered mental status directly\n- Common organisms at day 7: **Group B Streptococcus, E. coli, Listeria monocytogenes**\n- Look for: temperature instability, poor feeding, lethargy, apnea\n- **Late-onset sepsis** typically occurs between **day 4 and day 90** of life\n\n## 3. Inborn Errors of Metabolism\nOften present around **day 3\u201310** as toxic metabolites accumulate after initial feeding:\n- **Galactosemia** \u2014 presents with jaundice, hepatomegaly, sepsis-like picture, seizures\n- **Urea cycle disorders** (e.g., OTC deficiency) \u2014 hyperammonemia causing altered mental status/seizures\n- **Organic acidemias** (propionic acidemia, methylmalonic acidemia)\n- **Maple syrup urine disease** \u2014 can present around **day 4\u20137** with seizures and lethargy\n- **Tyrosinemia type 1**\n\n## 4. Congenital Infections (TORCH)\n- **Toxoplasmosis, CMV, Herpes simplex virus (HSV)** \u2014 HSV encephalitis can present around **day 5\u2013",
+    "latency_ms": 11601.5,
+    "input_tokens": 144,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What are the possible causes of a 7 days old newborn with yellowish color, seizures and altered mental status?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# Neonatal Jaundice with Seizures and Altered Mental Status at Day 7 of Life\n\nThis presentation is a **medical emergency** suggesting possible **acute bilirubin encephalopathy (kernicterus)** or a severe underlying systemic illness. Here are the possible causes, organized by category:\n\n## 1. Severe Hyperbilirubinemia \u2192 Bilirubin Encephalopathy (Kernicterus)\nThis is the most likely unifying diagnosis given the triad described.\n\n**Underlying causes of severe unconjugated hyperbilirubinemia:**\n- **Hemolytic disease**\n  - Rh incompatibility (isoimmunization)\n  - ABO incompatibility\n  - G6PD deficiency (common in males, certain ethnicities \u2014 Mediterranean, African, Asian descent)\n  - Hereditary spherocytosis or other RBC membrane defects\n  - Pyruvate kinase deficiency\n- **Non-hemolytic causes**\n  - Breast milk jaundice/breastfeeding failure jaundice (inadequate intake, dehydration)\n  - Crigler-Najjar syndrome (Type 1 or 2)\n  - Gilbert syndrome (usually milder)\n  - Polycythemia\n  - Cephalohematoma or extensive bruising (bilirubin from RBC breakdown)\n\n**Risk thresholds:** Bilirubin levels typically become concerning for kernicterus when total serum bilirubin exceeds **approximately 25\u201330 mg/dL**, though susceptibility varies with gestational age, hemolysis, and albumin-binding capacity. Acute encephalopathy can occur at lower levels (around **20 mg/dL**) in preterm or sick infants.\n\n## 2. Neonatal Sepsis / Meningitis\n- Can cause **both** jaundice (from hemolysis or hepatic dysfunction) **and** seizures/altered mental status directly\n- Common organisms at day 7: **Group B Streptococcus, E. coli, Listeria monocytogenes**\n- Look for: temperature instability, poor feeding, lethargy, apnea\n- **Late-onset sepsis** typically occurs between **day 4 and day 90** of life\n\n## 3. Inborn Errors of Metabolism\nOften present around **day 3\u201310** as toxic metabolites accumulate after initial feeding:\n- **Galactosemia** \u2014 presents with jaundice, hepatomegaly, sepsis-like picture, seizures\n- **Urea cycle disorders** (e.g., OTC deficiency) \u2014 hyperammonemia causing altered mental status/seizures\n- **Organic acidemias** (propionic acidemia, methylmalonic acidemia)\n- **Maple syrup urine disease** \u2014 can present around **day 4\u20137** with seizures and lethargy\n- **Tyrosinemia type 1**\n\n## 4. Congenital Infections (TORCH)\n- **Toxoplasmosis, CMV, Herpes simplex virus (HSV)** \u2014 HSV encephalitis can present around **day 5\u2013",
+    "latency_ms": 11601.5,
+    "token_count": 1168,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "62ad1cc78e8b",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240054.336355,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 8 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.424,
+          "evidence": [
+            "Latency 11602ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 11601.5,
+        "token_count": 1168,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.106; flagged=True"
+}

@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:50:02.059092+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is the first radiological sign of fetal death?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "medical profesional based in family medicine",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# First Radiological Sign of Fetal Death\n\nThe **earliest and most reliable radiological sign of fetal death** is the **Spalding sign** (also called Spalding-Horner sign).\n\n## Spalding Sign\n\nThis refers to **overlapping of the fetal skull bones** (overriding of the cranial bones), visible on plain X-ray, due to:\n- Liquefaction and shrinkage of the brain\n- Loss of the normal supportive structure that keeps skull bones aligned\n- Softening of the sutures and membranous connections between cranial bones\n\n**Timing:** The Spalding sign typically appears approximately **7 to 10 days** after fetal death, though it may sometimes be delayed up to **2-3 weeks** in some cases.\n\n## Other Associated Radiological Signs (appearing later)\n\n1. **Robert's sign** \u2014 Presence of gas in the fetal heart chambers/great vessels, generally seen around **12 hours to a few days** after death (though considered less reliable and can sometimes appear early)\n\n2. **Hyperflexion of the spine (Spine sign)** \u2014 Exaggerated curvature/angulation of the fetal spine due to loss of paraspinal muscle tone, typically visible after about **7-10 days**\n\n3. **Halo sign** \u2014 Separation of scalp edema from the skull, creating a halo-like appearance around the fetal head, usually apparent after roughly **7 days or more**\n\n4. **Gas shadows in the fetal body** (soft tissues, subcutaneous tissue) \u2014 appears later, generally after **~2 weeks**\n\n## Clinical Note\n\nWhile Robert's sign (intracardiac/vascular gas) is sometimes cited as appearing early, it is considered **less specific and less reliable** because gas can occasionally be seen in early autolysis or artifactually. The **Spalding sign remains the classic and most consistently cited first reliable sign** in radiology and forensic medicine references, generally becoming apparent about **1 week (7-10 days)** after intrauterine fetal death.\n\n**Important:** In modern obstetric practice, **ultrasonography** (absence of fetal cardiac activity, absent movement) has largely replaced plain radiography for diagnosing fetal death, as it provides **immediate and more accurate confirmation** compared to waiting several days for radiological signs to develop.",
+    "latency_ms": 10098.5,
+    "input_tokens": 125,
+    "output_tokens": 768
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the first radiological sign of fetal death?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# First Radiological Sign of Fetal Death\n\nThe **earliest and most reliable radiological sign of fetal death** is the **Spalding sign** (also called Spalding-Horner sign).\n\n## Spalding Sign\n\nThis refers to **overlapping of the fetal skull bones** (overriding of the cranial bones), visible on plain X-ray, due to:\n- Liquefaction and shrinkage of the brain\n- Loss of the normal supportive structure that keeps skull bones aligned\n- Softening of the sutures and membranous connections between cranial bones\n\n**Timing:** The Spalding sign typically appears approximately **7 to 10 days** after fetal death, though it may sometimes be delayed up to **2-3 weeks** in some cases.\n\n## Other Associated Radiological Signs (appearing later)\n\n1. **Robert's sign** \u2014 Presence of gas in the fetal heart chambers/great vessels, generally seen around **12 hours to a few days** after death (though considered less reliable and can sometimes appear early)\n\n2. **Hyperflexion of the spine (Spine sign)** \u2014 Exaggerated curvature/angulation of the fetal spine due to loss of paraspinal muscle tone, typically visible after about **7-10 days**\n\n3. **Halo sign** \u2014 Separation of scalp edema from the skull, creating a halo-like appearance around the fetal head, usually apparent after roughly **7 days or more**\n\n4. **Gas shadows in the fetal body** (soft tissues, subcutaneous tissue) \u2014 appears later, generally after **~2 weeks**\n\n## Clinical Note\n\nWhile Robert's sign (intracardiac/vascular gas) is sometimes cited as appearing early, it is considered **less specific and less reliable** because gas can occasionally be seen in early autolysis or artifactually. The **Spalding sign remains the classic and most consistently cited first reliable sign** in radiology and forensic medicine references, generally becoming apparent about **1 week (7-10 days)** after intrauterine fetal death.\n\n**Important:** In modern obstetric practice, **ultrasonography** (absence of fetal cardiac activity, absent movement) has largely replaced plain radiography for diagnosing fetal death, as it provides **immediate and more accurate confirmation** compared to waiting several days for radiological signs to develop.",
+    "latency_ms": 10098.5,
+    "token_count": 893,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "89a6bcc09c8b",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240202.0583014,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 6 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4015,
+          "evidence": [
+            "Latency 10098ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 10098.5,
+        "token_count": 893,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.118; flagged=True"
+}

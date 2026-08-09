@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-08-09T01:47:22.728985+00:00",
+  "detector": "hallucination",
+  "model": "claude-haiku-4-5-20251001",
+  "provider": "anthropic",
+  "provenance": "published-instrument (indirect -- Rao et al. arXiv:2604.03173 methodology; ExpertQA selected for Phase 2 Track A, cmalaviya/expertqa 'main' split)",
+  "source_citation": "chaitanyamalaviya/ExpertQA (MIT), arXiv:2309.07852",
+  "trial_type": "violation",
+  "elicitation_input": {
+    "question": "What is the diagnostic criteria for Anorexia Nervosa?",
+    "field": "Healthcare / Medicine",
+    "specific_field": "Clinical Psychology",
+    "question_type": "Directed question that has a single unambiguous answer"
+  },
+  "llm_generation": {
+    "model": "claude-sonnet-5",
+    "text": "# DSM-5-TR Diagnostic Criteria for Anorexia Nervosa\n\n## Criterion A: Restriction of Energy Intake\nPersistent restriction of energy intake leading to significantly low body weight (in context of age, sex, developmental trajectory, and physical health). Significantly low weight is generally defined as a weight that is less than minimally normal, or for children/adolescents, less than that minimally expected.\n\n**Clinical benchmarks often used:**\n- Body Mass Index (BMI) below approximately **18.5 kg/m\u00b2** in adults is generally considered underweight\n- BMI below roughly **17.5 kg/m\u00b2** is often used as a threshold suggesting significant concern\n- For children/adolescents, weight is typically compared to the **5th percentile** or below on growth charts, or roughly less than **85%** of expected body weight\n\n## Criterion B: Fear of Weight Gain or Persistent Behavior Preventing Weight Gain\nIntense fear of gaining weight or becoming fat, OR persistent behavior that interferes with weight gain, even though at a significantly low weight.\n\n## Criterion C: Body Image Disturbance\nDisturbance in the way one's body weight or shape is experienced, undue influence of body weight/shape on self-evaluation, or persistent lack of recognition of the seriousness of the current low body weight.\n\n---\n\n## Subtypes (specify current type, based on past 3 months)\n\n**Restricting Type:**\n- No recurrent episodes of binge eating or purging behavior\n- Weight loss achieved primarily through dieting, fasting, and/or excessive exercise\n\n**Binge-Eating/Purging Type:**\n- Recurrent episodes of binge eating or purging behavior (self-induced vomiting, misuse of laxatives, diuretics, or enemas)\n\n---\n\n## Severity Specifiers (Based on Current BMI, in adults)\n\n| Severity | BMI (kg/m\u00b2) |\n|----------|-------------|\n| Mild | \u2265 17.0 |\n| Moderate | 16.0\u201316.99 |\n| Severe | 15.0\u201315.99 |\n| Extreme | < 15.0 |\n\n*Note: For children/adolescents, corresponding BMI percentiles are used instead.*\n\n---\n\n## Additional Specifiers\n- **In partial remission:** Criterion A no longer met, but B or C still present\n- **In full remission:** None of the criteria met for a sustained period\n\n---\n\n## Important Notes\n- The **amenorrhea criterion** (absence of menstrual periods) was **removed** in DSM-5 (it was required in DSM-IV) since it excluded males, premenarchal females, and those on hormonal contraception\n- Medical complications can include bradycardia (heart rate below **60 bpm**, sometimes dropping to **30-40 bpm** in severe cases), hypotension, electrolyte imbalances, osteopenia/osteoporosis, and in severe cases, multi-organ failure\n- Mortality rates for anorexia nervosa are among the highest of any psychiatric disorder, with estimates ranging from approximately **5",
+    "latency_ms": 10929.4,
+    "input_tokens": 133,
+    "output_tokens": 1024
+  },
+  "reliagent_request": {
+    "tool_name": "expertqa_answer",
+    "parameters": {
+      "question": "What is the diagnostic criteria for Anorexia Nervosa?",
+      "field": "Healthcare / Medicine"
+    },
+    "response": "# DSM-5-TR Diagnostic Criteria for Anorexia Nervosa\n\n## Criterion A: Restriction of Energy Intake\nPersistent restriction of energy intake leading to significantly low body weight (in context of age, sex, developmental trajectory, and physical health). Significantly low weight is generally defined as a weight that is less than minimally normal, or for children/adolescents, less than that minimally expected.\n\n**Clinical benchmarks often used:**\n- Body Mass Index (BMI) below approximately **18.5 kg/m\u00b2** in adults is generally considered underweight\n- BMI below roughly **17.5 kg/m\u00b2** is often used as a threshold suggesting significant concern\n- For children/adolescents, weight is typically compared to the **5th percentile** or below on growth charts, or roughly less than **85%** of expected body weight\n\n## Criterion B: Fear of Weight Gain or Persistent Behavior Preventing Weight Gain\nIntense fear of gaining weight or becoming fat, OR persistent behavior that interferes with weight gain, even though at a significantly low weight.\n\n## Criterion C: Body Image Disturbance\nDisturbance in the way one's body weight or shape is experienced, undue influence of body weight/shape on self-evaluation, or persistent lack of recognition of the seriousness of the current low body weight.\n\n---\n\n## Subtypes (specify current type, based on past 3 months)\n\n**Restricting Type:**\n- No recurrent episodes of binge eating or purging behavior\n- Weight loss achieved primarily through dieting, fasting, and/or excessive exercise\n\n**Binge-Eating/Purging Type:**\n- Recurrent episodes of binge eating or purging behavior (self-induced vomiting, misuse of laxatives, diuretics, or enemas)\n\n---\n\n## Severity Specifiers (Based on Current BMI, in adults)\n\n| Severity | BMI (kg/m\u00b2) |\n|----------|-------------|\n| Mild | \u2265 17.0 |\n| Moderate | 16.0\u201316.99 |\n| Severe | 15.0\u201315.99 |\n| Extreme | < 15.0 |\n\n*Note: For children/adolescents, corresponding BMI percentiles are used instead.*\n\n---\n\n## Additional Specifiers\n- **In partial remission:** Criterion A no longer met, but B or C still present\n- **In full remission:** None of the criteria met for a sustained period\n\n---\n\n## Important Notes\n- The **amenorrhea criterion** (absence of menstrual periods) was **removed** in DSM-5 (it was required in DSM-IV) since it excluded males, premenarchal females, and those on hormonal contraception\n- Medical complications can include bradycardia (heart rate below **60 bpm**, sometimes dropping to **30-40 bpm** in severe cases), hypotension, electrolyte imbalances, osteopenia/osteoporosis, and in severe cases, multi-organ failure\n- Mortality rates for anorexia nervosa are among the highest of any psychiatric disorder, with estimates ranging from approximately **5",
+    "latency_ms": 10929.4,
+    "token_count": 1157,
+    "response_grounded_in_parameters": true
+  },
+  "reliagent_response": {
+    "success": true,
+    "result": {
+      "protocol_version": "1.1.0",
+      "call_id": "b566eced7c13",
+      "tool_name": "expertqa_answer",
+      "status": "warn",
+      "timestamp": 1786240042.7281659,
+      "failures": [
+        {
+          "failure_mode": "hallucination",
+          "confidence": 0.3,
+          "evidence": [
+            "Hedge language co-occurs with 12 unexplained numeric value(s)"
+          ],
+          "remediation": []
+        },
+        {
+          "failure_mode": "timeout",
+          "confidence": 0.4139,
+          "evidence": [
+            "Latency 10929ms exceeds default threshold 10000ms"
+          ],
+          "remediation": [
+            "Check upstream tool/service health",
+            "Consider adding a retry with backoff",
+            "Verify network path is not adding unexpected latency"
+          ]
+        }
+      ],
+      "metrics": {
+        "latency_ms": 10929.4,
+        "token_count": 1157,
+        "context_window_used": null,
+        "confidence_score": null,
+        "failure_count": 2,
+        "history_source": "redis"
+      },
+      "recommendations": [
+        "Check upstream tool/service health",
+        "Consider adding a retry with backoff",
+        "Verify network path is not adding unexpected latency"
+      ]
+    },
+    "error": null
+  },
+  "hypothesis": "ReliAgent's hallucination detector TPR/FPR is model-agnostic: the opt-in hedge+numeric path fires when response_grounded_in_parameters=True and HEDGE_PATTERNS (approximately|roughly|around|about) co-occur with >=2 unexplained numeric values not traceable to input parameters. Confirmed from core.py source audit lines 787-794. Violation elicitation instructs the model to produce hedge qualifiers alongside many specific figures, a pattern that manifests consistently across LLMs regardless of model family.",
+  "passed": true,
+  "notes": "caller_ip=10.18.0.105; flagged=True"
+}
