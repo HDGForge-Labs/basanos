@@ -2,184 +2,117 @@
 ### Benchmarking LLM Agent Reliability Detection
 #### A ReliAgent Validation Study — HDGForge Labs
 
----
+**Basanos** is HDGForge Labs' open validation program for [ReliAgent](https://reliagent.net), a reliability-monitoring API for LLM agent tool calls.
 
-**Basanos** is HDGForge's open benchmarking study for [ReliAgent](https://reliagent.net) — a reliability-monitoring API for LLM agent tool calls. The study validates whether ReliAgent's eight detectors actually detect the failure modes they claim to, using real published benchmarks, live model responses, and purpose-built synthetic harnesses where published instruments don't exist.
+Across Basanos-2 and Basanos-3, the program comprises **4,200 trials**: 1,800 trials validating ReliAgent's detector suite in Basanos-2, followed by 2,400 cross-model trials in Basanos-3 addressing the earlier study's single-model limitation.
 
-All trial-level records, harness code, methodology documentation, and the full audit trail — including superseded runs — are preserved here. Nothing is overwritten after the fact.
+## Study progression
 
----
+### Basanos-1 — Pilot
 
-## What Was Studied
+The pilot established detector trigger mechanisms before the larger benchmark and surfaced product and harness findings that informed the later studies.
 
-ReliAgent screens agent tool calls for eight failure modes and returns a structured pass/warn/fail verdict on each call:
+### Basanos-2 — Detector Benchmark
 
-| Detector | What It Catches |
-|---|---|
-| `hallucination` | Assertive knowledge claims or hedge language co-occurring with ungrounded numeric values |
-| `sycophantic_gap_fill` | Affirmation and subservient-backtracking phrases in tool responses |
-| `context_degradation` | Context window nearing capacity; dropped parameter keys across consecutive calls |
-| `repetition_loop` | Identical response content recurring within recent call history |
-| `confidence_collapse` | Falling or critically low confidence scores; uncertainty language in responses |
-| `schema_violation` | Responses that fail validation against a caller-supplied JSON Schema |
-| `parameter_drift` | Majority of shared parameter keys changing between consecutive same-tool calls |
-| `timeout` | Call latency exceeding caller-supplied, adaptive, or default thresholds |
-| `response_integrity` | Structural defects: echo mismatches, contradictory status/error, silent failures, count mismatches |
+Basanos-2 evaluated ReliAgent's implemented failure-mode detectors across **1,800 trials** using Claude Sonnet 5, published benchmark sources where appropriate, and purpose-built synthetic inputs for structural detectors with precisely defined trigger conditions.
 
----
+The study covered ReliAgent's reliability checks for hallucination signals, sycophantic gap fill, confidence collapse, context degradation, repetition loops, schema/response integrity behavior, parameter drift, and timeout behavior.
 
-## Study Structure
+### Basanos-3 — Cross-Model Detector Benchmark
 
-Basanos ran in two phases:
+Basanos-3 addressed the explicit single-model limitation of Basanos-2. It ran **2,400 trials across 12 experiments** using three additional model families:
 
-**Basanos-1 (Pilot)** validated six detectors at pilot scale (5–10 trials each) against real published benchmarks using live Claude Sonnet 5 responses. Its primary purpose was to confirm each detector's actual trigger mechanism before committing to a full harness — a discipline that caught two significant misdesigns before any inference budget was spent on wrong approaches. Two real product defects were identified and corrected during this phase.
+- GPT-5.6 Luna — OpenAI
+- GPT-5.6 Terra — OpenAI
+- Claude Haiku 4.5 — Anthropic
 
-**Basanos-2 (Detector Benchmark)** scaled all eight detectors to statistically powered sample sizes. Phase 2 Track A ran N=200 trials (100 clean + 100 violation) per detector across the six pilot-validated detectors against higher-quality sources with programmatic violation injection for auditable ground truth. Phase 2 Track B completed the two remaining detectors and `response_integrity` using purpose-built synthetic harnesses — the correct instrument for structural, non-language-based detectors whose trigger conditions are precisely defined.
+The cross-model phase focused on four detectors with language- or model-dependent behavior: `hallucination`, `sycophantic_gap_fill`, `confidence_collapse`, and `context_degradation`.
 
-**Total trials: 1,800 across all eight detectors.**
+## Basanos-3 results
 
----
+| Detector | Model | TPR | FPR | Interpretation of non-fires |
+|---|---|---:|---:|---|
+| hallucination | GPT-5.6 Luna | 0.76 | 0.00 | Grounded, unhedged responses |
+| hallucination | GPT-5.6 Terra | 0.84 | 0.00 | Grounded, unhedged responses |
+| hallucination | Claude Haiku 4.5 | 0.97 | 0.00 | Grounded, unhedged responses |
+| sycophantic_gap_fill | GPT-5.6 Luna | 0.92* | 0.00 | Model gave non-sycophantic responses |
+| sycophantic_gap_fill | GPT-5.6 Terra | 0.89 | 0.01 | Model gave non-sycophantic responses |
+| sycophantic_gap_fill | Claude Haiku 4.5 | 0.41 | 0.00 | Model pushed back rather than capitulating |
+| confidence_collapse | GPT-5.6 Luna | 1.00 | 0.00 | — |
+| confidence_collapse | GPT-5.6 Terra | 1.00 | 0.00 | — |
+| confidence_collapse | Claude Haiku 4.5 | 1.00 | 0.00 | — |
+| context_degradation | GPT-5.6 Luna | 1.00 | 0.00 | — |
+| context_degradation | GPT-5.6 Terra | 1.00 | 0.00 | — |
+| context_degradation | Claude Haiku 4.5 | 1.00 | 0.00 | — |
 
-## Results
+*Luna sycophancy TPR is reported from two independent runs (0.92 and 0.91 in the technical report).
 
-| Detector | TPR | FPR | Phase | Source |
-|---|---|---|---|---|
-| `schema_violation` | 100% | 0% | 2 Track A | JSONSchemaBench Glaiveai2K |
-| `hallucination` | 100% | 0% | 2 Track A | ExpertQA |
-| `confidence_collapse` | 100% | 0% | 2 Track A | sycophancy-eval |
-| `sycophantic_gap_fill` | 100% | 2.3%* | 2 Track A | sycophancy-eval |
-| `context_degradation` | 100% | 0% | 2 Track A | Lost in the Middle + synthetic |
-| `repetition_loop` | 100% | 0% | 2 Track A | Synthetic hash injection |
-| `parameter_drift` | 100% | 0% | 2 Track B | Synthetic two-call sequences |
-| `timeout` | 100%† | 0% | 2 Track B | Synthetic latency values |
-| `response_integrity` | 100% | 0% | 2 Track B | Synthetic dict payloads |
+### How to interpret the TPR variation
 
-\* The 2.3% FPR on `sycophantic_gap_fill` reflects common filler words appearing in non-sycophantic contexts in the real dataset — within the expected range for a phrase-pattern detector on natural language.
+Basanos-3 does **not** measure how often a model naturally produces a failure mode in ordinary deployment. It tests whether ReliAgent fires when its defined trigger condition occurs under the study elicitation.
 
-† `timeout` Mode B (adaptive threshold) recorded 51.5% TPR due to a harness design error: violation latencies were set below the detector's 1000ms adaptive floor. The non-fires are correct product behavior. Modes A (caller-supplied) and C (default 10,000ms) both recorded 100% TPR across 67 combined trials.
+Response-level inspection of missed violation trials found that the model had not produced the relevant trigger signal. For example, Haiku's 0.41 `sycophantic_gap_fill` TPR reflects 41 trials in which sycophantic language occurred and was detected; on the remaining 59 trials, Haiku pushed back rather than capitulating.
 
-All figures reported with 95% Wilson score confidence intervals. See the full report for complete CI tables.
+The central Basanos-3 finding is therefore that the evaluated detectors fired correctly on every inspected instance in which their defined trigger condition was present across the three tested model families. False-positive rates were at or near zero in the 12 experiments.
 
----
+## Deployment findings from Basanos-3
+
+Two methodology findings have direct deployment implications:
+
+- **Unicode normalization:** OpenAI reasoning models can emit typographic punctuation that does not match ASCII phrase patterns. Cross-provider operators should normalize response text before regex-based detection.
+- **Hallucination opt-in path:** the hallucination detector's hedge-plus-numeric path requires `response_grounded_in_parameters=True`.
+
+The two metadata-driven detectors in this phase, `confidence_collapse` and `context_degradation`, achieved TPR=1.0 and FPR=0.0 across all three tested model families because their primary signals are caller-supplied metadata rather than model-specific linguistic content.
+
+## Data integrity and audit trail
+
+Basanos uses a no-overwrite convention. Superseded experiments remain part of the audit trail rather than being silently replaced.
+
+During Basanos-3 analysis, two experiment-assignment errors were identified. Corrective experiments 031 and 032 were run, and the canonical experiment set is documented in the technical report. The superseded run remains documented.
+
+## Basanos-2 findings
+
+Basanos-2 also served as adversarial product validation rather than a confirmation-only exercise. Testing surfaced genuine product issues, including unsupported JSON Schema keyword handling, repetition-loop behavior in single-tool environments, and annotation-keyword handling. Those findings were corrected before publication and are documented in the Basanos materials.
 
 ## Reports
 
-| Report | Description |
-|---|---|
-| [`reports/Basanos-1-Pilot.pdf`](reports/Basanos-1-Pilot.pdf) | Phase 1 pilot study — six detectors, mechanism confirmation, two product findings |
-| [`reports/Basanos-2-Detector-Benchmark-2026.pdf`](reports/Basanos-2-Detector-Benchmark-2026.pdf) | Full benchmark — all eight detectors, 1,800 trials, complete results |
-| [`reports/Basanos-executive-summary.pdf`](reports/Basanos-executive-summary.pdf) | Two-page summary of findings for non-technical readers |
+The repository currently contains the Basanos-1 and Basanos-2 reports. Basanos-3 is the current cross-model phase; its technical report and executive summary should be added to this `reports/` directory so the repository and published study remain synchronized.
 
----
+Current repository reports:
 
-## Product Findings
+- [`reports/Basanos-1-Pilot.pdf`](reports/Basanos-1-Pilot.pdf) — pilot study
+- [`reports/Basanos-2-Detector-Benchmark-2026.pdf`](reports/Basanos-2-Detector-Benchmark-2026.pdf) — 1,800-trial detector benchmark
+- [`reports/Basanos-executive-summary.pdf`](reports/Basanos-executive-summary.pdf) — Basanos-2 executive summary
 
-Three genuine product defects were surfaced during Basanos testing and corrected in the live product before publication. See [`changelog/product-fixes.md`](changelog/product-fixes.md) for full details.
+## Public results currently in this repository
 
-**Finding 1 — False pass on unsupported-keyword schemas:** A schema relying entirely on an unsupported JSON Schema keyword (`anyOf`, `oneOf`, `$ref`, etc.) previously returned `"pass"` even when the response clearly violated it. A census of 9,542 real-world schemas found this affected ~12% of real function-calling schemas. Fixed: these schemas now return a distinct `schema_partially_verified` signal.
+The `results/` directory contains the published Basanos-2 summary artifacts:
 
-**Finding 2 — Guaranteed false positives in single-tool environments:** The `repetition_loop` detector included a check for the same tool being called consecutively. In single-tool agent environments (e.g. a coding agent where every call is `bash_exec`), this fired on every call sequence regardless of whether looping was occurring. Fixed: the check was removed. The hash-based check is the correct and sufficient signal.
+- [`results/trial_records_summary.csv`](results/trial_records_summary.csv)
+- [`results/detector_summary.csv`](results/detector_summary.csv)
+- [`results/confidence_intervals.csv`](results/confidence_intervals.csv)
 
-**Finding 3 — Annotation keywords spuriously flagged:** Annotation-only fields (`description`, `title`, `$schema`, `default`) inside property sub-schemas were treated as unsupported validation keywords, triggering spurious partial-verification warnings on virtually every real-world schema with documented properties. Fixed: annotation keywords are now filtered at every nesting level.
+Basanos-3 trial-level records and harness artifacts should be added alongside the Basanos-3 reports if they are not already present elsewhere in the repository history.
 
----
+## Research principles
 
-## Repository Structure
+Basanos is organized around several principles:
 
-```
-basanos/
-│
-├── README.md
-│
-├── reports/
-│   ├── Basanos-1-Pilot.pdf
-│   ├── Basanos-2-Detector-Benchmark-2026.pdf
-│   └── Basanos-executive-summary.pdf
-│
-├── methodology/
-│   ├── methodology.md          # Provenance discipline, mechanism-first approach
-│   ├── study-design.md         # Phase 1 and Phase 2 scope decisions
-│   ├── statistical-methods.md  # CI calculation, classification approach
-│   └── limitations.md          # Documented scope decisions
-│
-├── datasets/
-│   ├── expertqa/               # Rao et al. — hallucination
-│   ├── lost-in-the-middle/     # Liu et al. — context_degradation
-│   ├── sycophancy-eval/        # Sharma et al. — sycophantic_gap_fill, confidence_collapse
-│   └── jsonschemabench/        # Geng et al. — schema_violation
-│
-├── scenarios/
-│   ├── hallucination/
-│   ├── sycophantic-gap-fill/
-│   ├── context-degradation/
-│   ├── repetition-loop/
-│   ├── confidence-collapse/
-│   ├── schema-violation/
-│   ├── parameter-drift/
-│   ├── timeout/
-│   └── response-integrity/
-│
-├── harness/
-│   ├── runner.py
-│   ├── injectors/              # Programmatic violation injection per detector
-│   ├── validators/             # Ground truth classification logic
-│   └── config/
-│
-├── results/
-│   ├── raw/                    # Per-trial JSON records (experiment_NNN/)
-│   ├── processed/
-│   ├── trial_records.csv
-│   ├── detector_summary.csv
-│   └── confidence_intervals.csv
-│
-├── analysis/
-│   ├── notebooks/
-│   ├── figures/
-│   └── generate_report.py
-│
-├── changelog/
-│   ├── Basanos-1.md            # Phase 1 findings and corrections
-│   ├── Basanos-2.md            # Phase 2 findings and corrections
-│   └── product-fixes.md        # All three product defects, before/after behavior
-│
-└── LICENSE
-```
-
----
-
-## Methodology Principles
-
-**Mechanism-first, source-second.** Before building any data pipeline against a published source, direct test calls to ReliAgent were issued to confirm what the detector actually keys on. This caught two significant harness misdesigns before any inference budget was spent on sources that couldn't exercise the real trigger.
-
-**Provenance-labeled.** Every trial states exactly where its input came from. Three categories: published-instrument (direct), published-instrument (indirect), and custom-constructed (synthetic). Nothing is presented as organic real-world behavior unless it is.
-
-**Per-caller isolation.** History-dependent detectors maintain Redis state keyed on `caller_ip`. Independent trials use distinct simulated IPs; multi-turn trials share one IP across their turns.
-
-**No-overwrite convention.** Every experiment run is retained under a numbered directory. Superseded runs are marked, not deleted. The full audit trail — including failed attempts and methodology corrections — is permanently available.
-
----
-
-## Sources and Citations
-
-- Rao, A. et al. *ExpertQA: Expert-Curated Questions and Attributed Answers.* arXiv:2309.07852
-- Rao, A. et al. *Detecting and Correcting Reference Hallucinations in Commercial LLMs and Deep Research Agents.* arXiv:2604.03173
-- Yagubyan, A. *How Consistent Are LLM Agents? Measuring Behavioral Reproducibility in Multi-Step Tool-Calling Pipelines.* arXiv:2605.28840
-- Liu, N. F. et al. *Lost in the Middle: How Language Models Use Long Contexts.* arXiv:2307.03172. TACL 2024.
-- Yang, J. et al. *InterCode: Standardizing and Benchmarking Interactive Coding with Execution Feedback.* arXiv:2306.14898
-- Sharma, M. et al. *Towards Understanding Sycophancy in Language Models.* arXiv:2310.13548
-- Geng, S. et al. *JSONSchemaBench: A Benchmark for Generating Structured Outputs from Language Models.* arXiv:2501.10868
-- International AI Safety Institutes. *International AI Safety Report: Joint Multi-Stakeholder AI Safety Testing Exercise.* arXiv:2601.15679. 2026.
-
----
+- **Mechanism first:** confirm what a detector actually keys on before committing inference budget to a benchmark source.
+- **Explicit provenance:** distinguish published-instrument, controlled, and synthetic inputs rather than presenting them as equivalent.
+- **State isolation:** independent trials use isolated caller identity/state where history-dependent detectors require it.
+- **No overwrite:** retain superseded runs and corrective experiments so the audit trail remains inspectable.
+- **Scope discipline:** report what the experiment actually validates and distinguish detector behavior from model behavior.
 
 ## Related
 
-- **[hdgforge-labs/backstop](https://github.com/hdgforge-labs/backstop)** — Benchmarking study for [Redlynr](https://redlynr.com), HDGForge's agent guardrail product
-- **[ReliAgent](https://reliagent.net)** — The product under study
-- **[HDGForge](https://hdgregory.com)** — HDGForge's product marketplace
+- [ReliAgent](https://reliagent.net) — product under study
+- [Backstop](https://github.com/HDGForge-Labs/backstop) — Redlynr validation study
+- [Redlynr](https://redlynr.com) — runtime agent guardrails
+- [HDGForge](https://hdgforge.com) — HDGForge
 
 ---
 
-*Basanos is an open study. All data, code, and methodology are public. If you find an error, open an issue.*
+*Basanos is an HDGForge Labs validation program. If you find an error in the published materials, open an issue.*
 
 *HDGForge Labs · HD Gregory LLC · 2026*
